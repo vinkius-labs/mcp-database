@@ -358,8 +358,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Pixso](../mcps/pixso.md) | Collaborative design platform and UI/UX tool — manage design files, nodes, and teams via AI. |
 | [Plasmic (Visual Headless Page Builder)](../mcps/plasmic-visual-headless-page-builder.md) | Manage Plasmic projects, pages, and components via AI — list projects, inspect page structures, and trigger publishes directly. |
 | [Pocket Network (Decentralized RPC Nodes API)](../mcps/pocket-network-decentralized-rpc-nodes-api.md) | Access decentralized RPC nodes via Pocket Network — query accounts, blocks, nodes, and relay requests to multiple blockchains. |
-| [Polar.sh](../mcps/polarsh.md) | Monetize your open-source projects. Manage products, orders, subscriptions, and invoices directly through your AI agent. |
 | [Polar.sh](../mcps/polarsh-alternative.md) | Monetize your open-source projects. Manage products, orders, subscriptions, and invoices directly through your AI agent. |
+| [Polar.sh](../mcps/polarsh.md) | Monetize your open-source projects. Manage products, orders, subscriptions, and invoices directly through your AI agent. |
 | [Polygonscan (Polygon Block Explorer)](../mcps/polygonscan-polygon-block-explorer.md) | Query the Polygon blockchain directly — check MATIC balances, track transactions, and inspect smart contracts via any AI agent. |
 | [Porkbun](../mcps/porkbun.md) | Manage domains and DNS records via Porkbun — list domains, update DNS, check pricing, and retrieve SSL certificates directly from your AI agent. |
 | [Portable.io](../mcps/portableio.md) | Manage your Portable ETL pipelines directly via your AI agent — monitor flows, sync runs, and destination details seamlessly. |

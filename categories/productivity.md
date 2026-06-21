@@ -332,8 +332,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [FreeAgent](../mcps/freeagent.md) | Manage accounting, track invoices, and oversee bank transactions via AI agents with FreeAgent. |
 | [FreshBooks](../mcps/freshbooks.md) | Manage small business accounting via FreshBooks — track clients and invoices, handle payments and billing via AI agents. |
 | [Fulcrum](../mcps/fulcrum.md) | Manage field data collection, track form records, and query datasets via AI agents with Fulcrum. |
-| [Funil de Vendas](../mcps/funil-de-vendas.md) | Visualize your sales funnel, track deal stages, and manage your pipeline with a CRM designed for the Brazilian market. |
 | [Funil de Vendas](../mcps/funil-de-vendas-alternative.md) | Manage CRM opportunities, sales funnels, and activities via Funil de Vendas directly from your AI agent. |
+| [Funil de Vendas](../mcps/funil-de-vendas.md) | Visualize your sales funnel, track deal stages, and manage your pipeline with a CRM designed for the Brazilian market. |
 | [FusionSignage](../mcps/fusionsignage.md) | Control digital signage screens remotely with content scheduling, playlist management, and real-time display monitoring. |
 | [Fusioo](../mcps/fusioo.md) | Manage collaborative workspaces, track records, and oversee custom apps via AI agents with Fusioo. |
 | [Gameball](../mcps/gameball.md) | Turn customers into loyal fans with gamified rewards, referral programs, and engagement challenges that drive repeat purchases. |
@@ -544,8 +544,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [PDF Munk](../mcps/pdf-munk.md) | Automate PDF and image generation via PDF Munk — convert HTML/URL to PDF, merge documents, and compress files directly from any AI agent. |
 | [Pdfcrowd](../mcps/pdfcrowd.md) | Convert HTML, web pages, and documents to PDF or images. Generate invoices and extract text from PDFs directly via AI. |
 | [Pdfcrowd](../mcps/pdfcrowd-alternative.md) | Convert HTML, web pages, and documents to PDF or images. Generate invoices and extract text from PDFs directly via AI. |
-| [PDFShift](../mcps/pdfshift.md) | Convert URLs or HTML to PDF and images — manage templates, track credits, and automate document generation via high-performance API. |
 | [PDFShift](../mcps/pdfshift-alternative.md) | Convert URLs or HTML to PDF and images — manage templates, track credits, and automate document generation via high-performance API. |
+| [PDFShift](../mcps/pdfshift.md) | Convert URLs or HTML to PDF and images — manage templates, track credits, and automate document generation via high-performance API. |
 | [Pedagogical Assessment Prover](../mcps/pedagogical-assessment-prover.md) | A curriculum listed 12 learning objectives. Every one used 'understand' — an unmeasurable verb. Pedagogical Assessment Prover forces Bloom's-aligned objectives, explicit rubrics, scaffolded instruction, and actionable feedback. |
 | [People Management Prover](../mcps/people-management-prover.md) | A hiring plan listed 'culture fit' as the primary criterion. That's not a criterion — that's a bias proxy. People Management Prover forces job-related criteria, adverse impact analysis, and validated assessment methods grounded in I-O psychology. |
 | [Percentage Calculation Engine](../mcps/percentage-calculation-engine.md) | Stop LLMs from miscalculating discounts and interest. Deterministically calculate exact percentages and relative increases. |
