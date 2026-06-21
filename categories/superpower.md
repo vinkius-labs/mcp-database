@@ -6,8 +6,8 @@ Explore the open database of **superpower** Model Context Protocol (MCP) servers
 |-----------|-------------|
 | [ArcGIS](../mcps/arcgis.md) | Automate mapping and spatial analysis via ArcGIS — perform geocoding, route solving, vehicle routing, and calculate origin-destination matrices from any AI agent. |
 | [AutoGen](../mcps/autogen.md) | Orchestrate Microsoft AutoGen multi-agent workflows — manage sessions, agent roles, workflows, and monitor execution logs from any AI agent. |
-| [Bland AI](../mcps/bland-ai.md) | Automate phone calls via Bland AI — dispatch voice agents, analyze call transcripts, and manage inbound phone numbers directly from your AI agent. |
 | [Bland AI](../mcps/bland-ai-1.md) | Automate phone calls via Bland AI — send outbound calls, manage agents, and retrieve transcripts directly from any AI agent. |
+| [Bland AI](../mcps/bland-ai.md) | Automate phone calls via Bland AI — dispatch voice agents, analyze call transcripts, and manage inbound phone numbers directly from your AI agent. |
 | [Bland AI](../mcps/bland-ai-alternative.md) | Deploy AI phone agents that handle inbound and outbound calls with natural conversation for sales and customer support. |
 | [CrewAI Platform](../mcps/crewai-platform.md) | Orchestrate multi-agent workflows via CrewAI — list crews and agents, kickoff autonomous runs, and monitor task execution directly from any AI agent. |
 | [DJI Developer](../mcps/dji-developer.md) | Orchestrate DJI drones and payloads — manage flight logs, monitor device health, and handle firmware updates directly from any AI agent. |

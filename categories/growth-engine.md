@@ -38,8 +38,8 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [Moz (SEO Metrics & Link Research)](../mcps/moz-seo-metrics-link-research.md) | Manage SEO metrics via Moz — audit Domain Authority (DA), analyze backlinks, and track site rankings. |
 | [OneSignal](../mcps/onesignal.md) | Automate push notifications via OneSignal — send messages, manage segments, and track delivery stats directly from any AI agent. |
 | [Pendo](../mcps/pendo.md) | Manage product engagement via Pendo — list guides, track page views, and analyze visitor behavior directly from any AI agent. |
-| [Pinterest Ads](../mcps/pinterest-ads-1.md) | Equip your AI agent with direct access to Pinterest Ads — manage campaigns, track pin performance, and optimize shopping ad spend without opening Pinterest Ads Manager. |
 | [Pinterest Ads](../mcps/pinterest-ads.md) | Manage advertising and pins via Pinterest Ads — list campaigns, track analytics, and audit audiences directly from any AI agent. |
+| [Pinterest Ads](../mcps/pinterest-ads-1.md) | Equip your AI agent with direct access to Pinterest Ads — manage campaigns, track pin performance, and optimize shopping ad spend without opening Pinterest Ads Manager. |
 | [Reddit Ads](../mcps/reddit-ads.md) | Manage your Reddit Ads campaigns — audit accounts, ad groups, and reports via AI. |
 | [Relay Workflow Automation](../mcps/relay-workflow-automation.md) | List, run, and manage workflow automations via Relay API. |
 | [Reply.io](../mcps/replyio.md) | Equip your AI agent with direct access to Reply.io — manage outreach campaigns, track prospect engagement, and automate multi-channel sequences without opening the Reply dashboard. |
