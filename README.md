@@ -2,9 +2,9 @@
 
 Welcome to the **Vinkius Open Data Initiative**. We are opening access to the Vinkius Model Context Protocol (MCP) catalog. This repository provides automatically updated documentation for **5,033 unique Vinkius MCP servers**.
 
-These servers connect AI agents to real-world software platforms and enterprise systems. By publishing this dataset, we allow external AI platforms and developer tools to syndicate our catalog and integrate it directly into their own products.
+These servers give your AI agents the ability to interact with the apps and services you use every day. We published this dataset so you can easily find, configure, and install the exact tools you need for your workflow.
 
-The data syncs straight from the Vinkius platform, ensuring you always have the exact metadata needed to build your own integrations.
+Every listing syncs straight from the Vinkius platform, providing the ready-to-use configuration required to run these tools instantly in Claude, Cursor, or any custom AI agent.
 
 > **Explore the catalog at [vinkius.com](https://vinkius.com) and connect to the Vinkius Cloud at [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect) to run any of these tools instantly in Claude, Cursor, or your custom agents.**
 

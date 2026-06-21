@@ -16,8 +16,8 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Builder](../mcps/builder.md) | Automate Builder.io headless CMS workflows — generate content blocks, update models, and orchestrate visual components directly from any AI agent. |
 | [Builder.io](../mcps/builderio.md) | Manage your visual CMS via Builder.io — track content entries, models, and symbols directly from any AI agent. |
 | [Cal.com](../mcps/calcom-alternative.md) | Let anyone book time with you through customizable scheduling pages that sync with your calendar and eliminate back-and-forth. |
-| [Cal.com](../mcps/calcom.md) | Manage your scheduling via Cal.com — track bookings, manage event types, and coordinate meetings directly from any AI agent. |
 | [Cal.com](../mcps/calcom-1.md) | Control Cal.com infrastructure organically — book events, manipulate schedules, and track availabilities using an AI-native conversational flow. |
+| [Cal.com](../mcps/calcom.md) | Manage your scheduling via Cal.com — track bookings, manage event types, and coordinate meetings directly from any AI agent. |
 | [Checkly](../mcps/checkly.md) | Manage application monitoring and E2E testing via Checkly — track API uptime, trigger checks, and monitor performance directly from any AI agent. |
 | [Chroma (Vector DB)](../mcps/chroma-vector-db.md) | Manage vector embeddings via Chroma — list collections, query embeddings, and audit document counts directly from any AI agent. |
 | [Cilium (eBPF Networking)](../mcps/cilium-ebpf-networking.md) | Manage Cilium eBPF networking — inspect cluster nodes, monitor daemon health, and manage networking endpoints via AI. |
