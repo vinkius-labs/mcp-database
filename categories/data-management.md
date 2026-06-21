@@ -8,8 +8,8 @@ Explore the open database of **data-management** Model Context Protocol (MCP) se
 | [Arcadia Plug](../mcps/arcadia-plug.md) | Access and manage utility data with Arcadia Plug — track accounts, statements, and meters via AI. |
 | [Ayuntamiento de Zaragoza](../mcps/ayuntamiento-de-zaragoza.md) | Access Zaragoza's open data, city services (Open311), collaborative maps, and appointment booking directly through AI. |
 | [BrasilAPI](../mcps/brasilapi.md) | Access Brazilian institutional data — audit CEP, CNPJ, and banks via AI. |
-| [Browse AI](../mcps/browse-ai.md) | Automate web data extraction via Browse AI — run robots, monitor websites, and retrieve captured data directly from any AI agent. |
 | [Browse AI](../mcps/browse-ai-1.md) | Automate web scraping with Browse AI — run extraction robots, monitor page changes, and retrieve bulk data directly from any AI agent. |
+| [Browse AI](../mcps/browse-ai.md) | Automate web data extraction via Browse AI — run robots, monitor websites, and retrieve captured data directly from any AI agent. |
 | [Browse AI](../mcps/browse-ai-alternative.md) | Extract data from any website without code using trained robots that monitor pages and deliver structured results automatically. |
 | [Browserhub](../mcps/browserhub.md) | Automate web scraping via Browserhub — run scrapers, manage jobs, and retrieve extracted data directly from any AI agent. |
 | [Candid (GuideStar)](../mcps/candid-guidestar.md) | Access comprehensive non-profit data via Candid — search organizations, verify charity status, and retrieve detailed financials directly from any AI agent. |
