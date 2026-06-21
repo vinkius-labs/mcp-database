@@ -347,8 +347,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [PCA Dimensionality Engine](../mcps/pca-dimensionality-engine.md) | Perform native Principal Component Analysis to safely reduce high-dimensional datasets without losing critical variance. |
 | [Pelias Geocoder](../mcps/pelias-geocoder.md) | Map geospatial structures via Pelias APIs — convert coordinates, perform reverse geocoding, autocomplete POIs, and retrieve addresses natively by AI logs. |
 | [Perfecto](../mcps/perfecto.md) | Verify software testing ecosystems via Perfecto — search cloud devices, isolate execution artifacts, and execute real-time automated reports seamlessly. |
-| [Permify](../mcps/permify.md) | Manage fine-grained authorization and access control via Permify — write schemas, manage relation tuples, and perform real-time permission checks. |
 | [Permify](../mcps/permify-alternative.md) | Manage fine-grained authorization and access control via Permify — write schemas, manage relation tuples, and perform real-time permission checks. |
+| [Permify](../mcps/permify.md) | Manage fine-grained authorization and access control via Permify — write schemas, manage relation tuples, and perform real-time permission checks. |
 | [Phabricator (Development Platform Conduit API)](../mcps/phabricator-development-platform-conduit-api.md) | Manage tasks, code reviews, and repositories via Phabricator's Conduit API — search Maniphest tasks, edit revisions, and query users directly. |
 | [Phone Validator Engine](../mcps/phone-validator-engine.md) | Stop LLMs from hallucinating phone numbers. Validates and formats numbers to E.164 natively. |
 | [Phrase (Software Localization API)](../mcps/phrase-software-localization-api.md) | Manage software localization projects, locales, and translation keys directly through the Phrase API. |

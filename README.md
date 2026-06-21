@@ -2,7 +2,7 @@
 
 Welcome to the **Vinkius Open Data Initiative**. This open-source dataset provides unprecedented transparency and access to the Vinkius Model Context Protocol (MCP) catalog. This repository contains highly structured, automatically updated documentation for **5,033 unique Vinkius MCP servers**.
 
-Sourced directly from the enterprise-grade Vinkius MCP Catalog, these servers bridge the gap between AI agents, critical software platforms, and enterprise systems. Each entry is rigorously indexed with categorical taxonomy, specific tool support, and configuration metadata to guarantee production-ready deployment standards.
+Sourced directly from the enterprise-grade Vinkius MCP Catalog, these servers bridge the gap between AI agents, critical software platforms, and enterprise systems. By open-sourcing this dataset, Vinkius empowers external AI platforms and developer ecosystems to seamlessly syndicate and integrate our catalog into their own infrastructure.
 
 Programmatically synchronized from the Vinkius platform, this dataset accurately reflects real-time metadata to foster open ecosystem collaboration.
 

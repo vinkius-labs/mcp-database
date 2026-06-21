@@ -251,8 +251,8 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [PostHog](../mcps/posthog.md) | Analyze product data via PostHog — list insights, track persons, inspect feature flags, and monitor experiments directly from any AI agent. |
 | [Precisely](../mcps/precisely.md) | Equip your AI with precise location intelligence — geocode addresses, resolve property risks, calculate local taxes, and analyze demographics globally. |
 | [PredictHQ Event Intelligence](../mcps/predicthq-event-intelligence.md) | Manage global events — audit festivals, sports, and rankings via AI. |
-| [Qualtrics](../mcps/qualtrics.md) | Automate survey management and data collection via Qualtrics — list surveys, manage distributions, and export responses directly from any AI agent. |
 | [Qualtrics](../mcps/qualtrics-1.md) | Automate survey management and data collection via Qualtrics — list surveys, manage distributions, and export responses directly from any AI agent. |
+| [Qualtrics](../mcps/qualtrics.md) | Automate survey management and data collection via Qualtrics — list surveys, manage distributions, and export responses directly from any AI agent. |
 | [QuestionPro](../mcps/questionpro.md) | Deploy AI to analyze survey responses, manage questionnaires, and extract actionable insights instantly. |
 | [QWeather Ocean/Tide API](../mcps/qweather-oceantide-api.md) | Monitor ocean tides — audit water levels and peaks via AI. |
 | [RAWG Video Games Database](../mcps/rawg-video-games-database.md) | Universal video game intelligence — search 500,000+ games, platforms, and ratings via AI. |
