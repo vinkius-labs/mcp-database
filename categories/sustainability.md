@@ -4,6 +4,7 @@ Explore the open database of **sustainability** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Lighting Power Density (LPD) Calculator](../mcps/lighting-power-density-lpd-calculator.md) | Calculate LPD, verify ASHRAE 90.1 compliance, and estimate LED energy savings. |
 | [Tree Planting Offset Calc](../mcps/tree-planting-offset-calc.md) | Calculate the number of trees and land area needed to offset your annual carbon footprint. |
 
 

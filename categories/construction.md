@@ -6,14 +6,27 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 |-----------|-------------|
 | [Accessibility Checker](../mcps/accessibility-checker.md) | Verify building compliance against universal accessibility standards (USA/EU) for corridors, ramps, and restrooms. |
 | [Area Program Calculator](../mcps/area-program-calculator.md) | Calculates minimum required total area for any project based on room functions and structural complexity. |
+| [Concrete Yardage Calculator](../mcps/concrete-yardage-calculator.md) | Calculate concrete volume, 80lb bag requirements, and regional cost estimates for slabs, footings, walls, and columns. |
 | [Construction Cost Estimator](../mcps/construction-cost-estimator.md) | Instantly get a precise cost range estimate for any construction project using area, local region data, and desired quality standard. |
+| [Drywall Quantity Calculator](../mcps/drywall-quantity-calculator.md) | Calculate the exact number of drywall sheets, screws, and tape needed for your construction project. |
+| [Electrical Panel Load Calculator](../mcps/electrical-panel-load-calculator.md) | Calculate residential electrical load requirements based on NEC Article 220 standards to determine panel capacity and conductor sizing. |
 | [Fieldwire](../mcps/fieldwire.md) | Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent. |
+| [Floor Material Calculator](../mcps/floor-material-calculator.md) | Calculate the exact amount of tiles, wood, or porcelain needed for your flooring project. |
 | [Giddyup](../mcps/giddyup.md) | Coordinate field service teams with job dispatching, route optimization, and real-time status updates for mobile workforces. |
 | [Gripr](../mcps/gripr.md) | Manage safety compliance, inspections, and risk assessments for construction and industrial projects with mobile-first tools. |
+| [HVAC Load Calculator (Manual J)](../mcps/hvac-load-calculator-manual-j.md) | Calculate heating and cooling loads in BTU/h and Tons using simplified Manual J standards. |
+| [Insulation R-Value Calculator](../mcps/insulation-r-value-calculator.md) | Calculate minimum insulation R-values, required thickness, and estimated costs based on IECC climate zones. |
 | [JobNimbus](../mcps/jobnimbus.md) | Manage contacts, jobs, and tasks via JobNimbus CRM API. |
+| [Lumber Quantity Calculator](../mcps/lumber-quantity-calculator.md) | Estimate board feet of lumber needed for wall, floor, and roof framing. |
+| [Masonry Quantity Calculator](../mcps/masonry-quantity-calculator.md) | Calculate the number of masonry units, mortar volume, and required cement and sand for wall construction. |
+| [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate the precise volume of paint needed for any project by accounting for surface area, texture, and coats. |
+| [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
 | [Procore](../mcps/procore.md) | Manage construction projects via Procore — track RFIs, submittals, punch lists, daily logs, and drawings from any AI agent. |
+| [Roofing Squares Calculator](../mcps/roofing-squares-calculator.md) | Calculate roofing squares and material requirements based on roof pitch, area, and complexity. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Thermal Mass Estimator](../mcps/thermal-mass-estimator.md) | Calculate thermal lag, amplitude damping, and U-value for wall structures based on material properties. |
+| [Water Heater Sizing Calculator](../mcps/water-heater-sizing-calculator.md) | Calculate required First Hour Rating (FHR), tank capacity, and efficiency benchmarks for water heaters based on occupancy and fuel type. |
+| [Waterproofing Area Calculator](../mcps/waterproofing-area-calculator.md) | Calculate material quantity, consumption, and estimated costs for waterproofing projects across various environments. |
 
 
 ---

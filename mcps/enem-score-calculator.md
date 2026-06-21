@@ -7,16 +7,16 @@
 
 **Category:** [education](../categories/education.md)
 
-Calculate ENEM performance metrics and simulate university admission possibilities based on historical cutoff scores.
+Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility.
 
 ## Description
-This MCP server provides specialized tools to quantify student performance in the ENEM exam. Use `calculate_area_averages` to determine the arithmetic mean of objective exam areas. You can also use `calculate_weighted_score` to compute a final score based on specific subject weights, and `simulate_admission_possity` to compare your results against historical cutoff scores for various courses and universities.
+The ENEM Score Calculator is a specialized engine designed to transform raw exam performance into scaled scores using a simplified Item Response Theory (IRT) model. By providing the number of correct answers in Languages, Mathematics, Natural Sciences, and Human Sciences, along with your essay score, you can use `calculate_area_scores` to obtain subject-specific results. The toolset also allows for computing an overall aggregate average via `calculate_overall_average` and performing admission simulations using `simulate_admission_cutof_match` against historical university cutoff data.
 
 
 ## Available Tools (3)
-- **simulate_admission_possibility**: Compare a student's score against historical data to predict admission success
-- **calculate_area_averages**: Calculate the arithmetic mean of the four objective exam areas
-- **calculate_weighted_score**: Calculate the final performance score based on custom importance weights
+- **simulate_admission_cutoff_match**: Determines if a student's average meets the historical requirement for a specific course/university
+- **calculate_area_scores**: Transforms raw correct answers into scaled subject scores using simplified IRT logic
+- **calculate_overall_average**: Computes the final aggregate score from individual component scores
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides specialized tools to quantify student performance in th
 Here are some examples of how you can interact with the **ENEM Score Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate my average for the four objective areas with these scores: Languages 600, Math 700, Science 550, Humanities 650."
+> "Calculate my ENEM scores: 35 correct in Languages, 30 in Math, 25 in Natural Sciences, 30 in Human Sciences, and an essay score of 900."
 
 **🤖 AI Agent:**
-> The `calculate_area_averages` tool would return an average score of 625.0.
+> Your scaled scores are: Languages: 620.5, Mathematics: 710.2, Natural Sciences: 580.8, Human Sciences: 640.3, and Essay: 900.0.
 
 ---
 
 **👤 You:**
-> "Will I pass Medicine at University X if my weighted score is 800 in 2023?"
+> "What is my final average if my component scores are: languagesScore: 600, mathScore: 700, naturalSciencesScore: 550, humanSciencesScore: 650, and essayScore: 800?"
 
 **🤖 AI Agent:**
-> You can use `simulate_admission_possibility` with the course and university IDs to check this against historical records.
+> Your final aggregate average score is 650.0.
 
 ---
 
 **👤 You:**
-> "Calculate a weighted score: Languages 600 (weight 1), Math 700 (weight 2), Science 550 (weight 1), Humanities 650 (weight 1), and Essay 800 (weight 3)."
+> "With an average of 750, can I get into Medicine at USP?"
 
 **🤖 AI Agent:**
-> The `calculate_weighted_score` tool will process these inputs to return your final weighted performance score.
+> No, your score is 45.0 points below the historical cutoff for Medicine at USP.
 
 
 ## ❓ FAQ
 
-**Q: What is the purpose of this tool?**
-It allows students to calculate their ENEM averages and simulate whether they would have met the cutoff scores for specific university courses in previous years.
+**Q: How does the scoring calculation work?**
+The system uses a simplified Item Response Theory (IRT) model. It takes your raw correct answers and applies a difficulty constant unique to each subject area to produce a scaled score between 0 and 1000.
 
-**Q: How do I use the weighted score feature?**
-Use the `calculate_weighted_score` tool by providing your subject scores, their corresponding weights, and your essay score as JSON objects.
+**Q: Can I simulate admission for specific universities?**
+Yes. By using the `simulate_admission_cutoff_match` tool, you can compare your calculated average against historical cutoff scores for various universities and courses.
 
-**Q: Where does the historical data come from?**
-The tool uses hardcoded historical cutoff scores for specific universities and courses within the server's internal data catalog.
+**Q: What inputs are required for the area scores tool?**
+You need to provide the number of correct answers for Languages, Mathematics, Natural Sciences, and Human Sciences, plus your essay score.
 
 
 ## Installation & Usage

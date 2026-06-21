@@ -7,7 +7,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Chess.com](../mcps/chesscom.md) | Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent. |
 | [Chess.com Global Intelligence](../mcps/chesscom-global-intelligence.md) | The definitive server for Chess.com — track player ratings, historical games, and daily puzzles via AI. |
 | [Chinese Zodiac Calculator](../mcps/chinese-zodiac-calculator.md) | Discover your Chinese zodiac animal, element, and astrological compatibility. |
-| [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM performance metrics and simulate university admission possibilities based on historical cutoff scores. |
+| [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
 | [Global Scholarship Deadline Tracker](../mcps/global-scholarship-deadline-tracker.md) | Instantly calculate urgency and generate comprehensive document checklists for global scholarships (FUVEST, Erasmus+, DAAD). |
 | [GPA Calculator](../mcps/gpa-calculator.md) | Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honors classification. |
 | [GPA Converter](../mcps/gpa-converter.md) | Convert academic grades between different scales and calculate weighted averages. |

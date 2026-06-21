@@ -5,6 +5,9 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Combat Balance Checker](../mcps/combat-balance-checker.md) | Quantify combat outcomes and attribute influence through large-scale simulations. |
+| [Crafting Cost Calculator](../mcps/crafting-cost-calculator.md) | Analyze production costs, profit margins, and optimal ingredient sourcing strategies. |
+| [Drop Rate Calculator](../mcps/drop-rate-calculator.md) | Calculate item drop probabilities, pity mechanics, and expected resource usage for loot-based systems. |
+| [Gacha Pity Simulator](../mcps/gacha-pity-simulator.md) | Analyze gacha mechanics including base rates, soft pity ramps, and hard pity guarantees to predict player costs. |
 | [Game Economy Inflation Calculator](../mcps/game-economy-inflation-calculator.md) | Monitor, forecast, and stabilize game currency inflation by analyzing gold sinks and faucets. |
 | [Player Spending LTV Calculator](../mcps/player-spending-ltv-calculator.md) | Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact. |
 

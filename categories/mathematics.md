@@ -7,6 +7,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
+| [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
 
 
 ---

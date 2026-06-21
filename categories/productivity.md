@@ -21,6 +21,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Accessibility Prover](../mcps/accessibility-prover.md) | Accessibility Prover is a pre-build validation system that forces WCAG 2.2 AA compliance before code is written. It audits semantic HTML, keyboard navigation, contrast ratios (4.5:1 minimum), screen reader compatibility, and motion safety across 5 structured Decision Pivots. Unlike runtime scanners, it catches div soup, missing focus traps, and inaccessible animations during the design phase — before they reach production and before they violate the European Accessibility Act (EAA 2025). |
 | [Accounting & Audit Prover](../mcps/accounting-audit-prover.md) | Forces AI agents to validate accounting arguments against explicit US standards (FASB ASC, PCAOB), demanding real materiality thresholds, Risk of Material Misstatement (ROMM) assessments, and grounded evidence instead of vague 'GAAP' appeals. |
 | [AccuWeather](../mcps/accuweather.md) | Enterprise-grade weather intelligence — current conditions, forecasts, alarms, and activity indices via AI. |
+| [Active Recall Session Planner](../mcps/active-recall-session-planner.md) | Transform studied topics into an optimized active recall practice schedule using Bloom's Taxonomy. |
 | [Activepieces](../mcps/activepieces.md) | Automate workflows with Activepieces — manage flows, monitor executions, and handle app connections directly from your AI agent. |
 | [Acuity Scheduling](../mcps/acuity-scheduling-alternative.md) | Manage your Acuity appointments and calendars — audit availability and bookings via AI. |
 | [Acuity Scheduling](../mcps/acuity-scheduling.md) | Manage appointments, availability, calendars, classes, and products for your Acuity Scheduling-powered business through natural conversation. |
@@ -299,6 +300,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Expensya](../mcps/expensya.md) | Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows. |
 | [Factorial](../mcps/factorial.md) | Manage HR operations via Factorial — list employees and teams, track leave requests, monitor shifts and payslips, and handle company documents directly from any AI agent. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
+| [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
 | [Fathom](../mcps/fathom.md) | Manage AI meeting notes via Fathom — list and search meetings, retrieve transcripts and summaries, and track action items directly from any AI agent. |
 | [Fathom Analytics](../mcps/fathom-analytics.md) | Privacy-first website analytics via Fathom — list sites, monitor real-time visitors, and aggregate pageviews directly through your AI agent. |
 | [FatSecret](../mcps/fatsecret.md) | Access millions of food items with calorie tracking, macro data, and serving sizes from the FatSecret platform used by 30M+ users worldwide. |
@@ -353,6 +355,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [GitScrum Time Tracking](../mcps/gitscrum-time-tracking.md) | Track time and budgets via GitScrum — start timers, log hours, analyze productivity, monitor burn-down, and review standup summaries directly from any AI agent. |
 | [Gladia (Speech AI)](../mcps/gladia-speech-ai.md) | Transcribe, translate, and analyze audio with Gladia's high-speed Speech AI — support for pre-recorded files and live streaming. |
 | [Glean](../mcps/glean-alternative.md) | Search across all your company apps and docs with AI that understands your organization and surfaces the right answer instantly. |
+| [GMAT Score Estimator](../mcps/gmat-score-estimator.md) | Calculate GMAT Focus Edition total scores, percentile rankings, and MBA competitiveness. |
 | [Gmelius](../mcps/gmelius.md) | Turn Gmail into a collaborative workspace with shared inboxes, email delegation, and workflow automation for teams. |
 | [GoatCounter](../mcps/goatcounter.md) | Privacy-friendly web analytics — track pageviews, analyze visitor stats, and manage your sites directly through any AI agent. |
 | [Goody](../mcps/goody.md) | Automate corporate gifting — browse products, send gifts, and track orders effortlessly. |
@@ -535,6 +538,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [OPM Operating Status](../mcps/opm-operating-status.md) | Get real-time Washington, DC federal government operating status and dismissal procedures directly from the U.S. Office of Personnel Management. |
 | [OPML Podcast & RSS Parser](../mcps/opml-podcast-rss-parser.md) | Turn standard OPML export files from your podcast app or RSS reader into clean JSON data. Let your AI analyze your subscriptions and become your personal content curator. |
 | [Orderry](../mcps/orderry.md) | Manage your repair shop, orders, and inventory with Orderry and AI agents. |
+| [Overtime Calculator](../mcps/overtime-calculator.md) | Calculate overtime pay, night shift premiums, and time bank balances. |
 | [Ovulation and Fertile Window Calculator](../mcps/ovulation-and-fertile-window-calculator.md) | Predict ovulation dates, fertile windows, and peak conception days based on your menstrual cycle. |
 | [PagePixels](../mcps/pagepixels.md) | Capture website screenshots and generate visual previews programmatically with an API that handles rendering at any resolution. |
 | [PaperQuotes](../mcps/paperquotes.md) | Access a vast library of quotes, search by author or tags, and get the quote of the day directly in your AI agent. |
@@ -609,6 +613,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Sally](../mcps/sally.md) | Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat. |
 | [Sansan](../mcps/sansan.md) | Digitize and manage business cards via AI — browse contacts, verify details, and explore your company's network effortlessly. |
 | [Sapling (Kallidus)](../mcps/sapling-kallidus.md) | Manage employee onboarding, data, and tasks via Sapling API. |
+| [SAT Score Calculator](../mcps/sat-score-calculator.md) | Calculate Digital SAT 2024 scores, percentile rankings, and US university competitiveness. |
 | [SaveDay](../mcps/saveday.md) | Capture, organize, and summarize content from URLs, text, and images directly into your SaveDay knowledge base. |
 | [SavvyCal](../mcps/savvycal.md) | Manage your SavvyCal scheduling links, check real-time availability, and coordinate automated bookings via AI. |
 | [ScreenshotOne](../mcps/screenshotone.md) | Capture website screenshots — audit visual content and generate PDFs via AI. |
@@ -618,6 +623,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SemVer Version Manager](../mcps/semver-version-manager.md) | Stop LLMs from guessing software versions. Deterministically evaluate semantic version bounds, compatibilities, and sort releases perfectly. |
 | [Sensors Data](../mcps/sensors-data.md) | Orchestrate Sensors Data analytics — manage events, query user profiles, and monitor data ingestion directly from any AI agent. |
 | [SEO Authority Prover](../mcps/seo-authority-prover.md) | AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority. |
+| [Severance Pay Calculator](../mcps/severance-pay-calculator.md) | Calculate precise employee termination payouts, including salary balances and statutory penalties. |
 | [ShadowBot](../mcps/shadowbot.md) | Orchestrate ShadowBot RPA — manage automation robots, handle execution tasks, and monitor bot performance directly from any AI agent. |
 | [Shansong Swift Delivery](../mcps/shansong-swift-delivery.md) | Bring Shansong's fast P2P Delivery Network into your LLM. Estimate logistics routing, dispatch riders, and track locations. |
 | [Shimo Docs](../mcps/shimo-docs.md) | Collaborative office suite and document management platform — manage Word, Excel, and PPT via AI. |
@@ -643,6 +649,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SpotHero Parking](../mcps/spothero-parking.md) | Search, compare, and book parking spots in 400+ cities via SpotHero API. |
 | [SproutVideo](../mcps/sproutvideo.md) | Automate video hosting and management via SproutVideo — manage videos, playlists, and analytics directly from any AI agent. |
 | [Stannp](../mcps/stannp.md) | Automate direct mail and physical letters via Stannp — manage letters, postcards, and campaigns directly from any AI agent. |
+| [Statute of Limitations Calculator](../mcps/statute-of-limitations-calculator.md) | Determine legal expiration dates for various claims by applying statutory periods. |
 | [Steam Performance & Scouting Intelligence](../mcps/steam-performance-scouting-intelligence.md) | The definitive server for professional Steam scouting — analyze player performance, achievements, and technical game stats via AI. |
 | [Stirling PDF](../mcps/stirling-pdf.md) | Manage PDF documents via Stirling PDF — add watermarks, convert images to PDF, sign documents with certificates, and monitor server metrics directly. |
 | [Strava](../mcps/strava-alternative.md) | Connect Strava to your AI agent to track activities, analyze athlete performance stats, and manage segments or routes directly. |
@@ -726,6 +733,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Urlbox](../mcps/urlbox.md) | Render website screenshots — audit high-fidelity visual content via AI. |
 | [US Filing Deadline Calculator](../mcps/us-filing-deadline-calculator.md) | Calculate US federal court filing deadlines with automatic weekend and holiday adjustments. |
 | [Uselessfacts](../mcps/uselessfacts.md) | Access a vast database of quirky, useless facts to entertain, break the ice, or learn something new every day. |
+| [Vacation Pay Calculator](../mcps/vacation-pay-calculator.md) | Calculate vacation pay, constitutional bonuses, cash allowances, and tax withholdings. |
 | [Vadoo AI](../mcps/vadoo-ai.md) | Generate videos, captions, and podcasts automatically using AI. |
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser-extended.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |

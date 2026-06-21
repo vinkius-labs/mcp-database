@@ -26,6 +26,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
 | [EBITDA Calculator](../mcps/ebitda-calculator.md) | Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark comparisons. |
+| [EBITDA Multiple Valuator](../mcps/ebitda-multiple-valuator.md) | Calculate Enterprise and Equity Value using sector-specific EBITDA multiples. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
 | [EU Employment Termination Calculator](../mcps/eu-employment-termination-calculator.md) | Estimate statutory severance pay for Germany, France, Spain, and Portugal. |
 | [EU GDPR Fine Estimator](../mcps/eu-gdpr-fine-estimator.md) | Estimate potential GDPR administrative fines based on violation type and annual turnover. |
@@ -49,10 +50,13 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Indemnification Exposure Calculator](../mcps/indemnification-exposure-calculator.md) | Calculate maximum financial exposure in indemnity clauses by assessing contractual caps, carve-outs, and jurisdiction. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
 | [Inventory Turnover Calculator](../mcps/inventory-turnover-calculator.md) | Calculate inventory turnover ratio, DSI, and compare performance against industry benchmarks. |
+| [IPO Readiness Scorer](../mcps/ipo-readiness-scorer.md) | Evaluate company suitability for IPO based on financial and structural benchmarks. |
 | [ISS Calculator](../mcps/iss-calculator.md) | Calculate Service Tax (ISS) based on municipality rates and service types. |
 | [Land Rent Viability Calculator](../mcps/land-rent-viability-calculator.md) | Calculate the economic viability of agricultural land leasing. |
 | [LED Upgrade Calculator](../mcps/led-upgrade-calculator.md) | Calculate energy, financial, and CO2 savings when switching to LED bulbs. |
+| [Liquidation Preference Calculator](../mcps/liquidation-preference-calculator.md) | Model complex equity distribution and liquidation preference scenarios during company exits. |
 | [LTV:CAC Calculator](../mcps/ltvcac-calculator.md) | Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio. |
+| [M&A Synergy Calculator](../mcps/ma-synergy-calculator.md) | Financial modeling tool to estimate NPV and break-even period for M&A deals by calculating revenue, cost, and integration synergies. |
 | [Machinery Cost Calculator](../mcps/machinery-cost-calculator.md) | Calculate hourly, per-hectare, and total operational costs for agricultural machinery. |
 | [Magic Number Calculator](../mcps/magic-number-calculator.md) | Calculate and analyze Go-To-Market efficiency using the Magic Number ratio. |
 | [Media Mix Efficiency Calculator](../mcps/media-mix-efficiency-calculator.md) | Calculate channel efficiency (CPL, CPA, ROAS) and get a data-driven budget reallocation plan to maximize conversions. |
@@ -69,6 +73,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
 | [R&D Tax Credit Calculator](../mcps/rd-tax-credit-calculator.md) | Calculate US R&D tax credits using Regular and ASC methodologies. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
+| [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
 | [ROAS Calculator](../mcps/roas-calculator.md) | Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
@@ -81,9 +86,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [SOX Compliance Cost Estimator](../mcps/sox-compliance-cost-estimator.md) | Estimate the annual costs of Sarbanes-Oxley (SOX) compliance for pre-IPO companies. |
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
+| [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
 | [Supply Chain Cost Calculator](../mcps/supply-chain-cost-calculator.md) | Calculate SCM cost ratio, category breakdown, and industry benchmarks. |
+| [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
 | [Tax Regime Comparator](../mcps/tax-regime-comparator.md) | Simulate and compare Brazilian tax regimes to find the most cost-effective structure for your business. |
+| [Thirteenth Salary Calculator](../mcps/thirteenth-salary-calculator.md) | Calculate gross and net 13th-month salary installments, including proportional earnings and tax deductions. |
 | [Tip and Split Calculator](../mcps/tip-and-split-calculator.md) | Calculate tip amounts, split bills among groups, and round totals for easy payment. |
 | [Transfer Pricing Calculator](../mcps/transfer-pricing-calculator.md) | Verify arm's length compliance for related-party transactions using CUP, Cost Plus, and Resale Minus methods. |
 | [Treasury Return Calculator](../mcps/treasury-return-calculator.md) | Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK Gilts, and German Bunds. |

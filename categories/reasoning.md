@@ -4,7 +4,6 @@ Explore the open database of **reasoning** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Context Integrity Prover](../mcps/context-integrity-prover.md) | AI forgets the original goal and hallucinates scope. This engine is a 6-pivot trap that forces the LLM to prove it hasn't drifted from the user's explicit constraints. |
 | [First Principles Prover](../mcps/first-principles-prover.md) | LLMs reason by analogy, copying industry norms. This engine is a 6-pivot cognitive trap that forces the agent to discard jargon and derive original solutions exclusively from physical, mathematical, or logical axioms. |
 | [Inversion Thinking Prover](../mcps/inversion-thinking-prover.md) | AI agents are sycophantic. They agree with your bad ideas. This engine forces a 6-pivot cognitive trap: agents must destroy their own hypotheses, define measurable kill criteria, and simulate post-mortem failures before executing code. |
 | [Opportunity Cost Prover](../mcps/opportunity-cost-prover.md) | AI agents operate in a vacuum. This engine cures 'tunnel vision' by forcing the LLM into a 6-pivot trap to map direct costs, quantify lost opportunities from discarded alternatives, identify irreversible tradeoffs, and prove the math. |

@@ -4,6 +4,7 @@ Explore the open database of **product-management** Model Context Protocol (MCP)
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Cohort Retention Analytics](../mcps/cohort-retention-analytics.md) | Analyze cohort retention curves, average user lifetime, and benchmark performance against industry standards. |
 | [Retention Curve Analyzer](../mcps/retention-curve-analyzer.md) | Analyze cohort retention curves to identify stability versus churn and compare against industry benchmarks. |
 
 

@@ -1,72 +1,75 @@
-# Context Integrity Prover MCP Server
+# Count Words for Agents MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context-integrity-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
 
-**Category:** [reasoning](../categories/reasoning.md)
+**Category:** [automation](../categories/automation.md)
 
-AI forgets the original goal and hallucinates scope. This engine is a 6-pivot trap that forces the LLM to prove it hasn't drifted from the user's explicit constraints.
+Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits.
 
 ## Description
-LLMs suffer from context drift. You ask for a button, and 10 prompts later they are refactoring your database. The Context Integrity Prover is a cognitive trap designed to kill scope creep.
+**Goal:** Provide exact text measurement to prevent agent hallucinations regarding length limits.
 
-### The Semantic Trap
+**Problem:** LLMs cannot natively count characters or words accurately. When given constraints like 'write a 280-character tweet' or 'summarize in under 500 words', agents often fail or hallucinate the counts. This breaks downstream automation workflows.
 
-Before executing a plan, the agent must pass a strict 6-pivot validation:
+**Mechanism:** This MCP equips agents with deterministic validation tools. It calculates exact metrics for words, characters (with/without spaces), sentences, and paragraphs. Furthermore, passing the `max` parameter enables server-side threshold validation, instantly returning boolean `pass` metrics and remaining capacity.
 
-1. **originalConstraintsMapped** — Re-state the exact constraints given at prompt 1.
-2. **scopeBoundariesMaintained** — Define exactly what is NOT being built.
-3. **outOfScopeRejected** — Explicitly reject a tangential idea.
-4. **contextDriftPrevented** — Prove the current step aligns with the original goal.
-5. **assumptionsValidated** — Ensure no hallucinated constraints were added.
-6. **solutionMatchesOriginalIntent** — Final parity check.
+**Advantage:** Agents can self-correct *before* outputting final responses. By validating their drafts against hard constraints, you guarantee compliance for SEO descriptions, social media APIs, and strict formatting guidelines.
 
 
 ## Available Tools (1)
-- **validate_context_integrity**: The most dangerous failure mode in multi-step reasoning is not being wrong — it is being right about the wrong problem. Each step may look reasonable, but cumulative drift can take you miles from the original request. You must: (1) MAP ORIGINAL CONSTRAINTS — quote the user's exact words. What did they ask for? What did they NOT ask for? What boundaries did they set? What is the precise deliverable? Do not paraphrase — quote. Paraphrasing introduces interpretation drift, (2) MAINTAIN SCOPE BOUNDARIES — define what you are NOT doing. Every task has a boundary. If you cannot name what is out of scope, you have not defined scope. List 3+ things that are explicitly out of scope for this task, (3) REJECT OUT OF SCOPE — explicitly identify and reject at least one tangential task that could be mistaken as in-scope. "While we are at it" and "it would also be nice to" are scope creep. Name the tangential task and state WHY it is out of scope, (4) PREVENT CONTEXT DRIFT — compare your current direction with the original request. Are you still solving the same problem? Has the solution evolved beyond what was asked? Check each step: does it serve the original intent, or has it become self-referential? (5) VALIDATE ASSUMPTIONS — list every assumption you are making that the user did NOT explicitly state. For each: is this assumption necessary? Did you invent a constraint? Could you ask instead of assuming? Hallucinated constraints are invisible — you believe them because you created them, (6) MATCH SOLUTION TO INTENT — prove the solution you are building matches the problem the user stated. Not the problem you find interesting. Not the problem you know how to solve. The problem they asked about. If rejected, you have drifted from the original intent. Re-read the user's request and start from their words.
+- **text**: Use this strictly to measure character limits or string lengths without assuming any specific platform constraints.
 
-Structured reflection tool for context integrity validation during multi-step execution. Forces the agent to prove the original user intent is preserved across every step — no scope creep, no context drift, no hallucinated constraints, no gold-plating. Catches Constraint Neglect (losing the original requirements mid-execution — the user said X, you are now doing Y), Scope Creep (adding unrequested features or analyses — "while we are at it" is the death of focus), Failure to Reject (accepting tangential tasks instead of explicitly declining out-of-scope work), Context Drift (progressive deviation from the original goal — each step looks reasonable but the cumulative direction is wrong), Hallucinated Constraints (inventing restrictions the user never stated — "we cannot do X" when nobody said that), and Intent Mismatch (the solution addresses a problem the user did not have). Call once before executing a multi-step plan, and again when you suspect drift
+Measures the exact character length of a text string, with or without spaces
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Context Integrity Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Count Words for Agents** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Constraints: Build button. Scope: All UI. Reject: none. Drift: none."
+> "Can you help me write an essay on climate change? It needs to be exactly between 400 and 500 words."
 
 **🤖 AI Agent:**
-> Verdict: SCOPE_CREEP_DETECTED. The constraint was a single button, but the scope expanded to all UI.
+> Here is your essay on climate change. I have verified its length: it is exactly 450 words, comfortably within your 400-500 word limit.
 
 ---
 
 **👤 You:**
-> "Constraints: Fix script. Scope: Script only. Reject: none."
+> "I need to post this update on Twitter/X, but I'm not sure if it fits. Can you check?"
 
 **🤖 AI Agent:**
-> Verdict: FAILURE_TO_REJECT. You must explicitly state what you are ignoring or rejecting to prove boundary awareness.
+> Your text contains 250 characters (including spaces). This is within the 280-character limit, so you are good to post it on Twitter/X!
 
 ---
 
 **👤 You:**
-> "Constraints: Red button. Scope: Button component only. Reject: I will ignore the nav bar. Drift: Maintained focus on button. Assump: No extra styles needed. Intent: Render red button."
+> "Write an introductory paragraph for my new blog. It must be exactly 3 sentences long."
 
 **🤖 AI Agent:**
-> Verdict: CONTEXT_INTEGRITY_PROVEN. Boundaries locked, scope creep rejected.
+> Here is your introduction. I've structured it to be concise and impactful, and verified that it contains exactly 3 sentences as requested.
+
+---
+
+**👤 You:**
+> "How long would it take the average person to read my 8-page newsletter draft?"
+
+**🤖 AI Agent:**
+> Based on an average reading speed of 200 words per minute, your newsletter draft of 3,150 words will take approximately 15 minutes and 45 seconds to read.
 
 
 ## ❓ FAQ
 
-**Q: Why force rejection of scope?**
-LLMs are sycophants. They always say yes to new suggestions. Forcing them to explicitly state what they are rejecting proves they understand where the boundaries are.
+**Q: Can it count characters with and without spaces?**
+Yes, the character counting tool provides an `includeSpaces` boolean option to include or exclude spaces.
 
-**Q: What is a hallucinated constraint?**
-When an AI invents a rule (like 'we must use TypeScript') that the user never actually asked for. It adds artificial complexity and delays execution.
+**Q: How does limit validation work for agents?**
+Agents pass an optional 'max' parameter. The server checks the count against the limit and returns a 'pass' true/false status, along with the percentage filled and characters/words remaining.
 
-**Q: How do you prove intent matches?**
-By doing a parity check between the user's initial prompt and the final deliverable, ensuring no features were skipped and no extra work was injected.
+**Q: Can it calculate the reading time of an article?**
+Yes, the estimate_reading_time tool calculates the duration based on a configurable words-per-minute baseline.
 
 
 ## Installation & Usage
@@ -83,7 +86,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Context Integrity Prover** under Connectors.
+5. Click the **+** button in any chat and enable **Count Words for Agents** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -91,7 +94,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `context-integrity-prover` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Context Integrity Prover** tools.
+4. Click **Save** — Cursor will connect and list all **Count Words for Agents** tools.
 
 **Configuration:**
 ```json
