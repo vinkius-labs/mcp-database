@@ -27,8 +27,8 @@ Explore the open database of **customer-relationship-management** Model Context 
 | [Ordergroove](../mcps/ordergroove.md) | Subscription management for eCommerce — manage recurring orders and customer loyalty via Ordergroove. |
 | [Outreach](../mcps/outreach.md) | Equip your AI agent with direct access to Outreach — manage prospects, track sequences, and analyze sales engagement without opening the Outreach platform. |
 | [Pabbly Email Marketing](../mcps/pabbly-email-marketing.md) | Manage email campaigns and subscribers via Pabbly — list campaigns, track subscribers, and monitor automations directly from any AI agent. |
-| [Phorest](../mcps/phorest-alternative.md) | Manage salon and spa operations—clients, appointments, and staff schedules—directly through your AI agent. |
 | [Phorest](../mcps/phorest.md) | Manage salon and spa operations—clients, appointments, and staff schedules—directly through your AI agent. |
+| [Phorest](../mcps/phorest-alternative.md) | Manage salon and spa operations—clients, appointments, and staff schedules—directly through your AI agent. |
 | [Pipedrive Contacts](../mcps/pipedrive-contacts.md) | Search, create, and manage Pipedrive persons and organizations — full contact lifecycle management through natural conversation. |
 | [Scoro](../mcps/scoro.md) | Bring your Scoro end-to-end work management platform into your AI workflows — query projects, invoices, and time logs seamlessly. |
 | [sevDesk](../mcps/sevdesk.md) | Empower your AI with direct read and write access to sevDesk to autonomously manage invoices, CRM contacts, sales orders, vouchers, and accounting records. |
