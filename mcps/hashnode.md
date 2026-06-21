@@ -1,12 +1,14 @@
 # Hashnode MCP Server
 
-Manage your Hashnode blog directly from your AI agent — fetch user profiles, read publication posts, and publish or update content.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hashnode)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hashnode)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hashnode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hashnode-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your Hashnode blog directly from your AI agent — fetch user profiles, read publication posts, and publish or update content.
 
 ## Description
 Connect your **Hashnode** account to any AI agent to streamline your technical writing and blogging workflow. This MCP server allows you to interact with the Hashnode GraphQL API through natural language.
@@ -40,6 +42,33 @@ Connect your **Hashnode** account to any AI agent to streamline your technical w
 - **update_post**: Modify an existing post
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hashnode** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get details for Hashnode user 'johndoe'."
+
+**🤖 AI Agent:**
+> I've retrieved the profile for 'johndoe'. They are a Technical Writer with 1,200 followers and their blog is located at johndoe.hashnode.dev.
+
+---
+
+**👤 You:**
+> "List all posts from the publication 'blog.hashnode.com'."
+
+**🤖 AI Agent:**
+> I found 10 recent posts on 'blog.hashnode.com'. The latest titles include 'Announcing New Features' and 'Markdown Guide for Developers'. Would you like to read the content of any of these?
+
+---
+
+**👤 You:**
+> "Create a new post in publication '642f...' titled 'My MCP Guide' with content '# Introduction...'."
+
+**🤖 AI Agent:**
+> Successfully published your post 'My MCP Guide'! You can view it at your publication URL. The post ID is 65a2b...
+
+
 ## Installation & Usage
 
 To install and use the **Hashnode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Hashnode** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

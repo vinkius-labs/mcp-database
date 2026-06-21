@@ -1,12 +1,14 @@
 # Matillion (Cloud Data Integration & ELT) MCP Server
 
-Manage data pipelines via Matillion — audit ETL workflows, track execution statuses, and monitor cloud environments.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/matillion-cloud-data-integration-elt)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matillion-cloud-data-integration-elt)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matillion-cloud-data-integration-elt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matillion-cloud-data-integration-elt-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 6
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Manage data pipelines via Matillion — audit ETL workflows, track execution statuses, and monitor cloud environments.
 
 ## Description
 Connect your **Matillion Data Productivity Cloud** account to any AI agent and take full control of your enterprise ELT orchestration and data integration lifecycle through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Matillion Data Productivity Cloud** account to any AI agent and t
 - **list_projects**: List all projects
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Matillion (Cloud Data Integration & ELT)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Matillion ETL pipelines in my account"
+
+**🤖 AI Agent:**
+> I've retrieved your ETL pipelines from the Data Productivity Cloud. Highlights include 'Sales-Data-Sync' (ID: pipe-123), 'Customer-360-View' (ID: pipe-456), and 'Finance-Consolidation' (ID: pipe-789). Would you like to see the structural components for the sales sync?
+
+---
+
+**👤 You:**
+> "Show me the last 5 pipeline executions and their status"
+
+**🤖 AI Agent:**
+> Retrieving recent executions… I've identified the 5 latest runs: 3 succeeded (including 'Inventory-Load'), 1 is currently 'Running' ('Marketing-Attribution'), and 1 'Failed' ('Web-Log-Ingestion'). Would you like me to investigate the error for the failed run?
+
+---
+
+**👤 You:**
+> "What cloud environments are configured in my Matillion instance?"
+
+**🤖 AI Agent:**
+> I've identified 3 destination environments: 'Snowflake-Prod' (Targeting: SF_WH_01), 'Redshift-Staging' (Targeting: AWS_NODE_ALPHA), and 'BigQuery-Analytics' (Targeting: GCP_DATASET_V1). I can provide the project mappings for these environments if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Matillion (Cloud Data Integration & ELT)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Matillion (Cloud Data Integration & ELT)** MCP server i
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Bullhorn MCP Server
 
-Manage recruitment workflows and ATS data via Bullhorn — retrieve, create, update, and delete entities, notes, and associations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bullhorn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bullhorn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bullhorn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bullhorn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 14
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage recruitment workflows and ATS data via Bullhorn — retrieve, create, update, and delete entities, notes, and associations directly from any AI agent.
 
 ## Description
 Connect your **Bullhorn** ATS and CRM account to any AI agent to manage candidates, job orders, client contacts, and corporate notes through natural conversation.
@@ -66,6 +68,38 @@ Update an existing Bullhorn entity
 Upsert records into Bullhorn Data Hub
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bullhorn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the candidate with ID 12345 showing their first name, last name, and email."
+
+**🤖 AI Agent:**
+> I've retrieved the candidate details using `get_entity`:
+- **First Name**: John
+- **Last Name**: Doe
+- **Email**: john.doe@example.com
+
+---
+
+**👤 You:**
+> "Get all corporate notes for ClientCorporation ID 98765."
+
+**🤖 AI Agent:**
+> Using `get_all_corp_notes`, I found 2 notes for ClientCorporation 98765:
+1. 'Discussed contract renewal terms.' (Action: Client Call)
+2. 'Follow-up scheduled for next Tuesday.' (Action: Email)
+
+---
+
+**👤 You:**
+> "Update candidate 12345's status to 'Placed'."
+
+**🤖 AI Agent:**
+> I've updated the candidate's status to 'Placed' using `update_entity`.
+
+
 ## Installation & Usage
 
 To install and use the **Bullhorn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +108,11 @@ To install and use the **Bullhorn** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

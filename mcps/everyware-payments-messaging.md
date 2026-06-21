@@ -1,12 +1,14 @@
 # Everyware Payments & Messaging MCP Server
 
-Equip your AI agent to manage payments, track digital invoices, and monitor SMS messages via the Everyware API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/everyware-payments-messaging)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everyware-payments-messaging)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/everyware-payments-messaging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/everyware-payments-messaging-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Equip your AI agent to manage payments, track digital invoices, and monitor SMS messages via the Everyware API.
 
 ## Description
 Integrate **Everyware**, the powerful platform for payments and messaging, directly into your AI workflow. Manage your payment transactions and digital invoices, track SMS and digital messages, monitor real-time delivery statuses and contact records, and oversee your entire customer communication and billing process using natural language.
@@ -44,6 +46,33 @@ Integrate **Everyware**, the powerful platform for payments and messaging, direc
 - **list_processed_payments**: List all payments processed via Everyware
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Everyware Payments & Messaging** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all payments processed today."
+
+**🤖 AI Agent:**
+> I've found 12 payments processed today, including $250 from 'John Miller' and $1,200 from 'Alice Connor'. All are currently in 'Paid' status. Would you like to see the payment method breakdown?
+
+---
+
+**👤 You:**
+> "Show me the delivery status for message ID 'MSG-12345'."
+
+**🤖 AI Agent:**
+> Message ID 'MSG-12345' (Recipient: +15550199) has been successfully 'Delivered'. It was dispatched at 10:30 AM via Verizon. Should I pull the associated contact history?
+
+---
+
+**👤 You:**
+> "What is our payment success rate for this month?"
+
+**🤖 AI Agent:**
+> Your current payment success rate is 98.5%. Out of 450 total transactions, 443 were successful and 7 failed. The total volume processed is $52,000. Would you like a list of the failed transaction IDs for follow-up?
+
+
 ## Installation & Usage
 
 To install and use the **Everyware Payments & Messaging** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Everyware Payments & Messaging** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

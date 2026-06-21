@@ -1,12 +1,14 @@
 # Correios (Brazil) MCP Server
 
-Orchestrate Correios logistics — track objects, calculate shipping prices, and validate Brazilian addresses directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/correios-brazil)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/correios-brazil)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/correios-brazil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/correios-brazil-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate Correios logistics — track objects, calculate shipping prices, and validate Brazilian addresses directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Correios**, the official national postal service of Brazil. This MCP provides 9 tools to automate real-time object tracking, calculate shipping deadlines and prices (PAC, SEDEX), and retrieve accurate address information using Brazilian zip codes (CEP) directly through natural conversation.
@@ -47,6 +49,33 @@ List all postage services available in your contract
 - **track_object**: Track a package status using its tracking code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Correios (Brazil)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Track Correios object 'QI123456789BR' and show its latest status."
+
+**🤖 AI Agent:**
+> Connecting to Correios tracking service... Object 'QI123456789BR' was 'Delivered' (Objeto entregue ao destinatário) today at 2:30 PM in São Paulo, SP. Would you like me to see the full movement history?
+
+---
+
+**👤 You:**
+> "Calculate shipping for a 2kg box from CEP 01310-100 to 20040-002."
+
+**🤖 AI Agent:**
+> Querying Correios price and deadline engine... For a 2kg package from SP to RJ: 1. SEDEX (R$ 35.50, 1 business day), 2. PAC (R$ 22.10, 5 business days). Which service would you like to choose?
+
+---
+
+**👤 You:**
+> "Find the address details for CEP '01310-914'."
+
+**🤖 AI Agent:**
+> Searching Brazilian zip codes... CEP 01310-914 corresponds to: Avenida Paulista, 1159, Bela Vista, São Paulo - SP. This is a business district zone.
+
+
 ## Installation & Usage
 
 To install and use the **Correios (Brazil)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Correios (Brazil)** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Task Organizer Prover MCP Server
 
-A team asked an AI to organize 28 tasks for a launch. The AI produced a flat list. No priorities. No dependencies. Everything 'estimated at 2-4 hours.' Capacity: 120 productive hours available, list totaled 210h. Launch week: 3 blocking dependencies discovered mid-sprint because nobody mapped them. Critical path was 40% longer than the timeline. This tool forces five axes: priority classification with Eisenhower matrix, dependency mapping with critical path, estimation rigor with PERT, capacity awareness with WIP limits, and outcome alignment with SMART deliverables.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/task-organizer-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/task-organizer-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/task-organizer-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/task-organizer-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+A team asked an AI to organize 28 tasks for a launch. The AI produced a flat list. No priorities. No dependencies. Everything 'estimated at 2-4 hours.' Capacity: 120 productive hours available, list totaled 210h. Launch week: 3 blocking dependencies discovered mid-sprint because nobody mapped them. Critical path was 40% longer than the timeline. This tool forces five axes: priority classification with Eisenhower matrix, dependency mapping with critical path, estimation rigor with PERT, capacity awareness with WIP limits, and outcome alignment with SMART deliverables.
 
 ## Description
 ## The Problem
@@ -42,6 +44,33 @@ Task Organizer Prover uses 5 Decision Pivots — boolean checkpoints that force 
 Structured reflection tool for disciplined task organization — forces systematic priority classification, dependency mapping, estimation rigor, capacity awareness, and outcome alignment. Based on critical path method (DuPont, 1957), PERT estimation (US Navy Polaris project, 1958), Eisenhower matrix, and Goldratt's Theory of Constraints. Catches Priority Blindness (everything is marked "high priority" — nothing is actually prioritized — a hospital has 12 improvement projects, all labeled "Priority 1 — Critical." If everything is critical: nothing is critical. Staff cannot work on 12 projects simultaneously. Result: all 12 projects are 15-25% complete after 6 months. None delivered value. Fix: forced ranking. Only 1 project is #1. Apply ICE scoring: Impact (patient safety improvement) × Confidence (evidence strength) × Ease (resource availability). Rank all 12. Execute top 3 sequentially. Defer the rest. After 6 months: 3 projects 100% complete, delivering value. 9 projects queued with clear start dates), Dependency Ignorance (treating tasks as a flat list instead of a dependency graph — a construction project plan: "1. Frame walls. 2. Pour foundation. 3. Install plumbing. 4. Paint." Problem: you cannot frame walls before the foundation exists. You cannot paint before walls are framed. Plumbing must be roughed-in BEFORE drywall goes up. A flat list ignores these dependencies. Real dependencies: Foundation → Framing → Rough plumbing → Drywall → Paint. Foundation curing: 28 days (ACI 318 standard). This is the critical path. If foundation pours late: EVERYTHING downstream shifts by 28+ days. Parallel work: electrical rough-in can happen DURING plumbing rough-in (different crews, same phase). A flat list misses both: sequential dependencies AND parallel opportunities), Estimation Fantasy (guessing durations without data or methodology — "How long will it take?" "About 2 weeks." Based on what? "Experience." Whose experience? Which project? What complexity? PERT formula: Expected = (Optimistic + 4×Most Likely + Pessimistic) / 6. Example: redesign the hospital lobby. Optimistic: 3 weeks (everything goes perfectly, no change orders). Most Likely: 5 weeks (normal pace, 1-2 minor revisions). Pessimistic: 12 weeks (supply chain delay on custom fixtures, 3 design revisions, permit issues). PERT: (3 + 4×5 + 12) / 6 = 5.83 weeks. Standard deviation: (12-3)/6 = 1.5 weeks. 95% confidence: 5.83 + 2×1.5 = 8.83 weeks. "About 2 weeks" vs PERT's 8.83 weeks — the gut-feel estimate was off by 4.4x), Capacity Amnesia (assuming 8 hours = 8 productive hours — a factory shift is 8 hours. Manager schedules 8 hours of production tasks per worker. Reality: shift handover (15 min), morning briefing (10 min), breaks (2 × 15 min), lunch (30 min), equipment startup/shutdown (20 min), unplanned interruptions (avg 45 min/day). Productive time: 4.5 hours of an 8-hour shift — 56% utilization. Manager scheduled 8 hours of work into 4.5 hours of capacity. Tasks incomplete daily. Context switching (Gloria Mark, UC Irvine, 2004): 23 minutes to regain deep focus after interruption. If a worker is interrupted 6 times/day: 6 × 23 = 138 minutes lost to refocusing. WIP limit: no person should work on more than 2-3 concurrent tasks. Target utilization: 70-80%, not 100% — the remaining 20-30% absorbs variability), and Outcome Disconnect (planning activities instead of deliverables — "Task: research competitor pricing." This is an ACTIVITY, not an outcome. When is it done? After 1 hour of research? 1 day? 1 week? Deliverable version: "Deliver a 1-page competitive pricing matrix: 5 competitors × 3 pricing tiers, with source URLs and date captured. Due: Friday 5pm." The deliverable has: a concrete output (1-page matrix), scope (5 competitors × 3 tiers), acceptance criteria (source URLs, date), and a deadline. Activities are open-ended. Deliverables are completable and verifiable). Call once per task plan, project schedule, or sprint planning session
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Task Organizer Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Here are 15 tasks for this sprint. All are high priority. They can be done in any order. Each should take about 2-4 hours. The team can handle it. Goal: complete the tasks."
+
+**🤖 AI Agent:**
+> PRIORITY_BLIND — Five failures: 'all high priority' = nothing prioritized, 'any order' = no dependencies, 'about 2-4h' = estimation fantasy, 'team can handle' = no capacity math, 'complete the tasks' = activity not outcome.
+
+---
+
+**👤 You:**
+> "Priority: Q1 hotfix (ICE 800, delay $5K/day), Q2 auth refactor (ICE 224), Q3 status page (delegate), Q4 wiki header (eliminate). Dependencies: API→frontend→QA→deploy (18-day critical path). Parallel: docs + API. External: client approval 3-day SLA. Estimation: API PERT 22h, +50% new auth = 33h, historical 1.8× = 59h, +25% buffer = 74h. Capacity: Dev A 24h productive/wk, 18h committed = 6h free. Dev B 22h, 14h = 8h. WIP 2/dev. Outcomes: 'Deliver OAuth2+PKCE Google SSO, login <3s, tests pass, by Sprint 14. Unblocks enterprise sales.'"
+
+**🤖 AI Agent:**
+> ORGANIZATION_PROVEN — All five axes validated.
+
+---
+
+**👤 You:**
+> "Priority: hotfix Q1, refactor Q2, 3 other tasks Q2. Dependencies: API→frontend→QA mapped. Estimation: 'API should take about 20 hours.' Capacity: 'team has enough bandwidth.' Outcome: 'finish the API work.'"
+
+**🤖 AI Agent:**
+> ESTIMATION_FANTASY — Priority and dependency pass. Estimation FAILS: 'should take about 20h' without three-point, PERT, or historical calibration. Capacity: 'enough bandwidth' without productive hours math. Outcome: 'finish the API work' is activity not deliverable.
+
+
 ## Installation & Usage
 
 To install and use the **Task Organizer Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Task Organizer Prover** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

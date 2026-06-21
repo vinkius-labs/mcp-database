@@ -1,12 +1,14 @@
 # Winevybe MCP Server
 
-Automate sommelier intelligence via Winevybe — search global wine catalogs, check vineyard ratings, and manage virtual cellars directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/winevybe)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/winevybe)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/winevybe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/winevybe-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** inventory-management
-**Tools Count:** 10
+
+**Category:** [inventory-management](../categories/inventory-management.md)
+
+Automate sommelier intelligence via Winevybe — search global wine catalogs, check vineyard ratings, and manage virtual cellars directly from any AI agent.
 
 ## Description
 Connect your **Winevybe** developer account to any AI agent and take full control of sommelier intelligence and wine inventory tracking through natural conversation.
@@ -47,6 +49,33 @@ No more manually searching through obscure tasting sites. Your AI acts as a dedi
 - **search_wines**: Search the Winevybe database for specific bottles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Winevybe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for details on the Screaming Eagle Cabernet Sauvignon."
+
+**🤖 AI Agent:**
+> I've fetched the profile details for 'Screaming Eagle Cabernet Sauvignon' (Wine ID: 39502). It is highly rated (98/100) and displays deep blackberry notes with incredibly refined tannins. Would you like to check pairing ideas?
+
+---
+
+**👤 You:**
+> "Compare wine 4902 and wine 5910."
+
+**🤖 AI Agent:**
+> Running the comparison workflow... Wine 4902 is a Bordeaux Blend averaging $120, while wine 5910 is a Napa Valley Meritage averaging $145. Both rank highly on fruit structure, but 4902 offers a slightly higher rating relative to price.
+
+---
+
+**👤 You:**
+> "Check my virtual cellar inventory."
+
+**🤖 AI Agent:**
+> Accessing your cellar (User ID: currentUser)... You currently hold 14 active bottles, spanning 3 primary varietals. Recent additions include the 'Louis Roederer Brut 2014'. Which section should we audit?
+
+
 ## Installation & Usage
 
 To install and use the **Winevybe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Winevybe** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

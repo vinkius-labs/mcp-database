@@ -1,12 +1,14 @@
 # B5 Arena MCP Server
 
-Automate Counter-Strike intelligence via B5 Arena — scan matchmaking leaderboards, track player ELO, and fetch competitive match logs natively from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/b5-arena)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/b5-arena)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/b5-arena-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/b5-arena-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate Counter-Strike intelligence via B5 Arena — scan matchmaking leaderboards, track player ELO, and fetch competitive match logs natively from any AI agent.
 
 ## Description
 Infuse the premier competitive matchmaking stats of **B5 Arena** into your AI toolkit. Run heavy analytical queries to monitor team rosters, verify individual player skill performance, and extract post-game data sets instantly through natural chat commands.
@@ -43,6 +45,33 @@ Infuse the premier competitive matchmaking stats of **B5 Arena** into your AI to
 - **search_user**: Search the B5 player directory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **B5 Arena** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Summarize user 'kennys_fan' combat performance spanning their last recorded session natively."
+
+**🤖 AI Agent:**
+> I've mapped out 'kennys_fan'. He pulled a solid 1.25 KD ratio across his last 15 maps predominantly locked onto AWP duties holding a 62% win percentage. Do you want the map-by-map extraction formatted clearly?
+
+---
+
+**👤 You:**
+> "Chart the current regional top 5 hierarchy dominating the ladder."
+
+**🤖 AI Agent:**
+> Fetching regional nodes... Pinned the top 5 ELO holders! ID 'Wargod44' takes rank #1 sitting on 3020 points securely. 'Blade_Edge' trails at 2950 tightly. I can present the comprehensive markdown tabular breakdown showcasing win streaks alongside immediately?
+
+---
+
+**👤 You:**
+> "Check match 992-abc logs to identify the lowest performing node pulling the team down natively."
+
+**🤖 AI Agent:**
+> Parsing logs for 992-abc... The weakest link resolves strictly pointing to 'User_Echo', pulling a meager 0.44 ratio closing down with only 5 secure frags across 24 intense rounds played globally there. Providing structural JSON export for extended penalty tracking.
+
+
 ## Installation & Usage
 
 To install and use the **B5 Arena** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **B5 Arena** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

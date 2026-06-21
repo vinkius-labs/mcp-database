@@ -1,12 +1,14 @@
 # PDFMonkey MCP Server
 
-Generate dynamic PDF documents from JSON data and HTML templates with an API built for high-volume document automation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfmonkey)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfmonkey)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdfmonkey-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdfmonkey-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate dynamic PDF documents from JSON data and HTML templates with an API built for high-volume document automation.
 
 ## Description
 Connect your **PDFMonkey** account to any AI agent and take full control of your document automation and PDF orchestration through natural conversation. PDFMonkey provides a high-fidelity rendering engine that transforms HTML and CSS templates into professional-grade PDF files using dynamic payloads.
@@ -50,6 +52,33 @@ Generate a new PDF from a template
 - **update_document**: Update an existing PDF document
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PDFMonkey** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a document using template 'tpl_abc123' with this data: {'name': 'John Doe', 'amount': 150}."
+
+**🤖 AI Agent:**
+> I've initiated the document generation. The status is currently 'pending' (ID: doc_xyz). Would you like me to check when the download link is ready?
+
+---
+
+**👤 You:**
+> "Generate a batch of 50 personalized certificate PDFs from my training completion template."
+
+**🤖 AI Agent:**
+> Batch generation started for 50 certificates using template "Training Certificate v2" (tpl_4821). Status: Processing. 12 of 50 completed so far. Each certificate includes the participant's name, course title, completion date, and a unique certificate number. Estimated completion: 4 minutes. You will be notified when all documents are ready for download.
+
+---
+
+**👤 You:**
+> "Show me the current status and preview of document doc_9234 generated yesterday."
+
+**🤖 AI Agent:**
+> Document doc_9234 status: Success. Template: "Monthly Report". Generated: May 12, 2025 at 3:45 PM. File size: 847 KB (6 pages). The document includes 3 charts, 2 tables, and a cover page. Download URL is active and expires in 72 hours. Last viewed: today at 9:15 AM.
+
+
 ## Installation & Usage
 
 To install and use the **PDFMonkey** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **PDFMonkey** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # DefiLlama (DeFi Analytics) MCP Server
 
-Access comprehensive DeFi data including TVL, token prices, yields, and volumes across multiple chains and protocols.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/defillama-defi-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/defillama-defi-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/defillama-defi-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/defillama-defi-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 19
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access comprehensive DeFi data including TVL, token prices, yields, and volumes across multiple chains and protocols.
 
 ## Description
 Connect your AI agent to **DefiLlama**, the leading aggregator for decentralized finance data. This server allows you to query real-time and historical metrics across the entire DeFi ecosystem through natural conversation.
@@ -56,6 +58,33 @@ Get the current price of tokens
 - **get_stablecoin_market_cap_chain**: Get stablecoin market cap for a specific chain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DefiLlama (DeFi Analytics)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all DeFi protocols and their current TVL."
+
+**🤖 AI Agent:**
+> I've retrieved the list of protocols. Currently, Lido leads with a TVL of $28.4B, followed by EigenLayer and Aave. Would you like to see the historical data for any of these?
+
+---
+
+**👤 You:**
+> "What is the current TVL on the Arbitrum chain?"
+
+**🤖 AI Agent:**
+> The current Total Value Locked on Arbitrum is approximately $2.56 billion. This represents the aggregate value across all supported protocols on that network.
+
+---
+
+**👤 You:**
+> "Show me the price chart for USDC on Ethereum."
+
+**🤖 AI Agent:**
+> Fetching the price chart for USDC (ethereum:0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48)... The data shows a stable peg at $1.00 with minor fluctuations over the last 24 hours.
+
+
 ## Installation & Usage
 
 To install and use the **DefiLlama (DeFi Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **DefiLlama (DeFi Analytics)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

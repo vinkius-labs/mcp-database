@@ -1,12 +1,14 @@
 # Birdeye MCP Server
 
-Manage reputation and customer experience via Birdeye — list reviews, manage contacts, and trigger surveys directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/birdeye)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/birdeye)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/birdeye-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/birdeye-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage reputation and customer experience via Birdeye — list reviews, manage contacts, and trigger surveys directly from any AI agent.
 
 ## Description
 Connect your **Birdeye** account to any AI agent and orchestrate your customer experience and reputation management workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Birdeye** account to any AI agent and orchestrate your customer e
 - **reply_to_review**: Reply to a specific customer review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Birdeye** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 reviews received on Birdeye."
+
+**🤖 AI Agent:**
+> I've retrieved your recent reviews. You have 5 new entries, including a 5-star review from Alice Johnson on Google and a 4-star review on Facebook. Would you like to reply to any of them?
+
+---
+
+**👤 You:**
+> "Check in a customer: John Doe, john@example.com."
+
+**🤖 AI Agent:**
+> Customer 'John Doe' has been checked in successfully. Birdeye will now send the automated review request according to your settings.
+
+---
+
+**👤 You:**
+> "Show my survey responses for survey surv_123."
+
+**🤖 AI Agent:**
+> Retrieving responses for survey surv_123... I found 3 recent responses. Most customers mentioned 'Excellent service' and 'Fast delivery'. Should I summarize the full feedback?
+
+
 ## Installation & Usage
 
 To install and use the **Birdeye** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Birdeye** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

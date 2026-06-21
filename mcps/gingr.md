@@ -1,12 +1,14 @@
 # Gingr MCP Server
 
-Retrieve pet owner profiles, track reservations, and oversee check-ins via AI agents with Gingr.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gingr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gingr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gingr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gingr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Retrieve pet owner profiles, track reservations, and oversee check-ins via AI agents with Gingr.
 
 ## Description
 Connect your **Gingr** pet care management account to any AI agent to automate your data extraction and customer support workflows through the Model Context Protocol (MCP). Gingr is the leading platform for kennel, daycare, and grooming businesses. This MCP server enables you to retrieve detailed pet owner profiles, track upcoming and past reservations, and monitor real-time facility check-ins directly through natural conversation.
@@ -49,6 +51,33 @@ List past/future bookings
 - **search_owner_custom_fields**: Search custom owner data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gingr** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find pet owner details for 'john@email.com'."
+
+**🤖 AI Agent:**
+> Retrieving owner... I found a profile for John Doe. He has one pet named 'Buddy' (Golden Retriever) and his last check-in was yesterday.
+
+---
+
+**👤 You:**
+> "List all future reservations for owner ID '12345'."
+
+**🤖 AI Agent:**
+> Fetching reservations... Owner 12345 has 2 upcoming bookings: a 3-day boarding stay starting next Friday and a grooming session on Monday.
+
+---
+
+**👤 You:**
+> "Show me the current digital whiteboard for location '1'."
+
+**🤖 AI Agent:**
+> Retrieving whiteboard... In location 1, there are currently 12 pets checked-in for daycare and 5 for boarding. 3 pets are currently assigned to the 'Blue Room'.
+
+
 ## Installation & Usage
 
 To install and use the **Gingr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gingr** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

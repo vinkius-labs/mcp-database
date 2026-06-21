@@ -1,12 +1,14 @@
 # Aikido Security MCP Server
 
-Query security vulnerabilities via Aikido — list open issues, check repositories, monitor cloud assets, and track compliance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aikido-security)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aikido-security)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aikido-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aikido-security-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 16
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Query security vulnerabilities via Aikido — list open issues, check repositories, monitor cloud assets, and track compliance directly from any AI agent.
 
 ## Description
 Connect your **Aikido Security** account to any AI agent and take full control of your security posture monitoring through natural conversation.
@@ -107,6 +109,33 @@ Use this to verify integrations are properly configured and troubleshoot notific
 List all configured webhooks in Aikido
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aikido Security** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all critical and high severity open security issues, grouped by type."
+
+**🤖 AI Agent:**
+> I've retrieved your open issues. You currently have 23 open issue groups: 4 CRITICAL (including 2 actively exploited CVEs in log4j), 12 HIGH (mostly outdated dependencies and exposed secrets), 5 MEDIUM, and 2 LOW. Top priority: CVE-2024-1234 affecting 3 repositories — patch available. Would you like the full details of any specific issue group?
+
+---
+
+**👤 You:**
+> "What's our current ISO 27001 compliance status?"
+
+**🤖 AI Agent:**
+> Your ISO 27001 compliance overview shows 89% of controls passing (142/160). Areas needing attention: A.8.25 (Secure Development Lifecycle) — 3 failing checks, A.8.28 (Secure Coding) — 2 failing checks. All other control categories are passing. You're well-positioned for your next audit. Would you like the full breakdown by control category?
+
+---
+
+**👤 You:**
+> "List all our connected cloud accounts and any misconfigurations found in the last 7 days."
+
+**🤖 AI Agent:**
+> You have 3 connected cloud accounts: AWS (production), GCP (staging), Azure (dev). In the last 7 days, Aikido found 5 new cloud misconfigurations: 2 public S3 buckets in production AWS, 1 over-permissive IAM role in GCP, and 2 unencrypted RDS instances in AWS staging. All are classified as HIGH priority. Would you like the details of any specific misconfiguration?
+
+
 ## Installation & Usage
 
 To install and use the **Aikido Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -115,4 +144,11 @@ To install and use the **Aikido Security** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # GrowthBook MCP Server
 
-Manage feature flags and experiments via GrowthBook — control environments, toggle features, and organize projects directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/growthbook)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growthbook)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/growthbook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/growthbook-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 15
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage feature flags and experiments via GrowthBook — control environments, toggle features, and organize projects directly from your AI agent.
 
 ## Description
 Connect your **GrowthBook** account to any AI agent to streamline your experimentation and feature management workflows through natural language.
@@ -52,6 +54,33 @@ List all GrowthBook environments
 - **update_project**: Edit an existing GrowthBook project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GrowthBook** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all feature flags for the project 'frontend-v2'."
+
+**🤖 AI Agent:**
+> I've retrieved the features for 'frontend-v2'. You have 3 active flags: 'new-hero-banner', 'dark-mode-toggle', and 'beta-checkout'. Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Enable the 'dark-mode-beta' feature flag in production."
+
+**🤖 AI Agent:**
+> I have successfully toggled the 'dark-mode-beta' flag to ON in the production environment. The change is now live.
+
+---
+
+**👤 You:**
+> "Get the details and settings for project ID 'proj_123'."
+
+**🤖 AI Agent:**
+> Inspecting project 'proj_123'... It's named 'Mobile App Redesign' with the slug 'mobile-redesign'. It currently has 12 associated features and is configured with custom targeting settings.
+
+
 ## Installation & Usage
 
 To install and use the **GrowthBook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **GrowthBook** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

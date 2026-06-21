@@ -1,12 +1,14 @@
 # Kissflow MCP Server
 
-Build low-code workflows, process apps, and case management solutions that digitize operations without heavy IT involvement.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kissflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kissflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kissflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kissflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Build low-code workflows, process apps, and case management solutions that digitize operations without heavy IT involvement.
 
 ## Description
 Connect your **Kissflow** account to any AI agent and manage workflows through natural conversation.
@@ -62,6 +64,33 @@ List all workflow processes
 List all Kissflow users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kissflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all processes and pending approvals across workflows."
+
+**🤖 AI Agent:**
+> Processes: 8. Purchase Request (45 active), Leave Approval (12), Expense Report (23), IT Request (8), Onboarding (3), Travel Request (6), Budget Approval (2), Vendor Registration (4). Pending approvals: 14 total. Critical: 'Server Purchase — $25K' (Budget, awaiting CFO, 3 days). 'Q2 Marketing Budget — $50K' (Budget, VP pending).
+
+---
+
+**👤 You:**
+> "Create a new purchase request and list recent expense reports."
+
+**🤖 AI Agent:**
+> Purchase request created! 'New Developer Laptops (5x MacBook Pro)' — Amount: $12,500. Department: Engineering. Justification: Team expansion. Status: Pending Manager Approval. Recent expense reports: 12 this month. Total: $8,400. Pending reimbursement: $3,200. Top: 'Client Dinner' ($450), 'Conference Travel' ($1,800).
+
+---
+
+**👤 You:**
+> "Show the form fields for Leave Approval and all active leave requests."
+
+**🤖 AI Agent:**
+> Leave Approval fields: 6. Employee Name (auto, required), Leave Type (dropdown: Vacation, Sick, Personal, Bereavement), Start Date (date), End Date (date), Reason (textarea), Backup Person (dropdown). Active requests: 12. Vacation: 7, Sick: 3, Personal: 2. Pending approval: 4. Approved: 6. Rejected: 2.
+
+
 ## Installation & Usage
 
 To install and use the **Kissflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Kissflow** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

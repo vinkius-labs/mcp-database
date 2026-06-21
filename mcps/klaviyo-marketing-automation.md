@@ -1,12 +1,14 @@
 # Klaviyo (Marketing Automation) MCP Server
 
-Manage your B2C CRM via Klaviyo — create profiles, track email campaigns, and audit automation flows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/klaviyo-marketing-automation)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/klaviyo-marketing-automation)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/klaviyo-marketing-automation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/klaviyo-marketing-automation-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage your B2C CRM via Klaviyo — create profiles, track email campaigns, and audit automation flows.
 
 ## Description
 Connect your **Klaviyo** account to any AI agent and take full control of your e-commerce marketing, customer data, and automation flows through natural conversation.
@@ -66,6 +68,33 @@ Get details for a Klaviyo automation flow
 List Klaviyo audience segments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Klaviyo (Marketing Automation)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active email campaigns in my Klaviyo account"
+
+**🤖 AI Agent:**
+> I've found 3 active campaigns: 'Spring Sale 2024' (ID: camp-123), 'Monthly Newsletter' (ID: camp-456), and 'Product Reveal' (ID: camp-789). Would you like to see the targeted audience or performance metrics for any of these?
+
+---
+
+**👤 You:**
+> "Show me the details for automation flow ID 'flow-987'"
+
+**🤖 AI Agent:**
+> Retrieving flow 'flow-987' ('Welcome Series')… It is currently ACTIVE. The trigger is 'When someone joins Newsletter'. The sequence includes 3 emails sent over 7 days. Current completion rate is 84%. Would you like to see the individual step details?
+
+---
+
+**👤 You:**
+> "Create a profile for 'Sarah Doe' with email 'sarah@example.com'"
+
+**🤖 AI Agent:**
+> Profile for Sarah Doe (sarah@example.com) created successfully. ID: prof-012345. I can now add her to your 'New Customers' list or update her profile with custom behavioral properties. What would you like to do next?
+
+
 ## Installation & Usage
 
 To install and use the **Klaviyo (Marketing Automation)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Klaviyo (Marketing Automation)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

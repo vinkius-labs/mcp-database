@@ -1,12 +1,14 @@
 # CAMB.AI MCP Server
 
-Translate and dub audio content into dozens of languages using AI voices that sound natural and preserve speaker identity.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cambai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cambai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cambai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cambai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Translate and dub audio content into dozens of languages using AI voices that sound natural and preserve speaker identity.
 
 ## Description
 Connect your **CAMB.AI** account to any AI agent and take full control of your high-fidelity audio localization and voice generation workflows through natural conversation.
@@ -49,6 +51,33 @@ Create a Text-to-Speech task
 - **list_voices**: List all available voices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CAMB.AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available voices for Text-to-Speech in CAMB.AI."
+
+**🤖 AI Agent:**
+> I've retrieved the voice directory. You have access to 15 public voices and 3 custom clones, including 'Davy' (ID: 1) and 'Sarah'. Which one would you like to use for generation?
+
+---
+
+**👤 You:**
+> "Generate speech for 'Hello world' using voice ID 1 and language 'en-us'."
+
+**🤖 AI Agent:**
+> TTS task initiated! I've started the generation for 'Hello world' (Task ID: tts_789). I'll monitor the status and alert you as soon as the audio file is ready for download.
+
+---
+
+**👤 You:**
+> "Dub video 'https://vinkius.com/promo.mp4' from English (ID: 1) to French (ID: 4)."
+
+**🤖 AI Agent:**
+> Dubbing job triggered! Video localization for 'promo.mp4' is now in progress (Job ID: dub_456). I'll track the translation nuances and notify you when the final high-fidelity file is ready.
+
+
 ## Installation & Usage
 
 To install and use the **CAMB.AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **CAMB.AI** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

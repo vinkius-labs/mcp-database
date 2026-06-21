@@ -1,12 +1,14 @@
 # Aha! MCP Server
 
-Product roadmapping and strategy — manage features, ideas, and strategic goals via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aha)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aha)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aha-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-intelligence
-**Tools Count:** 5
+
+**Category:** [business-intelligence](../categories/business-intelligence.md)
+
+Product roadmapping and strategy — manage features, ideas, and strategic goals via AI.
 
 ## Description
 Connect your **Aha!** account to your AI agent to unlock professional product management and roadmap orchestration. From capturing new product ideas to auditing technical metadata for features and tracking strategic initiatives, your agent handles your product lifecycle through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Aha!** account to your AI agent to unlock professional product ma
 - **list_releases**: List product releases
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aha!** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active features in my 'Web App' product."
+
+**🤖 AI Agent:**
+> I've retrieved the features for the Web App product. You have 10 features currently in development and 5 in the backlog. Would you like to see the status or due dates for any of them?
+
+---
+
+**👤 You:**
+> "Create a new idea named 'Dark Mode Support' with description 'User requested dark theme for better accessibility'."
+
+**🤖 AI Agent:**
+> I've successfully created the idea 'Dark Mode Support' in your ideation portal. The idea reference is IDEA-123. Would you like me to check if there are similar ideas already existing?
+
+---
+
+**👤 You:**
+> "Show me the details for feature ID 'APP-F-101'."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for feature APP-F-101 (Multi-factor Authentication). It is currently in the 'In Development' stage and is assigned to the 'Security Team'. The target release is 'Q3 Security Update'.
+
+
 ## Installation & Usage
 
 To install and use the **Aha!** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Aha!** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

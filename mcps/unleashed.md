@@ -1,12 +1,14 @@
 # Unleashed MCP Server
 
-Automate inventory, assemblies, and customer management via Unleashed — query BOMs, list invoices, and manage customers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unleashed)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unleashed)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unleashed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unleashed-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 43
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate inventory, assemblies, and customer management via Unleashed — query BOMs, list invoices, and manage customers directly from any AI agent.
 
 ## Description
 Connect your **Unleashed Software** account to any AI agent and take full control of your inventory, production, and sales workflows through natural conversation.
@@ -73,6 +75,33 @@ No more jumping between tabs to check stock levels, assembly statuses, or custom
 - **list_warehouses**: List warehouses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Unleashed** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first page of our customers in Unleashed."
+
+**🤖 AI Agent:**
+> I've retrieved your customers. Currently, you have active accounts including 'Global Trade Ltd' (GUID: 8a7b6c) and 'Apex Retail' (GUID: 5f4e3d). Would you like to inspect any of these specifically?
+
+---
+
+**👤 You:**
+> "Create a new customer with code 'CUST-999' and name 'Delta Industries'."
+
+**🤖 AI Agent:**
+> I have successfully created the customer 'Delta Industries' with code 'CUST-999'. The newly generated GUID is '9a8b7c6d-5e4f-3a2b-1c0d'. Let me know if you need to add delivery addresses or other details.
+
+---
+
+**👤 You:**
+> "Get the details for assembly GUID 12345-abcde-67890."
+
+**🤖 AI Agent:**
+> Retrieving assembly details... Assembly '12345-abcde-67890' is currently 'In Progress'. It is assembling 50 units of 'Premium Widget' using BOM 'BOM-004'. No quality issues have been flagged.
+
+
 ## Installation & Usage
 
 To install and use the **Unleashed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **Unleashed** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

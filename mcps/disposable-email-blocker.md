@@ -1,12 +1,14 @@
 # Disposable Email Blocker MCP Server
 
-Equip Lead Gen AI Agents with throwaway email detection. Block fake emails instantly to protect your Sender Reputation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/disposable-email-blocker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/disposable-email-blocker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/disposable-email-blocker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/disposable-email-blocker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 1
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip Lead Gen AI Agents with throwaway email detection. Block fake emails instantly to protect your Sender Reputation.
 
 ## Description
 When a Martech AI Agent reads a form submission from a user with the email `ceo@mailinator.com` or `admin@10minutemail.com`, the LLM has no idea it's a disposable email. If the agent triggers a welcome sequence, the email will bounce, damaging the client's SendGrid or Mailgun sender reputation. This MCP solves that perfectly.
@@ -23,6 +25,33 @@ When a Martech AI Agent reads a form submission from a user with the email `ceo@
 Checks if an email belongs to a disposable or temporary email provider. Protects Sender Reputation for Martech AI Agents
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Disposable Email Blocker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if this new lead's email `user@mailinator.com` is a throwaway address."
+
+**🤖 AI Agent:**
+> Disposable Email Validation: Domain is disposable. Action Recommended: BLOCK.
+
+---
+
+**👤 You:**
+> "Is `ceo@vinkius.com` a legitimate corporate email?"
+
+**🤖 AI Agent:**
+> Disposable Email Validation: Domain is NOT disposable. Action Recommended: ALLOW.
+
+---
+
+**👤 You:**
+> "Validate this CRM contact list item: `tester@10minutemail.com`."
+
+**🤖 AI Agent:**
+> Disposable Email Validation: Block action recommended.
+
+
 ## Installation & Usage
 
 To install and use the **Disposable Email Blocker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -31,4 +60,11 @@ To install and use the **Disposable Email Blocker** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

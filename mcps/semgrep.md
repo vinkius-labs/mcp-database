@@ -1,12 +1,14 @@
 # Semgrep MCP Server
 
-Equip your AI agent with read/write access to Semgrep's SAST platform to audit code security findings, update triage statuses, and enforce custom semantic rules.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/semgrep)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semgrep)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semgrep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semgrep-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Equip your AI agent with read/write access to Semgrep's SAST platform to audit code security findings, update triage statuses, and enforce custom semantic rules.
 
 ## Description
 Connect the **Semgrep** AppSec platform directly to your AI agent to radically accelerate code security triaging. Instead of forcing developers to jump between their IDE and the Semgrep dashboard, empower your AI to pull 'Findings', analyze the vulnerable syntax, and instantly close false positives.
@@ -60,6 +62,33 @@ List Semgrep projects (repositories) monitored in a deployment
 Mark a Semgrep finding state (e.g., fixed, false positive)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Semgrep** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most severe unmitigated findings currently breaking our CI/CD pipeline on the 'vinkius/cloud' repository."
+
+**🤖 AI Agent:**
+> I've fetched the findings list scoped to 'vinkius/cloud'. Currently, there are 2 blockers. 1) Exposed hardcoded AWS Secret Access Key in `auth.py:L45`. 2) Outdated dependency `lodash@4.17.15` in `package.json` vulnerable to prototype pollution. Would you like me to resolve the Lodash one by generating an update commit script?
+
+---
+
+**👤 You:**
+> "Mark vulnerability issue ID #58032 as a 'false_positive' using the update finding tool."
+
+**🤖 AI Agent:**
+> The operation is complete. I've sent the mutation `update_finding_status` for issue 58032 within your deployment. Semgrep now permanently recognizes this event as `false_positive`, and subsequent scans will not flag this specific semantic line match again.
+
+---
+
+**👤 You:**
+> "Review the company's Semgrep performance metrics focusing on fix rate."
+
+**🤖 AI Agent:**
+> I've analyzed your AppSec timeline with `get_metrics`. Your overall Fix Rate for the trailing 30 days is hovering around 83%. The median 'time-to-resolve' for critical SAST vulnerabilities is 3.4 days. This shows strong engagement natively within developer pull requests before merge.
+
+
 ## Installation & Usage
 
 To install and use the **Semgrep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Semgrep** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

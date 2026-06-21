@@ -1,12 +1,14 @@
 # Localazy (AI Translation & Localization API) MCP Server
 
-Manage software localization and translations via Localazy — list projects, import content, manage source keys, and handle glossary terms directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/localazy-ai-translation-localization-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/localazy-ai-translation-localization-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/localazy-ai-translation-localization-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/localazy-ai-translation-localization-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 23
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage software localization and translations via Localazy — list projects, import content, manage source keys, and handle glossary terms directly from your AI agent.
 
 ## Description
 Connect your **Localazy** account to any AI agent to automate your localization workflows. This server allows you to manage projects, files, and translation keys through natural language.
@@ -60,6 +62,33 @@ List projects accessible with the current token
 - **upload_screenshot**: Upload a new screenshot (Base64 encoded image)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Localazy (AI Translation & Localization API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Localazy projects and include language statistics."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 'Mobile App' (ID: 123) with 95% completion in 5 languages, and 'Web Dashboard' (ID: 456) with 80% completion in 3 languages.
+
+---
+
+**👤 You:**
+> "Show me the content of file 'strings.json' (ID: f789) for the French (fr) language in project 'p123'."
+
+**🤖 AI Agent:**
+> Fetching content for 'strings.json' in French... I found 10 keys. For example, 'login_button' is translated as 'Se connecter' and 'welcome_msg' as 'Bienvenue'.
+
+---
+
+**👤 You:**
+> "Add a new glossary term 'Workspace' with the description 'The primary area for user collaboration' to project 'p456'."
+
+**🤖 AI Agent:**
+> The glossary term 'Workspace' has been successfully created in project 'p456' with the provided description to help your translators.
+
+
 ## Installation & Usage
 
 To install and use the **Localazy (AI Translation & Localization API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Localazy (AI Translation & Localization API)** MCP serv
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ConnectWise MCP Server
 
-Equip your AI to seamlessly manage ConnectWise PSA tickets, clients, and technical documentation via text.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/connectwise)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/connectwise)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/connectwise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/connectwise-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 9
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Equip your AI to seamlessly manage ConnectWise PSA tickets, clients, and technical documentation via text.
 
 ## Description
 Empower your conversational AI with deep integration into **ConnectWise Manage (PSA)**. Enhance technical support operations by enabling your agent to triage issues, update existing service tickets, and retrieve critical client environment data without leaving your conversational interface.
@@ -54,6 +56,38 @@ Retrieve a list of service tickets from ConnectWise Manage
 Find service tickets matching a keyword in the summary
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ConnectWise** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top 3 open critical tickets currently on the 'Helpdesk' board."
+
+**🤖 AI Agent:**
+> Certainly. Finding tickets on the 'Helpdesk' board filtered by 'Critical' status and 'Open' state: 1) Ticket #14052: Core Switch Failure (Client: Initech), 2) Ticket #14057: Ransomware containment active (Client: Massive Dynamic), 3) Ticket #14099: CEO Email offline (Client: Globex). Would you like to view the internal notes for #14052?
+
+---
+
+**👤 You:**
+> "Enter a time entry of 1.5 hours for ticket #13988 with the notes 'Reconfigured firewall rules to establish stable VPN tunnels.' and mark the ticket as closed."
+
+**🤖 AI Agent:**
+> Time entry created successfully. Logged 1.5 hours on Ticket #13988 associated with your active user credentials. Internal notes have been strictly appended as requested, and the ticket status has been securely transitioned from 'In Progress' to 'Closed'. Great work.
+
+---
+
+**👤 You:**
+> "Retrieve the billing details and active agreements for the client 'Globex Corporation' to prepare for an audit."
+
+**🤖 AI Agent:**
+> Retrieving financial matrices reliably...
+**Client Record (`get_company_agreements`)**:
+- Target: `Globex Corporation`
+- Active Agreements: 2 (Managed IT Services, Cloud Backup SLA).
+- Overdue Invoices: None detected structurally.
+Audit preparation data retrieved successfully and accurately.
+
+
 ## Installation & Usage
 
 To install and use the **ConnectWise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +96,11 @@ To install and use the **ConnectWise** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

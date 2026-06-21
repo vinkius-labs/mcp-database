@@ -1,12 +1,14 @@
 # Ping Identity MCP Server
 
-Manage PingOne user identities, applications, groups, risk policies, and sign-on flows autonomously via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ping-identity)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ping-identity)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ping-identity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ping-identity-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage PingOne user identities, applications, groups, risk policies, and sign-on flows autonomously via AI.
 
 ## Description
 Connect your **Ping Identity** environment to any AI agent to streamline identity and access management (IAM). You can audit users, check security policies, and review applications directly through conversation.
@@ -60,6 +62,37 @@ List active Risk Management rules dictating real-time MFA
 List logical Sign-on flows and strict authentication conditions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ping Identity** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Can you list all OIDC applications configured in PingOne and highlight any insecure callbacks?"
+
+**🤖 AI Agent:**
+> You currently have 8 configured applications. I noticed that 'Legacy CRM' uses an Implicit Grant and lacks PKCE. Also, 'Staging Dashboard' has a callback URI using a non-secure protocol (`http://`). I recommend modifying these components directly in the admin console to maintain Zero-Trust compliance.
+
+---
+
+**👤 You:**
+> "Provide the active list of Zero-Trust risk policies governing my environment."
+
+**🤖 AI Agent:**
+> There are 3 active Risk Policies in your designated execution environment. 
+1. **Impossible Travel** — triggers mandatory MFA prompts upon anomalous geographic location jumps.
+2. **Anonymous Networks** — drops authentication directly for identified VPN and TOR entry-points.
+3. **Behavior Anomalies** — triggers a step-up challenge utilizing Ping's machine-learning baseline models.
+What would you like to drill down into?
+
+---
+
+**👤 You:**
+> "Delete the specific suspended user profile assigned to the ID `81773-XYZ-192`."
+
+**🤖 AI Agent:**
+> Execution successful. The PingOne distinct identity assigned to `81773-XYZ-192` has been removed explicitly. Associated explicit MFA linkages, secondary sessions, isolated SCIM references, and assigned app scopes have all been safely purged from the Directory.
+
+
 ## Installation & Usage
 
 To install and use the **Ping Identity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +101,11 @@ To install and use the **Ping Identity** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

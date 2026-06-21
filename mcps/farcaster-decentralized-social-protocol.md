@@ -1,12 +1,14 @@
 # Farcaster (Decentralized Social Protocol) MCP Server
 
-Interact with the Farcaster protocol — manage channels, moderate casts, and explore social graphs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/farcaster-decentralized-social-protocol)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/farcaster-decentralized-social-protocol)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/farcaster-decentralized-social-protocol-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/farcaster-decentralized-social-protocol-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 22
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Interact with the Farcaster protocol — manage channels, moderate casts, and explore social graphs directly from your AI agent.
 
 ## Description
 Connect your **Farcaster** account to any AI agent and take full control of your decentralized social interactions through natural conversation.
@@ -75,6 +77,33 @@ Register or transfer an fname
 Unfollow a Farcaster channel
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Farcaster (Decentralized Social Protocol)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available Farcaster channels."
+
+**🤖 AI Agent:**
+> I've retrieved the list of channels. Popular ones include 'warpcast', 'mcp', and 'base'. Would you like to see details for a specific one or see more channels?
+
+---
+
+**👤 You:**
+> "Hide the cast with hash 0x123456... in the 'mcp' channel."
+
+**🤖 AI Agent:**
+> Executing moderation action... The cast 0x123456... has been successfully hidden in the 'mcp' channel. I've updated the moderation state.
+
+---
+
+**👤 You:**
+> "Who are the followers of the 'farcaster' channel?"
+
+**🤖 AI Agent:**
+> I'm fetching the followers for 'farcaster'... I found the most recent followers including FID 123, FID 456, and FID 789. Would you like to see the next page of followers?
+
+
 ## Installation & Usage
 
 To install and use the **Farcaster (Decentralized Social Protocol)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Farcaster (Decentralized Social Protocol)** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

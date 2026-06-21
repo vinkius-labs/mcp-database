@@ -1,12 +1,14 @@
 # ON24 Virtual Events MCP Server
 
-Manage webinars and virtual events via ON24 — track registrants, attendees, and analytics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/on24-virtual-events)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/on24-virtual-events)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/on24-virtual-events-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/on24-virtual-events-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** video-conferencing
-**Tools Count:** 10
+
+**Category:** [video-conferencing](../categories/video-conferencing.md)
+
+Manage webinars and virtual events via ON24 — track registrants, attendees, and analytics directly from your AI agent.
 
 ## Description
 Connect your **ON24** account to your AI agent and gain deep insights into your webinar and virtual event performance through natural conversation and real-time data access.
@@ -47,6 +49,33 @@ Connect your **ON24** account to your AI agent and gain deep insights into your 
 - **get_registrant_details**: Get registrant info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ON24 Virtual Events** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my webinars from last month."
+
+**🤖 AI Agent:**
+> Retrieving webinars... I found 4 events from last month including 'Product Strategy Q1', 'Customer Onboarding Workshop', and 2 others. Would you like the registration summary for the Product Strategy webinar?
+
+---
+
+**👤 You:**
+> "How many people attended the 'Annual Summit' event?"
+
+**🤖 AI Agent:**
+> Checking attendance records... For the 'Annual Summit' (ID: 98765), you had 450 total attendees out of 620 registrants (72% attendance rate). Shall I list the engagement metrics for the top attendees?
+
+---
+
+**👤 You:**
+> "Show me the survey results for the 'Developer Workshop' webinar."
+
+**🤖 AI Agent:**
+> Retrieving survey data... For the 'Developer Workshop' survey, you received 85 responses. The average satisfaction score was 4.7/5. Key feedback included 'Great technical depth' and 'Clear examples'. Would you like the detailed Q&A log as well?
+
+
 ## Installation & Usage
 
 To install and use the **ON24 Virtual Events** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **ON24 Virtual Events** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

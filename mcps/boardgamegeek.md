@@ -1,12 +1,14 @@
 # BoardGameGeek MCP Server
 
-Explore the world's largest board game database — search 150,000+ games, view ratings, player counts, complexity, trending titles, user collections and play logs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/boardgamegeek)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boardgamegeek)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boardgamegeek-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boardgamegeek-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Explore the world's largest board game database — search 150,000+ games, view ratings, player counts, complexity, trending titles, user collections and play logs.
 
 ## Description
 Connect your **BoardGameGeek** account to any AI agent and unlock the full analytical power of the world's largest board game database.
@@ -68,6 +70,33 @@ Get a user's board game play history
 Search for board games by name on BoardGameGeek
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BoardGameGeek** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Catan and show me its full details."
+
+**🤖 AI Agent:**
+> Found Catan (ID: 13, 1995) — 3-4 players, 60-120 min, complexity 2.29/5, rating 7.0/10, ranked #402 globally. "In Catan, players try to be the dominant force on the island by building settlements, cities, and roads..."
+
+---
+
+**👤 You:**
+> "What board games are trending on BGG right now?"
+
+**🤖 AI Agent:**
+> The top 5 hot board games right now are: 1. Ark Nova: Marine Worlds (ID: 416584), 2. Terraforming Mars: Ares Expedition (ID: 328871), 3. Dune: Imperium — Uprising (ID: 397598), 4. Cascadia: Landmarks (ID: 414920), 5. Great Western Trail (ID: 341169). Want full details on any of these?
+
+---
+
+**👤 You:**
+> "Show me tomvasel's board game collection and his top-rated games."
+
+**🤖 AI Agent:**
+> tomvasel's collection contains 500+ board games. Top-rated titles: Gloomhaven (10/10), Terraforming Mars (9/10), Wingspan (9/10), Scythe (9/10), Pandemic Legacy: Season 1 (9/10). Full collection with personal ratings and play counts available.
+
+
 ## Installation & Usage
 
 To install and use the **BoardGameGeek** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **BoardGameGeek** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

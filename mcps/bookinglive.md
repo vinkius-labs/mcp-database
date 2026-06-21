@@ -1,12 +1,14 @@
 # BookingLive MCP Server
 
-Automate booking and order management via BookingLive — create orders, track statuses, and manage customer reservations directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bookinglive)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bookinglive)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bookinglive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bookinglive-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 17
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate booking and order management via BookingLive — create orders, track statuses, and manage customer reservations directly from your AI agent.
 
 ## Description
 Connect your **BookingLive** account to any AI agent to streamline your scheduling and commerce workflows. This server enables full control over the booking lifecycle through natural language.
@@ -54,6 +56,33 @@ Starts a new BookingLive order
 - **update_order_param**: Updates a specific parameter value for an order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BookingLive** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all orders associated with the email 'support@example.com'."
+
+**🤖 AI Agent:**
+> I found 3 orders for 'support@example.com'. The most recent is REF-9921 (Status: Completed, Total: £45.00). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Get the full details for order reference BKL-55432."
+
+**🤖 AI Agent:**
+> Fetching details for BKL-55432... This order was created on Oct 12th for 'Alice Smith'. It contains 2 items: 'Standard Entry' and 'Equipment Rental'. The total is £60.00 and the status is currently 'Pending'.
+
+---
+
+**👤 You:**
+> "Cancel order BKL-1002 and send the confirmation email."
+
+**🤖 AI Agent:**
+> Order BKL-1002 has been successfully cancelled. The system has queued the cancellation confirmation email to the customer.
+
+
 ## Installation & Usage
 
 To install and use the **BookingLive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **BookingLive** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

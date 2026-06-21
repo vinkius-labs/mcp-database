@@ -1,12 +1,14 @@
 # Pusher Channels MCP Server
 
-Manage real-time communication via Pusher — trigger events, monitor active channels, and manage presence users directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pusher-channels)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pusher-channels)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pusher-channels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pusher-channels-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage real-time communication via Pusher — trigger events, monitor active channels, and manage presence users directly from your AI agent.
 
 ## Description
 Connect your **Pusher Channels** infrastructure to any AI agent to orchestrate real-time messaging and monitor your application's pub/sub health through natural language.
@@ -45,6 +47,33 @@ No more jumping into the Pusher Debug Console to manually trigger test events or
 Trigger an event on one or more channels
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pusher Channels** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Trigger a 'new-order' event on the 'orders' channel with data '{"id": 123, "total": 50.00}'."
+
+**🤖 AI Agent:**
+> Event 'new-order' successfully triggered on channel 'orders'. The payload has been broadcasted to all active subscribers.
+
+---
+
+**👤 You:**
+> "List all active channels that start with 'presence-'."
+
+**🤖 AI Agent:**
+> I found 3 active presence channels: 'presence-chat-room-1', 'presence-lobby', and 'presence-editor-v2'. Would you like to see the users in any of these?
+
+---
+
+**👤 You:**
+> "Terminate all connections for user ID 'user_999'."
+
+**🤖 AI Agent:**
+> All active WebSocket connections for 'user_999' have been terminated. The user will need to re-authenticate to reconnect.
+
+
 ## Installation & Usage
 
 To install and use the **Pusher Channels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Pusher Channels** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

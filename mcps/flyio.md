@@ -1,12 +1,14 @@
 # Fly.io MCP Server
 
-Manage edge infrastructure via Fly.io — monitor apps and machines, scale compute horizontally, handle persistent volumes, and run remote commands directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flyio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flyio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage edge infrastructure via Fly.io — monitor apps and machines, scale compute horizontally, handle persistent volumes, and run remote commands directly from any AI agent.
 
 ## Description
 Connect your **Fly.io** account to any AI agent and take full control of your edge computing and container orchestration through natural conversation.
@@ -68,6 +70,33 @@ Boot a previously stopped or suspended Fly Machine
 Gracefully halt a running Fly.io internal Machine
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fly.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all machines in my 'web-api' app"
+
+**🤖 AI Agent:**
+> Retrieving machines... I found 2 machines in 'web-api': '918572b0' (Region: iad, Status: started) and 'e28654c1' (Region: gru, Status: stopped). Would you like me to start the stopped machine?
+
+---
+
+**👤 You:**
+> "Run 'ls -la /app' on machine '918572b0' in app 'web-api'"
+
+**🤖 AI Agent:**
+> Command execution initiated! I've sent the request to machine 918572b0. Result: [Detailed directory listing showing files in /app folder]. No SSH required, I used the Fly Machine API synchronously.
+
+---
+
+**👤 You:**
+> "Show me the persistent volumes for 'web-api'"
+
+**🤖 AI Agent:**
+> Retrieving volumes... I found 1 persistent NVMe volume: 'data_vol' (Size: 10GB, Region: iad). It is currently attached to machine 918572b0 and is residency on physical hardware node xyz.
+
+
 ## Installation & Usage
 
 To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

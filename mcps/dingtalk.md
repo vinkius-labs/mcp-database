@@ -1,12 +1,14 @@
 # DingTalk MCP Server
 
-Alibaba's B2B office platform — manage users, departments, send notifications, track attendance, and automate approval workflows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dingtalk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dingtalk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dingtalk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dingtalk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Alibaba's B2B office platform — manage users, departments, send notifications, track attendance, and automate approval workflows.
 
 ## Description
 Connect your **DingTalk (钉钉)** enterprise account to any AI agent and transform your office operations through natural conversation. DingTalk is Alibaba's comprehensive B2B communication and collaboration platform used by millions of organizations for messaging, attendance tracking, approval workflows, and organizational management.
@@ -70,6 +72,33 @@ Send a rich formatted markdown message to DingTalk users
 Send a work notification message to DingTalk users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DingTalk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all users in department ID 12345."
+
+**🤖 AI Agent:**
+> 📋 I found 8 users in department 12345: Zhang Wei (Engineering Lead), Li Na (Senior Developer), Wang Fang (Developer), Chen Ming (QA Engineer), Liu Yang (Designer), Zhao Lei (Product Manager), Sun Li (Business Analyst), and Zhou Tao (DevOps). Would you like detailed profiles for any specific user?
+
+---
+
+**👤 You:**
+> "Send a markdown notification to user1,user2 with title 'Sprint Review' and content about tomorrow's meeting at 2pm."
+
+**🤖 AI Agent:**
+> ✅ Markdown notification sent successfully! Task ID: 987654321. The message with title 'Sprint Review' has been delivered to user1 and user2. The notification includes formatted details about tomorrow's 2pm meeting with agenda items and meeting link.
+
+---
+
+**👤 You:**
+> "Check attendance records for user1,user2 from 2024-01-15 to 2024-01-19."
+
+**🤖 AI Agent:**
+> 📊 Attendance report (Jan 15-19, 2024): **user1** - Mon: Check-in 08:55, Check-out 18:02 (Normal); Tue: Check-in 09:12 (Late by 12min), Check-out 18:00; Wed-Fri: Normal attendance. **user2** - All days normal with average check-in at 08:50. Both users show good attendance patterns with only one late occurrence.
+
+
 ## Installation & Usage
 
 To install and use the **DingTalk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **DingTalk** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

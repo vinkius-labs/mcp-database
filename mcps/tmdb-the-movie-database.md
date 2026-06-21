@@ -1,12 +1,14 @@
 # TMDB (The Movie Database) MCP Server
 
-Access movie, TV show, and actor data — search, discover, and retrieve detailed metadata directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tmdb-the-movie-database)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tmdb-the-movie-database)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tmdb-the-movie-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tmdb-the-movie-database-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 13
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access movie, TV show, and actor data — search, discover, and retrieve detailed metadata directly from any AI agent.
 
 ## Description
 Connect your AI agent to **The Movie Database (TMDB)** to access a world of cinematic information through natural conversation.
@@ -44,6 +46,33 @@ No more manual searching through browser tabs to find release dates or cast list
 - **get_tv_season_details**: Get details for a specific TV season
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TMDB (The Movie Database)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the movie 'Inception'."
+
+**🤖 AI Agent:**
+> I found 'Inception' (1999) with ID 27205. It's a sci-fi masterpiece directed by Christopher Nolan. Would you like to see the full details or the cast list?
+
+---
+
+**👤 You:**
+> "Discover top-rated horror movies from 2023."
+
+**🤖 AI Agent:**
+> I've filtered the database for 2023 horror movies. Notable titles include 'Talk to Me' and 'When Evil Lurks'. Would you like the specific details for any of these?
+
+---
+
+**👤 You:**
+> "Get the details for season 1 of the TV show with ID 1399."
+
+**🤖 AI Agent:**
+> Fetching details for 'Game of Thrones' (ID: 1399) Season 1. It consists of 10 episodes, starting with 'Winter Is Coming'. Should I provide the summary for the first episode?
+
+
 ## Installation & Usage
 
 To install and use the **TMDB (The Movie Database)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **TMDB (The Movie Database)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # BR Business Days Calculator MCP Server
 
-Stop LLMs from calculating SLAs incorrectly. An local, deterministic engine that adds business days while perfectly avoiding weekends and Brazilian national holidays.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/br-business-days-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/br-business-days-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/br-business-days-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/br-business-days-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 2
+
+**Category:** [productivity](../categories/productivity.md)
+
+Stop LLMs from calculating SLAs incorrectly. An local, deterministic engine that adds business days while perfectly avoiding weekends and Brazilian national holidays.
 
 ## Description
 LLMs cannot reliably calculate SLAs or business delivery times. If you ask an AI to 'add 5 business days to Feb 10th', it will frequently ignore Carnival or count a Saturday. This MCP solves this by providing a static, local-first calculation engine that perfectly handles Brazilian national holidays and weekends.
@@ -27,6 +29,33 @@ Adds or subtracts X Brazilian business days from a given date
 Checks if a given date is a Brazilian business day (excludes weekends and BR national holidays)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BR Business Days Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate a 10-business-day delivery SLA starting from `2024-02-09` (Brazil)."
+
+**🤖 AI Agent:**
+> ✅ **Business SLA Date:** `2024-02-27` (Skipped Carnival holidays and weekends).
+
+---
+
+**👤 You:**
+> "Is `2024-11-15` counted as a valid business day for banking operations in Brazil?"
+
+**🤖 AI Agent:**
+> ✅ **Validation:** False. `2024-11-15` is a static Brazilian National Holiday (Republic Proclamation).
+
+---
+
+**👤 You:**
+> "Add exactly 1 business day to `2024-03-28` (Thursday before Easter)."
+
+**🤖 AI Agent:**
+> ✅ **New Date:** `2024-04-01` (Skipped Good Friday `03-29` and the weekend).
+
+
 ## Installation & Usage
 
 To install and use the **BR Business Days Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **BR Business Days Calculator** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Kueski Pay MCP Server
 
-Integrate Kueski Pay to offer Buy Now, Pay Later (BNPL) at checkout. Manage BNPL orders, captures, refunds, and quincena simulations from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kueski-pay)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kueski-pay)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kueski-pay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kueski-pay-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 14
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Integrate Kueski Pay to offer Buy Now, Pay Later (BNPL) at checkout. Manage BNPL orders, captures, refunds, and quincena simulations from any AI agent.
 
 ## Description
 Connect your **Kueski Pay** merchant account to any AI agent and manage Mexico's leading Buy Now, Pay Later (BNPL) platform programmatically.
@@ -65,6 +67,33 @@ Refund a captured order
 Simulate quincena payment terms for an amount
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kueski Pay** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Simulate payment plans for a $3,500 MXN jacket on Kueski Pay."
+
+**🤖 AI Agent:**
+> For a $3,500 MXN purchase, Kueski Pay offers the following plans: 4 quincenas (0% interest) = $875 MXN / fortnight. 6 quincenas = $625 MXN / fortnight. 8 quincenas = $510 MXN / fortnight. (Standard Kueski fees apply to plans over 4 quincenas).
+
+---
+
+**👤 You:**
+> "Capture order K-ABC-123. The items have been shipped."
+
+**🤖 AI Agent:**
+> Order K-ABC-123 has been successfully captured. The full amount of $2,100 MXN is now in the settlement queue. The customer's first quincena payment will be due in 15 days.
+
+---
+
+**👤 You:**
+> "Check eligibility for phone 55-1234-5678 for a $5,000 cart."
+
+**🤖 AI Agent:**
+> Phone 55-1234-5678 is PRE-APPROVED for a BNPL loan of $5,000 MXN. They have an active Kueski Pay account with good standing. Would you like to generate a checkout session for them?
+
+
 ## Installation & Usage
 
 To install and use the **Kueski Pay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Kueski Pay** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

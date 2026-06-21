@@ -1,12 +1,14 @@
 # Baserow MCP Server
 
-Manage no-code databases via Baserow — list tables, query rows, create records and manage schemas from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/baserow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baserow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baserow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baserow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage no-code databases via Baserow — list tables, query rows, create records and manage schemas from any AI agent.
 
 ## Description
 Connect your **Baserow** databases to any AI agent and take full control of your data through natural conversation.
@@ -67,6 +69,33 @@ List views configured for a Baserow table
 Update an existing row in a Baserow table
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Baserow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all tables in my Baserow workspace."
+
+**🤖 AI Agent:**
+> I found 5 tables: 'Projects' (42 rows, 12 fields), 'Tasks' (156 rows, 10 fields), 'Team Members' (8 rows, 7 fields), 'Sprints' (24 rows, 6 fields) and 'Bug Reports' (89 rows, 9 fields).
+
+---
+
+**👤 You:**
+> "Show me all rows in the Tasks table where Status is 'In Progress'."
+
+**🤖 AI Agent:**
+> I found 12 tasks with 'In Progress' status. The highest priority items are 'Implement OAuth integration' (assigned to Alice, due Friday), 'Fix checkout payment bug' (assigned to Bob, due today) and 'Design new dashboard layout' (assigned to Carol, due next week).
+
+---
+
+**👤 You:**
+> "Create a new task called 'Review PR #234' assigned to Alice with status 'To Do'."
+
+**🤖 AI Agent:**
+> Done! I've created a new row in the Tasks table with title 'Review PR #234', assigned to Alice, status 'To Do'. The row ID is 157 and it was created just now.
+
+
 ## Installation & Usage
 
 To install and use the **Baserow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **Baserow** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

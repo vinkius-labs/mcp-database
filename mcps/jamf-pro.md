@@ -1,12 +1,14 @@
 # Jamf Pro MCP Server
 
-Manage Apple devices, computers, and inventory via Jamf Pro API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jamf-pro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jamf-pro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jamf-pro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jamf-pro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage Apple devices, computers, and inventory via Jamf Pro API.
 
 ## Description
 Empower your AI agents to manage your Apple ecosystem with Jamf Pro. This MCP server allows you to list mobile devices and computers, track inventory details, manage users and buildings, and view management scripts and packages directly through the Jamf Pro API. Ideal for automating IT operations and device management.
@@ -45,6 +47,33 @@ Lists all management scripts
 Lists all users in the system
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jamf Pro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all computers managed in Jamf Pro."
+
+**🤖 AI Agent:**
+> I'll fetch the list of managed computers and their inventory details for you.
+
+---
+
+**👤 You:**
+> "Show me details for mobile device ID '456'."
+
+**🤖 AI Agent:**
+> I'll retrieve the full inventory and management data for that mobile device.
+
+---
+
+**👤 You:**
+> "List all management scripts configured in the system."
+
+**🤖 AI Agent:**
+> I'll look up the list of available management scripts in Jamf Pro.
+
+
 ## Installation & Usage
 
 To install and use the **Jamf Pro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Jamf Pro** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

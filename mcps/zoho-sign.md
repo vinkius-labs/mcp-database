@@ -1,12 +1,14 @@
 # Zoho Sign MCP Server
 
-Manage digital signatures, document requests, and templates via Zoho Sign directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-sign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-sign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-sign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-sign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage digital signatures, document requests, and templates via Zoho Sign directly from your AI agent.
 
 ## Description
 Empower your AI agent with access to the **Zoho Sign** platform to automate your digital signature workflows and document compliance through natural conversation.
@@ -50,6 +52,33 @@ List supported sign fields
 - **submit_sign_request**: Submit a request for signature
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Sign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active signature requests and send a reminder to any recipients who haven't signed yet."
+
+**🤖 AI Agent:**
+> I found 4 active requests. The document 'Partnership Agreement' (ID: 390218) is still pending signature from John Doe. I have successfully sent a reminder notification to John.
+
+---
+
+**👤 You:**
+> "Retrieve the completion certificate for the signed document with ID 8493021."
+
+**🤖 AI Agent:**
+> I've retrieved the completion certificate for the 'Employment Contract' (ID: 8493021). The document was fully signed and sealed on October 24th. Here is the link to download the legal audit trail.
+
+---
+
+**👤 You:**
+> "List all reusable sign templates and initiate a new signature request using the 'NDA Template' (ID: 29013)."
+
+**🤖 AI Agent:**
+> You have 5 templates available. I have created a new draft signature request using the 'NDA Template' (ID: 29013). The new request ID is 409122. Let me know when you're ready to submit it.
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Sign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Zoho Sign** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

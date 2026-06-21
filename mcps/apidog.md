@@ -1,12 +1,14 @@
 # Apidog MCP Server
 
-Sync your Apidog workspace with your AI agent — list projects, fetch endpoint schemas, and export full OpenAPI specifications instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apidog)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apidog)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apidog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apidog-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Sync your Apidog workspace with your AI agent — list projects, fetch endpoint schemas, and export full OpenAPI specifications instantly.
 
 ## Description
 Connect your **Apidog** account to your AI agent and seamlessly access your API specifications, data models, and documentation through natural conversation.
@@ -39,6 +41,41 @@ Connect your **Apidog** account to your AI agent and seamlessly access your API 
 - **export_openapi**: Export the full OpenAPI 3.0 specification of an Apidog project as JSON
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apidog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in our Apidog organization."
+
+**🤖 AI Agent:**
+> I've retrieved your workspace projects. You have 'E-commerce API' (ID: 39420) and 'Internal Admin Portal' (ID: 10429). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Write a TypeScript interface for the response schema of the /users endpoint in the E-commerce project."
+
+**🤖 AI Agent:**
+> I analyzed the response schema for `/users`. Here is the exact TypeScript interface matching the backend's contract:
+
+```typescript
+export interface UserResponse {
+  id: number;
+  email: string;
+  status: 'active' | 'suspended';
+}
+```
+
+---
+
+**👤 You:**
+> "Export the full OpenAPI JSON for the E-commerce project so we can generate unit tests."
+
+**🤖 AI Agent:**
+> The complete OpenAPI 3.0 specification has been imported into my context. The project defines 42 endpoints and 18 global schemas. Looking at the /cart endpoints, which of its constraints would you like me to test first?
+
+
 ## Installation & Usage
 
 To install and use the **Apidog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +84,11 @@ To install and use the **Apidog** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

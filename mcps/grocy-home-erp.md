@@ -1,12 +1,14 @@
 # Grocy (Home ERP) MCP Server
 
-Automate your household management with Grocy — track inventory, manage shopping lists, and organize chores directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grocy-home-erp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grocy-home-erp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grocy-home-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grocy-home-erp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 21
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate your household management with Grocy — track inventory, manage shopping lists, and organize chores directly from your AI agent.
 
 ## Description
 Connect your **Grocy** instance to any AI agent and take full control of your home ERP through natural conversation. Grocy is the self-hosted solution for managing your household.
@@ -58,6 +60,33 @@ No more manual entry on a small screen. Your AI acts as your personal home manag
 - **update_task**: Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Grocy (Home ERP)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What products do I currently have in stock?"
+
+**🤖 AI Agent:**
+> I've checked your Grocy inventory. You currently have 12 items in stock, including Milk (2L), Eggs (12 units), and Flour (1kg). Would you like the full list?
+
+---
+
+**👤 You:**
+> "Add 2 units of Coffee to my shopping list."
+
+**🤖 AI Agent:**
+> Success! I've added 2 units of Coffee (Product ID: 5) to your shopping list. Is there anything else you need to buy?
+
+---
+
+**👤 You:**
+> "Show me my pending chores and mark 'Vacuuming' as done."
+
+**🤖 AI Agent:**
+> You have 3 pending chores: Vacuuming, Watering Plants, and Dusting. I have successfully executed 'Vacuuming' (ID: 2) for you.
+
+
 ## Installation & Usage
 
 To install and use the **Grocy (Home ERP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Grocy (Home ERP)** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

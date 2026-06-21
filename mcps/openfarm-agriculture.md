@@ -1,12 +1,14 @@
 # OpenFarm Agriculture MCP Server
 
-Access crowdsourced agricultural data — search for crops, growing guides, and planting instructions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openfarm-agriculture)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfarm-agriculture)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfarm-agriculture-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfarm-agriculture-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 4
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access crowdsourced agricultural data — search for crops, growing guides, and planting instructions.
 
 ## Description
 Connect your AI agent to **OpenFarm**, the world's most comprehensive open-source database for farming and gardening. Access a wealth of knowledge on thousands of plant species and crowdsourced growing techniques.
@@ -46,6 +48,17 @@ Search for crops and plants by name
 Get comprehensive information for a specific plant using its ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenFarm Agriculture** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How do I grow tomatoes according to OpenFarm?"
+
+**🤖 AI Agent:**
+> Searching OpenFarm for 'Tomato'... I found several guides. Common requirements include full sun, well-drained soil, and a sowing depth of about 0.5 inches. Would you like a detailed guide?
+
+
 ## Installation & Usage
 
 To install and use the **OpenFarm Agriculture** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +67,11 @@ To install and use the **OpenFarm Agriculture** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

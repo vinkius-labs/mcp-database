@@ -1,12 +1,14 @@
 # Teachworks MCP Server
 
-Schedule tutoring sessions, manage student progress, and handle billing for tutoring businesses and learning centers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/teachworks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teachworks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teachworks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teachworks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** calendar-scheduling
-**Tools Count:** 6
+
+**Category:** [calendar-scheduling](../categories/calendar-scheduling.md)
+
+Schedule tutoring sessions, manage student progress, and handle billing for tutoring businesses and learning centers.
 
 ## Description
 Connect your **Teachworks** tutoring management account to any AI agent and simplify how you coordinate your education business, student directory, and lesson scheduling through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Teachworks** tutoring management account to any AI agent and simp
 - **list_teachers**: List all teachers (tutors)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Teachworks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active students in my Teachworks account."
+
+**🤖 AI Agent:**
+> I've retrieved your student list. You have 25 active students including 'John Doe', 'Jane Smith', and 'Alex Rivera'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the teaching schedule for this week."
+
+**🤖 AI Agent:**
+> I've fetched the lesson list. This week you have 12 scheduled lessons, including 'Math Level 1' (Tue, 3 PM) and 'Intro to AI' (Wed, 10 AM). Shall I retrieve the details for any specific class?
+
+---
+
+**👤 You:**
+> "Create a new student record for 'Mike Ross' (mike@example.com)."
+
+**🤖 AI Agent:**
+> Success! The student record for Mike Ross (mike@example.com) has been created in Teachworks with ID user_10293. I've added him to your directory.
+
+
 ## Installation & Usage
 
 To install and use the **Teachworks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Teachworks** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

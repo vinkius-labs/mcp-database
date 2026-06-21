@@ -1,12 +1,14 @@
 # Axiom MCP Server
 
-Manage logs and observability data via Axiom — ingest data, run APL queries, and manage datasets or monitors directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/axiom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/axiom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/axiom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/axiom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 31
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Manage logs and observability data via Axiom — ingest data, run APL queries, and manage datasets or monitors directly from any AI agent.
 
 ## Description
 Connect your **Axiom** account to any AI agent to streamline your observability and log management workflows through natural conversation.
@@ -66,6 +68,33 @@ Connect your **Axiom** account to any AI agent to streamline your observability 
 - **update_notifier**: Update an existing notifier
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Axiom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available Axiom datasets."
+
+**🤖 AI Agent:**
+> I've retrieved your datasets. You have 3 active datasets: 'production-logs' (ID: ds_123), 'staging-metrics' (ID: ds_456), and 'security-audit' (ID: ds_789).
+
+---
+
+**👤 You:**
+> "Run an APL query to count errors in 'production-logs' from the last 24 hours."
+
+**🤖 AI Agent:**
+> Executing query: `['production-logs'] | where level == 'error' | summarize count()`... I found 142 error events in the specified timeframe. Would you like to see the specific error messages?
+
+---
+
+**👤 You:**
+> "Create a new monitor named 'High Latency' that checks for response times over 500ms."
+
+**🤖 AI Agent:**
+> I've created the 'High Latency' monitor. It will run every 5 minutes using your APL query to detect threshold breaches. Monitor ID: mon_abc123.
+
+
 ## Installation & Usage
 
 To install and use the **Axiom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Axiom** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

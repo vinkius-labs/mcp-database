@@ -1,12 +1,14 @@
 # n8n (AI Workflow Automation) MCP Server
 
-Manage workflow automation via n8n — audit active workflows, track execution logs, and monitor credentials.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/n8n-ai-workflow-automation)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/n8n-ai-workflow-automation)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/n8n-ai-workflow-automation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/n8n-ai-workflow-automation-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 7
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage workflow automation via n8n — audit active workflows, track execution logs, and monitor credentials.
 
 ## Description
 Connect your **n8n** instance to any AI agent and take full control of your node-based workflow automation, execution diagnostics, and project orchestration through natural conversation.
@@ -44,6 +46,33 @@ Connect your **n8n** instance to any AI agent and take full control of your node
 - **list_workflow_tags**: List workflow organizational tags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **n8n (AI Workflow Automation)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active workflows in my n8n instance"
+
+**🤖 AI Agent:**
+> I've retrieved your n8n workflows. Highlights include 'Shopify-to-Slack-Sync' (ID: 12, Active), 'Customer-Onboarding-Email' (ID: 45, Active), and 'Daily-Database-Cleanup' (ID: 78). Would you like to check the last execution status for any of these?
+
+---
+
+**👤 You:**
+> "Show me the last 5 failed executions in n8n"
+
+**🤖 AI Agent:**
+> Retrieving failed executions… I've identified 5 recent errors. The most recent failure was in workflow 'Lead-Ingestion' (ID: 135) due to an 'Unauthorized' error on the CRM node. Would you like me to fetch the full trace for that execution?
+
+---
+
+**👤 You:**
+> "List all n8n credentials associated with 'Slack'"
+
+**🤖 AI Agent:**
+> I've identified 2 credentials matching 'Slack': 1) 'Slack-Main-Workspace' (ID: 5, Type: slackApi), and 2) 'Slack-Support-Bot' (ID: 8, Type: slackApi). Both appear to be valid. Would you like to check the tags associated with these workflows?
+
+
 ## Installation & Usage
 
 To install and use the **n8n (AI Workflow Automation)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **n8n (AI Workflow Automation)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

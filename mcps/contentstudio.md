@@ -1,12 +1,14 @@
 # ContentStudio MCP Server
 
-Plan, create, and schedule social media content across all channels with AI writing assistance and performance analytics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstudio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstudio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstudio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstudio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 13
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan, create, and schedule social media content across all channels with AI writing assistance and performance analytics.
 
 ## Description
 Connect your **ContentStudio** account to any AI agent and take full control of your social media content workflows through natural conversation.
@@ -49,6 +51,33 @@ Connect your **ContentStudio** account to any AI agent and take full control of 
 - **list_workspaces**: List workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ContentStudio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a LinkedIn and Twitter post about our new product launch for tomorrow at 9am EST."
+
+**🤖 AI Agent:**
+> Post created and scheduled! Post ID: post_29401. Content: 'Exciting news — we're launching our newest product tomorrow! Stay tuned for details. #ProductLaunch #Innovation'. Scheduled for April 27 at 9:00 AM EST. Target accounts: LinkedIn (acc_112) and Twitter (acc_115). Would you like me to also add an image from your media library?
+
+---
+
+**👤 You:**
+> "Show me all scheduled posts for this week and their engagement predictions."
+
+**🤖 AI Agent:**
+> Filtering by status 'scheduled'... You have 8 posts queued this week. Monday: 2 posts (LinkedIn case study, Instagram reel). Tuesday: 1 post (Twitter thread). Wednesday: 2 posts (LinkedIn carousel, Facebook announcement). Thursday: 1 post (Instagram story). Friday: 2 posts (LinkedIn article, Twitter poll). Would you like to see the content of any specific post or modify the schedule?
+
+---
+
+**👤 You:**
+> "What were the top performing posts on our Instagram account last month?"
+
+**🤖 AI Agent:**
+> Fetching analytics for Instagram account (acc_118)... Your top 3 posts last month by engagement: 1) Product demo reel — 12,400 impressions, 842 likes, 156 comments. 2) Behind-the-scenes story — 9,200 impressions, 621 likes, 89 saves. 3) Customer testimonial carousel — 8,100 impressions, 534 likes, 72 shares. Total follower growth: +1,240 (3.2% increase). Would you like detailed analytics for any specific post?
+
+
 ## Installation & Usage
 
 To install and use the **ContentStudio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **ContentStudio** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

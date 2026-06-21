@@ -1,12 +1,14 @@
 # OpenReplay MCP Server
 
-Debug web applications by inspecting user sessions, technical events, and project data directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openreplay)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openreplay)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openreplay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openreplay-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 5
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Debug web applications by inspecting user sessions, technical events, and project data directly from your AI agent.
 
 ## Description
 Connect your **OpenReplay** account to any AI agent to analyze user behavior and debug technical issues through natural conversation.
@@ -45,6 +47,33 @@ Retrieve a list of sessions for a specific project
 - **search_users**: Find users identified within a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenReplay** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all projects in my OpenReplay account."
+
+**🤖 AI Agent:**
+> I've found 3 projects: 'Main Web App' (ID: 12), 'Mobile Dashboard' (ID: 45), and 'Staging Environment' (ID: 8). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Find the last 5 sessions for user 'john@example.com' in project 12."
+
+**🤖 AI Agent:**
+> Searching for the user... Found User ID 'user_99'. Here are the 5 most recent sessions for John, including a 12-minute session from today at 10:30 AM. Would you like to see the events for that session?
+
+---
+
+**👤 You:**
+> "Show me any console errors or clicks for session ID 'sess-abc-123'."
+
+**🤖 AI Agent:**
+> Inspecting session 'sess-abc-123'... I found a 'Uncaught TypeError' at 02:15 and a series of rapid clicks on the 'Submit' button immediately following the error. It looks like a validation issue.
+
+
 ## Installation & Usage
 
 To install and use the **OpenReplay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **OpenReplay** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

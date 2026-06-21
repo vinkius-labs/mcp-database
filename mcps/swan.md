@@ -1,12 +1,14 @@
 # Swan MCP Server
 
-Empowers algorithmic control over European Bank Accounts. Execute SEPA transfers and manage Virtual Corporate Cards programmatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/swan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/swan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/swan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/swan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 9
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Empowers algorithmic control over European Bank Accounts. Execute SEPA transfers and manage Virtual Corporate Cards programmatically.
 
 ## Description
 The **Swan MCP Server** embeds a complete European Banking-as-a-Service architecture into Vinkius LLMs.
@@ -43,6 +45,33 @@ Dynamically provision a European Account under your ledger
 - **swan_simulate_incoming_transfer**: Sandbox Only - Inject fake money
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Swan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve my core project identifier and map the legal entity ID."
+
+**🤖 AI Agent:**
+> Connected natively to Swan's core GraphQL pipeline. I can confirm your Project ID is 12345ABC and operates under active mode validating your main institution.
+
+---
+
+**👤 You:**
+> "Launch a brand new sub-account in France. Bind it to the root entity targeting EUR processing."
+
+**🤖 AI Agent:**
+> Root creation successful. Your account 'Operating Pool FRA' is successfully allocated instantly yielding its unique string representation alongside new IBAN limits routed locally.
+
+---
+
+**👤 You:**
+> "Sweep the ledger of Account X123 and list the latest 5 transactions."
+
+**🤖 AI Agent:**
+> Log fetched. Examining the exact nodes, the account handled a deposit of 200 EUR and a 50 EUR withdrawal, both marked as settled on the API tier.
+
+
 ## Installation & Usage
 
 To install and use the **Swan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Swan** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

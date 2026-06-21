@@ -1,12 +1,14 @@
 # Tana MCP Server
 
-Connect your AI to Tana. Build intelligent knowledge graphs, define supertags, and capture dynamic nested nodes directly from the prompt.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tana)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tana-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI to Tana. Build intelligent knowledge graphs, define supertags, and capture dynamic nested nodes directly from the prompt.
 
 ## Description
 Translate your AI conversation into structured personal knowledge management seamlessly with the **Tana** MCP connector. Evolve your LLM into a dedicated ontological architect capable of pushing rich, contextual data fragments straight into your workspace. Bypass tedious manual entry by programming your assistant to dynamically categorize thoughts, mint native ontological classes (Supertags), and instantiate multi-level hierarchies inside your Tana graph while maintaining maximum focus in your local environment.
@@ -60,6 +62,43 @@ Creates a supertagged node with structured field values
 Defines a new supertag in the Tana schema
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tana** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Add a new conceptual outline to my Inbox. The main title should be 'Quarterly Product Strategy', and it should contain three specific child nodes functioning as checkable tasks."
+
+**🤖 AI Agent:**
+> Processing graph entry natively...
+Executing `add_node_with_children` with root name: 'Quarterly Product Strategy'.
+Child items initialized safely as text nodes temporarily...
+Converting children to executable tasks sequentially using `add_checkbox_task` targeting the new node parent ID. The workflow is completed synchronously in your Inbox.
+
+---
+
+**👤 You:**
+> "Create a new node 'Meeting Notes format' structured in our weekly workspace."
+
+**🤖 AI Agent:**
+> Compiling cognitive envelope using `create_node`...
+New node 'Meeting Notes format' instantiated successfully in the weekly workspace.
+Node ID generated: `node-7bx9`. You can now map sub-nodes or supertags to this base.
+
+---
+
+**👤 You:**
+> "Search my Tana knowledge base for nodes tagged with '#project'."
+
+**🤖 AI Agent:**
+> Querying your graph environment ('search_nodes')...
+Found 4 operational nodes bearing the `#project` supertag:
+- 'Website Redesign'
+- 'Q3 Marketing Push'
+- 'API Deprecation'
+- 'Cloud Migration'
+
+
 ## Installation & Usage
 
 To install and use the **Tana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +107,11 @@ To install and use the **Tana** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

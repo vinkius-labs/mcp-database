@@ -1,12 +1,14 @@
 # MemeLord MCP Server
 
-Generate viral memes and humorous visual content with AI that understands internet culture and creates shareable images instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/memelord)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/memelord)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/memelord-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/memelord-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Generate viral memes and humorous visual content with AI that understands internet culture and creates shareable images instantly.
 
 ## Description
 Connect your **MemeLord** account to any AI agent and generate memes programmatically through natural conversation.
@@ -51,6 +53,33 @@ Explore meme categories
 - **list_configured_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MemeLord** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the 'Distracted Boyfriend' meme template."
+
+**🤖 AI Agent:**
+> Found templates matching 'Distracted Boyfriend': 1) Distracted Boyfriend (ID: 112126428, Text boxes: 3). 2) Distracted Girlfriend (ID: 142232). Template URL: https://img.memelord.com/112126428.jpg.
+
+---
+
+**👤 You:**
+> "Generate a meme using the 'Drake' template."
+
+**🤖 AI Agent:**
+> Meme generated! ✅ Template: Drake Hotline Bling. Top text: 'Writing documentation'. Bottom text: 'Asking AI to write it'. URL: https://memelord.com/m/abc123xyz.jpg. Size: 800x800px.
+
+---
+
+**👤 You:**
+> "Show the top 5 trending meme formats right now."
+
+**🤖 AI Agent:**
+> Trending Memes (24h): 1) 'Two Buttons' (Used 12K times today). 2) 'Change My Mind' (8K uses). 3) 'Expanding Brain' (6.5K uses). 4) 'Mocking Spongebob' (5K uses). 5) 'Disaster Girl' (4.2K uses).
+
+
 ## Installation & Usage
 
 To install and use the **MemeLord** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **MemeLord** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

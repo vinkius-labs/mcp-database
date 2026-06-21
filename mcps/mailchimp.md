@@ -1,12 +1,14 @@
 # Mailchimp MCP Server
 
-Synchronize marketing contacts — list audiences, control subscriber limits, and edit campaign vectors autonomously.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailchimp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailchimp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailchimp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailchimp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Synchronize marketing contacts — list audiences, control subscriber limits, and edit campaign vectors autonomously.
 
 ## Description
 Equip any AI agent with robust Mailchimp marketing capabilities. Integrate your mailing operations transparently to control large audiences, tweak contact statuses dynamically, and trigger organizational insights across your campaigns via conversational prompts.
@@ -60,6 +62,33 @@ Send a Mailchimp campaign immediately
 Update subscriber information in an audience
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mailchimp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch the ID of my primary audience list."
+
+**🤖 AI Agent:**
+> Query complete. Your main audience 'Weekly Newsletter' uses the List ID 'a1b2c3d4e5'. You can now use this ID to fetch subscribers.
+
+---
+
+**👤 You:**
+> "Add exactly test@domain.com as a subscriber to list a1b2c3d4e5."
+
+**🤖 AI Agent:**
+> Added subscriber successfully! The contact test@domain.com is now fully mapped as 'subscribed' against that specific audience ID.
+
+---
+
+**👤 You:**
+> "List all active marketing campaigns we have on the server."
+
+**🤖 AI Agent:**
+> I've fetched 3 campaign items. 'Summer Sale 2026' (Sent), 'Welcome Series' (Draft), and 'Churn Automation' (Sent). Would you like to inspect CTR metrics for the sent ones?
+
+
 ## Installation & Usage
 
 To install and use the **Mailchimp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Mailchimp** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

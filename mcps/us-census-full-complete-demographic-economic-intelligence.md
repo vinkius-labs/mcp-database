@@ -1,12 +1,14 @@
 # U.S. Census Full — Complete Demographic & Economic Intelligence MCP Server
 
-The U.S. Census Mega-Server: 14 tools providing comprehensive access to the ACS and County Business Patterns. Analyze population, age, race, income, poverty, education, home values, rent, and businesses across all 50 states, 3,000+ counties, and cities.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-full-complete-demographic-economic-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-census-full-complete-demographic-economic-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-census-full-complete-demographic-economic-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-census-full-complete-demographic-economic-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 14
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The U.S. Census Mega-Server: 14 tools providing comprehensive access to the ACS and County Business Patterns. Analyze population, age, race, income, poverty, education, home values, rent, and businesses across all 50 states, 3,000+ counties, and cities.
 
 ## Description
 The **ultimate U.S. Census Mega-Server** — 14 tools.
@@ -61,6 +63,52 @@ Get racial and ethnic demographics for all states — White, Black, Asian, Hispa
 - **get_demographics_by_county**: Get racial and ethnic demographics for all counties in a state
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **U.S. Census Full — Complete Demographic & Economic Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Give me a complete socioeconomic profile for Los Angeles County (037) in California (06)"
+
+**🤖 AI Agent:**
+> 📊 **U.S. Census Bureau: County Profile: 06-037**
+
+**Los Angeles County, California:**
+- Population: 9,936,690
+- Median Household Income: $78,671
+- Median Home Value: $692,800
+- Median Gross Rent: $1,754
+- Poverty Rate: 13.9%
+- Hispanic/Latino: 4,834,166 (48.6%)
+- Foreign Born: 3,365,064 (33.8%)
+
+---
+
+**👤 You:**
+> "Which state has the lowest median age?"
+
+**🤖 AI Agent:**
+> 📊 **Population by State**
+
+The state with the lowest median age is:
+**Utah (49)**
+- Median Age: 31.4 years
+- Total Population: 3,337,975
+
+---
+
+**👤 You:**
+> "Correlate rent prices with Bachelor Degree holders nationwide"
+
+**🤖 AI Agent:**
+> 📊 **Analysis: Rent Prices vs. Education Levels**
+
+- Massachusetts: Median Rent $1,469 | Bachelor's or Higher 44.5%
+- Colorado: Median Rent $1,594 | Bachelor's or Higher 42.8%
+- Mississippi: Median Rent $860 | Bachelor's or Higher 23.2%
+There is a strong positive correlation between the percentage of the population holding a Bachelor's degree and the state's median rent.
+
+
 ## Installation & Usage
 
 To install and use the **U.S. Census Full — Complete Demographic & Economic Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +117,11 @@ To install and use the **U.S. Census Full — Complete Demographic & Economic In
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

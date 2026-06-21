@@ -1,12 +1,14 @@
 # Internet Archive Wayback MCP Server
 
-Check URL archival status, explore capture history, and analyze Wayback Machine data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-wayback)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-wayback)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/internet-archive-wayback-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/internet-archive-wayback-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Check URL archival status, explore capture history, and analyze Wayback Machine data.
 
 ## Description
 Connect the **Internet Archive Wayback Machine** to any AI agent and access the world's largest web archive — 800B+ archived web pages spanning 25+ years of internet history.
@@ -71,6 +73,33 @@ Get the most recent capture of a URL
 Get captures for all subdomains of a domain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Internet Archive Wayback** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if https://example.com has been archived."
+
+**🤖 AI Agent:**
+> ✅ URL is archived! Closest snapshot: 20240115120000 (January 15, 2024). View at: https://web.archive.org/web/20240115120000/https://example.com. Total captures: 1,247 over 28 years.
+
+---
+
+**👤 You:**
+> "Show me all captures of https://example.com from 2020."
+
+**🤖 AI Agent:**
+> Found 52 captures of https://example.com in 2020. First: 2020-01-03 (status 200), Last: 2020-12-28 (status 200). Average capture frequency: ~1 per week. All returned HTTP 200 (OK).
+
+---
+
+**👤 You:**
+> "Find all subdomains of archive.org that have been captured."
+
+**🤖 AI Agent:**
+> Found captures for 15 subdomains of archive.org: www, web, developer, donate, help, blog, advancedsearch, petabox, us.archive.org, and others. Most captures are from www and web subdomains. Oldest capture dates back to 1998.
+
+
 ## Installation & Usage
 
 To install and use the **Internet Archive Wayback** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Internet Archive Wayback** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

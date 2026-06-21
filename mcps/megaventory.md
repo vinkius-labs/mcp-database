@@ -1,12 +1,14 @@
 # Megaventory MCP Server
 
-Inventory and order management via Megaventory — track products, stock levels, and orders.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/megaventory)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/megaventory)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/megaventory-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/megaventory-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** supply-chain
-**Tools Count:** 10
+
+**Category:** [supply-chain](../categories/supply-chain.md)
+
+Inventory and order management via Megaventory — track products, stock levels, and orders.
 
 ## Description
 Connect your **Megaventory** account to any AI agent and take full control of your inventory management and order fulfillment through natural conversation.
@@ -39,6 +41,33 @@ Connect your **Megaventory** account to any AI agent and take full control of yo
 - **search_products**: Search for products by description
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Megaventory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products in my Megaventory account."
+
+**🤖 AI Agent:**
+> Retrieving products... I found several items including 'Standard Widget' (SKU: WID-001) and 'Premium Gadget' (SKU: GAD-999).
+
+---
+
+**👤 You:**
+> "What is the stock level for SKU 'WID-001'?"
+
+**🤖 AI Agent:**
+> Checking stock levels... SKU 'WID-001' has 150 units available across your 3 inventory locations.
+
+---
+
+**👤 You:**
+> "Show the last 5 sales orders."
+
+**🤖 AI Agent:**
+> Querying sales orders... I found your most recent orders, including SO-12345 for Client 'TechCorp' and SO-12344 for 'Global Solutions'.
+
+
 ## Installation & Usage
 
 To install and use the **Megaventory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Megaventory** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

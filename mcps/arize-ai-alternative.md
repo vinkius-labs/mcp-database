@@ -1,12 +1,14 @@
 # Arize AI MCP Server
 
-Monitor ML model performance, detect data drift, and troubleshoot prediction quality with real-time observability dashboards.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arize-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arize-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arize-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arize-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 6
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Monitor ML model performance, detect data drift, and troubleshoot prediction quality with real-time observability dashboards.
 
 ## Description
 Connect your **Arize AI** account to any AI agent and take full control of your machine learning observability and automated model monitoring workflows through natural conversation.
@@ -43,6 +45,33 @@ No more manual logging into observability portals to check model drift or trace 
 - **list_spans**: List spans
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Arize AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active ML projects in my Arize account."
+
+**🤖 AI Agent:**
+> I've retrieved your tracing projects. You currently have 3 active projects, including 'Production Classifier' (ID: 1024) and 'Beta Recommender'. Which one would you like to inspect for recent traces?
+
+---
+
+**👤 You:**
+> "Show the recent execution spans for project '1024'."
+
+**🤖 AI Agent:**
+> Accessing telemetry data... I found 5 recent spans for project 1024. Most executions are showing low latency (avg 120ms). One span is flagged with a 'Schema Mismatch' warning. Shall I retrieve the detailed metadata for that trace?
+
+---
+
+**👤 You:**
+> "Create a new dataset 'Q2_Eval_Data' for model evaluation."
+
+**🤖 AI Agent:**
+> Dataset orchestrated! I've successfully created 'Q2_Eval_Data' in your Arize environment. The dataset ID is 'ds_456'. You can now begin uploading model versions for automated high-fidelity validation. Shall I list your available models?
+
+
 ## Installation & Usage
 
 To install and use the **Arize AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Arize AI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ClickTime MCP Server
 
-Manage time tracking and resource planning via ClickTime — track entries, monitor projects, and audit client hours directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clicktime)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clicktime)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clicktime-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clicktime-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage time tracking and resource planning via ClickTime — track entries, monitor projects, and audit client hours directly from any AI agent.
 
 ## Description
 Connect your **ClickTime** account to any AI agent and take full control of your time tracking and resource management through natural conversation. Streamline how you monitor billable hours and project progress natively.
@@ -45,6 +47,33 @@ Connect your **ClickTime** account to any AI agent and take full control of your
 - **list_clicktime_users**: List all people and users in the company
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClickTime** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all time entries from today in ClickTime."
+
+**🤖 AI Agent:**
+> Retrieving your time entries for today... I found 2 entries: 'Internal Meeting' (1.5 hrs) and 'Feature Development' (4.0 hrs). Total so far is 5.5 hours.
+
+---
+
+**👤 You:**
+> "Show me all clients configured in my account."
+
+**🤖 AI Agent:**
+> Checking client list... You have 5 active clients: Acme Corp, Global Tech, Startup Inc, Fast Services, and Blue Media. Would you like to see projects for any of these?
+
+---
+
+**👤 You:**
+> "What is the high-volume time report status?"
+
+**🤖 AI Agent:**
+> Retrieving high-volume report... The system returned 2,150 time entries for the current period. All records are processed and ready for analysis.
+
+
 ## Installation & Usage
 
 To install and use the **ClickTime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ClickTime** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Saysimple MCP Server
 
-Automate omnichannel messaging via Saysimple — manage chats, send WhatsApp/SMS, and use templates with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/saysimple)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/saysimple)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/saysimple-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/saysimple-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate omnichannel messaging via Saysimple — manage chats, send WhatsApp/SMS, and use templates with AI.
 
 ## Description
 Connect your **Saysimple** account to any AI agent and take full control of your omnichannel customer communication through natural conversation. Saysimple provides a centralized platform for managing WhatsApp, SMS, and Social Media interactions via its robust v3 API, and this integration allows you to retrieve chat logs, send template-based notifications, and assign conversations directly from your chat interface.
@@ -50,6 +52,33 @@ No more manual dashboard refreshing or template searching. Your AI acts as a ded
 Send a message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Saysimple** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active WhatsApp chats in Saysimple."
+
+**🤖 AI Agent:**
+> I've retrieved your chats. You have 3 active WhatsApp conversations: 'Alice Miller', 'Support Ticket #55', and 'New Lead Request'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Show me all active customer conversations across WhatsApp and SMS channels with response times."
+
+**🤖 AI Agent:**
+> 23 active conversations. WhatsApp (18): 12 awaiting agent reply (avg wait: 4.2 min), 6 in active dialogue. SMS (5): 3 awaiting reply, 2 active. By priority: Urgent (3): billing disputes, avg response time 1.8 min. Normal (15): product inquiries, avg 5.3 min. Low (5): general questions, avg 12 min. SLA compliance: 91% (target 95%). Top agent: Sarah with 8 active chats and 2.1 min avg response. 4 conversations auto-assigned via routing rules.
+
+---
+
+**👤 You:**
+> "Send a WhatsApp template message to all contacts who purchased in the last 7 days asking for feedback."
+
+**🤖 AI Agent:**
+> WhatsApp template broadcast sent. Template: "Post-Purchase Feedback" (approved by Meta). Recipients: 156 contacts (purchased in last 7 days). Message: "Hi [Name], thank you for your recent purchase! We'd love to hear about your experience. Rate us 1-5 by replying to this message." Delivery: 154 delivered (98.7%). 2 failed (opted out). Read rate after 1 hour: 72% (111 contacts). 34 have already replied with ratings. Average rating so far: 4.3/5.
+
+
 ## Installation & Usage
 
 To install and use the **Saysimple** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Saysimple** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

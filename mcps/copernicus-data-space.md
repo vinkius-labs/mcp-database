@@ -1,12 +1,14 @@
 # Copernicus Data Space MCP Server
 
-Access satellite imagery and Earth observation datasets from the EU Copernicus program for environmental and geospatial analysis.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-data-space)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-data-space)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copernicus-data-space-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copernicus-data-space-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 14
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access satellite imagery and Earth observation datasets from the EU Copernicus program for environmental and geospatial analysis.
 
 ## Description
 Connect to the **Copernicus Data Space Ecosystem** and unlock the world's largest open Earth observation archive directly from your AI agent.
@@ -80,6 +82,33 @@ Search satellite products by orbit number
 Search Sentinel satellite products by collection, date range, and area
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Copernicus Data Space** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find Sentinel-2 satellite images over Lisbon from the last week."
+
+**🤖 AI Agent:**
+> Searching the Copernicus catalogue for SENTINEL-2 products over Lisbon... I found 8 products in the last 7 days. The most recent is S2B_MSIL2A acquired yesterday with 12% cloud cover. The cleanest scene has only 3% cloud cover from 3 days ago. Would you like me to get the download URL for the cloud-free scene?
+
+---
+
+**👤 You:**
+> "How many Sentinel-1 radar products are available for January 2026?"
+
+**🤖 AI Agent:**
+> Counting SENTINEL-1 products for January 2026... The catalogue contains 42,738 products for that period. Sentinel-1 acquires radar imagery regardless of cloud cover or daylight, so coverage is continuous. Would you like me to search for products in a specific region?
+
+---
+
+**👤 You:**
+> "What data collections are available in the Copernicus Data Space?"
+
+**🤖 AI Agent:**
+> Fetching available collections... The Copernicus Data Space currently hosts 15 data collections including SENTINEL-1 (C-band SAR radar), SENTINEL-2 (multispectral optical at 10-60m), SENTINEL-3 (ocean color and land surface), SENTINEL-5P (tropospheric monitoring), SENTINEL-6 (precise ocean altimetry), plus Landsat-5/7/8/9, SMOS, MERIS, and DEM datasets. Would you like details about a specific collection?
+
+
 ## Installation & Usage
 
 To install and use the **Copernicus Data Space** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Copernicus Data Space** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

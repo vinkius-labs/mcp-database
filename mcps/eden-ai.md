@@ -1,12 +1,14 @@
 # Eden AI MCP Server
 
-Equip your AI agent to manage unified AI workflows, track providers, and monitor API usage via the Eden AI platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eden-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eden-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eden-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eden-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Equip your AI agent to manage unified AI workflows, track providers, and monitor API usage via the Eden AI platform.
 
 ## Description
 Integrate **Eden AI**, the unified AI API platform, directly into your AI workflow. Manage your automation workflows and pipelines, track available AI providers (OpenAI, Google, AWS, etc.) across various features, monitor real-time API usage and costs, and oversee your LLM models using natural language.
@@ -44,6 +46,33 @@ Generate a chat completion using Eden AI multi-provider routing
 Execute specialized AI tasks (OCR, translation, image generation) via Eden AI
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eden AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active AI workflows."
+
+**🤖 AI Agent:**
+> I've found 5 active workflows, including 'Content Extraction' and 'Multilingual Support Bot'. Would you like to see the configuration steps for Content Extraction?
+
+---
+
+**👤 You:**
+> "Show me the pricing for 'sentiment_analysis' across providers."
+
+**🤖 AI Agent:**
+> I've retrieved the pricing for sentiment analysis: OpenAI ($0.01 per 1k chars), Google ($0.008 per 1k chars), and AWS ($0.012 per 1k chars). Should I pull the service level metadata for Google?
+
+---
+
+**👤 You:**
+> "What is my current Eden AI credit balance?"
+
+**🤖 AI Agent:**
+> Your current credit balance is $45.20. Your API usage today has been $1.50 across 3 features. Would you like a breakdown of today's usage by feature?
+
+
 ## Installation & Usage
 
 To install and use the **Eden AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Eden AI** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

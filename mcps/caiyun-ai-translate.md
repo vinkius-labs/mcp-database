@@ -1,12 +1,14 @@
 # Caiyun AI Translate / 彩云小译 MCP Server
 
-Popular high-precision machine translation — translate text lists and detect languages via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/caiyun-ai-translate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/caiyun-ai-translate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/caiyun-ai-translate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/caiyun-ai-translate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Popular high-precision machine translation — translate text lists and detect languages via AI.
 
 ## Description
 Empower your AI agent to orchestrate your global communication and high-precision translation with **Caiyun AI Translate** (彩云小译), one of China's most popular machine translation platforms. By connecting Caiyun to your agent, you transform complex multilingual tasks, text list processing, and technical localization into a natural conversation. Your agent can instantly translate multiple strings in a single request, provide confidence scores for translations, and support diverse language pairs including Chinese, English, Japanese, and Korean. Whether you are localizing software interfaces or translating diverse social media feeds, your agent acts as a real-time linguistic coordinator, providing accurate and context-aware results from a single, authorized source.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your global communication and high-precisio
 - **translate_zh_to_en**: Translate Chinese to English
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Caiyun AI Translate / 彩云小译** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Translate these phrases to Chinese: 'Good morning', 'How can I help you?', 'Have a nice day'."
+
+**🤖 AI Agent:**
+> I've translated your list of phrases to Simplified Chinese using Caiyun AI. 1. '早上好' (Zǎoshang hǎo), 2. '我能帮你什么吗？' (Wǒ néng bāng nǐ shénme ma?), 3. '祝你度过愉快的一天' (Zhù nǐ dùguò yúkuài de yītiān). Would you like me to translate more strings?
+
+---
+
+**👤 You:**
+> "Translate this Japanese note to Chinese: 'こんにちは、お元気ですか？'"
+
+**🤖 AI Agent:**
+> I've translated the Japanese text to Simplified Chinese. The translation is: '你好，你好吗？' (Nǐ hǎo, nǐ hǎo ma?). The Caiyun API performed this with high confidence. Should I check the API status for you?
+
+---
+
+**👤 You:**
+> "Translate 'Hello' to Chinese, English, and Japanese in one go."
+
+**🤖 AI Agent:**
+> Using Caiyun's multi-translation capability, here is 'Hello': 1. Chinese: '你好', 2. English: 'Hello', 3. Japanese: 'こんにちは'. Would you like me to translate a different word into these languages?
+
+
 ## Installation & Usage
 
 To install and use the **Caiyun AI Translate / 彩云小译** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Caiyun AI Translate / 彩云小译** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

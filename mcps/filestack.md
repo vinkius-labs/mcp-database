@@ -1,12 +1,14 @@
 # FileStack MCP Server
 
-Upload, transform, and analyze files with Filestack—extract text via OCR, detect objects, and manage video transcoding directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/filestack)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filestack)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filestack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filestack-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 8
+
+**Category:** [image-video](../categories/image-video.md)
+
+Upload, transform, and analyze files with Filestack—extract text via OCR, detect objects, and manage video transcoding directly from your AI agent.
 
 ## Description
 Connect your **Filestack** account to any AI agent to handle complex file workflows, from cloud uploads to advanced AI content analysis, through simple commands.
@@ -47,6 +49,33 @@ Generate a Filestack transformation URL
 Start asynchronous video/audio transcoding
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FileStack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Upload this image to Filestack: https://example.com/photo.jpg"
+
+**🤖 AI Agent:**
+> I've uploaded the file. The new Filestack handle is `ABC123XYZ`. You can now use this handle for transformations or metadata analysis.
+
+---
+
+**👤 You:**
+> "What objects are detected in the image with handle ABC123XYZ?"
+
+**🤖 AI Agent:**
+> Analyzing the image... I've detected several tags: 'mountain' (98% confidence), 'snow' (95%), and 'outdoor' (92%).
+
+---
+
+**👤 You:**
+> "Convert the video ABC123XYZ to mp4 format."
+
+**🤖 AI Agent:**
+> I've started the transcoding job for handle ABC123XYZ using the 'mp4' preset. The job UUID is `job-550e8400`. You can check the status later using `get_video_status`.
+
+
 ## Installation & Usage
 
 To install and use the **FileStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **FileStack** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

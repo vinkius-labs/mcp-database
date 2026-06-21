@@ -1,12 +1,14 @@
 # ANA (Movimentação de Dados) MCP Server
 
-Access and manage hydrometeorological data from the Brazilian National Water Agency (ANA) — query flow, rainfall, water quality, and cross-section series.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ana-movimentacao-de-dados)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ana-movimentacao-de-dados)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ana-movimentacao-de-dados-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ana-movimentacao-de-dados-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 18
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access and manage hydrometeorological data from the Brazilian National Water Agency (ANA) — query flow, rainfall, water quality, and cross-section series.
 
 ## Description
 Connect to the **ANA (Agência Nacional de Águas e Saneamento Básico)** data movement API to retrieve and manage critical hydrometeorological information directly through your AI agent.
@@ -55,6 +57,33 @@ Search for Flow Series (Série Vazão) data
 - **update_serie_vazao**: Update/Modification of Flow Series (Série Vazão) data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ANA (Movimentação de Dados)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for flow series data (vazão) for station code 66070000."
+
+**🤖 AI Agent:**
+> I've retrieved the flow data for station 66070000. The series includes daily measurements showing a mean flow of 150 m³/s for the requested period. Would you like to see the full table?
+
+---
+
+**👤 You:**
+> "Get the water quality (QA) series for ID 12345."
+
+**🤖 AI Agent:**
+> Accessing Water Quality data... For series ID 12345, I found parameters for Turbidity, Dissolved Oxygen, and pH levels. The last recorded pH was 7.2.
+
+---
+
+**👤 You:**
+> "List the rainfall series (chuva) for station 45001000 on 2023-05-20."
+
+**🤖 AI Agent:**
+> Querying rainfall data... On 2023-05-20, station 45001000 recorded a total precipitation of 12.5mm. There are 3 active series associated with this station.
+
+
 ## Installation & Usage
 
 To install and use the **ANA (Movimentação de Dados)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **ANA (Movimentação de Dados)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

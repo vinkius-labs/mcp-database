@@ -1,12 +1,14 @@
 # Pika MCP Server
 
-Equip your AI agent with Pika Labs native video generation. Create text-to-video, animate images, generate sound effects, and lip-sync programmatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pika)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pika)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pika-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pika-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Equip your AI agent with Pika Labs native video generation. Create text-to-video, animate images, generate sound effects, and lip-sync programmatically.
 
 ## Description
 Connect your **Pika 2.2** fal.ai endpoint to your AI agent and construct a massive programmatic video production studio relying solely on natural language commands.
@@ -49,6 +51,33 @@ Get the status of a Pika generation request. Returns status (IN_QUEUE/IN_PROGRES
 - **generate_sound_effects**: Generate AI sound effects for a video using Pika Labs. Auto-detects scene and adds appropriate SFX. Instructions: Pass video URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pika** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 5-second video of a cyberpunk city floating in neon clouds."
+
+**🤖 AI Agent:**
+> The video generation has been queued internally (ID: pk-1029). I'll check its status over the next couple of minutes and alert you when the asset is completely processed.
+
+---
+
+**👤 You:**
+> "Apply the 'melt' visual effect to the job ID pk-1029."
+
+**🤖 AI Agent:**
+> I've invoked the `apply_visual_effects` tool with the 'melt' parameter on source asset pk-1029. A new task has spawned to calculate this destruction scene.
+
+---
+
+**👤 You:**
+> "Check the status of task pk-1029 and fetch the video link if it's done."
+
+**🤖 AI Agent:**
+> I pinged `get_job_status` and it returned 'COMPLETED'. Using `get_job_result`, here is the final MP4 hyperlink: [https://fal.media/cloud/...]
+
+
 ## Installation & Usage
 
 To install and use the **Pika** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Pika** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

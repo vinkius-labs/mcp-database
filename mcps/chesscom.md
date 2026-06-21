@@ -1,12 +1,14 @@
 # Chess.com MCP Server
 
-Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chesscom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chesscom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chesscom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chesscom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** education
-**Tools Count:** 15
+
+**Category:** [education](../categories/education.md)
+
+Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent.
 
 ## Description
 Connect to the **Chess.com** public API and explore the entire chess ecosystem through natural conversation. No authentication required — just install and start querying immediately.
@@ -85,6 +87,33 @@ Get list of titled players by title type
 Check if a Chess.com player is currently online
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chess.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current ratings and stats for chess player 'hikaru' on Chess.com."
+
+**🤖 AI Agent:**
+> I pulled the stats for 'hikaru'. His current ratings are: Blitz 3254, Bullet 3421, Rapid 2890, Daily 2650. His best ratings ever were: Blitz 3393, Bullet 3527, Rapid 2978. He also has a Puzzle Rush best score of 78. This makes him one of the highest-rated players on the platform.
+
+---
+
+**👤 You:**
+> "Get me today's daily puzzle from Chess.com."
+
+**🤖 AI Agent:**
+> Here's today's Chess.com daily puzzle! It's rated at 1650. The position comes from a real game (White to move). The solution involves a tactical motif in 3 moves. The FEN is provided so you can set up the position on a board. Would you like me to walk through the solution step by step?
+
+---
+
+**👤 You:**
+> "Show me the top 5 players on the Chess.com blitz leaderboard."
+
+**🤖 AI Agent:**
+> Here are the current top 5 players on the Chess.com blitz leaderboard: 1. **Hikaru** (3254), 2. **DrNykterstein** (3215), 3. **ArjunErigaisi** (3198), 4. **DanielNaroditsky** (3176), 5. **CrazyBishop** (3145). These are some of the strongest blitz players in the world. Want me to pull detailed stats for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Chess.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -93,4 +122,11 @@ To install and use the **Chess.com** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Wherefour MCP Server
 
-Manage inventory, traceability, and orders with Wherefour ERP through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wherefour)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wherefour)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wherefour-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wherefour-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage inventory, traceability, and orders with Wherefour ERP through AI.
 
 ## Description
 Connect your **Wherefour** account to any AI agent to automate your inventory management, production tracking, and lot traceability. Wherefour provides a specialized ERP platform for manufacturers and producers to maintain end-to-end transparency across their supply chain.
@@ -49,6 +51,33 @@ Connect your **Wherefour** account to any AI agent to automate your inventory ma
 - **search_inventory**: Search for inventory items
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wherefour** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search our inventory for 'Organic Cane Sugar' and pull up the production formula that uses it for the upcoming beverage batch."
+
+**🤖 AI Agent:**
+> I found 'Organic Cane Sugar' (Item #8492) in your inventory with 450 lbs currently in stock. It is a primary ingredient in the 'Summer Citrus Kombucha' formula. The formula requires 25 lbs of sugar per production batch. Would you like to view the full recipe?
+
+---
+
+**👤 You:**
+> "Check the lot traceability for batch 'L-2024-QT3' of Arabica Coffee Beans and tell me which warehouse location it is currently stored in."
+
+**🤖 AI Agent:**
+> I've retrieved the traceability data for lot 'L-2024-QT3'. This batch of Arabica Coffee Beans was received from 'Highland Roasters' on October 12th. It passed quality inspection and is currently stored in 'Warehouse B, Zone 4, Rack 12'. There are 120 units remaining in this lot.
+
+---
+
+**👤 You:**
+> "List all pending production orders for 'Acme Supermarkets' and verify if their latest invoice from last month has been paid."
+
+**🤖 AI Agent:**
+> There are 2 pending production orders for 'Acme Supermarkets': PO-7381 (Organic Oatmeal) and PO-7389 (Almond Milk), both scheduled for completion this Friday. I also checked their billing records; Invoice #INV-5920 from last month is marked as 'Paid in Full'.
+
+
 ## Installation & Usage
 
 To install and use the **Wherefour** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Wherefour** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

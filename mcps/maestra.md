@@ -1,12 +1,14 @@
 # Maestra MCP Server
 
-Automate transcription, translation, and AI voiceovers via the Maestra.ai REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/maestra)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maestra)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maestra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maestra-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 8
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Automate transcription, translation, and AI voiceovers via the Maestra.ai REST API.
 
 ## Description
 Connect your **Maestra.ai** account to any AI agent to automate your media processing workflows. This MCP server enables your agent to upload audio/video files for transcription, translate transcripts into 125+ languages, and generate synthetic AI voiceovers directly from natural language interfaces.
@@ -45,6 +47,33 @@ Upload a new file for transcription
 - **list_available_ai_voices**: List all available synthetic AI voices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Maestra** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Upload the video at 'https://example.com/video.mp4' for English transcription in Maestra."
+
+**🤖 AI Agent:**
+> I've initiated the upload for your video. Maestra is now processing the file for English transcription. The file ID is 'vid-12345'.
+
+---
+
+**👤 You:**
+> "List all available AI voices for French."
+
+**🤖 AI Agent:**
+> I found 8 synthetic voices for French, including 'Claire (Female)', 'Mathieu (Male)', and 'Amelie (Female)'. Which one would you like to use for your voiceover?
+
+---
+
+**👤 You:**
+> "Get an SRT export link for file ID 'vid-12345'."
+
+**🤖 AI Agent:**
+> I've generated the export link for your subtitles. You can download the SRT file here: https://api.maestra.ai/temp/vid-12345.srt
+
+
 ## Installation & Usage
 
 To install and use the **Maestra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Maestra** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

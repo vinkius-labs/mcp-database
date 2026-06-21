@@ -1,12 +1,14 @@
 # Google Books MCP Server
 
-Search the world's most comprehensive index of full-text books, manage personal bookshelves, and retrieve detailed literary metadata.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-books-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-books-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-books-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-books-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search the world's most comprehensive index of full-text books, manage personal bookshelves, and retrieve detailed literary metadata.
 
 ## Description
 Connect your **Google Books** library to any AI agent to explore millions of titles and organize your reading life through natural conversation.
@@ -63,6 +65,33 @@ Remove a volume from a bookshelf
 Search for books and magazines
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Books** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for books about 'Artificial Intelligence' written by 'Stuart Russell'."
+
+**🤖 AI Agent:**
+> I found several volumes. The most prominent is 'Artificial Intelligence: A Modern Approach' (Volume ID: `zyTCAlS7f7cC`). Would you like to see the full description or check its availability?
+
+---
+
+**👤 You:**
+> "List all the volumes currently in my 'To Read' bookshelf."
+
+**🤖 AI Agent:**
+> Accessing your library... You have 3 books in your 'To Read' shelf (ID: 2): 'Dune', 'Foundation', and 'Neuromancer'. Would you like the metadata for any of these?
+
+---
+
+**👤 You:**
+> "Get the full details for the book with ID '7_f_DwAAQBAJ'."
+
+**🤖 AI Agent:**
+> Retrieving volume data... This is 'Project Hail Mary' by Andy Weir. It has 496 pages, published by Ballantine Books, and is categorized under Fiction / Science Fiction / Space Exploration.
+
+
 ## Installation & Usage
 
 To install and use the **Google Books** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Google Books** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

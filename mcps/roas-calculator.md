@@ -1,12 +1,14 @@
 # ROAS Calculator MCP Server
 
-Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/roas-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/roas-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/roas-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/roas-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending.
 
 ## Description
 # Assess Advertising Profitability with Precision
@@ -30,6 +32,33 @@ Calculate Return on Ad Spend (ROAS) with optional channel/campaign breakdown
 - **get_target_benchmark**: Get the target ROAS benchmark for a specific business type
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ROAS Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We spent $15,000 last month and generated $60,000 in revenue. Can you calculate the total ROAS and break down the performance by 'Google Ads' vs 'Facebook/Instagram'?"
+
+**🤖 AI Agent:**
+> Calling `calculate_roas` with mediaSpend=15000, sourceRevenue=60000, and groupByField='Channel'. The total ROAS is 4.0x. Google Ads contributed a ROAS of X, while Facebook/Instagram contributed Y.
+
+---
+
+**👤 You:**
+> "We are an E-commerce company reporting in USD. What is the minimum target ROAS we should aim for?"
+
+**🤖 AI Agent:**
+> Calling `get_target_benchmark` with businessType='E-commerce' and targetCurrencyCode='USD'. The system returns a benchmark of 4x, which serves as your minimum performance goal.
+
+---
+
+**👤 You:**
+> "Our current contribution margin is 0.55 (55%). What ROAS do we need to break even in EUR?"
+
+**🤖 AI Agent:**
+> Calling `calculate_break_even_roas` with contributionMarginPercentage=0.55 and targetCurrencyCode='EUR'. The required break-even ROAS is 1.82x, meaning your ad spend must generate at least this much revenue to cover all marginal costs.
+
+
 ## Installation & Usage
 
 To install and use the **ROAS Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -38,4 +67,11 @@ To install and use the **ROAS Calculator** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # SignOnSite MCP Server
 
-Track who enters and exits your construction sites with digital sign-in, safety inductions, and compliance documentation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/signonsite)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/signonsite)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/signonsite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/signonsite-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Track who enters and exits your construction sites with digital sign-in, safety inductions, and compliance documentation.
 
 ## Description
 Connect your **SignOnSite** account to any AI agent and take full control of your construction site safety and attendance orchestration through natural conversation. SignOnSite provides a premier platform for managing worker sign-ons, safety inductions, and site attendance, and this integration allows you to retrieve site metadata, monitor worker enrollments, and track safety briefings directly from your chat interface.
@@ -53,6 +55,33 @@ Query safety permits
 - **sign_on_worker**: Record a manual sign-on for a worker
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SignOnSite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all workers currently signed onto the 'Skyline Apartments' site."
+
+**🤖 AI Agent:**
+> I've retrieved the attendance list. There are currently 12 workers on site, including 'John Miller' and 'Sarah Chen'. Would you like to see their contact info or induction status?
+
+---
+
+**👤 You:**
+> "Show me any active permits for site ID 12345."
+
+**🤖 AI Agent:**
+> Checking site permits... I found 3 active permits for site 12345: 'Hot Works', 'Working at Heights', and 'Excavation'. Would you like the full details for any of them?
+
+---
+
+**👤 You:**
+> "Check if worker 'Robert Smith' is enrolled for the 'City Hospital' site."
+
+**🤖 AI Agent:**
+> Searching worker records... 'Robert Smith' is successfully enrolled for 'City Hospital' and has completed his general induction. Should I check his specific equipment credentials?
+
+
 ## Installation & Usage
 
 To install and use the **SignOnSite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **SignOnSite** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # BoardEffect MCP Server
 
-Manage board activities via BoardEffect — list meetings, members, and documents directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/boardeffect)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boardeffect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boardeffect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boardeffect-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage board activities via BoardEffect — list meetings, members, and documents directly from any AI agent.
 
 ## Description
 Connect your **BoardEffect (Diligent)** account to any AI agent and orchestrate your board management and governance workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **BoardEffect (Diligent)** account to any AI agent and orchestrate 
 - **list_workrooms**: List all workrooms
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BoardEffect** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all upcoming board meetings."
+
+**🤖 AI Agent:**
+> I've retrieved your meetings. You have 3 upcoming sessions: 'Quarterly Strategy Review' (ID: meet_1), 'Audit Committee' (ID: meet_2), and 'Annual General Meeting' (ID: meet_3).
+
+---
+
+**👤 You:**
+> "Show the documents in the 'Finance Committee' workroom."
+
+**🤖 AI Agent:**
+> Retrieving documents... I found 5 files, including 'Budget Draft Q3.pdf', 'Expense Report - Feb.pdf', and 'Investment Strategy.docx'. Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Find contact details for board member Sarah Miller."
+
+**🤖 AI Agent:**
+> I found one matching member: 'Sarah Miller' (ID: mem_992). Her email is sarah.miller@example.com and she is the Chair of the Audit Committee.
+
+
 ## Installation & Usage
 
 To install and use the **BoardEffect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BoardEffect** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

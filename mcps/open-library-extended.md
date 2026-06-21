@@ -1,12 +1,14 @@
 # Open Library MCP Server
 
-Access the world's largest open book catalog — search books, authors, and works, and explore user-created lists directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-library-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-library-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 17
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the world's largest open book catalog — search books, authors, and works, and explore user-created lists directly from any AI agent.
 
 ## Description
 Connect to the **Open Library** database and turn your AI into a master librarian. Access millions of records, from classic literature to modern scientific papers, using the Internet Archive's open catalog.
@@ -62,6 +64,33 @@ Get details for a specific Work
 - **search_lists**: Search for user-created book lists
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Library** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for books about 'Quantum Physics' published in English."
+
+**🤖 AI Agent:**
+> I've found several books on Quantum Physics. Top results include 'Quantum Physics for Beginners' and 'The Elegant Universe'. Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Get the biography and works of author Mark Twain."
+
+**🤖 AI Agent:**
+> Mark Twain (Samuel Langhorne Clemens) was an American writer. I've retrieved his profile (ID: OL18319A) and a list of his famous works like 'The Adventures of Tom Sawyer'. Shall I list more of his works?
+
+---
+
+**👤 You:**
+> "Find all editions for the work with ID OL27258W."
+
+**🤖 AI Agent:**
+> I've found 12 editions for this work, ranging from the 1954 original hardcover to recent digital reprints. Would you like to see the specific ISBNs for these editions?
+
+
 ## Installation & Usage
 
 To install and use the **Open Library** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Open Library** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

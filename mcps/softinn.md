@@ -1,12 +1,14 @@
 # Softinn MCP Server
 
-Orchestrate Softinn Hotel PMS — manage reservations, rooms, and guest folios directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/softinn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/softinn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/softinn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/softinn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Orchestrate Softinn Hotel PMS — manage reservations, rooms, and guest folios directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Softinn**, the leading cloud-based Hotel Management System (PMS) and Booking Engine. This MCP provides 10 tools to automate the full lifecycle of your property operations, from real-time availability searches and reservation creation to housekeeping status updates and guest billing management.
@@ -49,6 +51,33 @@ Connect your AI agents to **Softinn**, the leading cloud-based Hotel Management 
 Update the housekeeping or occupancy status of a room
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Softinn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check room availability in my Softinn hotel from 2024-06-01 to 2024-06-05."
+
+**🤖 AI Agent:**
+> Searching Softinn booking engine... I've found 3 available room types for those dates: 1. Deluxe Suite (2 left, RM 350/night), 2. King Room (5 left, RM 280/night), 3. Single Economy (1 left, RM 150/night). Would you like to create a reservation?
+
+---
+
+**👤 You:**
+> "Show me the arrival list for today."
+
+**🤖 AI Agent:**
+> Retrieving reservations for 2024-04-12... I found 4 arrivals: 1. John Doe (Res: #12345), 2. Jane Smith (Res: #12346), 3. Robert Brown (Res: #12347), 4. Alice White (Res: #12348). All rooms are currently assigned.
+
+---
+
+**👤 You:**
+> "Update the status of room 302 to 'Clean'."
+
+**🤖 AI Agent:**
+> Connecting to Softinn PMS... I've successfully updated Room 302 (ID: rm_302) to status: 'Clean'. The change is now visible across all property dashboards.
+
+
 ## Installation & Usage
 
 To install and use the **Softinn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Softinn** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

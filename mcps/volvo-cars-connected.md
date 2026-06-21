@@ -1,12 +1,14 @@
 # Volvo Cars Connected MCP Server
 
-Monitor and manage your connected Volvo vehicle — check fuel levels, battery status, door locks, and trip statistics directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/volvo-cars-connected)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/volvo-cars-connected)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/volvo-cars-connected-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/volvo-cars-connected-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Monitor and manage your connected Volvo vehicle — check fuel levels, battery status, door locks, and trip statistics directly via AI.
 
 ## Description
 Connect your AI agent to the **Volvo Cars Connected Vehicle API**. This integration allows you to interact with your Volvo vehicle in real-time, retrieving essential telemetry data and status updates through natural conversation.
@@ -45,6 +47,25 @@ Connect your AI agent to the **Volvo Cars Connected Vehicle API**. This integrat
 - **list_vehicles**: Retrieve a list of all vehicles associated with the Volvo ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Volvo Cars Connected** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the battery level of my Volvo?"
+
+**🤖 AI Agent:**
+> Checking your vehicle... Your Volvo (VIN: ...123) has a 78% battery charge remaining, with an estimated range of 320 km.
+
+---
+
+**👤 You:**
+> "Are my car doors locked?"
+
+**🤖 AI Agent:**
+> Status update: All doors on your vehicle are currently LOCKED and secure.
+
+
 ## Installation & Usage
 
 To install and use the **Volvo Cars Connected** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +74,11 @@ To install and use the **Volvo Cars Connected** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ReferralCandy MCP Server
 
-Connect your AI agents to ReferralCandy to manage referral programs, track advocates, register purchases, and analyze campaign performance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/referralcandy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/referralcandy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/referralcandy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/referralcandy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 16
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Connect your AI agents to ReferralCandy to manage referral programs, track advocates, register purchases, and analyze campaign performance.
 
 ## Description
 Give your AI agent full programmatic control over your ReferralCandy ecosystem. With 16 tools tailored for referral marketing, your agent can instantly track referrals by period, register attributed purchases, identify top advocates, monitor pending rewards, manage campaigns, and send referral invitations directly from your natural language workspace.
@@ -47,6 +49,33 @@ Designed for marketing teams, e-commerce operators, and growth hackers who need 
 - **send_invite**: Send a referral invite
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ReferralCandy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Can you find the top referrers in my ReferralCandy program for the last month?"
+
+**🤖 AI Agent:**
+> I've fetched your top advocates. The highest performer is 'Sarah Jenkins' with 42 successful referrals, generating $1,200 in revenue. Would you like me to send her a special campaign invite?
+
+---
+
+**👤 You:**
+> "Register a purchase of $150.00 for order #90210 by customer@example.com."
+
+**🤖 AI Agent:**
+> Executing the purchase registration... The purchase for order #90210 has been successfully logged. ReferralCandy has attributed this to the advocate 'Michael T.' and a pending reward of $15 has been queued.
+
+---
+
+**👤 You:**
+> "List all pending referral rewards that need to be processed this week."
+
+**🤖 AI Agent:**
+> Running the query... I found 8 pending rewards awaiting processing. Notable payouts include $50 for 'Alex' and $25 for 'Maria'. Would you like the full breakdown of these pending payouts?
+
+
 ## Installation & Usage
 
 To install and use the **ReferralCandy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **ReferralCandy** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

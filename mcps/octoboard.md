@@ -1,12 +1,14 @@
 # Octoboard MCP Server
 
-Build client-facing marketing reports automatically by pulling data from Google, Facebook, HubSpot, and 50 other integrations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/octoboard)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/octoboard)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/octoboard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/octoboard-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build client-facing marketing reports automatically by pulling data from Google, Facebook, HubSpot, and 50 other integrations.
 
 ## Description
 Connect your **Octoboard** account to any AI agent and take full control of your marketing business intelligence and reporting orchestration through natural conversation. Octoboard provides a powerful data visualization platform, and this integration allows you to retrieve dashboard metadata, push custom metrics to widgets, and monitor automated reports directly from your chat interface.
@@ -51,6 +53,33 @@ Update value + change
 - **test_octoboard_auth**: Verify credentials
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Octoboard** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active dashboards in Octoboard."
+
+**🤖 AI Agent:**
+> I've retrieved your dashboards. You have 3 active environments: 'Client A - Marketing', 'Internal Revenue', and 'SEO Performance'. Which one would you like to see metrics for?
+
+---
+
+**👤 You:**
+> "Push a revenue metric of 48750 to my Executive KPI dashboard widget."
+
+**🤖 AI Agent:**
+> Done. The numeric metric $48,750 has been pushed to your Executive KPI dashboard. The widget now displays the updated value with a 12% increase indicator compared to the previous period. The dashboard will refresh for all viewers within 30 seconds.
+
+---
+
+**👤 You:**
+> "List all automated reports and their delivery schedules."
+
+**🤖 AI Agent:**
+> You have 4 automated reports configured. "Weekly SEO Summary" sends every Monday at 9 AM to marketing@company.com. "Monthly Client Report" generates the 1st of each month for 6 agency clients. "Daily Ad Spend" delivers at 8 AM to the growth team. "Quarterly Executive Review" runs every quarter end.
+
+
 ## Installation & Usage
 
 To install and use the **Octoboard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Octoboard** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

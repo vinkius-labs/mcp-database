@@ -1,12 +1,14 @@
 # Tradier MCP Server
 
-Trade equities and options, fetch real-time market data, and manage your brokerage accounts directly through any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tradier)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tradier)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tradier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tradier-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 13
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Trade equities and options, fetch real-time market data, and manage your brokerage accounts directly through any AI agent.
 
 ## Description
 Connect your **Tradier** brokerage account to any AI agent to streamline your trading workflow and market analysis through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Tradier** brokerage account to any AI agent to streamline your tr
 - **get_user_profile**: Retrieve the user profile and linked accounts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tradier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current price and daily change for TSLA and MSFT?"
+
+**🤖 AI Agent:**
+> I've fetched the quotes for you. TSLA is currently trading at $242.10 (+1.2%) and MSFT is at $415.50 (-0.4%). Would you like to see the historical data for either of these?
+
+---
+
+**👤 You:**
+> "Show me all open positions in my account 12345678."
+
+**🤖 AI Agent:**
+> In account 12345678, you currently hold 50 shares of AAPL and 10 contracts of SPY Dec 20 Put. Your total market value for these positions is approximately $12,400.
+
+---
+
+**👤 You:**
+> "Get the option chain for NVDA expiring on 2025-01-17."
+
+**🤖 AI Agent:**
+> I've retrieved the option chain for NVDA for the Jan 17, 2025 expiration. There are 45 strikes available, ranging from $100 to $150. Would you like to filter for specific strikes or see the Greeks for the At-The-Money calls?
+
+
 ## Installation & Usage
 
 To install and use the **Tradier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Tradier** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

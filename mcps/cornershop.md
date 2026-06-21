@@ -1,12 +1,14 @@
 # Cornershop MCP Server
 
-Automate LatAm grocery deliveries via Cornershop (by Uber) — search products, manage carts, track orders, and monitor shoppers from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cornershop)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cornershop)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cornershop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cornershop-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate LatAm grocery deliveries via Cornershop (by Uber) — search products, manage carts, track orders, and monitor shoppers from any AI agent.
 
 ## Description
 Connect your **Cornershop by Uber** B2B account to any AI agent and manage your last-mile grocery delivery operations through natural conversation.
@@ -61,6 +63,33 @@ Search for specific groceries and products
 Update an active order (e.g. add/remove items)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cornershop** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Jumbo stores near latitude -33.4372 and longitude -70.6506 (Santiago Centro)."
+
+**🤖 AI Agent:**
+> I found 3 Jumbo stores serving that location: 1. Jumbo Costanera Center (Store ID: JMB-992, Delivery ETA: 90 mins). 2. Jumbo Bilbao (Store ID: JMB-841, Delivery ETA: 120 mins). 3. Jumbo Paseo San Bernardo (Store ID: JMB-221, Delivery ETA: Next day). Which store would you like to search products in?
+
+---
+
+**👤 You:**
+> "Where is the shopper for my order #CS-44919?"
+
+**🤖 AI Agent:**
+> Tracking order #CS-44919: The order is in 'delivering' status. Your Shopper (Carlos V., rating 4.9) is currently 3 blocks away (Lat: -33.412, Lng: -70.590) heading southbound. Current ETA is 7 minutes. Would you like me to verify the drop-off instructions?
+
+---
+
+**👤 You:**
+> "Place an order at Lider (ID: LDR-10) for 2 units of SKU 'Milk-Whole-1L' and deliver into the corporate office."
+
+**🤖 AI Agent:**
+> Order successfully created! Order ID #CS-89821 has been placed at Lider (LDR-10) for 2x 'Milk-Whole-1L'. The total including service fees is $3,250. A Shopper will be assigned shortly and delivery is scheduled for the next 60 minutes window. I will notify you when shopping begins.
+
+
 ## Installation & Usage
 
 To install and use the **Cornershop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Cornershop** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

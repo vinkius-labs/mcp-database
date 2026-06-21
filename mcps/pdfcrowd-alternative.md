@@ -1,12 +1,14 @@
 # Pdfcrowd MCP Server
 
-Convert HTML, web pages, and documents to PDF or images. Generate invoices and extract text from PDFs directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfcrowd-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfcrowd-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdfcrowd-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdfcrowd-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Convert HTML, web pages, and documents to PDF or images. Generate invoices and extract text from PDFs directly via AI.
 
 ## Description
 Transform web content and documents with the **Pdfcrowd** MCP server. This powerful integration allows your AI agent to convert HTML to high-quality PDFs or images, extract text from existing PDFs, and generate professional business documents like invoices from raw data.
@@ -49,6 +51,33 @@ Transform a PDF document into plain text
 Generate professional documents (invoices, receipts) from JSON data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pdfcrowd** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert the web page https://example.com to a PDF in landscape orientation."
+
+**🤖 AI Agent:**
+> I've initiated the conversion for https://example.com. I've set the orientation to landscape as requested. Your PDF is ready for download.
+
+---
+
+**👤 You:**
+> "Take a PNG screenshot of https://news.ycombinator.com with a width of 1280px."
+
+**🤖 AI Agent:**
+> Capturing the screenshot... I've generated a PNG image of Hacker News at a 1280px viewport width. You can view the image now.
+
+---
+
+**👤 You:**
+> "Generate a modern invoice for $1200 USD for 'Software Consulting' with 1 item."
+
+**🤖 AI Agent:**
+> I'm generating your modern invoice. I've added 'Software Consulting' as the line item for a total of $1200 USD. The PDF document has been created.
+
+
 ## Installation & Usage
 
 To install and use the **Pdfcrowd** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Pdfcrowd** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

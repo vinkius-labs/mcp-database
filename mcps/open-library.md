@@ -1,12 +1,14 @@
 # Open Library MCP Server
 
-Manage your book discovery — audit library records, authors, and subjects via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-library)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-library-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-library-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Manage your book discovery — audit library records, authors, and subjects via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire literary research with **Open Library**, the open, editable library catalog. By connecting Open Library to your agent, you transform complex bibliographic searches into a natural conversation. Your agent can instantly search for books, audit author portfolios, and retrieve detailed work metadata without you ever touching a dashboard. Whether you are conducting academic research or building a personal reading list, your agent acts as a real-time librarian, ensuring your data is always comprehensive and well-categorized.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire literary research with **Open L
 - **search_books**: Search for books on Open Library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Library** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for books with title 'The Lord of the Rings' on Open Library."
+
+**🤖 AI Agent:**
+> I've retrieved several editions of 'The Lord of the Rings'. Notable records include the original publish year of 1954. Would you like the ISBNs or publisher info for any specific edition?
+
+---
+
+**👤 You:**
+> "Show me the bibliography for author J.R.R. Tolkien."
+
+**🤖 AI Agent:**
+> I've identified author key OL26320A for J.R.R. Tolkien. He has over 100 works listed, including 'The Hobbit' and 'The Silmarillion'. Would you like the full list of titles?
+
+---
+
+**👤 You:**
+> "List books related to the subject 'Artificial Intelligence'."
+
+**🤖 AI Agent:**
+> I've found 15 books categorized under 'Artificial Intelligence'. Top matches include 'AI: A Modern Approach' and 'Life 3.0'. Would you like the author details for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Open Library** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Open Library** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

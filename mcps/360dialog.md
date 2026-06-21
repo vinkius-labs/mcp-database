@@ -1,12 +1,14 @@
 # 360dialog MCP Server
 
-Send WhatsApp messages at scale, manage templates, and track delivery with the official 360dialog Business API integration.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/360dialog)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/360dialog)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/360dialog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/360dialog-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Send WhatsApp messages at scale, manage templates, and track delivery with the official 360dialog Business API integration.
 
 ## Description
 Connect your **360dialog** WhatsApp Business API to any AI agent and manage your entire messaging workflow through natural conversation.
@@ -54,6 +56,33 @@ Send a template message
 - **upload_media**: Upload media for messaging
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **360dialog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a WhatsApp message to +5511999999999 saying 'Your order has been shipped'."
+
+**🤖 AI Agent:**
+> Done! I sent the message to +5511999999999 through your 360dialog account. The delivery was queued and the message ID is wa_msg_4821. Would you like to send a follow-up?
+
+---
+
+**👤 You:**
+> "List all my approved WhatsApp message templates."
+
+**🤖 AI Agent:**
+> I found 7 approved templates in your account: 'order_confirmation' (en, pt), 'appointment_reminder' (en), 'welcome_message' (en, es, fr), and 4 more. Would you like to inspect the components of any specific template?
+
+---
+
+**👤 You:**
+> "Check if these numbers have WhatsApp: +5511988888888, +5511977777777."
+
+**🤖 AI Agent:**
+> Verified! +5511988888888 is a valid WhatsApp account. +5511977777777 is not currently registered on the platform. Would you like me to send a message to the valid number?
+
+
 ## Installation & Usage
 
 To install and use the **360dialog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **360dialog** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

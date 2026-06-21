@@ -1,12 +1,14 @@
 # Apideck MCP Server
 
-Unify your software stack with Apideck — manage CRM contacts, orchestrate Vault connections, and execute proxy requests across dozens of platforms through one API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apideck)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apideck)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apideck-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apideck-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Unify your software stack with Apideck — manage CRM contacts, orchestrate Vault connections, and execute proxy requests across dozens of platforms through one API.
 
 ## Description
 Connect **Apideck** to your AI agent to streamline how you interact with multiple SaaS platforms. By using Apideck's Unified APIs, your agent can communicate with various CRM providers and manage user integrations without writing custom code for every service.
@@ -42,6 +44,33 @@ List CRM contacts from a unified integration
 - **create_vault_session**: Create a Vault session
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apideck** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all CRM contacts from the hubspot integration."
+
+**🤖 AI Agent:**
+> I've retrieved the contacts from HubSpot. I found 12 contacts, including 'Alice Smith' (alice@example.com) and 'Bob Jones' (bob@example.com). Would you like more details on any of them?
+
+---
+
+**👤 You:**
+> "Show me all active Vault connections for the current consumer."
+
+**🤖 AI Agent:**
+> You currently have 3 active connections in the Vault: 'salesforce', 'hubspot', and 'slack'. All connections are reported as healthy.
+
+---
+
+**👤 You:**
+> "Create a Vault session with a redirect URI to https://example.com/dashboard."
+
+**🤖 AI Agent:**
+> I've created a new Vault session. You can direct the user to this URL to manage their integrations: https://vault.apideck.com/session/example-token
+
+
 ## Installation & Usage
 
 To install and use the **Apideck** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Apideck** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

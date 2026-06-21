@@ -1,12 +1,14 @@
 # Gnosisscan (Gnosis Chain Explorer) MCP Server
 
-Access Gnosis Chain data directly—query account balances, transaction history, and smart contract details via Gnosisscan.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gnosisscan-gnosis-chain-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gnosisscan-gnosis-chain-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gnosisscan-gnosis-chain-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gnosisscan-gnosis-chain-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 26
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Gnosis Chain data directly—query account balances, transaction history, and smart contract details via Gnosisscan.
 
 ## Description
 Connect your AI agent to the **Gnosis Chain** through the Gnosisscan API. This server allows you to inspect the blockchain, track xDAI balances, and analyze transaction flows without leaving your chat interface.
@@ -61,6 +63,33 @@ Connect your AI agent to the **Gnosis Chain** through the Gnosisscan API. This s
 - **proxy_gettransactionreceipt**: eth_getTransactionReceipt Proxy
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gnosisscan (Gnosis Chain Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the xDAI balance of address 0x0000000000000000000000000000000000000000?"
+
+**🤖 AI Agent:**
+> I've checked the balance for that address. It currently holds 0.00 xDAI on the Gnosis Chain.
+
+---
+
+**👤 You:**
+> "List the last 5 normal transactions for address 0x123...456."
+
+**🤖 AI Agent:**
+> Fetching transaction history... I found the most recent transactions for that address, including a transfer of 10 xDAI and several contract interactions. Would you like details on a specific hash?
+
+---
+
+**👤 You:**
+> "Get the ABI for the contract at 0x789...012."
+
+**🤖 AI Agent:**
+> I have retrieved the ABI for the requested contract. It includes functions like `transfer`, `balanceOf`, and `approve`. I can now help you format calls to this contract.
+
+
 ## Installation & Usage
 
 To install and use the **Gnosisscan (Gnosis Chain Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Gnosisscan (Gnosis Chain Explorer)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

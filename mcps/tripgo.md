@@ -1,12 +1,14 @@
 # TripGo MCP Server
 
-AI multimodal transit: plan trips, track vehicles, and check schedules via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tripgo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tripgo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tripgo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tripgo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** travel-hospitality
-**Tools Count:** 9
+
+**Category:** [travel-hospitality](../categories/travel-hospitality.md)
+
+AI multimodal transit: plan trips, track vehicles, and check schedules via agents.
 
 ## Description
 ### What you can do
@@ -64,6 +66,33 @@ Plan a multimodal trip between two coordinates
 Search for transit stops by name or address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TripGo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Plan a trip from Central Station to Opera House using only public transit and walking"
+
+**🤖 AI Agent:**
+> I'll find the best multimodal transit route with walking segments for you.
+
+---
+
+**👤 You:**
+> "What buses are departing from Stop 12345 in the next 15 minutes?"
+
+**🤖 AI Agent:**
+> I'll check real-time departures for that stop right now.
+
+---
+
+**👤 You:**
+> "Show me all train and bus vehicles currently running on Route 480"
+
+**🤖 AI Agent:**
+> I'll get real-time vehicle positions for that route on the map.
+
+
 ## Installation & Usage
 
 To install and use the **TripGo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **TripGo** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Merge (Unified Integration API) MCP Server
 
-Manage unified B2B data via Merge — list HRIS employees, ATS candidates, CRM contacts, and support tickets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/merge-unified-integration-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/merge-unified-integration-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/merge-unified-integration-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/merge-unified-integration-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage unified B2B data via Merge — list HRIS employees, ATS candidates, CRM contacts, and support tickets.
 
 ## Description
 Connect your **Merge.dev** account to any AI agent and take full control of your unified B2B integrations across HRIS, ATS, CRM, and Ticketing through natural conversation.
@@ -48,6 +50,33 @@ List employees from the linked HRIS integration
 Retrieve linked Account Details exposing integration boundaries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Merge (Unified Integration API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active employees from our linked HRIS"
+
+**🤖 AI Agent:**
+> Retrieving employee data… I've identified 125 active employees in your HRIS. Highlights include Alex Smith (Software Engineer), Sarah Johnson (Marketing Manager), and Mark Rivera (Product Designer). Would you like the full profile details for any department?
+
+---
+
+**👤 You:**
+> "Show me the last 5 candidates in our ATS talent pipeline"
+
+**🤖 AI Agent:**
+> Retrieving candidates… I've identified the 5 most recent additions: 1) Jamie Lann (Senior Dev), 2) Riley Vane (UX Lead), 3) Casey Wright, 4) Jordan Bell, and 5) Taylor Reed. I can check the status of their active applications if you'd like.
+
+---
+
+**👤 You:**
+> "List all open support tickets in our ticketing integration"
+
+**🤖 AI Agent:**
+> I've retrieved your open support tickets. There are 12 active issues, including 'Login Loop Bug' (Priority: High), 'Pricing Question' (Priority: Med), and 'API Auth Error'. Would you like me to extract the full metadata for the high-priority bug?
+
+
 ## Installation & Usage
 
 To install and use the **Merge (Unified Integration API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Merge (Unified Integration API)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

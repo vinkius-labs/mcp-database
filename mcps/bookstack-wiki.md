@@ -1,12 +1,14 @@
 # BookStack (Wiki) MCP Server
 
-Manage your BookStack wiki directly from your AI agent — search, read, create, and organize pages, chapters, and books with ease.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bookstack-wiki)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bookstack-wiki)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bookstack-wiki-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bookstack-wiki-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 32
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage your BookStack wiki directly from your AI agent — search, read, create, and organize pages, chapters, and books with ease.
 
 ## Description
 Connect your **BookStack** instance to any AI agent and turn your documentation into an interactive knowledge base through natural conversation.
@@ -72,6 +74,33 @@ List all pages in BookStack
 - **update_shelf**: Update an existing shelf
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BookStack (Wiki)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search my BookStack wiki for 'security policy'."
+
+**🤖 AI Agent:**
+> I found 3 results for 'security policy'. The most relevant is a page titled 'Internal Security Guidelines' (ID: 42) in the 'Compliance' book. Would you like me to read its content?
+
+---
+
+**👤 You:**
+> "Create a new page titled 'Onboarding' in book ID 5 with some basic HTML content."
+
+**🤖 AI Agent:**
+> I've created the 'Onboarding' page in Book ID 5. The new Page ID is 128. You can now view or update it using that ID.
+
+---
+
+**👤 You:**
+> "Export the 'API Reference' page (ID: 88) as a PDF."
+
+**🤖 AI Agent:**
+> I have triggered the export for page ID 88 in PDF format. The content is being processed for download.
+
+
 ## Installation & Usage
 
 To install and use the **BookStack (Wiki)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **BookStack (Wiki)** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

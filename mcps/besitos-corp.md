@@ -1,12 +1,14 @@
 # Besitos Corp MCP Server
 
-Integrate mobile gaming and rewards via Besitos — list games, track user activity, and manage offers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/besitos-corp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/besitos-corp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/besitos-corp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/besitos-corp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Integrate mobile gaming and rewards via Besitos — list games, track user activity, and manage offers directly from any AI agent.
 
 ## Description
 Connect your **Besitos Corp** partner account to any AI agent and orchestrate your mobile gaming and user engagement workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Besitos Corp** partner account to any AI agent and orchestrate yo
 - **list_user_rewards**: Retrieve reward history for a specific user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Besitos Corp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all mobile games currently available in Besitos."
+
+**🤖 AI Agent:**
+> I've retrieved the game inventory. You currently have 12 games available, including 'Strategy King' (ID: g_101) and 'Candy Blast' (ID: g_102). Would you like to see the reward structure for any of these?
+
+---
+
+**👤 You:**
+> "Show me the engagement report for this month."
+
+**🤖 AI Agent:**
+> Fetching report... This month, your gaming channel has seen 5,000 active players with an average session time of 12 minutes. Total milestones completed: 850.
+
+---
+
+**👤 You:**
+> "Check the reward history for user_9988."
+
+**🤖 AI Agent:**
+> User user_9988 has earned a total of $45.50 in rewards. Their last redemption was $10.00 on March 25th for completing level 20 in 'Strategy King'.
+
+
 ## Installation & Usage
 
 To install and use the **Besitos Corp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Besitos Corp** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

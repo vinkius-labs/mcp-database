@@ -1,12 +1,14 @@
 # Douyin Local Life API / 抖音生活服务 MCP Server
 
-China's leading local life platform — manage shops, process orders, and verify coupons via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-local-life-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyin-local-life-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/douyin-local-life-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/douyin-local-life-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's leading local life platform — manage shops, process orders, and verify coupons via AI.
 
 ## Description
 Empower your AI agent to orchestrate your local retail and hospitality operations with **Douyin Local Life** (抖音生活服务), the dominant social commerce platform in China. By connecting Douyin to your agent, you transform complex shop management, order fulfillment, and coupon verification into a natural conversation. Your agent can instantly retrieve shop metadata, update product stock levels, verify customer coupons, and audit real-time order flows without you ever needing to navigate the comprehensive Douyin Merchant Center. Whether you are automating a busy restaurant or monitoring multiple retail branches, your agent acts as a real-time digital manager, providing accurate and fast results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your local retail and hospitality operation
 - **update_product_stock**: Update product inventory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Douyin Local Life API / 抖音生活服务** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the details for shop with POI ID 'POI_88210934'."
+
+**🤖 AI Agent:**
+> I've retrieved the shop metadata. 'Tasty Dumplings' (ID: `POI_88210934`) is currently active and located in the Pudong District of Shanghai. Would you like me to check the current inventory levels for this shop?
+
+---
+
+**👤 You:**
+> "Verify coupon code '12345678' for shop 'POI_8821'."
+
+**🤖 AI Agent:**
+> I've successfully verified the coupon code. It is valid for a 'Premium Set Menu'. The order has been marked as fulfilled in the Douyin system. Should I list any other pending orders for this shop?
+
+---
+
+**👤 You:**
+> "What is the current stock for product 'PRD_9920' at shop 'POI_8821'?"
+
+**🤖 AI Agent:**
+> The current stock level for 'PRD_9920' at the specified shop is 45 units. Would you like me to update this stock or check the product's performance data?
+
+
 ## Installation & Usage
 
 To install and use the **Douyin Local Life API / 抖音生活服务** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Douyin Local Life API / 抖音生活服务** MCP server
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CoinCap MCP Server
 
-Get real-time cryptocurrency prices, market data, exchange rankings and OHLCV candles — no API key required.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coincap)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coincap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coincap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coincap-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 9
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Get real-time cryptocurrency prices, market data, exchange rankings and OHLCV candles — no API key required.
 
 ## Description
 Connect to **CoinCap** APIs and access real-time cryptocurrency market data through natural conversation — no API key needed.
@@ -66,6 +68,33 @@ List cryptocurrency assets with prices and market data
 List cryptocurrency exchanges with rankings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinCap** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current price of Bitcoin?"
+
+**🤖 AI Agent:**
+> Bitcoin is currently trading at $87,234.50 USD. Market cap: $1.73 trillion. 24h volume: $32.4 billion. Price changed +2.1% in the last 24h. Circulating supply: 19.6 million BTC.
+
+---
+
+**👤 You:**
+> "Show me the top 5 cryptocurrency exchanges by volume."
+
+**🤖 AI Agent:**
+> Top 5 exchanges by 24h volume: 1. Binance ($28.5B, 800+ markets, verified), 2. Coinbase Pro ($4.2B, 400+ markets), 3. Kraken ($1.8B, 600+ markets), 4. KuCoin ($1.5B, 1000+ markets), 5. OKX ($1.2B, 400+ markets).
+
+---
+
+**👤 You:**
+> "Show me the 1-hour candlestick data for Ethereum."
+
+**🤖 AI Agent:**
+> ETH/USD 1h candles: Most recent candle closed at $3,245.60 (open: $3,220, high: $3,260, low: $3,210, volume: $45M). The trend has been upward over the last 12 hours with a 1.8% gain.
+
+
 ## Installation & Usage
 
 To install and use the **CoinCap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **CoinCap** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

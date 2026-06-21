@@ -1,12 +1,14 @@
 # SportDB MCP Server
 
-Access live scores, standings, fixtures, and player data across football, basketball, hockey, and tennis from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sportdb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sportdb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sportdb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sportdb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 18
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access live scores, standings, fixtures, and player data across football, basketball, hockey, and tennis from any AI agent.
 
 ## Description
 Turn your AI agent into a dedicated sports analyst with **SportDB**. Query real-time match data, historical league tables, and deep player intelligence across multiple sports — all through natural conversation.
@@ -92,6 +94,33 @@ Search for clubs/teams by name keyword
 Search for players by name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SportDB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the live football scores right now."
+
+**🤖 AI Agent:**
+> I've retrieved the live matches. There are currently 4 active games: Manchester City 2–1 Arsenal (67'), Real Madrid 0–0 Atlético Madrid (32'), Flamengo 1–0 Palmeiras (55'), and Bayern Munich 3–2 Dortmund (81'). Would you like me to pull the match stats for any of these?
+
+---
+
+**👤 You:**
+> "Search for Erling Haaland and show me his transfer history."
+
+**🤖 AI Agent:**
+> Found Erling Haaland (ID: 48291). Here is his transfer history: Bryne FK → Molde FK (Jan 2017), Molde FK → Red Bull Salzburg (Jan 2019, €5M), Red Bull Salzburg → Borussia Dortmund (Jan 2020, €20M), Borussia Dortmund → Manchester City (Jul 2022, €60M). Would you like to see his seasonal statistics?
+
+---
+
+**👤 You:**
+> "Get the La Liga standings for the 2024-2025 season."
+
+**🤖 AI Agent:**
+> Here are the La Liga 2024-2025 standings: 1. Barcelona — 52 pts (W16 D4 L2), 2. Real Madrid — 48 pts (W15 D3 L4), 3. Atlético Madrid — 43 pts (W13 D4 L5). The table includes 20 teams with full records. Want me to pull the upcoming fixtures for any of these clubs?
+
+
 ## Installation & Usage
 
 To install and use the **SportDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -100,4 +129,11 @@ To install and use the **SportDB** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Cheddar MCP Server
 
-Manage usage-based billing and subscriptions via Cheddar — track usage, monitor invoices, and manage customers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cheddar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cheddar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cheddar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cheddar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage usage-based billing and subscriptions via Cheddar — track usage, monitor invoices, and manage customers directly from any AI agent.
 
 ## Description
 Connect your **Cheddar (formerly CheddarGetter)** account to any AI agent and take full control of your recurring and usage-based billing through natural conversation. Streamline how you manage subscriptions and tracked items.
@@ -45,6 +47,33 @@ Connect your **Cheddar (formerly CheddarGetter)** account to any AI agent and ta
 - **list_cheddar_transactions**: List recent billing transactions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cheddar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 5 invoices in Cheddar."
+
+**🤖 AI Agent:**
+> Retrieving your recent invoices... I found 5 items totaling $1,850.00. 3 are 'Settled' and 2 are 'Pending'. Would you like to see the customer associated with each?
+
+---
+
+**👤 You:**
+> "Add 10 units of usage for customer 'ACME-123' under charge code 'API_CALLS'."
+
+**🤖 AI Agent:**
+> Adding usage... 10 units of 'API_CALLS' have been successfully recorded for ACME-123. This will be reflected in their next billing cycle.
+
+---
+
+**👤 You:**
+> "List all my available pricing plans in Cheddar."
+
+**🤖 AI Agent:**
+> Checking plans... You have 3 active plans: 'Basic' ($29/mo), 'Pro' ($99/mo), and 'Enterprise' (Usage-based). I can show you the specific tracked items for each.
+
+
 ## Installation & Usage
 
 To install and use the **Cheddar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Cheddar** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

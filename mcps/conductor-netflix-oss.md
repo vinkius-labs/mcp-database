@@ -1,12 +1,14 @@
 # Conductor (Netflix OSS) MCP Server
 
-Automate workflow orchestration via Netflix Conductor — manage workflow and task definitions, and start executions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/conductor-netflix-oss)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conductor-netflix-oss)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conductor-netflix-oss-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conductor-netflix-oss-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 49
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate workflow orchestration via Netflix Conductor — manage workflow and task definitions, and start executions directly from any AI agent.
 
 ## Description
 Connect your **Netflix Conductor** instance to any AI agent to orchestrate complex microservices and workflows through natural conversation.
@@ -84,6 +86,33 @@ Connect your **Netflix Conductor** instance to any AI agent to orchestrate compl
 - **validate_workflow_definition**: Validate a workflow definition without saving
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Conductor (Netflix OSS)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all workflow names and their versions currently registered in Conductor."
+
+**🤖 AI Agent:**
+> I've retrieved the workflow list. You have 3 workflows: 'user_onboarding' (v1, v2), 'payment_processing' (v1), and 'inventory_check' (v1, v2, v3).
+
+---
+
+**👤 You:**
+> "Show me the full definition for the workflow 'user_onboarding' version 2."
+
+**🤖 AI Agent:**
+> Fetching definition for 'user_onboarding' v2... This workflow consists of 4 tasks: 'verify_email', 'create_profile', 'send_welcome_pack', and 'setup_billing'. Would you like to see the JSON structure?
+
+---
+
+**👤 You:**
+> "Start a new execution of the 'payment_processing' workflow."
+
+**🤖 AI Agent:**
+> Starting workflow 'payment_processing'... Execution started successfully. The Workflow ID is `8f2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d`.
+
+
 ## Installation & Usage
 
 To install and use the **Conductor (Netflix OSS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -92,4 +121,11 @@ To install and use the **Conductor (Netflix OSS)** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

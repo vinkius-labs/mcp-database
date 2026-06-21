@@ -1,12 +1,14 @@
 # Tencent TMT / 腾讯机器翻译 MCP Server
 
-Tencent's professional machine translation — translate text and detect languages with high precision via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-tmt)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-tmt)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-tmt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-tmt-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Tencent's professional machine translation — translate text and detect languages with high precision via AI.
 
 ## Description
 Empower your AI agent to orchestrate your global content and multilingual communication with **Tencent TMT** (机器翻译), the premier NLP platform by Tencent Cloud. By connecting TMT to your agent, you transform complex translation tasks, language identification, and technical localization into a natural conversation. Your agent can instantly translate text between dozens of languages, automatically identify source languages, and provide enterprise-grade localized results without you ever needing to navigate the Tencent Cloud Console. Whether you are translating technical documentation or coordinating global customer support, your agent acts as a real-time linguistic coordinator, providing accurate and reliable results from a single, authorized source.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your global content and multilingual commun
 - **translate_zh_to_en**: Translate Chinese to English
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tencent TMT / 腾讯机器翻译** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Translate this to Portuguese using Tencent TMT: 'The system will be updated tonight at 10 PM'."
+
+**🤖 AI Agent:**
+> I've translated your sentence to Portuguese using Tencent TMT. The result is: 'O sistema será atualizado hoje à noite, às 22h'. Would you like me to translate any other notifications?
+
+---
+
+**👤 You:**
+> "Check what language this is: '系统升级中，请稍候'。"
+
+**🤖 AI Agent:**
+> I've detected the language using Tencent TMT. The text is in **Chinese (zh)**. It means 'System upgrading, please wait'. Should I translate this into English for you?
+
+---
+
+**👤 You:**
+> "Translate 'I am very happy to help you' from English to Simplified Chinese."
+
+**🤖 AI Agent:**
+> I've translated the phrase for you. In Simplified Chinese, it is: '我很高兴能帮助你' (Wǒ hěn gāoxìng néng bāngzhù nǐ). Should I check the status of the TMT service to ensure it is ready for more requests?
+
+
 ## Installation & Usage
 
 To install and use the **Tencent TMT / 腾讯机器翻译** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Tencent TMT / 腾讯机器翻译** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

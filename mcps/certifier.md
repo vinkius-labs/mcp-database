@@ -1,12 +1,14 @@
 # Certifier MCP Server
 
-Issue branded digital certificates and badges at scale for courses, events, and achievements that recipients can verify online.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/certifier)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/certifier)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/certifier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/certifier-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Issue branded digital certificates and badges at scale for courses, events, and achievements that recipients can verify online.
 
 ## Description
 Connect your **Certifier** account to any AI agent and manage your entire digital credentialing workflow through natural conversation.
@@ -55,6 +57,33 @@ List all credential templates
 Update an existing credential
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Certifier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my credential templates in Certifier."
+
+**🤖 AI Agent:**
+> I've found 3 templates: 'Course Completion Certificate' (ID: tpl_8a2bc), 'Workshop Badge' (ID: tpl_9d4ef), and 'Professional Diploma' (ID: tpl_1f6gh). Which template would you like to use for a new credential?
+
+---
+
+**👤 You:**
+> "Create a certificate for John Smith (john@example.com) using template tpl_8a2bc."
+
+**🤖 AI Agent:**
+> Done! Credential created in draft status (ID: cred_xyz789) for John Smith. Would you like me to issue it now and send it to john@example.com?
+
+---
+
+**👤 You:**
+> "Search for all credentials issued to anyone at example.com."
+
+**🤖 AI Agent:**
+> I found 5 credentials matching 'example.com': 3 issued, 1 draft, and 1 sent. The most recent is a 'Workshop Badge' issued to Sarah Lee yesterday. Would you like to see the full details for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Certifier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Certifier** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

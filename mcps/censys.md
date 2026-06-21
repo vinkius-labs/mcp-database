@@ -1,12 +1,14 @@
 # Censys MCP Server
 
-Search internet-connected hosts, SSL certificates and attack surface — discover exposed services and vulnerabilities.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/censys)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/censys)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/censys-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/censys-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 9
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Search internet-connected hosts, SSL certificates and attack surface — discover exposed services and vulnerabilities.
 
 ## Description
 Connect to **Censys** and explore the world's largest internet scanning platform through natural conversation.
@@ -65,6 +67,33 @@ Search for internet-connected hosts
 Compare two hosts to see differences
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Censys** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all nginx servers in Brazil."
+
+**🤖 AI Agent:**
+> Found 15,000+ hosts running nginx in Brazil. Top ports: 80 (HTTP), 443 (HTTPS), 8080 (HTTP alternate). Common OS: Ubuntu, Debian, CentOS. Sample IPs include servers in São Paulo, Rio de Janeiro and Brasília regions.
+
+---
+
+**👤 You:**
+> "Get details for IP 8.8.8.8."
+
+**🤖 AI Agent:**
+> 8.8.8.8 (Google Public DNS): Open ports 53 (DNS), 443 (HTTPS/DoH). Services: DNS server, DNS over HTTPS. Location: Mountain View, CA, US. ASN: AS15169 (Google LLC). Last updated: 2 hours ago.
+
+---
+
+**👤 You:**
+> "Find certificates issued by Let's Encrypt expiring this month."
+
+**🤖 AI Agent:**
+> Found 500+ Let's Encrypt certificates expiring this month. Top issuers: R3, E1, E5. Common subjects include domains ending in .com, .org and .net. Most use RSA 2048-bit or ECDSA P-256 keys.
+
+
 ## Installation & Usage
 
 To install and use the **Censys** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Censys** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

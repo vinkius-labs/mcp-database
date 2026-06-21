@@ -1,12 +1,14 @@
 # Retool MCP Server
 
-Connect your AI assistant to Retool to inspect applications, audit users, review connected resources, and monitor workflows directly from chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/retool)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retool)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/retool-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/retool-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 7
+
+**Category:** [superpower](../categories/superpower.md)
+
+Connect your AI assistant to Retool to inspect applications, audit users, review connected resources, and monitor workflows directly from chat.
 
 ## Description
 Connect your conversational assistant directly to the **Retool** ecosystem. This integration enables your AI to explore the organizational structure of your internal tools, auditing who has access to what, and reviewing which databases are connected.
@@ -40,6 +42,33 @@ Connect your conversational assistant directly to the **Retool** ecosystem. This
 - **list_workflows**: Lists all Retool Workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Retool** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all users in my Retool workspace."
+
+**🤖 AI Agent:**
+> I invoked `list_users` successfully. I found 8 users in your organization, including `alice@example.com` and `bob@example.com`. Let me know if you need to know their group assignments using the associated permission tools.
+
+---
+
+**👤 You:**
+> "List all applications currently configured."
+
+**🤖 AI Agent:**
+> Running `list_apps`, I retrieved a total of 12 distinct internal tools within your environment. Popular examples include your 'Admin Dashboard', 'Customer Refund Portal', and 'Inventory Tracker'. Would you like the detailed properties for a specific one?
+
+---
+
+**👤 You:**
+> "Tell me what resources are connected to our Retool."
+
+**🤖 AI Agent:**
+> By querying `list_resources`, I can see 5 integrated services in your Retool account. This includes your production 'PostgreSQL Database', a 'Stripe API' connector, and an 'S3 Bucket' for file uploads. The connections are confirmed active.
+
+
 ## Installation & Usage
 
 To install and use the **Retool** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Retool** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

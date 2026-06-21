@@ -1,12 +1,14 @@
 # NWS (National Weather Service) MCP Server
 
-Access real-time weather data, forecasts, and active alerts directly from the National Weather Service.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nws-national-weather-service)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nws-national-weather-service)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nws-national-weather-service-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nws-national-weather-service-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 9
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time weather data, forecasts, and active alerts directly from the National Weather Service.
 
 ## Description
 Connect to the **National Weather Service (NWS)** API to retrieve precise meteorological data for any US location. This server allows AI agents to fetch point-based grid information, detailed textual forecasts, hourly updates, and critical weather alerts.
@@ -45,6 +47,33 @@ Get active alerts for a specific area
 - **get_stations**: Get a list of all observation stations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NWS (National Weather Service)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the weather forecast for coordinates 34.0522, -118.2437?"
+
+**🤖 AI Agent:**
+> I'll first find the NWS grid point for those coordinates... Found it: Office LOX, Grid (154, 44). Now fetching the forecast: It will be sunny today with a high near 75°F. Tonight, mostly clear with a low around 58°F.
+
+---
+
+**👤 You:**
+> "Are there any active weather alerts in Texas right now?"
+
+**🤖 AI Agent:**
+> Checking active alerts for Texas (TX)... I found 3 active alerts: a Heat Advisory for South Texas, a Flood Watch for the Coastal Bend, and a Special Weather Statement for the Panhandle. Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "Get the latest weather observation for station KLAX."
+
+**🤖 AI Agent:**
+> Fetching the latest data for KLAX (Los Angeles International Airport)... As of 10 minutes ago: Temperature is 68°F, Humidity is 62%, Wind is from the West at 12 mph, and Visibility is 10 miles.
+
+
 ## Installation & Usage
 
 To install and use the **NWS (National Weather Service)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **NWS (National Weather Service)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

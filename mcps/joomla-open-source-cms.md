@@ -1,12 +1,14 @@
 # Joomla (Open-Source CMS) MCP Server
 
-Manage content via Joomla — list and create articles, manage categories and tags, and audit site menus.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/joomla-open-source-cms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/joomla-open-source-cms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/joomla-open-source-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/joomla-open-source-cms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage content via Joomla — list and create articles, manage categories and tags, and audit site menus.
 
 ## Description
 Connect your **Joomla** site to any AI agent and take full control of your content management and digital publication lifecycle through natural conversation.
@@ -50,6 +52,33 @@ List Joomla articles
 - **patch_cms_article**: Update an existing Joomla article
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Joomla (Open-Source CMS)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 articles from my Joomla site"
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 articles. Highlights include 'Getting Started with Joomla 5' (ID: 101), '2024 Tech Trends' (ID: 105), and 'Product Launch Update' (ID: 108). All are currently published. Would you like the full text for any of these?
+
+---
+
+**👤 You:**
+> "Create a new article titled 'AI in CMS' in the 'Technology' category (ID: 5)"
+
+**🤖 AI Agent:**
+> Article 'AI in CMS' created successfully in the Technology category. Alias: ai-in-cms. I've added the placeholder introtext you provided. You can now use the `patch_cms_article` tool to finalize the full HTML content.
+
+---
+
+**👤 You:**
+> "What are the active categories on our site?"
+
+**🤖 AI Agent:**
+> I've identified 4 active categories: 'Uncategorised' (ID: 1), 'News' (ID: 2), 'Blog' (ID: 3), and 'Technology' (ID: 5). I can provide the description and parent mapping for any of these if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Joomla (Open-Source CMS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Joomla (Open-Source CMS)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

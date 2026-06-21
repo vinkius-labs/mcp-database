@@ -1,12 +1,14 @@
 # Sally MCP Server
 
-Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sally)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sally)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sally-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sally-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat.
 
 ## Description
 Connect your **Sally** instance to any AI agent and take full control of your API-first project management through natural conversation.
@@ -56,6 +58,33 @@ List tasks, optionally filtered by project
 Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sally** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all projects in my Sally workspace."
+
+**🤖 AI Agent:**
+> I found 3 active projects: 'Product Launch' (5 tasks, 2 in progress), 'API Redesign' (12 tasks, 4 in review), and 'Onboarding Flow' (8 tasks, 1 blocked). Would you like to see the board or tasks for any of these?
+
+---
+
+**👤 You:**
+> "Create a P2 task 'Implement auth middleware' in project proj_abc123 with labels 'backend, security'."
+
+**🤖 AI Agent:**
+> Done! Task 'Implement auth middleware' created in project 'API Redesign' with priority P2 and labels [backend, security]. The new task ID is task_xyz789. Want me to add any comments or sub-tasks?
+
+---
+
+**👤 You:**
+> "Show me the Kanban board for project proj_abc123."
+
+**🤖 AI Agent:**
+> Here's the board for 'API Redesign': **Backlog** (3 tasks), **In Progress** (4 tasks, including 'Implement auth middleware' P2), **In Review** (2 tasks), **Done** (3 tasks). Would you like to update the status of any task?
+
+
 ## Installation & Usage
 
 To install and use the **Sally** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Sally** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

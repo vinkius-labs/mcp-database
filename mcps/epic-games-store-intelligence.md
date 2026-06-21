@@ -1,12 +1,14 @@
 # Epic Games Store Intelligence MCP Server
 
-The definitive server for the Epic ecosystem — track free games, catalog trends, and store promotions via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-games-store-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-games-store-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epic-games-store-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epic-games-store-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+The definitive server for the Epic ecosystem — track free games, catalog trends, and store promotions via AI.
 
 ## Description
 Equip your AI agent with real-time intelligence for the world's most dynamic PC gaming storefront via **Epic Games Store Intelligence**. This server provides deep access to the official Epic GraphQL catalog, allowing your agent to instantly identify the 'Free Games of the Week', monitor major seasonal sales, and audit technical metadata for thousands of titles. From tracking Fortnite news to searching for hidden indie gems, your agent acts as a professional Epic Games consultant through natural conversation.
@@ -46,6 +48,33 @@ Find games by tag or genre
 Search for games on the Epic Games Store
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Epic Games Store Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Which games are free on the Epic Games Store right now?"
+
+**🤖 AI Agent:**
+> Checking the freebie vault... I found 2 free games available this week: 'Game Title A' and 'Game Title B'. I also identified that 'Upcoming Title' will be free starting next Thursday. Would you like the direct claim links?
+
+---
+
+**👤 You:**
+> "Search for all Batman games in the catalog and show their current prices."
+
+**🤖 AI Agent:**
+> Running the GraphQL query for 'Batman'... I found 4 titles including the 'Arkham Trilogy' (currently on sale for $14.99) and 'LEGO Batman'. Would you like to see the full technical metadata for the Arkham bundle?
+
+---
+
+**👤 You:**
+> "Analyze the latest news and seasonal events for Fortnite."
+
+**🤖 AI Agent:**
+> Inspecting Fortnite updates... A new season started yesterday with significant map changes and a new battle pass. I also found an upcoming live concert event scheduled for Saturday. Shall I provide the detailed patch notes?
+
+
 ## Installation & Usage
 
 To install and use the **Epic Games Store Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Epic Games Store Intelligence** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Aliyun VOD / 阿里云视频点播 MCP Server
 
-Alibaba Cloud's professional video pipeline — manage media, retrieve play URLs, and audit transcode templates via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aliyun-vod)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aliyun-vod)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aliyun-vod-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aliyun-vod-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Alibaba Cloud's professional video pipeline — manage media, retrieve play URLs, and audit transcode templates via AI.
 
 ## Description
 Empower your AI agent to orchestrate your video infrastructure and digital asset management with **Aliyun VOD** (视频点播), the premier media processing platform in China. By connecting Aliyun VOD to your agent, you transform complex media listing, playback authorization, and upload management into a natural conversation. Your agent can instantly retrieve detailed video metadata, generate authorized play URLs, search through massive video libraries, and manage media categories without you ever needing to navigate the comprehensive Aliyun Console. Whether you are conducting a digital content audit or coordinating a video distribution workflow, your agent acts as a real-time media operations specialist, providing accurate and fast results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your video infrastructure and digital asset
 - **search_vod_media**: Search media library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aliyun VOD / 阿里云视频点播** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent 10 videos in my Aliyun VOD library."
+
+**🤖 AI Agent:**
+> I've retrieved your recent media list. I found 10 videos, including 'Main_Event_Recap' (VideoId: `88210934`) and 'Product_Demo_v2'. Would you like me to get the authorized play URLs for any of these?
+
+---
+
+**👤 You:**
+> "Get the technical metadata and playback info for video '88210934'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for video `88210934`. It has a duration of 120s and is currently in 'Normal' status. I've also generated authorized play URLs for SD, HD, and Full HD definitions. Should I check which transcode template was used for this file?
+
+---
+
+**👤 You:**
+> "Search for videos matching 'Tutorial' and show their categories."
+
+**🤖 AI Agent:**
+> I've performed a search for 'Tutorial'. I found 5 matching videos. Most of them are classified under the 'Education' category (ID: `1024`). Would you like me to list all available categories in your VOD project to help organize your library better?
+
+
 ## Installation & Usage
 
 To install and use the **Aliyun VOD / 阿里云视频点播** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Aliyun VOD / 阿里云视频点播** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

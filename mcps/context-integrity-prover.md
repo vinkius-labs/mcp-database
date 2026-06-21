@@ -1,12 +1,14 @@
 # Context Integrity Prover MCP Server
 
-AI forgets the original goal and hallucinates scope. This engine is a 6-pivot trap that forces the LLM to prove it hasn't drifted from the user's explicit constraints.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/context-integrity-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context-integrity-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/context-integrity-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/context-integrity-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** reasoning
-**Tools Count:** 1
+
+**Category:** [reasoning](../categories/reasoning.md)
+
+AI forgets the original goal and hallucinates scope. This engine is a 6-pivot trap that forces the LLM to prove it hasn't drifted from the user's explicit constraints.
 
 ## Description
 LLMs suffer from context drift. You ask for a button, and 10 prompts later they are refactoring your database. The Context Integrity Prover is a cognitive trap designed to kill scope creep.
@@ -29,6 +31,33 @@ Before executing a plan, the agent must pass a strict 6-pivot validation:
 Structured reflection tool for context integrity validation during multi-step execution. Forces the agent to prove the original user intent is preserved across every step — no scope creep, no context drift, no hallucinated constraints, no gold-plating. Catches Constraint Neglect (losing the original requirements mid-execution — the user said X, you are now doing Y), Scope Creep (adding unrequested features or analyses — "while we are at it" is the death of focus), Failure to Reject (accepting tangential tasks instead of explicitly declining out-of-scope work), Context Drift (progressive deviation from the original goal — each step looks reasonable but the cumulative direction is wrong), Hallucinated Constraints (inventing restrictions the user never stated — "we cannot do X" when nobody said that), and Intent Mismatch (the solution addresses a problem the user did not have). Call once before executing a multi-step plan, and again when you suspect drift
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Context Integrity Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Constraints: Build button. Scope: All UI. Reject: none. Drift: none."
+
+**🤖 AI Agent:**
+> Verdict: SCOPE_CREEP_DETECTED. The constraint was a single button, but the scope expanded to all UI.
+
+---
+
+**👤 You:**
+> "Constraints: Fix script. Scope: Script only. Reject: none."
+
+**🤖 AI Agent:**
+> Verdict: FAILURE_TO_REJECT. You must explicitly state what you are ignoring or rejecting to prove boundary awareness.
+
+---
+
+**👤 You:**
+> "Constraints: Red button. Scope: Button component only. Reject: I will ignore the nav bar. Drift: Maintained focus on button. Assump: No extra styles needed. Intent: Render red button."
+
+**🤖 AI Agent:**
+> Verdict: CONTEXT_INTEGRITY_PROVEN. Boundaries locked, scope creep rejected.
+
+
 ## Installation & Usage
 
 To install and use the **Context Integrity Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -37,4 +66,11 @@ To install and use the **Context Integrity Prover** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

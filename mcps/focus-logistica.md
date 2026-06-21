@@ -1,12 +1,14 @@
 # Focus Logística MCP Server
 
-Emit CT-e, MDF-e, manage cargo manifests and transport documents via Focus NFe API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-logistica)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-logistica)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/focus-logistica-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/focus-logistica-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 7
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Emit CT-e, MDF-e, manage cargo manifests and transport documents via Focus NFe API.
 
 ## Description
 Connect **Focus Logística** to any AI agent and manage your Brazilian cargo transport documentation — issue CT-e (Conhecimento de Transporte), MDF-e (Manifesto de Carga), close manifests, and download XMLs through natural conversation.
@@ -40,6 +42,33 @@ Connect **Focus Logística** to any AI agent and manage your Brazilian cargo tra
 - **cancel_cte**: Cancel a CT-e
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Focus Logística** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Emit a CT-e for a freight of R$1,200.00 from SP to RJ."
+
+**🤖 AI Agent:**
+> CT-e emitted successfully! Reference: CTE-001. Status: Authorized.
+
+---
+
+**👤 You:**
+> "Close the MDF-e reference MDF-001."
+
+**🤖 AI Agent:**
+> MDF-e MDF-001 closed successfully.
+
+---
+
+**👤 You:**
+> "Download the XML for CT-e reference CTE-001."
+
+**🤖 AI Agent:**
+> XML downloaded. Ready for accounting integration.
+
+
 ## Installation & Usage
 
 To install and use the **Focus Logística** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Focus Logística** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

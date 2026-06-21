@@ -1,12 +1,14 @@
 # Rarible (Multi-chain NFT Protocol) MCP Server
 
-Access multi-chain NFT data — query items, collections, activities, and market statistics across Ethereum, Polygon, and more via Rarible.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rarible-multi-chain-nft-protocol)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rarible-multi-chain-nft-protocol)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rarible-multi-chain-nft-protocol-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rarible-multi-chain-nft-protocol-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 20
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access multi-chain NFT data — query items, collections, activities, and market statistics across Ethereum, Polygon, and more via Rarible.
 
 ## Description
 Connect to the **Rarible Multi-chain NFT Protocol** and empower your AI agent with real-time access to the decentralized NFT ecosystem across multiple blockchains.
@@ -59,6 +61,33 @@ Get all activities
 Complex search for NFT items
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rarible (Multi-chain NFT Protocol)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get details for the NFT ETHEREUM:0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d:1"
+
+**🤖 AI Agent:**
+> I've retrieved the details for Bored Ape #1. It is part of the Bored Ape Yacht Club collection, currently owned by address 0x..., and features traits like 'Golden Fur' and 'Laser Eyes'.
+
+---
+
+**👤 You:**
+> "Show me the top 5 NFT collections by volume on Ethereum."
+
+**🤖 AI Agent:**
+> Based on the latest volume rankings, the top 5 collections are: 1. Bored Ape Yacht Club, 2. Mutant Ape Yacht Club, 3. Azuki, 4. DeGods, and 5. Captainz.
+
+---
+
+**👤 You:**
+> "List all NFTs owned by ETHEREUM:0x1234567890abcdef1234567890abcdef12345678"
+
+**🤖 AI Agent:**
+> I found 12 NFTs in this wallet across Ethereum and Polygon, including 2 items from the 'Pudgy Penguins' collection and 1 'Art Blocks' piece.
+
+
 ## Installation & Usage
 
 To install and use the **Rarible (Multi-chain NFT Protocol)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Rarible (Multi-chain NFT Protocol)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

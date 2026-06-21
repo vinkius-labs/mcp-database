@@ -1,12 +1,14 @@
 # Tencent START MCP Server
 
-Orchestrate Tencent START Cloud Gaming (GS) — manage server sessions, monitor workers, and scale capacity directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-start)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-start)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-start-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-start-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate Tencent START Cloud Gaming (GS) — manage server sessions, monitor workers, and scale capacity directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Tencent START Cloud Gaming (GS)**, the high-performance PaaS platform for cloud-native gaming. This MCP provides 11 tools to automate game instance locking, session creation, and scaling management.
@@ -47,6 +49,33 @@ Connect your AI agents to **Tencent START Cloud Gaming (GS)**, the high-performa
 - **try_lock_worker**: Locks a cloud gaming instance for a specific user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tencent START** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all cloud games available in region 'ap-guangzhou'."
+
+**🤖 AI Agent:**
+> I've fetched the game catalog for 'ap-guangzhou'. You have 3 active titles: 'League of Legends' (ID: game_101), 'CrossFire' (ID: game_202), and 'Naraka' (ID: game_303). Would you like to check the worker status for any of these?
+
+---
+
+**👤 You:**
+> "Check the status of workers for game 'game_101'."
+
+**🤖 AI Agent:**
+> Querying worker status for 'League of Legends'... I found 50 total workers: 35 are 'Occupied', 12 are 'Idle' (Ready), and 3 are in 'Maintenance'.
+
+---
+
+**👤 You:**
+> "Modify the concurrency limit for game 'game_202' to 100 users."
+
+**🤖 AI Agent:**
+> Connecting to capacity management... Concurrency limit for 'CrossFire' (ID: game_202) has been successfully updated to 100. The infrastructure is scaling to match.
+
+
 ## Installation & Usage
 
 To install and use the **Tencent START** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Tencent START** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # SQL Syntax Validator MCP Server
 
-Audit SQL queries for syntax errors before executing them. Prevent DB crashes and deadlocks with local AST parsing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sql-syntax-validator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sql-syntax-validator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sql-syntax-validator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sql-syntax-validator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 1
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Audit SQL queries for syntax errors before executing them. Prevent DB crashes and deadlocks with local AST parsing.
 
 ## Description
 AI Agents are great at writing SQL, but terrible reviewers. They often forget commas, close parentheses poorly, or use duplicated aliases in giant JOIN queries. Executing flawed queries directly on a production database can cause severe bottlenecks or deadlocks. This MCP solves this by validating the query local.
@@ -23,6 +25,33 @@ AI Agents are great at writing SQL, but terrible reviewers. They often forget co
 Validates an SQL query by parsing its Abstract Syntax Tree (AST) offline before execution
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SQL Syntax Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Validate this PostgreSQL query before execution: `SELECT id, name FROM users WHERE email = 'test@example.com' ORDER BY created_at DESC;`"
+
+**🤖 AI Agent:**
+> ✅ **Valid SQL Query:** {"valid": true, "database": "postgresql", "type": "select"}
+
+---
+
+**👤 You:**
+> "Check if this MySQL query is syntactically sound: `SELECT * FROM orders WHERE amount > 100 AND GROUP BY user_id`"
+
+**🤖 AI Agent:**
+> ❌ **Syntax Error:** Expected end of input, found 'GROUP' at line 1, column 47.
+
+---
+
+**👤 You:**
+> "Audit this complex BigQuery join."
+
+**🤖 AI Agent:**
+> ✅ **Valid SQL Query:** Checked AST correctly.
+
+
 ## Installation & Usage
 
 To install and use the **SQL Syntax Validator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -31,4 +60,11 @@ To install and use the **SQL Syntax Validator** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

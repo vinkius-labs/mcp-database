@@ -1,12 +1,14 @@
 # Unbounce MCP Server
 
-Automate marketing tasks via Unbounce — retrieve landing pages, fetch captured leads, audit performance stats, and manage test variants easily.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unbounce)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unbounce)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unbounce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unbounce-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 4
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate marketing tasks via Unbounce — retrieve landing pages, fetch captured leads, audit performance stats, and manage test variants easily.
 
 ## Description
 Connect your **Unbounce** marketing workflows to any AI agent and take full enterprise control over global landing pages, captured leads routing, and real-time conversion monitoring natively via conversational commands.
@@ -40,6 +42,33 @@ Manage hundreds of lead generation funnels automatically by prompting the LLM in
 - **sub_accounts**: List sub-accounts available to the user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Unbounce** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Please list the verified domains available for publication underneath the specific main active sub-account."
+
+**🤖 AI Agent:**
+> I've fetched 3 attached domains securely: 'get.vinkius.cloud', 'campaigns.yourstack.com', and a root domain entry for 'product.marketing.io'. Need to list the active pages attached inside any?
+
+---
+
+**👤 You:**
+> "Summarize the conversion metrics and variant splits for the 'Enterprise Launch Q3' LP ID."
+
+**🤖 AI Agent:**
+> Page Stats fetched! Total audience hits stand at 14,200. Variant A processed a miserable 1.2% conversion rate, but Variant B dominated at 11%, effectively gathering over 1,500 firm leads inherently. Drop Variant A when possible.
+
+---
+
+**👤 You:**
+> "Isolate the exact form submission metadata payload for lead ID 7709xxv-1123."
+
+**🤖 AI Agent:**
+> Retrieved form values securely for Lead 7709xxv: User email marked 'john.doe@test.com'. Included an arbitrary internal company name input as 'Acme Global'. The request indicates no additional customized checkboxes were marked.
+
+
 ## Installation & Usage
 
 To install and use the **Unbounce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Unbounce** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

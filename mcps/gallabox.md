@@ -1,12 +1,14 @@
 # Gallabox MCP Server
 
-Automate WhatsApp Business communication, send templates, and manage chats via AI agents with Gallabox.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gallabox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gallabox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gallabox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gallabox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Automate WhatsApp Business communication, send templates, and manage chats via AI agents with Gallabox.
 
 ## Description
 Connect your **Gallabox** account to any AI agent to automate your WhatsApp Business messaging and customer engagement through the Model Context Protocol (MCP). Gallabox is a leading WhatsApp automation platform that enables teams to handle shared inboxes, deploy bots, and send transactional notifications at scale. This MCP server enables you to send real-time messages, track chat histories, and manage your contact database directly through natural conversation.
@@ -50,6 +52,33 @@ Connect your **Gallabox** account to any AI agent to automate your WhatsApp Busi
 - **send_whatsapp_text**: Send WhatsApp message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gallabox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a WhatsApp message to '+1234567890' saying 'Hello from AI!'."
+
+**🤖 AI Agent:**
+> Message sent! I've successfully queued your WhatsApp message to +1234567890 via Gallabox. The message will appear in your open conversations inbox.
+
+---
+
+**👤 You:**
+> "List all my approved WhatsApp templates."
+
+**🤖 AI Agent:**
+> Retrieving templates... I found 5 approved templates, including 'Order Confirmation', 'Welcome Message', and 'Appointment Reminder'. Which one would you like to use?
+
+---
+
+**👤 You:**
+> "Show the message history for conversation 'conv_987'."
+
+**🤖 AI Agent:**
+> Fetching thread... For conversation conv_987, I found 3 recent messages. The customer asked about 'shipping times' and the bot replied with the standard '2-4 days' policy.
+
+
 ## Installation & Usage
 
 To install and use the **Gallabox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Gallabox** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

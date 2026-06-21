@@ -1,12 +1,14 @@
 # Hotjar (Behavior Analytics) MCP Server
 
-Analyze user behavior via Hotjar — list sites, retrieve survey responses, and manage feedback widgets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar-behavior-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar-behavior-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotjar-behavior-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotjar-behavior-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Analyze user behavior via Hotjar — list sites, retrieve survey responses, and manage feedback widgets.
 
 ## Description
 Connect your **Hotjar** account to any AI agent and take full control of your behavior analytics and user feedback through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Hotjar** account to any AI agent and take full control of your be
 - **list_recordings**: List session recordings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hotjar (Behavior Analytics)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all surveys for our main marketing site"
+
+**🤖 AI Agent:**
+> I've found 3 active surveys on your main marketing site: 'Post-Purchase Feedback' (ID: 123), 'Feature Request Poll' (ID: 456), and 'Homepage NPS' (ID: 789). Which one would you like to see responses for?
+
+---
+
+**👤 You:**
+> "Show me the last 5 responses for survey ID 123"
+
+**🤖 AI Agent:**
+> Retrieving survey responses… The last 5 respondents gave an average rating of 4.2/5. Common feedback includes 'Easy to use checkout' and 'Would like more payment options'. Would you like to see the full text for any response?
+
+---
+
+**👤 You:**
+> "How many responses has our 'NPS Widget' received so far?"
+
+**🤖 AI Agent:**
+> Your 'NPS Widget' (ID: fb-987) has received a total of 1,245 responses with an average rating of 8.4. I can retrieve the detailed comments and device metadata if you'd like to analyze the trends.
+
+
 ## Installation & Usage
 
 To install and use the **Hotjar (Behavior Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Hotjar (Behavior Analytics)** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

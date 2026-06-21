@@ -1,12 +1,14 @@
 # Modelbit (ML Model Deployments) MCP Server
 
-Deploy and call machine learning models directly from your AI agent using Modelbit's inference endpoints.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/modelbit-ml-model-deployments)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modelbit-ml-model-deployments)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modelbit-ml-model-deployments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modelbit-ml-model-deployments-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 1
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Deploy and call machine learning models directly from your AI agent using Modelbit's inference endpoints.
 
 ## Description
 Connect your **Modelbit** workspace to any AI agent to run production-grade machine learning models through natural conversation.
@@ -38,6 +40,33 @@ Connect your **Modelbit** workspace to any AI agent to run production-grade mach
 Call a deployed Modelbit machine learning model
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Modelbit (ML Model Deployments)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Call the 'sales_forecast' model with data: {'region': 'north', 'month': 12}."
+
+**🤖 AI Agent:**
+> I've sent the request to the 'sales_forecast' deployment. The model predicts a revenue of $450,000 for the North region in December.
+
+---
+
+**👤 You:**
+> "Get an inference from 'image_classifier' version 'v2' for this input array of pixel values."
+
+**🤖 AI Agent:**
+> Using version 'v2' of 'image_classifier', the model has identified the object as 'high-resolution satellite imagery' with 98% confidence.
+
+---
+
+**👤 You:**
+> "Run the 'fraud_detection' model on the latest transaction data."
+
+**🤖 AI Agent:**
+> I've executed the `get_inference` tool for 'fraud_detection'. The model flagged the transaction as 'low risk' (score: 0.02).
+
+
 ## Installation & Usage
 
 To install and use the **Modelbit (ML Model Deployments)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Modelbit (ML Model Deployments)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

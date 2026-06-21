@@ -1,12 +1,14 @@
 # Charity Navigator MCP Server
 
-Search and evaluate US nonprofits — get charity ratings, financial health, advisories and cause data from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/charity-navigator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/charity-navigator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/charity-navigator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/charity-navigator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search and evaluate US nonprofits — get charity ratings, financial health, advisories and cause data from any AI agent.
 
 ## Description
 Connect to **Charity Navigator** and access ratings for over 175,000 US nonprofits through natural conversation.
@@ -54,6 +56,33 @@ Get rating history for a specific charity
 Search for charities and nonprofits by name, location or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Charity Navigator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the top-rated education charities in California."
+
+**🤖 AI Agent:**
+> Found 50+ education charities in California with 4-star ratings. Top results include: DonorsChoose (EIN: 13-4125734, 4/4 stars, $100M+ expenses), First Book (EIN: 52-1760363, 4/4 stars), and Room to Read (EIN: 94-3384184, 4/4 stars). All rated exceptional for financial health and accountability.
+
+---
+
+**👤 You:**
+> "Show me the rating history for the American Red Cross."
+
+**🤖 AI Agent:**
+> American Red Cross (EIN: 53-0196605): Current rating 3/4 stars. Historical ratings show consistent 3-4 star performance over the past decade. Financial health: Good. Accountability & transparency: Strong. Total expenses: $3.2B annually.
+
+---
+
+**👤 You:**
+> "Are there any advisories for charities named 'Red Cross'?"
+
+**🤖 AI Agent:**
+> No active advisories found for American Red Cross (EIN: 53-0196605). The organization has a clean record with no warnings or flags from Charity Navigator.
+
+
 ## Installation & Usage
 
 To install and use the **Charity Navigator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Charity Navigator** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

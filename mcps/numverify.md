@@ -1,12 +1,14 @@
 # NumVerify MCP Server
 
-Validate and audit phone numbers — identify carriers and locations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/numverify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/numverify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/numverify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/numverify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 4
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Validate and audit phone numbers — identify carriers and locations via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire phone validation and identity verification workflow with **NumVerify**, the global API for phone number intelligence. By connecting NumVerify to your agent, you transform complex validation tasks into a natural conversation. Your agent can instantly verify if a number is valid, audit carrier information, and retrieve geographic location data without you ever touching a manual lookup tool. Whether you are cleaning lead lists or verifying user identity, your agent acts as a real-time communications analyst, ensuring your phone data is always verified and accurate.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire phone validation and identity v
 - **validate_phone**: Verify if a phone number is valid and retrieve metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NumVerify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Validate the phone number +14158586273 using NumVerify."
+
+**🤖 AI Agent:**
+> Phone number validated! The number is valid. It is a mobile line from San Francisco, United States, operated by AT&T. Would you like the full metadata?
+
+---
+
+**👤 You:**
+> "Identify the carrier for +442071838750."
+
+**🤖 AI Agent:**
+> I've retrieved the carrier information. The number belongs to a landline in London, United Kingdom, and the carrier is identified. Would you like more location details?
+
+---
+
+**👤 You:**
+> "Check if +5511999999999 is a mobile line."
+
+**🤖 AI Agent:**
+> I've checked the line type. Yes, +5511999999999 is identified as a mobile line in São Paulo, Brazil. I can also retrieve the carrier name if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **NumVerify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **NumVerify** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

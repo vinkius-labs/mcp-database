@@ -1,12 +1,14 @@
 # Enrich CRM MCP Server
 
-Enhance your CRM records with verified company data, technographic signals, and contact enrichment that keeps your database fresh.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/enrich-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/enrich-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/enrich-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/enrich-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enhance your CRM records with verified company data, technographic signals, and contact enrichment that keeps your database fresh.
 
 ## Description
 Connect your **Enrich CRM** account to any AI agent to streamline your B2B intelligence and sales automation workflows through natural conversation.
@@ -42,6 +44,33 @@ No more manual contact research or toggling between dozens of browser tabs. Your
 - **get_account_info**: Check account status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Enrich CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Enrich the company with domain 'google.com' using Enrich CRM."
+
+**🤖 AI Agent:**
+> Company enriched! Google is a 'Technology' giant with 100,000+ employees. Their tech stack includes Kubernetes, TensorFlow, and React. Would you like the detailed financial metadata for their HQ?
+
+---
+
+**👤 You:**
+> "Find the professional email for 'Satya Nadella' at 'microsoft.com'."
+
+**🤖 AI Agent:**
+> I've found and verified the email for Satya Nadella. The professional address is 'satya@microsoft.com' with a 95% deliverability score. Shall I search for their direct phone line as well?
+
+---
+
+**👤 You:**
+> "Check my remaining enrichment credits."
+
+**🤖 AI Agent:**
+> You currently have 5,420 enrichment credits remaining in your account. Your subscription plan is active and in good standing. Need help finding more leads?
+
+
 ## Installation & Usage
 
 To install and use the **Enrich CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Enrich CRM** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

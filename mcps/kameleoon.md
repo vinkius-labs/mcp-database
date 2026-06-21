@@ -1,12 +1,14 @@
 # Kameleoon MCP Server
 
-Manage A/B testing, personalization, and experimentation workflows via AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kameleoon)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kameleoon)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kameleoon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kameleoon-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage A/B testing, personalization, and experimentation workflows via AI agents.
 
 ## Description
 Empower your AI agents to control your **Kameleoon** experimentation platform. This MCP server enables seamless management of experiments, variations, and audience segments directly from natural language interfaces.
@@ -53,6 +55,33 @@ Request a results report for an experiment
 List variations for an experiment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kameleoon** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active experiments in my Kameleoon account."
+
+**🤖 AI Agent:**
+> I've fetched your experiments. Currently, you have 4 active experiments, including 'New Checkout Flow (AB)' and 'Home Page Personalization'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "What are the variations for experiment ID '12345'?"
+
+**🤖 AI Agent:**
+> For experiment 12345, I found 3 variations: 'Reference' (Original), 'Variant A (Red Button)', and 'Variant B (Blue Button)'. All variants are currently receiving traffic.
+
+---
+
+**👤 You:**
+> "List all sites registered in my Kameleoon profile."
+
+**🤖 AI Agent:**
+> I've retrieved 2 sites from your profile: 'Main E-commerce (Code: SEC-123)' and 'Marketing Blog (Code: BLOG-456)'.
+
+
 ## Installation & Usage
 
 To install and use the **Kameleoon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Kameleoon** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

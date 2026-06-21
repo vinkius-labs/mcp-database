@@ -1,12 +1,14 @@
 # AfterLogic Aurora MCP Server
 
-Email and webmail management — manage folders, messages, and accounts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/afterlogic-aurora)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/afterlogic-aurora)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/afterlogic-aurora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/afterlogic-aurora-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Email and webmail management — manage folders, messages, and accounts via AI.
 
 ## Description
 Connect your **AfterLogic Aurora** account to your AI agent to unlock professional email and webmail orchestration. From managing complex mail folder structures to retrieving message lists and handling administrative account tasks, your agent handles your communication platform through natural conversation.
@@ -47,6 +49,33 @@ Verify if an email address is actively provisioned on the AfterLogic server
 Retrieve all active custom domains mapped to the AfterLogic server instance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AfterLogic Aurora** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all mail folders for user 'admin@example.com'."
+
+**🤖 AI Agent:**
+> I've retrieved the folder list for admin@example.com. You have 5 standard folders: INBOX, Sent, Drafts, Spam, and Trash, along with 2 custom subfolders. Which folder would you like to open?
+
+---
+
+**👤 You:**
+> "Check if the account 'user1@example.com' exists on the server."
+
+**🤖 AI Agent:**
+> I've checked the server records. The account 'user1@example.com' exists and is currently active. Would you like to see the quota usage for this account?
+
+---
+
+**👤 You:**
+> "Show me the last 10 messages in the INBOX."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 10 messages from your INBOX. They include 3 new inquiries, 2 system notifications, and several personal emails. Would you like the technical details for any specific message?
+
+
 ## Installation & Usage
 
 To install and use the **AfterLogic Aurora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **AfterLogic Aurora** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

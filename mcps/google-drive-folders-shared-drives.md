@@ -1,12 +1,14 @@
 # Google Drive: Folders & Shared Drives MCP Server
 
-Manage your Drive hierarchy — organize folders, manage Shared Drives, and create shortcuts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-drive-folders-shared-drives)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-drive-folders-shared-drives)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-drive-folders-shared-drives-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-drive-folders-shared-drives-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Drive hierarchy — organize folders, manage Shared Drives, and create shortcuts via AI.
 
 ## Description
 Connect your **Google Drive** account to your AI agent and specialize in advanced folder management and organizational structures. Use natural language to coordinate Shared Drives (formerly Team Drives), maintain folder hierarchies, and manage shortcuts across your entire corporate storage.
@@ -50,6 +52,33 @@ This version is optimized for administrative organizational tasks and large-scal
 - **search_folders**: Search for folders by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Drive: Folders & Shared Drives** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all subfolders inside the 'Marketing 2024' folder."
+
+**🤖 AI Agent:**
+> Inspecting folder hierarchy... Inside 'Marketing 2024', I found 5 subfolders: 'Q1_Campaigns', 'Q2_Strategy', 'Brand_Assets', 'Social_Media_Backlog', and 'Archives'. Would you like the contents of 'Brand_Assets'?
+
+---
+
+**👤 You:**
+> "Move the file 'Final_Report.pdf' to the 'Approved_Exports' folder."
+
+**🤖 AI Agent:**
+> Moving file... I've successfully transferred 'Final_Report.pdf' (ID: 839201) to the 'Approved_Exports' folder (ID: 93021). The file is no longer in its previous location.
+
+---
+
+**👤 You:**
+> "Create a shortcut to 'Price_List_Global' in the 'Sales_Team_Quick_Access' folder."
+
+**🤖 AI Agent:**
+> Creating shortcut... Success! I've created a shortcut named 'Link to Price List' in the 'Sales_Team_Quick_Access' folder, pointing to the original 'Price_List_Global' document.
+
+
 ## Installation & Usage
 
 To install and use the **Google Drive: Folders & Shared Drives** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Google Drive: Folders & Shared Drives** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

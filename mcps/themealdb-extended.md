@@ -1,12 +1,14 @@
 # TheMealDB MCP Server
 
-Access a global database of recipes, ingredients, and meal categories to find culinary inspiration and detailed cooking instructions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/themealdb-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/themealdb-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/themealdb-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/themealdb-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 13
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access a global database of recipes, ingredients, and meal categories to find culinary inspiration and detailed cooking instructions.
 
 ## Description
 Connect **TheMealDB** to your AI agent to transform it into a professional sous-chef. Access thousands of recipes with detailed instructions, measurements, and cultural origins.
@@ -58,6 +60,33 @@ Lookup a selection of 10 random meals (Premium V2 Only)
 - **search_meals_by_name**: Search for meals by their full or partial name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TheMealDB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for a recipe named 'Teriyaki Chicken'."
+
+**🤖 AI Agent:**
+> I found a recipe for Teriyaki Chicken (ID: 52773). It's a Japanese dish. Would you like the full instructions and ingredients?
+
+---
+
+**👤 You:**
+> "List all available meal categories."
+
+**🤖 AI Agent:**
+> I've retrieved the categories. You can choose from Beef, Chicken, Dessert, Lamb, Miscellaneous, Pasta, Pork, Seafood, Side, Starter, Vegan, Vegetarian, Breakfast, and Goat.
+
+---
+
+**👤 You:**
+> "Show me some recipes from the 'Canadian' area."
+
+**🤖 AI Agent:**
+> I found several Canadian dishes, including BeaverTails, Poutine, Nanaimo Bars, and Tourtiere. Which one would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **TheMealDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **TheMealDB** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

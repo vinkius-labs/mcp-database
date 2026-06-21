@@ -1,12 +1,14 @@
 # OpenFDA MCP Server
 
-Access FDA drug safety data, device recalls, food enforcement reports and approved drug information.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfda-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfda-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 8
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access FDA drug safety data, device recalls, food enforcement reports and approved drug information.
 
 ## Description
 Connect to **OpenFDA** and explore the FDA's open data platform through natural conversation — no API key needed.
@@ -62,6 +64,33 @@ Search drug labeling information
 Search food recall enforcement reports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenFDA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me recent adverse events for Advil."
+
+**🤖 AI Agent:**
+> Found 10 recent adverse event reports for Advil (ibuprofen). Common reactions: nausea (142 reports), headache (98 reports), dizziness (76 reports), abdominal pain (54 reports). Reports submitted by healthcare professionals and consumers between 2023-2024.
+
+---
+
+**👤 You:**
+> "What food recalls are currently active?"
+
+**🤖 AI Agent:**
+> Found 5 active food recalls: 1. Listeria in deli meats (Class I, high risk) — 2. Salmonella in peanut butter (Class I) — 3. Undeclared allergen in snack bars (Class II) — 4. Metal fragments in frozen meals (Class I) — 5. Mold contamination in juice (Class II).
+
+---
+
+**👤 You:**
+> "Find FDA-approved drugs containing atorvastatin."
+
+**🤖 AI Agent:**
+> Found 15 FDA-approved drug applications containing atorvastatin. Notable: Lipitor (Pfizer, approved 1996), Atorvastatin Calcium (generic, multiple sponsors), Liptruzet (Merck). Includes application numbers, approval dates, dosage forms and strengths.
+
+
 ## Installation & Usage
 
 To install and use the **OpenFDA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **OpenFDA** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

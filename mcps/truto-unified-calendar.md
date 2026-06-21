@@ -1,12 +1,14 @@
 # Truto Unified Calendar MCP Server
 
-Empower your AI agent with a universal API to read, schedule, and sync events seamlessly across Google, Outlook, and other major calendar providers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/truto-unified-calendar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truto-unified-calendar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/truto-unified-calendar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/truto-unified-calendar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Empower your AI agent with a universal API to read, schedule, and sync events seamlessly across Google, Outlook, and other major calendar providers.
 
 ## Description
 Deploy the ultimate scheduling machine by linking your AI agent to **Truto**. Instead of building fragmented code for individual calendar APIs, Truto provides a normalized schema that controls Google Calendar, Outlook, and countless others underneath. Command your agent to list daily events, find free timeslots accurately, or write absolute meetings directly to the chosen provider without swapping logic loops.
@@ -55,6 +57,27 @@ Update an existing event via Truto. Provide a JSON object with fields to change.
 - **validate_connection**: Validate a Truto integrated account connection. Checks credentials, permissions, and API accessibility. Returns validation status and any errors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Truto Unified Calendar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all interconnected calendars belonging to this unified account."
+
+**🤖 AI Agent:**
+> Listing calendars for Integrated Account. Retrieved 2 major calendars:
+1. 'Primary Operations' (ID: cal_91bx2) [Google Provider]
+2. 'Global Holidays' (ID: cal_84zy1) [Google Provider].
+
+---
+
+**👤 You:**
+> "Search my events and get the specific details for event ID evt_7xkP."
+
+**🤖 AI Agent:**
+> Details recovered. Meeting 'Q3 Alignment Sprint' goes from 2026-10-14T09:00Z to 2026-10-14T10:30Z. Video conferencing link appended natively. 4 attendees invited.
+
+
 ## Installation & Usage
 
 To install and use the **Truto Unified Calendar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +86,11 @@ To install and use the **Truto Unified Calendar** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # IP2WHOIS MCP Server
 
-Look up domain registration details, ownership information, and expiration dates with instant WHOIS queries at scale.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ip2whois)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ip2whois)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ip2whois-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ip2whois-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Look up domain registration details, ownership information, and expiration dates with instant WHOIS queries at scale.
 
 ## Description
 Connect your **IP2WHOIS** account to any AI agent and access comprehensive domain intelligence through natural conversation.
@@ -57,6 +59,33 @@ Verify IP2WHOIS API connectivity
 - **lookup_domain_whois**: Full WHOIS lookup for a domain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IP2WHOIS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Look up the WHOIS information for github.com."
+
+**🤖 AI Agent:**
+> Here's the WHOIS record for github.com: Registered on October 9, 2007 (18+ years old), expires October 9, 2026. Registrar: MarkMonitor Inc. Nameservers: dns1.p08.nsone.net, dns2.p08.nsone.net, and more. The domain status is 'clientDeleteProhibited' (protected).
+
+---
+
+**👤 You:**
+> "Check if the domain coolstartup2026.com is available."
+
+**🤖 AI Agent:**
+> The domain coolstartup2026.com appears to be available for registration! No WHOIS record was found, which indicates it has not been registered yet.
+
+---
+
+**👤 You:**
+> "When does google.com expire?"
+
+**🤖 AI Agent:**
+> google.com expires on September 14, 2028. That's approximately 866 days from now — no immediate renewal concern. The registrar is MarkMonitor Inc.
+
+
 ## Installation & Usage
 
 To install and use the **IP2WHOIS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **IP2WHOIS** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Ape Wisdom MCP Server
 
-Track trending stocks and cryptocurrencies based on social media sentiment from Reddit and 4chan.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ape-wisdom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ape-wisdom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ape-wisdom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ape-wisdom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track trending stocks and cryptocurrencies based on social media sentiment from Reddit and 4chan.
 
 ## Description
 The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of retail investors. By monitoring mentions and sentiment on popular boards like r/wallstreetbets, r/CryptoCurrency, and 4chan, this server provides real-time insights into what the internet is talking about in the financial and crypto markets.
@@ -45,6 +47,33 @@ The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of reta
 - **search_ticker**: Search for a specific ticker or coin in the trending lists
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ape Wisdom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the top 10 trending stocks on Reddit right now?"
+
+**🤖 AI Agent:**
+> I've pulled the latest trending stocks. Currently, NVDA leads with 1,250 mentions, followed by TSLA and AAPL. The sentiment for NVDA is strongly positive at 0.78.
+
+---
+
+**👤 You:**
+> "Show me cryptocurrencies with the highest mention growth in the last 24 hours."
+
+**🤖 AI Agent:**
+> The top gainers in social buzz are SOL (+450 mentions), PEPE (+320 mentions), and ETH (+280 mentions). SOL is seeing a significant spike in r/CryptoCurrency.
+
+---
+
+**👤 You:**
+> "Get a market snapshot of trending assets."
+
+**🤖 AI Agent:**
+> Here's your market snapshot. For stocks, NVDA and AMD are dominating the conversation. For crypto, BTC and ETH remain at the top, with a surge in interest for modular blockchains.
+
+
 ## Installation & Usage
 
 To install and use the **Ape Wisdom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Ape Wisdom** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

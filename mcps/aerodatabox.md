@@ -1,12 +1,14 @@
 # AeroDataBox MCP Server
 
-Access real-time flight status, airport flight information displays (FIDS), historical flight data, and airport delay statistics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aerodatabox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aerodatabox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aerodatabox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aerodatabox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 23
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time flight status, airport flight information displays (FIDS), historical flight data, and airport delay statistics directly from your AI agent.
 
 ## Description
 Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation data using natural language. This server integrates real-time flight tracking, airport schedules, and operational delay metrics.
@@ -57,6 +59,33 @@ Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation 
 - **get_flight_delays**: Get historical punctuality statistics for a specific flight number
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AeroDataBox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the real-time status of flight AA100."
+
+**🤖 AI Agent:**
+> I will query the real-time status for flight AA100 using the `get_nearest_flight` tool. Let me fetch the current departure, arrival, and aircraft details for you.
+
+---
+
+**👤 You:**
+> "Show me the departures and arrivals at EGLL for the next 6 hours."
+
+**🤖 AI Agent:**
+> I will retrieve the flight information display (FIDS) for London Heathrow (EGLL) using the `get_fids_relative` tool with a duration of 360 minutes. Here are the scheduled flights...
+
+---
+
+**👤 You:**
+> "What are the current delays at JFK airport?"
+
+**🤖 AI Agent:**
+> I will check the current operational delays at John F. Kennedy International Airport (KJFK) using the `get_airport_delays` tool to provide you with statistical insights.
+
+
 ## Installation & Usage
 
 To install and use the **AeroDataBox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **AeroDataBox** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

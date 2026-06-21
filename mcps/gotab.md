@@ -1,12 +1,14 @@
 # GoTab MCP Server
 
-Manage your restaurant operations — menus, orders, and tabs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gotab)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gotab)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gotab-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gotab-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your restaurant operations — menus, orders, and tabs via AI.
 
 ## Description
 Connect your **GoTab** POS and commerce account to your AI agent and streamline your hospitality management. Use natural language to update menu items, check the status of active tabs, and monitor real-time orders directly from your workflow.
@@ -48,6 +50,34 @@ Your AI acts as your digital front-of-house manager, capable of instantly checki
 - **update_item_status**: Update the availability status of an item
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GoTab** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Mark the 'Truffle Fries' (Item ID 883) at location 12 as sold out."
+
+**🤖 AI Agent:**
+> Updating item... Success! I've marked Item ID 883 ('Truffle Fries') as 'sold_out' for location 12. It will no longer be available for order on the digital menu.
+
+---
+
+**👤 You:**
+> "Show me the details of Tab ID 93021."
+
+**🤖 AI Agent:**
+> Fetching tab details... Tab #93021 is currently 'OPEN' under the name 'Sarah P.'. The current total is $45.50. Recent items ordered include 2x 'House Margarita' and 1x 'Calamari'.
+
+---
+
+**👤 You:**
+> "List all incoming orders that are currently queued in the kitchen for Location 1."
+
+**🤖 AI Agent:**
+> Checking active ticket flow...
+There are presently 3 live orders queued in prep queues globally. Would you like me to expand ticket #A22 specifically?
+
+
 ## Installation & Usage
 
 To install and use the **GoTab** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +86,11 @@ To install and use the **GoTab** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Brex MCP Server
 
-Equip your AI to navigate your Brex suite. Spin up virtual cards, route new team members, and check daily cash allocations through natural chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brex)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brex)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brex-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Equip your AI to navigate your Brex suite. Spin up virtual cards, route new team members, and check daily cash allocations through natural chat.
 
 ## Description
 The **Brex MCP Server** bridges standard large language models directly via the `platform.brexapis.com` to your startup's core spend engine. By delivering a single static User Token, you enable the most flexible financial assistant available.
@@ -46,6 +48,33 @@ Invite a new employee / user to Brex
 - **brex_pay_vendor**: Orchestrate a vendor payment (Send Money)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brex** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Invite the new engineer 'John Carter' via email john@company.com into Brex. After you get his ID, spin him up a Virtual Card with a $1K limit immediately."
+
+**🤖 AI Agent:**
+> Double-tool chain complete! First, I invoked `brex_create_user` and instantiated John natively. Next, I utilized the Brex User UUID `usx_210` to successfully map and authorize a fresh Virtual Mastercard strictly capped at a 1000 limit.
+
+---
+
+**👤 You:**
+> "Check the core cash settlement. How much Treasury base balance do we stand at? Extract only active Checking values."
+
+**🤖 AI Agent:**
+> According to the `cash/balances` API sweep, your primary operational checking environment sits at $145,210.00 USD securely settled by your local Brex vault integrations.
+
+---
+
+**👤 You:**
+> "Pull all corporate expenses tracked over the past 30 days focusing entirely on our AWS hosting and digital footprints."
+
+**🤖 AI Agent:**
+> I performed a granular array analysis of over 50 transaction payloads returning from the last 30 intervals. Brex logs exactly three occurrences of AWS charges on the 'Engineering Budget'. Amounting to roughly $3,000 cumulatively.
+
+
 ## Installation & Usage
 
 To install and use the **Brex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Brex** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

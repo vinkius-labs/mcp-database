@@ -1,12 +1,14 @@
 # Daktela MCP Server
 
-Handle customer interactions across phone, email, chat, and social media from one omnichannel contact center platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/daktela)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daktela)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/daktela-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/daktela-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Handle customer interactions across phone, email, chat, and social media from one omnichannel contact center platform.
 
 ## Description
 Connect your **Daktela** omnichannel contact center to any AI agent and simplify how you coordinate customer support, track communication history, and manage CRM records through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Daktela** omnichannel contact center to any AI agent and simplify
 - **list_users**: List Daktela users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Daktela** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active activities in the contact center."
+
+**🤖 AI Agent:**
+> I've retrieved the activities log. You have 5 recent interactions: 2 inbound calls from 'John Doe', 1 pending email from 'Sarah Smith', and 2 active web chats. Which one would you like to see details for?
+
+---
+
+**👤 You:**
+> "Create a support ticket: 'Login issue' for contact 'cont_10293'."
+
+**🤖 AI Agent:**
+> Ticket created! I've logged the support case 'Login issue' in Daktela and associated it with contact cont_10293. The ticket ID is tic_88231. Your support team has been notified.
+
+---
+
+**👤 You:**
+> "Show me the email history for contact 'cont_5521'."
+
+**🤖 AI Agent:**
+> Fetching email interactions... For contact cont_5521, I found 3 recent email threads discussing 'Billing Inquiry' and 'Product Upgrade'. Would you like the full body of the latest message?
+
+
 ## Installation & Usage
 
 To install and use the **Daktela** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Daktela** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

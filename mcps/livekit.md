@@ -1,12 +1,14 @@
 # LiveKit MCP Server
 
-Manage real-time video, audio, and data sessions via LiveKit — create rooms, manage participants, and trigger recordings directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/livekit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/livekit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/livekit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/livekit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 41
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage real-time video, audio, and data sessions via LiveKit — create rooms, manage participants, and trigger recordings directly from your AI agent.
 
 ## Description
 Connect your **LiveKit** infrastructure to any AI agent to orchestrate real-time communication environments through natural language. This server provides comprehensive control over WebRTC sessions, participant permissions, and media recording.
@@ -73,6 +75,33 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 - **update_subscriptions**: Subscribe/unsubscribe a participant from specific tracks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LiveKit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all currently active rooms in my LiveKit instance."
+
+**🤖 AI Agent:**
+> I've retrieved the active rooms. You have 3 rooms running: 'Main-Lobby' (2 participants), 'Gaming-Zone' (5 participants), and 'Support-Desk' (0 participants).
+
+---
+
+**👤 You:**
+> "Create a new room called 'Strategy-Meeting' with a max of 10 participants."
+
+**🤖 AI Agent:**
+> The room 'Strategy-Meeting' has been successfully created with a limit of 10 participants and a default empty timeout.
+
+---
+
+**👤 You:**
+> "Mute the audio track for participant 'user_99' in the 'Main-Lobby' room."
+
+**🤖 AI Agent:**
+> I've sent the command to mute the track 'TR_XXXXXXXX' for 'user_99' in 'Main-Lobby'. The participant is now muted.
+
+
 ## Installation & Usage
 
 To install and use the **LiveKit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **LiveKit** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Tavily MCP Server
 
-Search the web for AI — audit search context, answers, and extracted content via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tavily)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tavily)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tavily-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tavily-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 6
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Search the web for AI — audit search context, answers, and extracted content via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire web research workflow with **Tavily**, the search engine built specifically for AI agents. By connecting Tavily to your agent, you transform complex information retrieval into a natural conversation. Your agent can instantly audit search context, retrieve direct AI answers, and extract clean content from any URL without you ever touching a browser. Whether you are conducting deep market research or monitoring real-time news, your agent acts as a real-time research assistant, ensuring your intelligence is always grounded in optimized, high-quality data.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire web research workflow with **Ta
 - **search_web**: Search the web for AI-optimized results
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tavily** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the latest breakthroughs in 'Quantum Computing' using Tavily."
+
+**🤖 AI Agent:**
+> I've retrieved the latest research context. Recent breakthroughs include new error-correction methods and increased qubit coherence times. Would you like the links to the full papers?
+
+---
+
+**👤 You:**
+> "Get an AI answer for 'How does photosynthesis work?'."
+
+**🤖 AI Agent:**
+> According to the latest sources, photosynthesis is the process used by plants to convert light energy into chemical energy. I can provide a more detailed breakdown if needed.
+
+---
+
+**👤 You:**
+> "Extract content from https://vinkius.com."
+
+**🤖 AI Agent:**
+> Content extracted! I've retrieved the main text from Vinkius, which discusses their latest AI research and MCP server ecosystem. Would you like a summary of the findings?
+
+
 ## Installation & Usage
 
 To install and use the **Tavily** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Tavily** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

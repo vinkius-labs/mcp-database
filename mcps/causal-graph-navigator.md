@@ -1,12 +1,14 @@
 # Causal-Graph Navigator MCP Server
 
-LLMs reason by statistical proximity, confusing word co-occurrence with direct causal relationships. This tool forces causal graph isolation: identify entities as nodes, map directed influence edges, isolate statistical associations, validate graph coherence, and derive paths strictly from the DAG.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/causal-graph-navigator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/causal-graph-navigator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/causal-graph-navigator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/causal-graph-navigator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+LLMs reason by statistical proximity, confusing word co-occurrence with direct causal relationships. This tool forces causal graph isolation: identify entities as nodes, map directed influence edges, isolate statistical associations, validate graph coherence, and derive paths strictly from the DAG.
 
 ## Description
 AI models exhibit high error rates in complex causal chains, frequently confusing correlation with causation due to statistical proximity in training datasets. Because words like 'ice cream sales' and 'shark attacks' frequently co-occur, models lean heavily on associative heuristics rather than physical or logical dependency paths. This tool breaks proximity-based loops by enforcing strict Directed Acyclic Graph (DAG) construction and path traversal.
@@ -34,6 +36,33 @@ Causal-Graph Navigator uses 5 Decision Pivots that force the agent to validate i
 Structured reflection tool for causal inference and dependency reasoning. Forces the agent to map variables as explicit graph nodes, define directed causal edges with mechanistic justification, isolate statistical correlation from genuine causation, validate graph coherence (no cycles, no contradictions), and derive conclusions strictly by traversing the directed graph. Catches Statistical Drift (treating correlation as causation — "A and B co-occur, therefore A causes B"), Missing Nodes (omitting confounders or mediating variables that explain the real causal path), Undirected Edges (claiming "A relates to B" without specifying direction of influence), Cycle Errors (circular causal chains — A causes B causes C causes A — without temporal resolution), and Graph Bypass (reaching conclusions by narrative reasoning instead of traversing the causal graph). Call once per causal inference, root-cause analysis, or dependency chain reasoning
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Causal-Graph Navigator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Data shows ice cream sales and shark attacks rise at the same time. Therefore, selling more ice cream causes shark attacks. Is this true?"
+
+**🤖 AI Agent:**
+> Verdict: STATISTICAL_DRIFT. Spurious correlation detected. (1) Nodes: Ice Cream, Shark Attacks, Hot Summer Weather (confounder). (2) Directed Edges: Summer -> Ice Cream, Summer -> Shark Attacks. Ice Cream has no directed edge to Shark Attacks. The model fell into the statistical co-occurrence trap.
+
+---
+
+**👤 You:**
+> "In our database system, high CPU load (A) causes slow queries (B), and slow queries (B) cause high CPU load (A). How do we isolate the root cause?"
+
+**🤖 AI Agent:**
+> Verdict: CYCLE_ERROR. Cyclic dependency in causal graph. In a static DAG, cycles like A -> B -> A are illegal. You must introduce discrete temporal states (e.g., A_t0 causes B_t1, which causes A_t2) to model feedback loops or identify external interventions (like indexing bottlenecks) that break the cycle.
+
+---
+
+**👤 You:**
+> "If we implement feature X (A), it will decrease page speed (B). Decreasing page speed (B) will lower search rankings (C). How does X affect rankings?"
+
+**🤖 AI Agent:**
+> Verdict: CAUSALITY_PROVEN. (1) Nodes: Feature X, Page Speed, Search Rankings. (2) Directed Edges: Feature X -> Page Speed, Page Speed -> Search Rankings. (3) Isolation: Correlation is not spurious; physical Page Speed dictates Search Rankings indexing rules. (4) Coherence: Acyclic chain A -> B -> C. (5) Path Traversal: Feature X (A) causes ranking drop (C) transitively through Speed (B). Correct.
+
+
 ## Installation & Usage
 
 To install and use the **Causal-Graph Navigator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -42,4 +71,11 @@ To install and use the **Causal-Graph Navigator** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

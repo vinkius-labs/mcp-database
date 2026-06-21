@@ -1,12 +1,14 @@
 # Pokemon TCG MCP Server
 
-Search and browse the entire Pokemon Trading Card Game database — find specific cards, explore sets, and filter by types or rarities.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pokemon-tcg)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pokemon-tcg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pokemon-tcg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pokemon-tcg-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 8
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Search and browse the entire Pokemon Trading Card Game database — find specific cards, explore sets, and filter by types or rarities.
 
 ## Description
 Connect to the comprehensive **Pokemon TCG API** and turn your AI agent into a master collector or deck builder. Access thousands of cards across all historical and modern sets through natural conversation.
@@ -54,6 +56,33 @@ List all card supertypes
 List all Pokemon energy types
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pokemon TCG** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all Charizard cards from the 'Base' set."
+
+**🤖 AI Agent:**
+> I've found the results for Charizard in the Base set. The most famous one is ID 'base1-4', a Rare Holo Stage 2 Pokemon with 120 HP and the Fire Spin attack.
+
+---
+
+**👤 You:**
+> "List all available Pokemon energy types."
+
+**🤖 AI Agent:**
+> The current energy types in the TCG include: Colorless, Darkness, Dragon, Fairy, Fighting, Fire, Grass, Lightning, Metal, Psychic, and Water.
+
+---
+
+**👤 You:**
+> "Get the full details for the card with ID 'swsh1-1'."
+
+**🤖 AI Agent:**
+> Card 'swsh1-1' is Celebi V from the Sword & Shield expansion. It's a Basic Grass Pokemon with 180 HP, featuring the attacks 'Line Spray' and 'Beam Blast'.
+
+
 ## Installation & Usage
 
 To install and use the **Pokemon TCG** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Pokemon TCG** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

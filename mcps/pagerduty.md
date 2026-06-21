@@ -1,12 +1,14 @@
 # PagerDuty MCP Server
 
-Manage incidents, services, on-call schedules, and escalation policies via PagerDuty — trigger, acknowledge, and resolve alerts from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pagerduty)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pagerduty)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pagerduty-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pagerduty-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage incidents, services, on-call schedules, and escalation policies via PagerDuty — trigger, acknowledge, and resolve alerts from any AI agent.
 
 ## Description
 Connect your **PagerDuty** account to any AI agent and take full control of incident management operations through natural conversation.
@@ -53,6 +55,52 @@ Update an incident status (acknowledge, resolve, escalate)
 List incidents across all services
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PagerDuty** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all triggered incidents right now."
+
+**🤖 AI Agent:**
+> There are 3 triggered incidents:
+
+1. 🔴 **P8K2LMN** — Database connection pool exhausted (Production API)
+2. 🔴 **P3J9FGH** — SSL certificate expires in 24h (CDN Edge)
+3. 🟡 **P1A4BCD** — High memory usage on worker-03 (Background Jobs)
+
+Would you like me to acknowledge any of these?
+
+---
+
+**👤 You:**
+> "Who is on-call for the Platform team right now?"
+
+**🤖 AI Agent:**
+> Current on-call for Platform:
+
+- **Level 1**: sarah.chen@company.com (until Apr 7, 9:00 AM UTC)
+- **Level 2**: marcus.ops@company.com (until Apr 14, 9:00 AM UTC)
+
+Escalation Policy: Platform Critical (30 min timeout per level).
+
+---
+
+**👤 You:**
+> "Acknowledge incident P8K2LMN and show me the service details."
+
+**🤖 AI Agent:**
+> ✅ Incident **P8K2LMN** acknowledged successfully.
+
+**Service: Production API**
+- Status: Active (Critical)
+- Escalation: Platform Critical (3 levels)
+- Integrations: Datadog, Sentry, Slack
+- Auto-resolve: 4 hours
+
+Would you like me to investigate the root cause or resolve this incident?
+
+
 ## Installation & Usage
 
 To install and use the **PagerDuty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +109,11 @@ To install and use the **PagerDuty** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

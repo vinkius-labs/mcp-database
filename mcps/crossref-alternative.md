@@ -1,12 +1,14 @@
 # CrossRef MCP Server
 
-Search 150M+ academic works — find journal articles, books, DOIs, citations and scholarly metadata.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/crossref-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crossref-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crossref-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crossref-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 13
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Search 150M+ academic works — find journal articles, books, DOIs, citations and scholarly metadata.
 
 ## Description
 Connect to **CrossRef** and explore the world's largest scholarly metadata database through natural conversation — no API key needed.
@@ -77,6 +79,33 @@ Search academic publishers by name
 Search academic works by title, author, DOI or keywords
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CrossRef** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for papers about machine learning published in 2024."
+
+**🤖 AI Agent:**
+> Found 50+ papers about machine learning from 2024. Top results include works in Nature Machine Intelligence, IEEE Transactions, ACM Computing Surveys. Each with DOIs, authors, abstracts and citation counts.
+
+---
+
+**👤 You:**
+> "Get metadata for DOI 10.1038/nature12373."
+
+**🤖 AI Agent:**
+> Title: 'Deep learning in neural networks: An overview'. Authors: Jürgen Schmidhuber. Journal: Neural Networks, 2015. Publisher: Elsevier. Citations: 15,000+. DOI: 10.1016/j.neunet.2014.09.003.
+
+---
+
+**👤 You:**
+> "Find journals published by Nature Publishing Group."
+
+**🤖 AI Agent:**
+> Found 100+ journals from Springer Nature including: Nature (ISSN: 0028-0836, 200K+ works), Nature Medicine, Nature Biotechnology, Nature Communications, Scientific Reports. Each with ISSN, work counts and URLs.
+
+
 ## Installation & Usage
 
 To install and use the **CrossRef** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **CrossRef** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

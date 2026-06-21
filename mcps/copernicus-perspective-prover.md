@@ -1,12 +1,14 @@
 # Copernicus Perspective Prover MCP Server
 
-Your AI analyzed the problem from the default perspective and added workarounds when it did not fit. That is an epicycle — not a solution. Copernicus did not add more epicycles to Ptolemy's model. He moved the center from Earth to Sun. 40+ epicycles vanished. This tool forces default questioning, epicycle counting, alternative framing, observer shifting, and simplicity comparison.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-perspective-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copernicus-perspective-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copernicus-perspective-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copernicus-perspective-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** architecture
-**Tools Count:** 1
+
+**Category:** [architecture](../categories/architecture.md)
+
+Your AI analyzed the problem from the default perspective and added workarounds when it did not fit. That is an epicycle — not a solution. Copernicus did not add more epicycles to Ptolemy's model. He moved the center from Earth to Sun. 40+ epicycles vanished. This tool forces default questioning, epicycle counting, alternative framing, observer shifting, and simplicity comparison.
 
 ## Description
 AI agents accept the default perspective and add workarounds when it fails. They never question whether the frame itself is wrong.
@@ -45,6 +47,33 @@ AI agents accept the default perspective and add workarounds when it fails. They
 Structured reflection tool for Copernican perspective shifts — questioning default frames by counting accumulated workarounds as model-failure signals. Forces the agent to identify the assumed perspective, count its epicycles (patches that keep a broken model alive), propose a fundamentally different reference frame, reanalyze from the new position, and compare complexity measurably. Catches Default Lock (accepting the current framework as "obvious" without questioning its origin — geocentrism was "obvious" for 1,400 years), Epicycle Blindness (treating 5+ workarounds as "edge cases" instead of recognizing them as symptoms of a broken model), Tweak Addiction (proposing "improvements" to the current frame instead of a fundamentally different center — another epicycle, not heliocentrism), Observer Fixation (describing the alternative frame without actually reanalyzing data from the new position), and Simplicity Assertion ("obviously better" without counting workarounds in both frames). Call once per framework evaluation or when accumulated workarounds exceed 3
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Copernicus Perspective Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We should keep our monolithic architecture. It is the obvious approach for our team size and the standard way works well enough."
+
+**🤖 AI Agent:**
+> DEFAULT_LOCKED — 'The obvious approach' and 'the standard way' are default-locked language. WHY is monolithic the default? Because it is familiar? Because of team size? Copernicus: 'obvious' is what geocentrism was for 1,400 years. What workarounds have you accumulated? How many special cases? Are they growing? Ptolemy needed 40+ epicycles — each was 'reasonable.' Together they signaled a broken model. Count yours.
+
+---
+
+**👤 You:**
+> "We use REST APIs everywhere but keep adding workarounds for real-time features — polling, webhooks, SSE adapters. There is no other way to handle our client integrations."
+
+**🤖 AI Agent:**
+> NO_ALTERNATIVE_FRAME — Default questioned: good — REST identified as convention. Epicycles counted: polling, webhooks, SSE adapters — three workarounds for what should be native behavior. But 'there is no other way' is frame rigidity. Copernicus heard the same from every university in Europe for 30 years. You PROPOSED event-driven but immediately dismissed it. Move the observer FIRST: how do the same client integrations look from an event-driven center? What if clients consume events instead of polling REST? Analyze from the new position before dismissing.
+
+---
+
+**👤 You:**
+> "Our caching layer keeps growing with invalidation rules. Every new feature needs a new cache-busting strategy. Should we add Redis Streams to handle the latest requirement?"
+
+**🤖 AI Agent:**
+> EPICYCLES_IGNORED — 'Every new feature needs a new cache-busting strategy' — that is the epicycle signal. Ptolemy added a new epicycle for every planetary anomaly. You are adding a new invalidation rule for every feature. Count them: how many invalidation strategies exist today? Are they growing with each release? Redis Streams is ANOTHER epicycle on top of a model that may be fundamentally wrong. What if caching is not the right frame? What if the data model itself — if restructured — eliminates the need for most caching? Move the observer: look at this from the data consistency perspective, not the performance perspective.
+
+
 ## Installation & Usage
 
 To install and use the **Copernicus Perspective Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Copernicus Perspective Prover** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

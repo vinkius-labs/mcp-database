@@ -1,12 +1,14 @@
 # Polygon.io MCP Server
 
-Access real-time and historical financial data for stocks, crypto, forex, and indices directly within your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/polygonio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polygonio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/polygonio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/polygonio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 21
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time and historical financial data for stocks, crypto, forex, and indices directly within your AI agent.
 
 ## Description
 Connect your **Polygon.io** account to any AI agent to retrieve institutional-grade market data through simple conversation. Monitor market movements, analyze historical trends, and stay updated with financial news.
@@ -56,6 +58,33 @@ Connect your **Polygon.io** account to any AI agent to retrieve institutional-gr
 - **list_tickers**: Retrieve a comprehensive list of ticker symbols across asset classes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Polygon.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active stock tickers on the NASDAQ exchange."
+
+**🤖 AI Agent:**
+> I've retrieved the active tickers for NASDAQ. There are several thousand results; some notable ones include AAPL (Apple Inc.), MSFT (Microsoft Corp.), and AMZN (Amazon.com Inc.). Would you like to filter this list further or inspect a specific ticker?
+
+---
+
+**👤 You:**
+> "Get daily historical bars for TSLA from 2024-01-01 to 2024-02-01."
+
+**🤖 AI Agent:**
+> I have the historical data for TSLA. During this period, the price opened at $248.42 on Jan 2nd and closed at $188.86 on Feb 1st. The highest volume was recorded on Jan 25th. Would you like a summary of the average closing price?
+
+---
+
+**👤 You:**
+> "What is the current market status and are there any upcoming holidays?"
+
+**🤖 AI Agent:**
+> The U.S. stock market is currently 'open'. Forex and Crypto markets are also active. Regarding holidays, the next market closure is for Presidents' Day on February 19th. Is there anything else you'd like to check?
+
+
 ## Installation & Usage
 
 To install and use the **Polygon.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Polygon.io** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

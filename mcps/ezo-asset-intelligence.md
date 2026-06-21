@@ -1,12 +1,14 @@
 # EZO Asset Intelligence MCP Server
 
-Equip your AI agent to manage fixed assets, track inventory, and monitor checkouts via the EZO.io (EZOfficeInventory) API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ezo-asset-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ezo-asset-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ezo-asset-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ezo-asset-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to manage fixed assets, track inventory, and monitor checkouts via the EZO.io (EZOfficeInventory) API.
 
 ## Description
 Integrate **EZO.io** (formerly EZOfficeInventory), the world's most popular asset management platform, directly into your AI workflow. Manage your fixed asset database and physical locations, track consumable inventory and real-time stock levels, monitor active checkouts and reservations, and oversee your entire asset lifecycle using natural language.
@@ -46,6 +48,33 @@ List all fixed assets managed in your EZO account
 - **list_overdue_checkouts**: Identify assets that are past their expected return date (mock logic)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EZO Asset Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all assets currently checked out."
+
+**🤖 AI Agent:**
+> I've found 12 assets currently checked out, including 'MacBook Pro - IT-001' (assigned to John Miller) and 'Projector - CONF-A' (assigned to Alice Connor). Would you like to see the due dates for these items?
+
+---
+
+**👤 You:**
+> "Show me our inventory levels for 'Ethernet Cables'."
+
+**🤖 AI Agent:**
+> For 'Ethernet Cables' (Cat6), you currently have 85 units in stock across all locations. Your low stock threshold is set to 20 units. Should I pull the list of other consumable items near their limit?
+
+---
+
+**👤 You:**
+> "Check for overdue asset returns."
+
+**🤖 AI Agent:**
+> There are 3 overdue assets: 'Test Kit #5' (due March 10th), 'DSLR Camera' (due March 12th), and 'Tablet - OPS-02'. Would you like the contact information for the members who have these assets?
+
+
 ## Installation & Usage
 
 To install and use the **EZO Asset Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **EZO Asset Intelligence** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

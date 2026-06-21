@@ -1,12 +1,14 @@
 # ClubReady MCP Server
 
-Manage members, check-ins, classes, billing, prospects, and staff for your ClubReady (ABC Fitness) gym through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clubready)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clubready)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clubready-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clubready-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 11
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage members, check-ins, classes, billing, prospects, and staff for your ClubReady (ABC Fitness) gym through natural conversation.
 
 ## Description
 Connect your **ClubReady** (ABC Fitness) gym to any AI agent and manage your fitness facility through natural conversation.
@@ -63,6 +65,42 @@ List sales prospects
 List gym staff
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClubReady** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check in member John Smith at the front desk."
+
+**🤖 AI Agent:**
+> ✅ **Check-in successful!**
+
+👤 **John Smith** (ID: 45231)
+🏷️ Barcode: CR-2024-45231
+📋 Plan: Premium All-Access ($89/month)
+✅ Status: Active — Paid through April 30
+🔓 Door access: Granted
+📊 Visit #47 this year (avg 3.8x/week)
+
+John is one of your most engaged members!
+
+---
+
+**👤 You:**
+> "Show me the roster for the 6 PM Advanced Cycling class."
+
+**🤖 AI Agent:**
+> Here is the roster for 6 PM Advanced Cycling with Trainer Sarah: 14 members booked out of 20 spots. 3 members have already checked in. Waitlist is currently empty.
+
+---
+
+**👤 You:**
+> "List all members with past-due billing balances over $50."
+
+**🤖 AI Agent:**
+> Scanning billing database... Found 8 members with overdue balances exceeding $50. Top flagged accounts: Michael R. ($150 past due), Emma W. ($89 past due). Shall I send automated reminders?
+
+
 ## Installation & Usage
 
 To install and use the **ClubReady** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +109,11 @@ To install and use the **ClubReady** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

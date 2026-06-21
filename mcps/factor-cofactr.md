@@ -1,12 +1,14 @@
 # Factor (Cofactr) MCP Server
 
-Automate supply chain operations via Factor (Cofactr) — manage parts, purchase orders, and inventory directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/factor-cofactr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/factor-cofactr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/factor-cofactr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/factor-cofactr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 11
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate supply chain operations via Factor (Cofactr) — manage parts, purchase orders, and inventory directly through your AI agent.
 
 ## Description
 Connect your **Factor (now Cofactr)** supply chain account to any AI agent and take full control of your electronics procurement and logistics through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Factor (now Cofactr)** supply chain account to any AI agent and t
 - **list_suppliers**: List all suppliers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Factor (Cofactr)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active purchase orders on Factor."
+
+**🤖 AI Agent:**
+> I've retrieved your purchase orders. You have PO-102 (Shipped), PO-105 (Pending Approval), and PO-108 (Received) among others. Which one should I inspect further?
+
+---
+
+**👤 You:**
+> "Check the kitting status for project ABC."
+
+**🤖 AI Agent:**
+> Searching kitting status... Project ABC is 85% complete. 42 out of 50 parts are currently in stock and ready. We are waiting on 8 capacitors from Vendor X.
+
+---
+
+**👤 You:**
+> "List all suppliers in my network."
+
+**🤖 AI Agent:**
+> Fetching suppliers... I found 15 pre-vetted suppliers including 'Avnet', 'Digi-Key', and 'Mouser'. Would you like to see the performance rating for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Factor (Cofactr)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Factor (Cofactr)** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

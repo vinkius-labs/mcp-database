@@ -1,12 +1,14 @@
 # Blackboard Learn MCP Server
 
-Manage courses, announcements, attendance, and grades directly from your AI agent via Blackboard Learn.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blackboard-learn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blackboard-learn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blackboard-learn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blackboard-learn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 20
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage courses, announcements, attendance, and grades directly from your AI agent via Blackboard Learn.
 
 ## Description
 Connect your **Blackboard Learn** environment to any AI agent to streamline educational management and course administration through natural conversation.
@@ -56,6 +58,33 @@ Connect your **Blackboard Learn** environment to any AI agent to streamline educ
 - **update_course_announcement**: Update a course announcement
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Blackboard Learn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active courses in Blackboard."
+
+**🤖 AI Agent:**
+> I've retrieved your courses. You are currently enrolled in: 'Introduction to Computer Science' (ID: CS101) and 'Advanced Mathematics' (ID: MATH302). Would you like to see the details for one of them?
+
+---
+
+**👤 You:**
+> "Create a course announcement for CS101 titled 'Final Exam Update' saying 'The exam is moved to Friday'."
+
+**🤖 AI Agent:**
+> Announcement created successfully in course CS101. Students will now see the update regarding the final exam schedule.
+
+---
+
+**👤 You:**
+> "Show me the attendance records for meeting ID 98765 in course MATH302."
+
+**🤖 AI Agent:**
+> Fetching attendance for meeting 98765... I found 25 records. 22 students are marked as 'Present', 2 as 'Absent', and 1 as 'Late'. Would you like the specific names of the absent students?
+
+
 ## Installation & Usage
 
 To install and use the **Blackboard Learn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Blackboard Learn** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Extracta MCP Server
 
-Automate data extraction via Extracta — process documents into structured JSON, handle AI classification, and audit extraction history directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/extracta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/extracta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/extracta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/extracta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Automate data extraction via Extracta — process documents into structured JSON, handle AI classification, and audit extraction history directly from any AI agent.
 
 ## Description
 Connect your **Extracta.ai** account to any AI agent and take full control of your automated data extraction and document classification through natural conversation.
@@ -60,6 +62,33 @@ Upload a document URL to Extracta for processing
 - **view_extraction**: View configuration of an existing Extracta extraction process
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Extracta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create an extraction process for invoices with fields: date, vendor, total"
+
+**🤖 AI Agent:**
+> Extraction setup created! I've initialized a new process (ID: ext_abc) configured to extract 'date', 'vendor', and 'total' fields. You can now start uploading invoice URLs to this process.
+
+---
+
+**👤 You:**
+> "Extract data from this receipt URL: https://example.com/receipt.pdf"
+
+**🤖 AI Agent:**
+> Processing document... I've submitted the receipt URL for extraction. Document ID: doc_789. I'll poll for the results now... [Agent retrieves structured JSON with date, total, and items].
+
+---
+
+**👤 You:**
+> "What type of document is doc_789 according to my classification rules?"
+
+**🤖 AI Agent:**
+> Checking classification for doc_789... The AI has classified this document as 'Invoice' with a 98% confidence score. It fits within your defined document categories flawlessly.
+
+
 ## Installation & Usage
 
 To install and use the **Extracta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Extracta** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

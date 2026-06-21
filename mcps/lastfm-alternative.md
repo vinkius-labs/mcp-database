@@ -1,12 +1,14 @@
 # Last.fm MCP Server
 
-Manage your music profile via Last.fm — get track metadata, scrobble songs, update your now playing status, and query user profiles.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lastfm-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lastfm-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lastfm-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lastfm-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 5
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Manage your music profile via Last.fm — get track metadata, scrobble songs, update your now playing status, and query user profiles.
 
 ## Description
 Connect your **Last.fm** account to any AI agent and take control of your music scrobbling and metadata discovery through natural conversation.
@@ -50,6 +52,33 @@ Get metadata for a track
 Get information about a user profile
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Last.fm** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get metadata for the track 'Blinding Lights' by The Weeknd."
+
+**🤖 AI Agent:**
+> I've fetched the info for 'Blinding Lights'. It has over 500 million plays on Last.fm and is part of the album 'After Hours'. Would you like to see the artist's top tags?
+
+---
+
+**👤 You:**
+> "Update my now playing status to 'Levitating' by Dua Lipa."
+
+**🤖 AI Agent:**
+> Successfully updated your status! Your Last.fm profile now shows you are listening to 'Levitating' by Dua Lipa.
+
+---
+
+**👤 You:**
+> "Show me the profile details for user 'music_fan_123'."
+
+**🤖 AI Agent:**
+> I've retrieved the profile for 'music_fan_123'. They have been a member since 2015 and have a total playcount of 45,000 tracks. Their top artist is Radiohead.
+
+
 ## Installation & Usage
 
 To install and use the **Last.fm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Last.fm** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

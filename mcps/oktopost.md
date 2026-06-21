@@ -1,12 +1,14 @@
 # Oktopost MCP Server
 
-Manage B2B social media via Oktopost — track campaigns, posts, and analytics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oktopost)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oktopost)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oktopost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oktopost-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage B2B social media via Oktopost — track campaigns, posts, and analytics directly from your AI agent.
 
 ## Description
 Connect your **Oktopost** account to your AI agent and streamline your B2B social media marketing and lead generation through natural conversation.
@@ -49,6 +51,33 @@ List connected social profiles
 - **list_oktopost_tags**: List organization tags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Oktopost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active social media campaigns."
+
+**🤖 AI Agent:**
+> Retrieving campaigns... I found 8 active campaigns including 'Q1 Product Launch', 'Webinar Promotion', and 'Customer Success Stories'. Would you like to see the scheduled posts for the Product Launch?
+
+---
+
+**👤 You:**
+> "What is the click engagement for the 'Summer Promo' campaign?"
+
+**🤖 AI Agent:**
+> Fetching analytics... The 'Summer Promo' campaign has generated 450 clicks and 25 shares so far this week. The engagement rate is 3.2%. Shall I list the specific posts that generated the most traffic?
+
+---
+
+**👤 You:**
+> "Show me the latest leads identified from LinkedIn."
+
+**🤖 AI Agent:**
+> Retrieving social contacts... I found 5 new leads identified from LinkedIn engagements today. Notable contacts include 'Sarah Miller (Marketing Director)' and 'David Chen (CTO)'. Would you like their profile details and engagement history?
+
+
 ## Installation & Usage
 
 To install and use the **Oktopost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Oktopost** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

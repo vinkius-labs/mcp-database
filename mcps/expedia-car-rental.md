@@ -1,12 +1,14 @@
 # Expedia Car Rental MCP Server
 
-Automate car rental workflows via Expedia — search available vehicles, compare pricing by category, and manage rental bookings directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-car-rental)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-car-rental)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-car-rental-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-car-rental-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** order-management
-**Tools Count:** 8
+
+**Category:** [order-management](../categories/order-management.md)
+
+Automate car rental workflows via Expedia — search available vehicles, compare pricing by category, and manage rental bookings directly from any AI agent.
 
 ## Description
 Connect your **Expedia Rapid API** account to any AI agent and search the full car rental inventory across major global rental agencies.
@@ -61,6 +63,33 @@ Search for car rental regions and destinations
 Search for available rental cars by location, dates, and optional filters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Expedia Car Rental** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find me an SUV rental at Miami International Airport from January 10 to January 15."
+
+**🤖 AI Agent:**
+> I found 14 SUV options at MIA for those dates. Best value: 'Ford Explorer' from Hertz at $62/day ($310 total), free cancellation. Premium option: 'Chevrolet Tahoe' from National at $89/day ($445 total), includes unlimited mileage. All prices include base insurance. Want me to compare the full pricing breakdown for these two?
+
+---
+
+**👤 You:**
+> "What pickup locations are available near downtown Chicago?"
+
+**🤖 AI Agent:**
+> I found 8 rental pickup points near downtown Chicago: O'Hare Airport Terminal 1 (ORD-T1), O'Hare Terminal 3 (ORD-T3), Midway Airport (MDW), Chicago Loop — 203 N. LaSalle St, Chicago Magnificent Mile — 540 N. Michigan Ave, and 3 more. The Loop and Magnificent Mile locations offer walk-in service with extended hours. Which location works best for your trip?
+
+---
+
+**👤 You:**
+> "Cancel my car rental reservation ITN-4829173."
+
+**🤖 AI Agent:**
+> I've processed the cancellation for itinerary ITN-4829173. The reservation for a Ford Explorer at MIA (Jan 10-15) has been cancelled successfully. Since the booking had a free cancellation policy, no charges will apply. You'll receive a confirmation email from the rental agency within 24 hours.
+
+
 ## Installation & Usage
 
 To install and use the **Expedia Car Rental** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Expedia Car Rental** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

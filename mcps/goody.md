@@ -1,12 +1,14 @@
 # Goody MCP Server
 
-Automate corporate gifting — browse products, send gifts, and track orders effortlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/goody)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goody)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goody-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goody-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate corporate gifting — browse products, send gifts, and track orders effortlessly.
 
 ## Description
 Connect your **Goody** for Business account to your AI agent and streamline your corporate gifting workflows. Whether it's employee appreciation, client onboarding, or event giveaways, manage everything through simple conversation.
@@ -48,6 +50,33 @@ No more manual data entry for every single gift. Your AI agent handles the catal
 - **list_recipients**: List gift recipients
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Goody** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the top 5 gift options under $50."
+
+**🤖 AI Agent:**
+> Searching the catalog... Here are 5 popular options under $50: 1. Gourmet Coffee Sampler ($35), 2. Succulent Trio ($42), 3. Artisanal Chocolate Box ($28), 4. Reusable Water Bottle ($30), 5. Wellness Candle ($25). Would you like the product IDs for any of these?
+
+---
+
+**👤 You:**
+> "Send a 'Succulent Trio' to John Doe (john@example.com) for his 1-year work anniversary."
+
+**🤖 AI Agent:**
+> Creating gift order... I've initiated a gift batch for John Doe. A 'Succulent Trio' gift link will be sent to his email shortly. The order batch ID is BATCH-93021.
+
+---
+
+**👤 You:**
+> "Show me the current status of all gifts sent in the last 7 days."
+
+**🤖 AI Agent:**
+> Checking recent orders... You sent 3 gifts last week. 'Artisanal Chocolate Box' to Sarah P. was delivered yesterday. 'Wellness Candle' to Mike R. is currently 'Shipped' (ETA tomorrow). 'Succulent Trio' to Jane D. is 'Pending Acceptance'.
+
+
 ## Installation & Usage
 
 To install and use the **Goody** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Goody** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CoinGate MCP Server
 
-Accept cryptocurrency payments from customers worldwide with instant fiat settlement and multi-coin checkout support.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coingate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coingate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coingate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coingate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 6
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Accept cryptocurrency payments from customers worldwide with instant fiat settlement and multi-coin checkout support.
 
 ## Description
 Connect your **CoinGate** account to any AI agent and take full control of your cryptocurrency payment operations and financial workflows through natural conversation.
@@ -45,6 +47,33 @@ Create a new payment order
 - **list_payouts**: List all payouts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinGate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active payment orders in my CoinGate account."
+
+**🤖 AI Agent:**
+> I've retrieved your orders. You currently have 3 active transactions, including an order for 0.005 BTC (Status: Pending) and one for 150.00 EUR. Would you like the checkout URL for either of these?
+
+---
+
+**👤 You:**
+> "What is the current BTC to USD exchange rate?"
+
+**🤖 AI Agent:**
+> Scanning market... The current exchange rate for BTC/USD is $65,420.50. I've also checked the EUR rate, which is €60,150.00. Shall I check your payout history for these assets?
+
+---
+
+**👤 You:**
+> "Create a new 50 EUR payment order titled 'Service Fee'."
+
+**🤖 AI Agent:**
+> Order created successfully! I've initialized the 50.00 EUR payment order for 'Service Fee'. The Order ID is 'ord_789'. You can share this checkout link with the client: [Payment URL].
+
+
 ## Installation & Usage
 
 To install and use the **CoinGate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **CoinGate** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Mirakl (Enterprise Marketplace Platform) MCP Server
 
-Manage your enterprise marketplace via Mirakl — list global offers, track multi-vendor orders, and audit seller shops.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mirakl-enterprise-marketplace-platform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mirakl-enterprise-marketplace-platform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mirakl-enterprise-marketplace-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mirakl-enterprise-marketplace-platform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your enterprise marketplace via Mirakl — list global offers, track multi-vendor orders, and audit seller shops.
 
 ## Description
 Connect your **Mirakl** instance to any AI agent and take full control of your enterprise marketplace operations, seller network, and global offer management through natural conversation.
@@ -51,6 +53,33 @@ List static structural Mirakl marketplace Category Trees
 - **list_invoices**: List explicit Mirakl structural accounting invoices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mirakl (Enterprise Marketplace Platform)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active seller shops in my Mirakl marketplace"
+
+**🤖 AI Agent:**
+> I've retrieved your list of active shops. Highlights include 'Tech World' (ID: shop-123), 'Home & Garden Pro' (ID: shop-456), and 'Direct Sport' (ID: shop-789). Would you like to see the compliance status or offer count for any of these?
+
+---
+
+**👤 You:**
+> "Show me the last 5 invoices generated for seller shops"
+
+**🤖 AI Agent:**
+> Retrieving latest invoices… I've identified 5 recent settlements. Highlights: Invoice #INV-1001 (€1,250 for Shop A), Invoice #INV-1002 (€850 for Shop B), and Invoice #INV-1003 (€45.50). Would you like to see the settlement details for the largest invoice?
+
+---
+
+**👤 You:**
+> "Search for messages related to order ID 'order-987'"
+
+**🤖 AI Agent:**
+> Searching communication history… I've found a thread for order 'order-987' between the buyer and the seller. The customer is asking about the delivery timeframe. Would you like me to retrieve the full message content or draft a reply as the operator?
+
+
 ## Installation & Usage
 
 To install and use the **Mirakl (Enterprise Marketplace Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Mirakl (Enterprise Marketplace Platform)** MCP server i
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

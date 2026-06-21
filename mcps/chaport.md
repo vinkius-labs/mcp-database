@@ -1,12 +1,14 @@
 # Chaport MCP Server
 
-Manage live chat and customer messaging via Chaport — track visitors, send messages, and monitor operator status directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chaport)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chaport)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chaport-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chaport-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 8
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage live chat and customer messaging via Chaport — track visitors, send messages, and monitor operator status directly from any AI agent.
 
 ## Description
 Connect your **Chaport** account to any AI agent and take full control of your customer messaging operations through natural conversation. Streamline how you engage with website visitors and manage your support team.
@@ -45,6 +47,33 @@ Connect your **Chaport** account to any AI agent and take full control of your c
 - **send_agent_message**: Send a message to a visitor in a specific chat
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chaport** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all website visitors from the last hour."
+
+**🤖 AI Agent:**
+> Retrieving recent visitors... I found 5 visitors, including 'John Doe' (john@example.com) and 4 anonymous guests. Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Which support agents are currently online in Chaport?"
+
+**🤖 AI Agent:**
+> Checking agent status... Currently, 2 operators are online: Sarah Miller and Mike Scott. The other 3 agents are currently offline.
+
+---
+
+**👤 You:**
+> "Show me the message history for chat ID 123456."
+
+**🤖 AI Agent:**
+> Retrieving history for chat 123456... I found 10 events, including 4 messages from the visitor and 3 replies from Sarah Miller. Would you like to see the transcript?
+
+
 ## Installation & Usage
 
 To install and use the **Chaport** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Chaport** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

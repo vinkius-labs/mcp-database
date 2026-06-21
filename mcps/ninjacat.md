@@ -1,12 +1,14 @@
 # NinjaCat MCP Server
 
-Manage marketing reporting and advertisers via NinjaCat — track reports, data sources, and campaigns directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ninjacat)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ninjacat)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ninjacat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ninjacat-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage marketing reporting and advertisers via NinjaCat — track reports, data sources, and campaigns directly from your AI agent.
 
 ## Description
 Connect your **NinjaCat** agency account to your AI agent and streamline your marketing reporting and advertiser management through natural conversation.
@@ -48,6 +50,33 @@ List connected data accounts
 - **list_reports**: List all agency reports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NinjaCat** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active advertisers in my NinjaCat agency."
+
+**🤖 AI Agent:**
+> Retrieving advertisers... I found 8 active clients, including 'Acme Corp', 'Global Retail Ltd', and 'Innovate Tech'. Would you like the detailed contact info for Acme Corp?
+
+---
+
+**👤 You:**
+> "Show me the execution history for the 'Monthly Performance' report."
+
+**🤖 AI Agent:**
+> Fetching report history... The 'Monthly Performance' report (ID: rep_123) was last run successfully today at 8:00 AM. It has a history of 12 successful runs over the last year. Shall I get the download URL for the latest run?
+
+---
+
+**👤 You:**
+> "Which marketing data sources are currently connected?"
+
+**🤖 AI Agent:**
+> Retrieving data sources... Your account is currently connected to 5 platforms: Google Ads, Meta Ads, LinkedIn Ads, GA4, and TikTok Ads. You have a total of 24 data accounts active across these sources. Would you like a list of the specific Google Ads accounts?
+
+
 ## Installation & Usage
 
 To install and use the **NinjaCat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **NinjaCat** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

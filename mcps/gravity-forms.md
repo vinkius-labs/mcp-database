@@ -1,12 +1,14 @@
 # Gravity Forms MCP Server
 
-Manage your WordPress Gravity Forms — list forms, retrieve entries, and handle submissions directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gravity-forms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gravity-forms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gravity-forms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gravity-forms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your WordPress Gravity Forms — list forms, retrieve entries, and handle submissions directly via AI.
 
 ## Description
 Connect your **Gravity Forms** REST API to any AI agent and take full control of your WordPress forms, entries, and submissions through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Gravity Forms** REST API to any AI agent and take full control of
 - **update_entry**: Update an existing form entry
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gravity Forms** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my forms in Gravity Forms"
+
+**🤖 AI Agent:**
+> Retrieving your forms... I found 3 active forms: 'Contact Us' (ID: 1), 'Service Request' (ID: 2), and 'Customer Feedback' (ID: 3). Would you like to see the entries for the service request form?
+
+---
+
+**👤 You:**
+> "Show me the entries for Form ID 1 from this week"
+
+**🤖 AI Agent:**
+> Fetching entries... I found 5 new submissions this week for the 'Contact Us' form. The latest is from John Doe (Entry #1042). Would you like to read the details of his message?
+
+---
+
+**👤 You:**
+> "Add a note to entry #1042: 'Customer contacted support, refund processed'"
+
+**🤖 AI Agent:**
+> Adding note... Success! I've added the internal note to Entry #1042. It is now visible to the support team in your WordPress dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Gravity Forms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Gravity Forms** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

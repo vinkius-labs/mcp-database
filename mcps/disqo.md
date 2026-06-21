@@ -1,12 +1,14 @@
 # DISQO MCP Server
 
-Equip your AI agent to manage consumer insight projects, track audiences, and monitor behavioral metrics via the DISQO API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/disqo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/disqo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/disqo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/disqo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage consumer insight projects, track audiences, and monitor behavioral metrics via the DISQO API.
 
 ## Description
 Integrate **DISQO**, the leading consumer insights and behavioral data platform, directly into your AI workflow. Manage your research projects, monitor real-time consumer trends and behavioral metrics, and track your audience panels and surveys using natural language.
@@ -44,6 +46,33 @@ Integrate **DISQO**, the leading consumer insights and behavioral data platform,
 - **search_insights_by_keyword**: Search for specific consumer insights or reports using a keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DISQO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active research projects."
+
+**🤖 AI Agent:**
+> I've found 3 active projects in your DISQO account, including 'E-commerce Trends Q3' and 'Consumer Electronics Audit'. Would you like to see the panel size for the e-commerce project?
+
+---
+
+**👤 You:**
+> "Show me the top behavioral metrics being tracked."
+
+**🤖 AI Agent:**
+> The most active metrics in your account are 'Mobile App Engagement', 'Cross-Device Browsing Habits', and 'Search Intent Patterns'. Would you like a detailed breakdown of the 'Search Intent' data?
+
+---
+
+**👤 You:**
+> "Which research audience has the largest panel size?"
+
+**🤖 AI Agent:**
+> The 'US-Based Millennial Shoppers' audience has the largest panel with 1.2 million verified members. The second largest is 'European Tech Enthusiasts' with 850,000 members. Should I list the demographic filters for either of these groups?
+
+
 ## Installation & Usage
 
 To install and use the **DISQO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DISQO** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

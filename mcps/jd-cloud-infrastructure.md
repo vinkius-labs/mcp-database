@@ -1,12 +1,14 @@
 # JD Cloud Infrastructure MCP Server
 
-Manage JD Cloud supply-chain infrastructure from your AI. Control VMs, disks, databases, and monitor resource metrics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud-infrastructure)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud-infrastructure)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jd-cloud-infrastructure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jd-cloud-infrastructure-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage JD Cloud supply-chain infrastructure from your AI. Control VMs, disks, databases, and monitor resource metrics.
 
 ## Description
 Connect your AI agents directly to **JD Cloud** (京东云), the enterprise cloud infrastructure backing one of the world's largest e-commerce and supply chain platforms. This MCP provides 11 power tools spanning the full infrastructure lifecycle.
@@ -46,6 +48,25 @@ Connect your AI agents directly to **JD Cloud** (京东云), the enterprise clou
 - **stop_vm_instance**: Stop a running VM instance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JD Cloud Infrastructure** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my running virtual machines on JD Cloud."
+
+**🤖 AI Agent:**
+> I queried the VM service and found 4 instances: 2 running (i-abc123, i-def456), 1 stopped (i-ghi789), and 1 in maintenance (i-jkl012). Total allocated vCPUs: 16.
+
+---
+
+**👤 You:**
+> "Show me the CPU usage for instance i-abc123 over the last hour."
+
+**🤖 AI Agent:**
+> I pulled cpu.util metrics for i-abc123. Average CPU usage: 34.2%, peak: 78.9% at 23:42 UTC. The instance appears healthy with no sustained high-load periods.
+
+
 ## Installation & Usage
 
 To install and use the **JD Cloud Infrastructure** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +75,11 @@ To install and use the **JD Cloud Infrastructure** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # OfficeRnD Flex MCP Server
 
-Manage flexible workspaces via OfficeRnD — track members, bookings, and billing directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/officernd-flex)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/officernd-flex)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/officernd-flex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/officernd-flex-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 10
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Manage flexible workspaces via OfficeRnD — track members, bookings, and billing directly from your AI agent.
 
 ## Description
 Connect your **OfficeRnD Flex** account to your AI agent and streamline your coworking or flexible workspace operations through natural conversation using their powerful Developer API.
@@ -47,6 +49,33 @@ Connect your **OfficeRnD Flex** account to your AI agent and streamline your cow
 - **list_teams**: List workspace teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OfficeRnD Flex** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active bookings for today."
+
+**🤖 AI Agent:**
+> Retrieving bookings... I found 8 reservations for today, including 'Conference Room A' (10:00 AM - 12:00 PM), 3 hot desks, and 4 other meeting spaces. Would you like the member details for the Conference Room A booking?
+
+---
+
+**👤 You:**
+> "Show me the details for member ID 'mem_98765'."
+
+**🤖 AI Agent:**
+> Inspecting member mem_98765... This belongs to 'John Smith'. He is a 'Dedicated Desk' member since 2022, associated with the 'Innovate Tech' team. His account is currently 'Active'. Shall I list his active contracts?
+
+---
+
+**👤 You:**
+> "List our available billing plans."
+
+**🤖 AI Agent:**
+> Retrieving billing plans... You have 5 active plans defined: 'Hot Desk Monthly', 'Dedicated Desk', 'Private Office Small', 'Enterprise Custom', and 'Virtual Office'. Would you like the price and terms for the Hot Desk plan?
+
+
 ## Installation & Usage
 
 To install and use the **OfficeRnD Flex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **OfficeRnD Flex** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

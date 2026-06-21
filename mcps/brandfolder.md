@@ -1,12 +1,14 @@
 # Brandfolder MCP Server
 
-Automate digital asset management with Brandfolder — search assets, check organizations, and browse collections from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brandfolder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brandfolder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brandfolder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brandfolder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 10
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Automate digital asset management with Brandfolder — search assets, check organizations, and browse collections from any AI agent.
 
 ## Description
 Connect your **Brandfolder** environment to any AI agent and organize your entire digital asset repository organically through natural conversation.
@@ -48,6 +50,33 @@ Retrieve extensive metadata for a specific digital asset
 - **patch_cms_asset**: Update metadata attributes of an existing digital asset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brandfolder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the collections available in my main Brandfolder organization."
+
+**🤖 AI Agent:**
+> I've fetched 3 active collections under your organization. There's a 'Q3 Marketing Assets' and a 'Social Media Vectors' collection. Should I list the assets from any of them?
+
+---
+
+**👤 You:**
+> "Search my assets for any PDF related to standard onboarding manuals."
+
+**🤖 AI Agent:**
+> I found an asset called 'Operations-Manual.pdf'. Here is the direct CDN download link provided natively over Brandfolder routing.
+
+---
+
+**👤 You:**
+> "Double check my organization ID tied to the user profile."
+
+**🤖 AI Agent:**
+> Your active Brandfolder personal key maps to Organization ID xyz-123. The namespace is designated 'Global Enterprise Tier'.
+
+
 ## Installation & Usage
 
 To install and use the **Brandfolder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Brandfolder** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

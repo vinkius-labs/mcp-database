@@ -1,12 +1,14 @@
 # Cypress Cloud MCP Server
 
-Audit E2E testing via Cypress — monitor test runs, inspect spec instances, track flaky tests, and generate enterprise reports directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cypress-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cypress-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cypress-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cypress-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Audit E2E testing via Cypress — monitor test runs, inspect spec instances, track flaky tests, and generate enterprise reports directly from any AI agent.
 
 ## Description
 Connect your **Cypress Cloud** enterprise account to any AI agent and take full control of your end-to-end testing lifecycle and quality metrics through natural conversation.
@@ -51,6 +53,33 @@ Get enterprise run summary report from Cypress Cloud. Aggregated data for BI das
 - **report_slow**: Get slow test report from Cypress Cloud. Identifies slowest tests by average duration. Returns test names, avg/p95/max durations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cypress Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 test runs for project 'abc123'"
+
+**🤖 AI Agent:**
+> I found 5 recent runs for project 'abc123'. The latest run (ID: 101) finished with status 'Passed' on the 'main' branch. Run 99 failed with 2 failing specs. Would you like to see the details for the failed run?
+
+---
+
+**👤 You:**
+> "Show me why instance 'ins_789' failed"
+
+**🤖 AI Agent:**
+> Retrieving details for instance 'ins_789'... It failed during 'Login spec'. Error: 'Timed out retrying after 4000ms: Expected to find element: .login-success, but never found it.' I have the video and screenshot links available.
+
+---
+
+**👤 You:**
+> "Give me a report of flaky tests starting from 2024-01-01"
+
+**🤖 AI Agent:**
+> Analyzing flaky tests since Jan 1st... I identified 3 flaky tests. 'Checkout flow' has a 15% flake rate, and 'User profile update' has flaked twice this month. I can list the last flake dates for these.
+
+
 ## Installation & Usage
 
 To install and use the **Cypress Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Cypress Cloud** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

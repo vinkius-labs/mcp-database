@@ -1,12 +1,14 @@
 # Weatherbit MCP Server
 
-Access real-time weather data, 16-day forecasts, air quality metrics, and severe weather alerts globally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/weatherbit-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weatherbit-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weatherbit-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weatherbit-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 14
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time weather data, 16-day forecasts, air quality metrics, and severe weather alerts globally.
 
 ## Description
 Connect **Weatherbit** to your AI agent to retrieve hyper-local weather intelligence. From 16-day forecasts to real-time lightning strikes and air quality metrics, this server provides the environmental context your agent needs.
@@ -69,6 +71,33 @@ Get sub-hourly historical weather
 - **get_subscription_usage**: Get subscription usage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Weatherbit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current weather and air quality in Tokyo?"
+
+**🤖 AI Agent:**
+> In Tokyo, it's currently 18°C with clear skies. The Air Quality Index (AQI) is 42, which is considered Good.
+
+---
+
+**👤 You:**
+> "Check for any severe weather alerts in Paris."
+
+**🤖 AI Agent:**
+> I've checked the local agencies for Paris. There is currently a Yellow Alert for heavy rainfall expected this evening.
+
+---
+
+**👤 You:**
+> "Give me a 16-day daily forecast for Berlin."
+
+**🤖 AI Agent:**
+> Fetching the 16-day outlook for Berlin... Temperatures will range from 10°C to 15°C over the next week with intermittent showers starting Wednesday.
+
+
 ## Installation & Usage
 
 To install and use the **Weatherbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Weatherbit** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

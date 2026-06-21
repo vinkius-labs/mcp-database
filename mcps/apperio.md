@@ -1,12 +1,14 @@
 # Apperio MCP Server
 
-Manage legal spend and matters with Apperio — track invoices, approve billing, and monitor matter progress via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apperio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apperio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apperio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apperio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 10
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage legal spend and matters with Apperio — track invoices, approve billing, and monitor matter progress via AI.
 
 ## Description
 The **Apperio MCP Server** provides a powerful natural language interface to your legal spend management platform. Connect your Apperio account to your AI agent to gain real-time visibility into your legal matters, track e-billing status, and streamline your invoice approval workflows.
@@ -41,6 +43,33 @@ Reject a legal invoice
 - **tag_matter**: Apply tags to a specific matter
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apperio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active legal matters in Apperio."
+
+**🤖 AI Agent:**
+> I've retrieved your active matters. You currently have 12 active cases, including 'Project Alpha Acquisition' and 'IP Litigation vs GlobalCorp'.
+
+---
+
+**👤 You:**
+> "Show me the last 5 invoices pending approval."
+
+**🤖 AI Agent:**
+> I've found 5 invoices waiting for approval. The largest is from Smith & Associates for $15,200 related to the 'Project Alpha' matter.
+
+---
+
+**👤 You:**
+> "Approve invoice with ID 'inv_12345'."
+
+**🤖 AI Agent:**
+> Invoice 'inv_12345' has been successfully approved.
+
+
 ## Installation & Usage
 
 To install and use the **Apperio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Apperio** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

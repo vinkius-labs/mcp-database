@@ -1,12 +1,14 @@
 # Repliers MCP Server
 
-Search real estate listings — audit properties, neighborhoods, and stats via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/repliers)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/repliers)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/repliers-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/repliers-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 6
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Search real estate listings — audit properties, neighborhoods, and stats via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire real estate research and property auditing workflow with **Repliers**, the leading platform for real-time listing data. By connecting Repliers to your agent, you transform complex MLS searches into a natural conversation. Your agent can instantly search for active listings, audit property details, and retrieve neighborhood statistics without you ever touching a property portal. Whether you are conducting market analysis or scouting your next home, your agent acts as a real-time real estate consultant, ensuring your data is always comprehensive and up-to-date.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire real estate research and proper
 - **search_by_neighborhood**: Search for properties in a specific neighborhood
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Repliers** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for houses in 'Toronto' under $1,000,000 using Repliers."
+
+**🤖 AI Agent:**
+> I've retrieved several listings in Toronto within your budget. Notable options include a 3-bedroom detached house and a modern semi-detached. Would you like the full details for the top matches?
+
+---
+
+**👤 You:**
+> "Show listings in the 'Liberty Village' neighborhood."
+
+**🤖 AI Agent:**
+> I've identified 15 active listings in Liberty Village. Most are modern condos with lake views. I can provide the square footage and amenity metadata for each if you'd like.
+
+---
+
+**👤 You:**
+> "Get real estate statistics for 'Vancouver'."
+
+**🤖 AI Agent:**
+> I've retrieved the market stats for Vancouver. The median list price is currently $1.2M and average days on market is 20. I can assist you with more city-wide trend auditing if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Repliers** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Repliers** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

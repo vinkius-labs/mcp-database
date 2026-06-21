@@ -1,12 +1,14 @@
 # First Principles Prover MCP Server
 
-LLMs reason by analogy, copying industry norms. This engine is a 6-pivot cognitive trap that forces the agent to discard jargon and derive original solutions exclusively from physical, mathematical, or logical axioms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/first-principles-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/first-principles-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/first-principles-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/first-principles-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** reasoning
-**Tools Count:** 1
+
+**Category:** [reasoning](../categories/reasoning.md)
+
+LLMs reason by analogy, copying industry norms. This engine is a 6-pivot cognitive trap that forces the agent to discard jargon and derive original solutions exclusively from physical, mathematical, or logical axioms.
 
 ## Description
 Look, if you ask an AI how to scale a database, it will spit back 'use microservices'. It reasons by analogy, parroting hollow 'best practices'. The First Principles Prover is a deterministic cognitive trap designed to break that habit.
@@ -29,6 +31,33 @@ Before the agent is allowed to output a solution, it must pass a strict 6-pivot 
 Structured reflection tool for first-principles reasoning — forces the agent to discard analogies, isolate fundamental truths, deconstruct inherited assumptions, derive solutions from axioms, construct mathematical proof, and purge meaningless jargon. Catches Conventional Thinking (reasoning by analogy instead of from fundamentals — "other companies do it this way" is analogy. "The physics of the problem requires X" is first principles. Analogies transfer solutions from different contexts — they inherit the limitations of those contexts), Analogy Detected (solutions copied from similar-looking problems without verifying the underlying structure is actually the same — "Uber for X" assumes X has the same supply/demand dynamics as rides. Most analogies are surface-level pattern matching, not structural equivalence), False Premise (assumptions accepted as axioms when they are actually conventions — "batteries are expensive" was a convention. The fundamental truth is "lithium is abundant." The cost was in manufacturing scale, not materials. Questioning the premise changed the conclusion), Derivative Solution (solutions assembled from existing components without understanding WHY — "use a queue" without deriving from the axiom that the producer rate exceeds the consumer rate and data loss is unacceptable. The solution should emerge from the constraints, not from a pattern library), Proof Missing (conclusions without logical derivation — "this architecture scales" without proving from measured throughput × horizontal instances ≥ projected demand. Assertions are not proofs), and Jargon Detected ("leverage," "synergy," "scalable," "robust," "ecosystem" — words that SOUND like they mean something but carry zero information content. Every jargon word hides either a specific claim or a vacuum of understanding). Call once per design decision, strategy, or analysis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **First Principles Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Let's leverage industry best practices to build this."
+
+**🤖 AI Agent:**
+> Verdict: JARGON_DETECTED. You used the corporate buzzword 'leverage'. First principles thinkers speak in plain, fundamental terms.
+
+---
+
+**👤 You:**
+> "Analogies: discarding REST APIs. Truths: I think gRPC is better. Assumptions: REST is slow."
+
+**🤖 AI Agent:**
+> Verdict: ANALOGY_DETECTED. Your 'truths' are just opinions. A fundamental truth must be grounded in physics, math, or raw limits (e.g., bits per second).
+
+---
+
+**👤 You:**
+> "Truths: Data cannot travel faster than the speed of light (c). Assumption: We must sync databases globally. Solution: Edge caching locally. Proof: D = V*T."
+
+**🤖 AI Agent:**
+> Verdict: FIRST_PRINCIPLES_PROVEN. You grounded the problem in physics, broke the assumption, derived the solution, and proved the math without jargon.
+
+
 ## Installation & Usage
 
 To install and use the **First Principles Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -37,4 +66,11 @@ To install and use the **First Principles Prover** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

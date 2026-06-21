@@ -1,12 +1,14 @@
 # OpenAI MCP Server
 
-Manage OpenAI resources via API — list models, monitor fine-tunes, manage batches and inspect Assistants from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 13
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Manage OpenAI resources via API — list models, monitor fine-tunes, manage batches and inspect Assistants from any AI agent.
 
 ## Description
 Connect your **OpenAI** account to any AI agent and take full control of your AI resources through natural conversation.
@@ -76,6 +78,33 @@ List fine-tuning jobs
 List all available OpenAI models
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenAI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all available GPT models."
+
+**🤖 AI Agent:**
+> I found 12 GPT models in your account: gpt-4o (owned by openai, created 2024-05), gpt-4o-mini (lightweight, cost-effective), gpt-4-turbo, gpt-4, gpt-3.5-turbo, plus several fine-tuned variants. Would you like details on any specific model?
+
+---
+
+**👤 You:**
+> "Check the status of my latest fine-tuning job."
+
+**🤖 AI Agent:**
+> Your latest fine-tune job ftjob-abc123 is currently 'running' at 67% completion. It's training on 1,240 examples using gpt-3.5-turbo as the base model. Estimated finish is in approximately 2 hours. The training file is file-xyz789.
+
+---
+
+**👤 You:**
+> "List all my uploaded files and their purposes."
+
+**🤖 AI Agent:**
+> You have 8 files uploaded: 3 for fine-tuning (training JSONL files), 2 for Assistants (knowledge base PDFs), 2 for batch processing (request JSONL files) and 1 vector store file. Total storage used: 45MB.
+
+
 ## Installation & Usage
 
 To install and use the **OpenAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **OpenAI** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Doppler MCP Server
 
-Manage secrets and environment variables via Doppler — list projects, audit secrets, and track activity logs from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/doppler)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doppler)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doppler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doppler-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 12
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage secrets and environment variables via Doppler — list projects, audit secrets, and track activity logs from any AI agent.
 
 ## Description
 Connect your **Doppler** account to any AI agent and take full control of your secrets management through natural conversation.
@@ -73,6 +75,33 @@ List all secrets for a Doppler config
 List all Doppler workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Doppler** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all configs for my 'backend-api' project."
+
+**🤖 AI Agent:**
+> I found 3 configs for 'backend-api': 'dev' (development, root config), 'staging' (staging, inherits from dev) and 'prod' (production, inherits from staging). Each has its own set of secrets.
+
+---
+
+**👤 You:**
+> "Update the DATABASE_URL secret in my prod config to point to the new database."
+
+**🤖 AI Agent:**
+> Done! I've updated the `DATABASE_URL` secret in the prod config of your backend-api project. The new value has been applied and will be available to all services using this environment.
+
+---
+
+**👤 You:**
+> "Who changed secrets in my project in the last week?"
+
+**🤖 AI Agent:**
+> I found 14 activity events in the last 7 days: 3 secret updates by alice@company.com, 8 secret reads by the CI/CD service account, 2 config changes by bob@company.com and 1 new secret added by admin@company.com.
+
+
 ## Installation & Usage
 
 To install and use the **Doppler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **Doppler** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

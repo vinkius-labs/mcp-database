@@ -1,12 +1,14 @@
 # Bilibili Live MCP Server
 
-Automate VTuber interaction parsing via Bilibili Live — monitor super-chats, extract danmaku streams, and manage host rooms natively from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bilibili-live)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bilibili-live)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bilibili-live-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bilibili-live-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate VTuber interaction parsing via Bilibili Live — monitor super-chats, extract danmaku streams, and manage host rooms natively from any AI agent.
 
 ## Description
 Bolt the massive broadcasting ecosystem of **Bilibili Live Open Platform** into your intelligent workflows allowing comprehensive algorithmic polling of the largest Danmaku network globally without manual dashboards.
@@ -46,6 +48,33 @@ Say goodbye to missing massive interactions under heavy traffic. You now possess
 - **update_room_title**: Change the streamers live room title
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bilibili Live** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch the raw user engagement metric from Bilibili room '51923' quickly."
+
+**🤖 AI Agent:**
+> Targeting identifier '51923'... Stream fetched! The current popularity index bursts at 1,402,050 concurrent interactions suggesting massive virtual tipping activity ongoing. Should I attempt parsing the overarching super-chat list now?
+
+---
+
+**👤 You:**
+> "Summarize the metadata tied directly to backend ID of host 892019."
+
+**🤖 AI Agent:**
+> Running profile extraction algorithms... The host tied to '892019' resolves to 'GamerLegendXXX'. They maintain official standing in the 'Esports Casting' realm holding verified status with peak traffic histories around late evening shifts. Do you need explicit cover-art image arrays linked?
+
+---
+
+**👤 You:**
+> "Retrieve the top 10 richest super-chat donations logged actively over the current cycle."
+
+**🤖 AI Agent:**
+> Accessing donation arrays filtering outliers aggressively... The pinnacle contribution sits at ~3000 CNY dropped by user ID 'VIP91'. The subsequent 9 donations average around 800 CNY tightly clustered across a 2-minute competitive wave. Rendering complete table now...
+
+
 ## Installation & Usage
 
 To install and use the **Bilibili Live** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Bilibili Live** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

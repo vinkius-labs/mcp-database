@@ -1,12 +1,14 @@
 # CrowdTangle MCP Server
 
-Equip your AI agent to track public social media insights, viral posts, and link shares via the CrowdTangle API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdtangle)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdtangle)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crowdtangle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crowdtangle-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Equip your AI agent to track public social media insights, viral posts, and link shares via the CrowdTangle API.
 
 ## Description
 Integrate **CrowdTangle**, the public insights tool from Meta, directly into your AI workflow. Monitor social media trends, track how links are being shared across platforms, and identify high-performing content using natural language.
@@ -64,6 +66,33 @@ Search for specific tracking lists by title
 Search for posts across platforms using a keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CrowdTangle** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for recent viral posts about 'Electric Vehicles' on Instagram."
+
+**🤖 AI Agent:**
+> I've found 5 top-performing posts about 'Electric Vehicles'. One post from 'TechDaily' is overperforming by 5x with 12,000 likes and 450 comments. Would you like to see the post URL?
+
+---
+
+**👤 You:**
+> "Who has shared the link 'https://vinkius.com/blog/mcp-server' recently?"
+
+**🤖 AI Agent:**
+> That link has been shared by 3 public Facebook pages: 'AI News', 'Tech Trends', and 'Developer Hub'. Total interactions from these shares is 1,200. Should I list the individual share details?
+
+---
+
+**👤 You:**
+> "Show me the engagement leaderboard for my 'Competitors' list."
+
+**🤖 AI Agent:**
+> On your 'Competitors' list, 'Brand X' is currently leading with 45,000 total interactions this week, followed by 'Brand Y' with 32,000. 'Brand Z' saw a 15% dip in engagement. Would you like to see their top post?
+
+
 ## Installation & Usage
 
 To install and use the **CrowdTangle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **CrowdTangle** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

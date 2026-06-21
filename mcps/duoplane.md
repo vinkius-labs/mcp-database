@@ -1,12 +1,14 @@
 # Duoplane MCP Server
 
-Equip your AI agent to manage multi-vendor orders, track purchase orders, and monitor vendor inventory via the Duoplane API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/duoplane)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/duoplane)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/duoplane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/duoplane-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 11
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage multi-vendor orders, track purchase orders, and monitor vendor inventory via the Duoplane API.
 
 ## Description
 Integrate **Duoplane**, the leading multi-vendor e-commerce automation platform, directly into your AI workflow. Manage your customer orders across multiple storefronts, track purchase orders sent to vendors, monitor vendor profiles and connection statuses, and oversee your synchronized product catalog using natural language.
@@ -45,6 +47,33 @@ Integrate **Duoplane**, the leading multi-vendor e-commerce automation platform,
 - **search_orders_by_reference**: Search for orders using a keyword or reference identifier
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Duoplane** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all unfulfilled purchase orders."
+
+**🤖 AI Agent:**
+> I've found 5 unfulfilled purchase orders, including PO-9988 sent to 'Vendor A' and PO-7766 sent to 'Vendor B'. Would you like to see the items for PO-9988?
+
+---
+
+**👤 You:**
+> "Show me the details for customer order '12345'."
+
+**🤖 AI Agent:**
+> Order '12345' (External ID: WEB-101) is currently 'Partially Shipped'. It contains 3 items across 2 different vendors. Should I pull the tracking numbers for the shipped portion?
+
+---
+
+**👤 You:**
+> "List all active vendors and their status."
+
+**🤖 AI Agent:**
+> You have 8 active vendors, including 'DropShip Plus' (Connected) and 'Wholesale Direct' (Connected). 1 vendor is currently 'Disconnected'. Would you like to see the profile for the disconnected vendor?
+
+
 ## Installation & Usage
 
 To install and use the **Duoplane** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Duoplane** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Uniqode MCP Server
 
-Create trackable QR codes with custom branding, dynamic content updates, and scan analytics for marketing and operations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/uniqode)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniqode)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uniqode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uniqode-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Create trackable QR codes with custom branding, dynamic content updates, and scan analytics for marketing and operations.
 
 ## Description
 Connect your **Uniqode (formerly Beaconstac)** account to any AI agent and simplify how you create, manage, and analyze your QR code campaigns through natural conversation.
@@ -50,6 +52,33 @@ Create a new QR code
 - **update_qrcode**: Update an existing QR code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Uniqode** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my QR codes."
+
+**🤖 AI Agent:**
+> I've retrieved your QR codes. You have 12 active codes including 'Winter Sale 2024', 'Support vCard', and 'Menu - Main Branch'. Which one would you like scan analytics for?
+
+---
+
+**👤 You:**
+> "Show me scan analytics for the 'Winter Sale' QR code by location."
+
+**🤖 AI Agent:**
+> Fetching geographic data... The 'Winter Sale' code has been scanned 450 times. Top locations include United States (210 scans), United Kingdom (105), and Canada (85). Shall I break it down by city?
+
+---
+
+**👤 You:**
+> "Change the destination of QR code '10293' to 'https://vinkius.com/new-promo'."
+
+**🤖 AI Agent:**
+> Update successful! QR code 10293 is now redirecting to 'https://vinkius.com/new-promo'. The physical QR code remains valid and will instantly lead users to the new page.
+
+
 ## Installation & Usage
 
 To install and use the **Uniqode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Uniqode** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

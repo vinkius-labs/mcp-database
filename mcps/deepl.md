@@ -1,12 +1,14 @@
 # DeepL MCP Server
 
-Translate and audit text — manage multilingual communication via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deepl)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepl)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepl-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Translate and audit text — manage multilingual communication via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire multilingual workflow with **DeepL**, the world's most accurate AI translator. By connecting DeepL to your agent, you transform complex translation tasks into a natural conversation. Your agent can instantly translate text between dozens of languages, audit available language pairs, and monitor API usage without you ever touching a technical dashboard. Whether you are localized content or communicating with international teams, your agent acts as a real-time linguistic bridge, ensuring your communication is always precise and professional.
@@ -52,6 +54,33 @@ Translate text using an informal/casual tone
 - **translate_text_standard**: Translate text into a target language using standard tone
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeepL** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Translate 'Hello world' into Portuguese using DeepL."
+
+**🤖 AI Agent:**
+> The translation for 'Hello world' into Portuguese is 'Olá mundo'. I've detected the source language as English. Would you like to translate more strings?
+
+---
+
+**👤 You:**
+> "Show me all supported target languages in DeepL."
+
+**🤖 AI Agent:**
+> I've retrieved the list of 30+ supported target languages, including Spanish, French, Japanese, and Chinese. Would you like the language codes for any of them?
+
+---
+
+**👤 You:**
+> "What is my current DeepL usage?"
+
+**🤖 AI Agent:**
+> You have used 15,000 characters out of your 500,000 monthly limit. You have 485,000 characters remaining. Would you like to check your configured glossaries as well?
+
+
 ## Installation & Usage
 
 To install and use the **DeepL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **DeepL** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Temu Seller Hub MCP Server
 
-Automate cross-border e-commerce ops via Temu — manage orders, track fulfillment, sync inventory, and process returns natively from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/temu-seller-hub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/temu-seller-hub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/temu-seller-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/temu-seller-hub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate cross-border e-commerce ops via Temu — manage orders, track fulfillment, sync inventory, and process returns natively from any AI agent.
 
 ## Description
 Bridge your AI agents directly into the **Temu Open Platform**, Pinduoduo's global cross-border marketplace processing millions of orders daily. Automate the complete supply-chain lifecycle without navigating complex seller consoles.
@@ -56,6 +58,33 @@ Get restocking / purchase orders from Temu
 - **sync_inventory**: Update inventory stock quantity for a specific SKU
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Temu Seller Hub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get my Temu orders from the last 24 hours and summarize pending fulfillment."
+
+**🤖 AI Agent:**
+> Orders retrieved! You have 15 new orders in the last 24 hours. 11 are pending fulfillment, 3 are already shipped, and 1 is awaiting payment confirmation. The pending orders total $2,340 USD across 8 different destination countries. Would you like me to flag orders approaching the shipping SLA deadline?
+
+---
+
+**👤 You:**
+> "Mark order TMU-2024-88712 as shipped with tracking number YT2048391004."
+
+**🤖 AI Agent:**
+> Order TMU-2024-88712 has been successfully marked as shipped! Carrier: Yanwen Express. Tracking: YT2048391004. The buyer will receive a notification with the tracking link automatically. Estimated delivery: 7-12 business days to destination (USA). Would you like to process the remaining 10 pending orders?
+
+---
+
+**👤 You:**
+> "Update inventory for SKU TMU-SHOE-42BLK to 250 units."
+
+**🤖 AI Agent:**
+> Inventory updated! SKU TMU-SHOE-42BLK is now set to 250 units (previously 45 units). The change will be reflected on the Temu storefront within 5 minutes. Note: this SKU had 3 pending orders — the new stock level comfortably covers demand. Should I run a full inventory audit across all your active SKUs?
+
+
 ## Installation & Usage
 
 To install and use the **Temu Seller Hub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Temu Seller Hub** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # AssemblyAI MCP Server
 
-Transcribe and audit audio — manage speech-to-text jobs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/assemblyai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assemblyai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assemblyai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assemblyai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Transcribe and audit audio — manage speech-to-text jobs via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire audio intelligence and transcription workflow with **AssemblyAI**, the leading platform for speech-to-text. By connecting AssemblyAI to your agent, you transform complex audio processing into a natural conversation. Your agent can instantly start transcription jobs from any URL, audit transcript results with high confidence, and manage job history without you ever touching a technical console. Whether you are analyzing podcast content or transcribing meetings, your agent acts as a real-time linguistic assistant, ensuring your audio data is always accessible and searchable.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire audio intelligence and transcri
 - **transcribe_audio**: Start a transcription job for an audio/video URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AssemblyAI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Transcribe the audio file at https://example.com/podcast.mp3 using AssemblyAI."
+
+**🤖 AI Agent:**
+> Transcription job started! The Job ID is `transcript_123`. I'll monitor the status for you. Once completed, I can provide the full text or speaker labels.
+
+---
+
+**👤 You:**
+> "Show me the result for transcript ID xxxx."
+
+**🤖 AI Agent:**
+> I've retrieved the transcript. It has a confidence of 98%. The content discusses the latest AI trends. Would you like the text broken down by paragraphs?
+
+---
+
+**👤 You:**
+> "List all my past AssemblyAI transcripts."
+
+**🤖 AI Agent:**
+> I've retrieved your transcript history. You have 10 completed jobs, including recordings from last week's webinars. Would you like the details for any specific job?
+
+
 ## Installation & Usage
 
 To install and use the **AssemblyAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **AssemblyAI** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

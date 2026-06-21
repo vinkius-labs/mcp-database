@@ -1,12 +1,14 @@
 # Dryfta MCP Server
 
-Equip your AI agent to manage event attendees, track sessions, and monitor abstract submissions via the Dryfta API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dryfta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dryfta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dryfta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dryfta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage event attendees, track sessions, and monitor abstract submissions via the Dryfta API.
 
 ## Description
 Integrate **Dryfta**, the all-in-one event management platform, directly into your AI workflow. Manage your event attendees and registration statuses, track scheduled sessions and speaker assignments, monitor abstract submissions and review cycles, and oversee your event exhibitors using natural language.
@@ -44,6 +46,33 @@ Integrate **Dryfta**, the all-in-one event management platform, directly into yo
 - **search_attendees_by_keyword**: Search for attendees using a name or email keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dryfta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all registered attendees for our conference."
+
+**🤖 AI Agent:**
+> I've found several registered attendees, including 'Alice Johnson' (Standard) and 'Bob Miller' (VIP). Would you like to see the contact details for any of these participants?
+
+---
+
+**👤 You:**
+> "Show me the sessions scheduled for tomorrow."
+
+**🤖 AI Agent:**
+> Tomorrow's sessions include 'AI in Healthcare' at 10:00 AM (Room A) and 'Future of MCP' at 2:00 PM (Main Hall). Should I pull the speaker list for the AI session?
+
+---
+
+**👤 You:**
+> "Check the status of submitted abstracts."
+
+**🤖 AI Agent:**
+> I've retrieved 12 submitted abstracts. 5 are 'Under Review', 3 are 'Accepted', and 4 are 'Pending'. Would you like a list of the accepted abstract titles?
+
+
 ## Installation & Usage
 
 To install and use the **Dryfta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dryfta** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

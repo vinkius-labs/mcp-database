@@ -1,12 +1,14 @@
 # IsThereAnyDeal MCP Server
 
-Track game prices, find the best deals, and check historical lows across multiple digital stores using the IsThereAnyDeal API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/isthereanydeal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/isthereanydeal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/isthereanydeal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/isthereanydeal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 5
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Track game prices, find the best deals, and check historical lows across multiple digital stores using the IsThereAnyDeal API.
 
 ## Description
 Connect your AI agent to **IsThereAnyDeal** to access real-time gaming commerce data. Compare prices across dozens of digital stores, track price history, and never miss a sale again.
@@ -36,6 +38,33 @@ Your AI acts as a personal shopping assistant for your gaming library, helping y
 - **search_games**: Search for games by title
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IsThereAnyDeal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the game 'Elden Ring' and find its Plain ID."
+
+**🤖 AI Agent:**
+> I found 'Elden Ring' with the Plain ID: `elden-ring`. You can now use this ID to check prices or historical lows.
+
+---
+
+**👤 You:**
+> "What are the current prices for 'cyberpunk-2077' in the US region?"
+
+**🤖 AI Agent:**
+> Checking prices for Cyberpunk 2077 in the US... It's currently $29.99 on Steam (50% off) and $29.99 on GOG. The best price is currently available on both stores.
+
+---
+
+**👤 You:**
+> "Show me the historical lowest price for 'the-witcher-3-wild-hunt'."
+
+**🤖 AI Agent:**
+> The historical low for The Witcher 3: Wild Hunt was $7.99 (80% off) recorded on Steam and GOG. Compared to the current price of $9.99, you are very close to the all-time low.
+
+
 ## Installation & Usage
 
 To install and use the **IsThereAnyDeal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **IsThereAnyDeal** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

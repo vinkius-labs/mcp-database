@@ -1,12 +1,14 @@
 # Greptile MCP Server
 
-Search and understand any codebase instantly with AI that reads your repositories and answers technical questions accurately.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/greptile)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greptile)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/greptile-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/greptile-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 11
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Search and understand any codebase instantly with AI that reads your repositories and answers technical questions accurately.
 
 ## Description
 Connect your **Greptile** account to any AI agent and unlock AI-powered codebase understanding through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Greptile** account to any AI agent and unlock AI-powered codebase
 - **search_codebase**: Search codebase
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Greptile** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How does the authentication middleware work in our backend repository?"
+
+**🤖 AI Agent:**
+> Based on your indexed repository 'github:main:company/backend-api', the authentication middleware is implemented in `src/middleware/auth.ts` (lines 12-48). It uses a JWT-based flow: 1) Extracts the Bearer token from the Authorization header (line 18). 2) Verifies the token signature using the RS256 algorithm with a public key from `config/keys.ts` (line 24). 3) Attaches the decoded user payload to `req.user` (line 32). 4) Falls through to a 401 handler if verification fails (line 41). The middleware is applied globally in `src/app.ts` line 15 via `app.use(authMiddleware)`. Would you like to search for how specific routes use this middleware?
+
+---
+
+**👤 You:**
+> "Search for all files that import the database connection module and show me the file info."
+
+**🤖 AI Agent:**
+> Semantic search for 'database connection import' found 8 files: 1) `src/services/user-service.ts` — imports `db` from `../config/database`, 42 functions. 2) `src/services/order-service.ts` — imports `db`, 28 functions. 3) `src/repositories/user-repo.ts` — imports `pool` from database config, 15 functions. 4) `src/migrations/001-initial.ts` — direct pg import for schema setup. 5-8) Four test files importing the test database mock. File info for `src/config/database.ts`: 89 lines, exports `db` (Knex instance) and `pool` (pg Pool), last indexed 2 hours ago. Would you like to query how the connection pooling is configured?
+
+---
+
+**👤 You:**
+> "Index our new frontend repository and check the indexing status."
+
+**🤖 AI Agent:**
+> Repository submitted for indexing! Remote: github, Repository: company/frontend-app, Branch: main. Current status: 'processing' — 45% complete (scanning 1,247 files). Estimated time remaining: 3 minutes. Indexed repositories: 3 total. 1) 'company/backend-api' (main, completed, 892 files). 2) 'company/shared-lib' (main, completed, 234 files). 3) 'company/frontend-app' (main, processing, 45%). Once completed, you'll be able to query and search the frontend codebase. Would you like to check again in a few minutes?
+
+
 ## Installation & Usage
 
 To install and use the **Greptile** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Greptile** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

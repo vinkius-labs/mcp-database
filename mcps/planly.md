@@ -1,12 +1,14 @@
 # Planly MCP Server
 
-Schedule and auto-publish social media posts across Instagram, TikTok, Twitter, and LinkedIn with a clean visual calendar.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/planly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Schedule and auto-publish social media posts across Instagram, TikTok, Twitter, and LinkedIn with a clean visual calendar.
 
 ## Description
 Connect your **Planly** account to any AI agent and take full control of your social media orchestration and content scheduling through natural conversation. Planly is a comprehensive social media management tool, and this integration allows you to retrieve channel metadata, schedule posts in bulk, and manage media libraries directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual logging into dashboards to check post status. Your AI acts as a d
 - **start_media_upload**: Initiate a media upload
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Planly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active social channels in Planly."
+
+**🤖 AI Agent:**
+> I've retrieved your channels. You have 3 connected profiles: 'Instagram Main', 'Twitter Biz', and 'LinkedIn Page'. Which one would you like to schedule a post for?
+
+---
+
+**👤 You:**
+> "Show me all posts scheduled for the next 7 days across all my social media channels."
+
+**🤖 AI Agent:**
+> 18 posts scheduled across your 4 connected channels for the next 7 days. Instagram: 6 posts (3 reels, 2 carousels, 1 story). Twitter/X: 5 tweets including 2 threads. LinkedIn: 4 articles and company updates. TikTok: 3 videos. Tomorrow has the highest density with 5 posts between 9 AM and 6 PM. 2 posts are missing captions and need attention before publishing.
+
+---
+
+**👤 You:**
+> "Schedule a new Instagram carousel post for Thursday at 10 AM with AI-generated caption."
+
+**🤖 AI Agent:**
+> Carousel post scheduled for Thursday, May 22nd at 10:00 AM on Instagram (@yourbrand). 4 images uploaded and ordered. AI-generated caption: "Transform your workspace into a productivity powerhouse. Swipe to discover 4 essential design principles that top performers swear by." Hashtags auto-suggested: #WorkspaceDesign #Productivity #OfficeGoals #RemoteWork (reach estimate: 12K). First comment scheduled with additional hashtags.
+
+
 ## Installation & Usage
 
 To install and use the **Planly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Planly** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # DocsGenFlow MCP Server
 
-Create documents automatically from templates with merge fields that pull data from your systems and generate polished output.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docsgenflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsgenflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docsgenflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docsgenflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Create documents automatically from templates with merge fields that pull data from your systems and generate polished output.
 
 ## Description
 Connect your **DocsGenFlow** account to any AI agent and take full control of your document generation orchestration and automated file creation through natural conversation.
@@ -49,6 +51,33 @@ Generate a document
 - **list_templates**: List all templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DocsGenFlow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all document templates in my DocsGenFlow account."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You currently have 10 active profiles, including 'Invoicing Template' and 'Sales Contract'. Would you like the detailed merge field metadata for any of them?
+
+---
+
+**👤 You:**
+> "Check the status of the last 5 document generation jobs."
+
+**🤖 AI Agent:**
+> Job intelligence orchestrated! For your recent requests, I've identified 5 document generation jobs. 4 are 'COMPLETED' and 1 is 'PROCESSING'. I've retrieved the generation metadata for your review. Need help retrieving the final file URLs?
+
+---
+
+**👤 You:**
+> "Show my DocsGenFlow document generation metrics for this month."
+
+**🤖 AI Agent:**
+> Operational monitoring orchestrated! This month, your account has processed 1,000 document generation requests, with a 99% success rate. Your API connection is healthy. Shall I retrieve the detailed template usage breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **DocsGenFlow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **DocsGenFlow** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

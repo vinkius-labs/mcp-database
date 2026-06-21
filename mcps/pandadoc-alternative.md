@@ -1,12 +1,14 @@
 # PandaDoc MCP Server
 
-Close deals faster with proposals, contracts, and e-signatures in one platform that tracks document engagement in real time.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pandadoc-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pandadoc-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Close deals faster with proposals, contracts, and e-signatures in one platform that tracks document engagement in real time.
 
 ## Description
 Connect your **PandaDoc** account to any AI agent and take full control of your document orchestration and e-signature workflows through natural conversation. PandaDoc provides a premier platform for creating, sending, and tracking business documents, and this integration allows you to retrieve document metadata, monitor signature statuses, and generate new contracts directly from your chat interface.
@@ -60,6 +62,33 @@ List all document templates
 Send a document for signing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PandaDoc** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my PandaDoc documents and their statuses."
+
+**🤖 AI Agent:**
+> I've retrieved your documents. You have 15 active files including 'Acme Contract' (Status: draft) and 'Renewal Proposal' (Status: sent). Would you like to check the recipient for any of them?
+
+---
+
+**👤 You:**
+> "Send the contract document doc_3847 to the client for electronic signature."
+
+**🤖 AI Agent:**
+> Document doc_3847 "Service Agreement 2025" has been sent for signature. Recipients: John Martinez (CEO) at john@acmecorp.com and Lisa Park (Legal) at lisa@acmecorp.com. Both received email notifications with unique signing links. The document status has changed from Draft to Sent. Average completion time for similar documents is 2.3 days.
+
+---
+
+**👤 You:**
+> "List all available document templates I can use to create new proposals."
+
+**🤖 AI Agent:**
+> You have 12 templates available. Top 5 by usage: "Standard SaaS Agreement" (used 34 times), "Consulting Proposal" (28 uses), "NDA Mutual" (22 uses), "Statement of Work" (18 uses), and "Sales Quote" (15 uses). 3 templates were updated in the last 30 days. All templates support dynamic field merging with recipient and company data.
+
+
 ## Installation & Usage
 
 To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

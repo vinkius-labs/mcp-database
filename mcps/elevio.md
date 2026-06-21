@@ -1,12 +1,14 @@
 # Elevio MCP Server
 
-Equip your AI agent to manage knowledge base articles, track categories, and monitor assistant modules via the Elevio API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elevio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elevio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elevio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage knowledge base articles, track categories, and monitor assistant modules via the Elevio API.
 
 ## Description
 Integrate **Elevio**, the leading customer education and knowledge management platform, directly into your AI workflow. Manage your knowledge base articles and categories, track real-time publishing statuses, monitor active assistant modules, and oversee your organizational learning content using natural language.
@@ -44,6 +46,33 @@ Integrate **Elevio**, the leading customer education and knowledge management pl
 - **search_knowledge_articles**: Search for articles using a title or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Elevio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all published knowledge articles."
+
+**🤖 AI Agent:**
+> I've found 12 published articles, including 'Getting Started Guide' and 'Billing FAQ'. 3 articles are currently in draft status. Would you like to see the details for the Getting Started Guide?
+
+---
+
+**👤 You:**
+> "Show me the categories in our knowledge base."
+
+**🤖 AI Agent:**
+> I've retrieved 5 categories, including 'Product Basics' (8 articles), 'Advanced Features' (4 articles), and 'Troubleshooting'. 'Troubleshooting' currently has 0 articles. Should I pull the list of draft articles to see if any belong there?
+
+---
+
+**👤 You:**
+> "Search for articles about 'integrations'."
+
+**🤖 AI Agent:**
+> I've found 3 articles matching 'integrations': 'Setting up Slack', 'API Overview', and 'Webhooks Guide'. All are published. Would you like the full content for the API Overview?
+
+
 ## Installation & Usage
 
 To install and use the **Elevio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Elevio** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

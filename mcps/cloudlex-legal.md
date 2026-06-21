@@ -1,12 +1,14 @@
 # CloudLex Legal MCP Server
 
-Manage personal injury cases via CloudLex — cases, clients, documents, medical records, liens, tasks, and communications.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlex-legal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlex-legal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudlex-legal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudlex-legal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 15
+
+**Category:** [document-management](../categories/document-management.md)
+
+Manage personal injury cases via CloudLex — cases, clients, documents, medical records, liens, tasks, and communications.
 
 ## Description
 Connect to **CloudLex Legal** case management platform and manage your entire personal injury practice from any AI agent. Access cases, clients, documents, medical records, liens, tasks, communications, and expenses—all through a unified API designed for plaintiff personal injury law firms.
@@ -128,6 +130,33 @@ List all clients/contacts in CloudLex Legal
 - **update_cloudlex_case**: Update an existing case/matter in CloudLex Legal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CloudLex Legal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my open personal injury cases in CloudLex."
+
+**🤖 AI Agent:**
+> I found 5 open personal injury cases in your CloudLex account: 1) Smith Auto Accident [Open] — John Smith, Auto Accident, 2) Jones Slip and Fall [Open] — Jane Jones, Premises Liability, 3) Williams Medical Malpractice [Open] — Robert Williams, Medical Malpractice, 4) Brown Workplace Injury [Open] — Sarah Brown, Workers' Compensation, 5) Davis Product Liability [Open] — Michael Davis, Product Liability.
+
+---
+
+**👤 You:**
+> "Show me all medical records for the Smith Auto Accident case."
+
+**🤖 AI Agent:**
+> Found 8 medical records for Smith Auto Accident: 1) Emergency Room Visit — City Hospital, 04/15/2026, $2,500, 2) Orthopedic Consultation — Dr. Johnson, 04/20/2026, $450, 3) Physical Therapy Sessions (6) — Rehab Center, 04/25-06/15/2026, $1,800, 4) MRI Scan — Imaging Center, 04/22/2026, $1,200, 5) Follow-up Visit — Dr. Johnson, 05/15/2026, $350. Total medical expenses: $6,300.
+
+---
+
+**👤 You:**
+> "Create a new case for client John Smith called 'Smith v. ABC Corporation - Workplace Injury'."
+
+**🤖 AI Agent:**
+> Case created successfully! 'Smith v. ABC Corporation - Workplace Injury' has been created and linked to client John Smith. Case status is set to Open, practice area is Workers' Compensation. You can now add documents, medical records, tasks, and track expenses for this case.
+
+
 ## Installation & Usage
 
 To install and use the **CloudLex Legal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -136,4 +165,11 @@ To install and use the **CloudLex Legal** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

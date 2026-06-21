@@ -1,12 +1,14 @@
 # Alpaca Trading MCP Server
 
-Trade stocks and crypto, access real-time market data, and manage your Alpaca brokerage account directly through any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/alpaca-trading)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alpaca-trading)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alpaca-trading-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alpaca-trading-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 14
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Trade stocks and crypto, access real-time market data, and manage your Alpaca brokerage account directly through any AI agent.
 
 ## Description
 Connect your **Alpaca Markets** account to your AI agent to automate trading strategies and monitor market movements through natural language.
@@ -55,6 +57,33 @@ Delete all open orders
 - **update_account_configs**: Update account configurations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Alpaca Trading** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Buy 10 shares of AAPL at market price."
+
+**🤖 AI Agent:**
+> I've placed a market buy order for 10 shares of AAPL. The order ID is 550e8400-e29b. Would you like to track its status?
+
+---
+
+**👤 You:**
+> "What are the latest quotes for BTC/USD and ETH/USD?"
+
+**🤖 AI Agent:**
+> Fetching latest data... BTC/USD is currently quoted at $64,230.50 (Bid) / $64,235.00 (Ask). ETH/USD is at $3,450.10 (Bid) / $3,452.00 (Ask).
+
+---
+
+**👤 You:**
+> "Show me my closed orders from the last 7 days."
+
+**🤖 AI Agent:**
+> I found 3 closed orders in the last week: a buy of MSFT, a sell of TSLA, and a limit order for NVDA that was filled. Would you like the specific execution prices?
+
+
 ## Installation & Usage
 
 To install and use the **Alpaca Trading** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Alpaca Trading** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

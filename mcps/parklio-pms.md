@@ -1,12 +1,14 @@
 # Parklio PMS MCP Server
 
-Manage smart parking hardware: barriers, displays, and gateways via Parklio PMS API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/parklio-pms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parklio-pms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parklio-pms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parklio-pms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 10
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Manage smart parking hardware: barriers, displays, and gateways via Parklio PMS API.
 
 ## Description
 Connect **Parklio PMS** to any AI agent and take full control of your smart parking infrastructure — manage barrier gates, digital displays, LPR cameras, and monitor hardware health through natural conversation.
@@ -63,6 +65,33 @@ Get the overall health and operational status of the Parklio system
 Update the text shown on a digital display screen in a parking lot
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Parklio PMS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all offline gateways."
+
+**🤖 AI Agent:**
+> Found 2 offline gateways: 1. Exit Barrier at Lot A (Last seen 45m ago). 2. LPR Reader at Lot C (Last seen 2h ago). Recommend remote reboot.
+
+---
+
+**👤 You:**
+> "Update display at Lot B to show 'Valet Parking This Way'."
+
+**🤖 AI Agent:**
+> Display updated successfully. Drivers entering Lot B will now see: 'Valet Parking This Way'.
+
+---
+
+**👤 You:**
+> "Reboot the entry barrier at Lot A."
+
+**🤖 AI Agent:**
+> Reboot command sent to Gateway ID #101 (Entry Barrier Lot A). Status: Rebooting. Check system status in 2 minutes.
+
+
 ## Installation & Usage
 
 To install and use the **Parklio PMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Parklio PMS** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

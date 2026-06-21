@@ -1,12 +1,14 @@
 # NREL Energy Data MCP Server
 
-Access renewable energy and fuel data via NREL — track fuel stations, solar resources, and utility rates directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nrel-energy-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nrel-energy-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nrel-energy-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nrel-energy-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 10
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access renewable energy and fuel data via NREL — track fuel stations, solar resources, and utility rates directly from your AI agent.
 
 ## Description
 Connect to the **National Renewable Energy Laboratory (NREL)** API through your AI agent and explore a vast archive of sustainable energy data and analysis tools using natural conversation.
@@ -48,6 +50,33 @@ List all alternative fuel stations
 - **list_transportation_incentives**: List alternative fuel incentives
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NREL Energy Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all electric vehicle charging stations in Asheville, NC."
+
+**🤖 AI Agent:**
+> Searching NREL database... I've found several EV charging stations in Asheville, NC, including 'Asheville City Hall' and 'Whole Foods Market'. Would you like the detailed access info and charging levels for any of these?
+
+---
+
+**👤 You:**
+> "Estimate solar energy production for a 5kW system at latitude 35.6, longitude -82.5."
+
+**🤖 AI Agent:**
+> Running PVWatts® estimation... For a 5kW system at those coordinates, the estimated annual AC energy production is approximately 7,200 kWh. The average monthly production peaks in July. Shall I provide the full monthly breakdown?
+
+---
+
+**👤 You:**
+> "What are the average electricity rates for residential buildings in zip code 28801?"
+
+**🤖 AI Agent:**
+> Retrieving utility rates... For zip code 28801, the average residential electricity rate is $0.12 per kWh. The commercial rate is $0.10 and the industrial rate is $0.08. Would you like to identify the utility companies serving this area?
+
+
 ## Installation & Usage
 
 To install and use the **NREL Energy Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **NREL Energy Data** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

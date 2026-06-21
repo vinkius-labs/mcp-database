@@ -1,12 +1,14 @@
 # Collect MCP Server
 
-Enable your AI agent to manage data collection campaigns, send requests, and track submissions via the Collect API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/collect)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/collect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/collect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/collect-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 10
+
+**Category:** [document-management](../categories/document-management.md)
+
+Enable your AI agent to manage data collection campaigns, send requests, and track submissions via the Collect API.
 
 ## Description
 Connect your AI to **Collect**, the secure platform for gathering information and documents from clients.
@@ -43,6 +45,37 @@ Connect your AI to **Collect**, the secure platform for gathering information an
 - **list_requests**: Retrieve all data requests for a specific campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Collect** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active data collection campaigns."
+
+**🤖 AI Agent:**
+> You have 3 active campaigns:
+1. 'KYC Process' — 12/20 requests completed (60%)
+2. 'Tax Documents 2025' — 45/50 requests completed (90%)
+3. 'New Client Onboarding' — 3/8 requests completed (37%)
+Want to send reminders for pending requests?
+
+---
+
+**👤 You:**
+> "Send a data request to 'John Doe' (john@example.com) for the 'KYC Process' campaign."
+
+**🤖 AI Agent:**
+> Request sent to John Doe (john@example.com) for campaign 'KYC Process'. Request ID: req-7x2k. Status: pending. The client will receive an email with the secure link.
+
+---
+
+**👤 You:**
+> "Send an automatic reminder to all clients with missing documents in the 'Tax 2025' campaign."
+
+**🤖 AI Agent:**
+> Done. Reminders were successfully sent to 5 pending clients in the 'Tax Documents 2025' campaign. The clients have been re-notified.
+
+
 ## Installation & Usage
 
 To install and use the **Collect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +84,11 @@ To install and use the **Collect** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

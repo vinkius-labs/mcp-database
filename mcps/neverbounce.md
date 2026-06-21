@@ -1,12 +1,14 @@
 # NeverBounce MCP Server
 
-Verify and clean email addresses via NeverBounce — track single checks and bulk jobs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/neverbounce)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neverbounce)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neverbounce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neverbounce-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Verify and clean email addresses via NeverBounce — track single checks and bulk jobs directly from your AI agent.
 
 ## Description
 Connect your **NeverBounce** account to your AI agent and ensure your email lists are clean and deliverable through natural conversation.
@@ -46,6 +48,33 @@ Connect your **NeverBounce** account to your AI agent and ensure your email list
 - **start_job**: Start a bulk job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NeverBounce** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify if the email 'test@example.com' is valid."
+
+**🤖 AI Agent:**
+> Checking email... The result for 'test@example.com' is VALID. No deliverability issues were found and no flags were raised. Shall I check your remaining credits?
+
+---
+
+**👤 You:**
+> "List all my recent verification jobs."
+
+**🤖 AI Agent:**
+> Retrieving your jobs... I found 3 recent jobs: 'Lead List Q1' (Status: Completed), 'Prospects March' (Status: Running), and 'Web Signups' (Status: Parsing). Would you like the results for 'Lead List Q1'?
+
+---
+
+**👤 You:**
+> "Check the status of job ID 123456."
+
+**🤖 AI Agent:**
+> Inspecting job 123456... This job is currently 75% complete. Out of 1,000 emails, 600 have been verified as Valid and 150 as Invalid so far. I'll let you know when it reaches 100%.
+
+
 ## Installation & Usage
 
 To install and use the **NeverBounce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **NeverBounce** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

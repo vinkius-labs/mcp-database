@@ -1,12 +1,14 @@
 # Cockpit (Self-hosted Headless CMS API) MCP Server
 
-Manage your self-hosted Cockpit CMS content, assets, and menus directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cockpit-self-hosted-headless-cms-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cockpit-self-hosted-headless-cms-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cockpit-self-hosted-headless-cms-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cockpit-self-hosted-headless-cms-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 17
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your self-hosted Cockpit CMS content, assets, and menus directly from any AI agent.
 
 ## Description
 Connect your **Cockpit CMS** instance to any AI agent and take full control of your headless content infrastructure through natural conversation.
@@ -56,6 +58,33 @@ Fetch a list of items from a Cockpit content collection
 - **submit_inbox**: Submit form data to an Inbox
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cockpit (Self-hosted Headless CMS API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the latest 5 articles from the 'blog' collection."
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent articles from your 'blog' collection. They include 'New Product Launch', 'Summer Trends', and three others. Would you like to see the full content of any specific post?
+
+---
+
+**👤 You:**
+> "Get the metadata for asset ID 12345."
+
+**🤖 AI Agent:**
+> Inspecting asset 12345... It's a JPEG image named 'hero-banner.jpg', size 1.2MB, with dimensions 1920x1080. It was uploaded on June 12th. Do you need a resized version of this image?
+
+---
+
+**👤 You:**
+> "Update the content item in 'products' with ID 98765 to change the price to 49.99."
+
+**🤖 AI Agent:**
+> I've updated the product (ID: 98765). The price field has been successfully set to 49.99. All other fields remain unchanged. Is there anything else you'd like to modify?
+
+
 ## Installation & Usage
 
 To install and use the **Cockpit (Self-hosted Headless CMS API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Cockpit (Self-hosted Headless CMS API)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

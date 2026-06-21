@@ -1,12 +1,14 @@
 # Freshdesk MCP Server
 
-Manage customer support via Freshdesk — track tickets, handle contacts, and oversee agent groups via AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshdesk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshdesk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshdesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshdesk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage customer support via Freshdesk — track tickets, handle contacts, and oversee agent groups via AI agents.
 
 ## Description
 Connect your **Freshdesk** instance to any AI agent to automate your customer service operations and helpdesk workflows through the Model Context Protocol (MCP). Freshdesk is an award-winning customer support software that enables businesses of all sizes to deliver exceptional service. This MCP server enables you to manage your support tickets, track agent performance, and retrieve detailed contact metadata directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Freshdesk** instance to any AI agent to automate your customer se
 - **update_ticket**: Modify ticket properties
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshdesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all open support tickets in my Freshdesk."
+
+**🤖 AI Agent:**
+> Retrieving tickets... I found 5 open requests, including 'Broken Login' (Priority: Urgent) and 'Billing Inquiry'. Would you like the full details for the urgent one?
+
+---
+
+**👤 You:**
+> "Show me the conversation thread for ticket '12345'."
+
+**🤖 AI Agent:**
+> Fetching thread... For ticket 12345, I found 3 replies and 1 private note. The last update was from Agent Mike stating 'investigating the server logs'.
+
+---
+
+**👤 You:**
+> "Create a new ticket: 'API Access Problem' from 'user@example.com'."
+
+**🤖 AI Agent:**
+> Ticket created! I've successfully opened ticket ID 67890 regarding 'API Access Problem' for user@example.com. It has been assigned to the general support queue.
+
+
 ## Installation & Usage
 
 To install and use the **Freshdesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Freshdesk** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

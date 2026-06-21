@@ -1,12 +1,14 @@
 # Harvard Art Museums MCP Server
 
-Explore the Harvard Art Museums' vast collection — search over 250,000 objects, research artists, and browse exhibitions directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-art-museums-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-art-museums-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harvard-art-museums-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harvard-art-museums-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 35
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Explore the Harvard Art Museums' vast collection — search over 250,000 objects, research artists, and browse exhibitions directly via AI.
 
 ## Description
 Connect to the **Harvard Art Museums API** and turn your AI agent into a sophisticated art historian. Access one of the world's most comprehensive university art collections through natural conversation.
@@ -71,6 +73,33 @@ Connect to the **Harvard Art Museums API** and turn your AI agent into a sophist
 - **list_worktypes**: List specific object types (fragment, vessel, etc.)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Harvard Art Museums** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 19th-century French paintings in the Harvard Art Museums collection."
+
+**🤖 AI Agent:**
+> I've found several 19th-century French paintings. Notable works include 'The Rehearsal' by Edgar Degas (ID: 299842) and 'The Gare Saint-Lazare' by Claude Monet. Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "List all current exhibitions and their venues."
+
+**🤖 AI Agent:**
+> There are currently 4 active exhibitions. Highlights include 'Objects of Addiction' at the Arthur M. Sackler Museum and 'American Watercolors' at the Fogg Museum. Which one would you like to explore further?
+
+---
+
+**👤 You:**
+> "Get the full record for object ID 303935."
+
+**🤖 AI Agent:**
+> Fetching record 303935... This is 'Self-Portrait' by Vincent van Gogh, oil on canvas, dated 1887. It is currently located in Gallery 2400. It features a vibrant palette of blues and yellows with characteristic brushwork.
+
+
 ## Installation & Usage
 
 To install and use the **Harvard Art Museums** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Harvard Art Museums** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

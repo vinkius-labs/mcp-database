@@ -1,12 +1,14 @@
 # Replicate MCP Server
 
-Automate machine learning workflows via Replicate — run models, manage predictions, and search for AI assets directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/replicate-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/replicate-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 20
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate machine learning workflows via Replicate — run models, manage predictions, and search for AI assets directly from any AI agent.
 
 ## Description
 Connect your **Replicate** account to any AI agent to run powerful machine learning models through simple commands.
@@ -55,6 +57,33 @@ Connect your **Replicate** account to any AI agent to run powerful machine learn
 - **update_model**: Update metadata for an existing model
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Replicate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for public models related to 'Stable Diffusion' on Replicate."
+
+**🤖 AI Agent:**
+> I found several models. The most popular is 'stability-ai/stable-diffusion' (Version: 328bd9...). Would you like to see the input schema for this model?
+
+---
+
+**👤 You:**
+> "Run a prediction for model version 5c51d4... with the prompt 'A futuristic city'."
+
+**🤖 AI Agent:**
+> Prediction created (ID: pred_123abc). It is currently 'starting'. I will monitor it for you or you can ask me for the status in a moment.
+
+---
+
+**👤 You:**
+> "List my most recent predictions."
+
+**🤖 AI Agent:**
+> Fetching your history... You have 3 recent predictions. The latest one (pred_123abc) succeeded and generated an image URL. Would you like to see the results?
+
+
 ## Installation & Usage
 
 To install and use the **Replicate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Replicate** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

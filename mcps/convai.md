@@ -1,12 +1,14 @@
 # Convai MCP Server
 
-Build and manage conversational AI characters with backstory, narrative design, and knowledge banks for games and apps.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/convai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/convai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/convai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/convai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 25
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Build and manage conversational AI characters with backstory, narrative design, and knowledge banks for games and apps.
 
 ## Description
 Connect your **Convai** account to any AI agent to orchestrate lifelike conversational characters. This MCP server provides full access to the Convai Engine, allowing you to design complex NPCs and digital beings through natural language.
@@ -60,6 +62,33 @@ Connect your **Convai** account to any AI agent to orchestrate lifelike conversa
 - **upload_knowledge_bank**: Upload a file to the Knowledge Bank
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Convai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Convai characters."
+
+**🤖 AI Agent:**
+> I've retrieved your characters. You have 3 active characters: 'Cyber Guard' (ID: char_123), 'Merchant Elara' (ID: char_456), and 'System AI' (ID: char_789).
+
+---
+
+**👤 You:**
+> "Generate a backstory for a futuristic detective named Jax."
+
+**🤖 AI Agent:**
+> Using `generate_backstory`... Jax is a former Neo-Tokyo enforcer turned private eye after a high-stakes betrayal. He specializes in tracking rogue synthetics in the neon-lit underbelly of the city.
+
+---
+
+**👤 You:**
+> "Show me the details for character ID char_123."
+
+**🤖 AI Agent:**
+> Fetching details for 'Cyber Guard' (char_123)... Voice: 'M-US-1', Backstory: 'A sentinel programmed to protect the vault...', Model: 'gpt-4o', Temperature: 0.7.
+
+
 ## Installation & Usage
 
 To install and use the **Convai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Convai** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

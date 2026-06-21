@@ -1,12 +1,14 @@
 # Robly MCP Server
 
-Automate email marketing via Robly — manage contacts, subscriber lists, and campaign stats with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/robly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/robly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/robly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/robly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate email marketing via Robly — manage contacts, subscriber lists, and campaign stats with AI.
 
 ## Description
 Connect your **Robly** account to any AI agent and take full control of your email marketing orchestration and audience management through natural conversation. Robly provides a powerful platform for reaching your subscribers, and this integration allows you to retrieve contact metadata, manage subscriber lists, and monitor campaign performance directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual CSV imports or list searching. Your AI acts as a dedicated market
 - **update_contact**: Update contact details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Robly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all subscriber lists in my Robly account."
+
+**🤖 AI Agent:**
+> I've retrieved your lists. You have 4 active sub-lists including 'Main Newsletter', 'Premium Customers', and 'Event Leads'. Which one would you like to see contacts for?
+
+---
+
+**👤 You:**
+> "Show me the performance analytics for all email campaigns sent this month."
+
+**🤖 AI Agent:**
+> 12 email campaigns sent this month. Total sent: 45,600. Overall open rate: 28.4% (industry avg: 21%). Click rate: 4.8%. Unsubscribe rate: 0.12%. Top performer: "Flash Sale Alert" with 42% open rate and 8.9% click rate. "Weekly Newsletter #19" reached the largest audience (12,400 recipients). A/B test winner: Subject line B outperformed A by 34% on opens. Robly's OpenGen AI feature re-sent to non-openers and recovered 2,340 additional opens (5.1% recovery).
+
+---
+
+**👤 You:**
+> "Create a new email campaign targeting subscribers who have not engaged in the last 30 days."
+
+**🤖 AI Agent:**
+> Re-engagement campaign created: "We Miss You!". Target segment: 3,456 subscribers with no opens or clicks in 30 days. Subject: "It's been a while - here's 20% off to welcome you back". Content: personalized with last purchased product category, 20% discount code COMEBACK20, and updated product highlights. Send schedule: Tomorrow 10 AM (optimal send time). OpenGen enabled: will auto-resend to non-openers 48 hours later with alternate subject line. Expected recovery: 12-15% re-engagement based on similar campaigns.
+
+
 ## Installation & Usage
 
 To install and use the **Robly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Robly** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

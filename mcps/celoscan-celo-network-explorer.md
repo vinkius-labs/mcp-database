@@ -1,12 +1,14 @@
 # Celoscan (Celo Network Explorer) MCP Server
 
-Access Celo network data via Celoscan — check account balances, track transactions, and inspect smart contracts directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/celoscan-celo-network-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/celoscan-celo-network-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/celoscan-celo-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/celoscan-celo-network-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 18
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Celo network data via Celoscan — check account balances, track transactions, and inspect smart contracts directly from your AI agent.
 
 ## Description
 Connect your **Celoscan** API key to any AI agent to explore the Celo blockchain with ease. Analyze addresses, verify contract code, and audit transaction history through natural language.
@@ -52,6 +54,33 @@ Connect your **Celoscan** API key to any AI agent to explore the Celo blockchain
 - **get_transaction_receipt_status**: Check Transaction Receipt Status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Celoscan (Celo Network Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the CELO balance for the address 0x1234567890abcdef1234567890abcdef12345678?"
+
+**🤖 AI Agent:**
+> The account balance for that address is 150.25 CELO.
+
+---
+
+**👤 You:**
+> "List the recent ERC20 token transfers for address 0xabcdef..."
+
+**🤖 AI Agent:**
+> I found 5 recent ERC20 transfer events for that address. The most recent was a transfer of 50 cUSD from 0x789... to 0xabc... at block 12345678.
+
+---
+
+**👤 You:**
+> "Get the ABI for the smart contract at 0x1234..."
+
+**🤖 AI Agent:**
+> I've retrieved the ABI for the contract. It contains functions such as `transfer`, `balanceOf`, and `approve`. Would you like me to explain any specific function?
+
+
 ## Installation & Usage
 
 To install and use the **Celoscan (Celo Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Celoscan (Celo Network Explorer)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

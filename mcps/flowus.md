@@ -1,12 +1,14 @@
 # FlowUs MCP Server
 
-All-in-one knowledge management and collaboration platform — manage pages, blocks, and databases via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flowus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flowus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flowus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flowus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+All-in-one knowledge management and collaboration platform — manage pages, blocks, and databases via AI.
 
 ## Description
 Empower your AI agent to orchestrate your knowledge base with **FlowUs**, the versatile collaboration platform for modern individuals and teams. By connecting FlowUs to your agent, you transform complex page organization and database management into a natural conversation. Your agent can instantly list your pages, retrieve block-level content, manage multi-dimensional databases, and even create new entries without you needing to navigate the complex web interface. Whether you are managing personal notes, project documentation, or shared team databases, your agent acts as a real-time knowledge assistant, keeping your workspace organized and your information accessible.
@@ -48,6 +50,33 @@ List page blocks
 - **update_page**: Update an existing page
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FlowUs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all pages in my FlowUs workspace."
+
+**🤖 AI Agent:**
+> I've retrieved your FlowUs pages. You have 6 active pages, including 'Project Roadmap' and 'Meeting Notes'. Which one would you like to view the content for?
+
+---
+
+**👤 You:**
+> "Query the 'Product Backlog' database for items with 'High' priority."
+
+**🤖 AI Agent:**
+> I've queried the 'Product Backlog' database. I found 3 items with high priority: 'Refactor Auth Engine', 'Implement PDF Export', and 'API Documentation'. Would you like more details on any of them?
+
+---
+
+**👤 You:**
+> "Add a new row to the 'User Feedback' database with Name='Renato' and Feedback='Love the AI integration!'."
+
+**🤖 AI Agent:**
+> Done! I've added your feedback to the 'User Feedback' database. The new entry for Renato has been successfully created.
+
+
 ## Installation & Usage
 
 To install and use the **FlowUs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **FlowUs** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

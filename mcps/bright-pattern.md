@@ -1,12 +1,14 @@
 # Bright Pattern MCP Server
 
-Orchestrate your contact center via Bright Pattern — manage users, track interactions, and monitor real-time stats directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bright-pattern)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bright-pattern)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bright-pattern-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bright-pattern-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Orchestrate your contact center via Bright Pattern — manage users, track interactions, and monitor real-time stats directly from any AI agent.
 
 ## Description
 Connect your **Bright Pattern** contact center account to any AI agent and orchestrate your customer service, interaction management, and operational reporting workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Bright Pattern** contact center account to any AI agent and orche
 - **list_users**: List all contact center users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bright Pattern** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active agents in Bright Pattern."
+
+**🤖 AI Agent:**
+> I've retrieved your users. You have 15 agents configured, including 'Alice Johnson' (ID: user_1) and 'Mark Smith' (ID: user_2). Would you like to check the status for any of them?
+
+---
+
+**👤 You:**
+> "Show real-time statistics for the contact center."
+
+**🤖 AI Agent:**
+> Retrieving statistics... Currently, there are 5 calls in queue, average wait time is 45 seconds, and 12 agents are logged in and ready.
+
+---
+
+**👤 You:**
+> "Get details for interaction ID int_99283."
+
+**🤖 AI Agent:**
+> Interaction int_99283 was a 5-minute voice call from +15550199 handled by agent Alice. The sentiment analysis indicates a positive customer experience.
+
+
 ## Installation & Usage
 
 To install and use the **Bright Pattern** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Bright Pattern** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

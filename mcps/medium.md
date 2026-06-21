@@ -1,12 +1,14 @@
 # Medium MCP Server
 
-Publish and manage content on Medium — create posts and manage publications directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/medium)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/medium)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/medium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/medium-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 10
+
+**Category:** [content-management](../categories/content-management.md)
+
+Publish and manage content on Medium — create posts and manage publications directly from any AI agent.
 
 ## Description
 Connect your **Medium** account to any AI agent and automate your publishing workflow through natural conversation.
@@ -38,6 +40,33 @@ Connect your **Medium** account to any AI agent and automate your publishing wor
 - **list_publications**: List publications for a user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Medium** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my Medium profile and user ID."
+
+**🤖 AI Agent:**
+> Retrieving your profile... You are logged in as '@username' (ID: 12345).
+
+---
+
+**👤 You:**
+> "Create a draft titled 'My AI Journey' with content 'This is my first post...'"
+
+**🤖 AI Agent:**
+> Draft created successfully! You can view and edit it on Medium. URL: https://medium.com/p/draft-id
+
+---
+
+**👤 You:**
+> "List my publications."
+
+**🤖 AI Agent:**
+> Searching... You are a member of 2 publications: 'The Startup' and 'UX Collective'.
+
+
 ## Installation & Usage
 
 To install and use the **Medium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Medium** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

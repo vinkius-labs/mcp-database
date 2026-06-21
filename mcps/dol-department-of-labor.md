@@ -1,12 +1,14 @@
 # DOL (Department of Labor) MCP Server
 
-Access US Department of Labor data including OSHA inspections, MSHA safety records, and wage compliance directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dol-department-of-labor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dol-department-of-labor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dol-department-of-labor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dol-department-of-labor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access US Department of Labor data including OSHA inspections, MSHA safety records, and wage compliance directly from your AI agent.
 
 ## Description
 Access comprehensive labor data from the **U.S. Department of Labor (DOL)**. This server provides tools to query critical datasets including workplace safety inspections, mine safety violations, wage compliance records, and employment training statistics.
@@ -39,6 +41,33 @@ Access comprehensive labor data from the **U.S. Department of Labor (DOL)**. Thi
 - **get_whd_compliance**: Get WHD compliance data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DOL (Department of Labor)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the top 5 OSHA inspections in New York."
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent OSHA inspections for New York. The records include inspections for 'BuildRight Construction' and 'SafeLogistics Hub' with details on inspection types and dates.
+
+---
+
+**👤 You:**
+> "Show me recent MSHA violations ordered by date."
+
+**🤖 AI Agent:**
+> Fetching MSHA violation records... I found several recent entries. The most recent violation was recorded at 'DeepRock Mine' on October 12th regarding ventilation standards.
+
+---
+
+**👤 You:**
+> "Get wage and hour compliance data for the state of Texas."
+
+**🤖 AI Agent:**
+> Querying WHD compliance data for Texas... I have compiled the investigation records, including case IDs and findings related to the Fair Labor Standards Act (FLSA) for various employers in the region.
+
+
 ## Installation & Usage
 
 To install and use the **DOL (Department of Labor)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **DOL (Department of Labor)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

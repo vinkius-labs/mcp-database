@@ -1,12 +1,14 @@
 # Skedda MCP Server
 
-Manage your workspace scheduling — create, update, and track bookings for desks, meeting rooms, and special venues directly through AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/skedda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skedda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skedda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skedda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** operations-management
-**Tools Count:** 9
+
+**Category:** [operations-management](../categories/operations-management.md)
+
+Manage your workspace scheduling — create, update, and track bookings for desks, meeting rooms, and special venues directly through AI agents.
 
 ## Description
 Connect your **Skedda** workspace to any AI agent to completely fully automate facility management and space scheduling. Handle your entire booking lifecycle through natural language conversations.
@@ -53,6 +55,43 @@ Lists space categories
 - **update_booking**: Updates an existing booking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Skedda** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all meeting room zones and internal spaces we have available."
+
+**🤖 AI Agent:**
+> I've pulled the facility details. You currently have 4 spaces available:
+1. Main Boardroom (ID: 151A, Category: Meeting Rooms)
+2. Focus Pod 1 (ID: 21B, Category: Private Desks)
+3. Hot Desk A (ID: 9X, Category: Open Floor)
+4. Training Center (ID: 41C, Category: Event Venus)
+Do you want me to list active bookings for any of these spaces?
+
+---
+
+**👤 You:**
+> "Can you book 'Focus Pod 1' for tomorrow from 10:00 AM to 12:00 PM for user Marc Smith?"
+
+**🤖 AI Agent:**
+> Successfully booked Focus Pod 1 for tomorrow (10:00 AM - 12:00 PM UTC) for Marc Smith. 
+Booking ID: `185011XX`.
+Let me know if you need to adjust or update the allocated timeframe.
+
+---
+
+**👤 You:**
+> "Cancel all bookings scheduled for the 'Training Center' on Friday."
+
+**🤖 AI Agent:**
+> I've checked the bookings for Friday at the Training Center. There were 2 active events: 
+1 - 09:00 AM (Booking ID `88V1`)
+2 - 02:00 PM (Booking ID `91B3`)
+Both have been successfully deleted from the platform.
+
+
 ## Installation & Usage
 
 To install and use the **Skedda** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +100,11 @@ To install and use the **Skedda** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

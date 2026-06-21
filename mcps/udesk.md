@@ -1,12 +1,14 @@
 # Udesk / 沃丰科技 MCP Server
 
-Comprehensive customer service platform — manage tickets, customers, and knowledge base via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/udesk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/udesk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/udesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/udesk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Comprehensive customer service platform — manage tickets, customers, and knowledge base via AI.
 
 ## Description
 Empower your AI agent to orchestrate your customer service operations with **Udesk**, the premier helpdesk platform in China. By connecting Udesk to your agent, you transform complex ticket management, customer profile auditing, and knowledge base retrieval into a natural conversation. Your agent can instantly list support tickets, retrieve detailed customer information, browse knowledge base articles, and even monitor agent activity without you ever needing to navigate the comprehensive web portal. Whether you are troubleshooting high-priority issues or coordinating support teams, your agent acts as a real-time service assistant, keeping your data accurate and your customers satisfied.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your customer service operations with **Ude
 - **list_tickets**: List helpdesk tickets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Udesk / 沃丰科技** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active helpdesk tickets."
+
+**🤖 AI Agent:**
+> I've retrieved your Udesk tickets. You have 15 open incidents, including 'Server Down in Region A' and 'Billing Inquiry - Client B'. Would you like to check the latest replies for any of them?
+
+---
+
+**👤 You:**
+> "Show me the details for customer 'mario@example.com'."
+
+**🤖 AI Agent:**
+> I've retrieved the profile for Mario. He is a VIP customer from the 'Global Partners' organization with 12 historical tickets. Would you like to see his active ticket history?
+
+---
+
+**👤 You:**
+> "Check the knowledge base for articles about 'Refund Policy'."
+
+**🤖 AI Agent:**
+> I've found 3 articles in the Udesk knowledge base matching your query. The primary guide 'Standard Refund Procedures' was last updated 2 days ago. Should I retrieve the full content for you?
+
+
 ## Installation & Usage
 
 To install and use the **Udesk / 沃丰科技** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Udesk / 沃丰科技** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Mozscape MCP Server
 
-Analyze SEO metrics, domain authority, and link profiles directly from your AI agent using the Mozscape API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mozscape)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mozscape)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mozscape-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mozscape-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 24
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Analyze SEO metrics, domain authority, and link profiles directly from your AI agent using the Mozscape API.
 
 ## Description
 Connect your **Mozscape** account to any AI agent to perform deep SEO analysis and link auditing through natural conversation.
@@ -59,6 +61,33 @@ Connect your **Mozscape** account to any AI agent to perform deep SEO analysis a
 - **v2_usage_data**: V2: Get usage data for the current billing period
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mozscape** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get SEO metrics for moz.com"
+
+**🤖 AI Agent:**
+> I've retrieved the metrics for moz.com. It has a Domain Authority of 91, a Page Authority of 78, and a Spam Score of 1%.
+
+---
+
+**👤 You:**
+> "Find sites that link to both apple.com and microsoft.com"
+
+**🤖 AI Agent:**
+> Using the link intersect tool, I found several high-authority domains linking to both, including techcrunch.com, wired.com, and theverge.com.
+
+---
+
+**👤 You:**
+> "What is the Brand Authority score for nike.com?"
+
+**🤖 AI Agent:**
+> The Brand Authority™ score for nike.com is 98, indicating an exceptionally strong brand presence in the Moz index.
+
+
 ## Installation & Usage
 
 To install and use the **Mozscape** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Mozscape** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

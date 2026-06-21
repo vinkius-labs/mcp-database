@@ -1,12 +1,14 @@
 # SuperHero MCP Server
 
-Access the ultimate comic book database — search characters, compare powerstats, and explore biographies from Marvel, DC, and more.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/superhero)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/superhero)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/superhero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/superhero-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 8
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the ultimate comic book database — search characters, compare powerstats, and explore biographies from Marvel, DC, and more.
 
 ## Description
 Connect to the **SuperHero API** and bring the multiverse to your AI agent. Access comprehensive data on thousands of characters from Marvel, DC, Dark Horse, and other major publishers through natural conversation.
@@ -46,6 +48,33 @@ Connect to the **SuperHero API** and bring the multiverse to your AI agent. Acce
 Search for characters by their name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SuperHero** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for characters named 'Batman' and show me their IDs."
+
+**🤖 AI Agent:**
+> I found several matches for 'Batman'. The main Bruce Wayne version is ID 70 (DC Comics). There is also a Terry McGinnis version (ID 71). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "What are the powerstats for character ID 332?"
+
+**🤖 AI Agent:**
+> For Hulk (ID 332), the powerstats are: Intelligence: 88, Strength: 100, Speed: 63, Durability: 100, Power: 98, and Combat: 85. He is at maximum level for strength and durability.
+
+---
+
+**👤 You:**
+> "Get the full biography and image for character ID 620."
+
+**🤖 AI Agent:**
+> Character ID 620 is Spider-Man (Peter Parker). He first appeared in Amazing Fantasy #15 and is published by Marvel Comics. I've also retrieved his portrait image URL for you.
+
+
 ## Installation & Usage
 
 To install and use the **SuperHero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **SuperHero** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

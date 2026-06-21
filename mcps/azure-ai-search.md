@@ -1,12 +1,14 @@
 # Azure AI Search MCP Server
 
-Execute RAG queries against Azure AI Search natively — search vectors, full-text documents, and audit cloud indexes directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-ai-search)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-ai-search)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-ai-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-ai-search-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Execute RAG queries against Azure AI Search natively — search vectors, full-text documents, and audit cloud indexes directly from your AI agent.
 
 ## Description
 Connect your **Azure AI Search** endpoints to any AI agent and bring the power of enterprise RAG (Retrieval-Augmented Generation) directly into your conversational workflows.
@@ -42,6 +44,33 @@ Perform Azure vector similarity searches via explicit embedding spaces
 - **list_datasources**: List Azure AI Search data sources explicitly mapped
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Azure AI Search** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the configuration schema for our 'corporate-docs-v2' index."
+
+**🤖 AI Agent:**
+> I've pulled the schema for 'corporate-docs-v2'. It contains 8 fields. The 'content_vector' field is mapped using HNSW cosine similarity. Semantic ranking is enabled. No language analyzers are explicitly overriding the default en.lucene settings.
+
+---
+
+**👤 You:**
+> "List the Azure Search indexers and tell me if any are failing."
+
+**🤖 AI Agent:**
+> You have 2 indexers configured linking Blob containers. 'blob-sync-daily' is healthy on its schedule. However, 'cosmos-realtime-idxr' is reporting a configuration error — the destination container credentials appear disconnected on the backend.
+
+---
+
+**👤 You:**
+> "Run a full-text lexical search for 'Q3 Financial Audits' in the reports index."
+
+**🤖 AI Agent:**
+> Searching the 'reports-index' via BM25 matching. I found 3 highly relevant paragraphs. The primary document `q3-audit.pdf` highlights a successful reconciliation process without anomalies. Would you like me to read the secondary findings?
+
+
 ## Installation & Usage
 
 To install and use the **Azure AI Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Azure AI Search** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

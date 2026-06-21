@@ -1,12 +1,14 @@
 # Figshare MCP Server
 
-Manage research data and scholarly outputs via Figshare — list public articles, manage private uploads, and organize collections directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/figshare)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/figshare)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/figshare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/figshare-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 20
+
+**Category:** [data-management](../categories/data-management.md)
+
+Manage research data and scholarly outputs via Figshare — list public articles, manage private uploads, and organize collections directly from your AI agent.
 
 ## Description
 Connect your **Figshare** account to any AI agent to streamline your research data management and publication workflows through natural conversation.
@@ -56,6 +58,33 @@ No more manual navigation through repository interfaces to check upload statuses
 - **update_article**: Update an existing article
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Figshare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent public articles on Figshare."
+
+**🤖 AI Agent:**
+> I've retrieved the latest public articles. I found several entries including 'Climate Change Impact on Alpine Flora' and 'Dataset for Neural Network Optimization'. Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "Create a private article titled 'Lab Results Q4' with the description 'Raw data from the December experiments'."
+
+**🤖 AI Agent:**
+> Success! I've created the private article 'Lab Results Q4' (ID: 9876543). You can now start uploading files to this draft using the initiate upload tool.
+
+---
+
+**👤 You:**
+> "Show me all files attached to article 1234567."
+
+**🤖 AI Agent:**
+> Checking files for article 1234567... I found 3 files: 'methodology.pdf', 'raw_data.csv', and 'analysis_script.py'. Would you like the specific details or download URLs for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Figshare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Figshare** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

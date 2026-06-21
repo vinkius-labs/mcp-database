@@ -1,12 +1,14 @@
 # GridStatus MCP Server
 
-Access real-time and historical US electricity grid data — load, fuel mix, LMP pricing, and generation across all major ISOs (ERCOT, CAISO, PJM, MISO, NYISO, ISO-NE, SPP).
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gridstatus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gridstatus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gridstatus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gridstatus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access real-time and historical US electricity grid data — load, fuel mix, LMP pricing, and generation across all major ISOs (ERCOT, CAISO, PJM, MISO, NYISO, ISO-NE, SPP).
 
 ## Description
 Connect to **GridStatus.io API** and bring comprehensive US electricity market intelligence to any AI agent. Monitor all major Independent System Operators (ISOs), track renewable energy transition, analyze wholesale prices, and understand grid dynamics across America.
@@ -311,6 +313,33 @@ EXAMPLES:
 Get standardized hourly data for a US ISO with consistent column naming
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GridStatus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current electricity demand in ERCOT (Texas)?"
+
+**🤖 AI Agent:**
+> Fetching latest ERCOT load data... Current electricity demand in Texas is 42,850 MW. Load has been relatively stable over the past 6 hours, ranging between 42,200-43,500 MW as typical for this time of day in spring.
+
+---
+
+**👤 You:**
+> "Show me the energy mix for California right now — how much comes from solar, wind, and natural gas?"
+
+**🤖 AI Agent:**
+> Retrieving CAISO fuel mix... Current California generation: Solar 8,245 MW (32%), Natural Gas 9,870 MW (38%), Wind 4,120 MW (16%), Hydro 1,890 MW (7%), Nuclear 2,215 MW (9%), Other 350 MW. Renewables (solar+wind+hydro) account for 55% of current generation. Solar is near its daily peak.
+
+---
+
+**👤 You:**
+> "What are day-ahead electricity prices for the PJM Houston hub tomorrow?"
+
+**🤖 AI Agent:**
+> Fetching PJM day-ahead LMP... Tomorrow's hourly prices at the Houston hub range from $18/MWh (3 AM) to $42/MWh (7 PM peak). The daily average is $28/MWh. Cheapest hours are 2-5 AM ($18-20/MWh), most expensive are 5-8 PM ($38-42/MWh). Prices are moderate compared to recent weeks.
+
+
 ## Installation & Usage
 
 To install and use the **GridStatus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -319,4 +348,11 @@ To install and use the **GridStatus** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

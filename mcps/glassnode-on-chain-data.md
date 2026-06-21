@@ -1,12 +1,14 @@
 # Glassnode (On-chain Data) MCP Server
 
-Access institutional-grade on-chain market data for Bitcoin, Ethereum, and 1000+ assets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/glassnode-on-chain-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glassnode-on-chain-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glassnode-on-chain-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glassnode-on-chain-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access institutional-grade on-chain market data for Bitcoin, Ethereum, and 1000+ assets directly from your AI agent.
 
 ## Description
 Connect your **Glassnode** account to any AI agent to analyze crypto markets with precision. Fetch real-time and historical on-chain metrics, exchange flows, and network health data through natural conversation.
@@ -47,6 +49,33 @@ Get time-series data for a specific metric
 List all available metric paths on Glassnode
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Glassnode (On-chain Data)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all supported assets on Glassnode."
+
+**🤖 AI Agent:**
+> I've retrieved the list of supported assets. Glassnode currently supports over 1,000 assets including BTC, ETH, and various ERC-20 tokens across multiple blockchains like Bitcoin, Ethereum, and Polygon.
+
+---
+
+**👤 You:**
+> "Get the 'addresses/active_count' metric for BTC from the last 7 days with a 24h interval."
+
+**🤖 AI Agent:**
+> Fetching active address count for Bitcoin... Over the last 7 days, the daily active addresses have fluctuated between 850k and 920k, showing a slight upward trend in network activity.
+
+---
+
+**👤 You:**
+> "Show me the details and allowed parameters for the metric path 'market/price_usd_close'."
+
+**🤖 AI Agent:**
+> The 'market/price_usd_close' metric provides the daily closing price in USD. It supports intervals from 10m to 1month and is available for almost all listed assets. You can filter by 'since' and 'until' timestamps.
+
+
 ## Installation & Usage
 
 To install and use the **Glassnode (On-chain Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Glassnode (On-chain Data)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

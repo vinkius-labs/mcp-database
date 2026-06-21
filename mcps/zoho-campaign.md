@@ -1,12 +1,14 @@
 # Zoho Campaign MCP Server
 
-AI email marketing: manage campaigns, contacts, and mailing lists via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-campaign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-campaign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-campaign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-campaign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 13
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+AI email marketing: manage campaigns, contacts, and mailing lists via agents.
 
 ## Description
 ### What you can do
@@ -74,6 +76,33 @@ Remove contacts from a Zoho Campaign mailing list
 Update an existing Zoho Campaign contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Campaign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all campaigns sent in the last 30 days with their open rates"
+
+**🤖 AI Agent:**
+> I'll pull your recent campaigns and compile the open rate metrics for you.
+
+---
+
+**👤 You:**
+> "Create a new campaign called 'Spring Sale 2026' for our newsletter list with subject 'Exclusive Spring Discounts Inside'"
+
+**🤖 AI Agent:**
+> I'll create the Spring Sale campaign configured for your newsletter mailing list.
+
+---
+
+**👤 You:**
+> "Add these 50 contacts from my CRM export to the 'Prospects Q2' list"
+
+**🤖 AI Agent:**
+> I'll import the contacts into your Prospects Q2 mailing list right away.
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Campaign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **Zoho Campaign** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

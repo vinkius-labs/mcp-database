@@ -1,12 +1,14 @@
 # Zenkit MCP Server
 
-Manage workspaces, lists, and entries via the Zenkit API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zenkit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenkit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenkit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage workspaces, lists, and entries via the Zenkit API.
 
 ## Description
 Connect your **Zenkit** account to any AI agent to streamline your productivity and project management. This MCP server enables your agent to interact with workspaces, lists (collections), and data entries directly from natural language.
@@ -45,6 +47,33 @@ Create a new entry in a list
 - **list_workspaces**: List all workspaces and their lists
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zenkit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Zenkit workspaces and their collections."
+
+**🤖 AI Agent:**
+> I've retrieved your workspaces. You have 3 workspaces: 'Marketing', 'Product Development', and 'Personal'. The 'Marketing' workspace contains 2 lists: 'Social Media Calendar' and 'Asset Library'.
+
+---
+
+**👤 You:**
+> "Show me all entries in the list with ID '98765'."
+
+**🤖 AI Agent:**
+> I found 15 entries in list 98765. Notable items include 'Review Q2 Budget', 'Update Brand Guidelines', and 'Onboard New Intern'. Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Create a new entry in list '98765' with name 'Finish API documentation'."
+
+**🤖 AI Agent:**
+> Successfully created the entry 'Finish API documentation' in your Zenkit list. The new entry ID is '12345'.
+
+
 ## Installation & Usage
 
 To install and use the **Zenkit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Zenkit** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

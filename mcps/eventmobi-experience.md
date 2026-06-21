@@ -1,12 +1,14 @@
 # EventMobi Experience MCP Server
 
-Equip your AI agent to manage event apps, track attendee engagement, and monitor sessions via the EventMobi API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmobi-experience)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmobi-experience)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventmobi-experience-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventmobi-experience-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 10
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Equip your AI agent to manage event apps, track attendee engagement, and monitor sessions via the EventMobi API.
 
 ## Description
 Integrate **EventMobi**, the comprehensive event experience platform, directly into your AI workflow. Manage your mobile event apps and schedules, track registered attendees and speaker profiles, monitor real-time engagement analytics and exhibitor visibility, and oversee your event success using natural language.
@@ -44,6 +46,33 @@ Integrate **EventMobi**, the comprehensive event experience platform, directly i
 - **list_event_speakers**: List all speakers registered for a specific event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EventMobi Experience** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active event apps."
+
+**🤖 AI Agent:**
+> I've found 3 active event apps, including 'Annual Leadership Retreat' and 'Sales Kickoff 2024'. The Leadership Retreat currently has 250 registered attendees. Would you like to see the session schedule for this event?
+
+---
+
+**👤 You:**
+> "Show me engagement analytics for event ID '12345'."
+
+**🤖 AI Agent:**
+> For event ID '12345', I've retrieved the engagement report: 1,500 total app views, 450 session favorites, and 85 networking messages sent. Engagement is up 12% compared to the previous period. Should I check which session is most popular?
+
+---
+
+**👤 You:**
+> "Search for attendees with the role 'Director'."
+
+**🤖 AI Agent:**
+> I've found 12 attendees with the 'Director' role, including 'Sarah Connor' (IT Director) and 'John Doe' (Marketing Director). All are registered for the main event. Would you like to see Sarah's full speaker bio?
+
+
 ## Installation & Usage
 
 To install and use the **EventMobi Experience** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **EventMobi Experience** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

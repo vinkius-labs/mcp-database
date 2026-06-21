@@ -1,12 +1,14 @@
 # Docamatic MCP Server
 
-Generate professional PDFs from templates with dynamic data injection for invoices, reports, and custom documents at scale.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docamatic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docamatic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docamatic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docamatic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate professional PDFs from templates with dynamic data injection for invoices, reports, and custom documents at scale.
 
 ## Description
 Connect your **Docamatic** account to any AI agent and take full control of your document automation and media production workflows through natural conversation.
@@ -49,6 +51,33 @@ Capture a full-page website screenshot
 - **add_elements_to_pdf**: Draw text or images onto an existing PDF
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Docamatic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a professional PDF of the website 'https://vinkius.com'."
+
+**🤖 AI Agent:**
+> Document rendering triggered! I'm converting 'https://vinkius.com' into a high-fidelity PDF. You can download the finalized file here: [download_url]. Need me to capture a screenshot as well?
+
+---
+
+**👤 You:**
+> "Create an invoice for 'Acme Corp' using the 'invoice3' template."
+
+**🤖 AI Agent:**
+> Invoice generated! I've populated the 'invoice3' template with your data for Acme Corp. The document is now ready. Would you like to merge it with any past project reports?
+
+---
+
+**👤 You:**
+> "Take a full-page screenshot of 'https://news.google.com'."
+
+**🤖 AI Agent:**
+> Visual captured! I've taken a high-quality full-page screenshot of the specified news URL. You can view the image here: [image_url]. Shall I check your recent generation history for other files?
+
+
 ## Installation & Usage
 
 To install and use the **Docamatic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Docamatic** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

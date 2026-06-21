@@ -1,12 +1,14 @@
 # Duffel Flights MCP Server
 
-Search and book flights via Duffel — list airlines, airports, and manage flight orders directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/duffel-flights)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/duffel-flights)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/duffel-flights-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/duffel-flights-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Search and book flights via Duffel — list airlines, airports, and manage flight orders directly via AI.
 
 ## Description
 Connect your AI agent to **Duffel**, the modern infrastructure for travel. This integration allows you to search for real-time flight offers, manage bookings (orders), and access a comprehensive directory of airlines, airports, and aircraft through natural conversation.
@@ -47,6 +49,25 @@ Book a flight by selecting an offer and providing passenger details
 - **list_flight_orders**: Retrieve a list of all flight bookings (orders)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Duffel Flights** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for a flight from London (LHR) to New York (JFK) on 2024-12-01."
+
+**🤖 AI Agent:**
+> Creating offer request... I found several options, including a direct flight with British Airways for $550. Would you like to see the full list of offers?
+
+---
+
+**👤 You:**
+> "List all airports in Brazil."
+
+**🤖 AI Agent:**
+> Retrieving airports... I found major hubs including Guarulhos (GRU), Congonhas (CGH), and Galeão (GIG). Would you like the ICAO codes for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Duffel Flights** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +76,11 @@ To install and use the **Duffel Flights** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

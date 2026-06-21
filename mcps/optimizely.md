@@ -1,12 +1,14 @@
 # Optimizely MCP Server
 
-Manage A/B tests and feature flags via Optimizely — list projects, track experiments, and toggle features directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/optimizely)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optimizely)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optimizely-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optimizely-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Manage A/B tests and feature flags via Optimizely — list projects, track experiments, and toggle features directly from any AI agent.
 
 ## Description
 Connect your **Optimizely** account to any AI agent and take full control of your experimentation and feature management workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Optimizely** account to any AI agent and take full control of you
 - **start_experiment**: Set experiment status to running
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Optimizely** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Optimizely projects in my account."
+
+**🤖 AI Agent:**
+> I've retrieved 4 projects: 'Main Website', 'Mobile App iOS', 'Checkout Flow', and 'New Product Beta'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Check the status of all experiments in project 12345."
+
+**🤖 AI Agent:**
+> There are 5 experiments in project 12345. 2 are currently running ('Hero Banner v2', 'Free Shipping Prompt'), 2 are paused, and 1 is in draft mode.
+
+---
+
+**👤 You:**
+> "Pause experiment 67890 in project 12345."
+
+**🤖 AI Agent:**
+> Experiment 67890 ('Hero Banner v2') has been successfully paused.
+
+
 ## Installation & Usage
 
 To install and use the **Optimizely** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Optimizely** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

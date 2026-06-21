@@ -1,12 +1,14 @@
 # Shippo MCP Server
 
-Get the best shipping rates from top carriers, print labels, and track deliveries with an API that simplifies e-commerce shipping.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shippo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shippo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shippo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shippo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Get the best shipping rates from top carriers, print labels, and track deliveries with an API that simplifies e-commerce shipping.
 
 ## Description
 Connect your **Shippo** account to any AI agent and take full control of your global shipping and logistics orchestration through natural conversation. Shippo provides a powerful API for comparing shipping rates across multiple carriers, generating labels, and tracking packages directly from your chat interface.
@@ -53,6 +55,33 @@ List active carrier accounts
 - **list_purchased_labels**: List all shipping transactions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shippo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the tracking status for USPS package 1234567890."
+
+**🤖 AI Agent:**
+> I've retrieved the tracking info. Your USPS package is currently 'In Transit' and is expected to be delivered by tomorrow, June 15th. Would you like to see the full milestone history?
+
+---
+
+**👤 You:**
+> "List all my active carrier accounts in Shippo."
+
+**🤖 AI Agent:**
+> Retrieving carrier accounts... You have 4 active accounts configured: FedEx, UPS, DHL, and USPS. Would you like to check the settings for any of them?
+
+---
+
+**👤 You:**
+> "Validate this address: 123 Main St, San Francisco, CA 94105."
+
+**🤖 AI Agent:**
+> Processing address validation... The address is valid and identified as a commercial location. Should I use it to get shipping rates for your next package?
+
+
 ## Installation & Usage
 
 To install and use the **Shippo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Shippo** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

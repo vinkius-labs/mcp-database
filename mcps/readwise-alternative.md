@@ -1,12 +1,14 @@
 # Readwise MCP Server
 
-Connect your AI agents to Readwise to manage books, highlights, tags, and spaced repetition reviews directly through natural language.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/readwise-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/readwise-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 16
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI agents to Readwise to manage books, highlights, tags, and spaced repetition reviews directly through natural language.
 
 ## Description
 Transform how your organization interacts with reading material by giving your AI agent full control over your Readwise library. With 16 tools covering full highlight CRUD, book search by source and category, tag management, and daily review access, your agents can retrieve specific passages, create annotations, and help you retain knowledge.
@@ -49,6 +51,33 @@ List highlights
 - **update_highlight**: Update a highlight
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Readwise** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all my highlights related to 'stoicism' and summarize the key themes."
+
+**🤖 AI Agent:**
+> I found 14 highlights mentioning stoicism. The recurring themes focus on the dichotomy of control, the practice of negative visualization, and maintaining equanimity in the face of external adversity.
+
+---
+
+**👤 You:**
+> "List all the books I've saved from my Kindle library."
+
+**🤖 AI Agent:**
+> I've retrieved your Kindle library. You have 22 books saved, including 'Meditations' by Marcus Aurelius, 'Atomic Habits' by James Clear, and 'Deep Work' by Cal Newport.
+
+---
+
+**👤 You:**
+> "Create a new highlight for 'The Almanack of Naval Ravikant' with the note: 'Crucial insight on leverage'."
+
+**🤖 AI Agent:**
+> Successfully added your highlight to 'The Almanack of Naval Ravikant' with the note regarding leverage.
+
+
 ## Installation & Usage
 
 To install and use the **Readwise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Readwise** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

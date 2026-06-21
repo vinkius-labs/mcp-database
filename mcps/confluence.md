@@ -1,12 +1,14 @@
 # Confluence MCP Server
 
-Empower your AI agent to search, read, and create Confluence wiki pages directly from chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/confluence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/confluence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/confluence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/confluence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Empower your AI agent to search, read, and create Confluence wiki pages directly from chat.
 
 ## Description
 Connect your **Atlassian Confluence** workspace to your AI assistant. Easily query your organization's knowledge base, search through technical documentation, and seamlessly generate new formatted pages right from the conversational interface.
@@ -63,6 +65,33 @@ Retrieve a list of pages from Confluence
 - **list_spaces**: Retrieve a list of all spaces in Confluence
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Confluence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search Confluence for documentation regarding our 'Q3 Migration Plan'."
+
+**🤖 AI Agent:**
+> I've searched your Confluence spaces. I found two documents related to the 'Q3 Migration Plan'. The most recent one was updated two days ago in the Engineering space. Would you like a summary of its contents?
+
+---
+
+**👤 You:**
+> "Create a new page in the 'Product' space summarizing our meeting notes from today."
+
+**🤖 AI Agent:**
+> The meeting summary has been formatted and published successfully to the 'Product' space under the title 'Meeting Notes - Today'.
+
+---
+
+**👤 You:**
+> "List all wiki pages currently under the space key 'HR'."
+
+**🤖 AI Agent:**
+> I found 14 active pages in the 'HR' space, including 'Employee Onboarding', 'Leave Policies', and 'Corporate Benefits'. Which one would you like to review?
+
+
 ## Installation & Usage
 
 To install and use the **Confluence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Confluence** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

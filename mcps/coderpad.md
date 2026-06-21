@@ -1,12 +1,14 @@
 # CoderPad MCP Server
 
-Manage technical interviews and assessments via CoderPad — create pads, track interview events, and audit the question bank directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coderpad)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coderpad)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coderpad-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coderpad-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage technical interviews and assessments via CoderPad — create pads, track interview events, and audit the question bank directly from any AI agent.
 
 ## Description
 Connect your **CoderPad** account to any AI agent and take full control of your technical hiring process through natural conversation. Streamline how you prepare, conduct, and review technical interviews natively.
@@ -45,6 +47,33 @@ Connect your **CoderPad** account to any AI agent and take full control of your 
 - **get_coderpad_usage_history**: Retrieve a history of pad usage and quota consumption
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoderPad** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my CoderPad sessions from this week."
+
+**🤖 AI Agent:**
+> Retrieving your recent sessions... I found 5 pads: 'Backend Dev - John Doe', 'Frontend Role - Sarah Smith', and 3 others. 2 are still 'Live' and 3 are 'Completed'. Would you like the code for any of these?
+
+---
+
+**👤 You:**
+> "Create a new Python pad for 'Junior Engineer Interview'."
+
+**🤖 AI Agent:**
+> Creating Python pad... The session has been successfully created. You can invite the candidate using this URL: [Pad URL]. I can also preload a question if you'd like.
+
+---
+
+**👤 You:**
+> "Show me the last 5 questions in my question bank."
+
+**🤖 AI Agent:**
+> Retrieving questions... The 5 newest questions are: 'System Design: URL Shortener', 'Binary Tree Traversal', 'SQL: Top Customers', 'React: Todo List', and 'Python: Palindrome Check'.
+
+
 ## Installation & Usage
 
 To install and use the **CoderPad** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **CoderPad** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Clientjoy MCP Server
 
-Manage your entire client lifecycle from proposals and contracts through invoicing and payments in one streamlined platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clientjoy-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientjoy-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clientjoy-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clientjoy-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 7
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Manage your entire client lifecycle from proposals and contracts through invoicing and payments in one streamlined platform.
 
 ## Description
 Connect your **Clientjoy** CRM and billing account to any AI agent and simplify how you coordinate your sales pipeline, client directory, and invoicing through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Clientjoy** CRM and billing account to any AI agent and simplify 
 - **list_sales_proposals**: List proposals
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clientjoy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active leads in my Clientjoy account."
+
+**🤖 AI Agent:**
+> I've retrieved your sales pipeline. You have 3 active leads: 'Acme Corp Expansion', 'New Retail Project', and 'Tech Solutions Lead'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the details for customer 'John Miller' (ID: 10293)."
+
+**🤖 AI Agent:**
+> Fetching profile... John Miller is a 'VIP Client' from 'Miller Industries'. He has 2 paid invoices and 1 active proposal. Would you like to see his full transaction history?
+
+---
+
+**👤 You:**
+> "Are there any overdue invoices?"
+
+**🤖 AI Agent:**
+> Checking billing... Yes, you have 1 overdue invoice: #INV-88231 ($450.00) from 'Global Logistics'. It was due 5 days ago. Shall I retrieve the contact info for follow-up?
+
+
 ## Installation & Usage
 
 To install and use the **Clientjoy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Clientjoy** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Kentico (CMS & DXP) MCP Server
 
-Manage content and system objects via Kentico Xperience — retrieve documents, manage users, and audit custom tables.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kentico-cms-dxp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kentico-cms-dxp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kentico-cms-dxp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kentico-cms-dxp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage content and system objects via Kentico Xperience — retrieve documents, manage users, and audit custom tables.
 
 ## Description
 Connect your **Kentico Xperience** project to any AI agent and take full control of your digital experience platform (DXP) and enterprise CMS through natural conversation.
@@ -50,6 +52,33 @@ List global Kentico users
 - **update_system_object**: Update an existing Kentico system object
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kentico (CMS & DXP)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the 'Home' page document from site 'CorporateSite' in 'en-us' culture"
+
+**🤖 AI Agent:**
+> Retrieving document '/Home'… I've fetched the page structure. It includes properties like DocumentName: 'Home', DocumentMenuCaption: 'Welcome', and the associated page template ID. Would you like to see the full content fields?
+
+---
+
+**👤 You:**
+> "Update the DocumentName of '/About-Us' to 'Our Team' on currentsite"
+
+**🤖 AI Agent:**
+> Updating document '/About-Us'… The name has been successfully changed to 'Our Team'. I've also updated the associated metadata. This change is now active in the Kentico database.
+
+---
+
+**👤 You:**
+> "List all rows from the custom table 'MyCompany.Inventory'"
+
+**🤖 AI Agent:**
+> I've retrieved 12 entries from 'MyCompany.Inventory'. Highlights include items 'SKU-101' (Stock: 45), 'SKU-105' (Stock: 12), and 'SKU-108' (Stock: 0). Would you like to see the detailed audit logs for these items?
+
+
 ## Installation & Usage
 
 To install and use the **Kentico (CMS & DXP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Kentico (CMS & DXP)** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

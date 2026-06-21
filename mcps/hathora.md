@@ -1,12 +1,14 @@
 # Hathora MCP Server
 
-Orchestrate multiplayer game infrastructure via Hathora — manage applications, builds, deployments, and game rooms directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hathora)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hathora)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hathora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hathora-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 9
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Orchestrate multiplayer game infrastructure via Hathora — manage applications, builds, deployments, and game rooms directly from your AI agent.
 
 ## Description
 Connect your **Hathora** account to any AI agent and take full control of your multiplayer game server orchestration through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Hathora** account to any AI agent and take full control of your m
 - **upload_build**: Upload a build file (tarball) for a specific build ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hathora** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new Hathora application named 'GalacticWarfare'."
+
+**🤖 AI Agent:**
+> I've created the application 'GalacticWarfare'. Its unique App ID is `app-789-xyz`. You can now use this ID to create builds and deployments.
+
+---
+
+**👤 You:**
+> "Start a new game room for appId 'app-789-xyz' in the London region."
+
+**🤖 AI Agent:**
+> Requesting room creation in London... Success! Room `room-abc-123` is now active. Would you like the connection info for this room?
+
+---
+
+**👤 You:**
+> "List all active processes for application 'app-789-xyz'."
+
+**🤖 AI Agent:**
+> I found 3 active processes for 'app-789-xyz'. Two are running in 'Seattle' and one in 'Frankfurt'. All processes are currently healthy.
+
+
 ## Installation & Usage
 
 To install and use the **Hathora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Hathora** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

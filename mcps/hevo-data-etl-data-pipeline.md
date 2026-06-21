@@ -1,12 +1,14 @@
 # Hevo Data (ETL & Data Pipeline) MCP Server
 
-Manage data pipelines via Hevo — list pipelines, monitor destinations, and track usage.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hevo-data-etl-data-pipeline)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hevo-data-etl-data-pipeline)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hevo-data-etl-data-pipeline-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hevo-data-etl-data-pipeline-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage data pipelines via Hevo — list pipelines, monitor destinations, and track usage.
 
 ## Description
 Connect your **Hevo Data** account to any AI agent and take full control of your automated data integration and ETL orchestration through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Hevo Data** account to any AI agent and take full control of your
 - **get_usage**: Get account usage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hevo Data (ETL & Data Pipeline)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active Hevo pipelines"
+
+**🤖 AI Agent:**
+> I've found 6 active pipelines. Highlights include 'Stripe to BigQuery' (ID: pipe-001), 'HubSpot to Snowflake' (ID: pipe-005), and 'Shopify to Redshift' (ID: pipe-008). Would you like to check the usage for any of these?
+
+---
+
+**👤 You:**
+> "Show me the destinations for my 'Sales Data' pipeline"
+
+**🤖 AI Agent:**
+> The 'Sales Data' pipeline (ID: pipe-005) is currently replicating to 2 destinations: a BigQuery production dataset and a Snowflake staging warehouse. Both are showing 'Healthy' status. Would you like to see the last sync time?
+
+---
+
+**👤 You:**
+> "How much of my row quota have I used this month?"
+
+**🤖 AI Agent:**
+> You've used 12.5 million rows out of your 20 million row monthly quota (62.5%). At current ingestion rates, you are projected to finish the month at 18.2 million rows. I can break down usage by pipeline if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Hevo Data (ETL & Data Pipeline)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Hevo Data (ETL & Data Pipeline)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

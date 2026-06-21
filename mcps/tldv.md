@@ -1,12 +1,14 @@
 # tl;dv MCP Server
 
-Record, transcribe, and clip key moments from Google Meet and Zoom calls so your team never misses important meeting insights.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tldv)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tldv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tldv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tldv-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Record, transcribe, and clip key moments from Google Meet and Zoom calls so your team never misses important meeting insights.
 
 ## Description
 Connect your **tl;dv** account to any AI agent and simplify how you manage your meeting recordings, transcripts, and AI-generated insights through natural conversation.
@@ -48,6 +50,33 @@ Connect your **tl;dv** account to any AI agent and simplify how you manage your 
 - **test_tldv_auth**: Verify credentials
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **tl;dv** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my recorded meetings from this month."
+
+**🤖 AI Agent:**
+> I've retrieved your meetings. You have 4 recent recordings including 'Q4 Roadmap Sync', 'User Interview - Alex', and 'Daily Standup'. Which one would you like the AI notes for?
+
+---
+
+**👤 You:**
+> "Summarize the key decisions made in the 'Q4 Roadmap Sync' meeting."
+
+**🤖 AI Agent:**
+> Fetching AI notes... In the 'Q4 Roadmap Sync' (ID: mtg_10293), the team decided to prioritize the Mobile SDK, push the API redesign to Q1, and schedule a security audit for next week. Would you like the full highlight list?
+
+---
+
+**👤 You:**
+> "Show me who attended the meeting with 'Alex' (ID: mtg_88231)."
+
+**🤖 AI Agent:**
+> I've retrieved the attendee list for mtg_88231. Participants included: Alex Rivera (External), Sarah Smith (Product), and Mike Ross (Engineering). The recording duration was 45 minutes.
+
+
 ## Installation & Usage
 
 To install and use the **tl;dv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **tl;dv** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

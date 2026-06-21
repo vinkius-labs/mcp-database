@@ -1,12 +1,14 @@
 # Bing Search MCP Server
 
-Power your AI agent with global web data via Bing Search — query web pages, images, news, videos, and local businesses in real-time.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bing-search-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bing-search-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bing-search-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bing-search-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Power your AI agent with global web data via Bing Search — query web pages, images, news, videos, and local businesses in real-time.
 
 ## Description
 Connect your Microsoft **Bing Search** API key to any AI agent and empower it with real-time web intelligence and graph data.
@@ -63,6 +65,33 @@ Retrieve explicitly indexed Video stream links and metadata
 Perform an explicit Web search using the Microsoft Bing Graph
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bing Search** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search the web for the latest advancements in solid-state batteries."
+
+**🤖 AI Agent:**
+> I found the top organic results from the Microsoft Graph. Recent breakthroughs from early 2026 show improvements in energy density... [Top 5 source URLs].
+
+---
+
+**👤 You:**
+> "Show me the trending global news right now."
+
+**🤖 AI Agent:**
+> Currently, the major trending topics are: 1. Launch of the new orbital telescope, 2. Global market indexes surge, 3. The latest international sports finals updates.
+
+---
+
+**👤 You:**
+> "Find images of modern minimalist architecture."
+
+**🤖 AI Agent:**
+> I extracted several image thumbnails with native pixel dimensions directly from Bing Images. Here they are... (Provides 10 high-resolution thumbnail URLs).
+
+
 ## Installation & Usage
 
 To install and use the **Bing Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Bing Search** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

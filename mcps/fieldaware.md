@@ -1,12 +1,14 @@
 # FieldAware MCP Server
 
-Connect FieldAware to automate field service management — manage jobs, customers, and invoices directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldaware)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldaware)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fieldaware-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fieldaware-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** field-service-management
-**Tools Count:** 12
+
+**Category:** [field-service-management](../categories/field-service-management.md)
+
+Connect FieldAware to automate field service management — manage jobs, customers, and invoices directly from your AI agent.
 
 ## Description
 FieldAware is a comprehensive field service management platform. This MCP server allows your AI agent to interact with your FieldAware account flawlessly.
@@ -45,6 +47,33 @@ FieldAware is a comprehensive field service management platform. This MCP server
 - **list_quotes**: List all quotes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FieldAware** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active jobs in FieldAware."
+
+**🤖 AI Agent:**
+> I've retrieved your jobs. You have 8 active assignments including 'AC Repair' (Job ID: 5501) and 'Annual Inspection' (Job ID: 5502). Which one would you like to see the details for?
+
+---
+
+**👤 You:**
+> "Show me the contact info for customer ID 12345."
+
+**🤖 AI Agent:**
+> Inspecting customer... ID 12345 is 'Global Tech Corp'. The primary contact is 'Sarah Miller' at sarah@globaltech.com. Shall I also check their active service locations?
+
+---
+
+**👤 You:**
+> "Check if there are any unpaid invoices."
+
+**🤖 AI Agent:**
+> Retrieving invoices... I found 3 unpaid invoices: INV-901 ($450), INV-902 ($1,200), and INV-905 ($350). Would you like to see the associated job details for these?
+
+
 ## Installation & Usage
 
 To install and use the **FieldAware** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **FieldAware** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

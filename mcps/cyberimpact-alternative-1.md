@@ -1,12 +1,14 @@
 # Cyberimpact MCP Server
 
-Manage email marketing lists and members — list subscribers, update profiles, and organize groups directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberimpact-alternative-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberimpact-alternative-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cyberimpact-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cyberimpact-alternative-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 7
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email marketing lists and members — list subscribers, update profiles, and organize groups directly from any AI agent.
 
 ## Description
 Connect your **Cyberimpact** account to any AI agent to streamline your email marketing workflows. Manage subscribers and groups through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Cyberimpact** account to any AI agent to streamline your email ma
 - **upsert_member**: Create or update a member
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cyberimpact** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the members currently in my Cyberimpact account."
+
+**🤖 AI Agent:**
+> I've retrieved your member list. You have several active subscribers, including 'john.doe@example.com' and 'jane.smith@test.com'. Would you like to see details for a specific member?
+
+---
+
+**👤 You:**
+> "Add the email 'newlead@company.com' to group ID 502."
+
+**🤖 AI Agent:**
+> I have successfully added 'newlead@company.com' to group 502. The member is now part of that segment for your future campaigns.
+
+---
+
+**👤 You:**
+> "Update the member 'contact@domain.com' with the first name 'Alice' and set language to French."
+
+**🤖 AI Agent:**
+> Processing the update... I've updated 'contact@domain.com' with the name Alice and set the language preference to 'fr_ca'.
+
+
 ## Installation & Usage
 
 To install and use the **Cyberimpact** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Cyberimpact** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

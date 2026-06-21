@@ -1,12 +1,14 @@
 # Semrush MCP Server
 
-Grant your AI agent access to Semrush's massive SEO database to analyze competitor backlink profiles, track domain ranks, and research profitable keywords contextually.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/semrush)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semrush)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semrush-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semrush-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 8
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Grant your AI agent access to Semrush's massive SEO database to analyze competitor backlink profiles, track domain ranks, and research profitable keywords contextually.
 
 ## Description
 Equip your conversational workflow with the raw data power of **Semrush**, the industry standard for Digital Marketing visibility. Through this server, your AI can pull immense amounts of SERP forensics directly into the context window. Stop switching tabs to look up keyword difficulty—just command your agent to fetch it seamlessly.
@@ -50,6 +52,33 @@ Get related keywords with volume and difficulty
 Get site audit quality overview for a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Semrush** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Pull the foundational organic ranking and paid traffic overview for the domain 'airbnb.com'. Target the US database."
+
+**🤖 AI Agent:**
+> Using the 'us' database configuration on `domain_overview`, I found that 'airbnb.com' commands a massive overarching Authority Score. Their organic search yields approximately 12.8M monthly hits relying on short-head housing terms, while their exact Paid Traffic scale denotes ~3.4M monthly clicks pushed primarily through Google Sponsored verticals.
+
+---
+
+**👤 You:**
+> "Find 10 related keywords for the term 'buy mechanical keyboard' including their respective difficulties and search volumes."
+
+**🤖 AI Agent:**
+> I processed `related_keywords` targeting 'buy mechanical keyboard'. Let's focus on three prominent signals out of the 10 fetched: 1) 'best mechanical keyboard 2024' (Volume: 24K, KD: 78%). 2) 'buy cheap wired mechanical keyboard' (Volume: 8K, KD: 42%). 3) 'buy tactile mechanical keyboard red switches' (Volume: 3.5k, KD: 27%). The third option presents an excellent low-competition long-tail entry point.
+
+---
+
+**👤 You:**
+> "Compare the overarching inbound domain performance between 'coca-cola.com' and 'pepsi.com'."
+
+**🤖 AI Agent:**
+> I executed `domain_vs_domain` between the corporate endpoints. Both share astronomically similar Authority Scores (~91). Coca-Cola leads marginally in total referring domains (approx. 240k unique backlinking entities), while Pepsi tracks slightly higher on brand-name aggregate search volume in the US. However, Coca-Cola is currently picking up 15% more non-brand long-tail queries overall.
+
+
 ## Installation & Usage
 
 To install and use the **Semrush** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Semrush** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

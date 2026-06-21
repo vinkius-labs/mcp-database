@@ -1,12 +1,14 @@
 # Farmonaut MCP Server
 
-Access satellite agriculture data via Farmonaut — monitor crop health with NDVI, weather, soil moisture, crop advisory, and deforestation alerts from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/farmonaut)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/farmonaut)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/farmonaut-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/farmonaut-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access satellite agriculture data via Farmonaut — monitor crop health with NDVI, weather, soil moisture, crop advisory, and deforestation alerts from any AI agent.
 
 ## Description
 Connect your **Farmonaut Satellite API** to any AI agent and take full control of satellite-based crop monitoring, vegetation index analysis, weather tracking, AI crop advisory, and deforestation detection through natural conversation.
@@ -81,6 +83,33 @@ Get Synthetic Aperture Radar (SAR) analysis for all-weather crop monitoring
 Retrieve satellite imagery for agricultural fields from multiple sources
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Farmonaut** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the NDVI trend for my rice field over the last 3 months."
+
+**🤖 AI Agent:**
+> Fetching NDVI data for rice field (field ID: R-2045)... Found 18 satellite observations from Sentinel-2 over the past 3 months. NDVI progression: Month 1 (0.32) — early vegetative stage, Month 2 (0.58) — active tillering, Month 3 (0.74) — peak vegetative vigor. Current average NDVI is 0.74 indicating healthy crop development. The highest NDVI of 0.79 was recorded on the latest clear-sky pass. Would you like crop advisory recommendations based on this trend?
+
+---
+
+**👤 You:**
+> "What is the 7-day weather forecast and current soil moisture for my wheat field?"
+
+**🤖 AI Agent:**
+> Fetching 7-day forecast and soil moisture for wheat field (field ID: W-1823)... Weather forecast: Next 2 days sunny 26-30°C no rain. Days 3-5: 70% chance of 20mm rainfall. Days 6-7: partly cloudy 24-28°C. Current soil moisture (root zone): 38% — adequate for current growth stage. With 20mm rain expected in 3-5 days irrigation can be delayed. AI advisory: Hold irrigation for now, reassess after rainfall event.
+
+---
+
+**👤 You:**
+> "Get AI crop advisory recommendations for my cotton field this week."
+
+**🤖 AI Agent:**
+> Generating AI advisory for cotton field (field ID: C-3156)... Current growth stage: Boll development. Recommendations: 1) IRRIGATION: Apply 25mm this week — soil moisture at 42% with no significant rain forecast. 2) FERTILIZER: Top-dress with potassium (K2O 40kg/ha) to support boll filling. 3) PEST CONTROL: Monitor for bollworm — NDVI shows uniform canopy but scout field edges. 4) HARVEST: Expected harvest window in 4-6 weeks based on current development rate. Priority: Irrigation within 3 days.
+
+
 ## Installation & Usage
 
 To install and use the **Farmonaut** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Farmonaut** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

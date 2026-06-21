@@ -1,12 +1,14 @@
 # Omnivore (Read-Later) MCP Server
 
-Manage your Omnivore library — search articles, read full content, and save new links directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omnivore-read-later)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnivore-read-later)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omnivore-read-later-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omnivore-read-later-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 4
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your Omnivore library — search articles, read full content, and save new links directly from your AI agent.
 
 ## Description
 Connect your **Omnivore** account to any AI agent to organize your reading list and extract knowledge from saved articles using natural language.
@@ -40,6 +42,33 @@ Connect your **Omnivore** account to any AI agent to organize your reading list 
 Search and filter articles in Omnivore library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Omnivore (Read-Later)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search my Omnivore library for unread articles about 'Machine Learning'."
+
+**🤖 AI Agent:**
+> I found 3 unread articles about Machine Learning. The most recent is 'Understanding Transformers' (slug: understanding-transformers). Would you like me to fetch the full content of any of these?
+
+---
+
+**👤 You:**
+> "Fetch the full content of the article with slug 'mcp-guide' for username 'alex_dev'."
+
+**🤖 AI Agent:**
+> I've retrieved the article 'The Ultimate MCP Guide'. It covers the Model Context Protocol architecture and implementation details. Would you like a summary of the key points?
+
+---
+
+**👤 You:**
+> "Save the URL 'https://blog.omnivore.app/p/getting-started' to my library."
+
+**🤖 AI Agent:**
+> Successfully saved the URL to your Omnivore library. It is now available in your inbox for later reading.
+
+
 ## Installation & Usage
 
 To install and use the **Omnivore (Read-Later)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Omnivore (Read-Later)** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

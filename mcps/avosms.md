@@ -1,12 +1,14 @@
 # AvoSMS MCP Server
 
-Powerful SMS automation — send messages, manage sender IDs, and coordinate contact lists via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/avosms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avosms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/avosms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/avosms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 11
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Powerful SMS automation — send messages, manage sender IDs, and coordinate contact lists via AI.
 
 ## Description
 Orchestrate your global mobile communication with **AvoSMS**, the high-performance messaging platform designed for scale. By connecting AvoSMS to your AI agent, you transform SMS outreach from a manual task into a natural conversation. Your agent can now send instant notifications, schedule future broadcasts, manage approved sender identities, and audit your contact lists without you ever touching a dashboard. Whether you're tracking customer responses or monitoring credit balances, your agent acts as a real-time mobile operations manager for your business.
@@ -47,6 +49,33 @@ Orchestrate your global mobile communication with **AvoSMS**, the high-performan
 - **send_sms**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AvoSMS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +33600000000 saying 'Your order is ready for pickup!' using sender 'ShopAlert'."
+
+**🤖 AI Agent:**
+> I've sent the SMS to +33600000000. It will appear on the recipient's phone as 'ShopAlert'.
+
+---
+
+**👤 You:**
+> "Check my AvoSMS credit balance and list recent replies."
+
+**🤖 AI Agent:**
+> Your current balance is 450.5 credits. I also found 3 recent responses from customers. Would you like me to read them for you?
+
+---
+
+**👤 You:**
+> "Add the phone number +123456789 to my 'VIP Customers' list."
+
+**🤖 AI Agent:**
+> I've added +123456789 to the 'VIP Customers' list (ID: 9876). Your list is now updated and ready for future campaigns.
+
+
 ## Installation & Usage
 
 To install and use the **AvoSMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **AvoSMS** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

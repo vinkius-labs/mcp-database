@@ -1,12 +1,14 @@
 # Freshcaller MCP Server
 
-Manage your cloud phone system, track calls, and oversee agents via AI agents with Freshcaller.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshcaller)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshcaller)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshcaller-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshcaller-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 12
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage your cloud phone system, track calls, and oversee agents via AI agents with Freshcaller.
 
 ## Description
 Connect your **Freshcaller** (now Freshdesk Contact Center) account to any AI agent to automate your cloud telephony and contact center management through the Model Context Protocol (MCP). Freshcaller is a modern phone system that enables teams to handle customer calls across the globe with zero hardware. This MCP server enables you to track call logs, monitor agent performance, and retrieve recording links directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Freshcaller** (now Freshdesk Contact Center) account to any AI ag
 - **list_agents**: List call center agents
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshcaller** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent calls and their duration."
+
+**🤖 AI Agent:**
+> Retrieving calls... I found 5 recent entries, including an inbound call from '+1234567890' (Duration: 120s) and an outbound call to '+10987654321' (Duration: 45s).
+
+---
+
+**👤 You:**
+> "Show me the status of all agents in my support team."
+
+**🤖 AI Agent:**
+> Fetching agents... In your support team, 3 agents are 'Online' (John, Sarah, Mike), 1 is 'On Call' (Emma), and 2 are 'Offline'.
+
+---
+
+**👤 You:**
+> "Get the recording link for call 'call_abc123'."
+
+**🤖 AI Agent:**
+> Retrieving recording... I've successfully fetched the secure recording link for call 'call_abc123'. You can access it here: [Recording Link].
+
+
 ## Installation & Usage
 
 To install and use the **Freshcaller** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Freshcaller** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

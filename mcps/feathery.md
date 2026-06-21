@@ -1,12 +1,14 @@
 # Feathery MCP Server
 
-Automate forms and user workflows via Feathery — manage users, retrieve form data, and monitor connector logs directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/feathery)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feathery)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/feathery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/feathery-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-operations
-**Tools Count:** 11
+
+**Category:** [business-operations](../categories/business-operations.md)
+
+Automate forms and user workflows via Feathery — manage users, retrieve form data, and monitor connector logs directly through your AI agent.
 
 ## Description
 Connect your **Feathery.io** account to any AI agent and take full control of your form automation and user data management through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Feathery.io** account to any AI agent and take full control of yo
 - **list_workflows**: List all automated workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Feathery** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active forms in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your forms. You have 'User Onboarding' (ID: form_123), 'Customer Feedback' (ID: form_456), and 'Lead Gen' (ID: form_789) currently active. Which one should I inspect?
+
+---
+
+**👤 You:**
+> "Show me the data submitted by user user_99."
+
+**🤖 AI Agent:**
+> Fetching data for user_99... They submitted 'John Doe', 'john@example.com', and selected 'Premium Plan' in the onboarding form. Would you like to see their full session history?
+
+---
+
+**👤 You:**
+> "Check if there are any connector errors for the Onboarding form."
+
+**🤖 AI Agent:**
+> Inspecting connector logs... I found one error for form_123: 'Klaviyo API rejected email format'. All other syncs were successful. Shall I retrieve the user ID associated with this error?
+
+
 ## Installation & Usage
 
 To install and use the **Feathery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Feathery** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

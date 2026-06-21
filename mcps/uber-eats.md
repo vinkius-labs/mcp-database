@@ -1,12 +1,14 @@
 # Uber Eats MCP Server
 
-AI restaurant management: manage orders, menus, deliveries, and store operations via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/uber-eats)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uber-eats)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uber-eats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uber-eats-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+AI restaurant management: manage orders, menus, deliveries, and store operations via agents.
 
 ## Description
 ### What you can do
@@ -79,6 +81,33 @@ Reject a pending Uber Eats order when unable to fulfill it
 Toggle availability status of a menu item (mark as in-stock or out-of-stock)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Uber Eats** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending orders and accept them automatically"
+
+**🤖 AI Agent:**
+> I'll check your pending orders and accept them right away.
+
+---
+
+**👤 You:**
+> "Update the price of 'Margherita Pizza' to R$45.90 and mark it as unavailable"
+
+**🤖 AI Agent:**
+> I'll update the menu item price and toggle its availability.
+
+---
+
+**👤 You:**
+> "Track the delivery status of order #12345 and tell me where the courier is"
+
+**🤖 AI Agent:**
+> I'll get real-time delivery tracking with courier location and ETA.
+
+
 ## Installation & Usage
 
 To install and use the **Uber Eats** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Uber Eats** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

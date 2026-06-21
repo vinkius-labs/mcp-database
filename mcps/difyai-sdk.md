@@ -1,12 +1,14 @@
 # Dify.AI SDK MCP Server
 
-Trigger and orchestrate Dify AI workflows, agents, and chatbots programmatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/difyai-sdk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/difyai-sdk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/difyai-sdk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/difyai-sdk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-apis
-**Tools Count:** 14
+
+**Category:** [developer-apis](../categories/developer-apis.md)
+
+Trigger and orchestrate Dify AI workflows, agents, and chatbots programmatically.
 
 ## Description
 Connect your Vinkius agents directly to **Dify.AI**, the leading open-source LLM app development platform. With 10 exposed tools, you can execute complex Dify workflows, send messages to specialized chatbots, retrieve session histories, and submit model feedback for RLHF.
@@ -53,6 +55,17 @@ Stop an in-progress chat message generation
 - **upload_file**: Upload a file via URL for multimodal understanding
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dify.AI SDK** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my recent Dify conversations and tell me the name of the last one."
+
+**🤖 AI Agent:**
+> Your last conversation in Dify is titled 'Data Processing Bot' (ID: conv-123).
+
+
 ## Installation & Usage
 
 To install and use the **Dify.AI SDK** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +74,11 @@ To install and use the **Dify.AI SDK** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

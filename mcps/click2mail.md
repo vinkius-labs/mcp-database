@@ -1,12 +1,14 @@
 # Click2Mail MCP Server
 
-Manage physical mail and printing via Click2Mail — track jobs, monitor credit balance, and submit mailings directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/click2mail)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/click2mail)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/click2mail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/click2mail-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage physical mail and printing via Click2Mail — track jobs, monitor credit balance, and submit mailings directly from any AI agent.
 
 ## Description
 Connect your **Click2Mail** account to any AI agent and take full control of your physical mailing and printing operations through natural conversation. Streamline how you manage letters, postcards, and certified mail natively.
@@ -45,6 +47,33 @@ Connect your **Click2Mail** account to any AI agent and take full control of you
 - **submit_mail_job**: Submit a mail job for production and delivery
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Click2Mail** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my active mail jobs in Click2Mail."
+
+**🤖 AI Agent:**
+> Retrieving your mail jobs... I found 3 items: 'Monthly Invoices' (In Production), 'New Year Postcards' (Mailed), and 'Service Notice' (Pending). Would you like the tracking for the postcards?
+
+---
+
+**👤 You:**
+> "What is the cost for job ID 98765?"
+
+**🤖 AI Agent:**
+> Checking cost for job 98765... The total estimated cost is $42.50 ($12.50 for printing and $30.00 for postage). You have enough credit to submit this job.
+
+---
+
+**👤 You:**
+> "Show me my current mailing credit balance."
+
+**🤖 AI Agent:**
+> Checking account balance... You currently have $150.75 in mailing credits available. This can be used for any future physical mailing jobs.
+
+
 ## Installation & Usage
 
 To install and use the **Click2Mail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Click2Mail** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

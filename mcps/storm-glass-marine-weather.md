@@ -1,12 +1,14 @@
 # Storm Glass Marine & Weather MCP Server
 
-Universal marine and weather intelligence — get global wave, tide, and bio data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/storm-glass-marine-weather)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storm-glass-marine-weather)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/storm-glass-marine-weather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/storm-glass-marine-weather-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 3
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Universal marine and weather intelligence — get global wave, tide, and bio data via AI.
 
 ## Description
 Equip your AI agent with high-resolution global weather and marine intelligence through the **Storm Glass** MCP server. This integration provides real-time and forecast data from the world's leading meteorological institutions (NOAA, MET Office, DWD, and more). Your agent can retrieve precise marine weather (wave height, swell, water temp), tide extremes, astronomical data (sun/moon), and oceanic bio data (chlorophyll, iron levels). Whether you are planning offshore operations, maritime shipping, or researching environmental trends, your agent acts as a dedicated oceanographer and meteorologist through natural conversation.
@@ -40,6 +42,33 @@ Get marine weather for a location
 - **get_tide_extremes**: Get tide extremes for a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Storm Glass Marine & Weather** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the wave height and water temp for Honolulu (21.3069, -157.8583)."
+
+**🤖 AI Agent:**
+> Retrieving marine data for Honolulu... Currently, the wave height is 1.2 meters and the water temperature is 25.4°C. The swell is coming from the North-West. Would you like to see the forecast for the next few hours?
+
+---
+
+**👤 You:**
+> "What are the high and low tide times for London Bridge today?"
+
+**🤖 AI Agent:**
+> I've fetched the tide extremes for the London Bridge area. High tide is expected at 14:45 (3.2m) and low tide at 21:10 (0.5m). Would you like the full schedule for the week?
+
+---
+
+**👤 You:**
+> "Get the current sunrise and moon phase for Rio de Janeiro."
+
+**🤖 AI Agent:**
+> Retrieving astronomical data... For Rio de Janeiro, sunrise was at 06:12. The current moon phase is a Waxing Gibbous (72% illumination).
+
+
 ## Installation & Usage
 
 To install and use the **Storm Glass Marine & Weather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Storm Glass Marine & Weather** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

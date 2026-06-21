@@ -1,12 +1,14 @@
 # Diffbot MCP Server
 
-Automate web data extraction via Diffbot — turn any website into structured JSON data for articles, products, discussions, and more directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/diffbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/diffbot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Automate web data extraction via Diffbot — turn any website into structured JSON data for articles, products, discussions, and more directly from any AI agent.
 
 ## Description
 Connect your **Diffbot** account to any AI agent and take full control of your automated web data extraction through natural conversation.
@@ -54,6 +56,33 @@ Extract using a user-defined custom Diffbot API
 - **extract_video**: Extract video content and metadata using Diffbot Video API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Diffbot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the article content from: https://techcrunch.com/2024/01/01/ai-trends"
+
+**🤖 AI Agent:**
+> Article extracted! Title: 'Top AI Trends for 2024'. Author: Jane Doe. I have the clean text body and the original HTML available. Would you like me to summarize the key points?
+
+---
+
+**👤 You:**
+> "What is the price and SKU for this product: [E-commerce URL]"
+
+**🤖 AI Agent:**
+> Retrieving product data... Name: 'Noise-Cancelling Headphones'. Price: $299.00. SKU: 'NC-700-BLK'. Availability: In Stock. I also have 15 detailed specifications available.
+
+---
+
+**👤 You:**
+> "Search for news about 'OpenAI' using: [News List URL]"
+
+**🤖 AI Agent:**
+> Analyzing news list... I found 5 related items including 'New Model Release' and 'Partnership with Apple'. Each item has a title, direct link, and content snippet. Would you like me to extract the full text for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Diffbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Diffbot** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

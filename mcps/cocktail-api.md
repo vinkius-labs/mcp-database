@@ -1,12 +1,14 @@
 # Cocktail API MCP Server
 
-Search cocktail recipes — audit ingredients and instructions via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cocktail-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cocktail-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cocktail-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cocktail-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search cocktail recipes — audit ingredients and instructions via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire mixology research and recipe auditing workflow with the **Cocktail API**, the comprehensive source for global drink data. By connecting the API Ninjas Cocktail API to your agent, you transform complex recipe searches into a natural conversation. Your agent can instantly retrieve cocktail details, audit ingredient lists, and query preparation instructions without you ever touching a drink portal. Whether you are planning a menu or conducting regional mixology research, your agent acts as a real-time sommelier, ensuring your data is always precise and localized.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your entire mixology research and recipe au
 - **search_cocktails**: Search for cocktail recipes by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cocktail API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the recipe for a 'Margarita' using Cocktail API."
+
+**🤖 AI Agent:**
+> I've retrieved the recipe for a Margarita! It includes tequila, triple sec, and lime juice. The instructions specify shaking the ingredients with ice and serving in a salt-rimmed glass. Would you like to see similar tequila-based cocktails?
+
+---
+
+**👤 You:**
+> "Find cocktails that contain 'vodka' and 'coffee'."
+
+**🤖 AI Agent:**
+> I've identified several cocktails matching your ingredients! The primary match is the 'Espresso Martini'. I can provide the full ingredient list and instructions for this drink if you'd like.
+
+---
+
+**👤 You:**
+> "Show recipes for 'Gin and Tonic'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for Gin and Tonic. It typically contains gin and tonic water, garnished with a lime wedge. I can assist you with more variation metadata if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Cocktail API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Cocktail API** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

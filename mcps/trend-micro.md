@@ -1,12 +1,14 @@
 # Trend Micro MCP Server
 
-Equip your AI agent with Vision One telemetry to investigate threats, audit endpoint activities, and manage security alerts natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/trend-micro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trend-micro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trend-micro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trend-micro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 8
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Equip your AI agent with Vision One telemetry to investigate threats, audit endpoint activities, and manage security alerts natively.
 
 ## Description
 Connect your AI agent exclusively to your **Trend Micro Vision One** security infrastructure. Bypass complex SIEM dashboards and interact directly with high-fidelity telemetry, XDR active detections, and structural security alerts utilizing only natural language. Allow your SOC analysts to extract network observables, check suspicious URLs, or isolate a machine's activity dynamically without writing API scripts.
@@ -43,6 +45,25 @@ Connect your AI agent exclusively to your **Trend Micro Vision One** security in
 - **list_suspicious_objects**: Lists suspicious objects (URLs, IPs, files) from threat intelligence
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Trend Micro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check and list my managed endpoints connected to Vision One right now."
+
+**🤖 AI Agent:**
+> I retrieved 4 endpoints connected successfully. All sensors mark online and active status, running Windows 11 Enterprise nodes.
+
+---
+
+**👤 You:**
+> "Extract the details of the active security alert tagged with ID 22b-88cx."
+
+**🤖 AI Agent:**
+> Retrieved alert data 22b-88cx. Classification: HIGH SEVERITY. Summary implies potential lateral movement via RDP protocol tied to suspicious endpoint 'LAPTOP-HR-04'. Investigate immediately.
+
+
 ## Installation & Usage
 
 To install and use the **Trend Micro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +72,11 @@ To install and use the **Trend Micro** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Flickr Photo Discovery MCP Server
 
-Universal photography intelligence — search millions of public photos via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flickr-photo-discovery)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flickr-photo-discovery)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flickr-photo-discovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flickr-photo-discovery-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 3
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Universal photography intelligence — search millions of public photos via AI.
 
 ## Description
 Equip your AI agent with the world's most iconic photography database through the **Flickr** MCP server. This integration provides real-time access to the Flickr ecosystem, allowing your agent to search for public photos by keyword, retrieve detailed metadata (including EXIF-like data and descriptions), and explore the latest uploads from the global community. Whether you are looking for creative inspiration, sourcing reference images, or researching photographic trends, your agent acts as a dedicated photo curator through natural conversation.
@@ -38,6 +40,33 @@ Equip your AI agent with the world's most iconic photography database through th
 - **search_flickr_photos**: Search for public photos on Flickr
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flickr Photo Discovery** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Flickr photos of 'Tokyo at night'."
+
+**🤖 AI Agent:**
+> Searching Flickr... I've found several stunning night shots of Tokyo, including neon-lit streets in Shinjuku and the Tokyo Tower. Would you like to see the photo titles or links?
+
+---
+
+**👤 You:**
+> "Show me the most recent photos uploaded to Flickr."
+
+**🤖 AI Agent:**
+> Retrieving the latest public uploads... Here are the most recent photos from the global community, featuring a mix of landscapes, street photography, and portraits. Would you like to inspect any of them in detail?
+
+---
+
+**👤 You:**
+> "Get details for Flickr photo ID '5123456789'."
+
+**🤖 AI Agent:**
+> Inspecting photo... This image is titled 'Golden Gate Fog' by user 'PhotoEnthusiast'. It was taken on May 12, 2021, and has a detailed description about the camera settings used.
+
+
 ## Installation & Usage
 
 To install and use the **Flickr Photo Discovery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Flickr Photo Discovery** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

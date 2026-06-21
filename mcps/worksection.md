@@ -1,12 +1,14 @@
 # Worksection MCP Server
 
-Collaborative project management to manage tasks, projects, and timers with AI using Admin API v2.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/worksection)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worksection)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/worksection-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/worksection-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Collaborative project management to manage tasks, projects, and timers with AI using Admin API v2.
 
 ## Description
 Connect your **Worksection** account to any AI agent to automate your project management and team productivity workflows. Worksection provides a comprehensive set of tools for managing tasks, tracking time, and monitoring real-time project activities through natural conversation.
@@ -47,6 +49,25 @@ Connect your **Worksection** account to any AI agent to automate your project ma
 - **stop_timer**: Finish time tracking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Worksection** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active project folders in Worksection."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have several active folders including 'Main Projects', 'Internal Tasks', and 'Client Work'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the last 10 events from my account activity log."
+
+**🤖 AI Agent:**
+> Fetching activity... Recent events include 'Task #123 completed by John', 'New comment on project Alpha', and 'Timer started by Sarah'.
+
+
 ## Installation & Usage
 
 To install and use the **Worksection** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +76,11 @@ To install and use the **Worksection** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

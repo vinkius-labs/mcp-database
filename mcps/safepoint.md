@@ -1,12 +1,14 @@
 # Safepoint MCP Server
 
-Protect your business data with secure backup, disaster recovery, and cloud-to-cloud replication for critical SaaS applications.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/safepoint)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/safepoint)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/safepoint-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/safepoint-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Protect your business data with secure backup, disaster recovery, and cloud-to-cloud replication for critical SaaS applications.
 
 ## Description
 Connect your **Safepoint** account to any AI agent and take full control of your lone worker safety orchestration and team monitoring through natural conversation. Safepoint provides a premier platform for protecting workers in high-risk or isolated environments, and this integration allows you to retrieve user metadata, monitor real-time safety alerts, and manage daily tasks directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual check-ins or siloed safety logs. Your AI acts as a dedicated safe
 - **list_safepoint_users**: List all users in the organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Safepoint** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active safety alerts in Safepoint."
+
+**🤖 AI Agent:**
+> I've retrieved your alerts. You have 2 active incidents: 'SOS Alert' (User: John) and 'Fall Detected' (User: Sarah). Would you like the precise location for any of them?
+
+---
+
+**👤 You:**
+> "Show me all active safety alerts and their severity levels across all monitored locations."
+
+**🤖 AI Agent:**
+> 7 active safety alerts. Critical (2): "Fire alarm triggered" at Building A, Floor 3 (10:23 AM, emergency services notified), "Unauthorized access attempt" at Server Room B (10:45 AM, security team dispatched). High (2): "Environmental sensor warning" at Warehouse 2 (temperature 42°C), "Equipment malfunction" at Production Line 3. Medium (2): "Access badge expired" for 12 employees, "CCTV offline" at Parking Lot C. Low (1): "Scheduled maintenance reminder" for Building B HVAC. All locations monitored: 14.
+
+---
+
+**👤 You:**
+> "Create a new safety task for the maintenance team to inspect all emergency exits in Building A."
+
+**🤖 AI Agent:**
+> Safety task created: "Emergency Exit Inspection - Building A". Assigned to: Maintenance Team (5 members). Location: Building A (8 emergency exits across 4 floors). Checklist: door functionality, signage visibility, pathway clearance, alarm testing, lighting verification. Due date: May 20, 2025. Priority: High (post-fire alarm incident). Compliance requirement: OSHA 1910.37. Previous inspection: March 15, 2025 (all passed). Photo documentation required for each exit.
+
+
 ## Installation & Usage
 
 To install and use the **Safepoint** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Safepoint** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

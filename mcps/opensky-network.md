@@ -1,12 +1,14 @@
 # OpenSky Network MCP Server
 
-Track real-time flights, view aircraft states, and get airport arrivals/departures via OpenSky API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/opensky-network)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensky-network)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensky-network-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensky-network-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 8
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Track real-time flights, view aircraft states, and get airport arrivals/departures via OpenSky API.
 
 ## Description
 Connect **OpenSky Network** to any AI agent and access global, open-source air traffic data -- track aircraft in real-time, view historical flights, and monitor airport activity through natural conversation.
@@ -46,6 +48,33 @@ Get all flights in a specific time interval
 - **get_recent_tracks**: Get recent tracks for a specific aircraft
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenSky Network** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all current flights near my location."
+
+**🤖 AI Agent:**
+> Found 3 aircraft nearby: 1. Delta 456 (A320) at 10,000ft. 2. Private Cessna (C172) at 3,500ft.
+
+---
+
+**👤 You:**
+> "Track the aircraft with ICAO24 code a1b2c3."
+
+**🤖 AI Agent:**
+> Aircraft a1b2c3: Altitude 35,000ft, Velocity 450 kts, Location 40.7128, -74.0060.
+
+---
+
+**👤 You:**
+> "What flights departed from EDDF in the last 2 hours?"
+
+**🤖 AI Agent:**
+> Found 45 departures from EDDF: 1. Lufthansa 400 to KJFK. 2. United 960 to ORD.
+
+
 ## Installation & Usage
 
 To install and use the **OpenSky Network** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **OpenSky Network** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

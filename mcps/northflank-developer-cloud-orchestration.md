@@ -1,12 +1,14 @@
 # Northflank (Developer Cloud & Orchestration) MCP Server
 
-Manage cloud infrastructure via Northflank — deploy microservices, trigger CI builds, and audit background jobs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/northflank-developer-cloud-orchestration)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/northflank-developer-cloud-orchestration)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/northflank-developer-cloud-orchestration-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/northflank-developer-cloud-orchestration-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage cloud infrastructure via Northflank — deploy microservices, trigger CI builds, and audit background jobs.
 
 ## Description
 Connect your **Northflank** account to any AI agent and take full control of your enterprise-grade developer platform, microservice orchestration, and continuous deployment through natural conversation.
@@ -63,6 +65,33 @@ Gracefully cycle container replicas for a specific Service
 - **trigger_build**: Command Northflank builders to compile and deploy latest code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Northflank (Developer Cloud & Orchestration)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all services in the 'api-gateway' project"
+
+**🤖 AI Agent:**
+> I've retrieved the services for 'api-gateway' (ID: gate-123). Highlights include 'Auth-Service' (Status: Running), 'Payment-Processor' (Status: Running), and 'Notification-Node'. Would you like to check the resource allocation for the auth service?
+
+---
+
+**👤 You:**
+> "Trigger a fresh build for service 'gate-123' in project 'proj-abc'"
+
+**🤖 AI Agent:**
+> Triggering production build… Success. I've signaled Northflank to pull the latest code from GitHub and start the build cycle for 'Auth-Service'. I'll monitor the progress and let you know once the new image is live.
+
+---
+
+**👤 You:**
+> "Show me the secret groups configured in my project"
+
+**🤖 AI Agent:**
+> Retrieving secret vaults… I've identified 2 logical groups: 'Production-Secrets' (Group ID: sec-987) and 'Shared-API-Keys'. I can provide the names of the environment variables mapped within these groups if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Northflank (Developer Cloud & Orchestration)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Northflank (Developer Cloud & Orchestration)** MCP serv
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

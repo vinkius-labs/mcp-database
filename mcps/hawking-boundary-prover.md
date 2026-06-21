@@ -1,12 +1,14 @@
 # Hawking Boundary Prover MCP Server
 
-A processing system crashed at midnight Dec 31. A date conversion returned 'January 0th' — a date that does not exist. Parsed as blank, the blank propagated to payment processing, 12,000 transactions failed in 14 minutes. Nobody tested the boundary. Hawking's career was about boundaries — the event horizon, the Big Bang singularity. He asked what happens at the boundary between a black hole and empty space. This tool forces that discipline: explore every edge case, communicate accessibly, work within constraints, confront paradoxes, and quantify failure probabilities.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hawking-boundary-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hawking-boundary-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hawking-boundary-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hawking-boundary-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** complex-reasoning
-**Tools Count:** 1
+
+**Category:** [complex-reasoning](../categories/complex-reasoning.md)
+
+A processing system crashed at midnight Dec 31. A date conversion returned 'January 0th' — a date that does not exist. Parsed as blank, the blank propagated to payment processing, 12,000 transactions failed in 14 minutes. Nobody tested the boundary. Hawking's career was about boundaries — the event horizon, the Big Bang singularity. He asked what happens at the boundary between a black hole and empty space. This tool forces that discipline: explore every edge case, communicate accessibly, work within constraints, confront paradoxes, and quantify failure probabilities.
 
 ## Description
 AI agents design for the happy path. They never ask what happens at the edges — zero items, maximum capacity, concurrent collision, dependency failure. They produce explanations that only experts understand. They ignore real constraints. They leave contradictions unresolved. They treat failure as impossible.
@@ -49,6 +51,33 @@ LLMs commit five boundary failures:
 Structured reflection tool for Hawking-level boundary condition analysis — forces exploration of edge cases and limits, accessible communication, honest constraint acknowledgment, paradox resolution, and probability quantification for uncertain outcomes. Catches Boundary Unexplored (analyzing only the happy path without testing limits — what happens at ZERO inputs? At MAXIMUM capacity? When operations COLLIDE? When dependencies FAIL? Hawking studied the event horizon — the boundary where physics breaks — not the calm center. Every system has an event horizon: the point where assumptions stop holding. If you only test the center, you will discover the boundary in production), Communication Opaque (explanations only an expert can follow — Hawking sold 25 million copies of A Brief History of Time with zero equations. If you cannot explain your approach in one sentence, you do not understand it yet. If a non-expert cannot follow your diagram in 2 minutes, the diagram is wrong), Constraints Ignored ("in a perfect world" planning without real limits — Hawking produced groundbreaking physics communicating at 15 words per minute through a cheek sensor. Real constraints are not obstacles — they are design parameters. Budget, team size, timeline, and resource limits are not things to ignore — they shape the solution), Paradox Unresolved (deferring contradictions instead of confronting them — "must be thorough AND must be fast" is a contradiction, not a requirement. Hawking spent decades confronting the black hole information paradox — information cannot be destroyed, but black holes destroy everything. He did not defer it. He resolved it with Hawking radiation), and Probability Neglected (assuming certainty in uncertain outcomes — "this will work" without quantifying failure likelihood. Hawking radiation: T = ℏc³/8πGMk — exact. Not "probably warm." "3 of the last 5 similar initiatives failed within 12 months: ~60% risk" is quantified. "It might not work" is not). Call once per plan, strategy, or design
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hawking Boundary Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Our purchase processing handles transactions reliably. In the normal case it works well — customers submit orders, we verify payment, and return a confirmation. The system will always be available since we use a reputable provider."
+
+**🤖 AI Agent:**
+> BOUNDARY_UNEXPLORED — 'In the normal case it works well' — Hawking did not study the normal case. He studied the event horizon. What happens when the order amount is $0.00? When it is $999,999.99? When the currency is unfamiliar? When the customer submits twice within seconds? When verification returns 'approved' but with a blank confirmation number? When the payment is declined AFTER you have reserved inventory? When your provider goes down for 4 hours (it has happened 7 times in 5 years)? 'Will always be available' — even the best providers guarantee 99.99%. That is 4.3 minutes of unavailability per month. What happens during those 4.3 minutes? Every boundary unexplored is an operational incident waiting.
+
+---
+
+**👤 You:**
+> "Boundary cases: empty cart returns 'cart_empty' error, no charge. Max $50K enforced at intake. 1,000 orders/hour capacity, overflow queued. Duplicate within 24h returns original via unique reference. Timeout >30s marks 'pending' with 60s reconciliation. Declined after hold releases within 5 min. Communication: 'Customer submits → we verify with unique reference → approve and confirm, or reject and release.' Analogy: like a restaurant — order, check kitchen, serve or remove from tab. 3-step visual, 90 seconds. Constraints: $2,400/month, 2 ops staff, 4 weeks. Provider 100 req/min, records 200 concurrent. Paradox: accuracy vs speed — async verification, 'processing' in <15s, confirm in 2-5 min. Thoroughness vs friction — enhanced verification only >$500 or first-time, ~$80/month cost. Probability: provider 99.99% = 4.3 min/month, queue mitigation. Backup $600/month rejected — acceptable downtime. Double charge 0.001%, auto-reversed in 5 min."
+
+**🤖 AI Agent:**
+> BOUNDARY_PROVEN — Hawking Method complete. Boundaries: zero (error cart_empty), max ($50K limit, 1,000/hour capacity), concurrent (unique reference, 24h window), failure (verification timeout → pending + reconciliation, declined after hold → compensating action). Communication: one-sentence summary, restaurant analogy, 90-second walkthrough — accessible to managers and new hires. Constraints: $2,400/month budget, 2 staff, 4 weeks, provider 100 req/min, records 200 concurrent, processing 500/shift — all acknowledged honestly, no 'in a perfect world.' Paradoxes: accuracy vs. speed resolved (async verification, under 15s response), thoroughness vs. friction resolved (risk-based at $500 threshold, 0.02% error increase quantified at $80/month). Probability: provider 99.99% (3 incidents/12 months, queue mitigation), facility backup evaluated and rejected ($600/month vs. 4.3 min acceptable downtime), double charge 0.001% (auto-reversal within 5 min). Every edge explored. Every limit tested.
+
+---
+
+**👤 You:**
+> "Boundary: handled zero case and max case. Communication: the workflow is self-explanatory and anyone can see how it works — it is straightforward. Constraints: ideally we would use a dedicated fraud analysis team, and if the staff were larger we would build real-time monitoring. Paradox: accuracy vs. speed — we accept this tradeoff, we will deal with it later."
+
+**🤖 AI Agent:**
+> COMMUNICATION_OPAQUE — Boundary passes: zero and max cases handled. But communication fails: 'self-explanatory,' 'anyone can see,' 'straightforward' — Hawking did not say quantum cosmology was 'self-explanatory.' He wrote A Brief History of Time. Can you explain your purchase processing in ONE sentence? Can a new team member follow the flow in 2 minutes? What is your analogy? Additionally: 'ideally we would' and 'if the staff were larger' — constraints ignored, designing for a world that does not exist. And 'we accept this tradeoff, deal with it later' — paradox unresolved. Hawking confronted the information paradox for decades. Which side wins: accuracy or speed? What is sacrificed? What is the measured impact?
+
+
 ## Installation & Usage
 
 To install and use the **Hawking Boundary Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Hawking Boundary Prover** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

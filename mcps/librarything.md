@@ -1,12 +1,14 @@
 # LibraryThing MCP Server
 
-Look up books by ISBN, explore works, and check library coverage — a bibliographic intelligence tool for AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/librarything)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/librarything)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/librarything-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/librarything-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 4
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Look up books by ISBN, explore works, and check library coverage — a bibliographic intelligence tool for AI agents.
 
 ## Description
 Connect **LibraryThing** to your AI agent for instant book lookups, bibliographic data, and library coverage analysis.
@@ -39,6 +41,17 @@ Find all ISBNs for different editions of the same book
 Find the LibraryThing work ID for a book
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LibraryThing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Look up the book with ISBN 978-0-13-468599-1."
+
+**🤖 AI Agent:**
+> Found it! 'The Pragmatic Programmer' by David Thomas and Andrew Hunt. Publisher: Addison-Wesley (2019, 2nd edition). Community rating: 4.2/5 with 1,847 members. Tagged: programming, software-engineering, best-practices.
+
+
 ## Installation & Usage
 
 To install and use the **LibraryThing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +60,11 @@ To install and use the **LibraryThing** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

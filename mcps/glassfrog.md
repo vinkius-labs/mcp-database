@@ -1,12 +1,14 @@
 # GlassFrog MCP Server
 
-Manage Holacracy circles, roles, and tactical projects via AI agents with GlassFrog.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/glassfrog)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glassfrog)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glassfrog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glassfrog-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 12
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage Holacracy circles, roles, and tactical projects via AI agents with GlassFrog.
 
 ## Description
 Connect your **GlassFrog** organization to any AI agent to automate your Holacracy governance and tactical operations through the Model Context Protocol (MCP). GlassFrog is the premier platform for self-management and organizational clarity. This MCP server enables you to retrieve circle structures, role definitions, project lists, and performance metrics directly through natural conversation.
@@ -48,6 +50,33 @@ Connect your **GlassFrog** organization to any AI agent to automate your Holacra
 - **list_holacracy_roles**: List role definitions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GlassFrog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active circles in my organization."
+
+**🤖 AI Agent:**
+> Retrieving circles... I found 5 active circles, including 'General Circle' (ID: 1), 'Engineering', and 'Marketing'. Would you like the roles for any of them?
+
+---
+
+**👤 You:**
+> "What are the accountabilities for the 'Product Manager' role?"
+
+**🤖 AI Agent:**
+> Fetching role details... The Product Manager role (Circle: Engineering) has 3 accountabilities: 1. Defining product strategy, 2. Prioritizing the roadmap, 3. Gathering user feedback.
+
+---
+
+**👤 You:**
+> "Show me the current tactical metrics for the 'Marketing' circle (ID: 123)."
+
+**🤖 AI Agent:**
+> Retrieving metrics... For the Marketing circle, I found 2 active metrics: 'Monthly Active Users' and 'Ad Spend Efficiency'. Both were last updated 2 days ago.
+
+
 ## Installation & Usage
 
 To install and use the **GlassFrog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **GlassFrog** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

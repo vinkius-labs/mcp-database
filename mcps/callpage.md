@@ -1,12 +1,14 @@
 # CallPage MCP Server
 
-Manage callbacks and leads via CallPage — track calls, manage widgets, and coordinate with your sales team directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/callpage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callpage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/callpage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/callpage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage callbacks and leads via CallPage — track calls, manage widgets, and coordinate with your sales team directly from any AI agent.
 
 ## Description
 Connect your **CallPage** account to any AI agent and orchestrate your lead generation, callback management, and team productivity through natural conversation.
@@ -46,6 +48,33 @@ Connect your **CallPage** account to any AI agent and orchestrate your lead gene
 - **list_widgets**: List all CallPage widgets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CallPage** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my leads from today in CallPage."
+
+**🤖 AI Agent:**
+> I've retrieved your leads. You have 5 new leads today, including 'John Doe' (+1234567890) and 'Sarah Smith' (intent: inquiry).
+
+---
+
+**👤 You:**
+> "Show the last 3 call recordings."
+
+**🤖 AI Agent:**
+> Retrieving recent calls... I found 3 recordings: Call #101 (2m 30s), Call #105 (1m 15s), and Call #109 (4m 45s). You can listen to them here: [Links].
+
+---
+
+**👤 You:**
+> "What are the settings for widget 'Main Website'?"
+
+**🤖 AI Agent:**
+> Widget 'Main Website' (ID: wid_123) is currently active. It has 'Delayed Callback' enabled (28 seconds) and is assigned to the 'Sales' department.
+
+
 ## Installation & Usage
 
 To install and use the **CallPage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **CallPage** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

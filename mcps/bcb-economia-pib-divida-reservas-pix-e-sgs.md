@@ -1,12 +1,14 @@
 # BCB Economia — PIB, Dívida, Reservas, PIX e SGS MCP Server
 
-Brazilian economic indicators: monthly GDP proxy (IBC-Br), public debt/GDP ratio, international reserves, trade balance, unemployment rate (PNAD), PIX payment statistics, and universal access to 20,000+ BCB time series via SGS codes.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-economia-pib-divida-reservas-pix-e-sgs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-economia-pib-divida-reservas-pix-e-sgs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bcb-economia-pib-divida-reservas-pix-e-sgs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bcb-economia-pib-divida-reservas-pix-e-sgs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Brazilian economic indicators: monthly GDP proxy (IBC-Br), public debt/GDP ratio, international reserves, trade balance, unemployment rate (PNAD), PIX payment statistics, and universal access to 20,000+ BCB time series via SGS codes.
 
 ## Description
 Brazilian economic data.
@@ -45,6 +47,42 @@ Obter estatísticas do PIX — volume e quantidade de transações
 Consultar qualquer série temporal do BCB pelo código SGS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BCB Economia — PIB, Dívida, Reservas, PIX e SGS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Give me a Brazil economic overview: GDP, debt, reserves, and unemployment"
+
+**🤖 AI Agent:**
+> 🇧🇷 **Brazil Economic Snapshot**
+
+📈 GDP (IBC-Br): +0.3% monthly
+💳 Debt/GDP: 62.4%
+🏦 Reserves: $356.2B
+⚖️ Trade Balance: +$6.8B
+👥 Unemployment: 6.8%
+💳 PIX: 4.2B transactions/month
+
+6 BCB data sources queried.
+
+---
+
+**👤 You:**
+> "Retrieve the latest PIX payment statistics."
+
+**🤖 AI Agent:**
+> Analyzing Central Bank data... The PIX network registered 4.2 billion active transfers in the last 30 days securely.
+
+---
+
+**👤 You:**
+> "Get the historical series code 432 representing interest rates."
+
+**🤖 AI Agent:**
+> SGS Code 432 successfully pulled. The Selic reference target curve maintained a 10.50% steady metric over the last board meeting.
+
+
 ## Installation & Usage
 
 To install and use the **BCB Economia — PIB, Dívida, Reservas, PIX e SGS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +91,11 @@ To install and use the **BCB Economia — PIB, Dívida, Reservas, PIX e SGS** MC
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

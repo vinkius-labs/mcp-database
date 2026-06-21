@@ -1,12 +1,14 @@
 # Kindful MCP Server
 
-Manage nonprofit fundraising and donor relationships via Kindful — query contacts, track transactions, and monitor campaigns directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kindful)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kindful)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kindful-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kindful-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 12
+
+**Category:** [data-management](../categories/data-management.md)
+
+Manage nonprofit fundraising and donor relationships via Kindful — query contacts, track transactions, and monitor campaigns directly from your AI agent.
 
 ## Description
 Connect your **Kindful** account to any AI agent to streamline your nonprofit operations and donor management through natural language.
@@ -49,6 +51,33 @@ Create an import job
 - **verify_webhook**: Verify webhook event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kindful** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active fundraising campaigns and show their current progress."
+
+**🤖 AI Agent:**
+> I've retrieved 3 active campaigns: 'Annual Gala' (Raised: $45,000 / Goal: $50,000), 'Clean Water Project' (Raised: $12,000 / Goal: $20,000), and 'Youth Education' (Raised: $5,500 / Goal: $10,000).
+
+---
+
+**👤 You:**
+> "Search for Kindful contacts who have an email address and belong to group ID 789."
+
+**🤖 AI Agent:**
+> Searching... I found 12 contacts in Group 789 with valid email addresses. Would you like me to list their names and primary emails?
+
+---
+
+**👤 You:**
+> "Show me all transactions recorded after 2024/01/01 for campaign ID 123."
+
+**🤖 AI Agent:**
+> I found 8 transactions for campaign 123 since January 1st, 2024, totaling $2,450. The largest single donation was $1,000 from donor ID 4567.
+
+
 ## Installation & Usage
 
 To install and use the **Kindful** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Kindful** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # MindsDB (AI Database & Predictors) MCP Server
 
-Manage AI-powered data via MindsDB — execute SQL predictions, audit ML models, and connect data sources.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mindsdb-ai-database-predictors)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mindsdb-ai-database-predictors)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mindsdb-ai-database-predictors-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mindsdb-ai-database-predictors-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 6
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage AI-powered data via MindsDB — execute SQL predictions, audit ML models, and connect data sources.
 
 ## Description
 Connect your **MindsDB** instance to any AI agent and take full control of your machine learning workflows, automated predictions, and data integrations through natural SQL-based conversation.
@@ -48,6 +50,33 @@ Execute arbitrary SQL statements bounding MindsDB elements
 Get active cluster diagnostic and version statistics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MindsDB (AI Database & Predictors)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all ML models in the 'mindsdb' project"
+
+**🤖 AI Agent:**
+> I've retrieved your AI models from the 'mindsdb' project. Highlights include 'home_price_predictor' (Status: Complete), 'sales_forecaster' (Status: Training, 45%), and 'customer_churn_model'. Which one would you like to check the accuracy for?
+
+---
+
+**👤 You:**
+> "Execute SQL: SELECT price, price_explain FROM mindsdb.home_price_predictor WHERE sqft = 2500"
+
+**🤖 AI Agent:**
+> Executing prediction query… The predicted price for a 2500 sqft home is $450,000. Explanation: The model heavily weighted the square footage and recent neighborhood sales trends. Would you like to run this prediction for a different set of features?
+
+---
+
+**👤 You:**
+> "Show me all connected databases in my MindsDB instance"
+
+**🤖 AI Agent:**
+> I've identified 3 connected data sources: 'production_pg' (PostgreSQL), 'snowflake_warehouse' (Snowflake), and 'marketing_sheets' (Google Sheets). I can list the available tables for any of these sources if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **MindsDB (AI Database & Predictors)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **MindsDB (AI Database & Predictors)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

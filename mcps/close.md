@@ -1,12 +1,14 @@
 # Close MCP Server
 
-Manage sales and pipelines via Close CRM — track leads, monitor opportunities, and manage tasks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/close)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/close)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/close-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/close-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 8
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage sales and pipelines via Close CRM — track leads, monitor opportunities, and manage tasks directly from any AI agent.
 
 ## Description
 Connect your **Close** CRM account to any AI agent and take full control of your sales automation through natural conversation. Streamline how you manage leads, deals, and daily to-dos natively.
@@ -45,6 +47,33 @@ Connect your **Close** CRM account to any AI agent and take full control of your
 - **list_close_tasks**: List CRM tasks and reminders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Close** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 leads in Close."
+
+**🤖 AI Agent:**
+> Retrieving your recent leads... I found 5 items: 'Acme Corp' (Interested), 'TechFlow' (Potential), 'Global Dist' (Qualified), and 2 others. Would you like to see the contacts for Acme?
+
+---
+
+**👤 You:**
+> "Show me the value of my current sales pipeline."
+
+**🤖 AI Agent:**
+> Calculating pipeline value... Across all active opportunities, your current pipeline value is $125,000. Most deals are in the 'Discovery' stage ($80,000).
+
+---
+
+**👤 You:**
+> "What are my pending tasks for this week?"
+
+**🤖 AI Agent:**
+> Checking your tasks... You have 12 pending tasks this week, including 5 follow-up calls, 3 contract reviews, and 4 email responses. Should I list the high-priority ones?
+
+
 ## Installation & Usage
 
 To install and use the **Close** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Close** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

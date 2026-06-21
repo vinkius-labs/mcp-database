@@ -1,12 +1,14 @@
 # CARTO MCP Server
 
-Empower your AI agents to execute spatial SQL, generate routes, create driving isolines, and bulk geocode directly on CARTO.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/carto)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carto)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carto-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 10
+
+**Category:** [databases](../categories/databases.md)
+
+Empower your AI agents to execute spatial SQL, generate routes, create driving isolines, and bulk geocode directly on CARTO.
 
 ## Description
 Connect your **CARTO** platform to any AI agent and take full control of your cloud-native spatial analytics without touching the GIS interface.
@@ -65,6 +67,33 @@ List all visualization datasets (maps and tables) available in your CARTO organi
 Check the execution status of a previously submitted CARTO async SQL job, returning the current state (pending, running, done, failed) and any error messages if the job encountered issues
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CARTO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Execute a SQL query limiting to 10 rows on my 'retail_stores' dataset to check the schema."
+
+**🤖 AI Agent:**
+> The query executed successfully. The schema for 'retail_stores' includes columns: store_id, revenue, state_code, and geom. Here are the top 3 rows formatted for readability: ...
+
+---
+
+**👤 You:**
+> "Take these 5 addresses in Madrid and bulk geocode them to lat/lon coordinates."
+
+**🤖 AI Agent:**
+> Batch geocoding completed using CARTO LDS. I have translated the 5 specific text blocks into geo-coded coordinates. Example: Calle de Alcalá, 45, Madrid matches exactly to [40.418, -3.696]. Would you like me to dump this formatted JSON object for you?
+
+---
+
+**👤 You:**
+> "Generate a 15-minute drive-time isoline around Times Square, New York."
+
+**🤖 AI Agent:**
+> Isoline calculation finished. Based on current local routing systems, the GeoJSON geometry covers exactly the 15-minute vehicular reach extending roughly 1.8 miles outwards, factoring one-way routes. I am outputting the boundary format payload here.
+
+
 ## Installation & Usage
 
 To install and use the **CARTO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **CARTO** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

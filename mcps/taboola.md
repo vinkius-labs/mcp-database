@@ -1,12 +1,14 @@
 # Taboola MCP Server
 
-Manage Taboola advertising campaigns, ads, and performance reports directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/taboola)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taboola)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taboola-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taboola-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage Taboola advertising campaigns, ads, and performance reports directly from any AI agent.
 
 ## Description
 Connect your **Taboola Backstage** account to any AI agent and take full control of your native advertising workflows through natural conversation.
@@ -46,6 +48,33 @@ No more jumping between tabs to check CTR or adjust daily caps. Your AI acts as 
 - **create_campaign_item**: Create a new campaign item (ad)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Taboola** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Taboola accounts."
+
+**🤖 AI Agent:**
+> I've retrieved your accounts. You have access to: 'Global_Marketing_US' (ID: act-9821) and 'EMEA_Expansion' (ID: act-4432). Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Get a summary report for account 'act-9821' grouped by day."
+
+**🤖 AI Agent:**
+> Fetching the daily summary for 'act-9821'... For the last period, you had 1.2M impressions, 4.5k clicks (0.37% CTR), and a total spend of $2,140. Would you like to see the top-performing items for this account?
+
+---
+
+**👤 You:**
+> "Update campaign 'camp-556' in account 'act-9821' to change the CPC to '0.45'."
+
+**🤖 AI Agent:**
+> Updating campaign settings... The CPC for 'camp-556' has been successfully updated to 0.45. The campaign remains active with its current daily cap.
+
+
 ## Installation & Usage
 
 To install and use the **Taboola** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Taboola** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

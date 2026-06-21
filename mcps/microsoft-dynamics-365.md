@@ -1,12 +1,14 @@
 # Microsoft Dynamics 365 MCP Server
 
-Manage accounts, opportunities, orders, and business processes on Microsoft Dynamics 365 — the unified CRM & ERP platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-dynamics-365)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-dynamics-365)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/microsoft-dynamics-365-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/microsoft-dynamics-365-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage accounts, opportunities, orders, and business processes on Microsoft Dynamics 365 — the unified CRM & ERP platform.
 
 ## Description
 Connect your **Microsoft Dynamics 365** environment to any AI agent and manage your CRM and ERP operations through natural conversation.
@@ -66,6 +68,33 @@ List sales opportunities
 - **list_contacts**: List Dynamics 365 contacts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Microsoft Dynamics 365** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all opportunities closing this month with value above $100K."
+
+**🤖 AI Agent:**
+> Found 8 opportunities closing this month with value > $100K: 1. 'Enterprise Cloud Migration' — $450,000 (Stage: Negotiate, Probability: 85%), 2. 'Digital Transformation Q2' — $280,000 (Stage: Propose, Probability: 70%), and 6 more. Total pipeline value: $1,890,000. Want details on any deal?
+
+---
+
+**👤 You:**
+> "Create a new support case for account 'Contoso Ltd' about a billing discrepancy."
+
+**🤖 AI Agent:**
+> Support case CAS-2026-12345 created successfully. Account: Contoso Ltd, Subject: 'Billing Discrepancy', Priority: High, Status: Active. The case has been assigned to the Billing Support queue. Would you like to attach any documents or add internal notes?
+
+---
+
+**👤 You:**
+> "What's the total revenue from the EMEA region this quarter?"
+
+**🤖 AI Agent:**
+> EMEA Revenue (Q2 2026): Total closed-won revenue: €3,240,000 across 34 deals. Top contributors: 1. UK — €1,120,000 (15 deals), 2. Germany — €890,000 (8 deals), 3. France — €620,000 (6 deals). Quarter-over-quarter growth: +14.2%. Want a breakdown by product line?
+
+
 ## Installation & Usage
 
 To install and use the **Microsoft Dynamics 365** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Microsoft Dynamics 365** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

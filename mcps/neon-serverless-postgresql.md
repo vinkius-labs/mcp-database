@@ -1,12 +1,14 @@
 # Neon (Serverless PostgreSQL) MCP Server
 
-Manage serverless database infrastructure via Neon — spawn zero-copy branches, audit projects, and monitor compute endpoints.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/neon-serverless-postgresql)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neon-serverless-postgresql)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neon-serverless-postgresql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neon-serverless-postgresql-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage serverless database infrastructure via Neon — spawn zero-copy branches, audit projects, and monitor compute endpoints.
 
 ## Description
 Connect your **Neon** account to any AI agent and take full control of your serverless PostgreSQL infrastructure, database branching, and project orchestration through natural conversation.
@@ -61,6 +63,33 @@ Discover connection routing endpoints spanning the Neon project
 Extract PostgreSQL user Roles operating on a Branch
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Neon (Serverless PostgreSQL)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all serverless projects in my Neon account"
+
+**🤖 AI Agent:**
+> I've retrieved your Neon projects. Currently, you have 3 workspaces: 'prod-cluster' (Region: AWS us-east-1), 'staging-env', and 'dev-sandbox'. Would you like to see the active branches for the production cluster?
+
+---
+
+**👤 You:**
+> "Create a new branch called 'feat-user-auth' from the 'main' branch"
+
+**🤖 AI Agent:**
+> Spawning zero-copy clone… Success. I've created the 'feat-user-auth' branch (ID: br-12345) from your main source. This branch is now isolated and ready for queries. I'll provide the new compute endpoint URL for this branch immediately.
+
+---
+
+**👤 You:**
+> "What databases and roles are configured on branch 'br-12345'?"
+
+**🤖 AI Agent:**
+> Retrieving branch inventory… On 'br-12345', I've identified 2 databases: 'main_app' and 'analytics'. There are 3 active roles: 'neondb_owner', 'app_writer', and 'readonly_user'. I can help you verify the specific permissions for any of these roles if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Neon (Serverless PostgreSQL)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Neon (Serverless PostgreSQL)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

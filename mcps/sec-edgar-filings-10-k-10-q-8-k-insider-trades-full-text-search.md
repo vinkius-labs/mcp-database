@@ -1,12 +1,14 @@
 # SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search MCP Server
 
-Access all SEC filings: 10-K annual reports, 10-Q quarterly reports, 8-K material event disclosures, Form 4 insider trading data, and full-text search across every document ever filed on EDGAR. Filter by company, form type, and date range.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-filings-10-k-10-q-8-k-insider-trades-full-text-search-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access all SEC filings: 10-K annual reports, 10-Q quarterly reports, 8-K material event disclosures, Form 4 insider trading data, and full-text search across every document ever filed on EDGAR. Filter by company, form type, and date range.
 
 ## Description
 SEC filings access.
@@ -43,6 +45,50 @@ Get insider trading filings (Form 4) — officer and director stock transactions
 Full-text search across all SEC filings — find any keyword in any document
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me Tesla's latest 10-K annual report"
+
+**🤖 AI Agent:**
+> 📄 **SEC EDGAR: 10-K Annual Reports — TSLA**
+
+Tesla, Inc. (CIK: 0001318605)
+
+1. 10-K — Filed: 2026-01-29, Period: 2025-12-31, Document URL: https://www.sec.gov/Archives/edgar/data/1318605/...
+2. 10-K — Filed: 2025-01-27, Period: 2024-12-31
+...
+
+---
+
+**👤 You:**
+> "Search SEC filings mentioning 'artificial intelligence' in 10-K reports"
+
+**🤖 AI Agent:**
+> 🔍 **EDGAR Full-Text Search: 'artificial intelligence'**
+
+Found 12,847 results in 10-K filings
+
+Top results:
+1. NVIDIA Corp — 10-K (2026-02-26)
+2. Microsoft Corp — 10-K (2025-08-02)
+3. Alphabet Inc — 10-K (2026-01-30)
+
+---
+
+**👤 You:**
+> "Get recent insider trades (Form 4) for Microsoft"
+
+**🤖 AI Agent:**
+> 👤 **Insider Trades (Form 4): MSFT**
+
+Recent Form 4 filings for Microsoft:
+1. Form 4 - Satya Nadella (2026-03-01) - Document URL: ...
+2. Form 4 - Brad Smith (2026-02-15) - Document URL: ...
+
+
 ## Installation & Usage
 
 To install and use the **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades & Full-Text Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +97,11 @@ To install and use the **SEC EDGAR Filings — 10-K, 10-Q, 8-K, Insider Trades &
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

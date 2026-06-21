@@ -1,12 +1,14 @@
 # Akash Network (Decentralized GPU & Cloud API) MCP Server
 
-Deploy and manage decentralized GPU and cloud resources on Akash Network—create deployments, manage leases, and monitor escrow balances directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/akash-network-decentralized-gpu-cloud-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/akash-network-decentralized-gpu-cloud-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/akash-network-decentralized-gpu-cloud-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/akash-network-decentralized-gpu-cloud-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 13
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Deploy and manage decentralized GPU and cloud resources on Akash Network—create deployments, manage leases, and monitor escrow balances directly.
 
 ## Description
 Connect to **Akash Network**, the world's first decentralized open-source cloud, through your AI agent. This server allows you to orchestrate high-performance computing resources, including GPUs for AI training and inference, using natural language.
@@ -52,6 +54,33 @@ Poll for provider bids for a deployment
 - **update_deployment**: Update an active deployment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Akash Network (Decentralized GPU & Cloud API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active deployments on Akash."
+
+**🤖 AI Agent:**
+> I've retrieved your deployments. You have 2 active workloads: 'AI-Training-Cluster' (DSEQ: 105542) and 'Web-App-Node' (DSEQ: 105548). Would you like to check the escrow balance for either of them?
+
+---
+
+**👤 You:**
+> "Add a $10 deposit to deployment 105542."
+
+**🤖 AI Agent:**
+> Processing deposit... I have successfully added $10.00 USD to the escrow for DSEQ 105542. The new balance is now $14.50 USD, extending your estimated runtime.
+
+---
+
+**👤 You:**
+> "Close the deployment with DSEQ 105548."
+
+**🤖 AI Agent:**
+> Closing deployment... DSEQ 105548 has been successfully closed. Associated resources have been released and the remaining escrow balance will be returned to your account.
+
+
 ## Installation & Usage
 
 To install and use the **Akash Network (Decentralized GPU & Cloud API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Akash Network (Decentralized GPU & Cloud API)** MCP ser
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

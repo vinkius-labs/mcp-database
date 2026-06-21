@@ -1,12 +1,14 @@
 # DeskTime MCP Server
 
-Understand how your team spends their workday with automatic time tracking, productivity scoring, and project cost analysis.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/desktime)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/desktime)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/desktime-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/desktime-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Understand how your team spends their workday with automatic time tracking, productivity scoring, and project cost analysis.
 
 ## Description
 Connect your **DeskTime** account to any AI agent and take full control of your workforce management and productivity tracking workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual logging or digging through productivity charts in the dashboard. 
 - **list_project_tasks**: List tasks in project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeskTime** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me a list of all employees currently tracking time."
+
+**🤖 AI Agent:**
+> I've retrieved the online staff list. Currently, 5 employees are tracking time, including @user1 and @user2. Productivity levels are looking healthy across the team.
+
+---
+
+**👤 You:**
+> "Check the productivity report for 'last_week'."
+
+**🤖 AI Agent:**
+> Scanning reports... Last week, the company average productivity was 84%. Total tracked time: 320 hours. Would you like a breakdown of the top performers?
+
+---
+
+**👤 You:**
+> "Create a new task 'Review MCP API' in project ID '123'."
+
+**🤖 AI Agent:**
+> Action complete! Task 'Review MCP API' has been successfully created within project 123. Your team can now start tracking time against this specific task.
+
+
 ## Installation & Usage
 
 To install and use the **DeskTime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **DeskTime** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

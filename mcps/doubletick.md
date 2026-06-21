@@ -1,12 +1,14 @@
 # DoubleTick MCP Server
 
-Equip your AI agent to manage WhatsApp conversations, track contacts, and monitor message delivery via the DoubleTick API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/doubletick)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doubletick)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doubletick-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doubletick-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Equip your AI agent to manage WhatsApp conversations, track contacts, and monitor message delivery via the DoubleTick API.
 
 ## Description
 Integrate **DoubleTick**, the official WhatsApp Business API-powered marketing and CRM platform, directly into your AI workflow. Manage your customer conversations, track contacts and opt-in statuses, monitor message delivery and templates, and oversee your team activity using natural language.
@@ -44,6 +46,33 @@ Integrate **DoubleTick**, the official WhatsApp Business API-powered marketing a
 - **send_whatsapp_template**: Send a pre-approved WhatsApp template message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DoubleTick** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our WhatsApp contacts."
+
+**🤖 AI Agent:**
+> I've found several contacts, including 'John Doe' (+1 555-0123) and 'Jane Smith' (+1 555-9876). Would you like to see the last message for any of these?
+
+---
+
+**👤 You:**
+> "Show me the approved WhatsApp templates."
+
+**🤖 AI Agent:**
+> I've retrieved your approved templates, including 'welcome_message', 'order_update', and 'appointment_reminder'. Would you like the full JSON structure for 'order_update' to send a message?
+
+---
+
+**👤 You:**
+> "Search for contact with phone number '+1 555-4444'."
+
+**🤖 AI Agent:**
+> I've found a contact matching that number: 'Robert Brown'. He is currently 'Opted In' and his last interaction was yesterday. Should I pull his full conversation history?
+
+
 ## Installation & Usage
 
 To install and use the **DoubleTick** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DoubleTick** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

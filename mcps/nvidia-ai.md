@@ -1,12 +1,14 @@
 # NVIDIA AI MCP Server
 
-Access LLMs, embeddings, code generation, and reasoning via NVIDIA API Catalog.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access LLMs, embeddings, code generation, and reasoning via NVIDIA API Catalog.
 
 ## Description
 Connect **NVIDIA AI** to any AI agent and harness the power of GPU-accelerated foundation models — chat with Llama, generate embeddings, write code with CodeLlama, translate text, and perform complex reasoning through the NVIDIA API Catalog.
@@ -52,6 +54,38 @@ Generate vector embeddings from text
 - **translate_text**: Translate text to another language
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NVIDIA AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate Python code for a REST API with FastAPI."
+
+**🤖 AI Agent:**
+> Generated code: `from fastapi import FastAPI
+app = FastAPI()
+
+@app.get('/items')
+async def get_items():
+    return {'items': []}`
+
+---
+
+**👤 You:**
+> "Translate 'Hello, how are you?' to Japanese."
+
+**🤖 AI Agent:**
+> こんにちは、お元気ですか？ (Konnichiwa, ogenki desu ka?)
+
+---
+
+**👤 You:**
+> "Summarize: The quarterly report shows revenue grew 15% YoY..."
+
+**🤖 AI Agent:**
+> Q3 revenue increased 15% year-over-year, driven by strong demand in AI and cloud services.
+
+
 ## Installation & Usage
 
 To install and use the **NVIDIA AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +94,11 @@ To install and use the **NVIDIA AI** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

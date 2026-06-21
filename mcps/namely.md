@@ -1,12 +1,14 @@
 # Namely MCP Server
 
-Manage HRIS data via Namely — track employee profiles, job info, and organization groups directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/namely)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namely)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/namely-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/namely-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 10
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage HRIS data via Namely — track employee profiles, job info, and organization groups directly from your AI agent.
 
 ## Description
 Connect your **Namely** HRIS account to your AI agent and take full control of your organization's employee data and structures through natural conversation.
@@ -50,6 +52,33 @@ List organization groups
 - **list_teams**: List organization teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Namely** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees in the 'Engineering' department."
+
+**🤖 AI Agent:**
+> I've retrieved the profiles for the Engineering department. You have 15 members, including 'David Smith' (Lead Developer), 'Elena Rodriguez' (Senior QA), and 13 others. Shall I show you the contact info for David?
+
+---
+
+**👤 You:**
+> "What company announcements were posted recently?"
+
+**🤖 AI Agent:**
+> I've checked the company feed. There are 3 recent announcements: 'New Office Safety Guidelines', 'Q3 Performance Review Kickoff', and 'Welcome Our New Hires!'. Would you like the full text for the safety guidelines?
+
+---
+
+**👤 You:**
+> "Show me upcoming birthdays in the organization."
+
+**🤖 AI Agent:**
+> Retrieving upcoming events... We have 4 birthdays this week: Sarah Jenkins (Tomorrow), Michael Chen (Thursday), and two others on Saturday. Shall I get their Slack handles for you?
+
+
 ## Installation & Usage
 
 To install and use the **Namely** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Namely** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

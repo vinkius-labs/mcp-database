@@ -1,12 +1,14 @@
 # Salesmate MCP Server
 
-Automate sales CRM via Salesmate — manage contacts, track deals, and log activities directly with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/salesmate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesmate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesmate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesmate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate sales CRM via Salesmate — manage contacts, track deals, and log activities directly with AI.
 
 ## Description
 Connect your **Salesmate** account to any AI agent and take full control of your sales automation and customer relationship orchestration through natural conversation. Salesmate provides a modern and powerful CRM platform, and this integration allows you to retrieve contact metadata, manage deal pipelines, and log real-time sales activities directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual CRM entry or pipeline searching. Your AI acts as a dedicated sale
 - **update_contact**: Update contact info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Salesmate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active deals in my Salesmate pipeline."
+
+**🤖 AI Agent:**
+> I've retrieved your deals. You have 5 active opportunities including 'Project Alpha' and 'Q4 Renewals'. Which one would you like to update the stage for?
+
+---
+
+**👤 You:**
+> "Show me the sales pipeline with deal values grouped by stage and expected close dates."
+
+**🤖 AI Agent:**
+> Sales pipeline: $4.2M total value across 67 deals. By stage: Prospecting (18 deals, $890K), Qualification (15, $780K), Proposal (12, $1.1M), Negotiation (8, $680K), Closing (6, $450K), Won this month (8, $320K). Expected to close this month: 14 deals worth $1.13M. Win probability weighted pipeline: $1.8M. Average deal size: $62,700. Sales cycle: 34 days average. Top rep: Sarah Chen with $890K in pipeline. 3 deals are stale (no activity 21+ days).
+
+---
+
+**👤 You:**
+> "Create a new deal for Meridian Corp worth $85,000 and assign it to the enterprise sales team."
+
+**🤖 AI Agent:**
+> Deal created: "Meridian Corp - Enterprise Platform License". Value: $85,000. Stage: Qualification. Owner: James Park (Enterprise Sales). Contact: David Chen (CTO). Expected close: June 30, 2025. Pipeline: Enterprise. Tags: SaaS, Annual License. Next action: "Discovery call" scheduled for Thursday at 2 PM. Auto-enrichment pulled company data: 340 employees, Series C, San Francisco. Lead score: 87/100. Similar won deals in database: 4 (avg cycle: 28 days).
+
+
 ## Installation & Usage
 
 To install and use the **Salesmate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Salesmate** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

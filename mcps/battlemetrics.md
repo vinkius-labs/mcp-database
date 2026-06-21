@@ -1,12 +1,14 @@
 # BattleMetrics MCP Server
 
-Global game server tracking and player analytics — monitor servers, search players, and audit bans via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/battlemetrics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/battlemetrics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/battlemetrics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/battlemetrics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Global game server tracking and player analytics — monitor servers, search players, and audit bans via AI.
 
 ## Description
 Empower your AI agent to operate as a real-time intelligence layer over the global gaming server ecosystem with **BattleMetrics**, the industry-standard platform for game server monitoring. By connecting BattleMetrics to your agent, you transform complex server population analytics, player lookups, and ban auditing into natural conversation. Your agent can instantly search across thousands of tracked game servers, identify specific players, analyze population trends, and review ban records without navigating dashboards.
@@ -74,6 +76,33 @@ Search game servers with advanced filters
 Get player count history for a game server over time
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BattleMetrics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the most popular Rust servers in the US right now."
+
+**🤖 AI Agent:**
+> I've retrieved the top Rust servers in the US. Here are the most populated ones with their player counts, ranks, and connection details.
+
+---
+
+**👤 You:**
+> "Look up the player 'shroud' and show me their recent session history."
+
+**🤖 AI Agent:**
+> I found the player 'shroud'. Their recent sessions show activity on 3 different servers in the past week, with a total of 42 hours played. Here are the full session details.
+
+---
+
+**👤 You:**
+> "Show me the player count trend for server ID 12345 over the last 7 days."
+
+**🤖 AI Agent:**
+> I've pulled the player count history for server 12345. The data shows peak activity at 18:00-22:00 UTC with an average of 87 players, dropping to around 15 during off-peak hours.
+
+
 ## Installation & Usage
 
 To install and use the **BattleMetrics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **BattleMetrics** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

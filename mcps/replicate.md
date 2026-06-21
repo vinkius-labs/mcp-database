@@ -1,12 +1,14 @@
 # Replicate MCP Server
 
-Equip your AI to dynamically search, run, and monitor thousands of open-source machine learning models hosted on Replicate via simple text commands.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/replicate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/replicate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 12
+
+**Category:** [superpower](../categories/superpower.md)
+
+Equip your AI to dynamically search, run, and monitor thousands of open-source machine learning models hosted on Replicate via simple text commands.
 
 ## Description
 Connect your conversational assistant directly to the **Replicate** ecosystem. This integration grants your AI the ability to interact programmatically with a vast library of open-source machine learning models without running them on your local hardware. From orchestrating complex image generations to spinning up specialized language models, you can command AI workflows directly from your chat.
@@ -53,6 +55,33 @@ Retrieves the status and output of a prediction
 - **search_models**: Searches for public models on Replicate
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Replicate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my recent predictions."
+
+**🤖 AI Agent:**
+> Invoking `list_predictions` has successfully found your last requests. The most recent executed instance has an ID of `p_30abc...`, which is confirmed finished, running a prompt about dog pictures.
+
+---
+
+**👤 You:**
+> "Query Replicate to search for 'TTS' models."
+
+**🤖 AI Agent:**
+> I ran `search_models` using your keyword "TTS". Replicate returned a wide array of options, including 'suno-ai/bark' and 'coqui/xtts'. Please specify the precise owner/model so I can inspect their schematics thoroughly!
+
+---
+
+**👤 You:**
+> "Cancel the prediction that has the ID `p_abc123`."
+
+**🤖 AI Agent:**
+> I immediately routed the termination request using the tool `cancel_prediction` targeted at your specified iteration ID `p_abc123`. The model sequence is permanently halted, halting processing instantly.
+
+
 ## Installation & Usage
 
 To install and use the **Replicate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Replicate** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

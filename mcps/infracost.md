@@ -1,12 +1,14 @@
 # Infracost MCP Server
 
-Cloud cost estimates for Terraform — manage cost guardrails, tagging policies, and custom enterprise price books directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/infracost)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infracost)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infracost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infracost-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 13
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Cloud cost estimates for Terraform — manage cost guardrails, tagging policies, and custom enterprise price books directly through your AI agent.
 
 ## Description
 Connect **Infracost** to your AI agent to bring financial visibility and governance to your Infrastructure as Code (IaC) workflows. Prevent cloud cost surprises before they happen.
@@ -60,6 +62,33 @@ Update organization settings, such as activating a custom price book
 Upload custom business properties via CSV
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Infracost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all cost guardrails for the organization 'acme-corp'."
+
+**🤖 AI Agent:**
+> I've retrieved the guardrails for 'acme-corp'. You have two active rules: 1. A $500 increase threshold that blocks PRs, and 2. A $5,000 total monthly budget alert.
+
+---
+
+**👤 You:**
+> "Create a new guardrail for 'acme-corp' that triggers when cost increase exceeds $200 and blocks the PR."
+
+**🤖 AI Agent:**
+> Successfully created the guardrail. Any Pull Request in 'acme-corp' that increases monthly costs by more than $200 will now be automatically blocked until approved.
+
+---
+
+**👤 You:**
+> "Update the tagging policy for 'acme-corp' to make the 'Environment' tag mandatory."
+
+**🤖 AI Agent:**
+> I've updated the tagging policy for 'acme-corp'. The 'Environment' tag is now marked as mandatory for all resources managed under this policy.
+
+
 ## Installation & Usage
 
 To install and use the **Infracost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Infracost** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

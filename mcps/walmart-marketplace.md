@@ -1,12 +1,14 @@
 # Walmart Marketplace MCP Server
 
-Manage your Walmart Marketplace catalog, inventory, and dynamic pricing natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-marketplace)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-marketplace)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/walmart-marketplace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/walmart-marketplace-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Walmart Marketplace catalog, inventory, and dynamic pricing natively.
 
 ## Description
 ### What you can do
@@ -39,6 +41,33 @@ Specifically built for **3P Sellers**, **E-Commerce Operators**, and **Catalog I
 - **wm_update_inventory**: Allocate physical logistic stock actively resolving unit values evaluating gracefully proxy limits natively
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Walmart Marketplace** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Update the inventory of SKU 8291 to 50 items on fulfillment center 1000."
+
+**🤖 AI Agent:**
+> Successfully updated the inventory quantity using `wm_update_inventory`.
+
+---
+
+**👤 You:**
+> "Find the current offer price and publish status of SKU 'LAPTOP-01'."
+
+**🤖 AI Agent:**
+> SKU 'LAPTOP-01' is 'PUBLISHED' with a current active offer price of $499.00 on the marketplace.
+
+---
+
+**👤 You:**
+> "Increase the base price of all ASICS sneakers by 5% effectively immediately."
+
+**🤖 AI Agent:**
+> Bulk price adjustment initiated. 34 ASICS SKUs have been updated with a 5% markup submitted successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Walmart Marketplace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Walmart Marketplace** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Snapchat Ads MCP Server
 
-Manage your Snapchat Ads campaigns — audit accounts, ad squads, and stats via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/snapchat-ads-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snapchat-ads-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snapchat-ads-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snapchat-ads-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 9
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage your Snapchat Ads campaigns — audit accounts, ad squads, and stats via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire advertising ecosystem on Snapchat with **Snapchat Ads**, the platform for reaching the most engaged mobile audience. By connecting Snapchat Ads to your agent, you transform complex campaign management into a natural conversation. Your agent can instantly list your ad accounts, audit ad squad performance, and retrieve detailed analytics without you ever touching a dashboard. Whether you are scaling brand awareness or performance-driven ads, your agent acts as a real-time ad specialist, ensuring your marketing is always optimized and data-backed.
@@ -45,6 +47,33 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on Snapch
 - **list_media**: List media assets for an ad account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Snapchat Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Snapchat organizations."
+
+**🤖 AI Agent:**
+> I've retrieved your organizations. You have 2: 'Vinkius Global' and 'Media Team'. Which one would you like to audit for ad accounts?
+
+---
+
+**👤 You:**
+> "Show me active campaigns for ad account ID xxxx."
+
+**🤖 AI Agent:**
+> I've found 3 active campaigns in that account: 'Spring Promo', 'App Install Drive', and 'Brand Reveal'. I can provide performance summaries for any of them.
+
+---
+
+**👤 You:**
+> "Get an ads report for last month."
+
+**🤖 AI Agent:**
+> I've generated the report. Your total spend was $1,500 with 50,000 swipe-ups and an average cost per swipe of $0.03. Would you like a breakdown by campaign?
+
+
 ## Installation & Usage
 
 To install and use the **Snapchat Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Snapchat Ads** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

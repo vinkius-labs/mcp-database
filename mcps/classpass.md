@@ -1,12 +1,14 @@
 # ClassPass MCP Server
 
-Manage your ClassPass schedule, reservations, inventory, and performance analytics for your fitness venue through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/classpass)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/classpass)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/classpass-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/classpass-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 7
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your ClassPass schedule, reservations, inventory, and performance analytics for your fitness venue through natural conversation.
 
 ## Description
 Connect your **ClassPass** venue to any AI agent and manage your marketplace presence through natural conversation.
@@ -42,6 +44,41 @@ Get performance analytics
 - **list_inventory**: List SmartSpot inventory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClassPass** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How is our ClassPass performance this month?"
+
+**🤖 AI Agent:**
+> ClassPass performance — March 2026:
+
+💰 **Revenue**: $3,240 (+18% vs Feb)
+📊 **Reservations**: 312 bookings
+✅ **Check-in rate**: 87%
+🎫 **Avg credits/class**: 7.2
+📈 **Fill rate contribution**: ClassPass fills 15% of your total capacity
+
+Your 6 PM HIIT class is your #1 ClassPass performer with 48 bookings this month.
+
+---
+
+**👤 You:**
+> "Check total no-shows for yesterday's 6 PM HIIT class."
+
+**🤖 AI Agent:**
+> Yesterday's 6 PM HIIT class had exactly 3 no-shows from ClassPass members out of the 15 total external bookings.
+
+---
+
+**👤 You:**
+> "Increase the credit pricing for tomorrow's Pilates session to 8 credits."
+
+**🤖 AI Agent:**
+> Done. Tomorrow's Pilates session dynamic base price now rests at 8 SmartSpot credits to capitalize on higher morning demand.
+
+
 ## Installation & Usage
 
 To install and use the **ClassPass** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +87,11 @@ To install and use the **ClassPass** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

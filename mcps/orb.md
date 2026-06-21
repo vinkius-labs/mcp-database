@@ -1,12 +1,14 @@
 # Orb MCP Server
 
-Automate usage-based billing via Orb — ingest events, manage subscriptions, and track invoices directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/orb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/orb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/orb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 10
+
+**Category:** [data-management](../categories/data-management.md)
+
+Automate usage-based billing via Orb — ingest events, manage subscriptions, and track invoices directly from any AI agent.
 
 ## Description
 Connect your **Orb** account to any AI agent to streamline your revenue operations and usage-based billing workflows through natural language.
@@ -49,6 +51,33 @@ Ingest usage events into Orb
 - **update_subscription**: Update an existing subscription
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Orb** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 customers created in Orb."
+
+**🤖 AI Agent:**
+> I've retrieved the latest customers. The most recent entries include 'Acme Corp' (ID: cust_821), 'Global Tech' (ID: cust_932), and 'Starlight Inc' (ID: cust_104). Would you like to see the subscription details for any of them?
+
+---
+
+**👤 You:**
+> "Ingest a usage event for customer cust_123: 50 units of 'api_requests'."
+
+**🤖 AI Agent:**
+> Usage event successfully ingested for 'cust_123'. I've used a unique idempotency key for this batch to ensure accurate tracking. The 50 units of 'api_requests' are now reflected in their usage metrics.
+
+---
+
+**👤 You:**
+> "What is the upcoming invoice amount for subscription sub_987?"
+
+**🤖 AI Agent:**
+> The upcoming draft invoice for subscription `sub_987` is currently at $450.00. This includes the base plan fee plus $120.00 in metered usage accrued during the current period.
+
+
 ## Installation & Usage
 
 To install and use the **Orb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Orb** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

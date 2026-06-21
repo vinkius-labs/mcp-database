@@ -1,12 +1,14 @@
 # EX.CO Video Experience MCP Server
 
-Equip your AI agent to manage video libraries, track interactive content, and monitor analytics via the EX.CO API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/exco-video-experience)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exco-video-experience)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exco-video-experience-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exco-video-experience-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage video libraries, track interactive content, and monitor analytics via the EX.CO API.
 
 ## Description
 Integrate **EX.CO**, the leading video experience platform, directly into your AI workflow. Manage your video library and interactive content (quizzes, polls), track real-time performance analytics and engagement metrics, monitor distribution channels and playlists, and oversee your entire video strategy using natural language.
@@ -46,6 +48,33 @@ Integrate **EX.CO**, the leading video experience platform, directly into your A
 List all videos in your EX.CO library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EX.CO Video Experience** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all videos in my library."
+
+**🤖 AI Agent:**
+> I've found 15 videos in your EX.CO library, including 'Product Launch 2024' and 'Tutorial - Getting Started'. 12 are currently 'Published'. Would you like to see the analytics for the Product Launch video?
+
+---
+
+**👤 You:**
+> "Show me analytics summary for this week."
+
+**🤖 AI Agent:**
+> This week across your library, you have 15,000 total views and a 65% completion rate. The video 'Interactive Quiz - Q1' has the highest engagement (12%). Would you like to see the channel distribution breakdown?
+
+---
+
+**👤 You:**
+> "Search for interactive content matching 'Quiz'."
+
+**🤖 AI Agent:**
+> I've found 3 interactive items matching 'Quiz': 'Customer Feedback Quiz', 'Product Knowledge Quiz', and 'Fun Personality Quiz'. All are currently 'Active'. Would you like the detailed performance for the Customer Feedback Quiz?
+
+
 ## Installation & Usage
 
 To install and use the **EX.CO Video Experience** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **EX.CO Video Experience** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

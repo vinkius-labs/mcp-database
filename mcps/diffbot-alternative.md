@@ -1,12 +1,14 @@
 # Diffbot MCP Server
 
-Extract structured data from any web page using AI that understands content like a human and builds knowledge graphs automatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/diffbot-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/diffbot-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/diffbot-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 12
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Extract structured data from any web page using AI that understands content like a human and builds knowledge graphs automatically.
 
 ## Description
 Connect your **Diffbot** account to any AI agent and take full control of your structured data extraction and knowledge graph research workflows through natural conversation.
@@ -51,6 +53,33 @@ Query world entities
 - **test_diffbot_auth**: Verify credentials
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Diffbot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the main content from the article at 'https://vinkius.com/blog/mcp-standards'."
+
+**🤖 AI Agent:**
+> Article extraction triggered! I've retrieved the clean text, author 'John Doe', and a positive sentiment score. Would you like me to extract any discussion threads from the page as well?
+
+---
+
+**👤 You:**
+> "Search for companies in 'San Francisco' with more than 1000 employees using DQL."
+
+**🤖 AI Agent:**
+> Querying Knowledge Graph... I found 15 organizations matching your criteria. Highlights include 'Salesforce' and 'Uber'. Would you like the detailed firmographics for these entities?
+
+---
+
+**👤 You:**
+> "Enhance the company profile for 'Vinkius' using domain 'vinkius.com'."
+
+**🤖 AI Agent:**
+> Profile enhanced! Vinkius is identified as a 'Technology' organization based in Portugal. I've retrieved their social links, employee count, and latest funding metadata. Shall I search for their key people?
+
+
 ## Installation & Usage
 
 To install and use the **Diffbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Diffbot** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

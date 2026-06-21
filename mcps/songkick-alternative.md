@@ -1,12 +1,14 @@
 # Songkick MCP Server
 
-Find concerts and live music events via Songkick — search artists, venues, and locations to track upcoming performances directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/songkick-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/songkick-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/songkick-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/songkick-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 6
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Find concerts and live music events via Songkick — search artists, venues, and locations to track upcoming performances directly from your AI agent.
 
 ## Description
 Connect your AI agent to **Songkick**, the world's largest live music database, to discover concerts and track your favorite artists' tours through natural conversation.
@@ -43,6 +45,33 @@ No more manually checking multiple tour websites. Your AI acts as a personal con
 - **get_venue_calendar**: Get the upcoming events for a specific venue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Songkick** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for upcoming Radiohead concerts in London."
+
+**🤖 AI Agent:**
+> I've searched for Radiohead events in London. I found an upcoming performance at the O2 Arena on October 15th. Would you like more details on this event?
+
+---
+
+**👤 You:**
+> "Find the Songkick ID for the artist 'Daft Punk'."
+
+**🤖 AI Agent:**
+> I found the artist 'Daft Punk' with Songkick ID: 549607. You can use this ID to check their full tour calendar.
+
+---
+
+**👤 You:**
+> "Get the upcoming events for venue ID 1234."
+
+**🤖 AI Agent:**
+> Retrieving the calendar for venue ID 1234... There are 3 upcoming events: 'The Jazz Trio' on Friday, 'Rock Night' on Saturday, and 'Indie Showcase' next Tuesday.
+
+
 ## Installation & Usage
 
 To install and use the **Songkick** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Songkick** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

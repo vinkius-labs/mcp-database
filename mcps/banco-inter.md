@@ -1,12 +1,14 @@
 # Banco Inter MCP Server
 
-Connect to your Banco Inter Empresas digital account. Automate Pix, Boletos, balance inquiries and statements.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/banco-inter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/banco-inter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/banco-inter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/banco-inter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 8
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Connect to your Banco Inter Empresas digital account. Automate Pix, Boletos, balance inquiries and statements.
 
 ## Description
 The **Banco Inter MCP Server** transforms your AI agent into a secure, fully automated financial assistant directly tethered to your Banco Inter Corporate account. Perform high-velocity API commands without ever logging into the Internet Banking portal.
@@ -44,6 +46,33 @@ Emitir cobrança imediata via Pix (Banco Inter)
 Pagamentos - Enviar um Pix utilizando sua Conta Banco Inter
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Banco Inter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate an Inter corporate Boleto for John Doe (CPF 12345678909). The value is 50.00 expiring on 2026-10-10."
+
+**🤖 AI Agent:**
+> The Boleto has been physically recorded in your Banco Inter registry! Nosso Numero corresponds to '[ID]'. The active Barcode string is: '00000.00000.00[...]' which can be forwarded.
+
+---
+
+**👤 You:**
+> "Send a dynamic Pix (Cash outbound) of R$ 5.00 to CPF key 03928139."
+
+**🤖 AI Agent:**
+> Processing the outgoing transfer... Successfully sent R$ 5.00 to the parsed CPF via Banco Inter rails. Your current liquidity accounts correctly mirror this change.
+
+---
+
+**👤 You:**
+> "Load my historical Banco Inter statement (Extrato) from 01/20/2024 to 01/25/2024 and identify if there was any Pix received."
+
+**🤖 AI Agent:**
+> Data Extracted. In your historical statements you observed exactly 8 inbound transactions. Three of these lines reflect an inbound automated Pix flow valued at R$ [Total].
+
+
 ## Installation & Usage
 
 To install and use the **Banco Inter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Banco Inter** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

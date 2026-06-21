@@ -1,12 +1,14 @@
 # Codecov MCP Server
 
-Manage test coverage and engineering metrics via Codecov — track coverage reports, monitor commit totals, and audit code quality directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/codecov)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codecov)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codecov-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codecov-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage test coverage and engineering metrics via Codecov — track coverage reports, monitor commit totals, and audit code quality directly from any AI agent.
 
 ## Description
 Connect your **Codecov** account to any AI agent and take full control of your test coverage and engineering insights through natural conversation. Streamline how you monitor software quality across your repositories natively.
@@ -45,6 +47,33 @@ Connect your **Codecov** account to any AI agent and take full control of your t
 - **list_codecov_repositories**: List all repositories associated with an owner
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Codecov** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all repositories for the organization 'vinkius' on GitHub."
+
+**🤖 AI Agent:**
+> Retrieving repositories for gh/vinkius... I found 5 items including 'core-api' (85.4% coverage), 'web-frontend' (92.1% coverage), and 'mcp-connectors' (78.0% coverage). Would you like to see the report tree for any of these?
+
+---
+
+**👤 You:**
+> "What is the coverage for the latest commit in 'core-api'?"
+
+**🤖 AI Agent:**
+> Checking coverage for the latest commit... SHA 'abc1234' has an overall coverage of 85.4%. It has 1,200 hits, 150 misses, and 50 partials. This matches the target threshold.
+
+---
+
+**👤 You:**
+> "Show me the coverage report tree for 'web-frontend'."
+
+**🤖 AI Agent:**
+> Retrieving report tree for web-frontend... The project has excellent coverage overall (92.1%). The 'src/components' folder is at 95%, while 'src/utils' is slightly lower at 88%.
+
+
 ## Installation & Usage
 
 To install and use the **Codecov** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Codecov** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

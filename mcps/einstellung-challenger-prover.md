@@ -1,12 +1,14 @@
 # Einstellung-Challenger Prover MCP Server
 
-AI models default to complex, familiar heuristics even when simpler solutions exist. This tool breaks suboptimal cognitive sets: identify default heuristics, search for counterexamples, map alternative paths, benchmark complexity metrics, and choose the most elegant solution.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/einstellung-challenger-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/einstellung-challenger-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/einstellung-challenger-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/einstellung-challenger-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI models default to complex, familiar heuristics even when simpler solutions exist. This tool breaks suboptimal cognitive sets: identify default heuristics, search for counterexamples, map alternative paths, benchmark complexity metrics, and choose the most elegant solution.
 
 ## Description
 The Einstellung effect occurs when an AI agent defaults to a standard, complex, or bloated method it has learned, failing to recognize that a simpler, more direct, and elegant alternative exists. This leads to heavy codebases, unnecessary library dependencies, and inefficient algorithms. This tool breaks the agent's cognitive sets by introducing structured friction, forcing the evaluation of alternative paths and complexity benchmarking.
@@ -34,6 +36,33 @@ Einstellung-Challenger Prover uses 5 Decision Pivots that force the agent to cha
 Structured reflection tool to prevent Einstellung bias — the cognitive trap where a known solution blocks perception of simpler, superior alternatives. Named after Luchins' 1942 water jug experiments where subjects who learned a complex 3-jar solution failed to see a trivial 1-jar solution. Catches Einstellung Trap (the first solution that comes to mind blocks all simpler alternatives — you reach for a regex when string.split() works, a state machine when a boolean suffices, a microservice when a function call is enough), Heuristic Dominance (the "standard" approach dominates without examination — "we always use X" without asking if X is appropriate for THIS specific problem. Enterprise patterns applied to a 200-line script. AbstractFactoryProviderManagerService for a CRUD endpoint), and Counterexample Blindness (not searching for simpler paths because the first solution feels adequate — Luchins proved that once subjects found the complex solution, they stopped looking. The simple solution was RIGHT THERE but cognitively invisible). Call once per complex task, algorithm, or design decision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Einstellung-Challenger Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Write a JavaScript function to check if a string contains any duplicate characters."
+
+**🤖 AI Agent:**
+> Verdict: EINSTELLUNG_TRAP. Default heuristic chosen without alternative search. You proposed a nested loop (O(N^2)) comparing every character to every other character. This is standard but inefficient. Search for a linear (O(N)) alternative using data structures.
+
+---
+
+**👤 You:**
+> "We need to parse an HTML document to extract all anchor hrefs. Let's write a regular expression (regex) to match '<a href=...'."
+
+**🤖 AI Agent:**
+> Verdict: HEURISTIC_DOMINATED. Alternative parsed but suboptimal selected. You mapped the DOM parser alternative but still selected the regex heuristic. HTML is irregular and regex parsing is fragile and prone to edge-case failures. You must select the DOM parser (e.g. cheerio or native DOMParser) for reliability.
+
+---
+
+**👤 You:**
+> "Calculate the sum of all consecutive integers from 1 to N in JavaScript."
+
+**🤖 AI Agent:**
+> Verdict: SOLUTION_PROVEN. (1) Einstellung heuristic detected: standard 'for' loop accumulating sum (O(N) time, O(1) space). (2) Counterexample search executed: searched for mathematical constant-time solutions. (3) Alternative mapped: Gauss summation formula n*(n+1)/2 (O(1) time, O(1) space). (4) Efficiency benchmarked: Loop takes N steps; Gauss formula takes 3 basic operations regardless of N size. (5) Optimal method selected: Gauss formula is selected. Code: `const sum = (n) => (n * (n + 1)) / 2;`.
+
+
 ## Installation & Usage
 
 To install and use the **Einstellung-Challenger Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -42,4 +71,11 @@ To install and use the **Einstellung-Challenger Prover** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

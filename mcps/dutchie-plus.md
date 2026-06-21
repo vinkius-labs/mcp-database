@@ -1,12 +1,14 @@
 # Dutchie Plus MCP Server
 
-Equip your AI agent to manage enterprise dispensary locations, track online menus, and monitor orders via the Dutchie Plus API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dutchie-plus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dutchie-plus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dutchie-plus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dutchie-plus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage enterprise dispensary locations, track online menus, and monitor orders via the Dutchie Plus API.
 
 ## Description
 Integrate **Dutchie Plus**, the enterprise-grade e-commerce platform for cannabis retailers, directly into your AI workflow. Manage your multi-location dispensary operations, track online menus and product categories, monitor enterprise-wide online orders and fulfillment, and oversee synchronized brands using natural language.
@@ -44,6 +46,33 @@ Integrate **Dutchie Plus**, the enterprise-grade e-commerce platform for cannabi
 - **search_dispensaries_by_city**: Search for dispensary locations using a city or name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dutchie Plus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our dispensary locations."
+
+**🤖 AI Agent:**
+> I've found 8 locations in your network, including 'Downtown Dispensary' (San Francisco) and 'Airport Plaza' (Los Angeles). Would you like to see the current online menu URL for Downtown?
+
+---
+
+**👤 You:**
+> "Show me the pending online orders for location 'LOC-12345'."
+
+**🤖 AI Agent:**
+> For 'Downtown Dispensary' (LOC-12345), there are 5 pending online orders, including 'WEB-99' (Ready for Pickup) and 'WEB-101' (Awaiting Fulfillment). Should I pull the items list for WEB-99?
+
+---
+
+**👤 You:**
+> "List all synchronized brands in our account."
+
+**🤖 AI Agent:**
+> I've retrieved 12 synchronized brands, including 'Nature's Own', 'Indica Gold', and 'Pure CBD'. 'Nature's Own' has 45 associated products in your catalog. Would you like to see the brand details for Indica Gold?
+
+
 ## Installation & Usage
 
 To install and use the **Dutchie Plus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dutchie Plus** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # IBESTAT (Estadística Illes Balears) MCP Server
 
-Access official statistical data from the Balearic Islands — query operations, resources, and detailed datasets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ibestat-estadistica-illes-balears)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibestat-estadistica-illes-balears)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ibestat-estadistica-illes-balears-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ibestat-estadistica-illes-balears-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access official statistical data from the Balearic Islands — query operations, resources, and detailed datasets directly from your AI agent.
 
 ## Description
 Connect to the **IBESTAT (Institut d'Estadística de les Illes Balears)** and bring official public data into your AI workflows. This server provides direct access to the comprehensive statistical catalog of the Balearic Islands.
@@ -40,6 +42,33 @@ Connect to the **IBESTAT (Institut d'Estadística de les Illes Balears)** and br
 Retrieve resources associated with a specific operation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IBESTAT (Estadística Illes Balears)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available statistical operations from IBESTAT."
+
+**🤖 AI Agent:**
+> I have retrieved the list of statistical operations. There are several categories available, including 'Population' (ID: 01), 'Tourism' (ID: 05), and 'Economy' (ID: 10). Which area would you like to explore further?
+
+---
+
+**👤 You:**
+> "Show me the resources available for the statistical operation with ID '0201'."
+
+**🤖 AI Agent:**
+> For operation '0201', I found the following resources: 'Table 1: Annual Growth', 'Table 2: Regional Distribution', and 'Table 3: Historical Series'. Would you like to fetch the data for one of these?
+
+---
+
+**👤 You:**
+> "Get the data for operation '0201' and resource 'T1' in English and JSON format."
+
+**🤖 AI Agent:**
+> I've fetched the data for resource 'T1'. It contains the annual growth metrics for the requested period. [JSON Data Displayed]. Would you like me to analyze these numbers for you?
+
+
 ## Installation & Usage
 
 To install and use the **IBESTAT (Estadística Illes Balears)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **IBESTAT (Estadística Illes Balears)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

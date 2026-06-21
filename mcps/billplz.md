@@ -1,12 +1,14 @@
 # Billplz MCP Server
 
-Manage your payment collections via Billplz — list collections, bills, and transactions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/billplz)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/billplz)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/billplz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/billplz-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 11
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage your payment collections via Billplz — list collections, bills, and transactions directly from any AI agent.
 
 ## Description
 Connect your **Billplz** account to any AI agent and orchestrate your payment workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Billplz** account to any AI agent and orchestrate your payment wo
 - **list_transactions**: List transactions for a specific bill
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Billplz** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active collections."
+
+**🤖 AI Agent:**
+> I've retrieved your collections. You have 3 active collections: 'E-store Payments' (ID: col_1), 'Monthly Subs' (ID: col_2), and 'Donations' (ID: col_3).
+
+---
+
+**👤 You:**
+> "Show the status of bill bill_99283."
+
+**🤖 AI Agent:**
+> The bill bill_99283 for RM 50.00 is currently in 'paid' status. It was paid via FPX on March 28th.
+
+---
+
+**👤 You:**
+> "List the last 5 transactions for bill_99283."
+
+**🤖 AI Agent:**
+> Retrieving transactions... I found one successful payment transaction for bill_99283. Amount: RM 50.00, Payment Method: Maybank2u.
+
+
 ## Installation & Usage
 
 To install and use the **Billplz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Billplz** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

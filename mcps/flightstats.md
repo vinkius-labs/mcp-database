@@ -1,12 +1,14 @@
 # FlightStats MCP Server
 
-Track real-time flight statuses, routes, airport departures/arrivals, and flight paths directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flightstats)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightstats)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flightstats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flightstats-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 22
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track real-time flight statuses, routes, airport departures/arrivals, and flight paths directly from your AI agent.
 
 ## Description
 Connect **FlightStats** to your AI agent to monitor global aviation data, track active flights, and query airport schedules using natural language.
@@ -57,6 +59,33 @@ Get real-time flight status by carrier and flight number
 - **get_weather**: Get weather (METAR/TAF) for an airport
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FlightStats** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the status of flight UA 240 departing today."
+
+**🤖 AI Agent:**
+> I've queried `get_flight_status` for United Airlines flight 240. The flight is currently on schedule, departing from Gate C12 at 3:45 PM and estimated to arrive at 6:12 PM.
+
+---
+
+**👤 You:**
+> "What are the arrivals at Heathrow (LHR) airport for the 14:00 hour today?"
+
+**🤖 AI Agent:**
+> Using `get_airport_status` for LHR arrivals at 14:00, I found 12 scheduled flights. Notable arrivals include BA 212 from Boston (landed early at 13:50) and VS 104 from Atlanta (delayed to 14:15).
+
+---
+
+**👤 You:**
+> "Find active flights within 25 miles of coordinates 45.515, -122.679."
+
+**🤖 AI Agent:**
+> Invoking `get_flights_near`... I detected 3 active flights in this radius: AS 342 (Boeing 737 at 12,000ft), QX 5021 (Embraer E175 descending to PDX), and UA 1822 (Airbus A320 cruising at 34,000ft).
+
+
 ## Installation & Usage
 
 To install and use the **FlightStats** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **FlightStats** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

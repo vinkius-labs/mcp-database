@@ -1,12 +1,14 @@
 # Tatum (Blockchain Infra) MCP Server
 
-Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tatum-blockchain-infra)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tatum-blockchain-infra)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tatum-blockchain-infra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tatum-blockchain-infra-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 11
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains.
 
 ## Description
 Connect your **Tatum** account to any AI agent to streamline blockchain infrastructure management. Access real-time data, gas estimates, and portfolio tracking across 40+ protocols through natural language.
@@ -50,6 +52,33 @@ Estimate transaction fee
 - **list_subscriptions**: List active webhook subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tatum (Blockchain Infra)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the recommended fees for a transaction on Ethereum right now?"
+
+**🤖 AI Agent:**
+> I've retrieved the current fee suggestions for ETH: Fast: 25 Gwei, Standard: 20 Gwei, Slow: 15 Gwei. Would you like to estimate the total cost for a specific transfer amount?
+
+---
+
+**👤 You:**
+> "Show me the portfolio for address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e on Polygon."
+
+**🤖 AI Agent:**
+> Checking the Polygon network... This address holds 15.5 MATIC, 250 USDC (ERC-20), and 2 NFTs from the 'Polygon Punks' collection. Do you need the transaction history for these assets?
+
+---
+
+**👤 You:**
+> "What is the current exchange rate from BTC to USD?"
+
+**🤖 AI Agent:**
+> The current exchange rate is 1 BTC = 64,250.50 USD. Would you like to check the rate for another pair or calculate a specific conversion?
+
+
 ## Installation & Usage
 
 To install and use the **Tatum (Blockchain Infra)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Tatum (Blockchain Infra)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

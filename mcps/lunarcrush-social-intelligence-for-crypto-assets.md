@@ -1,12 +1,14 @@
 # LunarCrush (Social Intelligence for Crypto Assets) MCP Server
 
-Access real-time social intelligence for crypto assets — track Galaxy Scores, AltRank, and market sentiment directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lunarcrush-social-intelligence-for-crypto-assets)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lunarcrush-social-intelligence-for-crypto-assets)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lunarcrush-social-intelligence-for-crypto-assets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lunarcrush-social-intelligence-for-crypto-assets-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time social intelligence for crypto assets — track Galaxy Scores, AltRank, and market sentiment directly from your AI agent.
 
 ## Description
 Connect **LunarCrush** to any AI agent to unlock deep social insights for the crypto market. This server allows you to monitor community sentiment, social engagement, and proprietary metrics like Galaxy Score and AltRank for thousands of digital assets.
@@ -42,6 +44,33 @@ Retrieve a list of all supported assets or specific details
 - **get_social_metrics**: Get detailed social metrics for a coin
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LunarCrush (Social Intelligence for Crypto Assets)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the top 10 crypto assets sorted by Galaxy Score."
+
+**🤖 AI Agent:**
+> I've retrieved the top assets. Currently, Bitcoin (BTC) leads with a Galaxy Score of 78, followed by Ethereum (ETH) at 74. Would you like to see the social metrics for any of these?
+
+---
+
+**👤 You:**
+> "What is the current AltRank for Solana (SOL)?"
+
+**🤖 AI Agent:**
+> Solana (SOL) currently has an AltRank of 12. This indicates very strong social performance relative to the rest of the market. Its social engagement has increased by 15% in the last 24 hours.
+
+---
+
+**👤 You:**
+> "Show me social engagement and sentiment for BTC over the last 24 hours."
+
+**🤖 AI Agent:**
+> For Bitcoin (BTC) in the last 24h: Social mentions are at 120k, engagement is up 5%, and the overall sentiment remains 'Bullish' at 72%.
+
+
 ## Installation & Usage
 
 To install and use the **LunarCrush (Social Intelligence for Crypto Assets)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **LunarCrush (Social Intelligence for Crypto Assets)** MC
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

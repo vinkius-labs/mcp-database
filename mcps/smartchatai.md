@@ -1,12 +1,14 @@
 # SmartChatAI MCP Server
 
-Manage AI bots, knowledge bases, and messaging on SmartChatAI with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smartchatai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartchatai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartchatai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartchatai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage AI bots, knowledge bases, and messaging on SmartChatAI with AI agents.
 
 ## Description
 Connect your **SmartChatAI** account to any AI agent to automate your intelligent chatbot orchestration and lead collection. SmartChatAI provides a premier platform for building custom AI bots, and this integration allows you to retrieve chatbot metadata, manage knowledge bases via URL or PDF, and track conversational history through natural conversation.
@@ -49,6 +51,33 @@ Provision a new AI agent
 - **message_ai_chatbot**: Send a message and get AI reply
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SmartChatAI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active AI bots in my SmartChatAI account."
+
+**🤖 AI Agent:**
+> I've retrieved your bots. You have 3 active bots online: 'Customer Support Lead', 'Sales Assistant', and 'FAQ Guide'. Which one would you like to update?
+
+---
+
+**👤 You:**
+> "Show me all active chatbot conversations with their resolution rates and average response times."
+
+**🤖 AI Agent:**
+> 45 active conversations across 3 chatbot flows. "Customer Support" (28 active): Resolution rate 84%, avg response 1.2s, 23 resolved without agent handoff. "Sales Assistant" (12 active): 67% lead qualification rate, avg 1.8s. "FAQ Bot" (5 active): 92% answer accuracy. Today's totals: 234 conversations completed, 12 escalated to human agents (5.1%), customer satisfaction: 4.6/5. Peak hour: 2-3 PM (45 concurrent chats). Most asked topic: "pricing plans" (34 times).
+
+---
+
+**👤 You:**
+> "Train the chatbot with 10 new FAQ entries about our refund and return policies."
+
+**🤖 AI Agent:**
+> 10 FAQ entries added to knowledge base. Topics: refund eligibility (30-day window), return shipping process, exchange policy, digital product refunds, partial refund scenarios, international returns, defective item procedure, refund processing time (5-7 business days), gift return policy, subscription cancellation refunds. Training status: complete. Confidence score improvement: FAQ accuracy expected to increase from 89% to 95% on refund topics. 234 existing intents re-evaluated. No conflicts detected.
+
+
 ## Installation & Usage
 
 To install and use the **SmartChatAI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **SmartChatAI** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

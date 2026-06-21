@@ -1,12 +1,14 @@
 # Stanford CrossRef MCP Server
 
-Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-crossref)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-crossref)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-crossref-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-crossref-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** education
-**Tools Count:** 16
+
+**Category:** [education](../categories/education.md)
+
+Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data.
 
 ## Description
 Connect to the **CrossRef API** — the authoritative source for DOI metadata and scholarly publishing infrastructure.
@@ -85,6 +87,33 @@ Search 150M+ DOI-registered academic works
 Check if a DOI is valid and registered
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stanford CrossRef** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Resolve DOI 10.1038/s41586-021-03819-2"
+
+**🤖 AI Agent:**
+> I've resolved this DOI via CrossRef. It is: "Highly accurate protein structure prediction with AlphaFold" by Jumper et al., published in Nature (2021). It has been cited over 15,000 times.
+
+---
+
+**👤 You:**
+> "Find works funded by the National Institutes of Health on gene therapy"
+
+**🤖 AI Agent:**
+> I've searched for NIH-funded works on gene therapy via CrossRef. Results include recent publications in Nature Medicine, Science, and Cell acknowledging NIH grants.
+
+---
+
+**👤 You:**
+> "Look up all publications by ORCID 0000-0002-8350-519X"
+
+**🤖 AI Agent:**
+> I've retrieved all DOI-registered works for this ORCID via CrossRef, showing titles, journals, publication dates, and citation counts for each.
+
+
 ## Installation & Usage
 
 To install and use the **Stanford CrossRef** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -93,4 +122,11 @@ To install and use the **Stanford CrossRef** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

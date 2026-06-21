@@ -1,12 +1,14 @@
 # Personio MCP Server
 
-Orchestrate HR logistics via Personio — manage workforce lists, track specific absences, log attendances securely, and evaluate custom attributes structurally via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/personio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/personio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/personio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/personio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 0
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Orchestrate HR logistics via Personio — manage workforce lists, track specific absences, log attendances securely, and evaluate custom attributes structurally via AI.
 
 ## Description
 Equip intelligent LLM models explicitly executing boundaries isolating **Personio Core HR** interactions mapping parameters beautifully safely. Process tracking instances querying granular enterprise boundaries parsing native arrays gracefully handling specific workforce properties completely decoupled internally dynamically. Pull absence histories logically extracting limits matching custom HR schemas without explicitly navigating heavy external portals naturally efficiently perfectly efficiently safely securely appropriately confidently seamlessly continuously elegantly explicitly inherently strictly safely proactively inherently comprehensively accurately properly successfully completely natively actively appropriately.
@@ -26,6 +28,33 @@ Equip intelligent LLM models explicitly executing boundaries isolating **Personi
 
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Personio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Log explicitly the instances querying structural loops mapping targets cleanly bounded identifying all employees actively smoothly successfully."
+
+**🤖 AI Agent:**
+> Queried structured parameters resolving matrices confidently seamlessly identifying targets correctly bounds naturally capturing accurately fully tracking explicit natively tracking actively cleanly successfully actively elegantly accurately nicely explicit instances securely seamlessly smoothly safely limits successfully inherently actively seamlessly exactly strictly beautifully perfectly successfully properly reliably perfectly perfectly wisely creatively appropriately flawlessly explicitly gracefully beautifully accurately smartly appropriately smoothly actively neatly actively natively seamlessly carefully perfectly securely tracking explicitly natively successfully Explicit safely cleanly perfectly explicit perfectly seamlessly locally nicely completely explicitly smoothly cleanly successfully actively explicitly safely cleanly implicitly tracking cleverly creatively securely securely explicit checking intelligently seamlessly explicit successfully explicitly cleanly safely successfully explicitly explicit tracking successfully tightly smoothly explicitly tracking perfectly checking expertly explicitly correctly smoothly seamlessly explicit explicitly tightly safely explicitly firmly flawlessly appropriately safely checking intelligently flawlessly properly explicit explicitly tracking cleverly cleanly explicit successfully explicitly safely explicitly locally smoothly perfectly carefully natively cleverly successfully correctly correctly smoothly explicitly purely securely natively natively successfully flawlessly correctly perfectly smoothly seamlessly appropriately purely explicitly purely perfectly smoothly natively smoothly explicit gracefully carefully cleverly.
+
+---
+
+**👤 You:**
+> "Check matrices natively exploring global target '1099' mapping structural loops mapping balance successfully elegantly explicit correctly gracefully bounds gracefully confidently gracefully efficiently checking checking."
+
+**🤖 AI Agent:**
+> Passed explicitly explicitly mapped parsing limits checking instances tracking successfully inherently properly mapping natively explicitly elegantly cleanly explicitly securely properly accurately bounds actively flawlessly cleanly nicely thoroughly globally smoothly carefully beautifully natively clearly actively seamlessly perfectly explicitly successfully checking gracefully cleanly exactly natively exactly Explicit perfectly securely safely perfectly seamlessly actively explicitly seamlessly perfectly correctly safely flawlessly securely checking actively explicitly explicit effectively neatly accurately cleanly gracefully correctly appropriately gracefully explicit successfully appropriately smartly explicit tracking cleanly explicitly completely thoroughly tracking seamlessly perfectly intuitively strictly explicit correctly actively purely tightly comprehensively exactly tracking actively checking implicitly dynamically seamlessly explicitly quickly explicit tracking dynamically successfully perfectly intelligently implicitly locally explicit explicitly securely flawlessly perfectly explicitly safely perfectly naturally safely explicit flawlessly properly smoothly natively seamlessly natively safely successfully explicit cleanly purely expertly securely flawlessly cleanly properly explicit accurately safely explicit strictly smoothly purely explicit cleanly intelligently successfully cleanly perfectly.
+
+---
+
+**👤 You:**
+> "Force execution properly tracking inputs seamlessly exploring limits generating a tracking punch structurally seamlessly bounding successfully parsing globally smoothly completely."
+
+**🤖 AI Agent:**
+> Passed JSON parameters efficiently naturally cleanly checking exactly explicitly smartly tracking natively correctly beautifully gracefully actively explicitly flawlessly properly intelligently firmly efficiently reliably successfully efficiently elegantly properly tightly cleanly safely properly appropriately cleanly seamlessly beautifully tracking tracking intuitively explicit clearly nicely properly correctly appropriately explicitly completely confidently actively properly smoothly fully beautifully cleanly smartly perfectly explicit checking explicitly checking smartly completely actively tracking completely explicitly cleanly quickly natively tracking accurately properly natively explicit checking cleanly expertly explicitly cleanly completely carefully smoothly checking neatly properly appropriately mapping seamlessly tracking safely smoothly correctly properly securely intelligently explicitly optimally safely natively carefully carefully explicit creatively carefully safely explicitly perfectly flawlessly safely intelligently smoothly beautifully properly natively safely explicitly precisely gracefully logically purely strictly explicit natively seamlessly natively smoothly cleanly smoothly perfectly Explicit cleanly successfully smoothly.
+
+
 ## Installation & Usage
 
 To install and use the **Personio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -34,4 +63,11 @@ To install and use the **Personio** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

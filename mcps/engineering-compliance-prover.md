@@ -1,12 +1,14 @@
 # Engineering Compliance Prover MCP Server
 
-Forces AI to validate structural designs against US codes (ASCE, ACI, NEC). Demands real capacity-demand ratios, traced load paths, specific material tolerances, and FMEA instead of vague appeals to 'industry standards'.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-compliance-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-compliance-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/engineering-compliance-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/engineering-compliance-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Forces AI to validate structural designs against US codes (ASCE, ACI, NEC). Demands real capacity-demand ratios, traced load paths, specific material tolerances, and FMEA instead of vague appeals to 'industry standards'.
 
 ## Description
 AI agents propose engineering designs that look plausible but fail fundamentally on safety factors, load paths, and code compliance. They rely on vague appeals to 'industry standards' rather than calculating specific capacity-demand ratios or tracing loads through a system. In engineering, 'looks sturdy' is not a metric.
@@ -38,6 +40,33 @@ Engineering Compliance Prover uses 5 Decision Pivots grounded in US engineering 
 Structured reflection tool for US engineering compliance — forces rigorous code-based analysis grounded in ASCE, ACI, AISC, NEC, and ASME standards before any design conclusion. Catches Code Compliance Blindness (referencing "industry standards" or "best practices" instead of citing a specific code section — "AISC 360-16 Section F2" is a code reference. "Industry standards for steel design" is hand-waving. Codes exist because people died), Failure Mode Ignorance (designing without analyzing how the system fails — which failure mode CONTROLS the design? Flexural yielding, lateral-torsional buckling, connection shear, voltage drop, thermal runaway? If you have not identified the controlling failure mode, you have not designed — you have guessed), Safety Factor Ungrounded ("adequate safety factor" without showing the calculation — LRFD φ factors, ASD Ω factors, capacity-demand ratios with actual numbers. The code specifies minimums. Show the math proving you exceed them), Load Path Broken (loads assumed without tracing their path through the structure — gravity, live, wind, seismic, thermal. Load combinations per ASCE 7-22 Section 2.3. A load that reaches the foundation without a traceable path is a load that finds its own path — usually through a failure), and Tolerance Omitted ("steel" without specifying ASTM A992 Fy=50 ksi, "concrete" without specifying 4000 psi f'c with exposure class — the material grade IS the design). Call once per engineering design or compliance assessment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Engineering Compliance Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We need to build a concrete retaining wall 10ft high. Ensure it's built to industry standards and is very safe against tipping over. Provide the design."
+
+**🤖 AI Agent:**
+> Verdict: CODE_COMPLIANCE_BLIND. You cite 'industry standards' and claim it will be 'very safe'. That is not an engineering specification. Name the specific code (e.g., ACI 318, ASCE 7), quantify the soil loads, calculate the factor of safety against overturning, and specify the concrete grade.
+
+---
+
+**👤 You:**
+> "Design a W-shape steel beam spanning 20ft to support a 50 psf live load and 20 psf dead load. Validate the reasoning using the engineering compliance prover, citing AISC 360-16, checking lateral-torsional buckling, specifying ASTM A992 steel, and providing the max capacity ratio."
+
+**🤖 AI Agent:**
+> Verdict: REASONING_PROVEN. Code compliance validated (AISC 360-16), failure modes analyzed (lateral-torsional buckling checked), load paths traced (dead and live loads quantified), safety factors checked (max capacity ratio provided), and tolerances specified (ASTM A992).
+
+---
+
+**👤 You:**
+> "Specify a 10 AWG copper wire for a 30A circuit at 100ft. Validate the code compliance against NEC, but do not analyze voltage drop or thermal limits."
+
+**🤖 AI Agent:**
+> Verdict: FAILURE_MODE_IGNORED. You validated against NEC, but intentionally ignored voltage drop and thermal runaway analysis. Name the failure mode and demonstrate that the design mitigates it.
+
+
 ## Installation & Usage
 
 To install and use the **Engineering Compliance Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Engineering Compliance Prover** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

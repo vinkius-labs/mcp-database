@@ -1,12 +1,14 @@
 # Sentinel Hub MCP Server
 
-Access and process satellite imagery from Sentinel, Landsat, and other Earth observation missions through a powerful cloud API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sentinel-hub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentinel-hub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sentinel-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sentinel-hub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 14
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Access and process satellite imagery from Sentinel, Landsat, and other Earth observation missions through a powerful cloud API.
 
 ## Description
 Connect to **Sentinel Hub** — the most powerful satellite imagery processing API in Europe — and transform raw Earth observation data into actionable intelligence.
@@ -79,6 +81,33 @@ Search Sentinel-2 imagery by MGRS tile identifier
 Search for cloud-free satellite imagery below a threshold
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sentinel Hub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me an NDVI vegetation analysis for the Amazon rainforest region."
+
+**🤖 AI Agent:**
+> I'll start by generating the NDVI evalscript... Done. Now processing Sentinel-2 imagery for the Amazon basin (-65,-5,-55,0) from the last 30 days. The processed result shows a 512x512 pixel NDVI map with dense vegetation (deep green) covering 87% of the area, sparse vegetation (yellow-green) at 8%, and water bodies (dark) at 5%. Would you like time-series statistics to track deforestation trends?
+
+---
+
+**👤 You:**
+> "Find cloud-free Sentinel-2 imagery over Paris with less than 10% clouds."
+
+**🤖 AI Agent:**
+> Searching for cloud-free scenes over Paris (2.2,48.8,2.5,48.9) with maximum 10% cloud cover... Found 3 scenes from the last month. The cleanest acquisition has 2.1% cloud cover from 5 days ago, captured by Sentinel-2A. The next scene has 7.3% from 10 days ago. Would you like me to generate a true-color image of the cleanest scene?
+
+---
+
+**👤 You:**
+> "What band combinations can I use for wildfire assessment?"
+
+**🤖 AI Agent:**
+> I've listed the available band combinations. For wildfire assessment, you should use the **Burn Severity (NBR)** index which combines bands B08 (NIR) and B12 (SWIR) from Sentinel-2. For broader context, the **SWIR** composite (B12, B8A, B04) highlights burned areas in distinctive colors. The **False Color (Vegetation)** combination (B08, B04, B03) also clearly distinguishes healthy vegetation from burned areas. Would you like me to process burn severity for a specific region?
+
+
 ## Installation & Usage
 
 To install and use the **Sentinel Hub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Sentinel Hub** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

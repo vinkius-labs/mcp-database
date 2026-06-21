@@ -1,12 +1,14 @@
 # TAPD MCP Server
 
-Agile product development and collaboration platform by Tencent — manage stories, bugs, and iterations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tapd)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tapd)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tapd-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tapd-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Agile product development and collaboration platform by Tencent — manage stories, bugs, and iterations via AI.
 
 ## Description
 Empower your AI agent to orchestrate your agile development lifecycle with **TAPD**, the professional collaboration platform by Tencent. By connecting TAPD to your agent, you transform complex requirement tracking, bug management, and iteration planning into a natural conversation. Your agent can instantly list your workspaces, create new stories, track defects, and even monitor sprint progress without you ever needing to navigate the complex TAPD enterprise interface. Whether you are following Scrum or Kanban, your agent acts as a real-time product assistant, keeping your development pipeline organized and your team aligned.
@@ -47,6 +49,33 @@ Empower your AI agent to orchestrate your agile development lifecycle with **TAP
 - **list_workspaces**: List all TAPD workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TAPD** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active workspaces on TAPD."
+
+**🤖 AI Agent:**
+> I've retrieved your TAPD workspaces. You have 4 active projects, including 'Cloud Infrastructure' and 'Mobile App V2'. Which one would you like to view items for?
+
+---
+
+**👤 You:**
+> "Create a new bug in workspace 'Mobile App V2' titled 'App crashes on splash screen'."
+
+**🤖 AI Agent:**
+> Done! I've created a new bug report 'App crashes on splash screen' in the 'Mobile App V2' workspace. I've assigned it a high priority by default. Would you like to add reproduction steps?
+
+---
+
+**👤 You:**
+> "Show me the iterations for project 'Cloud Infrastructure'."
+
+**🤖 AI Agent:**
+> I've listed the iterations for 'Cloud Infrastructure'. You have 3 iterations defined, including 'Q2 Milestone' (In Progress) and 'Security Patch v1.1' (Planned). Which one would you like to audit?
+
+
 ## Installation & Usage
 
 To install and use the **TAPD** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **TAPD** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Traction Guest MCP Server
 
-Manage visitor operations via Traction Guest — list hosts, locations, invites, sign-ins, and group visits directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/traction-guest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/traction-guest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/traction-guest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/traction-guest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 24
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage visitor operations via Traction Guest — list hosts, locations, invites, sign-ins, and group visits directly from any AI agent.
 
 ## Description
 Connect your **Traction Guest** (now Sign In Enterprise) account to any AI agent and take full control of visitor management workflows through natural conversation.
@@ -142,6 +144,58 @@ and the fields to update as JSON.
 Update an existing visitor sign-in record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Traction Guest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all upcoming visitor invites for the New York office this week."
+
+**🤖 AI Agent:**
+> I found 8 upcoming invites for the New York office:
+1. **Alice Johnson** — Host: John Smith — April 10, 10:00 AM — Interview
+2. **Bob Williams** — Host: Sarah Davis — April 10, 2:00 PM — Client Meeting
+3. **Carol Martinez** — Host: Mike Brown — April 11, 9:30 AM — Vendor Demo
+4. **David Lee** — Host: John Smith — April 12, 11:00 AM — Interview
+5. **Emma Wilson** — Host: Sarah Davis — April 13, 3:00 PM — Training Session
+6. **Frank Garcia** — Host: Mike Brown — April 13, 4:00 PM — Delivery
+7. **Grace Taylor** — Host: John Smith — April 14, 10:00 AM — Interview
+8. **Henry Anderson** — Host: Sarah Davis — April 14, 1:00 PM — Partner Meeting
+
+Would you like to create a new invite or check current sign-ins?
+
+---
+
+**👤 You:**
+> "Create a group visit for a Campus Tour on April 20th with 20 expected attendees, hosted by Sarah Davis at the Main Office."
+
+**🤖 AI Agent:**
+> I've successfully created the group visit:
+- **Group Visit ID**: GV-20260420-001
+- **Name**: Campus Tour
+- **Date**: April 20, 2026
+- **Expected Attendees**: 20
+- **Host**: Sarah Davis
+- **Location**: Main Office
+
+The group visit is now scheduled and ready for individual invite creation. Would you like me to create invites for specific attendees?
+
+---
+
+**👤 You:**
+> "Show me who is currently checked in at the New York office and list any security watchlist alerts."
+
+**🤖 AI Agent:**
+> Currently checked in at New York office:
+1. **Alice Johnson** — Checked in: 9:15 AM — Host: John Smith — Purpose: Interview — Badge: V-1234
+2. **Bob Williams** — Checked in: 1:45 PM — Host: Sarah Davis — Purpose: Client Meeting — Badge: V-1235
+3. **Carol Martinez** — Checked in: 2:00 PM — Host: Mike Brown — Purpose: Vendor Demo — Badge: V-1236
+
+✅ **Security Watchlists**: No alerts detected. All current visitors have passed security screening.
+
+Would you like to check in a new visitor or review audit logs?
+
+
 ## Installation & Usage
 
 To install and use the **Traction Guest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -150,4 +204,11 @@ To install and use the **Traction Guest** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

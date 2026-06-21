@@ -1,12 +1,14 @@
 # Tencent CloudBase / 腾讯云开发 TCB MCP Server
 
-China's dominant serverless platform — orchestrate cloud functions, databases, and storage via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-cloudbase-tcb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-cloudbase-tcb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-cloudbase-tcb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-cloudbase-tcb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's dominant serverless platform — orchestrate cloud functions, databases, and storage via AI.
 
 ## Description
 Empower your AI agent to orchestrate your serverless infrastructure and backend resources with **Tencent CloudBase** (云开发), the premier BaaS platform in China. By connecting TCB to your agent, you transform complex cloud function management, database auditing, and storage orchestration into a natural conversation. Your agent can instantly retrieve function lists, invoke cloud logic with custom data, query NoSQL collections, and monitor environment quotas without you ever needing to navigate the comprehensive Tencent Cloud Console. Whether you are managing miniapp backends or coordinating high-volume digital automation, your agent acts as a real-time serverless operations assistant, providing accurate results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your serverless infrastructure and backend 
 - **query_cloud_db**: Query cloud database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tencent CloudBase / 腾讯云开发 TCB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all cloud functions in our 'prod-8821' environment."
+
+**🤖 AI Agent:**
+> I've retrieved the cloud function list for environment `prod-8821`. You have 12 active functions, including 'OrderProcessor' (Node.js 16) and 'UserSync' (Python 3.7). Would you like me to trigger one of these functions for you?
+
+---
+
+**👤 You:**
+> "Query the 'Users' collection for all documents where 'status' is 'active'."
+
+**🤖 AI Agent:**
+> I've executed the database query on the 'Users' collection. I found 45 active users. Should I retrieve the full details for the first few users or check your remaining storage quota?
+
+---
+
+**👤 You:**
+> "Show me the configuration and quota usage for our TCB environment."
+
+**🤖 AI Agent:**
+> I've retrieved your environment summary. Your TCB instance is running in 'ap-shanghai' and is currently 'NORMAL'. You have used 45% of your free storage quota and 12% of your monthly function invocations. Would you like me to audit your VPC settings?
+
+
 ## Installation & Usage
 
 To install and use the **Tencent CloudBase / 腾讯云开发 TCB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Tencent CloudBase / 腾讯云开发 TCB** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

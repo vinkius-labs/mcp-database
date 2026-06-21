@@ -1,12 +1,14 @@
 # Google Calendar MCP Server
 
-Sync and orchestrate your agenda securely — scan, schedule, and manipulate Google Calendar events natively in chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-calendar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-calendar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-calendar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-calendar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 15
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Sync and orchestrate your agenda securely — scan, schedule, and manipulate Google Calendar events natively in chat.
 
 ## Description
 Connect your **Google Calendar** network to any AI agent and optimize scheduling frictions cleanly. Let a dedicated AI calendar associate fetch meeting data, clear blocks, and establish appointments automatically.
@@ -47,6 +49,33 @@ Connect your **Google Calendar** network to any AI agent and optimize scheduling
 - **update_event**: Modify an existing event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Calendar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my schedule for tomorrow and list the upcoming overlapping events."
+
+**🤖 AI Agent:**
+> Scanning the timeline for tomorrow... Between 14:00 and 15:00 UTC I detected two conflicting bookings: 'Q3 Board Review' and 'Design Synchronization Session'. Should I cancel the Design sync?
+
+---
+
+**👤 You:**
+> "Book a 30-minute sync session with marketing@domain.com for next Tuesday at 10 AM."
+
+**🤖 AI Agent:**
+> Request finalized. Event 'Marketing Sync Session' successfully placed on the calendar for next Tuesday at 10:00 (Duration: 30m). An invite payload including Meet details was beamed to marketing@domain.com.
+
+---
+
+**👤 You:**
+> "Modify the location of the event titled 'Team Dinner' to 'The Grand Plaza Downtown'."
+
+**🤖 AI Agent:**
+> Search pinpointed the item ('Team Dinner' // ID: c18ba29d). Location parameter swapped securely to 'The Grand Plaza Downtown'. Updates have been cascaded down successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Google Calendar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Google Calendar** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

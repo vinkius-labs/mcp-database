@@ -1,12 +1,14 @@
 # PassKit MCP Server
 
-Create digital passes for Apple Wallet and Google Pay with loyalty cards, coupons, and event tickets that update in real time.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/passkit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/passkit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/passkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/passkit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Create digital passes for Apple Wallet and Google Pay with loyalty cards, coupons, and event tickets that update in real time.
 
 ## Description
 Connect your **PassKit** account to any AI agent and take full control of your digital wallet orchestration through natural conversation. PassKit is the premier platform for creating and managing cards for Apple Wallet and Google Wallet, and this integration allows you to issue loyalty cards, event tickets, and boarding passes directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual pass generation or switching between wallet dashboards. Your AI a
 - **update_member**: Update member data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PassKit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my branding images in PassKit."
+
+**🤖 AI Agent:**
+> I've retrieved your assets. You have 5 active images including your company logo and several promotional banners. Would you like to use any of these in a new pass design?
+
+---
+
+**👤 You:**
+> "Issue a new digital loyalty card for member sarah.chen@example.com with 500 welcome points."
+
+**🤖 AI Agent:**
+> Loyalty card issued successfully for sarah.chen@example.com. Member ID: MBR-29847. Tier: Silver. Welcome points: 500 credited. The digital pass has been generated and an enrollment email sent with Apple Wallet and Google Pay installation links. The pass includes a personalized barcode for in-store scanning.
+
+---
+
+**👤 You:**
+> "Create a promotional coupon pass for our 25% off summer sale valid until August 31st."
+
+**🤖 AI Agent:**
+> Coupon pass created successfully (ID: CPN-8421). Discount: 25% off entire purchase. Valid: Now through August 31, 2025. The pass features your brand colors and summer campaign artwork. Distribution URL generated for email campaigns and social media sharing. Supports both Apple Wallet and Google Pay. Redemption limit set to single use per customer.
+
+
 ## Installation & Usage
 
 To install and use the **PassKit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **PassKit** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

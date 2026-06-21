@@ -1,12 +1,14 @@
 # Vanta MCP Server
 
-Manage your automated compliance and security posture. Audit users, devices, vendors, and vulnerabilities directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vanta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vanta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vanta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vanta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage your automated compliance and security posture. Audit users, devices, vendors, and vulnerabilities directly from your AI agent.
 
 ## Description
 Connect your **Vanta** account to any AI agent and bring continuous security monitoring directly into your conversational workflow.
@@ -67,6 +69,33 @@ List all compliance monitoring tests in Vanta — SOC 2, ISO 27001, HIPAA, and G
 List detected security vulnerabilities across your infrastructure — severity, CVE IDs, affected resources, and SLA deadlines
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vanta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List pending Trust Center requests for our security documentation."
+
+**🤖 AI Agent:**
+> I've retrieved the pending Trust Center requests. You currently have 3 prospects awaiting access: 'sarah@piedpiper.com' requested SOC 2 Type II reports yesterday, and 'admin@hooli.xyz' requested Pen-Test summaries this morning. Would you like me to approve these specific emails for viewing?
+
+---
+
+**👤 You:**
+> "Retrieve the Vanta framework compliance details and mapped status of our organization."
+
+**🤖 AI Agent:**
+> I retrieved your Vanta organization details. Your company 'Acme Corp' is currently actively tracking towards SOC 2 Type II and HIPAA frameworks. Your continuous monitoring health score sits firmly at 92%. Would you like a breakdown of any failing domains?
+
+---
+
+**👤 You:**
+> "What subprocessor vendors are we actively syncing in Vanta right now?"
+
+**🤖 AI Agent:**
+> You have 14 active integrations serving as authorized subprocessors logged in Vanta. Major ones include Amazon Web Services, GitHub, Slack, and Datadog. Three minor vendors are currently unverified and missing full justification descriptions in the system policy context.
+
+
 ## Installation & Usage
 
 To install and use the **Vanta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **Vanta** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

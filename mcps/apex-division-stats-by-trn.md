@@ -1,12 +1,14 @@
 # Apex & Division Stats by TRN MCP Server
 
-Deep gaming analytics — player profiles, per-legend breakdowns, match history, and global leaderboards for Apex Legends and Division 2 via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apex-division-stats-by-trn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apex-division-stats-by-trn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apex-division-stats-by-trn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apex-division-stats-by-trn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 9
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Deep gaming analytics — player profiles, per-legend breakdowns, match history, and global leaderboards for Apex Legends and Division 2 via AI.
 
 ## Description
 Transform your AI agent into a professional esports analyst with **Apex & Division Stats by TRN**, powered by the official Tracker Network API. This server gives your agent real-time access to the TRN database — the same data powering tracker.gg, trusted by millions of competitive gamers worldwide.
@@ -57,6 +59,39 @@ Get current Apex Legends game metadata
 Search for a player across the Tracker Network ecosystem
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apex & Division Stats by TRN** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the full Apex Legends stats for 'ImperialHal' on Origin."
+
+**🤖 AI Agent:**
+> ImperialHal is currently at Predator rank with over 52,000 lifetime kills, a 4.8 K/D ratio, and 2,100 wins. His top legends are Wraith and Horizon. Would you like to see the per-legend breakdown or his recent match history?
+
+---
+
+**👤 You:**
+> "Compare the legend stats of two players: 'Player1' and 'Player2' on PSN."
+
+**🤖 AI Agent:**
+> I've pulled the per-legend breakdowns for both players. Player1 mains Octane with 8,200 kills and 45% headshot rate, while Player2 focuses on Lifeline with superior win rates. Player1 has 15% more total damage but Player2 has a higher K/D across all legends.
+
+---
+
+**👤 You:**
+> "Who are the top 5 Apex players worldwide by RankScore on PC?"
+
+**🤖 AI Agent:**
+> Here's the current global leaderboard for RankScore on Origin:
+1. Player_A — 48,200 RP
+2. Player_B — 47,800 RP
+3. Player_C — 47,100 RP
+4. Player_D — 46,500 RP
+5. Player_E — 46,200 RP
+Would you like detailed profiles for any of these players?
+
+
 ## Installation & Usage
 
 To install and use the **Apex & Division Stats by TRN** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +100,11 @@ To install and use the **Apex & Division Stats by TRN** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

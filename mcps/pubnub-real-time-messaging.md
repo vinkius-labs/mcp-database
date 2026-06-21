@@ -1,12 +1,14 @@
 # PubNub (Real-time Messaging) MCP Server
 
-Enable real-time messaging, presence tracking, and message history for your AI agent using PubNub's global data stream network.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pubnub-real-time-messaging)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubnub-real-time-messaging)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubnub-real-time-messaging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubnub-real-time-messaging-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 31
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Enable real-time messaging, presence tracking, and message history for your AI agent using PubNub's global data stream network.
 
 ## Description
 Connect your **PubNub** account to any AI agent to orchestrate real-time communication, monitor user presence, and manage data streams through natural language.
@@ -67,6 +69,33 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 - **set_user**: Set or update a user (App Context)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PubNub (Real-time Messaging)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Publish a message to the 'alerts' channel saying 'System update scheduled for midnight'."
+
+**🤖 AI Agent:**
+> I've published the message to the 'alerts' channel. The timetoken for this message is 17156348210000000.
+
+---
+
+**👤 You:**
+> "Get the last 5 messages from the 'support-chat' channel."
+
+**🤖 AI Agent:**
+> I retrieved the last 5 messages from 'support-chat'. They include inquiries about billing and a technical setup question from user UUID-987.
+
+---
+
+**👤 You:**
+> "Who is currently active in the 'lobby' channel?"
+
+**🤖 AI Agent:**
+> There are currently 3 users in the 'lobby' channel: 'admin-01', 'user-55', and 'guest-12'.
+
+
 ## Installation & Usage
 
 To install and use the **PubNub (Real-time Messaging)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **PubNub (Real-time Messaging)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

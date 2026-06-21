@@ -1,12 +1,14 @@
 # Kavak MCP Server
 
-Browse, inspect, finance, and reserve certified used cars from Kavak — Mexico's largest online used car platform — directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kavak)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kavak)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kavak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kavak-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Browse, inspect, finance, and reserve certified used cars from Kavak — Mexico's largest online used car platform — directly from any AI agent.
 
 ## Description
 Connect to the **Kavak** platform from any AI agent and navigate Mexico's largest certified pre-owned vehicle marketplace through natural conversation.
@@ -61,6 +63,33 @@ Schedule a test drive for a vehicle
 Search available used cars in the Kavak inventory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kavak** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find me Toyota Corollas from 2020-2023 under $350,000 MXN."
+
+**🤖 AI Agent:**
+> I found 8 Toyota Corollas matching your criteria: 1. 2022 Corolla SE — $329,000 MXN (42,000 km, automatic, silver). 2. 2021 Corolla LE — $298,000 MXN (58,000 km, automatic, white). 3. 2020 Corolla Base — $265,000 MXN (71,000 km, manual, gray). All include Kavak's 240-point inspection and 3-month warranty. Would you like to see the inspection report or financing options for any of these?
+
+---
+
+**👤 You:**
+> "What would Kavak offer me for my 2019 Nissan Sentra with 85,000 km?"
+
+**🤖 AI Agent:**
+> Based on Kavak's AI valuation engine, your 2019 Nissan Sentra (85,000 km, assumed 'good' condition) has an estimated trade-in value of $178,500 MXN. The current Kavak selling price for equivalent models is $215,000-$235,000 MXN. This offer is valid for 7 days. Would you like to proceed with the trade-in process or browse vehicles to buy with the trade-in credit?
+
+---
+
+**👤 You:**
+> "Show financing options for vehicle ID KV-88201 with a $50,000 MXN down payment."
+
+**🤖 AI Agent:**
+> Financing options for KV-88201 (2022 Mazda 3 — $345,000 MXN) with $50,000 enganche: 12 months: $27,100/mo (12.9% rate, CAT 16.2%). 24 months: $14,500/mo (13.9% rate, CAT 17.5%). 36 months: $10,300/mo (14.5% rate, CAT 18.8%). 48 months: $8,250/mo (15.2% rate, CAT 19.5%). 60 months: $7,100/mo (15.9% rate, CAT 20.1%). Would you like to reserve this vehicle?
+
+
 ## Installation & Usage
 
 To install and use the **Kavak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Kavak** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

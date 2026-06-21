@@ -1,12 +1,14 @@
 # Fireworks AI MCP Server
 
-Empower LLM applications via Fireworks AI — perform ultra-fast chat completions, generate embeddings and images, and transcribe audio directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fireworks-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fireworks-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fireworks-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fireworks-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Empower LLM applications via Fireworks AI — perform ultra-fast chat completions, generate embeddings and images, and transcribe audio directly from any AI agent.
 
 ## Description
 Connect your **Fireworks AI** account to any AI agent and take full control of your generative AI inference and high-speed LLM workflows through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Fireworks AI** account to any AI agent and take full control of y
 - **transcribe**: Transcribe audio via Fireworks AI
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fireworks AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Chat with 'llama-v3-70b': 'Explain quantum entanglement simply.'"
+
+**🤖 AI Agent:**
+> Inference complete! Llama-v3 response: 'Quantum entanglement is a phenomenon where two or more particles become connected in such a way that the state of one particle instantly influences the state of the other, regardless of the distance between them...'
+
+---
+
+**👤 You:**
+> "Generate embeddings for these sentences: ['AI is great', 'MCP is powerful']"
+
+**🤖 AI Agent:**
+> Embeddings synthesized! I've retrieved the vector representations for your 2 sentences. You can now use these arrays for semantic search or indexing in your vector database.
+
+---
+
+**👤 You:**
+> "Generate an image of a cybernetic forest at night"
+
+**🤖 AI Agent:**
+> Image generation started! I'm using Fireworks AI inference to create your cybernetic forest visual. The high-fidelity result will be ready for you to view in just a few seconds.
+
+
 ## Installation & Usage
 
 To install and use the **Fireworks AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Fireworks AI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

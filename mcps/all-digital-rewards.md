@@ -1,12 +1,14 @@
 # All Digital Rewards MCP Server
 
-Incentive and reward orchestration — manage participants, points, and catalogs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/all-digital-rewards)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/all-digital-rewards)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/all-digital-rewards-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/all-digital-rewards-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Incentive and reward orchestration — manage participants, points, and catalogs via AI.
 
 ## Description
 Connect your **All Digital Rewards (RewardSTACK™)** account to your AI agent to unlock professional incentive program management. From registering new participants and issuing behavior-based points to auditing reward catalogs and monitoring fulfillment orders, your agent handles your engagement strategy through natural conversation.
@@ -46,6 +48,33 @@ Connect your **All Digital Rewards (RewardSTACK™)** account to your AI agent t
 - **get_order_details**: Get order fulfillment status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **All Digital Rewards** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active incentive programs in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your programs. You have 3 active incentive structures: 'Employee Wellness 2026', 'Customer Loyalty Platinum', and 'Q1 Sales Contest'. Would you like to see the participant count for any of these?
+
+---
+
+**👤 You:**
+> "Issue 500 points to participant ID 'part_12345' for 'Excellence Award'."
+
+**🤖 AI Agent:**
+> I've successfully issued 500 points to participant part_12345. Their new balance is 1,250 points. The transaction has been logged under the 'Excellence Award' reason. Would you like to see their full transaction history?
+
+---
+
+**👤 You:**
+> "List the top 5 most popular rewards in my catalog."
+
+**🤖 AI Agent:**
+> I've analyzed your reward catalog. The top 5 most redeemed items are: 1. $50 Amazon Gift Card, 2. $25 Starbucks Card, 3. Noise-cancelling Headphones, 4. Wireless Mouse, and 5. $100 Visa Prepaid Card. Would you like to check the current stock for the physical items?
+
+
 ## Installation & Usage
 
 To install and use the **All Digital Rewards** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **All Digital Rewards** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

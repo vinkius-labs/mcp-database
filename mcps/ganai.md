@@ -1,12 +1,14 @@
 # GAN.ai MCP Server
 
-Generate personalized videos at scale, track generation status, and oversee campaigns via AI agents with GAN.ai.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ganai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ganai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ganai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ganai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Generate personalized videos at scale, track generation status, and oversee campaigns via AI agents with GAN.ai.
 
 ## Description
 Connect your **GAN.ai** account to any AI agent to automate your personalized video marketing and sales outreach through the Model Context Protocol (MCP). GAN.ai is a leading generative AI platform that enables brands to create thousands of unique videos with custom names, locations, and details. This MCP server enables you to trigger video generation, monitor real-time processing status, and retrieve landing page links directly through natural conversation.
@@ -54,6 +56,33 @@ Get workspace details
 - **list_configured_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GAN.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available video projects in GAN.ai."
+
+**🤖 AI Agent:**
+> Retrieving projects... I found 3 active projects: 'Welcome Message v2', 'Product Demo', and 'Follow-up Campaign'. Which template should we use?
+
+---
+
+**👤 You:**
+> "Generate a personalized video for 'John Doe' (johndoe@email.com) using project 'proj_123'."
+
+**🤖 AI Agent:**
+> Generation triggered! I've successfully sent the request for John Doe. The Inference ID is 'inf_abc789'. I'll monitor its status for you.
+
+---
+
+**👤 You:**
+> "Check the status of video generation 'inf_abc789'."
+
+**🤖 AI Agent:**
+> Checking status... The video for John Doe is 'Completed'! You can access the personalized landing page here: [Permalink].
+
+
 ## Installation & Usage
 
 To install and use the **GAN.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **GAN.ai** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

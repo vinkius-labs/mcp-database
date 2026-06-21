@@ -1,12 +1,14 @@
 # Fitbit MCP Server
 
-Access Fitbit health data via AI — query activities, sleep, heart rate, SpO2, body weight, and nutrition logs in natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fitbit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fitbit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fitbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fitbit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 14
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access Fitbit health data via AI — query activities, sleep, heart rate, SpO2, body weight, and nutrition logs in natural conversation.
 
 ## Description
 Connect your **Fitbit** account to any AI agent and gain instant access to your comprehensive health and fitness data through natural conversation.
@@ -79,6 +81,25 @@ Get blood oxygen saturation (SpO2) for a specific date
 Get water intake log for a specific date
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fitbit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How did I sleep last night?"
+
+**🤖 AI Agent:**
+> You slept 7h 23m total. Deep sleep: 1h 45m (24%), Light: 3h 52m (53%), REM: 1h 20m (18%), Awake: 26m. Your sleep score was 82/100 — above your weekly average of 76.
+
+---
+
+**👤 You:**
+> "Show my heart rate trends for the past week."
+
+**🤖 AI Agent:**
+> Your average resting heart rate this week was 62 bpm, down from 65 bpm last week. Peak zone time increased to 45 minutes total across 3 workout sessions. Cardio fitness score: 42 (Good).
+
+
 ## Installation & Usage
 
 To install and use the **Fitbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +108,11 @@ To install and use the **Fitbit** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # GivingFuel MCP Server
 
-Retrieve donation orders, track registrants, and oversee fundraising pages via AI agents with GivingFuel.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/givingfuel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/givingfuel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/givingfuel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/givingfuel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 10
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Retrieve donation orders, track registrants, and oversee fundraising pages via AI agents with GivingFuel.
 
 ## Description
 Connect your **GivingFuel** account to any AI agent to automate your fundraising data extraction and donor relationship management through the Model Context Protocol (MCP). GivingFuel is a powerful, flexible fundraising platform for nonprofits and ministries. This MCP server enables you to retrieve donation orders, track individual donor responses (registrants), and monitor active fundraising pages directly through natural conversation.
@@ -47,6 +49,33 @@ Connect your **GivingFuel** account to any AI agent to automate your fundraising
 - **list_financial_transactions**: List successful charges
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GivingFuel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 donation orders received."
+
+**🤖 AI Agent:**
+> Retrieving orders... I found 5 recent donations, including $100 from 'Michael Scott' and $50 from 'Jim Halpert'. Would you like to see the registrant details for any of them?
+
+---
+
+**👤 You:**
+> "Show me all fundraising pages active in my account."
+
+**🤖 AI Agent:**
+> Retrieving pages... I found 3 active donation pages: 'Fall Gala 2024', 'Building Fund', and 'Monthly Giving Circle'. Which one would you like to see the configuration for?
+
+---
+
+**👤 You:**
+> "How many donations were marked as 'refunded' today?"
+
+**🤖 AI Agent:**
+> Checking transactions... I found 2 donation orders marked as 'refunded' today, totaling $75.00. One was for the 'Summer Camp' fund.
+
+
 ## Installation & Usage
 
 To install and use the **GivingFuel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **GivingFuel** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

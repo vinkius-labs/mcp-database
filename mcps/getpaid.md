@@ -1,12 +1,14 @@
 # Getpaid MCP Server
 
-Manage billing, track payments, and initiate checkouts via AI agents with Getpaid.io.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/getpaid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getpaid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/getpaid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/getpaid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 12
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage billing, track payments, and initiate checkouts via AI agents with Getpaid.io.
 
 ## Description
 Connect your **Getpaid** account to any AI agent to automate your billing, payment processing, and checkout workflows through the Model Context Protocol (MCP). Getpaid is a modern payment platform designed for SaaS, marketplaces, and service businesses to handle global transactions with ease. This MCP server enables you to track payments, manage customer records, and initiate new checkout sessions directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Getpaid** account to any AI agent to automate your billing, payme
 - **refund_billing_payment**: Process a refund
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Getpaid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all payments processed today."
+
+**🤖 AI Agent:**
+> Retrieving payments... I found 5 payments processed today, including a $50.00 charge (Status: Captured) and a $15.00 charge. Would you like the full details for any of them?
+
+---
+
+**👤 You:**
+> "Create a checkout session for $25.00 USD."
+
+**🤖 AI Agent:**
+> Checkout initiated! I've successfully created a session for 2500 cents ($25.00 USD). The Checkout ID is 'chk_abc123'. You can share this link with the customer: [Payment Link].
+
+---
+
+**👤 You:**
+> "Refund payment 'pay_98765' for the full amount."
+
+**🤖 AI Agent:**
+> Refund processed! I have successfully initiated a full refund for payment pay_98765. The status is now 'refunded' and the customer will see the credit shortly.
+
+
 ## Installation & Usage
 
 To install and use the **Getpaid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Getpaid** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Flow XO MCP Server
 
-Automate chatbots, manage end users, and trigger workflows via AI agents with Flow XO.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flow-xo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flow-xo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flow-xo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flow-xo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate chatbots, manage end users, and trigger workflows via AI agents with Flow XO.
 
 ## Description
 Connect your **Flow XO** account to any AI agent and automate your chatbot interactions and messaging workflows through the Model Context Protocol (MCP). Flow XO is a versatile platform for building and managing chatbots across various channels like Slack, Telegram, and the web. Now, you can manage your automation flows, oversee chatbot users, and trigger webhook-based workflows directly through natural conversation.
@@ -51,6 +53,33 @@ List platform accounts
 - **update_user**: Update user metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flow XO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Flow XO chatbot users."
+
+**🤖 AI Agent:**
+> Fetching chatbot users... I found your end-user database, including 'John Doe' (Slack) and 'Jane Smith' (Telegram). Would you like to see the interaction history for any of them?
+
+---
+
+**👤 You:**
+> "Disable the workflow 'Old Customer Survey'."
+
+**🤖 AI Agent:**
+> Workflow updated! I've successfully disabled the 'Old Customer Survey' flow. It is no longer active in your Flow XO account.
+
+---
+
+**👤 You:**
+> "Send a push message to path 'abc/123': 'Your order has been shipped!'."
+
+**🤖 AI Agent:**
+> Message sent! I've delivered your push notification to the specified response path via Flow XO. The user will receive 'Your order has been shipped!' immediately.
+
+
 ## Installation & Usage
 
 To install and use the **Flow XO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Flow XO** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

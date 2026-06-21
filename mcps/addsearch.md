@@ -1,12 +1,14 @@
 # AddSearch MCP Server
 
-Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/addsearch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/addsearch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/addsearch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/addsearch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly.
 
 ## Description
 Connect your **AddSearch** account to your AI agent and turn your site's search index into an interactive, manageable database. Perfect for content teams and developers who need to audit site search performance without opening dashboards.
@@ -56,6 +58,45 @@ Retrieve search query analytics
 - **autosuggest**: Get autocomplete suggestions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AddSearch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top search queries that resulted in 0 hits."
+
+**🤖 AI Agent:**
+> Based on the recent stats, the top zero-result queries are:
+1. 'internship 2026' - 142 searches
+2. 'sso integration' - 89 searches
+3. 'gdpr compliance pdf' - 55 searches
+These topics might be worth adding to your content backlog.
+
+---
+
+**👤 You:**
+> "Search my site for "pricing updates" filtered by category=news."
+
+**🤖 AI Agent:**
+> Found 3 results for "pricing updates" in the 'news' category:
+1. Q1 Pricing Announcement (Score: 0.95)
+2. Subscriptions Fact-sheet (Score: 0.81)
+3. Partner Network Updates (Score: 0.72)
+Would you like the full URL and snippet for the top result?
+
+---
+
+**👤 You:**
+> "Test the auto-suggest for the prefix "shoe"."
+
+**🤖 AI Agent:**
+> The auto-suggest API returns these completions for "shoe":
+- shoes for running
+- shoelaces
+- shoe sizing guide
+The system confirms the index is correctly populating typed suggestions for this entity.
+
+
 ## Installation & Usage
 
 To install and use the **AddSearch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +105,11 @@ To install and use the **AddSearch** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

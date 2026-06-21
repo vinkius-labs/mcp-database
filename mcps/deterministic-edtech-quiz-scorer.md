@@ -1,12 +1,14 @@
 # Deterministic EdTech Quiz Scorer MCP Server
 
-Transform your AI into a ruthless, high-precision EdTech examiner. Automatically cross-reference quiz answers against weighted keys to generate granular performance metrics instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-edtech-quiz-scorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-edtech-quiz-scorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-edtech-quiz-scorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-edtech-quiz-scorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Transform your AI into a ruthless, high-precision EdTech examiner. Automatically cross-reference quiz answers against weighted keys to generate granular performance metrics instantly.
 
 ## Description
 Building custom assessment pipelines usually involves writing bloated scripts to compare arrays, calculate weighted averages, and isolate category weaknesses. The EdTech Quiz Scorer MCP solves this by offloading the entire grading pipeline to a hyper-optimized V8 algorithmic engine.
@@ -24,6 +26,33 @@ Building custom assessment pipelines usually involves writing bloated scripts to
 Automatically cross-references a user's quiz answers against a weighted answer key, generating granular EdTech performance metrics and categorical accuracy percentages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deterministic EdTech Quiz Scorer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Score this 10-question Math exam for the student."
+
+**🤖 AI Agent:**
+> Using the score_quiz tool: The student scored 8.5 out of 10.0 (85% accuracy). They missed questions #3 and #7.
+
+---
+
+**👤 You:**
+> "Give me a category breakdown of the student's weaknesses."
+
+**🤖 AI Agent:**
+> Using the score_quiz tool: The category breakdown shows the student excels in 'Algebra' (100%), but is struggling in 'Geometry' (only 40% correct).
+
+---
+
+**👤 You:**
+> "Calculate the average time per question if they finished in 180 seconds."
+
+**🤖 AI Agent:**
+> Using the score_quiz tool (totalTimeSeconds=180): The performance metrics show an average of 18 seconds spent per question.
+
+
 ## Installation & Usage
 
 To install and use the **Deterministic EdTech Quiz Scorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -32,4 +61,11 @@ To install and use the **Deterministic EdTech Quiz Scorer** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

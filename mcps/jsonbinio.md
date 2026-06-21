@@ -1,12 +1,14 @@
 # JSONBin.io MCP Server
 
-Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jsonbinio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jsonbinio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jsonbinio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jsonbinio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 27
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent.
 
 ## Description
 Connect **JSONBin.io** to your AI agent to turn it into a powerful data management assistant. Whether you are prototyping, storing configuration, or managing application state, this server provides full control over your cloud-based JSON storage.
@@ -68,6 +70,33 @@ Read a JSON bin
 - **update_schema**: Update a JSON schema document
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JSONBin.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new private bin named 'AppConfig' with this JSON: {"theme": "dark", "version": 1.2}"
+
+**🤖 AI Agent:**
+> I've created the bin 'AppConfig'. The Bin ID is `65f1a...`. It is currently private and contains your configuration data.
+
+---
+
+**👤 You:**
+> "Read the data from bin ID 65f1a... but only return the 'theme' field using JSON Path."
+
+**🤖 AI Agent:**
+> Fetching data with JSON Path filter... The value for 'theme' in that bin is: "dark".
+
+---
+
+**👤 You:**
+> "List all my existing collections on JSONBin."
+
+**🤖 AI Agent:**
+> I found 3 collections: 'Production-DB', 'Staging-Configs', and 'User-Backups'. Which one would you like to inspect?
+
+
 ## Installation & Usage
 
 To install and use the **JSONBin.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **JSONBin.io** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

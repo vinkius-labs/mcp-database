@@ -1,12 +1,14 @@
 # Rebrickable LEGO MCP Server
 
-Explore the LEGO universe — search sets, parts, minifigs, themes and colors with full catalog data from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rebrickable-lego)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rebrickable-lego)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rebrickable-lego-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rebrickable-lego-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 11
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Explore the LEGO universe — search sets, parts, minifigs, themes and colors with full catalog data from any AI agent.
 
 ## Description
 Connect to the **Rebrickable LEGO API** and explore the entire LEGO catalog through natural conversation.
@@ -71,6 +73,33 @@ Search LEGO sets in the Rebrickable catalog
 List LEGO themes and sub-themes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rebrickable LEGO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all LEGO Star Wars sets from 2024."
+
+**🤖 AI Agent:**
+> Found 15 Star Wars sets from 2024. Highlights include: '75375 Millennium Falcon' (921 pieces), '75367 Venator-Class Republic Attack Cruiser' (5374 pieces), and several UCS and polybag sets. Results include piece counts, themes and image URLs.
+
+---
+
+**👤 You:**
+> "Show me the parts inventory for set 10497 (Galaxy Explorer)."
+
+**🤖 AI Agent:**
+> The Galaxy Explorer (10497-1) contains 235 parts across 42 unique pieces. Key parts include: 4x 2x4 bricks (part 3001), 6x 1x2 tiles, 2x windshield pieces, and various slope and plate elements. 2 spare parts are included.
+
+---
+
+**👤 You:**
+> "What colors is LEGO part 3001 (2x4 brick) available in?"
+
+**🤖 AI Agent:**
+> Part 3001 (2x4 brick) is available in 55+ colors including: Black (0), White (1), Red (5), Blue (23), Green (10), Yellow (14), Dark Blue (140), Dark Green (137), Light Bluish Gray (86), Dark Red (59) and many specialty colors.
+
+
 ## Installation & Usage
 
 To install and use the **Rebrickable LEGO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Rebrickable LEGO** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

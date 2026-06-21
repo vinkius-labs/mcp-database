@@ -1,12 +1,14 @@
 # Beeceptor MCP Server
 
-Mock APIs, intercept requests, and manage proxy rules directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/beeceptor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beeceptor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beeceptor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beeceptor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 29
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Mock APIs, intercept requests, and manage proxy rules directly from your AI agent.
 
 ## Description
 Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs and HTTP proxies through natural language.
@@ -64,6 +66,33 @@ Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs a
 - **upsert_state**: Upsert state (Bulk)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Beeceptor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all mock rules for the 'payment-api' endpoint."
+
+**🤖 AI Agent:**
+> I've retrieved the rules for 'payment-api'. You have 3 active rules: 1. GET /success (200 OK), 2. POST /authorize (401 Unauthorized), and 3. GET /balance (200 OK).
+
+---
+
+**👤 You:**
+> "Show me the last 5 requests received at 'my-webhook-test'."
+
+**🤖 AI Agent:**
+> Fetching recent traffic... I found 5 requests. The most recent one was a POST to /callback with a JSON payload containing 'event: user_signup'. Would you like to see the full headers for this request?
+
+---
+
+**👤 You:**
+> "Enable CORS and request logging for the 'dev-sandbox' endpoint."
+
+**🤖 AI Agent:**
+> Settings updated successfully for 'dev-sandbox'. CORS is now enabled and request logging is active.
+
+
 ## Installation & Usage
 
 To install and use the **Beeceptor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Beeceptor** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

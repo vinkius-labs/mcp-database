@@ -1,12 +1,14 @@
 # The Odds API MCP Server
 
-Universal sports betting intelligence — get real-time odds, scores, and sports data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/the-odds-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-odds-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-odds-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-odds-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 3
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Universal sports betting intelligence — get real-time odds, scores, and sports data via AI.
 
 ## Description
 Equip your AI agent with real-time sports market intelligence via **The Odds API** MCP server. This integration provides instant access to live odds from dozens of bookmakers across major sports leagues including NFL, NBA, MLB, EPL, and more. Your agent can list all supported sports, retrieve current market odds for specific regions, and check live or historical scores. Whether you are analyzing market trends, tracking your favorite teams, or building a betting advisor, your agent acts as a dedicated sports data analyst through natural conversation.
@@ -39,6 +41,33 @@ Equip your AI agent with real-time sports market intelligence via **The Odds API
 - **list_sports**: List all available sports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **The Odds API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current odds for the next NFL games."
+
+**🤖 AI Agent:**
+> Retrieving NFL odds... I've found several upcoming games. For example, the Chiefs vs Raiders match has odds ranging from 1.45 to 1.55 for a home win across different bookmakers. Would you like to see more markets like spreads or totals?
+
+---
+
+**👤 You:**
+> "Check the live scores for the English Premier League."
+
+**🤖 AI Agent:**
+> Fetching live scores for soccer_epl... Liverpool is currently leading 2-1 against Chelsea at the 75th minute. Arsenal vs Man City is still 0-0. Would you like to see the stats or current live odds for these matches?
+
+---
+
+**👤 You:**
+> "List all sports available on The Odds API."
+
+**🤖 AI Agent:**
+> Retrieving the sports list... I've identified over 100 sports and leagues, including American Football (NFL, NCAA), Basketball (NBA, WNBA), Soccer (EPL, La Liga, Serie A), and even eSports. Which one would you like to focus on?
+
+
 ## Installation & Usage
 
 To install and use the **The Odds API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **The Odds API** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

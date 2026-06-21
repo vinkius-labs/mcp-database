@@ -1,12 +1,14 @@
 # Stripe MCP Server
 
-Manage payments, customers, subscriptions, invoices, and account balance via Stripe — all from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stripe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stripe-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage payments, customers, subscriptions, invoices, and account balance via Stripe — all from any AI agent.
 
 ## Description
 Take full control of your payment operations with **Stripe**, the global payments platform trusted by millions of businesses. Your AI agent becomes your financial operations assistant — listing customers, checking payment statuses, reviewing subscriptions, pulling invoices, and monitoring your account balance.
@@ -70,6 +72,33 @@ List Stripe charges
 - **payouts_list**: List Stripe payouts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stripe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my Stripe account balance."
+
+**🤖 AI Agent:**
+> Your Stripe balance: **$12,450.80 available** and **$3,200.00 pending** in USD.
+
+---
+
+**👤 You:**
+> "List all past-due subscriptions."
+
+**🤖 AI Agent:**
+> Found 3 past-due subscriptions. The largest is for Acme Corp ($299/month, overdue since March 15). Would you like me to pull the associated invoices?
+
+---
+
+**👤 You:**
+> "Create a new customer: Jane Smith, jane@example.com"
+
+**🤖 AI Agent:**
+> Customer created: **Jane Smith** (cus_QR7x...). Email: jane@example.com. Ready for invoicing and subscriptions.
+
+
 ## Installation & Usage
 
 To install and use the **Stripe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Stripe** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

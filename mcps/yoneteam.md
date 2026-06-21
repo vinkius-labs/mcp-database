@@ -1,12 +1,14 @@
 # YoneTeam MCP Server
 
-Manage your Turkish business operations with project tracking, task management, and team collaboration designed for local teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/yoneteam)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yoneteam)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yoneteam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yoneteam-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage your Turkish business operations with project tracking, task management, and team collaboration designed for local teams.
 
 ## Description
 Connect your **YoneTeam (Satin Alma)** account to any AI agent and streamline your entire procurement and supply chain process through natural conversation.
@@ -45,6 +47,33 @@ Connect your **YoneTeam (Satin Alma)** account to any AI agent and streamline yo
 - **list_suppliers**: List approved suppliers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **YoneTeam** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending purchasing demands from the IT department."
+
+**🤖 AI Agent:**
+> I've retrieved the demands. There are 2 pending requests from IT: 'Laptops for New Hires' and 'Server Maintenance Spares'. Would you like to check for supplier offers on these?
+
+---
+
+**👤 You:**
+> "Compare the current offers for purchase demand #1029."
+
+**🤖 AI Agent:**
+> I've analyzed the offers for Demand #1029. You have 3 quotes: 'Global Systems' ($1,200), 'Office Plus' ($1,150), and 'Tech Source' ($1,300). 'Office Plus' is currently the most cost-effective option.
+
+---
+
+**👤 You:**
+> "Create a new demand for '10x Ergonomic Chairs' for the Sales team."
+
+**🤖 AI Agent:**
+> Success! A new purchasing demand for '10x Ergonomic Chairs' (Sales Dept) has been created with ID DEM-8823. I'll monitor for incoming supplier offers.
+
+
 ## Installation & Usage
 
 To install and use the **YoneTeam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **YoneTeam** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Magic Minutes MCP Server
 
-Generate meeting minutes automatically with AI that listens, summarizes key decisions, and distributes action items to your team.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/magic-minutes)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/magic-minutes)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/magic-minutes-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/magic-minutes-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate meeting minutes automatically with AI that listens, summarizes key decisions, and distributes action items to your team.
 
 ## Description
 Connect your **Magic Minutes** account to any AI agent and take full control of your meeting orchestration and team productivity through natural conversation. Magic Minutes provides a comprehensive platform for organizing meetings, and this integration allows you to retrieve meeting metadata, manage action items (tasks), and oversee minutes directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual searching for meeting notes in your inbox. Your AI acts as a dedi
 - **list_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Magic Minutes** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my meetings from this week in Magic Minutes."
+
+**🤖 AI Agent:**
+> I've retrieved your meetings. You had 5 sessions this week, including 'Q4 Strategy' and 'Weekly Sync'. Which one would you like to see the minutes for?
+
+---
+
+**👤 You:**
+> "Show me the action items for the 'Board Meeting'."
+
+**🤖 AI Agent:**
+> I've retrieved 3 action items: 1. Update budget (Sarah), 2. Finalize deck (John), 3. Schedule follow-up. Would you like me to create reminders for these?
+
+---
+
+**👤 You:**
+> "List all attendees for today's sync."
+
+**🤖 AI Agent:**
+> There were 5 attendees: John Miller, Sarah Chen, and 3 external guests. Would you like to see their contact info?
+
+
 ## Installation & Usage
 
 To install and use the **Magic Minutes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Magic Minutes** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

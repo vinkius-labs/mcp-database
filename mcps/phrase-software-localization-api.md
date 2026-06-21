@@ -1,12 +1,14 @@
 # Phrase (Software Localization API) MCP Server
 
-Manage software localization projects, locales, and translation keys directly through the Phrase API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/phrase-software-localization-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phrase-software-localization-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phrase-software-localization-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phrase-software-localization-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 20
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage software localization projects, locales, and translation keys directly through the Phrase API.
 
 ## Description
 Connect your **Phrase** account to any AI agent to streamline your software localization workflows. This MCP server allows you to manage projects, locales, and translation keys using natural language.
@@ -54,6 +56,33 @@ Connect your **Phrase** account to any AI agent to streamline your software loca
 - **upload_file**: Upload a localization file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Phrase (Software Localization API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Phrase localization projects."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 'Mobile App' (ID: proj_abc123) and 'Web Dashboard' (ID: proj_xyz789). Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Show me the locales configured for project proj_abc123."
+
+**🤖 AI Agent:**
+> For project proj_abc123, I found 3 locales: English (en-US, default), German (de-DE), and Spanish (es-ES).
+
+---
+
+**👤 You:**
+> "Create a new translation key named 'login.button.submit' in project proj_abc123."
+
+**🤖 AI Agent:**
+> Successfully created the translation key 'login.button.submit' in project proj_abc123.
+
+
 ## Installation & Usage
 
 To install and use the **Phrase (Software Localization API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Phrase (Software Localization API)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Decentraland (Virtual World Content API) MCP Server
 
-Explore Decentraland's virtual world—track hot scenes, list events, analyze parcel stats, and browse the marketplace directly through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/decentraland-virtual-world-content-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/decentraland-virtual-world-content-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/decentraland-virtual-world-content-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/decentraland-virtual-world-content-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 15
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Explore Decentraland's virtual world—track hot scenes, list events, analyze parcel stats, and browse the marketplace directly through AI.
 
 ## Description
 Connect to the **Decentraland** ecosystem and interact with the metaverse's content layer through natural conversation. This server provides deep access to real-time world data, community activities, and marketplace listings.
@@ -56,6 +58,33 @@ Create a new event
 Update content rating for a place (Admin/Moderator only)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Decentraland (Virtual World Content API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top 5 hot scenes in Decentraland right now."
+
+**🤖 AI Agent:**
+> I've found the most active spots! Currently, 'Genesis Plaza' has 120 users, followed by 'WonderMine' with 85, and 'Dragon City' with 60. Would you like the coordinates for any of these?
+
+---
+
+**👤 You:**
+> "List all upcoming events for this weekend."
+
+**🤖 AI Agent:**
+> There are several exciting events scheduled! I see a 'Metaverse Music Festival' starting Saturday at 2 PM UTC and a 'Community Town Hall' on Sunday. I can provide the full list of 12 events if you'd like.
+
+---
+
+**👤 You:**
+> "Search for scenes related to 'art galleries' near coordinates 0,0."
+
+**🤖 AI Agent:**
+> Searching near the center... I found 'Sotheby's Gallery' at (1,1) and 'MUSE Art Space' at (-2,3). Both are highly rated and currently active.
+
+
 ## Installation & Usage
 
 To install and use the **Decentraland (Virtual World Content API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Decentraland (Virtual World Content API)** MCP server i
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

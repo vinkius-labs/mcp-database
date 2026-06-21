@@ -1,12 +1,14 @@
 # Ecwid MCP Server
 
-Manage e-commerce stores via Ecwid — search products and orders, handle inventory, track customers, and audit store profiles directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ecwid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecwid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecwid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecwid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage e-commerce stores via Ecwid — search products and orders, handle inventory, track customers, and audit store profiles directly from any AI agent.
 
 ## Description
 Connect your **Ecwid by Lightspeed** store to any AI agent and take full control of your e-commerce operations and catalog management through natural conversation.
@@ -55,6 +57,33 @@ Search Ecwid orders
 - **get_app_storage**: Get application storage value from Ecwid by key (useful for custom app state)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ecwid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for products containing 't-shirt' in my store"
+
+**🤖 AI Agent:**
+> Searching products... I found 5 items: 'Classic White T-shirt' ($20.00), 'V-Neck Blue T-shirt' ($22.00), etc. Each has inventory and SKU data available. Would you like to check the stock levels for any of these?
+
+---
+
+**👤 You:**
+> "Set inventory for product 12345 to 50 units"
+
+**🤖 AI Agent:**
+> Inventory updated! Product ID 12345 ('Cotton Polo') is now set to 50 units. The change is live in your store and synced across all channels.
+
+---
+
+**👤 You:**
+> "Show me the last 3 orders from yesterday"
+
+**🤖 AI Agent:**
+> Retrieving recent orders... I found 3 orders from yesterday: #1001 ($45.00, Paid), #1002 ($120.00, Awaiting Payment), and #1003 ($35.50, Shipped). Would you like to see the customer details for order #1001?
+
+
 ## Installation & Usage
 
 To install and use the **Ecwid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Ecwid** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

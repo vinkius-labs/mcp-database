@@ -1,12 +1,14 @@
 # Anthropic MCP Server
 
-Access Claude models via Anthropic API — send messages, count tokens, manage batches and discover models from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/anthropic-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anthropic-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anthropic-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anthropic-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Access Claude models via Anthropic API — send messages, count tokens, manage batches and discover models from any AI agent.
 
 ## Description
 Connect your **Anthropic** account to any AI agent and leverage Claude's capabilities through natural conversation.
@@ -54,6 +56,33 @@ List all available Anthropic Claude models
 Send a message to Claude (Messages API)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Anthropic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a message to Claude asking 'What is the capital of Brazil?'"
+
+**🤖 AI Agent:**
+> Claude responded: 'The capital of Brazil is Brasília. It was purpose-built to replace Rio de Janeiro as the capital in 1960, and is located in the country's central-west region.' The response used 45 tokens.
+
+---
+
+**👤 You:**
+> "List all available Claude models."
+
+**🤖 AI Agent:**
+> Available models: claude-sonnet-4-20250514 (latest Sonnet, 200K context), claude-opus-4-20250514 (most capable, 200K context), claude-haiku-20241022 (fastest, cost-effective, 200K context). Each model has different pricing and capabilities.
+
+---
+
+**👤 You:**
+> "Count tokens for a message asking Claude to summarize a 500-word article."
+
+**🤖 AI Agent:**
+> The message would use approximately 547 input tokens (45 for the prompt + 502 for the article text). With a typical response of 150 tokens, the total would be ~697 tokens for this conversation turn.
+
+
 ## Installation & Usage
 
 To install and use the **Anthropic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Anthropic** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

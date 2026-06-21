@@ -1,12 +1,14 @@
 # JSONPlaceholder MCP Server
 
-Access fake online REST API for testing and prototyping — manage posts, comments, albums, photos, and todos directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jsonplaceholder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jsonplaceholder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jsonplaceholder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jsonplaceholder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 21
+
+**Category:** [productivity](../categories/productivity.md)
+
+Access fake online REST API for testing and prototyping — manage posts, comments, albums, photos, and todos directly from your AI agent.
 
 ## Description
 Connect to **JSONPlaceholder**, the industry-standard fake REST API, to simulate data interactions within your AI workflows. Perfect for developers testing MCP integrations or prototyping agentic behaviors without a real backend.
@@ -66,6 +68,33 @@ List all todos
 - **update_post**: Update a post (replace)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JSONPlaceholder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all posts for user 1."
+
+**🤖 AI Agent:**
+> I've retrieved the posts for user 1. There are 10 posts available, including titles like 'sunt aut facere...' and 'qui est esse'. Would you like to see the full body of any specific post?
+
+---
+
+**👤 You:**
+> "Get the details for comment ID 5."
+
+**🤖 AI Agent:**
+> Inspecting comment 5... It was posted by 'Hayden@althea.biz' with the body: 'harum non quasi et ratione...'. It is linked to post ID 1.
+
+---
+
+**👤 You:**
+> "Create a new post for user 10 with title 'MCP Test' and body 'Testing JSONPlaceholder'."
+
+**🤖 AI Agent:**
+> Simulating post creation... Success! A new post has been 'created' with ID 101 for user 10. Title: 'MCP Test'. Note: Since this is a mock API, the data isn't permanently stored.
+
+
 ## Installation & Usage
 
 To install and use the **JSONPlaceholder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **JSONPlaceholder** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Brivo MCP Server
 
-Manage your access control via Brivo — unlock doors, track access events, and oversee users directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brivo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brivo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brivo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage your access control via Brivo — unlock doors, track access events, and oversee users directly from any AI agent.
 
 ## Description
 Connect your **Brivo Access** account to any AI agent and orchestrate your physical security, facility management, and user provisioning workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Brivo Access** account to any AI agent and orchestrate your physi
 - **unlock_door**: Momentarily unlock a door
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brivo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the doors in my office."
+
+**🤖 AI Agent:**
+> I've retrieved your access points. You have 4 doors: 'Main Entrance' (ID: 101), 'Server Room' (ID: 102), 'Back Exit' (ID: 103), and 'HR Suite' (ID: 104).
+
+---
+
+**👤 You:**
+> "Unlock the 'Main Entrance' door (ID 101)."
+
+**🤖 AI Agent:**
+> Unlocking 'Main Entrance'... Success! The door is now unlocked for the configured momentary period.
+
+---
+
+**👤 You:**
+> "Show the recent access events for the Server Room."
+
+**🤖 AI Agent:**
+> Retrieving events... John Doe accessed the Server Room at 9:15 AM today, and Alice Smith accessed it at 10:30 AM. There are no active alarms.
+
+
 ## Installation & Usage
 
 To install and use the **Brivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Brivo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

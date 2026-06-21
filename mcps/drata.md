@@ -1,12 +1,14 @@
 # Drata MCP Server
 
-Automate compliance and security via Drata — monitor controls, track personnel onboarding, audit policies, and verify cloud asset security directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/drata)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drata)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drata-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Automate compliance and security via Drata — monitor controls, track personnel onboarding, audit policies, and verify cloud asset security directly from any AI agent.
 
 ## Description
 Connect your **Drata** account to any AI agent and take full control of your continuous compliance and automated security monitoring through natural conversation.
@@ -68,6 +70,33 @@ List Drata automated continuous compliance tests — real-time monitors checking
 List third-party vendors in Drata vendor risk management — risk classification, security questionnaire status, and SOC 2 report reviews
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Drata** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all failing compliance controls"
+
+**🤖 AI Agent:**
+> Retrieving control statuses... I found 3 failing controls: 'MFA for IdP Users', 'Encrypted Backups', and 'Vulnerability Scanning'. Would you like to see the automated test results for any of these?
+
+---
+
+**👤 You:**
+> "What is the compliance onboarding status for employee John Doe?"
+
+**🤖 AI Agent:**
+> John Doe's status: Background check cleared, Security training completed, but 'Acceptable Use Policy' is still pending acknowledgment. I can send him a reminder if you'd like.
+
+---
+
+**👤 You:**
+> "List my active compliance frameworks and readiness scores"
+
+**🤖 AI Agent:**
+> You have 2 active frameworks: SOC 2 Type II (85% Ready) and ISO 27001 (72% Ready). I can provide a breakdown of the remaining controls for either framework.
+
+
 ## Installation & Usage
 
 To install and use the **Drata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Drata** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

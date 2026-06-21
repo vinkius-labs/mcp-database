@@ -1,12 +1,14 @@
 # Scopus MCP Server
 
-Access the world's largest abstract and citation database. Search for research papers, authors, and institutional profiles directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scopus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scopus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scopus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scopus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the world's largest abstract and citation database. Search for research papers, authors, and institutional profiles directly.
 
 ## Description
 Connect your **Scopus** API credentials to any AI agent and unlock the power of Elsevier's massive research database through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Scopus** API credentials to any AI agent and unlock the power of 
 - **search_scopus**: Search Scopus abstracts and metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scopus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search Scopus for papers about 'Large Language Models' published in 2024."
+
+**🤖 AI Agent:**
+> I found several high-impact papers. The top results include 'A Survey of Large Language Models' and 'Efficient Training of LLMs'. Would you like me to fetch the abstract for any of these?
+
+---
+
+**👤 You:**
+> "Get the citation overview for DOI 10.1016/j.future.2023.01.001."
+
+**🤖 AI Agent:**
+> This document has been cited 45 times since its publication. In 2023 it received 12 citations, and so far in 2024, it has 33. It shows a strong upward trend in the field of cloud computing.
+
+---
+
+**👤 You:**
+> "Find the profile and H-index for author ID 7004212771."
+
+**🤖 AI Agent:**
+> Author ID 7004212771 corresponds to Dr. Jane Smith. She has an H-index of 52, with 142 total documents and over 8,500 citations. Her primary affiliation is Stanford University.
+
+
 ## Installation & Usage
 
 To install and use the **Scopus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Scopus** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # MCPFusion Developer Prover MCP Server
 
-LLMs have never been trained on MCPFusion. They use raw z.object(), skip Presenters, mix semantic verbs, and violate MVA layering. This tool teaches the framework through structured reflection — forcing the agent to prove it understands defineModel(), Presenters, and the Model-View-Ag...
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mcpfusion-developer-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mcpfusion-developer-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mcpfusion-developer-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mcpfusion-developer-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+LLMs have never been trained on MCPFusion. They use raw z.object(), skip Presenters, mix semantic verbs, and violate MVA layering. This tool teaches the framework through structured reflection — forcing the agent to prove it understands defineModel(), Presenters, and the Model-View-Ag...
 
 ## Description
 LLMs don't know MCPFusion. They weren't trained on it. They fall back to what they know: raw Zod schemas, manual success() wrapping, inline JSON responses, and flat file structures. The result: MCP servers that work but violate every MVA principle.
@@ -36,6 +38,33 @@ LLMs don't know MCPFusion. They weren't trained on it. They fall back to what th
 Structured reflection tool for MCPFusion framework development — forces MVA (Model-View-Agent) conceptual compliance: defineModel() enforcement, Presenter attachment, semantic verb correctness. LLMs have never been trained on MCPFusion — they default to raw z.object(), skip Presenters, mix semantic verbs, and violate MVA responsibility separation. This tool teaches the framework through structured reflection. Catches MVA Violated (Model, View, and Agent responsibilities mixed in one module — MVA enforces conceptual separation: Models define data shapes, Presenters handle egress, Tools expose to LLMs. Mixing defineModel() and .handle() in one file breaks this contract), Raw Schema Detected (using z.object() instead of defineModel() for entity schemas — const UserSchema = z.object({ name: z.string(), email: z.string() }) loses every MCPFusion feature: no m.hidden() for sensitive fields (password hashes, API keys), no m.fillable() profiles for create vs. update contexts, no m.timestamps() for automatic created_at/updated_at, no m.guarded() for mass-assignment protection, no .toApi() for alias resolution. defineModel(User).casts(m => ({ name: m.string(Name), email: m.string(Email) })) provides all of these. z.object() is Zod — defineModel() is MCPFusion), Presenter Missing (returning raw data from .handle() without .returns(Presenter) — a tool that returns { users: [...] } without a Presenter sends raw database objects to the client. Hidden fields (password_hash, internal_id) leak. No UI rendering (echarts, mermaid, summary). No agent suggestions (suggestActions for next steps). No collection limiting (agentLimit). createPresenter().schema(UserModel) or definePresenter({ schema: UserModel }) — the Presenter IS the egress gate), and Semantic Verb Wrong (using f.action() for a read-only query or f.query() for a destructive write — f.query() marks the tool as readOnly — it can be safely cached, parallelized, and retried. f.mutation() marks the tool as destructive — agents must confirm before execution, responses are never cached. Using f.action() for everything wastes these semantic guarantees. GET /users is f.query(). POST /users is f.mutation(). A calculator is f.action()). NOTE: MVA is a CONCEPTUAL separation of responsibilities, NOT a folder naming convention. Implementations may organize files however they want (including additional layers like engine/ for pure business logic) as long as Model, View, and Agent responsibilities remain separated. Call once per tool or feature being implemented
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MCPFusion Developer Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I'll create a task MCP with z.object({ title: z.string(), status: z.enum(['open','done']) }) in the tool file and return JSON.stringify(result) from the handler."
+
+**🤖 AI Agent:**
+> Verdict: RAW_SCHEMA_DETECTED. Use defineModel('Task', m => { m.casts({ title: m.string(), status: m.enum('Status', ['open','done']) }) }) in models/. Create TaskPresenter in views/. Tool uses .returns(TaskPresenter). Handler returns raw data — Presenter handles the rest.
+
+---
+
+**👤 You:**
+> "TaskModel in models/ with m.casts(title, status, assignee). TaskPresenter in views/ with .schema(TaskModel) and agentLimit(50). f.query('tasks.list') with .returns(TaskPresenter). f.mutation('tasks.create') with .fromModel(TaskModel,'create'). server.ts with registry.register()."
+
+**🤖 AI Agent:**
+> Verdict: IMPLEMENTATION_PROVEN. MVA correct (Model→Presenter→Tool). defineModel() for Task entity. Presenter with agentLimit. Semantic verbs match (query=list, mutation=create). File structure separated. Ship it.
+
+---
+
+**👤 You:**
+> "I'll use f.mutation('logs.search') to search logs since it queries the database, and wrap the result with return success(data) in the handler."
+
+**🤖 AI Agent:**
+> Verdict: SEMANTIC_VERB_WRONG. Search is a READ — use f.query('logs.search'), not f.mutation(). mutation=destructive (create/delete). Also: .handle() auto-wraps with success() — remove the manual success() call, just return data.
+
+
 ## Installation & Usage
 
 To install and use the **MCPFusion Developer Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **MCPFusion Developer Prover** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

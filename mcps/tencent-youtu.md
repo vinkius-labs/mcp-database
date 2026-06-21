@@ -1,12 +1,14 @@
 # Tencent Youtu / 腾讯优图 MCP Server
 
-China's leading computer vision platform — perform facial recognition, analysis, and liveness checks via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-youtu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-youtu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-youtu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-youtu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's leading computer vision platform — perform facial recognition, analysis, and liveness checks via AI.
 
 ## Description
 Empower your AI agent to orchestrate your visual intelligence and facial recognition workflows with **Tencent Youtu** (腾讯优图), the premier computer vision platform in China. By connecting Youtu to your agent, you transform complex image analysis, face comparison, and person management into a natural conversation. Your agent can instantly detect faces in image URLs, retrieve detailed attributes like age and beauty scores, compare identities across different photos, and manage secure person libraries without you ever needing to navigate the comprehensive Tencent Cloud Console. Whether you are building an automated KYC system or conducting a digital asset audit for facial content, your agent acts as a real-time computer vision specialist, providing accurate and fast results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your visual intelligence and facial recogni
 - **search_face_in_groups**: Search face in library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tencent Youtu / 腾讯优图** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Detect faces in this image: [URL] and show me their attributes."
+
+**🤖 AI Agent:**
+> I've analyzed the image. I detected one face belonging to a male, approximately 28 years old, with a beauty score of 82/100. Should I search for this person in your registered groups?
+
+---
+
+**👤 You:**
+> "Compare these two face images: [URL_A] and [URL_B]."
+
+**🤖 AI Agent:**
+> The facial comparison is complete. The similarity score is 94.5, indicating a very high probability that these are the same person. Would you like me to check if this identity is already registered in your person library?
+
+---
+
+**👤 You:**
+> "Register a new person 'Alice' in group 'staff_01' with image [URL]."
+
+**🤖 AI Agent:**
+> Alice has been successfully registered in group `staff_01` with ID `alice_8821`. Her facial features have been indexed for future recognition. Should I list all members currently in this group?
+
+
 ## Installation & Usage
 
 To install and use the **Tencent Youtu / 腾讯优图** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Tencent Youtu / 腾讯优图** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

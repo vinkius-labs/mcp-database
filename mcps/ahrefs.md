@@ -1,12 +1,14 @@
 # Ahrefs MCP Server
 
-Professional SEO intelligence — audit backlinks, keywords, and domain health via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ahrefs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ahrefs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ahrefs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ahrefs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Professional SEO intelligence — audit backlinks, keywords, and domain health via AI.
 
 ## Description
 Connect your **Ahrefs** account to your AI agent to unlock the world's most powerful SEO data platform. From auditing domain ratings and backlink profiles to researching keyword difficulty and monitoring SERP rankings, your agent handles your organic growth strategy through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Ahrefs** account to your AI agent to unlock the world's most powe
 - **get_serp_overview**: Analyze search results
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ahrefs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the domain overview for 'ahrefs.com'."
+
+**🤖 AI Agent:**
+> I've retrieved the domain overview for ahrefs.com. The Domain Rating (DR) is 90, and it currently ranks for over 1.5 million organic keywords. Total backlinks are approximately 25 million.
+
+---
+
+**👤 You:**
+> "List 10 backlinks for 'example.com' with the highest Domain Rating."
+
+**🤖 AI Agent:**
+> I've retrieved the top 10 backlinks for example.com. The strongest links come from high-authority domains like wikipedia.org (DR 91) and nytimes.com (DR 94). Would you like to see the anchor texts for these links?
+
+---
+
+**👤 You:**
+> "Check keyword metrics for 'best SEO tools' in the US."
+
+**🤖 AI Agent:**
+> I've analyzed 'best SEO tools' for the US market. The monthly search volume is 12,000, with a difficulty score of 65 (Hard). The estimated CPC is $5.50. Would you like some related keyword ideas?
+
+
 ## Installation & Usage
 
 To install and use the **Ahrefs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Ahrefs** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

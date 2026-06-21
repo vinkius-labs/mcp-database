@@ -1,12 +1,14 @@
 # Harmonyscan (Harmony One Block Explorer API) MCP Server
 
-Access Harmony One blockchain data — query balances, transactions, smart contracts, and network status directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harmonyscan-harmony-one-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harmonyscan-harmony-one-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 14
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Harmony One blockchain data — query balances, transactions, smart contracts, and network status directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **Harmony One** network via Harmonyscan. This MCP server allows for deep inspection of the Harmony blockchain, from simple balance checks to complex smart contract analysis.
@@ -51,6 +53,33 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 - **proxy_request**: Execute standard JSON-RPC methods via proxy
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Harmonyscan (Harmony One Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current ONE balance for address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e?"
+
+**🤖 AI Agent:**
+> The current balance for that address is 1,250.45 ONE.
+
+---
+
+**👤 You:**
+> "List the last 5 HRC20 token transfers for address 0x123..."
+
+**🤖 AI Agent:**
+> I've found the 5 most recent HRC20 transfers. They include 100 VIPER tokens received yesterday and 50 FOX tokens sent 2 hours ago. Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Get the ABI and source code for the contract at 0x0809D4A52411430218Af7a6d8f17513E99770059."
+
+**🤖 AI Agent:**
+> I have retrieved the verified source code and ABI for the contract. It is a 'ViperSwap' liquidity pool contract compiled with Solidity 0.6.12. I can now help you analyze its functions or events.
+
+
 ## Installation & Usage
 
 To install and use the **Harmonyscan (Harmony One Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Harmonyscan (Harmony One Block Explorer API)** MCP serv
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

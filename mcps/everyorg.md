@@ -1,12 +1,14 @@
 # Every.org MCP Server
 
-Enable donations to over a million nonprofits through a single integration with tax-deductible receipts and giving widgets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/everyorg)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everyorg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/everyorg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/everyorg-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enable donations to over a million nonprofits through a single integration with tax-deductible receipts and giving widgets.
 
 ## Description
 Connect your **Every.org** account to any AI agent and take full control of your philanthropic discovery and fundraising workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual searching through fragmented charity databases. Your AI acts as y
 - **search_nonprofits**: Search nonprofits
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Every.org** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for nonprofits helping with 'ocean cleanup' on Every.org."
+
+**🤖 AI Agent:**
+> Searching charities... I've found 5 top-rated nonprofits working on ocean cleanup, including 'The Ocean Cleanup' and 'Surfrider Foundation'. Would you like the direct donation links for any of them?
+
+---
+
+**👤 You:**
+> "Browse nonprofits in the 'education' cause."
+
+**🤖 AI Agent:**
+> Retrieving education causes... I've found a list of impactful organizations focused on global literacy and STEM education. Notable names include 'Room to Read' and 'Code.org'. Which one should I provide more details for?
+
+---
+
+**👤 You:**
+> "Create a fundraiser for 'Room to Read' titled 'Support Global Literacy'."
+
+**🤖 AI Agent:**
+> Fundraiser initialized! I've successfully created 'Support Global Literacy' for Room to Read. You can view and share your campaign here: [link]. Your team can now start tracking real-time donations.
+
+
 ## Installation & Usage
 
 To install and use the **Every.org** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Every.org** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

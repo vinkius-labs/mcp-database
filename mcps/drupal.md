@@ -1,12 +1,14 @@
 # Drupal MCP Server
 
-Manage headless content via Drupal — list nodes, handle taxonomy terms, manage files, and audit users directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/drupal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drupal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drupal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drupal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage headless content via Drupal — list nodes, handle taxonomy terms, manage files, and audit users directly from any AI agent.
 
 ## Description
 Connect your **Drupal** site to any AI agent and take full control of your headless content management and JSON:API workflows through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Drupal** site to any AI agent and take full control of your headl
 - **patch_cms_node**: Mutate global Web CRM boundaries substituting Draft values safely
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Drupal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 'article' nodes from Drupal"
+
+**🤖 AI Agent:**
+> Retrieving articles... I found 5 recent nodes including 'Welcome to Headless Drupal' (UUID: 123) and 'JSON:API Basics' (UUID: 456). Would you like me to fetch the full content for any of these?
+
+---
+
+**👤 You:**
+> "Create an 'article' with title 'AI Integration' and body 'Testing Drupal MCP...'"
+
+**🤖 AI Agent:**
+> Node created successfully! Your new article 'AI Integration' has been persisted in Drupal with UUID: 'abc-789'. You can now view it in your frontend or admin UI.
+
+---
+
+**👤 You:**
+> "Show me all terms in the 'tags' vocabulary"
+
+**🤖 AI Agent:**
+> Retrieving tags... I found 10 registered terms including 'Technology', 'Tutorial', 'Drupal', and 'API'. Would you like the metadata for a specific tag?
+
+
 ## Installation & Usage
 
 To install and use the **Drupal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Drupal** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

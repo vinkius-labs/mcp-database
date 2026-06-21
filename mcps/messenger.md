@@ -1,12 +1,14 @@
 # Messenger MCP Server
 
-Control and manage your Facebook Page conversations — audit messages and personas via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/messenger)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/messenger)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/messenger-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/messenger-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Control and manage your Facebook Page conversations — audit messages and personas via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire mobile communication strategy on **Facebook Messenger**, the leading platform for social engagement. By connecting Messenger to your agent, you transform enterprise messaging into a natural conversation. Your agent can instantly list your conversations, audit message history, and send replies without you ever touching a complex Meta dashboard. Whether you are providing customer support or managing brand personas, your agent acts as a real-time communication assistant, ensuring your Page is always responsive and your community data is organized.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your entire mobile communication strategy o
 - **send_message**: Send a text message reply to a recipient
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Messenger** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active Messenger conversations for my Page."
+
+**🤖 AI Agent:**
+> I've retrieved your conversations. You have 5 recent threads, including interactions with 'John Doe' and 'Jane Smith'. Which conversation ID would you like to audit for history?
+
+---
+
+**👤 You:**
+> "Send 'Thank you for contacting us!' to recipient ID 12345678."
+
+**🤖 AI Agent:**
+> Message sent! I've successfully delivered your reply to recipient 12345678. The response is now visible in the Messenger thread.
+
+---
+
+**👤 You:**
+> "Show me the message history for conversation t_xxxx."
+
+**🤖 AI Agent:**
+> I've retrieved the history for t_xxxx. There are 10 messages in this thread. The latest was 'Hello, I have a question about my order' from the user. Would you like the full log?
+
+
 ## Installation & Usage
 
 To install and use the **Messenger** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Messenger** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Residential Proxies MCP Server
 
-Route web traffic through residential IP addresses worldwide for scraping, testing, and research that avoids blocks and captchas.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/residential-proxies)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/residential-proxies)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/residential-proxies-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/residential-proxies-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Route web traffic through residential IP addresses worldwide for scraping, testing, and research that avoids blocks and captchas.
 
 ## Description
 Connect your **AppVidLab Residential Proxies** account to any AI agent and take full control of your automated web data collection and proxy rotation workflows through natural conversation.
@@ -53,6 +55,33 @@ Get a limited number of proxies
 Get proxies from multiple countries at once
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Residential Proxies** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List 10 working residential proxies from the USA."
+
+**🤖 AI Agent:**
+> I've retrieved the proxies. I found 10 high-fidelity working IPs from the US, formatted as IP:Port:User:Pass. Would you like the detailed latency metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show available residential proxies for country code 'GB'."
+
+**🤖 AI Agent:**
+> Accessing proxy intelligence... For country code GB, I've identified 15 high-fidelity working residential proxies. I've retrieved the technical metadata for your scraping session. Need help monitoring the availability status?
+
+---
+
+**👤 You:**
+> "Check my RapidAPI status and proxy usage metrics."
+
+**🤖 AI Agent:**
+> Operational monitoring complete! Your API connection to RapidAPI is active and healthy. Your account has processed 1,000 high-fidelity proxy requests this month. Shall I retrieve the detailed usage breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Residential Proxies** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Residential Proxies** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

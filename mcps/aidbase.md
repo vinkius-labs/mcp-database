@@ -1,12 +1,14 @@
 # Aidbase MCP Server
 
-Deploy AI-powered customer support chatbots, manage knowledge bases, and resolve tickets faster with intelligent automation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aidbase)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aidbase)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aidbase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aidbase-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Deploy AI-powered customer support chatbots, manage knowledge bases, and resolve tickets faster with intelligent automation.
 
 ## Description
 Connect your **Aidbase** account to any AI agent and take full control of your automated customer support and intelligent knowledge management workflows through natural conversation.
@@ -48,6 +50,33 @@ No more manual logging into support portals to update FAQs or check bot logs. Yo
 - **send_aidbase_reply**: Send a message to a Chatbot
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aidbase** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all configured chatbots in my Aidbase account."
+
+**🤖 AI Agent:**
+> I've retrieved your chatbots. You currently have 3 active bots, including 'Support Hero' (ID: bot_123) and 'Lead Qualifier'. Which one should we test or update with new knowledge?
+
+---
+
+**👤 You:**
+> "Add 'https://docs.vinkius.com/faq' to my AI knowledge base."
+
+**🤖 AI Agent:**
+> Knowledge ingestion triggered! I've added the FAQ URL to your global knowledge base. Aidbase is now indexing the content. I'll notify you when your bots are updated with this high-fidelity data.
+
+---
+
+**👤 You:**
+> "Send a message to chatbot 'bot_123': 'What is your refund policy?'."
+
+**🤖 AI Agent:**
+> Chatbot response received: 'Our refund policy allows for full returns within 30 days of purchase.' I've documented the session ID for your high-fidelity interaction logs.
+
+
 ## Installation & Usage
 
 To install and use the **Aidbase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Aidbase** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

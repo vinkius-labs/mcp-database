@@ -1,12 +1,14 @@
 # FirstPromoter MCP Server
 
-Manage affiliates, track referrals, and handle rewards via AI agents with FirstPromoter.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firstpromoter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstpromoter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firstpromoter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firstpromoter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage affiliates, track referrals, and handle rewards via AI agents with FirstPromoter.
 
 ## Description
 Connect your **FirstPromoter** account to any AI agent and automate your affiliate and referral marketing operations through the Model Context Protocol (MCP). FirstPromoter is the all-in-one platform for SaaS companies to launch and manage affiliate, referral, and influencer programs. Now, you can manage your promoters and track conversions directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **FirstPromoter** account to any AI agent and automate your affilia
 - **list_rewards**: List rewards
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FirstPromoter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my top 10 promoters by revenue."
+
+**🤖 AI Agent:**
+> Retrieving top promoters... I found your top 10 affiliates, led by 'John Doe' ($5,400 revenue) and 'Jane Smith' ($4,200 revenue). Would you like the full details for any of them?
+
+---
+
+**👤 You:**
+> "Show me the payout stats for this month."
+
+**🤖 AI Agent:**
+> Fetching payout statistics... Total paid this month: $12,500. Total pending payouts: $3,200. There are currently 15 promoters awaiting payment approval.
+
+---
+
+**👤 You:**
+> "Create a new reward of $50.00 for promoter ID 'prom_456'."
+
+**🤖 AI Agent:**
+> Reward created! I've manually added a commission of $50.00 (5000 cents) to promoter ID 'prom_456'. The reward is now pending in their account.
+
+
 ## Installation & Usage
 
 To install and use the **FirstPromoter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **FirstPromoter** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

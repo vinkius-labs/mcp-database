@@ -1,12 +1,14 @@
 # Marketplacer (Enterprise Marketplace Platform) MCP Server
 
-Manage your enterprise marketplace via Marketplacer — list products, track orders, and audit seller networks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/marketplacer-enterprise-marketplace-platform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marketplacer-enterprise-marketplace-platform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marketplacer-enterprise-marketplace-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marketplacer-enterprise-marketplace-platform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your enterprise marketplace via Marketplacer — list products, track orders, and audit seller networks.
 
 ## Description
 Connect your **Marketplacer** instance to any AI agent and take full control of your enterprise marketplace operations, seller network, and product catalog through natural conversation.
@@ -52,6 +54,33 @@ List Marketplacer sellers/vendors
 - **graphql_query**: Run standard GraphQL queries against Marketplacer endpoint
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Marketplacer (Enterprise Marketplace Platform)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 invoices in my Marketplacer instance"
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 invoices. Highlights include Invoice #INV-123 ($150.00 from Seller A) and Invoice #INV-456 ($85.50 from Seller B). Would you like to see the shipment status for any of these?
+
+---
+
+**👤 You:**
+> "Search for sellers containing 'Outdoor' in the network"
+
+**🤖 AI Agent:**
+> Searching seller network… I've identified 3 vendors: 'Outdoor Adventure Gear' (ID: sel-123), 'Premium Outdoor Living' (ID: sel-456), and 'The Great Outdoors' (ID: sel-789). I can fetch the advert count for each seller if you'd like.
+
+---
+
+**👤 You:**
+> "Run a GraphQL query to fetch the 'legacyId' and 'title' for advert ID 'node-987'"
+
+**🤖 AI Agent:**
+> Executing custom query… Done. For advert 'node-987', the Legacy ID is '554433' and the Title is 'Titanium Mountain Bike'. Would you like to fetch the inventory quantity using another query?
+
+
 ## Installation & Usage
 
 To install and use the **Marketplacer (Enterprise Marketplace Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Marketplacer (Enterprise Marketplace Platform)** MCP se
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

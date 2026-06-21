@@ -1,12 +1,14 @@
 # Stark Bank MCP Server
 
-Equip your AI with Brazil's enterprise Developer Bank. Automate corporate virtual cards, Boletos, Outbound Pix (Transfers), and statements inside chats.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stark-bank)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stark-bank)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stark-bank-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stark-bank-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 9
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Equip your AI with Brazil's enterprise Developer Bank. Automate corporate virtual cards, Boletos, Outbound Pix (Transfers), and statements inside chats.
 
 ## Description
 The **Stark Bank MCP Server** brings highest-end Brazilian financial tech directly into your Agent's context. Engineered specifically for complex corporate maneuvers and heavy automations requiring zero filesystem intervention—authentication is fully handled via ECDSA public/private cryptography inside the MCP.
@@ -41,6 +43,33 @@ The **Stark Bank MCP Server** brings highest-end Brazilian financial tech direct
 - **stark_list_transfers**: Descobrir rastreio de pagamentos de saída finalizados (Transfers)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stark Bank** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a dynamic Corporate Card on Stark Bank named 'Google Cloud Pay' for my team."
+
+**🤖 AI Agent:**
+> Processing instruction inside Stark ecosystem. Success! A Corporate Card 'Google Cloud Pay' was successfully created on-chain and registered to your active corporate boundary logic.
+
+---
+
+**👤 You:**
+> "Extract the detailed historical stark statements spanning from March 1st to March 15th to examine payroll expenditures."
+
+**🤖 AI Agent:**
+> I've pulled the 15-day range JSON history. Total observed movements: 21 lines. The main outbound expenditures matched transfers made using out_bound Pix.
+
+---
+
+**👤 You:**
+> "Create a Boleto for 500 BRL to CPF 000101111909. It must expire 10 days from today."
+
+**🤖 AI Agent:**
+> Boleto initialized inside Stark Bank batch array successfully under the desired CPF target. Check the array payload internally or export the barcode now.
+
+
 ## Installation & Usage
 
 To install and use the **Stark Bank** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Stark Bank** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

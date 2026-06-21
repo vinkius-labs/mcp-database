@@ -1,12 +1,14 @@
 # Webiny CMS MCP Server
 
-Manage content models, entries, and GraphQL workflows on Webiny — the enterprise open-source headless CMS.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/webiny-cms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webiny-cms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webiny-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webiny-cms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 9
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage content models, entries, and GraphQL workflows on Webiny — the enterprise open-source headless CMS.
 
 ## Description
 Connect your **Webiny CMS** instance to any AI agent and manage your headless content infrastructure through natural conversation.
@@ -63,6 +65,33 @@ Publishes a draft entry, making it available via the "read" API
 Updates fields of an existing content entry revision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Webiny CMS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all entries for the 'BlogPosts' model in en-US."
+
+**🤖 AI Agent:**
+> I found 8 entries in 'BlogPosts': 1. 'Introduction to Headless CMS' (ID: post-1), 2. 'Getting Started with Webiny' (ID: post-2), 3. 'GraphQL Best Practices' (ID: post-3), and 5 others. Which one would you like to see details for?
+
+---
+
+**👤 You:**
+> "Create a new 'Author' entry: { 'name': 'John Doe', 'bio': 'Tech Writer' } in en-US."
+
+**🤖 AI Agent:**
+> Success! I've created a new draft entry for 'Author' (ID: auth-999) with the provided details. Would you like me to publish it now?
+
+---
+
+**👤 You:**
+> "Publish the entry with ID 'post-123' for model 'Article'."
+
+**🤖 AI Agent:**
+> I've successfully published the 'Article' entry (ID: post-123). It is now live and accessible via your Read API. Is there anything else you'd like to update?
+
+
 ## Installation & Usage
 
 To install and use the **Webiny CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Webiny CMS** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

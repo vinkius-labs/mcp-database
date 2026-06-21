@@ -1,12 +1,14 @@
 # Pirsch Analytics MCP Server
 
-Privacy-friendly web analytics — track hits, events, and retrieve detailed statistics for your domains directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pirsch-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pirsch-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pirsch-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pirsch-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 14
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Privacy-friendly web analytics — track hits, events, and retrieve detailed statistics for your domains directly from your AI agent.
 
 ## Description
 Connect **Pirsch Analytics** to your AI agent to monitor your website traffic and user behavior without compromising privacy. This MCP server allows you to collect data and query complex statistics through natural language.
@@ -51,6 +53,33 @@ Send a page view (hit) to Pirsch
 - **get_statistics_visitor**: Get visitor statistics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pirsch Analytics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get visitor statistics for domain ID 'abc-123' from 2023-10-01 to 2023-10-31."
+
+**🤖 AI Agent:**
+> I've retrieved the visitor data for domain 'abc-123'. During October, you had 1,250 unique visitors with an average session duration of 2 minutes and 15 seconds.
+
+---
+
+**👤 You:**
+> "Track a page view for 'https://example.com/pricing' from IP 1.2.3.4."
+
+**🤖 AI Agent:**
+> The hit for the pricing page has been successfully sent to Pirsch using the `send_hit` action. It is now being processed in your analytics dashboard.
+
+---
+
+**👤 You:**
+> "List all my domains configured in Pirsch."
+
+**🤖 AI Agent:**
+> Fetching your domains... I found 3 domains: 'example.com' (ID: abc-123), 'blog.example.com' (ID: def-456), and 'shop.example.com' (ID: ghi-789).
+
+
 ## Installation & Usage
 
 To install and use the **Pirsch Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Pirsch Analytics** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

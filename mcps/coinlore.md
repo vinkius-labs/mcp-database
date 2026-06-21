@@ -1,12 +1,14 @@
 # CoinLore MCP Server
 
-Access real-time cryptocurrency data, market stats, exchange info, and social metrics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coinlore)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinlore)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinlore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinlore-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 11
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time cryptocurrency data, market stats, exchange info, and social metrics directly from any AI agent.
 
 ## Description
 Connect to the **CoinLore** API to empower your AI agent with comprehensive cryptocurrency market intelligence and real-time blockchain data.
@@ -47,6 +49,33 @@ Connect to the **CoinLore** API to empower your AI agent with comprehensive cryp
 - **list_tickers**: Retrieve tick data for multiple coins
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinLore** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current global crypto market cap and BTC dominance?"
+
+**🤖 AI Agent:**
+> I've retrieved the global stats: The total market cap is approximately $2.45 trillion with a 24h volume of $85 billion. Bitcoin dominance currently stands at 52.1%.
+
+---
+
+**👤 You:**
+> "Show me the top 20 gainers in the last 24 hours."
+
+**🤖 AI Agent:**
+> Fetching market movers... The top gainer is 'CoinX' with a 24.5% increase, followed by 'TokenY' at 18.2%. Would you like more details on any of these?
+
+---
+
+**👤 You:**
+> "Get the price and social stats for Ethereum (ID: 80)."
+
+**🤖 AI Agent:**
+> Ethereum (ETH) is currently trading at $3,450. On the social side, it has over 3 million Twitter followers and high engagement on Reddit today.
+
+
 ## Installation & Usage
 
 To install and use the **CoinLore** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **CoinLore** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Corrently Energy MCP Server
 
-Access German energy market data — GrünstromIndex, CO₂ forecasts, solar predictions, electricity prices, and optimized scheduling for smart energy consumption.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corrently-energy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corrently-energy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corrently-energy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corrently-energy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access German energy market data — GrünstromIndex, CO₂ forecasts, solar predictions, electricity prices, and optimized scheduling for smart energy consumption.
 
 ## Description
 Connect to **Corrently Energy APIs** and bring real-time German energy market intelligence to any AI agent. Monitor renewable energy availability, optimize consumption schedules, and make data-driven decisions for sustainable power usage.
@@ -244,6 +246,33 @@ EXAMPLES:
 Get Stromkonto (electricity account) balance information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corrently Energy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the renewable energy forecast for Berlin zip code 10115 today?"
+
+**🤖 AI Agent:**
+> I've fetched the GrünstromIndex forecast for Berlin 10115. Over the next 24 hours, renewable energy availability ranges from 45% to 78%. The greenest window is between 11:00-15:00 when solar generation peaks, with GSI values reaching 72-78. CO₂ intensity during this period drops to approximately 280 g/kWh.
+
+---
+
+**👤 You:**
+> "When is the best 4-hour window to run my dishwasher in Munich 80331 to use the greenest energy?"
+
+**🤖 AI Agent:**
+> Analyzing the optimal window... The best 4-hour period for low-CO₂ energy in Munich 80331 is from 10:00 to 14:00. During this timeframe, solar generation is at its peak and grid CO₂ intensity drops to around 250 g/kWh. Starting your dishwasher at 10:00 AM will maximize renewable energy usage.
+
+---
+
+**👤 You:**
+> "Show me current electricity market prices for Hamburg 20095 and tell me when it's cheapest today."
+
+**🤖 AI Agent:**
+> Fetching market data for Hamburg 20095... Current wholesale electricity prices range from 45 €/MWh to 120 €/MWh today. The cheapest hours are 12:00-15:00 (solar peak, ~48 €/MWh) and 02:00-05:00 overnight (~52 €/MWh). The most expensive period is 18:00-20:00 evening peak at ~115 €/MWh.
+
+
 ## Installation & Usage
 
 To install and use the **Corrently Energy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -252,4 +281,11 @@ To install and use the **Corrently Energy** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

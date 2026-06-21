@@ -1,12 +1,14 @@
 # Code Integrity Prover MCP Server
 
-AI agents default to type evasion (like any, void*, unsafe, or ignore), TODO stubs, timing/sleep hacks, and empty catch blocks. 96% of developers don't trust AI-generated code. This tool enforces zero-workaround integrity across all programming languages.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/code-integrity-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/code-integrity-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/code-integrity-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/code-integrity-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents default to type evasion (like any, void*, unsafe, or ignore), TODO stubs, timing/sleep hacks, and empty catch blocks. 96% of developers don't trust AI-generated code. This tool enforces zero-workaround integrity across all programming languages.
 
 ## Description
 AI agents write code that compiles but carries hidden debt. They use type evasions (like `any`, `void*`, `unsafe`, or `type: ignore`) to silence compiler warnings, `TODO` to defer implementation, sleep/timing hacks to mask race conditions, and empty catch/except blocks to hide failures. The code works — until it doesn't. And by then, the workaround has spread.
@@ -47,6 +49,33 @@ The engine validates consistency: if the agent claims `CODE_PROVEN` but describe
 Structured reflection tool for code integrity validation across any language or framework. Forces the agent to prove code is free of type evasions, placeholder stubs, timing workarounds, swallowed errors, and duplicated logic before committing or proposing changes. Catches Type Evasion (any/void*/unsafe/type:ignore — silencing the type system instead of fixing the type), Placeholder Residue (TODO/FIXME/HACK/stub/panic! left in code that will ship — incomplete work disguised as done), Workaround Patterns (sleep loops, busy-wait polling, retry-without-diagnosis, timeout-as-fix — treating symptoms instead of root causes), Error Swallowing (empty catch blocks, catch-and-log-only, generic Exception without recovery — hiding failures instead of handling them), and Duplication Drift (copy-paste blocks, magic numbers, hardcoded config, similar functions that should be one). Call once per code change, PR review, or implementation proposal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Code Integrity Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I'm writing a user authentication module. I used `any` or `void*` for the JWT payload because the type is complex, and added a TODO for refresh token logic."
+
+**🤖 AI Agent:**
+> Verdict: TYPE_EVASION. `any`/`void*` for a JWT payload is a security hole — the payload carries claims that determine authorization. Define JwtPayload struct/interface and validate at the boundary. Fix the types — don't silence the compiler.
+
+---
+
+**👤 You:**
+> "Write a function that connects to the database. If it fails, log the error and retry after a sleep."
+
+**🤖 AI Agent:**
+> Verdict: WORKAROUND_DETECTED. Using sleep inside a retry loop masks concurrency or network latency issues. Implement exponential backoff with jitter and define a clear circuit breaker strategy rather than raw timing hacks.
+
+---
+
+**👤 You:**
+> "Typed all interfaces with proper validation models. Zero TODO/FIXME/panic. No sleep loops — using proper async events. Errors caught with specific exception classes and recovery strategies. No duplicated logic — shared utils extracted."
+
+**🤖 AI Agent:**
+> Verdict: CODE_PROVEN. Types safe (validation at boundaries), zero placeholders (no TODO/panic), zero workarounds (events over sleep), errors properly handled (specific exceptions with recovery), no duplication (shared utils). Production-grade.
+
+
 ## Installation & Usage
 
 To install and use the **Code Integrity Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Code Integrity Prover** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Blockdaemon (Blockchain Infrastructure) MCP Server
 
-Access institutional-grade blockchain data across multiple protocols — list blocks, track transactions, and retrieve financial reports via Blockdaemon Ubiquity.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blockdaemon-blockchain-infrastructure)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockdaemon-blockchain-infrastructure)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockdaemon-blockchain-infrastructure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockdaemon-blockchain-infrastructure-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 4
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access institutional-grade blockchain data across multiple protocols — list blocks, track transactions, and retrieve financial reports via Blockdaemon Ubiquity.
 
 ## Description
 Connect your **Blockdaemon** account to any AI agent to interact with major blockchain protocols through a single, unified interface. This MCP server leverages the Ubiquity API to provide seamless access to multi-chain data.
@@ -39,6 +41,33 @@ Connect your **Blockdaemon** account to any AI agent to interact with major bloc
 - **get_utxos**: Get Unspent Transaction Outputs (UTXOs)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Blockdaemon (Blockchain Infrastructure)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent blocks on Ethereum mainnet."
+
+**🤖 AI Agent:**
+> I've retrieved the latest blocks for Ethereum mainnet using `list_blocks`. The most recent block height is 19283746 with hash 0xabc...123. Would you like to see the transactions inside this block?
+
+---
+
+**👤 You:**
+> "Show me the transaction history for Bitcoin address 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa."
+
+**🤖 AI Agent:**
+> Fetching transactions via `list_transactions`... I found 15 recent transactions for this address. The latest was a transfer of 0.5 BTC on 2023-10-25. Should I provide the details for the last 5?
+
+---
+
+**👤 You:**
+> "Get a financial report for Algorand address [ADDRESS] on mainnet."
+
+**🤖 AI Agent:**
+> Generating the report using `get_financial_report`... The report for the Algorand address is ready. It includes total balance, rewards earned, and transaction volume for the specified period.
+
+
 ## Installation & Usage
 
 To install and use the **Blockdaemon (Blockchain Infrastructure)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Blockdaemon (Blockchain Infrastructure)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

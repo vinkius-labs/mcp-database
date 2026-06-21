@@ -1,12 +1,14 @@
 # OpenAQ MCP Server
 
-Access global air quality data — monitor PM2.5, O3, NO2 levels and track pollution via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openaq)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openaq)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openaq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openaq-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 9
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access global air quality data — monitor PM2.5, O3, NO2 levels and track pollution via AI.
 
 ## Description
 Connect **OpenAQ**, the world's largest open air quality database, to any AI agent and monitor real-time pollution levels, track air quality trends, and access data from thousands of monitoring stations globally through natural language.
@@ -51,6 +53,33 @@ List measurable air quality parameters
 List air quality sensors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenAQ** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current PM2.5 level in São Paulo, Brazil?"
+
+**🤖 AI Agent:**
+> Latest PM2.5 reading for São Paulo: 18.5 µg/m³ (moderate). This is above the WHO guideline of 5 µg/m³ annual mean. Would you like to see the 24-hour trend?
+
+---
+
+**👤 You:**
+> "Which countries have the most air quality monitoring stations?"
+
+**🤖 AI Agent:**
+> Top countries by monitoring stations: India (2,100+ locations), United States (1,800+), China (1,500+), Brazil (900+), and Germany (700+). Would you like details for any specific country?
+
+---
+
+**👤 You:**
+> "Show me ozone (O3) measurements from the last 24 hours in Paris."
+
+**🤖 AI Agent:**
+> Retrieved 48 O3 readings from Paris monitoring stations in the last 24 hours. Average: 65 µg/m³, Peak: 92 µg/m³ at 14:00. All readings within acceptable range. Highest reading was at the Paris 18ème station.
+
+
 ## Installation & Usage
 
 To install and use the **OpenAQ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **OpenAQ** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

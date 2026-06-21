@@ -1,12 +1,14 @@
 # SmartHR MCP Server
 
-Empower your AI to manage employee records, organizational structures, and payrolls directly from your SmartHR workspace.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smarthr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smarthr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smarthr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smarthr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 8
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Empower your AI to manage employee records, organizational structures, and payrolls directly from your SmartHR workspace.
 
 ## Description
 Connect your **SmartHR** directory to any AI agent and empower your team to query employee data, organizational hierarchies, and payroll records securely. Interact with your organization's human capital database through natural language without ever switching tabs.
@@ -44,6 +46,46 @@ Stop clicking through countless profiles on the SmartHR platform just to find ou
 - **list_crew_dependents**: Lists dependents for a specific employee
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SmartHR** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch the entire roster and list the top 3 job positions that occur most frequently."
+
+**🤖 AI Agent:**
+> I've fetched the crew and positions. Out of 150 current employees, the top 3 most common job positions in your organization are:
+1. Entry-Level Developer (42 members)
+2. QA Specialist (18 members)
+3. Account Executive (15 members)
+
+---
+
+**👤 You:**
+> "Retrieve the details for crew member `crew-8f192`, including their enrolled dependents."
+
+**🤖 AI Agent:**
+> Here's the SmartHR profile for Crew `crew-8f192`:
+- **Name**: Yuto Tanaka
+- **Department**: Engineering Div.
+- **Employment Type**: Full-Time Employee
+
+**Dependents Listed**:
+- 1 Registered Dependent (Spouse). ID: `dep-43X`
+
+---
+
+**👤 You:**
+> "List all physical establishments the company operates."
+
+**🤖 AI Agent:**
+> From the endpoint results, your company operates 2 registered business establishments:
+1. Tokyo Shibuya Headquarters (Est. Code: HQ-1)
+2. Fukuoka Branch Office (Est. Code: FB-2)
+
+Do you want me to map employees to these branches?
+
+
 ## Installation & Usage
 
 To install and use the **SmartHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +94,11 @@ To install and use the **SmartHR** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

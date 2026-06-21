@@ -1,12 +1,14 @@
 # Dropbox MCP Server
 
-Manage cloud storage via Dropbox — list folders, search files, handle shared links, and monitor space usage directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dropbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dropbox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage cloud storage via Dropbox — list folders, search files, handle shared links, and monitor space usage directly from any AI agent.
 
 ## Description
 Connect your **Dropbox** account to any AI agent and take full control of your cloud storage and file management through natural conversation.
@@ -57,6 +59,33 @@ Move or rename a file/folder
 - **create_shared_link**: Create a public shared link for a file or folder
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dropbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List files in my '/Projects/2024' folder"
+
+**🤖 AI Agent:**
+> Retrieving items from '/Projects/2024'... I found 5 files: 'Plan.pdf', 'Budget.xlsx', and 3 images. Would you like to see the metadata for the planning document?
+
+---
+
+**👤 You:**
+> "Search for any files containing 'invoice' in their name"
+
+**🤖 AI Agent:**
+> Searching for 'invoice'... I found 3 matches: 'Invoice_Jan.pdf', 'Invoice_Feb.pdf', and 'Old_Invoices.zip'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me my Dropbox storage usage"
+
+**🤖 AI Agent:**
+> Retrieving storage info... You are using 1.2 GB of your 2.0 GB total capacity (60% used). You have approximately 800 MB of space remaining.
+
+
 ## Installation & Usage
 
 To install and use the **Dropbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Dropbox** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

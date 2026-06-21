@@ -1,12 +1,14 @@
 # ProcessOn MCP Server
 
-Online flowchart and mind mapping platform — manage diagrams, collaborations, and exports via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/processon)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/processon)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/processon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/processon-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Online flowchart and mind mapping platform — manage diagrams, collaborations, and exports via AI.
 
 ## Description
 Empower your AI agent to orchestrate your visual documentation with **ProcessOn**, the premier online platform for flowcharts, mind maps, and organizational charts. By connecting ProcessOn to your agent, you transform complex diagram management and project coordination into a natural conversation. Your agent can instantly list your files, create new diagrams, export your work into multiple formats, and even monitor collaborators without you ever needing to navigate the web interface. Whether you are designing a system architecture or a complex business process, your agent acts as a real-time visual documentation assistant, keeping your diagrams organized and your production moving.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your visual documentation with **ProcessOn*
 - **list_folders**: List all folders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ProcessOn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my flowcharts on ProcessOn."
+
+**🤖 AI Agent:**
+> I've retrieved your ProcessOn diagrams. You have 4 active flowcharts, including 'Customer Onboarding Flow' and 'System Architecture'. Which one would you like to view info for?
+
+---
+
+**👤 You:**
+> "Create a new mind map titled 'Q4 Goals' in the 'Planning' folder."
+
+**🤖 AI Agent:**
+> Done! I've created the mind map 'Q4 Goals' inside the 'Planning' folder. You can now start brainstorming your objectives. File ID: PO-8821.
+
+---
+
+**👤 You:**
+> "Export the diagram 'Architecture V2' to PNG format."
+
+**🤖 AI Agent:**
+> I've processed the export for you. Your diagram 'Architecture V2' is now ready in PNG format. You can download it here: [link].
+
+
 ## Installation & Usage
 
 To install and use the **ProcessOn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **ProcessOn** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

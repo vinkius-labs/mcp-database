@@ -1,12 +1,14 @@
 # CS-Cart MCP Server
 
-Manage e-commerce and marketplaces via CS-Cart — track products and orders, handle customer data, audit vendors, and monitor taxes directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cs-cart)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cs-cart)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cs-cart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cs-cart-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage e-commerce and marketplaces via CS-Cart — track products and orders, handle customer data, audit vendors, and monitor taxes directly from any AI agent.
 
 ## Description
 Connect your **CS-Cart** or **Multi-Vendor** store to any AI agent and take full control of your e-commerce platform and marketplace operations through natural conversation.
@@ -67,6 +69,33 @@ List CS-Cart tax rules and rates
 List CS-Cart order statuses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CS-Cart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 products added to my store"
+
+**🤖 AI Agent:**
+> I found 5 recent products. Highlights include 'Modern Desk Lamp' ($45.00) and 'Ergonomic Office Chair' ($299.00). Would you like to see the full inventory details for any of these?
+
+---
+
+**👤 You:**
+> "What is the status of order #987?"
+
+**🤖 AI Agent:**
+> Order #987 is currently 'Paid' (Status Code: P). It contains 2 items for a total of $120.00. The shipping method selected is 'FedEx Ground'.
+
+---
+
+**👤 You:**
+> "List all active vendors in my marketplace"
+
+**🤖 AI Agent:**
+> I found 3 active vendors: 'TechWorld Solutions', 'Green Garden Supplies', and 'Fashion Hub'. Each vendor has their own storefront and product catalog on your platform.
+
+
 ## Installation & Usage
 
 To install and use the **CS-Cart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **CS-Cart** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

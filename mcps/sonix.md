@@ -1,12 +1,14 @@
 # Sonix MCP Server
 
-Automate transcription, translation, and media management via Sonix — transcribe audio/video, generate subtitles, and create AI summaries directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sonix)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sonix)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sonix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sonix-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 30
+
+**Category:** [image-video](../categories/image-video.md)
+
+Automate transcription, translation, and media management via Sonix — transcribe audio/video, generate subtitles, and create AI summaries directly from any AI agent.
 
 ## Description
 Connect your **Sonix** account to any AI agent to streamline your media post-production and accessibility workflows through natural conversation.
@@ -68,6 +70,33 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 - **update_user**: Update a user role
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sonix** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my most recent media files in Sonix."
+
+**🤖 AI Agent:**
+> I've retrieved your media list. You have 5 recent files, including 'Interview_v1.mp4' (ID: m123) and 'Keynote_Speech.mp3' (ID: m456). Would you like to get the transcript for any of these?
+
+---
+
+**👤 You:**
+> "Transcribe this audio file: https://example.com/audio.mp3 in French."
+
+**🤖 AI Agent:**
+> I've submitted the media for transcription. The Media ID is 'm789' and the status is currently 'processing'. I can notify you once the French transcript is ready.
+
+---
+
+**👤 You:**
+> "Generate a summary for media ID m123."
+
+**🤖 AI Agent:**
+> I've initiated the summarization for 'Interview_v1.mp4'. You can check the result using `get_summarization` with ID 's999' in a few moments.
+
+
 ## Installation & Usage
 
 To install and use the **Sonix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Sonix** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

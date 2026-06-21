@@ -1,12 +1,14 @@
 # ByteNite MCP Server
 
-Manage distributed video encoding via ByteNite — track jobs, use encoding templates, and monitor performance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bytenite)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bytenite)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bytenite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bytenite-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage distributed video encoding via ByteNite — track jobs, use encoding templates, and monitor performance directly from any AI agent.
 
 ## Description
 Connect your **ByteNite** account to any AI agent and orchestrate your video encoding workflows, distributed computing tasks, and media processing through natural conversation.
@@ -46,6 +48,33 @@ Connect your **ByteNite** account to any AI agent and orchestrate your video enc
 - **list_templates**: List all encoding templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ByteNite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current video encoding jobs in ByteNite."
+
+**🤖 AI Agent:**
+> I've retrieved your jobs. You have 3 active encodings: 'Marketing Video' (ID: job_1, 80% done), 'Product Demo' (ID: job_2, Finished), and 'Tutorial' (ID: job_3, Processing).
+
+---
+
+**👤 You:**
+> "Show the available encoding templates."
+
+**🤖 AI Agent:**
+> Retrieving templates... You have 'H.264 1080p' (ID: temp_1), 'WebM 720p' (ID: temp_2), and 'ProRes HQ' (ID: temp_3) configured.
+
+---
+
+**👤 You:**
+> "Encode video https://example.com/source.mp4 using template temp_123."
+
+**🤖 AI Agent:**
+> New encoding job created! ByteNite is now processing your video with ID job_99283. I will notify you once the output is ready for download.
+
+
 ## Installation & Usage
 
 To install and use the **ByteNite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **ByteNite** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

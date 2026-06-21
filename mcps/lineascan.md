@@ -1,12 +1,14 @@
 # Lineascan MCP Server
 
-Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lineascan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lineascan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lineascan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lineascan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 25
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI.
 
 ## Description
 Connect to **Lineascan** and empower your AI agent with real-time access to the Linea network. This server provides a comprehensive suite of tools for blockchain analysis, transaction tracking, and smart contract interaction.
@@ -59,6 +61,33 @@ Connect to **Lineascan** and empower your AI agent with real-time access to the 
 - **verify_source_code**: Submit a contract for verification
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lineascan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the ETH balance of the address 0x1234567890abcdef1234567890abcdef12345678?"
+
+**🤖 AI Agent:**
+> I've checked the balance for that address on Linea. It currently holds 1.25 ETH.
+
+---
+
+**👤 You:**
+> "List the last 5 ERC-20 token transfers for address 0xabc...123."
+
+**🤖 AI Agent:**
+> I found the recent ERC-20 transfers for that address. The most recent ones include transfers of USDC and WETH. Would you like the specific transaction hashes?
+
+---
+
+**👤 You:**
+> "Get the ABI and source code for the contract at 0x789...def."
+
+**🤖 AI Agent:**
+> I've retrieved the data for the contract. It is a verified 'LiquidityPool' contract. I have the ABI ready for function calls and the Solidity source code for your review.
+
+
 ## Installation & Usage
 
 To install and use the **Lineascan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Lineascan** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

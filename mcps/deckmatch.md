@@ -1,12 +1,14 @@
 # DeckMatch MCP Server
 
-Match startup pitch decks with investors using AI that analyzes fit, tracks outreach, and surfaces the right funding connections.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deckmatch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deckmatch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deckmatch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deckmatch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 12
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Match startup pitch decks with investors using AI that analyzes fit, tracks outreach, and surfaces the right funding connections.
 
 ## Description
 Connect your **DeckMatch** (now AlphaLens) account to any AI agent and take full control of your venture capital deal flow and startup analysis workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual data entry for every deck. Your AI acts as your dedicated investm
 - **submit_pitch_deck**: Submit a deck for AI analysis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeckMatch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze this pitch deck: 'https://docsend.com/view/example-deck'."
+
+**🤖 AI Agent:**
+> Deck submission triggered! I've started the analysis for your DocSend URL. The job ID is 'sub_123'. I'll monitor the triage results and notify you as soon as the investment memo is ready.
+
+---
+
+**👤 You:**
+> "Find startups similar to 'Stripe' focusing on 'climate tech payments'."
+
+**🤖 AI Agent:**
+> Searching portfolio... Using AlphaLens, I found 3 relevant startups: 'ClimatePay', 'CarbonSettlements' (Seed), and 'EcoFin'. Would you like the detailed triage summaries for these matches?
+
+---
+
+**👤 You:**
+> "Generate an investment memo for submission 'sub_123'."
+
+**🤖 AI Agent:**
+> Memo generation complete! I've automatically crafted a professional investment memo for submission sub_123 based on the pitch deck analysis. You can now access the full document content.
+
+
 ## Installation & Usage
 
 To install and use the **DeckMatch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **DeckMatch** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

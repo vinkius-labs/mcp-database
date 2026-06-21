@@ -1,12 +1,14 @@
 # Facebook Ads MCP Server
 
-Manage your Facebook and Meta Ads via AI — list campaigns, track performance insights, and update ad status directly through your agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/facebook-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/facebook-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/facebook-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/facebook-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Facebook and Meta Ads via AI — list campaigns, track performance insights, and update ad status directly through your agent.
 
 ## Description
 Connect your **Facebook Ads** (Meta Marketing) account to any AI agent and take full control of your advertising campaigns through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Facebook Ads** (Meta Marketing) account to any AI agent and take 
 - **list_ads**: List ads in the Ad Account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Facebook Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active campaigns in my ad account."
+
+**🤖 AI Agent:**
+> Fetching active campaigns... You have 3 active campaigns: 'Spring Launch 2024' (ID: 123), 'Brand Awareness - Global' (ID: 456), and 'Retargeting - EU' (ID: 789). Would you like to see the daily spend for any of these?
+
+---
+
+**👤 You:**
+> "Show me the performance insights for the last week."
+
+**🤖 AI Agent:**
+> Analyzing account insights... Over the last 7 days, your account generated 125,000 impressions and 2,400 clicks with a total spend of $1,250. Your average CPC is $0.52.
+
+---
+
+**👤 You:**
+> "Pause campaign 123456789."
+
+**🤖 AI Agent:**
+> Updating campaign status... Campaign 123456789 ('Spring Launch') has been successfully PAUSED.
+
+
 ## Installation & Usage
 
 To install and use the **Facebook Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Facebook Ads** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

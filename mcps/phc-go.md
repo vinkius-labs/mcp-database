@@ -1,12 +1,14 @@
 # PHC GO MCP Server
 
-Equip your AI agent to control your PHC GO ERP. Query customers, retrieve real-time stocks, map taxes, and issue documents conversationally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/phc-go)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phc-go)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phc-go-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phc-go-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 16
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to control your PHC GO ERP. Query customers, retrieve real-time stocks, map taxes, and issue documents conversationally.
 
 ## Description
 Connect your **PHC GO** enterprise ecosystem to your AI agent and manage operations, invoicing, and logistics through natural language commands natively.
@@ -50,6 +52,33 @@ Connect your **PHC GO** enterprise ecosystem to your AI agent and manage operati
 - **list_warehouses**: Listar armazéns configurados para gestão de stock
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PHC GO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the available stock for 'Macbook Pro M3' across all warehouses."
+
+**🤖 AI Agent:**
+> I checked the ERP. We currently hold 42 units of 'Macbook Pro M3': 30 units at Warehouse North and 12 units at Central Logistics.
+
+---
+
+**👤 You:**
+> "Create a new customer profile for 'Acme Corp' and fetch their assigned customer ID."
+
+**🤖 AI Agent:**
+> Understood. The entity 'Acme Corp' was successfully pushed to PHC GO configuration. Their internal Customer ID assigns to `CUST-989201`.
+
+---
+
+**👤 You:**
+> "Examine our outstanding current accounts from January to spot pending vendor debts."
+
+**🤖 AI Agent:**
+> According to the ERP 'list_current_accounts' query, there are 4 open vendor invoices flagged as overdue from January. Here's a table summarizing the debtors and owed amounts.
+
+
 ## Installation & Usage
 
 To install and use the **PHC GO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **PHC GO** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

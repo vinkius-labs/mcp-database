@@ -1,12 +1,14 @@
 # SoundCloud MCP Server
 
-Search, stream, and manage SoundCloud tracks, playlists, and social interactions directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/soundcloud-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/soundcloud-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/soundcloud-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/soundcloud-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 9
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Search, stream, and manage SoundCloud tracks, playlists, and social interactions directly from your AI agent.
 
 ## Description
 Connect your **SoundCloud** account to any AI agent to discover music, manage your library, and interact with the world's largest audio community through natural conversation.
@@ -46,6 +48,33 @@ Upload a new track to SoundCloud
 - **get_me**: Get current SoundCloud user details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SoundCloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for lo-fi hip hop tracks on SoundCloud with a limit of 5 results."
+
+**🤖 AI Agent:**
+> I found 5 lo-fi hip hop tracks for you. Highlights include 'Midnight Study' by LofiGirl and 'Rainy Nights'. Would you like the stream URLs for any of these?
+
+---
+
+**👤 You:**
+> "Identify the track at this URL: https://soundcloud.com/forss/flickermood"
+
+**🤖 AI Agent:**
+> Resolving URL... That link corresponds to the track 'Flickermood' by Forss (ID: 12345). It has over 1 million plays and is tagged as 'Electronic'.
+
+---
+
+**👤 You:**
+> "Like the track with ID 12345 for me."
+
+**🤖 AI Agent:**
+> Done! I've added track 12345 ('Flickermood') to your liked tracks on SoundCloud.
+
+
 ## Installation & Usage
 
 To install and use the **SoundCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **SoundCloud** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

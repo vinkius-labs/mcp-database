@@ -1,12 +1,14 @@
 # Jasper MCP Server
 
-Equip your AI agent with direct access to Jasper — generate marketing copy, manage brand voices, and orchestrate content campaigns without opening the Jasper app.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jasper)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jasper)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jasper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jasper-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 20
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent with direct access to Jasper — generate marketing copy, manage brand voices, and orchestrate content campaigns without opening the Jasper app.
 
 ## Description
 Connect **Jasper** to your AI agent and supercharge your marketing content production pipeline.
@@ -76,6 +78,56 @@ List target audiences
 - **get_audience**: Get audience details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jasper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Write 3 Google Ads headlines for our SaaS product launch."
+
+**🤖 AI Agent:**
+> Here are 3 headline variations using your brand voice:
+1. 'Scale Your Operations — Not Your Headcount'
+2. 'Enterprise Automation, Startup Speed'
+3. 'From Manual to Magical in 5 Minutes'
+All headlines are under 30 characters and optimized for click-through.
+
+---
+
+**👤 You:**
+> "Generate an email subject line for our Black Friday campaign."
+
+**🤖 AI Agent:**
+> Here are 5 subject line options:
+1. '⚡ 48 Hours Only: 40% Off Everything'
+2. 'Your Biggest Savings of the Year Start Now'
+3. 'Black Friday Alert: Deals Your Team Will Thank You For'
+4. 'Don't Miss It — Our Best Price Ever'
+5. 'Clock's Ticking: Black Friday Ends at Midnight'
+
+---
+
+**👤 You:**
+> "Create a LinkedIn post announcing our new AI feature."
+
+**🤖 AI Agent:**
+> Here's a LinkedIn post using your brand voice:
+
+🚀 Big news from our engineering team.
+
+We just shipped AI-powered workflow automation — and it's already changing how our customers operate.
+
+What took 4 hours now takes 4 minutes.
+
+No complex setup. No code. Just results.
+
+Early adopters are seeing 10x efficiency gains in their first week.
+
+Try it free → [link]
+
+#AI #ProductLaunch #Automation
+
+
 ## Installation & Usage
 
 To install and use the **Jasper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +136,11 @@ To install and use the **Jasper** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

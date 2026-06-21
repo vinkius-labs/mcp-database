@@ -1,12 +1,14 @@
 # Bird (MessageBird) MCP Server
 
-Unified communications platform for SMS, WhatsApp, Email, and Voice — manage conversations and contacts at scale.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-messagebird)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-messagebird)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bird-messagebird-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bird-messagebird-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Unified communications platform for SMS, WhatsApp, Email, and Voice — manage conversations and contacts at scale.
 
 ## Description
 Connect **Bird** (formerly MessageBird) to your AI agents to orchestrate omnichannel communication through simple natural language. 
@@ -50,6 +52,33 @@ Send a new message to a recipient through a specific communication channel (SMS,
 Update the metadata or identifiers of an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bird (MessageBird)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active conversations on Bird."
+
+**🤖 AI Agent:**
+> I've retrieved your active conversations. You have 3 open threads: one via WhatsApp with John Doe, and two via SMS. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Send a WhatsApp message to +123456789 saying 'Your order is ready!'."
+
+**🤖 AI Agent:**
+> Message sent successfully! I used your primary WhatsApp channel to deliver the update to +123456789.
+
+---
+
+**👤 You:**
+> "Show me the last 5 voice calls in my workspace."
+
+**🤖 AI Agent:**
+> Here are the 5 most recent calls. 4 were completed successfully, and one was missed from an unknown number. Would you like details on any specific call?
+
+
 ## Installation & Usage
 
 To install and use the **Bird (MessageBird)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Bird (MessageBird)** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

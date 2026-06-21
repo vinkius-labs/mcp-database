@@ -1,12 +1,14 @@
 # SolarAnywhere API MCP Server
 
-Monitor solar data — audit irradiance and sites via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/solaranywhere-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solaranywhere-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/solaranywhere-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/solaranywhere-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Monitor solar data — audit irradiance and sites via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire solar energy research and site auditing workflow with **SolarAnywhere**, the authoritative source for high-resolution solar irradiance data. By connecting the SolarAnywhere API to your agent, you transform complex meteorological searches into a natural conversation. Your agent can instantly retrieve real-time irradiance levels, audit typical meteorological year (TMY) data, and query specific site metadata without you ever touching a technical portal. Whether you are conducting renewable energy research or managing regional solar fleet constraints, your agent acts as a real-time solar consultant, ensuring your data is always verified and precise.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire solar energy research and site 
 - **list_solar_sites**: List all solar sites registered in your SolarAnywhere account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SolarAnywhere API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get solar irradiance for latitude 34.0522 and longitude -118.2437 using SolarAnywhere."
+
+**🤖 AI Agent:**
+> I've retrieved the real-time solar data! The Global Horizontal Irradiance (GHI) is currently 850 W/m² and the temperature is 25°C. Would you like the full DNI and DHI metadata for these coordinates?
+
+---
+
+**👤 You:**
+> "Show Typical Meteorological Year data for 'Napa Valley'."
+
+**🤖 AI Agent:**
+> I've identified the coordinates for Napa Valley and retrieved the TMY data. The long-term solar potential is identified as having a high consistency for energy production. I can provide the monthly average irradiance metadata if you'd like.
+
+---
+
+**👤 You:**
+> "List all registered solar sites in my account."
+
+**🤖 AI Agent:**
+> I've retrieved the site catalog from SolarAnywhere! You have 5 registered sites, including 'Solar-West-Alpha' and 'Utility-One'. I can provide the exact coordinate metadata and GHI data for any of these sites.
+
+
 ## Installation & Usage
 
 To install and use the **SolarAnywhere API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **SolarAnywhere API** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

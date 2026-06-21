@@ -1,12 +1,14 @@
 # Paleobiology Database MCP Server
 
-Access the world's largest fossil database — query occurrences, analyze taxonomic diversity, and explore geological intervals directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/paleobiology-database)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paleobiology-database)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paleobiology-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paleobiology-database-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 27
+
+**Category:** [databases](../categories/databases.md)
+
+Access the world's largest fossil database — query occurrences, analyze taxonomic diversity, and explore geological intervals directly from your AI agent.
 
 ## Description
 Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a specialized paleontological researcher. Access millions of records spanning the history of life on Earth.
@@ -62,6 +64,33 @@ Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a sp
 - **match_reference**: Check for a matching reference in the PBDB database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Paleobiology Database** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all Tyrannosaurus occurrences recorded in the Cretaceous period."
+
+**🤖 AI Agent:**
+> I've searched the database for Tyrannosaurus in the Cretaceous. I found several occurrences, including specimens from the Hell Creek Formation (Montana) and the Lance Formation (Wyoming). Would you like the specific IDs for these records?
+
+---
+
+**👤 You:**
+> "Show me the diversity of Trilobites over time."
+
+**🤖 AI Agent:**
+> Generating diversity tabulation for Trilobita... The data shows a peak in diversity during the Ordovician period, followed by a gradual decline until their extinction at the end of the Permian. I can provide a breakdown by geological interval if you'd like.
+
+---
+
+**👤 You:**
+> "List fossil collections found in the geographic area of Montana, USA."
+
+**🤖 AI Agent:**
+> I've filtered collections for the Montana region (approx. lat 44-49, lng -116 to -104). I found numerous collections, primarily from the Cretaceous and Paleogene, including many dinosaur and early mammal sites. Should I list the most recent ones?
+
+
 ## Installation & Usage
 
 To install and use the **Paleobiology Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Paleobiology Database** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

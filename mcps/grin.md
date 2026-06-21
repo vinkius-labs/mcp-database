@@ -1,12 +1,14 @@
 # GRIN MCP Server
 
-Manage influencer marketing & creator CRMs via GRIN — list contacts, track campaigns, and monitor content via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage influencer marketing & creator CRMs via GRIN — list contacts, track campaigns, and monitor content via AI.
 
 ## Description
 Connect your **GRIN** Creator Management account to any AI agent and take full control of your influencer marketing workflows through natural conversation.
@@ -48,6 +50,33 @@ Connect your **GRIN** Creator Management account to any AI agent and take full c
 - **update_contact**: Update properties for a specific creator
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GRIN** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my influencer campaigns in GRIN"
+
+**🤖 AI Agent:**
+> Retrieving your campaigns... I found 3 active campaigns: 'Summer Launch 2024' (ID: 102), 'Brand Ambassadors' (ID: 105), and 'Holiday Seeding' (ID: 110). Would you like to see the activations for the summer launch?
+
+---
+
+**👤 You:**
+> "Show the conversion data for @janesmith"
+
+**🤖 AI Agent:**
+> Fetching conversion metrics... For @janesmith (ID: 93021), I found 45 attributed sales this month totaling $4,250.00. Her average order value is $94.44. Should I pull the detailed conversion log?
+
+---
+
+**👤 You:**
+> "Check the status of seeding order #GF-88392"
+
+**🤖 AI Agent:**
+> Retrieving order details... Order #GF-88392 for creator Mark R. is currently 'In Transit'. The estimated delivery date is June 12th. Would you like the tracking link?
+
+
 ## Installation & Usage
 
 To install and use the **GRIN** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **GRIN** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

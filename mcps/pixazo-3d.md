@@ -1,12 +1,14 @@
 # Pixazo 3D MCP Server
 
-Generate production-quality 3D models via Pixazo — convert images and text to 3D assets with Hunyuan, Hyper3D, Tripo, and Trellis from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pixazo-3d)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixazo-3d)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixazo-3d-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixazo-3d-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 12
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Generate production-quality 3D models via Pixazo — convert images and text to 3D assets with Hunyuan, Hyper3D, Tripo, and Trellis from any AI agent.
 
 ## Description
 Connect your **Pixazo 3D API** to any AI agent and take full control of production-quality 3D asset generation from images and text through natural conversation.
@@ -81,6 +83,33 @@ Generate structured 3D models using Trellis3D with clean topology
 Generate 3D models using Tripo3D for fast generation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pixazo 3D** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 3D model of a running shoe from this product image: https://example.com/shoe.jpg"
+
+**🤖 AI Agent:**
+> Generating 3D model using Hunyuan 3D... Processing product image. Generation complete! Model generated in GLB format (5.8 MB) with full PBR textures (4K albedo, normal, roughness, metallic, AO). Download URL: https://s3.pixazo.ai/models/shoe_3d_pbr.glb. The model includes accurate geometry with 120K polygons and photorealistic material reproduction. Compatible with Unity, Unreal Engine, Blender, and e-commerce 3D viewers. Would you like a low-poly version for web or a rigged version for animation?
+
+---
+
+**👤 You:**
+> "Create a low-poly 3D tree for my mobile game from this reference image."
+
+**🤖 AI Agent:**
+> Generating low-poly 3D tree... Using optimized low-poly pipeline with max 5000 polygons. Generation complete! Model in GLB format (320 KB). Download: https://s3.pixazo.ai/models/lowpoly_tree.glb. The tree features clean topology with 4,200 triangles, optimized UV layout, and baked lighting — perfect for mobile games and web-based 3D viewers. Poly count is 96% lower than the high-poly version while maintaining recognizable shape. Would you like me to generate a forest pack with variations?
+
+---
+
+**👤 You:**
+> "Generate an anime-style 3D character from this concept art."
+
+**🤖 AI Agent:**
+> Generating anime-style 3D character... Using styled generation with anime preset. Generation complete! Model in FBX format with skeletal rigging (18.4 MB). Download: https://s3.pixazo.ai/models/anime_character_rigged.fbx. The character features stylized anime proportions, cel-shaded textures, and full humanoid rig with 54 bones. Ready for import into Unity or Blender for animation. Texture resolution is 2K with albedo and normal maps. Would you like additional facial expression blend shapes?
+
+
 ## Installation & Usage
 
 To install and use the **Pixazo 3D** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Pixazo 3D** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

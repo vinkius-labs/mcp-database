@@ -1,12 +1,14 @@
 # HID Origo MCP Server
 
-Automate identity and access management via HID Origo — manage mobile identities, users, and readers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hid-origo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hid-origo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hid-origo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hid-origo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 11
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Automate identity and access management via HID Origo — manage mobile identities, users, and readers directly from any AI agent.
 
 ## Description
 Connect your **HID Origo** platform to any AI agent and take full control of your cloud-based identity and physical access management through natural conversation.
@@ -57,6 +59,33 @@ List all issued mobile identities (digital cards)
 List all users managed in the HID Origo tenant
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HID Origo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active mobile identities and their status."
+
+**🤖 AI Agent:**
+> I've retrieved your mobile identities. You have 15 issued digital cards, including 12 'Activated' and 3 'Pending Enrollment'. Would you like to see the details for the pending identities to follow up with the users?
+
+---
+
+**👤 You:**
+> "Show me the status of the access readers in the 'London Office'."
+
+**🤖 AI Agent:**
+> Accessing reader data... In the 'London Office' (ID: loc_552), all 5 HID Signo readers are currently ONLINE and reporting normal activity. Would you like to see the recent access events for these readers?
+
+---
+
+**👤 You:**
+> "Invite user 'user_992' to enroll for a mobile identity."
+
+**🤖 AI Agent:**
+> Process started! I've initiated an enrollment invitation for user_992. I'll use your default part number for the digital card. An email will be sent to the user with instructions to activate their credential in the HID Origo app. Should I check the audit log to confirm the invite was sent?
+
+
 ## Installation & Usage
 
 To install and use the **HID Origo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **HID Origo** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

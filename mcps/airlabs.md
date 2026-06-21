@@ -1,12 +1,14 @@
 # AirLabs MCP Server
 
-Access global aviation data via AirLabs — track real-time flights, search airports and airlines, check schedules, and analyze routes from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/airlabs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airlabs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airlabs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airlabs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access global aviation data via AirLabs — track real-time flights, search airports and airlines, check schedules, and analyze routes from any AI agent.
 
 ## Description
 Connect your **AirLabs Data API** aviation platform to any AI agent and take full control of real-time flight tracking, airport intelligence, airline research, and schedule analysis through natural conversation.
@@ -81,6 +83,33 @@ Get all routes operated by a specific airline
 Get flight schedules and timetables for airlines and airports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AirLabs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active United Airlines flights right now with their current positions and destinations."
+
+**🤖 AI Agent:**
+> Searching AirLabs for United Airlines (UA) active flights... I found 387 flights currently in operation. Notable flights include: UA1 (Boeing 777-300ER, EWR to LHR, en-route at FL390 over Atlantic), UA890 (Boeing 787-9, NRT to SFO, en-route at FL380, ETA 14:23 PST), UA234 (Airbus A320, ORD to DEN, departed 35 minutes ago, climbing through FL280), and UA456 (Boeing 737-MAX 9, IAH to LAX, scheduled departure in 20 minutes). Would you like me to filter by a specific route or show more details for any flight?
+
+---
+
+**👤 You:**
+> "What is the flight schedule from New York JFK to London Heathrow, and which airlines operate this route?"
+
+**🤖 AI Agent:**
+> Checking schedules from JFK to LHR... I found 73 weekly flights on this route operated by 5 airlines: British Airways (BA) — 14 flights weekly with Boeing 777 and Airbus A350 aircraft, American Airlines (AA) — 14 flights weekly with Boeing 777-300ER and 787-9, Delta Air Lines (DL) — 7 flights weekly with Airbus A330-900neo, United Airlines (UA) — 7 flights weekly with Boeing 767-400 and 777-200, and Virgin Atlantic (VS) — 7 flights weekly with Airbus A350-1000. Average flight time is 7 hours 15 minutes eastbound, 8 hours westbound. Earliest departure is BA112 at 08:00 EST, latest is VS4 at 21:30 EST. Would you like schedules for a specific date?
+
+---
+
+**👤 You:**
+> "Are there any delays at Chicago O'Hare (ORD) right now, and what flights are currently departing?"
+
+**🤖 AI Agent:**
+> Checking ORD delay statistics and departures... Current delay data for Chicago O'Hare: Average departure delay is 23 minutes, average arrival delay is 18 minutes. On-time performance: 68% of flights departing within 15 minutes of schedule. Weather-related delays: moderate (gusty winds at 22 knots). Now checking active departures: I found 47 flights currently departing or scheduled for departure in the next 2 hours. Notable departures include: UA1545 (Boeing 737-900 to SFO, Gate C18, delayed 35 minutes), AA2891 (Airbus A321 to DFW, Gate H12, on-time departure), DL1723 (Boeing 757-200 to ATL, Gate C24, departed 12 minutes ago), and WN3456 (Boeing 737-MAX 8 to DEN, Gate B15, boarding). Would you like complete departure board details?
+
+
 ## Installation & Usage
 
 To install and use the **AirLabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **AirLabs** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

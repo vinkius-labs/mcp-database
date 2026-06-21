@@ -1,12 +1,14 @@
 # Dubsado MCP Server
 
-Run your creative business with proposal templates, contract signing, invoicing, and client scheduling in one seamless flow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dubsado)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dubsado)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dubsado-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dubsado-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Run your creative business with proposal templates, contract signing, invoicing, and client scheduling in one seamless flow.
 
 ## Description
 Connect your **Dubsado** account to any AI agent and take full control of your business operations and client lifecycle management through natural conversation.
@@ -49,6 +51,33 @@ No more manual project tracking or digging through CRM menus. Your AI acts as yo
 - **update_project**: Update an existing project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dubsado** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active projects in Dubsado."
+
+**🤖 AI Agent:**
+> I've retrieved your active projects. You currently have 4 deals in progress, including 'Winter Wedding' (ID: proj_1) and 'Brand Identity Refresh'. Which one would you like to update?
+
+---
+
+**👤 You:**
+> "Create a $200 invoice for project 'proj_1' for 'Design Services'."
+
+**🤖 AI Agent:**
+> Invoice generated! I've created the $200.00 invoice for 'Design Services' associated with project proj_1. The ID is 'inv_123'. Shall I send it to the client for you?
+
+---
+
+**👤 You:**
+> "Show me the status of the contract for 'Winter Wedding'."
+
+**🤖 AI Agent:**
+> Checking contract... For 'Winter Wedding' (ID: proj_1), the contract was viewed by the client yesterday but is still 'Pending Signature'. Would you like me to send a follow-up reminder?
+
+
 ## Installation & Usage
 
 To install and use the **Dubsado** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Dubsado** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

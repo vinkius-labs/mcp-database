@@ -1,12 +1,14 @@
 # OECD Data API MCP Server
 
-Access global economic data — audit social and fiscal series via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oecd-data-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oecd-data-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oecd-data-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oecd-data-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 3
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access global economic data — audit social and fiscal series via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire macroeconomic research and policy auditing workflow with the **OECD Data API**, the authoritative source for global social and economic indicators. By connecting the OECD SDMX-JSON service to your agent, you transform complex statistical searches into a natural conversation. Your agent can instantly retrieve historical datasets, audit regional economic trends, and query specific dataflows without you ever touching a data portal. Whether you are conducting international market research or managing regional policy constraints, your agent acts as a real-time data analyst, ensuring your intelligence is always verified and precise.
@@ -39,6 +41,33 @@ Empower your AI agent to orchestrate your entire macroeconomic research and poli
 - **list_oecd_dataflows**: List all available dataflows and datasets in the OECD catalog
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OECD Data API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get quarterly national accounts (QNA) data from OECD."
+
+**🤖 AI Agent:**
+> I've retrieved the QNA dataset! The latest observations show a growth trend of [Value] across member countries. I can provide the full statistical breakdown or specific regional metadata for you.
+
+---
+
+**👤 You:**
+> "List all available dataflows in the OECD catalog."
+
+**🤖 AI Agent:**
+> I've scanned the OECD dataflow catalog! There are hundreds of series available, including markers for education, health, and fiscal policy. I can help you retrieve a specific dataset ID for any of these thematic markers.
+
+---
+
+**👤 You:**
+> "What are the latest observations for the 'CPI' dataset in the OECD?"
+
+**🤖 AI Agent:**
+> I've retrieved the CPI observations! The recent data points indicate an inflation trend of [Value] for [Period]. I can assist you with an audit of the comparative metadata across different OECD regions if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **OECD Data API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **OECD Data API** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

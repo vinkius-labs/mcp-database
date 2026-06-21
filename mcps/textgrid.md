@@ -1,12 +1,14 @@
 # TextGrid MCP Server
 
-Build voice and messaging applications with a CPaaS platform that offers programmable SMS, MMS, and voice APIs globally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/textgrid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textgrid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/textgrid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/textgrid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Build voice and messaging applications with a CPaaS platform that offers programmable SMS, MMS, and voice APIs globally.
 
 ## Description
 Connect your **TextGrid** account to any AI agent and simplify how you manage your cloud telephony, global messaging, and communication logs through natural conversation.
@@ -48,6 +50,33 @@ Connect your **TextGrid** account to any AI agent and simplify how you manage yo
 - **send_sms_message**: Send a new SMS or MMS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TextGrid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +15550199 saying 'Your verification code is 12345'."
+
+**🤖 AI Agent:**
+> SMS sent! I've triggered the message to +15550199 from your TextGrid number. The message SID is MSG-88231. Shall I track its delivery status for you?
+
+---
+
+**👤 You:**
+> "Show me the last 3 voice calls from my history."
+
+**🤖 AI Agent:**
+> I've fetched your call history. You had: 1 Incoming from +123456 (Completed, 5m), 1 Outbound to +987654 (Failed), and 1 Incoming from Unknown (Missed). Would you like details on any specific call?
+
+---
+
+**👤 You:**
+> "Search for available mobile numbers in the United Kingdom."
+
+**🤖 AI Agent:**
+> Fetching available numbers... I found 5 numbers available in the UK (Country Code: GB) including +447700... and +447701... Shall I retrieve the pricing and feature list for these?
+
+
 ## Installation & Usage
 
 To install and use the **TextGrid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **TextGrid** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

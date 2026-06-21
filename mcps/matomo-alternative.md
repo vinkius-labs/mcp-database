@@ -1,12 +1,14 @@
 # Matomo MCP Server
 
-Track website traffic, analyze visitor behavior, and generate detailed analytics reports directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/matomo-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matomo-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matomo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matomo-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 7
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track website traffic, analyze visitor behavior, and generate detailed analytics reports directly from your AI agent.
 
 ## Description
 Connect your **Matomo** analytics instance to any AI agent and gain deep insights into your web traffic through natural conversation.
@@ -54,6 +56,33 @@ Get visits summary metrics
 - **get_wp_processed_report**: Get processed report via WordPress REST API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Matomo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the visits summary for site ID 1 for the last 30 days."
+
+**🤖 AI Agent:**
+> I've retrieved the summary for site 1. In the last 30 days, you had 12,450 visits, 38,200 actions, and a bounce rate of 28.5%.
+
+---
+
+**👤 You:**
+> "Track a page view for 'Pricing Page' on site 2 with URL 'https://example.com/pricing'."
+
+**🤖 AI Agent:**
+> The page view for 'Pricing Page' has been successfully tracked for site ID 2.
+
+---
+
+**👤 You:**
+> "Show me the processed report for site 5 for today."
+
+**🤖 AI Agent:**
+> I've generated the processed report for site 5. Today's data shows 450 visits and 1,200 actions, with top referrers being Google and Direct entry.
+
+
 ## Installation & Usage
 
 To install and use the **Matomo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Matomo** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

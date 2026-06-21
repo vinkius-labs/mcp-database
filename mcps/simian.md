@@ -1,12 +1,14 @@
 # Simian MCP Server
 
-Video sharing and collaboration platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/simian)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simian)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simian-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simian-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Video sharing and collaboration platform.
 
 ## Description
 The Simian MCP server enables your AI agent to manage your creative workflows. Retrieve media links, orchestrate review processes, and analyze viewer engagement directly from the chat interface.
@@ -27,6 +29,33 @@ The Simian MCP server enables your AI agent to manage your creative workflows. R
 - **update_media**: Update metadata for a media file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Simian** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the review link for project 'Summer Campaign'."
+
+**🤖 AI Agent:**
+> Here is the secure review link for 'Summer Campaign': simian.com/review/1234
+
+---
+
+**👤 You:**
+> "Summarize the analytics for my latest reel."
+
+**🤖 AI Agent:**
+> Your latest reel has 45 views, an average watch time of 1m 20s, and 5 new comments from the client.
+
+---
+
+**👤 You:**
+> "Invite 'client@brand.com' to review project 104."
+
+**🤖 AI Agent:**
+> An invitation has been successfully sent to 'client@brand.com' for project 104.
+
+
 ## Installation & Usage
 
 To install and use the **Simian** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **Simian** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

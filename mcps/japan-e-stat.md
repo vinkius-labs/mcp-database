@@ -1,12 +1,14 @@
 # Japan e-Stat MCP Server
 
-Query official Japanese government statistics — population, GDP, industry, trade, employment, and more — from the e-Stat national database.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/japan-e-stat)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/japan-e-stat)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/japan-e-stat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/japan-e-stat-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 2
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Query official Japanese government statistics — population, GDP, industry, trade, employment, and more — from the e-Stat national database.
 
 ## Description
 The **Japan e-Stat MCP Server** connects your AI agent to the official Portal of Government Statistics of Japan — the most comprehensive public data repository for the world's third-largest economy.
@@ -29,6 +31,33 @@ Retrieve statistical data from a specific Japanese Government e-Stat table
 Search for statistical tables in the Japanese Government e-Stat database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Japan e-Stat** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find Japanese population statistics by prefecture."
+
+**🤖 AI Agent:**
+> I've searched e-Stat for population data by prefecture. Found 15 relevant tables from the Statistics Bureau. The most recent census table (ID: 0003448237) shows Tokyo at 14.0 million, Kanagawa at 9.2 million, and Osaka at 8.8 million. Japan's total population stands at approximately 125.5 million.
+
+---
+
+**👤 You:**
+> "Fetch the latest Consumer Price Index (CPI) data for Tokyo."
+
+**🤖 AI Agent:**
+> I retrieved the latest CPI data for the Ku-area of Tokyo. The all-items index currently stands at 106.5 (2020=100), representing a 2.4% year-over-year increase, driven primarily by rising food and energy costs.
+
+---
+
+**👤 You:**
+> "Show me the industrial production index for the automotive sector."
+
+**🤖 AI Agent:**
+> According to the latest METI data from e-Stat, the Indices of Industrial Production (IIP) for the motor vehicles, parts, and accessories sector rests at 98.2, showing a slight month-over-month decrease of 1.1%.
+
+
 ## Installation & Usage
 
 To install and use the **Japan e-Stat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -37,4 +66,11 @@ To install and use the **Japan e-Stat** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

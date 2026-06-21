@@ -1,12 +1,14 @@
 # 7shifts MCP Server
 
-Schedule restaurant staff, manage shifts, track labor costs, and coordinate your team with intelligent workforce planning.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/7shifts-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/7shifts-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/7shifts-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/7shifts-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Schedule restaurant staff, manage shifts, track labor costs, and coordinate your team with intelligent workforce planning.
 
 ## Description
 Connect your **7shifts** restaurant management account to any AI agent and simplify how you coordinate your workforce, manage shift assignments, and track labor costs through natural conversation.
@@ -45,6 +47,33 @@ Connect your **7shifts** restaurant management account to any AI agent and simpl
 - **list_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **7shifts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees in my 7shifts account."
+
+**🤖 AI Agent:**
+> I've retrieved your employee list. You have 15 active staff members including 'Alex Rivera', 'Sarah Chen', and 'Mike Ross'. Which one would you like to see the shifts for?
+
+---
+
+**👤 You:**
+> "Show me the shifts for 'Alex Rivera' (ID: user_10293)."
+
+**🤖 AI Agent:**
+> I've fetched the shifts for Alex. He has 3 assignments this week: Tuesday (10:00 - 18:00), Thursday (12:00 - 20:00), and Saturday (08:00 - 16:00). All are scheduled at the 'Downtown' location.
+
+---
+
+**👤 You:**
+> "Create a new shift at location 'loc_8823' for tomorrow from 09:00 to 17:00."
+
+**🤖 AI Agent:**
+> Success! A new work assignment has been created for tomorrow (09:00 - 17:00) at the Downtown unit. It is currently unassigned. Would you like me to assign an employee to it?
+
+
 ## Installation & Usage
 
 To install and use the **7shifts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **7shifts** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

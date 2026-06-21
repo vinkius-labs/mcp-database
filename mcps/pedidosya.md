@@ -1,12 +1,14 @@
 # PedidosYa MCP Server
 
-Automate restaurant operations on PedidosYa — manage orders, update menus, request couriers, and track deliveries across Latin America from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pedidosya)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pedidosya)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pedidosya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pedidosya-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 14
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate restaurant operations on PedidosYa — manage orders, update menus, request couriers, and track deliveries across Latin America from any AI agent.
 
 ## Description
 Connect your **PedidosYa** partner account to any AI agent and manage the full delivery lifecycle across Latin America's leading food delivery platform.
@@ -71,6 +73,33 @@ Update the price of a menu product
 Toggle a menu product on or off
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PedidosYa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending orders for my restaurant."
+
+**🤖 AI Agent:**
+> You have 3 pending orders: 1. Order #PY-88412 — 2x Burger Clásica + 1x Papas Fritas ($345 UYU, 5 min ago). 2. Order #PY-88415 — 1x Pizza Margherita + 2x Coca-Cola ($520 UYU, 2 min ago). 3. Order #PY-88418 — 3x Empanadas + 1x Flan ($280 UYU, just now). Would you like me to accept all three?
+
+---
+
+**👤 You:**
+> "Mark the Chocotorta as sold out on restaurant ID R-4421."
+
+**🤖 AI Agent:**
+> Done! Product 'Chocotorta' (ID: P-9922) has been marked as unavailable on restaurant R-4421's PedidosYa menu. Customers will see it greyed out until you re-enable it. Would you like to update any other products?
+
+---
+
+**👤 You:**
+> "Request a courier to pick up a package from Av. 18 de Julio 1234, Montevideo and deliver to Rambla Wilson 500."
+
+**🤖 AI Agent:**
+> Courier requested! Shipment #SH-77201 has been created. Pickup: Av. 18 de Julio 1234, Montevideo. Dropoff: Rambla Wilson 500, Montevideo. Estimated pickup in 12 minutes. A courier will be assigned shortly. Use `track_shipment` with ID SH-77201 to monitor real-time GPS location.
+
+
 ## Installation & Usage
 
 To install and use the **PedidosYa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **PedidosYa** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

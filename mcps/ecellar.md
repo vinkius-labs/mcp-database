@@ -1,12 +1,14 @@
 # eCellar MCP Server
 
-Manage premium winery customers, orders, wine clubs, products, reservations, and inventory for your eCellar DTC platform through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ecellar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecellar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecellar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecellar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage premium winery customers, orders, wine clubs, products, reservations, and inventory for your eCellar DTC platform through natural conversation.
 
 ## Description
 Connect your **eCellar** winery to any AI agent and manage your premium DTC operation through natural conversation.
@@ -57,6 +59,51 @@ List club members
 List tasting reservations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **eCellar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Who are our top 5 customers by lifetime spend?"
+
+**🤖 AI Agent:**
+> 🍷 **Top 5 Customers — Lifetime Value**
+
+1. **Michael & Sarah Henderson** — $47,200
+   - Reserve Club member since 2018
+   - 23 tasting room visits
+   - Last order: Oct 2 (6x Estate Cab 2021)
+
+2. **Jennifer Park** — $38,900
+   - Founder's Circle since 2016
+   - Prefers Bordeaux blends
+
+3. **David & Lisa Chen** — $34,100
+   - Estate Club, 18 visits
+
+4. **Robert Williams** — $31,500
+   - Reserve Club, corporate events
+
+5. **Amanda Torres** — $28,700
+   - Discovery Club → upgraded to Reserve 2024
+
+---
+
+**👤 You:**
+> "Search for inventory levels of the 2019 Reserve Cabernet."
+
+**🤖 AI Agent:**
+> The 2019 Reserve Cabernet Sauvignon currently has 240 bottles on-hand at the main warehouse and 48 bottles available in the Tasting Room. 24 bottles are currently allocated for upcoming club shipments.
+
+---
+
+**👤 You:**
+> "Show me the reservation schedule for tomorrow afternoon."
+
+**🤖 AI Agent:**
+> You have 12 reservations booked for tomorrow afternoon between 1:00 PM and 5:00 PM, totaling 45 guests. There are two VIP members arriving at 2:00 PM (the Hendersons and Robert Williams).
+
+
 ## Installation & Usage
 
 To install and use the **eCellar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +112,11 @@ To install and use the **eCellar** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

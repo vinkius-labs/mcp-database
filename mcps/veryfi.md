@@ -1,12 +1,14 @@
 # Veryfi MCP Server
 
-Automate document OCR and data extraction via Veryfi — process receipts, invoices, business cards, bank statements, and tax forms directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/veryfi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/veryfi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/veryfi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/veryfi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 57
+
+**Category:** [document-management](../categories/document-management.md)
+
+Automate document OCR and data extraction via Veryfi — process receipts, invoices, business cards, bank statements, and tax forms directly from your AI agent.
 
 ## Description
 Connect your **Veryfi** account to any AI agent and automate document data extraction with human-level accuracy in seconds.
@@ -92,6 +94,48 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **reset_client_keys**: Regenerate all API keys
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Veryfi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Process this receipt URL: https://example.com/receipt.jpg"
+
+**🤖 AI Agent:**
+> I've processed the receipt. Here are the details:
+- **Vendor**: Tech Supplies Inc.
+- **Total**: $124.50
+- **Tax**: $10.20
+- **Date**: 2023-10-25
+Would you like me to list the line items?
+
+---
+
+**👤 You:**
+> "Extract data from this bank statement: https://example.com/statement.pdf"
+
+**🤖 AI Agent:**
+> I've analyzed the bank statement. Here is the summary:
+- **Bank**: Chase Bank
+- **Account Number**: *******1234
+- **Beginning Balance**: $5,430.00
+- **Ending Balance**: $6,120.00
+- **Statement Period**: Oct 1 - Oct 31, 2023
+
+---
+
+**👤 You:**
+> "Process this driver's license using the 'us_driver_license' blueprint: https://example.com/license.png"
+
+**🤖 AI Agent:**
+> Using the 'us_driver_license' blueprint, I extracted the following:
+- **Name**: Jane Doe
+- **License Number**: D1234567
+- **State**: CA
+- **Expiration Date**: 2028-05-12
+- **Date of Birth**: 1990-01-01
+
+
 ## Installation & Usage
 
 To install and use the **Veryfi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -100,4 +144,11 @@ To install and use the **Veryfi** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

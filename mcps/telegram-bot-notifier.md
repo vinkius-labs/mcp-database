@@ -1,12 +1,14 @@
 # Telegram Bot Notifier MCP Server
 
-This MCP does exactly one thing: it sends messages to your Telegram chats. That's its only function, and nothing else. Incredible for giving your AI agents a voice on mobile.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-notifier)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-notifier)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telegram-bot-notifier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telegram-bot-notifier-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 1
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+This MCP does exactly one thing: it sends messages to your Telegram chats. That's its only function, and nothing else. Incredible for giving your AI agents a voice on mobile.
 
 ## Description
 We refused to build a bloated Telegram integration that requires complex long-polling daemons or scary webhook ingress setups. Instead, this MCP server provides a surgical, zero-trust bridge: **a simple Bot Token and a Chat ID.**
@@ -26,6 +28,25 @@ Your AI agent gains the immediate, zero-friction ability to drop critical alerts
 Send a notification or message to a Telegram chat, group, or channel via a Bot
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Telegram Bot Notifier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a Telegram message saying the nightly build failed."
+
+**🤖 AI Agent:**
+> I've successfully sent the failure notification to your Telegram chat.
+
+---
+
+**👤 You:**
+> "Send an alert to Telegram. Format it in HTML with bold text for 'CRITICAL'."
+
+**🤖 AI Agent:**
+> The HTML formatted alert has been delivered to your Telegram chat.
+
+
 ## Installation & Usage
 
 To install and use the **Telegram Bot Notifier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -34,4 +55,11 @@ To install and use the **Telegram Bot Notifier** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # eSign (e签宝) MCP Server
 
-Leading digital signature and contract platform in China — manage sign flows, templates, and documents via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/esign-e)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esign-e)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/esign-e-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/esign-e-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 10
+
+**Category:** [document-management](../categories/document-management.md)
+
+Leading digital signature and contract platform in China — manage sign flows, templates, and documents via AI.
 
 ## Description
 Empower your AI agent to orchestrate your digital agreement lifecycle with **eSign** (e签宝), the premier electronic signature platform in China. By connecting eSign to your agent, you transform complex contract workflows and document signing into a natural conversation. Your agent can instantly list your sign flows, create new signature tasks, manage document templates, and even retrieve signing URLs for participants without you ever needing to navigate the comprehensive eSign portal. Whether you are managing high-volume employee contracts or complex B2B agreements, your agent acts as a real-time legal operations assistant, keeping your documents secure and your business moving.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your digital agreement lifecycle with **eSi
 - **start_flow**: Start sign flow
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **eSign (e签宝)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active signature flows on eSign."
+
+**🤖 AI Agent:**
+> I've retrieved your active eSign flows. You have 5 tasks in progress, including 'Service Agreement - Client A' and 'New Employee Offer'. Which one would you like to check the status for?
+
+---
+
+**👤 You:**
+> "Get the signing URL for account 'acc-8821' in flow 'flow-9920'."
+
+**🤖 AI Agent:**
+> I've retrieved the execution URL for the participant. You can send this link to the signer to complete the process: [URL].
+
+---
+
+**👤 You:**
+> "Show me all available document templates."
+
+**🤖 AI Agent:**
+> I've listed your eSign document templates. You have 3 templates ready for use: 'Standard NDA', 'Employment Contract v2', and 'Sales Agreement'. Would you like to use one of these for a new sign flow?
+
+
 ## Installation & Usage
 
 To install and use the **eSign (e签宝)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **eSign (e签宝)** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # LiveKit Real-Time Rooms MCP Server
 
-Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tt-voice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tt-voice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tt-voice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tt-voice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication
-**Tools Count:** 10
+
+**Category:** [communication](../categories/communication.md)
+
+Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent.
 
 ## Description
 Connect your AI agents to **LiveKit**, the open-source framework and cloud platform for real-time voice, video, and AI agent communication. This MCP provides 10 tools to manage the full room lifecycle via the LiveKit Twirp Room Service API.
@@ -58,6 +60,33 @@ Send a data message to all participants in a room
 Update the metadata of a room
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LiveKit Real-Time Rooms** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active rooms on my LiveKit server."
+
+**🤖 AI Agent:**
+> I've queried your LiveKit server. There are currently 3 active rooms: 'support-call-42' (2 participants), 'team-standup' (5 participants), and 'demo-room' (0 participants). Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Create a room called 'interview-session' with a max of 3 participants."
+
+**🤖 AI Agent:**
+> Done! Room 'interview-session' has been created on your LiveKit server with a 10-minute empty timeout and a max of 3 participants. Participants can now join using an access token scoped to this room.
+
+---
+
+**👤 You:**
+> "Remove the participant 'user-abc' from room 'support-call-42'."
+
+**🤖 AI Agent:**
+> Participant 'user-abc' has been removed from room 'support-call-42'. Their access token has been revoked and they will need a new token to rejoin.
+
+
 ## Installation & Usage
 
 To install and use the **LiveKit Real-Time Rooms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **LiveKit Real-Time Rooms** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

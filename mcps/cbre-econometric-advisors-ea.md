@@ -1,12 +1,14 @@
 # CBRE Econometric Advisors (EA) MCP Server
 
-Access global real estate market data via CBRE EA — track rents, vacancy rates, and market forecasts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cbre-econometric-advisors-ea)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cbre-econometric-advisors-ea)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cbre-econometric-advisors-ea-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cbre-econometric-advisors-ea-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access global real estate market data via CBRE EA — track rents, vacancy rates, and market forecasts directly from any AI agent.
 
 ## Description
 Connect your **CBRE Econometric Advisors (EA)** licensed subscription to any AI agent and orchestrate your real estate market research through natural conversation. Access deep historical data and expert forecasts for global commercial real estate.
@@ -47,6 +49,33 @@ List global real estate markets covered by CBRE EA
 - **search_cbre_assets**: Search for specific real estate assets or indices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CBRE Econometric Advisors (EA)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current cap rates for the Office sector in New York."
+
+**🤖 AI Agent:**
+> Retrieving data for New York Office sector... The current cap rate is 5.2%, with a forecasted compression of 10 basis points over the next 12 months.
+
+---
+
+**👤 You:**
+> "What is the forecasted rent growth for Industrial assets in London?"
+
+**🤖 AI Agent:**
+> Checking London Industrial forecast... Expert analysis suggests a 4.5% annual rent growth through 2025, driven by low vacancy and high demand for last-mile logistics.
+
+---
+
+**👤 You:**
+> "List the macroeconomic indicators for the Paris market."
+
+**🤖 AI Agent:**
+> Retrieving macro data for Paris... I found population growth of 0.8%, an employment increase of 1.2%, and a median household income of €45,000.
+
+
 ## Installation & Usage
 
 To install and use the **CBRE Econometric Advisors (EA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **CBRE Econometric Advisors (EA)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

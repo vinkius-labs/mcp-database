@@ -1,12 +1,14 @@
 # DummyJSON MCP Server
 
-Access a comprehensive suite of dummy data for testing and prototyping — products, carts, and user authentication directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dummyjson)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dummyjson)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dummyjson-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dummyjson-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 61
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access a comprehensive suite of dummy data for testing and prototyping — products, carts, and user authentication directly from your AI agent.
 
 ## Description
 Connect to **DummyJSON** to simulate real-world API interactions within your AI environment. Perfect for developers needing instant access to structured data for building, testing, and demonstrating applications without setting up a backend.
@@ -95,6 +97,33 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 - **update_user**: Update a user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DummyJSON** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all products in the 'smartphones' category."
+
+**🤖 AI Agent:**
+> I've retrieved the products for you. In the 'smartphones' category, I found items like the iPhone 9, iPhone X, and Samsung Universe 9. Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Search for 'laptop' and limit the results to 3."
+
+**🤖 AI Agent:**
+> Searching... I found 3 laptops for you: MacBook Pro, Samsung Galaxy Book, and Microsoft Surface Laptop 4. Which one should we look at first?
+
+---
+
+**👤 You:**
+> "Simulate a login for user 'emilys' with password 'emilyspass'."
+
+**🤖 AI Agent:**
+> Login successful! I've authenticated as 'emilys'. I now have the JWT access token and refresh token for this session. What would you like to do next?
+
+
 ## Installation & Usage
 
 To install and use the **DummyJSON** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -103,4 +132,11 @@ To install and use the **DummyJSON** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

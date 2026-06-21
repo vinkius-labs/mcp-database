@@ -1,12 +1,14 @@
 # BTC.com API (BTC.com Explorer & Pool API) MCP Server
 
-Access real-time Bitcoin blockchain data and mining pool statistics including blocks, transactions, addresses, and worker performance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/btccom-api-btccom-explorer-pool-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/btccom-api-btccom-explorer-pool-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/btccom-api-btccom-explorer-pool-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/btccom-api-btccom-explorer-pool-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 13
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time Bitcoin blockchain data and mining pool statistics including blocks, transactions, addresses, and worker performance.
 
 ## Description
 Connect to the **BTC.com API** to integrate comprehensive Bitcoin blockchain exploration and mining pool management into your AI workflows. This server provides a dual-purpose interface for both public blockchain data and private mining operations.
@@ -58,6 +60,33 @@ Get worker list
 Get worker stats
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BTC.com API (BTC.com Explorer & Pool API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the latest block information from the Bitcoin network."
+
+**🤖 AI Agent:**
+> I've retrieved the latest block. Height: 834291, Hash: 0000000000000000000... It contains 3,421 transactions and was mined at...
+
+---
+
+**👤 You:**
+> "Show me the balance and summary for Bitcoin address 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa."
+
+**🤖 AI Agent:**
+> Using `get_address_summary`, I found that this address has a total balance of 99.98 BTC with 1,204 transactions recorded.
+
+---
+
+**👤 You:**
+> "List all my active mining workers and their current hashrate."
+
+**🤖 AI Agent:**
+> I've fetched your worker list. You have 12 active workers. Worker 'Antminer_S19_01' is currently hashing at 104 TH/s.
+
+
 ## Installation & Usage
 
 To install and use the **BTC.com API (BTC.com Explorer & Pool API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **BTC.com API (BTC.com Explorer & Pool API)** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

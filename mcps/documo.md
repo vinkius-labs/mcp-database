@@ -1,12 +1,14 @@
 # Documo MCP Server
 
-Equip your AI agent to manage digital faxes, track fax numbers, and monitor transmissions via the Documo API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/documo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/documo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/documo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/documo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage digital faxes, track fax numbers, and monitor transmissions via the Documo API.
 
 ## Description
 Integrate **Documo**, the next-generation digital fax and document workflow platform (mFax), directly into your AI workflow. Manage your inbound and outbound faxes, track assigned fax numbers, monitor transmission logs and delivery receipts, and oversee user access using natural language.
@@ -44,6 +46,33 @@ Integrate **Documo**, the next-generation digital fax and document workflow plat
 - **search_faxes_by_recipient**: Search for faxes matching a recipient number or identifier
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Documo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recently sent faxes."
+
+**🤖 AI Agent:**
+> I've found 5 recent transmissions, including faxes to '+1 (555) 0123' and '+1 (555) 9876'. All were successfully delivered. Would you like to see the page count for any of these?
+
+---
+
+**👤 You:**
+> "Show me all fax numbers assigned to our account."
+
+**🤖 AI Agent:**
+> Your account has 3 active fax numbers: '+1 (555) 1111' (Main Office), '+1 (555) 2222' (HR), and '+1 (555) 3333' (Support). Should I check the inbound fax volume for any of these lines?
+
+---
+
+**👤 You:**
+> "Check the status of fax 'FAX-9988'."
+
+**🤖 AI Agent:**
+> Fax 'FAX-9988' sent to '+1 (555) 4444' is currently 'Delivered'. It was 4 pages long and transmitted via the 'Main Office' line. Should I pull the delivery receipt?
+
+
 ## Installation & Usage
 
 To install and use the **Documo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Documo** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

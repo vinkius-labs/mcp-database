@@ -1,12 +1,14 @@
 # Fly.io MCP Server
 
-Manage edge compute infrastructure via Fly.io — list apps, control machines (VMs), manage volumes and certificates from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flyio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flyio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flyio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 13
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage edge compute infrastructure via Fly.io — list apps, control machines (VMs), manage volumes and certificates from any AI agent.
 
 ## Description
 Connect your **Fly.io** account to any AI agent and take full control of your edge compute infrastructure through natural conversation.
@@ -77,6 +79,33 @@ Stop a running Fly.io machine
 Update a Fly.io machine configuration
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fly.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all machines running in my web-api app."
+
+**🤖 AI Agent:**
+> Your web-api app has 3 machines: 'web-api-1' in iad (started, 1 CPU, 512MB), 'web-api-2' in fra (started, 1 CPU, 512MB) and 'web-api-3' in nrt (stopped). All running image registry.fly.io/web-api:v2.1.0.
+
+---
+
+**👤 You:**
+> "Start the stopped machine in Tokyo and restart the one in Frankfurt."
+
+**🤖 AI Agent:**
+> Done! I've started machine 'web-api-3' (nrt) — it's now booting. I've also restarted 'web-api-2' (fra) — it will stop and start again with its current configuration. Both machines should be healthy within a minute.
+
+---
+
+**👤 You:**
+> "Create a new 10GB volume called 'data' for my database app in Virginia."
+
+**🤖 AI Agent:**
+> Done! I've created a 10GB persistent volume called 'data' in the iad (Virginia) region for your database app. The volume is ready to be attached to a machine via its mount configuration.
+
+
 ## Installation & Usage
 
 To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **Fly.io** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

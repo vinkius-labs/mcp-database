@@ -1,12 +1,14 @@
 # ChurnZero MCP Server
 
-Manage customer success and health via ChurnZero — track churn scores, monitor segments, and analyze account activity directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/churnzero)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/churnzero)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/churnzero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/churnzero-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 8
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage customer success and health via ChurnZero — track churn scores, monitor segments, and analyze account activity directly from any AI agent.
 
 ## Description
 Connect your **ChurnZero** account to any AI agent and take full control of your customer success operations through natural conversation. Streamline how you manage account health and retention workflows.
@@ -45,6 +47,33 @@ Connect your **ChurnZero** account to any AI agent and take full control of your
 - **track_account_event**: Track a customer event or activity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ChurnZero** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the accounts with the highest churn risk."
+
+**🤖 AI Agent:**
+> Retrieving high-risk accounts... I found 3 accounts with health scores below 40: 'Global Tech', 'Fast Delivery', and 'Startup Inc'. Would you like to see their recent interaction history?
+
+---
+
+**👤 You:**
+> "What are the latest customer success alerts?"
+
+**🤖 AI Agent:**
+> Checking active alerts... You have 5 new alerts today, including 2 'Low Usage' triggers and 3 'Key Contact Left' notifications. I can list the specific accounts for you.
+
+---
+
+**👤 You:**
+> "Track a 'Feature Training Completed' event for account 'ACME-123'."
+
+**🤖 AI Agent:**
+> Tracking event for ACME-123... The 'Feature Training Completed' activity has been logged in ChurnZero. This will be factored into their health score during the next update.
+
+
 ## Installation & Usage
 
 To install and use the **ChurnZero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ChurnZero** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

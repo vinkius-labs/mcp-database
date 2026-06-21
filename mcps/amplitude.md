@@ -1,12 +1,14 @@
 # Amplitude MCP Server
 
-Analyze product data via Amplitude — get user activity, calculate retention, analyze funnels, and track revenue directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amplitude)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplitude)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplitude-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplitude-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Analyze product data via Amplitude — get user activity, calculate retention, analyze funnels, and track revenue directly from any AI agent.
 
 ## Description
 Connect your **Amplitude** account to your AI agent and seamlessly query behavioral data and product analytics using natural language.
@@ -69,6 +71,33 @@ Get Amplitude revenue analysis by day
 Get Amplitude daily/weekly/monthly active users (DAU/WAU/MAU)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amplitude** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's our funnel conversion from 'Landing_Page_View' to 'Sign_Up_Success' for the last 3 days?"
+
+**🤖 AI Agent:**
+> I checked the conversion funnel. Over the last 3 days, 14,200 users triggered 'Landing_Page_View'. Of those, 2,840 completed 'Sign_Up_Success'. This represents an overall conversion rate of 20%, which is slightly above our weekly average.
+
+---
+
+**👤 You:**
+> "Show the recent user activity for customer email@example.com"
+
+**🤖 AI Agent:**
+> I've pulled the activity stream for email@example.com. In the last 2 hours, they logged in, triggered 'Payment_Initiated', but then hit an error on 'Payment_Gateway_Failed'. You might want to review the exact property payload.
+
+---
+
+**👤 You:**
+> "What is our Daily Active Users (DAU) count since start of the month?"
+
+**🤖 AI Agent:**
+> I fetched the DAU data. Since the 1st of the month, DAU has ranged from 45,000 to 52,000. Yesterday hit a peak at 52,104, reflecting our recent campaign launch. Would you like a breakdown of revenue from this period?
+
+
 ## Installation & Usage
 
 To install and use the **Amplitude** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Amplitude** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

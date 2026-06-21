@@ -1,12 +1,14 @@
 # Brevo MCP Server
 
-Automate marketing campaigns via Brevo — send transactional emails, dispatch SMS messages, and manage contacts natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brevo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brevo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Automate marketing campaigns via Brevo — send transactional emails, dispatch SMS messages, and manage contacts natively.
 
 ## Description
 Connect your **Brevo** (formerly Sendinblue) account to any AI agent and execute marketing operations and crucial transactional workflows via natural conversation.
@@ -50,6 +52,33 @@ Dispatch an automated transactional SMS directly to cellular hardware
 - **update_contact_attributes**: Update custom attributes or metadata parameters for a specific CRM contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brevo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a transactional email to test@domain.com saying hello."
+
+**🤖 AI Agent:**
+> I've sent the transactional email! The robust Brevo SMTP infrastructure accepted the HTML payload safely. You can track open metrics internally.
+
+---
+
+**👤 You:**
+> "Create contact john.doe@mail.com and map their name as John."
+
+**🤖 AI Agent:**
+> John's contact record was securely configured inside your CRM architecture! I passed the FIRSTNAME attribute properly over JSON and assigned them neutrally to the general list.
+
+---
+
+**👤 You:**
+> "Can you text message 'Server requires reboot' to my admin phone?"
+
+**🤖 AI Agent:**
+> The SMS alert has been handed off to the Brevo gateway. It normally delivers under ~200ms depending on explicit telco routes. Logs reflect an affirmative dispatch signal.
+
+
 ## Installation & Usage
 
 To install and use the **Brevo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Brevo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

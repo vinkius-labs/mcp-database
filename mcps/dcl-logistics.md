@@ -1,12 +1,14 @@
 # DCL Logistics MCP Server
 
-Equip your AI agent to manage order fulfillment, track shipments, and monitor warehouse inventory via the DCL Logistics API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dcl-logistics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dcl-logistics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dcl-logistics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dcl-logistics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage order fulfillment, track shipments, and monitor warehouse inventory via the DCL Logistics API.
 
 ## Description
 Integrate **DCL Logistics**, the leader in third-party logistics (3PL) and fulfillment, directly into your AI workflow. Manage your fulfillment orders, track shipments in real-time, and monitor warehouse inventory levels using natural language.
@@ -64,6 +66,33 @@ List all shipments processed by DCL
 Search for orders using a keyword or customer name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DCL Logistics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all fulfillment orders that are 'Awaiting Shipment'."
+
+**🤖 AI Agent:**
+> I've found 15 orders awaiting shipment, including 'Order #EF123' and 'Order #EF124'. Most are scheduled to ship later today. Would you like to see the SKU breakdown for these orders?
+
+---
+
+**👤 You:**
+> "What is the inventory status for SKU 'WR-9988'?"
+
+**🤖 AI Agent:**
+> SKU 'WR-9988' currently has 45 units in stock at the Fremont facility and 12 units at the Kentucky facility. There are 5 units reserved for pending orders. Should I check if there are any inbound shipments for this SKU?
+
+---
+
+**👤 You:**
+> "Show me the tracking details for shipment 'SHP-1001'."
+
+**🤖 AI Agent:**
+> Shipment 'SHP-1001' was shipped via UPS Ground on June 12th. The current status is 'Out for Delivery' in Chicago, IL. The estimated arrival is by 5:00 PM today. Would you like the tracking link?
+
+
 ## Installation & Usage
 
 To install and use the **DCL Logistics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **DCL Logistics** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

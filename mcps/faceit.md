@@ -1,12 +1,14 @@
 # Faceit MCP Server
 
-Access competitive gaming data — search players, matches, hubs, tournaments and leaderboards for CS2, Valorant and more.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/faceit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/faceit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/faceit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/faceit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access competitive gaming data — search players, matches, hubs, tournaments and leaderboards for CS2, Valorant and more.
 
 ## Description
 Connect to **Faceit** and access the world's largest competitive gaming platform through natural conversation.
@@ -70,6 +72,33 @@ Search for Faceit players by nickname
 Search for tournaments on Faceit
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Faceit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for player s1mple on Faceit."
+
+**🤖 AI Agent:**
+> Found s1mple: Faceit Level 10, CS2 ELO 2847. Win rate: 68%, K/D: 1.42, Headshot %: 52%. Member since 2016.
+
+---
+
+**👤 You:**
+> "Show me upcoming CS2 tournaments."
+
+**🤖 AI Agent:**
+> Found 5 upcoming CS2 tournaments: 1) 5v5 Daily Cup (Level 7+, starts 14:00 UTC, $100 prize) — 2) Weekend Warriors (Level 5+, Saturday 18:00, €250 prize) — 3) Pro League Qualifier (Level 8+, Sunday 16:00).
+
+---
+
+**👤 You:**
+> "Get the leaderboard for hub abc123."
+
+**🤖 AI Agent:**
+> Hub Leaderboard: 1. PlayerOne (ELO 2156, Level 9) — 2. ProGamer42 (ELO 2089, Level 9) — 3. SharpShooter (ELO 2034, Level 8) — 4-10...
+
+
 ## Installation & Usage
 
 To install and use the **Faceit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Faceit** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

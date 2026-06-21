@@ -1,12 +1,14 @@
 # Arbox MCP Server
 
-Run your fitness studio or gym with member management, class scheduling, and payment processing in one connected platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arbox-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arbox-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arbox-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 14
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Run your fitness studio or gym with member management, class scheduling, and payment processing in one connected platform.
 
 ## Description
 Connect your **Arbox** account to any AI agent and take full control of your fitness business management and automated lead engagement workflows through natural conversation.
@@ -51,6 +53,33 @@ No more manual logging of walk-in leads or digging through complex session calen
 - **update_client**: Update a member
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Arbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active clients in my Arbox member directory."
+
+**🤖 AI Agent:**
+> I've retrieved your member directory. You currently have 150 active clients, including @user1 and @user2. Would you like the detailed membership metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the class schedule for today."
+
+**🤖 AI Agent:**
+> Accessing schedule... Today you have 8 sessions, including 'HIIT Training' at 5 PM and 2 'Yoga Flow' classes. One session is currently fully booked. Shall I retrieve the attendee metadata for the 5 PM class?
+
+---
+
+**👤 You:**
+> "Create a new lead 'John Doe' (john@example.com) and set a follow-up task."
+
+**🤖 AI Agent:**
+> Lead orchestrated! I've successfully created the profile for John Doe (ID: lead_123) and registered a high-fidelity follow-up task for your team. He is now active in your sales funnel. Need any other CRM actions?
+
+
 ## Installation & Usage
 
 To install and use the **Arbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Arbox** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Taranis MCP Server
 
-Access AI-powered crop scouting via Taranis — detect weeds, diseases, pests, nutrient deficiencies, and get scouting recommendations from ultra-high-resolution imagery.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/taranis)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taranis)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taranis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taranis-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access AI-powered crop scouting via Taranis — detect weeds, diseases, pests, nutrient deficiencies, and get scouting recommendations from ultra-high-resolution imagery.
 
 ## Description
 Connect your **Taranis AI Scouting API** to any AI agent and take full control of AI-powered crop threat detection, ultra-high-resolution imagery analysis, field scouting recommendations, and precision agriculture decision-making through natural conversation.
@@ -78,6 +80,33 @@ Get consolidated threat summary and severity assessment for a field
 Get specific weed species detections and infestation maps for a field
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Taranis** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all AI-detected threats in my corn field from the latest flight."
+
+**🤖 AI Agent:**
+> Analyzing latest flight detections for corn field (field ID: CF-2847)... Found 23 detections across 4 threat categories. WEEDS: 12 patches detected — Waterhemp (7 patches, 2.3% coverage), Palmer Amaranth (3 patches, 1.1%), Giant Ragweed (2 patches, 0.8%). DISEASES: 6 detections — Gray Leaf Spot (moderate severity, 4 locations), Northern Corn Leaf Blight (early stage, 2 locations). PESTS: 3 detections — Corn Rootworm adults (2 locations), European Corn Borer damage (1 location). NUTRIENTS: 2 nitrogen deficiency zones (1.5% combined area). Overall field health: Good with localized treatment needed. Top priority: Waterhemp patches in northeast quadrant. Would you like scouting recommendations for these detections?
+
+---
+
+**👤 You:**
+> "Generate scouting recommendations for my soybean field this week."
+
+**🤖 AI Agent:**
+> Generating AI scouting recommendations for soybean field (field ID: SB-1923)... Priority 1 (HIGH): Verify Sudden Death Syndrome symptoms in southeast corner — 4 disease detections with moderate severity. Walk pattern: Entry at gate 3, follow east boundary south, check 4 GPS-marked locations. Priority 2 (MEDIUM): Scout for soybean aphids in north-central area — NDVI shows stress patches consistent with early aphid pressure. Priority 3 (LOW): Check nitrogen deficiency zones in western section — 3 small patches identified, consider in-season N application if economic threshold met. Recommended scouting time: 45-60 minutes. Best conditions: Morning hours, dry foliage. Would you like GPS coordinates for each scouting location?
+
+---
+
+**👤 You:**
+> "What is the overall threat level and NDVI trend for my wheat field this season?"
+
+**🤖 AI Agent:**
+> Analyzing wheat field (field ID: WH-5512)... Current threat level: MODERATE. Season summary: 3 flights completed, 18 total detections. Disease trend: Septoria tritici increasing from 2 to 6 detections over 3 flights — monitor closely. Weed trend: Annual ryegrass stable at 5 patches (1.8% coverage). Nutrient trend: Nitrogen deficiency decreasing after top-dress application — 3 zones down to 1 zone. NDVI trend: Flight 1 (0.45) — tillering stage, Flight 2 (0.68) — stem extension, Flight 3 (0.82) — current heading stage. Field performing above regional average. Recommendation: Continue disease monitoring, no immediate treatment required. Next flight scheduled in 10 days.
+
+
 ## Installation & Usage
 
 To install and use the **Taranis** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -86,4 +115,11 @@ To install and use the **Taranis** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

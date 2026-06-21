@@ -1,12 +1,14 @@
 # Cosmic (Headless CMS & Content API) MCP Server
 
-Manage your content, media, and object types via Cosmic — list objects, create content, and handle media assets directly through any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic-headless-cms-content-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic-headless-cms-content-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cosmic-headless-cms-content-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cosmic-headless-cms-content-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 21
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your content, media, and object types via Cosmic — list objects, create content, and handle media assets directly through any AI agent.
 
 ## Description
 Connect your **Cosmic** headless CMS to any AI agent to manage your content infrastructure through natural language. Cosmic provides a powerful API-first approach to content management, and this MCP server brings those capabilities directly to your AI workflows.
@@ -58,6 +60,33 @@ List Objects in a Cosmic Bucket
 - **update_object_type**: Update an Object Type
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cosmic (Headless CMS & Content API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 objects of type 'news' in my bucket."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 'news' objects. Here are the most recent entries: 'Product Launch' (ID: abc1), 'New Partnership' (ID: abc2), and 3 others. Would you like to see the full content of any of these?
+
+---
+
+**👤 You:**
+> "Create a new draft post titled 'AI and CMS' with the type 'blog-posts'."
+
+**🤖 AI Agent:**
+> Successfully created the draft object 'AI and CMS' (ID: xyz789) in the 'blog-posts' category. You can now add metadata or publish it when ready.
+
+---
+
+**👤 You:**
+> "Show me all media files currently in the bucket."
+
+**🤖 AI Agent:**
+> I found 12 media assets in your bucket. Recent uploads include 'hero-banner.jpg', 'logo-white.png', and 'intro-video.mp4'. Do you need the URL for any specific file?
+
+
 ## Installation & Usage
 
 To install and use the **Cosmic (Headless CMS & Content API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Cosmic (Headless CMS & Content API)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

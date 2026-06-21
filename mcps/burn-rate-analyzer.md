@@ -1,12 +1,14 @@
 # Burn Rate Analyzer MCP Server
 
-Analyze startup burn rate, expense composition, and runway forecasting.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/burn-rate-analyzer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/burn-rate-analyzer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/burn-rate-analyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/burn-rate-analyzer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Analyze startup burn rate, expense composition, and runway forecasting.
 
 ## Description
 The Burn Rate Analyzer is a financial diagnostic tool designed for startups to monitor monthly expenditure distribution and operational efficiency. Using tools like `analyze_expense_composition`, you can break to breakdown costs across categories such as salaries, infrastructure, and marketing. The `compare_stage_benchmarks` tool allows you to evaluate your spending against industry standards for Seed, Series A, or Series B stages, identifying high overhead areas. Additionally, use `calculate_runway_forecast` to determine how many months of operation remain based on your current cash reserves and monthly burn rate.
@@ -18,6 +20,33 @@ The Burn Rate Analyzer is a financial diagnostic tool designed for startups to m
 - **calculate_runway_forecast**: Determines how many months of operation remain based on current cash reserves and burn rate
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Burn Rate Analyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze my expenses: salaries 50000, marketing 20000, infrastructure 10000. My revenue is 30000 and I have 5 employees."
+
+**🤖 AI Agent:**
+> The analysis shows a total burn of 80,000. Your burn per employee is 16,000, and your burn per revenue dollar is 2.67.
+
+---
+
+**👤 You:**
+> "How much runway do I have left with 500,000 in reserves and a monthly burn of 40,000?"
+
+**🤖 AI Agent:**
+> Based on your current cash reserves and burn rate, you have approximately 12.5 months of runway remaining.
+
+---
+
+**👤 You:**
+> "Compare my current composition (salaries: 0.7, marketing: 0.2, infrastructure: 0.1) against the Seed stage benchmark."
+
+**🤖 AI Agent:**
+> The comparison shows your spending is on track for a Seed stage startup with no significant deviations detected.
+
+
 ## Installation & Usage
 
 To install and use the **Burn Rate Analyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -26,4 +55,11 @@ To install and use the **Burn Rate Analyzer** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

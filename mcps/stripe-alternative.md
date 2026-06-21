@@ -1,12 +1,14 @@
 # Stripe MCP Server
 
-Manage payments, customers, products and subscriptions via Stripe — create payment intents, track invoices and audit refunds from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stripe-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stripe-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 13
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage payments, customers, products and subscriptions via Stripe — create payment intents, track invoices and audit refunds from any AI agent.
 
 ## Description
 Connect your **Stripe** account to any AI agent and take full control of your payment infrastructure through natural conversation.
@@ -79,6 +81,33 @@ List refunds in Stripe
 List subscriptions in Stripe
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stripe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active subscriptions and their monthly revenue."
+
+**🤖 AI Agent:**
+> I found 47 active subscriptions. Total monthly recurring revenue is $12,450. The largest plan is the Enterprise tier at $499/mo (3 customers), followed by Pro at $99/mo (18 customers) and Starter at $29/mo (26 customers).
+
+---
+
+**👤 You:**
+> "Show me all refunds issued in the last 30 days."
+
+**🤖 AI Agent:**
+> I found 8 refunds in the last 30 days totaling $347.50. The largest was $149.00 for charge ch_3Oa... (Annual Plan cancellation). All others were under $50 each. Would you like the details for any specific refund?
+
+---
+
+**👤 You:**
+> "What's my current Stripe balance?"
+
+**🤖 AI Agent:**
+> Your available balance is $8,234.50 USD and €1,120.00 EUR. Pending balance: $2,450.00 USD (3 payment intents still processing). Next payout is scheduled for tomorrow.
+
+
 ## Installation & Usage
 
 To install and use the **Stripe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Stripe** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Alegra MCP Server
 
-Business management and e-invoicing — manage invoices, inventory, and contacts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/alegra)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alegra)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alegra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alegra-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Business management and e-invoicing — manage invoices, inventory, and contacts via AI.
 
 ## Description
 Connect your **Alegra** account to your AI agent to unlock professional business management and automated invoicing. From creating and auditing sales invoices to monitoring real-time inventory levels and managing client/provider contact profiles, your agent handles your back-office operations through natural conversation.
@@ -48,6 +50,33 @@ List sales invoices
 - **list_estimates**: List business estimates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Alegra** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 invoices generated in Alegra."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 invoices. They include sales to 'Client A', 'Global Tech', and 3 others, totaling $2,500. Would you like to see the payment status for any of them?
+
+---
+
+**👤 You:**
+> "Show me the current stock for 'Office Chair v2'."
+
+**🤖 AI Agent:**
+> I've checked the inventory. You currently have 45 units of 'Office Chair v2' in stock. The unit price is $85.00. Would you like to see the inventory adjustments history for this item?
+
+---
+
+**👤 You:**
+> "List all contacts of type 'provider'."
+
+**🤖 AI Agent:**
+> I've retrieved your providers. You have 12 registered providers, including 'Wholesale Logistics' and 'Office Supplies Co'. Would you like the contact details for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Alegra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Alegra** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

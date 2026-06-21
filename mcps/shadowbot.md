@@ -1,12 +1,14 @@
 # ShadowBot MCP Server
 
-Orchestrate ShadowBot RPA — manage automation robots, handle execution tasks, and monitor bot performance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shadowbot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shadowbot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shadowbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shadowbot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Orchestrate ShadowBot RPA — manage automation robots, handle execution tasks, and monitor bot performance directly from any AI agent.
 
 ## Description
 Connect your AI agents to **ShadowBot** (影刀RPA), the leading Robotic Process Automation (RPA) platform for high-performance browser and desktop automation. This MCP provides 10 tools to manage automation robots, orchestrate execution tasks, and monitor the health of your digital workforce programmatically.
@@ -47,6 +49,33 @@ Connect your AI agents to **ShadowBot** (影刀RPA), the leading Robotic Process
 - **stop_task**: Stop a running ShadowBot task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ShadowBot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all automation robots in my ShadowBot account and show their status."
+
+**🤖 AI Agent:**
+> Retrieving your ShadowBot workforce... I found 3 active robots: 1. WebScraper-01 (Status: Online), 2. DataEntry-02 (Status: Busy), 3. InvoiceProcessor-03 (Status: Offline). Would you like to trigger a task on the online robot?
+
+---
+
+**👤 You:**
+> "Start task 'process_invoices' on robot ID 'bot_rpa_777'."
+
+**🤖 AI Agent:**
+> Connecting to ShadowBot orchestrator... Success! Job ID `job_999888` has been created for robot 'bot_rpa_777'. The 'process_invoices' workflow is now executing. I will let you know when it completes.
+
+---
+
+**👤 You:**
+> "Get the execution logs for Job ID 'job_12345'."
+
+**🤖 AI Agent:**
+> Fetching logs for Job `job_12345`... The task completed successfully in 45 seconds. Summary: 15 invoices processed, 0 errors reported. Would you like to see the full JSON output?
+
+
 ## Installation & Usage
 
 To install and use the **ShadowBot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **ShadowBot** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

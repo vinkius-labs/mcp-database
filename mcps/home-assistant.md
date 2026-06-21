@@ -1,12 +1,14 @@
 # Home Assistant MCP Server
 
-Control smart home devices and automations via Home Assistant REST API — lights, climate, media, covers, sensors, and more.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/home-assistant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/home-assistant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/home-assistant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/home-assistant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 15
+
+**Category:** [superpower](../categories/superpower.md)
+
+Control smart home devices and automations via Home Assistant REST API — lights, climate, media, covers, sensors, and more.
 
 ## Description
 Connect to your **Home Assistant** instance (local or Nabu Casa cloud) and control your entire smart home from any AI agent. Manage lights, climate, media players, covers, switches, and trigger automations via the Home Assistant REST API.
@@ -105,6 +107,33 @@ List all available services across all domains
 List all entity states in Home Assistant
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Home Assistant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my smart home entities and show me the lights."
+
+**🤖 AI Agent:**
+> I found 47 entities in your Home Assistant instance. Here are the lights: light.living_room (on, brightness: 128), light.kitchen (off), light.bedroom (on, brightness: 200, color_temp: 370), light.office (off). Would you like to control any of these?
+
+---
+
+**👤 You:**
+> "Turn on the living room light and set it to 50% brightness."
+
+**🤖 AI Agent:**
+> Calling light.turn_on on light.living_room with brightness 128 (50%)... Done! The living room light is now on at 50% brightness.
+
+---
+
+**👤 You:**
+> "What is the current temperature in the bedroom and what mode is the thermostat?"
+
+**🤖 AI Agent:**
+> Checking climate.bedroom... Current temperature: 21.5°C. The thermostat is in 'heat' mode with a target temperature of 22°C. Humidity is 45%.
+
+
 ## Installation & Usage
 
 To install and use the **Home Assistant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -113,4 +142,11 @@ To install and use the **Home Assistant** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

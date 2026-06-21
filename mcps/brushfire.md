@@ -1,12 +1,14 @@
 # Brushfire MCP Server
 
-Manage events and attendees via Brushfire — track registrations, check-in guests, and monitor orders directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brushfire)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brushfire)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brushfire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brushfire-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage events and attendees via Brushfire — track registrations, check-in guests, and monitor orders directly from any AI agent.
 
 ## Description
 Connect your **Brushfire** account to any AI agent and orchestrate your event management, ticketing, and attendee synchronization through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Brushfire** account to any AI agent and orchestrate your event ma
 - **update_attendee**: Update attendee information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brushfire** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my upcoming events in Brushfire."
+
+**🤖 AI Agent:**
+> I've retrieved your events. You have 3 upcoming conferences: 'Summer Summit 2026' (ID: ev_1), 'Tech Workshop' (ID: ev_2), and 'Global Gala' (ID: ev_3).
+
+---
+
+**👤 You:**
+> "Show the attendee list for 'Summer Summit 2026'."
+
+**🤖 AI Agent:**
+> Retrieving attendees for Summer Summit... I found 150 registered guests, including Alice Johnson (Checked-in) and Bob Smith (Pending). Would you like to find someone specific?
+
+---
+
+**👤 You:**
+> "Check-in attendee with ID att_99283."
+
+**🤖 AI Agent:**
+> Attendee att_99283 has been successfully checked-in for the event. Their status is now marked as present in Brushfire.
+
+
 ## Installation & Usage
 
 To install and use the **Brushfire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Brushfire** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

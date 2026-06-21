@@ -1,12 +1,14 @@
 # HHS Open Payments MCP Server
 
-Access the HHS Open Payments database to search for physicians, teaching hospitals, and financial relationships in the healthcare industry.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hhs-open-payments)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hhs-open-payments)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hhs-open-payments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hhs-open-payments-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 6
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access the HHS Open Payments database to search for physicians, teaching hospitals, and financial relationships in the healthcare industry.
 
 ## Description
 Connect to the **HHS Open Payments** database to explore financial transparency in healthcare. This server allows you to query datasets, search for specific physicians or teaching hospitals, and analyze payments made by drug and device companies.
@@ -43,6 +45,33 @@ Download a specific Open Payments dataset
 - **search_physicians**: Search for specific physicians
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HHS Open Payments** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available Open Payments datasets."
+
+**🤖 AI Agent:**
+> I've retrieved the list of available datasets. There are several active datasets including 'General Payments 2023' (ID: pgaw-6u8r) and 'Research Payments 2023' (ID: 5930-21ab). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Search for physicians named 'Gregory House' in the database."
+
+**🤖 AI Agent:**
+> Searching for 'Gregory House'... I found 2 matching records. One is a specialist in Infectious Diseases in New Jersey. Would you like to see the payment summary for this physician?
+
+---
+
+**👤 You:**
+> "Query dataset pgaw-6u8r for payments in Florida where the amount is over $5,000."
+
+**🤖 AI Agent:**
+> Executing query on dataset pgaw-6u8r... I found 12 records matching your criteria. The largest payment was $15,400 to a teaching hospital in Miami. Should I list the top 5 results?
+
+
 ## Installation & Usage
 
 To install and use the **HHS Open Payments** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **HHS Open Payments** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

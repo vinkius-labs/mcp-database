@@ -1,12 +1,14 @@
 # GovCon API MCP Server
 
-Manage government contracts — audit opportunities and agencies via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/govcon-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/govcon-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/govcon-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/govcon-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Manage government contracts — audit opportunities and agencies via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire business development and government contracting workflow with the **GovCon API**, the authoritative source for procurement data. By connecting the GovCon API to your agent, you transform complex contract searches into a natural conversation. Your agent can instantly search for active opportunities, audit agency distributions, and retrieve detailed procurement metadata without you ever touching a government portal. Whether you are conducting market research or managing regional bid constraints, your agent acts as a real-time procurement consultant, ensuring your data is always verified and precise.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire business development and govern
 - **search_government_contracts**: Search for government contracts and procurement opportunities
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GovCon API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for government contracts related to 'cybersecurity' using GovCon."
+
+**🤖 AI Agent:**
+> I've retrieved several cybersecurity contracts! Notable entries include requirements for network monitoring and system audits. Would you like the full details for the top matches or the agency metadata?
+
+---
+
+**👤 You:**
+> "Show details for opportunity ID '12345'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for opportunity 12345! It is identified as a [Title] for [Agency]. The estimated value is [Amount]. I can assist you with the full procurement metadata for this site if you'd like.
+
+---
+
+**👤 You:**
+> "List all government agencies available in GovCon."
+
+**🤖 AI Agent:**
+> I've scanned the agency catalog from GovCon! There are over 50 agencies listed, including the DOD, NASA, and local departments. I can provide the unique ID and distribution for each of these platforms to assist in your market audit.
+
+
 ## Installation & Usage
 
 To install and use the **GovCon API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **GovCon API** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

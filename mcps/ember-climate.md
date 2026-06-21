@@ -1,12 +1,14 @@
 # Ember Climate MCP Server
 
-Access global electricity data — generation, demand, emissions, and capacity from Ember Climate's open energy API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ember-climate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ember-climate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ember-climate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ember-climate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 11
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access global electricity data — generation, demand, emissions, and capacity from Ember Climate's open energy API.
 
 ## Description
 Connect your AI agents to **Ember Climate's** open electricity dataset and gain instant access to global energy intelligence covering over 200 countries and regions.
@@ -73,6 +75,33 @@ Get monthly power sector CO2 emissions for countries/regions
 Get yearly power sector CO2 emissions for countries/regions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ember Climate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the carbon intensity of Brazil's electricity grid in recent years?"
+
+**🤖 AI Agent:**
+> Fetching carbon intensity data for Brazil... The Brazilian grid shows an intensity of approximately 85 gCO2/kWh in 2023, which is significantly lower than the global average. This is due to Brazil's heavy reliance on hydropower and growing wind/solar capacity.
+
+---
+
+**👤 You:**
+> "Compare wind and solar generation between Germany, China, and the US for the last 3 years."
+
+**🤖 AI Agent:**
+> Running multi-entity comparison I've fetched wind and solar generation data for DEU, CHN, and USA from 2021 to 2023. China leads with over 1,000 TWh of combined wind+solar in 2023, followed by the US at ~600 TWh and Germany at ~350 TWh. All three show strong double-digit growth rates year over year.
+
+---
+
+**👤 You:**
+> "Show me the monthly electricity demand in France during 2024."
+
+**🤖 AI Agent:**
+> Fetching monthly demand data for France in 2024... Peak demand occurred in January and December (winter heating season) at around 55-60 TWh per month, while summer months like July and August dropped to approximately 35-40 TWh, reflecting strong seasonal variation.
+
+
 ## Installation & Usage
 
 To install and use the **Ember Climate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **Ember Climate** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

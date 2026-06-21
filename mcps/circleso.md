@@ -1,12 +1,14 @@
 # Circle.so MCP Server
 
-Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/circleso)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/circleso)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/circleso-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/circleso-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent.
 
 ## Description
 Connect your **Circle.so** community to any AI agent and take full control of your community management through natural conversation. Streamline how you engage with members and monitor content.
@@ -45,6 +47,33 @@ Connect your **Circle.so** community to any AI agent and take full control of yo
 - **list_community_members**: List all members in the community
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Circle.so** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all spaces in my Circle community."
+
+**🤖 AI Agent:**
+> Retrieving your community spaces... I found 8 spaces including 'Announcements', 'General Discussion', 'Course Module 1', and 'Q&A'. Which one would you like to see posts for?
+
+---
+
+**👤 You:**
+> "Show me the last 5 posts in the 'General Discussion' space."
+
+**🤖 AI Agent:**
+> Retrieving recent posts from General Discussion... I found 5 items. The most popular one is 'Welcome to the community!' by Jane Smith with 12 comments.
+
+---
+
+**👤 You:**
+> "What are the upcoming community events?"
+
+**🤖 AI Agent:**
+> Checking the event calendar... You have 2 upcoming events: 'Weekly Office Hours' (Tomorrow at 2 PM) and 'Monthly Guest Speaker' (Next Friday at 10 AM).
+
+
 ## Installation & Usage
 
 To install and use the **Circle.so** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Circle.so** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

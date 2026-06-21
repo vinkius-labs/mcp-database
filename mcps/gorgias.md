@@ -1,12 +1,14 @@
 # Gorgias MCP Server
 
-Manage your customer support tickets, messages, and user profiles via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gorgias)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gorgias)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gorgias-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gorgias-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your customer support tickets, messages, and user profiles via AI.
 
 ## Description
 Connect your **Gorgias** helpdesk to your AI agent and streamline your customer support operations. Use natural language to monitor ticket queues, draft replies, and manage customer profiles without switching tabs.
@@ -48,6 +50,38 @@ Your AI agent acts as a junior support representative, capable of summarizing lo
 - **update_ticket**: Update an existing ticket
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gorgias** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the 5 most recent open tickets."
+
+**🤖 AI Agent:**
+> Fetching tickets... You have 5 recent open tickets:
+1. Ticket #1042: 'Where is my order?' from john@example.com
+2. Ticket #1041: 'Refund request' from sarah@example.com
+...
+Would you like me to read the messages for Ticket #1042?
+
+---
+
+**👤 You:**
+> "Reply to ticket #1042 saying their order has been shipped and provide the tracking link."
+
+**🤖 AI Agent:**
+> Drafting reply... I've successfully posted a message to Ticket #1042 informing John that his order is on the way with the tracking details. Should I close the ticket?
+
+---
+
+**👤 You:**
+> "Check if there's a profile for customer alex.smith@example.com."
+
+**🤖 AI Agent:**
+> Checking customer records...
+Yes, I found a matching profile. Customer ID: 90210. Alex Smith currently has 2 resolved past tickets and 0 active issues.
+
+
 ## Installation & Usage
 
 To install and use the **Gorgias** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +90,11 @@ To install and use the **Gorgias** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

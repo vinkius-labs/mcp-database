@@ -1,12 +1,14 @@
 # PayPal MCP Server
 
-Manage e-commerce payments via PayPal — orchestrate orders, process captures securely, issue refunds natively, and structure active subscriptions using AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/paypal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paypal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paypal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paypal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage e-commerce payments via PayPal — orchestrate orders, process captures securely, issue refunds natively, and structure active subscriptions using AI.
 
 ## Description
 Equip your generative intelligent instances with strict orchestration boundaries mapped directly over the **PayPal E-Commerce API**. Programmatically instantiate checkout orders natively, process authorized status checkpoints, execute hard refunds securely bounding financial arrays implicitly, and parse subscription structures dynamically fetching continuous log parameters seamlessly.
@@ -44,6 +46,33 @@ Equip your generative intelligent instances with strict orchestration boundaries
 - **void_authorization**: Void an existing authorization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PayPal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a strictly bounded new order array configuring explicit amounts totaling 50.00 USD."
+
+**🤖 AI Agent:**
+> Invoked natively checking payload bounds. Operation success encapsulating order explicitly. Returned native Order ID is '98xx23'. Financial bounds verified natively gracefully awaiting further capture processes explicitly.
+
+---
+
+**👤 You:**
+> "Execute native limits to capture order logically tracking specific Order ID 'xy2z9'."
+
+**🤖 AI Agent:**
+> Mapped explicit endpoints requesting execution. Payload captured parameters successfully. Final 'COMPLETED' native limit returned. The Capture ID logged is explicitly 'zz9xx82'. Check JSON array structurally if needed.
+
+---
+
+**👤 You:**
+> "Verify explicit details mapping boundaries for the active subscribed model ID 's99a'."
+
+**🤖 AI Agent:**
+> Commanded tracking parameters hitting structural bounds `get_subscription`. Payload bounds returned efficiently. Current logical profile natively sits actively running ('ACTIVE'). Next mapped explicitly invoice limits generate safely on Sep 14.
+
+
 ## Installation & Usage
 
 To install and use the **PayPal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **PayPal** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

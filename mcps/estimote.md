@@ -1,12 +1,14 @@
 # Estimote MCP Server
 
-Manage beacon fleets via Estimote — list and configure devices, track proximity analytics, monitor sensor telemetry, and manage physical locations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/estimote)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estimote)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/estimote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/estimote-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 10
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Manage beacon fleets via Estimote — list and configure devices, track proximity analytics, monitor sensor telemetry, and manage physical locations directly from any AI agent.
 
 ## Description
 Connect your **Estimote Cloud** account to any AI agent and take full control of your beacon fleet management and proximity data workflows through natural conversation.
@@ -68,6 +70,33 @@ List all organizational tags defined in your Estimote Cloud account, which are u
 Update the configuration of a specific Estimote beacon device by modifying its broadcasting parameters, advertising interval, transmission power, or attached metadata tags through the Estimote Cloud shadow system
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Estimote** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my beacons and their current battery status"
+
+**🤖 AI Agent:**
+> Retrieving beacon fleet... I found 10 devices. Highlights: 'Entrance Beacon' (90%), 'Aisle 4' (15% - Low Battery), and 'Checkout' (100%). Would you like me to flag all devices with less than 20% battery?
+
+---
+
+**👤 You:**
+> "What is the current temperature at 'Beacon-XYZ'?"
+
+**🤖 AI Agent:**
+> Checking telemetry for Beacon-XYZ... The current temperature is 22.5°C (72.5°F). Ambient light is at 150 lux and no motion has been detected in the last 5 minutes.
+
+---
+
+**👤 You:**
+> "Show me visitor analytics for the 'Main Store' tag from last month"
+
+**🤖 AI Agent:**
+> Retrieving analytics for 'Main Store'... Last month, there were approximately 1,200 unique visitors with an average dwell time of 15 minutes. Detection frequency peaked on Saturdays between 2 PM and 4 PM.
+
+
 ## Installation & Usage
 
 To install and use the **Estimote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Estimote** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

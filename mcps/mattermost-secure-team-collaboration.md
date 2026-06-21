@@ -1,12 +1,14 @@
 # Mattermost (Secure Team Collaboration) MCP Server
 
-Manage team collaboration via Mattermost — send messages, search channels, and audit team activities.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermost-secure-team-collaboration)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermost-secure-team-collaboration)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mattermost-secure-team-collaboration-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mattermost-secure-team-collaboration-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Manage team collaboration via Mattermost — send messages, search channels, and audit team activities.
 
 ## Description
 Connect your **Mattermost** instance to any AI agent and take full control of your mission-critical communication, channel orchestration, and team management through natural conversation.
@@ -57,6 +59,33 @@ Identify precise active Human/Bot constraints navigating the server
 Mutate global Chat String pre-existing records via HTTP PUT
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mattermost (Secure Team Collaboration)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all teams available in my Mattermost instance"
+
+**🤖 AI Agent:**
+> I've retrieved 2 teams: 'Engineering' (ID: team-123) and 'Security-Ops' (ID: team-456). Which one would you like to list the channels for?
+
+---
+
+**👤 You:**
+> "Search for a channel called 'product-alerts' in the Engineering team"
+
+**🤖 AI Agent:**
+> Searching… I've identified the channel '#product-alerts' (ID: chan-987). It is a public channel used for system notifications. Would you like me to fetch the last 10 posts from this channel?
+
+---
+
+**👤 You:**
+> "Send a post to channel 'chan-987': 'Backend migration complete. @alex please verify metrics.'"
+
+**🤖 AI Agent:**
+> Post sent successfully to #product-alerts. Your message including the mention for @alex has been dispatched. New Post ID: 'post-13579'. I can monitor for any replies if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Mattermost (Secure Team Collaboration)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Mattermost (Secure Team Collaboration)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

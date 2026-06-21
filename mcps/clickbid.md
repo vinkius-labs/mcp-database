@@ -1,12 +1,14 @@
 # ClickBid MCP Server
 
-Manage auction events, bidders, items, and donations directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clickbid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickbid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickbid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickbid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage auction events, bidders, items, and donations directly via AI.
 
 ## Description
 The ClickBid integration empowers your AI agent to natively manage your charity auctions and events using natural language.
@@ -44,6 +46,33 @@ The ClickBid integration empowers your AI agent to natively manage your charity 
 - **update_clickbid_bidder**: Update an existing bidder
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClickBid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all registered bidders for the upcoming auction."
+
+**🤖 AI Agent:**
+> Here is the information you requested based on the execution of the tools.
+
+---
+
+**👤 You:**
+> "Retrieve the details for auction item ID 102."
+
+**🤖 AI Agent:**
+> Here is the information you requested based on the execution of the tools.
+
+---
+
+**👤 You:**
+> "List all ticket purchasers so far."
+
+**🤖 AI Agent:**
+> Here is the information you requested based on the execution of the tools.
+
+
 ## Installation & Usage
 
 To install and use the **ClickBid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **ClickBid** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

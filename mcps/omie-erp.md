@@ -1,12 +1,14 @@
 # Omie ERP MCP Server
 
-Manage your Omie ERP data via API — list clients, products, sales orders, financial accounts, and inventory directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omie-erp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omie-erp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omie-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omie-erp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 16
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your Omie ERP data via API — list clients, products, sales orders, financial accounts, and inventory directly from any AI agent.
 
 ## Description
 Connect your **Omie ERP** account to any AI agent and take full control of your business management workflows through natural conversation.
@@ -114,6 +116,53 @@ The client_id must exist in the system.
 Update an existing client in Omie ERP
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Omie ERP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my clients and show me their total outstanding balances."
+
+**🤖 AI Agent:**
+> I've retrieved your client list. You have 247 clients registered. Top clients by outstanding balance:
+1. **TechCorp Ltda** (CNPJ: 12.345.678/0001-90) — R$ 45,230.00 outstanding
+2. **Distribuidora ABC** (CNPJ: 98.765.432/0001-10) — R$ 28,900.00 outstanding
+3. **Consultoria XYZ** (CPF: 123.456.789-00) — R$ 12,450.00 outstanding
+
+Would you like the full details of any specific client or their payment history?
+
+---
+
+**👤 You:**
+> "Create a new sales order for client TechCorp with 5 units of product 'Consulting Hours' at R$ 150/hour."
+
+**🤖 AI Agent:**
+> I've created the sales order successfully:
+- **Order Code**: PV-20260407-001
+- **Client**: TechCorp Ltda (CNPJ: 12.345.678/0001-90)
+- **Item**: Consulting Hours — 5 units × R$ 150.00 = R$ 750.00
+- **Total**: R$ 750.00
+- **Status**: Open
+
+The order is now in Omie and ready for invoicing. Would you like to generate the invoice (NF-e) for this order?
+
+---
+
+**👤 You:**
+> "Show me all overdue accounts payable and the total amount owed."
+
+**🤖 AI Agent:**
+> I found 5 overdue accounts payable totaling R$ 18,750.00:
+
+1. **Supplier ABC** — R$ 5,200.00 — Due: 2026-03-15 (23 days overdue)
+2. **Office Rent** — R$ 4,500.00 — Due: 2026-03-20 (18 days overdue)
+3. **Internet Provider** — R$ 350.00 — Due: 2026-03-25 (13 days overdue)
+4. **Software License** — R$ 2,700.00 — Due: 2026-04-01 (6 days overdue)
+5. **Cleaning Services** — R$ 6,000.00 — Due: 2026-04-05 (2 days overdue)
+
+Would you like me to help you prioritize which payments to process first?
+
+
 ## Installation & Usage
 
 To install and use the **Omie ERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -122,4 +171,11 @@ To install and use the **Omie ERP** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

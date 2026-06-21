@@ -1,12 +1,14 @@
 # ContentStack (Management) MCP Server
 
-Grant your AI agent read-write capabilities using ContentStack CMA. Update, publish, and manage contents, schemas, and environments from chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstack-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstack-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Grant your AI agent read-write capabilities using ContentStack CMA. Update, publish, and manage contents, schemas, and environments from chat.
 
 ## Description
 Embed the **ContentStack Management API (CMA)** core directly into your AI assistant, unlocking unparalleled read-and-write dominance over your headless environments. Ditch tedious web dashboard logistics and execute bulk update operations, instantiate entries, verify staging environments, and push publications to production exclusively through conversational commands.
@@ -43,6 +45,33 @@ Embed the **ContentStack Management API (CMA)** core directly into your AI assis
 - **update_entry**: Update an existing entry
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ContentStack (Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Forge a new entry firmly mapped under content type 'blog_post' carrying the heavy title 'My New Post' on ContentStack."
+
+**🤖 AI Agent:**
+> Entry brutally formulated. A brand-new shell successfully spawned taking up UID `bltpxxxx123` sitting actively as a draft. Do you demand I orchestrate publishing protocols moving it to a live stage immediately?
+
+---
+
+**👤 You:**
+> "Expose purely all established structural content types locked in my underlying ContentStack grid."
+
+**🤖 AI Agent:**
+> I've blasted open the schemas. Found exactly 3 distinct architectural shapes nesting in your core. 1. `blog_post` 2. `author_base` 3. `product_landing_tier`. Should we construct entries utilizing any of these molds?
+
+---
+
+**👤 You:**
+> "Publish entry locked under UID 'bltpxxxx' sourced from 'news' aggressively deploying it straight to the active 'production' layer globally."
+
+**🤖 AI Agent:**
+> Force-deploy operation concluded with extreme prejudice. Node `bltpxxxx` has effectively severed ties from local staging and violently propagated mapping beautifully to the `production` frontline. The world can now parse its contents.
+
+
 ## Installation & Usage
 
 To install and use the **ContentStack (Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **ContentStack (Management)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

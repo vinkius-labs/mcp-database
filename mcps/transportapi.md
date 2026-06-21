@@ -1,12 +1,14 @@
 # TransportAPI MCP Server
 
-Access UK public transport data via TransportAPI — track buses and trains, plan journeys, check departures, and monitor service disruptions from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transportapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transportapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access UK public transport data via TransportAPI — track buses and trains, plan journeys, check departures, and monitor service disruptions from any AI agent.
 
 ## Description
 Connect your **TransportAPI** UK public transport data platform to any AI agent and take full control of real-time bus and rail tracking, multimodal journey planning, and service disruption monitoring across Great Britain through natural conversation.
@@ -78,6 +80,33 @@ Get full timetable for a specific UK bus line
 Get real-time service updates and disruption alerts for UK transport
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TransportAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all bus departures from Oxford Circus in the next 30 minutes."
+
+**🤖 AI Agent:**
+> Searching for Oxford Circus bus stops... Found stop ID 490007653. Fetching real-time departures: I found 8 buses departing in the next 30 minutes: Route 94 (towards Piccadilly Circus, departing in 2 minutes, on-time), Route 159 (towards Streatham, 5 minutes, delayed 3 minutes), Route 453 (towards Deptford Bridge, 8 minutes, on-time), Route 13 (towards Euston, 12 minutes, on-time), Route 88 (towards Clapham Common, 15 minutes, on-time), Route 113 (towards Edgware, 18 minutes, delayed 5 minutes), Route 94 (towards Acton Green, 22 minutes, on-time), and Route 12 (towards Dulwich Library, 27 minutes, on-time). All services operated by Transport for London. Would you like more details about any specific route?
+
+---
+
+**👤 You:**
+> "What trains are departing from London Paddington to Bristol in the next 2 hours?"
+
+**🤖 AI Agent:**
+> Fetching rail departures from Paddington (PAD)... I found 6 direct services to Bristol Temple Meads (BRI) in the next 2 hours: GWR 10:15 (arriving 11:52, 1h 37m, Platform 8, on-time), GWR 10:45 (arriving 12:24, 1h 39m, Platform 10, delayed 4 minutes), GWR 11:15 (arriving 12:51, 1h 36m, Platform 8, on-time), GWR 11:32 (arriving 13:14, 1h 42m, Platform 12, on-time), GWR 11:45 (arriving 13:26, 1h 41m, Platform 10, on-time), and GWR 12:02 (arriving 13:41, 1h 39m, Platform 8, on-time). All services operated by Great Western Railway with modern IEP trains. Fastest journey time is 1h 36m. Would you like me to check the calling points for any specific service?
+
+---
+
+**👤 You:**
+> "Plan a journey from Manchester Airport to the city centre using public transport."
+
+**🤖 AI Agent:**
+> Planning multimodal journey with TransportAPI... I found 3 options: Option 1 (fastest): Train from Manchester Airport to Manchester Piccadilly — 18 minutes, TransPennine Express or Northern Rail, trains every 10 minutes, fare from £3.50 with contactless, arrive at Piccadilly Gardens in 25 minutes total. Option 2 (direct bus): Metrolink tram from Airport to St Peters Square — 35 minutes, direct service every 12 minutes, fare £3.30 with contactless. Option 3 (budget): Bus 43 from Airport Terminal to Piccadilly Gardens — 55 minutes, Stagecoach service, fare £2.00 with contactless cap. All options show normal service with no disruptions. Would you like real-time departures for any option?
+
+
 ## Installation & Usage
 
 To install and use the **TransportAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -86,4 +115,11 @@ To install and use the **TransportAPI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

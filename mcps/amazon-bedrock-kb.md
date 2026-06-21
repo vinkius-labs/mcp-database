@@ -1,12 +1,14 @@
 # Amazon Bedrock KB MCP Server
 
-Connect your AI agent to AWS Bedrock Knowledge Bases — execute semantic searches, managed RAG, and sync vector datasources natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-bedrock-kb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-bedrock-kb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-bedrock-kb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-bedrock-kb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Connect your AI agent to AWS Bedrock Knowledge Bases — execute semantic searches, managed RAG, and sync vector datasources natively.
 
 ## Description
 Connect your **Amazon Bedrock** account to any AI agent and empower it with managed vector databases, enterprise RAG workflows, and semantic search directly inside AWS.
@@ -43,6 +45,33 @@ Eliminate the need to build custom vector pipelines. Your agent queries massive 
 - **list_ingestion_jobs**: List AWS Bedrock KB explicit sync operations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amazon Bedrock KB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Which knowledge bases and embedding models do I have setup?"
+
+**🤖 AI Agent:**
+> You have 1 Knowledge Base matching your region: 'Internal Wiki KB' (ID: ABCDE12345). It is mapped to the standard AWS Titan Text v2 embedding model and active for incoming syncs.
+
+---
+
+**👤 You:**
+> "Run a retrieval query for 'onboarding process checklist' on my KB and show me the top 3 snippets."
+
+**🤖 AI Agent:**
+> I retrieved 3 matches from your KB. Segment 1 (from s3://hr-docs/onboarding.pdf) states: 'Ensure HR syncs Slack accounts within 24h...' Segment 2 (from s3://hr-docs/it-protocols.docx) mentions hardware issuance. Segment 3 highlights the welcome email template.
+
+---
+
+**👤 You:**
+> "Check the status of the S3 ingestion job for my Documentation bucket."
+
+**🤖 AI Agent:**
+> The ingestion job for Data Source ID XYZ098 on Knowledge Base ABCDE12345 completed successfully today at 08h30. 15 new documents were chunked and mapped to the index without errors.
+
+
 ## Installation & Usage
 
 To install and use the **Amazon Bedrock KB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Amazon Bedrock KB** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

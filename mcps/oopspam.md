@@ -1,12 +1,14 @@
 # OOPSpam MCP Server
 
-Block spam submissions on your forms and comments with an AI-powered filter that catches bots without annoying real users.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oopspam)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oopspam)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oopspam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oopspam-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Block spam submissions on your forms and comments with an AI-powered filter that catches bots without annoying real users.
 
 ## Description
 Connect your **OOPSpam** account to any AI agent and take full control of your content moderation and anti-spam orchestration through natural conversation. OOPSpam provides a privacy-first, highly accurate platform for protecting digital platforms from bots and malicious content, and this integration allows you to retrieve spam scores, monitor usage analytics, and submit manual reports directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual CAPTCHA solving or context switching to moderation dashboards. Yo
 - **submit_report**: Submit spam report
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OOPSpam** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check this message for spam: 'Win a free iPhone now!'"
+
+**🤖 AI Agent:**
+> I've analyzed the message. The Spam Score is 5/6, indicating a very high probability of spam. Would you like me to submit a report for this content?
+
+---
+
+**👤 You:**
+> "Check if the email address test@tempmail.xyz is likely spam or disposable."
+
+**🤖 AI Agent:**
+> The email test@tempmail.xyz has a spam score of 94/100. It was flagged as a disposable email provider. The domain tempmail.xyz is on 3 major blocklists and was registered only 12 days ago. Recommendation: block this email from registration forms to protect your data quality.
+
+---
+
+**👤 You:**
+> "Analyze whether the IP address 185.220.101.45 is associated with spam or bot activity."
+
+**🤖 AI Agent:**
+> IP 185.220.101.45 has a threat score of 87/100. It is associated with a known Tor exit node in Germany. This IP has been reported 142 times in the last 30 days for automated abuse. It appears on 5 major threat intelligence databases. Recommendation: block or challenge requests from this IP.
+
+
 ## Installation & Usage
 
 To install and use the **OOPSpam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **OOPSpam** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

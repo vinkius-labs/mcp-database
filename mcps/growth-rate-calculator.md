@@ -1,12 +1,14 @@
 # Growth Rate Calculator MCP Server
 
-Calculate MoM, QoQ, YoY growth rates and model multi-scenario financial projections (CAGR, Rule of 40) from historical revenue data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-rate-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-rate-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/growth-rate-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/growth-rate-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Calculate MoM, QoQ, YoY growth rates and model multi-scenario financial projections (CAGR, Rule of 40) from historical revenue data.
 
 ## Description
 # Assess Growth Trajectory with Financial Precision
@@ -38,6 +40,33 @@ Calculate CAGR and Rule of 40 score from financial data
 Generate 12-month revenue projections under different growth scenarios
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Growth Rate Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I have historical revenue data for the last 3 years, and I want to see my MoM, QoQ, and YoY growth rates. The data includes dates from '2021-01' to '2023-12'."
+
+**🤖 AI Agent:**
+> Run the `analyze_historical_growth` tool with my data points and set the time granularity to 'Month'. This will show me all directional changes.
+
+---
+
+**👤 You:**
+> "Based on my 5 years of revenue data and associated EBITDA, what is my CAGR and Rule of 40 score?"
+
+**🤖 AI Agent:**
+> I need to use the `calculate_key_rates` tool. I will provide the start value, end value, years elapsed (5), and a list of all historical revenue/EBITDA metrics for accurate calculation.
+
+---
+
+**👤 You:**
+> "Project my revenue for the next year assuming aggressive, accelerating growth. My last known revenue was $10M, and I estimate a monthly rate shift of +7%."
+
+**🤖 AI Agent:**
+> I will use the `generate_growth_projection` tool. I'll set the last known revenue to 10,000,000, the horizon months to 12, the scenario to 'Accelerated', and provide the base monthly growth rate (if applicable) and the rate determiner of 7%.
+
+
 ## Installation & Usage
 
 To install and use the **Growth Rate Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Growth Rate Calculator** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

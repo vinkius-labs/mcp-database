@@ -1,12 +1,14 @@
 # TomTom MCP Server
 
-Equip your AI agent with global mapping, routing, and real-time traffic capabilities powered by TomTom.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomtom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomtom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomtom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Equip your AI agent with global mapping, routing, and real-time traffic capabilities powered by TomTom.
 
 ## Description
 Connect your **TomTom** API account directly to any AI agent to unlock enterprise-grade geospatial and logistical capabilities native to your platform. Convert complex addresses instantly, evaluate driving routes based on exact origin and destination coordinates, and visualize live traffic blocks directly through chat queries.
@@ -59,6 +61,29 @@ Provides predictive location suggestions based on partial input
 Performs geocoding using explicit address components (e.g., street, city, zip)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TomTom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert these coordinates into an address: Lat 40.7128, Lon -74.0060."
+
+**🤖 AI Agent:**
+> The coordinates return an address explicitly linked to the parameter grid:
+- Broad St, New York, NY 10004, United States
+
+---
+
+**👤 You:**
+> "Check for any traffic incidents on the 101 freeway bounded roughly by these dimensions."
+
+**🤖 AI Agent:**
+> A real-time scan revealed 1 active traffic incident in that bounding box:
+- Type: Accident/Lane blocked
+- Severity: Major delay expected
+- Center: Lat 34.05, Lon -118.25
+
+
 ## Installation & Usage
 
 To install and use the **TomTom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +92,11 @@ To install and use the **TomTom** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

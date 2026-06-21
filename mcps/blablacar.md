@@ -1,12 +1,14 @@
 # BlaBlaCar MCP Server
 
-AI carpool search: find rides, compare prices, and book shared journeys via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blablacar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blablacar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blablacar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blablacar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI carpool search: find rides, compare prices, and book shared journeys via agents.
 
 ## Description
 ### What you can do
@@ -60,6 +62,33 @@ Search carpool trips between two GPS coordinates on BlaBlaCar
 Search carpool trips with flexible radius around coordinates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BlaBlaCar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find carpool rides from Paris to Lyon next Friday for 2 people"
+
+**🤖 AI Agent:**
+> I'll search all available carpool rides between Paris and Lyon for your date and show you the best options.
+
+---
+
+**👤 You:**
+> "What's the cheapest day to travel from São Paulo to Rio next week?"
+
+**🤖 AI Agent:**
+> I'll search with flexible dates to compare prices across the entire week.
+
+---
+
+**👤 You:**
+> "Show me both carpool and bus options from Madrid to Barcelona this weekend"
+
+**🤖 AI Agent:**
+> I'll search both carpool rides and BlaBlaCar Bus trips so you can compare all transportation options.
+
+
 ## Installation & Usage
 
 To install and use the **BlaBlaCar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **BlaBlaCar** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

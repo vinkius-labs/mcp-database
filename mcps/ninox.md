@@ -1,12 +1,14 @@
 # Ninox MCP Server
 
-Build custom business databases and apps with a visual platform that replaces spreadsheets with structured, relational data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ninox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ninox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ninox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ninox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build custom business databases and apps with a visual platform that replaces spreadsheets with structured, relational data.
 
 ## Description
 Connect your **Ninox** account to any AI agent and take full control of your low-code database orchestration and business automation through natural conversation. Ninox provides a powerful platform for creating custom business apps, and this integration allows you to retrieve database schemas, manage records across tables, and execute native Ninox scripts directly from your chat interface.
@@ -45,6 +47,33 @@ No more manual data entry in complex forms. Your AI acts as a dedicated database
 - **update_record**: Update a specific record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ninox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all tables in my Ninox database ID 'db123'."
+
+**🤖 AI Agent:**
+> I've retrieved your tables. You have 4 active structures including 'Invoices', 'Customers', and 'Inventory'. Which one would you like to see records for?
+
+---
+
+**👤 You:**
+> "Show me the schema and field definitions for the Customers table in database db_main."
+
+**🤖 AI Agent:**
+> The Customers table in db_main has 8 fields: Name (text, required), Email (email), Phone (phone), Company (text), Status (choice: Active/Inactive/Lead), Revenue (number, currency), Created Date (date), and Notes (multiline text). There are 342 records currently in this table.
+
+---
+
+**👤 You:**
+> "Create a new record in the Orders table with customer Acme Corp, amount 4500, and status Pending."
+
+**🤖 AI Agent:**
+> New record created successfully in the Orders table (Record ID: 1847). Customer: Acme Corp, Amount: $4,500.00, Status: Pending. The record was automatically timestamped with today's date and linked to the existing Acme Corp entry in your Customers table.
+
+
 ## Installation & Usage
 
 To install and use the **Ninox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Ninox** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

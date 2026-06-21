@@ -1,12 +1,14 @@
 # JokeAPI MCP Server
 
-Access thousands of jokes — audit categories and flags via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jokeapi-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jokeapi-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jokeapi-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jokeapi-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Access thousands of jokes — audit categories and flags via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire entertainment research and humor auditing workflow with **JokeAPI**, the leading source for programmable jokes. By connecting JokeAPI to your agent, you transform complex content searches into a natural conversation. Your agent can instantly retrieve random jokes, audit category distributions, and query specific content flags without you ever touching a humor portal. Whether you are building social applications or conducting research on linguistic humor, your agent acts as a real-time creative assistant, ensuring your content is always fresh and well-categorized.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire entertainment research and humo
 - **list_joke_blacklist_flags**: List all available flags for blacklisting content (e.g., nsfw, religious)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JokeAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get a random 'Programming' joke using JokeAPI."
+
+**🤖 AI Agent:**
+> I've retrieved a programming joke! It's currently identified as: "[Setup]... [Delivery]". Would you like to see another one or a different category like 'Pun'?
+
+---
+
+**👤 You:**
+> "List all available joke categories."
+
+**🤖 AI Agent:**
+> I've scanned the category catalog. There are 6 main categories available, including 'Programming', 'Misc', 'Dark', 'Pun', 'Spooky', and 'Christmas'. I can help you retrieve a random joke for any of these specific themes.
+
+---
+
+**👤 You:**
+> "What are the content flags for filtering jokes?"
+
+**🤖 AI Agent:**
+> I've retrieved the blacklist flags! You can filter jokes by 'nsfw', 'religious', 'political', 'racist', 'sexist', and 'explicit'. I can assist you with an audit of jokes that avoid any of these specific markers.
+
+
 ## Installation & Usage
 
 To install and use the **JokeAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **JokeAPI** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

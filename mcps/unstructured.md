@@ -1,12 +1,14 @@
 # Unstructured MCP Server
 
-Process and transform complex unstructured data into AI-ready inputs by managing sources, destinations, and workflows directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unstructured)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unstructured)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unstructured-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unstructured-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Process and transform complex unstructured data into AI-ready inputs by managing sources, destinations, and workflows directly from your AI agent.
 
 ## Description
 Connect your **Unstructured.io** account to any AI agent to automate data ingestion and document processing pipelines seamlessly. Transform complex files into clean, AI-ready data without leaving your workflow.
@@ -48,6 +50,40 @@ Manually triggers an immediate execution of a processing workflow
 - **list_workflow_jobs**: Lists all active and historical workflow execution jobs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Unstructured** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all our active destination connectors."
+
+**🤖 AI Agent:**
+> You have 3 active destinations configured in Unstructured. 
+1. Pinecone Index (Production Knowledge Base).
+2. MongoDB Atlas Vector Search.
+3. AWS S3 (Raw JSON Output). 
+Would you like me to check which workflows are currently sending data to the Pinecone index?
+
+---
+
+**👤 You:**
+> "List the historical processing jobs from today."
+
+**🤖 AI Agent:**
+> I found 2 workflow jobs executed today:
+- Job ID `wf_92jdfk`: Completed successfully at 08:30 AM (Ingested 450 PDFs from Sharepoint).
+- Job ID `wf_44klqp`: Failed at 11:15 AM (Error connecting to destination Pinecone timeout). 
+Would you like me to share more log details about the failed job?
+
+---
+
+**👤 You:**
+> "Trigger the engineering onboarding workflow."
+
+**🤖 AI Agent:**
+> I have successfully triggered the workflow `wf_eng_onboarding`. The execution has started with Job ID `job_12bxc6`. It is currently processing files from your Google Drive source. Do you want me to monitor it and let you know when it's populated into the Vector DB?
+
+
 ## Installation & Usage
 
 To install and use the **Unstructured** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +92,11 @@ To install and use the **Unstructured** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

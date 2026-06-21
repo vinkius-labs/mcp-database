@@ -1,12 +1,14 @@
 # Carta MCP Server
 
-Equip your AI agent with direct access to Carta — query cap tables, review equity grants, and monitor 409A valuations without opening the equity management dashboard.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/carta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Equip your AI agent with direct access to Carta — query cap tables, review equity grants, and monitor 409A valuations without opening the equity management dashboard.
 
 ## Description
 Connect **Carta** to your AI agent and manage your company's equity operations, stakeholder information, and compliance data conversationally.
@@ -46,6 +48,33 @@ List share classes
 - **get_cap_table**: Get the full cap table
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Carta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me our current cap table summary."
+
+**🤖 AI Agent:**
+> Your cap table shows 10,000,000 authorized shares with 7,200,000 issued. Founders hold 45%, Series A investors 25%, option pool is 20% (800,000 remaining unallocated), and employee grants account for 10%.
+
+---
+
+**👤 You:**
+> "What's our latest 409A valuation?"
+
+**🤖 AI Agent:**
+> Your latest 409A was completed on March 15, 2025, with a fair market value of $2.85 per share (Common Stock). The valuation is valid until September 15, 2025.
+
+---
+
+**👤 You:**
+> "How many shares has João Paulo vested so far?"
+
+**🤖 AI Agent:**
+> João Paulo was granted 50,000 options on June 1, 2023, with a 4-year vesting schedule and 1-year cliff. He has vested 21,875 shares (43.75%). His next vesting event is on the 1st of next month for 1,041 shares.
+
+
 ## Installation & Usage
 
 To install and use the **Carta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Carta** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

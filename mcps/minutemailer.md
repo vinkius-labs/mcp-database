@@ -1,12 +1,14 @@
 # Minutemailer MCP Server
 
-Email and SMS marketing — manage contacts, lists, and templates via Minutemailer.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/minutemailer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/minutemailer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/minutemailer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/minutemailer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Email and SMS marketing — manage contacts, lists, and templates via Minutemailer.
 
 ## Description
 Connect your **Minutemailer** account to automate your email and SMS marketing workflows. This server allows your AI agents to manage your audience and monitor campaigns directly.
@@ -36,6 +38,25 @@ Connect your **Minutemailer** account to automate your email and SMS marketing w
 - **list_templates**: List email templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Minutemailer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Minutemailer contacts."
+
+**🤖 AI Agent:**
+> Fetching contacts... I've found 1,200 contacts in your account. Here are the most recent ones...
+
+---
+
+**👤 You:**
+> "Add 'jane.doe@example.com' to my contact list."
+
+**🤖 AI Agent:**
+> Adding contact... Success! Jane Doe has been added to your Minutemailer audience.
+
+
 ## Installation & Usage
 
 To install and use the **Minutemailer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +65,11 @@ To install and use the **Minutemailer** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

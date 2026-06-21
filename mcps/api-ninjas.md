@@ -1,12 +1,14 @@
 # API Ninjas MCP Server
 
-Access fitness, health and nutrition tools — search exercises, calculate calories, body fat, BMR, TDEE and get nutrition info.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/api-ninjas)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-ninjas)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/api-ninjas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/api-ninjas-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access fitness, health and nutrition tools — search exercises, calculate calories, body fat, BMR, TDEE and get nutrition info.
 
 ## Description
 Connect to **API Ninjas** and access a comprehensive suite of health and fitness tools through natural conversation.
@@ -61,6 +63,33 @@ Calculate calories and distance from steps
 Calculate Total Daily Energy Expenditure
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **API Ninjas** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find chest exercises for beginners."
+
+**🤖 AI Agent:**
+> Found 15+ chest exercises for beginners including: Bench Press (barbell, intermediate), Push-ups (body weight, beginner), Cable Crossover (cable, beginner), Dumbbell Fly (dumbbell, beginner). Each with step-by-step instructions.
+
+---
+
+**👤 You:**
+> "What's the nutritional info for a banana?"
+
+**🤖 AI Agent:**
+> Banana (per 100g): Calories: 89, Protein: 1.1g, Carbs: 22.8g, Fat: 0.3g, Fiber: 2.6g, Sugar: 12.2g, Potassium: 358mg.
+
+---
+
+**👤 You:**
+> "Calculate my BMR. I'm 30 years old, male, 80kg, 180cm."
+
+**🤖 AI Agent:**
+> Your BMR is 1,795 calories/day. This is the number of calories your body burns at rest. For daily calorie needs, multiply by activity factor (1.2-1.9).
+
+
 ## Installation & Usage
 
 To install and use the **API Ninjas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **API Ninjas** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

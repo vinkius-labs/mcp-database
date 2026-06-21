@@ -1,12 +1,14 @@
 # ShippingBo MCP Server
 
-Orchestrate your e-commerce logistics with order management, warehouse operations, and carrier integration for French retailers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shippingbo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shippingbo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shippingbo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shippingbo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate your e-commerce logistics with order management, warehouse operations, and carrier integration for French retailers.
 
 ## Description
 Connect your **ShippingBo** account to any AI agent and take full control of your e-commerce logistics and fulfillment orchestration through natural conversation. ShippingBo provides a comprehensive platform for centralizing orders, managing multi-warehouse stocks, and orchestrating shipments directly from your chat interface.
@@ -45,6 +47,33 @@ No more manual stock checks or order hunting. Your AI acts as a dedicated logist
 - **update_stock**: Update product stock level
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ShippingBo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products in my ShippingBo catalog."
+
+**🤖 AI Agent:**
+> I've retrieved your product catalog. You have 125 active SKUs including 'Summer T-Shirt (Blue)', 'Wireless Headphones', and 'Eco Water Bottle'. Which one would you like to check stock for?
+
+---
+
+**👤 You:**
+> "Update stock for product ID 54321 to 150 units."
+
+**🤖 AI Agent:**
+> Stock update processed! Product 54321 now has 150 units in your main warehouse. Should I verify if any pending orders can now be fulfilled?
+
+---
+
+**👤 You:**
+> "List the last 5 shipments in ShippingBo."
+
+**🤖 AI Agent:**
+> Retrieving shipments... Your last 5 shipments include 'SH-9901' (Delivered), 'SH-9902' (In Transit), and three others. Would you like to see the tracking progress for the one in transit?
+
+
 ## Installation & Usage
 
 To install and use the **ShippingBo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ShippingBo** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Color Converter Engine MCP Server
 
-Convert any color between HEX, RGB, HSL, and CMYK with mathematical precision. The AI guesses color codes — this engine knows them.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/color-converter-engine-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/color-converter-engine-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/color-converter-engine-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/color-converter-engine-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 1
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Convert any color between HEX, RGB, HSL, and CMYK with mathematical precision. The AI guesses color codes — this engine knows them.
 
 ## Description
 Every time you ask an AI to convert `#ff5733` to HSL, you get a different answer. Sometimes close, sometimes wildly wrong. That's because LLMs don't do math — they predict tokens. This MCP eliminates the guesswork entirely.
@@ -27,6 +29,33 @@ Powered by colord (4M+ weekly downloads), every conversion is mathematically exa
 Converts colors between HEX, RGB, HSL, CMYK formats. Also returns luminance, dark/light detection, closest CSS name, and alpha. CSS Color Level 4 precision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Color Converter Engine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I'm designing a dashboard. Convert the brand color #2563eb to all formats so I can use it in CSS, Figma, and print."
+
+**🤖 AI Agent:**
+> HEX: #2563eb | RGB: rgb(37,99,235) | HSL: hsl(221,84%,53%) | CMYK: cmyk(84,58,0,8) | Name: royalblue | isDark: true
+
+---
+
+**👤 You:**
+> "Is the background color #1a1a2e dark enough for white text?"
+
+**🤖 AI Agent:**
+> isDark: true | brightness: 0.09 | White text will be highly readable on this background.
+
+---
+
+**👤 You:**
+> "My designer sent me rgb(240, 128, 60). What's the closest CSS named color I can use as a shorthand?"
+
+**🤖 AI Agent:**
+> Closest named color: 'coral' | HEX: #f0803c | Full RGB/HSL/CMYK breakdown included.
+
+
 ## Installation & Usage
 
 To install and use the **Color Converter Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **Color Converter Engine** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

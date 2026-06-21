@@ -1,12 +1,14 @@
 # Wine-Searcher MCP Server
 
-Search global wine pricing, critic scores, grape varieties, regions, and producer data from 100,000+ merchants worldwide through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wine-searcher)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wine-searcher)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wine-searcher-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wine-searcher-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 6
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Search global wine pricing, critic scores, grape varieties, regions, and producer data from 100,000+ merchants worldwide through natural conversation.
 
 ## Description
 Connect to **Wine-Searcher** — the world's largest wine price comparison engine — and access real-time market intelligence for any wine.
@@ -49,6 +51,60 @@ Get wine region info
 Get producer/winery info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wine-Searcher** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the average price for Opus One 2021?"
+
+**🤖 AI Agent:**
+> 🍷 **Opus One 2021 — Napa Valley**
+
+💰 **Global pricing**:
+- Average: **$425**
+- Range: $380 — $520
+- Merchants listing: 847 worldwide
+
+⭐ **Critic scores**:
+- Wine Advocate: 97/100
+- Wine Spectator: 96/100
+- James Suckling: 98/100
+
+🍇 **Blend**: Cabernet Sauvignon (79%), Merlot (7%), Cabernet Franc (6%), Petit Verdot (5%), Malbec (3%)
+📍 **Appellation**: Oakville, Napa Valley
+🥂 **ABV**: 14.5%
+
+---
+
+**👤 You:**
+> "Find merchants near London selling Dom Pérignon 2012."
+
+**🤖 AI Agent:**
+> Searching Merchant listings ('search_wine_prices')...
+Showing top 3 merchants for **Dom Pérignon Brut 2012** near London (UK):
+
+1. **Berry Bros. & Rudd** (Mayfair) — £175.00 (In Stock: 12+)
+   [Buy link/URL]
+2. **Hedonism Wines** (Mayfair) — £182.50 (In Stock: 8)
+   [Buy link/URL]
+3. **Farr Vintners** (Battersea) — £168.00 (In Bond/Case only)
+   [Buy link/URL]
+
+---
+
+**👤 You:**
+> "What can you tell me about the Pomerol wine region?"
+
+**🤖 AI Agent:**
+> Looking up details ('get_region_info')...
+**Pomerol (Bordeaux, France)**
+- **Focus**: Red wines, primarily Merlot mixed with Cabernet Franc.
+- **Terroir**: Smallest major Bordeaux appellation (800ha). Famous for its 'crasse de fer' (iron-rich clay and gravel) imparting truffle notes.
+- **Top Producers**: Petrus, Le Pin, Château Lafleur, Vieux Château Certan.
+- **Vintages**: 2015, 2016, 2018, 2019, 2020 are exceptional.
+
+
 ## Installation & Usage
 
 To install and use the **Wine-Searcher** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +113,11 @@ To install and use the **Wine-Searcher** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

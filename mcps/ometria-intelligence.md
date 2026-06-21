@@ -1,12 +1,14 @@
 # Ometria Intelligence MCP Server
 
-Analyze customer data and retail marketing via Ometria — track contacts, orders, and segments directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ometria-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ometria-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Analyze customer data and retail marketing via Ometria — track contacts, orders, and segments directly from your AI agent.
 
 ## Description
 Connect your **Ometria** account to your AI agent and gain deep visibility into your customer life cycle and retail marketing performance through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Ometria** account to your AI agent and gain deep visibility into 
 - **list_customer_segments**: List customer segments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ometria Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns."
+
+**🤖 AI Agent:**
+> Retrieving campaigns... I found 12 active campaigns including 'Spring Sale 2024', 'Welcome Automation', and 'VIP Loyalty Program'. Would you like the engagement stats for the Spring Sale?
+
+---
+
+**👤 You:**
+> "What is the status of order ID 'ord_98765'?"
+
+**🤖 AI Agent:**
+> Inspecting order ord_98765... The order is currently 'Shipped' and was placed yesterday. It contains 3 items totaling $145.00. Shall I list the contact details for the customer who placed this order?
+
+---
+
+**👤 You:**
+> "Show me the details for the 'High LTV' segment."
+
+**🤖 AI Agent:**
+> Fetching segment details... The 'High LTV' segment currently contains 1,250 members. This audience consists of customers who have placed at least 5 orders in the last 12 months. Would you like to see the recent order history for this group?
+
+
 ## Installation & Usage
 
 To install and use the **Ometria Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Ometria Intelligence** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

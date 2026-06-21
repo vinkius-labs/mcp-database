@@ -1,12 +1,14 @@
 # Mautic MCP Server
 
-Open-source marketing automation via Mautic — manage contacts, campaigns, and emails.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mautic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mautic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mautic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mautic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-intelligence
-**Tools Count:** 11
+
+**Category:** [business-intelligence](../categories/business-intelligence.md)
+
+Open-source marketing automation via Mautic — manage contacts, campaigns, and emails.
 
 ## Description
 Connect your **Mautic** marketing automation instance to any AI agent and take full control of your marketing workflows through natural conversation.
@@ -42,6 +44,33 @@ List or search contacts
 - **list_segments**: List all contact segments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mautic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find contact info for john.doe@example.com in Mautic."
+
+**🤖 AI Agent:**
+> Searching Mautic... I found John Doe (ID: 1234). He is currently in the 'Active Leads' segment.
+
+---
+
+**👤 You:**
+> "List all active marketing campaigns."
+
+**🤖 AI Agent:**
+> Retrieving campaigns... You have 3 active campaigns: 'Summer Promo', 'Onboarding', and 'Re-engagement'.
+
+---
+
+**👤 You:**
+> "Add contact ID 1234 to segment ID 5."
+
+**🤖 AI Agent:**
+> Action complete. Contact 1234 has been successfully added to segment 5 ('High Value Customers').
+
+
 ## Installation & Usage
 
 To install and use the **Mautic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Mautic** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

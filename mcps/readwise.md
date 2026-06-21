@@ -1,12 +1,14 @@
 # Readwise MCP Server
 
-Equip your AI to directly search, read, and retrieve your unified digital highlights, books, and Reader documents stored in Readwise.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/readwise)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/readwise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/readwise-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 6
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Equip your AI to directly search, read, and retrieve your unified digital highlights, books, and Reader documents stored in Readwise.
 
 ## Description
 Connect your **Readwise** account directly to your AI agent. Enabling this integration turns your AI into an expert research assistant, capable of instantly scanning your entire timeline of book highlights, article snippets, tweet saves, and personal tags directly from your unified Readwise and Readwise Reader library.
@@ -40,6 +42,33 @@ Connect your **Readwise** account directly to your AI agent. Enabling this integ
 - **list_tags**: Lists all tags used in Readwise
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Readwise** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent 5 books I highlighted on Readwise."
+
+**🤖 AI Agent:**
+> Using the `list_books` endpoint, I found your latest highlighted sources. The top results are: 'Atomic Habits' (ID: 9234), 'Deep Work' (ID: 8812), and 'Sapiens' (ID: 8129).
+
+---
+
+**👤 You:**
+> "Show me the text of the recent document I saved to Reader with the ID 1234."
+
+**🤖 AI Agent:**
+> Executing `get_reader_document` for ID 1234. I've fetched the full Markdown of the article. It’s titled 'The Future of AI Tools', summarizing context on how autonomous agents reshape programming workflows from start to finish.
+
+---
+
+**👤 You:**
+> "Search my highlights for any mentions of 'productivity'."
+
+**🤖 AI Agent:**
+> I queried `list_highlights` and filtered your collection. You have 15 highlights mentioning 'productivity'. One standout quote from 'Deep Work' says: 'To produce at your peak level you need to work for extended periods with full concentration.'
+
+
 ## Installation & Usage
 
 To install and use the **Readwise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Readwise** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

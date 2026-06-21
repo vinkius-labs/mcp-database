@@ -1,12 +1,14 @@
 # Luma AI (Generative Video & Creative) MCP Server
 
-Generate cinematic AI videos and images via Luma — use Dream Machine for text-to-video, image-to-video, and professional camera control.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/luma-ai-generative-video-creative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/luma-ai-generative-video-creative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/luma-ai-generative-video-creative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/luma-ai-generative-video-creative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Generate cinematic AI videos and images via Luma — use Dream Machine for text-to-video, image-to-video, and professional camera control.
 
 ## Description
 Connect your **Luma AI** account to any AI agent and take full control of state-of-the-art generative video production and professional creative tools through natural conversation.
@@ -49,6 +51,33 @@ Generate cinematic AI video from a text prompt using Luma Dream Machine (Ray-2 m
 - **lm.image_to_video**: Animate a still image into video using Luma Dream Machine. Image becomes the first frame
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Luma AI (Generative Video & Creative)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 5-second cinematic video of a futuristic spaceship landing on a neon planet"
+
+**🤖 AI Agent:**
+> Generating cinematic video… I've triggered Luma Dream Machine with your prompt. Your Generation ID is 'gen-98765'. I'm monitoring the status. High-fidelity motion and lighting are being computed. I'll provide the MP4 link as soon as it's ready.
+
+---
+
+**👤 You:**
+> "Animate this static image into a video: [url]"
+
+**🤖 AI Agent:**
+> Image-to-video task started. I'm using your image as the source frame for Luma Dream Machine. This will bring your static visual to life with consistent AI dynamics. Your Generation ID is 'gen-12345'.
+
+---
+
+**👤 You:**
+> "Show me my last 3 Luma generations"
+
+**🤖 AI Agent:**
+> I've retrieved your recent generations: 1) 'Spaceship Landing' (Status: Completed), 2) 'Neon Forest' (Status: Dreaming), and 3) 'Abstract Waves' (Status: Completed). Would you like to see the video links for the completed ones?
+
+
 ## Installation & Usage
 
 To install and use the **Luma AI (Generative Video & Creative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Luma AI (Generative Video & Creative)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

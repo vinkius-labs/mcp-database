@@ -1,12 +1,14 @@
 # DeepInfra (Serverless LLM Inference) MCP Server
 
-Run top-tier LLMs, image generation, and embeddings via DeepInfra's serverless infrastructure directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deepinfra-serverless-llm-inference)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepinfra-serverless-llm-inference)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepinfra-serverless-llm-inference-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepinfra-serverless-llm-inference-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 4
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Run top-tier LLMs, image generation, and embeddings via DeepInfra's serverless infrastructure directly from your AI agent.
 
 ## Description
 Connect to **DeepInfra** to access a massive library of open-source models including DeepSeek, Llama 3, and FLUX. This MCP server provides high-performance, serverless inference for text, images, and specialized tasks.
@@ -42,6 +44,33 @@ Create a chat completion using an LLM via DeepInfra
 Run native inference for a specific model on DeepInfra
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeepInfra (Serverless LLM Inference)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a chat completion using deepseek-ai/DeepSeek-V3 to explain quantum entanglement."
+
+**🤖 AI Agent:**
+> I'll use the `create_chat_completion` tool with the DeepSeek-V3 model to generate a detailed explanation of quantum entanglement for you.
+
+---
+
+**👤 You:**
+> "Create an image of a cyberpunk city at night using black-forest-labs/FLUX-1-schnell."
+
+**🤖 AI Agent:**
+> I'm calling the `generate_image` tool with the FLUX-1-schnell model and your cyberpunk prompt. One moment while the image is generated.
+
+---
+
+**👤 You:**
+> "Generate embeddings for the text 'Artificial Intelligence is transforming the world' using BAAI/bge-large-en-v1.5."
+
+**🤖 AI Agent:**
+> I'll process that text through the `create_embedding` tool using the BGE model to get the vector representation.
+
+
 ## Installation & Usage
 
 To install and use the **DeepInfra (Serverless LLM Inference)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **DeepInfra (Serverless LLM Inference)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

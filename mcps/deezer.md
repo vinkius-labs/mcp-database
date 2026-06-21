@@ -1,12 +1,14 @@
 # Deezer MCP Server
 
-Search music, browse artists, albums and playlists, and explore charts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deezer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deezer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deezer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deezer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 14
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Search music, browse artists, albums and playlists, and explore charts via AI.
 
 ## Description
 Connect **Deezer** music catalog to any AI agent and search millions of tracks, discover artists, explore albums and playlists, and check global charts through natural language.
@@ -54,6 +56,33 @@ Search for playlists on Deezer
 Search for tracks on Deezer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deezer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for songs by Daft Punk."
+
+**🤖 AI Agent:**
+> Found 25 Daft Punk tracks. Top results: 'Get Lucky' (feat. Pharrell Williams, 6:09), 'One More Time' (5:20), and 'Harder Better Faster Stronger' (3:45). Want their top 10 tracks?
+
+---
+
+**👤 You:**
+> "What's trending in Brazil right now?"
+
+**🤖 AI Agent:**
+> Brazil's top tracks: #1 'Barulho do Foguete' by Zé Neto & Cristiano, #2 'Oi Balde' by Henrique & Juliano. Top album: 'Nosso Quadro' by Ana Castela. Would you like the full top 10?
+
+---
+
+**👤 You:**
+> "Find me chill playlists for studying."
+
+**🤖 AI Agent:**
+> Found 5 chill study playlists: 'Chill Study' (120 tracks, 45K fans), 'Lo-Fi Beats' (85 tracks), 'Peaceful Piano' (200 tracks). The top one has a great mix of ambient and lo-fi.
+
+
 ## Installation & Usage
 
 To install and use the **Deezer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Deezer** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

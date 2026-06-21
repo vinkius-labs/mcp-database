@@ -1,12 +1,14 @@
 # ThoughtSpot MCP Server
 
-Search and analyze business data by interacting directly with your ThoughtSpot metadata and Liveboards via your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtspot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtspot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thoughtspot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thoughtspot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 7
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search and analyze business data by interacting directly with your ThoughtSpot metadata and Liveboards via your AI agent.
 
 ## Description
 Connect your **ThoughtSpot** instance to any AI agent and bring your analytics workflows directly into your chat. Search through your metadata, access reports, and list configurations natively.
@@ -46,6 +48,31 @@ Lists configured data source connections
 - **list_metadata_tags**: Lists all tags used for classifying metadata objects
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ThoughtSpot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me a list of all active database connections."
+
+**🤖 AI Agent:**
+> I found 2 data connections active on your ThoughtSpot instance:
+- Connection ID: 6223-bd7-snow, Name: 'Snowflake Production Warehouse'
+- Connection ID: 4422-bc5-aws, Name: 'AWS Redshift Archival'
+
+---
+
+**👤 You:**
+> "Can you list all the user groups configured?"
+
+**🤖 AI Agent:**
+> Your ThoughtSpot environment currently has 4 logical groups:
+1. 'Administrators'
+2. 'Finance Viewers'
+3. 'Marketing Edit'
+4. 'All Users'
+
+
 ## Installation & Usage
 
 To install and use the **ThoughtSpot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +81,11 @@ To install and use the **ThoughtSpot** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

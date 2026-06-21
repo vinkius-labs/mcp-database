@@ -1,12 +1,14 @@
 # Megaventory MCP Server
 
-Track inventory across multiple warehouses, manage purchase orders, and coordinate manufacturing with a cloud ERP for SMBs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/megaventory-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/megaventory-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/megaventory-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/megaventory-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 14
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Track inventory across multiple warehouses, manage purchase orders, and coordinate manufacturing with a cloud ERP for SMBs.
 
 ## Description
 Connect your **Megaventory** account to any AI agent and manage inventory and order fulfillment through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Megaventory** account to any AI agent and manage inventory and or
 - **update_sales_order**: Update sales order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Megaventory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check inventory for 'Wireless Headphones' across all locations."
+
+**🤖 AI Agent:**
+> Inventory for SKU 'WH-890' (Wireless Headphones): Total: 450 units. New York Warehouse: 200 (15 allocated). LA Warehouse: 150 (30 allocated). Chicago Hub: 100 (In-transit: 50). Minimum stock alert: OK (Threshold is 100).
+
+---
+
+**👤 You:**
+> "Show open purchase orders and incoming deliveries."
+
+**🤖 AI Agent:**
+> Open Purchase Orders: 3. PO-102 (Supplier: TechCorp, Expected: Tomorrow, Items: 500x Keyboards). PO-103 (Supplier: AudioPro, Expected: Friday, Items: 200x Speakers). PO-104 (Supplier: CableCo, Delayed ⚠️). Total incoming value: $14,500.
+
+---
+
+**👤 You:**
+> "Create a sales order for Acme Corp and allocate stock."
+
+**🤖 AI Agent:**
+> Sales Order created! ✅ SO-4581 for Acme Corp. Items: 50x Wireless Headphones, 10x Monitors. Total: $4,500. Stock allocated from New York Warehouse. Status: Pending fulfillment. Ready to generate picking list?
+
+
 ## Installation & Usage
 
 To install and use the **Megaventory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Megaventory** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

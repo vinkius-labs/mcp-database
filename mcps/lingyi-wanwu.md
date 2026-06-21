@@ -1,12 +1,14 @@
 # Lingyi Wanwu MCP Server
 
-Orchestrate Lingyi Wanwu AI models — manage chat completions, embeddings, and monitor Yi model performance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lingyi-wanwu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lingyi-wanwu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lingyi-wanwu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lingyi-wanwu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate Lingyi Wanwu AI models — manage chat completions, embeddings, and monitor Yi model performance directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Lingyi Wanwu** (01.AI), the high-performance AI lab founded by Dr. Kai-Fu Lee. This MCP provides 10 tools to automate interactions with the Yi series of large language models, including state-of-the-art chat completions, semantic embeddings, and account usage monitoring.
@@ -40,6 +42,33 @@ Connect your AI agents to **Lingyi Wanwu** (01.AI), the high-performance AI lab 
 - **get_embeddings**: Generate text embeddings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lingyi Wanwu** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Chat with the Yi-Large model and ask 'Explain the impact of AI on the future of work'."
+
+**🤖 AI Agent:**
+> Connecting to Yi engine... Yi-Large responded: 'The impact of AI on work is multi-faceted, ranging from task automation to the creation of new specialized roles...' Would you like me to summarize the key points?
+
+---
+
+**👤 You:**
+> "Generate embeddings for my company's mission statement."
+
+**🤖 AI Agent:**
+> Retrieving embeddings... I've generated a semantic vector for your mission statement using the Yi-embedding model. The data is now available for your RAG search workflows.
+
+---
+
+**👤 You:**
+> "Check my current account balance in Lingyi Wanwu."
+
+**🤖 AI Agent:**
+> Checking billing status... Your current account balance is 50.00 CNY. This is sufficient for approximately 2 million tokens on the Yi-Large model.
+
+
 ## Installation & Usage
 
 To install and use the **Lingyi Wanwu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Lingyi Wanwu** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

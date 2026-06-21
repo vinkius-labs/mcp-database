@@ -1,12 +1,14 @@
 # Knorish MCP Server
 
-Launch your online school and sell courses with a platform that bundles LMS, website builder, and payment processing together.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/knorish)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knorish)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/knorish-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/knorish-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Launch your online school and sell courses with a platform that bundles LMS, website builder, and payment processing together.
 
 ## Description
 Connect your **Knorish** account to any AI agent and manage your online course business through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Knorish** account to any AI agent and manage your online course b
 - **unenroll_user**: Unenroll a user from a course
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Knorish** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all courses with enrollment numbers and the top-performing course."
+
+**🤖 AI Agent:**
+> Courses: 6. 'Digital Marketing Masterclass' (1.2K students, $89, 4.8★ ⭐ top). 'Python for Beginners' (890, $49, 4.6★). 'Business Strategy' (456, $149, 4.7★). 'UX Design Fundamentals' (678, $79, 4.5★). 'Data Analytics' (234, $129, 4.4★). 'Leadership Skills' (123, $69, 4.3★). Total: 3,581 students. Revenue: $287K.
+
+---
+
+**👤 You:**
+> "Show student progress for the Digital Marketing course and recent enrollments."
+
+**🤖 AI Agent:**
+> Digital Marketing: 1,200 students. Completion: 42% average. Completed: 504 (42%). In Progress: 480 (40%). Not Started: 216 (18%). Top students: Sarah Chen (100%, certificate issued), Mike Torres (95%), Lisa Park (88%). Recent enrollments (7 days): 28. Daily avg: 4. Drop-off rate: 12%.
+
+---
+
+**👤 You:**
+> "Show the curriculum of the Python course and sales for this month."
+
+**🤖 AI Agent:**
+> Python for Beginners: 8 modules. 1) 'Introduction' (3 lessons, 45 min). 2) 'Variables & Types' (4 lessons, 60 min). 3) 'Control Flow' (5 lessons, 75 min). 4) 'Functions' (4 lessons, 60 min). 5) 'Data Structures' (6 lessons, 90 min). 6) 'OOP' (5 lessons, 80 min). 7) 'Projects' (3 lessons, 120 min). 8) 'Final Exam'. Total: 30 lessons, 8.5 hours. This month's sales: 42 orders, $2,058. Refunds: 2 ($98).
+
+
 ## Installation & Usage
 
 To install and use the **Knorish** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Knorish** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

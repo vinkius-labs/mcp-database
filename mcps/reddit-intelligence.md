@@ -1,12 +1,14 @@
 # Reddit Intelligence MCP Server
 
-Tap into Reddit's public communities for real-time marketing intelligence — discover trending topics, monitor niches, and analyze sentiment with a free Reddit app.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reddit-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reddit-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reddit-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 9
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Tap into Reddit's public communities for real-time marketing intelligence — discover trending topics, monitor niches, and analyze sentiment with a free Reddit app.
 
 ## Description
 Connect any AI agent to Reddit's live public data and transform community conversations into actionable marketing intelligence — with **zero configuration required**.
@@ -66,6 +68,33 @@ Get posts from a subreddit sorted by hot, new, top, rising, or controversial
 Get public profile data for a Reddit user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reddit Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the most engaging posts in r/marketing this week?"
+
+**🤖 AI Agent:**
+> I fetched the top 25 posts from r/marketing this week. The most engaging post (score: 1,842) is 'How we grew from 0 to 10k email subscribers in 90 days' with 312 comments and a 97% upvote ratio. The second trending topic is around AI content strategy, with 3 posts in the top 10 discussing its impact on SEO.
+
+---
+
+**👤 You:**
+> "Search Reddit for discussions about 'AI writing tools' and tell me what people are saying."
+
+**🤖 AI Agent:**
+> I searched Reddit for 'AI writing tools' (past week, sorted by top). Found 25 results across 12 subreddits. The dominant sentiment is mixed: r/marketing users praise tools like Claude for strategy work, while r/copywriting shows resistance, with the top post ('AI is killing authentic brand voice') scoring 934 upvotes. r/entrepreneur is more positive, focusing on productivity gains.
+
+---
+
+**👤 You:**
+> "Find me the top subreddits where SaaS founders hang out."
+
+**🤖 AI Agent:**
+> I searched for 'SaaS founder' communities. Top results: r/SaaS (187k subscribers, 1.2k active now), r/startups (1.1M subscribers), r/Entrepreneur (3.2M subscribers), r/indiehackers (52k subscribers), and r/microsaas (28k subscribers). I recommend starting with r/SaaS for the most targeted audience and r/indiehackers for bootstrapped founders.
+
+
 ## Installation & Usage
 
 To install and use the **Reddit Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Reddit Intelligence** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

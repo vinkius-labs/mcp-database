@@ -1,12 +1,14 @@
 # Ankr (Web3 Node API) MCP Server
 
-Access high-performance Web3 RPC nodes via Ankr. Query block data, check wallet balances, and interact with smart contracts across multiple EVM chains.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ankr-web3-node-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ankr-web3-node-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ankr-web3-node-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ankr-web3-node-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 32
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access high-performance Web3 RPC nodes via Ankr. Query block data, check wallet balances, and interact with smart contracts across multiple EVM chains.
 
 ## Description
 Connect your AI agent to **Ankr's** global node infrastructure and interact with blockchain data through natural language. This server provides a direct bridge to Ethereum and other EVM-compatible chains.
@@ -69,6 +71,33 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 - **simulateTransaction**: Simulates a transaction to check for errors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ankr (Web3 Node API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the latest block number on Ethereum?"
+
+**🤖 AI Agent:**
+> I've checked the Ethereum network. The most recent block number is 19,245,812.
+
+---
+
+**👤 You:**
+> "Check the balance of address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e on the 'eth' chain."
+
+**🤖 AI Agent:**
+> The balance for that address on Ethereum is 1,500,000,000,000,000,000 Wei (1.5 ETH).
+
+---
+
+**👤 You:**
+> "Get the transaction receipt for hash 0x5c504ed432cb511db3b32169e5444570f9d0cad662f6e19df34ad57d57ad5 on eth."
+
+**🤖 AI Agent:**
+> I've retrieved the receipt. The transaction was successful, included in block 18,450,210, and used 21,000 gas.
+
+
 ## Installation & Usage
 
 To install and use the **Ankr (Web3 Node API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Ankr (Web3 Node API)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

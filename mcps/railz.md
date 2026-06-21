@@ -1,12 +1,14 @@
 # Railz MCP Server
 
-Financial data integration platform — connect accounting, banking, and commerce data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/railz)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railz)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/railz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/railz-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 12
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Financial data integration platform — connect accounting, banking, and commerce data via AI.
 
 ## Description
 Empower your AI agent to access normalized financial data from various accounting, banking, and commerce platforms with **Railz**. By connecting Railz to your agent, you transform complex financial auditing into a natural conversation. Your agent can instantly list businesses, audit invoices, and retrieve deep financial reports like Balance Sheets and P&L statements without you ever touching a dashboard. Whether you are managing multiple client accounts or a single corporate entity, your agent acts as a real-time financial analyst, ensuring your data is always accessible and structured.
@@ -52,6 +54,33 @@ List connections for a business
 - **get_profit_and_loss**: Get profit and loss report
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Railz** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all businesses registered in my Railz account."
+
+**🤖 AI Agent:**
+> I've retrieved your business directory. You currently have 3 registered entities: 'Acme Corp', 'Global Logistics', and 'Retail Ventures'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Show active connections for business 'biz_123'."
+
+**🤖 AI Agent:**
+> Business 'biz_123' has 2 active connections: 'QuickBooks Online' (conn_456) and 'Shopify' (conn_789). I can now pull reports or transaction data from either source.
+
+---
+
+**👤 You:**
+> "Get the Profit and Loss report for connection 'conn_456'."
+
+**🤖 AI Agent:**
+> Fetching normalized P&L data... For the current period, your total revenue is $50,000 with operating expenses of $30,000, resulting in a net income of $20,000.
+
+
 ## Installation & Usage
 
 To install and use the **Railz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Railz** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

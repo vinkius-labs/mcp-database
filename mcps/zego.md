@@ -1,12 +1,14 @@
 # ZEGO / 即构科技 MCP Server
 
-Leading global RTC and IM platform — manage rooms, users, and media streams via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zego)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zego)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zego-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zego-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Leading global RTC and IM platform — manage rooms, users, and media streams via AI.
 
 ## Description
 Empower your AI agent to orchestrate your real-time communication infrastructure with **ZEGO** (即构科技), the premier provider of global video and audio RTC services. By connecting ZEGO to your agent, you transform complex room management, stream control, and user status tracking into a natural conversation. Your agent can instantly retrieve active room lists, monitor user counts, force-stop media streams, and audit service usage statistics without you ever needing to navigate multiple technical dashboards. Whether you are building an automated moderation system for live rooms or monitoring cross-regional connectivity, your agent acts as a real-time RTC operations assistant, providing accurate and reliable results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 - **stop_media_stream**: Force stop a stream
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ZEGO / 即构科技** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active rooms in our ZEGO project."
+
+**🤖 AI Agent:**
+> I've retrieved the list of active rooms. You currently have 3 rooms online: 'Room_A' (12 users), 'Room_B' (5 users), and 'Room_C' (45 users). Would you like to see the members list for one of these rooms?
+
+---
+
+**👤 You:**
+> "Check the status for these users: 'user_01,user_02'."
+
+**🤖 AI Agent:**
+> I've checked the status for the requested users. 'user_01' is currently 'Online' and participating in 'Room_A'. 'user_02' is currently 'Offline'. Should I check the total online count for the whole project?
+
+---
+
+**👤 You:**
+> "What is our video usage duration for the last 7 days?"
+
+**🤖 AI Agent:**
+> I've retrieved the usage statistics. Over the last 7 days, your project has consumed a total of 15,240 minutes of video and 8,500 minutes of audio. Would you like a daily breakdown of this usage?
+
+
 ## Installation & Usage
 
 To install and use the **ZEGO / 即构科技** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **ZEGO / 即构科技** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

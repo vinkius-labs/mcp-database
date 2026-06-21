@@ -1,12 +1,14 @@
 # Teamwork Projects MCP Server
 
-Manage projects, tasks, milestones, time entries, and messages via Teamwork API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/teamwork-projects)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teamwork-projects)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teamwork-projects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teamwork-projects-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 17
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage projects, tasks, milestones, time entries, and messages via Teamwork API.
 
 ## Description
 Connect **Teamwork** to any AI agent and manage your project delivery platform — create and track tasks, manage milestones, log time, post messages, and monitor project progress through natural conversation.
@@ -68,6 +70,33 @@ List all task lists in a project
 - **update_task**: Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Teamwork Projects** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all my projects."
+
+**🤖 AI Agent:**
+> Found 4 projects: 1. Website Redesign. 2. Mobile App Launch. 3. Q1 Marketing Campaign. 4. Client Onboarding.
+
+---
+
+**👤 You:**
+> "List all tasks in project 12345."
+
+**🤖 AI Agent:**
+> Found 12 tasks: 1. Design Homepage (Due: 2025-04-15). 2. Update API Docs. 3. Fix Login Bug. 4. Launch Campaign.
+
+---
+
+**👤 You:**
+> "Create a milestone 'Phase 1 Complete' with deadline 2025-05-01 in project 12345."
+
+**🤖 AI Agent:**
+> Milestone created successfully! 'Phase 1 Complete' added to project 12345 with deadline 2025-05-01.
+
+
 ## Installation & Usage
 
 To install and use the **Teamwork Projects** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Teamwork Projects** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

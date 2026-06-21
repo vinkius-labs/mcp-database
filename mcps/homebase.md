@@ -1,12 +1,14 @@
 # Homebase MCP Server
 
-Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/homebase)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/homebase)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/homebase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/homebase-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent.
 
 ## Description
 Connect your **Homebase** (joinhomebase.com) account to any AI agent and take full control of your employee scheduling, time tracking, and team management through natural conversation.
@@ -53,6 +55,33 @@ List all business locations associated with the Homebase account
 List timecard entries (timesheets) for a specific location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Homebase** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all business locations and find the UUID for 'Downtown Cafe'."
+
+**🤖 AI Agent:**
+> I've retrieved your locations. You have 3 sites: 'Downtown Cafe' (UUID: hbc_102), 'Airport Kiosk' (UUID: hbc_105), and 'Main Warehouse'. Which location's schedule would you like to check?
+
+---
+
+**👤 You:**
+> "Who is currently clocked in at the Downtown Cafe?"
+
+**🤖 AI Agent:**
+> Checking active clock-ins for Downtown Cafe (hbc_102)... Currently, 4 employees are on-site: 'Alice Smith' (Barista), 'John Doe' (Manager), 'Michael Brown', and 'Elena Rossi'. Would you like to see their scheduled shift end times?
+
+---
+
+**👤 You:**
+> "Show the scheduled shifts for next Wednesday."
+
+**🤖 AI Agent:**
+> Retrieving schedules... For next Wednesday (April 14th) at your primary location, 6 shifts are scheduled, starting with 'Morning Prep' at 06:00 AM and ending with 'Closing Duty' at 10:00 PM. Should I list the assigned employees for each shift?
+
+
 ## Installation & Usage
 
 To install and use the **Homebase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Homebase** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Thoughtly MCP Server
 
-Deploy AI voice agents to make or receive calls, manage CRM contacts, and access call histories instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thoughtly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thoughtly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thoughtly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication
-**Tools Count:** 11
+
+**Category:** [communication](../categories/communication.md)
+
+Deploy AI voice agents to make or receive calls, manage CRM contacts, and access call histories instantly.
 
 ## Description
 Connect your **Thoughtly** voice AI platform to any text-based AI agent to seamlessly bridge the gap between text commands and real-world phone calls.
@@ -49,6 +51,33 @@ Create a new Thoughtly contact
 - **get_user**: Get Thoughtly user details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Thoughtly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available Voice Agents in Thoughtly."
+
+**🤖 AI Agent:**
+> I've fetched your agents. You currently have 'Sales SDR Persona' (ID: INT-881) and 'Support Desk Assistant' (ID: INT-204) ready to make or receive calls.
+
+---
+
+**👤 You:**
+> "Create a new contact with the phone number +1234567890 and tell the Sales SDR Voice Agent to call them."
+
+**🤖 AI Agent:**
+> Contact successfully created with ID CON-1029. I have just triggered the call using the Sales SDR Voice Agent (INT-881). The system is dialing now.
+
+---
+
+**👤 You:**
+> "Get the call transcript for the latest interaction with Call ID CAL-554."
+
+**🤖 AI Agent:**
+> Extracting call data... The AI successfully booked an appointment. Here is the transcript: 'AI: Hello, are you available next Tuesday? Human: Yes, 2 PM works. AI: Great, confirmed.'
+
+
 ## Installation & Usage
 
 To install and use the **Thoughtly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Thoughtly** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

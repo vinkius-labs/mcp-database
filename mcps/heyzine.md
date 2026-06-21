@@ -1,12 +1,14 @@
 # Heyzine MCP Server
 
-Transform PDFs into interactive flipbooks with page-turn animations, embedded media, and sharing analytics for digital publishing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/heyzine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heyzine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heyzine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heyzine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Transform PDFs into interactive flipbooks with page-turn animations, embedded media, and sharing analytics for digital publishing.
 
 ## Description
 Connect your **Heyzine** account to any AI agent and take full control of your digital publishing and flipbook distribution through natural conversation.
@@ -51,6 +53,33 @@ Convert a PDF URL to an interactive flipbook
 - **update_flipbook_design**: Update flipbook design or settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Heyzine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert this PDF to a flipbook: https://example.com/catalog.pdf"
+
+**🤖 AI Agent:**
+> Conversion started! I've successfully triggered the Heyzine engine for your PDF. Your new interactive flipbook will be available shortly at: https://heyzine.com/flip-book/ig_123. Would you like to update its title now?
+
+---
+
+**👤 You:**
+> "List all flipbooks in my 'Spring 2026' bookshelf."
+
+**🤖 AI Agent:**
+> I've retrieved 5 flipbooks from the 'Spring 2026' collection. Notable titles include 'Q1 Product Guide' and 'Regional Brochure'. Which one should we manage or share?
+
+---
+
+**👤 You:**
+> "Update the title of flipbook ID 'ig_123' to 'Summer Promo'."
+
+**🤖 AI Agent:**
+> Done! I've updated the title for flipbook 'ig_123' to 'Summer Promo' in your Heyzine account. The changes are now live on the public link.
+
+
 ## Installation & Usage
 
 To install and use the **Heyzine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Heyzine** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

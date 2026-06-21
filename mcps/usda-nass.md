@@ -1,12 +1,14 @@
 # USDA NASS MCP Server
 
-Access US agricultural statistics via USDA NASS — query crop yields, livestock data, farm economics and demographics from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-nass)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-nass)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usda-nass-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usda-nass-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access US agricultural statistics via USDA NASS — query crop yields, livestock data, farm economics and demographics from any AI agent.
 
 ## Description
 Connect to **USDA NASS** (National Agricultural Statistics Service) APIs through any AI agent and explore American agriculture data through natural conversation.
@@ -63,6 +65,33 @@ Get valid values for a Quick Stats parameter
 Query USDA NASS Quick Stats database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **USDA NASS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the corn production summary for Iowa in 2024."
+
+**🤖 AI Agent:**
+> Iowa corn production in 2024: 2,480 million bushels produced from 12.8 million harvested acres, with an average yield of 193.8 bushels/acre. The average price received by farmers was $4.45/bushel. Iowa remains the #1 corn-producing state in the US.
+
+---
+
+**👤 You:**
+> "What are the current cattle inventory numbers for Texas?"
+
+**🤖 AI Agent:**
+> Texas cattle inventory (Jan 2024): Total cattle and calves at 13.5 million head (down 2% from 2023). Beef cows: 4.1 million, Milk cows: 0.58 million, Other cattle: 8.82 million. Texas remains the #2 cattle state after Montana.
+
+---
+
+**👤 You:**
+> "Show me what commodity values are available for filtering."
+
+**🤖 AI Agent:**
+> Available commodities include: CORN, SOYBEANS, WHEAT, COTTON, RICE, SORGHUM, OATS, BARLEY, HAY, PEANUTS, POTATOES, SUGARCANE, SUNFLOWER, CATTLE, HOGS, CHICKENS, TURKEYS, MILK, EGGS, HONEY, WOOL and 200+ more. Use `get_param_values` with any parameter to see the complete list.
+
+
 ## Installation & Usage
 
 To install and use the **USDA NASS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **USDA NASS** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

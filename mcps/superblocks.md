@@ -1,12 +1,14 @@
 # Superblocks MCP Server
 
-Build and manage internal tools and workflows — list applications, manage configurations, and generate secure embed tokens directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/superblocks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/superblocks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/superblocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/superblocks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 7
+
+**Category:** [productivity](../categories/productivity.md)
+
+Build and manage internal tools and workflows — list applications, manage configurations, and generate secure embed tokens directly from your AI agent.
 
 ## Description
 Connect your **Superblocks** organization to any AI agent to streamline the management of your internal applications and automated workflows. This server allows you to orchestrate your low-code ecosystem through natural language.
@@ -45,6 +47,33 @@ List all applications in the organization
 - **update_application**: Update an existing Superblocks application
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Superblocks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 10 applications in our Superblocks organization."
+
+**🤖 AI Agent:**
+> I've retrieved the first 10 applications. You have tools like 'Customer Support Dashboard' (ID: app_123) and 'Inventory Manager' (ID: app_456) active. Would you like details on any specific one?
+
+---
+
+**👤 You:**
+> "Show me the configuration for application ID app_789."
+
+**🤖 AI Agent:**
+> Fetching details for app_789... This is the 'Sales Analytics' app. It currently has 3 pages and connects to your Snowflake and Salesforce instances. Would you like to see the full JSON payload?
+
+---
+
+**👤 You:**
+> "Generate an embed token for user 'dev@example.com' for our embedded portal."
+
+**🤖 AI Agent:**
+> I've generated a secure session token for dev@example.com. You can now use this token to authenticate their session in your embedded Superblocks components.
+
+
 ## Installation & Usage
 
 To install and use the **Superblocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Superblocks** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

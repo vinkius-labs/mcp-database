@@ -1,12 +1,14 @@
 # HyperDX (Open Source Observability) MCP Server
 
-Monitor logs, events, and alerts via HyperDX — search logs, manage alert rules, and inspect dashboards directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperdx-open-source-observability)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperdx-open-source-observability)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyperdx-open-source-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyperdx-open-source-observability-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** devops-cicd
-**Tools Count:** 7
+
+**Category:** [devops-cicd](../categories/devops-cicd.md)
+
+Monitor logs, events, and alerts via HyperDX — search logs, manage alert rules, and inspect dashboards directly from your AI agent.
 
 ## Description
 Connect your **HyperDX** instance to any AI agent to gain deep visibility into your infrastructure and applications through natural conversation.
@@ -47,6 +49,33 @@ Retrieve events (structured logs or spans) from HyperDX
 Retrieve a list of logs based on search criteria
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HyperDX (Open Source Observability)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all logs with level:error for the auth service from the last hour."
+
+**🤖 AI Agent:**
+> I've retrieved the logs for the auth service. I found 12 error entries in the last hour, mostly related to 'Invalid Token' exceptions. Would you like to see the full details of the most recent one?
+
+---
+
+**👤 You:**
+> "Create a new alert named 'High Error Rate' that triggers when errors exceed 50 in 5 minutes."
+
+**🤖 AI Agent:**
+> Successfully created the alert 'High Error Rate'. It is configured to monitor the query 'level:error' and will trigger if the count exceeds 50 within a 5-minute interval.
+
+---
+
+**👤 You:**
+> "Show me all my available dashboards in HyperDX."
+
+**🤖 AI Agent:**
+> I found 3 dashboards in your organization: 'System Health', 'API Performance', and 'User Analytics'. Which one would you like to inspect in detail?
+
+
 ## Installation & Usage
 
 To install and use the **HyperDX (Open Source Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **HyperDX (Open Source Observability)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

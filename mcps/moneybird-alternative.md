@@ -1,12 +1,14 @@
 # Moneybird MCP Server
 
-Handle Dutch and European accounting with automated invoicing, bank reconciliation, and tax-ready financial reports.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moneybird-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moneybird-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moneybird-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moneybird-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Handle Dutch and European accounting with automated invoicing, bank reconciliation, and tax-ready financial reports.
 
 ## Description
 Connect your **Moneybird** administration to any AI agent and manage Dutch accounting through natural conversation.
@@ -55,6 +57,33 @@ List sales invoices
 - **send_sales_invoice**: Send an invoice to the customer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Moneybird** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List recent sales invoices and their statuses."
+
+**🤖 AI Agent:**
+> Sales Invoices: 5. 1) INV-2024-045 — Acme Corp, €1,200.00 (Status: Paid ✅). 2) INV-2024-046 — Beta Ltd, €450.00 (Status: Open, Due: Apr 30). 3) INV-2024-047 — Gamma Inc, €2,800.00 (Status: Draft). 4) INV-2024-048 — Delta BV, €89.00 (Status: Paid ✅). 5) INV-2024-049 — Epsilon, €340.00 (Status: Late ⚠️, Overdue 5 days).
+
+---
+
+**👤 You:**
+> "Create a draft invoice for Beta Ltd with 2 line items."
+
+**🤖 AI Agent:**
+> Invoice created! ✅ ID: 890123456. Number: INV-2024-050. Contact: Beta Ltd. Items: 1) 'Consulting Hours' (10x €75.00 = €750.00). 2) 'Travel Expenses' (1x €120.00). Subtotal: €870.00. VAT 21%: €182.70. Total: €1,052.70. Status: Draft. Ready to send?
+
+---
+
+**👤 You:**
+> "Show unreconciled bank transactions."
+
+**🤖 AI Agent:**
+> Financial Mutations (Unreconciled): 3. 1) +€1,200.00 from Acme Corp (Apr 20, Matches: INV-2024-045). 2) -€45.00 Office Supplies (Apr 18, No match ⚠️). 3) +€89.00 from Delta BV (Apr 15, Matches: INV-2024-048). Want to auto-reconcile the matched items?
+
+
 ## Installation & Usage
 
 To install and use the **Moneybird** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Moneybird** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

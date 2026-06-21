@@ -1,12 +1,14 @@
 # RecruSpace MCP Server
 
-Automate recruitment via RecruSpace — manage candidates, track talent pools, and monitor job posts directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/recruspace)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recruspace)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recruspace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recruspace-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate recruitment via RecruSpace — manage candidates, track talent pools, and monitor job posts directly.
 
 ## Description
 Connect your **RecruSpace** account to any AI agent to streamline your hiring and talent orchestration through natural conversation. RecruSpace provides a modern recruitment platform for programmatically managing candidates, organizing talent pools, and tracking job post statuses through its robust API.
@@ -50,6 +52,33 @@ Add a new candidate
 - **update_candidate**: Update candidate information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RecruSpace** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active candidates in RecruSpace."
+
+**🤖 AI Agent:**
+> I've retrieved your candidates. You have 15 active applicants including 'Alice Miller' and 'Robert Chen'. Would you like to see the qualification score for any of them?
+
+---
+
+**👤 You:**
+> "Show me all active job postings with their application counts and pipeline status."
+
+**🤖 AI Agent:**
+> 9 active job postings. "Full Stack Developer" leads with 87 applications (12 in screening, 5 interviewing, 2 in final round). "Marketing Manager" has 45 applications (8 screening). "Data Engineer" received 34 applications in 5 days. "Customer Success": 28 applications. 5 additional positions with combined 112 applications. Total active candidates: 306. Average time to first response: 2.3 days. 4 positions have been open for 30+ days and may need refreshed descriptions.
+
+---
+
+**👤 You:**
+> "Add a new candidate to the talent pool for future engineering roles."
+
+**🤖 AI Agent:**
+> Candidate added to "Future Engineering Talent" pool. Name: Lisa Wang. Skills: React, TypeScript, Node.js, AWS. Experience: 5 years. Source: Tech Conference referral. The talent pool now has 134 candidates. Lisa has been tagged with "Frontend", "Cloud", and "Mid-Senior". An automated nurture email sequence will begin in 24 hours with company culture content. You'll be notified when matching positions open.
+
+
 ## Installation & Usage
 
 To install and use the **RecruSpace** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **RecruSpace** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

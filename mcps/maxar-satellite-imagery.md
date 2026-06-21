@@ -1,12 +1,14 @@
 # Maxar (Satellite Imagery) MCP Server
 
-Access high-resolution satellite imagery and geospatial data from Maxar — search discovery catalogs, order data products, and retrieve streaming endpoints.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/maxar-satellite-imagery)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maxar-satellite-imagery)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maxar-satellite-imagery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maxar-satellite-imagery-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access high-resolution satellite imagery and geospatial data from Maxar — search discovery catalogs, order data products, and retrieve streaming endpoints.
 
 ## Description
 Connect to **Maxar**, the world leader in high-resolution satellite imagery, and integrate earth intelligence directly into your AI workflows. This server allows you to query the Maxar Discovery Service, manage orders, and access OGC-compliant streaming services.
@@ -38,6 +40,33 @@ Connect to **Maxar**, the world leader in high-resolution satellite imagery, and
 - **search_discovery**: Search for available satellite imagery
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Maxar (Satellite Imagery)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for available satellite imagery in the bbox [-122.5, 37.7, -122.3, 37.8] from the last 6 months."
+
+**🤖 AI Agent:**
+> I've searched the Maxar Discovery Service. I found several high-quality images from the WV03_VNIR collection. The most recent one was captured on 2024-05-15 with 0% cloud cover. Would you like the full metadata for this item?
+
+---
+
+**👤 You:**
+> "Get the streaming endpoints for Maxar Web Services."
+
+**🤖 AI Agent:**
+> I have retrieved the OGC endpoints for you. You can use the following base URLs for streaming: WMS: `https://securewatch.maxar.com/mapservice/wms...` and WMTS: `https://securewatch.maxar.com/mapservice/wmts...`. You will need to append your credentials to these URLs for use in GIS tools.
+
+---
+
+**👤 You:**
+> "Retrieve metadata for the ARD tile with ID '1234567890'."
+
+**🤖 AI Agent:**
+> Fetching ARD tile metadata... Tile '1234567890' is part of the 'Bay Area' dataset, processed on 2024-01-10. It includes 8-band multispectral data and has been orthorectified to UTM Zone 10N.
+
+
 ## Installation & Usage
 
 To install and use the **Maxar (Satellite Imagery)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Maxar (Satellite Imagery)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

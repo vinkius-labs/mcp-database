@@ -1,12 +1,14 @@
 # Fern MCP Server
 
-Manage and interact with Fern documentation platforms — generate access tokens, index websites for AI, and query analytics directly from your agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fern)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fern)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fern-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fern-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage and interact with Fern documentation platforms — generate access tokens, index websites for AI, and query analytics directly from your agent.
 
 ## Description
 Connect to the **Fern** ecosystem to supercharge your documentation workflows. This server allows AI agents to manage documentation access, trigger AI indexing, and interact with the 'Ask Fern' assistant.
@@ -41,6 +43,33 @@ Connect to the **Fern** ecosystem to supercharge your documentation workflows. T
 - **whoami**: Get current user information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fern** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Ask Fern: 'What is the rate limit?' for the domain 'docs.example.com'"
+
+**🤖 AI Agent:**
+> I've sent your question to Ask Fern for the 'docs.example.com' domain. The assistant responds: 'The current rate limit is 100 requests per minute for the free tier and 5000 for enterprise users.'
+
+---
+
+**👤 You:**
+> "Start indexing the website https://docs.example.com for the 'main' domain."
+
+**🤖 AI Agent:**
+> I've triggered a new indexing job for 'https://docs.example.com' under the 'main' domain. You can check the status in your Fern dashboard.
+
+---
+
+**👤 You:**
+> "Show me the recent queries for the 'api-docs' domain."
+
+**🤖 AI Agent:**
+> Retrieving analytics for 'api-docs'... Recent questions include: 'How to use webhooks?', 'Authentication error 401', and 'SDK installation guide'.
+
+
 ## Installation & Usage
 
 To install and use the **Fern** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Fern** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

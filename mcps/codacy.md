@@ -1,12 +1,14 @@
 # Codacy MCP Server
 
-Manage code quality and automated reviews via Codacy — track grades, monitor issues, and audit repository analysis directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/codacy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codacy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codacy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codacy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage code quality and automated reviews via Codacy — track grades, monitor issues, and audit repository analysis directly from any AI agent.
 
 ## Description
 Connect your **Codacy** account to any AI agent and take full control of your automated code reviews and quality metrics through natural conversation. Streamline how you monitor security and maintainability across your repositories natively.
@@ -45,6 +47,33 @@ Connect your **Codacy** account to any AI agent and take full control of your au
 - **search_repository_issues**: Search for specific code quality issues in a repository
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Codacy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all repositories in the 'vinkius' organization on GitHub."
+
+**🤖 AI Agent:**
+> Retrieving repositories for gh/vinkius... I found 5 analyzed repositories: 'core-api' (Grade: A), 'web-frontend' (Grade: B), 'mcp-servers' (Grade: A), and 2 others. Which one would you like to see issues for?
+
+---
+
+**👤 You:**
+> "Show me the security issues for the 'core-api' repository."
+
+**🤖 AI Agent:**
+> Searching for security issues in gh/vinkius/core-api... I found 2 'Critical' security vulnerabilities related to SQL injection patterns and 1 'Medium' warning about hardcoded secrets.
+
+---
+
+**👤 You:**
+> "What languages does Codacy support?"
+
+**🤖 AI Agent:**
+> Retrieving supported languages... Codacy supports over 40 languages including JavaScript, TypeScript, Python, Go, Java, PHP, Ruby, and C#. It also supports configuration files like Dockerfile and Terraform.
+
+
 ## Installation & Usage
 
 To install and use the **Codacy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Codacy** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

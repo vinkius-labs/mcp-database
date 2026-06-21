@@ -1,12 +1,14 @@
 # Xsolla MCP Server
 
-Manage game commerce via Xsolla — handle payments, search transactions, and manage virtual item catalogs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/xsolla)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xsolla)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xsolla-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xsolla-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** gaming-entertainment
-**Tools Count:** 30
+
+**Category:** [gaming-entertainment](../categories/gaming-entertainment.md)
+
+Manage game commerce via Xsolla — handle payments, search transactions, and manage virtual item catalogs directly from any AI agent.
 
 ## Description
 Connect your **Xsolla** merchant account to any AI agent to streamline your gaming commerce and payment workflows through natural conversation.
@@ -81,6 +83,33 @@ Register a new user (OAuth 2.0)
 Verify a promo code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Xsolla** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all completed transactions from the last 24 hours."
+
+**🤖 AI Agent:**
+> I've searched your transactions. I found 12 completed transactions in the last 24 hours, totaling $450.00. Would you like to see the details for the most recent ones?
+
+---
+
+**👤 You:**
+> "List all virtual items and bundles in our store catalog."
+
+**🤖 AI Agent:**
+> Fetching catalog... I found 25 virtual items (including 'Gold Pouch' and 'Epic Sword') and 3 active bundles ('Starter Pack', 'Warrior Set'). Which one should I inspect further?
+
+---
+
+**👤 You:**
+> "Get the full details for transaction ID 987654321."
+
+**🤖 AI Agent:**
+> Retrieving details for transaction 987654321... This was a payment of $19.99 for 'Season Pass' by user 'Gamer123'. Status: Completed. Payment method: Credit Card.
+
+
 ## Installation & Usage
 
 To install and use the **Xsolla** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Xsolla** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

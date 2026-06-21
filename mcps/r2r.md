@@ -1,12 +1,14 @@
 # R2R MCP Server
 
-Equip your AI with direct access to your R2R engine — execute vector searches, run precise RAG queries, and manage your documents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/r2r)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/r2r)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/r2r-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/r2r-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 6
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Equip your AI with direct access to your R2R engine — execute vector searches, run precise RAG queries, and manage your documents.
 
 ## Description
 Connect your **R2R (Rag to Riches)** deployment to an AI agent, bringing your RAG infrastructure inside your chat interface. By linking this server, the AI can query its own constructed knowledge base on demand.
@@ -40,6 +42,33 @@ Connect your **R2R (Rag to Riches)** deployment to an AI agent, bringing your RA
 - **get_health**: Checks the health status of the R2R server
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **R2R** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Perform a vector search for 'Company Holiday Policy 2026'."
+
+**🤖 AI Agent:**
+> Using the R2R server, I found 3 highly relevant snippets. The top hit from document `doc_7712a` states: 'In 2026, employees are granted 21 flexible floating days, bypassing old blackout windows.'
+
+---
+
+**👤 You:**
+> "Query the RAG engine to summarize known advanced RAG chunking strategies."
+
+**🤖 AI Agent:**
+> I requested the summary directly from R2R via `rag_query`. The engine replied: 'Advanced strategies focus on semantic segmentation rather than standard character limits, utilizing markdown structure, sentence boundaries, and logical overlaps to retain context.'
+
+---
+
+**👤 You:**
+> "Verify the operational health of the R2R server."
+
+**🤖 AI Agent:**
+> I executed the `get_health` probe. The R2R server replied with `status: ok` and is primed to accept vector operations.
+
+
 ## Installation & Usage
 
 To install and use the **R2R** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **R2R** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

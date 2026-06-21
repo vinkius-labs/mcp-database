@@ -1,12 +1,14 @@
 # UpGuard MCP Server
 
-Monitor your attack surface and assess vendor security risks with continuous scanning that identifies vulnerabilities before attackers do.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/upguard)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upguard)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upguard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upguard-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 9
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Monitor your attack surface and assess vendor security risks with continuous scanning that identifies vulnerabilities before attackers do.
 
 ## Description
 Connect your **UpGuard** account to any AI agent and simplify how you monitor your attack surface, assess third-party vendor risks, and protect your organization's digital assets through natural conversation.
@@ -44,6 +46,33 @@ Connect your **UpGuard** account to any AI agent and simplify how you monitor yo
 - **list_vendors**: List all monitored vendors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UpGuard** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all monitored vendors and their security scores."
+
+**🤖 AI Agent:**
+> I've retrieved your vendor list. You are monitoring 15 vendors. Top scorers include 'Cloud Analytics' (950/950) and 'Payment Gateway X' (920/950). 'Old Legacy Supplier' has a lower score of 450. Which one would you like a detailed risk report for?
+
+---
+
+**👤 You:**
+> "Show me the active risks for the vendor 'Microsoft'."
+
+**🤖 AI Agent:**
+> I've fetched the risks for Microsoft. There are 2 active findings: 'Unencrypted backup found' and 'TLS 1.0 support detected'. Shall I retrieve the remediation steps for these?
+
+---
+
+**👤 You:**
+> "Are there any recent identity breaches affecting our domain?"
+
+**🤖 AI Agent:**
+> Inspecting breach data... I found one recent identity breach affecting 3 employees. It occurred on a third-party site 'TrainingPortal.com'. Would you like the list of affected email addresses?
+
+
 ## Installation & Usage
 
 To install and use the **UpGuard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **UpGuard** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

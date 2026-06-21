@@ -1,12 +1,14 @@
 # Finnhub MCP Server
 
-Access real-time financial data — audit stocks, crypto, and market news via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/finnhub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finnhub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finnhub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finnhub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time financial data — audit stocks, crypto, and market news via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire financial research and market auditing workflow with **Finnhub**, the comprehensive platform for real-time stock and crypto data. By connecting Finnhub to your agent, you transform complex market querying into a natural conversation. Your agent can instantly retrieve stock quotes, audit company profiles, and monitor market news without you ever touching a financial terminal. Whether you are conducting investment research or tracking crypto trends, your agent acts as a real-time financial analyst, ensuring your intelligence is always grounded in live market data.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire financial research and market a
 - **search_symbols**: Search for stock or crypto symbols by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Finnhub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the current stock quote for 'AAPL' (Apple) using Finnhub."
+
+**🤖 AI Agent:**
+> I've retrieved the quote for AAPL! The current price is $185.20, with a daily high of $186.50. The change for the day is +1.5%. Would you like to see the company profile or basic financials?
+
+---
+
+**👤 You:**
+> "Show the latest news in the 'crypto' category."
+
+**🤖 AI Agent:**
+> I've retrieved the latest crypto market news. Notable headlines include updates on Bitcoin ETFs and new Ethereum upgrades. I can provide the links to the full articles if you'd like.
+
+---
+
+**👤 You:**
+> "What are the basic financial metrics for 'MSFT' (Microsoft)?"
+
+**🤖 AI Agent:**
+> I've retrieved the financial metrics for Microsoft. Notable data includes a P/E ratio of 35.2 and a current dividend yield. I can provide the full breakdown of valuation and profitability markers if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Finnhub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Finnhub** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

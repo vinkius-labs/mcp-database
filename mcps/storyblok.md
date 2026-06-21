@@ -1,12 +1,14 @@
 # Storyblok MCP Server
 
-Connect your AI to Storyblok. Manage content spaces, craft data stories, and orchestrate headless CMS elements effortlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/storyblok)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storyblok)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/storyblok-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/storyblok-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 9
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect your AI to Storyblok. Manage content spaces, craft data stories, and orchestrate headless CMS elements effortlessly.
 
 ## Description
 Integrate the powerful headless CMS capabilities of **Storyblok** directly into your conversational AI. Empower your content teams and developers to organically draft narratives, parse complex asset repositories, and orchestrate page component definitions without relying entirely on the visual editor. Bind your AI local context directly to your Storyblok environment securely, enabling programmatic schema generation and continuous iteration utilizing a streamlined conversational interface designed to accelerate creative velocity.
@@ -51,6 +53,54 @@ Lists content stories within a specific space
 Updates fields of an existing Storyblok story
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Storyblok** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the recent articles from my Storyblok space and detail their structural components."
+
+**🤖 AI Agent:**
+> Connected to your Storyblok space.
+**Recent Stories (`list_stories`)**:
+- `Introduction to LLMs`
+- `Marketing Automation Update`
+- `Platform Change-log`
+
+Inspecting component structure via `get_story_details`:
+- Components: `hero_banner`, `rich_text`, `call_to_action`. Ready for modifications.
+
+---
+
+**👤 You:**
+> "List the structure blueprints by calling list_components and then formulate a new JSON to create a blog story."
+
+**🤖 AI Agent:**
+> Analyzing current schemas...
+
+**Available Components (`list_components`)**:
+- `article_body`
+- `media_header`
+
+Structuring the payload...
+**Created Story (`create_content_story`)**:
+Successfully published the new blog story 'Future Tech' into the content repository.
+
+---
+
+**👤 You:**
+> "List all multimedia assets in my Storyblok space and display their URLs."
+
+**🤖 AI Agent:**
+> Scanning the media repository...
+
+**Assets Discovered (`list_assets`)**:
+- `product_demo.mp4` -> `//a.storyblok.com/.../demo.mp4`
+- `hero_bg.jpg` -> `//a.storyblok.com/.../hero.jpg`
+
+These assets are ready to be integrated into your active story components.
+
+
 ## Installation & Usage
 
 To install and use the **Storyblok** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +109,11 @@ To install and use the **Storyblok** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

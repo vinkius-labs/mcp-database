@@ -1,12 +1,14 @@
 # Europeana MCP Server
 
-Explore millions of cultural heritage items — search artworks, books, and records from European museums and libraries directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/europeana)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/europeana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/europeana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/europeana-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 4
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Explore millions of cultural heritage items — search artworks, books, and records from European museums and libraries directly through your AI agent.
 
 ## Description
 Connect to **Europeana**, the digital heart of Europe's cultural heritage. This MCP server allows your AI agent to search and retrieve metadata for millions of digitized items from thousands of European galleries, libraries, archives, and museums.
@@ -40,6 +42,33 @@ Bulk harvesting of metadata via OAI-PMH
 - **search_records**: Search Europeana metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Europeana** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search Europeana for records related to 'Vermeer' and 'Delft'."
+
+**🤖 AI Agent:**
+> I found several records. Notable items include 'View of Delft' and 'The Little Street'. Would you like the detailed metadata for any of these specific records?
+
+---
+
+**👤 You:**
+> "Get the full record details for collection 9200365 and record BibliographicResource_1000055440343."
+
+**🤖 AI Agent:**
+> Fetching record details... This is a bibliographic resource from the National Library of France. It includes descriptions in multiple languages and links to the digital object. Would you like to see the full metadata profile?
+
+---
+
+**👤 You:**
+> "Retrieve information about the entity 'Leonardo da Vinci' using the entity tool."
+
+**🤖 AI Agent:**
+> I've retrieved the entity data for Leonardo da Vinci. It includes his biographical dates, professional roles (painter, engineer, scientist), and links to related records in the Europeana database.
+
+
 ## Installation & Usage
 
 To install and use the **Europeana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Europeana** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

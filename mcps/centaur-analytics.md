@@ -1,12 +1,14 @@
 # Centaur Analytics MCP Server
 
-Access AI-powered grain monitoring via Centaur — track CO2, moisture, temperature, predict spoilage, and forecast grain quality from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/centaur-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/centaur-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/centaur-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/centaur-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 12
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access AI-powered grain monitoring via Centaur — track CO2, moisture, temperature, predict spoilage, and forecast grain quality from any AI agent.
 
 ## Description
 Connect your **Centaur Analytics Internet-of-Crops API** to any AI agent and take full control of AI-powered grain quality monitoring, predictive spoilage detection, wireless sensor management, and enterprise grain storage intelligence through natural conversation.
@@ -80,6 +82,33 @@ Get AI-powered spoilage risk predictions for a specific grain bin
 Get historical temperature readings to detect hot spots and spoilage heating
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Centaur Analytics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current CO2, moisture, and temperature readings for bin 5."
+
+**🤖 AI Agent:**
+> Fetching current readings for bin 5 (Corn, 78% full)... CO2: 920 ppm (normal, no biological activity detected). Moisture: 14.1% (stable, within safe storage range). Temperature: Average 12.3C across all sensors, max 13.1C at center, min 11.8C at walls. All 24 wireless sensors reporting healthy. Assessment: Grain condition is EXCELLENT — no spoilage indicators detected. CO2 is well below the 1500 ppm warning threshold. Temperature is uniform with no hot spots. Continue routine monitoring. Next full assessment recommended in 7 days.
+
+---
+
+**👤 You:**
+> "What is the AI spoilage prediction for my soybean bin?"
+
+**🤖 AI Agent:**
+> Analyzing AI spoilage predictions for soybean bin (bin ID: SB-2847)... Current risk level: LOW. Predicted days until spoilage: 45+ days. Confidence: 87%. Key indicators: CO2 at 780 ppm (stable trend), moisture at 12.8% (well below critical), temperature uniform at 10.5C. AI recommendation: Current storage conditions are optimal. Soybean quality is expected to remain stable through the next 6 weeks. No intervention required. Schedule next quality assessment in 14 days. Marketing recommendation: Current quality supports premium pricing — consider forward contracting if market conditions are favorable.
+
+---
+
+**👤 You:**
+> "Give me a facility-wide overview of all grain bins and any active alerts."
+
+**🤖 AI Agent:**
+> Generating facility overview... Total bins: 18. Total inventory: 42,300 tonnes. Average CO2: 980 ppm (normal). Average moisture: 13.9% (stable). Active alerts: 2. Alert 1 (WARNING): Bin 7 — Moisture migration detected at top layer, 15.2%. Recommend targeted aeration. Alert 2 (INFO): Bin 12 — Sensor #8 battery at 15%, schedule replacement within 2 weeks. Overall facility risk: LOW. 16 of 18 bins in excellent condition. Facility quality score: 92/100. Priority actions: Address moisture in Bin 7, replace sensor battery in Bin 12. Would you like detailed recommendations for each alert?
+
+
 ## Installation & Usage
 
 To install and use the **Centaur Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Centaur Analytics** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

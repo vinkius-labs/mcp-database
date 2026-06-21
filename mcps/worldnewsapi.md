@@ -1,12 +1,14 @@
 # WorldNewsAPI MCP Server
 
-Search world news — audit articles, top stories, and sources via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/worldnewsapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worldnewsapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/worldnewsapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/worldnewsapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 4
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Search world news — audit articles, top stories, and sources via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire media research and news auditing workflow with **WorldNewsAPI**, the comprehensive source for global journalism. By connecting WorldNewsAPI to your agent, you transform complex keyword searches into a natural conversation. Your agent can instantly retrieve real-time articles, audit top stories by country, and extract metadata from specific news URLs without you ever touching a news portal. Whether you are conducting market analysis or monitoring regional geopolitical shifts, your agent acts as a real-time news analyst, ensuring your intelligence is always verified and precise.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire media research and news auditin
 - **search_world_news**: Search for world news articles by keyword or phrase
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WorldNewsAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for news about 'artificial intelligence' using WorldNewsAPI."
+
+**🤖 AI Agent:**
+> I've retrieved several articles about artificial intelligence! Notable headlines include updates on new model releases and industry regulations. Would you like the full text or the source metadata for any of these stories?
+
+---
+
+**👤 You:**
+> "Show the top stories in 'United Kingdom' in 'English'."
+
+**🤖 AI Agent:**
+> I've identified the top stories for the UK in English! They cover current events from major British publishers. I can provide the summary and direct links for each of these articles if you'd like.
+
+---
+
+**👤 You:**
+> "Extract the news content from 'https://www.bbc.com/news/example-article'."
+
+**🤖 AI Agent:**
+> I've retrieved the article content! The text covers [Summary]. I can also assist you with the publication date and author metadata for this specific link.
+
+
 ## Installation & Usage
 
 To install and use the **WorldNewsAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **WorldNewsAPI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

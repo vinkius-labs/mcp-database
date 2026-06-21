@@ -1,12 +1,14 @@
 # Booking Manager MCP Server
 
-Manage yacht charters via Booking Manager — track yachts, check availability, and manage bookings directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/booking-manager)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/booking-manager)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/booking-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/booking-manager-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage yacht charters via Booking Manager — track yachts, check availability, and manage bookings directly from any AI agent.
 
 ## Description
 Connect your **Booking Manager (MMK Systems)** account to any AI agent and orchestrate your yacht charter and fleet management workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Booking Manager (MMK Systems)** account to any AI agent and orche
 - **list_yachts**: List all available yachts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Booking Manager** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all yachts available in Croatia for June 2024."
+
+**🤖 AI Agent:**
+> I've checked the availability for June in Croatia. I found 12 yachts, including 'Sun Odyssey 440' and 'Lagoon 450'. Would you like price quotes for any of these?
+
+---
+
+**👤 You:**
+> "Show the full equipment list for yacht 102."
+
+**🤖 AI Agent:**
+> Yacht 102 (Bavaria 46) features: GPS Chartplotter, Autopilot, Bimini top, Inverter, and Webasto heating. It also includes 4 cabins and 3 heads.
+
+---
+
+**👤 You:**
+> "Calculate a quote for yacht 105 from 2024-07-06 to 2024-07-13."
+
+**🤖 AI Agent:**
+> Retrieving prices... The total quote for those dates is €3,450.00. This includes a 10% Early Booking discount and mandatory transit log fee of €150.00.
+
+
 ## Installation & Usage
 
 To install and use the **Booking Manager** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Booking Manager** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

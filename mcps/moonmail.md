@@ -1,12 +1,14 @@
 # MoonMail MCP Server
 
-Manage email marketing via MoonMail — track campaigns, subscriber lists, and engagement directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moonmail)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonmail)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moonmail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moonmail-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email marketing via MoonMail — track campaigns, subscriber lists, and engagement directly from your AI agent.
 
 ## Description
 Connect your **MoonMail** account to your AI agent and optimize your email marketing operations through natural conversation.
@@ -45,6 +47,33 @@ Connect your **MoonMail** account to your AI agent and optimize your email marke
 - **send_campaign**: Send an email campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MoonMail** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email campaigns and their status."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 4 active campaigns: 'Weekly Newsletter' (Status: Sent), 'Summer Promo' (Status: Draft), and 2 others. Would you like to see the engagement stats for the Weekly Newsletter?
+
+---
+
+**👤 You:**
+> "How is my 'New Feature Announcement' campaign performing?"
+
+**🤖 AI Agent:**
+> Fetching stats for 'New Feature Announcement' (ID: cmp_123)... The campaign has a 32% open rate and a 5.4% click-through rate so far. Would you like to see the list of recipients who clicked the primary link?
+
+---
+
+**👤 You:**
+> "Add alex@example.com to the 'VIP Customers' list."
+
+**🤖 AI Agent:**
+> Subscribing contact... I've successfully added alex@example.com to your 'VIP Customers' list (ID: lst_987). They are now ready to receive future campaigns sent to this list.
+
+
 ## Installation & Usage
 
 To install and use the **MoonMail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **MoonMail** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

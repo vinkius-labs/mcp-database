@@ -1,12 +1,14 @@
 # Tactile CRM MCP Server
 
-Connect your AI to Tactile CRM. Query companies, read contact details, and evaluate your sales opportunities and pipelines natively from the terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tactile-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tactile-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tactile-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tactile-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI to Tactile CRM. Query companies, read contact details, and evaluate your sales opportunities and pipelines natively from the terminal.
 
 ## Description
 Extend the reach of your **Tactile CRM** databases directly into your AI conversational flow utilizing this official Vinkius MCP connector. By granting your LLM localized parsing privileges, you enable it to operate as an intelligent sales assistant that can explore rich business metadata, track sales progression, and summarize unstructured internal notes strictly without relying on graphical CRM interfaces.
@@ -43,6 +45,46 @@ Extend the reach of your **Tactile CRM** databases directly into your AI convers
 - **list_notes**: Lists general CRM notes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tactile CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the list of sales pipelines and extract the basic contact details for the latest three companies created in the CRM."
+
+**🤖 AI Agent:**
+> Retrieving data via 'list_pipelines' and 'list_companies' securely...
+Found Companies: 'AlphaTech', 'BetaCorp', 'GammaInc'.
+Evaluating specific variables natively via 'get_company_details'...
+
+**Company Meta-Details**:
+- **AlphaTech**: Tech Sector, 5 Active Deals logged (checking 'list_opportunities').
+- **BetaCorp**: Manufacturing, 2 unresolved interaction activities.
+- **GammaInc**: Finance, latest Note: "Wait for Q3 budget approval".
+
+---
+
+**👤 You:**
+> "List all open support tickets related to 'login issues'."
+
+**🤖 AI Agent:**
+> Interrogating Tactile CRM limits ('list_tickets')...
+Found 2 open support entities matching 'login issues':
+1. Ticket #1024: 'Cannot access dashboard' (Priority: High)
+2. Ticket #1055: 'SSO failure on mobile' (Priority: Medium)
+
+---
+
+**👤 You:**
+> "Create a new contact constraint for 'John Doe' assigned to the 'Enterprise' tag."
+
+**🤖 AI Agent:**
+> Executing `create_contact` operation in Tactile...
+Contact 'John Doe' successfully inserted.
+Added organizational tag 'Enterprise'.
+New native ID: `cont-9941`.
+
+
 ## Installation & Usage
 
 To install and use the **Tactile CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +93,11 @@ To install and use the **Tactile CRM** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

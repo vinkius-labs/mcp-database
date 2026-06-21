@@ -1,12 +1,14 @@
 # Sellfy MCP Server
 
-Open your online store in minutes and sell physical products, digital downloads, subscriptions, and print-on-demand merchandise.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sellfy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sellfy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sellfy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sellfy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Open your online store in minutes and sell physical products, digital downloads, subscriptions, and print-on-demand merchandise.
 
 ## Description
 Connect your **Sellfy** store to any AI agent and take full control of your e-commerce operations through natural conversation. Sellfy is the premier platform for creators to sell digital products, physical goods, and subscriptions, and this integration allows you to orchestrate your entire storefront without leaving your chat interface.
@@ -51,6 +53,33 @@ Create a new product
 - **list_subscriptions**: List recurring subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sellfy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all physical products in my Sellfy store."
+
+**🤖 AI Agent:**
+> I've retrieved your products. You have 3 physical items including 'Custom T-Shirt' and 'Signed Poster'. Would you like to check the stock levels for any of them?
+
+---
+
+**👤 You:**
+> "Show me the sales analytics for all digital products this month with revenue breakdown."
+
+**🤖 AI Agent:**
+> Monthly sales analytics. Total revenue: $12,400. Orders: 234. Products sold: 6 categories. "UI Kit Pro" leads with $4,200 (89 sales). "E-book: Design Systems" at $2,800 (140 sales, $19.99 each). "Video Course: React Mastery" at $2,100 (21 sales, $99.99). "Icon Pack Premium" at $1,800 (180 sales, $9.99). "Template Bundle" at $1,100 (22 sales). "Audio Sample Pack" at $400 (40 sales). Average order value: $53. Repeat customers: 34%. Top traffic source: Twitter (42%).
+
+---
+
+**👤 You:**
+> "Create a new digital product listing for a premium Figma design template at $49.99."
+
+**🤖 AI Agent:**
+> Product created: "Premium Dashboard UI Kit - Figma". Price: $49.99. Category: Digital Download. File uploaded: dashboard_ui_kit_v2.fig (34 MB). Description: 120+ components, dark/light modes, responsive layouts. Product page generated with auto-preview thumbnails. SEO: meta title and description optimized. Payment options: credit card, PayPal. Discount code slot: empty (add anytime). Analytics tracking enabled. Shareable link generated. Estimated based on similar products: 15-20 sales/month.
+
+
 ## Installation & Usage
 
 To install and use the **Sellfy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Sellfy** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

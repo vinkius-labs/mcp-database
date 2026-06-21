@@ -1,12 +1,14 @@
 # Plausible MCP Server
 
-Monitor website analytics via Plausible — track visitors, pageviews, and bounce rates directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/plausible)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plausible)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plausible-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plausible-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Monitor website analytics via Plausible — track visitors, pageviews, and bounce rates directly from any AI agent.
 
 ## Description
 Connect your **Plausible Analytics** account to any AI agent and take full control of your website performance metrics through natural conversation.
@@ -49,6 +51,33 @@ Get breakdown by custom property
 - **get_top_sources**: Get top traffic sources
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Plausible** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many visitors are on my site right now?"
+
+**🤖 AI Agent:**
+> There are currently 12 active visitors on your site.
+
+---
+
+**👤 You:**
+> "Show me the top 5 pages by traffic for the last 7 days."
+
+**🤖 AI Agent:**
+> I've retrieved the top pages. The most visited are: 1. Home (/), 2. Pricing (/pricing), 3. Features (/features), 4. Blog (/blog/new-launch), and 5. Contact (/contact).
+
+---
+
+**👤 You:**
+> "What was my bounce rate for the last 30 days?"
+
+**🤖 AI Agent:**
+> Your aggregate bounce rate for the last 30 days was 42.5%.
+
+
 ## Installation & Usage
 
 To install and use the **Plausible** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Plausible** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # DexScreener MCP Server
 
-Real-time DEX trading data — search pairs, track prices, monitor liquidity and volume across all chains.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dexscreener)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dexscreener)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dexscreener-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dexscreener-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** defi
-**Tools Count:** 7
+
+**Category:** [defi](../categories/defi.md)
+
+Real-time DEX trading data — search pairs, track prices, monitor liquidity and volume across all chains.
 
 ## Description
 Connect **DexScreener** to any AI agent and get instant access to real-time DEX market data across all major blockchains. Search tokens, check prices, monitor liquidity, and discover trending tokens — all through natural conversation.
@@ -54,6 +56,33 @@ Get top boosted tokens by total boost amount
 Search for trading pairs on DexScreener
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DexScreener** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for PEPE token pairs and show me the top result."
+
+**🤖 AI Agent:**
+> 📊 **PEPE/ETH** on Ethereum: $0.00000842 | 24h Vol: $45.2M | Liquidity: $12.8M | MC: $3.5B. Top pair on Uniswap V2 with $8.1M daily volume.
+
+---
+
+**👤 You:**
+> "What are the top boosted tokens right now?"
+
+**🤖 AI Agent:**
+> 🔥 Top 3 boosted: 1) **$NEON** (Solana) - 15.2k boosts, 2) **$CAT** (BSC) - 12.8k boosts, 3) **$MOON** (Base) - 9.4k boosts.
+
+---
+
+**👤 You:**
+> "Check prices for SOL, ETH, and MATIC on Ethereum."
+
+**🤖 AI Agent:**
+> 📊 Prices: **SOL** $142.50 (↑3.2%), **ETH** $2,450.30 (↑1.8%), **MATIC** $0.72 (↓0.5%). All showing normal trading volume.
+
+
 ## Installation & Usage
 
 To install and use the **DexScreener** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **DexScreener** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Anyscale MCP Server
 
-Orchestrate your Anyscale infrastructure — manage LLM queries, vectors, services, and cluster batch jobs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/anyscale)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anyscale)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anyscale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anyscale-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 7
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Orchestrate your Anyscale infrastructure — manage LLM queries, vectors, services, and cluster batch jobs directly from your AI agent.
 
 ## Description
 Connect your **Anyscale** environment to your AI agent and manage both AI inference and backend scalable infrastructure natively through natural conversation.
@@ -49,6 +51,33 @@ Generate text completion using Anyscale generic completion API
 - **list_jobs**: List Anyscale batch or training jobs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Anyscale** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active models from my Anyscale cluster."
+
+**🤖 AI Agent:**
+> I've fetched your models. Currently, you have `meta-llama/Llama-2-70b-chat-hf` and `mistralai/Mistral-7B-Instruct-v0.1` ready to receive inference traffic.
+
+---
+
+**👤 You:**
+> "Check the status of our latest training jobs."
+
+**🤖 AI Agent:**
+> Looking up recent jobs. The 'daily_retrain_v3' job succeeded 5 hours ago. However, 'experimental_tuning_7b' was interrupted due to out-of-memory errors on node 12. Would you like me to fetch more service metadata on that specific node?
+
+---
+
+**👤 You:**
+> "Generate vector embeddings for the text: 'The sun rises in the east and sets in the west'"
+
+**🤖 AI Agent:**
+> I've passed the text to your configured Anyscale embedding model. The embedding array generated successfully with 768 dimensions. Since the array is large, I've mapped the output directly to the data pipeline.
+
+
 ## Installation & Usage
 
 To install and use the **Anyscale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Anyscale** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

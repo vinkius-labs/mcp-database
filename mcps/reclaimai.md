@@ -1,12 +1,14 @@
 # Reclaim.ai MCP Server
 
-Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reclaimai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reclaimai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reclaimai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reclaimai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant.
 
 ## Description
 Connect your **Reclaim.ai** intelligent scheduling assistant directly to your AI agent. Enabling this integration turns your AI into an advanced executive assistant, capable of instantly scanning your schedule, managing priorities, and inserting new smart tasks into your Google Calendar effortlessly.
@@ -53,6 +55,33 @@ Lists all tasks managed by Reclaim.ai
 Updates an existing Reclaim.ai task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reclaim.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new task to draft the Q3 analytics report taking 3 hours with P1 priority."
+
+**🤖 AI Agent:**
+> I submitted the `create_task` command for your Q3 analytics report (duration: 180 min, priority: P1). Reclaim has successfully added it to your backlog and is actively attempting to secure dedicated focus blocks on your calendar before any deadlines.
+
+---
+
+**👤 You:**
+> "Delete task with ID 20392."
+
+**🤖 AI Agent:**
+> Using the `delete_task` operation, I have permanently removed the task with ID 20392. Note that any calendar holds or events associated solely with this auto-scheduled task have also been cleared from your calendar.
+
+---
+
+**👤 You:**
+> "Show my time spent analytics between 2024-01-01 and 2024-01-31."
+
+**🤖 AI Agent:**
+> I requested your statistical summary via `get_analytics`. During January 2024, you dedicated roughly 84 hours to 'Deep Work', spent 30 hours locked in manual multi-participant meetings, and sustained your 'Reading' habit strictly spanning 12 aggregate hours across 20 distinct days.
+
+
 ## Installation & Usage
 
 To install and use the **Reclaim.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Reclaim.ai** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

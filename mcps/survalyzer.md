@@ -1,12 +1,14 @@
 # Survalyzer MCP Server
 
-Manage professional surveys, panels, and distribution on Survalyzer with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/survalyzer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/survalyzer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/survalyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/survalyzer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage professional surveys, panels, and distribution on Survalyzer with AI agents.
 
 ## Description
 Connect your **Survalyzer** account to any AI agent to automate your advanced market research and professional survey orchestration. Survalyzer provides a premier platform for complex feedback management, and this integration allows you to browse survey lists, manage panel members, and automate survey distribution through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Survalyzer** account to any AI agent to automate your advanced ma
 - **list_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Survalyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my professional surveys in Survalyzer."
+
+**🤖 AI Agent:**
+> I've retrieved your surveys. You have 3 active projects including 'Employee Engagement 2024' and 'Product Feedback Q1'. Which one would you like to check for responses?
+
+---
+
+**👤 You:**
+> "Show me all active surveys with their response rates and completion analytics."
+
+**🤖 AI Agent:**
+> 6 active surveys. "Customer Satisfaction Q2" (NPS): 456 responses of 2,000 invited (22.8% response rate). NPS score: 67 (Promoters 45%, Passives 32%, Detractors 23%). "Employee Engagement 2025": 89 of 127 employees (70.1%), avg completion time 12 min. "Product Feedback v3": 234 responses (open link, no cap). "Market Research": 67 of 500 panel (13.4%). "Event Feedback": 45 of 120 attendees (37.5%). "Beta Tester Survey": 23 of 50 (46%). Average completion rate across all: 87%. Drop-off point: page 3 (demographic questions).
+
+---
+
+**👤 You:**
+> "Generate a detailed report for the Customer Satisfaction Q2 survey with sentiment analysis."
+
+**🤖 AI Agent:**
+> Customer Satisfaction Q2 Report. Responses: 456 (22.8% rate). NPS: 67 (+5 vs Q1). Overall satisfaction: 4.2/5. By category: Product quality 4.5/5, Customer support 4.1/5, Pricing 3.8/5, Onboarding 4.3/5, Documentation 3.9/5. Sentiment analysis (open-ended): Positive 62%, Neutral 24%, Negative 14%. Top positive themes: "easy to use" (89 mentions), "great support" (67). Top negative themes: "pricing too high" (34), "mobile app needs improvement" (23). Demographic breakdown: Enterprise 4.4/5, SMB 4.0/5, Startup 3.9/5. Report exported as PDF (28 pages).
+
+
 ## Installation & Usage
 
 To install and use the **Survalyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Survalyzer** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

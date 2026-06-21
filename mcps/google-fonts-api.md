@@ -1,12 +1,14 @@
 # Google Fonts API MCP Server
 
-Manage web fonts — audit families, variants, and categories via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-fonts-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-fonts-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-fonts-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-fonts-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage web fonts — audit families, variants, and categories via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire visual design and font auditing workflow with the **Google Fonts API**, the world's most popular source for open-source typography. By connecting Google Fonts to your agent, you transform complex font searches into a natural conversation. Your agent can instantly search for thousands of font families, audit available variants and subsets, and identify trending styles without you ever touching a design portal. Whether you are building brand guidelines or conducting typographic research, your agent acts as a real-time design consultant, ensuring your typography is always expressive and technically precise.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire visual design and font auditing
 - **search_fonts**: Search for fonts by family name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Fonts API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for font family 'Roboto' using Google Fonts API."
+
+**🤖 AI Agent:**
+> I've retrieved the details for Roboto! It belongs to the 'sans-serif' category and has 12 variants, ranging from '100' to '900 italic'. Would you like the full list of supported subsets for this font?
+
+---
+
+**👤 You:**
+> "Show the top 5 most popular fonts on Google Fonts."
+
+**🤖 AI Agent:**
+> I've identified the 5 most popular font families! They include Roboto, Open Sans, Lato, Montserrat, and Oswald. I can provide the category and variant metadata for each of these if you'd like.
+
+---
+
+**👤 You:**
+> "What fonts were recently modified?"
+
+**🤖 AI Agent:**
+> I've retrieved the list of recently updated fonts! Notable entries include [Font Name] and [Font Name], both modified in the last 30 days. I can assist you with an audit of the new variants or styles for these families.
+
+
 ## Installation & Usage
 
 To install and use the **Google Fonts API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Google Fonts API** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

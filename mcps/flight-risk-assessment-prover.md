@@ -1,12 +1,14 @@
 # Flight Risk Assessment Prover MCP Server
 
-A dispatch office cleared a flight into known CB activity with 'proceed with caution.' The crew never returned. Flight Risk Prover forces ICAO SMS-level threat identification with METAR data, 5×5 risk quantification, Swiss Cheese barrier modeling, SHELL/IMSAFE human factors analysis, and explicit GO/NO-GO commitment — eliminating the sycophantic go-bias that kills in aviation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flight-risk-assessment-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flight-risk-assessment-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flight-risk-assessment-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flight-risk-assessment-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** safety & compliance
-**Tools Count:** 1
+
+**Category:** [safety & compliance](../categories/safety-compliance.md)
+
+A dispatch office cleared a flight into known CB activity with 'proceed with caution.' The crew never returned. Flight Risk Prover forces ICAO SMS-level threat identification with METAR data, 5×5 risk quantification, Swiss Cheese barrier modeling, SHELL/IMSAFE human factors analysis, and explicit GO/NO-GO commitment — eliminating the sycophantic go-bias that kills in aviation.
 
 ## Description
 Flight Risk Assessment Prover enforces ICAO Safety Management System rigor across 5 axes that LLMs consistently fail:
@@ -30,6 +32,33 @@ Every lazy shortcut — generic threats, adjective risk, missing barriers, pilot
 Structured reflection tool for ICAO SMS-level flight risk assessment — forces threat identification with measured parameters, risk quantification on the ICAO 5×5 matrix, Swiss Cheese barrier modeling, human factors analysis via SHELL/IMSAFE, and committed GO/NO-GO decisions. Catches Threat Blindness (generic "weather risk" instead of "CB embedded in cold front, tops FL420, movement 250°/25kt, deviation requirement 40nm right of course — adding 15 minutes and 800kg fuel burn to the trip." Every threat must have METAR/TAF data, TEM category, measurable parameters, and exposure duration), Risk Fantasy (adjective-based "medium risk" instead of ICAO 5×5 matrix scoring — "Probability C (Remote) × Severity 3 (Major) = Index 9 (Tolerable with mitigation)" is quantified. "Medium risk" is a feeling, not an assessment), Barrier Amnesia (no Swiss Cheese defense layers — Reason's model requires analysis of Organizational, Supervisory, Preconditions, and Acts layers. When holes ALIGN across all four layers, accidents happen), Human Factors Ignorance (blaming "pilot error" without SHELL model analysis — Software-Hardware-Environment-Liveware-Liveware interfaces. IMSAFE checklist. Fatigue risk: hours since sleep, FDP position, WOCL exposure), and Go-Bias (sycophantic "proceed with caution" when data demands NO-GO — "Proceed with caution" killed 346 people on two 737 MAX flights. GO or NO-GO. Binary. CVR-defensible). Call once per flight risk assessment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flight Risk Assessment Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Assess the flight risk for a B737-800 flight from EDDM to EGLL. Current METAR: EGLL 261450Z 24018G32KT 4000 +RA FEW020CB BKN035 14/11 Q1008. TAF shows CB activity until 1800Z. MEL item: weather radar degraded to 60nm range. Crew: PIC 7,500hrs (1,200 on type), FO 1,800hrs (400 on type). PIC has been awake for 14 hours. FDP at landing will be 10.5hrs of 13hr limit. Approach: ILS CAT I RWY 27L, DA 200ft. Crosswind component: 26kt (limit 33kt wet)."
+
+**🤖 AI Agent:**
+> RISK_ELEVATED — Compound risk identified: CB activity + degraded radar + PIC fatigue (14h awake). ICAO 5×5: weather C3 + radar D2 + fatigue C3. Compound index >15 = Intolerable. Recommendation: NO-GO until CB clears or crew rest.
+
+---
+
+**👤 You:**
+> "Risk assessment for an ATR 72-600 approaching LFLB (Chambéry) at night. METAR: LFLB 261930Z 18008KT 6000 -SN SCT018 OVC025 M01/M04 Q1022. Mountains up to 12,000ft within 10nm. RNAV RWY 18 non-precision approach, MDA 3,200ft. No precision approach available. FO: 900hrs, first time at this airport. PIC reports slight headache."
+
+**🤖 AI Agent:**
+> Multiple barriers compromised: night mountain approach + non-precision + inexperienced FO + PIC health concern (IMSAFE violation). Swiss Cheese alignment detected across 3 layers. Verdict: NO-GO — crew composition inadequate for night non-precision mountain approach.
+
+---
+
+**👤 You:**
+> "Assess compound risk: A320neo, LEMD to LPPT. MEL items: (1) APU inoperative, (2) one pack inoperative (single-pack dispatch), (3) autobrake inoperative. Departure METAR: LEMD 261600Z VRB03KT 0800 FG VV002 — fog, RVR 800m. Destination weather clear. Crew: PIC 11,000hrs, FDP 5hrs. Score each MEL item individually, then score compound risk."
+
+**🤖 AI Agent:**
+> Individual MEL items within limits. Compound risk of 3 simultaneous deferrals + low-visibility departure: cross-check dispatch minima (single-pack may restrict altitude), verify autobrake MEL dispatch conditions vs wet runway, confirm APU-off start procedure. Compound index approaches Intolerable threshold.
+
+
 ## Installation & Usage
 
 To install and use the **Flight Risk Assessment Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -38,4 +67,11 @@ To install and use the **Flight Risk Assessment Prover** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

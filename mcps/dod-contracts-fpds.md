@@ -1,12 +1,14 @@
 # DOD Contracts (FPDS) MCP Server
 
-Search and analyze Department of Defense (DOD) and federal contracts via the FPDS Atom Feed directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dod-contracts-fpds)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dod-contracts-fpds)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dod-contracts-fpds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dod-contracts-fpds-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 1
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search and analyze Department of Defense (DOD) and federal contracts via the FPDS Atom Feed directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **Federal Procurement Data System (FPDS)** to monitor government spending and analyze contract awards in real-time.
@@ -37,6 +39,33 @@ Connect your AI agent to the **Federal Procurement Data System (FPDS)** to monit
 Search federal contracts via FPDS Atom Feed
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DOD Contracts (FPDS)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for DOD contracts related to 'cybersecurity' using search_contracts."
+
+**🤖 AI Agent:**
+> I've searched the FPDS for DOD cybersecurity contracts. I found several entries, including a recent award for 'Network Defense Services' to CyberCorp and a 'Security Operations' contract for the Air Force. Would you like details on a specific entry?
+
+---
+
+**👤 You:**
+> "Find federal contracts for 'Lockheed Martin' using search_contracts."
+
+**🤖 AI Agent:**
+> Querying FPDS for 'Lockheed Martin'... I've retrieved the latest 10 contract actions. They include various aerospace and defense projects across different agencies. Should I list the PIIDs and award amounts for these?
+
+---
+
+**👤 You:**
+> "Get the next 10 results for the DOD 'cloud services' search using search_contracts with start=10."
+
+**🤖 AI Agent:**
+> Fetching the next page of results (records 11-20) for DOD cloud services... I've found additional contracts involving cloud migration and infrastructure support. Would you like me to summarize the vendors involved in this batch?
+
+
 ## Installation & Usage
 
 To install and use the **DOD Contracts (FPDS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **DOD Contracts (FPDS)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

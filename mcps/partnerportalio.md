@@ -1,12 +1,14 @@
 # PartnerPortal.io MCP Server
 
-Manage your partner and reseller programs with deal registration, lead sharing, and performance tracking for channel sales.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/partnerportalio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/partnerportalio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/partnerportalio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/partnerportalio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your partner and reseller programs with deal registration, lead sharing, and performance tracking for channel sales.
 
 ## Description
 Connect your **PartnerPortal.io** account to any AI agent and take full control of your channel sales orchestration and partner relationship management through natural conversation. PartnerPortal.io provides a comprehensive platform for scaling partner ecosystems, and this integration allows you to retrieve lead metadata, monitor active deals, and manage partner accounts directly from your chat interface.
@@ -50,6 +52,33 @@ List leads in PartnerPortal.io
 - **update_lead**: Update an existing lead
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PartnerPortal.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active leads for company ID 12345."
+
+**🤖 AI Agent:**
+> I've retrieved your leads for company 12345. You have 8 active opportunities including 'Acme Corp Upgrade' and 'New Partnership'. Would you like to see the status of any of them?
+
+---
+
+**👤 You:**
+> "Show me all partner organizations and their deal registration pipeline."
+
+**🤖 AI Agent:**
+> You have 34 active partner organizations. Top 5 by deal value: "Meridian Solutions" ($890K in pipeline, 12 active deals), "CloudBridge Partners" ($720K, 8 deals), "TechAlliance" ($540K, 15 deals), "Digital Edge" ($430K, 6 deals), and "NextGen IT" ($380K, 9 deals). Total partner pipeline: $4.2M across 67 registered deals.
+
+---
+
+**👤 You:**
+> "Register a new lead from partner Meridian Solutions for the Acme Corp enterprise opportunity."
+
+**🤖 AI Agent:**
+> Lead registered successfully (ID: lead_4892). Partner: Meridian Solutions. Account: Acme Corp. Opportunity: Enterprise Platform Migration, estimated value $185,000. Status: Pending Approval. The partner manager has been notified for deal validation. Expected close date set to Q3 2025 based on the partner's estimate.
+
+
 ## Installation & Usage
 
 To install and use the **PartnerPortal.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **PartnerPortal.io** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

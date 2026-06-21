@@ -1,12 +1,14 @@
 # Pinpoint MCP Server
 
-Automate recruitment and talent acquisition via Pinpoint — manage jobs, applications, candidates, and interviews directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pinpoint)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinpoint)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinpoint-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinpoint-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 41
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate recruitment and talent acquisition via Pinpoint — manage jobs, applications, candidates, and interviews directly from any AI agent.
 
 ## Description
 Connect your **Pinpoint** ATS account to any AI agent to streamline your hiring process and manage your talent pipeline through natural conversation.
@@ -82,6 +84,33 @@ List jobs in Pinpoint
 - **update_user**: Update an existing user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pinpoint** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active jobs in the Engineering department."
+
+**🤖 AI Agent:**
+> I've found 3 active jobs in Engineering: 'Senior Backend Engineer' (ID: 101), 'DevOps Lead' (ID: 105), and 'Frontend Developer' (ID: 110). Would you like more details on any of these?
+
+---
+
+**👤 You:**
+> "Show me the details for application ID 55443."
+
+**🤖 AI Agent:**
+> Application 55443 is for the 'Product Manager' role. The candidate is currently in the 'Interview' stage. The last update was 2 days ago. Should I list the scheduled interviews for this candidate?
+
+---
+
+**👤 You:**
+> "Get the interview schedule for candidate ID 9988."
+
+**🤖 AI Agent:**
+> Candidate 9988 has one upcoming interview: 'Technical Round' scheduled for tomorrow at 10:00 AM with the Engineering team. Would you like to see the scorecard requirements?
+
+
 ## Installation & Usage
 
 To install and use the **Pinpoint** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -90,4 +119,11 @@ To install and use the **Pinpoint** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

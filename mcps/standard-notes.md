@@ -1,12 +1,14 @@
 # Standard Notes MCP Server
 
-Connect your AI to the Standard Notes encrypted ecosystem. Sync items natively, modify protected notes, and manage tags seamlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/standard-notes)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/standard-notes)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/standard-notes-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/standard-notes-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Connect your AI to the Standard Notes encrypted ecosystem. Sync items natively, modify protected notes, and manage tags seamlessly.
 
 ## Description
 Seamlessly integrate your highly secure **Standard Notes** environments directly into your local AI workflows. Eliminate the friction of manually transferring encrypted data or research logs into your conversational interface. Empower your assistant to execute encrypted synchronizations, draft new secure notes, and systematically organize your knowledge base with precise tag management across your entire architecture.
@@ -54,6 +56,53 @@ Associates a tag with a note
 - **update_note**: Updates an existing note by UUID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Standard Notes** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active tags in my vault. Next, read out the title and UUID strings of my notes so I can assign categorizations properly."
+
+**🤖 AI Agent:**
+> Securely querying local Standard Notes indexes...
+
+**Tag Taxonomies (`list_tags`)**:
+- `Personal Infrastructure` (UUID: a1b2...)
+- `Work Configurations` (UUID: c3d4...)
+- `Project Research` (UUID: x8z1...)
+
+**Vault Notes Retrieved (`list_notes`)**:
+- Title: "Architecture Decisions 2026" [UUID: 99x1...]
+- Title: "NGINX Routing Documentation" [UUID: 88z2...]
+
+Please clarify which specific item you would like me to dissect using `get_item_details`.
+
+---
+
+**👤 You:**
+> "Write a completely new structured document titled 'Q3 Marketing Directives'. Save it to my records mentioning our emphasis on standardizing B2B outreach."
+
+**🤖 AI Agent:**
+> Generating structured output through the `create_note` implementation...
+
+- **Metadata Title**: *Q3 Marketing Directives*
+- **Generated Body Content**: *This quarter demands a robust standardization of our B2B pipeline strategies. Client outreach synchronization will be prioritized...*
+
+**STATUS: VAULT RECORD SAVED ✅**
+The isolated item UUID generated from the central server was successfully registered locally.
+
+---
+
+**👤 You:**
+> "System cleanup required. Permanently delete the draft attached to UUID 'note-xyz1' leveraging the standard removal procedures."
+
+**🤖 AI Agent:**
+> Verifying constraints for permanent destruction. Transmitting standard secure vectors across endpoints matching target ID to `delete_item` protocols... Targeted File: `note-xyz1`.
+
+**PERMANENT ERASURE CONFIRMED 🗑️**
+The item correlating to your input parameter UUID has been entirely removed from the persistent repository securely.
+
+
 ## Installation & Usage
 
 To install and use the **Standard Notes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +111,11 @@ To install and use the **Standard Notes** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

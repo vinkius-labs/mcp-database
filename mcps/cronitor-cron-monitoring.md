@@ -1,12 +1,14 @@
 # Cronitor (Cron Monitoring) MCP Server
 
-Monitor cron jobs, heartbeats, and websites. Track performance, receive alerts, and manage uptime directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cronitor-cron-monitoring)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cronitor-cron-monitoring)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cronitor-cron-monitoring-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cronitor-cron-monitoring-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 44
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Monitor cron jobs, heartbeats, and websites. Track performance, receive alerts, and manage uptime directly from your AI agent.
 
 ## Description
 Connect **Cronitor** to your AI agent to gain full visibility into your background jobs, heartbeats, and website uptime through natural conversation.
@@ -87,6 +89,33 @@ Send telemetry events (pings, metrics)
 - **update_status_page**: Update status pages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cronitor (Cron Monitoring)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active monitors and show their current status."
+
+**🤖 AI Agent:**
+> I've retrieved your monitors. You have 12 active monitors. 10 are 'Healthy', but 'nightly-db-backup' is currently 'Failing' and 'api-health-check' is 'Paused'.
+
+---
+
+**👤 You:**
+> "Get the P50 duration metrics for the last 24 hours."
+
+**🤖 AI Agent:**
+> Fetching performance data... The P50 duration across all monitors for the last 24h is 145ms. Would you like to see the breakdown by specific monitor?
+
+---
+
+**👤 You:**
+> "Pause the 'data-sync' monitor for the next 4 hours."
+
+**🤖 AI Agent:**
+> The 'data-sync' monitor has been successfully paused for 4 hours. Alerts will be silenced until the pause expires or you resume it manually.
+
+
 ## Installation & Usage
 
 To install and use the **Cronitor (Cron Monitoring)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -95,4 +124,11 @@ To install and use the **Cronitor (Cron Monitoring)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

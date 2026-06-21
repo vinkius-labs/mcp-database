@@ -1,12 +1,14 @@
 # Ayanza MCP Server
 
-AI-powered project management and team collaboration — manage tasks, projects, and wikis via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ayanza)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ayanza)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ayanza-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ayanza-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 10
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+AI-powered project management and team collaboration — manage tasks, projects, and wikis via AI.
 
 ## Description
 Orchestrate your team's rhythm with **Ayanza**, the AI-first project management platform designed for modern velocity. By connecting Ayanza to your AI agent, you transform project oversight from a manual chore into a natural conversation. Your agent gains the power to navigate complex task workflows, access team wikis, and manage project milestones without you ever opening a dashboard. It’s not just about tracking tasks; it’s about giving your agent the context it needs to act as a digital coordinator within your workspace.
@@ -46,6 +48,33 @@ Orchestrate your team's rhythm with **Ayanza**, the AI-first project management 
 - **update_task**: Update an existing Ayanza task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ayanza** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my tasks in Ayanza."
+
+**🤖 AI Agent:**
+> I've retrieved your tasks from Ayanza. You have 5 active tasks, including 'Prepare Q4 presentation' and 'Review team goals'. Would you like me to update the status of any of these?
+
+---
+
+**👤 You:**
+> "Create a new task called 'Prepare Q4 presentation'."
+
+**🤖 AI Agent:**
+> Task 'Prepare Q4 presentation' has been successfully created in Ayanza. I've set it to the default status. Would you like me to add a description or assign it to a project?
+
+---
+
+**👤 You:**
+> "Show my wiki pages in Ayanza."
+
+**🤖 AI Agent:**
+> I've listed your Ayanza wiki pages. You have access to 'Onboarding Guide', 'Tech Specs', and 'Marketing Strategy'. Which page would you like me to read for you?
+
+
 ## Installation & Usage
 
 To install and use the **Ayanza** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Ayanza** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

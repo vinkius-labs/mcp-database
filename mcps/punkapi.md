@@ -1,12 +1,14 @@
 # PunkAPI MCP Server
 
-Explore BrewDog's beer catalog — search by name, style, ABV, IBU, hops, food pairing and get random beer suggestions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/punkapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/punkapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/punkapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/punkapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Explore BrewDog's beer catalog — search by name, style, ABV, IBU, hops, food pairing and get random beer suggestions.
 
 ## Description
 Connect to **PunkAPI** and explore BrewDog's DIY Dog beer catalog through natural conversation — completely free, no API key needed.
@@ -61,6 +63,33 @@ Search beers by style
 Get random beer(s) from the catalog
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PunkAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Give me a random beer suggestion."
+
+**🤖 AI Agent:**
+> Punk IPA (5.4% ABV, 35 IBU) — A post-modern classic. Juicy, tropical and citrusy with Cascade, Amarillo and Centennial hops. Pairs well with spicy Indian food.
+
+---
+
+**👤 You:**
+> "Find me beers that pair well with cheese."
+
+**🤖 AI Agent:**
+> Found 15 beers that pair with cheese including: Dead Pony Club (light, session), 5AM Saint (amber ale), Hardcore IPA (strong IPA), Tokyo Rising (dark, intense).
+
+---
+
+**👤 You:**
+> "Show me all BrewDog IPAs."
+
+**🤖 AI Agent:**
+> Found 20+ IPAs including: Punk IPA (5.4%, classic), Elvis Juice (6.5%, grapefruit), Hazy Jane (5%, New England style), Punk AF (0.5%, non-alcoholic), Lost Lager (4.5%). Each with full hop profiles and food pairings.
+
+
 ## Installation & Usage
 
 To install and use the **PunkAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **PunkAPI** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

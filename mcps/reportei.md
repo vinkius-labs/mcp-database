@@ -1,12 +1,14 @@
 # Reportei MCP Server
 
-Generate marketing performance reports from Google, Facebook, and Instagram data in minutes for client presentations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reportei)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reportei)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reportei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reportei-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate marketing performance reports from Google, Facebook, and Instagram data in minutes for client presentations.
 
 ## Description
 Connect your **Reportei** account to any AI agent and take full control of your digital marketing orchestration and reporting workflows through natural conversation. Reportei provides a premier platform for consolidating metrics from social networks and ad platforms, and this integration allows you to retrieve project metadata, monitor report generation, and log important timeline events directly from your chat interface.
@@ -49,6 +51,33 @@ List generated reports
 - **list_reportei_timeline**: List timeline events
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reportei** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing projects in my Reportei account."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 3 active environments including 'Vinkius Growth' and 'Social Media Client A'. Which one would you like to see metrics for?
+
+---
+
+**👤 You:**
+> "Generate a comprehensive marketing report for all social media channels from last month."
+
+**🤖 AI Agent:**
+> Marketing report generated for April 2025. Instagram: 12,400 followers (+3.2%), 234K reach, 8,900 engagements (4.1% rate). Facebook: 8,900 page likes, 156K reach, 3,400 engagements. LinkedIn: 5,600 followers (+5.8%), 89K impressions, 1,200 engagements. Twitter/X: 4,200 followers, 67K impressions. TikTok: 2,800 followers (+12%), 445K views. Cross-channel totals: 997K total reach, 14,700 engagements. Top performing post: Instagram Reel with 45K views. Report exported as PDF with charts.
+
+---
+
+**👤 You:**
+> "Show me all projects and their connected integrations with data freshness status."
+
+**🤖 AI Agent:**
+> 8 active projects. "Main Brand" has 6 integrations: Google Analytics (synced 2h ago), Instagram (synced 1h ago), Facebook (synced 1h ago), LinkedIn (synced 3h ago), Google Ads (synced 2h ago), YouTube (synced 4h ago). "Client: Meridian" has 4 integrations: Google Analytics, Instagram, Facebook, Google Ads (all synced within 2h). "Client: TechFlow" has 3 integrations. 5 additional client projects with combined 18 integrations. All connections healthy. 1 integration warning: LinkedIn token expires in 5 days.
+
+
 ## Installation & Usage
 
 To install and use the **Reportei** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Reportei** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

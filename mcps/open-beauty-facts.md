@@ -1,12 +1,14 @@
 # Open Beauty Facts MCP Server
 
-Universal cosmetics intelligence — search ingredients, allergens, and brands via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-beauty-facts)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-beauty-facts)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-beauty-facts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-beauty-facts-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 2
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Universal cosmetics intelligence — search ingredients, allergens, and brands via AI.
 
 ## Description
 Equip your AI agent with the definitive open database for cosmetic products through the **Open Beauty Facts** MCP server. This integration provides real-time access to a collaborative database of beauty products from around the world. Your agent can search for cosmetics by name or barcode, retrieve detailed lists of ingredients (INCI), and identify potential allergens or restricted substances. Whether you are auditing your skincare routine, researching cosmetic formulations, or verifying product claims, your agent acts as a dedicated personal care specialist through natural conversation.
@@ -37,6 +39,33 @@ Equip your AI agent with the definitive open database for cosmetic products thro
 - **search_beauty_products**: Search for beauty products by category
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Beauty Facts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for cosmetic products from the brand 'Nivea'."
+
+**🤖 AI Agent:**
+> Searching the Open Beauty Facts database... I've found a wide range of products from Nivea, including face creams, body lotions, and sunscreens. Would you like to see the ingredients for a specific product?
+
+---
+
+**👤 You:**
+> "What are the ingredients in the product with barcode '4005900130778'?"
+
+**🤖 AI Agent:**
+> Retrieving product details... This barcode belongs to a Nivea Creme. The main ingredients include Water, Paraffinum Liquidum, Cera Microcristallina, Glycerin, and Lanolin Alcohol. It also contains several fragrance components.
+
+---
+
+**👤 You:**
+> "Identify potential allergens in 'La Roche-Posay Anthelios'."
+
+**🤖 AI Agent:**
+> Analyzing the product data... For the Anthelios sunscreen line, I've identified that most formulations are designed for sensitive skin, but some versions may contain Alcohol Denat or specific preservatives. I can provide the full list for a specific variant.
+
+
 ## Installation & Usage
 
 To install and use the **Open Beauty Facts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **Open Beauty Facts** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

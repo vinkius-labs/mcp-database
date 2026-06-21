@@ -1,12 +1,14 @@
 # Chuanglan 253 MCP Server
 
-Ultra-high volume SMS & 1-click login API — send verification codes, notifications, and bulk messages globally via Chuanglan 253.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanglan-253-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chuanglan-253-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chuanglan-253-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chuanglan-253-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Ultra-high volume SMS & 1-click login API — send verification codes, notifications, and bulk messages globally via Chuanglan 253.
 
 ## Description
 Connect your **Chuanglan 253** SMS gateway to any AI agent and transform your communication workflows through natural conversation. Chuanglan (创蓝) is one of China's largest CPaaS providers, handling billions of SMS messages monthly for verification, notifications, and marketing.
@@ -70,6 +72,33 @@ Send a verification code SMS (1-click login style)
 Send a voice verification call with a code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chuanglan 253** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a verification code 837462 to phone number 8615800000000."
+
+**🤖 AI Agent:**
+> ✅ Verification code sent successfully! Message ID: 162575412960104448. The code 837462 has been delivered to 8615800000000. You can track delivery status using the message ID if needed.
+
+---
+
+**👤 You:**
+> "Check my SMS balance and account status."
+
+**🤖 AI Agent:**
+> 📊 Your Chuanglan account is active with a balance of 15,847 SMS credits. You have sufficient quota for bulk campaigns. Account status: Active, all features enabled (domestic SMS, international SMS, voice verification).
+
+---
+
+**👤 You:**
+> "What's the delivery status of message ID 162575412960104448?"
+
+**🤖 AI Agent:**
+> 📬 Message ID 162575412960104448 status: DELIVRD (Delivered successfully). Delivered at 2024-01-15 14:32:07. The verification code reached the recipient's device.
+
+
 ## Installation & Usage
 
 To install and use the **Chuanglan 253** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Chuanglan 253** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

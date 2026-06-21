@@ -1,12 +1,14 @@
 # IMDB API (Unofficial) MCP Server
 
-Search movies and TV shows — audit ratings, cast, and metadata via IA.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/imdb-api-unofficial)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imdb-api-unofficial)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/imdb-api-unofficial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/imdb-api-unofficial-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 4
+
+**Category:** [data-management](../categories/data-management.md)
+
+Search movies and TV shows — audit ratings, cast, and metadata via IA.
 
 ## Description
 Empower your AI agent to orchestrate your entire cinematic research and media auditing workflow with the **IMDB API (Unofficial)**, the comprehensive source for global film and television metadata. By connecting this IMDB intelligence to your agent, you transform complex movie searches into a natural conversation. Your agent can instantly search for titles, audit audience ratings, and retrieve detailed cast metadata without you ever touching a film database. Whether you are conducting industry research or managing local viewing constraints, your agent acts as a real-time cinematic consultant, ensuring your data is always comprehensive and up-to-the-minute.
@@ -42,6 +44,33 @@ Get full metadata and synopsis for a specific IMDB title by ID
 - **search_imdb_movies**: Search for movies and TV shows on IMDB
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IMDB API (Unofficial)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'Inception' using IMDB."
+
+**🤖 AI Agent:**
+> I've retrieved the details for Inception! It was released in 2010 and has a rating of 8.8/10. Would you like the full cast list or the technical metadata for this title?
+
+---
+
+**👤 You:**
+> "Show the cast for movie with ID 'tt0111161' (The Shawshank Redemption)."
+
+**🤖 AI Agent:**
+> I've identified the cast for The Shawshank Redemption! Notable actors include Tim Robbins as Andy Dufresne and Morgan Freeman as Ellis Boyd 'Red' Redding. I can provide the full list of crew metadata if you'd like.
+
+---
+
+**👤 You:**
+> "Search for TV shows about 'space' on IMDB."
+
+**🤖 AI Agent:**
+> I've identified several space-themed series! Notable entries include 'The Expanse' and 'Star Trek'. I can provide the ratings and synopsis metadata for each of these titles to assist in your research.
+
+
 ## Installation & Usage
 
 To install and use the **IMDB API (Unofficial)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **IMDB API (Unofficial)** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ReliefWeb MCP Server
 
-Access humanitarian reports, disaster data, job postings and organizational data from the world's leading humanitarian information platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reliefweb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reliefweb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reliefweb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reliefweb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 9
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access humanitarian reports, disaster data, job postings and organizational data from the world's leading humanitarian information platform.
 
 ## Description
 Connect to **ReliefWeb** and explore the world's largest humanitarian information database through natural conversation — no API key needed.
@@ -63,6 +65,33 @@ Get report sources
 Get report themes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ReliefWeb** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find situation reports about earthquakes in Turkey."
+
+**🤖 AI Agent:**
+> Found 45+ reports about earthquakes in Turkey. Recent situation reports from UN OCHA, IFRC and local organizations include damage assessments, casualty figures and humanitarian response updates.
+
+---
+
+**👤 You:**
+> "What disasters are currently active?"
+
+**🤖 AI Agent:**
+> Currently tracked disasters: Cyclone Freddy (Mozambique/Malawi, orange alert), Earthquake M6.8 (Japan), Floods (Kenya), Drought (Horn of Africa). Each with affected population estimates and response status.
+
+---
+
+**👤 You:**
+> "Show me humanitarian job postings in South Sudan."
+
+**🤖 AI Agent:**
+> Found 12 humanitarian jobs in South Sudan: WASH Coordinator (Save the Children), Health Manager (MSF), Protection Officer (UNHCR), Logistics Coordinator (WFP). All with application deadlines and organization details.
+
+
 ## Installation & Usage
 
 To install and use the **ReliefWeb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **ReliefWeb** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

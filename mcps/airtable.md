@@ -1,12 +1,14 @@
 # Airtable MCP Server
 
-Connect your Airtable bases to your AI agent — query records, edit spreadsheets, and build automated workflows naturally via chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airtable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airtable-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Connect your Airtable bases to your AI agent — query records, edit spreadsheets, and build automated workflows naturally via chat.
 
 ## Description
 Connect your **Airtable** account to your AI agent to transform static data into intelligent, conversational spreadsheet workflows.
@@ -46,6 +48,42 @@ Search records with formulas
 - **get_base_metadata**: Get base schema
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Airtable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all tables available inside my 'Product Roadmap' base."
+
+**🤖 AI Agent:**
+> In the base 'Product Roadmap', I found 4 tables:
+1. Features (ID: tblXy01)
+2. Epics (ID: tblXy02)
+3. Team Members (ID: tblXy03)
+4. Sprint Schedule (ID: tblXy04)
+Would you like me to query recent records from any of them?
+
+---
+
+**👤 You:**
+> "Find all records in the 'Leads' table where the 'Status' is 'In Progress'."
+
+**🤖 AI Agent:**
+> I've fetched 3 leads that match your criteria:
+1. Acme Corp - Value: $10,000 - Last Contact: Yesterday
+2. Hooli Tech - Value: $4,500 - Last Contact: 3 days ago
+3. Initech - Value: $1,200 - Last Contact: Today
+Should I compose a follow-up email draft for them?
+
+---
+
+**👤 You:**
+> "Create a new record in the 'Tasks' table assigned to Mark with the title 'Review design assets' and mark it 'Urgent'."
+
+**🤖 AI Agent:**
+> Done. Created record `rec9A8B7` in the Tasks table. The title is 'Review design assets', Assignee is set to 'Mark', and Priority is mapped to the 'Urgent' single-select parameter successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Airtable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +92,11 @@ To install and use the **Airtable** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

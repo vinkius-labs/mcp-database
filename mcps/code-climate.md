@@ -1,12 +1,14 @@
 # Code Climate MCP Server
 
-Manage code quality and engineering metrics via Code Climate — track repository grades, monitor snapshots, and audit test coverage directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/code-climate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/code-climate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/code-climate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/code-climate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage code quality and engineering metrics via Code Climate — track repository grades, monitor snapshots, and audit test coverage directly from any AI agent.
 
 ## Description
 Connect your **Code Climate** account to any AI agent and take full control of your automated code reviews and engineering intelligence through natural conversation. Streamline how you monitor maintainability and test coverage across your repositories natively.
@@ -45,6 +47,33 @@ Connect your **Code Climate** account to any AI agent and take full control of y
 - **list_codeclimate_webhooks**: List all configured webhooks for a specific repository
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Code Climate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my repositories in Code Climate."
+
+**🤖 AI Agent:**
+> Retrieving your repositories... I found 5 analyzed projects: 'core-api' (Grade: A), 'frontend-app' (Grade: B), 'mcp-connectors' (Grade: A), and 2 others. Which one would you like to see snapshots for?
+
+---
+
+**👤 You:**
+> "What is the current test coverage for the 'core-api' repository?"
+
+**🤖 AI Agent:**
+> Checking test coverage for core-api... The most recent report shows 85.4% coverage. This is a 2% increase compared to the previous analysis.
+
+---
+
+**👤 You:**
+> "Show me the last 5 analysis snapshots for 'frontend-app'."
+
+**🤖 AI Agent:**
+> Retrieving snapshots for frontend-app... I found 5 recent snapshots. The latest was triggered by commit 'abc1234' yesterday, with a maintainability rating of 'B' and 12 issues identified.
+
+
 ## Installation & Usage
 
 To install and use the **Code Climate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Code Climate** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

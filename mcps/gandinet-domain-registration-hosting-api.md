@@ -1,12 +1,14 @@
 # Gandi.net (Domain Registration & Hosting API) MCP Server
 
-Manage Gandi.net domains, DNS records, mailboxes, and hosting instances directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gandinet-domain-registration-hosting-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gandinet-domain-registration-hosting-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gandinet-domain-registration-hosting-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gandinet-domain-registration-hosting-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 14
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Gandi.net domains, DNS records, mailboxes, and hosting instances directly from your AI agent.
 
 ## Description
 Connect your **Gandi.net** account to any AI agent to automate domain management, DNS configuration, and hosting oversight through natural language.
@@ -49,6 +51,33 @@ Connect your **Gandi.net** account to any AI agent to automate domain management
 - **update_dns_record**: Update an existing DNS record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gandi.net (Domain Registration & Hosting API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all domains in my Gandi account."
+
+**🤖 AI Agent:**
+> I've retrieved your domain list. You have 3 domains: 'example.com', 'my-portfolio.net', and 'dev-site.org'. Would you like more details on any of these?
+
+---
+
+**👤 You:**
+> "Check if 'cool-new-app.io' is available for registration."
+
+**🤖 AI Agent:**
+> Checking availability for 'cool-new-app.io'... Good news! The domain is currently available for registration. Would you like to know the next steps?
+
+---
+
+**👤 You:**
+> "Show me the DNS records for 'example.com'."
+
+**🤖 AI Agent:**
+> Fetching DNS records for 'example.com'... I found 4 records: an A record pointing to 93.184.216.34, two MX records for mail, and a TXT record for verification. Do you need to modify any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Gandi.net (Domain Registration & Hosting API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gandi.net (Domain Registration & Hosting API)** MCP ser
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

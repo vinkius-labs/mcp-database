@@ -1,12 +1,14 @@
 # Close MCP Server
 
-Close more deals with a CRM that puts calling, emailing, and pipeline management in one fast interface built for inside sales.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/close-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/close-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/close-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/close-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 6
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Close more deals with a CRM that puts calling, emailing, and pipeline management in one fast interface built for inside sales.
 
 ## Description
 Connect your **Close** CRM account to any AI agent and take full control of your sales workflows through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Close** CRM account to any AI agent and take full control of your
 - **list_crm_tasks**: List CRM tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Close** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my leads in Close and highlight the ones added this week."
+
+**🤖 AI Agent:**
+> I retrieved 47 leads from your Close account. 5 were added this week: 'Acme Corp' (lead_8291), 'TechFlow Inc' (lead_8294), 'DataBridge Solutions' (lead_8297), 'NovaPay' (lead_8301), and 'Quantum Systems' (lead_8305). Would you like to see the full details for any of these?
+
+---
+
+**👤 You:**
+> "Create a new lead for the company 'Nordic AI Labs' with their website nordicailabs.com."
+
+**🤖 AI Agent:**
+> Done! Lead created successfully. The new Lead ID is lead_8312 for 'Nordic AI Labs' with URL nordicailabs.com. The record is now active in your pipeline. Would you like me to check for existing opportunities or create a follow-up task?
+
+---
+
+**👤 You:**
+> "Show my active sales opportunities and any overdue tasks I need to handle."
+
+**🤖 AI Agent:**
+> You have 12 active opportunities worth a total of $284,500. The top 3 by value: 'Enterprise Deal - Acme Corp' ($85,000, Negotiation stage), 'DataBridge Annual Contract' ($52,000, Proposal stage), and 'TechFlow Migration' ($41,000, Demo stage). You also have 3 overdue tasks: a call with Acme Corp (2 days late), a proposal follow-up for DataBridge (1 day late), and a meeting note for NovaPay (3 days late).
+
+
 ## Installation & Usage
 
 To install and use the **Close** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Close** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

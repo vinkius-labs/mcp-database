@@ -1,12 +1,14 @@
 # Hacker News MCP Server
 
-Access Hacker News stories, comments, and user profiles directly from your AI agent to stay updated on the latest tech trends.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hacker-news-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hacker-news-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hacker-news-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hacker-news-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Hacker News stories, comments, and user profiles directly from your AI agent to stay updated on the latest tech trends.
 
 ## Description
 Connect to the **Hacker News** API to browse the pulse of the developer community directly through your AI agent.
@@ -45,6 +47,33 @@ Connect to the **Hacker News** API to browse the pulse of the developer communit
 - **get_user**: Get details for a specific Hacker News user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hacker News** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the top 5 stories on Hacker News right now?"
+
+**🤖 AI Agent:**
+> I'll fetch the top stories for you. Using `get_top_stories`, I've found the current leaders: 1. 'New LLM release' (ID: 123), 2. 'Open Source Database' (ID: 124)... Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "Get the profile details and karma for user 'pg'."
+
+**🤖 AI Agent:**
+> Fetching profile for 'pg' via `get_user`... Paul Graham has 156,000 karma and has been a member since 2006. He has submitted over 10,000 items. Would you like to see his recent submissions?
+
+---
+
+**👤 You:**
+> "Tell me more about the story with ID 42301234."
+
+**🤖 AI Agent:**
+> Inspecting item 42301234 using `get_item`... This is a story titled 'The Future of MCP' by user 'techie'. It has 450 points and 82 comments. The URL points to a GitHub repository. Should I summarize the comments for you?
+
+
 ## Installation & Usage
 
 To install and use the **Hacker News** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Hacker News** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

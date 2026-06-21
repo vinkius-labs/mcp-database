@@ -1,12 +1,14 @@
 # Helicone (LLM Observability) MCP Server
 
-Monitor LLM usage via Helicone — track requests, analyze costs, measure latency, and manage prompts.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/helicone-llm-observability)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helicone-llm-observability)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helicone-llm-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helicone-llm-observability-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Monitor LLM usage via Helicone — track requests, analyze costs, measure latency, and manage prompts.
 
 ## Description
 Connect your **Helicone** account to any AI agent and take full control of your LLM observability and gateway monitoring through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Helicone** account to any AI agent and take full control of your 
 - **get_prompt_versions**: Irreversibly vaporize explicit validations extracting rich Churn flags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Helicone (LLM Observability)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How much did we spend on GPT-4o yesterday?"
+
+**🤖 AI Agent:**
+> Yesterday, you spent a total of $42.15 on GPT-4o across 12,450 requests. The largest portion came from the 'Customer Support' feature tag ($28.40). Would you like a breakdown by user?
+
+---
+
+**👤 You:**
+> "Show me the 10 slowest requests from the last hour"
+
+**🤖 AI Agent:**
+> I've identified the 10 slowest requests. The highest TTFT was 4.2s for an 'anthropic.claude-3-opus' call. Average latency for these 10 is 3.1s. Would you like to inspect the prompt for the slowest one?
+
+---
+
+**👤 You:**
+> "List all versions for the 'customer-service-bot' prompt"
+
+**🤖 AI Agent:**
+> Found 5 versions for 'customer-service-bot'. Version 5 (latest) was deployed 2 days ago with updated grounding rules. Version 4 was active for 3 months. I can fetch the exact instruction text for any version.
+
+
 ## Installation & Usage
 
 To install and use the **Helicone (LLM Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Helicone (LLM Observability)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

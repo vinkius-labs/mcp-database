@@ -1,12 +1,14 @@
 # Musixmatch MCP Server
 
-Access the world's largest lyrics database — search tracks, retrieve synchronized subtitles, and explore global music charts directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/musixmatch-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/musixmatch-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 21
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Access the world's largest lyrics database — search tracks, retrieve synchronized subtitles, and explore global music charts directly from your AI agent.
 
 ## Description
 Connect your **Musixmatch** developer account to any AI agent and unlock deep access to millions of lyrics, track metadata, and music charts through natural conversation.
@@ -56,6 +58,33 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 - **search_tracks**: Search for a track in the Musixmatch catalogue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Musixmatch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for tracks with the lyrics 'is this the real life' and tell me the artist."
+
+**🤖 AI Agent:**
+> I found the track! It's 'Bohemian Rhapsody' by the legendary band Queen. Would you like me to fetch the full lyrics for you?
+
+---
+
+**👤 You:**
+> "Show me the top 5 tracks currently trending in the United Kingdom."
+
+**🤖 AI Agent:**
+> Fetching the UK charts... The top 5 tracks are: 1. 'Flowers' by Miley Cyrus, 2. 'Kill Bill' by SZA... [etc]. Would you like to see the lyrics for any of these?
+
+---
+
+**👤 You:**
+> "Get the synchronized subtitles for the track 'Imagine' by John Lennon."
+
+**🤖 AI Agent:**
+> I've retrieved the synchronized subtitles for 'Imagine'. They are in LRC format, starting with: [00:14.63] Imagine there's no heaven... Would you like the full file?
+
+
 ## Installation & Usage
 
 To install and use the **Musixmatch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Musixmatch** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Strava Social MCP Server
 
-Explore Strava activities feed, kudos, comments, clubs, and discover new segments.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-social)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-social)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-social-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-social-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Explore Strava activities feed, kudos, comments, clubs, and discover new segments.
 
 ## Description
 Connect **Strava Social** to any AI agent and explore the social side of Strava — activity feeds, kudos, comments, club memberships, and segment discovery.
@@ -68,6 +70,33 @@ Get the list of athletes who gave kudos (likes) to a specific activity
 List all segments starred (favorited) by the authenticated athlete
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Strava Social** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my recent activities."
+
+**🤖 AI Agent:**
+> Recent activities: 1) Morning Ride — 45.2 km, 1h32m, 520m elev, 12 kudos. 2) Easy Run — 8.5 km, 42min, 85m elev, 8 kudos. 3) Recovery Ride — 22 km, 48min, 120m elev, 5 kudos. 4) Tempo Run — 10 km, 38min, 95m elev, 15 kudos.
+
+---
+
+**👤 You:**
+> "Explore cycling segments in Manhattan, NYC."
+
+**🤖 AI Agent:**
+> Found 25 segments in Manhattan. Top climbs: 1) Cat 1 climb: West Side Highway (2.1 km, 4.2% avg) — 3,420 efforts. 2) Cat 3: Central Park North Hill (0.8 km, 8.1% avg) — 1,890 efforts. 3) Cat 4: Broadway Sprint (1.5 km, 2.1% avg) — 2,150 efforts. Most attempted: Central Park Full Loop (6.2 km).
+
+---
+
+**👤 You:**
+> "Show comments on my latest activity."
+
+**🤖 AI Agent:**
+> Found 5 comments: 1) Sarah M.: "Great pace on that ride! 💪" 2) Tom K.: "Nice work! How did the new route feel?" 3) Lisa P.: "Solid effort 🚴" 4) Mike R.: "Let's do this route together next week" 5) Anna D.: "Impressive elevation gain!"
+
+
 ## Installation & Usage
 
 To install and use the **Strava Social** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Strava Social** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

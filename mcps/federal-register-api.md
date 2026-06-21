@@ -1,12 +1,14 @@
 # Federal Register API MCP Server
 
-Access US public documents — audit rules and agencies via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/federal-register-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/federal-register-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/federal-register-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/federal-register-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 4
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access US public documents — audit rules and agencies via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire public policy research and document auditing workflow with the **Federal Register API**, the authoritative source for United States government rules and notices. By connecting the Federal Register to your agent, you transform complex administrative searches into a natural conversation. Your agent can instantly retrieve active document details, audit agency publications, and query specific rule metadata without you ever touching a government portal. Whether you are conducting regulatory research or managing regional policy constraints, your agent acts as a real-time administrative consultant, ensuring your data is always verified and precise.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire public policy research and docu
 - **search_federal_documents**: Search for public documents and rules in the Federal Register
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Federal Register API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for documents about 'environmental protection' in the Federal Register."
+
+**🤖 AI Agent:**
+> I've retrieved several documents about environmental protection! Notable entries include rules from the EPA and notices regarding new sustainability standards. Would you like the full details for the top matches or the agency metadata?
+
+---
+
+**👤 You:**
+> "Show details for Federal Register document '2023-00001'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for document 2023-00001! It is titled [Title] and was published by [Agency]. I can provide the official link to the full text and the publication date metadata for you.
+
+---
+
+**👤 You:**
+> "List all agencies that publish in the Federal Register."
+
+**🤖 AI Agent:**
+> I've scanned the agency catalog! There are hundreds of federal entities listed, including the EPA, Department of Energy, and the FDA. I can help you search for specific documents from any of these thematic clusters.
+
+
 ## Installation & Usage
 
 To install and use the **Federal Register API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Federal Register API** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

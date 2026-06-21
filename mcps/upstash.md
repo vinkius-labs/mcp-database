@@ -1,12 +1,14 @@
 # Upstash MCP Server
 
-Manage serverless Redis via Upstash REST API — execute commands, manage data structures and monitor your database from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upstash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upstash-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 23
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage serverless Redis via Upstash REST API — execute commands, manage data structures and monitor your database from any AI agent.
 
 ## Description
 Connect your **Upstash** Redis database to any AI agent and interact with your serverless data store through natural conversation — no Redis CLI needed.
@@ -108,6 +110,33 @@ Get the TTL of a key in Upstash Redis
 - **key_type**: Get the data type of a key in Upstash Redis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Upstash** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if my Upstash Redis database is responding."
+
+**🤖 AI Agent:**
+> Connection verified! The database responded with PONG. Your Upstash Redis instance is healthy and accepting commands.
+
+---
+
+**👤 You:**
+> "Set a feature flag called 'dark_mode' to true for user 'user123' with a 1 hour expiry."
+
+**🤖 AI Agent:**
+> Done! I've set the key `dark_mode:user123` to `true` with a 3600-second (1 hour) expiry. The flag will automatically expire after that time.
+
+---
+
+**👤 You:**
+> "Show me all keys matching the pattern 'session:*' and check their data types."
+
+**🤖 AI Agent:**
+> I found 5 keys matching 'session:*'. Checking their types: `session:abc` is a hash, `session:def` is a hash, `session:ghi` is a string, `session:jkl` is a set, and `session:mno` is a list. Most sessions are stored as hashes (field-value pairs for user data).
+
+
 ## Installation & Usage
 
 To install and use the **Upstash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -116,4 +145,11 @@ To install and use the **Upstash** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

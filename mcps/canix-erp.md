@@ -1,12 +1,14 @@
 # Canix ERP MCP Server
 
-Manage your cannabis operations via Canix — track inventory, plants, and sales orders directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/canix-erp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canix-erp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canix-erp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canix-erp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage your cannabis operations via Canix — track inventory, plants, and sales orders directly from any AI agent.
 
 ## Description
 Connect your **Canix** account to any AI agent and orchestrate your cannabis cultivation, inventory management, and sales workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Canix** account to any AI agent and orchestrate your cannabis cul
 - **list_sales_orders**: List all sales orders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Canix ERP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active inventory packages in Canix."
+
+**🤖 AI Agent:**
+> I've retrieved your packages. You have several active items, including 'Blue Dream Flower' (ID: pkg_1, 5lb) and 'OG Kush Pre-rolls' (ID: pkg_2).
+
+---
+
+**👤 You:**
+> "Show the details for sales order with ID 99283."
+
+**🤖 AI Agent:**
+> Sales order 99283 is for 'Green Relief' dispensary. It contains 10 units of 'Indica Cartridges' and is currently in 'Shipped' status.
+
+---
+
+**👤 You:**
+> "How many plants are currently in the Flowering phase?"
+
+**🤖 AI Agent:**
+> Retrieving cultivation data... You currently have 150 plants in the 'Flowering' phase across 3 facilities.
+
+
 ## Installation & Usage
 
 To install and use the **Canix ERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Canix ERP** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

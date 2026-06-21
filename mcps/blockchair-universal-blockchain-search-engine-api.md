@@ -1,12 +1,14 @@
 # Blockchair (Universal Blockchain Search Engine & API) MCP Server
 
-Query blocks, transactions, and addresses across multiple blockchains like Bitcoin and Ethereum using Blockchair's universal API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchair-universal-blockchain-search-engine-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchair-universal-blockchain-search-engine-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockchair-universal-blockchain-search-engine-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockchair-universal-blockchain-search-engine-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 11
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Query blocks, transactions, and addresses across multiple blockchains like Bitcoin and Ethereum using Blockchair's universal API.
 
 ## Description
 Connect to **Blockchair**, the most advanced universal blockchain search engine, and explore decentralized data across 20+ networks including Bitcoin, Ethereum, and Litecoin through natural conversation.
@@ -52,6 +54,33 @@ Get general information about a blockchain
 - **validate_address**: Check if an address is valid for a specific chain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Blockchair (Universal Blockchain Search Engine & API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current stats for the Bitcoin network."
+
+**🤖 AI Agent:**
+> I've retrieved the latest Bitcoin stats. The current block height is 834,291, with a difficulty of 79.35T. There have been over 980 million transactions recorded on the network to date.
+
+---
+
+**👤 You:**
+> "What is the balance and transaction history for Ethereum address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e?"
+
+**🤖 AI Agent:**
+> The address currently holds 12.5 ETH. I found 45 transactions in its history. The most recent transaction was a transfer of 1.2 ETH on 2024-03-15. Would you like to see the details of the last 5 transactions?
+
+---
+
+**👤 You:**
+> "Find Bitcoin transactions with a fee higher than 50,000 satoshis from the last 24 hours."
+
+**🤖 AI Agent:**
+> I've filtered the Bitcoin transactions. I found 12 transactions matching your criteria. The highest fee observed was 120,500 satoshis for transaction hash 4a5e... Would you like the full list of hashes?
+
+
 ## Installation & Usage
 
 To install and use the **Blockchair (Universal Blockchain Search Engine & API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Blockchair (Universal Blockchain Search Engine & API)**
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

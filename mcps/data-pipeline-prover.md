@@ -1,12 +1,14 @@
 # Data Pipeline Prover MCP Server
 
-A data team asked an AI to build an ETL pipeline. No schema contract. No idempotency. No freshness SLA. The pipeline ran for 3 months — silently inserting 2.4 million duplicate records and serving stale data to dashboards nobody questioned. This tool forces schema validation at boundaries, idempotent writes, freshness alerting, and end-to-end lineage tracing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/data-pipeline-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/data-pipeline-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/data-pipeline-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/data-pipeline-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+A data team asked an AI to build an ETL pipeline. No schema contract. No idempotency. No freshness SLA. The pipeline ran for 3 months — silently inserting 2.4 million duplicate records and serving stale data to dashboards nobody questioned. This tool forces schema validation at boundaries, idempotent writes, freshness alerting, and end-to-end lineage tracing.
 
 ## Description
 AI agents build data pipelines that run — until they silently corrupt your warehouse. They skip schema contracts, ignore idempotency, serve stale data to dashboards, and produce outputs nobody can trace back to a source. The pipeline works. The data is wrong. And you find out 3 months later.
@@ -52,6 +54,33 @@ Data Pipeline Prover validates pipeline architecture through 4 Decision Pivots:
 Structured reflection tool for data pipeline architecture based on Data Mesh (Dehghani 2022), Data Contracts (Jones 2023), and Designing Data-Intensive Applications (Kleppmann 2017). Forces the agent to define schema contracts at pipeline boundaries, prove idempotency mechanisms, set freshness SLAs with monitoring, and trace data lineage end-to-end. Agents are brutal consumers of data — bad data produces confidently wrong actions. Catches Schema Absence (no data contract — pipeline accepts any shape and silently corrupts downstream consumers when a source adds a column or changes a type), Non-Idempotency (re-running a pipeline creates duplicates — no upsert keys, no dedup mechanism, no exactly-once guarantee. "Just run it again" doubles the data), Stale Unawareness (no freshness SLA — "the data is current" without a number. Is it 15 minutes old? 15 hours? The dashboard shows yesterday's revenue as today's and nobody notices), and Lineage Blindness (a number looks wrong but you cannot trace it back to the source record — no transformation log, no ownership, no way to debug). Call once per pipeline design or data architecture review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Data Pipeline Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Let's load the user events from CSV to our MySQL database. We'll run it every hour."
+
+**🤖 AI Agent:**
+> Verdict: SCHEMA_ABSENT. You are running a load task without schema validation. Define input types, configure validation limits, and implement a dead-letter queue (DLQ) for corrupt lines to prevent parser errors from halting the run.
+
+---
+
+**👤 You:**
+> "Pipeline: CSV-to-MySQL. Schema: Input validated with Zod ({ event_id: string, user_id: string, page: string, timestamp: ISO8601 }). Rejects invalid lines to DLQ. Idempotency: Upsert using INSERT ON CONFLICT (event_id) DO NOTHING. Freshness: SLA is maximum 1 hour latency, monitored via event_timestamp vs load_timestamp, alerts Slack on breach. Lineage: Raw S3 CSV bucket -> Lambda Parser -> RDS MySQL database."
+
+**🤖 AI Agent:**
+> Verdict: PIPELINE_PROVEN. Schemas are validated with Zod, idempotency is guaranteed via database upserts, freshness alerts are in place, and the raw-to-db data flow is traceable.
+
+---
+
+**👤 You:**
+> "Pipeline: CSV-to-MySQL. Schema: Validated with Zod ({ event_id: string }). Idempotency: none, we append all rows. Freshness: monitored every hour. Lineage: S3 bucket to DB."
+
+**🤖 AI Agent:**
+> Verdict: NON_IDEMPOTENT. Appending rows without deduplication causes duplication if the run fails mid-process and restarts. Enforce a composite primary key or perform upserts to ensure safety.
+
+
 ## Installation & Usage
 
 To install and use the **Data Pipeline Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Data Pipeline Prover** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

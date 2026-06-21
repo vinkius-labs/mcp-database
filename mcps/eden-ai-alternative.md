@@ -1,12 +1,14 @@
 # Eden AI MCP Server
 
-Access 100+ AI models through a single API — route LLMs, generate embeddings, and execute specialized AI tasks like OCR and translation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eden-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eden-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eden-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eden-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 13
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access 100+ AI models through a single API — route LLMs, generate embeddings, and execute specialized AI tasks like OCR and translation.
 
 ## Description
 Connect **Eden AI** to your AI agent and unlock the power of over 100 leading AI providers through a single, unified interface. Orchestrate models from OpenAI, Google, Anthropic, and more without managing multiple API keys.
@@ -52,6 +54,33 @@ Execute synchronous expert models (OCR, Translation, Image Gen)
 - **upload_file**: Upload a file to Eden AI persistent storage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eden AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a chat completion using openai/gpt-4o via Eden AI."
+
+**🤖 AI Agent:**
+> I've initiated the chat completion with GPT-4o. The model responded: 'Hello! How can I assist you today with Eden AI's unified interface?'
+
+---
+
+**👤 You:**
+> "Generate an image of a futuristic city using image/generation/openai/dall-e-3."
+
+**🤖 AI Agent:**
+> Executing the image generation task... I've successfully generated the image of a futuristic city via DALL-E 3. You can access the result at the provided URL.
+
+---
+
+**👤 You:**
+> "Check my current Eden AI credit balance."
+
+**🤖 AI Agent:**
+> I've checked your account. You currently have 45.50 credits remaining in your Eden AI balance.
+
+
 ## Installation & Usage
 
 To install and use the **Eden AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Eden AI** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

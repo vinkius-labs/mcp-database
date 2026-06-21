@@ -1,12 +1,14 @@
 # Reply.io MCP Server
 
-Equip your AI agent with direct access to Reply.io — manage outreach campaigns, track prospect engagement, and automate multi-channel sequences without opening the Reply dashboard.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/replyio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replyio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/replyio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/replyio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 8
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Equip your AI agent with direct access to Reply.io — manage outreach campaigns, track prospect engagement, and automate multi-channel sequences without opening the Reply dashboard.
 
 ## Description
 Connect **Reply.io** to your AI agent and manage your multi-channel sales engagement platform conversationally.
@@ -48,6 +50,33 @@ Add a person
 - **resume_person**: Resume a person
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reply.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the performance of my 'CTO Outreach' campaign."
+
+**🤖 AI Agent:**
+> Campaign 'CTO Outreach': 280 prospects enrolled. Open rate: 58%. Reply rate: 11%. Bounce rate: 3%. Positive replies: 18. Best performing step: Step 2 (LinkedIn connection request) with 72% acceptance rate.
+
+---
+
+**👤 You:**
+> "Add prospect alex@techstart.com to the 'Series B Founders' sequence."
+
+**🤖 AI Agent:**
+> Prospect added: alex@techstart.com → 'Series B Founders' sequence. Starting at Step 1 (personalized email). Next touchpoint scheduled based on your campaign timing settings.
+
+---
+
+**👤 You:**
+> "Which prospects replied positively this week?"
+
+**🤖 AI Agent:**
+> 11 positive replies this week: 4 from 'CTO Outreach' (interested in demo), 5 from 'Series B Founders' (want pricing info), and 2 from 'VP Sales Q2' (scheduling calls). I can show you the reply content for any of them.
+
+
 ## Installation & Usage
 
 To install and use the **Reply.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Reply.io** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

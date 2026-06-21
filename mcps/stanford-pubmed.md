@@ -1,12 +1,14 @@
 # Stanford PubMed MCP Server
 
-Search biomedical literature from the world largest database of life science and medical research publications.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-pubmed)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-pubmed)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-pubmed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-pubmed-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** education
-**Tools Count:** 16
+
+**Category:** [education](../categories/education.md)
+
+Search biomedical literature from the world largest database of life science and medical research publications.
 
 ## Description
 Connect to the **PubMed E-utilities API** from the National Library of Medicine — the gold standard for biomedical literature search.
@@ -84,6 +86,33 @@ Search for review articles and meta-analyses
 Find trending articles in a subject area
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stanford PubMed** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find recent clinical trials for CAR-T cell therapy in lymphoma"
+
+**🤖 AI Agent:**
+> I've searched PubMed for clinical trial publications on "CAR-T cell therapy lymphoma". The results include recent Phase I-III trials from major cancer centers.
+
+---
+
+**👤 You:**
+> "Search for BRCA1 gene articles related to breast cancer prevention"
+
+**🤖 AI Agent:**
+> I've found PubMed articles mentioning the BRCA1 gene in the context of breast cancer prevention, including studies on genetic screening and prophylactic interventions.
+
+---
+
+**👤 You:**
+> "Find free full-text systematic reviews on metformin and diabetes prevention"
+
+**🤖 AI Agent:**
+> I've filtered PubMed for free full-text systematic reviews on metformin and diabetes prevention, returning open-access meta-analyses from PubMed Central.
+
+
 ## Installation & Usage
 
 To install and use the **Stanford PubMed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -92,4 +121,11 @@ To install and use the **Stanford PubMed** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Cloudflare Stream MCP Server
 
-Manage video infrastructure via Cloudflare Stream—list videos, manage live inputs, and handle uploads directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-stream)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-stream)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudflare-stream-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudflare-stream-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 26
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage video infrastructure via Cloudflare Stream—list videos, manage live inputs, and handle uploads directly from any AI agent.
 
 ## Description
 Connect your **Cloudflare Stream** account to any AI agent to manage your video delivery and live streaming workflows through natural conversation.
@@ -69,6 +71,33 @@ List videos in your Cloudflare Stream account
 - **upload_caption**: Upload a VTT caption file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cloudflare Stream** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 10 videos in my Cloudflare Stream account."
+
+**🤖 AI Agent:**
+> I've retrieved your latest videos. You have 10 videos listed, including 'Product Demo' (Ready) and 'Keynote 2023' (Ready). Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "Create a new live input named 'Weekly Webinar' with automatic recording enabled."
+
+**🤖 AI Agent:**
+> Live input 'Weekly Webinar' has been created successfully. Your RTMPS URL and Stream Key are ready. Recording is set to 'automatic'.
+
+---
+
+**👤 You:**
+> "Show me the details for video ID 4f92b3c8e1a04d56b7f8c9d0e1f2a3b4."
+
+**🤖 AI Agent:**
+> Fetching details... Video 'Marketing Launch' is 120MB, status is 'ready', and it was uploaded on Oct 12th. It currently requires signed URLs for viewing.
+
+
 ## Installation & Usage
 
 To install and use the **Cloudflare Stream** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Cloudflare Stream** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

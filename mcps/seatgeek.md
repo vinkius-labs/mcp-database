@@ -1,12 +1,14 @@
 # SeatGeek MCP Server
 
-Search and list SeatGeek events, performers, and venues directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/seatgeek)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seatgeek)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seatgeek-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seatgeek-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** event-management
-**Tools Count:** 7
+
+**Category:** [event-management](../categories/event-management.md)
+
+Search and list SeatGeek events, performers, and venues directly from your AI agent.
 
 ## Description
 Access the vast **SeatGeek** database to discover live events, sports, concerts, and theater performances. This MCP server allows your AI to query real-time event data, performer bios, and venue details.
@@ -44,6 +46,33 @@ Search and list SeatGeek performers
 - **list_venues**: Search and list SeatGeek venues
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SeatGeek** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for upcoming rock concerts in Los Angeles using SeatGeek."
+
+**🤖 AI Agent:**
+> I've found several rock concerts in Los Angeles. Notable events include 'The Rolling Stones' at SoFi Stadium and 'Arctic Monkeys' at The Forum. Would you like details for a specific one?
+
+---
+
+**👤 You:**
+> "Get the details for the venue with ID 150."
+
+**🤖 AI Agent:**
+> Fetching venue details... Venue ID 150 is 'Madison Square Garden' located in New York. It has a capacity of approximately 20,000 and hosts various sports and music events.
+
+---
+
+**👤 You:**
+> "List all event taxonomies available on SeatGeek."
+
+**🤖 AI Agent:**
+> I've retrieved the taxonomies. Categories include 'sports', 'concert', 'theater', 'ncaa_basketball', 'broadway_tickets_national', and many more. Which category are you interested in?
+
+
 ## Installation & Usage
 
 To install and use the **SeatGeek** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **SeatGeek** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

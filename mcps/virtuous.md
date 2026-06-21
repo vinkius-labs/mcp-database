@@ -1,12 +1,14 @@
 # Virtuous MCP Server
 
-Manage nonprofit fundraising and donor relationships via Virtuous — list contacts, track individuals, manage gifts, and oversee projects directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/virtuous)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/virtuous)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/virtuous-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/virtuous-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 18
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage nonprofit fundraising and donor relationships via Virtuous — list contacts, track individuals, manage gifts, and oversee projects directly from any AI agent.
 
 ## Description
 Connect your **Virtuous** CRM to any AI agent and take full control of your nonprofit's donor management and fundraising workflows through natural conversation.
@@ -53,6 +55,33 @@ Connect your **Virtuous** CRM to any AI agent and take full control of your nonp
 - **update_individual**: Update an existing individual
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Virtuous** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 10 contacts from our Virtuous database."
+
+**🤖 AI Agent:**
+> I've retrieved the first 10 contacts. They include households like 'The Smith Family' (ID: 402) and organizations like 'Global Giving Foundation' (ID: 882). Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "Show me the details for gift ID 12345."
+
+**🤖 AI Agent:**
+> Fetching gift 12345... This was a $500.00 contribution from Contact ID 992, processed on October 12th for the 'Clean Water Initiative' project.
+
+---
+
+**👤 You:**
+> "What are the active fundraising projects?"
+
+**🤖 AI Agent:**
+> I found 3 active projects: 'Annual Gala 2024', 'Community Housing Fund', and 'Education Scholarship'. Which one would you like to inspect?
+
+
 ## Installation & Usage
 
 To install and use the **Virtuous** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Virtuous** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

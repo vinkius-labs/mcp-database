@@ -1,12 +1,14 @@
 # Chili Piper MCP Server
 
-Manage scheduling and lead routing via Chili Piper — track meetings, monitor queues, and manage teams directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chili-piper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chili-piper-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 8
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage scheduling and lead routing via Chili Piper — track meetings, monitor queues, and manage teams directly from any AI agent.
 
 ## Description
 Connect your **Chili Piper** account to any AI agent and take full control of your scheduling and lead routing workflows through natural conversation. Streamline how your sales team connects with prospects.
@@ -45,6 +47,33 @@ Connect your **Chili Piper** account to any AI agent and take full control of yo
 - **list_chili_teams**: List all teams configured in the account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chili Piper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 booked meetings in Chili Piper."
+
+**🤖 AI Agent:**
+> Retrieving your recent meetings... I found 5 items: 'Demo with Acme' (Status: Booked), 'Discovery Call' (Status: Rescheduled), and 3 others. Would you like to see the details for the Acme demo?
+
+---
+
+**👤 You:**
+> "Show me all active routing queues."
+
+**🤖 AI Agent:**
+> Checking your queues... You have 4 active routing queues: 'US Enterprise', 'EMEA Mid-Market', 'Global Trials', and 'Internal Sales'. Would you like to see the rules for any of these?
+
+---
+
+**👤 You:**
+> "Who are the members of the 'Inside Sales' team?"
+
+**🤖 AI Agent:**
+> Retrieving 'Inside Sales' team roster... I found 5 members: John Doe, Sarah Smith, Mike Miller, Jane Jones, and Bob Black. All are currently active in routing.
+
+
 ## Installation & Usage
 
 To install and use the **Chili Piper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Chili Piper** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

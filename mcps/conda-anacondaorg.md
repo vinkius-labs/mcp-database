@@ -1,12 +1,14 @@
 # Conda (Anaconda.org) MCP Server
 
-Enable your AI agent to search packages, inspect metadata, and explore channels on Anaconda.org via the Conda API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/conda-anacondaorg)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conda-anacondaorg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conda-anacondaorg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conda-anacondaorg-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 8
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Enable your AI agent to search packages, inspect metadata, and explore channels on Anaconda.org via the Conda API.
 
 ## Description
 Connect your AI assistant to **Conda** (Anaconda.org), the open-source package and environment management ecosystem. Query package registries, inspect version metadata, and explore community channels — all from your AI chat.
@@ -41,6 +43,47 @@ Connect your AI assistant to **Conda** (Anaconda.org), the open-source package a
 - **search_conda_packages**: Search for packages on Anaconda.org (Conda Cloud)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Conda (Anaconda.org)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'numpy' packages on Anaconda.org."
+
+**🤖 AI Agent:**
+> I found 15 results for 'numpy' on Anaconda.org. The top results are:
+1. anaconda/numpy — v1.26.4 (542M downloads)
+2. conda-forge/numpy — v1.26.4 (380M downloads)
+3. anaconda/numpy-base — v1.26.4
+Would you like detailed info on any of these?
+
+---
+
+**👤 You:**
+> "Show detailed info for package 'pandas' owned by 'anaconda'."
+
+**🤖 AI Agent:**
+> Package: **pandas** (anaconda)
+- Latest: v2.2.1
+- License: BSD-3-Clause
+- Platforms: linux-64, osx-64, win-64, osx-arm64
+- Dependencies: python >=3.9, numpy >=1.22, python-dateutil >=2.8.2
+- Downloads: 285M total
+Need anything else about this package?
+
+---
+
+**👤 You:**
+> "Check what packages are available in the 'pytorch' channel."
+
+**🤖 AI Agent:**
+> The 'pytorch' channel contains 32 packages. The most downloaded are:
+1. pytorch (95M downloads)
+2. torchvision (48M downloads)
+3. torchaudio (22M downloads)
+Shall I list the dependencies for 'pytorch'?
+
+
 ## Installation & Usage
 
 To install and use the **Conda (Anaconda.org)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +92,11 @@ To install and use the **Conda (Anaconda.org)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

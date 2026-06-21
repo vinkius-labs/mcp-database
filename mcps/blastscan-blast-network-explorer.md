@@ -1,12 +1,14 @@
 # Blastscan (Blast Network Explorer) MCP Server
 
-Explore the Blast Network—check balances, track transactions, and inspect smart contracts directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blastscan-blast-network-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blastscan-blast-network-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blastscan-blast-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blastscan-blast-network-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 29
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Blast Network—check balances, track transactions, and inspect smart contracts directly from your AI agent.
 
 ## Description
 Connect to **Blastscan**, the leading block explorer for the Blast Network, and empower your AI agent with real-time blockchain data and smart contract analysis.
@@ -64,6 +66,33 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 - **proxy_eth_gettransactionreceipt**: eth_getTransactionReceipt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Blastscan (Blast Network Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current ETH balance of address 0x0000000000000000000000000000000000000000 on Blast?"
+
+**🤖 AI Agent:**
+> I've checked the balance for that address. It currently holds 1,250.45 ETH on the Blast Network.
+
+---
+
+**👤 You:**
+> "List the last 5 normal transactions for address 0x123...abc."
+
+**🤖 AI Agent:**
+> Fetching transaction history... I found the 5 most recent transactions. The latest was a transfer of 0.5 ETH to 0xdef...789 at block 1234567. Would you like details on any specific transaction hash?
+
+---
+
+**👤 You:**
+> "Get the ABI for the contract at 0x4300000000000000000000000000000000000004."
+
+**🤖 AI Agent:**
+> I have retrieved the ABI for the specified contract. It includes functions such as `yieldMode`, `configure`, and `claim`. I can now help you format calls to these functions.
+
+
 ## Installation & Usage
 
 To install and use the **Blastscan (Blast Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Blastscan (Blast Network Explorer)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

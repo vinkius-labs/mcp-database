@@ -1,12 +1,14 @@
 # JobScore MCP Server
 
-Manage jobs, candidates, and hiring teams via JobScore ATS API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jobscore)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jobscore)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jobscore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jobscore-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage jobs, candidates, and hiring teams via JobScore ATS API.
 
 ## Description
 Empower your AI agents with JobScore's comprehensive applicant tracking system. This MCP server allows you to list and retrieve job postings, track candidates, manage hiring teams and departments, and view hiring sources directly through the JobScore API. Ideal for automating recruitment workflows and talent acquisition.
@@ -45,6 +47,33 @@ Lists all candidate sources
 Lists all users in the account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JobScore** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all open jobs in JobScore."
+
+**🤖 AI Agent:**
+> I'll fetch the list of active job postings from your JobScore account.
+
+---
+
+**👤 You:**
+> "Show me the details for candidate ID '789'."
+
+**🤖 AI Agent:**
+> I'll retrieve the full profile and status for that specific candidate.
+
+---
+
+**👤 You:**
+> "Check the hiring team for the 'Software Engineer' job."
+
+**🤖 AI Agent:**
+> I'll look up the members of the hiring team assigned to that position.
+
+
 ## Installation & Usage
 
 To install and use the **JobScore** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **JobScore** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

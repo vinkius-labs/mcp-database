@@ -1,12 +1,14 @@
 # Modulr MCP Server
 
-Empowers algorithmic control over European Payment volumes. Execute massive HMAC-secured payment schedules, create internal ledgers natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/modulr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modulr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modulr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modulr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 7
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Empowers algorithmic control over European Payment volumes. Execute massive HMAC-secured payment schedules, create internal ledgers natively.
 
 ## Description
 The **Modulr MCP Server** wraps incredibly defensive digital signatures (HMAC SHA-256) autonomously underneath a native Language Model Chat interface. Meaning, your AI has programmatic limits to fire secure European and British payment rails on command natively.
@@ -42,6 +44,33 @@ Map an external Recipient
 - **modulr_list_payments**: Check the status of massive payment arrays
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Modulr** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check our main UK sub-account. View the history array mapped onto it to find pending activity."
+
+**🤖 AI Agent:**
+> Ledger analysis received intact from the Modulr engine. Validating Account details, your latest block exposes 2 internal pending transfers reflecting cleared Faster Payments routes to standard banks without error.
+
+---
+
+**👤 You:**
+> "Initialize a payment stream. Register a Beneficiary named 'DevTeam' pointing to target Sort Code 123456 Acct 98765432. Send £5,000 from Account 'A110' natively."
+
+**🤖 AI Agent:**
+> Payment routed through Faster Payment nodes seamlessly via API keys validating successful HMAC verification! Target beneficiary successfully populated inside your dashboard bounds resulting natively into £5000 liquid push.
+
+---
+
+**👤 You:**
+> "Scan our Modulr operational Customers and list the active instances returning metadata boundaries."
+
+**🤖 AI Agent:**
+> Operation verified. Modulr confirmed your primary Customer instance identified as: C11XXXX. Available limits are active.
+
+
 ## Installation & Usage
 
 To install and use the **Modulr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Modulr** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

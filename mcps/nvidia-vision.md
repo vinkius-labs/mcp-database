@@ -1,12 +1,14 @@
 # NVIDIA Vision MCP Server
 
-Generate images, analyze visuals, detect objects, and caption images via NVIDIA Vision APIs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-vision)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-vision)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-vision-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-vision-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate images, analyze visuals, detect objects, and caption images via NVIDIA Vision APIs.
 
 ## Description
 Connect **NVIDIA Vision** to any AI agent and unlock powerful image understanding and generation — create images with Stable Diffusion, analyze visuals with Kosmos-2, answer questions about images, and perform object detection through natural conversation.
@@ -50,6 +52,33 @@ Generate an image from a text prompt using Stable Diffusion
 Ask a question about an image
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NVIDIA Vision** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate an image of a futuristic city at sunset."
+
+**🤖 AI Agent:**
+> Image generated successfully! Base64 data available for display.
+
+---
+
+**👤 You:**
+> "What objects do you see in this image: https://example.com/photo.jpg"
+
+**🤖 AI Agent:**
+> I detect: 1. A red car (center). 2. A tree (left). 3. A building (background). 4. Two people walking (right).
+
+---
+
+**👤 You:**
+> "Describe this image in detail: https://example.com/document.png"
+
+**🤖 AI Agent:**
+> The image shows a business document dated March 2026. It contains a table with revenue figures totaling $2.4M.
+
+
 ## Installation & Usage
 
 To install and use the **NVIDIA Vision** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **NVIDIA Vision** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

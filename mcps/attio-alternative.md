@@ -1,12 +1,14 @@
 # Attio MCP Server
 
-Build powerful CRM workflows with flexible data models, relationship tracking, and deal management tailored to your process.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/attio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/attio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/attio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/attio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 14
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Build powerful CRM workflows with flexible data models, relationship tracking, and deal management tailored to your process.
 
 ## Description
 Connect your **Attio** account to any AI agent and take full control of your relationship management orchestration and automated CRM workflows through natural conversation.
@@ -61,6 +63,33 @@ List records for any object
 Update an existing record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Attio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all records in the 'Companies' object in my Attio account and show the last 5 entries."
+
+**🤖 AI Agent:**
+> I've retrieved your company records. You currently have 100 companies. The last 5 entries include 'Global Corp' and 'Startup X'. Would you like the detailed attribute metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the recent updates for 'John Doe' in the 'People' object."
+
+**🤖 AI Agent:**
+> Relationship intelligence orchestrated! For John Doe, I've identified the last 3 updates, including a job title change and a new interaction log at 2:00 PM today. I've retrieved the technical attribute metadata for your review. Need help notifying the success team?
+
+---
+
+**👤 You:**
+> "Check for any active pipelines with zero updates this week."
+
+**🤖 AI Agent:**
+> Operational monitoring orchestrated! I've identified 2 pipelines with zero activity this week, including 'Partnership Beta' and 'Outreach Alpha'. I've retrieved the technical status for your review. Shall I check for any pending record updates in these pipelines?
+
+
 ## Installation & Usage
 
 To install and use the **Attio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Attio** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

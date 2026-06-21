@@ -1,12 +1,14 @@
 # Listrak MCP Server
 
-Manage email and SMS campaigns, contacts, and messaging via the Listrak REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/listrak)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/listrak)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/listrak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/listrak-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 7
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email and SMS campaigns, contacts, and messaging via the Listrak REST API.
 
 ## Description
 Connect your **Listrak** account to any AI agent to automate your cross-channel marketing and transactional messaging. This MCP server enables your agent to manage email and SMS campaigns, interact with contact profiles, and trigger immediate broadcasts directly from natural language interfaces using OAuth 2.0.
@@ -45,6 +47,33 @@ Send a transactional email
 - **subscribe_to_sms_list**: Subscribe a contact to an SMS list
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Listrak** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current email campaigns in Listrak."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 5 active campaigns, including 'Winter Sale (ID: 123)' and 'Newsletter Monthly (ID: 456)'. Would you like to see details for any of them?
+
+---
+
+**👤 You:**
+> "Send a transactional email (Message ID: '987') to 'user@example.com'."
+
+**🤖 AI Agent:**
+> I've triggered the transactional email for user@example.com using message template 987. Listrak has queued the delivery.
+
+---
+
+**👤 You:**
+> "Subscribe the phone number '+15550199' to SMS list '555'."
+
+**🤖 AI Agent:**
+> Successfully subscribed +15550199 to your SMS list 555. The contact will now receive messages according to your list's automation rules.
+
+
 ## Installation & Usage
 
 To install and use the **Listrak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Listrak** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

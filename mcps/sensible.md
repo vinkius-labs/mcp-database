@@ -1,12 +1,14 @@
 # Sensible MCP Server
 
-Extract structured data from PDFs, images, and documents using Sensible's powerful document parsing engine.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sensible)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sensible)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sensible-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sensible-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 37
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Extract structured data from PDFs, images, and documents using Sensible's powerful document parsing engine.
 
 ## Description
 Connect **Sensible** to your AI agent to seamlessly extract structured data from unstructured documents like PDFs, Word files, and images.
@@ -72,6 +74,33 @@ Extract data from a document synchronously
 - **update_golden**: Update reference document metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sensible** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract data synchronously from this Base64 PDF using the 'invoice' document type."
+
+**🤖 AI Agent:**
+> I've processed the document using `extract_sync`. Here are the extracted fields: Invoice Number: INV-2023-001, Total Amount: $1,250.00, Due Date: December 15, 2023.
+
+---
+
+**👤 You:**
+> "Extract data from the document at 'https://example.com/tax_form.pdf' using the 'tax_1099' document type."
+
+**🤖 AI Agent:**
+> I have initiated the asynchronous extraction using `extract_from_url`. The document has been submitted to Sensible for processing.
+
+---
+
+**👤 You:**
+> "Generate a pre-signed upload URL for a PDF document of type 'bank_statement'."
+
+**🤖 AI Agent:**
+> I've generated the upload URL using `generate_upload_url`. You can upload your PDF directly to this secure endpoint to start the extraction process.
+
+
 ## Installation & Usage
 
 To install and use the **Sensible** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **Sensible** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

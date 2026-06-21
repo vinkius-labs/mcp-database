@@ -1,12 +1,14 @@
 # Workvivo MCP Server
 
-Manage social posts, employee profiles, and collaboration spaces on Workvivo — the employee experience platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workvivo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workvivo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workvivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workvivo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage social posts, employee profiles, and collaboration spaces on Workvivo — the employee experience platform.
 
 ## Description
 Connect your **Workvivo** account to any AI agent and manage your employee experience infrastructure through natural conversation.
@@ -54,6 +56,33 @@ Permanently deletes a post from Workvivo
 - **list_employees**: Lists employees registered in the Workvivo directory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Workvivo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 posts on the company feed."
+
+**🤖 AI Agent:**
+> I found the 5 most recent posts: 1. 'Q1 Goals Achievement' by John Doe, 2. 'New Office Opening' by Jane Smith, 3. 'Welcome our New Hires' by HR, and 2 others. Which one would you like to see the comments for?
+
+---
+
+**👤 You:**
+> "Find the profile for employee ID 'emp-123'."
+
+**🤖 AI Agent:**
+> Profile for emp-123: Name: Robert Brown, Title: Senior Software Engineer, Department: Engineering, Email: robert@example.com. Would you like me to see which spaces he belongs to?
+
+---
+
+**👤 You:**
+> "What are the details for the 'Town Hall' event today?"
+
+**🤖 AI Agent:**
+> Event 'Monthly Town Hall' (ID: ev-999): Starts at 03:00 PM UTC, Location: Main Auditorium / Zoom. Description: Q1 strategy update and open Q&A with the CEO. No agenda attachments found.
+
+
 ## Installation & Usage
 
 To install and use the **Workvivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Workvivo** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

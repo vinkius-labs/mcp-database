@@ -1,12 +1,14 @@
 # Firecrawl MCP Server
 
-Turn any website into clean, LLM-ready Markdown with a single API call — scrape, crawl, search, and map the entire web for your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firecrawl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firecrawl-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 4
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Turn any website into clean, LLM-ready Markdown with a single API call — scrape, crawl, search, and map the entire web for your AI agent.
 
 ## Description
 Connect your AI agent to **Firecrawl** — the most popular web scraping API built specifically for AI and LLM applications.
@@ -46,6 +48,57 @@ Scrape a single web page and extract its content as clean Markdown. Perfect for 
 Search the web and return scraped content from the top results. Combines Google-like search with automatic content extraction
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Firecrawl** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scrape the main page of docs.firecrawl.dev and give me a summary of what Firecrawl offers."
+
+**🤖 AI Agent:**
+> Scraped docs.firecrawl.dev (2,450 words):
+
+Firecrawl offers four core capabilities: Scrape (single page → Markdown), Crawl (recursive site traversal), Map (URL discovery), and Search (web search + scraping). It supports multiple output formats and handles JavaScript rendering, anti-bot protection, and dynamic content automatically.
+
+---
+
+**👤 You:**
+> "Search the web for 'best practices for RAG pipelines 2026' and return the top 3 results with content."
+
+**🤖 AI Agent:**
+> Found 3 results for 'best practices for RAG pipelines 2026':
+
+1. **Building Production RAG Systems in 2026** (langchain.dev) — 3,200 words
+   Full guide covering chunking strategies, embedding models, and retrieval optimization...
+
+2. **RAG Pipeline Architecture** (docs.llamaindex.ai) — 2,800 words
+   Comprehensive overview of modern RAG architectures...
+
+3. **Advanced RAG Techniques** (arxiv.org) — 4,100 words
+   Research paper on hybrid search, re-ranking, and query transformation...
+
+---
+
+**👤 You:**
+> "Map all pages on example.com to see the site structure."
+
+**🤖 AI Agent:**
+> Site Map: 47 URLs found on example.com
+
+/
+/about
+/products
+/products/alpha
+/products/beta
+/blog
+/blog/post-1
+/blog/post-2
+/docs
+/docs/getting-started
+/docs/api-reference
+... and 36 more URLs
+
+
 ## Installation & Usage
 
 To install and use the **Firecrawl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +107,11 @@ To install and use the **Firecrawl** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

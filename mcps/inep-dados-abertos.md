@@ -1,12 +1,14 @@
 # Inep Dados Abertos MCP Server
 
-Access official Brazilian educational data from INEP — query Censo Escolar, ENEM, and higher education statistics directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/inep-dados-abertos)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inep-dados-abertos)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inep-dados-abertos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inep-dados-abertos-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access official Brazilian educational data from INEP — query Censo Escolar, ENEM, and higher education statistics directly.
 
 ## Description
 Connect to the **Inep Open Data Portal** (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira) and explore the most comprehensive educational datasets in Brazil through natural language.
@@ -49,6 +51,33 @@ List organizations
 - **search_resources**: Search resources
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Inep Dados Abertos** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all available datasets related to 'Censo Escolar'."
+
+**🤖 AI Agent:**
+> I found several datasets for 'Censo Escolar', including annual microdata from 2010 to 2023. Would you like to see the details for the most recent one?
+
+---
+
+**👤 You:**
+> "List the resources and download URLs for the 'ENEM 2022' package."
+
+**🤖 AI Agent:**
+> The 'ENEM 2022' dataset contains 4 resources, including the main microdata CSV and the documentation PDF. Here are the direct download links...
+
+---
+
+**👤 You:**
+> "Run a SQL query to get the first 10 records from resource 'd9e8f7a6-...' where the state is 'SP'."
+
+**🤖 AI Agent:**
+> Querying the DataStore... I've retrieved 10 records for the state of São Paulo. The data includes school codes, names, and administrative categories.
+
+
 ## Installation & Usage
 
 To install and use the **Inep Dados Abertos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Inep Dados Abertos** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

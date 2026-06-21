@@ -1,12 +1,14 @@
 # Troops MCP Server
 
-Automate HR and recruitment workflows via Troops — manage job offers, candidates, contracts, and timesheets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/troops)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/troops)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/troops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/troops-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 7
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate HR and recruitment workflows via Troops — manage job offers, candidates, contracts, and timesheets directly from your AI agent.
 
 ## Description
 Connect your **Troops** account to any AI agent to streamline your recruitment and HR operations through natural conversation.
@@ -43,6 +45,33 @@ List job offers
 - **submit_timesheet**: Submit a time sheet
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Troops** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all published job offers in the system."
+
+**🤖 AI Agent:**
+> I've retrieved the published jobs. There are currently 3 active offers: 'Senior Frontend Developer' (ID: job_001), 'Product Manager' (ID: job_002), and 'HR Specialist' (ID: job_003).
+
+---
+
+**👤 You:**
+> "Register a new candidate: Alice Smith, alice.smith@email.com."
+
+**🤖 AI Agent:**
+> Alice Smith has been successfully registered as a candidate with ID: cand_987. You can now use this ID to generate contracts or view her profile.
+
+---
+
+**👤 You:**
+> "Generate a contract for candidate cand_987 for job job_001 with a salary rate of 55."
+
+**🤖 AI Agent:**
+> The contract has been generated for Alice Smith for the Senior Frontend Developer position. Contract ID: ct_456. Would you like me to trigger the electronic signature process now?
+
+
 ## Installation & Usage
 
 To install and use the **Troops** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Troops** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

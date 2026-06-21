@@ -1,12 +1,14 @@
 # Foodpanda MCP Server
 
-Automate food delivery operations via Foodpanda — manage vendor catalogs, track orders, and control restaurant status directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/foodpanda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foodpanda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/foodpanda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/foodpanda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 13
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate food delivery operations via Foodpanda — manage vendor catalogs, track orders, and control restaurant status directly from any AI agent.
 
 ## Description
 Connect your **Foodpanda Partner** account to any AI agent and take full control of your food delivery operations through natural conversation.
@@ -54,6 +56,33 @@ Update vendor status on Foodpanda
 - **get_vendor_status**: Get vendor status from Foodpanda
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Foodpanda** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the complete catalog for vendor 12345 in chain 67890."
+
+**🤖 AI Agent:**
+> I've fetched the vendor catalog. This restaurant has 45 active products across 8 categories, including burgers, sides, and beverages. The most popular item is the Classic Burger combo.
+
+---
+
+**👤 You:**
+> "What's the status of order ORD-98765?"
+
+**🤖 AI Agent:**
+> Order ORD-98765 is currently being prepared. It was placed at 14:32 with 3 items: 2x Classic Burger, 1x Fries Large. Estimated delivery time is 25 minutes.
+
+---
+
+**👤 You:**
+> "Set vendor 12345 to busy status due to high order volume."
+
+**🤖 AI Agent:**
+> Done! Vendor 12345 is now set to 'busy' status. Customers will see an extended delivery time estimate. The reason 'high order volume' has been recorded.
+
+
 ## Installation & Usage
 
 To install and use the **Foodpanda** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Foodpanda** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

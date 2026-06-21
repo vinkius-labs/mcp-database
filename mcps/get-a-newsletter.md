@@ -1,12 +1,14 @@
 # Get a Newsletter MCP Server
 
-Send professional newsletters to your audience with an email platform that makes list management and campaign tracking simple.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/get-a-newsletter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/get-a-newsletter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/get-a-newsletter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/get-a-newsletter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Send professional newsletters to your audience with an email platform that makes list management and campaign tracking simple.
 
 ## Description
 Connect your **Get a Newsletter** account to any AI agent and take full control of your email marketing workflows through natural conversation.
@@ -46,6 +48,33 @@ Your AI acts as a dedicated marketing assistant, ready to sync leads or pull cam
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Get a Newsletter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our email campaigns on Get a Newsletter."
+
+**🤖 AI Agent:**
+> I've fetched your campaigns. You have 'Q4 Product Launch' (sent) and 'Weekly Digest' (draft). Would you like to inspect any of them?
+
+---
+
+**👤 You:**
+> "Add a new subscriber john.doe@example.com with the name John Doe."
+
+**🤖 AI Agent:**
+> Success! I have created the new contact John Doe (john.doe@example.com) in your Get a Newsletter audience.
+
+---
+
+**👤 You:**
+> "Check if we have a subscriber list available and create a new one called 'Beta Testers'."
+
+**🤖 AI Agent:**
+> I found one existing list named 'Default Audience'. I have now created the new list 'Beta Testers' successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Get a Newsletter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Get a Newsletter** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Hootsuite MCP Server
 
-Schedule and publish social media content, monitor brand mentions, and measure ROI across all your channels from one dashboard.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hootsuite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hootsuite-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Schedule and publish social media content, monitor brand mentions, and measure ROI across all your channels from one dashboard.
 
 ## Description
 Connect your **Hootsuite** account to any AI agent and take full control of your social media presence through natural conversation.
@@ -68,6 +70,33 @@ List teams within an organization
 Retrieve current Hootsuite member details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hootsuite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my social media profiles in Hootsuite."
+
+**🤖 AI Agent:**
+> I've retrieved your profiles. You have 4 networks connected: Twitter (@TechCorp), Facebook Page (TechCorp Official), LinkedIn (TechCorp), and Instagram (@TechCorp_Life). Which one should we use for your next post?
+
+---
+
+**👤 You:**
+> "Schedule a post with text 'Excited for our product launch!' for tomorrow at 10 AM."
+
+**🤖 AI Agent:**
+> Message scheduled! I've set your post for tomorrow at 10:00 AM across Twitter and LinkedIn. You can track it in your scheduled messages history.
+
+---
+
+**👤 You:**
+> "Check my outbound messages for the last 24 hours."
+
+**🤖 AI Agent:**
+> Scanning history... In the last 24 hours, you've sent 3 messages: 2 on Twitter and 1 on Facebook. All were delivered successfully with no errors reported.
+
+
 ## Installation & Usage
 
 To install and use the **Hootsuite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Hootsuite** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

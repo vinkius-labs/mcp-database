@@ -1,12 +1,14 @@
 # Edamam MCP Server
 
-Manage food and nutrition — audit recipes and ingredients via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/edamam-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edamam-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edamam-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edamam-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 6
+
+**Category:** [data-management](../categories/data-management.md)
+
+Manage food and nutrition — audit recipes and ingredients via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire culinary research and nutritional auditing workflow with **Edamam**, the comprehensive source for food and recipe data. By connecting the Edamam API to your agent, you transform complex nutritional analysis into a natural conversation. Your agent can instantly search for thousands of recipes, audit ingredient breakdowns, and identify health-conscious meal options without you ever touching a nutrition portal. Whether you are planning a dietary regimen or conducting regional culinary research, your agent acts as a real-time nutritionist, ensuring your data is always precise and well-categorized.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire culinary research and nutrition
 - **search_recipes**: Search for food recipes by keyword or name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Edamam** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'healthy chicken salad' recipes using Edamam."
+
+**🤖 AI Agent:**
+> I've retrieved several healthy chicken salad recipes! Notable options include a 'Mediterranean Chicken Salad' and a 'Grilled Lemon Chicken Salad'. Would you like the calorie count or full nutritional breakdown for any of these?
+
+---
+
+**👤 You:**
+> "Get nutritional details for '1 cup of cooked rice' and '100g of grilled salmon'."
+
+**🤖 AI Agent:**
+> I've retrieved the nutrition details! The combination has approximately 450 calories and 35g of protein. I can provide the full breakdown of fats, carbs, and vitamins if you'd like.
+
+---
+
+**👤 You:**
+> "Show vegan recipes for 'pasta' using Edamam."
+
+**🤖 AI Agent:**
+> I've identified 10 vegan pasta recipes. Notable matches include 'Vegan Tomato Basil Pasta' and 'Creamy Cashew Pasta'. I can provide the cuisine type and preparation time for each if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Edamam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Edamam** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

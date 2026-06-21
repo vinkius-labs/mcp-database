@@ -1,12 +1,14 @@
 # DocSumo MCP Server
 
-Equip your AI agent to automate document data extraction, manage IDP workflows, and audit processed files via the DocSumo API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docsumo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsumo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docsumo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docsumo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Equip your AI agent to automate document data extraction, manage IDP workflows, and audit processed files via the DocSumo API.
 
 ## Description
 Integrate **DocSumo**, the advanced Intelligent Document Processing (IDP) platform, directly into your AI workflow. Automate the extraction of complex data from invoices, bank statements, and ID cards, monitor your processing pipelines, and retrieve structured results using natural language.
@@ -44,6 +46,33 @@ Integrate **DocSumo**, the advanced Intelligent Document Processing (IDP) platfo
 - **search_documents_by_filename**: Search for processed documents using a filename keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DocSumo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all processed bank statements."
+
+**🤖 AI Agent:**
+> I've found 12 processed bank statements, including 'Chase_June_2023.pdf' and 'Wells_Fargo_Q2.pdf'. Would you like to see the extracted summary for the most recent one?
+
+---
+
+**👤 You:**
+> "Show me the extraction results for document 'DOC-5544'."
+
+**🤖 AI Agent:**
+> I've retrieved the data for 'DOC-5544'. Extracted fields include: Invoice Number (INV-789), Vendor (Cloud Services Inc), and Grand Total ($4,500.00) with 98% confidence. Should I list the individual line items?
+
+---
+
+**👤 You:**
+> "Are there any documents that failed to process today?"
+
+**🤖 AI Agent:**
+> I've checked the pipeline and found 2 documents with processing errors: 'Unreadable_Scan.pdf' and 'Wrong_Format.jpg'. Would you like the detailed error messages for these items?
+
+
 ## Installation & Usage
 
 To install and use the **DocSumo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DocSumo** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

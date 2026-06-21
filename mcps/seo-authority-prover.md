@@ -1,12 +1,14 @@
 # SEO Authority Prover MCP Server
 
-AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/seo-authority-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seo-authority-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seo-authority-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seo-authority-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority.
 
 ## Description
 AI agents generating SEO content produce the exact patterns that Google's SpamBrain detects and penalizes. They keyword-stuff without realizing it, claim expertise without demonstrating it, ignore technical fundamentals, produce content invisible to AI search engines, and deliver generic advice that could apply to any website.
@@ -53,6 +55,33 @@ Validates HTML for semantic perfection: title tag (50-60 chars/<580px), meta des
 Validates JSON-LD structured data for AI engine optimization. Ensures schema types are present, accurately match visible page content, use @graph/@id entity linking, include AI-critical types (FAQPage, HowTo, speakable), and pass validation. Targets Google Gemini AI Overviews, Perplexity (PerplexityBot), ChatGPT (OAI-SearchBot), and Google (GoogleOther). Built from 2026 research on how AI crawlers process structured data to verify facts and build responses. Catches Schema Absence (zero JSON-LD on page — complete invisibility to structured search — the page has excellent content but no structured data. Google cannot verify: who wrote it (no Person schema), when it was updated (no dateModified), what organization publishes it (no Organization schema). Result: no rich results (no author photo, no star ratings, no FAQ accordion). No knowledge graph entry. AI engines cannot cross-reference author identity. Fix: minimum JSON-LD: Organization, WebSite with SearchAction, BreadcrumbList, content type), Content Mismatch (schema says one thing, page shows another — JSON-LD: "author": {"name": "Staff Writer"}. Visible byline on page: "Written by Jane Chen, CTO." Google Quality Raters find: schema author ≠ visible author. Result: manual action risk (hidden markup violation) + AI distrust (Perplexity cites "Staff Writer" instead of the authoritative "Jane Chen, CTO"). Every schema property MUST match visible content: author, dates, prices, ratings, titles), Entity Fragmentation (no @graph or @id linking — entities are isolated — the page has 4 separate <script type="application/ld+json"> blocks. Person, Organization, Article, BreadcrumbList — each standalone. Google cannot determine: does this Person AUTHOR this Article? Does this Organization PUBLISH this Article? Is this BreadcrumbList FOR this Article? Fix: single @graph array with @id references: "author": {"@id": "/#author"} links to Person with "@id": "/#author". This builds knowledge graph connections — isolated blocks build nothing), Stale dateModified (last updated 18 months ago — AI engines deprioritize — dateModified: "2024-06-15". Current date: 2026-01-20. Content is 18 months stale. AI engines have STRONG recency bias: Perplexity and Google AI Overviews prefer content updated within the last 6 months. Result: AI cites the competitor who updated their equivalent page last month. Fix: review content quarterly. Update dateModified only when content genuinely changes. Fake dateModified updates (changing the date without changing content) is a SpamBrain signal), and Validation Failure (malformed JSON-LD that Google cannot parse — trailing comma in JSON array: "sameAs": ["https://linkedin.com/in/author",]. Missing closing bracket. Wrong @type value ("Articles" instead of "Article"). Google Rich Results Test: "Error: Invalid JSON." No rich results. No structured data processing. Invisible to AI engines. Fix: validate with Google Rich Results Test AND Schema Markup Validator before publishing. Both tools. Every page. Zero errors). Call once per page requiring JSON-LD structured data validation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SEO Authority Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We need to optimize our blog for SEO. We should use the keyword 'best project management software' at least 5 times in each article, put it in every heading, and create 100 articles targeting variations of this keyword."
+
+**🤖 AI Agent:**
+> Verdict: SPAMBRAIN_FLAGGED. Triple violation. (1) 'Use keyword 5 times in each article, in every heading' is KEYWORD STUFFING — the #1 pattern SpamBrain ML detects. Keyword density should be under 1-2%, used naturally. (2) '100 articles targeting variations' is SCALED CONTENT ABUSE — mass-producing pages without unique user value. The March 2026 Spam Update specifically targets this. (3) No mention of user intent, original insight, or information gain. Modern SEO uses semantic rel...
+
+---
+
+**👤 You:**
+> "Content: pillar page on 'Project Management Methodologies' supported by 12 cluster articles. SpamBrain: keyword density 0.8%, no exact-match anchors, all backlinks from editorial mentions in PM industry publications. E-E-A-T: author is PMP-certified PM with 15 years at Fortune 500, includes original survey data from 200 PMs, cited by PMI.org 3 times. Technical: self-referencing canonicals, JSON-LD @graph (Organization + WebSite + Article + FAQPage + BreadcrumbList with @id linking..."
+
+**🤖 AI Agent:**
+> Verdict: SEO_PROVEN. SpamBrain-safe (0.8% density, editorial links, unique survey data). E-E-A-T demonstrated (PMP certification, 15-year experience, original research, PMI citations). Technically sound (LCP 1.8s, INP 120ms, CLS 0.04 — all passing, JSON-LD @graph with entity linking). GEO-optimized (original statistics every ~180 words, expert quotes, modular autonomous sections). AEO-ready (50-word atomic answers, entity consistency, FAQPage schema, conversational tone). This str...
+
+---
+
+**👤 You:**
+> "We have great content but our site loads slowly (LCP 4.2s, INP 380ms) and we don't use any schema markup. Our canonical tags point to different URLs than our internal links."
+
+**🤖 AI Agent:**
+> Verdict: TECHNICALLY_BROKEN. Triple failure. (1) LCP 4.2s (target <2.5s) — hero images likely not optimized (use WebP/AVIF, avoid lazy-loading LCP element, use CDN). (2) INP 380ms (target <200ms) — this is the CRITICAL 2026 metric. Long JavaScript tasks are blocking the main thread. Split tasks, defer third-party scripts (analytics, chat, ads), avoid synchronous DOM updates. (3) Canonical/internal link mismatch — this sends CONFLICTING signals to Google. Canonicals, internal links...
+
+
 ## Installation & Usage
 
 To install and use the **SEO Authority Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **SEO Authority Prover** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

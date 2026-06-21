@@ -1,12 +1,14 @@
 # OpenClassrooms MCP Server
 
-Monitor student progress on OpenClassrooms — search courses, track diploma paths, review mentoring sessions, and verify certificates from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openclassrooms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openclassrooms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openclassrooms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openclassrooms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 9
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Monitor student progress on OpenClassrooms — search courses, track diploma paths, review mentoring sessions, and verify certificates from any AI agent.
 
 ## Description
 Connect your **OpenClassrooms** partner account to any AI agent and get full visibility into courses, student progress, and diploma paths — all through natural conversation.
@@ -44,6 +46,33 @@ Connect your **OpenClassrooms** partner account to any AI agent and get full vis
 - **certificats_etudiant**: Consulter les certificats de réussite obtenus par un étudiant
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenClassrooms** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for courses about Python data analysis."
+
+**🤖 AI Agent:**
+> Found 8 courses matching 'Python data analysis'. Top results: 1) 'Analyze Your Data with Python' (Beginner, ~10h). 2) 'Use Python Libraries for Data Science' (Intermediate, ~15h). 3) 'Clean Your Data with Python' (Beginner, ~8h). Want me to open the full syllabus for any of these?
+
+---
+
+**👤 You:**
+> "How is Maria Silva progressing in her diploma path?"
+
+**🤖 AI Agent:**
+> Maria Silva — Path: 'Web Developer' (12 courses total). Progress: 75% complete (9/12 courses finished). Currently on: 'Build a Responsive Website with HTML & CSS'. 2 projects validated, 1 project pending review. Next mentoring session: April 3 at 14:00. She's on track to finish by May 15.
+
+---
+
+**👤 You:**
+> "Which students have earned certificates this month?"
+
+**🤖 AI Agent:**
+> 3 students earned certificates in March. Alex Chen — 'Data Analyst' path completed (Cert ID: OC-2024-8834). Julia Martinez — 'Product Manager' path completed (Cert ID: OC-2024-8901). Tom Nguyen — 'Front-End Developer' path completed (Cert ID: OC-2024-8955). All certificates are publicly verifiable.
+
+
 ## Installation & Usage
 
 To install and use the **OpenClassrooms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **OpenClassrooms** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

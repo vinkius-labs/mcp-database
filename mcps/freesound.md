@@ -1,12 +1,14 @@
 # Freesound MCP Server
 
-Search, download, and manage audio samples from the Freesound database directly within your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freesound)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freesound)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freesound-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freesound-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 10
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Search, download, and manage audio samples from the Freesound database directly within your AI agent.
 
 ## Description
 Connect your **Freesound** account to any AI agent and access the world's largest collection of Creative Commons licensed audio samples through natural conversation.
@@ -49,6 +51,33 @@ Search for sounds on Freesound
 - **upload_sound**: Upload an audio file to Freesound
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freesound** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for high-quality cinematic impact sounds on Freesound."
+
+**🤖 AI Agent:**
+> I found several cinematic impact sounds. The top result is 'Heavy Cinematic Hit' (ID: 12345) with tags like 'impact', 'cinematic', and 'bass'. Would you like to see more details or download it?
+
+---
+
+**👤 You:**
+> "Get the metadata and tags for sound ID 45678."
+
+**🤖 AI Agent:**
+> Sound 45678 is titled 'Electric Hum'. It is a 44.1kHz WAV file with tags: 'noise', 'electronic', 'loop'. It has been downloaded 1,200 times.
+
+---
+
+**👤 You:**
+> "Show me the sounds uploaded by user 'audio_pro'."
+
+**🤖 AI Agent:**
+> User 'audio_pro' has uploaded 12 sounds, including 'Studio Kick' and 'Snare Hit'. Would you like the specific IDs or descriptions for these sounds?
+
+
 ## Installation & Usage
 
 To install and use the **Freesound** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Freesound** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

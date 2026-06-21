@@ -1,12 +1,14 @@
 # Greenhouse MCP Server
 
-Manage your recruiting pipeline via Greenhouse — list applications, track candidate activity, and manage job board posts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/greenhouse-alternative-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greenhouse-alternative-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/greenhouse-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/greenhouse-alternative-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 16
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your recruiting pipeline via Greenhouse — list applications, track candidate activity, and manage job board posts directly from any AI agent.
 
 ## Description
 Connect your **Greenhouse** account to any AI agent to streamline your hiring process and candidate management through natural conversation.
@@ -52,6 +54,33 @@ Submit a job application to a board
 - **list_applications**: List all applications in Greenhouse
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Greenhouse** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all current applications in Greenhouse."
+
+**🤖 AI Agent:**
+> I've retrieved the applications. You have 12 active applications, including 'Software Engineer' for Jane Doe and 'Product Manager' for John Smith. Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "Show me the activity feed for candidate ID 98765."
+
+**🤖 AI Agent:**
+> Fetching activity for candidate 98765... The latest activities include a 'Technical Interview' completed yesterday and a status change to 'Offer Pending'.
+
+---
+
+**👤 You:**
+> "What are the job posts currently listed on the 'tech-careers' board?"
+
+**🤖 AI Agent:**
+> I found 3 active posts on the 'tech-careers' board: Senior Backend Developer, UI/UX Designer, and DevOps Engineer. Do you need the full details for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Greenhouse** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Greenhouse** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

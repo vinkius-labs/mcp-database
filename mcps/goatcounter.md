@@ -1,12 +1,14 @@
 # GoatCounter MCP Server
 
-Privacy-friendly web analytics — track pageviews, analyze visitor stats, and manage your sites directly through any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/goatcounter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goatcounter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goatcounter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goatcounter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 14
+
+**Category:** [productivity](../categories/productivity.md)
+
+Privacy-friendly web analytics — track pageviews, analyze visitor stats, and manage your sites directly through any AI agent.
 
 ## Description
 Connect your **GoatCounter** account to any AI agent to monitor your web traffic without compromising user privacy. This MCP server allows you to query detailed statistics, manage site configurations, and handle data exports through natural conversation.
@@ -53,6 +55,33 @@ Detailed stats for a specific item in a category
 - **update_site**: Update site settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GoatCounter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the total pageview counts for the last 30 days."
+
+**🤖 AI Agent:**
+> I've retrieved your stats. In the last 30 days, your site received a total of 12,450 pageviews.
+
+---
+
+**👤 You:**
+> "List all the sites registered in my GoatCounter account."
+
+**🤖 AI Agent:**
+> You have 3 sites registered: 'Personal Blog' (ID: 101), 'E-commerce Store' (ID: 102), and 'Docs Portal' (ID: 103).
+
+---
+
+**👤 You:**
+> "Get detailed stats for browser versions used by my visitors."
+
+**🤖 AI Agent:**
+> Analyzing browser data... Chrome 118 is your most popular version (45%), followed by Firefox 119 (20%) and Safari 17 (15%).
+
+
 ## Installation & Usage
 
 To install and use the **GoatCounter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **GoatCounter** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

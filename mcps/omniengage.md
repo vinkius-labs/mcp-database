@@ -1,12 +1,14 @@
 # OmniEngage MCP Server
 
-Reach customers across email, SMS, push, and in-app with unified omnichannel marketing that personalizes every touchpoint.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omniengage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omniengage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omniengage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omniengage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Reach customers across email, SMS, push, and in-app with unified omnichannel marketing that personalizes every touchpoint.
 
 ## Description
 Connect your **OmniEngage** (Cynthia AI) account to any AI agent and take full control of your sales orchestration and prospect engagement through natural conversation. OmniEngage provides a powerful platform for automated LinkedIn and email outreach, and this integration allows you to retrieve prospect metadata, launch new research sequences, and monitor campaign performance directly from your chat interface.
@@ -53,6 +55,33 @@ Launch a new outreach campaign
 - **update_prospect**: Update an existing prospect
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OmniEngage** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active prospects in OmniEngage."
+
+**🤖 AI Agent:**
+> I've retrieved your prospects. You have 25 active leads including 'John Miller' and 'Sarah Chen'. Which one would you like to see the engagement history for?
+
+---
+
+**👤 You:**
+> "Show me details for campaign ID camp_291 including its performance stats."
+
+**🤖 AI Agent:**
+> Campaign "Spring Outreach 2025" (camp_291) has reached 342 prospects so far. Open rate stands at 47%, reply rate at 12%, and 8 meetings have been booked. The sequence includes 4 touchpoints over 14 days, and 89 prospects are still actively in the pipeline.
+
+---
+
+**👤 You:**
+> "List all outreach sequences available in my account."
+
+**🤖 AI Agent:**
+> You have 5 active sequences. "Cold Intro" has 3 steps over 7 days, "Enterprise Follow-up" runs 5 steps across 21 days, "Re-engagement" uses 2 steps in 5 days, "Warm Lead Nurture" spans 4 steps over 10 days, and "Event Attendee" covers 3 steps in 7 days.
+
+
 ## Installation & Usage
 
 To install and use the **OmniEngage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **OmniEngage** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Dropbox Sign MCP Server
 
-Get documents signed electronically with legally binding e-signatures, templates, and audit trails your business can trust.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox-sign-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropbox-sign-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dropbox-sign-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dropbox-sign-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Get documents signed electronically with legally binding e-signatures, templates, and audit trails your business can trust.
 
 ## Description
 Connect your **Dropbox Sign** (formerly HelloSign) account to any AI agent and take full control of your electronic signature and document automation workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual status checking or digging through contract folders. Your AI acts
 - **send_with_template**: Send signature request using templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dropbox Sign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my pending signature requests and their status."
+
+**🤖 AI Agent:**
+> I've retrieved your active requests. You have 3 documents awaiting signature, including 'NDA - Project Alpha' and 'Sales Agreement #402'. Would you like the signer details for any of these?
+
+---
+
+**👤 You:**
+> "Send the 'Agreement' template to 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Signature request dispatched! I've successfully sent the 'Agreement' template to John Doe. The request ID is 'req_123'. I'll alert you as soon as they view or sign the document.
+
+---
+
+**👤 You:**
+> "Get the download link for the signed document 'req_123'."
+
+**🤖 AI Agent:**
+> Link generated! You can download the finalized PDF for request req_123 here: [download_url]. The link is secure and will expire in 24 hours.
+
+
 ## Installation & Usage
 
 To install and use the **Dropbox Sign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Dropbox Sign** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

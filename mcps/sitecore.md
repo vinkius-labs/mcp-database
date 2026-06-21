@@ -1,12 +1,14 @@
 # Sitecore MCP Server
 
-Manage your Sitecore CMS via AI agents — create, search, and update content items, templates, layouts, and workflows directly from your chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sitecore)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sitecore)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sitecore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sitecore-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Sitecore CMS via AI agents — create, search, and update content items, templates, layouts, and workflows directly from your chat.
 
 ## Description
 Connect your **Sitecore** instance to any AI agent and take full control of your enterprise CMS through natural conversation. Execute headless content operations without navigating the complex Sitecore Content Editor.
@@ -56,6 +58,41 @@ Searches for content items in Sitecore
 Updates the fields of an existing Sitecore item
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sitecore** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Can you check the workflow state for the `/sitecore/content/Home/AboutUs` item?"
+
+**🤖 AI Agent:**
+> The item `/sitecore/content/Home/AboutUs` is currently in the **Draft** workflow state. Would you like me to get its layout presentation details as well?
+
+---
+
+**👤 You:**
+> "List the immediate children under `/sitecore/content/Home/Products`."
+
+**🤖 AI Agent:**
+> I found 3 child items under the Products node:
+1. Laptop X (ID: `110d559f...`, Template: ProductPage)
+2. Monitor Y (ID: `220a3...`, Template: ProductPage)
+3. Keyboard Z (ID: `330b...`, Template: ProductPage)
+
+Which item would you like me to fetch full details for?
+
+---
+
+**👤 You:**
+> "Create a new item named 'SpringCampaign' using template `5F22...` under parent ID `3D66...`."
+
+**🤖 AI Agent:**
+> The item **'SpringCampaign'** has been successfully created. 
+New Item ID: `{A1B2C3D4-E5F6-0000...}`.
+Path: `/sitecore/content/Home/Campaigns/SpringCampaign`.
+Would you like me to update its initial fields with a specific JSON object?
+
+
 ## Installation & Usage
 
 To install and use the **Sitecore** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +101,11 @@ To install and use the **Sitecore** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CMO Marketing Prover MCP Server
 
-A CMO asked an AI for positioning. It said 'better and faster.' It proposes 'scale the ads' without a payback model. It trusts platform attribution 100%. It designs frictionless funnels that generate garbage leads. That is not marketing — that is a tactical wishlist. This tool forces five CMO-level marketing axes: category positioning, CAC payback physics, dark social attribution, intentional funnel friction, and budget allocation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cmo-marketing-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cmo-marketing-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cmo-marketing-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cmo-marketing-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing
-**Tools Count:** 1
+
+**Category:** [marketing](../categories/marketing.md)
+
+A CMO asked an AI for positioning. It said 'better and faster.' It proposes 'scale the ads' without a payback model. It trusts platform attribution 100%. It designs frictionless funnels that generate garbage leads. That is not marketing — that is a tactical wishlist. This tool forces five CMO-level marketing axes: category positioning, CAC payback physics, dark social attribution, intentional funnel friction, and budget allocation.
 
 ## Description
 ## The Problem
@@ -46,6 +48,33 @@ All pass     → MARKETING_PROVEN
 Structured reflection tool for wartime CMO-level marketing strategy validation. Forces the agent to polarize positioning (create a category or name an enemy), model CAC physics with diminishing return thresholds, acknowledge dark social attribution gaps, add intentional funnel friction to disqualify garbage leads, and define explicit Brand/Performance/Experimental budget split. Catches Positioning Weakness (saying "better/faster" instead of creating a category or naming an enemy), CAC Blindness (scaling ads without payback modeling or diminishing return thresholds), Attribution Naivety (trusting platform dashboards 100%, ignoring dark social — podcasts, word-of-mouth, communities that platforms classify as "direct"), Friction Absence (seamless funnels generating garbage leads that burn sales capacity), and Budget Confusion (100% performance spend, zero brand — guaranteeing a growth plateau). Call once per marketing strategy evaluation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CMO Marketing Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We are better and faster than competitors. We will scale ads. Google Analytics tracks everything. Our funnel is frictionless. 100% budget on paid ads."
+
+**🤖 AI Agent:**
+> POSITIONING_WEAK — Five fatal gaps: generic positioning, no payback model, platform trust, no friction, no brand investment.
+
+---
+
+**👤 You:**
+> "Created 'Revenue Intelligence' category. Enemy: spreadsheet forecasting. CAC $340, LTV $4,200, payback 2.8mo. Self-reported: 38% dark social. Gates: pricing visible, work email, use case. Brand 30%, Performance 60%, Experimental 10%."
+
+**🤖 AI Agent:**
+> MARKETING_PROVEN — Strategy validated. All five axes pass. Execute.
+
+---
+
+**👤 You:**
+> "Our brand awareness is 45% in our target segment but conversion from awareness to trial is only 2.1%. Competitors average 8%. Content is producing 200K monthly impressions."
+
+**🤖 AI Agent:**
+> Awareness-to-trial gap indicates messaging-market mismatch. Impressions without conversion is vanity content. Audit the gap: is the value proposition clear in 5 seconds? Is the CTA friction-free? Test 3 positioning variants against conversion, not impressions.
+
+
 ## Installation & Usage
 
 To install and use the **CMO Marketing Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **CMO Marketing Prover** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

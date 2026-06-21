@@ -1,12 +1,14 @@
 # Mintlify MCP Server
 
-Manage and automate your Mintlify documentation—retrieve metadata, update configurations, track page views, and trigger deployments directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mintlify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mintlify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mintlify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mintlify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 4
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage and automate your Mintlify documentation—retrieve metadata, update configurations, track page views, and trigger deployments directly from your AI agent.
 
 ## Description
 Connect your **Mintlify** account to any AI agent to streamline your documentation workflow through natural conversation.
@@ -40,6 +42,33 @@ Trigger a new Mintlify deployment
 - **update_metadata**: Update Mintlify project metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mintlify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the current metadata for my Mintlify project."
+
+**🤖 AI Agent:**
+> I've retrieved your project metadata. Your documentation is currently configured with the navigation structure including 'Introduction', 'API Reference', and 'Guides'. Would you like to see the full JSON configuration?
+
+---
+
+**👤 You:**
+> "Show me the page views for the last 30 days."
+
+**🤖 AI Agent:**
+> Fetching analytics... In the last 30 days, your documentation received a total of 12,450 page views. The most visited page was '/api-reference/authentication'.
+
+---
+
+**👤 You:**
+> "Trigger a new deployment for my documentation."
+
+**🤖 AI Agent:**
+> Deployment triggered successfully! Mintlify is now building the latest version of your documentation. You can check the status in your dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Mintlify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Mintlify** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

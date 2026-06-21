@@ -1,12 +1,14 @@
 # Poplar MCP Server
 
-Automate programmatic direct mail via Poplar — trigger mailers, standardize addresses, and manage audiences directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/poplar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poplar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poplar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poplar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 11
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate programmatic direct mail via Poplar — trigger mailers, standardize addresses, and manage audiences directly from any AI agent.
 
 ## Description
 Connect your **Poplar** account to any AI agent and take full control of your programmatic direct mail and physical outreach through natural conversation.
@@ -54,6 +56,33 @@ Clean and standardize a US mailing address
 Trigger a physical mailer (postcard, letter) for a campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Poplar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a postcard to Jane Doe using campaign ID 'camp_123'."
+
+**🤖 AI Agent:**
+> I've started the process for campaign camp_123. To trigger the mailer, I need Jane Doe's full mailing address (street, city, state, zip). Once provided, I'll send the request to Poplar. Should I also include any custom merge tags?
+
+---
+
+**👤 You:**
+> "Standardize this address: 123 main st, nyc, ny 10001."
+
+**🤖 AI Agent:**
+> Standardizing... Poplar has verified the address. The correct USPS format is: '123 MAIN ST, NEW YORK, NY 10001-4107'. The address is valid and deliverable. Would you like to add this recipient to an audience list?
+
+---
+
+**👤 You:**
+> "List all active audiences and find 'Holiday VIPs'."
+
+**🤖 AI Agent:**
+> Retrieving audiences... I found 4 groups in your account, including 'Holiday VIPs' (ID: aud_552) with 1,200 members. Other audiences are 'New Signups', 'Churn Risks', and 'Global Suppressions'. Should I list the members of 'Holiday VIPs'?
+
+
 ## Installation & Usage
 
 To install and use the **Poplar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Poplar** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

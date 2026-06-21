@@ -1,12 +1,14 @@
 # Jumpseller MCP Server
 
-Manage products, orders, and customers via Jumpseller API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jumpseller)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jumpseller)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jumpseller-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jumpseller-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage products, orders, and customers via Jumpseller API.
 
 ## Description
 Empower your AI agents with Jumpseller's e-commerce platform. This MCP server allows you to list and retrieve products and orders, manage customers and categories, track store pages, and view general store information directly through the Jumpseller API. Ideal for automating store management and order processing.
@@ -45,6 +47,33 @@ Lists all products in your Jumpseller store
 Lists configured shipping methods
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jumpseller** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active products in my Jumpseller store."
+
+**🤖 AI Agent:**
+> I'll fetch the complete list of products from your Jumpseller account.
+
+---
+
+**👤 You:**
+> "Show me the last 5 orders received."
+
+**🤖 AI Agent:**
+> I'll retrieve the most recent orders from your store for you.
+
+---
+
+**👤 You:**
+> "Check the details for customer ID '123'."
+
+**🤖 AI Agent:**
+> I'll look up the full profile and history for that specific customer in Jumpseller.
+
+
 ## Installation & Usage
 
 To install and use the **Jumpseller** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Jumpseller** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

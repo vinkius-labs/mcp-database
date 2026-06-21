@@ -1,12 +1,14 @@
 # Splitwise MCP Server
 
-Connect your Splitwise account to AI agents to track expenses, check balances, and manage shared groups.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/splitwise)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/splitwise)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/splitwise-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/splitwise-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your Splitwise account to AI agents to track expenses, check balances, and manage shared groups.
 
 ## Description
 ### What you can do
@@ -38,6 +40,33 @@ Create an expense
 - **get_user**: Get user details by ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Splitwise** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check how much I currently owe in the 'Paris Trip' group."
+
+**🤖 AI Agent:**
+> Scanning the Paris Trip group balances... According to Splitwise, you currently owe $45 in total (mostly for dinner last night).
+
+---
+
+**👤 You:**
+> "Add a new $100 expense for Uber rides to Splitwise and split it equally with Jane."
+
+**🤖 AI Agent:**
+> Okay. I've created the $100 expense 'Uber rides' and split it equally. You are owed $50 from Jane.
+
+---
+
+**👤 You:**
+> "List all my friends connected on Splitwise."
+
+**🤖 AI Agent:**
+> Here is the list of your friends on Splitwise: 1. John (id: 412), 2. Sarah (id: 331).
+
+
 ## Installation & Usage
 
 To install and use the **Splitwise** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Splitwise** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Bizzabo MCP Server
 
-Orchestrate your event experience via Bizzabo — manage events, registrations, and attendees directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bizzabo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bizzabo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bizzabo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bizzabo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Orchestrate your event experience via Bizzabo — manage events, registrations, and attendees directly from any AI agent.
 
 ## Description
 Connect your **Bizzabo** account to any AI agent and orchestrate your events, registrations, and attendee workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Bizzabo** account to any AI agent and orchestrate your events, re
 - **list_speakers**: List speakers for an event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bizzabo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my upcoming events in Bizzabo."
+
+**🤖 AI Agent:**
+> I've retrieved your events. You have 3 upcoming events: 'Annual Conference 2024' (ID: ev_1), 'Tech Summit' (ID: ev_2), and 'Developer Meetup' (ID: ev_3).
+
+---
+
+**👤 You:**
+> "Show the sessions for event ev_1."
+
+**🤖 AI Agent:**
+> Retrieving sessions... I found 5 sessions, including 'Keynote: Future of Events', 'Panel: Digital Transformation', and 'Workshop: Networking Skills'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Find the registration details for ID reg_992."
+
+**🤖 AI Agent:**
+> Registration reg_992 belongs to John Doe (john@example.com). They registered for the 'Early Bird' ticket type on March 15th and the status is 'Approved'.
+
+
 ## Installation & Usage
 
 To install and use the **Bizzabo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Bizzabo** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

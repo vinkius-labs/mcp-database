@@ -1,12 +1,14 @@
 # Clickatell MCP Server
 
-Manage mobile messaging via Clickatell — send SMS, track delivery status, monitor balance, and handle inbound rules directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clickatell)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickatell)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickatell-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickatell-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Manage mobile messaging via Clickatell — send SMS, track delivery status, monitor balance, and handle inbound rules directly from any AI agent.
 
 ## Description
 Connect your **Clickatell** account to any AI agent and take full control of your global mobile messaging workflows through natural conversation.
@@ -50,6 +52,33 @@ Provision a massively scalable JSON Payload rendering outbound SMS natively over
 - **cancel_queued_message**: Irreversibly vaporize explicit SMS blocks deleting scheduled drops
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clickatell** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send SMS to +1234567890: 'Your order #987 is ready for pickup!'"
+
+**🤖 AI Agent:**
+> Message dispatched! Message ID: msg_abc123. The SMS has been sent to +1234567890 via the Clickatell gateway. I can check the delivery status for you in a few moments.
+
+---
+
+**👤 You:**
+> "What is my current Clickatell account balance?"
+
+**🤖 AI Agent:**
+> Your current balance is $45.20. Based on your recent activity, this is enough for approximately 2,200 more domestic SMS messages.
+
+---
+
+**👤 You:**
+> "Check delivery status for message ID msg_789"
+
+**🤖 AI Agent:**
+> Status for msg_789: 'Delivered to Gateway'. The message has successfully passed the Clickatell nodes and has been handed off to the local carrier for final delivery.
+
+
 ## Installation & Usage
 
 To install and use the **Clickatell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Clickatell** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

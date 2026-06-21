@@ -1,12 +1,14 @@
 # Geekbot MCP Server
 
-Run asynchronous standups and team check-ins through Slack or Microsoft Teams that respect everyone timezone and schedule.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/geekbot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geekbot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geekbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geekbot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Run asynchronous standups and team check-ins through Slack or Microsoft Teams that respect everyone timezone and schedule.
 
 ## Description
 Connect your **Geekbot** account to any AI agent and take full control of your team's standups, surveys, and reporting workflows through natural conversation.
@@ -45,6 +47,33 @@ List submitted reports
 - **list_team_members**: List workspace members
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Geekbot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active standups in my Geekbot account."
+
+**🤖 AI Agent:**
+> I've retrieved your standups. You have 3 active configurations: 'Daily Standup' (ID: std_1), 'Friday Retrospective' (ID: std_2), and 'Monthly Poll' (ID: std_3). Which one should we review?
+
+---
+
+**👤 You:**
+> "Show me the reports for 'Daily Standup' from the last 24 hours."
+
+**🤖 AI Agent:**
+> Scanning responses for 'Daily Standup'... I found 8 reports submitted today. Most members are focused on 'API Documentation' and 'Frontend Cleanup'. There are 2 reported blockers. Would you like to see the details of the blockers?
+
+---
+
+**👤 You:**
+> "List all members in our Geekbot workspace."
+
+**🤖 AI Agent:**
+> Fetching member directory... You have 15 members in your workspace. Notable users include 'Alice' (Admin), 'Bob' (Developer), and 'Charlie' (Designer). I can provide their individual IDs or participation history if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Geekbot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Geekbot** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

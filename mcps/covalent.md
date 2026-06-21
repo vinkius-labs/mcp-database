@@ -1,12 +1,14 @@
 # Covalent MCP Server
 
-Equip your AI agent to query unified blockchain data including balances, transactions, and NFTs across 100+ chains.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/covalent)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/covalent)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/covalent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/covalent-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 10
+
+**Category:** [databases](../categories/databases.md)
+
+Equip your AI agent to query unified blockchain data including balances, transactions, and NFTs across 100+ chains.
 
 ## Description
 Integrate **Covalent**, the unified API for blockchain data, directly into your AI workflow. Access real-time and historical data across Ethereum, Polygon, Binance Smart Chain, and over 100 other supported networks using natural language.
@@ -64,6 +66,33 @@ Get transaction history for a wallet address
 List all blockchains supported by Covalent
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Covalent** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the token balances for address '0x123...' on eth-mainnet."
+
+**🤖 AI Agent:**
+> I found 5 tokens for that address. Total value is approximately $1,250. Breakdown: 0.5 ETH, 500 USDC, and 1,200 MATIC. Would you like to see the historical portfolio value?
+
+---
+
+**👤 You:**
+> "List the last 10 transactions for address '0x123...' on matic-mainnet."
+
+**🤖 AI Agent:**
+> I've retrieved the last 10 transactions. Most involve interactions with Uniswap and Aave. 2 transactions failed due to out-of-gas errors. Should I provide details for a specific transaction?
+
+---
+
+**👤 You:**
+> "What are the NFT holdings for wallet '0x123...' on eth-mainnet?"
+
+**🤖 AI Agent:**
+> This wallet holds 3 NFTs: 1 Bored Ape Yacht Club, 1 CryptoPunks, and 1 Art Blocks piece. Would you like to see the metadata or the last sale price for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Covalent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Covalent** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

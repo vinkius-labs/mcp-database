@@ -1,12 +1,14 @@
 # Climatiq Carbon Calculations MCP Server
 
-Calculate carbon footprints via Climatiq — search thousands of emission factors and estimate emissions for any activity.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/climatiq-carbon-calculations)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/climatiq-carbon-calculations)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/climatiq-carbon-calculations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/climatiq-carbon-calculations-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Calculate carbon footprints via Climatiq — search thousands of emission factors and estimate emissions for any activity.
 
 ## Description
 Connect your AI agent to **Climatiq**, the leading platform for carbon calculation and emission factor data. This integration allows you to accurately estimate carbon footprints for everything from energy usage and transportation to procurement and industry classifications.
@@ -53,6 +55,25 @@ Retrieve a list of all supported units of measure
 - **search_emission_factors**: Search for emission factors in the Climatiq database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Climatiq Carbon Calculations** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for electricity emission factors in the UK for 2023."
+
+**🤖 AI Agent:**
+> Searching Climatiq... I found several factors, including 'Electricity supplied from grid' (Activity ID: electricity-supply_grid-source_residual_mix). Would you like to use this for an estimation?
+
+---
+
+**👤 You:**
+> "Estimate emissions for activity 'passenger_vehicle-vehicle_type_car-fuel_source_petrol-engine_size_na-vehicle_age_na-vehicle_standard_na' with 100 km distance."
+
+**🤖 AI Agent:**
+> Calculated! Traveling 100 km in this passenger vehicle results in approximately 17.5 kg of CO2e.
+
+
 ## Installation & Usage
 
 To install and use the **Climatiq Carbon Calculations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +82,11 @@ To install and use the **Climatiq Carbon Calculations** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

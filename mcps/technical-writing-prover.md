@@ -1,12 +1,14 @@
 # Technical Writing Prover MCP Server
 
-An AI wrote API documentation for 'developers.' No expertise level. No prerequisites. A wall of text with no headings. Code examples that referenced a deprecated method — untested. Passive voice throughout: 'it is recommended that the configuration be updated.' A junior engineer followed the docs, deployed to production with the wrong config, and caused a 4-hour outage. This tool forces audience definition, task-based structure, tested examples, ambiguity elimination, and completeness verification.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/technical-writing-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/technical-writing-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/technical-writing-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/technical-writing-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An AI wrote API documentation for 'developers.' No expertise level. No prerequisites. A wall of text with no headings. Code examples that referenced a deprecated method — untested. Passive voice throughout: 'it is recommended that the configuration be updated.' A junior engineer followed the docs, deployed to production with the wrong config, and caused a 4-hour outage. This tool forces audience definition, task-based structure, tested examples, ambiguity elimination, and completeness verification.
 
 ## Description
 AI agents write documentation that reads well — and misleads in production. They write for 'developers' without specifying who. They produce walls of text with no navigation. They include untested code examples. They use passive voice that hides responsibility. They skip error handling, prerequisites, and next steps.
@@ -55,6 +57,33 @@ Technical Writing Prover validates documentation quality through 5 Decision Pivo
 Structured reflection tool that forces the LLM to prove technical documentation meets professional standards — defined audience, task-based structure, working examples, eliminated ambiguity, and verified completeness. Based on the Diátaxis framework (Daniele Procida, 2017): documentation has exactly 4 types — tutorials (learning-oriented), how-to guides (task-oriented), reference (information-oriented), and explanations (understanding-oriented). Mixing these types creates confused documents. Catches Audience Undefined (writing for "everyone" = writing for no one — a pharmaceutical label reads: "Take as needed for pain relief. May cause adverse events." "As needed" — how often? Maximum dose? Interval? "Adverse events" — what kind? Headache? Organ failure? Death? The label was written for "patients" — but a 22-year-old athlete and a 78-year-old with liver disease need fundamentally different information. For the athlete: dosing schedule and interaction with supplements. For the elderly patient: maximum daily dose, interaction with blood thinners, renal dosing adjustment. One label for both = inadequate for both. Fix: define the SPECIFIC reader — role, expertise, prerequisites, goal — BEFORE writing), Structure Absent (wall of text without task-based organization — a fire escape diagram is posted in a hotel hallway. It shows all 8 floors, all stairwells, all exits — on one diagram. No floor numbers labeled. No "YOU ARE HERE" marker. No step-by-step evacuation route. Guest at 3am, smoke in hallway: looks at diagram, cannot find their floor, cannot identify direction. Fix: ONE diagram per floor. "YOU ARE HERE" marked. Arrows showing the route to the nearest exit. Step 1: Exit room, turn LEFT. Step 2: Follow hallway to Stairwell B. Step 3: Descend to ground floor. Task-based structure: the reader has ONE task (get out alive). Every element serves that task), Examples Missing (concepts without working demonstrations — an IKEA assembly instruction shows Step 7: "Attach Part K to Frame Assembly using Cam Lock." Problem: Part K is not in the parts list. Not in the hardware bag. Not in any diagram. The customer cannot identify Part K. Step 7 is impossible to execute. The instruction assumed the reader would know what Part K is. They do not. Fix: every referenced part must appear in the parts inventory with a photograph, size, and quantity. Every step must be executable with only the materials provided. If Step 7 references Part K: Part K must exist, be identifiable, and be available), Ambiguity Present (passive voice and undefined terms causing dangerous misinterpretation — an aircraft maintenance manual reads: "The bolt should be tightened." Which bolt? (there are 47 bolts in this assembly). To what torque? "Should be" — is it mandatory or recommended? A technician interprets "tightened" as hand-tight (5 Nm). The specification requires 45 Nm. Result: bolt fails under vibration. Component separates during flight. FAA Advisory Circular AC 43.13-1B mandates specific, active-voice maintenance documentation. Fix: "Torque bolt P/N AN3-12A to 45 ± 2 Nm using calibrated torque wrench." Active voice. Specific part number. Exact specification. Measurable tolerance. Rule: if two technicians could interpret the same sentence differently, the sentence will be interpreted wrong by one of them), and Completeness Gaps (missing prerequisites, error paths, or edge cases — a vaccine consent form explains: "This vaccine may cause mild side effects." "Mild" — according to whom? "Side effects" — which ones? For how long? When to call a doctor? Complete version: "Common effects (>10% of recipients): injection site soreness (1-3 days), fatigue (1-2 days), headache (1 day). Uncommon (1-10%): low-grade fever (< 38.5°C, 1 day). Rare (<0.1%): severe allergic reaction — seek emergency care if: difficulty breathing, facial swelling, rapid heartbeat within 30 minutes of injection." Every claim has a frequency. Every symptom has a duration. Every emergency has an action. The reader knows: what to expect, when to wait, and when to seek help). Call once per documentation, guide, or technical writing review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Technical Writing Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Write API documentation for the authentication endpoint. It should cover how to authenticate and include some examples."
+
+**🤖 AI Agent:**
+> AUDIENCE_UNDEFINED — Who is reading this? A frontend developer integrating OAuth? A backend engineer implementing JWT validation? A DevOps engineer configuring API gateway auth? Each needs different content. Define: [ROLE: frontend engineer] → [EXPERTISE: mid-level, familiar with REST, new to OAuth 2.0] → [PREREQUISITES: HTTP basics, JSON, knows how to use curl] → [GOAL: authenticate a React SPA against this API and handle token refresh].
+
+---
+
+**👤 You:**
+> "Audience: mid-level backend engineers (2-5 years, familiar with Node.js and Express, new to this API). Goal: set up API key authentication for server-to-server calls. Structure: How-to guide (Diátaxis). H1: API Key Authentication. H2: Prerequisites → H2: Generate API Key → H2: Authenticate Requests → H2: Handle Errors → H2: Rate Limits → H2: Next Steps. Progressive: basic auth first, then scoped keys, then key rotation. Examples: curl command with real endpoint and expected 200 response, Node.js fetch with headers, error response for invalid key (401 with JSON body). All tested on Node.js 20 LTS. Clarity: zero passive voice, all terms defined on first use (API key, bearer token, rate limit), no 'it' without named antecedent. Completeness: prerequisites (Node.js 20+, npm 10+, API account), errors (401 invalid key, 403 insufficient scope, 429 rate limit with Retry-After header), edge cases (expired key, revoked key, concurrent key rotation), next steps: link to OAuth 2.0 guide and webhook setup."
+
+**🤖 AI Agent:**
+> WRITING_PROVEN — Publication-ready technical documentation validated. Audience: mid-level backend engineers with Node.js prerequisite. Structure: Diátaxis how-to with progressive disclosure (basic → scoped → rotation). Examples: curl + Node.js fetch tested on Node 20 with expected responses. Clarity: active voice, terms defined, zero ambiguity. Completeness: prerequisites versioned, three error codes documented with headers, edge cases (expired/revoked/concurrent rotation), linked next steps. This doc reduces support tickets.
+
+---
+
+**👤 You:**
+> "Audience: junior DevOps engineers (0-2 years, familiar with Docker, new to Kubernetes). Goal: deploy first application to a K8s cluster. Structure: Tutorial (Diátaxis). H1→H2→H3 hierarchy with step-by-step progression. Examples: kubectl commands with expected output shown. All tested on K8s 1.30 / minikube. Clarity: active voice, terms defined (pod, deployment, service, namespace). But: no prerequisites section, no error handling ('if kubectl apply fails, do X'), no edge cases (what if namespace already exists, what if port is already bound), next steps say 'consult the Kubernetes documentation for more advanced topics.'"
+
+**🤖 AI Agent:**
+> COMPLETENESS_GAPS — Audience, structure, examples, and clarity pass. But completeness fails on three fronts: (1) No prerequisites — list kubectl version, minikube version, Docker version, and minimum system requirements. (2) No error handling — what if 'kubectl apply' fails? ImagePullBackOff? CrashLoopBackOff? Pending pod? Show the error, explain the cause, provide the fix. (3) 'Consult the Kubernetes documentation' is a completeness failure — link to the SPECIFIC next tutorial: 'Next: Expose your application with a Service (link).' Also: address edge cases — namespace already exists (409 Conflict), port already bound (address already in use).
+
+
 ## Installation & Usage
 
 To install and use the **Technical Writing Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Technical Writing Prover** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

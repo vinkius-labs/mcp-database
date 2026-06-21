@@ -1,12 +1,14 @@
 # Estimation Prover MCP Server
 
-An AI estimated a database migration at 2 weeks. It took 11 weeks, cost $340K in delayed revenue, and left 3 engineers stuck in feature freeze. The estimate had no scope decomposition, no unknowns identified, no historical precedent, and no buffer. This tool forces granular scope breakdown, explicit unknown quantification, precedent mapping, and realistic buffer calculation before any timeline is committed.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/estimation-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/estimation-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/estimation-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/estimation-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An AI estimated a database migration at 2 weeks. It took 11 weeks, cost $340K in delayed revenue, and left 3 engineers stuck in feature freeze. The estimate had no scope decomposition, no unknowns identified, no historical precedent, and no buffer. This tool forces granular scope breakdown, explicit unknown quantification, precedent mapping, and realistic buffer calculation before any timeline is committed.
 
 ## Description
 Software estimations are notoriously unreliable. The Planning Fallacy causes developers and AI agents to systematically underestimate timelines. Estimation Prover acts as a pre-commitment filter, enforcing structured estimation techniques based on historical references and decomposition.
@@ -43,6 +45,33 @@ Estimation Prover uses 5 Decision Pivots to evaluate and validate estimates:
 Structured reflection tool for project estimation — forces decomposition, unknown mapping, historical grounding, contingency buffers, and explicit assumptions BEFORE committing to a timeline. Based on Reference Class Forecasting (Kahneman/Flyvbjerg), Cone of Uncertainty (McConnell), and Planning Fallacy research (universal 25-50% underestimation). Catches Scope Vague ("auth work" instead of "migrate JWT to OAuth 2.1 with refresh token rotation, update 3 API endpoints, update React auth context, write migration tests" — vague scope produces vague estimates), Unknowns Hidden (estimating without mapping technical risks, knowledge gaps, and dependency uncertainties — the things you do not know will blow the timeline, not the things you do know), No Precedent ("based on experience" instead of "the auth migration at Company X took 3 sprints, estimated at 1.5 sprints, because OAuth discovery flow testing took 2x longer than expected" — Reference Class Forecasting requires SPECIFIC historical precedent), No Buffer (estimates without contingency — Kahneman proved humans underestimate by 25-50%. A buffer is not padding — it is correcting for a known cognitive bias), and Assumptions Implicit ("2 weeks" without stating that this assumes full-time allocation, stable scope, available API documentation, responsive code reviewers, and working CI pipeline). Call once per estimation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Estimation Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Let's build a new mobile catalog. It should take around 2 weeks since the requirements are straightforward."
+
+**🤖 AI Agent:**
+> Verdict: SCOPE_VAGUE. A single 2-week estimate lacks task decomposition. Break the catalog work into clear components: database sync, listing UI, navigation actions, cache storage, and reviews. Define time estimates for each unit to build a reliable timeline.
+
+---
+
+**👤 You:**
+> "Task: build mobile catalog. Breakdown: 1. local SQLite DB sync (2 days), 2. layout grid UI (2 days), 3. detail views (1 day), 4. offline image caching (2 days). Unknowns: SQLite sync conflicts. Precedent: last year's web catalog SQLite sync took 3 days due to sync conflicts. Buffer: 30% added (2.1 days buffer on 7 days total). Assumptions: requirements do not change during development, team size is 1 developer."
+
+**🤖 AI Agent:**
+> Verdict: ESTIMATION_PROVEN. Scope is decomposed into tasks ≤2 days. SQLite risks are identified. Grounded in precedent (last year's sync issues). Realistic 30% buffer applied. Scope assumptions are explicit. This estimate is verified.
+
+---
+
+**👤 You:**
+> "Task: mobile catalog. Decomposition: SQLite sync (2 days), grid UI (2 days), detail views (1 day), image caching (2 days). Unknowns: Sync conflicts. Precedent: last year's SQLite sync. Buffer: none needed since requirements are simple. Assumptions: requirements do not change, 1 dev."
+
+**🤖 AI Agent:**
+> Verdict: NO_BUFFER. You have omitted a contingency buffer. Even if requirements seem simple, SQLite sync conflicts are an identified risk. Apply a minimum 20% buffer to account for integration delays.
+
+
 ## Installation & Usage
 
 To install and use the **Estimation Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Estimation Prover** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Zammad MCP Server
 
-Automate helpdesk workflows via Zammad — manage tickets, users, and organizations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zammad)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zammad)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zammad-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zammad-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 41
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Automate helpdesk workflows via Zammad — manage tickets, users, and organizations directly from any AI agent.
 
 ## Description
 Connect your **Zammad** helpdesk to any AI agent to streamline your customer support and user management through natural conversation.
@@ -75,6 +77,33 @@ Connect your **Zammad** helpdesk to any AI agent to streamline your customer sup
 - **update_user**: Update an existing Zammad user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zammad** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active tickets in Zammad."
+
+**🤖 AI Agent:**
+> I've retrieved the tickets. You have 3 open tickets, including 'Login Issue' (ID: 101) and 'Billing Inquiry' (ID: 102). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Search for a user with the email 'customer@example.com'."
+
+**🤖 AI Agent:**
+> Searching... I found one user matching that email: Jane Doe (User ID: 505). She is currently assigned to the 'Premium Customers' organization.
+
+---
+
+**👤 You:**
+> "Get the details for ticket ID 42."
+
+**🤖 AI Agent:**
+> Inspecting ticket 42... The subject is 'Server Downtime', created by Mark Smith. The current state is 'open' and it is assigned to the 'Technical Support' group.
+
+
 ## Installation & Usage
 
 To install and use the **Zammad** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Zammad** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

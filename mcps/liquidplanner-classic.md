@@ -1,12 +1,14 @@
 # LiquidPlanner Classic MCP Server
 
-Plan projects with intelligent scheduling that automatically adjusts timelines based on team capacity and task dependencies.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/liquidplanner-classic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liquidplanner-classic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/liquidplanner-classic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/liquidplanner-classic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan projects with intelligent scheduling that automatically adjusts timelines based on team capacity and task dependencies.
 
 ## Description
 Connect your **LiquidPlanner Classic** workspace to any AI agent and manage project planning through natural conversation.
@@ -49,6 +51,33 @@ Get details of a specific workspace or the default workspace
 - **update_task**: Update an existing task in the default workspace
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LiquidPlanner Classic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all projects and the predicted schedule for the Platform v2 project."
+
+**🤖 AI Agent:**
+> Projects: 5. 'Platform v2' (78 tasks), 'Mobile App' (34), 'API Redesign' (22), 'Infrastructure' (15), 'Marketing Site' (12). Platform v2 schedule: Best case: Jun 12. Most likely: Jun 28. Worst case: Jul 15. Progress: 45%. On-time probability: 72%. Critical path: 'Auth Module' → 'API Gateway' → 'Load Testing'. ⚠️ 3 tasks at risk.
+
+---
+
+**👤 You:**
+> "Create a task and show time tracking for the team this week."
+
+**🤖 AI Agent:**
+> Task created! 'Implement caching layer' — Best: 8h, Worst: 16h. Assigned: Sarah. Project: API Redesign. Predicted completion: May 2. Time tracking (this week): Team total: 142h. Sarah: 38h (95%), Mike: 35h (88%), Lisa: 32h (80%), James: 22h (55%), Others: 15h. Most time: 'Auth Module' (28h).
+
+---
+
+**👤 You:**
+> "Show workspace members and resource allocation."
+
+**🤖 AI Agent:**
+> Workspace members: 8. Resource allocation: Sarah (95% ⚠️ overloaded, 3 projects). Mike (88%, 2 projects). Lisa (80%, 2 projects). James (55%, 1 project). Ana (70%, 2 projects). 3 others at 40-60%. Availability next week: James (40% free), Ana (30%), others fully allocated.
+
+
 ## Installation & Usage
 
 To install and use the **LiquidPlanner Classic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **LiquidPlanner Classic** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Meteostat MCP Server
 
-Access historical weather data and climate statistics from thousands of weather stations and geographic points worldwide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meteostat)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meteostat)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meteostat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meteostat-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access historical weather data and climate statistics from thousands of weather stations and geographic points worldwide.
 
 ## Description
 Connect to **Meteostat** to empower your AI agent with one of the largest databases of historical weather and climate data. Whether you need to analyze past weather patterns for a specific city or interpolate data for a remote coordinate, this server provides the tools to fetch precise meteorological records.
@@ -51,6 +53,33 @@ Get metadata for a specific weather station
 - **stations_normals**: Get climate normals for a station
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Meteostat** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find weather stations within 20km of Lisbon (38.7, -9.1) using stations_nearby."
+
+**🤖 AI Agent:**
+> I found several stations near Lisbon. The closest is 'Lisboa / Geofisico' (ID: 08535) at 1.2km away, and 'Lisboa / Portela' (ID: 08536) at 6.5km. Which one should I pull data from?
+
+---
+
+**👤 You:**
+> "What was the daily weather in New York (40.71, -74.00) during the first week of January 2023? Use point_daily."
+
+**🤖 AI Agent:**
+> Retrieving interpolated data for New York... During the first week of Jan 2023, temperatures ranged from a high of 14°C on Jan 4th to a low of 2°C on Jan 1st. There was light rain recorded on Jan 5th.
+
+---
+
+**👤 You:**
+> "Get the 30-year climate normals for station 10637."
+
+**🤖 AI Agent:**
+> Fetching climate normals for station 10637 (Frankfurt am Main)... The average annual temperature is 10.6°C, with July being the warmest month (avg 20.1°C) and January the coldest (avg 1.6°C).
+
+
 ## Installation & Usage
 
 To install and use the **Meteostat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Meteostat** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # TNZ Communications MCP Server
 
-Send SMS, Voice (TTS), and Fax messages via TNZ directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tnz-communications)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tnz-communications)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tnz-communications-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tnz-communications-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Send SMS, Voice (TTS), and Fax messages via TNZ directly from your AI agent.
 
 ## Description
 Empower your AI agent with access to the **TNZ Group** messaging gateway to automate your SMS, Voice, and Fax communications in New Zealand and globally.
@@ -46,6 +48,33 @@ Empower your AI agent with access to the **TNZ Group** messaging gateway to auto
 - **send_tts_voice_call**: Send a voice call (Text-to-Speech)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TNZ Communications** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a SMS to +6421000000: 'The delivery is arriving at 2 PM today.'"
+
+**🤖 AI Agent:**
+> Done! I've sent the SMS message to +6421000000 via TNZ. MessageID: ref_123.
+
+---
+
+**👤 You:**
+> "What is the status of my message ID 'ref_123'?"
+
+**🤖 AI Agent:**
+> The status for message 'ref_123' is 'DELIVERED'. It was received by the recipient today at 10:15 AM.
+
+---
+
+**👤 You:**
+> "Check my current TNZ account balance."
+
+**🤖 AI Agent:**
+> You currently have $25.50 remaining in your TNZ Communications account.
+
+
 ## Installation & Usage
 
 To install and use the **TNZ Communications** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **TNZ Communications** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Acelle Mail MCP Server
 
-Launch email campaigns, grow subscriber lists, and track open rates with a self-hosted email marketing platform built for scale.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/acelle-mail)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acelle-mail)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/acelle-mail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/acelle-mail-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 7
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Launch email campaigns, grow subscriber lists, and track open rates with a self-hosted email marketing platform built for scale.
 
 ## Description
 Connect your **Acelle Mail** self-hosted or cloud account to any AI agent and simplify how you manage your mailing lists, subscriber data, and email campaigns through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Acelle Mail** self-hosted or cloud account to any AI agent and si
 - **list_acelle_subscribers**: List subscribers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Acelle Mail** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my mailing lists in Acelle Mail."
+
+**🤖 AI Agent:**
+> I've retrieved your mailing lists. You have 3 active directories: 'Main Newsletter', 'Beta Testers', and 'Old Customers'. Which one would you like to see subscribers for?
+
+---
+
+**👤 You:**
+> "Add 'john.doe@example.com' to the 'Main Newsletter' list (UID: 10293)."
+
+**🤖 AI Agent:**
+> Subscriber added! I've registered john.doe@example.com in the 'Main Newsletter' list. He is now active and ready to receive your upcoming campaigns.
+
+---
+
+**👤 You:**
+> "Show me the status of my latest email campaign."
+
+**🤖 AI Agent:**
+> I've fetched your campaigns. The 'November Product Update' (UID: camp_88231) is currently 'Sending'. It has already reached 85% of its recipients with an open rate of 12%.
+
+
 ## Installation & Usage
 
 To install and use the **Acelle Mail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Acelle Mail** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

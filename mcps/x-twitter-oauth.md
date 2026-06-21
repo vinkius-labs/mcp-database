@@ -1,12 +1,14 @@
 # X (Twitter) OAuth MCP Server
 
-Full read and write access to X (Twitter) via OAuth 2.0 — post tweets, like content, follow users, browse timelines, track mentions, and monitor trends directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/x-twitter-oauth)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-twitter-oauth)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/x-twitter-oauth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/x-twitter-oauth-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 16
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Full read and write access to X (Twitter) via OAuth 2.0 — post tweets, like content, follow users, browse timelines, track mentions, and monitor trends directly from any AI agent.
 
 ## Description
 Connect your **X (Twitter)** account to any AI agent via OAuth 2.0 and unlock full read and write capabilities.
@@ -92,6 +94,33 @@ Search for recent public tweets (up to last 7 days) using keywords, hashtags, or
 Fetch full details of a specific X (Twitter) user by their @username
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **X (Twitter) OAuth** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Post a tweet saying 'Just shipped our new AI integration — try it now!'"
+
+**🤖 AI Agent:**
+> Done! Tweet posted successfully with ID 1234567890. Your followers can now see it. Want me to check the engagement metrics in a few minutes?
+
+---
+
+**👤 You:**
+> "Show me my latest mentions and like any positive ones."
+
+**🤖 AI Agent:**
+> You have 5 recent mentions. 3 are positive — I've liked all three. One is a question about pricing and another is neutral feedback. Want me to reply to the pricing question?
+
+---
+
+**👤 You:**
+> "Follow @openai and check their latest tweets."
+
+**🤖 AI Agent:**
+> Done — now following @openai (ID: 4398626122). Their latest tweets discuss GPT-5 benchmarks and a new safety paper. Want me to retweet any of them?
+
+
 ## Installation & Usage
 
 To install and use the **X (Twitter) OAuth** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -100,4 +129,11 @@ To install and use the **X (Twitter) OAuth** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

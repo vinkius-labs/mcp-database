@@ -1,12 +1,14 @@
 # Mattermark MCP Server
 
-Startup and venture capital data via Mattermark — search companies, investors, and funding rounds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermark)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mattermark)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mattermark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mattermark-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Startup and venture capital data via Mattermark — search companies, investors, and funding rounds.
 
 ## Description
 Connect your **Mattermark** account to any AI agent and access deep insights into the startup ecosystem through natural conversation.
@@ -38,6 +40,33 @@ Connect your **Mattermark** account to any AI agent and access deep insights int
 - **search_funding_rounds**: Search for funding rounds
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mattermark** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for companies in the 'Fintech' sector in New York."
+
+**🤖 AI Agent:**
+> Fetching companies... I found several fintech startups in New York, including 'Better.com' and 'Plaid'.
+
+---
+
+**👤 You:**
+> "Get funding history for company ID 123."
+
+**🤖 AI Agent:**
+> Retrieving funding rounds... Company 123 has raised a total of $50M across 3 rounds (Seed, Series A, Series B).
+
+---
+
+**👤 You:**
+> "List similar companies to 'Stripe'."
+
+**🤖 AI Agent:**
+> Searching for similar companies... I found 'Adyen', 'PayPal', and 'Square' as related entities.
+
+
 ## Installation & Usage
 
 To install and use the **Mattermark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Mattermark** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

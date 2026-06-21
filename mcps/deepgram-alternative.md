@@ -1,12 +1,14 @@
 # Deepgram MCP Server
 
-Transcribe speech to text with blazing speed and accuracy using neural networks trained on real-world audio at scale.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deepgram-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepgram-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepgram-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepgram-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Transcribe speech to text with blazing speed and accuracy using neural networks trained on real-world audio at scale.
 
 ## Description
 Connect your **Deepgram** account to any AI agent and take full control of your speech-to-text (STT) and text-to-speech (TTS) workflows through natural conversation.
@@ -43,6 +45,33 @@ No more manual file uploading or complex latency tuning in the portal. Your AI a
 - **transcribe_audio_url**: Transcribe an audio file via URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deepgram** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Transcribe the audio from this URL: 'https://static.deepgram.com/examples/interview_segments_nuwav.wav'."
+
+**🤖 AI Agent:**
+> Transcription triggered! I'm converting the speech from your URL into high-fidelity text using Nova-3. I'll provide the formatted transcript and speaker diarization details shortly.
+
+---
+
+**👤 You:**
+> "Convert this text to speech: 'Deepgram is the fastest way to add voice to your AI'."
+
+**🤖 AI Agent:**
+> Audio synthesis complete! I've rendered your text into natural-sounding speech using the Aura engine. You can now access the media file and metadata for playback.
+
+---
+
+**👤 You:**
+> "List all active API keys for project 'proj_123'."
+
+**🤖 AI Agent:**
+> I've retrieved the identifiers for your active API keys in project proj_123. There are 2 keys currently authorized for transcription and synthesis. Shall I check the usage stats for this project?
+
+
 ## Installation & Usage
 
 To install and use the **Deepgram** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Deepgram** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

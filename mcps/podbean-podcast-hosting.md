@@ -1,12 +1,14 @@
 # Podbean Podcast Hosting MCP Server
 
-Manage your podcasts via Podbean — list episodes, publish new content, and track download analytics directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/podbean-podcast-hosting)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podbean-podcast-hosting)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podbean-podcast-hosting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podbean-podcast-hosting-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage your podcasts via Podbean — list episodes, publish new content, and track download analytics directly via AI.
 
 ## Description
 Connect your AI agent to **Podbean**, the comprehensive podcast hosting and monetization platform. This integration allows you to oversee your podcast catalog, manage episode lifecycles, and audit performance metrics through natural conversation.
@@ -43,6 +45,25 @@ Connect your AI agent to **Podbean**, the comprehensive podcast hosting and mone
 - **delete_episode**: Permanently delete a podcast episode
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Podbean Podcast Hosting** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my podcast episodes."
+
+**🤖 AI Agent:**
+> Retrieving episodes... I found several episodes, including 'Episode 1: The Beginning' (Published) and 'Episode 2: Deep Dive' (Draft). Would you like the details for any specific one?
+
+---
+
+**👤 You:**
+> "Show me the download analytics for episode ID '12345'."
+
+**🤖 AI Agent:**
+> Retrieving analytics for episode '12345'... Total downloads to date: 12,450. Engagement is highest in the first 48 hours after release.
+
+
 ## Installation & Usage
 
 To install and use the **Podbean Podcast Hosting** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +72,11 @@ To install and use the **Podbean Podcast Hosting** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

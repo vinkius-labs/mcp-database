@@ -1,12 +1,14 @@
 # Cerebras Inference MCP Server
 
-Access lightning-fast AI inference via Cerebras Wafer-Scale Engine — generate chat completions, manage models, and run batch jobs at record speeds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cerebras-inference)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerebras-inference)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cerebras-inference-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cerebras-inference-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 15
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Access lightning-fast AI inference via Cerebras Wafer-Scale Engine — generate chat completions, manage models, and run batch jobs at record speeds.
 
 ## Description
 Connect to the **Cerebras Inference** platform to leverage the world's fastest AI inference. This MCP server allows your AI agent to interact with state-of-the-art models like Llama 3.1 and others using the Cerebras Wafer-Scale Engine (WSE) for unprecedented performance.
@@ -50,6 +52,33 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 - **list_public_models**: Retrieve model details without an API key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cerebras Inference** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available models on Cerebras."
+
+**🤖 AI Agent:**
+> I've retrieved the available models. You can use 'llama3.1-8b', 'llama3.1-70b', or 'gpt-oss-120b' for high-speed inference. Which one would you like to use for your request?
+
+---
+
+**👤 You:**
+> "Generate a chat response using llama3.1-8b explaining quantum entanglement."
+
+**🤖 AI Agent:**
+> Using the `create_chat_completion` tool with model 'llama3.1-8b'... Quantum entanglement is a physical phenomenon that occurs when a group of particles are generated, interact, or share spatial proximity in a way such that the quantum state of each particle cannot be described independently...
+
+---
+
+**👤 You:**
+> "Check the status of my batch job with ID 'batch_abc123'."
+
+**🤖 AI Agent:**
+> I've checked the status using `get_batch`. The job 'batch_abc123' is currently 'completed'. You can now retrieve the results using the file tools.
+
+
 ## Installation & Usage
 
 To install and use the **Cerebras Inference** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Cerebras Inference** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

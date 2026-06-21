@@ -1,12 +1,14 @@
 # MTA MCP Server
 
-Access NYC transit data via MTA — track subway and bus in real-time, check arrivals, monitor LIRR and Metro-North, and check service alerts from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access NYC transit data via MTA — track subway and bus in real-time, check arrivals, monitor LIRR and Metro-North, and check service alerts from any AI agent.
 
 ## Description
 Connect your **MTA API** New York City public transit data platform to any AI agent and take full control of real-time NYC Subway and MTA Bus tracking, arrival predictions, LIRR and Metro-North commuter rail monitoring, and service disruption awareness through natural conversation.
@@ -81,6 +83,33 @@ Get real-time subway feed data for specific NYC Subway lines
 Get the current MTA Bus Time system timestamp
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MTA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the next trains on the 1/2/3 line."
+
+**🤖 AI Agent:**
+> Fetching subway feed for lines 1/2/3/4/5/6/S (feed ID: 1)... Real-time GTFS-RT data shows: 1 Train to Van Cortlandt Park — 3 stops away, arriving in 4 minutes; 2 Train to Wakefield-241st — 5 stops away, arriving in 7 minutes; 3 Train to Harlem-148th St — 8 stops away, arriving in 11 minutes. All trains currently running on or close to scheduled times with no major delays reported. Would you like predictions for a specific station?
+
+---
+
+**👤 You:**
+> "When is the next M15 bus arriving at the stop near 14th Street and 3rd Avenue?"
+
+**🤖 AI Agent:**
+> Looking up M15 route stops... Found stop ID 308238 at 14 St/3 Av. Checking real-time predictions: M15 Select Bus Service southbound to South Ferry — arriving in 2 minutes; M15 local southbound — arriving in 8 minutes; M15 SBS northbound to East Harlem — arriving in 12 minutes. All vehicles currently on schedule. The SBS stop requires fare payment at street-level machines before boarding. Would you like me to track the exact GPS positions of these buses?
+
+---
+
+**👤 You:**
+> "Check if there are any service alerts affecting the LIRR right now."
+
+**🤖 AI Agent:**
+> Checking MTA service alerts... Currently 2 active LIRR alerts: 1) Babylon Branch — Trains experiencing 10-15 minute delays due to earlier signal problem at Jamaica. Normal service expected to resume by 6:30 PM. 2) Port Jefferson Branch — Track work in effect between Huntington and Northport, expect single-tracking with 20 minute delays through 11:00 PM tonight. All other LIRR branches running on schedule. Penn Station and Grand Central Madison terminals operating normally. Would you like me to check specific train predictions for your branch?
+
+
 ## Installation & Usage
 
 To install and use the **MTA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **MTA** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

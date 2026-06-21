@@ -1,12 +1,14 @@
 # Albacross MCP Server
 
-B2B intent and reveal intelligence — identify anonymous website visitors and manage leads via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/albacross)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/albacross)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/albacross-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/albacross-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+B2B intent and reveal intelligence — identify anonymous website visitors and manage leads via AI.
 
 ## Description
 Connect your **Albacross** account to your AI agent to unlock professional B2B lead generation and intent data orchestration. From identifying anonymous companies visiting your website in real-time to auditing subscriber segments and monitoring automated workflows, your agent handles your account-based marketing strategy through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Albacross** account to your AI agent to unlock professional B2B l
 - **get_usage_stats**: Get API usage limits
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Albacross** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Identify the company for IP address '8.8.8.8'."
+
+**🤖 AI Agent:**
+> I've analyzed the IP address 8.8.8.8. It belongs to Google LLC, a technology company headquartered in Mountain View, CA. They have over 10,000 employees and operate in the Internet software and services industry.
+
+---
+
+**👤 You:**
+> "List the last 10 leads identified in my 'High Intent' segment."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 10 leads from your High Intent segment. Notable visiting companies include 'Innovation Corp' and 'Global Logistics'. Would you like to see the page visit history for any of them?
+
+---
+
+**👤 You:**
+> "Check the status of my 'CRM Sync' workflow."
+
+**🤖 AI Agent:**
+> I've checked your workflows. The 'CRM Sync' (ID: 12345) is currently active and has successfully synced 15 leads to HubSpot in the last 24 hours. There are no reported errors.
+
+
 ## Installation & Usage
 
 To install and use the **Albacross** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Albacross** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

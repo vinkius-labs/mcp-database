@@ -1,12 +1,14 @@
 # Immutable X MCP Server
 
-Interact with the Immutable blockchain — list activities, manage NFT collections, mint assets, and handle orderbook listings directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/immutable-x)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/immutable-x)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/immutable-x-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/immutable-x-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 17
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Interact with the Immutable blockchain — list activities, manage NFT collections, mint assets, and handle orderbook listings directly from your AI agent.
 
 ## Description
 Connect your **Immutable** developer account to any AI agent to manage Web3 gaming assets and on-chain data through natural conversation.
@@ -52,6 +54,33 @@ Connect your **Immutable** developer account to any AI agent to manage Web3 gami
 - **update_passport_username**: Update Passport username (requires Access Token)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Immutable X** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all NFT collections on the imtbl-zkevm-mainnet chain."
+
+**🤖 AI Agent:**
+> I've retrieved the collections for imtbl-zkevm-mainnet. You have access to several active collections, including 'Guild of Guardians' and 'Gods Unchained'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Show me the details for NFT token ID 123 in collection 0xabc123... on imtbl-zkevm-mainnet."
+
+**🤖 AI Agent:**
+> Fetching NFT details... Token #123 is a 'Legendary Sword' with metadata including 'Damage: 50' and 'Rarity: Mythic'. It is currently owned by address 0x789... and is not listed for sale.
+
+---
+
+**👤 You:**
+> "List the latest activities on the imtbl-zkevm-mainnet chain."
+
+**🤖 AI Agent:**
+> I've found 10 recent activities. These include 4 mints, 3 transfers, and 3 sale events. Would you like me to provide details for the most recent sale (ID: act_987...)?
+
+
 ## Installation & Usage
 
 To install and use the **Immutable X** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Immutable X** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

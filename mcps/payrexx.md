@@ -1,12 +1,14 @@
 # Payrexx MCP Server
 
-Accept payments online with a Swiss payment gateway that supports local and international methods with PCI compliance built in.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/payrexx)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payrexx)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payrexx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payrexx-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Accept payments online with a Swiss payment gateway that supports local and international methods with PCI compliance built in.
 
 ## Description
 Connect your **Payrexx** account to any AI agent and take full control of your payment orchestration and checkout flows through natural conversation. Payrexx is the leading payment provider in Switzerland and Europe, and this integration allows you to create payment gateways, monitor real-time transaction metadata, and manage recurring subscriptions directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual status checks in the dashboard. Your AI acts as a dedicated payme
 - **list_webhooks**: List configured webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Payrexx** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a payment link for 50.00 CHF titled 'Event Registration'."
+
+**🤖 AI Agent:**
+> I've generated your payment gateway for 'Event Registration' (50.00 CHF). You can share this link with your customers: [link]. Should I monitor this for new transactions?
+
+---
+
+**👤 You:**
+> "Show me all payment transactions from the last 48 hours with their statuses."
+
+**🤖 AI Agent:**
+> 32 transactions processed in the last 48 hours. 28 completed successfully (CHF 12,450 total), 2 are pending 3D Secure verification, 1 was declined (insufficient funds), and 1 was refunded. Payment methods: TWINT (45%), credit card (35%), PostFinance (15%), PayPal (5%). Average transaction value: CHF 389.
+
+---
+
+**👤 You:**
+> "Create a new payment link for a CHF 250 consultation fee with an expiration date of June 30th."
+
+**🤖 AI Agent:**
+> Payment link created successfully. Amount: CHF 250.00. Purpose: Consultation Fee. Link: pay.payrexx.com/p/abc123. Expiration: June 30, 2025. Accepted methods: TWINT, Visa, Mastercard, PostFinance. The link supports 3D Secure and is ready to be shared with your client via email or messaging.
+
+
 ## Installation & Usage
 
 To install and use the **Payrexx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Payrexx** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

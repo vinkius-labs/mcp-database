@@ -1,12 +1,14 @@
 # Región de Murcia Datos Abiertos MCP Server
 
-Access the official open data portal of the Region of Murcia (Spain) to query datasets, organizations, and public statistics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/region-de-murcia-datos-abiertos)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/region-de-murcia-datos-abiertos)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/region-de-murcia-datos-abiertos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/region-de-murcia-datos-abiertos-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 7
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access the official open data portal of the Region of Murcia (Spain) to query datasets, organizations, and public statistics.
 
 ## Description
 Connect your AI agent to the **Región de Murcia Datos Abiertos** portal. This MCP server provides direct access to the CKAN-based catalog of the regional government of Murcia, Spain, allowing you to explore a wealth of public information.
@@ -42,6 +44,33 @@ Connect your AI agent to the **Región de Murcia Datos Abiertos** portal. This M
 - **search_datasets**: Search for datasets in the catalog
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Región de Murcia Datos Abiertos** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for datasets about 'medio ambiente' in the Murcia portal."
+
+**🤖 AI Agent:**
+> I found several datasets related to the environment. Notable ones include 'Calidad del aire' and 'Espacios naturales protegidos'. Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the 10 most viewed datasets in Murcia."
+
+**🤖 AI Agent:**
+> The most viewed datasets include the 'Directorio de Centros Educativos', 'Presupuestos Municipales', and 'Evolución de la población'. I can fetch the full metadata for any of these if you provide the name.
+
+---
+
+**👤 You:**
+> "List all organizations that publish data on the portal."
+
+**🤖 AI Agent:**
+> I've retrieved the list of organizations. There are many contributors, including 'Consejería de Salud', 'Ayuntamiento de Murcia', and 'Servicio Murciano de Salud'. Which organization's data are you interested in?
+
+
 ## Installation & Usage
 
 To install and use the **Región de Murcia Datos Abiertos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Región de Murcia Datos Abiertos** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

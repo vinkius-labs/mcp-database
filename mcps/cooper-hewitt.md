@@ -1,12 +1,14 @@
 # Cooper Hewitt MCP Server
 
-Access the Cooper Hewitt Smithsonian Design Museum collection — search objects, explore exhibitions, and retrieve detailed metadata about design history.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cooper-hewitt)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cooper-hewitt)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cooper-hewitt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cooper-hewitt-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 22
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the Cooper Hewitt Smithsonian Design Museum collection — search objects, explore exhibitions, and retrieve detailed metadata about design history.
 
 ## Description
 Connect to the **Cooper Hewitt Smithsonian Design Museum** API and explore one of the world's most comprehensive design collections directly through your AI agent.
@@ -59,6 +61,33 @@ No more manual searching through web archives. Your AI acts as a specialized des
 - **test_error**: Return a test error from the API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cooper Hewitt** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for objects in the collection related to 'Bauhaus' that have images."
+
+**🤖 AI Agent:**
+> I've searched the collection for 'Bauhaus' items with images. I found several objects, including a 1923 wallpaper sample (ID: 18491569) and a tea infuser. Would you like to see the detailed metadata or images for any of these?
+
+---
+
+**👤 You:**
+> "Give me the color palette for object ID 18639529."
+
+**🤖 AI Agent:**
+> Fetching the color profile for object 18639529... The palette includes 'Vivid Tangerine' (#FF9F80), 'Dark Charcoal' (#333333), and 'Light Gray' (#D3D3D3).
+
+---
+
+**👤 You:**
+> "Show me a random object from the museum to inspire my next design project."
+
+**🤖 AI Agent:**
+> Here is a random selection: 'Bird and Anemone' textile (1882), designed by William Morris. It's a block-printed cotton fabric featuring intricate floral and avian patterns. Would you like to see its exhibition history?
+
+
 ## Installation & Usage
 
 To install and use the **Cooper Hewitt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Cooper Hewitt** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

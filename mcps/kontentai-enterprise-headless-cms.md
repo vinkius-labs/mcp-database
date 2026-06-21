@@ -1,12 +1,14 @@
 # Kontent.ai (Enterprise Headless CMS) MCP Server
 
-Manage enterprise content via Kontent.ai — create items, publish language variants, and audit content types.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kontentai-enterprise-headless-cms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kontentai-enterprise-headless-cms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kontentai-enterprise-headless-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kontentai-enterprise-headless-cms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 10
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage enterprise content via Kontent.ai — create items, publish language variants, and audit content types.
 
 ## Description
 Connect your **Kontent.ai** project to any AI agent and take full control of your enterprise-grade headless CMS and content orchestration through natural conversation.
@@ -52,6 +54,33 @@ Create or update a top-level content item container
 Update the actual content fields of an item for a specific language
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kontent.ai (Enterprise Headless CMS)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all content items in our project"
+
+**🤖 AI Agent:**
+> I've retrieved your content items. Highlights include 'Homepage' (codename: homepage), 'About Us' (about_us), and 'Q4 Roadmap' (q4_roadmap). Would you like to check the language variants for any of these?
+
+---
+
+**👤 You:**
+> "Publish the 'default' variant for item 'q4_roadmap'"
+
+**🤖 AI Agent:**
+> Publishing variant… Done. The 'default' language version of 'q4_roadmap' has been transitioned to the Published stage. It is now live and available via your delivery endpoints.
+
+---
+
+**👤 You:**
+> "What are the structural fields for the 'Article' content type?"
+
+**🤖 AI Agent:**
+> The 'Article' content type (codename: article) contains 5 fields: 'title' (Text), 'slug' (URL slug), 'body' (Rich text), 'author' (Content relation), and 'hero_image' (Asset). I can help you create a new item implementing this schema.
+
+
 ## Installation & Usage
 
 To install and use the **Kontent.ai (Enterprise Headless CMS)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Kontent.ai (Enterprise Headless CMS)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

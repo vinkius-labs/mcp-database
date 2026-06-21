@@ -1,12 +1,14 @@
 # timeghost MCP Server
 
-Log working hours directly from Microsoft Teams and Outlook with time tracking that integrates into the tools you already use.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/timeghost)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/timeghost)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/timeghost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/timeghost-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Log working hours directly from Microsoft Teams and Outlook with time tracking that integrates into the tools you already use.
 
 ## Description
 Connect your **timeghost** account to any AI agent and take full control of your Microsoft 365 integrated time tracking and project orchestration through natural conversation.
@@ -52,6 +54,33 @@ List time entries
 - **list_timeghost_workspaces**: List workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **timeghost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in my timeghost account."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You currently have 8 active high-fidelity projects, including 'App Development' (Budget: 80% used) and 'Q2 Marketing'. Would you like the detailed health metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the last 5 time entries for task 'API Design'."
+
+**🤖 AI Agent:**
+> Timesheet orchestrated! For the task 'API Design', I've identified 5 recent high-fidelity time entries, totaling 12 hours. I've retrieved the technical logs and duration for your review. Need help summarizing the productivity?
+
+---
+
+**👤 You:**
+> "Check the connectivity status for the 'Marketing' workspace."
+
+**🤖 AI Agent:**
+> Workspace directory orchestrated! The 'Marketing' workspace is currently 'ACTIVE' and fully synchronized with Microsoft 365. Your API connection is healthy. Shall I retrieve the detailed resource utilization metadata for this workspace?
+
+
 ## Installation & Usage
 
 To install and use the **timeghost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **timeghost** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Codemagic MCP Server
 
-Automate mobile CI/CD workflows — trigger builds, manage artifacts, and update environment variables directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/codemagic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codemagic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codemagic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codemagic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 5
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate mobile CI/CD workflows — trigger builds, manage artifacts, and update environment variables directly from your AI agent.
 
 ## Description
 Connect your **Codemagic** account to any AI agent and streamline your mobile application delivery pipeline through natural language commands.
@@ -42,6 +44,33 @@ Connect your **Codemagic** account to any AI agent and streamline your mobile ap
 Start a new Codemagic build
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Codemagic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Start a new build for app '642a1b2c3d4e5f' using the 'release-workflow' on the 'main' branch."
+
+**🤖 AI Agent:**
+> I've triggered the build for you. The build process has started for the 'main' branch using the specified workflow. You can track its progress in your Codemagic dashboard.
+
+---
+
+**👤 You:**
+> "Generate a public download link for the artifact at 'build/outputs/app-release.ipa' that expires in 24 hours."
+
+**🤖 AI Agent:**
+> I've generated a temporary public URL for your artifact. It will be valid for the next 24 hours: [URL].
+
+---
+
+**👤 You:**
+> "Add a secure variable 'API_KEY' with value 'secret123' to the variable group 'prod-secrets'."
+
+**🤖 AI Agent:**
+> The secure variable 'API_KEY' has been successfully added to the 'prod-secrets' group.
+
+
 ## Installation & Usage
 
 To install and use the **Codemagic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Codemagic** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

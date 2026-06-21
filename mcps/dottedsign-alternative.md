@@ -1,12 +1,14 @@
 # DottedSign MCP Server
 
-Automate e-signature workflows via DottedSign — create signing tasks, manage templates, and track document status directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dottedsign-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dottedsign-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dottedsign-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dottedsign-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 25
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate e-signature workflows via DottedSign — create signing tasks, manage templates, and track document status directly from any AI agent.
 
 ## Description
 Connect your **DottedSign** account to any AI agent to streamline your document signing processes through natural conversation.
@@ -62,6 +64,33 @@ No more manual tracking of pending contracts. Your AI acts as a digital legal as
 - **void_task**: Void a DottedSign task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DottedSign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my pending signing tasks on DottedSign."
+
+**🤖 AI Agent:**
+> I've retrieved your tasks. You have 3 tasks waiting for signatures, including 'Service Agreement' (ID: ds_882) and 'NDA - New Hire' (ID: ds_901). Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "Create a quick signing task using template ID 'temp_554'."
+
+**🤖 AI Agent:**
+> Task created successfully using the template! The new task ID is 'ds_1029'. I have sent the document to the default signers defined in the template.
+
+---
+
+**👤 You:**
+> "Show me the full details for task ds_882."
+
+**🤖 AI Agent:**
+> Inspecting task ds_882... The document 'Service Agreement' is currently in 'waiting' status. Signer 'Alice Smith' has viewed it but not yet signed, while 'Bob Jones' has not opened it yet.
+
+
 ## Installation & Usage
 
 To install and use the **DottedSign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **DottedSign** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

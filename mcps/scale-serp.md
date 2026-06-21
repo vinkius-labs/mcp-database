@@ -1,12 +1,14 @@
 # Scale SERP MCP Server
 
-Equip your AI agent with real-time Google Search data — run organic, news, shopping, and scholar queries effortlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scale-serp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scale-serp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scale-serp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scale-serp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent with real-time Google Search data — run organic, news, shopping, and scholar queries effortlessly.
 
 ## Description
 Connect **Scale SERP** to any AI agent to unlock the full power of real-time Google search data. Enable your AI to browse the web intelligently without worrying about anti-bot measures or complex scraping logic.
@@ -48,6 +50,36 @@ Performs a standard Google organic search
 - **google_videos**: Searches for videos on Google
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scale SERP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Run a Google Scholar search for 'machine learning in agriculture' and summarize the top 3 papers."
+
+**🤖 AI Agent:**
+> I've fetched the top results from Google Scholar. Here are the summaries of the top 3 highly cited papers from the last 5 years: 
+1) 'Deep Learning for Crop Yield Prediction' - explores neural networks analyzing satellite images. 
+2) 'Smart Agriculture Frameworks' - discusses IoT sensors combined with ML. 
+3) 'Pest Detection models' - focuses on computer vision models to identify crop diseases.
+
+---
+
+**👤 You:**
+> "Find restaurants near Times Square via Google Places."
+
+**🤖 AI Agent:**
+> I retrieved 5 top-rated restaurants near Times Square from Google Places: Carmine's Italian (4.5 stars, 12K reviews), Junior's Restaurant (4.4 stars), Joe's Pizza (4.6 stars), Le Bernardin (4.9 stars) and The View Restaurant (4.2 stars). Should I lookup their addresses?
+
+---
+
+**👤 You:**
+> "Search Google for 'best CRM tools'."
+
+**🤖 AI Agent:**
+> I performed an organic Google Search. The current top ranking pages are: 1. Salesforce's 'What is CRM' portal. 2. HubSpot's Complete Guide for 2024. 3. Forbes Advisor 'Best CRM Software of The Year'. Would you like me to fetch the SEO titles or visit any of the URLs?
+
+
 ## Installation & Usage
 
 To install and use the **Scale SERP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +88,11 @@ To install and use the **Scale SERP** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

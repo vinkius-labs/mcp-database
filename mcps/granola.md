@@ -1,12 +1,14 @@
 # Granola MCP Server
 
-Manage AI meeting notes via Granola — list and search meeting documents, retrieve transcripts and summaries, and track action items directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/granola)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/granola)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/granola-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/granola-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage AI meeting notes via Granola — list and search meeting documents, retrieve transcripts and summaries, and track action items directly from any AI agent.
 
 ## Description
 Connect your **Granola.ai** account to any AI agent and take full control of your AI-powered meeting notes, searchable conversation memory, and automated summaries through natural conversation.
@@ -52,6 +54,33 @@ Connect your **Granola.ai** account to any AI agent and take full control of you
 - **search_documents**: Full-text search across all meeting documents
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Granola** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the 5 most recent meeting documents"
+
+**🤖 AI Agent:**
+> Retrieving your recent documents... I found 5 meetings including 'Product Design Workshop', 'Q2 Budget Review', and 'Weekly Sync'. Would you like the AI summary or the list of participants for the design workshop?
+
+---
+
+**👤 You:**
+> "What were the action items from meeting 'abc-123'?"
+
+**🤖 AI Agent:**
+> Action items extracted! For meeting abc-123, I found 3 tasks: 1. John to update the landing page copy. 2. Sarah to finalize the pricing model. 3. Mike to schedule the stakeholder demo. Would you like the due dates for these?
+
+---
+
+**👤 You:**
+> "Search for meeting notes mentioning 'competitor analysis'"
+
+**🤖 AI Agent:**
+> Searching documents... I found 2 meeting documents mentioning 'competitor analysis'. The most relevant is 'Marketing Strategy Sync' from March 20. I can retrieve the full structured content or transcript for you.
+
+
 ## Installation & Usage
 
 To install and use the **Granola** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Granola** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Ensembl MCP Server
 
-Access genomic data, gene trees, homologies, and cross-references from the Ensembl database directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ensembl)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ensembl)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ensembl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ensembl-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 27
+
+**Category:** [databases](../categories/databases.md)
+
+Access genomic data, gene trees, homologies, and cross-references from the Ensembl database directly from any AI agent.
 
 ## Description
 Connect to the **Ensembl** REST API to perform advanced genomic research and biological data retrieval through natural conversation.
@@ -64,6 +66,33 @@ Retrieve features overlapping a specific region
 - **get_xrefs_symbol**: Look up an external symbol and return linked Ensembl objects
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ensembl** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the latest version of the Ensembl identifier ENSG00000139618?"
+
+**🤖 AI Agent:**
+> I've checked the archive for ENSG00000139618. The latest version is version 11, which is currently active in the latest assembly.
+
+---
+
+**👤 You:**
+> "Find all orthologues for the human gene ENSG00000139618 in mouse."
+
+**🤖 AI Agent:**
+> Searching homologies... I found 1 high-confidence orthologue in Mus musculus: ENSMUSG00000041147 (Brca2). Would you like the alignment details?
+
+---
+
+**👤 You:**
+> "List all species currently available in the Ensembl database."
+
+**🤖 AI Agent:**
+> I've retrieved the species list. There are over 300 species available, including Homo sapiens, Mus musculus, Danio rerio, and many others. Do you want to filter by a specific taxon?
+
+
 ## Installation & Usage
 
 To install and use the **Ensembl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Ensembl** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

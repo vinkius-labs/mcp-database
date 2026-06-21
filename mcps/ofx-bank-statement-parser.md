@@ -1,12 +1,14 @@
 # OFX Bank Statement Parser MCP Server
 
-Turn archaic OFX/QFX bank exports into clean JSON transactions safely and local. Let your AI act as your personal accountant without uploading sensitive financial data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ofx-bank-statement-parser)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ofx-bank-statement-parser)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ofx-bank-statement-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ofx-bank-statement-parser-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 1
+
+**Category:** [data-management](../categories/data-management.md)
+
+Turn archaic OFX/QFX bank exports into clean JSON transactions safely and local. Let your AI act as your personal accountant without uploading sensitive financial data.
 
 ## Description
 Nobody wants to upload their raw bank statement to a public cloud AI. But building a budget or calculating expenses manually is tedious. Furthermore, OFX and QFX files use an archaic SGML structure that completely confuses LLMs if they try to read the raw text directly.
@@ -27,6 +29,37 @@ This MCP acts as a secure, local financial bridge. It parses your bank's export 
 Parse an OFX or QFX bank statement file into clean JSON data. Extracts transactions safely and offline
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OFX Bank Statement Parser** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Read my statement.ofx and categorize all my expenses into a markdown table."
+
+**🤖 AI Agent:**
+> Here is your categorization:
+| Category | Total Spent |
+|---|---|
+| Food & Dining | $450.00 |
+| Transport | $120.00 |
+
+---
+
+**👤 You:**
+> "Look at my bank export and find out exactly how much I paid to 'AWS' last year."
+
+**🤖 AI Agent:**
+> I found 12 transactions matching 'AWS' in your export, totaling exactly $1,450.32.
+
+---
+
+**👤 You:**
+> "Analyze my monthly income versus expenses and calculate my savings rate."
+
+**🤖 AI Agent:**
+> Based on the OFX data, your total income was $5,000 and total expenses were $4,000. Your savings rate for this period is 20%.
+
+
 ## Installation & Usage
 
 To install and use the **OFX Bank Statement Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +68,11 @@ To install and use the **OFX Bank Statement Parser** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

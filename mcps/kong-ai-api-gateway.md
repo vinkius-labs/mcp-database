@@ -1,12 +1,14 @@
 # Kong (AI API Gateway) MCP Server
 
-Manage your API Gateway via Kong — orchestrate services, routes, and AI plugins directly from your agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kong-ai-api-gateway)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kong-ai-api-gateway)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kong-ai-api-gateway-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kong-ai-api-gateway-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 10
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Manage your API Gateway via Kong — orchestrate services, routes, and AI plugins directly from your agent.
 
 ## Description
 Connect your **Kong API Gateway** instance to any AI agent and take full control of your API lifecycle and AI traffic management through natural conversation.
@@ -54,6 +56,33 @@ List all enabled Plugins on the Kong Gateway
 Update the configuration of an existing Kong Plugin
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kong (AI API Gateway)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all registered services in my Kong Gateway"
+
+**🤖 AI Agent:**
+> I've found 4 services: 'auth-api', 'inventory-service', 'ai-gateway-proxy', and 'legacy-backend'. Would you like to see the routing rules for any of these?
+
+---
+
+**👤 You:**
+> "Add the 'ai-proxy' plugin to service ID '123-abc' using OpenAI"
+
+**🤖 AI Agent:**
+> Applying AI Proxy plugin to service '123-abc'… Done. I've configured it to route traffic to OpenAI using the GPT-4 model. Your gateway is now ready to handle AI requests for this endpoint.
+
+---
+
+**👤 You:**
+> "Who are the registered consumers in our gateway?"
+
+**🤖 AI Agent:**
+> I've identified 3 consumers: 'MobileApp_Prod', 'ThirdParty_Partner', and 'InternalAdmin_CLI'. 'MobileApp_Prod' has 2 active API keys. Would you like to generate a new key for 'ThirdParty_Partner'?
+
+
 ## Installation & Usage
 
 To install and use the **Kong (AI API Gateway)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Kong (AI API Gateway)** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

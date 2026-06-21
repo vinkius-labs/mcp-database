@@ -1,12 +1,14 @@
 # MotionTools MCP Server
 
-Manage logistics and delivery operations via MotionTools — track bookings, drivers, and vehicles directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/motiontools)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/motiontools)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/motiontools-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/motiontools-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** order-management
-**Tools Count:** 10
+
+**Category:** [order-management](../categories/order-management.md)
+
+Manage logistics and delivery operations via MotionTools — track bookings, drivers, and vehicles directly from your AI agent.
 
 ## Description
 Connect your **MotionTools** account to your AI agent and streamline your urban logistics and fleet management through natural conversation.
@@ -45,6 +47,33 @@ Connect your **MotionTools** account to your AI agent and streamline your urban 
 - **list_vehicles**: List fleet vehicles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MotionTools** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my current delivery bookings and their status."
+
+**🤖 AI Agent:**
+> I've retrieved your current bookings. You have 3 active deliveries: 'BK-789' (Status: In Progress), 'BK-790' (Status: Scheduled), and 1 other. Would you like the driver details for the one in progress?
+
+---
+
+**👤 You:**
+> "Show me the list of active vehicles in the fleet."
+
+**🤖 AI Agent:**
+> Fetching fleet vehicles... You have 8 vehicles registered: 6 are currently assigned to drivers ('VAN-01' to 'VAN-06') and 2 are 'available'. Shall I get the metadata for VAN-01?
+
+---
+
+**👤 You:**
+> "Create a new booking from 123 Main St to 456 Oak Ave."
+
+**🤖 AI Agent:**
+> Initializing new booking... I've successfully created booking 'BK-999' from 123 Main St to 456 Oak Ave. The status is 'unassigned'. Shall I find an available driver in the 'Downtown' service area?
+
+
 ## Installation & Usage
 
 To install and use the **MotionTools** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **MotionTools** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

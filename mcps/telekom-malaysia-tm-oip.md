@@ -1,12 +1,14 @@
 # Telekom Malaysia (TM) OIP MCP Server
 
-Orchestrate Telekom Malaysia (TM) services — manage broadband plans, service orders, and network usage directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/telekom-malaysia-tm-oip)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telekom-malaysia-tm-oip)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telekom-malaysia-tm-oip-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telekom-malaysia-tm-oip-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate Telekom Malaysia (TM) services — manage broadband plans, service orders, and network usage directly from any AI agent.
 
 ## Description
 Connect your AI agents to the **Telekom Malaysia (TM) Open Innovation Platform (OIP)**, the industry-standard ecosystem based on TM Forum Open APIs. This MCP provides 10 tools to manage the full lifecycle of telecommunication services, from querying broadband product catalogs and checking coverage availability to automating service orders and monitoring real-time data consumption.
@@ -47,6 +49,33 @@ Connect your AI agents to the **Telekom Malaysia (TM) Open Innovation Platform (
 - **list_trouble_tickets**: List active support and network trouble tickets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Telekom Malaysia (TM) OIP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check broadband availability for address '123 Jalan Ampang, Kuala Lumpur'."
+
+**🤖 AI Agent:**
+> Connecting to TM OIP service qualification engine... Good news! Broadband services are available at that location. Supported services include UniFi Home 100Mbps and 300Mbps. Would you like to see the pricing for these plans?
+
+---
+
+**👤 You:**
+> "List the top 3 unifi plans from the product catalog."
+
+**🤖 AI Agent:**
+> Retrieving TM product catalog... I've found the top 3 unifi offerings: 1. UniFi Home 800Mbps (ID: off_1), 2. UniFi Home 300Mbps (ID: off_2), 3. UniFi Home 100Mbps (ID: off_3). All plans include free installation. Would you like the full technical specs?
+
+---
+
+**👤 You:**
+> "What is the data usage for service ID 'srv_tm_123' for the last month?"
+
+**🤖 AI Agent:**
+> Querying TM usage management... For service 'srv_tm_123', the total data consumed in the last 30 days was 450GB. Usage was highest during week 2 (150GB). Would you like a daily breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Telekom Malaysia (TM) OIP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Telekom Malaysia (TM) OIP** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

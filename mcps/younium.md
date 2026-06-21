@@ -1,12 +1,14 @@
 # Younium MCP Server
 
-Manage B2B subscriptions, accounts, and financial metrics on Younium — the leading subscription management and billing platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/younium)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/younium)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/younium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/younium-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage B2B subscriptions, accounts, and financial metrics on Younium — the leading subscription management and billing platform.
 
 ## Description
 Connect your **Younium** account to any AI agent and manage your B2B subscription infrastructure through natural conversation.
@@ -56,6 +58,33 @@ Creates a new subscription for an existing account
 - **list_subscriptions**: Lists all recurring billing subscriptions in the account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Younium** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 subscriptions in my Younium account."
+
+**🤖 AI Agent:**
+> I found 5 active subscriptions: 1. 'Enterprise License' for Acme Corp (ID: sub-101), 2. 'SaaS Pro' for Global Tech (ID: sub-102), 3. 'API Add-on' for Stark Industries (ID: sub-103), and 2 others. Which one would you like to see metrics for?
+
+---
+
+**👤 You:**
+> "What is the MRR and ARR for the subscription with ID 'sub-101'?"
+
+**🤖 AI Agent:**
+> Subscription sub-101 (Acme Corp): Current MRR is $1,250.00 and ARR is $15,000.00. The Total Contract Value (TCV) is $45,000.00 over a 3-year term. Would you like me to pull the invoice history for this contract?
+
+---
+
+**👤 You:**
+> "List the last 3 invoices for Acme Corp (Account: acc-123)."
+
+**🤖 AI Agent:**
+> I found 3 invoices for Acme Corp: 1. INV-2026-001 ($1,250.00, Status: PAID), 2. INV-2026-002 ($1,250.00, Status: POSTED), and 3. INV-2026-003 ($1,250.00, Status: DRAFT). Would you like to see the breakdown for the unpaid one?
+
+
 ## Installation & Usage
 
 To install and use the **Younium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Younium** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

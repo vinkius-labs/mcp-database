@@ -1,12 +1,14 @@
 # OMDb API MCP Server
 
-Search movies & TV shows, get ratings, cast, plot details, and IMDb data via the Open Movie Database API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omdb-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omdb-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omdb-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omdb-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search movies & TV shows, get ratings, cast, plot details, and IMDb data via the Open Movie Database API.
 
 ## Description
 Connect the **OMDb API (Open Movie Database)** to any AI agent and access comprehensive movie and TV show data including IMDb ratings, Rotten Tomatoes scores, full cast & crew, plot summaries, box office figures, and awards through natural conversation.
@@ -79,6 +81,37 @@ Search for movies only (excludes TV series and episodes)
 Search for TV series only (excludes movies and episodes)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OMDb API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the ratings for The Dark Knight?"
+
+**🤖 AI Agent:**
+> The Dark Knight (2008) ratings: ⭐ IMDb: 9.0/10 (2.8M votes) | 🍅 Rotten Tomatoes: 94% | 📊 Metacritic: 84/100. Rated PG-13. Directed by Christopher Nolan, starring Christian Bale and Heath Ledger. Box Office: $534,858,444. A critically acclaimed superhero film widely considered one of the best of all time.
+
+---
+
+**👤 You:**
+> "Search for movies directed by Christopher Nolan with Interstellar in the title."
+
+**🤖 AI Agent:**
+> Found: Interstellar (2014) — ⭐ 8.7/10 on IMDb. Runtime: 169 min. Genre: Adventure, Drama, Sci-Fi. Cast: Matthew McConaughey, Anne Hathaway, Jessica Chastain. Director: Christopher Nolan. Plot: A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival as Earth becomes uninhabitable. Box Office: $701,729,206. Production: Paramount Pictures.
+
+---
+
+**👤 You:**
+> "Compare the Lord of the Rings trilogy movies: tt0120737, tt0167261, tt0167260"
+
+**🤖 AI Agent:**
+> LotR trilogy comparison:
+1) The Fellowship of the Ring (2001) ⭐ 8.9 — Runtime: 178 min | Box Office: $897.7M
+2) The Two Towers (2002) ⭐ 8.8 — Runtime: 179 min | Box Office: $947.9M
+3) The Return of the King (2003) ⭐ 9.0 — Runtime: 201 min | Box Office: $1.146B
+All directed by Peter Jackson. Return of the King won 11 Academy Awards including Best Picture.
+
+
 ## Installation & Usage
 
 To install and use the **OMDb API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +120,11 @@ To install and use the **OMDb API** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

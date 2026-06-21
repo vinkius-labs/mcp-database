@@ -1,12 +1,14 @@
 # Oracle Vector DB MCP Server
 
-Run vector similarity searches on Oracle 23ai — execute VECTOR_DISTANCE queries, inspect schemas, list vector indexes, and query tables from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-vector-db)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-vector-db)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oracle-vector-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oracle-vector-db-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Run vector similarity searches on Oracle 23ai — execute VECTOR_DISTANCE queries, inspect schemas, list vector indexes, and query tables from any AI agent.
 
 ## Description
 Bring your **Oracle Database 23ai** vector capabilities directly into your AI agent workflow. Run VECTOR_DISTANCE similarity searches, inspect table schemas, execute SQL queries, and manage vector indexes — all through natural conversation.
@@ -47,6 +49,33 @@ Execute Vector similarity search via Oracle 23ai native VECTOR_DISTANCE
 - **get_database_version**: Get exact Oracle DB Runtime version banner
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Oracle Vector DB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all tables in my schema that have VECTOR columns."
+
+**🤖 AI Agent:**
+> Found 3 tables with VECTOR columns. 1) DOCUMENTS — columns: ID (NUMBER), CONTENT (CLOB), EMBEDDING (VECTOR(1536)), 82,400 rows. 2) PRODUCTS — columns: ID, NAME, FEATURES_VECTOR (VECTOR(768)), 5,200 rows. 3) FAQ_ENTRIES — columns: ID, QUESTION, ANSWER_EMBEDDING (VECTOR(384)), 1,100 rows. Want me to search one?
+
+---
+
+**👤 You:**
+> "Find the 5 most similar documents to this embedding using cosine distance."
+
+**🤖 AI Agent:**
+> Top 5 results from DOCUMENTS table (cosine): 1) Doc #4521 — 'API Rate Limits Overview', distance: 0.034. 2) Doc #1892 — 'Authentication Flow Guide', distance: 0.089. 3) Doc #7301 — 'Error Handling Reference', distance: 0.112. 4) Doc #2244 — 'SDK Quickstart', distance: 0.145. 5) Doc #9010 — 'Webhook Setup', distance: 0.178.
+
+---
+
+**👤 You:**
+> "What version of Oracle is running and does it support vectors?"
+
+**🤖 AI Agent:**
+> Oracle Database 23ai (23.4.0.24.05) — Free tier. Vector features: fully supported. VECTOR data type: available. VECTOR_DISTANCE function: available. HNSW index support: yes. Your instance is ready for vector similarity search operations.
+
+
 ## Installation & Usage
 
 To install and use the **Oracle Vector DB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Oracle Vector DB** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

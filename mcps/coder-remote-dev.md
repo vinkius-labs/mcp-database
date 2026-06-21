@@ -1,12 +1,14 @@
 # Coder (Remote Dev) MCP Server
 
-Manage Coder remote development environments, monitor deployment stats, and interact with AI Bridge sessions directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coder-remote-dev)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coder-remote-dev)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coder-remote-dev-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coder-remote-dev-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 84
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Coder remote development environments, monitor deployment stats, and interact with AI Bridge sessions directly from your AI agent.
 
 ## Description
 Connect your **Coder** deployment to any AI agent to orchestrate remote development infrastructure and monitor workspace health through natural language.
@@ -121,6 +123,33 @@ List workspaces
 - **get_agent_debug_logs**: Get the last 10MiB of agent logs (local agent API)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coder (Remote Dev)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current Coder deployment statistics and build info."
+
+**🤖 AI Agent:**
+> I've retrieved the deployment data. You have 12 active workspaces and 8 active sessions. The current build version is v2.10.2. Would you like to check for updates?
+
+---
+
+**👤 You:**
+> "List all active AI Bridge sessions and their available models."
+
+**🤖 AI Agent:**
+> Found 3 active AI sessions. Available models include GPT-4o, Claude 3.5 Sonnet, and Llama 3. Would you like to see the thread history for a specific session?
+
+---
+
+**👤 You:**
+> "Get the SSH configuration for my Coder instance."
+
+**🤖 AI Agent:**
+> I've fetched the SSH config. The hostname prefix is 'coder.' and the suffix is '.dev'. You can use these to configure your local SSH client for workspace access.
+
+
 ## Installation & Usage
 
 To install and use the **Coder (Remote Dev)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -129,4 +158,11 @@ To install and use the **Coder (Remote Dev)** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

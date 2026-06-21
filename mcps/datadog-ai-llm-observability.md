@@ -1,12 +1,14 @@
 # Datadog AI (LLM Observability) MCP Server
 
-Monitor LLM performance via Datadog — track token usage, audit prompts, and monitor AI model metrics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-ai-llm-observability)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-ai-llm-observability)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-ai-llm-observability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-ai-llm-observability-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Monitor LLM performance via Datadog — track token usage, audit prompts, and monitor AI model metrics directly from any AI agent.
 
 ## Description
 Connect your **Datadog** account to any AI agent and take full control of your LLM observability and AI performance monitoring through natural conversation.
@@ -51,6 +53,33 @@ Identify bounded CRM records inside the Headless Datadog Platform
 - **list_service_accounts**: Identify precise active arrays spanning native Hold parsing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Datadog AI (LLM Observability)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the average token usage for GPT-4 over the last hour"
+
+**🤖 AI Agent:**
+> Querying Datadog metrics... Average token usage for GPT-4 is 150 per request. Usage peaked at 10:30 AM with 450 tokens. Latency is within normal bounds (avg 850ms).
+
+---
+
+**👤 You:**
+> "Search for LLM logs containing 'out of bounds error'"
+
+**🤖 AI Agent:**
+> I found 3 spans matching 'out of bounds error' in your logs. They were triggered by the 'Data-Analyzer' agent. I can provide the full prompt and stack trace for these errors.
+
+---
+
+**👤 You:**
+> "List all active AI monitors"
+
+**🤖 AI Agent:**
+> You have 4 active AI monitors. [LLM-Latency-High] is currently in 'Alert' state, while [Token-Quota-Reached], [GPU-Utilization], and [Model-Drift] are 'OK'.
+
+
 ## Installation & Usage
 
 To install and use the **Datadog AI (LLM Observability)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Datadog AI (LLM Observability)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

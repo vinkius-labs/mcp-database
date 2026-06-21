@@ -1,12 +1,14 @@
 # Lambda Labs (GPU Cloud) MCP Server
 
-Manage AI infrastructure via Lambda Labs — launch GPU instances, monitor ML workloads, and manage SSH keys.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lambda-labs-gpu-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lambda-labs-gpu-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lambda-labs-gpu-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lambda-labs-gpu-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 7
+
+**Category:** [superpower](../categories/superpower.md)
+
+Manage AI infrastructure via Lambda Labs — launch GPU instances, monitor ML workloads, and manage SSH keys.
 
 ## Description
 Connect your **Lambda Labs** account to any AI agent and take full control of your AI infrastructure and high-performance GPU orchestration through natural conversation.
@@ -49,6 +51,33 @@ Discover available Lambda GPU instance specifications and pricing
 - **list_filesystems**: Map persistent shared NAS volumes living in the Lambda ecosystem
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lambda Labs (GPU Cloud)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my running GPU instances in Lambda Cloud"
+
+**🤖 AI Agent:**
+> I've found 2 active instances: 1) 'training-node-01' (1x H100, Region: us-east-1, Status: active), 2) 'inference-test' (1x A100, Region: us-west-1, Status: booting). Would you like the SSH connection strings for either of these?
+
+---
+
+**👤 You:**
+> "Launch a 1x H100 instance in us-east-1 with my 'default-key' SSH key"
+
+**🤖 AI Agent:**
+> Launching GPU instance… I've triggered the provision of a 1x H100 box in us-east-1 with your 'default-key' attached. The Instance ID is 'inst-98765'. It should be ready for SSH access in approximately 2 minutes.
+
+---
+
+**👤 You:**
+> "What are the available instance types and their current pricing?"
+
+**🤖 AI Agent:**
+> I've retrieved the latest catalog. Highlights include: gpu_1x_h100 ($2.49/hr), gpu_8x_h100 ($19.92/hr), and gpu_1x_a100_pcie ($1.10/hr). Availability is currently highest in the us-east-1 and us-south-1 regions. Would you like to check for a specific hardware setup?
+
+
 ## Installation & Usage
 
 To install and use the **Lambda Labs (GPU Cloud)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Lambda Labs (GPU Cloud)** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

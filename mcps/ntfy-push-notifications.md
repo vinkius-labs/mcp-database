@@ -1,12 +1,14 @@
 # ntfy (Push Notifications) MCP Server
 
-Send and receive push notifications via ntfy topics directly from your AI agent to any device.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ntfy-push-notifications)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ntfy-push-notifications)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ntfy-push-notifications-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ntfy-push-notifications-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 2
+
+**Category:** [productivity](../categories/productivity.md)
+
+Send and receive push notifications via ntfy topics directly from your AI agent to any device.
 
 ## Description
 Connect your **ntfy** instance to any AI agent and manage real-time alerts and notifications through natural conversation. ntfy is an HTTP-based pub-sub service that allows you to send notifications to your phone or desktop via scripts or APIs.
@@ -39,6 +41,33 @@ Connect your **ntfy** instance to any AI agent and manage real-time alerts and n
 Publish a push notification to a ntfy topic
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ntfy (Push Notifications)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a high priority notification to the 'server-alerts' topic saying 'Database backup completed successfully' with a checkmark tag."
+
+**🤖 AI Agent:**
+> I've published the message to the 'server-alerts' topic with priority 4 and the 'white_check_mark' tag. The notification has been sent successfully.
+
+---
+
+**👤 You:**
+> "Poll the last 5 minutes of messages from the 'dev-updates' topic."
+
+**🤖 AI Agent:**
+> I've retrieved the cached messages for 'dev-updates' from the last 5 minutes. I found 2 messages: 'Build #402 started' and 'Build #402 finished'.
+
+---
+
+**👤 You:**
+> "Schedule a notification to the 'reminders' topic in 1 hour saying 'Time for the standup meeting!'."
+
+**🤖 AI Agent:**
+> I've scheduled your notification for the 'reminders' topic. It will be delivered in approximately 1 hour.
+
+
 ## Installation & Usage
 
 To install and use the **ntfy (Push Notifications)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **ntfy (Push Notifications)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Clio MCP Server
 
-Practice law more efficiently with legal case management, time tracking, billing, and document organization in one system.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 23
+
+**Category:** [productivity](../categories/productivity.md)
+
+Practice law more efficiently with legal case management, time tracking, billing, and document organization in one system.
 
 ## Description
 Connect your **Clio** (v4) account to any AI agent and take full control of your legal practice management and firm operations through natural conversation.
@@ -103,6 +105,33 @@ List firm users and attorneys
 Search contacts by name or email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active legal matters in my Clio account."
+
+**🤖 AI Agent:**
+> I've retrieved your active matters. You currently have 4 ongoing cases, including 'Estate Planning - John Smith' (ID: m_123) and 'Corporate Acquisition'. Which one should we check activities for?
+
+---
+
+**👤 You:**
+> "Create a new company contact 'Acme Legal' in Clio."
+
+**🤖 AI Agent:**
+> Contact created! Acme Legal has been successfully added to your Clio directory (ID: c_456). They are now available for matter association and billing. Shall I create a new legal case for them?
+
+---
+
+**👤 You:**
+> "Show my billable activities and outstanding invoices."
+
+**🤖 AI Agent:**
+> Retrieving financial overview... You have 15 unbilled activities totaling $2,450.00 and 3 outstanding invoices. Your largest pending bill is for 'Global Tech' (ID: b_789). Would you like the detailed breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Clio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -111,4 +140,11 @@ To install and use the **Clio** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

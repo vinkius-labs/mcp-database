@@ -1,12 +1,14 @@
 # Conta Azul MCP Server
 
-Manage Brazilian ERP via Conta Azul — track customers, products, services, sales, and monitor financial contracts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/conta-azul)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conta-azul)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conta-azul-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conta-azul-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 15
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage Brazilian ERP via Conta Azul — track customers, products, services, sales, and monitor financial contracts directly from any AI agent.
 
 ## Description
 Connect your **Conta Azul** account to any AI agent and take full control of your Brazilian business ERP and financial management through natural conversation.
@@ -54,6 +56,33 @@ Determinar limites contábeis de Plano Analítico nativo classificando recursos
 - **list_bank_accounts**: Mapear bancos físicos conciliando integração extraindo posições monetárias
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Conta Azul** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for customer with CNPJ '12.345.678/0001-90'"
+
+**🤖 AI Agent:**
+> I found the customer: 'Acme Brasil Ltda'. Their account is active, and they have 2 pending sales orders. Would you like to see their full financial history?
+
+---
+
+**👤 You:**
+> "List the last 5 sales"
+
+**🤖 AI Agent:**
+> Here are the 5 most recent sales. The latest is Sale #982 for R$ 1.250,00 (Customer: John Doe). Status: Invoiced. I can retrieve the detailed accounting matrix for any of these.
+
+---
+
+**👤 You:**
+> "Check the status of my NF-e emissions for this month"
+
+**🤖 AI Agent:**
+> Retrieving NF-e records... I found 12 product invoices issued this month. 11 are 'Approved by SEFAZ' and 1 is 'Pending'. Would you like to see the details for the pending invoice?
+
+
 ## Installation & Usage
 
 To install and use the **Conta Azul** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Conta Azul** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

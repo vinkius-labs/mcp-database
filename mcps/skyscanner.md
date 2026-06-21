@@ -1,12 +1,14 @@
 # Skyscanner MCP Server
 
-Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/skyscanner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skyscanner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skyscanner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skyscanner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes.
 
 ## Description
 Connect to **Skyscanner** and explore flight prices worldwide through natural conversation — no API key needed.
@@ -53,6 +55,33 @@ Search for direct flights only
 Search for flight quotes (indicative prices)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Skyscanner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find flights from New York to London on June 15, 2025."
+
+**🤖 AI Agent:**
+> Found flights from $385 (British Airways), $412 (Virgin Atlantic), $438 (Delta). Cheapest days nearby: Jun 14 ($372), Jun 16 ($390).
+
+---
+
+**👤 You:**
+> "What's the cheapest day to fly from São Paulo to Miami in July?"
+
+**🤖 AI Agent:**
+> Cheapest days in July: Jul 8 ($412), Jul 15 ($425), Jul 22 ($438). Most expensive: Jul 4 ($589), Jul 25 ($567). Mid-week flights are consistently cheaper.
+
+---
+
+**👤 You:**
+> "What's the airport code for Tokyo?"
+
+**🤖 AI Agent:**
+> Tokyo airports: NRT (Narita Intl), HND (Haneda). City code: TYOA (both airports). Use TYOA for searches that include both airports.
+
+
 ## Installation & Usage
 
 To install and use the **Skyscanner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Skyscanner** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

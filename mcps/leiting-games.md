@@ -1,12 +1,14 @@
 # Leiting Games MCP Server
 
-Leading game publisher and developer platform — manage submissions, track performance, and audit compliance via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/leiting-games)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leiting-games)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leiting-games-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leiting-games-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Leading game publisher and developer platform — manage submissions, track performance, and audit compliance via AI.
 
 ## Description
 Empower your AI agent to manage your publishing journey with **Leiting Games**, the premier platform for indie and roguelike game development in China. By connecting Leiting Games to your agent, you transform complex game submissions, partner analytics, and compliance auditing into a natural conversation. Your agent can instantly list your published games, retrieve real-time operational status, analyze marketing data, and even audit your compliance with anti-addiction regulations without you needing to navigate technical partner portals. Whether you are an indie creator or an established studio, your agent acts as a real-time publishing assistant, ensuring your games reach their full potential in the Chinese market.
@@ -47,6 +49,33 @@ Empower your AI agent to manage your publishing journey with **Leiting Games**, 
 - **submit_game**: Submit a new game for review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Leiting Games** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my games published with Leiting."
+
+**🤖 AI Agent:**
+> I've retrieved your game list from Leiting. You have 3 active titles: 'Roguelike Dungeon', 'Taoist Cultivation', and 'Slime Adventure'. All are currently in 'Normal' operational status.
+
+---
+
+**👤 You:**
+> "Check the compliance status for 'Roguelike Dungeon'."
+
+**🤖 AI Agent:**
+> Compliance audit for 'Roguelike Dungeon' is complete. Compliance score: 98/100. Real-name authentication and anti-addiction modules are active. No major issues found.
+
+---
+
+**👤 You:**
+> "Submit a new game title 'Mech Warrior' (RPG) for review."
+
+**🤖 AI Agent:**
+> Done! I've submitted 'Mech Warrior' (Genre: RPG) to the Leiting Games review team. You can track the submission status using ID: SUB-9920.
+
+
 ## Installation & Usage
 
 To install and use the **Leiting Games** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Leiting Games** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Exa MCP Server
 
-Find exactly the web content you need with semantic search that understands context and returns high-quality curated results.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/exa-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exa-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exa-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exa-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Find exactly the web content you need with semantic search that understands context and returns high-quality curated results.
 
 ## Description
 Connect **Exa (formerly Metaphor)** to any AI agent and simplify how you discover relevant web data, research topics using neural embeddings, and extract cleaned content through natural conversation.
@@ -56,6 +58,33 @@ Search the web with AI
 - **search_with_contents**: Search and extract page content
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Exa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Neural search for 'the latest breakthroughs in room-temperature superconductors'."
+
+**🤖 AI Agent:**
+> I've performed a neural search for you. I found 10 high-quality links including recent pre-prints from arXiv, specialized science blogs, and official university press releases. Which source would you like me to extract the content from?
+
+---
+
+**👤 You:**
+> "Find 5 links similar to 'https://openai.com/blog/instruction-following'."
+
+**🤖 AI Agent:**
+> Fetching similar content... I've identified 5 semantically related articles, including papers on RLHF from Anthropic, Google DeepMind's blog on fine-tuning, and technical breakdowns from HuggingFace. Shall I retrieve the metadata for these?
+
+---
+
+**👤 You:**
+> "Extract the cleaned text content from 'https://arxiv.org/abs/2312.00752'."
+
+**🤖 AI Agent:**
+> Extraction complete! I've retrieved the cleaned text content for the arXiv paper (ID: 2312.00752). It contains the abstract, full body text, and author metadata. Would you like me to summarize the key findings for you?
+
+
 ## Installation & Usage
 
 To install and use the **Exa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Exa** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

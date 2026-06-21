@@ -1,12 +1,14 @@
 # Eurostat Economy — EU Financial Intelligence MCP Server
 
-Official EU economic data: quarterly GDP for all 27 member states, government debt and deficit (Maastricht criteria), HICP inflation (the ECB's target measure), interest rates, and EUR exchange rates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-economy-eu-financial-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-economy-eu-financial-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-economy-eu-financial-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-economy-eu-financial-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Official EU economic data: quarterly GDP for all 27 member states, government debt and deficit (Maastricht criteria), HICP inflation (the ECB's target measure), interest rates, and EUR exchange rates.
 
 ## Description
 Connect your AI agent to the official economic statistics of the European Union.
@@ -47,6 +49,61 @@ Get EUR bilateral exchange rates against major currencies
 Query any Eurostat economy/finance dataset by code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eurostat Economy — EU Financial Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Compare GDP growth across Germany, France, Italy, and Spain"
+
+**🤖 AI Agent:**
+> 🇪🇺 **GDP Growth — Top 4 Economies**
+
+| Country | 2023 | 2024-Q3 |
+|---------|------|--------|
+| 🇩🇪 Germany | -0.3% | +0.2% |
+| 🇫🇷 France | +0.7% | +1.1% |
+| 🇮🇹 Italy | +0.9% | +0.7% |
+| 🇪🇸 Spain | +2.5% | +3.1% |
+
+Spain leads the Big 4 recovery. Germany narrowly avoided recession.
+
+---
+
+**👤 You:**
+> "What is the current inflation rate in the eurozone?"
+
+**🤖 AI Agent:**
+> 📈 **Euro Area HICP Inflation**
+
+Annual rate: 2.4%
+ECB target: 2.0%
+Core (ex food/energy): 2.7%
+
+Highest: Estonia (4.1%), Croatia (3.8%)
+Lowest: Finland (0.8%), Lithuania (1.1%)
+
+Inflation converging toward ECB target but services inflation remains sticky.
+
+---
+
+**👤 You:**
+> "Which EU countries exceed the Maastricht debt criteria?"
+
+**🤖 AI Agent:**
+> 🏛️ **Maastricht Debt Criteria (60% of GDP)**
+
+Exceeding limit:
+🇬🇷 Greece: 161%
+🇮🇹 Italy: 137%
+🇫🇷 France: 111%
+🇪🇸 Spain: 107%
+🇧🇪 Belgium: 106%
+🇵🇹 Portugal: 99%
+
+13 of 27 members exceed the 60% ceiling.
+
+
 ## Installation & Usage
 
 To install and use the **Eurostat Economy — EU Financial Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +112,11 @@ To install and use the **Eurostat Economy — EU Financial Intelligence** MCP se
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

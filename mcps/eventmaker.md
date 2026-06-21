@@ -1,12 +1,14 @@
 # Eventmaker MCP Server
 
-Equip your AI agent to manage events, track participants, and monitor check-ins via the Eventmaker API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmaker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventmaker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventmaker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventmaker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage events, track participants, and monitor check-ins via the Eventmaker API.
 
 ## Description
 Integrate **Eventmaker**, the comprehensive event management software, directly into your AI workflow. Manage your corporate events and trade shows, track registered participants and exhibitors, monitor session schedules and real-time check-ins, and oversee your event performance using natural language.
@@ -44,6 +46,33 @@ Integrate **Eventmaker**, the comprehensive event management software, directly 
 - **list_event_sessions**: List all sessions and schedule items for a specific event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eventmaker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all participants for event ID '12345'."
+
+**🤖 AI Agent:**
+> I've found 150 participants for event '12345', including 'Alice Johnson' (Marketing Manager), 'Robert Smith' (Exhibitor), and 'David Williams'. Would you like the contact information for Alice Johnson?
+
+---
+
+**👤 You:**
+> "Show me the check-in log for today."
+
+**🤖 AI Agent:**
+> I've retrieved the check-in log for today. 85 participants have checked in so far, with peak arrival between 9:00 AM and 10:00 AM. 5 exhibitors have also arrived. Would you like a list of participants currently checked in?
+
+---
+
+**👤 You:**
+> "Get performance stats for 'Autumn Trade Show'."
+
+**🤖 AI Agent:**
+> The 'Autumn Trade Show' has 1,200 registrations and a 75% check-in rate. Session 'New Tech Demo' was the most attended. 45 leads were scanned by exhibitors on average. Should I check the detailed session breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Eventmaker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Eventmaker** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Deterministic Reading Project Manager MCP Server
 
-Transform your AI into a hyper-efficient literary project manager. Analyze reading lists, calculate strict algorithmic completion times, and generate momentum-based reading sequences instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-reading-project-manager)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-reading-project-manager)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-reading-project-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-reading-project-manager-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Transform your AI into a hyper-efficient literary project manager. Analyze reading lists, calculate strict algorithmic completion times, and generate momentum-based reading sequences instantly.
 
 ## Description
 Managing extensive reading backlogs (like research papers, tech books, or documentation) is a common productivity bottleneck. LLMs struggle with accurately summing pages, tracking percentages, or estimating true time-to-completion because they guess math instead of calculating it. The Reading Project Manager MCP resolves this by ingesting your list and processing it through a strict V8 algorithmic engine.
@@ -24,6 +26,33 @@ Managing extensive reading backlogs (like research papers, tech books, or docume
 Analyzes an array of reading items to generate comprehensive progress reports, estimate exact completion times (based on WPM), and construct an optimized reading sequence using the Snowball Method
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deterministic Reading Project Manager** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze my book queue and tell me how many hours I have left."
+
+**🤖 AI Agent:**
+> Using the analyze_reading_list tool: You have 1,200 pages left across 4 unread books. At 250 WPM, it will take approximately 24 hours of focused reading.
+
+---
+
+**👤 You:**
+> "What book should I read next to build momentum?"
+
+**🤖 AI Agent:**
+> Using the analyze_reading_list tool: Based on the Snowball sequence, you should finish 'The Lean Startup' (only 40 pages left), followed immediately by your shortest unread book, 'Who Moved My Cheese' (96 pages).
+
+---
+
+**👤 You:**
+> "Calculate my progress across these 15 research papers."
+
+**🤖 AI Agent:**
+> Using the analyze_reading_list tool: Your diagnostic shows you are 45.2% complete overall, having finished 7 papers entirely and being halfway through another.
+
+
 ## Installation & Usage
 
 To install and use the **Deterministic Reading Project Manager** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -32,4 +61,11 @@ To install and use the **Deterministic Reading Project Manager** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

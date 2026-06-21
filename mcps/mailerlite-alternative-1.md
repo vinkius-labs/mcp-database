@@ -1,12 +1,14 @@
 # MailerLite MCP Server
 
-Automate email marketing via MailerLite — manage subscribers, organize groups, and track campaign activity directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite-alternative-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite-alternative-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailerlite-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailerlite-alternative-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 51
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate email marketing via MailerLite — manage subscribers, organize groups, and track campaign activity directly from any AI agent.
 
 ## Description
 Connect your **MailerLite** account to any AI agent to streamline your email marketing and subscriber management through natural conversation.
@@ -88,6 +90,33 @@ List all subscribers
 - **update_webhook**: Update a webhook
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MailerLite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active subscribers."
+
+**🤖 AI Agent:**
+> I've retrieved your active subscribers. You have 1,240 active members. The most recent additions include 'john.doe@example.com' and 'jane.smith@work.com'.
+
+---
+
+**👤 You:**
+> "Get details for subscriber test@example.com."
+
+**🤖 AI Agent:**
+> Found them! Subscriber 'test@example.com' (ID: 987654) is currently 'active'. They are part of the 'Early Adopters' group and were last updated on October 12th.
+
+---
+
+**👤 You:**
+> "Show me all my subscriber groups."
+
+**🤖 AI Agent:**
+> You have 4 groups configured: 'Newsletter' (ID: 111), 'VIP Customers' (ID: 222), 'Webinar Leads' (ID: 333), and 'Uncategorized' (ID: 444).
+
+
 ## Installation & Usage
 
 To install and use the **MailerLite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -96,4 +125,11 @@ To install and use the **MailerLite** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Vidyard MCP Server
 
-Manage video assets, players, and hosting on Vidyard — the leading video messaging platform for business.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vidyard)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vidyard)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vidyard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vidyard-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage video assets, players, and hosting on Vidyard — the leading video messaging platform for business.
 
 ## Description
 Connect your **Vidyard** account to any AI agent and manage your business video library through natural conversation.
@@ -55,6 +57,33 @@ Adds a video asset into a specific player container
 - **update_player_name**: Updates the display name or title of an existing player
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vidyard** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my videos in Vidyard."
+
+**🤖 AI Agent:**
+> I found 8 videos in your library. The most recent ones are 'Q4 Product Update' (ID: vy-123), 'Sales Training 101' (ID: vy-456), and 'Customer Interview' (ID: vy-789). Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Get the direct download links for the 'Product Demo' video."
+
+**🤖 AI Agent:**
+> Here are the direct stream and download links for 'Product Demo': 1080p (MP4: https://vidyard.com/stream/...), 720p (MP4: https://vidyard.com/stream/...), and 480p (MP4: https://vidyard.com/stream/...).
+
+---
+
+**👤 You:**
+> "Create a new player called 'Website Homepage' and attach my latest video to it."
+
+**🤖 AI Agent:**
+> Success! I've created the player 'Website Homepage' (ID: pl-999) and attached the video 'Company Vision 2026' (ID: vy-888) to it. The player is now ready for embedding.
+
+
 ## Installation & Usage
 
 To install and use the **Vidyard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Vidyard** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

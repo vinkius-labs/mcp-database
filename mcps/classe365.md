@@ -1,12 +1,14 @@
 # Classe365 MCP Server
 
-Run your educational institution with student information management, admissions tracking, and academic planning in one platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/classe365)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/classe365)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/classe365-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/classe365-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 7
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Run your educational institution with student information management, admissions tracking, and academic planning in one platform.
 
 ## Description
 Connect your **Classe365** student management system to any AI agent and simplify how you coordinate your educational institution, student directory, and academic records through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Classe365** student management system to any AI agent and simplif
 - **list_students**: List Classe365 students
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Classe365** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active students in my school account."
+
+**🤖 AI Agent:**
+> I've retrieved the student directory. You have 45 active enrollments including 'John Doe', 'Sarah Miller', and 'Mike Ross'. Which one would you like to see the academic profile for?
+
+---
+
+**👤 You:**
+> "Show me the attendance record for student 'std_10293'."
+
+**🤖 AI Agent:**
+> Fetching attendance... Student std_10293 has a 95% attendance rate this semester with only 2 absences recorded in 'Mathematics'. Would you like the full log of dates?
+
+---
+
+**👤 You:**
+> "Create a student profile for 'Anna White' (anna@example.com)."
+
+**🤖 AI Agent:**
+> Success! The profile for Anna White (anna@example.com) has been created in Classe365 with ID std_88231. She is now registered in your student directory.
+
+
 ## Installation & Usage
 
 To install and use the **Classe365** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Classe365** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

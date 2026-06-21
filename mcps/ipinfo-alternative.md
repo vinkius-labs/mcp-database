@@ -1,12 +1,14 @@
 # IPinfo MCP Server
 
-Enrich IP addresses with geolocation, ASN, and WHOIS data directly from your AI agent using IPinfo's industry-leading intelligence.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ipinfo-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ipinfo-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ipinfo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ipinfo-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 10
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Enrich IP addresses with geolocation, ASN, and WHOIS data directly from your AI agent using IPinfo's industry-leading intelligence.
 
 ## Description
 Connect **IPinfo** to your AI agent to perform deep IP intelligence lookups. Whether you're investigating security threats, analyzing web traffic, or managing network infrastructure, this server provides instant access to industry-leading IP data.
@@ -50,6 +52,33 @@ List domains hosted on a specific IP (Reverse IP)
 - **get_whois_poc**: Get IP WHOIS data for a point of contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IPinfo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Lookup the location and carrier details for IP 8.8.8.8."
+
+**🤖 AI Agent:**
+> I've retrieved the data for 8.8.8.8 using `get_lookup_ip`. It is located in Mountain View, California, United States. The carrier is Google LLC and it is associated with AS15169.
+
+---
+
+**👤 You:**
+> "What domains are currently hosted on the IP 1.1.1.1?"
+
+**🤖 AI Agent:**
+> Using `get_hosted_domains`, I found several domains hosted on 1.1.1.1, including 'one.one.one.one', 'cloudflare-dns.com', and 'cloudflare.com'. Would you like to see more results from the next page?
+
+---
+
+**👤 You:**
+> "Get the IP ranges for the domain microsoft.com."
+
+**🤖 AI Agent:**
+> I've queried `get_ranges` for microsoft.com. I found multiple IP ranges associated with this domain, such as 20.112.52.0/24 and 20.103.85.0/24. These belong to Microsoft Corporation (AS8075).
+
+
 ## Installation & Usage
 
 To install and use the **IPinfo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **IPinfo** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

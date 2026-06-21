@@ -1,12 +1,14 @@
 # ContextQA MCP Server
 
-Automate testing via ContextQA — manage test suites, track AI-healing executions, trigger automated runs, and audit API tests directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contextqa)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contextqa)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contextqa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contextqa-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate testing via ContextQA — manage test suites, track AI-healing executions, trigger automated runs, and audit API tests directly from any AI agent.
 
 ## Description
 Connect your **ContextQA** account to any AI agent and take full control of your context-aware AI testing platform through natural conversation.
@@ -47,6 +49,33 @@ Connect your **ContextQA** account to any AI agent and take full control of your
 - **trigger_run**: Dispatch a live testing command routing explicit Jobs against pipelines
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ContextQA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all test suites for project 'vinkius-app-prod'"
+
+**🤖 AI Agent:**
+> I found 4 suites in 'vinkius-app-prod': 'Checkout-Flow', 'User-Onboarding', 'API-Security-Scan', and 'Mobile-Sanity'. Which one would you like to audit or trigger?
+
+---
+
+**👤 You:**
+> "Trigger a run for suite 'Checkout-Flow' in project 'vinkius-app-prod'"
+
+**🤖 AI Agent:**
+> Test run triggered! Suite 'Checkout-Flow' has been queued. You can monitor the progress using Execution ID 'exec_123'. I will notify you once the AI-healing analysis is complete.
+
+---
+
+**👤 You:**
+> "Show me why the last execution of project 'mobile-app' failed"
+
+**🤖 AI Agent:**
+> Analyzing last execution for 'mobile-app'... It failed at step 5: 'Click Login Button'. The element was not found. ContextQA's AI-healing attempted to locate it but failed due to a structural change in the DOM.
+
+
 ## Installation & Usage
 
 To install and use the **ContextQA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **ContextQA** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

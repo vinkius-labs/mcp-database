@@ -1,12 +1,14 @@
 # Lyft MCP Server
 
-AI ride management: request rides, estimate costs, and track trips via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lyft)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lyft)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lyft-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lyft-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+AI ride management: request rides, estimate costs, and track trips via agents.
 
 ## Description
 ### What you can do
@@ -64,6 +66,33 @@ Request a new Lyft ride
 Save or update a location for the Lyft account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lyft** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get me a price estimate from JFK Airport to Times Square for a Lyft XL"
+
+**🤖 AI Agent:**
+> I'll get cost estimates for all available Lyft products between those locations.
+
+---
+
+**👤 You:**
+> "Book me a Lyft from my home to San Francisco International Airport"
+
+**🤖 AI Agent:**
+> I'll check available ride types and pricing, then book the ride for you.
+
+---
+
+**👤 You:**
+> "Show me my last 20 Lyft rides and total spending"
+
+**🤖 AI Agent:**
+> I'll pull your recent ride history and compile the spending summary.
+
+
 ## Installation & Usage
 
 To install and use the **Lyft** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Lyft** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

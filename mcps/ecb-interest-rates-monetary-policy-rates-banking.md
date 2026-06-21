@@ -1,12 +1,14 @@
 # ECB Interest Rates — Monetary Policy Rates & Banking MCP Server
 
-ECB key policy rates: the Main Refinancing Operations rate (MRO), Deposit Facility Rate (DFR), Marginal Lending Facility, all three rates combined, and MFI bank lending/deposit rates showing monetary policy transmission across the eurozone.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-interest-rates-monetary-policy-rates-banking)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-interest-rates-monetary-policy-rates-banking)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecb-interest-rates-monetary-policy-rates-banking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecb-interest-rates-monetary-policy-rates-banking-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+ECB key policy rates: the Main Refinancing Operations rate (MRO), Deposit Facility Rate (DFR), Marginal Lending Facility, all three rates combined, and MFI bank lending/deposit rates showing monetary policy transmission across the eurozone.
 
 ## Description
 ECB monetary policy rates.
@@ -37,6 +39,42 @@ Get all 3 ECB key interest rates together: MRO, deposit, and marginal lending
 Get MFI interest rates — bank lending and deposit rates in the eurozone
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ECB Interest Rates — Monetary Policy Rates & Banking** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the current ECB interest rates?"
+
+**🤖 AI Agent:**
+> 🏦 **ECB Key Interest Rates**
+
+| Rate | Current | Previous |
+|------|---------|----------|
+| Deposit Facility (DFR) | 2.50% | 2.75% |
+| Main Refinancing (MRO) | 2.65% | 2.90% |
+| Marginal Lending (MLFR) | 2.90% | 3.15% |
+
+Last decision: 6 March 2026 (cut by 25bp)
+Next meeting: 17 April 2026
+
+---
+
+**👤 You:**
+> "Fetch the latest Marginal Lending Facility Rate."
+
+**🤖 AI Agent:**
+> The latest Marginal Lending Facility Rate (MLFR) is currently standing at 2.90%. This rate defines the ceiling for the overnight interest rates in the banking system.
+
+---
+
+**👤 You:**
+> "Show the difference between the MRO and the DFR."
+
+**🤖 AI Agent:**
+> The current spread between the Main Refinancing Operations (MRO) rate and the Deposit Facility Rate (DFR) is 15 basis points. The MRO is at 2.65% while the DFR is at 2.50%.
+
+
 ## Installation & Usage
 
 To install and use the **ECB Interest Rates — Monetary Policy Rates & Banking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +83,11 @@ To install and use the **ECB Interest Rates — Monetary Policy Rates & Banking*
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

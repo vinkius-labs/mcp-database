@@ -1,12 +1,14 @@
 # Salesquared MCP Server
 
-Automate business communications via Salesquared — manage SMS, voice calls, and leads directly with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/salesquared)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesquared)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesquared-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesquared-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate business communications via Salesquared — manage SMS, voice calls, and leads directly with AI.
 
 ## Description
 Connect your **Salesquared** account to any AI agent and take full control of your multi-channel business communication through natural conversation. Salesquared provides a unified platform for SMS marketing, voice orchestration, and lead management, and this integration allows you to send automated messages, trigger voice OTPs, and manage your sales database directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual texting or switching between telephony tools. Your AI acts as a d
 - **validate_email**: Validate an email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Salesquared** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS broadcast to my new leads: 'Welcome to our platform!'."
+
+**🤖 AI Agent:**
+> SMS broadcast initiated! I've sent the message to your recent leads via Salesquared. Should I track the delivery status for you?
+
+---
+
+**👤 You:**
+> "Show me all active SMS and voice campaigns with their delivery and conversion metrics."
+
+**🤖 AI Agent:**
+> 6 active campaigns. SMS (4): "Flash Sale Alert" sent 3,400 messages (97% delivered, 12% clicked, $8,900 revenue). "Appointment Reminder" sent 890 (98% delivered, reduced no-shows by 45%). "Payment Reminder" sent 234 (96% delivered, 34% paid within 24h). "Welcome Series" sent 567 (97% delivered, 28% engaged). Voice (2): "Lead Qualification" made 145 calls (78% answered, 34% qualified). "Survey" completed 89 of 120 calls (74% completion). Total revenue attributed: $14,200.
+
+---
+
+**👤 You:**
+> "Send a bulk SMS campaign to all leads tagged as hot prospects with a meeting booking link."
+
+**🤖 AI Agent:**
+> SMS campaign sent to 156 hot prospect leads. Message: "Hi [Name], we'd love to show you how our platform can help your team. Book a personalized demo at your convenience: [booking_link]. Reply STOP to opt out." Delivery: 153 delivered (98.1%), 3 undeliverable. Personalization: first name and company name injected. Booking link: unique per recipient for tracking. Based on similar campaigns, expect 18-22 bookings (12-14% conversion). Campaign cost: $23.40.
+
+
 ## Installation & Usage
 
 To install and use the **Salesquared** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Salesquared** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

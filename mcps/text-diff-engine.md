@@ -1,12 +1,14 @@
 # Text Diff Engine MCP Server
 
-Exact character-by-character string comparison. Stop relying on LLM summaries and get absolute text diffs for code and contracts.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/text-diff-engine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/text-diff-engine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/text-diff-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/text-diff-engine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Exact character-by-character string comparison. Stop relying on LLM summaries and get absolute text diffs for code and contracts.
 
 ## Description
 LLMs summarize differences rather than showing them exactly. This MCP uses the `diff` library to provide deterministic, line-by-line patch generation.
@@ -22,6 +24,37 @@ LLMs summarize differences rather than showing them exactly. This MCP uses the `
 Performs an exact line-by-line diff comparison between two strings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Text Diff Engine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a unified diff between `v1-config.json` and `v2-config.json`."
+
+**🤖 AI Agent:**
+> ✅ **Diff Generated:**
+```diff
+-  "timeout": 30
++  "timeout": 60
+```
+
+---
+
+**👤 You:**
+> "Show me the word-level differences between these two legal contract paragraphs."
+
+**🤖 AI Agent:**
+> ✅ **Word Diff:** Detected 4 removed words and 2 added clauses accurately.
+
+---
+
+**👤 You:**
+> "Compare the original HTML file with the minified version to ensure no attribute loss."
+
+**🤖 AI Agent:**
+> ✅ **Comparison Complete:** The files are structurally identical, differing only in 1,204 whitespace removals.
+
+
 ## Installation & Usage
 
 To install and use the **Text Diff Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -30,4 +63,11 @@ To install and use the **Text Diff Engine** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

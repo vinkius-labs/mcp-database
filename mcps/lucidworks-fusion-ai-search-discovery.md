@@ -1,12 +1,14 @@
 # Lucidworks Fusion (AI Search & Discovery) MCP Server
 
-Manage AI-powered search via Lucidworks Fusion — execute semantic queries, index documents, and monitor ML training jobs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lucidworks-fusion-ai-search-discovery)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lucidworks-fusion-ai-search-discovery)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lucidworks-fusion-ai-search-discovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lucidworks-fusion-ai-search-discovery-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Manage AI-powered search via Lucidworks Fusion — execute semantic queries, index documents, and monitor ML training jobs.
 
 ## Description
 Connect your **Lucidworks Fusion** instance to any AI agent and take full control of your enterprise search architecture, ML-powered ranking, and data ingestion through natural conversation.
@@ -52,6 +54,33 @@ Identify bounded CRM records inside the Headless Lucidworks Platform
 Provision a highly-available JSON Payload generating hard Customer bindings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lucidworks Fusion (AI Search & Discovery)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search the 'Support' app for 'password reset' using the 'default' profile"
+
+**🤖 AI Agent:**
+> Executing search in Fusion… I've retrieved 5 relevant documents. Top result: 'How to reset your corporate password' (Score: 0.95). Other matches include troubleshooting steps and security policies. Would you like to see the full document content?
+
+---
+
+**👤 You:**
+> "List all active ML training jobs for the 'Commerce' application"
+
+**🤖 AI Agent:**
+> I've identified 2 active jobs for 'Commerce': 1) 'Query-Intent-Model' (Status: Running, 45% complete), 2) 'Click-Re-Ranking' (Status: Waiting). I'll let you know once the intent model training is finished. Would you like to check the index profiles as well?
+
+---
+
+**👤 You:**
+> "Post a signal: user clicked on doc ID 'doc-987' in the 'Support' app"
+
+**🤖 AI Agent:**
+> Signal posted successfully. I've sent the click event for 'doc-987' to the Fusion signal pipeline for the Support app. This will be used to improve future search results for similar queries.
+
+
 ## Installation & Usage
 
 To install and use the **Lucidworks Fusion (AI Search & Discovery)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Lucidworks Fusion (AI Search & Discovery)** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

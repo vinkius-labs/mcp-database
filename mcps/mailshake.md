@@ -1,12 +1,14 @@
 # Mailshake MCP Server
 
-Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailshake)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailshake)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailshake-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailshake-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** crm-sales
-**Tools Count:** 9
+
+**Category:** [crm-sales](../categories/crm-sales.md)
+
+Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API.
 
 ## Description
 Connect your **Mailshake** account to any AI agent to automate your cold outreach and sales engagement workflows. This MCP server enables your agent to manage campaigns, promote prospects to lead status, and track email interactions directly from natural language interfaces.
@@ -46,6 +48,33 @@ Add new prospects to an existing campaign
 - **list_campaign_recipients**: List all recipients in a campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mailshake** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active outreach campaigns in Mailshake."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 3 active campaigns: 'Q3 SaaS Outreach (ID: 123)', 'Webinar Follow-up', and 'Partnership Requests'.
+
+---
+
+**👤 You:**
+> "Show recent leads for the 'Partnership' campaign."
+
+**🤖 AI Agent:**
+> I found 5 recent leads for the Partnership campaign. Notable responses from 'John Smith' (Acme Corp) and 'Jane Doe' (Global Tech) are awaiting your follow-up.
+
+---
+
+**👤 You:**
+> "Pause the campaign with ID '12345'."
+
+**🤖 AI Agent:**
+> Successfully paused campaign 12345. No more messages will be sent until you unpause the campaign.
+
+
 ## Installation & Usage
 
 To install and use the **Mailshake** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Mailshake** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

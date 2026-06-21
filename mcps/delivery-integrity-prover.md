@@ -1,12 +1,14 @@
 # Delivery Integrity Prover MCP Server
 
-Forces AI agents to reflect on task execution, matching prompt requirements to actual changes, verifying logs, and declaring gaps before claiming completion.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/delivery-integrity-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/delivery-integrity-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/delivery-integrity-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/delivery-integrity-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Forces AI agents to reflect on task execution, matching prompt requirements to actual changes, verifying logs, and declaring gaps before claiming completion.
 
 ## Description
 Claiming a task is complete when code contains placeholders, lacks test validation, or ignores minor requirements is a common failure mode in AI-driven development. Delivery Integrity Prover acts as a quality gate, forcing agents to map user prompt requirements to target files, verify actual execution logs, and trace outstanding work before declaring a task finished.
@@ -42,6 +44,33 @@ Delivery Integrity Prover validates completion status against 5 critical Decisio
 Structured validation tool to prove delivery integrity at task completion. Forces the agent to MAP every user requirement to a specific file change, SUPPLY execution logs as evidence, and EXPOSE remaining gaps — not "I think I am done" but provable completion. Catches Incomplete Requirements (declaring done when 3 of 5 requirements are addressed — the agent satisfies the "spirit" of the request while missing explicit sub-tasks), Unmodified Artifacts (claiming changes without specifying which files at which lines — "updated the code" is not traceability), Unverified Changes (no compilation logs, no test output, no build results — "it should work" is not evidence. If you did not run it, you did not verify it), Gap Blindness (assuming 100% completion without listing outstanding work, assumptions, or manual verification steps — "no gaps" without explicit audit means you have not looked), and Delivery Flaws (placeholders, TODOs, stub implementations, or commented-out code left in committed files — incomplete code presented as complete). Call at the end of EVERY task execution
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Delivery Integrity Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I have successfully finished creating the user profiles page. I edited the view files."
+
+**🤖 AI Agent:**
+> Verdict: INCOMPLETE_REQUIREMENTS. You claimed completion but did not map the prompt instructions to specific changes. Document how every requirement was implemented and check your pivots.
+
+---
+
+**👤 You:**
+> "Task: Create page speed middleware. Checklist: SpeedMiddleware parses headers (verified in src/middleware.ts:L12-30). Files: src/middleware.ts. Logs: npm run test output shows '12 tests passed, 0 failed' after running MiddlewareSuite. Gaps: Bypassed checking on dynamic routes, needs manual verification on live server. Pivots: all true. Verdict: DELIVERY_PROVEN."
+
+**🤖 AI Agent:**
+> Verdict: DELIVERY_PROVEN. Requirements are mapped, middleware files updated, test logs provided, and route parsing limitations documented. Delivery verified.
+
+---
+
+**👤 You:**
+> "Task: Create page speed middleware. Checklist: SpeedMiddleware parses headers. Files: src/middleware.ts. Logs: Everything worked fine when compiling. Gaps: none. Pivots: requirementsMapped=true, artifactsModified=true, verificationExecuted=true, gapsIdentified=true, integrityProven=true. Verdict: DELIVERY_PROVEN."
+
+**🤖 AI Agent:**
+> Verdict: UNVERIFIED_CHANGES. Your verification logs are a placeholder ('Everything worked fine'). Execute actual test or compile commands and provide the real console output to verify integrity.
+
+
 ## Installation & Usage
 
 To install and use the **Delivery Integrity Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Delivery Integrity Prover** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

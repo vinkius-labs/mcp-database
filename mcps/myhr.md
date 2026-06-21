@@ -1,12 +1,14 @@
 # MyHR MCP Server
 
-Simplify employee management in New Zealand and Australia with leave tracking, timesheets, and HR compliance tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/myhr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/myhr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/myhr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/myhr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Simplify employee management in New Zealand and Australia with leave tracking, timesheets, and HR compliance tools.
 
 ## Description
 Connect your **MyHR** account to any AI agent and manage human resources through natural conversation.
@@ -37,6 +39,33 @@ Connect your **MyHR** account to any AI agent and manage human resources through
 - **list_timesheets**: List all timesheets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MyHR** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees and show their departments."
+
+**🤖 AI Agent:**
+> Employees: 12. Engineering: 5. Marketing: 3. Sales: 2. HR: 1. Finance: 1. Most recent hire: Sarah Chen (Engineering, joined Apr 15).
+
+---
+
+**👤 You:**
+> "Create an absence request for employee 42 next Monday."
+
+**🤖 AI Agent:**
+> Absence created ✅. Employee #42. Type: Vacation. Start: Apr 28. End: Apr 28. Status: Pending approval.
+
+---
+
+**👤 You:**
+> "Show timesheets and current absence requests."
+
+**🤖 AI Agent:**
+> Timesheets: 45 entries this week. Total hours logged: 360h. Absences: 3 pending. 1) Mike L. — Vacation (May 1-5). 2) Lisa R. — Sick (Apr 25). 3) Tom K. — Personal (Apr 30).
+
+
 ## Installation & Usage
 
 To install and use the **MyHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **MyHR** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

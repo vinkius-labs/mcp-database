@@ -1,12 +1,14 @@
 # Import.io (Web Data Extraction) MCP Server
 
-Extract structured data from any website via Import.io — run extractors, manage bulk crawls, and monitor API usage.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/importio-web-data-extraction)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/importio-web-data-extraction)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/importio-web-data-extraction-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/importio-web-data-extraction-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Extract structured data from any website via Import.io — run extractors, manage bulk crawls, and monitor API usage.
 
 ## Description
 Connect your **Import.io** account to any AI agent and take full control of your web data extraction and large-scale scraping through natural conversation.
@@ -64,6 +66,33 @@ Check the status of an active or past import.io extraction run
 Check import.io account API credit usage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Import.io (Web Data Extraction)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Run extractor 'ext-123' against 'https://example.com/products'"
+
+**🤖 AI Agent:**
+> Extraction run started. Run ID: 'run-98765'. I'll monitor the status for you. It usually takes a few seconds to process dynamic pages. Would you like me to fetch the results once it's completed?
+
+---
+
+**👤 You:**
+> "List all extractors in my Import.io account"
+
+**🤖 AI Agent:**
+> I've found 5 extractors in your account: 'Amazon Scraper' (ext-001), 'Competitor Pricing' (ext-002), 'Real Estate Leads' (ext-003), 'Stock Tracker' (ext-004), and 'News Monitor' (ext-005). Which one would you like to run?
+
+---
+
+**👤 You:**
+> "Check my monthly API credit usage"
+
+**🤖 AI Agent:**
+> You've used 12,450 credits out of your 50,000 monthly limit (24.9%). You have 37,550 credits remaining for this billing cycle. Your account health is excellent.
+
+
 ## Installation & Usage
 
 To install and use the **Import.io (Web Data Extraction)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Import.io (Web Data Extraction)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

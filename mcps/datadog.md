@@ -1,12 +1,14 @@
 # Datadog MCP Server
 
-Monitor applications via Datadog — query performance metrics, search logs, and list active monitors directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Monitor applications via Datadog — query performance metrics, search logs, and list active monitors directly from any AI agent.
 
 ## Description
 Connect your **Datadog** account to any AI agent and take full control of your infrastructure monitoring and log management through natural conversation.
@@ -69,6 +71,33 @@ Get dashboard details
 List infrastructure hosts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Datadog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the CPU usage for 'web-server' over the last 30 minutes"
+
+**🤖 AI Agent:**
+> Querying Datadog metrics... Average CPU usage for 'web-server' is 45%. Usage peaked at 78% about 10 minutes ago. Performance appears stable.
+
+---
+
+**👤 You:**
+> "Find logs with '500 Internal Server Error' from the last hour"
+
+**🤖 AI Agent:**
+> I found 12 logs with '500 Internal Server Error'. Most occurrences are in the 'auth-service'. I can provide the detailed stack traces for these errors if you need.
+
+---
+
+**👤 You:**
+> "Are there any active monitors in 'Alert' state?"
+
+**🤖 AI Agent:**
+> Checking Datadog monitors... I found 2 monitors in 'Alert' state: [Free Disk Space Low] on 'db-node-1' and [High Request Latency] on 'api-gateway'.
+
+
 ## Installation & Usage
 
 To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

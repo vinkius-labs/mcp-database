@@ -1,12 +1,14 @@
 # Bringg MCP Server
 
-Automate final-mile logistics via Bringg — manage delivery tasks, track fleets, and assign drivers directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bringg)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bringg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bringg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bringg-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate final-mile logistics via Bringg — manage delivery tasks, track fleets, and assign drivers directly from your AI agent.
 
 ## Description
 Connect your **Bringg** account to any AI agent and take full control of your final-mile delivery and dispatch operations through natural conversation.
@@ -51,6 +53,38 @@ Retrieve a paginated list of active delivery tasks/orders
 - **update_task_details**: Modify existing delivery task details such as customer notes or dropoff info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bringg** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top 3 most recent active deliveries in the hub."
+
+**🤖 AI Agent:**
+> Here are 3 active delivery tasks:
+1. (Task ID: 9481...) Delivery to 123 Main St — Status: AT THE PICKUP LOCATION. Driver: John Doe.
+2. (Task ID: 7421...) Delivery to 456 Grove St — Status: CREATED. Unassigned.
+3. (Task ID: 3109...) Delivery to 789 Pine Ave — Status: ON THE WAY. Driver: Sarah Connor.
+
+Would you like me to manually assign a driver to the second task?
+
+---
+
+**👤 You:**
+> "Where is the order for Task ID 3109 and what's its exact timeline?"
+
+**🤖 AI Agent:**
+> Pulling timeline for Task 3109… The driver, Sarah Connor, hit 'Start' 15 minutes ago. Current geotracking shows longitude: -74.006, latitude: 40.712. The estimated time of arrival (ETA) is 14:32. Would you like me to add a quick customer note to the order before she arrives?
+
+---
+
+**👤 You:**
+> "Force mark task 9481 as complete, the driver forgot to do it."
+
+**🤖 AI Agent:**
+> Done. I've sent a mutation to `force_task_complete` for Task 9481. The driver's workflow is manually closed, and the dispatch dashboard should now show this order as successfully finished.
+
+
 ## Installation & Usage
 
 To install and use the **Bringg** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +93,11 @@ To install and use the **Bringg** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

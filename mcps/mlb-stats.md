@@ -1,12 +1,14 @@
 # MLB Stats MCP Server
 
-Access real-time MLB data, player stats, game schedules, and live feeds directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mlb-stats)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mlb-stats)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mlb-stats-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mlb-stats-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 13
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time MLB data, player stats, game schedules, and live feeds directly from your AI agent.
 
 ## Description
 Connect the **MLB Stats** server to your AI agent to access the most comprehensive database of Major League Baseball information available. From real-time play-by-play to deep historical player statistics, your AI can now act as a professional sabermetrician or a real-time scoreboard.
@@ -56,6 +58,33 @@ Retrieve information about MLB teams and their affiliates
 - **list_venues**: List information about ballparks/venues
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MLB Stats** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all MLB teams and their IDs for the current season."
+
+**🤖 AI Agent:**
+> I've retrieved the team list. Some examples include the Arizona Diamondbacks (ID: 109), Atlanta Braves (ID: 144), and Baltimore Orioles (ID: 110). Would you like to see the full list or details for a specific team?
+
+---
+
+**👤 You:**
+> "Show me the American League East standings for 2023."
+
+**🤖 AI Agent:**
+> Fetching 2023 AL East standings... The Baltimore Orioles finished first with 101 wins, followed by the Tampa Bay Rays with 99 wins. Would you like the full breakdown including wild card status?
+
+---
+
+**👤 You:**
+> "Get the hitting stats for Shohei Ohtani (ID 660271) for the 2023 season."
+
+**🤖 AI Agent:**
+> In 2023, Shohei Ohtani had a .304 batting average, 44 home runs, and 95 RBIs over 135 games. He also posted a 1.066 OPS. Would you like to see his pitching stats for the same year?
+
+
 ## Installation & Usage
 
 To install and use the **MLB Stats** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **MLB Stats** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

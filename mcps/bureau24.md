@@ -1,12 +1,14 @@
 # Bureau24 MCP Server
 
-Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bureau24)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bureau24)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bureau24-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bureau24-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally.
 
 ## Description
 Connect your **Bureau24 (bureau24.fr)** virtual secretary account to any AI agent and simplify how you coordinate incoming calls, customer messages, and professional availability through natural conversation.
@@ -50,6 +52,33 @@ Get account information
 Update your availability status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bureau24** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all recent calls handled by my virtual secretary."
+
+**🤖 AI Agent:**
+> I've retrieved your call log. You had 3 recent calls: 'John Miller' (Inquiry about pricing), 'Unknown Caller' (Spam), and 'Linda Smith' (Meeting request). Which one would you like to read the full notes for?
+
+---
+
+**👤 You:**
+> "Set my status to 'busy' and tell the secretary I am in a workshop until 2 PM."
+
+**🤖 AI Agent:**
+> Status updated! I've set your availability to 'busy' in Bureau24 and added the note for the secretary: 'In a workshop until 2 PM'. Callers will be notified accordingly.
+
+---
+
+**👤 You:**
+> "Show me the latest message from the Bureau24 service."
+
+**🤖 AI Agent:**
+> Fetching messages... Your latest notification (ID: msg_10293) is a summary of today's morning activity: 2 successfully handled calls and 1 urgent callback request from 'Tech Solutions'. Would you like the callback details?
+
+
 ## Installation & Usage
 
 To install and use the **Bureau24** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Bureau24** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

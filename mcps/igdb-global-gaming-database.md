@@ -1,12 +1,14 @@
 # IGDB Global Gaming Database MCP Server
 
-The world's most comprehensive gaming database — audit titles, platforms, age ratings, and more via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/igdb-global-gaming-database)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/igdb-global-gaming-database)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/igdb-global-gaming-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/igdb-global-gaming-database-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 12
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+The world's most comprehensive gaming database — audit titles, platforms, age ratings, and more via AI.
 
 ## Description
 Empower your AI agent with the ultimate gaming intelligence via **IGDB**. This unified server provides access to the complete IGDB ecosystem, allowing your agent to search for thousands of titles, audit franchises, and retrieve detailed metadata for platforms, release dates, and artworks. Additionally, it includes deep support for industry taxonomy, including official genres, themes, keywords, and global age rating systems (ESRB, PEGI). Whether you are conducting market research, organizing a catalog, or managing a personal collection, your agent acts as a real-time gaming historian and analyst, providing precise data through natural conversation.
@@ -50,6 +52,33 @@ List gaming platforms
 - **list_themes**: List game themes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IGDB Global Gaming Database** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the game 'Elden Ring' and provide its community rating and summary."
+
+**🤖 AI Agent:**
+> I've fetched Elden Ring's metadata. It has an exceptional community rating of 94% and is described as an action RPG developed by FromSoftware. Would you like to see the full list of platforms it was released on?
+
+---
+
+**👤 You:**
+> "What are the official age ratings for 'Grand Theft Auto V' globally?"
+
+**🤖 AI Agent:**
+> Running the rating query... I've retrieved the data for GTA V. It is rated 'M' by ESRB in North America and '18' by PEGI in Europe due to intense violence and mature content. Would you like the specific content descriptors for these ratings?
+
+---
+
+**👤 You:**
+> "List all games included in 'The Witcher' franchise."
+
+**🤖 AI Agent:**
+> Inspecting the franchise timeline... The Witcher series includes the three main RPG titles, the Gwent spin-off, and several expansions. Notable GIDs include 1942 for the original and 492 for Wild Hunt. Would you like the summaries for each entry?
+
+
 ## Installation & Usage
 
 To install and use the **IGDB Global Gaming Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **IGDB Global Gaming Database** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

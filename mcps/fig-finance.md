@@ -1,12 +1,14 @@
 # Fig Finance MCP Server
 
-Connect Fig Finance to automate embedded lending — manage customers, query loan offers, and handle disbursements directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fig-finance)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fig-finance)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fig-finance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fig-finance-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Connect Fig Finance to automate embedded lending — manage customers, query loan offers, and handle disbursements directly from your AI agent.
 
 ## Description
 Fig Finance is an AI-powered embedded finance platform for emerging markets. This MCP server allows your AI agent to interact with your Fig Finance account flawlessly.
@@ -45,6 +47,33 @@ Fig Finance is an AI-powered embedded finance platform for emerging markets. Thi
 - **list_transactions**: List all financial transactions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fig Finance** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all customers in my Fig Finance account."
+
+**🤖 AI Agent:**
+> I've retrieved your customer list. You have 25 registered customers, including 'Samuel Okoro' (ID: cust_101) and 'Adaeze Nwosu' (ID: cust_102). Which customer would you like to check for loan offers?
+
+---
+
+**👤 You:**
+> "Show me the available loan offers for customer cust_101."
+
+**🤖 AI Agent:**
+> Inspecting offers... For Samuel Okoro, I found 2 available offers: a 'Nano Loan' of 50,000 NGN (3 months) and a 'Growth Capital' offer of 250,000 NGN (6 months). Would you like to apply for either?
+
+---
+
+**👤 You:**
+> "What is my current account balance?"
+
+**🤖 AI Agent:**
+> Retrieving balance... Your current Fig Finance wallet balance is 1,250,000.00 NGN. Shall I list the recent transactions for this month?
+
+
 ## Installation & Usage
 
 To install and use the **Fig Finance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Fig Finance** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

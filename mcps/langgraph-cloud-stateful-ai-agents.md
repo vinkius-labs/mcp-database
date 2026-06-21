@@ -1,12 +1,14 @@
 # LangGraph Cloud (Stateful AI Agents) MCP Server
 
-Orchestrate stateful AI agents via LangGraph Cloud — manage assistants, monitor conversation threads, and handle human-in-the-loop overrides.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/langgraph-cloud-stateful-ai-agents)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langgraph-cloud-stateful-ai-agents)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langgraph-cloud-stateful-ai-agents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langgraph-cloud-stateful-ai-agents-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 10
+
+**Category:** [superpower](../categories/superpower.md)
+
+Orchestrate stateful AI agents via LangGraph Cloud — manage assistants, monitor conversation threads, and handle human-in-the-loop overrides.
 
 ## Description
 Connect your **LangGraph Cloud** account to any AI agent and take full control of your stateful multi-turn agents and complex graph-based AI workflows through natural conversation.
@@ -48,6 +50,33 @@ Retrieve the exact state graph and variables for a specific thread
 - **update_thread_state**: Manually override or update a thread state graph
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LangGraph Cloud (Stateful AI Agents)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all deployed assistants in my LangGraph Cloud account"
+
+**🤖 AI Agent:**
+> I've found 3 assistants: 'Customer-Support-Bot' (ID: asst-123), 'Sales-Agent-V2' (ID: asst-456), and 'RAG-Search-Helper' (ID: asst-789). Which one would you like to create a new thread for?
+
+---
+
+**👤 You:**
+> "Show me the current state for thread ID 'abc-123-xyz'"
+
+**🤖 AI Agent:**
+> Retrieving state for thread 'abc-123-xyz'… The graph is currently at the 'human_review' node. Variables: 'is_approved' (null), 'final_answer' ('Initial draft generated...'). It is waiting for a manual override to proceed to the 'send_email' node.
+
+---
+
+**👤 You:**
+> "List all active scheduled crons in my account"
+
+**🤖 AI Agent:**
+> I've identified 2 active scheduled jobs: 1) 'Daily-Summary-Bot' (Runs every day at 9 AM UTC), 2) 'Inventory-Monitor' (Runs every 4 hours). Both are successfully triggering runs on their respective threads. Would you like to check the last run status for the summary bot?
+
+
 ## Installation & Usage
 
 To install and use the **LangGraph Cloud (Stateful AI Agents)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **LangGraph Cloud (Stateful AI Agents)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

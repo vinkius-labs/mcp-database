@@ -1,12 +1,14 @@
 # Acuity Scheduling MCP Server
 
-Manage appointments, availability, calendars, classes, and products for your Acuity Scheduling-powered business through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/acuity-scheduling)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acuity-scheduling)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/acuity-scheduling-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/acuity-scheduling-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage appointments, availability, calendars, classes, and products for your Acuity Scheduling-powered business through natural conversation.
 
 ## Description
 Connect your **Acuity Scheduling** (by Squarespace) account to any AI agent and manage your booking operations through natural conversation.
@@ -48,6 +50,25 @@ List exactly when someone can book a given Acuity service on a specific date
 - **list_products**: Retrieve products or gift certificates available for purchase through Acuity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Acuity Scheduling** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Do I have any open slots for private yoga tomorrow?"
+
+**🤖 AI Agent:**
+> Available slots for **Private Yoga Session** tomorrow:
+
+📅 **8:00 AM** — Sarah's calendar ✅
+📅 **10:30 AM** — Sarah's calendar ✅
+📅 **2:00 PM** — Jake's calendar ✅
+📅 **4:30 PM** — Sarah's calendar ✅
+📅 **6:00 PM** — Jake's calendar ✅
+
+5 slots available across 2 instructors. The 2:00 PM with Jake is the prime afternoon slot — shall I help you draft a booking confirmation message?
+
+
 ## Installation & Usage
 
 To install and use the **Acuity Scheduling** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +77,11 @@ To install and use the **Acuity Scheduling** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

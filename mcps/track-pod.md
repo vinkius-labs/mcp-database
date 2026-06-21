@@ -1,12 +1,14 @@
 # Track-POD MCP Server
 
-Optimize delivery routes, capture electronic proof of delivery, and track driver performance for logistics operations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/track-pod)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/track-pod)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/track-pod-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/track-pod-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 7
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Optimize delivery routes, capture electronic proof of delivery, and track driver performance for logistics operations.
 
 ## Description
 Connect your **Track-POD** delivery automation account to any AI agent and simplify how you coordinate your logistics, track orders, and manage your fleet through natural conversation.
@@ -45,6 +47,33 @@ Create a new delivery order
 - **test_api_connection**: Test API key and connection
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Track-POD** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active delivery routes in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your routes. You have 3 active delivery paths: 'Downtown Morning', 'North Sector Express', and 'Warehouse Transfer'. Which one would you like to monitor?
+
+---
+
+**👤 You:**
+> "Show me the details for order #ORD-8823."
+
+**🤖 AI Agent:**
+> I've fetched the metadata for order #ORD-8823. The status is 'In Transit', assigned to driver 'Mike Miller' on the 'Downtown Morning' route. The expected delivery time is 11:30 AM.
+
+---
+
+**👤 You:**
+> "Create a new order #ORD-9902 for 'Tech Solutions' at '123 Main St'."
+
+**🤖 AI Agent:**
+> Success! Order #ORD-9902 has been created for 'Tech Solutions' at the provided address. It is currently unscheduled. Would you like me to check the driver availability for dispatching?
+
+
 ## Installation & Usage
 
 To install and use the **Track-POD** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Track-POD** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

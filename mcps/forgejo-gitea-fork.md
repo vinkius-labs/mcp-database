@@ -1,12 +1,14 @@
 # Forgejo (Gitea Fork) MCP Server
 
-Manage Forgejo and Gitea instances — check version compatibility, generate API tokens, and trigger CI/CD workflows directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/forgejo-gitea-fork)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forgejo-gitea-fork)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/forgejo-gitea-fork-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/forgejo-gitea-fork-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 4
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Forgejo and Gitea instances — check version compatibility, generate API tokens, and trigger CI/CD workflows directly from your AI agent.
 
 ## Description
 Connect your **Forgejo** or **Gitea** instance to any AI agent to streamline your DevOps and repository management workflows through natural conversation.
@@ -40,6 +42,33 @@ Generate a new API token for a user
 - **get_gitea_version**: Get the Gitea-compatible version of the Forgejo instance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Forgejo (Gitea Fork)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the Forgejo and Gitea-compatible versions of my instance."
+
+**🤖 AI Agent:**
+> I've checked your instance. It is running Forgejo version 7.0.1 and is compatible with Gitea API version 1.21.0.
+
+---
+
+**👤 You:**
+> "Generate a new API token named 'CI-Runner' with read:repository scope for user 'admin'."
+
+**🤖 AI Agent:**
+> I have successfully created the token 'CI-Runner' for user 'admin'. The token is: [TOKEN_VALUE]. Please save it securely.
+
+---
+
+**👤 You:**
+> "Trigger the 'deploy.yaml' workflow in the 'main-app' repository owned by 'dev-team'."
+
+**🤖 AI Agent:**
+> The workflow 'deploy.yaml' has been successfully dispatched for dev-team/main-app. You can monitor the progress in your Forgejo Actions dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Forgejo (Gitea Fork)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Forgejo (Gitea Fork)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

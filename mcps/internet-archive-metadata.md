@@ -1,12 +1,14 @@
 # Internet Archive Metadata MCP Server
 
-Get detailed metadata, files, reviews, and stats for any Internet Archive item.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-metadata)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-metadata)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/internet-archive-metadata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/internet-archive-metadata-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Get detailed metadata, files, reviews, and stats for any Internet Archive item.
 
 ## Description
 Connect **Internet Archive Metadata** to any AI agent and retrieve comprehensive details about any archived item — including file listings, user reviews, collection memberships, access statistics, and modification history.
@@ -57,6 +59,33 @@ Get server and storage information for an item
 Get access statistics for an Internet Archive item
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Internet Archive Metadata** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get metadata for item big_buck_bunny."
+
+**🤖 AI Agent:**
+> big_buck_bunny — Creator: Blender Foundation. Date: 2008. Type: Animation/Short film. Duration: 10 minutes. Collection: Community Video. Available in MP4, OGV, and archival formats.
+
+---
+
+**👤 You:**
+> "List all files for item gutenberg_etext1."
+
+**🤖 AI Agent:**
+> Found 8 files: gutenberg_etext1.txt (plain text, 1.2 MB), gutenberg_etext1.epub (EPUB, 800 KB), gutenberg_etext1.mobi (MOBI, 900 KB), gutenberg_etext1.pdf (PDF, 2.1 MB), and various metadata files.
+
+---
+
+**👤 You:**
+> "Get reviews for item nasa_apollo11."
+
+**🤖 AI Agent:**
+> Found 23 reviews. Average rating: 4.8/5 stars. Top review from user 'spacefan42': "Incredible historical footage. The quality restoration is remarkable. A must-watch for anyone interested in space exploration."
+
+
 ## Installation & Usage
 
 To install and use the **Internet Archive Metadata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Internet Archive Metadata** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # PhantomBuster MCP Server
 
-Automate web data extraction via PhantomBuster — list Phantoms, launch automations, and track results directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/phantombuster)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phantombuster)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phantombuster-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phantombuster-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate web data extraction via PhantomBuster — list Phantoms, launch automations, and track results directly from any AI agent.
 
 ## Description
 Connect your **PhantomBuster** account to any AI agent and take full control of your lead generation and web automation workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **PhantomBuster** account to any AI agent and take full control of 
 - **list_workflows**: List all automation workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PhantomBuster** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Phantoms in my account and show their current status."
+
+**🤖 AI Agent:**
+> I've retrieved 5 Phantoms: 'LinkedIn Search Export' (Success), 'Sales Navigator Search' (Error), 'Web Scraper' (Ready), and 2 others. Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Launch the 'LinkedIn Search Export' Phantom with ID '12345'."
+
+**🤖 AI Agent:**
+> Phantom 'LinkedIn Search Export' (ID: 12345) has been launched successfully. I'll notify you once the output is ready.
+
+---
+
+**👤 You:**
+> "Show me the extracted data from the last run of Phantom 12345."
+
+**🤖 AI Agent:**
+> I've fetched the results for Phantom 12345. It extracted 150 leads, including names, company titles, and LinkedIn profile URLs. Would you like a detailed breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **PhantomBuster** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **PhantomBuster** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

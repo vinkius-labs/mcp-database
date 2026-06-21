@@ -1,12 +1,14 @@
 # FireHydrant MCP Server
 
-Manage incidents, services, and responder teams via AI agents with FireHydrant.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firehydrant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firehydrant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firehydrant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firehydrant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** devops-cicd
-**Tools Count:** 12
+
+**Category:** [devops-cicd](../categories/devops-cicd.md)
+
+Manage incidents, services, and responder teams via AI agents with FireHydrant.
 
 ## Description
 Connect your **FireHydrant** account to any AI agent and automate your incident management workflows through the Model Context Protocol (MCP). FireHydrant provides a comprehensive platform for declaring incidents, managing service catalogs, and coordinating team responses. Now, you can manage your site reliability and incident response directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **FireHydrant** account to any AI agent and automate your incident 
 - **update_incident**: Update an incident
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FireHydrant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all currently active incidents in FireHydrant."
+
+**🤖 AI Agent:**
+> Checking for active incidents... I found 2 ongoing incidents: 'Database Latency Issue' (sev-2) and 'Payment Gateway Timeout' (sev-1). Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Declare a new sev-2 incident: 'Redis Connection Spikes'."
+
+**🤖 AI Agent:**
+> Incident declared! I've created a new sev-2 incident named 'Redis Connection Spikes'. The incident ID is 'inc_123'. Responder teams are being notified.
+
+---
+
+**👤 You:**
+> "Add a note to incident 'inc_123': 'Investigating potential cache invalidation issue'."
+
+**🤖 AI Agent:**
+> Note added! Your update has been successfully posted to the timeline for incident 'inc_123'. Responders will see this investigation update immediately.
+
+
 ## Installation & Usage
 
 To install and use the **FireHydrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **FireHydrant** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

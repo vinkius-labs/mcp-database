@@ -1,12 +1,14 @@
 # S&P Global Commodity Insights MCP Server
 
-Access global commodity price assessments — crude oil, natural gas, power, coal, metals, petrochemicals, and agriculture via S&P Global Platts benchmarks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sp-global-commodity-insights)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sp-global-commodity-insights)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sp-global-commodity-insights-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sp-global-commodity-insights-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access global commodity price assessments — crude oil, natural gas, power, coal, metals, petrochemicals, and agriculture via S&P Global Platts benchmarks.
 
 ## Description
 Connect to **S&P Global Commodity Insights API** and bring world-class commodity intelligence to any AI agent. Access over 12,000 daily price assessments from Platts, the industry-standard benchmark for global commodity trading.
@@ -298,6 +300,33 @@ EXAMPLES:
 Get refined petroleum products price assessments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **S&P Global Commodity Insights** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current WTI crude oil price?"
+
+**🤖 AI Agent:**
+> Fetching latest WTI Cushing crude assessment... Current WTI is assessed at $78.45/bbl for today's session. The benchmark has been relatively stable this week, trading in a $77-79/bbl range. Market participants are monitoring OPEC+ production decisions and US inventory levels.
+
+---
+
+**👤 You:**
+> "Show me natural gas prices at Henry Hub and TTF for today."
+
+**🤖 AI Agent:**
+> Retrieving gas hub assessments... Henry Hub (US) is currently assessed at $2.85/MMBtu, while TTF (Netherlands) is trading at €28.50/MWh (approximately $8.90/MMBtu). The spread between US and European gas remains elevated due to strong Asian LNG demand and European storage dynamics.
+
+---
+
+**👤 You:**
+> "What are current carbon credit prices (EUA)?"
+
+**🤖 AI Agent:**
+> Fetching EU Allowance (EUA) carbon credit assessment... Current EUA price is €68.50/tonne CO2. Carbon prices have been volatile this month, ranging between €65-72/tonne as markets digest EU energy policy updates and industrial demand forecasts. The UK ETS is trading at a slight discount at £45.20/tonne.
+
+
 ## Installation & Usage
 
 To install and use the **S&P Global Commodity Insights** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -306,4 +335,11 @@ To install and use the **S&P Global Commodity Insights** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

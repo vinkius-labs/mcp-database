@@ -1,12 +1,14 @@
 # Strava MCP Server
 
-Manage activities, athlete stats, and routes on Strava with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/strava)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage activities, athlete stats, and routes on Strava with AI agents.
 
 ## Description
 Connect your **Strava** account to any AI agent to automate your athletic performance tracking and activity orchestration. Strava provides a premier platform for athletes to track their progress, and this integration allows you to retrieve activity metadata, monitor athlete statistics, and explore routes through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Strava** account to any AI agent to automate your athletic perfor
 - **modify_activity**: Update workout info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Strava** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 activities on Strava."
+
+**🤖 AI Agent:**
+> I've retrieved your recent activities. Your last 5 workouts include a 'Morning Run' (5.2 km), 'Evening Cycle' (20.5 km), and three others. Would you like the detailed stats for the run?
+
+---
+
+**👤 You:**
+> "Show me my training summary for the past week with distance, elevation, and heart rate zones."
+
+**🤖 AI Agent:**
+> Weekly training summary (May 12-18). 6 activities logged. Running (3): 28.4 km total, 342m elevation, avg pace 5:12/km, avg HR 152 bpm. Cycling (2): 89.6 km, 890m elevation, avg speed 28.4 km/h, avg HR 142 bpm. Swimming (1): 2.4 km, 45 minutes, avg pace 1:52/100m. Total distance: 120.4 km. Total time: 8h 23m. Calories: 5,670. HR zones: Zone 1 (12%), Zone 2 (34%), Zone 3 (28%), Zone 4 (18%), Zone 5 (8%). Training load: 4.2/5 (optimal). Fitness trend: +3% vs last week.
+
+---
+
+**👤 You:**
+> "Compare my running performance this month versus last month with pace and distance trends."
+
+**🤖 AI Agent:**
+> Running comparison: May vs April. May (so far): 12 runs, 98.4 km, avg pace 5:08/km, best pace 4:32/km, elevation 1,230m. April: 14 runs, 112 km, avg pace 5:22/km, best pace 4:45/km, elevation 980m. Improvements: avg pace -14 sec/km (2.7% faster), best pace -13 sec/km. On track to exceed April distance (projected 118 km). Longest run: May 10.2 km vs April 8.8 km. Consistency: May avg 3.2 runs/week vs April 3.5. Heart rate efficiency improved: same pace at 5 bpm lower avg HR.
+
+
 ## Installation & Usage
 
 To install and use the **Strava** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Strava** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

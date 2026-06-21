@@ -1,12 +1,14 @@
 # Robin MCP Server
 
-Connect your AI assistant to Robin to seamlessly manage office locations, book meeting rooms, reserve hot desks, and monitor workplace availability directly from chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/robin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/robin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/robin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/robin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI assistant to Robin to seamlessly manage office locations, book meeting rooms, reserve hot desks, and monitor workplace availability directly from chat.
 
 ## Description
 Connect your conversational assistant directly to **Robin**, the leading workplace management platform. This integration transforms your AI into a virtual office manager, empowering you to explore office locations, check room availability, and book desks directly from a seamless chat interface.
@@ -49,6 +51,33 @@ Checks availability for multiple spaces within a time range
 - **reserve_desk**: Reserves a hot desk for a specific date
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Robin** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the office locations available in our organization."
+
+**🤖 AI Agent:**
+> I used `list_locations` and found 3 active offices in your Robin directory. Your 'Global HQ' (ID: 154), 'New York Branch', and 'London Tech Hub'. Let me know if you want to inspect meeting rooms at the HQ.
+
+---
+
+**👤 You:**
+> "Check if room 555 and room 121 are free tomorrow from 10 AM to 11 AM."
+
+**🤖 AI Agent:**
+> I ran `get_free_busy` for the indicated space IDs. Room 121 is currently open and has no events blocking that slot. However, Room 555 is heavily utilized with a blocked schedule. Would you like me to book Room 121 for you?
+
+---
+
+**👤 You:**
+> "Book space ID 73 tomorrow at 3 PM. Title is Project Vinkius Sync."
+
+**🤖 AI Agent:**
+> Reservation confirmed via `book_space`. The room 73 is now booked under the title 'Project Vinkius Sync' from 3:00 PM to 4:00 PM for you. Your space allocation on Robin is active!
+
+
 ## Installation & Usage
 
 To install and use the **Robin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Robin** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

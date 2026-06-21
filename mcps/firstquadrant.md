@@ -1,12 +1,14 @@
 # FirstQuadrant MCP Server
 
-Let AI handle your outbound sales prospecting with autonomous research, personalized messaging, and smart follow-up sequences.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firstquadrant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstquadrant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firstquadrant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firstquadrant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 8
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Let AI handle your outbound sales prospecting with autonomous research, personalized messaging, and smart follow-up sequences.
 
 ## Description
 Connect your **FirstQuadrant** account to any AI agent and take full control of your B2B sales pipeline and contact enrichment workflows through natural conversation.
@@ -47,6 +49,33 @@ List FirstQuadrant contacts
 - **list_properties_schema**: List custom properties schema
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FirstQuadrant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all qualified leads from FirstQuadrant."
+
+**🤖 AI Agent:**
+> I've retrieved your leads. You have 12 qualified contacts, including 'John Doe' (ID: 101) and 'Sarah Smith' (ID: 102). Would you like to see the interaction history for any of them?
+
+---
+
+**👤 You:**
+> "Enrich the contact with email 'ceo@acme.com'."
+
+**🤖 AI Agent:**
+> AI enrichment triggered! I've started the research workflow for ceo@acme.com. I'll notify you as soon as the company size and latest funding details are added to the profile.
+
+---
+
+**👤 You:**
+> "Add contact '101' to the 'Discovery Sequence'."
+
+**🤖 AI Agent:**
+> Contact enrolled! I've successfully added John Doe (ID: 101) to your 'Discovery Sequence'. They will receive the first automated email shortly.
+
+
 ## Installation & Usage
 
 To install and use the **FirstQuadrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **FirstQuadrant** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Adyen MCP Server
 
-Global payment processing — manage payments, refunds, and merchant accounts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adyen)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adyen)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adyen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adyen-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 4
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Global payment processing — manage payments, refunds, and merchant accounts via AI.
 
 ## Description
 Connect your **Adyen** account to your AI agent to unlock enterprise-grade payment orchestration and financial management. From monitoring real-time transaction statuses to handling refunds and auditing merchant account configurations, your agent handles your global payment ecosystem through natural conversation.
@@ -46,6 +48,33 @@ Retrieve all active merchant accounts associated with your Adyen company profile
 - **get_merchant_details**: Retrieve the technical configuration and status for a specific Adyen merchant account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Adyen** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the status of payment with PSP reference '8816123456789012'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for PSP reference 8816123456789012. The payment was successfully 'Captured' on March 30th for an amount of $50.00. Would you like to see the settlement details?
+
+---
+
+**👤 You:**
+> "Refund $25.00 for PSP reference '8516123456789012'."
+
+**🤖 AI Agent:**
+> I've initiated a partial refund of $25.00 for PSP reference 8516123456789012. The request has been received by Adyen and is currently 'Received'. You will be notified via webhook when it is processed.
+
+---
+
+**👤 You:**
+> "List all my active merchant accounts."
+
+**🤖 AI Agent:**
+> I've retrieved your merchant accounts. You have 3 active accounts: 'EcomStore_US', 'EcomStore_EU', and 'RetailPOS_UK'. Would you like to check the available payment methods for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Adyen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Adyen** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Meituan Waimai MCP Server
 
-Essential food delivery gig API — manage orders, track delivery, handle refunds, and control restaurant menus via Meituan Waimai.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meituan-waimai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meituan-waimai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Essential food delivery gig API — manage orders, track delivery, handle refunds, and control restaurant menus via Meituan Waimai.
 
 ## Description
 Connect your **Meituan Waimai (美团外卖)** restaurant operations to any AI agent and transform your delivery management through natural conversation. Meituan Waimai is China's largest food delivery platform, handling millions of daily orders across hundreds of thousands of restaurants.
@@ -70,6 +72,33 @@ Mark a Meituan order as being delivered (out for delivery)
 Update stock quantity for a menu item in Meituan
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Meituan Waimai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending orders for my restaurant POI123."
+
+**🤖 AI Agent:**
+> 📋 Found 3 pending orders for POI123: Order #ORD-001 (¥45.50, 2 items, customer: Zhang Wei), Order #ORD-002 (¥78.00, 4 items, customer: Li Na), Order #ORD-003 (¥32.00, 1 item, customer: Wang Fang). All orders are awaiting your confirmation. Would you like me to confirm all of them?
+
+---
+
+**👤 You:**
+> "Mark food ID 4567 as sold out for POI123 — we ran out of chicken."
+
+**🤖 AI Agent:**
+> ✅ Stock updated successfully! Food item #4567 has been marked as sold out (stock=0) for restaurant POI123. The item is no longer visible on the customer menu, preventing new orders until you replenish stock.
+
+---
+
+**👤 You:**
+> "Handle refund request for order ORD-789 — customer says food never arrived. Approve it."
+
+**🤖 AI Agent:**
+> ✅ Refund approved and processed successfully! Order ORD-789 refund has been approved. The refund amount (¥56.00) will be returned to the customer's original payment method within 1-3 business days. The customer has been notified of the successful refund.
+
+
 ## Installation & Usage
 
 To install and use the **Meituan Waimai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Meituan Waimai** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

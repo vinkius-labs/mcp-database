@@ -1,12 +1,14 @@
 # Canva MCP Server
 
-Empower your AI agents to manage Canva designs, upload branding assets, and trigger automatic exports directly from your chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/canva)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canva)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canva-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canva-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Empower your AI agents to manage Canva designs, upload branding assets, and trigger automatic exports directly from your chat.
 
 ## Description
 Connect your **Canva** account to any AI agent and take full control of your creative workflow through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Canva** account to any AI agent and take full control of your cre
 - **get_user**: Get standard metadata describing the authenticated Canva user and organizational bounds
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Canva** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch my latest presentation design and export it as a PDF."
+
+**🤖 AI Agent:**
+> I've listed your most recent designs and located 'Q3 Strategy'. I initiated a PDF export job (Job ID: eXP...). Checking its status... The export is complete. You can download your PDF file safely from this url.
+
+---
+
+**👤 You:**
+> "Upload this generated logo URL directly to my Canva assets."
+
+**🤖 AI Agent:**
+> I successfully triggered the upload routine for your remote image URL. The asset (ID: ass88sA9...) 'Generated_Logo_2026' was accepted by Canva and is now permanently accessible in your graphical inventory.
+
+---
+
+**👤 You:**
+> "List all the approved brand templates in my Canva organization."
+
+**🤖 AI Agent:**
+> Here are 4 Brand Templates mapped in your environment. You have access to: 'Annual Review Matrix', 'Sales Cold Outreach', 'Tech Update Blank', and 'Social Media Grid'. Tell me if you desire to list additional data.
+
+
 ## Installation & Usage
 
 To install and use the **Canva** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Canva** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

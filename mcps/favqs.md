@@ -1,12 +1,14 @@
 # Favqs MCP Server
 
-Discover and manage quotes — fetch the Quote of the Day, search by author or tag, and curate your favorites directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/favqs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/favqs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/favqs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/favqs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 28
+
+**Category:** [productivity](../categories/productivity.md)
+
+Discover and manage quotes — fetch the Quote of the Day, search by author or tag, and curate your favorites directly via AI.
 
 ## Description
 Connect **Favqs** to your AI agent to access a world of inspiration and wisdom. Whether you are looking for the perfect quote for a presentation or building a personal library of sayings, this MCP server provides full access to the Favqs database.
@@ -66,6 +68,33 @@ Get the Quote of the Day
 - **upvote_quote**: Upvote a quote (User Session Required)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Favqs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the quote of the day."
+
+**🤖 AI Agent:**
+> The Quote of the Day is: 'Life is what happens when you're busy making other plans.' - John Lennon. Would you like to save this to your favorites?
+
+---
+
+**👤 You:**
+> "Find some quotes about 'courage' by Winston Churchill."
+
+**🤖 AI Agent:**
+> I found several quotes. One notable one is: 'Success is not final, failure is not fatal: it is the courage to continue that counts.' Should I list more from this author?
+
+---
+
+**👤 You:**
+> "Favorite the quote with ID 12345."
+
+**🤖 AI Agent:**
+> I've successfully added quote 12345 to your favorites. You can view your full list of favorites anytime using `list_quotes`.
+
+
 ## Installation & Usage
 
 To install and use the **Favqs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Favqs** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

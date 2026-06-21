@@ -1,12 +1,14 @@
 # Apache Superset MCP Server
 
-Connect your AI to Apache Superset. Explore BI dashboards, extract chart data, and run live SQL Lab analytics directly from your terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apache-superset)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apache-superset)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apache-superset-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apache-superset-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 7
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Connect your AI to Apache Superset. Explore BI dashboards, extract chart data, and run live SQL Lab analytics directly from your terminal.
 
 ## Description
 Empower your conversational AI with deep Business Intelligence access by integrating the **Apache Superset** MCP connector. Seamlessly navigating complex data ecosystems natively from your LLM text-interface, your agent can comprehensively index your analytical infrastructure—spanning from high-level operational dashboards down to specific raw database connections. Instantly run ad-hoc data investigations utilizing internal SQL Lab queries, retrieve explicit graph metadata, and dynamically aggregate critical business insights without abandoning your development environment.
@@ -43,6 +45,39 @@ Executes a SQL query via SQL Lab
 - **list_datasets**: Lists all datasets available for analysis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apache Superset** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Superset dashboards and tell me which one was updated most recently."
+
+**🤖 AI Agent:**
+> Found 5 dashboards. The most recently updated is 'Revenue Overview', last modified 2 hours ago.
+
+---
+
+**👤 You:**
+> "Check our database connections to see if our Postgres 'SalesDB' is active."
+
+**🤖 AI Agent:**
+> Connecting to backend infrastructures... Yes, 'SalesDB' (ID: 12) is active and running on PostgreSQL. Last connection check returned a 200 OK status.
+
+---
+
+**👤 You:**
+> "Run a SQL Lab query to show the top 5 product categories by revenue in SalesDB."
+
+**🤖 AI Agent:**
+> Executing pure SQL text against 'SalesDB'... Query processed successfully.
+Here are your top 5 categories by revenue:
+1. Electronics: $1.2M
+2. Apparel: $950K
+3. Home Goods: $620K
+4. Software: $410K
+5. Groceries: $240K
+
+
 ## Installation & Usage
 
 To install and use the **Apache Superset** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +86,11 @@ To install and use the **Apache Superset** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

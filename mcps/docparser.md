@@ -1,12 +1,14 @@
 # Docparser MCP Server
 
-Equip your AI agent to extract data from documents, manage parsers, and track extraction results via the Docparser API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docparser)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docparser)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docparser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docparser-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to extract data from documents, manage parsers, and track extraction results via the Docparser API.
 
 ## Description
 Integrate **Docparser**, the leading document data extraction platform, directly into your AI workflow. Automate the extraction of structured data from PDFs, scanned documents, and images, monitor your parser configurations, and retrieve parsed results using natural language.
@@ -44,6 +46,33 @@ Integrate **Docparser**, the leading document data extraction platform, directly
 - **search_parsed_documents**: Search for parsed documents by filename within a parser
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Docparser** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all documents processed by the 'Invoices' parser."
+
+**🤖 AI Agent:**
+> I've found 15 documents processed by the 'Invoices' parser, including 'Inv_123.pdf' and 'Supplier_A_June.pdf'. Would you like to see the extracted results for the most recent one?
+
+---
+
+**👤 You:**
+> "Show me the extracted data for document 'DOC-9988' in the 'Orders' parser."
+
+**🤖 AI Agent:**
+> I've retrieved the data for 'DOC-9988'. Extracted fields include: Order Number (ORD-456), Customer (Tech Corp), and Total Amount ($1,250.00). Would you like the full JSON output including line items?
+
+---
+
+**👤 You:**
+> "Are there any document extractions that failed today?"
+
+**🤖 AI Agent:**
+> I've checked your active parsers and found 2 documents that failed to process: 'BadScan_01.jpg' (Error: Unreadable) and 'UnknownFormat.pdf'. Would you like me to pull the detailed error logs for these?
+
+
 ## Installation & Usage
 
 To install and use the **Docparser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Docparser** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

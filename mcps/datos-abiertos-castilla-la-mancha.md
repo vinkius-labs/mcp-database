@@ -1,12 +1,14 @@
 # Datos Abiertos Castilla-La Mancha MCP Server
 
-Access the official Open Data portal of Castilla-La Mancha. Explore datasets, resources, and query tabular data directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datos-abiertos-castilla-la-mancha)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datos-abiertos-castilla-la-mancha)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datos-abiertos-castilla-la-mancha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datos-abiertos-castilla-la-mancha-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 5
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the official Open Data portal of Castilla-La Mancha. Explore datasets, resources, and query tabular data directly through your AI agent.
 
 ## Description
 Connect to the **Castilla-La Mancha Open Data** portal and explore a wealth of public information from the Spanish region directly through your AI agent. This server allows you to navigate the official CKAN-based repository to find datasets related to economy, environment, health, and more.
@@ -40,6 +42,33 @@ Connect to the **Castilla-La Mancha Open Data** portal and explore a wealth of p
 - **search_datastore**: Search records within a datastore resource
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Datos Abiertos Castilla-La Mancha** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available datasets from the Castilla-La Mancha Open Data portal."
+
+**🤖 AI Agent:**
+> I have retrieved the list of datasets. There are numerous entries including 'Presupuesto 2024', 'Calidad del Aire', and 'Centros Educativos'. Which one would you like to explore in detail?
+
+---
+
+**👤 You:**
+> "Search for the first 5 records in the datastore resource 'd4e5f6a7-b8c9'."
+
+**🤖 AI Agent:**
+> Querying the datastore... I found the first 5 rows for resource 'd4e5f6a7-b8c9'. The data includes fields such as 'Municipio', 'Población', and 'Año'. Would you like me to summarize these records?
+
+---
+
+**👤 You:**
+> "Get the metadata and resources for the dataset 'centros-sanitarios'."
+
+**🤖 AI Agent:**
+> Fetching details for 'centros-sanitarios'... This dataset contains information about health centers in the region. It has 3 resources available: a CSV file (ID: res-123), an Excel file, and a GeoJSON map. Do you want to search inside the CSV data?
+
+
 ## Installation & Usage
 
 To install and use the **Datos Abiertos Castilla-La Mancha** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Datos Abiertos Castilla-La Mancha** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Vectara MCP Server
 
-Empower your agent with Vectara's RAG capabilities. Search corpora natively, execute grounded chats, and manage indexed datasets easily.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vectara)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vectara)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vectara-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vectara-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 7
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Empower your agent with Vectara's RAG capabilities. Search corpora natively, execute grounded chats, and manage indexed datasets easily.
 
 ## Description
 Connect your **Vectara** environment to any AI agent to unlock enterprise-grade Retrieval-Augmented Generation (RAG) and semantic search directly inside your conversational IDE or workspace.
@@ -50,6 +52,41 @@ Permanently removes a document from a corpus
 Executes a semantic search across one or more corpora
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vectara** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all configured knowledge corpora I have in Vectara."
+
+**🤖 AI Agent:**
+> We retrieved 3 existing corpora within your active Customer ID cluster: 
+- 'HR Manuals' (Key: `cor-29x`)
+- 'DevOps Runbooks' (Key: `cor-81a`)
+- 'Helpcenter FAQs' (Key: `cor-03f`)
+Would you like me to pull the total document count indexing actively inside 'DevOps Runbooks'?
+
+---
+
+**👤 You:**
+> "Query corpus `cor-81a` for instructions on 'rolling back kubernetes pods' and show only the top 3 best matching results."
+
+**🤖 AI Agent:**
+> I've searched corpus `cor-81a`. Here are the top 3 semantic matches:
+
+1. From 'infra-deploy.pdf' (Score 0.94): "To safely rollback a deployed k8s pod replica containing faulty image configs, use `kubectl rollout undo deployment/api-server`."
+2. From 'incident-231.md' (Score 0.88): "During yesterday's P1, we reversed the pods deployment to stabilization tag v2.1.0 using standard rollback patterns..."
+3. From 'onboarding.txt' (Score 0.76): "New engineers must verify staging before any manual pod cluster rollbacks occur in production environments..."
+
+---
+
+**👤 You:**
+> "List all active chat context session IDs for the last week."
+
+**🤖 AI Agent:**
+> I've retrieved historical chat sessions. You have 2 sessions retained matching your request: `chat-89bf` (Initiated: Mon 14th) covering Corpus HR, and `chat-21zx` (Initiated: Wed 16th) heavily focused on developer queries. Do you want to see the sequence of turns for the DevOps troubleshooting session?
+
+
 ## Installation & Usage
 
 To install and use the **Vectara** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +95,11 @@ To install and use the **Vectara** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

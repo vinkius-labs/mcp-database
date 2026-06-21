@@ -1,12 +1,14 @@
 # Deterministic Readability Scorer MCP Server
 
-Equip your AI with strict linguistic math. Calculate Flesch-Kincaid, Gunning Fog indexes, and exact reading times deterministically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-readability-scorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-readability-scorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-readability-scorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-readability-scorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI with strict linguistic math. Calculate Flesch-Kincaid, Gunning Fog indexes, and exact reading times deterministically.
 
 ## Description
 AI models perceive text as 'tokens', not as phonetic syllables or strict sentence boundaries. Because of this, asking an LLM to calculate a Flesch-Kincaid readability score directly will always result in a mathematical hallucination. The Readability Scorer MCP solves this by routing text analysis through a deterministic V8 Javascript engine.
@@ -30,6 +32,33 @@ Analyzes text readability using the deterministic Gunning Fog index algorithm
 Provides an exact reading time estimation based on word count and WPM
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deterministic Readability Scorer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the Flesch-Kincaid Grade Level of my latest blog post?"
+
+**🤖 AI Agent:**
+> Using the calculate_flesch_kincaid tool: The text scores a Grade Level of 8.4, meaning it's highly readable for average audiences.
+
+---
+
+**👤 You:**
+> "How many minutes will it take a user to read this newsletter?"
+
+**🤖 AI Agent:**
+> Using the estimate_reading_time tool (wpm=220): It will take exactly 3 min 15 sec.
+
+---
+
+**👤 You:**
+> "Analyze this legal contract using the Gunning Fog Index."
+
+**🤖 AI Agent:**
+> Using the calculate_gunning_fog tool: The index is 16.2 due to a high volume of complex, poly-syllabic words.
+
+
 ## Installation & Usage
 
 To install and use the **Deterministic Readability Scorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -38,4 +67,11 @@ To install and use the **Deterministic Readability Scorer** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Discourse MCP Server
 
-Equip your AI agent to manage forum topics, track community members, and monitor categories via the Discourse API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/discourse)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discourse)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discourse-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discourse-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Equip your AI agent to manage forum topics, track community members, and monitor categories via the Discourse API.
 
 ## Description
 Integrate **Discourse**, the open-source platform for community discussion, directly into your AI workflow. Manage your forum topics and categories, research community member profiles and trust levels, and track group memberships using natural language.
@@ -44,6 +46,33 @@ Integrate **Discourse**, the open-source platform for community discussion, dire
 - **search_community_content**: Search for topics, posts, or users matching a keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Discourse** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the latest topics in the community."
+
+**🤖 AI Agent:**
+> I've found several recent topics, including 'New Product Roadmap', 'Welcome to the Community', and 'Q2 Feedback Thread'. Would you like to see the post count for any of these?
+
+---
+
+**👤 You:**
+> "Show me the profile for user 'john_doe'."
+
+**🤖 AI Agent:**
+> User 'john_doe' is at trust level 3 (Regular). They joined on January 15th and have created 12 topics and 45 posts. They are also a member of the 'Moderators' group. Should I check their recent activity?
+
+---
+
+**👤 You:**
+> "What are the trending discussions right now?"
+
+**🤖 AI Agent:**
+> The top trending discussions are 'Major System Update' (25 new posts today) and 'Community Guidelines RFC' (12 new posts). Would you like a summary of the latest comments in 'Major System Update'?
+
+
 ## Installation & Usage
 
 To install and use the **Discourse** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Discourse** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

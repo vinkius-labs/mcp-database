@@ -1,12 +1,14 @@
 # Google Analytics MCP Server
 
-Query GA4 analytics data via Google Analytics API — run reports, check realtime data, analyze funnels, and export audiences directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Query GA4 analytics data via Google Analytics API — run reports, check realtime data, analyze funnels, and export audiences directly from any AI agent.
 
 ## Description
 Connect your **Google Analytics 4 (GA4)** account to any AI agent and take full control of web and app analytics through natural conversation.
@@ -99,6 +101,42 @@ Common dimensions: city, country, deviceCategory, sessionDefaultChannelGrouping,
 Run a custom Google Analytics report
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Analytics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the number of active users and pageviews by country for the last 7 days for property 123456789."
+
+**🤖 AI Agent:**
+> I've run the report for the last 7 days. Top countries by active users: United States — 45,230 active users, 189,450 pageviews; United Kingdom — 12,890 active users, 52,340 pageviews; Germany — 8,560 active users, 34,120 pageviews; Brazil — 6,780 active users, 28,900 pageviews; India — 5,420 active users, 21,560 pageviews. Total: 156,420 active users across 645,890 pageviews. Would you like a breakdown by device category or traffic source?
+
+---
+
+**👤 You:**
+> "What's happening on the site right now? Show me realtime users by traffic source."
+
+**🤖 AI Agent:**
+> Realtime data (last 30 minutes): 847 active users right now. Top traffic sources: Organic Search — 412 users; Direct — 198 users; Social — 124 users; Paid Search — 78 users; Email — 35 users. Top pages being viewed: Homepage (/) — 234 users; Product page (/products/xyz) — 156 users; Checkout (/checkout) — 89 users. Engagement rate is 68% with average session duration of 2m 34s.
+
+---
+
+**👤 You:**
+> "Run a funnel analysis for our checkout flow: step 1 = viewed product, step 2 = added to cart, step 3 = started checkout, step 4 = completed purchase. Show me where users drop off."
+
+**🤖 AI Agent:**
+> I've analyzed your checkout funnel. Here's the conversion flow:
+
+1. **Viewed Product** — 12,450 users entered
+2. **Added to Cart** — 4,980 users (40.0% conversion from step 1)
+3. **Started Checkout** — 2,340 users (47.0% conversion from step 2)
+4. **Completed Purchase** — 1,560 users (66.7% conversion from step 3)
+
+**Overall funnel conversion rate: 12.5%** (1,560 out of 12,450)
+
+**Biggest drop-off**: Between 'Viewed Product' and 'Added to Cart' — 60% of users leave here. This suggests product pages may need clearer CTAs, better pricing visibility, or faster load times.
+
+
 ## Installation & Usage
 
 To install and use the **Google Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -107,4 +145,11 @@ To install and use the **Google Analytics** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

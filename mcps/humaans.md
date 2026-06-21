@@ -1,12 +1,14 @@
 # Humaans MCP Server
 
-Manage employees, leaves, and organization data via Humaans HRIS API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/humaans)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/humaans)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/humaans-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/humaans-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage employees, leaves, and organization data via Humaans HRIS API.
 
 ## Description
 Connect your AI agents to Humaans, the modern HRIS for global teams. This MCP server allows you to list and manage employees, track leave requests, view public holidays, and access organization data like teams, departments, and offices directly through the Humaans API. Ideal for automating HR operations and employee directory lookups.
@@ -25,6 +27,33 @@ Connect your AI agents to Humaans, the modern HRIS for global teams. This MCP se
 - **list_teams**: Lists organization teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Humaans** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees in the London office."
+
+**🤖 AI Agent:**
+> I'll fetch the employee list and filter by the London office for you.
+
+---
+
+**👤 You:**
+> "Who is currently on leave?"
+
+**🤖 AI Agent:**
+> I'll check the current leave requests to see who is away.
+
+---
+
+**👤 You:**
+> "Show me the organization chart (teams and departments)."
+
+**🤖 AI Agent:**
+> I'll retrieve the list of teams and departments for you.
+
+
 ## Installation & Usage
 
 To install and use the **Humaans** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -33,4 +62,11 @@ To install and use the **Humaans** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

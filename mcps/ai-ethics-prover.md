@@ -1,12 +1,14 @@
 # AI Ethics Prover MCP Server
 
-An AI said 'AI should be fair and transparent' without naming a single affected group. It said 'we checked for bias' without naming a metric, attribute, or measured disparity. It said 'contact support' as the recourse mechanism. That is not ethics — that is ethics washing. This tool forces five operational axes: stakeholder identification, harm quantification, bias auditing, transparency demonstration, and recourse mechanisms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ai-ethics-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ai-ethics-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ai-ethics-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ai-ethics-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-ml
-**Tools Count:** 1
+
+**Category:** [ai-ml](../categories/ai-ml.md)
+
+An AI said 'AI should be fair and transparent' without naming a single affected group. It said 'we checked for bias' without naming a metric, attribute, or measured disparity. It said 'contact support' as the recourse mechanism. That is not ethics — that is ethics washing. This tool forces five operational axes: stakeholder identification, harm quantification, bias auditing, transparency demonstration, and recourse mechanisms.
 
 ## Description
 ## The Problem
@@ -58,6 +60,33 @@ Tool calls are obligations. The LLM cannot skip stakeholder identification or cl
 Forces operationally specific AI ethics analysis before deploying AI systems. Catches Unnamed Stakeholders ("society" instead of specific groups), Unquantified Harms ("potentially harmful" without severity/probability), Unaudited Biases ("we checked" without methodology), Opaque Transparency ("algorithmic complexity" as excuse), and Absent Recourse ("contact support" instead of structured challenge). Call once per AI system ethical assessment. This is analytical support, not ethical certification
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AI Ethics Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Our AI lending model is fair and transparent. We checked for bias and the results are satisfactory. Users can contact support if they have concerns about decisions."
+
+**🤖 AI Agent:**
+> BIASES_UNAUDITED — 'Checked for bias' without methodology is not an audit. Which protected attributes — age, gender, race, income bracket? Which metric — statistical parity, equalized odds, disparate impact ratio? What was the measured disparity — 0.82 approval rate for Group A vs 0.67 for Group B? What is the acceptable threshold? Also: 'contact support' is not recourse — define SLA, human reviewer, and appeal process.
+
+---
+
+**👤 You:**
+> "Stakeholders: loan applicants (18-65, primary), denied applicants (high-severity, financially vulnerable). Harms: wrongful denial — severity 4/5, probability 12% for minorities, reversible via re-evaluation, affects 15,000 applicants/year. Bias audit: race (statistical parity, 0.82 vs 0.67 approval, threshold 0.80 — FAILING), gender (equalized odds, 0.91 vs 0.89, threshold 0.85 — PASSING). Mitigation: reweighting training data, quarterly re-audit. Transparency: plain-language denial letters with top-3 factors and counterfactual examples. Recourse: online challenge form, 5-day SLA, human credit analyst review, appeal to ombudsman, automatic re-evaluation with updated data."
+
+**🤖 AI Agent:**
+> ETHICS_PROVEN — Operationally specific ethics analysis validated. Stakeholders: named groups with severity and vulnerability. Harms: wrongful denial scored 4/5, 12% probability, reversible, 15K affected. Biases: race attribute audited with statistical parity (0.82 vs 0.67, failing threshold 0.80) — mitigation plan active. Transparency: plain-language denial with counterfactuals. Recourse: structured channel with 5-day SLA, human analyst, ombudsman appeal. Production-ready ethics posture.
+
+---
+
+**👤 You:**
+> "Our hiring AI affects job applicants. The main harm is unfair rejection. We audited bias using demographic parity — pass rates are equal across groups. The algorithm is a black box but we explain decisions as 'based on qualifications.' Applicants can email HR."
+
+**🤖 AI Agent:**
+> TRANSPARENCY_OPAQUE — Stakeholders and bias audit pass, but transparency fails. 'Based on qualifications' is not an explanation — name the top-3 decision factors and provide counterfactual examples ('if your experience were 5+ years instead of 3, the decision would change'). A black box with a label is still a black box. Also: 'email HR' is not structured recourse — define SLA, human reviewer role, and appeal process.
+
+
 ## Installation & Usage
 
 To install and use the **AI Ethics Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **AI Ethics Prover** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

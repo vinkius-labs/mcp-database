@@ -1,12 +1,14 @@
 # GoBolt MCP Server
 
-Manage shipping rates, track parcel deliveries, and oversee logistics via AI agents with GoBolt.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gobolt)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gobolt)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gobolt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gobolt-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage shipping rates, track parcel deliveries, and oversee logistics via AI agents with GoBolt.
 
 ## Description
 Connect your **GoBolt** merchant account to any AI agent to automate your e-commerce logistics and parcel tracking through the Model Context Protocol (MCP). GoBolt is a sustainable logistics and 3PL provider that simplifies global shipping. This MCP server enables you to retrieve real-time shipping rates, manage fulfillment orders, and track deliveries directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **GoBolt** merchant account to any AI agent to automate your e-comm
 - **modify_shipping_order**: Update order info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GoBolt** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get shipping rates from NY to LA for a 2kg package."
+
+**🤖 AI Agent:**
+> Retrieving rates... I found 3 options: Standard Ground ($12.50, 4 days), Express ($25.00, 2 days), and Overnight ($45.00). Would you like to create an order for any of these?
+
+---
+
+**👤 You:**
+> "Track my order with ID 'GBLT-98765'."
+
+**🤖 AI Agent:**
+> Checking status... Order GBLT-98765 is currently 'In Transit'. It was scanned in Chicago this morning and is estimated to arrive on Thursday by 5 PM.
+
+---
+
+**👤 You:**
+> "Find the cheapest shipping rate for a package to Toronto."
+
+**🤖 AI Agent:**
+> Calculating best rate... The cheapest option for Toronto is 'Postal Surface' at $8.75 CAD with an estimated delivery in 6 business days.
+
+
 ## Installation & Usage
 
 To install and use the **GoBolt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **GoBolt** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

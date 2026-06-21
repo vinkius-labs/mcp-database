@@ -1,12 +1,14 @@
 # Airship MCP Server
 
-Mobile engagement orchestration — manage push notifications, segments, and channels via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/airship)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airship)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airship-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airship-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Mobile engagement orchestration — manage push notifications, segments, and channels via AI.
 
 ## Description
 Connect your **Airship (formerly Urban Airship)** account to your AI agent to unlock professional mobile and web engagement orchestration. From sending targeted push notifications to auditing subscriber segments and managing named user associations across multiple channels, your agent handles your multi-channel communication strategy through natural conversation.
@@ -48,6 +50,33 @@ List static audiences
 - **get_push_status**: Check push delivery
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Airship** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a push notification to all users with alert 'Big Sale starting now!'."
+
+**🤖 AI Agent:**
+> I've triggered the push notification to all users. The operation ID is 'abc-123-def'. Your message is now being delivered across iOS, Android, and Web channels. Would you like to check the delivery status in a moment?
+
+---
+
+**👤 You:**
+> "List all audience segments in my EU project."
+
+**🤖 AI Agent:**
+> I've retrieved your segments from the EU region. You have 15 active segments, including 'Premium Subscribers', 'Inactive 30 Days', and 'iOS Users'. Would you like to see the criteria for 'Premium Subscribers'?
+
+---
+
+**👤 You:**
+> "Show details for channel ID '12345678-90ab-cdef-1234-567890abcdef'."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for channel 12345678-90ab... It is an Android device registered yesterday. The user is associated with tags 'news_alerts' and 'sports_fan'. Opt-in status is currently 'True'.
+
+
 ## Installation & Usage
 
 To install and use the **Airship** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Airship** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

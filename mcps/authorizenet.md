@@ -1,12 +1,14 @@
 # Authorize.net MCP Server
 
-Process cards, manage refunds, capture holds, and inspect settled transactions on Authorize.net directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/authorizenet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/authorizenet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/authorizenet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/authorizenet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Process cards, manage refunds, capture holds, and inspect settled transactions on Authorize.net directly from your AI agent.
 
 ## Description
 Connect your **Authorize.net** merchant gateway to any AI agent to power conversational commerce. Command precise payment logic, track settlements, and manage Customer Information Manager (CIM) profiles effortlessly.
@@ -50,6 +52,33 @@ Refund an already settled Authorize.net transaction
 - **void_transaction**: Void an unsettled Authorize.net transaction
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Authorize.net** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all unsettled transactions from the daily batch flow."
+
+**🤖 AI Agent:**
+> Interrogating unsettled items... 6 transactions are currently floating awaiting nightly batching. Notably, ID `6001293` for `104.50 USD` and ID `6001294` pending `20.00 USD`. Will you be voiding any of these anomalies today?
+
+---
+
+**👤 You:**
+> "Get detailed properties masking transaction ID 719200."
+
+**🤖 AI Agent:**
+> Querying gateway depths... Target `719200` represents an Auth Capture worth `25.99 USD`. Status stands decisively at Settled Successfully. AVS mapped completely matching addresses while CVV verification yielded an unremarked clean 'Match'. All clear here unconditionally without discrepancies or concerns found.
+
+---
+
+**👤 You:**
+> "Execute an immediate void on transaction 91230 as unauthorized."
+
+**🤖 AI Agent:**
+> Initiating Void payload to Authorize.net... Success achieved. Transaction `91230` has been stripped and obliterated successfully avoiding batch capture entirely. The associated card strings will organically restore the missing limits swiftly within general issuer intervals natively.
+
+
 ## Installation & Usage
 
 To install and use the **Authorize.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Authorize.net** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

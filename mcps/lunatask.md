@@ -1,12 +1,14 @@
 # Lunatask MCP Server
 
-Manage tasks, habits, and notes via the Lunatask REST API (Encrypted Metadata Only).
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lunatask)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lunatask)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lunatask-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lunatask-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage tasks, habits, and notes via the Lunatask REST API (Encrypted Metadata Only).
 
 ## Description
 Connect your **Lunatask** account to any AI agent to streamline your privacy-focused productivity. This MCP server enables your agent to create, update, and manage tasks, track habits, and log journal entries directly from natural language interfaces.
@@ -51,6 +53,33 @@ List metadata for all tasks
 - **update_existing_task**: Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lunatask** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List metadata for all my tasks in Lunatask."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for your tasks. You have 12 tasks across various areas. Note that I can see statuses like 'next' and 'later', but the actual task names are encrypted.
+
+---
+
+**👤 You:**
+> "Track a completion for habit ID 'habit-123'."
+
+**🤖 AI Agent:**
+> Successfully logged a completion for habit 'habit-123'. Your consistency has been updated in Lunatask.
+
+---
+
+**👤 You:**
+> "Create a new task named 'Review quarterly report' in area 'area-abc'."
+
+**🤖 AI Agent:**
+> I've sent the request to create the task. While I cannot read it back due to encryption, the new entry has been successfully added to your area 'area-abc'.
+
+
 ## Installation & Usage
 
 To install and use the **Lunatask** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Lunatask** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

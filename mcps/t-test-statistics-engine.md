@@ -1,12 +1,14 @@
 # T-Test Statistics Engine MCP Server
 
-Run exact Student's, Welch's, and Paired t-tests local. Get CPU-guaranteed p-values instead of LLM-hallucinated guesses.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/t-test-statistics-engine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/t-test-statistics-engine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/t-test-statistics-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/t-test-statistics-engine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 1
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Run exact Student's, Welch's, and Paired t-tests local. Get CPU-guaranteed p-values instead of LLM-hallucinated guesses.
 
 ## Description
 LLMs are notoriously bad at math. If you ask an AI to calculate a p-value for a dataset, it will likely hallucinate a plausible-looking but completely wrong number. Data Scientists cannot tolerate this.
@@ -25,6 +27,33 @@ This MCP brings deterministic statistical computation to your AI. It delegates t
 - **calculate_t_test**: Perform exact deterministic Student's t-tests (independent, paired, one-sample) to calculate statistical significance without LLM hallucinations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **T-Test Statistics Engine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Run an independent t-test to see if the conversion rates for Variant A and Variant B are significantly different."
+
+**🤖 AI Agent:**
+> The t-score is 2.45 and the p-value is 0.018. Since p < 0.05, there is a statistically significant difference between the two variants.
+
+---
+
+**👤 You:**
+> "Do a paired t-test on these pre-treatment and post-treatment blood pressure readings."
+
+**🤖 AI Agent:**
+> The paired t-test gives a p-value of 0.002. We reject the null hypothesis — the treatment had a statistically significant effect on blood pressure.
+
+---
+
+**👤 You:**
+> "Perform a one-sample t-test to check if this batch's mean weight differs from the target of 500g."
+
+**🤖 AI Agent:**
+> The calculated p-value is 0.34. We fail to reject the null hypothesis — the batch weight is not significantly different from the 500g target.
+
+
 ## Installation & Usage
 
 To install and use the **T-Test Statistics Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -33,4 +62,11 @@ To install and use the **T-Test Statistics Engine** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

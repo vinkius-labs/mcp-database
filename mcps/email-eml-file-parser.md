@@ -1,12 +1,14 @@
 # Email (.eml) File Parser MCP Server
 
-Transform heavy raw email exports into crystal-clear text local. Let your AI act as your personal secretary, instantly summarizing threads without wasting context window tokens.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/email-eml-file-parser)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/email-eml-file-parser)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/email-eml-file-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/email-eml-file-parser-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Transform heavy raw email exports into crystal-clear text local. Let your AI act as your personal secretary, instantly summarizing threads without wasting context window tokens.
 
 ## Description
 Dragging a raw `.eml` file directly into Claude's chat window is a nightmare. These files are filled with complex base64-encoded attachments, unreadable MIME boundaries, and dense HTML layouts. As a result, the AI hallucinates, crashes, or consumes thousands of context tokens just trying to read the first sentence.
@@ -27,6 +29,42 @@ This MCP acts as your high-speed email distillation engine. Operating 100% local
 Parse a local .eml email file into clean text, stripping away HTML, headers, and encoding. Returns a clean JSON with sender, recipient, date, subject, and text body
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Email (.eml) File Parser** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Parse this client_thread.eml and give me a bullet-point list of the 3 most urgent action items."
+
+**🤖 AI Agent:**
+> Here are the urgent items:
+1. Send the Q3 invoice by Friday.
+2. Review the attached proposal.
+3. Schedule a follow-up call with Sarah.
+
+---
+
+**👤 You:**
+> "Read meeting_notes.eml and draft a polite, professional reply accepting the new deadline."
+
+**🤖 AI Agent:**
+> Dear Team,
+
+Thank you for the update. I confirm we can meet the new deadline of October 15th. We will adjust our schedule accordingly.
+
+Best regards.
+
+---
+
+**👤 You:**
+> "Analyze this long email chain and list everyone who was CC'd along with their email addresses."
+
+**🤖 AI Agent:**
+> The following people were CC'd on the thread:
+- John Doe (john@example.com)
+- Tech Support (support@acme.inc)
+
+
 ## Installation & Usage
 
 To install and use the **Email (.eml) File Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +73,11 @@ To install and use the **Email (.eml) File Parser** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

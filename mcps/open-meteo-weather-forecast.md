@@ -1,12 +1,14 @@
 # Open-Meteo Weather Forecast MCP Server
 
-Give your AI agent live weather intelligence: 16-day forecasts, current conditions, and hourly breakdowns for any GPS coordinate on Earth — zero API keys required.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo-weather-forecast)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo-weather-forecast)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-meteo-weather-forecast-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-meteo-weather-forecast-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 4
+
+**Category:** [productivity](../categories/productivity.md)
+
+Give your AI agent live weather intelligence: 16-day forecasts, current conditions, and hourly breakdowns for any GPS coordinate on Earth — zero API keys required.
 
 ## Description
 Connect your AI agent to the world's most comprehensive **open weather API** — no API key, no registration, no rate-limit headaches.
@@ -37,6 +39,52 @@ Get current weather conditions for any location
 - **get_daily_summary**: Get daily weather summary with sunrise/sunset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open-Meteo Weather Forecast** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the weather forecast for Tokyo this week?"
+
+**🤖 AI Agent:**
+> 🌦️ **Tokyo 7-Day Forecast**
+
+Today: 22°C, partly cloudy, 10% rain chance
+Tomorrow: 19°C, rain expected (85%), 12mm precipitation
+Wednesday: 24°C, sunny, UV index 7 (high)
+
+Wind speeds remain moderate at 15-20 km/h from the southeast.
+
+---
+
+**👤 You:**
+> "What are the current weather conditions in New York?"
+
+**🤖 AI Agent:**
+> 🌡️ **New York — Current Conditions**
+
+- Temperature: 18°C (feels like 16°C)
+- Humidity: 62%
+- Wind: 22 km/h NW, gusts up to 35 km/h
+- Cloud cover: 45%
+- Precipitation: None currently
+
+---
+
+**👤 You:**
+> "Will it snow in Munich in the next 10 days?"
+
+**🤖 AI Agent:**
+> ❄️ **Munich 10-Day Snow Analysis**
+
+Snowfall detected on days 4-5:
+- Day 4: 3.2mm snow, -2°C
+- Day 5: 1.8mm snow, -1°C
+- Snow depth expected to reach 5cm
+
+All other days remain above freezing with no snow expected.
+
+
 ## Installation & Usage
 
 To install and use the **Open-Meteo Weather Forecast** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +93,11 @@ To install and use the **Open-Meteo Weather Forecast** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

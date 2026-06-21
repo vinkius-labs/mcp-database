@@ -1,12 +1,14 @@
 # HubSpot Sales Hub MCP Server
 
-Manage deals, pipelines, products, quotes, and meetings in your HubSpot Sales Hub through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hubspot-sales-hub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hubspot-sales-hub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hubspot-sales-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hubspot-sales-hub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage deals, pipelines, products, quotes, and meetings in your HubSpot Sales Hub through natural conversation.
 
 ## Description
 Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data without switching tabs.
@@ -57,6 +59,48 @@ Search HubSpot product library by name to find items available for quoting with 
 Update an existing HubSpot deal — change stage, amount, close date, or name to reflect pipeline progress
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HubSpot Sales Hub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for contacts at Acme Corp"
+
+**🤖 AI Agent:**
+> 👥 **Contacts at Acme Corp**
+| Name | Email | Phone | Lifecycle |
+|---|---|---|---|
+| John Smith | john@acme.com | +1 555-0123 | Customer |
+| Sarah Chen | sarah@acme.com | +1 555-0456 | Lead |
+
+---
+
+**👤 You:**
+> "Create a deal: Enterprise Package $50,000"
+
+**🤖 AI Agent:**
+> ✅ **Deal Created!**
+- Name: Enterprise Package
+- Amount: $50,000
+- Pipeline: Sales Pipeline
+- Stage: Appointment Scheduled
+
+---
+
+**👤 You:**
+> "Show me the deal pipeline stages"
+
+**🤖 AI Agent:**
+> 📊 **Sales Pipeline**
+1. Appointment Scheduled
+2. Qualified to Buy
+3. Presentation Scheduled
+4. Decision Maker Bought-In
+5. Contract Sent
+6. Closed Won ✅
+7. Closed Lost ❌
+
+
 ## Installation & Usage
 
 To install and use the **HubSpot Sales Hub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +109,11 @@ To install and use the **HubSpot Sales Hub** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Juhe Data / 聚合数据 MCP Server
 
-China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/juhe-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/juhe-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/juhe-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/juhe-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI.
 
 ## Description
 Empower your AI agent to access a vast array of essential data services with **Juhe Data** (聚合数据), the premier API aggregator in China. By connecting Juhe to your agent, you transform fragmented data retrieval into a natural conversation. Your agent can instantly check real-time weather and forecasts for any Chinese city, verify ID card registration details, lookup IP address locations, and retrieve the latest news across multiple categories. Whether you are automating background checks, monitoring local conditions, or staying updated with domestic trends, your agent acts as a real-time data intelligence assistant, providing accurate and reliable information from a single, unified source.
@@ -46,6 +48,33 @@ Empower your AI agent to access a vast array of essential data services with **J
 - **get_weather**: Get weather information for a city
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Juhe Data / 聚合数据** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the weather in Beijing today?"
+
+**🤖 AI Agent:**
+> In Beijing, it's currently Sunny at 22°C with 35% humidity. The wind is blowing from the North at level 2. The forecast for the next 3 days remains clear with temperatures ranging between 12°C and 25°C.
+
+---
+
+**👤 You:**
+> "Check the information for ID card 110101199001011234."
+
+**🤖 AI Agent:**
+> The ID card information shows the holder is a Male, born on January 1, 1990. The registration area is Dongcheng District, Beijing.
+
+---
+
+**👤 You:**
+> "Show me the latest tech news from Juhe."
+
+**🤖 AI Agent:**
+> I've retrieved the latest tech news. Headlines include 'New Advances in AI Chips' and 'The Growth of China's Digital Economy'. Would you like the links to the full articles?
+
+
 ## Installation & Usage
 
 To install and use the **Juhe Data / 聚合数据** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Juhe Data / 聚合数据** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

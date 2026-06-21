@@ -1,12 +1,14 @@
 # Customers.ai MCP Server
 
-Identify anonymous website visitors by name and turn them into leads with AI-powered visitor identification and outreach automation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/customersai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customersai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/customersai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/customersai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Identify anonymous website visitors by name and turn them into leads with AI-powered visitor identification and outreach automation.
 
 ## Description
 Connect your **Customers.ai** (formerly MobileMonkey) account to any AI agent and take full control of your automated messaging and B2B identity resolution workflows through natural conversation.
@@ -45,6 +47,33 @@ No more manual scrubbing through identified visitor logs. Your AI acts as your d
 - **update_contact_attributes**: Update attributes for a contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Customers.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 leads identified via X-Ray Pixel."
+
+**🤖 AI Agent:**
+> I've retrieved your recent X-Ray leads. I found 5 identified visitors, including profiles for managers at 'Acme Corp' and 'Global Tech'. Would you like the detailed attributes for any of them?
+
+---
+
+**👤 You:**
+> "Find the contact with email 'jane.doe@example.com'."
+
+**🤖 AI Agent:**
+> I've located Jane Doe's profile (ID: 1024). She has 15 custom attributes and is currently tagged as 'Hot Lead'. Shall I send her a follow-up text message?
+
+---
+
+**👤 You:**
+> "Add the 'Q2 Campaign' tag to contact ID '1024'."
+
+**🤖 AI Agent:**
+> Action complete! Contact 1024 has been successfully tagged with 'Q2 Campaign'. This update can now trigger your automated nurturing sequences. Need help with other tags?
+
+
 ## Installation & Usage
 
 To install and use the **Customers.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Customers.ai** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

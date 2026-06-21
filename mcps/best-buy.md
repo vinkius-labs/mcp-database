@@ -1,12 +1,14 @@
 # Best Buy MCP Server
 
-Search products, check store availability, read reviews, and explore categories via Best Buy — execute retail inquiries directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/best-buy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/best-buy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/best-buy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/best-buy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search products, check store availability, read reviews, and explore categories via Best Buy — execute retail inquiries directly from any AI agent.
 
 ## Description
 Connect the **Best Buy API** to any AI agent and bring the entire consumer electronics catalog into your conversational workflow.
@@ -48,6 +50,33 @@ Fetch open-box discounted products
 - **search_stores**: Search for Best Buy stores near a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Best Buy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for OLED TVs made by LG under $1500."
+
+**🤖 AI Agent:**
+> I found 3 LG OLED models matching your parameters. The 'LG C3 Series 55-Inch' is currently on sale for $1299.00 with a 4.8 star rating across 400 reviews. Would you like the full specs?
+
+---
+
+**👤 You:**
+> "Check if SKU 6537363 is in stock at the store in ZIP code 10001."
+
+**🤖 AI Agent:**
+> Checking local inventory... Good news, SKU 6537363 (Sony A7 IV Camera) is currently 'In Stock' at the Chelsea, NY store. You can reserve this item for order pickup today.
+
+---
+
+**👤 You:**
+> "Give me the top user reviews for the Dyson Airwrap."
+
+**🤖 AI Agent:**
+> Gathering feedback metrics... The Dyson Airwrap maintains a 4.6 average. Positive reviews frequently highlight 'drying speed' and 'heat protection', while negative ones cite 'steep learning curve' and price. Want to see the exact text of the top 3 critical reviews?
+
+
 ## Installation & Usage
 
 To install and use the **Best Buy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Best Buy** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # HaloPSA MCP Server
 
-Automate service desk workflows via HaloPSA — manage tickets, clients, users, and assets directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/halopsa)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/halopsa)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/halopsa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/halopsa-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** helpdesk-ticketing
-**Tools Count:** 11
+
+**Category:** [helpdesk-ticketing](../categories/helpdesk-ticketing.md)
+
+Automate service desk workflows via HaloPSA — manage tickets, clients, users, and assets directly from any AI agent.
 
 ## Description
 Connect your **HaloPSA** instance to any AI agent and take full control of your service desk and PSA workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual navigating through complex PSA tabs. Your AI assistant acts as a 
 - **perform_ticket_action**: Perform an action on a ticket (e.g., add note, change status)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HaloPSA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all open tickets assigned to me."
+
+**🤖 AI Agent:**
+> I've retrieved your tickets. You currently have 3 open items: 'Internet connectivity issue' (ID: 1021), 'Printer setup request' (ID: 1025), and 'Software license renewal' (ID: 1030). Which one would you like to update?
+
+---
+
+**👤 You:**
+> "Add an internal note to ticket ID 1021: 'Waiting for vendor feedback'."
+
+**🤖 AI Agent:**
+> Action performed! I've successfully added the internal note to ticket 1021. Would you like to change its status to 'On Hold' as well?
+
+---
+
+**👤 You:**
+> "Show me the asset list for Client 'Acme Corp'."
+
+**🤖 AI Agent:**
+> Accessing assets... I found 5 assets linked to Acme Corp, including 3 Laptops (MacBook Pro), 1 Server (PowerEdge), and 1 Firewall (FortiGate). Shall I list the serial numbers for these items?
+
+
 ## Installation & Usage
 
 To install and use the **HaloPSA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **HaloPSA** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

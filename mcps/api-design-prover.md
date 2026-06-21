@@ -1,12 +1,14 @@
 # API Design Prover MCP Server
 
-An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/api-design-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/api-design-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/api-design-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/api-design-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written.
 
 ## Description
 LLMs design APIs the way junior developers do — they pick verbs randomly, skip versioning, return different shapes on every endpoint, and dump error stack traces to the client. The result: 200 consumer services break when you refactor a single route. Clients write custom parsers for each endpoint. Nobody can paginate. Nobody can cache.
@@ -55,6 +57,33 @@ API Design Prover validates every contract through 5 Decision Pivots:
 Structured reflection tool for REST/HTTP API design (Stripe/GitHub-grade, RFC 7807 compliant). Forces the agent to define verb semantics, versioning with deprecation, response envelope shape, pagination bounds, and error contracts BEFORE implementing an endpoint. Catches Verb Abuse (POST for reads, GET with side effects, PUT for partial updates), Unversioned APIs (no deprecation policy, breaking consumers silently), Shape Inconsistency (different response structures per endpoint — success vs error vs list), Unbounded Responses (no pagination, no max page size — returning 100K records in one call), and Uncontracted Errors (500 with "Internal Server Error" string instead of structured RFC 7807). Call once per API surface. Based on Stripe/GitHub API guidelines, RFC 7807 Problem Details, and REST API Design Rulebook (Masse 2011)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **API Design Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Let's create a GET endpoint /users/create to add a new user to our system."
+
+**🤖 AI Agent:**
+> Verdict: VERB_ABUSE. Using GET to add resources violates HTTP semantics. GET must be read-only (idempotent). Change the design to use POST /v1/users to create a new user resource.
+
+---
+
+**👤 You:**
+> "API: User Management. Verbs: GET /v1/users (list), POST /v1/users (create), GET /v1/users/:id (details). Versioning: URL path prefix (/v1/). Response envelope: { data: T, meta: { total, page } }. Pagination: Limit-offset with default 20, max 100. Error contract: RFC 7807 JSON shape with type, title, status, and detail."
+
+**🤖 AI Agent:**
+> Verdict: API_PROVEN. Verbs are semantic, versioning is set via URL path, response shape is consistent, pagination enforces bounds, and errors follow RFC 7807. Design is clean and ready for implementation.
+
+---
+
+**👤 You:**
+> "API: User Management. Verbs: GET /v1/users, POST /v1/users. Versioning: URL path. Response: raw array of users or raw user object on creation. Pagination: none, but we have a small dataset. Error contract: RFC 7807 format."
+
+**🤖 AI Agent:**
+> Verdict: SHAPE_INCONSISTENT. Your responses lack a unified envelope. Returning raw arrays on lists and raw objects on detail/creation routes prevents consistent client-side parsing. Standardize using an envelope structure first.
+
+
 ## Installation & Usage
 
 To install and use the **API Design Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **API Design Prover** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

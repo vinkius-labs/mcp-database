@@ -1,12 +1,14 @@
 # OpenFEC (Federal Election Commission) MCP Server
 
-Access real-time federal campaign finance data — search candidates, track committee filings, and analyze election financial totals directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openfec-federal-election-commission)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfec-federal-election-commission)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfec-federal-election-commission-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfec-federal-election-commission-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 21
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time federal campaign finance data — search candidates, track committee filings, and analyze election financial totals directly.
 
 ## Description
 Connect to the official **OpenFEC** API and bring transparency to federal election data through your AI agent. This server provides direct access to the Federal Election Commission's comprehensive database of campaign finance information.
@@ -56,6 +58,33 @@ Connect to the official **OpenFEC** API and bring transparency to federal electi
 - **search_committees**: Search for committees by name or ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenFEC (Federal Election Commission)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all presidential candidates for the 2024 election cycle."
+
+**🤖 AI Agent:**
+> I've retrieved the list of presidential candidates for 2024. There are currently several registered candidates, including [Candidate Name] (ID: P...) and [Candidate Name] (ID: P...). Would you like to see the financial totals for any of them?
+
+---
+
+**👤 You:**
+> "Show me the financial totals for candidate ID P00000001 in the 2024 cycle."
+
+**🤖 AI Agent:**
+> For the 2024 cycle, candidate P00000001 has reported total receipts of $X,XXX,XXX and total disbursements of $Y,XXX,XXX. They currently have $Z,XXX,XXX cash on hand. Do you need a breakdown of individual committee contributions?
+
+---
+
+**👤 You:**
+> "Search for political committees with 'Action' in their name."
+
+**🤖 AI Agent:**
+> I found several committees matching 'Action'. Notable ones include 'Climate Action PAC' (ID: C...) and 'Justice Action Fund' (ID: C...). Which one would you like to inspect for detailed filings?
+
+
 ## Installation & Usage
 
 To install and use the **OpenFEC (Federal Election Commission)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **OpenFEC (Federal Election Commission)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

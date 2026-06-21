@@ -1,12 +1,14 @@
 # Junip MCP Server
 
-Manage product reviews, questions, and campaigns via Junip API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/junip)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/junip)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/junip-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/junip-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage product reviews, questions, and campaigns via Junip API.
 
 ## Description
 Empower your AI agents with Junip's scalable product review platform. This MCP server allows you to list and retrieve product reviews, track customer questions and answers, manage display themes, and view review request campaigns directly through the Junip API. Ideal for automating social proof and customer feedback analysis for Shopify stores.
@@ -45,6 +47,33 @@ Lists all product reviews
 Lists all review display themes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Junip** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all recent product reviews in Junip."
+
+**🤖 AI Agent:**
+> I'll fetch the latest reviews from your Junip account.
+
+---
+
+**👤 You:**
+> "Show me the questions asked for product ID '123'."
+
+**🤖 AI Agent:**
+> I'll retrieve the customer questions associated with that specific product.
+
+---
+
+**👤 You:**
+> "Check my active review campaigns."
+
+**🤖 AI Agent:**
+> I'll look up the list of configured review request campaigns in Junip.
+
+
 ## Installation & Usage
 
 To install and use the **Junip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Junip** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

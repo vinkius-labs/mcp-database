@@ -1,12 +1,14 @@
 # Groq MCP Server
 
-Empower LLM applications via Groq — perform ultra-fast LPU-accelerated chat completions, handle audio transcription and translation, and use JSON mode directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/groq)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groq)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/groq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/groq-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 8
+
+**Category:** [superpower](../categories/superpower.md)
+
+Empower LLM applications via Groq — perform ultra-fast LPU-accelerated chat completions, handle audio transcription and translation, and use JSON mode directly from any AI agent.
 
 ## Description
 Connect your **Groq** account to any AI agent and take full control of your high-speed generative AI inference and LPU-accelerated LLM workflows through natural conversation.
@@ -48,6 +50,33 @@ Generate a chat completion with ultra-fast inference
 - **structured_output**: Generate structured JSON output
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Groq** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Ask llama3-70b: 'Write a python function to scrape a website.'"
+
+**🤖 AI Agent:**
+> Inference complete! Llama 3 response: 'Here is a simple python function using BeautifulSoup and requests to scrape data...' [Blazing-fast response delivered via Groq LPU].
+
+---
+
+**👤 You:**
+> "Transcribe this audio meeting: https://example.com/meeting.mp3"
+
+**🤖 AI Agent:**
+> Transcription started! I'm using Groq optimized Whisper large-v3 model to parse your meeting audio. I'll provide the full timestamped text for you in just a few seconds.
+
+---
+
+**👤 You:**
+> "Get model info for 'mixtral-8x7b-32768'"
+
+**🤖 AI Agent:**
+> Retrieving model metadata... Mixtral-8x7b-32768 is a high-performance LLM with a context window of 32,768 tokens. It supports chat completions and tool-calling on Groq's LPU architecture.
+
+
 ## Installation & Usage
 
 To install and use the **Groq** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Groq** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

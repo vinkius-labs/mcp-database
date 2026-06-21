@@ -1,12 +1,14 @@
 # Loops.so MCP Server
 
-Manage email marketing and transactional emails via Loops.so — handle contacts, campaigns, and events directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/loopsso)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loopsso)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loopsso-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loopsso-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 24
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage email marketing and transactional emails via Loops.so — handle contacts, campaigns, and events directly from your AI agent.
 
 ## Description
 Connect your **Loops.so** account to any AI agent to streamline your email marketing and transactional messaging workflows through natural language.
@@ -60,6 +62,33 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 - **update_email_message**: Update an email message (Alpha)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Loops.so** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the contact with email 'growth@company.com' and show their details."
+
+**🤖 AI Agent:**
+> I've located the contact. Name: Alex Rivera, Status: Subscribed, Source: API. They are currently in the 'Early Adopters' user group.
+
+---
+
+**👤 You:**
+> "Send a transactional email to 'user@example.com' using the 'welcome-onboarding' transaction ID."
+
+**🤖 AI Agent:**
+> Transactional email sent successfully to user@example.com using the 'welcome-onboarding' template.
+
+---
+
+**👤 You:**
+> "List all my active mailing lists and current campaigns."
+
+**🤖 AI Agent:**
+> You have 3 mailing lists: 'Main Newsletter', 'Product Updates', and 'Beta Testers'. I also found 2 active campaigns: 'Black Friday 2024' and 'Monthly Digest'.
+
+
 ## Installation & Usage
 
 To install and use the **Loops.so** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Loops.so** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

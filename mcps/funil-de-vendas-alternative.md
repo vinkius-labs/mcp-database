@@ -1,12 +1,14 @@
 # Funil de Vendas MCP Server
 
-Manage CRM opportunities, sales funnels, and activities via Funil de Vendas directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/funil-de-vendas-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/funil-de-vendas-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/funil-de-vendas-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/funil-de-vendas-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage CRM opportunities, sales funnels, and activities via Funil de Vendas directly from your AI agent.
 
 ## Description
 Empower your AI agent with access to your **Funil de Vendas** CRM to automate your sales pipeline and lead management workflows.
@@ -54,6 +56,33 @@ List lead source origins
 - **update_crm_activity**: Modify an existing activity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Funil de Vendas** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my active sales funnels in Funil de Vendas."
+
+**🤖 AI Agent:**
+> I've found 2 active sales funnels: 'Direct Sales' (ID: 101) and 'Referral Funnel' (ID: 102). Would you like to see opportunities from any of these?
+
+---
+
+**👤 You:**
+> "Register a new lead: John Doe, john@example.com, subject 'Interested in Enterprise Plan'."
+
+**🤖 AI Agent:**
+> Done! I've registered John Doe as a new lead in your CRM with the subject 'Interested in Enterprise Plan'.
+
+---
+
+**👤 You:**
+> "Show my recent follow-up activities."
+
+**🤖 AI Agent:**
+> I've retrieved your recent activities. You have 3 tasks completed and 2 upcoming follow-up calls scheduled for today.
+
+
 ## Installation & Usage
 
 To install and use the **Funil de Vendas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Funil de Vendas** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

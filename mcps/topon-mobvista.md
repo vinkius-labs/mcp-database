@@ -1,12 +1,14 @@
 # TopOn / Mobvista MCP Server
 
-Ad mediation and monetization platform for mobile games — monitor revenue, manage waterfalls, and optimize eCPM via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/topon-mobvista)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/topon-mobvista)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/topon-mobvista-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/topon-mobvista-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Ad mediation and monetization platform for mobile games — monitor revenue, manage waterfalls, and optimize eCPM via AI.
 
 ## Description
 Empower your AI agent to orchestrate your mobile game monetization with **TopOn / Mobvista**, the leading global platforms for ad mediation and programmatic buying. By connecting TopOn and Mobvista (Mintegral) to your agent, you transform complex performance auditing and waterfall management into a natural conversation. Your agent can instantly list your apps, retrieve real-time revenue reports, analyze eCPM trends, and even audit your placement waterfalls for optimization opportunities without you needing to navigate multiple dashboards. Whether you are an indie developer or part of a large studio, your agent acts as a real-time monetization manager, ensuring your ad revenue is always maximized.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your mobile game monetization with **TopOn 
 - **list_mintegral_offers**: List Mintegral offers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TopOn / Mobvista** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my monetization summary for today."
+
+**🤖 AI Agent:**
+> Your overall monetization is looking strong today! Total revenue is approximately $1,240.50, up 5% from yesterday. Mintegral contributed the most to this growth. Would you like a breakdown by app?
+
+---
+
+**👤 You:**
+> "Check the waterfall health for placement 'ad-unit-772'."
+
+**🤖 AI Agent:**
+> I've audited the waterfall for 'ad-unit-772'. The health score is 92/100. All networks are responding well, but I recommend testing Mintegral at the top of the waterfall for your Tier-1 regions to potentially boost eCPM.
+
+---
+
+**👤 You:**
+> "List my ad placements for app 'Galaxy Quest'."
+
+**🤖 AI Agent:**
+> I found 4 active ad placements for 'Galaxy Quest': 'Main_Menu_Interstitial', 'Rewarded_Double_Coins', 'Level_End_Banner', and 'Offer_Wall'. Which one would you like to analyze?
+
+
 ## Installation & Usage
 
 To install and use the **TopOn / Mobvista** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **TopOn / Mobvista** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

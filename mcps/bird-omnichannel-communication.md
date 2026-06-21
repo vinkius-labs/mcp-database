@@ -1,12 +1,14 @@
 # Bird (Omnichannel Communication) MCP Server
 
-Manage omnichannel communication via Bird (MessageBird) — send SMS, WhatsApp messages, and track delivery logs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-omnichannel-communication)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bird-omnichannel-communication)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bird-omnichannel-communication-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bird-omnichannel-communication-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Manage omnichannel communication via Bird (MessageBird) — send SMS, WhatsApp messages, and track delivery logs.
 
 ## Description
 Connect your **Bird (formerly MessageBird)** account to any AI agent and take full control of your global communication infrastructure, omnichannel messaging, and CRM contacts through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Bird (formerly MessageBird)** account to any AI agent and take fu
 - **send_sms**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bird (Omnichannel Communication)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to '+1234567890' with the text 'Your package is ready for pickup'"
+
+**🤖 AI Agent:**
+> Dispatching SMS… I've successfully sent the message to '+1234567890'. The Message ID is 'sms-98765'. I'll monitor the delivery status and let you know once it's confirmed as delivered.
+
+---
+
+**👤 You:**
+> "What is my current Bird account balance?"
+
+**🤖 AI Agent:**
+> Retrieving balance… You currently have €145.50 available in your account. Based on your recent traffic, this is enough to cover approximately 12,000 more global SMS messages. Would you like me to check for any delivery failures?
+
+---
+
+**👤 You:**
+> "List all contacts in my communication directory"
+
+**🤖 AI Agent:**
+> I've retrieved your contacts. You have 1,250 registered entities. Recent contacts include 'Alex Smith' (+44123456789) and 'Sarah Johnson' (+1987654321). Which one would you like to see the detailed profile for?
+
+
 ## Installation & Usage
 
 To install and use the **Bird (Omnichannel Communication)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Bird (Omnichannel Communication)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Baseten MCP Server
 
-Manage your Baseten AI models — orchestrate deployments, list secrets, and run serverless inference predictions autonomously.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/baseten)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baseten)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baseten-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baseten-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Manage your Baseten AI models — orchestrate deployments, list secrets, and run serverless inference predictions autonomously.
 
 ## Description
 Connect your **Baseten** account to any AI agent and track, deploy, and execute your machine learning models through natural conversation.
@@ -44,6 +46,33 @@ Invoke a serverless model inference prediction
 - **list_secrets**: List securely managed workspace secrets without showing values
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Baseten** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List standard machine learning models we currently host on Baseten."
+
+**🤖 AI Agent:**
+> You have 2 primary managed models explicitly mapped: A fine-tuned 'Llama-3-70B-Instruct' (ID: XYZ) and a custom computer vision 'Defect-Detector-V2' (ID: ABC). Want to pull explicit active Deployment states for the Llama model?
+
+---
+
+**👤 You:**
+> "Run a prediction against the Sentiment model ID 12345 using this text input: 'The new feature completely broke my workflow.'"
+
+**🤖 AI Agent:**
+> The Baseten inference pipeline returned the following calculated object mapping successfully: `{"score": 0.12, "label": "NEGATIVE"}`. Prediction executed cleanly across targeted model instances in real-time.
+
+---
+
+**👤 You:**
+> "Check if our Baseten project has a secret scoped as 'OPENAI_API_KEY_FALLBACK'."
+
+**🤖 AI Agent:**
+> I checked the environment isolation layer. `OPENAI_API_KEY_FALLBACK` is indeed fully provisioned alongside `HF_TOKEN`. Secret logic passes checks avoiding explicit plaintext extractions over network streams as per Baseten guidelines.
+
+
 ## Installation & Usage
 
 To install and use the **Baseten** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Baseten** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Hunter MCP Server
 
-Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hunter-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hunter-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hunter-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hunter-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 12
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach.
 
 ## Description
 Connect your **Hunter** account to any AI agent and power your email prospecting through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Hunter** account to any AI agent and power your email prospecting
 - **update_lead_info**: Modify lead data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hunter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all emails at stripe.com and verify the CTO's email address."
+
+**🤖 AI Agent:**
+> Domain search for 'stripe.com': 48 emails available. Top results: 1) patrick@stripe.com — Patrick Collison (CEO, confidence: 95%). Sources: 4 public web pages. 2) john@stripe.com — John Collison (President, confidence: 92%). 3) david@stripe.com — David Singleton (CTO, confidence: 88%). 4) claire@stripe.com — Claire Hughes Johnson (COO, confidence: 85%). Verifying CTO email: david@stripe.com — ✅ Status: deliverable. Confidence: 92%. MX records: valid (Google Workspace). SMTP check: passed. Accept-all: no. This email is safe for outreach. Would you like to save these as leads or enrich the contacts?
+
+---
+
+**👤 You:**
+> "Find the email for Sarah Chen at Acme Corp and enrich her contact data."
+
+**🤖 AI Agent:**
+> Email found! sarah.chen@acmecorp.com — Confidence: 91%. Pattern used: {first}.{last}@acmecorp.com. Enrichment data: Full name: Sarah Chen. Title: VP of Engineering. Company: Acme Corp (acmecorp.com). Industry: SaaS. Employees: 250-500. LinkedIn: linkedin.com/in/sarahchen. Twitter: @sarahchen_tech. Location: San Francisco, CA. Previous: Senior Engineer at Google (2018-2022). Lead saved! ID: lead_4521. Added to 'Enterprise Prospects' list. Would you like to verify her email or search for more contacts at Acme Corp?
+
+---
+
+**👤 You:**
+> "Check my Hunter account credits and list all saved leads."
+
+**🤖 AI Agent:**
+> Account: john@company.com. Plan: Starter. Credits this month: Searches: 18 of 500 used (482 remaining). Verifications: 42 of 1,000 used (958 remaining). Resets: May 1, 2025. Saved leads: 34 total. Lead lists: 1) 'Enterprise Prospects' — 12 leads (8 verified, 4 unverified). 2) 'SMB Outreach' — 15 leads (12 verified, 3 risky). 3) 'Recruiting Pipeline' — 7 leads (all verified). Recent leads: sarah.chen@acmecorp.com (VP Engineering, added today). david@stripe.com (CTO, added today). mike@techco.com (Director Sales, added yesterday). Would you like to verify unverified leads or search a new domain?
+
+
 ## Installation & Usage
 
 To install and use the **Hunter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Hunter** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

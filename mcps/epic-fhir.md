@@ -1,12 +1,14 @@
 # Epic Fhir MCP Server
 
-Access patient records via Epic's FHIR R4 API — search patients, review encounters, pull lab results and medications from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-fhir)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-fhir)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epic-fhir-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epic-fhir-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 10
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access patient records via Epic's FHIR R4 API — search patients, review encounters, pull lab results and medications from any AI agent.
 
 ## Description
 Connect **Epic** electronic health records to any AI agent and query clinical data through natural conversation instead of navigating complex EHR interfaces.
@@ -68,6 +70,47 @@ List patient appointments
 List diagnostic reports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Epic Fhir** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all patients named Smith born in 1985."
+
+**🤖 AI Agent:**
+> Found 3 patients matching 'Smith' born in 1985:
+1. John Smith (ID: e63wACU8F) — DOB: 1985-03-12, Male, MRN: 203847
+2. Sarah Smith (ID: TnOZ.mfU4) — DOB: 1985-09-28, Female, MRN: 410293
+3. Robert Smith (ID: eAr3bA.mH) — DOB: 1985-01-05, Male, MRN: 587102
+Would you like to see the full medical history for any of these patients?
+
+---
+
+**👤 You:**
+> "Show me the latest lab results for patient e63wACU8F."
+
+**🤖 AI Agent:**
+> Lab results for John Smith (last 30 days):
+• Hemoglobin A1c: 6.2% (ref: <5.7% normal, 5.7-6.4% prediabetes) ⚠️
+• Glucose (fasting): 118 mg/dL (ref: 70-100) ⚠️
+• Creatinine: 0.9 mg/dL (ref: 0.7-1.3) ✓
+• eGFR: 92 mL/min (ref: >60) ✓
+• Total Cholesterol: 198 mg/dL (ref: <200) ✓
+The A1c and fasting glucose are slightly elevated, suggesting prediabetic range. Want me to check current medications and conditions?
+
+---
+
+**👤 You:**
+> "List all active medications for this patient."
+
+**🤖 AI Agent:**
+> Active medications for John Smith:
+1. Metformin 500mg — 1 tablet twice daily with meals (Dr. Chen, prescribed 2024-11-15)
+2. Lisinopril 10mg — 1 tablet daily (Dr. Chen, prescribed 2024-06-02)
+3. Atorvastatin 20mg — 1 tablet at bedtime (Dr. Patel, prescribed 2024-03-10)
+No known allergies documented. Want me to check the immunization record or upcoming appointments?
+
+
 ## Installation & Usage
 
 To install and use the **Epic Fhir** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +119,11 @@ To install and use the **Epic Fhir** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

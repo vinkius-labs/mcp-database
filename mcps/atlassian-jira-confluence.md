@@ -1,12 +1,14 @@
 # Atlassian (Jira & Confluence) MCP Server
 
-The ultimate AI bridge for Jira and Confluence — manage projects, agile boards, and wikis via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/atlassian-jira-confluence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlassian-jira-confluence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/atlassian-jira-confluence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/atlassian-jira-confluence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+The ultimate AI bridge for Jira and Confluence — manage projects, agile boards, and wikis via AI.
 
 ## Description
 Transform your **Atlassian Jira** and **Confluence** instance into a conversational command center for your AI agent. This integration bridges the gap between complex agile workflows and actionable intelligence, allowing your agent to audit Jira issues, manage active sprints, and retrieve deep knowledge from Confluence wikis through natural language. Whether you're tracking a bug's lifecycle or auditing enterprise documentation, your agent acts as a direct, real-time navigator across your Atlassian ecosystem, ensuring your team stays aligned and data-driven without manual dashboard hopping.
@@ -49,6 +51,33 @@ List all Jira agile boards
 - **get_page**: Get Confluence page rich text content
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Atlassian (Jira & Confluence)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get my active Jira sprint tickets related to frontend errors."
+
+**🤖 AI Agent:**
+> Executing JQL... I've found 3 `In Progress` high-priority tickets assigned to you mentioning 'frontend' or 'react'. Namely: `ENG-402`, `ENG-489`, and `ENG-501`. Shall I pull the full description of `ENG-402`?
+
+---
+
+**👤 You:**
+> "Find Confluence wiki pages detailing the 'Payment Gateway API' architecture."
+
+**🤖 AI Agent:**
+> I've searched Confluence (CQL) and surfaced two relevant documentation pages: `Payment Gateway v2` and `Legacy Stripe Migration Docs`. I can stream the complete text of either page now.
+
+---
+
+**👤 You:**
+> "List all active boards and the sprints currently running in them."
+
+**🤖 AI Agent:**
+> You currently have 4 active Jira Boards. Expanding Board `CORE-BACKEND` reveals an active 'Sprint 44' closing in 2 days. Board `MOBILE-REVAMP` holds 'Sprint 12' with 49 open tasks. Which one would you like to inspect?
+
+
 ## Installation & Usage
 
 To install and use the **Atlassian (Jira & Confluence)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Atlassian (Jira & Confluence)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

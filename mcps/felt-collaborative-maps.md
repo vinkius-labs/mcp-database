@@ -1,12 +1,14 @@
 # Felt (Collaborative Maps) MCP Server
 
-Create and manage collaborative maps — upload geographic data, style layers, and manipulate map elements directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/felt-collaborative-maps)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/felt-collaborative-maps)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/felt-collaborative-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/felt-collaborative-maps-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 11
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Create and manage collaborative maps — upload geographic data, style layers, and manipulate map elements directly from any AI agent.
 
 ## Description
 Connect **Felt** to your AI agent to take full control of your collaborative mapping workflows through natural conversation. This server allows you to manage maps, layers, and geographic elements without leaving your workspace.
@@ -48,6 +50,33 @@ Create a layer (Upload Data) to a Felt map
 - **update_layer**: Update a Felt layer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Felt (Collaborative Maps)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current Felt maps."
+
+**🤖 AI Agent:**
+> I've retrieved your maps. You have 3 active maps: 'Urban Planning 2024', 'Logistics Hubs', and 'Environmental Study'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Create a new map titled 'Project Alpha' centered on San Francisco."
+
+**🤖 AI Agent:**
+> Map 'Project Alpha' has been created successfully with ID `map_12345`. It is centered at latitude 37.7749 and longitude -122.4194.
+
+---
+
+**👤 You:**
+> "Add a point element to layer `layer_abc` at [ -122.4, 37.8 ]."
+
+**🤖 AI Agent:**
+> I've added the point to the layer. The new element ID is `elem_9876`. You can now see it on your map.
+
+
 ## Installation & Usage
 
 To install and use the **Felt (Collaborative Maps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Felt (Collaborative Maps)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

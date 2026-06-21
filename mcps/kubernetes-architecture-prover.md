@@ -1,12 +1,14 @@
 # Kubernetes Architecture Prover MCP Server
 
-An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kubernetes-architecture-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kubernetes-architecture-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kubernetes-architecture-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kubernetes-architecture-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** infrastructure
-**Tools Count:** 1
+
+**Category:** [infrastructure](../categories/infrastructure.md)
+
+An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload.
 
 ## Description
 AI agents generate Kubernetes manifests that deploy successfully — until they cause production outages. They skip resource requests and limits. They run containers as root. They deploy single-replica services with no disruption budgets. They configure zero NetworkPolicies — flat L3 means a compromised pod reaches everything. They skip probes entirely. The deployment works. The architecture is a liability.
@@ -55,6 +57,33 @@ Kubernetes Architecture Prover validates workload architecture through 5 Decisio
 Structured reflection tool for production Kubernetes architecture — forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction before any workload reaches production. Catches Resources Ungoverned (deploying containers without CPU/memory requests and limits — "the cluster handles it" is not governance. Without requests, the scheduler cannot make informed decisions — it places pods on nodes that may already be overcommitted. Without limits, a single memory-leaking container consumes the entire node, evicting all other pods. Without LimitRanges, any developer can request 64GB RAM. Without ResourceQuotas, one namespace can starve others. "100m/500m CPU, 128Mi/512Mi memory per container, LimitRange 2Gi max, ResourceQuota 16Gi/namespace" is governance), Security Unhardened (running containers as root with full capabilities — a root container with NET_RAW capability can ARP-spoof the entire node network. runAsNonRoot=true, runAsUser≥1000, drop ALL capabilities, readOnlyRootFilesystem=true, PodSecurityStandard=restricted. "We trust our images" is not security — a compromised dependency in any base image inherits root privileges), Reliability Undesigned (single-replica production workloads without disruption budgets — Kubernetes drains nodes for upgrades. A single-replica workload has zero redundancy during drain. PodDisruptionBudget with minAvailable=1, anti-affinity across zones, HPA scaling 2→10 based on CPU. "It restarts fast" is not reliability — restart means downtime), Observability Absent (no probes, no structured logging, no metrics, no SLO alerting — without a readiness probe, Kubernetes sends traffic to pods that are not ready to serve. Without a liveness probe, a deadlocked pod is never restarted. Without startup probes, slow-boot JVM containers get killed before initialization. "We check the logs" is not observability — structured JSON logging, Prometheus metrics, and SLO-based alerting (error budget burn rate) is observability), and Networking Exposed (flat network with no network policies — in a flat Kubernetes network, any pod can reach any other pod on any port. A compromised frontend pod can directly query the database pod. Default deny-all NetworkPolicy per namespace, explicit ingress/egress allow rules per service, mTLS between services via service mesh. "We use private subnets" is not network security inside a cluster). Call once per Kubernetes deployment or architecture review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kubernetes Architecture Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Deploy a Node.js API to Kubernetes. Use the default settings, one replica should be enough. We will add monitoring later."
+
+**🤖 AI Agent:**
+> RESOURCES_UNGOVERNED — 'Default settings' means no CPU/memory requests or limits. The first noisy neighbor OOM-kills your API. Define: [API container: CPU 100m/500m, memory 128Mi/512Mi] → [LimitRange: default 100m CPU, 128Mi memory] → [ResourceQuota: 2 CPU, 2Gi memory ceiling]. Also: single replica + no monitoring = blind single point of failure.
+
+---
+
+**👤 You:**
+> "API container: CPU 200m/1000m, memory 256Mi/1Gi. LimitRange: default 100m/128Mi. ResourceQuota: 8 CPU, 16Gi. Security: runAsNonRoot=true, runAsUser=1001, PodSecurityStandard=restricted, drop ALL capabilities, readOnlyRootFilesystem=true. Reliability: 3 replicas, PDB minAvailable=2, podAntiAffinity on topology.kubernetes.io/zone, HPA targeting 70% CPU, min=3 max=10. Observability: liveness GET /healthz initialDelay=15s period=10s, readiness GET /ready failureThreshold=3, startup GET /healthz failureThreshold=30 period=10s, structured JSON logging to Loki, Prometheus /metrics endpoint with p99 latency alerting at 500ms SLO. Networking: deny-all default NetworkPolicy, allow ingress from nginx-ingress namespace on port 3000, allow egress to postgres on port 5432 and to external API on port 443, TLS via cert-manager with Let's Encrypt, Linkerd mTLS between services."
+
+**🤖 AI Agent:**
+> ARCHITECTURE_PROVEN — Production-grade Kubernetes architecture validated. Resources: 200m/1Gi with namespace governance. Security: restricted PSS, non-root, capabilities dropped. Reliability: 3 replicas across zones with PDB and HPA. Observability: full probe chain, Loki logging, Prometheus with p99 SLO alerting. Networking: deny-all with explicit allow, cert-manager TLS, Linkerd mTLS. This workload survives node failure, maintenance drain, and lateral movement attempts.
+
+---
+
+**👤 You:**
+> "Resources: CPU 100m/500m per container, LimitRange set, ResourceQuota 4CPU/8Gi. Security: runAsNonRoot=true, restricted PSS. Reliability: 2 replicas, PDB minAvailable=1, anti-affinity on hostname. Observability: liveness and readiness probes configured, logs to stdout. But we keep the default flat network because all our services need to communicate with each other and NetworkPolicies add complexity."
+
+**🤖 AI Agent:**
+> NETWORKING_EXPOSED — Resources, security, reliability, and observability pass — but networking is flat. 'All services need to communicate' is false — your API does not need to reach your monitoring stack's database. Define deny-all default policies, then allow only the specific pod-to-pod flows you need. 'NetworkPolicies add complexity' — so does a compromised pod scanning your entire cluster. Also: 'logs to stdout' without structured format or aggregation target is insufficient observability.
+
+
 ## Installation & Usage
 
 To install and use the **Kubernetes Architecture Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Kubernetes Architecture Prover** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

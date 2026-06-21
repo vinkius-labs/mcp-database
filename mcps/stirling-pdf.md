@@ -1,12 +1,14 @@
 # Stirling PDF MCP Server
 
-Manage PDF documents via Stirling PDF — add watermarks, convert images to PDF, sign documents with certificates, and monitor server metrics directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stirling-pdf)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stirling-pdf)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stirling-pdf-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stirling-pdf-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage PDF documents via Stirling PDF — add watermarks, convert images to PDF, sign documents with certificates, and monitor server metrics directly.
 
 ## Description
 Connect your **Stirling PDF** instance to any AI agent and take full control of your document workflows through natural conversation. This server allows you to process PDF files, convert formats, and monitor your self-hosted infrastructure.
@@ -48,6 +50,33 @@ Connect your **Stirling PDF** instance to any AI agent and take full control of 
 Run any Stirling PDF tool by its ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stirling PDF** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the current status and version of my Stirling PDF server."
+
+**🤖 AI Agent:**
+> I've checked your instance. It is currently online running version 0.25.1. All systems are operational.
+
+---
+
+**👤 You:**
+> "Add a 'CONFIDENTIAL' watermark to this PDF with 0.5 opacity."
+
+**🤖 AI Agent:**
+> Processing the document... I've applied the 'CONFIDENTIAL' text watermark with the requested settings. You can now download the processed PDF.
+
+---
+
+**👤 You:**
+> "Convert this image to a PDF document named 'report.pdf'."
+
+**🤖 AI Agent:**
+> Converting image... I have successfully generated 'report.pdf' from your image file using the maintainAspectRatio fit option.
+
+
 ## Installation & Usage
 
 To install and use the **Stirling PDF** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Stirling PDF** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

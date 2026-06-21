@@ -1,12 +1,14 @@
 # Loom (Async Video Messaging) MCP Server
 
-Manage video messages via Loom — retrieve metadata, handle timeline comments, and track viewer analytics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/loom-async-video-messaging)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/loom-async-video-messaging)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/loom-async-video-messaging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/loom-async-video-messaging-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage video messages via Loom — retrieve metadata, handle timeline comments, and track viewer analytics.
 
 ## Description
 Connect your **Loom** account to any AI agent and take full control of your asynchronous video communication and screencast management through natural conversation.
@@ -46,6 +48,33 @@ Delete a video
 - **get_video_analytics**: Get video analytics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Loom (Async Video Messaging)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 videos in my Loom workspace"
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent videos. Highlights include 'Product Demo Q1' (ID: vid-123), 'Bug Report: Login Flow' (ID: vid-456), and 'Quick Update' (ID: vid-789). Would you like to see the viewership analytics for the product demo?
+
+---
+
+**👤 You:**
+> "Show me the comments for video ID 'vid-123'"
+
+**🤖 AI Agent:**
+> I've found 3 comments on 'Product Demo Q1': 1) Sarah: 'Great overview, can we add more detail on the API?', 2) Alex: 'Looks good!', 3) Mark: 'When is this launching?'. Would you like me to draft a reply to Sarah?
+
+---
+
+**👤 You:**
+> "Get the download link for video ID 'vid-456'"
+
+**🤖 AI Agent:**
+> Generating download URL… Done. You can download the raw MP4 file for 'Bug Report: Login Flow' here: [pre-signed-s3-url]. Note that this link is ephemeral and will expire in 1 hour.
+
+
 ## Installation & Usage
 
 To install and use the **Loom (Async Video Messaging)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Loom (Async Video Messaging)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

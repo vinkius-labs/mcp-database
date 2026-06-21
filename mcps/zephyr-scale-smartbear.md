@@ -1,12 +1,14 @@
 # Zephyr Scale (SmartBear) MCP Server
 
-Manage test cases, cycles, and executions on Zephyr Scale — the high-performance test management tool for Jira.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zephyr-scale-smartbear)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zephyr-scale-smartbear)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zephyr-scale-smartbear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zephyr-scale-smartbear-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage test cases, cycles, and executions on Zephyr Scale — the high-performance test management tool for Jira.
 
 ## Description
 Connect your **Zephyr Scale (SmartBear)** account to any AI agent and manage your enterprise quality assurance infrastructure through natural conversation.
@@ -58,6 +60,33 @@ Lists all folders for a specific type within a project
 Lists all test environments in a Zephyr Scale project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zephyr Scale (SmartBear)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all test cases in project 'PROJ'."
+
+**🤖 AI Agent:**
+> I found 12 test cases in project PROJ. The most recent are: 1. 'User Login' (Key: PROJ-T1), 2. 'Password Reset' (Key: PROJ-T2), and 3. 'Profile Update' (Key: PROJ-T3). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "What are the details for test cycle 'PROJ-R42'?"
+
+**🤖 AI Agent:**
+> Cycle 'PROJ-R42' (Regression Q1): Status: In Progress, Planned Start: 2026-03-25, Planned End: 2026-04-05. It contains 25 test executions. Current progress: 15/25 complete.
+
+---
+
+**👤 You:**
+> "Show me the results for execution ID '12345678'."
+
+**🤖 AI Agent:**
+> Execution 12345678 Result: FAILED. Total steps: 5. Steps 1-3 Passed, Step 4 Failed: 'Clicking submit button returned no response'. Time taken: 45s. Would you like me to pull the linked Jira issue?
+
+
 ## Installation & Usage
 
 To install and use the **Zephyr Scale (SmartBear)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Zephyr Scale (SmartBear)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Forj MCP Server
 
-Manage community members, groups, and activity via AI agents with Forj (formerly Mobilize).
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/forj)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forj)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/forj-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/forj-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage community members, groups, and activity via AI agents with Forj (formerly Mobilize).
 
 ## Description
 Connect your **Forj** (formerly Mobilize) account to any AI agent to automate your community management and member engagement through the Model Context Protocol (MCP). Forj provides a powerful platform for organizing professional communities into groups, tracking member activity, and facilitating seamless synchronization with external CRMs. This MCP server enables you to manage your groups, search for members, and oversee community interactions directly through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Forj** (formerly Mobilize) account to any AI agent to automate yo
 - **search_users**: Search community members
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Forj** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all groups in my Forj community."
+
+**🤖 AI Agent:**
+> Retrieving groups... I found 4 organizational groups, including 'General Discussions' and 'VIP Members'.
+
+---
+
+**👤 You:**
+> "Find the member profile for 'jane.doe@example.com'."
+
+**🤖 AI Agent:**
+> Searching... I found a profile for Jane Doe. She is a member of 3 groups and was last active yesterday.
+
+---
+
+**👤 You:**
+> "Show me recent activity for user ID 'user_123'."
+
+**🤖 AI Agent:**
+> Retrieving activity log... User user_123 recently joined the 'Beta Testers' group and posted 2 comments.
+
+
 ## Installation & Usage
 
 To install and use the **Forj** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Forj** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Fire Safety Calculator MCP Server
 
-Calculate mandatory fire safety infrastructure requirements, including maximum evacuation distance, minimum stair width, and extinguisher density based on local building codes.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fire-safety-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fire-safety-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fire-safety-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fire-safety-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** structural-design
-**Tools Count:** 3
+
+**Category:** [structural-design](../categories/structural-design.md)
+
+Calculate mandatory fire safety infrastructure requirements, including maximum evacuation distance, minimum stair width, and extinguisher density based on local building codes.
 
 ## Description
 **The Challenge of Life Safety Compliance**
@@ -35,6 +37,33 @@ Calculate minimum stair width based on population load and module definition
 Calculate maximum walking distance compliance for evacuation paths
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fire Safety Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "The new office building has an area of 1500 sqm, a population load of 450 people, and is classified as 'Class B Office'. Check if the evacuation paths are compliant."
+
+**🤖 AI Agent:**
+> I will use `calculate_max_walking_distance` with (1500, 450, 'Class B Office'). The result confirms compliance, and the maximum allowed distance is 75 meters. No potential violations found.
+
+---
+
+**👤 You:**
+> "We need to know the minimum stair width for a floor with 800 people, using a standard module of 60cm."
+
+**🤖 AI Agent:**
+> Running `determine_min_stair_width` with (800, 60) shows the minimum required width is 480 cm. The recommendation suggests using a 528 cm stair for enhanced safety.
+
+---
+
+**👤 You:**
+> "For a warehouse space of 900 sqm with 'Medium Risk' classification, how many fire extinguishers are needed?"
+
+**🤖 AI Agent:**
+> I executed `specify_extinguisher_requirement` using (900, 'Medium Risk'). The total required is 12 extinguishers: 6 ABC Dry Chemical and 6 Type B Foam.
+
+
 ## Installation & Usage
 
 To install and use the **Fire Safety Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +72,11 @@ To install and use the **Fire Safety Calculator** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

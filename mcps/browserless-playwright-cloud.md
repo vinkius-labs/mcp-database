@@ -1,12 +1,14 @@
 # Browserless (Playwright Cloud) MCP Server
 
-Equip your AI with a remote headless browser to scrape, interact, and run Playwright safely via cloud.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless-playwright-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless-playwright-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserless-playwright-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserless-playwright-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI with a remote headless browser to scrape, interact, and run Playwright safely via cloud.
 
 ## Description
 Grant your AI agent the absolute power of an untethered, scalable **Browserless / Playwright Cloud** cluster. Unlike basic REST fetchers, this MCP connector spins up a legitimate remote Chromium/Webkit instance. Your agent can now execute full JavaScript lifecycles natively, scrape heavy SPAs (Single Page Applications), wait for CSS selectors, or simply ask for a high-fidelity PDF render of any site.
@@ -46,6 +48,33 @@ Inject and run a custom JS script before extracting content
 - **scrape_with_wait**: Scrape content and wait for a CSS selector
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Browserless (Playwright Cloud)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Take a full page screenshot of the landing page on 'https://vinkius.com'."
+
+**🤖 AI Agent:**
+> Screenshot execution completed. Spun up remote Playwright instance requesting `https://vinkius.com` in Full-Page context. It successfully rendered and extracted the composite `.png` buffer holding the pixel mapping. The remote artifact link has been provided [Graphic Representation File]. Is there another view you want audited?
+
+---
+
+**👤 You:**
+> "Scrape the price of the first item from Amazon using a stealth bypass on `url_here`."
+
+**🤖 AI Agent:**
+> Stealth routine enacted via `scrape_with_stealth`. Bypassing WAF headers and standard bot challenges successfully on the retail endpoint. I subsequently applied `.a-price-whole` matching selectors via logical isolation. The payload returned values precisely: `["399", "419"]`. Validating extraction logic completed.
+
+---
+
+**👤 You:**
+> "Retrieve the rendered HTML content of this site: 'https://vinkius.com/blog'."
+
+**🤖 AI Agent:**
+> I've invoked the `get_html_content` method successfully against the target URI. The Playwright container fully let the React/Next.js hydration loop stabilize. Captured massive 450kb parsed DOM structure explicitly mapping all internal blog routes natively. How would you like me to process this massive markup string within our memory context?
+
+
 ## Installation & Usage
 
 To install and use the **Browserless (Playwright Cloud)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Browserless (Playwright Cloud)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Pixabay MCP Server
 
-Search and retrieve royalty-free stock images, vectors, illustrations, and videos via AI directly from Pixabay.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pixabay)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixabay)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixabay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixabay-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 10
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Search and retrieve royalty-free stock images, vectors, illustrations, and videos via AI directly from Pixabay.
 
 ## Description
 Connect the **Pixabay** massive media library natively to your AI agent. Access over 4.5 million high-quality, royalty-free stock photos, illustrations, vector graphics, and video clips for commercial use without ever opening a browser.
@@ -44,6 +46,33 @@ Connect the **Pixabay** massive media library natively to your AI agent. Access 
 - **get_image**: Get Pixabay image by ID. Returns full details, tags, and download URLs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pixabay** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find 5 editors choice photos showing coffee."
+
+**🤖 AI Agent:**
+> I retrieved 5 premium Editors Choice images for 'coffee'. Result `ID: 153068` features an aerial shot with 2.4k likes matching your description. Would you like the raw CDN string for the high-resolution backdrop (3000x2000)?
+
+---
+
+**👤 You:**
+> "Search for transparent SVG vectors of a rocket ship."
+
+**🤖 AI Agent:**
+> Searching the vector graphics registry… I found `ID: 1475510` (Space Rocket Vector SVG) matching transparent backgrounds closely. The file is lightweight format (Scaleable Vector). Let me know if you want the exact layout attributes and download link.
+
+---
+
+**👤 You:**
+> "Give me a vertical mountain video for an Instagram reel background."
+
+**🤖 AI Agent:**
+> Executing video lookup targeted for mobile devices. Found `ID: 329004` (Drone over Alps). It spans exactly 15 seconds, available native dimension mapping 1080x1920 MP4 (`8mb filesize`). Shall I construct a snippet that mounts this locally?
+
+
 ## Installation & Usage
 
 To install and use the **Pixabay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Pixabay** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

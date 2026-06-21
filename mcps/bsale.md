@@ -1,12 +1,14 @@
 # Bsale MCP Server
 
-Automate cloud POS operations via Bsale — issue electronic invoices, manage inventory, track stock levels, and register clients from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bsale)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bsale)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bsale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bsale-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 15
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate cloud POS operations via Bsale — issue electronic invoices, manage inventory, track stock levels, and register clients from any AI agent.
 
 ## Description
 Connect your **Bsale** cloud POS account to any AI agent and take full control of your Chilean retail and invoicing operations through natural conversation.
@@ -70,6 +72,33 @@ Check stock levels across offices
 List all SKU variants for a product
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bsale** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 10 invoices issued in my Bsale account."
+
+**🤖 AI Agent:**
+> I found 10 recent documents. Notable entries include Factura Electrónica #4521 for $128,500 CLP (client: Constructora Andes SpA), Boleta #8903 for $15,900 CLP, and Nota de Crédito #102 voiding document #4518. Would you like the full breakdown of any specific document?
+
+---
+
+**👤 You:**
+> "Check stock levels for all variants of product ID 1542."
+
+**🤖 AI Agent:**
+> Product 1542 'Zapatilla Running Pro' has 3 variants: Size 40 (SKU: ZRP-40) — 12 units at Santiago Centro, 5 at Providencia. Size 42 (SKU: ZRP-42) — 8 units at Santiago Centro, 0 at Providencia (out of stock!). Size 44 (SKU: ZRP-44) — 3 units at both locations. Should I create a restocking alert?
+
+---
+
+**👤 You:**
+> "Register a new client 'Distribuidora Los Andes Ltda' with RUT 76.543.210-K."
+
+**🤖 AI Agent:**
+> Client created successfully! 'Distribuidora Los Andes Ltda' has been registered with RUT 76.543.210-K and assigned internal ID #2847. You can now use this client ID when issuing facturas electrónicas or boletas. Would you like to issue an invoice for them right now?
+
+
 ## Installation & Usage
 
 To install and use the **Bsale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Bsale** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

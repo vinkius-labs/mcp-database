@@ -1,12 +1,14 @@
 # Fathom MCP Server
 
-Privacy-first website analytics — track visitors, monitor real-time traffic, and manage sites and events directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fathom-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fathom-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fathom-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fathom-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 20
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Privacy-first website analytics — track visitors, monitor real-time traffic, and manage sites and events directly from your AI agent.
 
 ## Description
 Connect your **Fathom Analytics** account to any AI agent to monitor your website performance while respecting user privacy. Get instant access to traffic data, site management, and event tracking through natural conversation.
@@ -59,6 +61,33 @@ List all sites owned by the API key
 - **wipe_site**: Wipe all pageviews and event completions from a site
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fathom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many visitors are currently on my site with ID CNDY123?"
+
+**🤖 AI Agent:**
+> Checking real-time data... There are currently 42 active visitors on your site (ID: CNDY123).
+
+---
+
+**👤 You:**
+> "List all the sites in my Fathom account."
+
+**🤖 AI Agent:**
+> I've retrieved your sites. You have 3 sites: 'Personal Blog' (ID: BLOG1), 'E-commerce Store' (ID: SHOP2), and 'Portfolio' (ID: PORT3).
+
+---
+
+**👤 You:**
+> "Get the pageviews and unique visitors for site SHOP2 for the last 7 days."
+
+**🤖 AI Agent:**
+> Fetching aggregations... For the last 7 days, site SHOP2 had 1,250 pageviews and 890 unique visitors.
+
+
 ## Installation & Usage
 
 To install and use the **Fathom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Fathom** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

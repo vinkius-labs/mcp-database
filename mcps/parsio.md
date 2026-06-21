@@ -1,12 +1,14 @@
 # Parsio MCP Server
 
-Extract structured data from emails and PDFs automatically with AI-powered parsing templates that learn from your documents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/parsio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parsio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parsio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parsio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Extract structured data from emails and PDFs automatically with AI-powered parsing templates that learn from your documents.
 
 ## Description
 Connect your **Parsio.io** account to any AI agent and take full control of your document automation and data extraction through natural conversation. Parsio provides a powerful AI-powered parsing engine that transforms unstructured PDF files, images, and emails into structured JSON data directly from your chat interface.
@@ -51,6 +53,33 @@ Start file data extraction (Async)
 - **extract_data_from_file_sync**: Extract data from a file immediately (Sync)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Parsio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Parsio mailboxes."
+
+**🤖 AI Agent:**
+> I've retrieved your mailboxes. You have 3 active containers: 'Sales Invoices', 'Customer Support', and 'Expense Receipts'. Which one would you like to list templates for?
+
+---
+
+**👤 You:**
+> "Show me all parsing templates I have configured and their extraction success rates."
+
+**🤖 AI Agent:**
+> You have 6 active parsing templates. "Invoice Parser" processes 94% of documents successfully with 12 extracted fields. "Receipt Scanner" has 89% accuracy across 847 documents processed this month. "Purchase Order Template" handles 97% success rate. "Resume Parser" extracts from 91% of uploads. Your total documents processed this month: 3,421.
+
+---
+
+**👤 You:**
+> "Get the extracted data from the last 5 invoices processed by my Invoice Parser template."
+
+**🤖 AI Agent:**
+> Here are the last 5 invoices processed. Invoice from Acme Corp: $4,250.00, dated May 8, PO#2847. Invoice from TechSupply: $1,890.50, dated May 7, NET30 terms. Invoice from CloudServices: $699.00, recurring monthly. Invoice from OfficeMax: $342.18, supplies category. Invoice from DataCenter Inc: $12,500.00, infrastructure. All 5 extracted with 100% field confidence.
+
+
 ## Installation & Usage
 
 To install and use the **Parsio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Parsio** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

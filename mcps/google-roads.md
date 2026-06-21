@@ -1,12 +1,14 @@
 # Google Roads MCP Server
 
-Access Google Roads API — snap GPS tracks to roads, find nearest road segments, and get speed limit data for any road segment worldwide from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-roads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-roads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-roads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-roads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access Google Roads API — snap GPS tracks to roads, find nearest road segments, and get speed limit data for any road segment worldwide from any AI agent.
 
 ## Description
 Connect your **Google Roads API** to any AI agent and take full control of GPS map matching, road segment identification, and speed limit data retrieval through natural conversation.
@@ -52,6 +54,33 @@ Snap GPS coordinates to roads and get speed limits in a single request
 Get speed limit data for specific road segments using place IDs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Roads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Snap these GPS coordinates to roads: 40.7128,-74.0060|40.7135,-74.0055|40.7142,-74.0048"
+
+**🤖 AI Agent:**
+> Snapping GPS coordinates to roads... 3 points snapped successfully. Point 1: Original (40.712800, -74.006000) -> Snapped to (40.712820, -74.005980), placeId: ChIJd8BlQ2BZwokRAFUEcm_qrcA. Point 2: Original (40.713500, -74.005500) -> Snapped to (40.713510, -74.005490), placeId: ChIJd8BlQ2BZwokRAFUEcm_qrcB. Point 3: Original (40.714200, -74.004800) -> Snapped to (40.714190, -74.004810), placeId: ChIJd8BlQ2BZwokRAFUEcm_qrcC. All points snapped to Broadway in Lower Manhattan. Would you like speed limit data for these road segments?
+
+---
+
+**👤 You:**
+> "Get speed limits for these place IDs: ChIJd8BlQ2BZwokRAFUEcm_qrcA|ChIJd8BlQ2BZwokRAFUEcm_qrcB"
+
+**🤖 AI Agent:**
+> Fetching speed limits... 2 road segments found. Segment 1: placeId ChIJd8BlQ2BZwokRAFUEcm_qrcA, speed limit 40 km/h (25 mph), road name Broadway, New York NY. Segment 2: placeId ChIJd8BlQ2BZwokRAFUEcm_qrcB, speed limit 40 km/h (25 mph), road name Broadway, New York NY. Both segments are in a downtown urban zone with reduced speed limits.
+
+---
+
+**👤 You:**
+> "Find the nearest road to these coordinates: 34.0522,-118.2437 and 34.0530,-118.2445"
+
+**🤖 AI Agent:**
+> Finding nearest roads... Point 1 (34.0522, -118.2437) snapped to Spring Street, Los Angeles CA, placeId: ChIJYWRSrVHHwoARpVl2b3cFzQE. Point 2 (34.0530, -118.2445) snapped to Broadway, Los Angeles CA, placeId: ChIJYWRSrVHHwoARpVl2b3cFzQF. Both points are in downtown Los Angeles within 15 meters of major roads. Would you like speed limits for these road segments?
+
+
 ## Installation & Usage
 
 To install and use the **Google Roads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Google Roads** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

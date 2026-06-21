@@ -1,12 +1,14 @@
 # Heymarket MCP Server
 
-Text customers from a shared business number with two-way SMS, scheduled messages, and CRM integrations for team communication.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/heymarket)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heymarket)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heymarket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heymarket-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 9
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Text customers from a shared business number with two-way SMS, scheduled messages, and CRM integrations for team communication.
 
 ## Description
 Connect your **Heymarket** account to any AI agent and take full control of your business text messaging and SMS workflows through natural conversation.
@@ -50,6 +52,33 @@ Send an SMS or MMS message
 - **update_contact_profile**: Modify an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Heymarket** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS 'Your order is ready!' to '+15551234567' using member 'M123'."
+
+**🤖 AI Agent:**
+> Message sent! I've successfully delivered your update to '+15551234567' via Heymarket. The message ID is 'msg_98765'.
+
+---
+
+**👤 You:**
+> "List all active chat conversations from the shared inbox."
+
+**🤖 AI Agent:**
+> I've retrieved 5 active threads. Notable conversations include 'Support Request #402' and 'New Lead Inquiry'. Would you like to read the latest messages for any of these?
+
+---
+
+**👤 You:**
+> "Update contact 'C456' with first name 'John' and add a note."
+
+**🤖 AI Agent:**
+> Contact 'C456' updated! I've set the first name to 'John' and added your note to their profile in Heymarket. Their profile is now up to date.
+
+
 ## Installation & Usage
 
 To install and use the **Heymarket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Heymarket** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

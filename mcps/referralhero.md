@@ -1,12 +1,14 @@
 # ReferralHero MCP Server
 
-Automate viral referral campaigns via ReferralHero — manage subscribers, rewards, and leaderboards with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/referralhero)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/referralhero)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/referralhero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/referralhero-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate viral referral campaigns via ReferralHero — manage subscribers, rewards, and leaderboards with AI.
 
 ## Description
 Connect your **ReferralHero** account to any AI agent and take full control of your viral growth orchestration and referral program management through natural conversation. ReferralHero provides a premier platform for building referral loops, and this integration allows you to retrieve subscriber metadata, monitor campaign leaderboards, and manage rewards directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual leaderboard exports or subscriber hunting. Your AI acts as a dedi
 - **update_subscriber**: Update an existing subscriber
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ReferralHero** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active referral lists in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 3 active lists including 'Early Access Launch' (UUID: list_123) and 'Refer-a-Friend'. Which one would you like to see the leaderboard for?
+
+---
+
+**👤 You:**
+> "Show me the leaderboard of top referrers in my active campaign with their reward balances."
+
+**🤖 AI Agent:**
+> Top 10 referrers in "Growth Champions" campaign. #1: James Park with 47 verified referrals ($470 earned, $235 pending). #2: Lisa Wang with 34 referrals ($340 earned). #3: Alex Rivera with 28 referrals ($280 earned). #4-10: combined 89 referrals. Total campaign participants: 456. Active referrers (1+ referral): 234 (51%). Total rewards distributed: $4,560. Pending payouts: $1,230. Campaign viral coefficient: 1.4x. Average referrals per participant: 2.3.
+
+---
+
+**👤 You:**
+> "Send a reminder email to all campaign participants who have not shared their referral link yet."
+
+**🤖 AI Agent:**
+> Reminder email sent to 222 inactive participants (those who joined but have 0 referrals). Subject: "Your referral link is waiting! Share & earn $10 per friend". Email includes their unique referral link, one-click social share buttons, and a progress bar showing how close they are to their first reward. Delivery: 218 delivered (98.2%). 4 bounced (invalid emails). Based on previous reminders, expect 15-20% to make their first share within 48 hours.
+
+
 ## Installation & Usage
 
 To install and use the **ReferralHero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **ReferralHero** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

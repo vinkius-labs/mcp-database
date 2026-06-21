@@ -1,12 +1,14 @@
 # Apify MCP Server
 
-Command Apify scrapers from your AI agent — run actors, extract web data, poll datasets, and automate browser tasks seamlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Command Apify scrapers from your AI agent — run actors, extract web data, poll datasets, and automate browser tasks seamlessly.
 
 ## Description
 Connect your **Apify** workspace to your AI agent and seamlessly direct full-stack web scraping and data extraction workflows through natural conversation.
@@ -64,6 +66,33 @@ Run an Apify actor and block until completion (synchronous)
 Start an Apify actor asynchronously with custom JSON input
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the Apify actors available on my account."
+
+**🤖 AI Agent:**
+> I've scanned your Apify actor catalog. You possess 3 main actors: 'ecommerce-spider-v1' and two public templates 'google-search-scraper' and 'instagram-scraper'. Shall I print their base configurable inputs?
+
+---
+
+**👤 You:**
+> "Verify the status of run 'qKpwH9LgC3r0Xm' and show me its final dataset if finished."
+
+**🤖 AI Agent:**
+> I checked run `qKpwH9LgC3r0Xm`. Its current status is `SUCCEEDED`. The run consumed 0.045 Compute Units. I have successfully downloaded the associated dataset (`ds_8aBxP_...`) which yielded 302 product profiles. I'm injecting the top 5 parsed items below.
+
+---
+
+**👤 You:**
+> "How are our compute usage limits tracking this current month on Apify?"
+
+**🤖 AI Agent:**
+> I pulled your overall compute records. Right now on the 'Scale' plan, your account used 82 out of 100 Compute Units (CU). You've consumed significant resources on proxy bandwidth (1.8TB/2TB) leading to roughly 80% usage threshold. I recommend holding further massive scraped runs until renewal happens on the 10th.
+
+
 ## Installation & Usage
 
 To install and use the **Apify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Apify** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

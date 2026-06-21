@@ -1,12 +1,14 @@
 # Reflect MCP Server
 
-Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reflect)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reflect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reflect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reflect-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API.
 
 ## Description
 Connect your **Reflect** account securely to your AI agent via their developer API. This integration grants your AI the ability to directly explore your networked thought graph, lookup personal notes, manage book highlights, and append daily thoughts asynchronously from your conversation interface.
@@ -50,6 +52,33 @@ Creates a new note in a Reflect graph
 - **list_notes**: Lists all notes within a specific Reflect graph
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reflect** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available graphs in my Reflect account."
+
+**🤖 AI Agent:**
+> Using `list_graphs`, I found 2 distinct workspaces: "Personal Brain" (ID: 6f...2c) and "Project Insights" (ID: 9a...11).
+
+---
+
+**👤 You:**
+> "Create a permanent note titled 'Meeting 2024 Strategy' inside my 'Personal Brain' graph with summary bullet points."
+
+**🤖 AI Agent:**
+> Executing `create_note` on Graph ID '6f...2c'. I have successfully created 'Meeting 2024 Strategy' and piped the Markdown list of bullets into it.
+
+---
+
+**👤 You:**
+> "Find notes linked by backlinks that point to my note 'React Learnings'."
+
+**🤖 AI Agent:**
+> I called `list_notes` to verify 'React Learnings', acquiring its note_id 'xx82', then ran `get_backlinks`. You have 3 other notes connecting to it: 'Frontend Architecture', 'Day 2 Journal', and 'Tech Stack Overview'.
+
+
 ## Installation & Usage
 
 To install and use the **Reflect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Reflect** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

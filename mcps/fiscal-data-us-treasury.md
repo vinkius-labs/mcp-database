@@ -1,12 +1,14 @@
 # Fiscal Data (U.S. Treasury) MCP Server
 
-Access real-time U.S. Treasury financial data, including exchange rates, monthly statements, and over 170 fiscal datasets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fiscal-data-us-treasury)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fiscal-data-us-treasury)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fiscal-data-us-treasury-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fiscal-data-us-treasury-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time U.S. Treasury financial data, including exchange rates, monthly statements, and over 170 fiscal datasets.
 
 ## Description
 Connect directly to the **U.S. Department of the Treasury's Fiscal Data API** to retrieve authoritative financial information. This server enables AI agents to query a vast library of federal financial data for analysis, reporting, and economic research.
@@ -40,6 +42,33 @@ Connect directly to the **U.S. Department of the Treasury's Fiscal Data API** to
 Query any Fiscal Data dataset endpoint
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fiscal Data (U.S. Treasury)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the Treasury exchange rates for the Euro for the last recorded date."
+
+**🤖 AI Agent:**
+> I'll fetch the latest exchange rates using `get_rates_of_exchange`. For the Eurozone-Euro, the rate was 0.921 per USD as of the most recent record date.
+
+---
+
+**👤 You:**
+> "Show me the summary of federal receipts and outlays from MTS Table 1 for 2023."
+
+**🤖 AI Agent:**
+> I'm querying `get_mts_table_1` with a filter for the year 2023. I've found the summary data showing total receipts and outlays for each month of the fiscal year.
+
+---
+
+**👤 You:**
+> "Use query_dataset to find data on the 'daily_treasury_statement' for the past week."
+
+**🤖 AI Agent:**
+> Accessing the `query_dataset` tool for the endpoint 'v1/accounting/od/daily_treasury_statement'. I've retrieved the daily cash balances and operating totals for the requested period.
+
+
 ## Installation & Usage
 
 To install and use the **Fiscal Data (U.S. Treasury)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Fiscal Data (U.S. Treasury)** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

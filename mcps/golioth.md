@@ -1,12 +1,14 @@
 # Golioth MCP Server
 
-Manage IoT devices and projects via Golioth — list projects, register hardware, and control LightDB state directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/golioth)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/golioth)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/golioth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/golioth-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage IoT devices and projects via Golioth — list projects, register hardware, and control LightDB state directly from your AI agent.
 
 ## Description
 Connect your **Golioth** IoT cloud to any AI agent and take full control of your connected hardware fleet through natural conversation.
@@ -43,6 +45,33 @@ No more switching between the Golioth Console and your code. Your AI acts as a r
 - **set_lightdb_state**: Set LightDB State for a device
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Golioth** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Golioth projects."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have access to: 'Smart-Home-Hub' (ID: proj_123) and 'Industrial-Sensors' (ID: proj_456). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the devices registered in project proj_123."
+
+**🤖 AI Agent:**
+> In project 'Smart-Home-Hub', I found 3 devices: 'Living-Room-Temp', 'Kitchen-Light', and 'Main-Gateway'. All are currently showing as active.
+
+---
+
+**👤 You:**
+> "Set the LightDB state for device 'Kitchen-Light' in project proj_123 at path 'power' to {"on": true}."
+
+**🤖 AI Agent:**
+> Successfully updated the LightDB state. The 'power' path for 'Kitchen-Light' is now set to {"on": true}. The device should receive this update immediately.
+
+
 ## Installation & Usage
 
 To install and use the **Golioth** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Golioth** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

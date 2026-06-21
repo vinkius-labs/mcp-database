@@ -1,12 +1,14 @@
 # Fireflies.ai MCP Server
 
-Record, transcribe, and search across all your meetings with AI that captures every conversation and makes it instantly findable.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firefliesai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firefliesai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firefliesai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firefliesai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Record, transcribe, and search across all your meetings with AI that captures every conversation and makes it instantly findable.
 
 ## Description
 Connect your **Fireflies.ai** account to any AI agent and take full control of your meeting documentation and conversational knowledge retrieval through natural conversation.
@@ -49,6 +51,33 @@ No more manual note-taking or scrubbing through hours of recordings to find a de
 - **upload_audio**: Transcribe audio file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fireflies.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Summarize the key decisions from the meeting 'Project Alpha Sync'."
+
+**🤖 AI Agent:**
+> Retrieving summary... I've identified 3 key decisions from Project Alpha Sync: 1. Launch is delayed to Q4. 2. Budget is increased by 10%. 3. John is lead on API docs. Would you like the full action items list?
+
+---
+
+**👤 You:**
+> "Invite the Fireflies bot to this Meet link: [url]."
+
+**🤖 AI Agent:**
+> Done! I've sent the invitation to your live meeting. The Fireflies bot will join shortly to begin recording and transcribing the conversation.
+
+---
+
+**👤 You:**
+> "Ask Fred: 'What was the specific feedback regarding the mobile UI?' for meeting '123'."
+
+**🤖 AI Agent:**
+> AskFred analysis... According to the transcript, the client mentioned that the navigation buttons are too small for smaller devices and the color contrast needs to be improved. Should I create a task for the design team?
+
+
 ## Installation & Usage
 
 To install and use the **Fireflies.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Fireflies.ai** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

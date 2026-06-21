@@ -1,12 +1,14 @@
 # BlogIn MCP Server
 
-Keep your team informed with internal blog posts, company updates, and knowledge sharing that everyone actually reads.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blogin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blogin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blogin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blogin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 7
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Keep your team informed with internal blog posts, company updates, and knowledge sharing that everyone actually reads.
 
 ## Description
 Connect your **BlogIn** internal blog to any AI agent and simplify how you share knowledge, track team updates, and manage your company's internal wiki through natural conversation.
@@ -43,6 +45,33 @@ Connect your **BlogIn** internal blog to any AI agent and simplify how you share
 - **list_team_members**: List account users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BlogIn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent internal blog posts."
+
+**🤖 AI Agent:**
+> I've retrieved your latest posts. You have: 'New Office Policies', 'Team Lunch Recap', and 'Quarterly Roadmap Update'. Which one would you like to read the details for?
+
+---
+
+**👤 You:**
+> "Show me the comments for the post 'Quarterly Roadmap Update'."
+
+**🤖 AI Agent:**
+> I've fetched the comments. There are 3 recent discussions including positive feedback from Sarah and a question from Mike about the timeline. Shall I retrieve the full text of the comments?
+
+---
+
+**👤 You:**
+> "Create an internal post: 'New Benefits Guide' in the 'HR' category."
+
+**🤖 AI Agent:**
+> Success! The post 'New Benefits Guide' has been created in the 'HR' category (ID: cat_10293). It is now published and visible to your team members in BlogIn.
+
+
 ## Installation & Usage
 
 To install and use the **BlogIn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **BlogIn** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

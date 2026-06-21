@@ -1,12 +1,14 @@
 # GaggleAMP MCP Server
 
-Amplify your brand reach through employee advocacy with curated social sharing activities that boost organic engagement.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gaggleamp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gaggleamp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gaggleamp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gaggleamp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 12
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Amplify your brand reach through employee advocacy with curated social sharing activities that boost organic engagement.
 
 ## Description
 Connect your **GaggleAMP** manager account to any AI agent and take full control of your employee advocacy and B2B social marketing workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual status checking or complex activity creation through slow web das
 - **redeem_reward_item**: Process reward claim
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GaggleAMP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active social activities in my Gaggle."
+
+**🤖 AI Agent:**
+> I've retrieved your activities. You have 5 active tasks, including a LinkedIn share for the 'Q3 Product Update' and a Twitter like request. Would you like the engagement stats for any of these?
+
+---
+
+**👤 You:**
+> "Who are the top 3 performers in the leaderboard right now?"
+
+**🤖 AI Agent:**
+> Retrieving rankings... Currently, the top performers are 'John Smith' (1,200 points), 'Sarah Jane' (950 points), and 'Michael Scott' (880 points). John has the highest social reach this month.
+
+---
+
+**👤 You:**
+> "Show me all available rewards and their point costs."
+
+**🤖 AI Agent:**
+> Scanning reward catalog... You have 4 items available: 'Gift Card' (500 pts), 'Company Swag' (300 pts), 'Extra Day Off' (2,000 pts), and 'Charity Donation' (100 pts). Should I check the redemption history?
+
+
 ## Installation & Usage
 
 To install and use the **GaggleAMP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **GaggleAMP** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

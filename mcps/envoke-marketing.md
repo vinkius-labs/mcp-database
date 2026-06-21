@@ -1,12 +1,14 @@
 # Envoke Marketing MCP Server
 
-Equip your AI agent to manage email campaigns, track contact lists, and monitor performance via the Envoke API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/envoke-marketing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/envoke-marketing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/envoke-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/envoke-marketing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage email campaigns, track contact lists, and monitor performance via the Envoke API.
 
 ## Description
 Integrate **Envoke**, the powerful and intuitive email marketing and communication platform, directly into your AI workflow. Manage your email campaigns and contact lists, track individual subscriber profiles and interaction history, monitor real-time performance statistics, and oversee your automated marketing operations using natural language.
@@ -44,6 +46,33 @@ Integrate **Envoke**, the powerful and intuitive email marketing and communicati
 - **search_contacts_by_email**: Search for a contact using their email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Envoke Marketing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns."
+
+**🤖 AI Agent:**
+> I've found 5 active campaigns, including 'Monthly Newsletter' and 'Q2 Lead Magnet'. The Monthly Newsletter has already been sent to 3,500 contacts. Would you like to see the performance stats?
+
+---
+
+**👤 You:**
+> "Show me the performance for campaign ID 12345."
+
+**🤖 AI Agent:**
+> Campaign ID 12345 has 3,500 sends, 850 opens (24.3%), and 240 clicks (6.8%). Status is 'Completed'. Should I check for any delivery bounces?
+
+---
+
+**👤 You:**
+> "Search for contact 'alex@example.com'."
+
+**🤖 AI Agent:**
+> Alex is currently 'Subscribed' and a member of 2 lists: 'General Announcements' and 'Product Beta'. Their last recorded click was on March 15th. Should I pull their full interaction history?
+
+
 ## Installation & Usage
 
 To install and use the **Envoke Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Envoke Marketing** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

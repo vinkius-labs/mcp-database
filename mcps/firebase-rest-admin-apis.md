@@ -1,12 +1,14 @@
 # Firebase (REST & Admin APIs) MCP Server
 
-Manage Firebase Realtime Database, Firestore, and Auth via REST APIs — query data, manage users, and send FCM messages directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firebase-rest-admin-apis)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firebase-rest-admin-apis)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firebase-rest-admin-apis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firebase-rest-admin-apis-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 14
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Firebase Realtime Database, Firestore, and Auth via REST APIs — query data, manage users, and send FCM messages directly from your AI agent.
 
 ## Description
 Connect your **Firebase** project to any AI agent to manage your backend infrastructure through natural language. This server leverages Firebase REST APIs to provide direct access to Realtime Database, Cloud Firestore, and Authentication services.
@@ -50,6 +52,33 @@ Create a new document in Cloud Firestore
 - **rtdb_put**: Write data to Firebase Realtime Database (overwrites)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Firebase (REST & Admin APIs)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the data at path 'configs/app_settings' from the Realtime Database."
+
+**🤖 AI Agent:**
+> I've retrieved the settings from 'configs/app_settings'. The current configuration includes `maintenance_mode: false`, `min_version: '2.1.0'`, and `theme: 'dark'`. Would you like to update any of these values?
+
+---
+
+**👤 You:**
+> "List all documents in the 'products' collection in Firestore."
+
+**🤖 AI Agent:**
+> I found 3 documents in the 'products' collection: 'laptop_pro_15', 'wireless_mouse_x', and 'usb_c_hub'. Would you like to see the full details for any of these products?
+
+---
+
+**👤 You:**
+> "Sign up a new user with email 'dev-test@example.com' and password 'SecretPass123'."
+
+**🤖 AI Agent:**
+> The user has been successfully created. The new UID is `abc123xyz`. I've also received an ID token for this session. Should I look up the profile details for this new account?
+
+
 ## Installation & Usage
 
 To install and use the **Firebase (REST & Admin APIs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Firebase (REST & Admin APIs)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

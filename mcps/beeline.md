@@ -1,12 +1,14 @@
 # Beeline MCP Server
 
-Manage your external workforce via Beeline VMS — list assignments, requisitions, and timesheets directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/beeline)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beeline)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beeline-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beeline-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 10
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage your external workforce via Beeline VMS — list assignments, requisitions, and timesheets directly from any AI agent.
 
 ## Description
 Connect your **Beeline Vendor Management System (VMS)** account to any AI agent and orchestrate your contingent workforce operations through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Beeline Vendor Management System (VMS)** account to any AI agent 
 - **search_requisitions**: Search job requisitions by keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Beeline** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active assignments in Beeline."
+
+**🤖 AI Agent:**
+> I've retrieved 5 active assignments. Key entries include 'Senior Developer - Q2' (ID: asgn_123) and 'Project Manager - Retail' (ID: asgn_456). Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Search for open requisitions matching 'React'."
+
+**🤖 AI Agent:**
+> I found 2 open requisitions matching 'React': 'Frontend Engineer (Mid-level)' (ID: req_992) and 'Fullstack JS Developer' (ID: req_995). Would you like to see the full requirements for either?
+
+---
+
+**👤 You:**
+> "Show me recent timesheets that need review."
+
+**🤖 AI Agent:**
+> Retrieving recent timesheets... I found 8 entries from last week. All have been submitted by contractors and are awaiting manager review in the Beeline dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Beeline** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Beeline** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

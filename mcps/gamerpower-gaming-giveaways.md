@@ -1,12 +1,14 @@
 # GamerPower Gaming Giveaways MCP Server
 
-Find and track free gaming giveaways — get Steam keys, Epic Games Store offers, and in-game loot via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gamerpower-gaming-giveaways)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gamerpower-gaming-giveaways)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gamerpower-gaming-giveaways-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gamerpower-gaming-giveaways-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Find and track free gaming giveaways — get Steam keys, Epic Games Store offers, and in-game loot via AI.
 
 ## Description
 Never miss a free game again with **GamerPower**. This server connects your AI agent to a real-time database of gaming giveaways, including full games, Steam keys, DLCs, and beta access across all major platforms. Your agent acts as a dedicated deal hunter, scanning for the latest opportunities on Steam, Epic Games Store, GOG, PlayStation, Xbox, and mobile. Whether you are looking for high-value titles or exclusive in-game loot, your agent provides instant access to redemption instructions and direct links through natural conversation.
@@ -45,6 +47,33 @@ Never miss a free game again with **GamerPower**. This server connects your AI a
 - **list_high_value_giveaways**: List giveaways with the highest monetary value
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GamerPower Gaming Giveaways** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Are there any active giveaways for 'Epic Games Store' right now?"
+
+**🤖 AI Agent:**
+> I've checked the latest Epic Games Store offers. I found 2 active giveaways, including 'Game Title' (worth $19.99). Would you like the redemption instructions or the direct claim link?
+
+---
+
+**👤 You:**
+> "Show me the most popular giveaways based on community claims."
+
+**🤖 AI Agent:**
+> Running the popularity query... I've retrieved the top-claimed offers. The most popular item right now is a Steam key for 'Popular Game'. I also found high interest in a DLC for 'Multiplayer Hit'. Shall I provide the details?
+
+---
+
+**👤 You:**
+> "What are the latest giveaways added to the database today?"
+
+**🤖 AI Agent:**
+> Inspecting the newest entries... 3 new giveaways were added today, including a beta access key for 'Upcoming RPG'. I also found a new skin bundle for 'Battle Royale Title'. Would you like the claim links?
+
+
 ## Installation & Usage
 
 To install and use the **GamerPower Gaming Giveaways** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **GamerPower Gaming Giveaways** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

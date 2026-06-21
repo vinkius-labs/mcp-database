@@ -1,12 +1,14 @@
 # DeepSource MCP Server
 
-Automate code quality monitoring via DeepSource — analyze issues, vulnerabilities, metrics, and report cards directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deepsource)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepsource)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepsource-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepsource-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 14
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate code quality monitoring via DeepSource — analyze issues, vulnerabilities, metrics, and report cards directly from any AI agent.
 
 ## Description
 Connect your **DeepSource** account to any AI agent and take full control of code quality analysis, vulnerability detection, and metrics monitoring through natural conversation.
@@ -108,6 +110,52 @@ Use this when your team changes the default branch name (e.g., migrating from "m
 Update the default branch for a repository in DeepSource
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeepSource** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the overall code quality report card and current issues for the 'api-service' repository in the 'acme-corp' GitHub organization."
+
+**🤖 AI Agent:**
+> I've retrieved the report card for 'api-service'. Current Grade: **B+** (Score: 87/100). Issues Summary: 12 total (3 CRITICAL, 4 HIGH, 5 MEDIUM). Most critical issues include: unused imports (PYTHON-E1203) in 4 files, potential SQL injection risk (PYTHON-S5001) in auth module, and high cyclomatic complexity (CC>10) in 2 functions. Last analysis: 2 hours ago on branch 'main'. Would you like the full details of any specific issue?
+
+---
+
+**👤 You:**
+> "Check for any critical or high severity dependency vulnerabilities in the 'web-frontend' repo and tell me which packages are affected."
+
+**🤖 AI Agent:**
+> I found 5 dependency vulnerabilities in 'web-frontend':
+
+1. **CVE-2024-1234** (CRITICAL, CVSS: 9.8) — `lodash@4.17.20` — Prototype Pollution. Fix available in v4.17.21. Reachable: Yes.
+2. **CVE-2024-5678** (HIGH, CVSS: 7.5) — `express@4.17.1` — Open Redirect vulnerability. Fix available in v4.18.0. Reachable: Yes.
+3. **CVE-2023-9012** (HIGH, CVSS: 7.2) — `axios@0.21.1` — SSRF vulnerability. Fix available in v1.6.0. Reachable: No.
+4. **CVE-2024-3456** (MEDIUM, CVSS: 5.3) — `minimist@1.2.5` — Prototype Pollution. Fix available in v1.2.6.
+5. **CVE-2023-7890** (MEDIUM, CVSS: 4.9) — `node-fetch@2.6.1` — Information Exposure. Fix available in v3.0.0.
+
+Recommended action: Upgrade lodash and express immediately due to high reachability and severity.
+
+---
+
+**👤 You:**
+> "What's the test coverage for our 'backend-api' repository and show me the most recent analysis runs?"
+
+**🤖 AI Agent:**
+> I've retrieved the data for 'backend-api':
+
+**Test Coverage**: 78.5% (Line Coverage - LCV). Threshold configured: 80%. You're slightly below target.
+
+**Recent Analysis Runs** (last 5):
+1. Run #abc123 — Status: PASSED — Branch: main — Analyzer: PYTHON — 2 hours ago
+2. Run #def456 — Status: PASSED — Branch: feature/auth — Analyzer: PYTHON — 5 hours ago
+3. Run #ghi789 — Status: FAILED — Branch: feature/payments — Analyzer: PYTHON — Yesterday — Error: timeout
+4. Run #jkl012 — Status: PASSED — Branch: main — Analyzer: JS-A1 — Yesterday
+5. Run #mno345 — Status: PASSED — Branch: develop — Analyzer: PYTHON — 2 days ago
+
+Would you like to see what issues were found in the most recent run, or should I help investigate the failed payment analysis?
+
+
 ## Installation & Usage
 
 To install and use the **DeepSource** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -116,4 +164,11 @@ To install and use the **DeepSource** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

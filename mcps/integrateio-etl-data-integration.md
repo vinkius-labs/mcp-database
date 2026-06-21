@@ -1,12 +1,14 @@
 # Integrate.io (ETL & Data Integration) MCP Server
 
-Manage data pipelines via Integrate.io — list pipelines, monitor job runs, and audit data transformations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/integrateio-etl-data-integration)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/integrateio-etl-data-integration)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/integrateio-etl-data-integration-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/integrateio-etl-data-integration-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 6
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Manage data pipelines via Integrate.io — list pipelines, monitor job runs, and audit data transformations.
 
 ## Description
 Connect your **Integrate.io** account to any AI agent and take full control of your automated data pipelines and ETL orchestration through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Integrate.io** account to any AI agent and take full control of y
 - **get_account**: Get Integrate.io account status and limits
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Integrate.io (ETL & Data Integration)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my data pipelines in Integrate.io"
+
+**🤖 AI Agent:**
+> I've found 5 active pipelines: 'Shopify to Snowflake', 'Stripe Data Sync', 'Customer CRM Export', 'Marketing Analytics', and 'Inventory Hub'. Which one would you like to see the details or run history for?
+
+---
+
+**👤 You:**
+> "Show me the status of the last 3 jobs"
+
+**🤖 AI Agent:**
+> Retrieving job history… The last 3 jobs were: 1) 'Shopify Sync' (Success, 12 min ago), 2) 'CRM Export' (Failed, 1 hour ago - connection timeout), 3) 'Stripe Sync' (Success, 3 hours ago). Would you like to inspect the error for the failed job?
+
+---
+
+**👤 You:**
+> "What data sources are currently connected to my account?"
+
+**🤖 AI Agent:**
+> I've identified 4 connected data sources: 'Production PostgreSQL', 'Cloud Snowflake DW', 'Stripe API', and 'HubSpot CRM'. All connections are active and ready for pipeline use. Would you like to see the transformation models mapped to 'Snowflake'?
+
+
 ## Installation & Usage
 
 To install and use the **Integrate.io (ETL & Data Integration)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Integrate.io (ETL & Data Integration)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

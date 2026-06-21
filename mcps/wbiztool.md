@@ -1,12 +1,14 @@
 # Wbiztool MCP Server
 
-Manage your WhatsApp Business account with bulk messaging, contact management, and campaign analytics for marketing teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wbiztool)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wbiztool)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wbiztool-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wbiztool-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage your WhatsApp Business account with bulk messaging, contact management, and campaign analytics for marketing teams.
 
 ## Description
 Connect your **Wbiztool** account to any AI agent and take full control of your WhatsApp marketing orchestration and automated customer messaging through natural conversation.
@@ -49,6 +51,33 @@ No more manual typing of customer messages or missing critical read receipts. Yo
 - **send_template**: Send a template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wbiztool** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all WhatsApp messages sent today in my Wbiztool account."
+
+**🤖 AI Agent:**
+> I've retrieved your messages. You currently have 50 high-fidelity transmissions today, including 'Order Confirmation' to +15550123. Would you like the detailed delivery status for any of them?
+
+---
+
+**👤 You:**
+> "Check if 'John Client' (+15550456) has read my last message."
+
+**🤖 AI Agent:**
+> Messaging intelligence orchestrated! For +15550456, I've verified that the high-fidelity status is 'READ'. The message was opened at 2:00 PM today. I've retrieved the technical receipt metadata for your records. Need help drafting a follow-up?
+
+---
+
+**👤 You:**
+> "Show my Wbiztool orchestration metrics for this month."
+
+**🤖 AI Agent:**
+> Operational monitoring orchestrated! This month, your account has processed 10,000 high-fidelity WhatsApp signals, with a 95% delivery rate and 60% read rate. Your API connection is healthy. Shall I retrieve the detailed engagement breakdown by group?
+
+
 ## Installation & Usage
 
 To install and use the **Wbiztool** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Wbiztool** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

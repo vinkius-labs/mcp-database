@@ -1,12 +1,14 @@
 # Breakthrough Ideation Prover MCP Server
 
-AI agents default to safe, obvious ideas or hallucinate impossible ones. This tool forces breakthrough ideation: challenge convention with facts, integrate real constraints, map a concrete roadmap, and prove feasibility for every blocker. Radical AND realizable.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/breakthrough-ideation-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/breakthrough-ideation-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/breakthrough-ideation-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/breakthrough-ideation-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents default to safe, obvious ideas or hallucinate impossible ones. This tool forces breakthrough ideation: challenge convention with facts, integrate real constraints, map a concrete roadmap, and prove feasibility for every blocker. Radical AND realizable.
 
 ## Description
 AI agents have a fundamental ideation problem. When asked for ideas, they default to the safest, most obvious answer — the first thing a Google search would return. When pushed to be creative, they swing to the opposite extreme: hallucinating impossible solutions built on nonexistent technology, ignoring every real-world constraint, and presenting grand visions with no path to execution.
@@ -45,6 +47,33 @@ Breakthrough Ideation Prover uses 5 Decision Pivots — boolean checkpoints that
 Structured reflection tool for breakthrough ideation on complex challenges. Forces the agent to ideate RADICALLY while staying GROUNDED in reality. The agent must name the conventional approach to prove it has been transcended, propose a genuinely non-obvious idea, anchor it in verifiable facts, integrate real-world constraints, map a concrete implementation path, and prove feasibility by mitigating every critical blocker. Catches Conventional Thinking (suggesting the obvious, safe, Google-first-result answer), Fantasy Ideation (ideas that sound revolutionary but have no factual basis), Constraint Blindness (ignoring budget, timeline, regulation, team reality), Vision Without Path (a beautiful destination with no roadmap to get there), and Unrealizable Commitments (critical blockers with no viable workaround). Call once per challenge that demands a breakthrough solution
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Breakthrough Ideation Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We need to increase user retention for our SaaS product. Our churn rate is 8% monthly."
+
+**🤖 AI Agent:**
+> Verdict: CONVENTIONAL_THINKING. Onboarding emails, feature tutorials, loyalty discounts — every SaaS playbook recommends this. What if the problem isn't retention but VALUE REALIZATION? Users churn because they never experience the product's core value, not because they lack emails. What approach would embed the product so deeply that leaving creates friction? Discard the playbook and rethink WHY they leave.
+
+---
+
+**👤 You:**
+> "Convention: onboarding + tutorials + discounts. Breakthrough: generate EXPORTABLE ARTIFACTS (reports, dashboards, datasets) that accumulate value. Users stay because their artifacts create switching cost. Factual: Notion (30M users, irreplaceable workspace), Figma (designs live there). Constraints: $50K, 4 engineers, 3 months. Roadmap: Week 1 instrument, Month 1 launch portfolio, Q1 measure. Feasibility: GDPR (user-owned exports), capacity (reuse API)."
+
+**🤖 AI Agent:**
+> Verdict: IDEA_PROVEN. Convention named and transcended (from retention tactics to value accumulation). Factually grounded (Notion's 30M-user lock-in, Figma's collaboration artifacts). Constraints integrated ($50K, 4 engineers, 3 months, existing API). Implementation concrete (Week 1 instrumentation, Month 1 portfolio launch, Quarter 1 measurement). Feasibility proven (GDPR navigated via user-owned exports, capacity handled via API reuse). This is radical AND realizable. Execute.
+
+---
+
+**👤 You:**
+> "We should use blockchain and quantum computing to revolutionize our supply chain. This will solve all inefficiencies. There are no technical barriers."
+
+**🤖 AI Agent:**
+> Verdict: FANTASY_IDEATION. Triple failure. (1) 'Blockchain and quantum computing' are buzzwords — which blockchain? For what function? Quantum supply chain optimization is 5-10 years from viability. Cite ONE company doing this at scale TODAY. (2) 'Solve all inefficiencies' is fantasy — which SPECIFIC inefficiency? (3) 'No technical barriers' is false — quantum computers handle ~1,000 qubits with massive error rates. Ground in reality or discard.
+
+
 ## Installation & Usage
 
 To install and use the **Breakthrough Ideation Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Breakthrough Ideation Prover** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

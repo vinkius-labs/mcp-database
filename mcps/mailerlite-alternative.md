@@ -1,12 +1,14 @@
 # MailerLite MCP Server
 
-Design beautiful emails, grow your subscriber base, and sell digital products with marketing tools that put simplicity first.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailerlite-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailerlite-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailerlite-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Design beautiful emails, grow your subscriber base, and sell digital products with marketing tools that put simplicity first.
 
 ## Description
 Connect your **MailerLite** account to any AI agent and manage email marketing through natural conversation.
@@ -59,6 +61,33 @@ List all email subscribers
 Create or update a subscriber
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MailerLite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all campaigns and subscriber growth this month."
+
+**🤖 AI Agent:**
+> Campaigns: 12 total. Active: 2 ('Weekly Digest', 'Product Update'). Sent this month: 4. Best: 'Feature Announcement' (42% open, 11% click ⭐). Subscribers: 8,450 total. Growth (30 days): +320 new, -45 unsubscribes. Net: +275. Groups: 'Newsletter' (5,200), 'Product Updates' (3,800), 'Beta' (890).
+
+---
+
+**👤 You:**
+> "Show automation workflows and their conversion metrics."
+
+**🤖 AI Agent:**
+> Automations: 5 active. 'Welcome Series' (7 emails, 48% open, 14% click, 10% conversion ⭐). 'Cart Recovery' (3 emails, 35% open, 18% click). 'Lead Nurture' (5 emails, 32% open, 8% click). 'Re-engagement' (2 emails, 20% open). 'Upgrade Prompt' (1 email, 28% open, 12% conversion). Total triggered (30 days): 1,240.
+
+---
+
+**👤 You:**
+> "Create a subscriber segment and show signup form analytics."
+
+**🤖 AI Agent:**
+> Segment created! 'Active Buyers' — opened 5+ emails AND clicked 2+ times (30 days): 1,450 subscribers (17% of total). Forms: 4 active. 'Homepage Popup' (340 signups/mo, 4.2% conversion). 'Blog Sidebar' (180, 2.8%). 'Footer' (90, 1.5%). 'Landing Page' (210, 8.5% ⭐).
+
+
 ## Installation & Usage
 
 To install and use the **MailerLite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **MailerLite** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

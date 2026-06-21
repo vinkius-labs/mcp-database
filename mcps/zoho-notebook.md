@@ -1,12 +1,14 @@
 # Zoho Notebook MCP Server
 
-Manage notebooks, capture notes, and organize your ideas on Zoho Notebook — the secure and beautiful note-taking app.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-notebook)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-notebook)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-notebook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-notebook-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage notebooks, capture notes, and organize your ideas on Zoho Notebook — the secure and beautiful note-taking app.
 
 ## Description
 Connect your **Zoho Notebook** account to any AI agent and take control of your personal and professional knowledge base through natural conversation.
@@ -56,6 +58,33 @@ List all notebooks
 - **update_notecard**: Update notecard
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Notebook** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my notebooks in Zoho Notebook."
+
+**🤖 AI Agent:**
+> I found 3 notebooks: 1. 'Personal Ideas' (ID: nb-101), 2. 'Project Roadmap' (ID: nb-102), and 3. 'Meeting Notes' (ID: nb-103). Which one would you like to browse?
+
+---
+
+**👤 You:**
+> "Create a new text note in 'nb-101' called 'Gift Ideas' with content 'Buy a watch for John'."
+
+**🤖 AI Agent:**
+> Success! I've created the notecard 'Gift Ideas' (ID: card-999) inside your 'Personal Ideas' notebook. Is there anything else you'd like to capture?
+
+---
+
+**👤 You:**
+> "Search for notes about 'React navigation'."
+
+**🤖 AI Agent:**
+> Searching notebooks... I found 2 cards: 1. 'Frontend Best Practices' (in nb-102) and 2. 'Library Wishlist' (in nb-101). Would you like the full content for either of these?
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Notebook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Zoho Notebook** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

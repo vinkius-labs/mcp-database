@@ -1,12 +1,14 @@
 # Aimtell MCP Server
 
-Web push notification orchestration — manage campaigns, segments, and subscribers via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aimtell)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aimtell)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aimtell-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aimtell-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Web push notification orchestration — manage campaigns, segments, and subscribers via AI.
 
 ## Description
 Connect your **Aimtell** account to your AI agent to unlock professional web push notification management. From sending one-off alerts to specific subscribers to auditing segment criteria and monitoring real-time campaign analytics, your agent handles your re-engagement strategy through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Aimtell** account to your AI agent to unlock professional web pus
 - **list_api_campaigns**: List API-triggered campaigns
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aimtell** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active segments in my Aimtell account."
+
+**🤖 AI Agent:**
+> I've retrieved your segments. You have 8 active segments, including 'High Intent Buyers', 'Blog Readers', and 'New Signups'. Would you like to see the subscriber count for any of them?
+
+---
+
+**👤 You:**
+> "Show me the performance for campaign ID 12345."
+
+**🤖 AI Agent:**
+> I've pulled the analytics for campaign 12345. Total sends: 50,000, Total clicks: 1,250 (2.5% CTR), and 15 conversions generated. The performance is currently within your expected range.
+
+---
+
+**👤 You:**
+> "Send a one-off push to segment 9876 with title 'Special Offer' and body 'Get 20% off today only!'."
+
+**🤖 AI Agent:**
+> I've triggered the one-off notification to segment 9876. The alert is now being delivered to all eligible subscribers. You can check the real-time click statistics in a few minutes.
+
+
 ## Installation & Usage
 
 To install and use the **Aimtell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Aimtell** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

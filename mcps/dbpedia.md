@@ -1,12 +1,14 @@
 # DBpedia MCP Server
 
-Access the world's largest open knowledge graph — execute SPARQL queries, lookup entities, and monitor Wikipedia updates in real-time.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dbpedia)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dbpedia)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dbpedia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dbpedia-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 8
+
+**Category:** [databases](../categories/databases.md)
+
+Access the world's largest open knowledge graph — execute SPARQL queries, lookup entities, and monitor Wikipedia updates in real-time.
 
 ## Description
 Connect your AI agent to **DBpedia**, the structured heart of Wikipedia. This server allows you to perform complex semantic queries, resolve entities, and access real-time data updates from the global knowledge graph.
@@ -49,6 +51,33 @@ Retrieve linked data for a specific DBpedia resource
 Execute a SPARQL query against the public DBpedia endpoint
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DBpedia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for DBpedia resources related to 'Quantum Computing' using lookup_search."
+
+**🤖 AI Agent:**
+> I found several resources. The primary entity is 'Quantum_computing' (DBpedia Ontology: ScientificWork). Other related resources include 'Quantum_algorithm' and 'Qubit'. Would you like to inspect the properties of the main Quantum Computing resource?
+
+---
+
+**👤 You:**
+> "Run a query_sparql to find all cities in Japan with more than 1 million inhabitants."
+
+**🤖 AI Agent:**
+> Querying DBpedia... I've retrieved a list of 12 cities. Notable results include Tokyo, Yokohama, Osaka, and Nagoya, along with their respective population counts and official DBpedia resource URIs.
+
+---
+
+**👤 You:**
+> "Get the most recent data for the Wikipedia page 'Artificial Intelligence' using get_live_resource."
+
+**🤖 AI Agent:**
+> Fetching live data... The latest version of the 'Artificial Intelligence' resource includes updated links to recent developments in Large Language Models and neural network architectures. The data is synchronized with the latest Wikipedia edits.
+
+
 ## Installation & Usage
 
 To install and use the **DBpedia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **DBpedia** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

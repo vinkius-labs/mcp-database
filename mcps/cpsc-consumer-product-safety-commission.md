@@ -1,12 +1,14 @@
 # CPSC (Consumer Product Safety Commission) MCP Server
 
-Access official consumer product recall data — search by product, hazard, manufacturer, or date to ensure safety and compliance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cpsc-consumer-product-safety-commission)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cpsc-consumer-product-safety-commission)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cpsc-consumer-product-safety-commission-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cpsc-consumer-product-safety-commission-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 1
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Access official consumer product recall data — search by product, hazard, manufacturer, or date to ensure safety and compliance.
 
 ## Description
 Connect to the **Consumer Product Safety Commission (CPSC)** database to monitor product safety and recalls through natural conversation.
@@ -38,6 +40,33 @@ Connect to the **Consumer Product Safety Commission (CPSC)** database to monitor
 Search for CPSC consumer product recalls
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CPSC (Consumer Product Safety Commission)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for recalls involving 'fire' hazards from the last year."
+
+**🤖 AI Agent:**
+> I've searched the CPSC database for fire-related recalls in 2023-2024. I found 12 active notices, including portable heaters and certain lithium-ion battery packs. Would you like the details for a specific product?
+
+---
+
+**👤 You:**
+> "Are there any active recalls for 'Fisher-Price' products?"
+
+**🤖 AI Agent:**
+> Querying CPSC for 'Fisher-Price'... I found several historical and recent recalls. The most recent involves certain baby gliders and sleepers. I can provide the specific recall numbers and remedies for these items.
+
+---
+
+**👤 You:**
+> "Check if there are any recalls for product model 'XYZ123'."
+
+**🤖 AI Agent:**
+> I am checking the database for model 'XYZ123'. No active recalls were found for this specific model number in the CPSC records. Would you like me to search by the manufacturer name instead?
+
+
 ## Installation & Usage
 
 To install and use the **CPSC (Consumer Product Safety Commission)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **CPSC (Consumer Product Safety Commission)** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

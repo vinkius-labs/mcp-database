@@ -1,12 +1,14 @@
 # Nuvei MCP Server
 
-Connect your AI agent to Nuvei to track transactions, manage payments, and securely tokenize cards through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nuvei)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nuvei)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nuvei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nuvei-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Connect your AI agent to Nuvei to track transactions, manage payments, and securely tokenize cards through natural conversation.
 
 ## Description
 Connect your **Nuvei** merchant account to your AI agent and manage your global payments platform effortlessly.
@@ -58,6 +60,33 @@ Mutate specific fields inside a vaulted token
 Cancel a pending authorized payment preventing capture
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nuvei** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch the status of transaction ID 987654321."
+
+**🤖 AI Agent:**
+> I've queried Nuvei and the transaction `987654321` was Declined. The Gateway response noted 'Insufficient Funds' on the provided Visa card.
+
+---
+
+**👤 You:**
+> "Show me the 10 most recent transactions on my account."
+
+**🤖 AI Agent:**
+> Here is a table summarizing your 10 most recent Nuvei transactions. You have 9 Approved charges and 1 Refund in pending status.
+
+---
+
+**👤 You:**
+> "Retrieve the token details for Customer UUID `usr-88` in the vault."
+
+**🤖 AI Agent:**
+> The vault details for `usr-88` show an active Card Token ending in 4242, expiring 12/28. Would you like me to initiate a new payment using this token?
+
+
 ## Installation & Usage
 
 To install and use the **Nuvei** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Nuvei** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

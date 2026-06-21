@@ -1,12 +1,14 @@
 # Buffer MCP Server
 
-Plan, schedule, and publish social media content across all your channels with analytics that show what is working.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/buffer-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buffer-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buffer-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buffer-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan, schedule, and publish social media content across all your channels with analytics that show what is working.
 
 ## Description
 Connect your **Buffer** account to any AI agent and take full control of your social media strategy and automated content distribution through natural conversation.
@@ -51,6 +53,33 @@ List connected accounts
 - **modify_posting_schedules**: Set posting times
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Buffer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my connected social media profiles in Buffer."
+
+**🤖 AI Agent:**
+> I've retrieved your social profiles. You currently have 3 connected accounts: Twitter (@user1), LinkedIn (ID: abc), and Facebook Page. Which one should we manage or check for scheduled posts?
+
+---
+
+**👤 You:**
+> "Schedule a post: 'Excited to announce our new integration!' for Twitter and LinkedIn profiles."
+
+**🤖 AI Agent:**
+> Content scheduled! I've successfully added your update to the queue for both Twitter and LinkedIn. It will be published according to your next available time slot. Shall I check your current posting schedule?
+
+---
+
+**👤 You:**
+> "Show the engagement statistics for my last 5 published posts."
+
+**🤖 AI Agent:**
+> Fetching historical performance... Your last 5 posts received a total of 1,240 impressions and 85 clicks. Your post from yesterday was the top performer with a 5% engagement rate. Would you like the detailed metadata for it?
+
+
 ## Installation & Usage
 
 To install and use the **Buffer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Buffer** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

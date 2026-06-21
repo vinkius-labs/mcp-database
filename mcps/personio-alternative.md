@@ -1,12 +1,14 @@
 # Personio MCP Server
 
-Automate HR operations via Personio — manage employee records, track attendance, handle absences, and streamline recruiting directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/personio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/personio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/personio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/personio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 25
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Automate HR operations via Personio — manage employee records, track attendance, handle absences, and streamline recruiting directly from any AI agent.
 
 ## Description
 Connect your **Personio** HR platform to any AI agent to streamline your people operations and recruitment workflows through natural conversation.
@@ -66,6 +68,33 @@ List company employees
 - **update_webhook**: Update an existing webhook (v2)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Personio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active employees in the Engineering department."
+
+**🤖 AI Agent:**
+> I've retrieved the employee list. There are 12 active employees in Engineering, including Sarah Chen (Lead Developer) and Marco Rossi (DevOps). Would you like to see their contact details?
+
+---
+
+**👤 You:**
+> "Create an attendance record for employee ID 456 for today from 09:00 to 18:00."
+
+**🤖 AI Agent:**
+> Attendance record created successfully for employee 456 on 2023-10-27 (09:00 - 18:00).
+
+---
+
+**👤 You:**
+> "Show me the data from my custom report 'Monthly Payroll Export'."
+
+**🤖 AI Agent:**
+> Fetching report data... I've loaded the 'Monthly Payroll Export'. It contains 50 rows of data across columns like 'Base Salary', 'Bonus', and 'Department'. Should I summarize the totals for you?
+
+
 ## Installation & Usage
 
 To install and use the **Personio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Personio** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

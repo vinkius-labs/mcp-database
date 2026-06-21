@@ -1,12 +1,14 @@
 # Fortnite Map, Playlists & Engine Intelligence MCP Server
 
-The technical server for Fortnite engine data — track the island map, active gamemodes, and AES keys via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-map-playlists-engine-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-map-playlists-engine-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fortnite-map-playlists-engine-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fortnite-map-playlists-engine-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 8
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+The technical server for Fortnite engine data — track the island map, active gamemodes, and AES keys via AI.
 
 ## Description
 Equip your AI agent with the structural intelligence of the Fortnite ecosystem via **Fortnite Map, Playlists & Engine Intelligence**. This specialized server provides deep access to the technical core of the game, allowing your agent to instantly retrieve the current island map with high-resolution imagery, audit active Points of Interest (POIs), and list all currently available game modes and playlists. Additionally, it provides essential technical data for developers and modders, including official AES keys for pak file decryption and current build versioning. Whether you are analyzing map changes or auditing technical metadata, your agent acts as a professional Fortnite engine analyst through natural conversation.
@@ -44,6 +46,33 @@ Get encryption keys for game files
 - **list_all_playlists**: List all available Fortnite playlists
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fortnite Map, Playlists & Engine Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current island map and list all named POIs."
+
+**🤖 AI Agent:**
+> Retrieving high-res satellite map... I've identified the current island configuration. Major POIs include 'Tilted Towers' and 'Pleasant Park'. I also have the blank map imagery for tactical planning. Would you like the coordinates for any specific location?
+
+---
+
+**👤 You:**
+> "What are the current AES keys for version 29.40?"
+
+**🤖 AI Agent:**
+> Checking engine metadata... For version 29.40, the main AES key is `0x44AB...`. I also found 5 dynamic keys for recent pak files. Would you like the full technical list of encrypted file names?
+
+---
+
+**👤 You:**
+> "List all active 50v50 or large team gamemodes available today."
+
+**🤖 AI Agent:**
+> Running the playlist audit... I found an active LTM 'Big Battle' which supports up to 40 players per match. I also identified 'Team Rumble'. Would you like to see the minimum player requirements for these modes?
+
+
 ## Installation & Usage
 
 To install and use the **Fortnite Map, Playlists & Engine Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Fortnite Map, Playlists & Engine Intelligence** MCP ser
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

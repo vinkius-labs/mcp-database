@@ -1,12 +1,14 @@
 # ServiceTitan MCP Server
 
-Manage field service operations via ServiceTitan — track customers, jobs, appointments, and inventory directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/servicetitan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/servicetitan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/servicetitan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/servicetitan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 9
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage field service operations via ServiceTitan — track customers, jobs, appointments, and inventory directly from any AI agent.
 
 ## Description
 Connect your **ServiceTitan** account to any AI agent to streamline your field service management. Access customer data, manage job dispatches, update appointments, and track inventory through natural conversation.
@@ -44,6 +46,33 @@ Connect your **ServiceTitan** account to any AI agent to streamline your field s
 - **update_appointment**: Update appointment status in ServiceTitan
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ServiceTitan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all customers in our ServiceTitan account."
+
+**🤖 AI Agent:**
+> I've retrieved the customer list. You have several active records, including 'John Doe' (ID: 4567) and 'Jane Smith' (ID: 8901). Would you like to see more details for a specific customer?
+
+---
+
+**👤 You:**
+> "Update appointment ID 98765 to status 'Completed'."
+
+**🤖 AI Agent:**
+> The appointment 98765 has been successfully updated to 'Completed' in the Dispatch module.
+
+---
+
+**👤 You:**
+> "Show me the current inventory SKUs."
+
+**🤖 AI Agent:**
+> Fetching inventory... I found several items including 'Copper Pipe 1/2 inch' (SKU: CP-12) and 'Thermostat Model X' (SKU: TH-X). Do you need to adjust stock levels for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **ServiceTitan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **ServiceTitan** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

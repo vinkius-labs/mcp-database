@@ -1,12 +1,14 @@
 # CFO Strategy Prover MCP Server
 
-A board received an AI-generated forecast: hockey stick J-curve with 90% margins and zero CAC expansion. It says 'we can always raise' as a runway strategy. It scales headcount before product-market fit. That is not financial strategy — that is a bonfire. This tool forces five CFO-level financial axes: unit economics, runway discipline, capital allocation, scenario forecasting, and risk mitigation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cfo-strategy-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cfo-strategy-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cfo-strategy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cfo-strategy-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 1
+
+**Category:** [finance](../categories/finance.md)
+
+A board received an AI-generated forecast: hockey stick J-curve with 90% margins and zero CAC expansion. It says 'we can always raise' as a runway strategy. It scales headcount before product-market fit. That is not financial strategy — that is a bonfire. This tool forces five CFO-level financial axes: unit economics, runway discipline, capital allocation, scenario forecasting, and risk mitigation.
 
 ## Description
 ## The Problem
@@ -46,6 +48,33 @@ All pass     → STRATEGY_PROVEN
 Structured reflection tool for wartime CFO-level financial strategy validation. Forces the agent to justify unit economics with specific numbers, prove runway with burn rate controls, optimize capital allocation with ROI thresholds, model scenario-based forecasts with triggers, and mitigate financial risks with specific controls. Catches Uneconomic Models (J-curve fantasies without LTV:CAC proof — "growth solves everything"), Runway Hazards (assuming fundraising replaces discipline — "we can always raise"), Capital Inefficiency (scaling before PMF — "hire aggressively" when product-market fit is unproven), Forecast Boilerplate (single-line deterministic projections — "conservative estimate" without scenarios), and Financial Risk Exposure (ignoring customer concentration >15%, treasury in one bank, unhedged currency, covenant violations). Call once per financial plan, business model, or resource allocation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CFO Strategy Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Hockey stick growth, 90% margins, growth solves monetization, we can always raise, hire aggressively, conservative estimate of 15% monthly growth, no significant risks."
+
+**🤖 AI Agent:**
+> UNECONOMIC_MODEL — Five fatal gaps: J-curve fantasy, infinite runway assumption, premature scale, single-track forecast, risk denial.
+
+---
+
+**👤 You:**
+> "CAC $340, LTV $4,200, LTV:CAC 12.4x, payback 2.8mo, gross margin 78%. Cash $2.4M, burn $120K/mo, runway 20mo. R&D 55%, Sales 30%, G&A 15%. Base $1.2M ARR, Downside $600K (freeze at month 9), Upside $2.1M. Concentration <15%, 3 banks, zero debt."
+
+**🤖 AI Agent:**
+> STRATEGY_PROVEN — Financial strategy validated. All five axes pass. Execute.
+
+---
+
+**👤 You:**
+> "Revenue grew 40% YoY but operating cash flow declined 15%. Accounts receivable days increased from 45 to 72. Gross margin stable at 65%. What is happening?"
+
+**🤖 AI Agent:**
+> Revenue-cash flow divergence signals collection problem. Growing revenue with deteriorating AR means selling to slow-paying customers. Tighten payment terms, implement early-payment discounts, and segment customers by payment reliability.
+
+
 ## Installation & Usage
 
 To install and use the **CFO Strategy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **CFO Strategy Prover** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

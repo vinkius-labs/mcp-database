@@ -1,12 +1,14 @@
 # CUFinder MCP Server
 
-Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cufinder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cufinder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cufinder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cufinder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 13
+
+**Category:** [productivity](../categories/productivity.md)
+
+Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting.
 
 ## Description
 Connect your **CUFinder** business intelligence account to any AI agent and simplify how you discover professional domains, enrich company metadata, and identify decision makers through natural conversation.
@@ -49,6 +51,33 @@ Connect your **CUFinder** business intelligence account to any AI agent and simp
 - **verify_email**: Verify email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CUFinder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the domain for the company 'Acme Global Solutions'."
+
+**🤖 AI Agent:**
+> I've found the domain. The primary website for 'Acme Global Solutions' is acme-global.com. Would you like me to retrieve the company's full metadata and revenue estimate?
+
+---
+
+**👤 You:**
+> "Show me the employees and decision makers for 'apple.com'."
+
+**🤖 AI Agent:**
+> Fetching employee data... I've identified several key contacts for apple.com, including roles in 'Product Management', 'Engineering', and 'Marketing'. Would you like the contact details for any of them?
+
+---
+
+**👤 You:**
+> "Enrich the data from this LinkedIn URL: 'https://linkedin.com/in/stevejobs'."
+
+**🤖 AI Agent:**
+> Enrichment complete! For the provided profile, I've retrieved full metadata including professional title, current company (Apple), and verified contact information. I've updated the profile record with these insights.
+
+
 ## Installation & Usage
 
 To install and use the **CUFinder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **CUFinder** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

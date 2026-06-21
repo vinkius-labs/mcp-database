@@ -1,12 +1,14 @@
 # Restful Booker MCP Server
 
-Manage hotel bookings via the Restful Booker API—create, retrieve, update, and delete reservations directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/restful-booker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/restful-booker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/restful-booker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/restful-booker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage hotel bookings via the Restful Booker API—create, retrieve, update, and delete reservations directly from your AI agent.
 
 ## Description
 Connect to the **Restful Booker** API to manage hotel reservations. This server allows your AI agent to handle the full lifecycle of bookings, from initial creation to final deletion.
@@ -51,6 +53,33 @@ Partially update a booking
 Update a current booking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Restful Booker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all booking IDs for guests with the last name 'Smith'."
+
+**🤖 AI Agent:**
+> I found 3 booking IDs for 'Smith': 45, 102, and 215. Would you like me to fetch the full details for any of these?
+
+---
+
+**👤 You:**
+> "Create a new booking for John Doe, price 150, deposit paid, from 2024-12-01 to 2024-12-05."
+
+**🤖 AI Agent:**
+> Booking successfully created! The new booking ID is 882. The guest is John Doe with a check-in on Dec 1st and check-out on Dec 5th.
+
+---
+
+**👤 You:**
+> "Update booking 882 to change the total price to 200."
+
+**🤖 AI Agent:**
+> I've updated the total price for booking 882 to 200 using a partial update. All other details remain the same.
+
+
 ## Installation & Usage
 
 To install and use the **Restful Booker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Restful Booker** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

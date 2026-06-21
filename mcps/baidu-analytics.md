@@ -1,12 +1,14 @@
 # Baidu Analytics / 百度统计 MCP Server
 
-China's leading web analytics platform — audit traffic, track visitors, and query site metrics via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baidu-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baidu-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's leading web analytics platform — audit traffic, track visitors, and query site metrics via AI.
 
 ## Description
 Empower your AI agent to orchestrate your web analytics and visitor insights with **Baidu Analytics** (百度统计), the dominant traffic analysis platform in China. By connecting Baidu Analytics to your agent, you transform complex metric reporting, real-time visitor tracking, and source auditing into a natural conversation. Your agent can instantly retrieve site lists, query real-time PV/UV data, audit daily visitor trends, and generate custom performance reports without you ever needing to navigate the comprehensive Baidu Tongji Dashboard. Whether you are conducting a digital marketing audit or monitoring the performance of a new landing page, your agent acts as a real-time data coordinator, providing accurate results from a single, authorized source.
@@ -46,6 +48,33 @@ Get visitor sources
 - **query_custom_metrics**: Execute custom report query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Baidu Analytics / 百度统计** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the real-time visitor stats for my site."
+
+**🤖 AI Agent:**
+> I've retrieved the real-time metrics. You currently have 45 users online. Total Page Views (PV) for today so far is 1,240, with 850 Unique Visitors (UV). Would you like me to check which pages they are currently visiting?
+
+---
+
+**👤 You:**
+> "Show me the visitor trend for the last 7 days."
+
+**🤖 AI Agent:**
+> I've analyzed the traffic trend for the past week. Daily UV peaked on Wednesday at 2,500 and averaged around 1,800. Overall traffic is up by 12% compared to the previous week. Should I provide a breakdown of the traffic sources for this period?
+
+---
+
+**👤 You:**
+> "List all sites in my Baidu Analytics account."
+
+**🤖 AI Agent:**
+> I've retrieved your site list. You have 3 sites registered: 'myshop.com' (ID: `8821`), 'blog.example.cn' (ID: `9920`), and 'app-landing.com' (ID: `1024`). Which site would you like to audit today?
+
+
 ## Installation & Usage
 
 To install and use the **Baidu Analytics / 百度统计** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Baidu Analytics / 百度统计** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

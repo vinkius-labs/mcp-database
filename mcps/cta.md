@@ -1,12 +1,14 @@
 # CTA MCP Server
 
-Access Chicago transit data via CTA — track L trains and buses in real-time, check arrivals, monitor service alerts, and plan trips from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 11
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access Chicago transit data via CTA — track L trains and buses in real-time, check arrivals, monitor service alerts, and plan trips from any AI agent.
 
 ## Description
 Connect your **CTA API** Chicago public transit data platform to any AI agent and take full control of real-time L train and CTA Bus tracking, arrival predictions, service disruption monitoring, and route status awareness through natural conversation.
@@ -77,6 +79,33 @@ Get real-time train arrival predictions for a specific L station
 Get real-time positions of all active CTA trains system-wide or filtered by line
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CTA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "When is the next Red Line train arriving at Clark/Lake?"
+
+**🤖 AI Agent:**
+> Fetching arrivals for Clark/Lake (mapId: 40360)... Next Red Line trains: Howard — 3 minutes, approaching; 95th/Dan Ryan — 6 minutes, on-time; Howard — 10 minutes, scheduled; 95th/Dan Ryan — 14 minutes, on-time. All Red Line trains currently running on schedule with no delays reported. Trains arrive approximately every 4-6 minutes during peak hours.
+
+---
+
+**👤 You:**
+> "Show me all CTA bus stops on route 22 Clark."
+
+**🤖 AI Agent:**
+> Fetching stops for route 22 Clark... I found 89 stops along this major north-south corridor. Key stops include: Howard Street (North end), Morse, Loyola, Granville, Bryn Mawr, Berwyn, Lawrence, Montrose, Irving Park, Belmont, Fullerton, North/Clybourn, Chicago Ave, Grand, Washington, Jackson, Harrison, Roosevelt, Cermak-Chinatown, 35th-Bronzeville, 47th, 51st, 55th-Garfield, 63rd, and 95th Street (South end). Would you like arrival predictions for a specific stop?
+
+---
+
+**👤 You:**
+> "How is CTA running today? Any delays on the L or bus routes?"
+
+**🤖 AI Agent:**
+> Checking CTA route status... System overview: Red Line — GOOD, Blue Line — GOOD, Brown Line — GOOD, Green Line — GOOD, Orange Line — GOOD, Purple Line — GOOD, Pink Line — GOOD, Yellow Line — GOOD. All L lines currently running on schedule with no major disruptions. For bus routes, most routes are operating normally. Would you like me to check specific alerts for a particular line or route, or get arrival predictions for your commute?
+
+
 ## Installation & Usage
 
 To install and use the **CTA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **CTA** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

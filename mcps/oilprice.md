@@ -1,12 +1,14 @@
 # OilPrice MCP Server
 
-Access real-time and historical oil, gas, and energy commodity prices — WTI, Brent, Natural Gas, Diesel, and 40+ more via OilPriceAPI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oilprice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oilprice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oilprice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oilprice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time and historical oil, gas, and energy commodity prices — WTI, Brent, Natural Gas, Diesel, and 40+ more via OilPriceAPI.
 
 ## Description
 Connect to **OilPriceAPI** and bring real-time energy commodity intelligence to any AI agent. Access 50+ energy commodities with prices updated every 5 minutes.
@@ -201,6 +203,33 @@ EXAMPLES:
 Get current WTI (West Texas Intermediate) crude oil price
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OilPrice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current price of WTI crude oil?"
+
+**🤖 AI Agent:**
+> Fetching latest WTI price... Current WTI Crude is trading at $78.45 USD per barrel. The price was last updated 2 minutes ago. WTI has been trading in a $77-79 range this session.
+
+---
+
+**👤 You:**
+> "Show me natural gas prices for the last week."
+
+**🤖 AI Agent:**
+> Retrieving past week natural gas prices... Henry Hub Natural Gas has traded between $2.72-$2.95/MMBtu over the last 7 days. Current price is $2.85/MMBtu, up 3% from last week. Prices have been supported by increased heating demand and steady LNG export volumes.
+
+---
+
+**👤 You:**
+> "Compare WTI and Brent crude prices today."
+
+**🤖 AI Agent:**
+> Fetching both benchmarks... WTI Crude is at $78.45/bbl while Brent Crude is at $82.30/bbl. The WTI-Brent spread is currently $3.85, which is within the normal range. Brent's premium reflects tighter global supply and stronger international demand compared to US inventories.
+
+
 ## Installation & Usage
 
 To install and use the **OilPrice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -209,4 +238,11 @@ To install and use the **OilPrice** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

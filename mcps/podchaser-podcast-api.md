@@ -1,12 +1,14 @@
 # Podchaser Podcast API MCP Server
 
-Search global podcasts — audit episodes, hosts, and ratings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/podchaser-podcast-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podchaser-podcast-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podchaser-podcast-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podchaser-podcast-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 4
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Search global podcasts — audit episodes, hosts, and ratings via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire audio research and podcast auditing workflow with the **Podchaser Podcast API**, the authoritative source for high-quality audio metadata. By connecting Podchaser to your agent, you transform complex audio searches into a natural conversation. Your agent can instantly search for thousands of podcasts, audit episode lists, and retrieve host metadata without you ever touching a podcast directory. Whether you are conducting media research or managing content distribution constraints, your agent acts as a real-time audio consultant, ensuring your data is always comprehensive and up-to-the-minute.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire audio research and podcast audi
 - **search_podcasts**: Search for podcasts by title or keywords on Podchaser
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Podchaser Podcast API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for podcasts about 'data science' using Podchaser."
+
+**🤖 AI Agent:**
+> I've retrieved several podcasts about data science! Notable entries include 'The Data Engineering Podcast' and 'Linear Digressions'. Would you like the full descriptions or the episode list for any of these shows?
+
+---
+
+**👤 You:**
+> "What are the latest episodes for podcast ID '12345'?"
+
+**🤖 AI Agent:**
+> I've identified the episodes for that podcast! Notable recent titles include [Title 1] and [Title 2], both released in the last week. I can provide the air dates and durations for each of these entries if you'd like.
+
+---
+
+**👤 You:**
+> "Show details for podcast 'The Daily'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for The Daily! It is currently identified as a 'News' podcast with a high rating. I can provide the unique ID and host metadata to help you identify it in your workflow.
+
+
 ## Installation & Usage
 
 To install and use the **Podchaser Podcast API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Podchaser Podcast API** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Sanity MCP Server
 
-Manage your Sanity Content Lake via AI — execute GROQ queries, manage documents, and handle media assets directly from your agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sanity)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sanity)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sanity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sanity-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your Sanity Content Lake via AI — execute GROQ queries, manage documents, and handle media assets directly from your agent.
 
 ## Description
 Connect your **Sanity** project to any AI agent and take full control of your Content Lake through natural conversation.
@@ -57,6 +59,33 @@ Executes a raw Sanity mutation
 Permanently deletes a document from the CMS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sanity** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all unique schema types in my dataset."
+
+**🤖 AI Agent:**
+> I checked your schema types. Your dataset contains the following 5 types: `post`, `author`, `category`, `product`, and `siteSettings`. Would you like to know how many documents exist for a specific type?
+
+---
+
+**👤 You:**
+> "Write a GROQ query to find the 3 most recently updated authors."
+
+**🤖 AI Agent:**
+> I executed the GROQ query `*[_type == 'author'] | order(_updatedAt desc)[0...3]`. The most recently updated authors are: 1. Sarah Chen, 2. Marcus Rivera, 3. Alex Nguyen. Should I retrieve their full biographical details?
+
+---
+
+**👤 You:**
+> "Update the post with ID 'drafts.1234' and set its published state to true."
+
+**🤖 AI Agent:**
+> I've successfully patched document 'drafts.1234'. The field `isPublished` is now set to `true`. The change is immediately live in your Content Lake.
+
+
 ## Installation & Usage
 
 To install and use the **Sanity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Sanity** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

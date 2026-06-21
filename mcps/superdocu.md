@@ -1,12 +1,14 @@
 # Superdocu MCP Server
 
-Automate document collection and client onboarding with Superdocu and AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/superdocu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/superdocu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/superdocu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/superdocu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate document collection and client onboarding with Superdocu and AI agents.
 
 ## Description
 ### What you can do
@@ -41,6 +43,33 @@ Automate document collection and client onboarding with Superdocu and AI agents.
 - **reject_request**: Reject a document request
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Superdocu** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my active document requests in Superdocu."
+
+**🤖 AI Agent:**
+> I've found 5 active requests: 1. ID Check (ID: 101), 2. Proof of Address (ID: 102), etc.
+
+---
+
+**👤 You:**
+> "Show me all document collection requests with their completion status and missing documents."
+
+**🤖 AI Agent:**
+> 18 active collection requests. Complete (8, 44%): all documents received and verified. In Progress (7, 39%): avg 72% documents received. Missing documents: "Meridian Corp Onboarding" (3 of 8: tax certificate, insurance proof, bank details). "TechVentures KYC" (1 of 5: passport copy). "DataFlow Compliance" (2 of 6: SOC 2 report, privacy policy). Not Started (3, 17%): invitation sent, no response. Auto-reminders sent: 12 this week. Average collection time: 4.2 days. Expiring soon: 2 requests (deadline in 3 days).
+
+---
+
+**👤 You:**
+> "Create a new document collection request for the annual compliance audit with 10 required documents."
+
+**🤖 AI Agent:**
+> Collection request created: "Annual Compliance Audit 2025". 10 required documents: 1) Financial statements. 2) Tax returns. 3) Insurance certificates. 4) SOC 2 Type II report. 5) Privacy policy. 6) Data processing agreement. 7) Employee handbook. 8) Business continuity plan. 9) Vendor risk assessments. 10) IT security audit report. Recipient: compliance@meridiancorp.com. Deadline: June 30, 2025. Branded portal page generated. Auto-reminders: every 5 days. Upload validation: file type and size checks enabled. E-signature required on submission.
+
+
 ## Installation & Usage
 
 To install and use the **Superdocu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Superdocu** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

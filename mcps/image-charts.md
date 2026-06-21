@@ -1,12 +1,14 @@
 # Image-Charts MCP Server
 
-Generate professional charts, graphs, and QR codes instantly — transform raw data into high-quality images directly within your AI conversations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/image-charts)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/image-charts)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/image-charts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/image-charts-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 2
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Generate professional charts, graphs, and QR codes instantly — transform raw data into high-quality images directly within your AI conversations.
 
 ## Description
 Connect **Image-Charts** to your AI agent to visualize data on the fly. Whether you need a quick bar chart for a report or a complex radar chart for performance analysis, this server provides the tools to render data into beautiful, embeddable images.
@@ -43,6 +45,33 @@ Generate a GET URL for an Image-Charts chart
 Render a chart via POST request and return Base64 image
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Image-Charts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a pie chart showing sales: 40% North, 30% South, 20% East, 10% West."
+
+**🤖 AI Agent:**
+> I've generated the pie chart for you using `generate_chart_url`. You can view the sales distribution here: [Chart URL]
+
+---
+
+**👤 You:**
+> "Create a QR code for the URL 'https://vurb.com' with size 200x200."
+
+**🤖 AI Agent:**
+> I've created the QR code for Vurb. Here is the link to the image: [QR Code URL]
+
+---
+
+**👤 You:**
+> "Render a bar chart via POST for this dataset of 100 monthly values: [data...]"
+
+**🤖 AI Agent:**
+> Since the dataset is large, I've used `render_chart_post` to generate the image. Here is the visualization of your monthly data.
+
+
 ## Installation & Usage
 
 To install and use the **Image-Charts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Image-Charts** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

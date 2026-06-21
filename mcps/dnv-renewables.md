@@ -1,12 +1,14 @@
 # DNV Renewables MCP Server
 
-Access wind and solar resource data, energy yield estimates, and mesoscale climate data via DNV Renewables (ex-EMD) API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dnv-renewables)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dnv-renewables)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dnv-renewables-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dnv-renewables-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 11
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access wind and solar resource data, energy yield estimates, and mesoscale climate data via DNV Renewables (ex-EMD) API.
 
 ## Description
 Connect to **DNV Renewables API** (formerly EMD - Energy and Market Data) and bring world-class wind and solar resource assessment intelligence to any AI agent. Access over 40 climate datasets with mesoscale data, energy yield estimates, and time series extraction for renewable energy projects.
@@ -76,6 +78,33 @@ Get solar resource data for a specific location
 Get wind resource data for a specific location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DNV Renewables** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check what wind data is available for a site at 55.5, 12.0."
+
+**🤖 AI Agent:**
+> Checking data availability... For coordinates 55.5, 12.0 (Denmark), the following datasets are available: meso-scale-wind (1989-present), ERA5 reanalysis (1950-present), Global Wind Atlas. Wind speed data at multiple hub heights (10m-200m) is available. Time series can be extracted for any period within these ranges.
+
+---
+
+**👤 You:**
+> "Estimate energy yield for a 5MW wind turbine at 55.5, 12.0 with 120m hub height."
+
+**🤖 AI Agent:**
+> Calculating energy yield... For a 5MW turbine at 55.5, 12.0 with 120m hub height, the estimated annual energy production (AEP) is approximately 18,500-21,000 MWh/year. The site shows good wind resource with mean wind speed of 7.8 m/s at hub height. Capacity factor is estimated at 42-48%. A full P50/P75/P90 analysis would require a detailed order for complete time series.
+
+---
+
+**👤 You:**
+> "Get solar resource data for a PV site at 35.0, -106.0 (New Mexico)."
+
+**🤖 AI Agent:**
+> Fetching solar resource data... For coordinates 35.0, -106.0 (New Mexico), the site shows excellent solar resource. Annual GHI averages approximately 2,150 kWh/m²/year. DNI is around 780 kWh/m²/year, indicating strong direct sunlight ideal for concentrating solar. The site has low cloud cover and minimal soiling concerns. Temperature averages 14°C annually, which is favorable for PV module efficiency.
+
+
 ## Installation & Usage
 
 To install and use the **DNV Renewables** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **DNV Renewables** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

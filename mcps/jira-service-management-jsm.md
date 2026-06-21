@@ -1,12 +1,14 @@
 # Jira Service Management (JSM) MCP Server
 
-Manage service desks, customer requests, and queues via Jira JSM API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-service-management-jsm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-service-management-jsm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jira-service-management-jsm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jira-service-management-jsm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage service desks, customer requests, and queues via Jira JSM API.
 
 ## Description
 Empower your AI agents with Jira Service Management's leading ITSM platform. This MCP server allows you to list service desks, retrieve customer requests, manage organizations and queues, and access knowledge base articles directly through the Jira JSM API. Ideal for automating IT support and service delivery workflows.
@@ -45,6 +47,33 @@ Lists all customer requests
 Lists all service desks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jira Service Management (JSM)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active service desks in JSM."
+
+**🤖 AI Agent:**
+> I'll fetch the list of available service desks from your Jira Service Management instance.
+
+---
+
+**👤 You:**
+> "Show me the latest customer requests."
+
+**🤖 AI Agent:**
+> I'll retrieve the most recent requests across all service desks for you.
+
+---
+
+**👤 You:**
+> "Check the queues for service desk ID '1'."
+
+**🤖 AI Agent:**
+> I'll look up the current queues and their status for that specific service desk.
+
+
 ## Installation & Usage
 
 To install and use the **Jira Service Management (JSM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Jira Service Management (JSM)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # X (Twitter) MCP Server
 
-Automate social intelligence workflows via X (Twitter) — search recent tweets, analyze volume trends, retrieve profiles individually or in batch, and inspect engagement metrics from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/x-twitter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-twitter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/x-twitter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/x-twitter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate social intelligence workflows via X (Twitter) — search recent tweets, analyze volume trends, retrieve profiles individually or in batch, and inspect engagement metrics from any AI agent.
 
 ## Description
 Connect your **X (Twitter)** developer account to any AI agent and take full control of your social listening workflow through natural conversation.
@@ -54,6 +56,33 @@ Search for recent public tweets (up to last 7 days) using keywords, hashtags, or
 Fetch full details of a specific X (Twitter) user by their @username (follower count, bio, location)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **X (Twitter)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for tweets mentioning 'Vinkius Cloud' over the last couple days."
+
+**🤖 AI Agent:**
+> I've fetched 8 recent tweets mentioning 'Vinkius Cloud'. The sentiment is mostly positive, praising the new LLM integrations. One user encountered a latency issue. Want me to summarize their exact complaint?
+
+---
+
+**👤 You:**
+> "Look up the profile details for 'elonmusk'."
+
+**🤖 AI Agent:**
+> Profile fetched: Elon Musk is based in Austin, TX and currently has over 180M followers. His bio reads '...'. Should I retrieve his most recent tweets?
+
+---
+
+**👤 You:**
+> "Get the engagement stats for tweet ID 123456789."
+
+**🤖 AI Agent:**
+> The tweet 'Just shipped the new API v2!' has 4,500 likes, 320 retweets, and 12 replies so far. The engagement rate seems healthy based on your average metrics.
+
+
 ## Installation & Usage
 
 To install and use the **X (Twitter)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **X (Twitter)** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

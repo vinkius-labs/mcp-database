@@ -1,12 +1,14 @@
 # Adobe Firefly MCP Server
 
-Generate images and vectors via Adobe Firefly — perform generative fill and expand, create text effects, and remove backgrounds directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-firefly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-firefly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-firefly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-firefly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate images and vectors via Adobe Firefly — perform generative fill and expand, create text effects, and remove backgrounds directly from any AI agent.
 
 ## Description
 Connect your **Adobe Firefly** developer account to any AI agent and take full control of your commercially safe generative AI image and vector creation through natural conversation.
@@ -66,6 +68,33 @@ Apply AI text effects using Adobe Firefly
 - **list_models**: List available Firefly models
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Adobe Firefly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a photorealistic image of a futuristic workspace with large windows"
+
+**🤖 AI Agent:**
+> Generation initiated! I'm using Adobe Firefly Model 5 to create your futuristic workspace image. I'll provide the high-fidelity results for you to download in a few moments.
+
+---
+
+**👤 You:**
+> "Create an SVG vector of a minimal mountain landscape"
+
+**🤖 AI Agent:**
+> Vector synthesis started! I'm generating an editable SVG landscape based on your prompt. This asset will be commercially safe and ready for use in Adobe Illustrator or web builds.
+
+---
+
+**👤 You:**
+> "Remove the background from image 'img_789'"
+
+**🤖 AI Agent:**
+> Processing image... I've commanded Adobe Firefly to remove the background from img_789. I'll provide the transparent PNG link for you synchronously.
+
+
 ## Installation & Usage
 
 To install and use the **Adobe Firefly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Adobe Firefly** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

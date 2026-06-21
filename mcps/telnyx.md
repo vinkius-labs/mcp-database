@@ -1,12 +1,14 @@
 # Telnyx MCP Server
 
-Send and manage SMS/MMS, check account balances, and configure messaging profiles natively via your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telnyx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telnyx-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Send and manage SMS/MMS, check account balances, and configure messaging profiles natively via your AI agent.
 
 ## Description
 Connect your **Telnyx** account to any AI agent and manage your voice and messaging operations directly through natural conversation.
@@ -53,6 +55,40 @@ Sends an outbound SMS message via Telnyx
 Sends an outbound MMS message with a media URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Telnyx** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is my current Telnyx account balance?"
+
+**🤖 AI Agent:**
+> Your current Telnyx account balance is $245.50. You possess sufficient credits to continue your standard outbound messaging and voice operations.
+
+---
+
+**👤 You:**
+> "List all the phone numbers I currently own and their IDs."
+
+**🤖 AI Agent:**
+> I retrieved 2 active numbers from your account:
+- +14155552671 (ID: 15b14eb1-XXXX)
+- +14155559982 (ID: 39a48be9-XXXX)
+Both are fully functional. Would you like to check the detailed settings for one of them?
+
+---
+
+**👤 You:**
+> "Send a text message from +14155552671 to +12125550999 saying that the server is down."
+
+**🤖 AI Agent:**
+> The SMS has been successfully submitted to Telnyx for delivery.
+From: +14155552671
+To: +12125550999
+Message: 'The server is down.'
+Message UUID: 8e5f22e8-xxxx. Would you like me to check its real-time delivery status?
+
+
 ## Installation & Usage
 
 To install and use the **Telnyx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +97,11 @@ To install and use the **Telnyx** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

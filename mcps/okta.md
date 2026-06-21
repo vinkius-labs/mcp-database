@@ -1,12 +1,14 @@
 # Okta MCP Server
 
-Equip your AI agent with Okta Identity Cloud to manage users, groups, and seamless authentication effortlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/okta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/okta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/okta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/okta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Equip your AI agent with Okta Identity Cloud to manage users, groups, and seamless authentication effortlessly.
 
 ## Description
 Connect your **Okta** Identity Cloud instance to any AI agent to streamline identity management, user provisioning, and secure access flows. Eliminate the need to dig through administrative dashboards by interacting conversationally to create users, unblock accounts, or manage group assignments.
@@ -62,6 +64,37 @@ List all applications integrated within the Okta dashboard
 List all users currently assigned to an Okta Group
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Okta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the user profile for 'mark@example.com'."
+
+**🤖 AI Agent:**
+> I found the profile for ID `00u12xxxxxxx`: Mark Johnson. The account status is currently `ACTIVE` and mapped to the 'Engineering' department. Would you like to check his group associations?
+
+---
+
+**👤 You:**
+> "Clear all active sessions for user 'mike@example.com' immediately."
+
+**🤖 AI Agent:**
+> Success. I've sent the termination command to Okta. All active sessions for `mike@example.com` have been cleared and closed, forcing a re-login for any connected service.
+
+---
+
+**👤 You:**
+> "List all active application mappings for the 'Contractors' group."
+
+**🤖 AI Agent:**
+> Scanning Group mapping ID `00xxxx` ('Contractors'): I found 3 provisioned apps tied to this cohort:
+1. Slack (Provisioning Active)
+2. Atlassian Jira Server (SAML)
+3. Zoom (SAML)
+Do you want me to revoke any permissions immediately?
+
+
 ## Installation & Usage
 
 To install and use the **Okta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +103,11 @@ To install and use the **Okta** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

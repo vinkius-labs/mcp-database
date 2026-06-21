@@ -1,12 +1,14 @@
 # Picktime MCP Server
 
-Equip your AI agent to manage scheduling operations. Fetch global availabilities, list locations, and manage business bookings via chat natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/picktime)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/picktime)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/picktime-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/picktime-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage scheduling operations. Fetch global availabilities, list locations, and manage business bookings via chat natively.
 
 ## Description
 Connect your **Picktime** organization account to your AI agent and turn complex scheduling and availability management into a simple chat conversation.
@@ -46,6 +48,33 @@ Get detailed configuration for a specific Picktime location by ID. Returns locat
 - **get_availability**: Get available booking time slots for a specific Picktime service on a given date. Returns free windows considering staff schedules, existing bookings, and buffer times. Essential for building custom booking flows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Picktime** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all of our active clinic locations in the Picktime registry."
+
+**🤖 AI Agent:**
+> Based on the MCP query, you have 3 configured locations. The primary location is 'Central Manhattan Office' with the designated ID location_12345.
+
+---
+
+**👤 You:**
+> "Cancel the booking record identified as BK123456."
+
+**🤖 AI Agent:**
+> Confirmed. I executed `cancel_booking` using ID BK123456. The status is now nullified and the slot returned to the public pool.
+
+---
+
+**👤 You:**
+> "Can you check the availability data for 'Hair Styling' next Monday?"
+
+**🤖 AI Agent:**
+> I queried `get_availability`. There are plenty of openings next Monday for 'Hair Styling', notably 10:00 AM, 11:30 AM, and 2:00 PM.
+
+
 ## Installation & Usage
 
 To install and use the **Picktime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Picktime** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

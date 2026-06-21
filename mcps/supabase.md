@@ -1,12 +1,14 @@
 # Supabase MCP Server
 
-Connect your AI to Supabase. Execute database queries, manage users, and trigger PostgreSQL functions directly from your terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supabase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supabase-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 13
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Connect your AI to Supabase. Execute database queries, manage users, and trigger PostgreSQL functions directly from your terminal.
 
 ## Description
 Integrate the comprehensive backend infrastructure of **Supabase** straight into your conversational LLM workflows. By securely authenticating with your `service_role` key, your AI assistant bypasses row-level security constraints, operating as a fully-privileged database administrator. Query rows, invoke complex PL/pgSQL functions via RPC, evaluate the authenticated user roster, and audit your active storage buckets all through simple natural language commands, accelerating debugging and environment iterations without leaving the terminal.
@@ -65,6 +67,44 @@ Update existing rows in a database table
 - **list_storage_files**: List files inside a storage bucket
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Supabase** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify the 'inventory_products' table sequentially effectively correctly querying all products labeled 'out-of-stock'."
+
+**🤖 AI Agent:**
+> Confirming connections internally locally effectively...
+**Records Accessed Matrix (`db_select`)**:
+- Target table: `inventory_products`
+- Applying filtering natively: `status=eq.out-of-stock`
+
+Returning 12 distinct entries reliably safely. Execution successful locally.
+
+---
+
+**👤 You:**
+> "Trigger the custom stored procedure 'restock_items' using `db_rpc` to replenish the inventory of IDs 12 and 15 natively."
+
+**🤖 AI Agent:**
+> Preparing RPC execution parameter payload locally...
+Calling `db_rpc` mapped to 'restock_items' with arguments: `{"ids": [12, 15]}` naturally.
+Response matrix from PostgreSQL indicates correct execution cleanly dynamically successfully. Items restocked securely.
+
+---
+
+**👤 You:**
+> "Check all registered accounts dynamically applying `list_auth_users` for recent logins natively securely."
+
+**🤖 AI Agent:**
+> Authenticating logic cleanly verifying parameters...
+**Supabase Auth Operatives Located (`list_auth_users`)**:
+- 15 total authentications indexed.
+- Latest user confirmed successfully natively.
+Task complete organically.
+
+
 ## Installation & Usage
 
 To install and use the **Supabase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +113,11 @@ To install and use the **Supabase** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Digital Turbine MCP Server
 
-Equip your AI agent to manage mobile growth campaigns, track app monetization, and monitor performance via the Digital Turbine API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/digital-turbine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digital-turbine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digital-turbine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digital-turbine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-intelligence
-**Tools Count:** 10
+
+**Category:** [business-intelligence](../categories/business-intelligence.md)
+
+Equip your AI agent to manage mobile growth campaigns, track app monetization, and monitor performance via the Digital Turbine API.
 
 ## Description
 Integrate **Digital Turbine**, the leading independent mobile growth platform, directly into your AI workflow. Manage your user acquisition campaigns, monitor app monetization performance, and track real-time revenue and install data using natural language.
@@ -44,6 +46,33 @@ Integrate **Digital Turbine**, the leading independent mobile growth platform, d
 - **search_campaigns_by_name**: Search for a campaign using a name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Digital Turbine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active UA campaigns."
+
+**🤖 AI Agent:**
+> I've found 4 active acquisition campaigns, including 'Global Android Launch' and 'US iOS Promo'. Would you like to see the current install count for the largest one?
+
+---
+
+**👤 You:**
+> "Show me the revenue report for 'Game App X' from last week."
+
+**🤖 AI Agent:**
+> Last week, 'Game App X' generated $12,450 in ad revenue. The best performing placement was 'Rewarded Video - Main Menu'. Should I check the fill rate for this app?
+
+---
+
+**👤 You:**
+> "What is the average CTR for our 'Summer Sale' campaign?"
+
+**🤖 AI Agent:**
+> The 'Summer Sale' campaign currently has an average CTR of 3.8%. Performance is highest on Android devices in the EU region. Would you like a breakdown by creative asset?
+
+
 ## Installation & Usage
 
 To install and use the **Digital Turbine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Digital Turbine** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

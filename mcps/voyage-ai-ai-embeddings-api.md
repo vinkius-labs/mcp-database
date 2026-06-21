@@ -1,12 +1,14 @@
 # Voyage AI (AI Embeddings API) MCP Server
 
-Generate high-quality text, multimodal, and contextualized embeddings, plus high-precision reranking for RAG workflows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/voyage-ai-ai-embeddings-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/voyage-ai-ai-embeddings-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/voyage-ai-ai-embeddings-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/voyage-ai-ai-embeddings-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 13
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Generate high-quality text, multimodal, and contextualized embeddings, plus high-precision reranking for RAG workflows.
 
 ## Description
 Connect your **Voyage AI** account to any AI agent to leverage state-of-the-art embedding and reranking models. Optimized for Retrieval-Augmented Generation (RAG), this server enables your agent to process complex data structures and find the most relevant information with surgical precision.
@@ -50,6 +52,33 @@ Connect your **Voyage AI** account to any AI agent to leverage state-of-the-art 
 Upload a file for batch inference
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Voyage AI (AI Embeddings API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create embeddings for the text 'What are the benefits of vector search?' using the voyage-4 model."
+
+**🤖 AI Agent:**
+> I've generated the embeddings for your text using `voyage-4`. The output includes a high-dimensional vector ready for your vector database or similarity search.
+
+---
+
+**👤 You:**
+> "Rerank these documents ["Doc A content...", "Doc B content..."] for the query 'AI safety' using rerank-2.5."
+
+**🤖 AI Agent:**
+> I've reranked the documents. Doc B scored significantly higher (0.92) than Doc A (0.45) for the query 'AI safety'. You should prioritize Doc B in your response.
+
+---
+
+**👤 You:**
+> "Start a batch embedding job for the file 'file-987' using the embeddings endpoint."
+
+**🤖 AI Agent:**
+> The batch job has been initiated successfully. You can monitor its progress using the `get_batch` tool with the ID: `batch_v1_abc123`.
+
+
 ## Installation & Usage
 
 To install and use the **Voyage AI (AI Embeddings API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Voyage AI (AI Embeddings API)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

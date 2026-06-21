@@ -1,12 +1,14 @@
 # NCEI Climate Data Online (NOAA Archive) MCP Server
 
-Access historical weather and climate data from NOAA's National Centers for Environmental Information archive.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ncei-climate-data-online-noaa-archive)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ncei-climate-data-online-noaa-archive)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ncei-climate-data-online-noaa-archive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ncei-climate-data-online-noaa-archive-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 10
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access historical weather and climate data from NOAA's National Centers for Environmental Information archive.
 
 ## Description
 Connect your AI agent to the **NCEI Climate Data Online** archive and explore decades of global environmental records through natural language.
@@ -49,6 +51,33 @@ Find information about available NCEI datasets
 - **get_service_data**: Access subset data in multiple formats
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NCEI Climate Data Online (NOAA Archive)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available climate datasets from NCEI."
+
+**🤖 AI Agent:**
+> I've retrieved the available datasets. Key archives include 'Daily Summaries' (GHCND), 'Global Summary of the Month' (GSOM), and 'Precipitation Hourly' (PRECIP_HLY). Which one would you like to explore further?
+
+---
+
+**👤 You:**
+> "Find weather stations located in London, UK."
+
+**🤖 AI Agent:**
+> Searching for stations in London... I found several platforms, including 'LONDON HEATHROW' (ID: GHCND:UKM00003772) and 'LONDON WEATHER CENTER'. Would you like to see the data types available for Heathrow?
+
+---
+
+**👤 You:**
+> "What are the data types available for the Daily Summaries dataset?"
+
+**🤖 AI Agent:**
+> For the Daily Summaries (GHCND) dataset, available types include PRCP (Precipitation), SNOW (Snowfall), TAVG (Average Temperature), TMAX (Maximum Temperature), and TMIN (Minimum Temperature).
+
+
 ## Installation & Usage
 
 To install and use the **NCEI Climate Data Online (NOAA Archive)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **NCEI Climate Data Online (NOAA Archive)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

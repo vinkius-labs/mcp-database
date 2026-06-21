@@ -1,12 +1,14 @@
 # FreshBooks MCP Server
 
-Manage small business accounting via FreshBooks — track clients and invoices, handle payments and billing via AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshbooks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshbooks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshbooks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshbooks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage small business accounting via FreshBooks — track clients and invoices, handle payments and billing via AI agents.
 
 ## Description
 Connect your **FreshBooks** account to any AI agent to automate your small business accounting, invoicing, and client management through the Model Context Protocol (MCP). FreshBooks is the leading cloud-based accounting software designed for small businesses and self-employed professionals. This MCP server enables you to manage your clients, track invoice statuses, and retrieve financial summaries directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **FreshBooks** account to any AI agent to automate your small busin
 - **list_time_entries**: List time logs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FreshBooks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent clients in FreshBooks."
+
+**🤖 AI Agent:**
+> Retrieving clients... I found your 5 most recent entries, including 'Acme Corp' and 'Globex Inc'. Would you like the contact details for any of them?
+
+---
+
+**👤 You:**
+> "Show me the status of my last 3 invoices."
+
+**🤖 AI Agent:**
+> Fetching invoices... Your last 3 invoices are: INV-001 (Paid), INV-002 (Sent), and INV-003 (Overdue). Would you like to see the details for the overdue one?
+
+---
+
+**👤 You:**
+> "Get my time tracking entries for this week."
+
+**🤖 AI Agent:**
+> Retrieving time entries... I've fetched your logs for this week. You've recorded a total of 32 hours across projects 'Web Design' and 'Consulting'.
+
+
 ## Installation & Usage
 
 To install and use the **FreshBooks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **FreshBooks** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

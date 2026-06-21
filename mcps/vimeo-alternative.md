@@ -1,12 +1,14 @@
 # Vimeo MCP Server
 
-Manage your Vimeo video library, search for content, and update video metadata directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vimeo-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vimeo-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vimeo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vimeo-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 13
+
+**Category:** [image-video](../categories/image-video.md)
+
+Manage your Vimeo video library, search for content, and update video metadata directly from your AI agent.
 
 ## Description
 Connect your **Vimeo** account to any AI agent to take full control of your video hosting and content management workflows through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Vimeo** account to any AI agent to take full control of your vide
 - **update_video**: Update video metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vimeo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my most recent videos on Vimeo."
+
+**🤖 AI Agent:**
+> I've retrieved your latest uploads. You have 3 recent videos: 'Product Demo' (ID: 88231), 'Team Sync' (ID: 88245), and 'Tutorial Part 1' (ID: 88250). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Search for videos about 'artificial intelligence' on Vimeo."
+
+**🤖 AI Agent:**
+> Searching Vimeo... I found several videos. The top results include 'AI Revolution 2024' and 'Understanding Neural Networks'. Should I provide more info on these?
+
+---
+
+**👤 You:**
+> "Update the description of video 88231 to 'Updated product walkthrough'."
+
+**🤖 AI Agent:**
+> The video metadata has been updated successfully. Video ID 88231 now has the description: 'Updated product walkthrough'.
+
+
 ## Installation & Usage
 
 To install and use the **Vimeo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Vimeo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

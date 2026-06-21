@@ -1,12 +1,14 @@
 # Tencent TRTC MCP Server
 
-Bring Tencent's Dominant Real-Time Communications Engine to your AI workflow. Manage rooms, cloud recordings, and call metrics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-trtc)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tencent-trtc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tencent-trtc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tencent-trtc-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Bring Tencent's Dominant Real-Time Communications Engine to your AI workflow. Manage rooms, cloud recordings, and call metrics.
 
 ## Description
 Equip your AI agent with **Tencent TRTC** (Tencent Real-Time Communication), the underlying video-conferencing technology empowering massive platforms globally. This MCP server offers 10 deep tools to administrate live-streaming rooms automatically.
@@ -46,6 +48,25 @@ Query user list for a specific call session
 - **stop_mcu_mix**: Stop MCU mix transcoding for a room
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tencent TRTC** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Kick user 9901 from room ID 3084."
+
+**🤖 AI Agent:**
+> The user `9901` has been disconnected from the TRTC session and can no longer publish streams in room 3084.
+
+---
+
+**👤 You:**
+> "Check the health and users attached to room TestRoomA."
+
+**🤖 AI Agent:**
+> Room TestRoomA is currently active online. I've pulled the active participants list, indicating 3 primary stream publishers are broadcasting successfully with 0 frame drops reported.
+
+
 ## Installation & Usage
 
 To install and use the **Tencent TRTC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +75,11 @@ To install and use the **Tencent TRTC** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

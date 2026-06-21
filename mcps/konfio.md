@@ -1,12 +1,14 @@
 # Konfío MCP Server
 
-Automate your Konfío SMB banking and lending. Manage loans, pay invoices, track credit cards, and emit SAT-compliant CFDIs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/konfio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/konfio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/konfio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/konfio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 14
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate your Konfío SMB banking and lending. Manage loans, pay invoices, track credit cards, and emit SAT-compliant CFDIs directly from any AI agent.
 
 ## Description
 Connect your **Konfío** business account to any AI agent and manage Mexico's leading SMB financial suite through natural conversation. Whether you need to pay a loan, check credit limits, or emit electronic invoices (CFDIs), the AI handles the heavy lifting.
@@ -53,6 +55,33 @@ List electronic invoices (CFDIs)
 - **request_credit_line**: Submit a new credit line request
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Konfío** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my latest business credit card transactions."
+
+**🤖 AI Agent:**
+> Here are your 3 most recent Konfío corporate card charges: 1. Amazon Web Services — $2,150.00 MXN (Cloud Hosting). 2. Home Depot — $4,300.00 MXN (Office supplies). 3. Uber — $350.00 MXN (Travel). Your current available credit is $145,000 MXN.
+
+---
+
+**👤 You:**
+> "List the last 5 invoices we emitted to clients."
+
+**🤖 AI Agent:**
+> Your 5 most recent emitted CFDIs: 1. CFDI-8821: To 'TechCorp SA' for $11,600 MXN (Active). 2. CFDI-8820: To 'Logistics MX' for $5,800 MXN (Active). 3. CFDI-8819: To 'Juan Perez' for $1,160 MXN (Paid). Total emitted this period is $18,560 MXN.
+
+---
+
+**👤 You:**
+> "Make a loan payment of $12,000 for loan LOAN-442."
+
+**🤖 AI Agent:**
+> Payment initiated! A direct debit of $12,000.00 MXN is being pulled from your primary connected bank account to pay towards LOAN-442. This covers your minimum installment of $10,500 with $1,500 going directly to the principal balance.
+
+
 ## Installation & Usage
 
 To install and use the **Konfío** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Konfío** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

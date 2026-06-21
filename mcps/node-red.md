@@ -1,12 +1,14 @@
 # Node-RED MCP Server
 
-Manage Node-RED flows, nodes, and system diagnostics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/node-red)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/node-red)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/node-red-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/node-red-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 11
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Node-RED flows, nodes, and system diagnostics directly from your AI agent.
 
 ## Description
 Connect your **Node-RED** instance to any AI agent to orchestrate your event-driven applications and IoT workflows through natural language.
@@ -47,6 +49,33 @@ Get Node-RED system diagnostics
 - **update_flow**: Update an individual flow
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Node-RED** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active flows in my Node-RED instance."
+
+**🤖 AI Agent:**
+> I've retrieved your flows. You have 3 main tabs: 'Home Automation' (ID: f123), 'Data Logger' (ID: f456), and 'Alerts' (ID: f789). Would you like to inspect a specific one?
+
+---
+
+**👤 You:**
+> "Check the system diagnostics and memory usage."
+
+**🤖 AI Agent:**
+> Diagnostics report: Node.js v18.16.0, OS: Linux. Memory usage is currently at 150MB of 512MB allocated. The system is healthy.
+
+---
+
+**👤 You:**
+> "Install the 'node-red-node-email' module."
+
+**🤖 AI Agent:**
+> Starting installation of 'node-red-node-email'... The module has been successfully installed and is now available in your palette.
+
+
 ## Installation & Usage
 
 To install and use the **Node-RED** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Node-RED** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

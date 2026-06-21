@@ -1,12 +1,14 @@
 # Qgiv MCP Server
 
-Manage Qgiv donation forms, custom fields, suggested amounts, and account settings directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qgiv)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qgiv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qgiv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qgiv-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** payment-processing
-**Tools Count:** 58
+
+**Category:** [payment-processing](../categories/payment-processing.md)
+
+Manage Qgiv donation forms, custom fields, suggested amounts, and account settings directly from any AI agent.
 
 ## Description
 Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundraising workflows. Manage donation forms, customize suggested amounts, configure custom fields, and update account settings through natural conversation.
@@ -92,6 +94,33 @@ Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundr
 - **update_restriction**: Update a specific restriction
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Qgiv** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me our current organization and form-level settings."
+
+**🤖 AI Agent:**
+> I have retrieved your account settings using `get_account_settings`. Your organization is configured with standard receipting enabled, and default form-level settings are active. Would you like to update any of these settings?
+
+---
+
+**👤 You:**
+> "List all the custom suggested donation amounts configured on our account."
+
+**🤖 AI Agent:**
+> I've fetched the custom suggested donation amounts using `list_custom_amounts`. You currently have four active tiers: $10, $25, $50, and $100. Would you like to modify any of these or create a new suggested amount?
+
+---
+
+**👤 You:**
+> "Get the details for the custom field with ID 'cf_98765'."
+
+**🤖 AI Agent:**
+> Using `get_custom_field`, I retrieved the details for field 'cf_98765'. It is a text field labeled 'How did you hear about us?' and is currently set as optional on your main donation form.
+
+
 ## Installation & Usage
 
 To install and use the **Qgiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -100,4 +129,11 @@ To install and use the **Qgiv** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

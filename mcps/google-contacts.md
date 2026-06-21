@@ -1,12 +1,14 @@
 # Google Contacts MCP Server
 
-Manage your Google Contacts network seamlessly — list, search, create, and organize contacts and groups directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-contacts)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-contacts)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-contacts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-contacts-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Google Contacts network seamlessly — list, search, create, and organize contacts and groups directly from any AI agent.
 
 ## Description
 Connect your **Google Contacts** directory to any AI agent and take full control of your address book and connections through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Google Contacts** directory to any AI agent and take full control
 Updates an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Contacts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search my contacts for John Doe and give me his phone number."
+
+**🤖 AI Agent:**
+> Scanning directory... I reached John Doe. His primary mobile number is registered as +1 (555) 123-4567 and his core email is john.doe@example.com.
+
+---
+
+**👤 You:**
+> "Create a new contact named Alice Smith with email alice@example.com"
+
+**🤖 AI Agent:**
+> Successfully issued creation. The identity 'Alice Smith' has been persisted correctly with ID 'people/c230919321', keeping 'alice@example.com' as her primary routing channel.
+
+---
+
+**👤 You:**
+> "List all organizational contact groups available."
+
+**🤖 AI Agent:**
+> I've fetched the segments. Found 3 notable groupings mapping connections: 'Starred in Android' (32 users), 'Lead Funnel 2024' (81 prospects), and 'Tech Advisors' (5 users). Would you like to check the Advisors list?
+
+
 ## Installation & Usage
 
 To install and use the **Google Contacts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Google Contacts** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

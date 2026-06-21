@@ -1,12 +1,14 @@
 # Groove MCP Server
 
-Manage your customer support tickets via Groove — list conversations, reply to customers, and monitor agent activity directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/groove)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/groove)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/groove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/groove-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage your customer support tickets via Groove — list conversations, reply to customers, and monitor agent activity directly via AI.
 
 ## Description
 Connect your **Groove** helpdesk account to any AI agent and take full control of your customer support operations through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Groove** helpdesk account to any AI agent and take full control o
 - **update_ticket_state**: Change the status of a ticket
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Groove** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my open tickets in Groove"
+
+**🤖 AI Agent:**
+> Retrieving your open tickets... I found 5 tickets requiring attention, including #402: 'Billing Inquiry' and #405: 'Login Issue'. Would you like me to summarize the latest message for the login issue?
+
+---
+
+**👤 You:**
+> "Show the messages for ticket #405"
+
+**🤖 AI Agent:**
+> Fetching conversation history... Ticket #405 contains 3 messages. The customer reported they cannot reset their password. There is also an internal note from Agent Sarah mentioning a potential database sync delay.
+
+---
+
+**👤 You:**
+> "Reply to ticket #402: 'Your refund has been issued and should appear in 3-5 days'"
+
+**🤖 AI Agent:**
+> Sending reply... Success! I've posted the message to Ticket #402 informing the customer about their refund. The ticket state remains 'pending'. Should I mark it as closed?
+
+
 ## Installation & Usage
 
 To install and use the **Groove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Groove** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

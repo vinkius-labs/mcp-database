@@ -1,12 +1,14 @@
 # Zuora MCP Server
 
-Manage subscriptions, billing accounts, and unified orders on Zuora — the leading monetization platform for the subscription economy.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zuora)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zuora)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zuora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zuora-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage subscriptions, billing accounts, and unified orders on Zuora — the leading monetization platform for the subscription economy.
 
 ## Description
 Connect your **Zuora** account to any AI agent and manage your enterprise monetization infrastructure through natural conversation.
@@ -50,6 +52,33 @@ No more manual navigation through complex billing dashboards to verify a charge.
 - **update_account**: Update account details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zuora** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active subscriptions for account ID 'acc-123'."
+
+**🤖 AI Agent:**
+> I found 2 active subscriptions for acc-123: 1. 'SaaS Premium' (No: S-00001, Status: Active), 2. 'API Add-on' (No: S-00002, Status: Active). Would you like to see the rate plan details for either of these?
+
+---
+
+**👤 You:**
+> "Show me the last 3 invoices for 'Acme Corp'."
+
+**🤖 AI Agent:**
+> Retrieving invoices for Acme Corp (acc-456)... The last 3 invoices are: 1. INV-001 ($1,250.00, Status: Paid), 2. INV-002 ($1,250.00, Status: Posted), and 3. INV-003 ($1,250.00, Status: Posted). Would you like me to pull the PDF download link for any of these?
+
+---
+
+**👤 You:**
+> "Preview the charges for subscription 'S-00001'."
+
+**🤖 AI Agent:**
+> Billing simulation for S-00001 complete. The projected charge for the next period (2026-04-01 to 2026-05-01) is $1,250.00 plus tax. No amendments were detected. Would you like me to generate a formal quote?
+
+
 ## Installation & Usage
 
 To install and use the **Zuora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Zuora** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

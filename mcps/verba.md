@@ -1,12 +1,14 @@
 # Verba MCP Server
 
-Connect your Verba RAG platform to your AI agent. Search your documents, retrieve semantic answers, and manage your Weaviate knowledge base directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/verba)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/verba)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/verba-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/verba-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 6
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Connect your Verba RAG platform to your AI agent. Search your documents, retrieve semantic answers, and manage your Weaviate knowledge base directly.
 
 ## Description
 Intertwine the open-source **Verba** (by Weaviate) ecosystem natively into your conversational AI IDE. Execute powerful Retrieval-Augmented Generation processes and manage your localized knowledge bases simply by chatting.
@@ -45,6 +47,37 @@ Permanently removes a document from the knowledge base
 Executes a RAG (Retrieval Augmented Generation) query against the Verba knowledge base
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Verba** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check Verba's configuration to see which embedding model it is currently using."
+
+**🤖 AI Agent:**
+> I've retrieved your Verba system configuration. The engine is properly spun up and indicates that it is currently utilizing the 'MiniLM-v12' embedding model localized naturally. All systems appear nominal for retrieval.
+
+---
+
+**👤 You:**
+> "Perform a RAG query asking: 'What are our key deployment steps based on the infrastructure guide?'"
+
+**🤖 AI Agent:**
+> Result from Verba Knowledge Base: 
+
+*"According to the 'Infrastructure Deployment v2' document, there are three key steps for deployment: 1) Initiate pre-flight health checks via CI/CD, 2) Provision ephemeral node pods for shadow tests, and 3) Cutover traffic using a blue-green weighting swap mechanism."*
+
+*(Source Citations: DocId: xfA-21v - confidence: 0.96)*
+
+---
+
+**👤 You:**
+> "List all documents and output the unique ID of the 'Employee Code of Conduct' file."
+
+**🤖 AI Agent:**
+> I've queried the document catalog. You have 15 items overall. The specific 'Employee Code of Conduct' document is indexed under the Document ID `5fcbeb99-xxxx`. Would you like me to delete it or replace its contents with a new updated chunk?
+
+
 ## Installation & Usage
 
 To install and use the **Verba** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +86,11 @@ To install and use the **Verba** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

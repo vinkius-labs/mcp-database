@@ -1,12 +1,14 @@
 # OpenCart MCP Server
 
-Connect your OpenCart store to AI agents — browse products, manage orders, track customers, and update fulfillment status through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/opencart)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencart)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opencart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opencart-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-operations
-**Tools Count:** 10
+
+**Category:** [business-operations](../categories/business-operations.md)
+
+Connect your OpenCart store to AI agents — browse products, manage orders, track customers, and update fulfillment status through natural conversation.
 
 ## Description
 Turn your **OpenCart** e-commerce backend into an AI-powered command center. Browse your product catalog, check order details, look up customers, and push status updates — without logging into the admin panel.
@@ -54,6 +56,33 @@ Add OpenCart order history / mutate order active status
 Get current API session cart contents in OpenCart
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenCart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all orders placed this week with their totals."
+
+**🤖 AI Agent:**
+> Found 23 orders this week totaling $4,850. Top order: #1247 — $620 (3 items, paid via Stripe, status: Processing). 18 orders are Complete, 3 Processing, and 2 Pending. Want me to pull the details for the pending ones?
+
+---
+
+**👤 You:**
+> "Mark order #1052 as shipped with tracking number TRK-9876."
+
+**🤖 AI Agent:**
+> Done. Order #1052 status updated to 'Shipped' with comment: 'Tracking: TRK-9876'. The customer will receive an email notification if your store has that enabled. Want me to check the other pending orders?
+
+---
+
+**👤 You:**
+> "Look up customer #42 and show me their full profile."
+
+**🤖 AI Agent:**
+> Customer #42: Sarah Johnson (sarah@example.com). Registered: Jan 15, 2024. Newsletter: subscribed. Default address: 456 Oak Ave, Portland, OR 97201. 12 orders placed, total lifetime value: $2,340. Last order: March 28 (#1241). Want me to pull that order's details?
+
+
 ## Installation & Usage
 
 To install and use the **OpenCart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **OpenCart** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

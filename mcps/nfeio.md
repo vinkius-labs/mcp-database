@@ -1,12 +1,14 @@
 # NFe.io MCP Server
 
-Orchestrate NFe.io services — manage service invoices (NFS-e), validate city codes, and monitor company data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nfeio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nfeio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nfeio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nfeio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Orchestrate NFe.io services — manage service invoices (NFS-e), validate city codes, and monitor company data directly from any AI agent.
 
 ## Description
 Connect your AI agents to **NFe.io**, the leading Brazilian platform for fiscal document automation. This MCP provides 10 tools to manage the full lifecycle of Service Invoices (NFS-e), validate Brazilian municipal codes (IBGE), and monitor corporate metadata for companies integrated into your billing environment.
@@ -46,6 +48,33 @@ Connect your AI agents to **NFe.io**, the leading Brazilian platform for fiscal 
 - **cancel_merchandise_invoice**: Cancel an issued Merchandise Invoice (NF-e)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NFe.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active companies in my NFe.io account."
+
+**🤖 AI Agent:**
+> I've retrieved your company list. You have 2 active entities: 1. Tech Services Ltda (ID: comp_1), 2. Consulting Group (ID: comp_2). Which one would you like to use for invoice issuance?
+
+---
+
+**👤 You:**
+> "Check the status of service invoice ID 'inv_nfe_999888'."
+
+**🤖 AI Agent:**
+> Connecting to NFe.io gateway... Invoice 'inv_nfe_999888' is currently 'Issued' (Autorizada). I've found the official download links: [Download PDF](...) and [Download XML](...). Would you like me to send these to you?
+
+---
+
+**👤 You:**
+> "Find the IBGE code for the city of 'São Paulo'."
+
+**🤖 AI Agent:**
+> Searching municipal codes... I found the IBGE code for São Paulo (SP): `3550308`. This code is active and compatible with the NFe.io service invoice engine.
+
+
 ## Installation & Usage
 
 To install and use the **NFe.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **NFe.io** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

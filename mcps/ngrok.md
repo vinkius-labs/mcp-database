@@ -1,12 +1,14 @@
 # ngrok MCP Server
 
-Manage ngrok ingress infrastructure — list endpoints, API keys, reserved domains, and security policies directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ngrok)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ngrok)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ngrok-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ngrok-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 7
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage ngrok ingress infrastructure — list endpoints, API keys, reserved domains, and security policies directly from your AI agent.
 
 ## Description
 Connect your **ngrok** account to any AI agent and take full control of your ingress infrastructure through natural conversation.
@@ -42,6 +44,33 @@ Connect your **ngrok** account to any AI agent and take full control of your ing
 - **list_vaults**: List ngrok vaults
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ngrok** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active ngrok endpoints."
+
+**🤖 AI Agent:**
+> I've retrieved your active endpoints. You have 2 active tunnels: 'https://myapp.ngrok-free.app' (ID: ep_123) and 'https://api.example.com' (ID: ep_456).
+
+---
+
+**👤 You:**
+> "Show me the reserved domains in my account."
+
+**🤖 AI Agent:**
+> Fetching reserved domains... I found 3 domains: 'dev.local', 'staging.myapp.com', and 'prod.myapp.com'. All are currently active.
+
+---
+
+**👤 You:**
+> "What IP policies are currently configured?"
+
+**🤖 AI Agent:**
+> I found 1 IP policy: 'Office-Only-Access' (ID: ipp_789) which restricts access to the corporate CIDR range.
+
+
 ## Installation & Usage
 
 To install and use the **ngrok** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **ngrok** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

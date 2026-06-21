@@ -1,12 +1,14 @@
 # Weblate MCP Server
 
-Automate localization workflows via Weblate — manage projects, components, languages, and users directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/weblate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weblate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weblate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weblate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 32
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate localization workflows via Weblate — manage projects, components, languages, and users directly from any AI agent.
 
 ## Description
 Connect your **Weblate** instance to any AI agent to streamline your continuous localization and translation management through natural conversation.
@@ -71,6 +73,33 @@ No more switching between your IDE and the Weblate dashboard to check translatio
 List Weblate users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Weblate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active localization projects in Weblate."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 3 active projects: 'Mobile App' (Slug: mobile-app), 'Web Dashboard' (Slug: web-dash), and 'Documentation' (Slug: docs). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the translation statistics for the German language."
+
+**🤖 AI Agent:**
+> Fetching statistics for 'de'... The German language currently has 85% completion across all projects, with 1,200 translated strings and 150 strings requiring attention (fuzzy or untranslated).
+
+---
+
+**👤 You:**
+> "Get detailed information for user 'johndoe'."
+
+**🤖 AI Agent:**
+> Inspecting user 'johndoe'... Full Name: John Doe, Email: john@example.com. This user is active and belongs to the 'Translators' and 'Reviewers' groups.
+
+
 ## Installation & Usage
 
 To install and use the **Weblate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Weblate** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

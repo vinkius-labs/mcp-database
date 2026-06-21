@@ -1,12 +1,14 @@
 # Modio MCP Server
 
-Manage game mods and community content via mod.io — list games, browse mods, manage files, and track statistics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/modio-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modio-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modio-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modio-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 35
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage game mods and community content via mod.io — list games, browse mods, manage files, and track statistics directly from your AI agent.
 
 ## Description
 Connect your **mod.io** account to any AI agent and take full control of game mod discovery and management through natural conversation.
@@ -72,6 +74,33 @@ List all games on mod.io
 - **unsubscribe_mod**: Unsubscribe from a mod
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Modio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List games on mod.io with 'Space' in the name."
+
+**🤖 AI Agent:**
+> I found several games matching 'Space'. Notable titles include 'Space Engineers' (ID: 164) and 'Space Station 14' (ID: 392). Would you like to see the mods available for any of these?
+
+---
+
+**👤 You:**
+> "Show me the most popular mods for game ID 123."
+
+**🤖 AI Agent:**
+> Fetching mods for game 123... I've found 10 mods. The top ones are 'HD Textures Pack' and 'Advanced UI Overhaul'. Would you like the details for a specific mod ID?
+
+---
+
+**👤 You:**
+> "What are my current mod subscriptions?"
+
+**🤖 AI Agent:**
+> Checking your profile... You are currently subscribed to 3 mods: 'Realistic Physics', 'Night Sky Mod', and 'Custom Shaders'. Would you like to check for updates on any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Modio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **Modio** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

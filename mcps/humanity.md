@@ -1,12 +1,14 @@
 # Humanity MCP Server
 
-Manage workforce scheduling, employee shifts, and team communication via Humanity — list employees, manage locations, and track shifts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/humanity)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/humanity)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/humanity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/humanity-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 20
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage workforce scheduling, employee shifts, and team communication via Humanity — list employees, manage locations, and track shifts directly from any AI agent.
 
 ## Description
 Connect your **Humanity** account to any AI agent to streamline your workforce management and scheduling workflows through natural conversation.
@@ -57,6 +59,33 @@ Add an event to a timeclock
 - **get_weekly_availability**: Get weekly availability
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Humanity** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees assigned to location 55012."
+
+**🤖 AI Agent:**
+> I've retrieved the staff list for location 55012. There are 8 employees currently assigned there, including Sarah J. (Manager) and Mike T. (Shift Lead). Would you like the contact details for any of them?
+
+---
+
+**👤 You:**
+> "Get the details for company ID 10293."
+
+**🤖 AI Agent:**
+> Fetching company details... Company 10293 is 'Global Logistics North'. It currently has 4 active locations and 125 registered employees. Its primary timezone is set to America/New_York.
+
+---
+
+**👤 You:**
+> "Create a new position called 'Night Supervisor' at location 8821."
+
+**🤖 AI Agent:**
+> The new position 'Night Supervisor' has been successfully created at location 8821. It is currently marked as active. You can now start assigning employees to this role.
+
+
 ## Installation & Usage
 
 To install and use the **Humanity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Humanity** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

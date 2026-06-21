@@ -1,12 +1,14 @@
 # Olostep MCP Server
 
-Scrape web pages at scale with a headless browser API that renders JavaScript and returns clean structured data instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/olostep)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/olostep)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/olostep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/olostep-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Scrape web pages at scale with a headless browser API that renders JavaScript and returns clean structured data instantly.
 
 ## Description
 Connect your **Olostep** account to any AI agent and take full control of your web scraping orchestration and automated data extraction workflows through natural conversation.
@@ -51,6 +53,33 @@ Create a batch scrape
 Scrape a web page
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Olostep** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scrape the homepage of example.com as markdown."
+
+**🤖 AI Agent:**
+> Page scraped successfully. The content is 2,400 words with 15 images and 8 links. Here's the markdown output. Would you like to save it or scrape additional pages?
+
+---
+
+**👤 You:**
+> "Create a batch scrape for 5 competitor product pages."
+
+**🤖 AI Agent:**
+> Batch created with 5 URLs. Job ID: BATCH-7291. Processing has started — 2 of 5 pages already completed. Would you like me to check back when all are done?
+
+---
+
+**👤 You:**
+> "Show my Olostep API usage this month."
+
+**🤖 AI Agent:**
+> This month: 1,245 pages scraped, 82 batch jobs, 340 MB bandwidth used. You have 8,755 credits remaining on your plan. Would you like to see agent-level breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Olostep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Olostep** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

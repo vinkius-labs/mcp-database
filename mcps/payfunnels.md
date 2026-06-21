@@ -1,12 +1,14 @@
 # Payfunnels MCP Server
 
-Build payment funnels and checkout experiences that maximize conversions with upsells, order bumps, and subscription options.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/payfunnels)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payfunnels)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payfunnels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payfunnels-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build payment funnels and checkout experiences that maximize conversions with upsells, order bumps, and subscription options.
 
 ## Description
 Connect your **Payfunnels** account to any AI agent and take full control of your billing orchestration and payment collection through natural conversation. Payfunnels provides a simplified platform for accepting payments online, and this integration allows you to create payment links, monitor active subscriptions, and process refunds directly from your chat interface.
@@ -55,6 +57,33 @@ Create a subscription payment link
 - **refund_payment**: Refund a specific payment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Payfunnels** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a one-time payment link for $50 labeled 'Setup Fee'."
+
+**🤖 AI Agent:**
+> I've generated your payment link for the 'Setup Fee' ($50.00). You can share this URL with your customer: [link]. Would you like me to track when this is paid?
+
+---
+
+**👤 You:**
+> "Show me all payment funnels and their conversion rates for the current month."
+
+**🤖 AI Agent:**
+> You have 5 active payment funnels this month. "Premium Upgrade" converts at 34% with $47,200 in revenue (412 checkouts started, 140 completed). "Annual Plan Offer" converts at 28% generating $89,100. "Addon Upsell" has the highest rate at 52% but lower volume ($12,400). Total funnel revenue: $178,300 across 892 successful transactions.
+
+---
+
+**👤 You:**
+> "Get the detailed transaction history and refund status for funnel Premium Upgrade."
+
+**🤖 AI Agent:**
+> "Premium Upgrade" funnel details: 412 checkouts initiated, 140 completed (34% conversion), 272 abandoned. Revenue: $47,200. Refunds: 3 processed totaling $1,011 (2.1% refund rate). Average order value: $337. Payment methods: Credit Card 78%, PayPal 18%, Apple Pay 4%. Peak conversion hour: 2 PM EST.
+
+
 ## Installation & Usage
 
 To install and use the **Payfunnels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Payfunnels** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

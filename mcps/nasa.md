@@ -1,12 +1,14 @@
 # NASA MCP Server
 
-Explore space and science via NASA APIs — browse APOD, Mars rover photos, Earth imagery, NEO data and patents from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 9
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Explore space and science via NASA APIs — browse APOD, Mars rover photos, Earth imagery, NEO data and patents from any AI agent.
 
 ## Description
 Connect to **NASA**'s open APIs through any AI agent and explore space science through natural conversation.
@@ -66,6 +68,33 @@ Search the NASA Image and Video Library
 Search NASA patents
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NASA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me today's Astronomy Picture of the Day."
+
+**🤖 AI Agent:**
+> Today's APOD is 'Pillars of Creation Revisited' — a stunning new infrared image of the Eagle Nebula's iconic star-forming columns captured by the James Webb Space Telescope. The image reveals previously hidden protostars and dust structures.
+
+---
+
+**👤 You:**
+> "Show me photos taken by the Perseverance rover on Mars."
+
+**🤖 AI Agent:**
+> I found 25 photos from Perseverance taken on 2024-01-15. Images include views of Jezero Crater using the NAVCAM, close-up rock analysis with MAHLI, and terrain mapping with RHAZ. Each photo includes the Sol number and Earth date.
+
+---
+
+**👤 You:**
+> "Are there any potentially hazardous asteroids approaching Earth this week?"
+
+**🤖 AI Agent:**
+> Over the next 7 days, NASA is tracking 18 near-Earth objects. 2 are classified as 'potentially hazardous'. The largest is approximately 340 meters in diameter (2024 AB1), passing at a safe distance of 4.2 lunar distances on Wednesday. No impact threats are known.
+
+
 ## Installation & Usage
 
 To install and use the **NASA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **NASA** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

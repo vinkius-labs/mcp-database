@@ -1,12 +1,14 @@
 # Amberdata (Digital Asset & Crypto Market Data API) MCP Server
 
-Access institutional-grade crypto market data, on-chain metrics, and DeFi insights directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amberdata-digital-asset-crypto-market-data-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amberdata-digital-asset-crypto-market-data-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amberdata-digital-asset-crypto-market-data-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amberdata-digital-asset-crypto-market-data-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 28
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access institutional-grade crypto market data, on-chain metrics, and DeFi insights directly from your AI agent.
 
 ## Description
 Connect your **Amberdata** account to any AI agent to access comprehensive digital asset data through natural conversation. This server provides a unified interface for market data, blockchain analytics, and DeFi protocols.
@@ -63,6 +65,33 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 - **get_transactions_metrics_historical**: Get historical transaction-level metrics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amberdata (Digital Asset & Crypto Market Data API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the latest spot tickers for 'btc_usd_coinbase'."
+
+**🤖 AI Agent:**
+> I've retrieved the latest tickers for BTC-USD on Coinbase. The current best bid is $65,432.10 and the best ask is $65,433.50.
+
+---
+
+**👤 You:**
+> "Show me the latest blockchain metrics for Ethereum."
+
+**🤖 AI Agent:**
+> Fetching Ethereum network stats... Currently, the block height is 19,234,567 with an average transaction count of 150 per block in the last hour.
+
+---
+
+**👤 You:**
+> "List the available DeFi lending protocols."
+
+**🤖 AI Agent:**
+> I've found several active protocols including Aave, Compound, and MakerDAO. Would you like to see specific metrics for one of these?
+
+
 ## Installation & Usage
 
 To install and use the **Amberdata (Digital Asset & Crypto Market Data API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Amberdata (Digital Asset & Crypto Market Data API)** MC
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

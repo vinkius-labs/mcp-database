@@ -1,12 +1,14 @@
 # VesselAPI MCP Server
 
-Track maritime vessels — audit schedules and positions via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vesselapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vesselapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vesselapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vesselapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track maritime vessels — audit schedules and positions via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire maritime research and vessel auditing workflow with **VesselAPI**, the comprehensive source for global shipping data. By connecting VesselAPI to your agent, you transform complex logistics searches into a natural conversation. Your agent can instantly track vessels by IMO number, audit upcoming port schedules, and retrieve real-time AIS positions without you ever touching a maritime dashboard. Whether you are conducting supply chain research or monitoring global trade flow, your agent acts as a real-time maritime consultant, ensuring your data is always precise and up-to-the-minute.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire maritime research and vessel au
 - **search_vessels**: Search for vessels by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **VesselAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get details for vessel with IMO 9411159 using VesselAPI."
+
+**🤖 AI Agent:**
+> I've retrieved the details for IMO 9411159! It is a Container Ship named 'Emma Maersk', sailing under the flag of Denmark. Would you like the latest position or upcoming port schedules?
+
+---
+
+**👤 You:**
+> "Where is vessel 'MSC OSCAR' located right now?"
+
+**🤖 AI Agent:**
+> I've identified 'MSC OSCAR' and retrieved its latest AIS position. It is currently in the Suez Canal, heading North. I can provide the exact latitude and longitude metadata if you'd like.
+
+---
+
+**👤 You:**
+> "Show upcoming schedules for IMO 9243394."
+
+**🤖 AI Agent:**
+> I've retrieved the schedule for that vessel. Its next port of call is Rotterdam, expected on 2024-05-15. I can provide the full list of planned stops and durations if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **VesselAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **VesselAPI** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

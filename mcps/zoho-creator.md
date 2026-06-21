@@ -1,12 +1,14 @@
 # Zoho Creator MCP Server
 
-Low-code platform to build applications and manage records with AI using Creator API v2.1.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-creator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-creator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-creator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-creator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Low-code platform to build applications and manage records with AI using Creator API v2.1.
 
 ## Description
 Connect your **Zoho Creator** account to any AI agent to automate your business application workflows through natural conversation. Perform CRUD operations, manage structural metadata, and navigate your low-code ecosystem with ease.
@@ -48,6 +50,33 @@ Connect your **Zoho Creator** account to any AI agent to automate your business 
 - **update_record**: Modify existing record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Creator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the metadata and form fields for the 'Employee Directory' application so I can see what data is collected."
+
+**🤖 AI Agent:**
+> I've fetched the metadata for 'Employee Directory'. The main form 'Add_Employee' contains 6 fields: Full_Name, Email, Department, Joining_Date, Salary, and Manager_ID. Would you like me to add a new record to it?
+
+---
+
+**👤 You:**
+> "Add a new record to the 'Inventory Manager' app under the 'Products' form with Name 'Ergonomic Chair' and Price '199.99'."
+
+**🤖 AI Agent:**
+> The record for 'Ergonomic Chair' has been successfully added to the 'Products' form in the 'Inventory Manager' application. The new record ID is 38920188492001.
+
+---
+
+**👤 You:**
+> "Fetch the latest records from the 'Sales Tracker' report where the status is 'Pending Approval'."
+
+**🤖 AI Agent:**
+> I've retrieved the records from the 'Sales Tracker' report. There are currently 4 sales records with the status 'Pending Approval'. The highest value deal is 'Acme Corp Contract' at $45,000.
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Creator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Zoho Creator** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

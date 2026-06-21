@@ -1,12 +1,14 @@
 # Qdrant MCP Server
 
-Empower your AI to interact directly with your Qdrant vector database — query clusters, perform similarity searches, and manage collections effortlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qdrant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qdrant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qdrant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qdrant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 7
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Empower your AI to interact directly with your Qdrant vector database — query clusters, perform similarity searches, and manage collections effortlessly.
 
 ## Description
 Connect your **Qdrant** vector database (Cloud or Self-Hosted) to any AI agent and bring powerful semantic retrieval and database management into your conversation.
@@ -47,6 +49,39 @@ Scrolls through points in a collection, useful for pagination
 Deletes specific points from a collection
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Qdrant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the configurations for all collections in my Qdrant instance."
+
+**🤖 AI Agent:**
+> I found 2 collections. 
+1. `docs-embeddings`: Contains 4,500 points, optimized using Cosine distance, vector size 1536.
+2. `image-features`: Contains 120,400 points, optimized using Dot product, vector size 512.
+Should I inspect `docs-embeddings` further?
+
+---
+
+**👤 You:**
+> "Count the total embedded points in the 'docs-embeddings' collection."
+
+**🤖 AI Agent:**
+> The `count` tool indicates there are exactly 14,235 points currently indexed in the `docs-embeddings` collection.
+
+---
+
+**👤 You:**
+> "Scroll and show me the IDs and payloads of the first 3 items in the 'users' collection."
+
+**🤖 AI Agent:**
+> Scrolling through 'users', here are the top 3 IDs and payloads:
+1. ID: `1f2a3`, Payload: { "role": "admin", "department": "sales" }
+2. ID: `7b9c1`, Payload: { "role": "user", "department": "support" }
+3. ID: `9d8e4`, Payload: { "role": "user", "department": "sales" }
+
+
 ## Installation & Usage
 
 To install and use the **Qdrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +90,11 @@ To install and use the **Qdrant** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

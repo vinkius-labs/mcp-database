@@ -1,12 +1,14 @@
 # Glean MCP Server
 
-Search across all your company apps and docs with AI that understands your organization and surfaces the right answer instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/glean-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glean-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glean-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glean-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search across all your company apps and docs with AI that understands your organization and surfaces the right answer instantly.
 
 ## Description
 Connect your **Glean** workspace to any AI agent and unlock enterprise knowledge through natural conversation.
@@ -51,6 +53,33 @@ Search in specific datasource
 - **search**: Search across all content
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Glean** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for our deployment runbook and the on-call rotation schedule."
+
+**🤖 AI Agent:**
+> Found 2 relevant results across your connected sources. 1) 'Production Deployment Runbook v3.2' — Confluence (Engineering wiki), last updated 3 days ago. Steps: pre-deploy checklist, rollback procedure, monitoring dashboards. 2) 'On-Call Rotation Q2 2025' — Google Sheets, shared by Sarah Chen. Current on-call: Mike Torres (Backend), Lisa Park (Frontend), expires May 2. Would you like to search for related incident reports or ask the AI assistant for a deployment summary?
+
+---
+
+**👤 You:**
+> "Ask the AI assistant: What is our company's refund policy for enterprise customers?"
+
+**🤖 AI Agent:**
+> Based on your organization's knowledge base, the Glean AI assistant responds: 'Enterprise customers are eligible for a full refund within 30 days of contract signing. After 30 days, refunds are prorated based on remaining contract months. Refund requests must be submitted through the Customer Success team via Zendesk. All enterprise refunds require VP-level approval. Source: Customer Policy Handbook (Confluence, updated Feb 2025).' Would you like to see the full policy document or search for recent refund requests in Zendesk?
+
+---
+
+**👤 You:**
+> "Find the engineering lead for the payments team and search Slack for recent discussions about PCI compliance."
+
+**🤖 AI Agent:**
+> People search result: James Rodriguez (james@company.com) — Senior Engineering Manager, Payments Team. Reports to: VP Engineering. Located: San Francisco. Expertise: payment processing, PCI-DSS, Stripe integration. Slack search results for 'PCI compliance': 3 relevant threads in #payments-eng. 1) 'PCI audit prep checklist' — 2 days ago, 12 replies. 2) 'TLS 1.3 migration timeline' — 5 days ago, 8 replies. 3) 'Tokenization vendor review' — 1 week ago, 15 replies. Would you like to read a specific thread or ask the AI for a PCI compliance summary?
+
+
 ## Installation & Usage
 
 To install and use the **Glean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Glean** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

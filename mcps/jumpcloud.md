@@ -1,12 +1,14 @@
 # JumpCloud MCP Server
 
-Manage users, systems, and directories via JumpCloud API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jumpcloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jumpcloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jumpcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jumpcloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage users, systems, and directories via JumpCloud API.
 
 ## Description
 Empower your AI agents with JumpCloud's open directory platform. This MCP server allows you to list and retrieve users, manage user and system groups, track managed systems, and view directories and SSO applications directly through the JumpCloud API. Ideal for automating IT administration and directory management.
@@ -45,6 +47,33 @@ Lists all user groups
 Lists all users in JumpCloud
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JumpCloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all users in my JumpCloud directory."
+
+**🤖 AI Agent:**
+> I'll fetch the complete list of users from your JumpCloud account.
+
+---
+
+**👤 You:**
+> "Show me the managed systems currently active."
+
+**🤖 AI Agent:**
+> I'll retrieve the list of systems managed by JumpCloud for you.
+
+---
+
+**👤 You:**
+> "Check the user groups in my organization."
+
+**🤖 AI Agent:**
+> I'll look up the list of configured user groups in your account.
+
+
 ## Installation & Usage
 
 To install and use the **JumpCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **JumpCloud** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

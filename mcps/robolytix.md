@@ -1,12 +1,14 @@
 # Robolytix MCP Server
 
-Monitor robotic process automation performance with analytics that track bot execution times, success rates, and exceptions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/robolytix)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/robolytix)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/robolytix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/robolytix-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Monitor robotic process automation performance with analytics that track bot execution times, success rates, and exceptions.
 
 ## Description
 Connect your **Robolytix** account to any AI agent and take full control of your robotic process automation (RPA) analytics and performance orchestration through natural conversation. Robolytix provides a specialized platform for monitoring bot workflows and business process health, and this integration allows you to send sonar messages, track process runs, and manage automation metadata directly from your chat interface.
@@ -47,6 +49,33 @@ No more manual status checking or bot log hunting. Your AI acts as a dedicated R
 - **sonar_start**: Send a "start" sonar message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Robolytix** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Log the start of process 'p-123' with run ID 'r-999'."
+
+**🤖 AI Agent:**
+> Sonar start message sent! Process 'p-123' is now being tracked under run 'r-999' in Robolytix. Would you like to log a common step now?
+
+---
+
+**👤 You:**
+> "Show me all RPA process runs from today with their success rates and execution times."
+
+**🤖 AI Agent:**
+> 34 process runs today across 8 automated processes. Success: 31 (91.2%). Failed: 3 (invoice processing errors). "Order Processing" ran 12 times (avg 2.3 min, 100% success). "Invoice Generation" ran 8 times (avg 1.8 min, 75% success, 2 failures due to template mismatch). "Data Sync" ran 6 times (avg 4.5 min, 100% success). "Email Classification" ran 5 times (avg 0.8 min, 100% success). Total automation time saved: 4.2 hours. Cost savings: $840.
+
+---
+
+**👤 You:**
+> "Get the detailed message log for the last failed invoice processing run."
+
+**🤖 AI Agent:**
+> Run ID: run_8923 (Invoice Generation, failed at 10:47 AM). 12 messages in log. Start: "Process initiated, 45 invoices queued". Steps 1-8: successful (customer lookup, line item calculation, tax computation). Step 9 ERROR: "Template 'INV-2024-v3' not found. Expected path: /templates/invoices/". Step 10: "Attempting fallback template 'INV-2024-v2'". Step 11 ERROR: "Fallback failed - missing required field 'tax_region'". End: "Process terminated with error code E-TPL-404". Recommendation: update template path in config.
+
+
 ## Installation & Usage
 
 To install and use the **Robolytix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Robolytix** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

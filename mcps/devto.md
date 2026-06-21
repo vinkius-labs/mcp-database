@@ -1,12 +1,14 @@
 # DEV.to MCP Server
 
-Manage your DEV.to presence — publish articles, fetch latest posts, and update content directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/devto)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devto)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devto-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 38
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your DEV.to presence — publish articles, fetch latest posts, and update content directly from your AI agent.
 
 ## Description
 Connect your **DEV.to** account to any AI agent to streamline your technical writing and community engagement through natural conversation.
@@ -77,6 +79,33 @@ Publish a new article on DEV.to
 - **update_page**: Update a custom page (Admin only)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DEV.to** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the latest articles on DEV.to about 'typescript' and 'mcp'."
+
+**🤖 AI Agent:**
+> I've found several recent articles. The top ones are 'Building MCP Servers with TypeScript' and 'Advanced Type Safety in MCP'. Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Create a new draft article titled 'My First MCP Guide' with a short introduction."
+
+**🤖 AI Agent:**
+> I've created the draft for you. The article 'My First MCP Guide' is now saved in your DEV.to account with ID 1829304. You can find it in your unpublished articles.
+
+---
+
+**👤 You:**
+> "Show me all my published articles so I can check their status."
+
+**🤖 AI Agent:**
+> Fetching your portfolio... You have 3 published articles: 'Understanding Webhooks', 'API Design Patterns', and 'The Future of MCP'. Which one would you like to inspect or update?
+
+
 ## Installation & Usage
 
 To install and use the **DEV.to** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **DEV.to** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

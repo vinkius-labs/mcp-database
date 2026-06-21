@@ -1,12 +1,14 @@
 # Corbado MCP Server
 
-Manage users, identifiers, and passkey authentication via Corbado — handle user lifecycles and auth processes directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corbado)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corbado)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corbado-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corbado-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 43
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage users, identifiers, and passkey authentication via Corbado — handle user lifecycles and auth processes directly from your AI agent.
 
 ## Description
 Connect your **Corbado** project to any AI agent to streamline your identity and access management. This server allows you to manage the entire user lifecycle, from creation to session revocation, using natural language.
@@ -79,6 +81,33 @@ Connect your **Corbado** project to any AI agent to streamline your identity and
 - **verify_signed_data**: Verify signed passkey data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corbado** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all users in my Corbado project."
+
+**🤖 AI Agent:**
+> I've retrieved the user list. You have 150 users in this project. The most recent users include 'John Doe' (active) and 'Jane Smith' (pending). Would you like to see more details for a specific user?
+
+---
+
+**👤 You:**
+> "Get the details for user ID usr-123456789."
+
+**🤖 AI Agent:**
+> User 'usr-123456789' is currently 'active'. Their full name is 'Alice Vance'. They were created on October 12th, 2023. Would you like to list their identifiers or active sessions?
+
+---
+
+**👤 You:**
+> "Add the email 'dev@example.com' as an identifier for user usr-123456789."
+
+**🤖 AI Agent:**
+> I've successfully added 'dev@example.com' as an email identifier for Alice Vance (usr-123456789). The identifier is currently in 'pending' status until verified.
+
+
 ## Installation & Usage
 
 To install and use the **Corbado** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Corbado** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Axle MCP Server
 
-Fleet management and logistics automation — track vehicles, manage drivers, and monitor loads via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/axle)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/axle)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/axle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/axle-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** shipping-logistics
-**Tools Count:** 12
+
+**Category:** [shipping-logistics](../categories/shipping-logistics.md)
+
+Fleet management and logistics automation — track vehicles, manage drivers, and monitor loads via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire logistics operation with **Axle**, the comprehensive fleet management platform. By connecting Axle to your agent, you transform complex supply chain monitoring into a natural conversation. Your agent can instantly track real-time vehicle locations, audit driver duty statuses, monitor shipment progress, and retrieve essential shipping documents without you ever touching a heavy transportation dashboard. Whether you're managing a local delivery crew or a national trucking network, your agent acts as a real-time dispatch coordinator, ensuring your fleet is always moving and compliant.
@@ -48,6 +50,33 @@ Empower your AI agent to orchestrate your entire logistics operation with **Axle
 - **update_load**: Update a load/shipment details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Axle** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Where is vehicle ID 'TRUCK-101' right now?"
+
+**🤖 AI Agent:**
+> Checking GPS location for TRUCK-101... The vehicle was last seen 2 minutes ago at 123 Main St, moving at 45 mph heading North.
+
+---
+
+**👤 You:**
+> "List all active loads and their current status."
+
+**🤖 AI Agent:**
+> I've retrieved 5 active loads. Load #9876 is 'In Transit' to Chicago, while Load #5432 is 'Pending Dispatch'. Would you like full details for any of them?
+
+---
+
+**👤 You:**
+> "Check the available Hours of Service (HOS) for driver 'John Doe'."
+
+**🤖 AI Agent:**
+> Driver John Doe has 4 hours and 15 minutes of drive time remaining for today. His current duty status is 'Driving'.
+
+
 ## Installation & Usage
 
 To install and use the **Axle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Axle** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

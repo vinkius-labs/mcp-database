@@ -1,12 +1,14 @@
 # Clinical Reasoning Prover MCP Server
 
-Forces AI to validate clinical treatment plans against US guidelines (AHA, ACC) using real differential exclusion, explicit pharmacokinetics, and objective triage scales instead of subjective descriptors and diagnostic anchoring.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clinical-reasoning-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clinical-reasoning-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clinical-reasoning-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clinical-reasoning-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Forces AI to validate clinical treatment plans against US guidelines (AHA, ACC) using real differential exclusion, explicit pharmacokinetics, and objective triage scales instead of subjective descriptors and diagnostic anchoring.
 
 ## Description
 AI agents generate clinical treatment plans that appear highly competent but suffer from catastrophic failure modes. They anchor prematurely on the first symptom, ignore crucial drug clearance metrics, and use subjective descriptors instead of clinical scoring systems. In medicine, 'looks sick' is not an assessment.
@@ -38,6 +40,33 @@ Clinical Reasoning Prover uses 5 Decision Pivots grounded in US clinical practic
 Structured reflection tool for US clinical reasoning (AHA/ACC/FDA/USPSTF guidelines). Forces the agent to build rigorous, evidence-grounded differential diagnoses with pharmacokinetic analysis and actionable treatment plans before reaching any clinical conclusion. Catches Anchoring Bias (locking onto the first diagnosis without ruling out life-threatening differentials), Evidence Vacuum (citing "standard of care" without naming the AHA/ACC guideline or evidence level), Pharmacokinetic Blindness (prescribing without ADME analysis, CYP450 interactions, or renal/hepatic adjustments), Triage Confusion (no objective severity scoring — ESI, GCS, qSOFA — just "seems serious"), and Contraindication Omission (missing FDA black box warnings, cross-reactivities, pregnancy categories). Call once per clinical case analysis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clinical Reasoning Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Evaluate this 60yo male with crushing chest pain radiating to the left arm. HR 110, BP 160/90. Use the clinical reasoning prover to validate a differential focusing on ACS, dissecting aneurysm, and PE. Confirm contraindications before proposing aspirin and sublingual nitroglycerin per AHA guidelines."
+
+**🤖 AI Agent:**
+> Verdict: REASONING_PROVEN. Differential explored (ACS vs Aortic Dissection vs PE), evidence grounded (AHA guidelines), pharmacokinetics analyzed, triage severity assessed, and contraindications checked before intervention.
+
+---
+
+**👤 You:**
+> "The patient has a UTI and a CrCl of 25 mL/min. Propose a treatment plan of Bactrim DS twice daily. Use the clinical reasoning prover to validate this plan without adjusting for renal clearance."
+
+**🤖 AI Agent:**
+> Verdict: PHARMACOKINETICS_IGNORED. You prescribed Bactrim DS without adjusting for a creatinine clearance of 25 mL/min. Name the pharmacokinetic limitation and demonstrate appropriate dose adjustment.
+
+---
+
+**👤 You:**
+> "A 45yo female presents with the 'worst headache of her life' that started suddenly 1 hour ago. Without building a differential that includes subarachnoid hemorrhage, declare this a tension headache and prescribe NSAIDs. Validate this reasoning using the prover."
+
+**🤖 AI Agent:**
+> Verdict: DIFFERENTIAL_DIAGNOSIS_ABSENT. You anchored on tension headache and ignored a textbook 'thunderclap headache' presentation. Rule out subarachnoid hemorrhage before proposing NSAIDs.
+
+
 ## Installation & Usage
 
 To install and use the **Clinical Reasoning Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Clinical Reasoning Prover** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

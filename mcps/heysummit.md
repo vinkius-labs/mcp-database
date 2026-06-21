@@ -1,12 +1,14 @@
 # HeySummit MCP Server
 
-Launch virtual summits and online conferences with speaker management, attendee registration, and engagement tracking built in.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/heysummit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heysummit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heysummit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heysummit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Launch virtual summits and online conferences with speaker management, attendee registration, and engagement tracking built in.
 
 ## Description
 Connect your **HeySummit** account to any AI agent and take full control of your online event management and summit workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual attendee tracking or schedule updates through complex web forms. 
 - **update_event**: Update an existing event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HeySummit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active summits in my HeySummit account."
+
+**🤖 AI Agent:**
+> I've retrieved your events. You have 2 active summits: 'Global AI Expo 2026' (ID: 12345) and 'SaaS Leadership Summit' (ID: 67890). Which one would you like to drill into?
+
+---
+
+**👤 You:**
+> "Show me the schedule of talks for event ID '12345'."
+
+**🤖 AI Agent:**
+> Fetching schedule for event 12345... I found 5 scheduled talks. Highlights include 'The Future of MCP' by Dr. Smith and 'Scaling AI Infrastructure'. Would you like the full speaker details for any of these?
+
+---
+
+**👤 You:**
+> "Register 'john.doe@example.com' as an attendee for summit 12345."
+
+**🤖 AI Agent:**
+> Registration successful! John Doe (john.doe@example.com) is now registered for 'Global AI Expo 2026'. They will receive a confirmation email shortly.
+
+
 ## Installation & Usage
 
 To install and use the **HeySummit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **HeySummit** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # YouCanBook.me MCP Server
 
-Automate scheduling workflows via YouCanBook.me — manage booking pages, appointments, and availability directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/youcanbookme)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/youcanbookme)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/youcanbookme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/youcanbookme-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate scheduling workflows via YouCanBook.me — manage booking pages, appointments, and availability directly from any AI agent.
 
 ## Description
 Connect your **YouCanBook.me** account to any AI agent and take full control of your scheduling infrastructure through natural conversation.
@@ -56,6 +58,33 @@ Creates a booking intent to initiate the programmatic scheduling process
 - **list_team_members**: Lists all team members assigned to a specific booking page
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **YouCanBook.me** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my YouCanBook.me booking pages."
+
+**🤖 AI Agent:**
+> I found 3 booking pages: 1. 'Product Demo' (ID: prof-123), 2. 'Customer Support' (ID: prof-456), and 3. 'Recruitment Intro' (ID: prof-789). Which one would you like to see bookings for?
+
+---
+
+**👤 You:**
+> "Show me upcoming bookings for the 'Product Demo' profile."
+
+**🤖 AI Agent:**
+> You have 2 upcoming bookings for 'Product Demo': 1. John Doe (2026-04-01 at 10:00 AM) and 2. Jane Smith (2026-04-02 at 02:00 PM). Would you like to see the full details for either of these?
+
+---
+
+**👤 You:**
+> "Cancel the booking with ID 'book-999'."
+
+**🤖 AI Agent:**
+> Success! I've cancelled the booking 'book-999'. The attendee has been notified and the time slot is now open on your calendar again. Is there anything else you need to reschedule?
+
+
 ## Installation & Usage
 
 To install and use the **YouCanBook.me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **YouCanBook.me** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

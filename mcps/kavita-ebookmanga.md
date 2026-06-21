@@ -1,12 +1,14 @@
 # Kavita (eBook/Manga) MCP Server
 
-Manage your Kavita media server—scan libraries, check API status, and authenticate sessions directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kavita-ebookmanga)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kavita-ebookmanga)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kavita-ebookmanga-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kavita-ebookmanga-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 4
+
+**Category:** [content-management](../categories/content-management.md)
+
+Manage your Kavita media server—scan libraries, check API status, and authenticate sessions directly from your AI agent.
 
 ## Description
 Connect your **Kavita** instance to any AI agent to automate library management and monitor your eBook and Manga collection through natural conversation.
@@ -39,6 +41,33 @@ No more manual clicks in the web UI just to refresh your latest manga chapters. 
 - **scan_library**: Trigger a scan for a specific library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kavita (eBook/Manga)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scan all my Kavita libraries for new manga."
+
+**🤖 AI Agent:**
+> I've triggered a global scan for all your libraries. Kavita is now processing your folders to detect any new or updated files.
+
+---
+
+**👤 You:**
+> "Check when my Kavita API key expires."
+
+**🤖 AI Agent:**
+> I've checked your API key status. It is set to expire on 2025-12-31. You have plenty of time before needing a refresh.
+
+---
+
+**👤 You:**
+> "Trigger a scan for library ID 5."
+
+**🤖 AI Agent:**
+> Targeted scan for Library ID 5 has been started. I will let you know if any issues occur during the process.
+
+
 ## Installation & Usage
 
 To install and use the **Kavita (eBook/Manga)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Kavita (eBook/Manga)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

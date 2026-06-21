@@ -1,12 +1,14 @@
 # WordPress Media Uploader MCP Server
 
-This MCP does exactly one thing: it downloads images from a URL and uploads them directly to your WordPress Media Library. Incredible for giving Claude the ability to generate and deploy blog cover images instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wordpress-media-uploader)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wordpress-media-uploader)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wordpress-media-uploader-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wordpress-media-uploader-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+This MCP does exactly one thing: it downloads images from a URL and uploads them directly to your WordPress Media Library. Incredible for giving Claude the ability to generate and deploy blog cover images instantly.
 
 ## Description
 We refused to build a bloated WordPress integration that gives an AI agent terrifying access to delete your pages, read your entire database, or install plugins. Instead, this MCP server provides a surgical, zero-trust bridge: **just uploading images to your Media Library.**
@@ -26,6 +28,17 @@ Your AI agent gains the immediate ability to act as a complete content productio
 Downloads an image from a public URL and uploads it to the WordPress Media Library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WordPress Media Uploader** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Here is an image URL: https://example.com/generated-cover.png. Upload it to my WordPress as 'seo-future-ai-cover.png' with the alt text 'The Future of AI'."
+
+**🤖 AI Agent:**
+> The image was uploaded successfully! Here is the public URL on your site: https://myblog.com/wp-content/uploads/2026/05/seo-future-ai-cover.png
+
+
 ## Installation & Usage
 
 To install and use the **WordPress Media Uploader** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -34,4 +47,11 @@ To install and use the **WordPress Media Uploader** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

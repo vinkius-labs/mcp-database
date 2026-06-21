@@ -1,12 +1,14 @@
 # Edmunds MCP Server
 
-Access comprehensive automotive data via Edmunds — decode VINs, list car makes and models, inspect engine specs, and query vehicle styles directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/edmunds)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edmunds)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edmunds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edmunds-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 41
+
+**Category:** [databases](../categories/databases.md)
+
+Access comprehensive automotive data via Edmunds — decode VINs, list car makes and models, inspect engine specs, and query vehicle styles directly from any AI agent.
 
 ## Description
 Connect your **Edmunds** API key to any AI agent and unlock deep automotive intelligence through natural conversation.
@@ -75,6 +77,33 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **get_years_with_styles**: Get years with styles for a car make/model
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Edmunds** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available car makes."
+
+**🤖 AI Agent:**
+> I've retrieved the list of car makes. There are currently over 50 makes available, including Acura, Audi, BMW, Ford, Honda, Toyota, and more. Would you like to get details on a specific make?
+
+---
+
+**👤 You:**
+> "Decode this VIN: 1FTFW1EF5CFAXXXXX"
+
+**🤖 AI Agent:**
+> Decoding VIN... This vehicle is identified as a Ford F-150. I can fetch more detailed specifications, engine options, or equipment lists for this model if you'd like.
+
+---
+
+**👤 You:**
+> "Get the engine specifications for style ID 401234567."
+
+**🤖 AI Agent:**
+> Querying engine specs... For style ID 401234567, the engine is a 3.5L V6 EcoBoost. It features twin-turbocharging, direct injection, and produces 375 horsepower. Let me know if you need transmission or color details as well.
+
+
 ## Installation & Usage
 
 To install and use the **Edmunds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Edmunds** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

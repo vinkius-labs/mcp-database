@@ -1,12 +1,14 @@
 # GeckoTerminal (DeFi Token Tracker) MCP Server
 
-Track DeFi tokens, liquidity pools, and DEX activity across 100+ blockchains using real-time GeckoTerminal data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/geckoterminal-defi-token-tracker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geckoterminal-defi-token-tracker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geckoterminal-defi-token-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geckoterminal-defi-token-tracker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 17
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track DeFi tokens, liquidity pools, and DEX activity across 100+ blockchains using real-time GeckoTerminal data.
 
 ## Description
 Connect **GeckoTerminal** to your AI agent to monitor the decentralized finance (DeFi) landscape in real-time. Access comprehensive data on millions of tokens and thousands of liquidity pools across all major blockchain networks.
@@ -52,6 +54,33 @@ Connect **GeckoTerminal** to your AI agent to monitor the decentralized finance 
 - **get_trending_pools_network**: Get trending pools on a specific network
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GeckoTerminal (DeFi Token Tracker)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all supported blockchain networks on GeckoTerminal."
+
+**🤖 AI Agent:**
+> I've retrieved the list of supported networks. GeckoTerminal currently supports over 100 networks, including Ethereum (eth), Solana (solana), Arbitrum (arbitrum), and Polygon (polygon_pos). Which network would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the trending pools on the Ethereum network."
+
+**🤖 AI Agent:**
+> Fetching trending pools on Ethereum... I found several active pools. The top trending ones include PEPE/WETH on Uniswap V3 and USDC/WETH. Would you like detailed analytics for any of these specific pools?
+
+---
+
+**👤 You:**
+> "Get token information for the contract address 0x... on Ethereum."
+
+**🤖 AI Agent:**
+> Analyzing token data... For the provided address on Ethereum, the token is identified as 'ExampleToken' (EXT). It has a current market cap of $5M and is traded primarily on Uniswap. Would you like to see the top liquidity pools for this token?
+
+
 ## Installation & Usage
 
 To install and use the **GeckoTerminal (DeFi Token Tracker)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **GeckoTerminal (DeFi Token Tracker)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

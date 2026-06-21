@@ -1,12 +1,14 @@
 # Dagger (Programmable CI) MCP Server
 
-Build, test, and deploy using Dagger's programmable CI engine. Execute GraphQL queries, manage containers, and orchestrate pipelines directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dagger-programmable-ci)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dagger-programmable-ci)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dagger-programmable-ci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dagger-programmable-ci-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Build, test, and deploy using Dagger's programmable CI engine. Execute GraphQL queries, manage containers, and orchestrate pipelines directly from your AI agent.
 
 ## Description
 Connect to the **Dagger Engine** to orchestrate your delivery pipelines using a powerful, programmable GraphQL API. This server allows your AI agent to interact directly with Dagger's Directed Acyclic Graph (DAG) of operations.
@@ -49,6 +51,33 @@ Creates a new secret
 - **query_version**: Get the Dagger Engine version
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dagger (Programmable CI)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the current version of the Dagger engine."
+
+**🤖 AI Agent:**
+> I'll check that for you. The local Dagger engine is running version v0.12.5.
+
+---
+
+**👤 You:**
+> "Initialize a scratch container and return its ID."
+
+**🤖 AI Agent:**
+> I've initialized a new scratch container. The state ID is `cont-abc123xyz`. You can now use this ID to chain further operations.
+
+---
+
+**👤 You:**
+> "Get the state of the git repository at https://github.com/dagger/dagger."
+
+**🤖 AI Agent:**
+> Querying the repository... I've retrieved the state for the Dagger repository. The directory ID is `dir-repo789`. Would you like to list its contents?
+
+
 ## Installation & Usage
 
 To install and use the **Dagger (Programmable CI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Dagger (Programmable CI)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

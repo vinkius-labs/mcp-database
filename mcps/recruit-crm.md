@@ -1,12 +1,14 @@
 # Recruit CRM MCP Server
 
-Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/recruit-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recruit-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recruit-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recruit-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
 
 ## Description
 ### What you can do
@@ -41,6 +43,33 @@ Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
 - **list_jobs**: List job vacancies
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Recruit CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active jobs in Recruit CRM."
+
+**🤖 AI Agent:**
+> I've found 5 active jobs, including Software Engineer (ID: j1) and Product Manager (ID: j2).
+
+---
+
+**👤 You:**
+> "Show me all candidates in the final interview stage across all open positions."
+
+**🤖 AI Agent:**
+> 14 candidates in final interview stage across 6 open positions. "Senior Backend Engineer": 3 candidates (top: Sarah Chen, 4.8/5 rating). "Product Manager": 2 candidates. "UX Designer": 3 candidates (final decision by Friday). "DevOps Lead": 2 candidates. "Sales Director": 2 candidates. "Data Analyst": 2 candidates. Average time in pipeline: 18 days. 5 candidates have competing offers with deadlines this week. 3 reference checks are pending completion.
+
+---
+
+**👤 You:**
+> "Add a new candidate to the Senior Backend Engineer position and schedule a first-round interview."
+
+**🤖 AI Agent:**
+> Candidate added: Alex Rivera. Position: Senior Backend Engineer. Source: LinkedIn. Resume parsed: 8 years experience, Python/Go/AWS. Skills match: 92%. First-round interview scheduled: Thursday, May 22 at 10 AM with James Park (Engineering Manager). Calendar invite sent to candidate and interviewer. Interview scorecard template "Technical Assessment v3" attached. Candidate status: Active, Stage: Phone Screen.
+
+
 ## Installation & Usage
 
 To install and use the **Recruit CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Recruit CRM** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

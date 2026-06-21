@@ -1,12 +1,14 @@
 # Fleetio MCP Server
 
-Manage vehicles, track maintenance, and monitor fuel entries via AI agents with Fleetio.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fleetio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fleetio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fleetio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fleetio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage vehicles, track maintenance, and monitor fuel entries via AI agents with Fleetio.
 
 ## Description
 Connect your **Fleetio** account to any AI agent and automate your fleet management workflows through the Model Context Protocol (MCP). Fleetio provides a centralized platform for tracking vehicle data, maintenance schedules, fuel consumption, and compliance. Now, you can monitor your fleet operations directly through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Fleetio** account to any AI agent and automate your fleet managem
 - **list_work_orders**: List work orders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fleetio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active vehicles in my fleet and their current status."
+
+**🤖 AI Agent:**
+> Fetching vehicles... I found 10 active vehicles, including 'Truck 01' (Status: Active) and 'Van 05' (Status: In Shop). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Record a new odometer reading of 50,000 for vehicle ID 'veh_123'."
+
+**🤖 AI Agent:**
+> Meter entry recorded! I've added an odometer reading of 50,000 to vehicle 'veh_123'. Your maintenance schedules will be updated based on this new data.
+
+---
+
+**👤 You:**
+> "Show me all upcoming service reminders."
+
+**🤖 AI Agent:**
+> Retrieving reminders... You have 3 upcoming services: 'Oil Change' for Truck 01 (Due in 500 miles), 'Tire Rotation' for Van 02 (Due in 2 days), and 'Annual Inspection' for Truck 03.
+
+
 ## Installation & Usage
 
 To install and use the **Fleetio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Fleetio** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

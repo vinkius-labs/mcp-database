@@ -1,12 +1,14 @@
 # AccelByte MCP Server
 
-Manage game backend services via AccelByte — handle users, achievements, leaderboards, and orders directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accelbyte)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accelbyte)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accelbyte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accelbyte-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage game backend services via AccelByte — handle users, achievements, leaderboards, and orders directly from your AI agent.
 
 ## Description
 Connect your **AccelByte** game backend to any AI agent to streamline player management and live ops through natural conversation.
@@ -50,6 +52,33 @@ No more jumping between different admin dashboards to check player stats or fix 
 Update user status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AccelByte** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new user with email player1@example.com in the 'GameAlpha' namespace."
+
+**🤖 AI Agent:**
+> I've created the user in the 'GameAlpha' namespace. The new User ID is 'ab-98765' and the display name is set to 'player1'.
+
+---
+
+**👤 You:**
+> "Show me the leaderboard rankings for code 'TOP_PLAYERS_2024' in namespace 'studio-1'."
+
+**🤖 AI Agent:**
+> Fetching rankings for 'TOP_PLAYERS_2024'... I've found the top players. 'SpeedyGamer' is currently in 1st place with 15,000 points.
+
+---
+
+**👤 You:**
+> "Unlock achievement 'FIRST_BLOOD' for user 'user-777' in namespace 'game-v1'."
+
+**🤖 AI Agent:**
+> Processing... The achievement 'FIRST_BLOOD' has been successfully unlocked for user 'user-777'.
+
+
 ## Installation & Usage
 
 To install and use the **AccelByte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **AccelByte** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

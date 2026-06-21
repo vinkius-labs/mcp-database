@@ -1,12 +1,14 @@
 # OpenSearch Vector MCP Server
 
-Run k-NN vector searches on OpenSearch — create indexes, upsert embeddings, query similar documents, and manage your vector store from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/opensearch-vector)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensearch-vector)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensearch-vector-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensearch-vector-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 6
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Run k-NN vector searches on OpenSearch — create indexes, upsert embeddings, query similar documents, and manage your vector store from any AI agent.
 
 ## Description
 Turn your **OpenSearch** cluster into an AI-native vector database. Create k-NN indexes, upsert embeddings, run similarity searches, and inspect index configurations — all through natural conversation with your AI agent.
@@ -46,6 +48,33 @@ Upsert a singular vector document directly into an OpenSearch KNN index
 Create a new native OpenSearch KNN index ready for vector embeddings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenSearch Vector** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all vector indexes in my OpenSearch cluster."
+
+**🤖 AI Agent:**
+> Found 4 indexes. 1) 'product-embeddings' — 45,230 docs, green health, 768 dimensions. 2) 'support-tickets' — 12,800 docs, green, 1536 dimensions. 3) 'knowledge-base' — 3,450 docs, green, 384 dimensions. 4) 'test-index' — 50 docs, yellow, 768 dimensions. Want me to inspect the mapping of any of these?
+
+---
+
+**👤 You:**
+> "Find the 5 most similar documents to this embedding in the knowledge-base index."
+
+**🤖 AI Agent:**
+> Top 5 results from 'knowledge-base' (cosine similarity): 1) 'API Rate Limiting Guide' — score: 0.94. 2) 'Authentication Best Practices' — score: 0.89. 3) 'Error Handling Documentation' — score: 0.87. 4) 'SDK Migration Guide v3' — score: 0.83. 5) 'Webhook Configuration' — score: 0.81. Want me to pull the full content of the top result?
+
+---
+
+**👤 You:**
+> "Create a new k-NN index called 'customer-feedback' with 1536 dimensions."
+
+**🤖 AI Agent:**
+> Index 'customer-feedback' created successfully. Configuration: k-NN enabled, 1536 dimensions, cosine similarity, NMSLIB engine. The index is empty and ready for document ingestion. Want me to upsert a test document to verify the mapping?
+
+
 ## Installation & Usage
 
 To install and use the **OpenSearch Vector** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **OpenSearch Vector** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # HighLevel MCP Server
 
-Automate CRM and marketing via HighLevel — manage contacts, opportunities, and calendars directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/highlevel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/highlevel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/highlevel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/highlevel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 11
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Automate CRM and marketing via HighLevel — manage contacts, opportunities, and calendars directly from any AI agent.
 
 ## Description
 Connect your **HighLevel** (GoHighLevel) account to any AI agent and take full control of your sales pipeline, contact management, and scheduling through natural conversation.
@@ -53,6 +55,33 @@ Search for contacts in HighLevel
 - **search_opportunities**: Search for opportunities within a pipeline
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HighLevel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for contact 'John Doe' and show his pending tasks."
+
+**🤖 AI Agent:**
+> I've found John Doe (ID: contact_123). He currently has 2 pending tasks: 'Follow-up on quote' (Due tomorrow) and 'Send welcome kit'. Would you like to create a new task for him?
+
+---
+
+**👤 You:**
+> "Find free slots on the 'Sales Consultation' calendar for next Monday."
+
+**🤖 AI Agent:**
+> Checking availability... For next Monday (April 12th), I found 3 free slots: 10:00 AM, 02:30 PM, and 04:00 PM. Should I book an appointment for a specific contact?
+
+---
+
+**👤 You:**
+> "Show me all opportunities in the 'Product Sales' pipeline."
+
+**🤖 AI Agent:**
+> Accessing pipeline... I found 5 active opportunities in 'Product Sales', totaling $12,500 in potential value. 2 deals are in 'Discovery' and 3 are in 'Proposal Sent'. Would you like to see the details for the largest deal?
+
+
 ## Installation & Usage
 
 To install and use the **HighLevel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **HighLevel** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

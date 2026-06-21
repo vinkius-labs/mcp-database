@@ -1,12 +1,14 @@
 # Câmara dos Deputados (v2) MCP Server
 
-Access real-time data from the Brazilian Chamber of Deputies — track expenses, speeches, and legislative activities of all deputies.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/camara-dos-deputados-v2)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/camara-dos-deputados-v2)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/camara-dos-deputados-v2-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/camara-dos-deputados-v2-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 49
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access real-time data from the Brazilian Chamber of Deputies — track expenses, speeches, and legislative activities of all deputies.
 
 ## Description
 Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian legislative branch. This server allows AI agents to query detailed information about deputies, their spending, and their political performance through natural conversation.
@@ -84,6 +86,33 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **list_votacoes**: List votings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Câmara dos Deputados (v2)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all deputies from the state of Rio de Janeiro (RJ) belonging to the PL party."
+
+**🤖 AI Agent:**
+> I've found 12 deputies from RJ in the PL party. Some notable names include Altineu Côrtes (ID: 178937) and Chris Tonietto (ID: 204510). Would you like to see the full list or details for one of them?
+
+---
+
+**👤 You:**
+> "Show me the expenses for deputy ID 204556 for the year 2023."
+
+**🤖 AI Agent:**
+> Fetching the 2023 expenses for deputy 204556... I found several entries, including 'Combustíveis e Lubrificantes' and 'Manutenção de Escritório'. The total reimbursed via CEAP for that period was R$ 15,420.30. Should I break down the top suppliers?
+
+---
+
+**👤 You:**
+> "What committees and organs does deputy ID 178835 belong to?"
+
+**🤖 AI Agent:**
+> Deputy 178835 is currently a member of the 'Comissão de Constituição e Justiça e de Cidadania (CCJC)' and the 'Comissão de Finanças e Tributação (CFT)'. Would you like to see their role in each (e.g., President, Titular, or Substitute)?
+
+
 ## Installation & Usage
 
 To install and use the **Câmara dos Deputados (v2)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -92,4 +121,11 @@ To install and use the **Câmara dos Deputados (v2)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

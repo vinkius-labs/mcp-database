@@ -1,12 +1,14 @@
 # AgroLog MCP Server
 
-Access grain monitoring data via AgroLog — monitor temperature, moisture, CO2, crop levels, weather, and control aeration systems from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/agrolog)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agrolog)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agrolog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agrolog-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 11
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access grain monitoring data via AgroLog — monitor temperature, moisture, CO2, crop levels, weather, and control aeration systems from any AI agent.
 
 ## Description
 Connect your **AgroLog Grain Monitoring API** to any AI agent and take full control of real-time temperature monitoring, moisture tracking, CO2 spoilage detection, crop level inventory, and automated aeration control through natural conversation.
@@ -76,6 +78,33 @@ Get current grain temperature readings from a specific monitoring device
 Get weather station data (temperature, humidity, wind, rainfall) from a specific device
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AgroLog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the temperature and moisture in silo 3 and tell me if there is any spoilage risk."
+
+**🤖 AI Agent:**
+> Checking silo 3 sensors... Temperature: 18.5°C (normal, safe storage range). Moisture: 13.2% (within safe limits for grain storage). CO2: 850 ppm (normal, no biological activity detected). Crop level: 72% full. Overall assessment: Grain condition is GOOD — no spoilage risk detected. Temperature is stable and well below the 25°C spoilage threshold. Moisture is below the 15% critical level. Continue routine monitoring. Next aeration check recommended in 48 hours. Would you like to see temperature trends from the past week?
+
+---
+
+**👤 You:**
+> "Show me all active alarms in my grain storage facility."
+
+**🤖 AI Agent:**
+> Fetching active alarms... Found 2 active alarms. Alarm 1 (CRITICAL): Silo 7 — High Temperature Alert. Temperature reached 28.3°C at 14:32 today, exceeding the 25°C threshold. Immediate aeration recommended. Alarm 2 (WARNING): Bin 3 — Elevated CO2 detected. CO2 levels at 1650 ppm, above the 1500 ppm warning threshold. Monitor closely and consider ventilation. All other bins and silos are within normal parameters. Priority action: Activate aeration for Silo 7 immediately. Would you like me to turn on the fan for Silo 7?
+
+---
+
+**👤 You:**
+> "What is the current crop level inventory across all my grain bins?"
+
+**🤖 AI Agent:**
+> Checking crop levels across all bins... Silo 1: 85% full (approx. 4,250 tonnes). Silo 2: 62% full (approx. 3,100 tonnes). Silo 3: 72% full (approx. 3,600 tonnes). Silo 4: 45% full (approx. 2,250 tonnes). Silo 5: 91% full (approx. 4,550 tonnes) — approaching capacity. Silo 6: 28% full (approx. 1,400 tonnes). Silo 7: 55% full (approx. 2,750 tonnes). Total estimated inventory: 21,900 tonnes. Silo 5 is approaching maximum capacity — consider planning grain removal soon. Would you like a detailed report with moisture and temperature data for each bin?
+
+
 ## Installation & Usage
 
 To install and use the **AgroLog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **AgroLog** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

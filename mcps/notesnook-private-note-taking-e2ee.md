@@ -1,12 +1,14 @@
 # Notesnook (Private Note Taking & E2EE) MCP Server
 
-Manage encrypted notes via Notesnook — create secure entries, sync your vault, and audit private notebooks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/notesnook-private-note-taking-e2ee)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notesnook-private-note-taking-e2ee)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/notesnook-private-note-taking-e2ee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/notesnook-private-note-taking-e2ee-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 12
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Manage encrypted notes via Notesnook — create secure entries, sync your vault, and audit private notebooks.
 
 ## Description
 Connect your **Notesnook** account to any AI agent and take full control of your privacy-first knowledge base, zero-knowledge note taking, and secure vault synchronization through natural conversation.
@@ -63,6 +65,33 @@ List nodes trapped inside the local vault waste bin
 - **get_user**: Validate the authenticated Notesnook user security identity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Notesnook (Private Note Taking & E2EE)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 encrypted notes in my vault"
+
+**🤖 AI Agent:**
+> I've retrieved your recent encrypted notes. Highlights include 'Project Alpha Strategy' (ID: note-123), 'Meeting Notes: Backend' (ID: note-456), and 'Research Snippets'. Would you like me to fetch the encrypted payload for the strategy note?
+
+---
+
+**👤 You:**
+> "Create a new private note called 'Ideas 2026' with content 'Automated note generation via AI'"
+
+**🤖 AI Agent:**
+> New encrypted note 'Ideas 2026' has been successfully created and injected into your persistent vault. The note is now synced and secured with end-to-end encryption. New Note ID: 'note-98765'.
+
+---
+
+**👤 You:**
+> "Show me all my classified tags in Notesnook"
+
+**🤖 AI Agent:**
+> Retrieving tags… I've identified 4 cross-cutting categories in your vault: 'Confidential', 'Drafts', 'Research', and 'Personal'. I can help you list all notes associated with the 'Confidential' tag if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Notesnook (Private Note Taking & E2EE)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Notesnook (Private Note Taking & E2EE)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

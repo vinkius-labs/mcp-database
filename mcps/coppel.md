@@ -1,12 +1,14 @@
 # Coppel MCP Server
 
-Automate retail operations via Coppel — browse products, manage orders, check customer credit, and find stores across Mexico from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coppel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coppel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coppel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coppel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate retail operations via Coppel — browse products, manage orders, check customer credit, and find stores across Mexico from any AI agent.
 
 ## Description
 Connect your **Coppel** B2B account to any AI agent and manage Mexico's largest department store and consumer credit ecosystem through natural conversation.
@@ -63,6 +65,33 @@ List Coppel physical store locations
 Search products by keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coppel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Samsung TVs under $15,000 MXN in the Coppel catalog."
+
+**🤖 AI Agent:**
+> I found 6 Samsung TVs under $15,000 MXN: 1. Samsung Crystal UHD 43" — $8,999 (weekly: $175 x 60 weeks). 2. Samsung Crystal UHD 50" — $11,499 (weekly: $222 x 60 weeks). 3. Samsung LED 32" — $4,599 (weekly: $89 x 60 weeks). Would you like the full specs on any of these?
+
+---
+
+**👤 You:**
+> "Check the credit status for customer account #7890123."
+
+**🤖 AI Agent:**
+> Customer #7890123 (María González López): Credit limit: $45,000 MXN. Current balance: $12,350 MXN. Available credit: $32,650 MXN. Weekly payment (abono semanal): $285 MXN. Next payment due: April 15, 2026. Payment streak: 24 consecutive on-time payments. Credit rating: A+ (excellent). She has room for a purchase up to $32,650 MXN.
+
+---
+
+**👤 You:**
+> "Show me active Buen Fin promotions."
+
+**🤖 AI Agent:**
+> 3 active Buen Fin promotions found: 1. '20% off all Samsung TVs' (Nov 15-18). 2. '18 months interest-free on Whirlpool appliances' (Nov 15-18). 3. 'Buy 2 get 1 free on Nike shoes' (Nov 15-20). All promotions are stackable with the regular weekly credit plans. Want me to search specific products in these categories?
+
+
 ## Installation & Usage
 
 To install and use the **Coppel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Coppel** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

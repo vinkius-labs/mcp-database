@@ -1,12 +1,14 @@
 # Legito MCP Server
 
-Automate document lifecycle management via Legito — manage template suites, document records, and user permissions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/legito)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legito)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legito-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legito-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 31
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate document lifecycle management via Legito — manage template suites, document records, and user permissions directly from any AI agent.
 
 ## Description
 Connect your **Legito** workspace to any AI agent to streamline your legal and document automation workflows through natural conversation.
@@ -66,6 +68,33 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 - **list_users**: List users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Legito** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all document records currently in the workspace."
+
+**🤖 AI Agent:**
+> I've retrieved the document records. You have 12 active records, including 'Service Agreement 2024' (Code: SA-99) and 'Employment Contract - John Doe' (Code: EC-102). Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "Get the data for document version with code 'DOC-5543'."
+
+**🤖 AI Agent:**
+> Fetching data for 'DOC-5543'... I've found the version data. It includes 15 metadata fields and was last modified on October 12th. Would you like me to summarize the content or download it?
+
+---
+
+**👤 You:**
+> "Download the document 'SA-99' as a docx file."
+
+**🤖 AI Agent:**
+> Processing download for 'SA-99' in docx format... Done! You can access the document via this generated link: [Download SA-99.docx].
+
+
 ## Installation & Usage
 
 To install and use the **Legito** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Legito** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

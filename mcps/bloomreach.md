@@ -1,12 +1,14 @@
 # Bloomreach MCP Server
 
-Manage your marketing automation via Bloomreach — list catalogs, campaigns, and customer segments directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bloomreach)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bloomreach)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bloomreach-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bloomreach-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage your marketing automation via Bloomreach — list catalogs, campaigns, and customer segments directly from any AI agent.
 
 ## Description
 Connect your **Bloomreach Engagement** account to any AI agent and orchestrate your marketing automation and data workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Bloomreach Engagement** account to any AI agent and orchestrate y
 - **list_webhooks**: List configured webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bloomreach** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns in Bloomreach."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 3 active campaigns: 'Summer Sale Newsletter', 'Re-engagement Q2', and 'Abandoned Cart Recovery'.
+
+---
+
+**👤 You:**
+> "Show me the items in the 'Top Products' catalog."
+
+**🤖 AI Agent:**
+> Retrieving items for 'Top Products'... I found 5 items, including 'Leather Backpack' (ID: prod_1) and 'Wireless Headphones' (ID: prod_2). Would you like the full metadata for any item?
+
+---
+
+**👤 You:**
+> "List all customer segments."
+
+**🤖 AI Agent:**
+> I've retrieved your segments. You have groups like 'High Spenders', 'Recent Visitors', and 'Loyalty Members'. Which one would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **Bloomreach** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Bloomreach** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

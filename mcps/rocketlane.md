@@ -1,12 +1,14 @@
 # Rocketlane MCP Server
 
-Deliver customer onboarding projects on time with collaborative workspaces, task tracking, and time-to-value analytics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketlane)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketlane)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rocketlane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rocketlane-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Deliver customer onboarding projects on time with collaborative workspaces, task tracking, and time-to-value analytics.
 
 ## Description
 Connect your **Rocketlane** account to any AI agent and take full control of your professional services automation and client onboarding orchestration through natural conversation. Rocketlane provides a premier platform for project management and customer experience, and this integration allows you to retrieve project metadata, create tasks, and manage custom fields directly from your chat interface.
@@ -50,6 +52,33 @@ Create a new project
 - **update_project**: Update project details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rocketlane** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in my Rocketlane account."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 5 active onboardings including 'Acme Inc. Setup' and 'Global Logistics Portal'. Which one would you like to check tasks for?
+
+---
+
+**👤 You:**
+> "Show me all active customer onboarding projects with their completion percentages and health status."
+
+**🤖 AI Agent:**
+> 9 active onboarding projects. Green (on track, 5): "Meridian Corp" 85% complete (go-live next week), "TechFlow" 67%, "ScaleUp" 45%, "CloudBridge" 34%, "DataPrime" 22%. Yellow (at risk, 3): "FinServe" 56% (delayed by integration issues), "RetailMax" 41% (resource constraint), "HealthFirst" 28% (scope change). Red (blocked, 1): "LegalEase" 38% (pending client data migration). Average onboarding time: 34 days. Team utilization: 87%.
+
+---
+
+**👤 You:**
+> "Create a new onboarding project for DataVault Inc using the Enterprise Onboarding template."
+
+**🤖 AI Agent:**
+> Onboarding project created for DataVault Inc. Template: Enterprise Onboarding (42 tasks, 6 phases). Phase 1: Kickoff & Discovery (7 tasks, week 1). Phase 2: Technical Setup (8 tasks, weeks 2-3). Phase 3: Data Migration (6 tasks, week 3). Phase 4: Integration Testing (8 tasks, week 4). Phase 5: Training (6 tasks, week 5). Phase 6: Go-Live (7 tasks, week 6). Assigned CSM: Sarah Chen. Client stakeholders invited. Kickoff meeting auto-scheduled for Thursday.
+
+
 ## Installation & Usage
 
 To install and use the **Rocketlane** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Rocketlane** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

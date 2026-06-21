@@ -1,12 +1,14 @@
 # Swiftype MCP Server
 
-Connect your AI to Elastic Swiftype. Query your search engines, manage documents, and retrieve deep analytical insights natively from the terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/swiftype)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/swiftype)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/swiftype-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/swiftype-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect your AI to Elastic Swiftype. Query your search engines, manage documents, and retrieve deep analytical insights natively from the terminal.
 
 ## Description
 Empower your conversational AI with robust enterprise search capabilities by securely integrating the **Swiftype (Elastic)** MCP connector. Stop navigating web dashbaords to manage indexing logic; allow your LLM to act as a direct data architect interacting with your core Swiftype endpoints natively. With full support for reading, creating, and deleting JSON documents on the fly, inspecting live search engine queries, and querying direct analytical metrics like top clicks—this connector brings headless search administration straight to your preferred prompt environment.
@@ -58,6 +60,50 @@ Provision a highly-available JSON Payload generating hard Customer bindings
 Retrieve explicit Cloud logging tracing explicit Vault limits
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Swiftype** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available Swiftype search engines, then run a search for 'documentation' on the most relevant one and show me the top 3 analytics clicks it generated last week."
+
+**🤖 AI Agent:**
+> Connecting natively to Swiftype... I found 2 engines: 'prod-store-engine' and 'internal-docs'.
+Running `st.post_search` on 'internal-docs' explicitly for 'documentation'.
+Found 15 documents. Now fetching CTR metrics (`st.analytics_top_clicks`)...
+
+**Top Converging Documentation Documents**:
+1. '/docs/api/endpoints' - 145 Clicks
+2. '/help/getting-started' - 93 Clicks
+3. '/support/auth-faqs' - 42 Clicks
+
+---
+
+**👤 You:**
+> "List all active engines in our Swiftype account."
+
+**🤖 AI Agent:**
+> Scanning Elastic instances ('list_engines')...
+Found 3 active engines:
+1. 'Global-Help-Center' (Language: EN)
+2. 'Ecommerce-Catalog-US' (Language: EN)
+3. 'Internal-Company-Wiki' (Language: EN)
+
+Let me know if you want me to index new documents into any of these.
+
+---
+
+**👤 You:**
+> "Run a test suggestion for 'passw' in the internal wiki engine."
+
+**🤖 AI Agent:**
+> Executing `post_suggest` constraint on 'Internal-Company-Wiki'...
+The engine suggests the following completions based on hits:
+1. 'password reset policy'
+2. 'password manager installation'
+3. 'passport visa procedures'
+
+
 ## Installation & Usage
 
 To install and use the **Swiftype** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +112,11 @@ To install and use the **Swiftype** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

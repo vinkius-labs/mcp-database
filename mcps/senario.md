@@ -1,12 +1,14 @@
 # Senar.io MCP Server
 
-Detect and respond to security threats with AI-powered SIEM that correlates events across your infrastructure in real time.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/senario)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/senario)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/senario-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/senario-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Detect and respond to security threats with AI-powered SIEM that correlates events across your infrastructure in real time.
 
 ## Description
 Connect your **Senar.io** account to any AI agent and take full control of your augmented reality training orchestration through natural conversation. Senar.io provides a premier platform for VR/AR simulators, and this integration allows you to retrieve training metadata, assign simulators to users, and monitor performance results directly from your chat interface.
@@ -46,6 +48,33 @@ No more manual user imports or spreadsheet result tracking. Your AI acts as a de
 - **list_users**: List all users in your organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Senar.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active collections in my Senar account."
+
+**🤖 AI Agent:**
+> I've retrieved your collections. You have 3 active simulator groups: 'Forklift Safety', 'Hazard Identification', and 'First Aid'. Which one would you like to assign users to?
+
+---
+
+**👤 You:**
+> "Show me the learning progress for all users in the Engineering team with completion rates."
+
+**🤖 AI Agent:**
+> Engineering team: 24 users. Average completion: 67%. Top performers: Sarah Chen (92%, 12 courses completed), James Park (88%, 10 courses). "Cloud Architecture" collection: 83% team completion. "Security Best Practices": 71% completion (mandatory, deadline next week). "Advanced Kubernetes": 45% (newly assigned). "Leadership Fundamentals": 34% (optional). 5 users have not logged in this month. 3 certifications earned this week. Total learning hours: 456 hours. Average session duration: 23 minutes.
+
+---
+
+**👤 You:**
+> "Add a new training module to the Security collection and assign it to all engineering team members."
+
+**🤖 AI Agent:**
+> Training module added: "Incident Response Procedures 2025". Collection: Security Best Practices. Content: 8 lessons, 2 quizzes, 1 simulation exercise. Estimated duration: 2.5 hours. Assigned to: 24 engineering team members. Deadline: June 15, 2025. Notification emails sent to all assignees. Prerequisite set: "Security Fundamentals" (auto-verified, 22 of 24 have completed). 2 users need to complete prerequisites first. Progress tracking enabled. Completion certificate: auto-generated upon passing quiz.
+
+
 ## Installation & Usage
 
 To install and use the **Senar.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Senar.io** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Google Deps.dev Security Hacker MCP Server
 
-Transform your AI into a Senior DevSecOps Engineer. Instantly audit any open-source package, hunt for hidden supply-chain threats in dependency trees, and analyze full GitHub repositories using Google's deps.dev API. No authentication required.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-depsdev-security-hacker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-depsdev-security-hacker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-depsdev-security-hacker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-depsdev-security-hacker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Transform your AI into a Senior DevSecOps Engineer. Instantly audit any open-source package, hunt for hidden supply-chain threats in dependency trees, and analyze full GitHub repositories using Google's deps.dev API. No authentication required.
 
 ## Description
 Equip your AI agent with the ultimate "Hacker" toolkit for open-source security. This MCP connects your agent directly to Google's Open Source Insights (deps.dev), turning it into a specialized DevSecOps auditor capable of uncovering deep vulnerabilities that basic scanners miss.
@@ -30,6 +32,49 @@ Analyzes an open-source package for security advisories and OSSF scorecard using
 - **get_vulnerability_details**: Retrieves detailed information about a specific CVE or GitHub Security Advisory (GHSA)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Deps.dev Security Hacker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Audit the npm package 'express' version 4.16.0 for any security vulnerabilities."
+
+**🤖 AI Agent:**
+> I checked `express` v4.16.0 on deps.dev. It has **4 known security advisories**, including GHSA-8X4W-MXXF-XXXX (High Severity - CVSS 7.5). The project has an OSSF Scorecard of 6.8/10. I strongly recommend upgrading.
+
+---
+
+**👤 You:**
+> "I found this GHSA-xvch-5gv4-984h advisory. What does it do and what packages are affected?"
+
+**🤖 AI Agent:**
+> That ID corresponds to a **CRITICAL (CVSS: 9.8)** vulnerability: "Prototype Pollution in Lodash". It allows an attacker to inject properties into Object.prototype. It affects the npm package `lodash` on versions `< 4.17.15`. You must upgrade immediately.
+
+---
+
+**👤 You:**
+> "Check the dependency tree for the pypi package 'requests' v2.28.1. Are there any hidden threats?"
+
+**🤖 AI Agent:**
+> I mapped the entire transitive tree (total 8 dependencies). **⚠️ WARNING: Found 1 hidden threat:** The indirect dependency `certifi` (v2022.6.15) has a known security advisory. You should override this dependency in your requirements.
+
+---
+
+**👤 You:**
+> "Generate a security governance audit for https://github.com/facebook/react"
+
+**🤖 AI Agent:**
+> Here is the OSSF Scorecard audit for `facebook/react`. It scores a **7.2/10** overall. They excel in Code-Review (10/10) and Branch-Protection (10/10), but lost points on Pinned-Dependencies (3/10) and lack of Fuzzing (0/10).
+
+---
+
+**👤 You:**
+> "Is the 'log4j' maven package safe to use right now?"
+
+**🤖 AI Agent:**
+> Let me check the latest versions on deps.dev. The older 2.14.x versions are famously compromised (Log4Shell - CVE-2021-44228, CVSS 10.0). However, the latest version `2.20.0` has **✅ No known security advisories** and is safe to use. Always ensure you are pinning the latest version.
+
+
 ## Installation & Usage
 
 To install and use the **Google Deps.dev Security Hacker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -38,4 +83,11 @@ To install and use the **Google Deps.dev Security Hacker** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

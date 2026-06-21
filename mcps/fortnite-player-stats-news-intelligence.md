@@ -1,12 +1,14 @@
 # Fortnite Player Stats & News Intelligence MCP Server
 
-The definitive server for Fortnite player scouting — track wins, K/D ratios, and official game news via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-player-stats-news-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fortnite-player-stats-news-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fortnite-player-stats-news-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fortnite-player-stats-news-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 11
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+The definitive server for Fortnite player scouting — track wins, K/D ratios, and official game news via AI.
 
 ## Description
 Equip your AI agent with professional-grade player intelligence for the world's most popular Battle Royale via **Fortnite Player Stats & News**. This high-performance server provides deep access to official player performance metrics and real-time game updates. Your agent can instantly retrieve detailed Battle Royale statistics including win rates, K/D ratios, and seasonal levels, while also monitoring the official news feed for all game modes (BR, Save the World, Creative). Whether you are performing technical scouting for recruitment or analyzing the latest patch notes to understand the meta, your agent acts as a dedicated Fortnite analyst through natural conversation.
@@ -51,6 +53,33 @@ Get the current daily and featured item shop
 Search for Fortnite cosmetics by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fortnite Player Stats & News Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the Battle Royale stats for 'Ninja' and show his current seasonal level."
+
+**🤖 AI Agent:**
+> Fetching professional stats... Ninja is currently Level 125 in the Battle Pass. He has a 4.5 K/D ratio this season with over 200 wins. Would you like to see his cumulative stats across all seasons?
+
+---
+
+**👤 You:**
+> "Compare the seasonal K/D performance of 'UserX' versus 'UserY'."
+
+**🤖 AI Agent:**
+> Running the technical comparison... UserX leads with a 3.2 K/D, while UserY has a higher winrate of 15% but a 2.8 K/D. I have the detailed kill counts for both. Shall I provide the full breakdown?
+
+---
+
+**👤 You:**
+> "What are the latest news updates for the Fortnite Creative mode today?"
+
+**🤖 AI Agent:**
+> Inspecting Creative mode news... 2 new featured maps were highlighted today, including a new 'Zone Wars' experience. I also found an update regarding new assets available for creators. Would you like the island codes?
+
+
 ## Installation & Usage
 
 To install and use the **Fortnite Player Stats & News Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Fortnite Player Stats & News Intelligence** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

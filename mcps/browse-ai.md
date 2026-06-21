@@ -1,12 +1,14 @@
 # Browse AI MCP Server
 
-Automate web data extraction via Browse AI — run robots, monitor websites, and retrieve captured data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browse-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browse-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 10
+
+**Category:** [data-management](../categories/data-management.md)
+
+Automate web data extraction via Browse AI — run robots, monitor websites, and retrieve captured data directly from any AI agent.
 
 ## Description
 Connect your **Browse AI** account to any AI agent and orchestrate your web scraping, data extraction, and website monitoring workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Browse AI** account to any AI agent and orchestrate your web scra
 - **run_robot**: Run a robot to extract data (creates a task)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Browse AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my approved web scraping robots."
+
+**🤖 AI Agent:**
+> I've retrieved your robots. You have 3 active robots: 'Amazon Price Tracker' (ID: rob_1), 'LinkedIn Lead Extractor' (ID: rob_2), and 'Real Estate Monitor' (ID: rob_3).
+
+---
+
+**👤 You:**
+> "Run robot rob_123 on https://example.com/product."
+
+**🤖 AI Agent:**
+> Task created! Robot rob_123 is now processing the URL. You can check the progress and results using task ID task_998877.
+
+---
+
+**👤 You:**
+> "Retrieve the data from task task_99283."
+
+**🤖 AI Agent:**
+> Task task_99283 is successful. Captured data includes: Product Name: 'Modern Lamp', Price: '$45.00', Stock: 'In Stock'. Would you like the full JSON?
+
+
 ## Installation & Usage
 
 To install and use the **Browse AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Browse AI** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

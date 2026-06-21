@@ -1,12 +1,14 @@
 # Kombo MCP Server
 
-Unified API for HRIS, ATS, and LMS — manage employees, job openings, and training courses across 50+ platforms through a single interface.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kombo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kombo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kombo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kombo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 21
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Unified API for HRIS, ATS, and LMS — manage employees, job openings, and training courses across 50+ platforms through a single interface.
 
 ## Description
 Connect your entire HR and recruitment stack to any AI agent using **Kombo**. This server provides a unified interface to interact with HRIS, ATS, and LMS systems, allowing you to manage the entire employee lifecycle through natural conversation.
@@ -59,6 +61,33 @@ Retrieve all employees from the HRIS
 - **passthrough_request**: Call the native API of the underlying tool directly
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kombo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees in the HRIS updated since last month."
+
+**🤖 AI Agent:**
+> I've retrieved the employee list. There are 12 records updated since last month, including 'Jane Doe' and 'John Smith'. Would you like to see the full details for any of them?
+
+---
+
+**👤 You:**
+> "Show me all active job openings from the ATS."
+
+**🤖 AI Agent:**
+> I found 5 active job openings: Senior Backend Engineer, Product Manager, UX Designer, and 2 others. Which one should I provide more info on?
+
+---
+
+**👤 You:**
+> "Get all available absence types from the HR system."
+
+**🤖 AI Agent:**
+> The system lists the following absence types: Vacation, Sick Leave, Parental Leave, and Unpaid Leave. Do you need to check the absences for a specific employee?
+
+
 ## Installation & Usage
 
 To install and use the **Kombo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Kombo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

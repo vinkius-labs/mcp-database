@@ -1,12 +1,14 @@
 # Platform.ly MCP Server
 
-Grow your business with marketing automation, CRM, and analytics connected in one platform that shows what drives revenue.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/platformly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/platformly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/platformly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/platformly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Grow your business with marketing automation, CRM, and analytics connected in one platform that shows what drives revenue.
 
 ## Description
 Connect your **Platform.ly** account to any AI agent and take full control of your business automation and CRM orchestration through natural conversation. Platform.ly is a powerful multi-channel marketing platform, and this integration allows you to retrieve contact metadata, manage sales pipelines, and trigger automated events directly from your chat interface.
@@ -51,6 +53,33 @@ Add a new contact to the CRM
 - **update_existing_contact**: Modify a contact record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Platform.ly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active contacts in project ID 1234."
+
+**🤖 AI Agent:**
+> I've retrieved your contacts for project 1234. You have 50 active profiles. Notable recent additions include 'Alice Miller' and 'Sarah Chen'. Which one would you like to see pipeline details for?
+
+---
+
+**👤 You:**
+> "Show me the performance of my active email automation sequences and their conversion funnels."
+
+**🤖 AI Agent:**
+> You have 5 active automation sequences. "Welcome Series" (4 emails) has 68% open rate and 12% click-through, converting 340 of 2,800 new subscribers to trial users. "Re-engagement Campaign" recovered 89 inactive users this month (15% reactivation rate). "Upgrade Nudge" drives $4,200/mo in upsells with 8% conversion. "Onboarding Drip" has the highest completion rate at 74%. Total automation-driven revenue this month: $18,400.
+
+---
+
+**👤 You:**
+> "Create a new contact segment for users who signed up in the last 14 days but have not completed onboarding."
+
+**🤖 AI Agent:**
+> Segment created: "New Users - Onboarding Incomplete" (ID: seg_4821). Matching contacts: 127 users. Criteria: signup date within 14 days AND onboarding_completed equals false. Demographics: 62% from organic search, 24% from paid ads, 14% from referrals. Average time since signup: 8.3 days. This segment is now available for targeting in automation sequences and broadcast campaigns.
+
+
 ## Installation & Usage
 
 To install and use the **Platform.ly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Platform.ly** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

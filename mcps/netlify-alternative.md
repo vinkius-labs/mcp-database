@@ -1,12 +1,14 @@
 # Netlify MCP Server
 
-Modern web development platform — manage sites, deploys, and forms via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/netlify-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netlify-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netlify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netlify-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 9
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Modern web development platform — manage sites, deploys, and forms via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire web infrastructure with **Netlify**. This unified server provides your agent with instant access to site management, deployment tracking, and serverless form processing. Your agent can instantly list your active sites, audit deployment technicalities, and trigger new builds without you ever touching the Netlify UI. Whether you are monitoring build pipelines or managing environment variables across multiple projects, your agent acts as a dedicated DevOps engineer through natural conversation.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire web infrastructure with **Netli
 - **trigger_site_build**: Trigger a site build
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Netlify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all sites in my Netlify account."
+
+**🤖 AI Agent:**
+> Retrieving your site directory... You currently have 5 active sites, including 'marketing-landing' and 'docs-portal'. Would you like to check the latest deploy status for any of them?
+
+---
+
+**👤 You:**
+> "Show the last 5 deploys for site 'marketing-landing'."
+
+**🤖 AI Agent:**
+> Fetching deploy history... The most recent deploy was successful 2 hours ago. I see 4 other production builds from yesterday. I can provide the specific deploy IDs if you need to audit them.
+
+---
+
+**👤 You:**
+> "Trigger a new build for site 'docs-portal' using the 'production' hook."
+
+**🤖 AI Agent:**
+> Initiating build for 'docs-portal'... The build request has been accepted by Netlify. I'll monitor the status for you. It should be live in a few minutes.
+
+
 ## Installation & Usage
 
 To install and use the **Netlify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Netlify** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

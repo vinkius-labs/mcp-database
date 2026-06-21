@@ -1,12 +1,14 @@
 # Cube.dev MCP Server
 
-Access your Cube semantic layer — execute queries, inspect generated SQL, manage pre-aggregations, and explore data metadata directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cubedev)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cubedev)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cubedev-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cubedev-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 15
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Access your Cube semantic layer — execute queries, inspect generated SQL, manage pre-aggregations, and explore data metadata directly.
 
 ## Description
 Connect your **Cube.dev** instance to any AI agent to bridge the gap between natural language and your data warehouse. This server allows your agent to interact with Cube's semantic layer, ensuring consistent metrics and high-performance data retrieval.
@@ -60,6 +62,33 @@ Execute a Cube query and return results
 - **trigger_pre_aggregation_job**: Trigger a pre-aggregation build job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cube.dev** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the metadata for all available cubes and views."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata. You have cubes for 'Orders', 'Users', and 'Products'. The 'Orders' cube includes measures like 'count' and 'totalAmount', and dimensions like 'status' and 'createdAt'.
+
+---
+
+**👤 You:**
+> "Run a query to get the total count of orders grouped by status for the last 30 days."
+
+**🤖 AI Agent:**
+> Executing `load_query`... The results show 150 'completed' orders, 20 'pending', and 5 'cancelled' for the requested period.
+
+---
+
+**👤 You:**
+> "Trigger a pre-aggregation build for the 'Sales' cube."
+
+**🤖 AI Agent:**
+> I've triggered the pre-aggregation job for the 'Sales' cube using `trigger_pre_aggregation_job`. You can check the status using the job token provided.
+
+
 ## Installation & Usage
 
 To install and use the **Cube.dev** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Cube.dev** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

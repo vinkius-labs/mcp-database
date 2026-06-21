@@ -1,12 +1,14 @@
 # Tianyancha / 天眼查 MCP Server
 
-Leading enterprise data platform in China — search companies, check industrial info, and monitor risks via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tianyancha)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tianyancha)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tianyancha-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tianyancha-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Leading enterprise data platform in China — search companies, check industrial info, and monitor risks via AI.
 
 ## Description
 Empower your AI agent to orchestrate your business intelligence and due diligence with **Tianyancha** (天眼查), the premier enterprise data platform in China. By connecting Tianyancha to your agent, you transform complex industrial research, ownership auditing, and risk monitoring into a natural conversation. Your agent can instantly search for companies, retrieve detailed registration metadata, browse shareholder structures, and monitor industrial abnormalities without you ever needing to navigate the comprehensive Tianyancha portal. Whether you are conducting B2B lead research or auditing potential partners, your agent acts as a real-time business intelligence assistant, keeping your data accurate and your decisions informed.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 - **get_basic_info**: Get enterprise basic info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tianyancha / 天眼查** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for companies named 'Alibaba' in Tianyancha."
+
+**🤖 AI Agent:**
+> I've retrieved the search results for 'Alibaba'. There are several matches, including 'Alibaba Group Holding Limited' and 'Alibaba Cloud'. Which one would you like the basic information for?
+
+---
+
+**👤 You:**
+> "Show me the shareholder structure for 'Huawei'."
+
+**🤖 AI Agent:**
+> I've listed the shareholders for Huawei. The primary owner is the Union of Huawei Investment & Holding Co., Ltd. Would you like a list of Huawei's outward investments as well?
+
+---
+
+**👤 You:**
+> "Check for any risk information regarding 'Evergrande'."
+
+**🤖 AI Agent:**
+> I've retrieved the risk indicators for Evergrande. There are numerous court cases and industrial abnormalities listed. Should I retrieve the details for the most recent legal incidents?
+
+
 ## Installation & Usage
 
 To install and use the **Tianyancha / 天眼查** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Tianyancha / 天眼查** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

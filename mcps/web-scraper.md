@@ -1,12 +1,14 @@
 # Web Scraper MCP Server
 
-Equip your AI agent with the ability to read web pages, extract metadata, and crawl documentation sites as clean Markdown.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/web-scraper)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/web-scraper)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/web-scraper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/web-scraper-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 5
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI agent with the ability to read web pages, extract metadata, and crawl documentation sites as clean Markdown.
 
 ## Description
 Connect the **Web Scraper** utility to any AI agent to give it direct access to the public internet. Instead of letting the AI hallucinate facts, allow it to read real-time articles, parse documentation, and fetch clean text from any URL you provide.
@@ -49,6 +51,33 @@ Fetch multiple web pages in parallel
 Crawl a website starting from a URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Web Scraper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Read https://en.wikipedia.org/wiki/Artificial_intelligence and summarize its history."
+
+**🤖 AI Agent:**
+> I've fetched the Wikipedia page. The history of AI spans back to antiquity with myths of artificial beings, but the formal field was founded in 1956 at Dartmouth College. It experienced cycles of immense optimism followed by disappointment ('AI winters'), eventually leading to the modern deep learning revolution fueled by huge datasets and compute power.
+
+---
+
+**👤 You:**
+> "Extract the links from https://news.ycombinator.com/"
+
+**🤖 AI Agent:**
+> I've extracted the outbound links. The site currently links out to 30 primary article sources including domains like github.com, weired.com, and nytimes.com, along with many internal navigational links to user profiles and comment threads.
+
+---
+
+**👤 You:**
+> "Compare these two links: url1.com and url2.com"
+
+**🤖 AI Agent:**
+> Using the batch reading tool, I've loaded both URLs simultaneously. URL 1 discusses a 'React-first' architecture and uses component styling. URL 2 advocates for 'HTML-first', server-rendered patterns. While both aim to increase web performance, they take fundamentally opposite approaches to client-side hydration.
+
+
 ## Installation & Usage
 
 To install and use the **Web Scraper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Web Scraper** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

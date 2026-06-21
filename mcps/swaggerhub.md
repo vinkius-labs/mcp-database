@@ -1,12 +1,14 @@
 # SwaggerHub MCP Server
 
-Connect your AI to SwaggerHub. Read OpenAPI specifications, explore domains, and manage your API design lifecycle natively from the terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/swaggerhub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/swaggerhub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/swaggerhub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/swaggerhub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect your AI to SwaggerHub. Read OpenAPI specifications, explore domains, and manage your API design lifecycle natively from the terminal.
 
 ## Description
 Integrate **SwaggerHub**, the enterprise platform for API design and documentation, directly into your conversational workflows with the intelligent MCP connector. Transform your LLM into an active technical architect, empowering it to securely index, validate, and retrieve full OpenAPI specifications directly from your organizational directories. Eradicate context-switching by verifying CI/CD integration pipelines, scanning centralized API definitions, and pulling structural component domains intuitively without having to hunt through graphical interfaces.
@@ -44,6 +46,46 @@ Integrate **SwaggerHub**, the enterprise platform for API design and documentati
 - **search_apis**: Search all public APIs on SwaggerHub by keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SwaggerHub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for public API specifications related to 'payment gateway' on SwaggerHub."
+
+**🤖 AI Agent:**
+> Accessing public registries ('search_apis')...
+Found 3 matches for 'payment gateway':
+- 'AcmeCorp-Payments' (Version: v1.2.0)
+- 'OpenPay-Gateway' (Version: v3.0.0)
+- 'SecureTx-API' (Version: v1.0.1)
+
+Let me know if you want me to fetch the OpenAPI specs for any of these results natively.
+
+---
+
+**👤 You:**
+> "List all active projects in our SwaggerHub organization."
+
+**🤖 AI Agent:**
+> Mapping team clusters ('list_projects')...
+I found 2 core organizational projects:
+1. 'Billing-Infrastructure' (4 underlying APIs)
+2. 'User-Authentication-Systems' (2 shared domains and 1 API configuration)
+
+---
+
+**👤 You:**
+> "Ensure that the 'Acme-Billing' API has AWS API Gateway integration synced currently."
+
+**🤖 AI Agent:**
+> Interrogating pipeline bounds ('list_api_integrations')...
+The specified API 'Acme-Billing' v1.0.0 currently returns 1 active integration:
+- Type: AWS API Gateway Sync
+- Status: Synced & Configured Successfully
+- Last Run: 25 minutes ago.
+
+
 ## Installation & Usage
 
 To install and use the **SwaggerHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +94,11 @@ To install and use the **SwaggerHub** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

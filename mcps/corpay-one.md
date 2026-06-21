@@ -1,12 +1,14 @@
 # Corpay One MCP Server
 
-Simplify business payments with automated AP processing, virtual cards, and vendor management that saves your finance team hours.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corpay-one)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corpay-one)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corpay-one-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corpay-one-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 7
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Simplify business payments with automated AP processing, virtual cards, and vendor management that saves your finance team hours.
 
 ## Description
 Connect your **Corpay One** business payment account to any AI agent and simplify how you pay bills, manage vendor relationships, and monitor your financial documents through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Corpay One** business payment account to any AI agent and simplif
 - **list_account_vendors**: List vendors/suppliers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corpay One** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my recent bill payments."
+
+**🤖 AI Agent:**
+> I've retrieved your payments history. You have 3 recent payments including #PAY-10293 ($1,250.00 to AWS), #PAY-10294 ($450.00 to Staples), and 1 scheduled payment. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the details for invoice 'doc_88231'."
+
+**🤖 AI Agent:**
+> Fetching document... Invoice doc_88231 is from 'Cloud Solutions Ltd' for the amount of $2,400.00 USD. It was uploaded on Dec 1st and is currently 'Awaiting Approval'. Would you like the full breakdown?
+
+---
+
+**👤 You:**
+> "List all vendors in my account."
+
+**🤖 AI Agent:**
+> Retrieving vendors... You have 15 registered suppliers including 'Amazon Business', 'Google Cloud', 'Local Office Supplies', and 'Utility Co'. Shall I check the latest payments for any specific vendor?
+
+
 ## Installation & Usage
 
 To install and use the **Corpay One** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Corpay One** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

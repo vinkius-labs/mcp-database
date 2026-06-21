@@ -1,12 +1,14 @@
 # MailSlurp MCP Server
 
-Manage temporary inboxes and automate email testing via the MailSlurp REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailslurp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailslurp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailslurp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailslurp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage temporary inboxes and automate email testing via the MailSlurp REST API.
 
 ## Description
 Connect your **MailSlurp** account to any AI agent to automate your email testing and asynchronous message management. This MCP server enables your agent to create virtual inboxes, send and receive emails, and handle complex automation scenarios using long-polling 'wait-for' methods directly from natural language interfaces.
@@ -48,6 +50,33 @@ Send an email using a MailSlurp address
 Long-poll for the next incoming email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MailSlurp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new random inbox in MailSlurp."
+
+**🤖 AI Agent:**
+> I've created a new inbox. The address is 'abc-123@mailslurp.com' and the ID is 'inbox-xyz'. You can now use it to receive emails.
+
+---
+
+**👤 You:**
+> "Wait for the next email to arrive in inbox 'inbox-xyz'."
+
+**🤖 AI Agent:**
+> I'm monitoring the inbox. [Connection held] ... I've received an email from 'no-reply@service.com' with the subject 'Verify your account'. Would you like the text body?
+
+---
+
+**👤 You:**
+> "Send an email to 'user@example.com' from inbox 'inbox-xyz'."
+
+**🤖 AI Agent:**
+> I've sent the email to user@example.com from your virtual inbox inbox-xyz. The message has been successfully delivered to the outbound queue.
+
+
 ## Installation & Usage
 
 To install and use the **MailSlurp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **MailSlurp** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ArborNote MCP Server
 
-Manage arboricultural surveys, tree inventories, and environmental assessments with specialized forestry field tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arbornote)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arbornote)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arbornote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arbornote-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage arboricultural surveys, tree inventories, and environmental assessments with specialized forestry field tools.
 
 ## Description
 Connect your **ArborNote** account to any AI agent and take full control of your tree care and landscaping business operations through natural conversation.
@@ -49,6 +51,33 @@ No more manual logging into individual project portals or missing critical propo
 - **update_arbornote_client**: Update an existing client
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ArborNote** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active proposals in my ArborNote account."
+
+**🤖 AI Agent:**
+> I've retrieved your active proposals. You currently have 5 estimates awaiting approval, including 'Oak Pruning at 123 Maple St'. Would you like the detailed high-fidelity cost breakdown for any of these?
+
+---
+
+**👤 You:**
+> "Show the status of my current work orders."
+
+**🤖 AI Agent:**
+> Accessing work orders... You have 3 approved jobs currently in progress and 2 scheduled for tomorrow. All field crews are within high-fidelity operational norms. Shall I retrieve the specific tasks for the 'Riverfront Project'?
+
+---
+
+**👤 You:**
+> "Create a new client 'John Doe' (john@example.com) and update his phone to '+15550123'."
+
+**🤖 AI Agent:**
+> Client orchestrated! I've successfully created the profile for John Doe (ID: cli_456) and applied the high-fidelity phone update. He is now active in your CRM and ready for a new proposal. Shall I list your available service types?
+
+
 ## Installation & Usage
 
 To install and use the **ArborNote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **ArborNote** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

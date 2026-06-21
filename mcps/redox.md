@@ -1,12 +1,14 @@
 # Redox MCP Server
 
-Connect to the Redox healthcare API to search patients, retrieve clinical conditions, and write back observations directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/redox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/redox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/redox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 4
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect to the Redox healthcare API to search patients, retrieve clinical conditions, and write back observations directly from your AI agent.
 
 ## Description
 Integrate your **Redox** environment with any AI agent to streamline healthcare interoperability. This server allows you to interact with clinical data using both FHIR standards and Redox Data Models through natural language.
@@ -41,6 +43,33 @@ Retrieve diagnoses/conditions for a patient
 - **search_patient**: Search for a patient in Redox FHIR API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Redox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for patient identifier 'urn:redox:source:MR|12345' in the production environment for destination 'clinical-hub'."
+
+**🤖 AI Agent:**
+> I've initiated the search in the clinical-hub destination. I found a patient record matching that identifier. Would you like to see the full FHIR resource details?
+
+---
+
+**👤 You:**
+> "Retrieve all active conditions for patient ID 'P123' in the development environment."
+
+**🤖 AI Agent:**
+> I've fetched the conditions for patient P123. The list includes 'Essential hypertension' and 'Type 2 diabetes mellitus'. Do you need the specific codes or onset dates for these?
+
+---
+
+**👤 You:**
+> "Post a Redox Data Model event for a new appointment notification using this JSON payload."
+
+**🤖 AI Agent:**
+> I've sent the Data Model payload to the Redox API. The event has been successfully queued for processing. Here is the response metadata from the server.
+
+
 ## Installation & Usage
 
 To install and use the **Redox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Redox** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

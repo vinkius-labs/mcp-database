@@ -1,12 +1,14 @@
 # CardanoScan (Cardano Block Explorer API) MCP Server
 
-Access real-time Cardano blockchain data — query addresses, transactions, blocks, and stake pools directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cardanoscan-cardano-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cardanoscan-cardano-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cardanoscan-cardano-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cardanoscan-cardano-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access real-time Cardano blockchain data — query addresses, transactions, blocks, and stake pools directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **CardanoScan API** to explore the Cardano blockchain with natural language. This server provides comprehensive access to on-chain data, from simple address balances to complex transaction UTXOs and network-wide epoch metrics.
@@ -47,6 +49,33 @@ Connect your AI agent to the **CardanoScan API** to explore the Cardano blockcha
 - **list_pools**: Get a paginated list of all registered stake pools
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CardanoScan (Cardano Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the balance and transaction count for address addr1q8..."
+
+**🤖 AI Agent:**
+> I've retrieved the details for that address. It currently holds 1,250 ADA and has been involved in 42 transactions. Would you like to see the most recent transactions?
+
+---
+
+**👤 You:**
+> "Show me the latest blocks added to the Cardano blockchain."
+
+**🤖 AI Agent:**
+> Fetching the latest blocks... I found the most recent entries, including block height 10,452,120 produced by pool 'TICKER'. Each block contains detailed timestamps and transaction counts.
+
+---
+
+**👤 You:**
+> "List the registered stake pools on Cardano."
+
+**🤖 AI Agent:**
+> I've compiled a list of registered stake pools. Notable pools currently active include 'IOG1', 'POOL2', and 'ADA3'. Would you like the specific metadata for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **CardanoScan (Cardano Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **CardanoScan (Cardano Block Explorer API)** MCP server i
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

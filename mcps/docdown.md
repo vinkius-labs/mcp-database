@@ -1,12 +1,14 @@
 # Docdown MCP Server
 
-Equip your AI agent to generate documents, manage templates, and track output files via the Docdown API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docdown)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docdown)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docdown-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docdown-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to generate documents, manage templates, and track output files via the Docdown API.
 
 ## Description
 Integrate **Docdown**, the efficient document generation and automation platform, directly into your AI workflow. Manage your document templates, generate new PDF or Word files from JSON data, and track your generated output using natural language.
@@ -44,6 +46,33 @@ Integrate **Docdown**, the efficient document generation and automation platform
 - **search_templates_by_name**: Search for a document template using a name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Docdown** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available document templates."
+
+**🤖 AI Agent:**
+> I've found 5 templates in your account, including 'Service Agreement v2', 'Monthly Performance Report', and 'Customer Invoice'. Would you like to see the required fields for the Service Agreement?
+
+---
+
+**👤 You:**
+> "Generate a new 'Customer Invoice' with data: {'name': 'John Doe', 'amount': 150}."
+
+**🤖 AI Agent:**
+> I've triggered the generation for 'Customer Invoice'. The document is currently being processed. I will provide the download URL as soon as it is ready. The document ID is 'DOC-12345'.
+
+---
+
+**👤 You:**
+> "Show me the status of document 'DOC-12345'."
+
+**🤖 AI Agent:**
+> Document 'DOC-12345' is now 'Completed'. You can download it here: [https://api.docdown.io/download/...] (Link expires in 24 hours). Should I list other recently generated documents?
+
+
 ## Installation & Usage
 
 To install and use the **Docdown** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Docdown** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

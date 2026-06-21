@@ -1,12 +1,14 @@
 # Parknav MCP Server
 
-AI-powered predictive parking availability and street occupancy data via Parknav API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/parknav)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parknav)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parknav-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parknav-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+AI-powered predictive parking availability and street occupancy data via Parknav API.
 
 ## Description
 Connect **Parknav** to any AI agent and access the world's most advanced predictive parking intelligence — anticipate availability before you arrive, find on-street spots instantly, and optimize your urban mobility.
@@ -46,6 +48,33 @@ Get AI-predicted parking availability for a location at a specific time
 - **get_realtime_occupancy**: Get current real-time occupancy for a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Parknav** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Will I find parking near Union Square at 6 PM?"
+
+**🤖 AI Agent:**
+> Predicted availability at 6 PM: 35% (Low). Recommendation: Arrive by 5:30 PM for better chances, or check nearby garages.
+
+---
+
+**👤 You:**
+> "Where is the nearest open spot to me right now?"
+
+**🤖 AI Agent:**
+> Nearest available spot: 150m away on 4th Street. Current occupancy on that block is 60%.
+
+---
+
+**👤 You:**
+> "Show me the occupancy trends for Market Street."
+
+**🤖 AI Agent:**
+> Market Street trends: Peak occupancy (hardest to park) is 12 PM - 2 PM. Lowest occupancy (easiest to park) is 6 AM - 9 AM.
+
+
 ## Installation & Usage
 
 To install and use the **Parknav** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Parknav** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

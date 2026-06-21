@@ -1,12 +1,14 @@
 # Motion (AI Calendar & Task Management) MCP Server
 
-Manage your schedule via Motion — create AI-optimized tasks, track projects, and audit your timeline.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/motion-ai-calendar-task-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/motion-ai-calendar-task-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/motion-ai-calendar-task-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/motion-ai-calendar-task-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your schedule via Motion — create AI-optimized tasks, track projects, and audit your timeline.
 
 ## Description
 Connect your **Motion** account to any AI agent and take full control of your AI-powered scheduling, project management, and daily timeline through natural conversation.
@@ -49,6 +51,33 @@ List all tasks in a Motion workspace filtering by current lifecycle status
 - **get_schedule**: Get the AI-optimized timeline schedule for a workspace
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Motion (AI Calendar & Task Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Motion workspaces"
+
+**🤖 AI Agent:**
+> I've retrieved 2 workspaces from your account: 'Engineering' (ID: ws-123) and 'Personal' (ID: ws-456). Which one would you like to list the projects or tasks for?
+
+---
+
+**👤 You:**
+> "Create a high-priority task 'Review PR #456' in workspace 'ws-123' due tomorrow, takes 30 mins"
+
+**🤖 AI Agent:**
+> Task 'Review PR #456' created successfully! Motion AI has automatically scheduled this for tomorrow at 10:30 AM based on your current workload. New Task ID: 'task-98765'. Would you like me to show your updated schedule?
+
+---
+
+**👤 You:**
+> "Show me the optimized schedule for my 'Engineering' workspace"
+
+**🤖 AI Agent:**
+> Retrieving AI-optimized schedule… I've identified your time blocks for today: 1) 09:00 - 'Email Triage', 2) 10:30 - 'Review PR #456', 3) 14:00 - 'Design Sync'. Motion has successfully resolved 5 tasks into your free slots. No priority conflicts detected.
+
+
 ## Installation & Usage
 
 To install and use the **Motion (AI Calendar & Task Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Motion (AI Calendar & Task Management)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

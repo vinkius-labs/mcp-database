@@ -1,12 +1,14 @@
 # WorkAdventure MCP Server
 
-Create virtual office spaces where remote teams can walk around, bump into colleagues, and collaborate spontaneously.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workadventure)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workadventure)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workadventure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workadventure-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Create virtual office spaces where remote teams can walk around, bump into colleagues, and collaborate spontaneously.
 
 ## Description
 Connect your **WorkAdventure** virtual world to any AI agent and simplify how you manage your digital office or event space through natural conversation.
@@ -44,6 +46,33 @@ Connect your **WorkAdventure** virtual world to any AI agent and simplify how yo
 - **update_room_variable**: Update a room variable
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WorkAdventure** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all registered members in my WorkAdventure world."
+
+**🤖 AI Agent:**
+> I've retrieved the member directory. You have 12 registered members, including 'Admin User', 'Guest 01', and 'Developer'. Would you like details on any specific member?
+
+---
+
+**👤 You:**
+> "Change the room variable 'welcome_message' to 'Welcome to the Team!' in room 'lobby'."
+
+**🤖 AI Agent:**
+> Variable updated successfully! The 'welcome_message' in 'lobby' is now set to 'Welcome to the Team!'. The change should be visible to users in real-time.
+
+---
+
+**👤 You:**
+> "Show me a list of all active maps in this world."
+
+**🤖 AI Agent:**
+> I found 3 active maps: 'main_office', 'conference_hall', and 'lounge_area'. Each map has its own unique ID and URL for access.
+
+
 ## Installation & Usage
 
 To install and use the **WorkAdventure** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **WorkAdventure** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Pet Stress Score Analyzer MCP Server
 
-Assesses observed pet behaviors to estimate stress levels, determine root causes, and provide actionable environmental management plans.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-stress-score-analyzer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pet-stress-score-analyzer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pet-stress-score-analyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pet-stress-score-analyzer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** veterinary-wellness
-**Tools Count:** 3
+
+**Category:** [veterinary-wellness](../categories/veterinary-wellness.md)
+
+Assesses observed pet behaviors to estimate stress levels, determine root causes, and provide actionable environmental management plans.
 
 ## Description
 # Pet Stress Score Analysis: From Observation to Action
@@ -29,6 +31,33 @@ This service bridges the gap between observation and actionable care. It uses ad
 - **query_probable_triggers**: Identify probable environmental triggers causing pet stress
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pet Stress Score Analyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "My dog has been hiding a lot and hasn't eaten for 4 days. Calculate the initial stress score."
+
+**🤖 AI Agent:**
+> The scoring process is complete. The final calculated stress score is [TOTAL_SCORE]/10, classifying the pet as a [STATUS]. This indicates high systemic distress and requires immediate intervention.
+
+---
+
+**👤 You:**
+> "We noticed construction nearby (environmental change) and the owner works from home less often now. What might be stressing the cat?"
+
+**🤖 AI Agent:**
+> The most probable trigger is a combination of routine deviation and environmental stressor. The analysis suggests [TRIGGER_LIST] with a confidence score of [PROBABILITY]. Focus investigation on the owner's work schedule consistency.
+
+---
+
+**👤 You:**
+> "The pet is a Cat, and we are in EU West. The main issue is excessive vocalization (yowling) after the schedule changes. Suggest management steps."
+
+**🤖 AI Agent:**
+> Based on your inputs, we recommend a three-phase plan: Phase 1 focuses on immediate calming corners, Phase 2 suggests increasing interactive play sessions, and Phase 3 recommends consulting a local behaviorist. The key resource is [RESOURCE_RECOMMENDATION].
+
+
 ## Installation & Usage
 
 To install and use the **Pet Stress Score Analyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -37,4 +66,11 @@ To install and use the **Pet Stress Score Analyzer** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

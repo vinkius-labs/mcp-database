@@ -1,12 +1,14 @@
 # Spotio MCP Server
 
-Manage leads, pipelines, and field sales activities on Spotio with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/spotio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spotio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spotio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spotio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage leads, pipelines, and field sales activities on Spotio with AI agents.
 
 ## Description
 Connect your **Spotio** account to any AI agent to automate your field sales and outside sales management. Spotio provides a premier platform for territory management and lead tracking, and this integration allows you to retrieve lead metadata, monitor pipelines, and track field visits through natural conversation.
@@ -49,6 +51,33 @@ Create a new webhook
 - **update_lead**: Update lead info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Spotio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active leads in Spotio."
+
+**🤖 AI Agent:**
+> I've retrieved your lead list. You have 45 active prospects in your current territory, including 'John Smith' (High Priority) and 'Acme Supplies'. Would you like to check the pipeline status for any of them?
+
+---
+
+**👤 You:**
+> "Show me the field sales team activity with visits logged, deals closed, and territory coverage this week."
+
+**🤖 AI Agent:**
+> Field sales activity this week. 12 reps active. Total visits: 345 (avg 28.8/rep). Doors knocked: 890. Meetings held: 123. Deals closed: 34 ($234,000 total). Top rep: Sarah Chen (45 visits, 8 deals, $67,000). Territory coverage: North (89% mapped), South (76%), East (82%), West (71%). GPS tracks logged: 2,340 miles driven. Average time per visit: 18 minutes. Pipeline generated: $890K from new leads. Follow-ups scheduled: 89. No-answers: 234 (26.3% of doors knocked).
+
+---
+
+**👤 You:**
+> "Create a new sales territory assignment for the downtown business district with lead pins."
+
+**🤖 AI Agent:**
+> Territory created: "Downtown Business District". Boundaries: defined by 4 GPS coordinates (polygon). Assigned to: James Park (senior rep). Existing leads imported: 234 pins (from CRM). Lead categories: Hot (23, red pins), Warm (67, yellow), Cold (144, blue). Businesses mapped: 456 (from Google Places). Not yet contacted: 222 (48.7%). Last visit data: 89 businesses visited in past 90 days. Route optimization: 3 suggested daily routes (8-12 stops each). Estimated coverage time: 2 weeks for full territory.
+
+
 ## Installation & Usage
 
 To install and use the **Spotio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Spotio** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

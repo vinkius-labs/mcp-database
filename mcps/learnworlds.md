@@ -1,12 +1,14 @@
 # LearnWorlds MCP Server
 
-Build and sell online courses with a white-label LMS that includes interactive video, community forums, and built-in marketing tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/learnworlds)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learnworlds)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/learnworlds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/learnworlds-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Build and sell online courses with a white-label LMS that includes interactive video, community forums, and built-in marketing tools.
 
 ## Description
 Connect your **LearnWorlds** account to any AI agent and take full control of your online academy orchestration and student productivity through natural conversation. LearnWorlds provides a powerful platform for creating and selling online courses, and this integration allows you to retrieve course metadata, manage student enrollments, and monitor academic progress directly from your chat interface.
@@ -45,6 +47,33 @@ No more manual logging into the school dashboard for quick student or course che
 - **list_students**: List all students
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LearnWorlds** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all courses with enrollment counts and the latest student activity."
+
+**🤖 AI Agent:**
+> Courses: 6. 'Web Development Bootcamp' (890 students, $199, 4.7★ ⭐). 'UX Design Course' (456, $149, 4.8★). 'Data Science Intro' (678, $99, 4.5★). 'Marketing Fundamentals' (234, $79, 4.3★). 'Python Mastery' (345, $129, 4.6★). 'Business Analytics' (123, $169, 4.4★). Total: 2,726 students. Latest: Sarah completed 'Web Dev' lesson 45 (3 min ago).
+
+---
+
+**👤 You:**
+> "Show student progress and completion rates for the UX Design Course."
+
+**🤖 AI Agent:**
+> UX Design Course: 456 students. Completed: 198 (43%). In Progress: 189 (41%). Not Started: 69 (15%). Average progress: 58%. Completion rate trend: Jan (38%), Feb (40%), Mar (42%), Apr (43% ⬆️). Top students: Ana Costa (100%, certified), Mike Torres (95%), Lisa Park (88%). Average completion time: 6.2 weeks. Drop-off: Module 4 'User Research' (12% abandon rate).
+
+---
+
+**👤 You:**
+> "Show new enrollments this week and school analytics."
+
+**🤖 AI Agent:**
+> New enrollments (7 days): 42. Web Dev: 15, UX Design: 10, Data Science: 8, Python: 5, Others: 4. Revenue: $6,890. School analytics: Total students: 2,726. Active (30 days): 1,890 (69%). Avg session: 28 min. Certificates issued (month): 34. Course completion rate: 41%. MRR: $12,400.
+
+
 ## Installation & Usage
 
 To install and use the **LearnWorlds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **LearnWorlds** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

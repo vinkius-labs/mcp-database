@@ -1,12 +1,14 @@
 # Unleash (Feature Toggles) MCP Server
 
-Manage feature flags, strategies, and environments via Unleash — evaluate toggles, list projects, and monitor metrics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unleash-feature-toggles)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unleash-feature-toggles)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unleash-feature-toggles-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unleash-feature-toggles-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage feature flags, strategies, and environments via Unleash — evaluate toggles, list projects, and monitor metrics directly from your AI agent.
 
 ## Description
 Connect your **Unleash** instance to any AI agent and gain full control over your feature management lifecycle through natural conversation.
@@ -58,6 +60,33 @@ Fetch enabled feature flags for a specific Unleash Context
 - **register_frontend**: Register a new frontend SDK instance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Unleash (Feature Toggles)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Unleash projects and their descriptions."
+
+**🤖 AI Agent:**
+> I've retrieved the projects. You have 3 projects: 'Default' (Main project), 'Mobile-App' (Flags for iOS/Android), and 'Beta-Testing' (Experimental features).
+
+---
+
+**👤 You:**
+> "What feature flags are enabled for user 'user_88' in the frontend?"
+
+**🤖 AI Agent:**
+> Evaluating flags for 'user_88'... The following flags are enabled: 'new-dashboard-v2', 'dark-mode-beta', and 'premium-checkout'. Flags like 'experimental-chat' remain disabled for this user context.
+
+---
+
+**👤 You:**
+> "Show me all feature flags in the 'Mobile-App' project."
+
+**🤖 AI Agent:**
+> In the 'Mobile-App' project, I found 4 flags: 'biometric-login' (Enabled), 'offline-mode' (Disabled), 'push-notifications-v3' (Enabled), and 'legacy-sync' (Disabled).
+
+
 ## Installation & Usage
 
 To install and use the **Unleash (Feature Toggles)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Unleash (Feature Toggles)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

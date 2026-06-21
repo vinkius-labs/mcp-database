@@ -1,12 +1,14 @@
 # Sunsama MCP Server
 
-Connect your AI to Sunsama. Actively manage your day, orchestrate tasks, and balance your work natively from the terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sunsama)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sunsama)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sunsama-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sunsama-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI to Sunsama. Actively manage your day, orchestrate tasks, and balance your work natively from the terminal.
 
 ## Description
 Integrate the mindful focus of the **Sunsama** daily planner directly into your conversational AI environment. Empower your engineering or administrative focus by allowing your LLM to intuitively pull tasks, filter backlog activities, and assign contexts dynamically without constant tab-switching. With this MCP connector attached securely to your workspace, your conversational agent functions as an objective scheduling assistant, seamlessly tracking and resolving your agenda.
@@ -50,6 +52,48 @@ Lists available Sunsama channels
 - **update_task**: Updates an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sunsama** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my tasks for today, complete the design review, and schedule a documentation update for next Monday."
+
+**🤖 AI Agent:**
+> Accessing API matrix logically and retrieving tasks...
+**Today's Schedule (`list_tasks`)**:
+- `Design Architecture Review`
+- `Sprint Synchronization`
+
+Applying targeted operational parameters resolutely:
+- Task `Design Architecture Review` successfully marked as complete naturally.
+- Executed `create_task` effectively. "Documentation Update" dynamically listed safely on schedule appropriately.
+
+---
+
+**👤 You:**
+> "Read my custom organizational domains running `list_channels` securely, and pull contextual details applying `list_contexts` effectively."
+
+**🤖 AI Agent:**
+> Verifying team structures reliably properly structurally...
+**Team Compartments (`list_channels`)**:
+- `Frontend Sprints`
+- `Platform Reliability`
+
+**Tag Frameworks (`list_contexts`) smoothly optimally**:
+- Context `Urgent` and `Low Priority` mapped correctly.
+
+---
+
+**👤 You:**
+> "Verify my identity token evaluating the API user profile comprehensively."
+
+**🤖 AI Agent:**
+> Parsing account telemetry cleanly natively...
+**User Profile Confirmation (`get_user_profile`)**:
+The workspace environment authorized your access efficiently as `Admin` under your active operational email directly seamlessly. Done.
+
+
 ## Installation & Usage
 
 To install and use the **Sunsama** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +102,11 @@ To install and use the **Sunsama** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

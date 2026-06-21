@@ -1,12 +1,14 @@
 # Boostapp MCP Server
 
-Automate lead management in Boostapp — create new leads, assign pipeline stages, and manage customer data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/boostapp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boostapp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boostapp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boostapp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 1
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Automate lead management in Boostapp — create new leads, assign pipeline stages, and manage customer data directly from any AI agent.
 
 ## Description
 Connect your **Boostapp** account to any AI agent to streamline your sales and customer acquisition workflows. This integration allows your AI to act as a virtual sales assistant, capturing lead information and organizing it within your CRM through natural conversation.
@@ -37,6 +39,33 @@ Connect your **Boostapp** account to any AI agent to streamline your sales and c
 Create a new lead in Boostapp
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Boostapp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new lead for John Smith with phone 0501234567 and email john@example.com."
+
+**🤖 AI Agent:**
+> I've successfully created the lead for John Smith in Boostapp. The contact is now registered with the provided phone and email.
+
+---
+
+**👤 You:**
+> "Add a lead named Sarah Connor, phone 0549876543, and set her pipeline stage to 2."
+
+**🤖 AI Agent:**
+> Sarah Connor has been added to Boostapp and assigned to pipeline stage 2.
+
+---
+
+**👤 You:**
+> "Register a lead for Mike Ross (0521112233) with the remark 'Interested in the annual subscription' and item ID 101."
+
+**🤖 AI Agent:**
+> Done! Mike Ross is now in the system with the note about the annual subscription and linked to item 101.
+
+
 ## Installation & Usage
 
 To install and use the **Boostapp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **Boostapp** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

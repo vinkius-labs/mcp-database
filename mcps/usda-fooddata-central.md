@@ -1,12 +1,14 @@
 # USDA FoodData Central MCP Server
 
-Access the gold standard in nutrition data — 300,000+ foods with scientific-grade nutrient profiles from the U.S. Department of Agriculture.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-fooddata-central)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usda-fooddata-central)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usda-fooddata-central-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usda-fooddata-central-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 2
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access the gold standard in nutrition data — 300,000+ foods with scientific-grade nutrient profiles from the U.S. Department of Agriculture.
 
 ## Description
 The **USDA FoodData Central MCP Server** provides access to the most authoritative nutrition database in the world. Maintained by the U.S. Department of Agriculture, it covers foundation foods, branded products, and survey data.
@@ -27,6 +29,42 @@ Free API key required (instant registration). The definitive source for nutritio
 Search the USDA FoodData Central database for foods and their nutritional profiles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **USDA FoodData Central** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many calories are in 100g of chicken breast?"
+
+**🤖 AI Agent:**
+> According to USDA data, 100g of raw chicken breast contains approximately 165 kcal, 31g protein, 3.6g fat, and 0g carbohydrates. It's an excellent source of lean protein with minimal fat content.
+
+---
+
+**👤 You:**
+> "Find a list of foods with the highest vitamin D content per 100g."
+
+**🤖 AI Agent:**
+> Accessing USDA database for Vitamin D (Nutrient ID: 328)...
+Top sources per 100g:
+1. Cod liver oil — 250 µg
+2. Salmon (sockeye, cooked) — 16.7 µg
+3. Mushrooms (exposed to UV) — 10.7 µg
+4. Mackerel (Atlantic, cooked) — 16.1 µg
+
+---
+
+**👤 You:**
+> "Look up the exact fat profile (saturated, monounsaturated, polyunsaturated) of an avocado."
+
+**🤖 AI Agent:**
+> Parsing profile for 'Avocados, raw' (FDC ID: 171705). Per 100g:
+- Total Fat: 14.7g
+  - Saturated: 2.13g
+  - Monounsaturated: 9.8g (primarily oleic acid)
+  - Polyunsaturated: 1.82g
+
+
 ## Installation & Usage
 
 To install and use the **USDA FoodData Central** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +73,11 @@ To install and use the **USDA FoodData Central** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

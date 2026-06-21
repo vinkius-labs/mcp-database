@@ -1,12 +1,14 @@
 # Dextools (DeFi Token Data API) MCP Server
 
-Access real-time DeFi market data, token prices, liquidity pairs, and blockchain information across multiple networks via Dextools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dextools-defi-token-data-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dextools-defi-token-data-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dextools-defi-token-data-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dextools-defi-token-data-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time DeFi market data, token prices, liquidity pairs, and blockchain information across multiple networks via Dextools.
 
 ## Description
 Connect your **Dextools** API account to any AI agent to analyze decentralized finance (DeFi) markets with precision. Get instant access to token metrics, liquidity pools, and price variations across dozens of supported blockchains.
@@ -40,6 +42,33 @@ Connect your **Dextools** API account to any AI agent to analyze decentralized f
 - **get_token**: Retrieve detailed information about a specific token
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dextools (DeFi Token Data API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all supported blockchain networks on Dextools."
+
+**🤖 AI Agent:**
+> I've retrieved the supported chains. Dextools currently supports networks including Ethereum (ether), Binance Smart Chain (bsc), Polygon (polygon), Solana (solana), and many others. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Get the current price and 24h change for token 0x... on Ethereum."
+
+**🤖 AI Agent:**
+> Fetching price data... The token at that address is currently trading at $1.24 with a +5.2% increase over the last 24 hours on the Ethereum network.
+
+---
+
+**👤 You:**
+> "Show me the liquidity information for the pair 0x... on BSC."
+
+**🤖 AI Agent:**
+> Analyzing liquidity... For the specified pair on Binance Smart Chain, the total liquidity is approximately $500,000 USD. Would you like to see the individual token reserves for this pool?
+
+
 ## Installation & Usage
 
 To install and use the **Dextools (DeFi Token Data API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Dextools (DeFi Token Data API)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

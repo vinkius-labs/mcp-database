@@ -1,12 +1,14 @@
 # Poe MCP Server
 
-Manage AI chatbots on Poe — create bots, query other AI models, monitor messages, and track usage stats.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/poe)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poe)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poe-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Manage AI chatbots on Poe — create bots, query other AI models, monitor messages, and track usage stats.
 
 ## Description
 Connect your **Poe** (Quora's AI platform) account to any AI agent and manage your chatbot empire through natural conversation. Create bots, chain AI model responses, monitor conversations, and track performance — all via API.
@@ -63,6 +65,33 @@ Send a message to a Poe bot (simulate user interaction)
 Update an existing Poe bot's configuration
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Poe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my bots and show stats for the first one."
+
+**🤖 AI Agent:**
+> 🤖 You have 3 bots: SummaryBot, Translator, CodeAssistant. Stats for SummaryBot: 1,247 messages, 89 unique users, avg response 2.3s.
+
+---
+
+**👤 You:**
+> "Create a bot called 'Research Assistant' using GPT-4 that summarizes articles."
+
+**🤖 AI Agent:**
+> ✅ Bot created! 'Research Assistant' (ID: bot_123) using GPT-4. Configure your endpoint URL in the bot settings.
+
+---
+
+**👤 You:**
+> "Query Claude-3.5-Sonnet from my ResearchBot: 'What are the key trends in AI?'"
+
+**🤖 AI Agent:**
+> 🤖 Claude-3.5-Sonnet responded: 'Key AI trends include multimodal models, agentic workflows, and reasoning capabilities...' Response received successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Poe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Poe** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Zesty.io MCP Server
 
-Manage content models, items, and instances via the Zesty.io API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zestyio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zestyio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zestyio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zestyio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage content models, items, and instances via the Zesty.io API.
 
 ## Description
 Connect your **Zesty.io** account to any AI agent to streamline your headless CMS operations. This MCP server enables your agent to interact with instances, content models, and data entries (items) directly from natural language.
@@ -47,6 +49,33 @@ List all content models for the current instance
 - **update_content_item**: Update an existing content item
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zesty.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Zesty instances I have access to."
+
+**🤖 AI Agent:**
+> I've retrieved your instances. You have access to 3 properties: 'Corporate Blog' (ZUID: 8-abc-123), 'Product Showcase' (ZUID: 8-xyz-456), and 'Marketing Landing Pages' (ZUID: 8-def-789).
+
+---
+
+**👤 You:**
+> "Show me the content items for the 'Press Releases' model (ZUID: '6-ghi-987')."
+
+**🤖 AI Agent:**
+> I found 5 items in the 'Press Releases' model. Recent titles include 'Q3 Earnings Report' and 'New Partnership Announcement'. Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Update the title of content item '7-jkl-654' in model '6-ghi-987' to '2024 Product Roadmap'."
+
+**🤖 AI Agent:**
+> Successfully updated content item '7-jkl-654'. The new title is now '2024 Product Roadmap' in your Zesty instance.
+
+
 ## Installation & Usage
 
 To install and use the **Zesty.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Zesty.io** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # AdButler MCP Server
 
-Serve and manage display ads, track impressions, and optimize ad zones across your digital properties with precision.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adbutler-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adbutler-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adbutler-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adbutler-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Serve and manage display ads, track impressions, and optimize ad zones across your digital properties with precision.
 
 ## Description
 Connect your **AdButler** account to any AI agent and take full control of your ad server orchestration and automated display advertising through natural conversation.
@@ -47,6 +49,33 @@ No more manual checking of individual banner performance or missing campaign exp
 - **list_zones**: List all ad zones
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AdButler** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active advertisers in my AdButler account."
+
+**🤖 AI Agent:**
+> I've retrieved your advertisers. You currently have 10 active high-fidelity profiles, including 'Global Brands' and 'Local Retailer'. Would you like the detailed campaign metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the performance for 'Banner A' from yesterday."
+
+**🤖 AI Agent:**
+> Ad intelligence orchestrated! For Banner A, I've identified 1,000 high-fidelity impressions and 50 clicks (CTR: 5%) from yesterday. I've retrieved the technical delivery metadata for your review. Need help auditing the conversion rate?
+
+---
+
+**👤 You:**
+> "Check for any campaigns expiring this week."
+
+**🤖 AI Agent:**
+> Operational monitoring orchestrated! I've identified 2 high-fidelity campaigns expiring this week, including 'Summer Sale' on Friday. I've retrieved the advertiser contact metadata for your review. Shall I notify the ad ops team?
+
+
 ## Installation & Usage
 
 To install and use the **AdButler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **AdButler** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

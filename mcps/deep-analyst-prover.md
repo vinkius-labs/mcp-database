@@ -1,12 +1,14 @@
 # Deep Analyst Prover MCP Server
 
-AI gives surface analysis — restates the question, misses hidden assumptions, uses single-lens thinking. This tool forces multi-model depth: First Principles decomposition, Second-Order cascades (3 levels), Steelmanning (Ideological Turing Test), Inversion, and Premortem risk mapping....
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deep-analyst-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deep-analyst-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deep-analyst-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deep-analyst-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI gives surface analysis — restates the question, misses hidden assumptions, uses single-lens thinking. This tool forces multi-model depth: First Principles decomposition, Second-Order cascades (3 levels), Steelmanning (Ideological Turing Test), Inversion, and Premortem risk mapping....
 
 ## Description
 AI models give surface-level analysis. They restate the question instead of decomposing it, miss hidden assumptions, use single-lens thinking, fail to stress-test from the opponent's view, see only first-order effects, and produce generic conclusions that could apply to any problem.
@@ -41,6 +43,33 @@ AI analysis fails on seven axes:
 Structured reflection tool for deep, multi-model intellectual analysis — writing, strategy, decisions, research, brainstorming. Stacks 5+ mental models (Munger, Kahneman, Klein) against the same problem: First Principles decomposition, explicit assumptions, Second-Order cascades (3 levels deep), Steelmanning (Ideological Turing Test standard), and Premortem risk mapping. Catches Surface Analysis (restating the question as the answer — "the key challenge is the challenge" without decomposition into atomic sub-problems that can be independently analyzed), Hidden Assumptions (load-bearing beliefs never made explicit — "users want speed" when the real bottleneck is trust, but the speed assumption was never questioned because it felt obvious), Single-Model Thinking (analyzing through one lens only — "economically optimal" without considering behavioral, political, ethical, or temporal dimensions. Single-lens = systematic blindness), Strawman Opposition ("some might argue..." — presenting a weak version of the counterargument. Steelman: the STRONGEST case against your position, to Ideological Turing Test standard), Cascade Blindness (seeing only L1 consequences — "this will increase efficiency" without tracing L2 "which team gets cut?" and L3 "what institutional knowledge is lost forever?"), and Generic Conclusions (a synthesis that could apply to any problem is not a synthesis — "we should be thoughtful and move carefully" says nothing). Call once per complex analysis, strategic decision, or research synthesis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deep Analyst Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Should we expand our SaaS product into the enterprise market?"
+
+**🤖 AI Agent:**
+> Verdict: SURFACE_ANALYSIS. The question is restated, not decomposed. First Principles decomposition: (1) What does 'enterprise' actually mean for our product? (compliance, SSO, audit logs, SLAs). (2) What's our cost structure and how does enterprise change it? (longer sales cycles, dedicated support, SOC2). (3) Willingness to pay? (enterprise pays 5-10x but demands 50x more support). (4) Opportunity cost? (every engineer on enterprise is NOT building SMB features). Decompose into ...
+
+---
+
+**👤 You:**
+> "Pricing analysis. Decomposed: (1) cost floor ($12/user), (2) competitor range ($29-$99/user), (3) WTP survey: 68% chose $39, (4) strategic position: premium. Assumptions: market grows 15% YoY (if wrong: smaller TAM). Applied: first principles (cost + margin), second-order (price increase → churn → revenue net effect), inversion (guarantee failure: underprice and attract low-value users). Steelman against premium: 'Freemium captures 10x market share, converts 3-5%, builds network e..."
+
+**🤖 AI Agent:**
+> Verdict: ANALYSIS_PROVEN. Decomposed into 4 sub-problems (cost, competitors, WTP, strategy). Assumptions explicit with consequences. Multi-model: first principles + second-order + inversion. Steelman passes Ideological Turing Test (freemium argument is genuinely compelling). Cascades mapped 3 levels (price → base → data disadvantage). Premortem: 3 specific, plausible failure paths. This analysis will withstand scrutiny.
+
+---
+
+**👤 You:**
+> "We should hire more engineers to move faster. The best companies hire aggressively. Our competitors are growing their teams. We need to keep up."
+
+**🤖 AI Agent:**
+> Verdict: SINGLE_MODEL. Three failures: (1) Reasoning by ANALOGY ('best companies do it', 'competitors do it') instead of First Principles. Strip convention: does more engineers = more speed? Brooks's Law says no — adding people to a late project makes it later. (2) No second-order: hire → onboarding burden → existing team slows → net velocity DROPS for 3-6 months. (3) No inversion: how to guarantee failure? Hire 10 people without clear ownership, duplicate work, communication over...
+
+
 ## Installation & Usage
 
 To install and use the **Deep Analyst Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Deep Analyst Prover** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

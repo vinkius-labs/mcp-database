@@ -1,12 +1,14 @@
 # dYdX (Decentralized Perpetual Exchange API) MCP Server
 
-Trade perpetuals on dYdX v4 — access markets, orderbooks, and manage your decentralized trading account directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dydx-decentralized-perpetual-exchange-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dydx-decentralized-perpetual-exchange-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dydx-decentralized-perpetual-exchange-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dydx-decentralized-perpetual-exchange-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 16
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Trade perpetuals on dYdX v4 — access markets, orderbooks, and manage your decentralized trading account directly from any AI agent.
 
 ## Description
 Connect your **dYdX** account to any AI agent to monitor markets and execute trades on the leading decentralized perpetual exchange. This server provides full access to the dYdX v4 (dYdX Chain) infrastructure.
@@ -62,6 +64,33 @@ Get details for a specific dYdX v4 market
 - **v4_list_positions**: List all open positions on dYdX v4
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **dYdX (Decentralized Perpetual Exchange API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active markets on dYdX v4."
+
+**🤖 AI Agent:**
+> I've retrieved the active markets. Currently, there are several pairs available including BTC-USD, ETH-USD, and SOL-USD. Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "What is the current orderbook for ETH-USD?"
+
+**🤖 AI Agent:**
+> Fetching the L2 orderbook for ETH-USD... The best bid is at $2,450.50 and the best ask is at $2,450.60. There is significant liquidity within the 1% range.
+
+---
+
+**👤 You:**
+> "Show my open positions and account balance for address dydx1..."
+
+**🤖 AI Agent:**
+> Checking account state... You have one open long position in BTC-USD (size: 0.1 BTC). Your total equity is $5,200.40 with a buying power of $15,000.
+
+
 ## Installation & Usage
 
 To install and use the **dYdX (Decentralized Perpetual Exchange API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **dYdX (Decentralized Perpetual Exchange API)** MCP serve
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

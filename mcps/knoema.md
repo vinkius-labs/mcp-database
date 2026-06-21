@@ -1,12 +1,14 @@
 # Knoema MCP Server
 
-Access global statistics — search datasets, retrieve time-series data, and audit economic indicators.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/knoema)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knoema)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/knoema-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/knoema-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access global statistics — search datasets, retrieve time-series data, and audit economic indicators.
 
 ## Description
 Connect your AI agent to **Knoema**, the most comprehensive source of global decision-making data.
@@ -61,6 +63,33 @@ List available data frequencies
 - **get_knoema_resource**: Get a generic frontend resource
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Knoema** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for datasets about renewable energy in Europe"
+
+**🤖 AI Agent:**
+> I've found 12 datasets related to renewable energy in Europe, including 'Eurostat: Energy statistics' and 'IRENA: Renewable Capacity'. Which one should we analyze?
+
+---
+
+**👤 You:**
+> "Get the metadata for dataset 'IMFWEOS2024Oct'"
+
+**🤖 AI Agent:**
+> Retrieved metadata for 'IMF World Economic Outlook (October 2024)'. It contains 45 indicators for 196 countries, covering 1980-2029. Indicators include GDP, Inflation, and Unemployment.
+
+---
+
+**👤 You:**
+> "Search for crude oil price series"
+
+**🤖 AI Agent:**
+> I found multiple series for crude oil prices. The most relevant are 'Crude Oil (Brent)' from World Bank and 'WTI Crude' from EIA. Would you like to fetch the latest data for these?
+
+
 ## Installation & Usage
 
 To install and use the **Knoema** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Knoema** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

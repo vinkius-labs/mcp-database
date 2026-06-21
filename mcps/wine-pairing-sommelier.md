@@ -1,12 +1,14 @@
 # Wine Pairing & Sommelier MCP Server
 
-Get expert wine pairings for any dish, discover wines by description, and find top-rated bottles with prices — your AI sommelier.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wine-pairing-sommelier)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wine-pairing-sommelier)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wine-pairing-sommelier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wine-pairing-sommelier-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 4
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Get expert wine pairings for any dish, discover wines by description, and find top-rated bottles with prices — your AI sommelier.
 
 ## Description
 The **Wine Pairing & Sommelier MCP Server** transforms your AI agent into a knowledgeable wine expert. Powered by comprehensive wine data, it handles everything from food-wine pairing to specific bottle recommendations.
@@ -32,6 +34,42 @@ Find the perfect wine to pair with a dish or ingredient
 - **recommend_wines**: Get specific wine product recommendations with ratings and prices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wine Pairing & Sommelier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What wine pairs best with grilled salmon?"
+
+**🤖 AI Agent:**
+> For grilled salmon, I recommend a Pinot Noir or a dry Chardonnay. The salmon's rich, oily texture pairs beautifully with the earthiness of Pinot Noir, while Chardonnay's buttery notes complement the grilled flavor. A top pick: Domaine Drouhin Oregon Pinot Noir 2021 — rated 4.2/5, around $32.
+
+---
+
+**👤 You:**
+> "What dishes pair well with an Argentinian Malbec?"
+
+**🤖 AI Agent:**
+> Argentinian Malbec is a bold, full-bodied red that pairs perfectly with:
+🥩 **Grilled Steaks** (especially ribeye or sirloin)
+🍔 **Gourmet Burgers** with blue cheese
+🍖 **BBQ Pork Ribs** or brisket
+The wine's dark fruit notes and smokiness complement charred and heavily seasoned meats.
+
+---
+
+**👤 You:**
+> "Give me a description of a typical New Zealand Sauvignon Blanc."
+
+**🤖 AI Agent:**
+> Querying wine database ('get_wine_description')...
+**New Zealand Sauvignon Blanc** (typically from Marlborough):
+- **Profile**: Highly aromatic, crisp, and high in acidity.
+- **Tasting Notes**: Overt notes of passion fruit, gooseberry, grapefruit, and fresh-cut grass or bell pepper (jalapeño descriptors are common).
+- **Style**: Unoaked, best consumed young.
+- **Pairings**: Goat cheese, asparagus, fresh seafood.
+
+
 ## Installation & Usage
 
 To install and use the **Wine Pairing & Sommelier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -40,4 +78,11 @@ To install and use the **Wine Pairing & Sommelier** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

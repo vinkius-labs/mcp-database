@@ -1,12 +1,14 @@
 # AT&T IoT MCP Server
 
-IoT Control Center -- Manage SIM devices, activation, data pools, shared plans, and connectivity diagnostics via AT&T IoT API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/att-iot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/att-iot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/att-iot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/att-iot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+IoT Control Center -- Manage SIM devices, activation, data pools, shared plans, and connectivity diagnostics via AT&T IoT API.
 
 ## Description
 Connect your **AT&T IoT** account to any AI agent and take full command of your IoT SIM fleet through natural conversation.
@@ -71,6 +73,33 @@ Suspend an IoT SIM to block network access
 Update configuration settings for an IoT device
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AT&T IoT** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my IoT devices and show me which ones are suspended."
+
+**🤖 AI Agent:**
+> I've retrieved your IoT fleet inventory. Total devices: 247. Active: 231, Suspended: 14, Deactivated: 2. Here are the 14 suspended devices with their ICCIDs and suspension reasons: 3 devices suspended for exceeding data limits, 8 suspended manually (cost containment), 3 suspended due to reported loss/theft. Would you like me to resume any of the cost-containment suspensions?
+
+---
+
+**👤 You:**
+> "Device ICCID 8901234567890123456 is offline. Run diagnostics and tell me what's wrong."
+
+**🤖 AI Agent:**
+> Diagnostics complete for ICCID 8901234567890123456. Issue identified: APN configuration mismatch. The device is registered on the network and has strong signal (-67 dBm), but the APN 'iot.att.net' is returning authentication failures. Recommended action: update the APN settings using `update_device_settings` with the correct APN value. No network outages reported in the device's area.
+
+---
+
+**👤 You:**
+> "Check the data pool usage for 'Enterprise-Fleet-A' and tell me our top 5 consuming devices."
+
+**🤖 AI Agent:**
+> Pool 'Enterprise-Fleet-A' usage: 78.3 GB used out of 100 GB allocated (78.3%). 21.7 GB remaining. Renewal date: April 28. Top 5 consuming devices: 1) ICCID ...3456 (8.2 GB), 2) ICCID ...7891 (6.7 GB), 3) ICCID ...2345 (5.1 GB), 4) ICCID ...6789 (4.8 GB), 5) ICCID ...0123 (3.9 GB). At current rate, the pool will reach 90% by April 20. Consider suspending non-critical devices or reallocating capacity.
+
+
 ## Installation & Usage
 
 To install and use the **AT&T IoT** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **AT&T IoT** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

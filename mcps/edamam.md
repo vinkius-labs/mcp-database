@@ -1,12 +1,14 @@
 # Edamam MCP Server
 
-Analyze nutrition from natural language, search recipes with dietary filters, and access a comprehensive food database with Edamam's AI-powered platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/edamam)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edamam)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edamam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edamam-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 2
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Analyze nutrition from natural language, search recipes with dietary filters, and access a comprehensive food database with Edamam's AI-powered platform.
 
 ## Description
 The **Edamam MCP Server** brings advanced nutritional intelligence to your AI agent. Edamam's unique NLP engine can parse any food description in natural language and return instant, precise nutritional analysis.
@@ -29,6 +31,33 @@ Analyze the nutritional content of any food or ingredient using natural language
 Search the Edamam recipe database with advanced dietary and health filters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Edamam** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many calories in 2 eggs and a slice of avocado toast?"
+
+**🤖 AI Agent:**
+> I've analyzed your meal: 2 large eggs and 1 slice of avocado toast contains approximately 420 calories, 24g protein, 28g fat, 20g carbs, and 5g fiber. The eggs contribute most of the protein while the avocado provides healthy monounsaturated fats.
+
+---
+
+**👤 You:**
+> "Find 3 gluten-free dinner recipes with chicken."
+
+**🤖 AI Agent:**
+> I found several gluten-free chicken dinner recipes. Here are the top 3: 1. Lemon Herb Roast Chicken, 2. Gluten-Free Chicken Piccata, 3. One-Pan Chicken and Veggies. Shall I fetch the full ingredients for one of them?
+
+---
+
+**👤 You:**
+> "Analyze the nutrition for a peanut butter sandwich."
+
+**🤖 AI Agent:**
+> Here is the nutritional breakdown for 1 peanut butter sandwich (2 slices of wheat bread and 2 tbsp peanut butter): approximately 330 calories, 12g of protein, 17g of fat, and 34g of carbohydrates.
+
+
 ## Installation & Usage
 
 To install and use the **Edamam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -37,4 +66,11 @@ To install and use the **Edamam** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Nansen (Blockchain Analytics) MCP Server
 
-Access institutional-grade blockchain analytics — track Smart Money, profile wallets, and monitor real-time token flows across multiple chains.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nansen-blockchain-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nansen-blockchain-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nansen-blockchain-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nansen-blockchain-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 48
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access institutional-grade blockchain analytics — track Smart Money, profile wallets, and monitor real-time token flows across multiple chains.
 
 ## Description
 Connect your **Nansen** API to any AI agent to unlock deep on-chain insights through natural language. Nansen provides the data that helps investors and teams identify opportunities and perform due diligence on-chain.
@@ -83,6 +85,33 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **token_screener**: Discover trending tokens across chains
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nansen (Blockchain Analytics)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the token 'PEPE' and show me its details."
+
+**🤖 AI Agent:**
+> I've found the PEPE token. It is currently tracked across multiple exchanges. Would you like to see the Smart Money netflow for PEPE in the last 24 hours?
+
+---
+
+**👤 You:**
+> "What are the current Smart Money holdings?"
+
+**🤖 AI Agent:**
+> Fetching aggregated Smart Money balances... The top holdings currently include WETH, USDC, and LINK. I can provide a detailed breakdown of the balance for any of these tokens.
+
+---
+
+**👤 You:**
+> "Show me the PnL summary for address 0x71C7656EC7ab88b098defB751B7401B5f6d8976F."
+
+**🤖 AI Agent:**
+> Analyzing PnL for the specified address... This wallet has an aggregate realized profit of $1.2M, with its most profitable trade being in SHIB. Would you like to see the full transaction history?
+
+
 ## Installation & Usage
 
 To install and use the **Nansen (Blockchain Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -91,4 +120,11 @@ To install and use the **Nansen (Blockchain Analytics)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

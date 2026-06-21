@@ -1,12 +1,14 @@
 # SPTrans Olho Vivo MCP Server
 
-Access real-time public transit data for São Paulo — track bus positions, check arrival forecasts, and locate stops across the city.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sptrans-olho-vivo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sptrans-olho-vivo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sptrans-olho-vivo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sptrans-olho-vivo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 13
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time public transit data for São Paulo — track bus positions, check arrival forecasts, and locate stops across the city.
 
 ## Description
 Connect to the **SPTrans Olho Vivo** API to bring real-time urban mobility intelligence to your AI agent. Monitor the entire São Paulo bus fleet and provide precise transit information through natural conversation.
@@ -48,6 +50,33 @@ Connect to the **SPTrans Olho Vivo** API to bring real-time urban mobility intel
 - **search_stops**: Search for bus stops by name or address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SPTrans Olho Vivo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for bus lines related to 'Lapa'."
+
+**🤖 AI Agent:**
+> I found several lines for 'Lapa', including line 8000-10 (Terminal Lapa) with code 33657. Would you like to see the current bus positions for this line?
+
+---
+
+**👤 You:**
+> "What are the arrival forecasts for stop code 650005666?"
+
+**🤖 AI Agent:**
+> For stop 650005666, the next bus on line 8000-10 is expected in 5 minutes. There is also a bus for line 8615-10 arriving in 12 minutes.
+
+---
+
+**👤 You:**
+> "Show me the real-time positions of buses on line 33657."
+
+**🤖 AI Agent:**
+> There are currently 4 buses active on line 33657. Two are near Terminal Lapa, one is on Rua Clélia, and one is approaching the city center.
+
+
 ## Installation & Usage
 
 To install and use the **SPTrans Olho Vivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **SPTrans Olho Vivo** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

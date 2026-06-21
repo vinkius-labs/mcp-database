@@ -1,12 +1,14 @@
 # Cincopa MCP Server
 
-Manage video and media galleries via Cincopa — track assets, trigger uploads, and monitor engagement directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cincopa)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cincopa)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cincopa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cincopa-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 8
+
+**Category:** [image-video](../categories/image-video.md)
+
+Manage video and media galleries via Cincopa — track assets, trigger uploads, and monitor engagement directly from any AI agent.
 
 ## Description
 Connect your **Cincopa** account to any AI agent and take full control of your video and media management through natural conversation. Streamline how you host and distribute content.
@@ -45,6 +47,33 @@ Connect your **Cincopa** account to any AI agent and take full control of your v
 - **list_cincopa_templates**: List available gallery templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cincopa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my video galleries in Cincopa."
+
+**🤖 AI Agent:**
+> Retrieving your galleries... I found 5 items: 'Product Demos', 'Marketing Assets', 'Internal Training', and 2 others. Which one would you like to see the contents of?
+
+---
+
+**👤 You:**
+> "Show me the metadata for asset RID 'AAAAtAURG'."
+
+**🤖 AI Agent:**
+> Checking asset AAAAtAURG... This is a MP4 video titled 'Feature Update'. It is 45MB, has a 1080p resolution, and was last modified yesterday.
+
+---
+
+**👤 You:**
+> "Create a new gallery called 'Customer Interviews' using the 'Video Portal' template."
+
+**🤖 AI Agent:**
+> Creating gallery 'Customer Interviews'... The gallery has been successfully created. You can now use its FID (A4KANh__rQ_m) to add media assets to it.
+
+
 ## Installation & Usage
 
 To install and use the **Cincopa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Cincopa** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

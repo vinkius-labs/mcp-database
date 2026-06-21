@@ -1,12 +1,14 @@
 # Agendor MCP Server
 
-CRM for sales teams — manage leads, organizations, and pipelines via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/agendor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agendor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agendor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agendor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+CRM for sales teams — manage leads, organizations, and pipelines via AI.
 
 ## Description
 Connect your **Agendor** account to your AI agent to unlock professional sales orchestration and CRM management. From creating new leads and organizations to auditing your sales pipeline and managing task workflows, your agent handles your sales ecosystem through natural conversation.
@@ -44,6 +46,33 @@ Instantiate a new person profile natively within the Agendor CRM
 - **list_tasks**: Retrieve the chronological queue of upcoming activities and follow-ups scheduled for the team
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Agendor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 people added to my Agendor CRM."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 contacts. They include John Smith, Maria Silva, and 3 others. Would you like to see the contact details or associated deals for any of them?
+
+---
+
+**👤 You:**
+> "Show me all deals in the 'Qualified' stage of my pipeline."
+
+**🤖 AI Agent:**
+> I've filtered your pipeline. You have 4 deals in the 'Qualified' stage, totaling $15,000 in potential revenue. Would you like the details for these opportunities?
+
+---
+
+**👤 You:**
+> "Create a new organization named 'Tech Innovations' with domain 'techinn.com'."
+
+**🤖 AI Agent:**
+> I've successfully created 'Tech Innovations' in Agendor. The organization ID is 98765. Would you like to add a primary contact person to this company?
+
+
 ## Installation & Usage
 
 To install and use the **Agendor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Agendor** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

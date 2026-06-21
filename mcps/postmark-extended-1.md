@@ -1,12 +1,14 @@
 # Postmark MCP Server
 
-Send transactional emails, manage templates, and track delivery status directly through Postmark's high-deliverability infrastructure.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark-extended-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark-extended-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postmark-extended-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postmark-extended-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 72
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Send transactional emails, manage templates, and track delivery status directly through Postmark's high-deliverability infrastructure.
 
 ## Description
 Connect your **Postmark** account to any AI agent to automate your transactional email workflows and template management with ease.
@@ -107,6 +109,33 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **verify_domain_return_path**: Trigger Return-Path verification for a domain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Postmark** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an email from 'sales@company.com' to 'client@example.com' with the subject 'Meeting Follow-up' and a simple thank you message."
+
+**🤖 AI Agent:**
+> I've sent the email using `send_email`. The Message ID is 'abc-123' and the status is 'Submitted'.
+
+---
+
+**👤 You:**
+> "List all the email templates available on my Postmark server."
+
+**🤖 AI Agent:**
+> I found 3 templates: 'Welcome Email' (Alias: welcome), 'Password Reset' (Alias: reset), and 'Invoice' (Alias: invoice).
+
+---
+
+**👤 You:**
+> "Send a welcome email to 'newuser@gmail.com' using the template alias 'welcome-pack' and set the 'name' variable to 'John'."
+
+**🤖 AI Agent:**
+> Processing `send_email_with_template`... The email has been successfully queued for delivery to John.
+
+
 ## Installation & Usage
 
 To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -115,4 +144,11 @@ To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

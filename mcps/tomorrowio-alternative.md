@@ -1,12 +1,14 @@
 # Tomorrow.io MCP Server
 
-Access hyperlocal weather intelligence — real-time conditions, forecasts, historical archives, severe alerts and route weather from the Tomorrow.io API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tomorrowio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tomorrowio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tomorrowio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 10
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access hyperlocal weather intelligence — real-time conditions, forecasts, historical archives, severe alerts and route weather from the Tomorrow.io API.
 
 ## Description
 Connect your **Tomorrow.io** account to any AI agent and unlock enterprise-grade weather intelligence through natural conversation.
@@ -68,6 +70,33 @@ Get weather along a travel route
 Get custom weather timeline with specific fields and timesteps
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tomorrow.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the weather like in Tokyo right now?"
+
+**🤖 AI Agent:**
+> Currently in Tokyo: 🌡️ 18.5°C, 💧 62% humidity, 💨 12 km/h NW wind, clear skies with 0% precipitation probability. UV index is 3 (moderate). Visibility is excellent at 16 km.
+
+---
+
+**👤 You:**
+> "Give me an hourly forecast for São Paulo for the next 12 hours."
+
+**🤖 AI Agent:**
+> Hourly forecast for São Paulo: 14:00 — 27°C, 45% humidity, 8% rain chance | 15:00 — 28°C, 42%, 5% | 16:00 — 26°C, 55%, 25% | 17:00 — 24°C, 68%, 60% — thunderstorm likely | 18:00 — 22°C, 78%, 85% — heavy rain expected. I'd recommend carrying an umbrella after 4 PM.
+
+---
+
+**👤 You:**
+> "What was the weather like in London on January 15, 2025?"
+
+**🤖 AI Agent:**
+> Historical weather for London on January 15, 2025: High 7.2°C, Low 2.1°C, 89% humidity, 22 km/h SW wind, 4.8mm rainfall recorded, overcast skies throughout the day. Visibility was reduced to 8km due to light drizzle in the morning.
+
+
 ## Installation & Usage
 
 To install and use the **Tomorrow.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Tomorrow.io** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

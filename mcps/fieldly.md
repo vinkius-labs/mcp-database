@@ -1,12 +1,14 @@
 # Fieldly MCP Server
 
-Connect Fieldly to automate construction management — manage work items, bookings, and invoices directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fieldly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fieldly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 11
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Connect Fieldly to automate construction management — manage work items, bookings, and invoices directly from your AI agent.
 
 ## Description
 Fieldly is a specialized project management platform for the construction industry. This MCP server allows your AI agent to interact with your Fieldly account flawlessly.
@@ -45,6 +47,33 @@ Fieldly is a specialized project management platform for the construction indust
 - **list_work_items**: List all work items (jobs/tasks)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fieldly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active work items in Fieldly."
+
+**🤖 AI Agent:**
+> I've retrieved your work items. You have 5 active projects including 'Roof Repair - Site A' (ID: 101) and 'Foundation Pumping' (ID: 102). Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the team bookings for tomorrow."
+
+**🤖 AI Agent:**
+> Inspecting bookings... Tomorrow you have 3 scheduled teams: 'Electricians' (8:00 AM), 'Carpenters' (10:00 AM), and 'Plumbers' (1:00 PM). Shall I list the specific site IDs for these bookings?
+
+---
+
+**👤 You:**
+> "Check for any unpaid construction invoices."
+
+**🤖 AI Agent:**
+> Retrieving invoices... I found 2 unpaid invoices: INV-202 ($5,400) and INV-205 ($3,200). Both are associated with the 'Downtown Plaza' project. Would you like me to fetch the customer contact info?
+
+
 ## Installation & Usage
 
 To install and use the **Fieldly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Fieldly** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

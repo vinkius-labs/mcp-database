@@ -1,12 +1,14 @@
 # Riot Games MCP Server
 
-Access League of Legends player data — summoner profiles, match history, ranked stats, champion masteries and live games.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/riot-games)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/riot-games)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/riot-games-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/riot-games-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access League of Legends player data — summoner profiles, match history, ranked stats, champion masteries and live games.
 
 ## Description
 Connect to **Riot Games API** and access League of Legends player data through natural conversation.
@@ -74,6 +76,33 @@ Get League of Legends summoner profile by summoner ID
 Get League of Legends summoner profile by PUUID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Riot Games** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the summoner Faker on KR server."
+
+**🤖 AI Agent:**
+> Faker#KR1 found. Summoner Level: 687. PUUID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx. Summoner ID: xxxxxxxxxxxxxx.
+
+---
+
+**👤 You:**
+> "What's Faker's ranked stats on KR?"
+
+**🤖 AI Agent:**
+> Solo/Duo: Challenger I, 1456 LP, 412W/298L (58.0% WR). Flex: Master I, 234 LP, 89W/67L (57.1% WR). Hot streak: true.
+
+---
+
+**👤 You:**
+> "Get Faker's last 5 match IDs."
+
+**🤖 AI Agent:**
+> Found 5 recent matches: KR_7234567890, KR_7234567889, KR_7234567888, KR_7234567887, KR_7234567886. Use get_match to see full details for any match.
+
+
 ## Installation & Usage
 
 To install and use the **Riot Games** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **Riot Games** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

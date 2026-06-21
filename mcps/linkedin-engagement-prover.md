@@ -1,12 +1,14 @@
 # LinkedIn Engagement Prover MCP Server
 
-AI agents write LinkedIn posts that get zero engagement. This tool forces scroll-stopping hooks, eliminates bait tactics, ensures authentic voice with save-worthy value, optimizes format for the 2026 algorithm, and prevents algorithm violations. Built from deep research on LinkedIn 360Brew.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-engagement-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-engagement-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkedin-engagement-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkedin-engagement-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents write LinkedIn posts that get zero engagement. This tool forces scroll-stopping hooks, eliminates bait tactics, ensures authentic voice with save-worthy value, optimizes format for the 2026 algorithm, and prevents algorithm violations. Built from deep research on LinkedIn 360Brew.
 
 ## Description
 AI agents write LinkedIn posts that look professional but get zero engagement. They use corporate language, list generic advice, miss the algorithm's real signals, and produce content that people scroll past without a second thought.
@@ -42,6 +44,33 @@ AI-generated LinkedIn content fails on six axes:
 Structured reflection tool for LinkedIn content optimization — forces scroll-stopping hooks, engagement bait elimination, authentic voice verification, save-worthy value density, format-content matching, and 2026 algorithm compliance before publishing. Catches Weak Hook (the first 210 characters before "See more" do not stop the scroll — "In today's rapidly evolving landscape of digital transformation..." LinkedIn shows ~210 characters before truncation. The hook must create tension, curiosity, data intrigue, or specificity in that window. Proven hooks: "I analyzed 500 LinkedIn posts. One pattern predicted 10x reach." (DATA). "Most CTOs think microservices solve scale. They're solving the wrong problem." (CONTRARIAN). "I almost quit engineering. Then a 3-minute conversation changed everything." (VULNERABILITY). The hook IS the content — 90% of impressions never click "See more"), Engagement Bait (using tactics LinkedIn actively penalizes since 2024 — "Comment YES if you agree." "Tag someone who needs this." "Follow for more tips." "Which emoji represents your Monday?" — LinkedIn's algorithm suppresses these patterns with a ~40% reach penalty. Reaction polling, like-if, and tag-baiting are classified as low-quality content by the feed ranking model), Corporate Tone (writing that sounds like a press release instead of a person — "We are pleased to announce our strategic partnership leveraging synergies across key stakeholders." If you swap the author's name and the post reads identically, it is not authentic. LinkedIn rewards dwell time and saves — corporate speak generates neither), Low Value Density (posting platitudes instead of save-worthy content — "Consistency is key." "Work smarter, not harder." "Your network is your net worth." Saves are the highest engagement signal in the 2026 algorithm. Save-worthy content: original frameworks with steps, benchmark data with methodology, specific "how I did it" with measurable results, contrarian perspectives with evidence), Format Mismatch (using the wrong format for the content type — educational content performs 2.3x better as carousels (PDF, 8-10 slides) than as text posts. Personal stories perform best as text+image (authentic photo, not stock). Tutorials perform best as native video (<90s, vertical 9:16, with captions). Format hierarchy: carousel > multi-image > video > text+image > poll > text-only), and Algorithm Violation (triggering known 2026 algorithm penalties — external links in the post body: ~60% reach penalty (put links in first comment). Generic AI-generated content: suppressed since March 2024 update. Posting frequency: <2x/week loses momentum, >7x/week triggers spam detection. Hashtags: >5 hashtags triggers spam filter. First-hour engagement: replying to comments within 60 minutes adds +35% visibility). Call once per LinkedIn post before publishing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LinkedIn Engagement Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "In today's rapidly evolving business reality, it is crucial for organizations to embrace digital transformation. Our team has been working hard to leverage innovative solutions that drive operational excellence. We are pleased to announce our latest achievement. Follow for more insights! #innovation #leadership #success #business #digital #transformation #AI #tech"
+
+**🤖 AI Agent:**
+> Verdict: CORPORATE_TONE + ENGAGEMENT_BAIT + ALGORITHM_VIOLATION. Triple failure. (1) Hook 'In today's rapidly evolving business reality' is the #1 scroll-past opener — zero tension, zero curiosity. (2) 'Follow for more' is engagement bait — algorithmically suppressed. (3) 8 hashtags (max 5). (4) Every sentence is corporate: 'leverage', 'innovative solutions', 'operational excellence', 'pleased to announce'. (5) Zero specific value — what achievement? What numbers? What did YOU learn? Rewrite as: 'We cut deployment time from 4 hours to 12 minutes. Here's exactly how (and what broke along the way):'
+
+---
+
+**👤 You:**
+> "Hook: 'We cut our CI/CD pipeline from 47 minutes to 3. The fix was embarrassingly simple.' Body: 1,800 chars telling the specific story — the bottleneck was Docker layer caching, tried 3 approaches, the winning solution was multi-stage builds + cache mounts. Includes before/after numbers. Format: carousel (8 slides with architecture diagrams). CTA: 'What's the most surprising bottleneck you've found in your pipeline?' No external links. 4 hashtags."
+
+**🤖 AI Agent:**
+> Verdict: ENGAGEMENT_PROVEN. Hook: specific result + vulnerability ('embarrassingly simple') — maximum curiosity in <60 chars. Body: 1,800 chars (sweet spot), specific story with before/after data, 3 failed approaches (shows depth), winning solution (Docker cache mounts — actionable). Format: carousel with architecture diagrams — #1 format for technical educational content, maximizes dwell time + saves. CTA: genuine open-ended question inviting professional experience. Algorithm: no external links, 4 hashtags, within char sweet spot. This post will drive saves, long comments, and dwell time. Ship it.
+
+---
+
+**👤 You:**
+> "Hook: 'The secret to success? Consistency.' Body: 'I've learned that in business, it's all about showing up every day. Be authentic. Follow your passion. Hard work pays off. Don't let anyone tell you otherwise. Remember: you miss 100% of the shots you don't take. Keep pushing forward. The only way to fail is to quit.' No links. 3 hashtags. Text-only format."
+
+**🤖 AI Agent:**
+> Verdict: LOW_VALUE. Hook is a platitude ('The secret to success? Consistency') — zero curiosity, zero tension, zero data. Body is a collection of motivational quotes that appear in 10,000 posts daily. DWELL TIME = 0 because there's nothing to absorb. Nobody saves this. Nobody writes a 15-word comment on this. To fix: replace EVERY platitude with a SPECIFIC experience. Not 'be consistent' but 'I posted on LinkedIn for 147 days straight. Days 1-30: 0 engagement. Day 45: first viral post. Here's what changed and why.'
+
+
 ## Installation & Usage
 
 To install and use the **LinkedIn Engagement Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **LinkedIn Engagement Prover** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

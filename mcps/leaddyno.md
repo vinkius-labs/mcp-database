@@ -1,12 +1,14 @@
 # LeadDyno MCP Server
 
-Empower your AI to process LeadDyno affiliate links, manage program members, and track generated commission sales instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/leaddyno)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leaddyno)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leaddyno-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leaddyno-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Empower your AI to process LeadDyno affiliate links, manage program members, and track generated commission sales instantly.
 
 ## Description
 Combine **LeadDyno** affiliate logic with your everyday AI tools. Automatically monitor external influencers sharing your links, verify accurate commission ledgers, and list brand ambassadors globally.
@@ -42,6 +44,33 @@ Combine **LeadDyno** affiliate logic with your everyday AI tools. Automatically 
 - **list_visitors**: Retrieve a list of website visitors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LeadDyno** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List overall active brand affiliates signed in the program."
+
+**🤖 AI Agent:**
+> Pulling affiliates securely... I observed 5 new marketers integrated into LeadDyno with confirmed track links active tonight.
+
+---
+
+**👤 You:**
+> "Retrieve the total daily generated commissions for this week."
+
+**🤖 AI Agent:**
+> Scanning ledger... There have been 12 logged conversion clicks representing 3 closed sales this week so far.
+
+---
+
+**👤 You:**
+> "Which influencers brought in the most lead visitors today?"
+
+**🤖 AI Agent:**
+> I matched visitor history to their referral identifiers. Affiliate A holds highest traffic directly pulling 89 unique URL clicks.
+
+
 ## Installation & Usage
 
 To install and use the **LeadDyno** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **LeadDyno** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

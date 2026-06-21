@@ -1,12 +1,14 @@
 # Cashboard MCP Server
 
-Manage time tracking, invoicing, and projects via Cashboard — track expenses, send estimates, and monitor client billing directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cashboard)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cashboard)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cashboard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cashboard-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage time tracking, invoicing, and projects via Cashboard — track expenses, send estimates, and monitor client billing directly from any AI agent.
 
 ## Description
 Connect your **Cashboard** account to any AI agent and take full control of your freelance or small business operations through natural conversation. Streamline time tracking and client invoicing.
@@ -45,6 +47,33 @@ Connect your **Cashboard** account to any AI agent and take full control of your
 - **list_time_entries**: List recent time tracking entries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cashboard** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my last 5 invoices in Cashboard."
+
+**🤖 AI Agent:**
+> Retrieving your recent invoices... I found 5 including Invoice #1001 ($500.00 - Paid) and #1002 ($1,250.00 - Outstanding). Would you like to see the line items for any of these?
+
+---
+
+**👤 You:**
+> "What are my active projects right now?"
+
+**🤖 AI Agent:**
+> Checking your active projects... You currently have 3 active projects: 'Website Redesign', 'Mobile App Development', and 'Marketing Consultation'.
+
+---
+
+**👤 You:**
+> "List my business expenses from the last 30 days."
+
+**🤖 AI Agent:**
+> Retrieving your expenses... I found 12 entries in the last 30 days totaling $845.50. The largest expense was 'AWS Hosting' ($120.00).
+
+
 ## Installation & Usage
 
 To install and use the **Cashboard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Cashboard** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

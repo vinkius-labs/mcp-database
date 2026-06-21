@@ -1,12 +1,14 @@
 # Nylas MCP Server
 
-Equip your AI agent to manage emails, calendars, and contacts across all providers (Gmail, Outlook) through a single unified interaction.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nylas)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nylas)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nylas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nylas-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Equip your AI agent to manage emails, calendars, and contacts across all providers (Gmail, Outlook) through a single unified interaction.
 
 ## Description
 Connect your **Nylas** account to your AI agent and seamlessly interact with communication data across 100% of email and calendar providers.
@@ -47,6 +49,33 @@ Create a new synchronized calendar event
 - **list_drafts**: Dump unsent email threads parked in the Drafts bound location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nylas** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my inbox for any emails received today with the subject 'Invoice'."
+
+**🤖 AI Agent:**
+> I've fetched your latest messages and found 2 emails containing 'Invoice' received today. Would you like me to summarize the billing amounts?
+
+---
+
+**👤 You:**
+> "Schedule a 30-minute sync at 2 PM tomorrow titled 'Q3 Execution Strategy'."
+
+**🤖 AI Agent:**
+> Your calendar event 'Q3 Execution Strategy' is now scheduled for tomorrow at 2:00 PM successfully.
+
+---
+
+**👤 You:**
+> "Find Robert's email address by listing my contacts."
+
+**🤖 AI Agent:**
+> I checked your Nylas contact directory. Robert's formal email address is `robert.smith@domain.com`. Would you like me to draft a message to him?
+
+
 ## Installation & Usage
 
 To install and use the **Nylas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Nylas** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

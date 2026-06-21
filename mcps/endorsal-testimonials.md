@@ -1,12 +1,14 @@
 # Endorsal Testimonials MCP Server
 
-Equip your AI agent to manage testimonials, track display widgets, and approve reviews via the Endorsal API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/endorsal-testimonials)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/endorsal-testimonials)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/endorsal-testimonials-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/endorsal-testimonials-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage testimonials, track display widgets, and approve reviews via the Endorsal API.
 
 ## Description
 Integrate **Endorsal**, the fully automated testimonial collection platform, directly into your AI workflow. Manage your collected testimonials and customer ratings, track display widgets and website properties, monitor pending reviews and approval statuses, and oversee your social proof using natural language.
@@ -46,6 +48,33 @@ List all display widgets configured in your account
 - **search_testimonials_by_keyword**: Search for testimonials using a customer name or testimonial keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Endorsal Testimonials** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my collected testimonials."
+
+**🤖 AI Agent:**
+> I've found 15 testimonials, including 'Excellent Service' (5 stars) and 'Highly Recommended' (5 stars). 12 are approved and 3 are pending. Would you like to see the text for the pending ones?
+
+---
+
+**👤 You:**
+> "Show me the display widgets configured."
+
+**🤖 AI Agent:**
+> I've retrieved 4 widgets, including 'Main Website Wall' (Wall of Love), 'Sidebar Badge', and 'Checkout Slider'. Should I pull the specific property ID for the Main Website Wall?
+
+---
+
+**👤 You:**
+> "Approve testimonial ID 'TEST-12345'."
+
+**🤖 AI Agent:**
+> Testimonial ID 'TEST-12345' from 'John Doe' has been successfully approved and is now live on your configured widgets. Should I notify the team?
+
+
 ## Installation & Usage
 
 To install and use the **Endorsal Testimonials** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Endorsal Testimonials** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

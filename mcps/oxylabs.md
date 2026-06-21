@@ -1,12 +1,14 @@
 # Oxylabs MCP Server
 
-Scrape any website via Oxylabs — extract Google SERPs, Amazon products, Bing and Yandex results, or any arbitrary URL with JS rendering from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oxylabs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oxylabs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oxylabs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oxylabs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Scrape any website via Oxylabs — extract Google SERPs, Amazon products, Bing and Yandex results, or any arbitrary URL with JS rendering from any AI agent.
 
 ## Description
 Give your AI agent the ability to extract structured data from any website with **Oxylabs Web Scraping API**. Scrape Google, Amazon, Bing, and Yandex with specialized parsers, or hit any arbitrary URL with the universal scraper — with optional headless browser rendering.
@@ -54,6 +56,33 @@ Scrape any arbitrary HTML website using Oxylabs Universal Scraper API
 Dispatch entirely arbitrary strict Oxylabs Payload JSON structures
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Oxylabs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search Google for 'best noise cancelling headphones 2024' and show me the top 5 organic results."
+
+**🤖 AI Agent:**
+> Top 5 organic results for 'best noise cancelling headphones 2024': 1) Wirecutter — 'The Best Noise-Canceling Headphones' (score: featured snippet). 2) RTINGS — 'The 8 Best Noise Cancelling Headphones'. 3) TechRadar — 'Best noise-cancelling headphones 2024'. 4) Tom's Guide — 'Best ANC headphones'. 5) CNET — 'Best Noise-Canceling Headphones for 2024'. Want me to scrape any of these pages for full content?
+
+---
+
+**👤 You:**
+> "Get the full product details for Amazon ASIN B0C8PSXB2M."
+
+**🤖 AI Agent:**
+> Product: Sony WH-1000XM5 Wireless Noise Canceling Headphones. Price: $328.00 (was $399.99 — 18% off). Rating: 4.6/5 (12,847 reviews). Prime: Yes. Colors available: Black, Silver, Midnight Blue. In stock. Key features: 30-hour battery, 8 microphones, touch sensor controls. Sold by Amazon.com. Want me to check pricing on amazon.de or amazon.co.uk?
+
+---
+
+**👤 You:**
+> "Scrape the homepage of techcrunch.com with JavaScript rendering enabled."
+
+**🤖 AI Agent:**
+> Successfully scraped techcrunch.com with JS rendering. Page title: 'TechCrunch | Startup and Technology News'. Extracted 42 article headlines, 28 author names, 15 featured images, and 8 category tags. Top headline: 'AI startup raises $200M Series C at $2B valuation'. Content size: 245 KB (after rendering). Want me to extract just the article titles and links in a structured format?
+
+
 ## Installation & Usage
 
 To install and use the **Oxylabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Oxylabs** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

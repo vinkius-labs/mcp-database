@@ -1,12 +1,14 @@
 # Sentry MCP Server
 
-Monitor errors and application health via Sentry — query issues, inspect events, audit releases and check alert rules directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sentry-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sentry-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 15
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Monitor errors and application health via Sentry — query issues, inspect events, audit releases and check alert rules directly from any AI agent.
 
 ## Description
 Connect your **Sentry** account to any AI agent and gain real-time observability over your application errors through natural conversation.
@@ -83,6 +85,33 @@ List teams in a Sentry organization
 Update a Sentry issue status or assign it
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sentry** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all unresolved issues in my backend-api project."
+
+**🤖 AI Agent:**
+> I've scanned your backend-api project and found 4 unresolved issues. The most critical is a `ZeroDivisionError` in payment processing (127 events in the last 24h). Would you like the full stacktrace?
+
+---
+
+**👤 You:**
+> "Which releases have been deployed for my organization in the last month?"
+
+**🤖 AI Agent:**
+> I've retrieved 6 releases for your organization. The most recent is `v2.14.3` deployed 2 days ago to the production environment. The oldest in this window is `v2.12.0` from 28 days ago. Would you like event counts per release?
+
+---
+
+**👤 You:**
+> "What alert rules are currently configured for the mobile-app team?"
+
+**🤖 AI Agent:**
+> Your mobile-app project has 3 active alert rules: 1) Notify #eng-mobile on Slack when a new issue is created, 2) Send email to oncall@company.com when issue count exceeds 100 in 5 minutes, 3) Create PagerDuty incident for errors with priority 50. Would you like the full configuration details for any rule?
+
+
 ## Installation & Usage
 
 To install and use the **Sentry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -91,4 +120,11 @@ To install and use the **Sentry** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

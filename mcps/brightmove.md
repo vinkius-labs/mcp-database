@@ -1,12 +1,14 @@
 # BrightMove MCP Server
 
-Manage your hiring pipeline via BrightMove — track jobs, applicants, and references directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brightmove)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brightmove)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brightmove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brightmove-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your hiring pipeline via BrightMove — track jobs, applicants, and references directly from any AI agent.
 
 ## Description
 Connect your **BrightMove ATS** account to any AI agent and orchestrate your recruitment, talent acquisition, and applicant tracking workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **BrightMove ATS** account to any AI agent and orchestrate your rec
 - **list_user_accounts**: List user accounts in the company
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BrightMove** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active jobs in BrightMove."
+
+**🤖 AI Agent:**
+> I've retrieved your jobs. You have 3 active postings: 'Senior Java Developer' (ID: job_1), 'Customer Success Manager' (ID: job_2), and 'Accountant' (ID: job_3).
+
+---
+
+**👤 You:**
+> "Show the profile for applicant with GUID 12345-abcde."
+
+**🤖 AI Agent:**
+> I've found the profile for Jane Smith. She is currently in the 'Interview' stage for the 'Accountant' role. Her contact email is jane.smith@example.com.
+
+---
+
+**👤 You:**
+> "List the references for applicant Jane Smith."
+
+**🤖 AI Agent:**
+> Retrieving references for Jane Smith... I found 2 references: John Miller (Manager at TechCorp) and Sarah Wilson (HR Director at Global Solutions).
+
+
 ## Installation & Usage
 
 To install and use the **BrightMove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BrightMove** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

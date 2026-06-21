@@ -1,12 +1,14 @@
 # Forefront MCP Server
 
-Access Forefront AI models directly from your agent — generate chat completions, manage fine-tuning jobs, and collect LLM outputs with pipelines.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/forefront)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/forefront)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/forefront-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/forefront-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Forefront AI models directly from your agent — generate chat completions, manage fine-tuning jobs, and collect LLM outputs with pipelines.
 
 ## Description
 Connect your **Forefront** account to any AI agent to harness powerful language models, manage custom fine-tuning, and orchestrate data pipelines directly through natural conversation.
@@ -41,6 +43,33 @@ Creates a completion response for a given prompt
 - **get_pipeline**: Returns a pipeline object by ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Forefront** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a chat completion with model 'forefront-llm' asking 'What is the capital of France?'"
+
+**🤖 AI Agent:**
+> I will call `create_chat_completion` with model 'forefront-llm' and the message 'What is the capital of France?'. The model responded: 'The capital of France is Paris.'
+
+---
+
+**👤 You:**
+> "List all my active pipelines on Forefront."
+
+**🤖 AI Agent:**
+> I will query your pipelines using `list_pipelines`. I found 2 active pipelines: 'customer-feedback-pipeline' (ID: pipe_123) and 'qa-testing-pipeline' (ID: pipe_456).
+
+---
+
+**👤 You:**
+> "Create a new pipeline named 'production-logs'."
+
+**🤖 AI Agent:**
+> I will call `create_pipeline` with the name 'production-logs'. The pipeline has been successfully created with ID 'pipe_789'.
+
+
 ## Installation & Usage
 
 To install and use the **Forefront** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Forefront** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

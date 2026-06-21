@@ -1,12 +1,14 @@
 # Follow Up Boss MCP Server
 
-Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/follow-up-boss-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/follow-up-boss-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/follow-up-boss-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/follow-up-boss-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 12
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance.
 
 ## Description
 Connect your **Follow Up Boss** account to any AI agent and take full control of your real estate lead management and follow-up workflows through natural conversation.
@@ -51,6 +53,33 @@ Add a new lead to the CRM
 - **list_configured_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Follow Up Boss** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my new leads from the last 24 hours."
+
+**🤖 AI Agent:**
+> Scanning your CRM... I've found 3 new leads from the last 24 hours: 'John Doe' (from Zillow), 'Sarah Smith' (Direct), and 'Acme Corp'. Would you like the full profile for any of them?
+
+---
+
+**👤 You:**
+> "Add an internal note to lead 'p_123': 'Interested in 3-bedroom houses in North London'."
+
+**🤖 AI Agent:**
+> Note added! I've successfully posted your comment to lead p_123's activity feed. Your team will see this update in the Follow Up Boss dashboard immediately.
+
+---
+
+**👤 You:**
+> "Show me my upcoming property showings for today."
+
+**🤖 AI Agent:**
+> Checking your calendar... You have 2 showings today: '123 Maple St' at 2 PM with Jane Doe, and '456 Oak Ave' at 4:30 PM. I can provide the lead details for either session if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Follow Up Boss** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Follow Up Boss** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

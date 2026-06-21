@@ -1,12 +1,14 @@
 # GitScrum Time Tracking MCP Server
 
-Track time and budgets via GitScrum — start timers, log hours, analyze productivity, monitor burn-down, and review standup summaries directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-time-tracking)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-time-tracking)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitscrum-time-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitscrum-time-tracking-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 28
+
+**Category:** [productivity](../categories/productivity.md)
+
+Track time and budgets via GitScrum — start timers, log hours, analyze productivity, monitor burn-down, and review standup summaries directly from any AI agent.
 
 ## Description
 ### What you can do
@@ -80,6 +82,33 @@ Start a timer on a task
 - **time_timeline**: Get time entries timeline
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitScrum Time Tracking** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Start a timer on task WEB-42 in the web-app project."
+
+**🤖 AI Agent:**
+> Timer started on WEB-42: 'Implement user authentication' at 10:23 AM. Timer ID: tt-4521. I'll track until you ask me to stop. Say 'stop timer' when you're done, and I'll record the elapsed time automatically.
+
+---
+
+**👤 You:**
+> "Give me the standup summary for today."
+
+**🤖 AI Agent:**
+> Today's standup: 14 tasks completed yesterday (5 by johndoe, 4 by janedoe, 3 by alexdev, 2 by sarahpm). 8 tasks in progress. 2 blockers flagged: WEB-38 (waiting on API credentials, 3 days blocked) and WEB-45 (design review pending). Participation: 100%. Shall I dig into the blockers?
+
+---
+
+**👤 You:**
+> "Which projects are at budget risk?"
+
+**🤖 AI Agent:**
+> 2 projects flagged: 1) 'Mobile App v2' — 92% consumed ($46,000 of $50,000), burn rate $2,300/week, estimated overshoot in 5 days. 2) 'API Redesign' — 78% consumed with sprint scope creep detected. Want me to show the burn-down chart or set up budget alerts?
+
+
 ## Installation & Usage
 
 To install and use the **GitScrum Time Tracking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **GitScrum Time Tracking** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

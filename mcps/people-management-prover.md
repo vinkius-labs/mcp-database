@@ -1,12 +1,14 @@
 # People Management Prover MCP Server
 
-A hiring plan listed 'culture fit' as the primary criterion. That's not a criterion — that's a bias proxy. People Management Prover forces job-related criteria, adverse impact analysis, and validated assessment methods grounded in I-O psychology.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/people-management-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/people-management-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/people-management-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/people-management-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+A hiring plan listed 'culture fit' as the primary criterion. That's not a criterion — that's a bias proxy. People Management Prover forces job-related criteria, adverse impact analysis, and validated assessment methods grounded in I-O psychology.
 
 ## Description
 AI agents produce HR recommendations that sound professional but fail under legal scrutiny. They evaluate candidates on 'culture fit' — a term that correlates with interviewer similarity bias (Rivera, 2012). They recommend hiring decisions without structured criteria. They give feedback like 'needs improvement' without specifying what to improve or how.
@@ -47,6 +49,33 @@ AI-generated HR reasoning fails for five specific reasons:
 Structured reflection tool for people management and recruitment reasoning — forces job-analytic criteria definition, adverse impact analysis, jurisdictional legal compliance, psychometric assessment validation, and developmental feedback design before any hiring, evaluation, or workforce decision. Grounded in I-O Psychology (Schmidt & Hunter, 1998), employment law, and Hattie's feedback research. Catches Criteria Absent (evaluating candidates without defined, job-related criteria — "she just didn't feel like the right fit." This is not assessment — it is bias cosplaying as intuition. Unstructured interviews have a predictive validity of r = 0.20 (Schmidt & Hunter, 1998). That means 96% of the variance in job performance is NOT explained by the interview. A structured behavioral interview with anchored scoring: r = 0.51. Work samples: r = 0.54. The difference: structured interviews define CRITERIA before the interview, ask the same questions to every candidate, and score responses against behavioral anchors. "Culture fit" and "gut feeling" are not criteria — they are proxies for "similar to me" bias), Bias Blind (hiring processes that produce disparate impact without detection — the 4/5ths rule (EEOC Uniform Guidelines): if the selection rate for a protected group is less than 4/5ths (80%) of the rate for the highest-scoring group, adverse impact exists. Example: 50 male applicants, 20 selected (40% rate). 30 female applicants, 6 selected (20% rate). 20% / 40% = 0.50 — well below the 0.80 threshold. Adverse impact is present. This does not necessarily mean illegal discrimination — but it DOES mean the process requires validation evidence (business necessity defense). "We hire on merit" is not a bias audit — it is a refusal to measure), Legal Non-Compliance (making employment decisions without knowing the applicable law — a US company asks candidates "When did you graduate college?" in an interview. This question is a proxy for age — a violation of the Age Discrimination in Employment Act (ADEA). A Brazilian company terminates an employee without 30-day written notice (aviso prévio) — CLT Art. 487 violation, entitles employee to one month's salary plus indemnity. A UK employer rejects a candidate because of a spent criminal conviction — Rehabilitation of Offenders Act 1974 violation. Employment law varies by jurisdiction, by protected class, and by stage of employment. "We follow the law" without naming WHICH law for WHICH jurisdiction is not compliance), Assessment Unvalidated (using assessment methods with no predictive validity evidence — "we use personality tests." Which ones? The MBTI has a test-retest reliability of 0.39-0.76 and near-zero predictive validity for job performance (Pittenger, 2005). Structured behavioral interviews: r = 0.51. Cognitive ability tests: r = 0.51. Work samples: r = 0.54. Assessment centers: r = 0.37. Graphology (handwriting analysis — still used in France): r = 0.02. If the assessment method cannot predict job performance, it is theater, not selection), and Feedback Empty (performance feedback that is vague, personality-focused, or backward-looking — "You need to be more proactive." This is a personality label, not actionable feedback. What does "proactive" look like in behavior? "In the last 3 sprint planning sessions, you waited for others to identify blockers. In the next session, I'd like you to present your risk assessment before the team discusses tasks." That is behavioral, specific, and forward-looking. Hattie: task-specific feedback d = 0.70. Praise d = 0.09. Punishment d = 0.20. Separate evaluation conversations from development conversations — combining them ensures employees hear neither). Call once per hiring decision, performance evaluation, or workforce planning action
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **People Management Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We interviewed 5 candidates for the product manager role. We liked Sarah best — great culture fit and really passionate. Let's extend the offer."
+
+**🤖 AI Agent:**
+> CRITERIA_ABSENT — 'Culture fit' and 'passionate' are not job-related criteria — Rivera (2012) shows they correlate with interviewer similarity bias. Before selecting anyone: define the essential job functions, the KSAs required, behavioral indicators for each, and a scoring rubric. Then re-evaluate ALL candidates against the same rubric.
+
+---
+
+**👤 You:**
+> "Design a hiring process for senior engineers at a 200-person US tech company. Use structured behavioral interviews with STAR scoring, work sample tests, and blind resume review. Calculate adverse impact quarterly."
+
+**🤖 AI Agent:**
+> HR_PROVEN — Structured behavioral interviews (r=0.51 per Schmidt & Hunter), work samples (r=0.54), blind resume screen mitigates name/gender bias, STAR scoring provides behavioral anchors. Title VII applies at 200 employees. Quarterly adverse impact analysis with 4/5ths rule across pipeline stages. Process is evidence-based and legally defensible.
+
+---
+
+**👤 You:**
+> "Write a performance review for John: 'John is a great team player and always brings positive energy. He meets expectations and should keep doing what he's doing.'"
+
+**🤖 AI Agent:**
+> FEEDBACK_EMPTY — 'Team player,' 'positive energy,' and 'meets expectations' are personality labels, not feedback. Hattie shows praise d=0.09 — near-zero impact. Replace with: specific behaviors observed, criteria they met or missed, and one concrete development action for next quarter.
+
+
 ## Installation & Usage
 
 To install and use the **People Management Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **People Management Prover** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # TYPO3 CMS MCP Server
 
-Automate content management via TYPO3 CMS — retrieve page structures, create Extbase entities, update fields, and audit configurations seamlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/typo3-cms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/typo3-cms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/typo3-cms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/typo3-cms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 10
+
+**Category:** [content-management](../categories/content-management.md)
+
+Automate content management via TYPO3 CMS — retrieve page structures, create Extbase entities, update fields, and audit configurations seamlessly.
 
 ## Description
 Connect your **TYPO3 CMS** backend to any AI agent and take full enterprise control over global content operations mapping, backend Extbase entity tracking, and site hierarchy inspection.
@@ -56,6 +58,33 @@ Lists records for a specific TYPO3 entity or route
 Updates fields of an existing TYPO3 record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TYPO3 CMS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Can you check the current initial boot configuration of our TYPO3 project?"
+
+**🤖 AI Agent:**
+> Initial boot grabbed: System sits at version v12.4 LTS. Found core default routing mappings in context alongside basic site language configurations spanning EN and DE arrays.
+
+---
+
+**👤 You:**
+> "List standard backend records available on the custom entity table 'tx_myext_domain_model_item'."
+
+**🤖 AI Agent:**
+> Under 'tx_myext_domain_model_item', 8 distinct entries were listed. Records IDs #23 and #40 seem recently added. Would you like me to deeply inspect the payload geometry of element #23?
+
+---
+
+**👤 You:**
+> "Permanently delete the CMS entity under ID 644 on 'pages'."
+
+**🤖 AI Agent:**
+> Action confirmed. Record ID 644 inside the 'pages' entity has been wiped through a deletion mutation payload. It has been successfully removed from visibility.
+
+
 ## Installation & Usage
 
 To install and use the **TYPO3 CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **TYPO3 CMS** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

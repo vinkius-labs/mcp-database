@@ -1,12 +1,14 @@
 # Froged MCP Server
 
-Manage customer success, track events, and handle omnichannel support via AI agents with Froged.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/froged)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/froged)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/froged-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/froged-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 11
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage customer success, track events, and handle omnichannel support via AI agents with Froged.
 
 ## Description
 Connect your **Froged** account to any AI agent to automate your customer success and support operations through the Model Context Protocol (MCP). Froged is an omnichannel customer service platform designed to improve retention and engagement. This MCP server enables you to track behavioral events, manage customer profiles, and participate in support conversations directly through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Froged** account to any AI agent to automate your customer succes
 - **upsert_contact**: Create/Update contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Froged** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent active support conversations."
+
+**🤖 AI Agent:**
+> Retrieving conversations... I found 5 active chats, including a pricing inquiry from 'jane@example.com' and a bug report from 'john@example.com'.
+
+---
+
+**👤 You:**
+> "Track the event 'plan_upgraded' for user 'customer@email.com'."
+
+**🤖 AI Agent:**
+> Event tracked! The 'plan_upgraded' event has been successfully logged for customer@email.com. Any associated onboarding campaigns will now trigger.
+
+---
+
+**👤 You:**
+> "Show me the contact profile for 'jane@example.com'."
+
+**🤖 AI Agent:**
+> Searching contacts... I found Jane Doe (jane@example.com). She signed up 30 days ago and last interacted with support yesterday regarding 'API limits'.
+
+
 ## Installation & Usage
 
 To install and use the **Froged** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Froged** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

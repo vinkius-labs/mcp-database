@@ -1,12 +1,14 @@
 # Lemonade MCP Server
 
-Manage Lemonade insurance — generate quotes, retrieve policy details, file claims, and handle cancellations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lemonade)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemonade)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemonade-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemonade-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 4
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage Lemonade insurance — generate quotes, retrieve policy details, file claims, and handle cancellations via AI.
 
 ## Description
 Connect your **Lemonade** account to any AI agent to streamline your insurance management through natural conversation. This server allows you to handle the entire lifecycle of your insurance policies without leaving your workspace.
@@ -38,6 +40,33 @@ Connect your **Lemonade** account to any AI agent to streamline your insurance m
 - **get_policy**: Retrieve policy information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lemonade** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a renters insurance quote for my apartment in New York."
+
+**🤖 AI Agent:**
+> I've initiated a quote request for renters insurance. I'll need the street address and the holder's name to finalize the details. Would you like to provide those now?
+
+---
+
+**👤 You:**
+> "What are the coverage limits for policy POL-12345?"
+
+**🤖 AI Agent:**
+> Fetching details for policy POL-12345... Your policy is active with a liability limit of $100,000 and a $500 deductible for personal property. Would you like to see the full list of coverages?
+
+---
+
+**👤 You:**
+> "I need to file a claim for a broken window on policy POL-98765."
+
+**🤖 AI Agent:**
+> I can help with that. I'll use the `file_claim` tool for policy POL-98765. Could you tell me the date the incident occurred and an estimated value for the window repair?
+
+
 ## Installation & Usage
 
 To install and use the **Lemonade** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Lemonade** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

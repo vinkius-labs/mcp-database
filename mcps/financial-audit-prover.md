@@ -1,12 +1,14 @@
 # Financial Audit Prover MCP Server
 
-Forces AI to ground every financial conclusion in ASC codification, trace numbers to source documents, reconcile statements, and identify required disclosures instead of generating plausible numbers without audit trails.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/financial-audit-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/financial-audit-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/financial-audit-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/financial-audit-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Forces AI to ground every financial conclusion in ASC codification, trace numbers to source documents, reconcile statements, and identify required disclosures instead of generating plausible numbers without audit trails.
 
 ## Description
 AI agents generate financial analysis that looks numerically sound but violates fundamental accounting principles. They apply IFRS rules to US GAAP entities. They produce figures without audit trails. They skip materiality assessment entirely. And they reference 'required disclosures' without naming a single ASC topic or SEC regulation.
@@ -50,6 +52,33 @@ The engine catches IFRS leakage by detecting international standard terminology 
 Structured reflection tool for US financial reasoning — forces audit-grade analysis grounded in US GAAP (FASB ASC codification), PCAOB standards, SEC regulations, and SOX requirements. Catches GAAP Violation (applying revenue recognition without citing ASC 606-10-25-27 vs 25-31 — "per GAAP" is not a reference. The specific ASC paragraph that governs your treatment is the reference. IFRS is not US GAAP), Trail Broken ("per the records" without tracing to source documents — GL entry, invoice number, bank confirmation, contract date. Per PCAOB AS 2810, every material assertion requires sufficient appropriate audit evidence), Crosscheck Failed (financial statements that do not reconcile internally — assets ≠ liabilities + equity, net income does not flow to retained earnings, cash flow does not reconcile to cash balance change. If the B/S does not balance, nothing is reliable), Materiality Ignored ("immaterial" without quantitative threshold per SAB 99 (5% pre-tax income is the benchmark, not a rule) AND qualitative assessment — does it mask a trend? Affect covenant compliance? Involve management compensation?), and Disclosure Missing (accounting treatment without identifying required footnotes — ASC 235 policies, ASC 275 risks, ASC 450 contingencies, ASC 855 subsequent events, Reg S-K Item 303 MD&A, SOX 302/404 certifications). Call once per financial analysis or audit issue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Financial Audit Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "The company recognized $5M in revenue from a multi-year software licensing deal. Is this correct under GAAP?"
+
+**🤖 AI Agent:**
+> Verdict: GAAP_VIOLATED. 'Under GAAP' is not a citation. Revenue recognition for software requires ASC 606 five-step analysis: (1) identify the contract (ASC 606-10-25-1), (2) identify performance obligations (distinct software license vs. ongoing services? — ASC 606-10-25-19), (3) determine transaction price ($5M — is there variable consideration?), (4) allocate to performance obligations (standalone selling prices), (5) recognize when satisfied (point-in-time for license under ASC 606-10-25-27, or over-time for SaaS under ASC 606-10-25-31?). Which step supports full upfront recognition?
+
+---
+
+**👤 You:**
+> "Issue: Whether $2.8M goodwill impairment is required. GAAP: ASC 350-20-35-1, qualitative election per 35-3A. Five factors assessed — stable industry, no customer loss, share price above book, no regulatory changes, CFO replaced in 60 days. Conclusion: fair value exceeds carrying. Audit: GL 1800, $2.8M from 2022 DataVault acquisition (WP-805-22). Cross-check: rollforward reconciles. Materiality: 7.2% of $38.9M pre-tax. Disclosures: ASC 350-20-50-1/50-2, Reg S-K Item 303."
+
+**🤖 AI Agent:**
+> Verdict: AUDIT_PROVEN. GAAP compliant — ASC 350-20-35-1 through 35-19 correctly cited with qualitative election per 35-3A. Audit trail complete — GL 1800 traced to 2022 acquisition, work paper WP-805-22 referenced. Cross-check passed — intangible rollforward reconciles ($2.8M beginning = $2.8M ending). Materiality assessed — both quantitative (7.2% > 5% threshold) and qualitative (strategic acquisition signaling). Disclosures identified — ASC 350-20-50-1/50-2 footnotes, Reg S-K Item 303 MD&A discussion. This analysis meets audit memo standard.
+
+---
+
+**👤 You:**
+> "The company has approximately $1.2M in accounts receivable. Based on financial data, this seems reasonable. Required disclosures have been made. The amount is immaterial."
+
+**🤖 AI Agent:**
+> Multiple rejections. (1) TRAIL_BROKEN — 'approximately $1.2M' is hedged language suggesting fabricated precision. What is the exact GL balance? Which invoices? What aging bucket? What confirmation results? (2) 'Based on financial data' is not an audit trail — name the source documents. (3) MATERIALITY_IGNORED — 'immaterial' without a threshold is not an assessment. What is 5% of pre-tax income? How does $1.2M compare? (4) DISCLOSURE_MISSING — 'required disclosures have been made' names zero specific ASC topics. ASC 310-10-50 (receivables), ASC 326-20 (CECL allowance), ASC 820-10-50 (fair value hierarchy if measured at FV)? Which disclosures specifically?
+
+
 ## Installation & Usage
 
 To install and use the **Financial Audit Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Financial Audit Prover** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

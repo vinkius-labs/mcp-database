@@ -1,12 +1,14 @@
 # DevRel Voice Prover MCP Server
 
-AI agents write developer content that sounds like a press release. This tool forces authentic developer-to-developer voice: community-aware context, value over features, actionable code paths, and genuine engagement. No corporate speak, no feature dumps.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/devrel-voice-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devrel-voice-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devrel-voice-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devrel-voice-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents write developer content that sounds like a press release. This tool forces authentic developer-to-developer voice: community-aware context, value over features, actionable code paths, and genuine engagement. No corporate speak, no feature dumps.
 
 ## Description
 AI agents write developer communications that sound like marketing press releases. They use corporate buzzwords instead of technical language, list features without explaining why developers care, ignore community context, announce without providing actionable paths, and produce generic content that could be from any company.
@@ -38,6 +40,33 @@ AI-generated DevRel content fails on five axes:
 Structured reflection tool for authentic developer relations communication. DevRel is NOT marketing — it is the bridge between product and community. Forces community-grounded context, value articulation (WHY not just WHAT), actionable paths with runnable code, and authentic voice. Catches Corporate Speak ("We are excited to announce our innovative solution" — developers stop reading at "excited to announce." Say "We shipped X because you asked" with a link to the GitHub issue), Feature Dumps ("We added X, Y, Z" without explaining WHY developers care — what pain disappeared? What workaround is eliminated? How does their daily workflow change?), Community Deafness ("The community wanted this" without citing specific signals — which GitHub issues? Which Discord threads? Which feedback votes? No citations = no credibility), Missing Action Path ("Try it out!" is not an action path — show the install command, the import, the minimal working example. Every DevRel piece must answer "What do I DO now?"), and Template Voice (if you swap the brand name and the post still works, it is template voice — no personality, no specific references, no vulnerability, no human details). Call for changelogs, release notes, blog posts, tutorials, migration guides, and announcements
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DevRel Voice Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We are thrilled to announce v3.0 of our innovative platform! This game-changing release features a best-in-class API, seamless integrations, and a robust, scalable architecture. Try it today!"
+
+**🤖 AI Agent:**
+> Verdict: CORPORATE_SPEAK. Every sentence is a marketing buzzword: 'thrilled', 'innovative', 'game-changing', 'best-in-class', 'seamless', 'robust and scalable'. This reads like a LinkedIn ad, not DevRel. No community context (why v3?), no developer value (what problems solved?), no code (how to migrate?), no feedback channel. Rewrite: 'v3.0 is live. The new API resolves the auth token race condition from issue #189. Migration: `npm install @sdk@3.0.0` — see docs.example.com/v3/mig...
+
+---
+
+**👤 You:**
+> "Content: changelog for SDK v2.4. Community: issues #312 and #345 reported auth token expiration wasn't handled gracefully — users got silent 401s with no error message. 23 upvotes on feedback board. Value: SDK now auto-refreshes tokens before expiration and surfaces clear error messages with retry guidance when refresh fails. Before: developers had to build their own token refresh logic and catch opaque 401s. Now: zero-config token lifecycle management. Code: `import { createClien..."
+
+**🤖 AI Agent:**
+> Verdict: DEVREL_PROVEN. Developer voice (direct, technical, no buzzwords). Community-aware (issues #312, #345, 23 upvotes). Value articulated (before: manual token refresh + opaque 401s → now: zero-config auto-refresh). Action path (runnable code, opt-in flag, no breaking changes). Authentic (specific issue numbers, before/after comparison, honest about the problem). This is how DevRel communicates. Ship it.
+
+---
+
+**👤 You:**
+> "v2.5 release notes. We heard from the community about these needs. Added: GraphQL subscriptions, new rate limiter middleware, database connection pooling, improved error messages, dark mode for dashboard. These features make the platform better. Try them out and let us know what you think!"
+
+**🤖 AI Agent:**
+> Verdict: FEATURE_DUMP. Developer voice is acceptable (no buzzwords), community vaguely referenced ('we heard from the community' — but WHICH community signals? No issue numbers, no Discord threads, no feedback votes). Critical failure: pure feature list without WHY. 'Added GraphQL subscriptions' — SO WHAT? Why does a developer care? Was polling killing performance? Was issue #189 about real-time updates? 'Improved error messages' — improved HOW? Before: 'Error 500'. After: 'Postgr...
+
+
 ## Installation & Usage
 
 To install and use the **DevRel Voice Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **DevRel Voice Prover** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

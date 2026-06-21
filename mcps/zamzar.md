@@ -1,12 +1,14 @@
 # Zamzar MCP Server
 
-Convert files between 1100+ formats — transform documents, images, videos, and audio directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zamzar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zamzar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zamzar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zamzar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Convert files between 1100+ formats — transform documents, images, videos, and audio directly through your AI agent.
 
 ## Description
 Connect your **Zamzar** developer account to any AI agent and automate complex file conversion workflows using natural language. Zamzar supports over 1100 formats including PDF, DOCX, PNG, MP4, and more.
@@ -43,6 +45,33 @@ Retrieve the status of a specific job
 - **start_job**: Start a file conversion job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zamzar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all supported file formats available on Zamzar."
+
+**🤖 AI Agent:**
+> I've retrieved the list of supported formats. Zamzar supports over 1100 formats including documents (pdf, docx), images (jpg, png), and videos (mp4, avi). Is there a specific format you're looking for?
+
+---
+
+**👤 You:**
+> "Convert this image URL https://example.com/image.gif to a PNG file."
+
+**🤖 AI Agent:**
+> I've started the conversion job for your GIF to PNG. The Job ID is 456789. I'll monitor the status for you, or you can ask me to check it anytime using `get_job`.
+
+---
+
+**👤 You:**
+> "Check the status of conversion job 456789 and download it if ready."
+
+**🤖 AI Agent:**
+> The job 456789 is now 'successful'. I am now retrieving the file content for you using the associated file ID.
+
+
 ## Installation & Usage
 
 To install and use the **Zamzar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Zamzar** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # QR Code Generator MCP Server
 
-Generate and decode QR codes for URLs, text, and data directly within your AI workflow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qr-code-generator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qr-code-generator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qr-code-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qr-code-generator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 2
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate and decode QR codes for URLs, text, and data directly within your AI workflow.
 
 ## Description
 Transform any text or URL into a high-quality QR code or decode existing ones using the **QR Code Generator** MCP server. This tool integrates the powerful goqr.me API to provide seamless image generation and data extraction.
@@ -37,6 +39,33 @@ Transform any text or URL into a high-quality QR code or decode existing ones us
 - **read_qr_code**: Decode a QR code from an image URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QR Code Generator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a QR code for the URL https://vurb.io"
+
+**🤖 AI Agent:**
+> I've generated the QR code for you. You can view or download it here: [QR Code URL].
+
+---
+
+**👤 You:**
+> "Generate a 400x400 blue QR code for the text 'Welcome to the Team' in PNG format."
+
+**🤖 AI Agent:**
+> The custom blue QR code (400x400) has been created. Here is your link: [QR Code URL].
+
+---
+
+**👤 You:**
+> "Decode the QR code from this image: https://example.com/my-qr.png"
+
+**🤖 AI Agent:**
+> I've scanned the image. The QR code contains the following data: 'https://github.com/mcp-servers'.
+
+
 ## Installation & Usage
 
 To install and use the **QR Code Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **QR Code Generator** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

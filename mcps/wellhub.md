@@ -1,12 +1,14 @@
 # Wellhub MCP Server
 
-Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wellhub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wellhub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wellhub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wellhub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation.
 
 ## Description
 Connect your **Wellhub** (formerly Gympass) account to any AI agent and manage your corporate wellness program through natural conversation.
@@ -51,6 +53,50 @@ List available classes
 - **list_locations**: List partner locations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wellhub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many Wellhub check-ins did we have this week?"
+
+**🤖 AI Agent:**
+> This week's Wellhub activity:
+
+📊 **Total check-ins**: 127
+- Monday: 24 | Tuesday: 31 | Wednesday: 28 | Thursday: 22 | Friday: 15 | Weekend: 7
+
+👥 **Unique members**: 89 (70% return rate)
+📈 **vs. last week**: +12% increase
+
+Peak time: Tuesday 6-7 PM (18 check-ins). Your most popular class for Wellhub members is the 6 PM HIIT.
+
+---
+
+**👤 You:**
+> "Verify if Alex Johnson is eligible for the Silver tier."
+
+**🤖 AI Agent:**
+> Checking eligibility ('check_eligibility')...
+Alex Johnson (Corporate ID: 99421):
+- Employer: TechCorp Inc.
+- Eligibility Status: Active
+- Current Plan: Starter Tier
+- Silver Tier Access: Yes, eligible for upgrade. Upgrade cost is $29.99/month.
+
+---
+
+**👤 You:**
+> "List the upcoming Yoga classes available to Wellhub members at our main location."
+
+**🤖 AI Agent:**
+> Querying published classes ('get_classes')...
+Upcoming Yoga at Main Studio:
+1. Thu 6:00 PM - Vinyasa Flow (Wellhub Basic & above) - 4 spots left
+2. Fri 7:00 AM - Morning Yoga (Wellhub Silver & above) - 10 spots left
+3. Sat 9:00 AM - Power Yoga (Wellhub Gold) - Full
+
+
 ## Installation & Usage
 
 To install and use the **Wellhub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +105,11 @@ To install and use the **Wellhub** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

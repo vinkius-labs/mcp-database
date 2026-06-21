@@ -1,12 +1,14 @@
 # FreeClimb MCP Server
 
-Build programmable voice and SMS workflows via AI agents with FreeClimb.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freeclimb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freeclimb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freeclimb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freeclimb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Build programmable voice and SMS workflows via AI agents with FreeClimb.
 
 ## Description
 Connect your **FreeClimb** account to any AI agent to automate your telecommunications and customer engagement through the Model Context Protocol (MCP). FreeClimb provides a robust cloud platform for making calls, sending SMS messages, and managing programmable communication logic. This MCP server enables you to initiate calls, track message history, and oversee your phone numbers directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **FreeClimb** account to any AI agent to automate your telecommunic
 - **send_sms**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FreeClimb** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS from '+1234567890' to '+10987654321' saying 'Your appointment is confirmed'."
+
+**🤖 AI Agent:**
+> Message sent! I've successfully queued your SMS via FreeClimb. The message ID is 'msg_abc123'. I'll let you know if there are any delivery issues.
+
+---
+
+**👤 You:**
+> "List all phone numbers currently in my FreeClimb account."
+
+**🤖 AI Agent:**
+> Retrieving numbers... I found 3 active phone numbers in your account, including '+1234567890' (Voice/SMS enabled).
+
+---
+
+**👤 You:**
+> "Place a call from '+1234567890' to '+10987654321' using application 'app_987'."
+
+**🤖 AI Agent:**
+> Call initiated! I've started an outbound call via FreeClimb using app_987. The call ID is 'call_xyz789'. You can track its status in real-time.
+
+
 ## Installation & Usage
 
 To install and use the **FreeClimb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **FreeClimb** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

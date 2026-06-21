@@ -1,12 +1,14 @@
 # Ship24 MCP Server
 
-Track shipments from 1200+ carriers worldwide with a universal tracking API that gives real-time delivery status updates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ship24)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ship24)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ship24-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ship24-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Track shipments from 1200+ carriers worldwide with a universal tracking API that gives real-time delivery status updates.
 
 ## Description
 Connect your **Ship24** account to any AI agent and take full control of your global logistics tracking and parcel orchestration through natural conversation. Ship24 provides a premier multi-carrier tracking API, and this integration allows you to create trackers, monitor real-time delivery progress, and search through thousands of couriers directly from your chat interface.
@@ -51,6 +53,33 @@ Find carrier codes
 - **update_tracker_info**: Update tracker metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ship24** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Track the package with tracking number '1234567890' using Ship24."
+
+**🤖 AI Agent:**
+> I've retrieved the tracking status. Your package is currently 'In Transit' in London, UK, and was last updated 2 hours ago. Would you like the full milestone history?
+
+---
+
+**👤 You:**
+> "Find the carrier code for DHL."
+
+**🤖 AI Agent:**
+> Searching couriers... I found the identifier 'dhl' for DHL Express and 'dhl-global-mail' for DHL Global Mail. Which one would you like to use for tracking?
+
+---
+
+**👤 You:**
+> "List all my active trackers in Ship24."
+
+**🤖 AI Agent:**
+> Retrieving your trackers... You currently have 3 shipments being monitored. The most recent is tracker 'TRK-9921' (Out for delivery). Would you like to see details for the others?
+
+
 ## Installation & Usage
 
 To install and use the **Ship24** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Ship24** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

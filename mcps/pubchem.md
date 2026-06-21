@@ -1,12 +1,14 @@
 # PubChem MCP Server
 
-Search 116M+ chemical compounds with molecular properties, SMILES notation, formulas, and drug-like properties from the world's largest free chemistry database.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pubchem)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pubchem)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pubchem-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pubchem-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 3
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Search 116M+ chemical compounds with molecular properties, SMILES notation, formulas, and drug-like properties from the world's largest free chemistry database.
 
 ## Description
 Connect your AI agent to **PubChem** — the world's largest open chemistry database, maintained by the National Center for Biotechnology Information (NCBI/NIH).
@@ -39,6 +41,33 @@ Find compounds by molecular formula
 Search PubChem for chemical compounds by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PubChem** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the molecular properties of aspirin?"
+
+**🤖 AI Agent:**
+> Aspirin (CID 2244): Formula C9H8O4, MW 180.16, SMILES CC(=O)OC1=CC=CC=C1C(O)=O, XLogP 1.2, H-bond donors: 1, H-bond acceptors: 4. Passes Lipinski's Rule of Five — classified as drug-like.
+
+---
+
+**👤 You:**
+> "Search for compounds with the molecular formula C8H10N4O2."
+
+**🤖 AI Agent:**
+> Found compounds matching C8H10N4O2: Primary result is Caffeine (CID 2519) — the alkaloid found in coffee, tea, and chocolate. MW: 194.19, SMILES: CN1C=NC2=C1C(=O)N(C(=O)N2C)C. Also found: Theophylline (CID 2153) — used as bronchodilator for asthma treatment.
+
+---
+
+**👤 You:**
+> "Get the full chemical details for PubChem compound CID 5090."
+
+**🤖 AI Agent:**
+> CID 5090: Metformin — Formula C4H11N5, MW 129.16, SMILES CN(C)C(=N)NC(=N)N. XLogP: -1.4 (highly water-soluble). H-bond donors: 3, acceptors: 3. Widely used as first-line treatment for type 2 diabetes. Molecular complexity: 95.
+
+
 ## Installation & Usage
 
 To install and use the **PubChem** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **PubChem** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

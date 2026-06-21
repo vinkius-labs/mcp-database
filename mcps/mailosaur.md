@@ -1,12 +1,14 @@
 # Mailosaur MCP Server
 
-Automate email and SMS testing and management via the Mailosaur REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailosaur)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailosaur)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailosaur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailosaur-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate email and SMS testing and management via the Mailosaur REST API.
 
 ## Description
 Connect your **Mailosaur** account to any AI agent to automate your email and SMS testing workflows. This MCP server enables your agent to manage virtual servers (inboxes), retrieve and search for messages, and extract content for validation directly from natural language interfaces.
@@ -48,6 +50,33 @@ Search for specific messages using criteria
 List all Mailosaur virtual servers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mailosaur** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Mailosaur servers."
+
+**🤖 AI Agent:**
+> I've retrieved your servers. You have 3 active environments: 'Production Tests (ID: prod123)', 'Staging Inboxes', and 'Dev Sandbox'.
+
+---
+
+**👤 You:**
+> "Find the last message sent to 'test-user@mailosaur.io' in server 'prod123'."
+
+**🤖 AI Agent:**
+> I've searched server prod123. I found 1 message sent to test-user@mailosaur.io with the subject 'Welcome to our Service'. Would you like to see the full content?
+
+---
+
+**👤 You:**
+> "Delete all messages in the 'Dev Sandbox' server (ID: 'dev789')."
+
+**🤖 AI Agent:**
+> I've successfully cleared the inbox for server dev789. All messages have been permanently removed.
+
+
 ## Installation & Usage
 
 To install and use the **Mailosaur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Mailosaur** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

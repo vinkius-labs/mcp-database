@@ -1,12 +1,14 @@
 # Mabl (AI-Powered Test Automation) MCP Server
 
-Manage E2E testing via Mabl — trigger test plans, monitor execution results, and perform AI-driven failure analysis.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mabl-ai-powered-test-automation)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mabl-ai-powered-test-automation)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mabl-ai-powered-test-automation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mabl-ai-powered-test-automation-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage E2E testing via Mabl — trigger test plans, monitor execution results, and perform AI-driven failure analysis.
 
 ## Description
 Connect your **Mabl** account to any AI agent and take full control of your AI-powered E2E testing and quality orchestration through natural conversation.
@@ -56,6 +58,33 @@ List all labels (tags) used in Mabl plans
 Get workspace info for the authenticated Mabl API key including workspace name, org, and key metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mabl (AI-Powered Test Automation)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Mabl test plans"
+
+**🤖 AI Agent:**
+> I've found 4 test plans: 'Daily-Smoke-Test' (ID: plan-123), 'Checkout-Regression' (ID: plan-456), 'Login-Flow-Validation' (ID: plan-789), and 'API-Health-Check' (ID: plan-012). Which one would you like to trigger or inspect?
+
+---
+
+**👤 You:**
+> "Trigger the 'Checkout-Regression' plan in the Staging environment"
+
+**🤖 AI Agent:**
+> Triggering test plan 'Checkout-Regression'… I've successfully started the run in your Staging environment. I'll monitor the progress and notify you once the execution is complete. Would you like the initial status report?
+
+---
+
+**👤 You:**
+> "Show me the details for the last failed execution"
+
+**🤖 AI Agent:**
+> Retrieving the most recent failed execution… Run ID 'exec-98765' failed 12 minutes ago during the 'Add to Cart' step. The AI analysis suggests a 'Button not clickable' error due to a visual overlay. I can provide the direct screenshot link if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Mabl (AI-Powered Test Automation)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Mabl (AI-Powered Test Automation)** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

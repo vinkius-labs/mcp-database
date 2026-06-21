@@ -1,12 +1,14 @@
 # Wistia MCP Server
 
-Manage video assets, projects, and engagement analytics on Wistia — the leading video marketing platform for business.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wistia)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wistia)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wistia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wistia-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage video assets, projects, and engagement analytics on Wistia — the leading video marketing platform for business.
 
 ## Description
 Connect your **Wistia** account to any AI agent and take control of your video marketing infrastructure through natural conversation.
@@ -60,6 +62,33 @@ Updates the metadata (name, description) of a specific Wistia media
 Triggers Wistia to download and host a video from a public URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wistia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my videos in Wistia."
+
+**🤖 AI Agent:**
+> I found 12 videos in your account. The most recent are 'Spring Launch Overview' (ID: abc123def), 'Product Demo v2' (ID: ghi456jkl), and 'Customer Story' (ID: mno789pqr). Would you like to see the performance stats for any of these?
+
+---
+
+**👤 You:**
+> "What are the engagement stats for the video with ID 'abc123def'?"
+
+**🤖 AI Agent:**
+> Engagement summary for abc123def: Play rate is 42%, and the average watch time is 68%. Total plays: 1,250. The video is performing well compared to your project average.
+
+---
+
+**👤 You:**
+> "Upload the video from 'https://example.com/promo.mp4' to my 'Campaigns' project."
+
+**🤖 AI Agent:**
+> Success! I've triggered Wistia to ingest 'promo.mp4' into your 'Campaigns' project (ID: proj-xyz). It will appear in your library once processing is complete. Is there anything else you need me to organize?
+
+
 ## Installation & Usage
 
 To install and use the **Wistia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Wistia** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

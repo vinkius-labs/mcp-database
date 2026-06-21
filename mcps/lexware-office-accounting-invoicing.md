@@ -1,12 +1,14 @@
 # Lexware Office (Accounting & Invoicing) MCP Server
 
-Manage bookkeeping via Lexware Office (lexoffice) — create contacts, track invoices, and audit accounting vouchers in Germany.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lexware-office-accounting-invoicing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lexware-office-accounting-invoicing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lexware-office-accounting-invoicing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lexware-office-accounting-invoicing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 14
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage bookkeeping via Lexware Office (lexoffice) — create contacts, track invoices, and audit accounting vouchers in Germany.
 
 ## Description
 Connect your **Lexware Office (lexoffice)** account to any AI agent and take full control of your cloud-based accounting and invoicing through natural conversation.
@@ -64,6 +66,33 @@ Gesamtübersicht aller Arten verbuchter Belege (Ausgaben, Einnahmen) betrachten
 Definierte Buchungskategorien / Kontorahmen für Einnahmen und Ausgaben anzeigen
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lexware Office (Accounting & Invoicing)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 invoices from Lexware Office"
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 invoices. Highlights include RE-1001 (€1,200, Paid), RE-1002 (€450, Open), and RE-1003 (€2,100, Overdue). Would you like to see the detailed line items for any of these?
+
+---
+
+**👤 You:**
+> "Show me the details for contact 'TechGmbH' (ID: cont-123)"
+
+**🤖 AI Agent:**
+> Contact 'TechGmbH' (ID: cont-123) is registered as a CUSTOMER. Their primary address is in Berlin, and they have 12 total invoices with no outstanding balance. Their primary email is billing@techgmbh.de.
+
+---
+
+**👤 You:**
+> "What are my current payment conditions?"
+
+**🤖 AI Agent:**
+> I've identified 3 active payment conditions: 1) 'Immediate' (due on receipt), 2) '14 Days' (standard), and 3) '30 Days Net'. I can provide the specific UUIDs if you need to create a new invoice.
+
+
 ## Installation & Usage
 
 To install and use the **Lexware Office (Accounting & Invoicing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Lexware Office (Accounting & Invoicing)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

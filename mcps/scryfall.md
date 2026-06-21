@@ -1,12 +1,14 @@
 # Scryfall MCP Server
 
-Access the ultimate Magic: The Gathering database — search cards, fetch rulings, and explore sets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scryfall)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scryfall)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scryfall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scryfall-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 19
+
+**Category:** [databases](../categories/databases.md)
+
+Access the ultimate Magic: The Gathering database — search cards, fetch rulings, and explore sets directly from your AI agent.
 
 ## Description
 Integrate **Scryfall**, the most powerful Magic: The Gathering API, into your AI workflow. Whether you are a deck builder, a collector, or a developer, this server provides instant access to the entire history of MTG through natural conversation.
@@ -56,6 +58,33 @@ No more manual searching through browser tabs to check a card's legality or curr
 - **get_set_by_id**: Get a set by its Scryfall ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scryfall** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all legendary dragons that are red and cost 5 mana or less."
+
+**🤖 AI Agent:**
+> I found several cards matching your criteria, including 'Lathliss, Dragon Queen' and 'Rith, Liberated Primeval'. Would you like to see the full details for any of these?
+
+---
+
+**👤 You:**
+> "Get the card details for 'Sol Ring'."
+
+**🤖 AI Agent:**
+> Sol Ring is a legendary artifact that costs 1 generic mana. Its ability is '{T}: Add {C}{C}'. It has been printed in many sets, including Alpha and Commander editions.
+
+---
+
+**👤 You:**
+> "List all Magic: The Gathering sets released in 2023."
+
+**🤖 AI Agent:**
+> In 2023, Scryfall records several major releases including 'Phyrexia: All Will Be One' (ONE), 'March of the Machine' (MOM), and 'Wilds of Eldraine' (WOE).
+
+
 ## Installation & Usage
 
 To install and use the **Scryfall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Scryfall** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

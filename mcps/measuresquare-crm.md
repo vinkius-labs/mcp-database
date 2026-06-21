@@ -1,12 +1,14 @@
 # MeasureSquare CRM MCP Server
 
-Manage flooring and construction project estimates, client relationships, and job tracking for specialty contractors.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/measuresquare-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/measuresquare-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/measuresquare-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/measuresquare-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 11
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage flooring and construction project estimates, client relationships, and job tracking for specialty contractors.
 
 ## Description
 Connect your **MeasureSquare** account to any AI agent and manage flooring estimation workflows.
@@ -35,6 +37,33 @@ Connect your **MeasureSquare** account to any AI agent and manage flooring estim
 - **list_templates**: List estimation templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MeasureSquare CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my flooring projects."
+
+**🤖 AI Agent:**
+> You have 23 projects. Active: 'Smith Residence' (3 rooms, ,450), 'Office Reno' (12 rooms, ,200).
+
+---
+
+**👤 You:**
+> "Show estimation for project prj_001."
+
+**🤖 AI Agent:**
+> Project 'Smith Residence': Materials ,200 (hardwood), Labor ,100 (24 hrs), Other ,150. Total: ,450.
+
+---
+
+**👤 You:**
+> "Show rooms for project prj_001."
+
+**🤖 AI Agent:**
+> 3 rooms: Living Room (15x20ft, 300 sqft), Master Bedroom (12x14ft, 168 sqft), Kitchen (10x12ft, 120 sqft). Total: 588 sqft.
+
+
 ## Installation & Usage
 
 To install and use the **MeasureSquare CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +72,11 @@ To install and use the **MeasureSquare CRM** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

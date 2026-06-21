@@ -1,12 +1,14 @@
 # ScrapingBee MCP Server
 
-Scrape websites without getting blocked using headless browsers, proxy rotation, and JavaScript rendering handled for you.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapingbee)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapingbee)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scrapingbee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scrapingbee-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Scrape websites without getting blocked using headless browsers, proxy rotation, and JavaScript rendering handled for you.
 
 ## Description
 Connect your **ScrapingBee** account to any AI agent and take full control of your web data extraction and stealth scraping orchestration through natural conversation. ScrapingBee provides a robust scraping API that handles headless browsers, rotating proxies, and automated CAPTCHA solving, and this integration allows you to retrieve raw HTML, take screenshots, and use AI-driven extraction rules directly from your chat interface.
@@ -51,6 +53,33 @@ Capture a screenshot of a website
 - **scrape_with_stealth**: Scrape a page with stealth mode to bypass bot detection
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ScrapingBee** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the names and prices of all laptops from 'https://example.com/computers' using AI."
+
+**🤖 AI Agent:**
+> Processing AI extraction... I've retrieved 8 laptops. 'Model X' is $1,200 and 'Model Y' is $950. Should I format this data into a comparison table?
+
+---
+
+**👤 You:**
+> "Scrape a Google search results page for the query 'best project management tools 2025' and extract the top 10 results."
+
+**🤖 AI Agent:**
+> Google SERP scraped successfully. Query: "best project management tools 2025". Top 10 organic results extracted. #1: "15 Best Project Management Software (2025)" - Forbes. #2: "Top PM Tools Compared" - G2. #3: "Project Management Tool Guide" - Gartner. #4-10: TechRadar, PCMag, Capterra, GetApp, Software Advice, Business News Daily, Zapier. Featured snippet: "Monday.com, Asana, and Jira lead in 2025 rankings". People Also Ask: 4 related questions captured. Ads detected: 3 sponsored results. Credits used: 5.
+
+---
+
+**👤 You:**
+> "Extract structured product data from an e-commerce product page using CSS selectors."
+
+**🤖 AI Agent:**
+> Data extraction completed. URL: example-store.com/product/wireless-headphones. Selectors used: 5. Results: Product name: "Pro Wireless Headphones X3". Price: $149.99. Original price: $199.99. Discount: 25% off. Rating: 4.7/5 (2,340 reviews). Availability: In Stock. Description: 280 characters extracted. Specifications: 8 key-value pairs (battery life, driver size, frequency response, etc). Images: 6 URLs captured. Related products: 4 items extracted. API credits used: 1.
+
+
 ## Installation & Usage
 
 To install and use the **ScrapingBee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **ScrapingBee** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

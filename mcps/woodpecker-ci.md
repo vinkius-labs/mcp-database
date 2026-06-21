@@ -1,12 +1,14 @@
 # Woodpecker CI MCP Server
 
-Manage your Woodpecker CI instance — control pipelines, monitor agents, and configure repositories directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/woodpecker-ci)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/woodpecker-ci)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/woodpecker-ci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/woodpecker-ci-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 34
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage your Woodpecker CI instance — control pipelines, monitor agents, and configure repositories directly from your AI agent.
 
 ## Description
 Connect your **Woodpecker CI** server to any AI agent to automate your continuous integration and deployment workflows through natural language.
@@ -69,6 +71,33 @@ Connect your **Woodpecker CI** server to any AI agent to automate your continuou
 - **update_repo**: Update repository settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Woodpecker CI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Woodpecker agents and show their current status."
+
+**🤖 AI Agent:**
+> I've retrieved the agent list. You have 3 agents: 'docker-runner-01' (Online), 'k8s-agent-alpha' (Online), and 'legacy-local' (Offline). Would you like to see the tasks assigned to 'docker-runner-01'?
+
+---
+
+**👤 You:**
+> "Find the repository 'vinkius/mcp-server' and trigger a new pipeline."
+
+**🤖 AI Agent:**
+> Found it (ID: 42). I have triggered a new pipeline for 'vinkius/mcp-server'. The new pipeline is #154. You can monitor its progress or I can notify you when it finishes.
+
+---
+
+**👤 You:**
+> "Show me the last 5 pipelines for repository ID 42."
+
+**🤖 AI Agent:**
+> Here are the 5 most recent pipelines for repo 42: #153 (Success), #152 (Failure), #151 (Success), #150 (Success), and #149 (Cancelled). Pipeline #152 failed at the 'test' step. Would you like to see the config for that build?
+
+
 ## Installation & Usage
 
 To install and use the **Woodpecker CI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Woodpecker CI** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ChartHop MCP Server
 
-Manage people operations and organizational data via ChartHop — track jobs, people, and headcount planning directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/charthop)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/charthop)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/charthop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/charthop-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 8
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage people operations and organizational data via ChartHop — track jobs, people, and headcount planning directly from any AI agent.
 
 ## Description
 Connect your **ChartHop** account to any AI agent and take full control of your organizational data and workforce planning through natural conversation. Streamline how you manage your roster and headcount.
@@ -45,6 +47,33 @@ Connect your **ChartHop** account to any AI agent and take full control of your 
 - **list_organization_teams**: List all teams in the organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ChartHop** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the headcount summary for my organization."
+
+**🤖 AI Agent:**
+> Retrieving organization summary... You currently have 150 filled roles and 12 open positions across 5 departments. The largest department is Engineering with 65 people.
+
+---
+
+**👤 You:**
+> "List all departments and their leaders."
+
+**🤖 AI Agent:**
+> Checking departments... I found 5 departments: Engineering (Lead: John Doe), Sales (Lead: Sarah Miller), Marketing (Lead: Mike Scott), Product (Lead: Jane Smith), and HR (Lead: Pam Beesly).
+
+---
+
+**👤 You:**
+> "Show me details for 'John Smith' in ChartHop."
+
+**🤖 AI Agent:**
+> Searching for 'John Smith'... I found 1 matching profile. John is a 'Senior Software Engineer' in the 'Engineering' department, reporting to 'Jane Smith'. He started on 2022-05-10.
+
+
 ## Installation & Usage
 
 To install and use the **ChartHop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ChartHop** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

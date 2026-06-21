@@ -1,12 +1,14 @@
 # Everflow Partner Marketing MCP Server
 
-Equip your AI agent to manage marketing offers, track affiliates, and monitor network performance via the Everflow API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/everflow-partner-marketing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/everflow-partner-marketing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/everflow-partner-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/everflow-partner-marketing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage marketing offers, track affiliates, and monitor network performance via the Everflow API.
 
 ## Description
 Integrate **Everflow**, the comprehensive partner marketing platform, directly into your AI workflow. Manage your marketing offers and payouts, track affiliate profiles and performance, monitor advertisers and creative assets, and oversee your entire network performance using natural language.
@@ -44,6 +46,33 @@ Integrate **Everflow**, the comprehensive partner marketing platform, directly i
 - **list_marketing_offers**: List all marketing offers in your Everflow account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Everflow Partner Marketing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing offers."
+
+**🤖 AI Agent:**
+> I've found 12 active offers, including 'Summer Sale Promo' and 'VIP Loyalty Reward'. 8 offers are currently generating conversions. Would you like to see the payout details for the Summer Sale?
+
+---
+
+**👤 You:**
+> "Show me the performance for affiliate ID 12345."
+
+**🤖 AI Agent:**
+> Affiliate ID 12345 ('Top Partner Media') has generated 1,500 clicks and 85 conversions this week, totaling $4,250 in revenue. Their current payout is $850. Should I pull their detailed conversion log?
+
+---
+
+**👤 You:**
+> "What is the network performance summary for today?"
+
+**🤖 AI Agent:**
+> Today across the network, you have 15,000 total clicks and 450 conversions (3% CR). Gross revenue is $12,500 with a total network payout of $2,500. Performance is up 5% compared to yesterday. Should I check which advertiser is leading?
+
+
 ## Installation & Usage
 
 To install and use the **Everflow Partner Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Everflow Partner Marketing** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

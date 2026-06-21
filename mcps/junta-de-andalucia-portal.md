@@ -1,12 +1,14 @@
 # Junta de Andalucía (Portal) MCP Server
 
-Access the official Open Data Portal of the Junta de Andalucía. Explore datasets, resources, and public records directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/junta-de-andalucia-portal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/junta-de-andalucia-portal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/junta-de-andalucia-portal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/junta-de-andalucia-portal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 6
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the official Open Data Portal of the Junta de Andalucía. Explore datasets, resources, and public records directly from your AI agent.
 
 ## Description
 Connect to the **Junta de Andalucía Open Data Portal** to query and analyze public information from the Andalusian government through natural language.
@@ -41,6 +43,33 @@ Connect to the **Junta de Andalucía Open Data Portal** to query and analyze pub
 - **get_resource**: Get metadata for a specific resource (file)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Junta de Andalucía (Portal)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available datasets in the Junta de Andalucía portal."
+
+**🤖 AI Agent:**
+> I've retrieved the list of datasets. There are numerous packages available, including 'Presupuestos de la Comunidad', 'Centros Educativos', and 'Calidad del Aire'. Which category or specific dataset would you like to explore?
+
+---
+
+**👤 You:**
+> "Search for 'turismo' in the resource with ID 550e8400-e29b-41d4-a716-446655440000."
+
+**🤖 AI Agent:**
+> Searching the datastore... I found 12 entries matching 'turismo' in that resource. The results include data on hotel occupancy and local attractions. Would you like me to summarize the top results?
+
+---
+
+**👤 You:**
+> "Show me the metadata for the dataset 'centros-sanitarios'."
+
+**🤖 AI Agent:**
+> Fetching metadata for 'centros-sanitarios'... This dataset contains information about all health centers in Andalusia, updated monthly. It includes 3 resources in CSV and JSON formats. Would you like the IDs of these resources?
+
+
 ## Installation & Usage
 
 To install and use the **Junta de Andalucía (Portal)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Junta de Andalucía (Portal)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

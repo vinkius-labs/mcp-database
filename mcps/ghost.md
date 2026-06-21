@@ -1,12 +1,14 @@
 # Ghost MCP Server
 
-Manage blog posts, track authors, and oversee static pages via AI agents with Ghost CMS.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ghost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ghost-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage blog posts, track authors, and oversee static pages via AI agents with Ghost CMS.
 
 ## Description
 Connect your **Ghost** publication to any AI agent to automate your content management workflows through the Model Context Protocol (MCP). Ghost is a powerful headless Node.js CMS tailored for modern publishing. This MCP server enables you to retrieve published posts, manage taxonomy tags, and fetch site configurations directly through natural conversation using the Ghost Content API.
@@ -47,6 +49,33 @@ Connect your **Ghost** publication to any AI agent to automate your content mana
 - **list_content_tags**: List categories/tags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ghost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the 5 most recent published posts."
+
+**🤖 AI Agent:**
+> Retrieving posts... I found 5 recent articles, including 'Welcome to Ghost' and 'Writing with Markdown'. Would you like to read the full content of any of them?
+
+---
+
+**👤 You:**
+> "Get the content of the post with the slug 'welcome'."
+
+**🤖 AI Agent:**
+> Fetching post... The post 'Welcome' was published on October 1st. The main content is: 'Welcome, it's great to have you here...'.
+
+---
+
+**👤 You:**
+> "List all active subscription tiers."
+
+**🤖 AI Agent:**
+> Fetching tiers... Your publication has 2 active tiers: 'Free' ($0/month) and 'Premium' ($5/month).
+
+
 ## Installation & Usage
 
 To install and use the **Ghost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Ghost** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

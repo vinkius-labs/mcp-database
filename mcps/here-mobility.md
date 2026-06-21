@@ -1,12 +1,14 @@
 # HERE Mobility MCP Server
 
-AI transit planning: discover routes, schedules, and stations for public transport via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/here-mobility)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/here-mobility)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/here-mobility-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/here-mobility-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+AI transit planning: discover routes, schedules, and stations for public transport via agents.
 
 ## Description
 ### What you can do
@@ -60,6 +62,33 @@ Find transit stations near a GPS coordinate
 Search trips combining multiple transport modes (transit, walk, bike, scooter)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HERE Mobility** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find me the best public transit route from Brandenburg Gate to Berlin Central Station departing at 8am tomorrow"
+
+**🤖 AI Agent:**
+> I'll discover the best transit options with departure times, transfers, and walking segments.
+
+---
+
+**👤 You:**
+> "What buses and trains depart from Times Square in the next 30 minutes?"
+
+**🤖 AI Agent:**
+> I'll check the departure schedule for Times Square station right now.
+
+---
+
+**👤 You:**
+> "Plan a multimodal trip from my location combining subway and bike sharing"
+
+**🤖 AI Agent:**
+> I'll search for trips combining transit and bicycle modes for an efficient journey.
+
+
 ## Installation & Usage
 
 To install and use the **HERE Mobility** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **HERE Mobility** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Google Ads MCP Server
 
-Monitor and analyze Google Ads performance — track campaigns, keywords, and metrics via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Monitor and analyze Google Ads performance — track campaigns, keywords, and metrics via AI.
 
 ## Description
 Connect your **Google Ads** account to your AI agent and gain real-time visibility into your advertising performance. Use natural language to audit campaigns, analyze keyword efficiency, and retrieve performance reports across your entire account.
@@ -50,6 +52,33 @@ Stop wrestling with complex reporting dashboards. Your AI agent acts as your ded
 - **search_keywords**: Search for keywords and their performance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active campaigns and their current status."
+
+**🤖 AI Agent:**
+> Fetching campaigns... You have 5 active campaigns. 'Summer Sale 2024' is currently 'ENABLED', while 'Retargeting - Q2' is 'PAUSED'. Would you like the performance report for the 'Summer Sale' campaign?
+
+---
+
+**👤 You:**
+> "How many clicks and conversions did we get in the last 7 days?"
+
+**🤖 AI Agent:**
+> Running account summary... In the last 7 days, your account recorded 1,240 clicks and 45 conversions across all campaigns. The total cost was approximately $850.30.
+
+---
+
+**👤 You:**
+> "Show me the top performing keywords in ad group 93021."
+
+**🤖 AI Agent:**
+> Analyzing keyword performance... In ad group 93021, the keyword 'best running shoes' has the highest CTR at 5.2%, followed by 'lightweight trainers' at 4.8%. Would you like to see the average CPC for these keywords?
+
+
 ## Installation & Usage
 
 To install and use the **Google Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Google Ads** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

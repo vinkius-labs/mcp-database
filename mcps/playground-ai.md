@@ -1,12 +1,14 @@
 # Playground AI MCP Server
 
-Generate, inpaint, upscale, and transform images using Playground AI's powerful models via natural language.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/playground-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/playground-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/playground-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/playground-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Generate, inpaint, upscale, and transform images using Playground AI's powerful models via natural language.
 
 ## Description
 Connect your AI agent directly to the **Playground AI** compute clusters. Eliminate manual interface dragging by instructing your LLM (Claude, Cursor) to natively generate, radically outpaint, or surgically inpaint high-resolution visual components using the `Playground v3` pipeline.
@@ -46,6 +48,33 @@ Generate images from a text prompt using Playground AI. Playground offers multip
 - **list_generations**: List recent generations on Playground AI. Returns generation IDs, prompts, and timestamps
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Playground AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 1024x1024 image of a cyberpunk coffee cup in neon lighting."
+
+**🤖 AI Agent:**
+> Payload dispatched holding spatial constraints to 1024x1024 pixels. Using default Model 'Playground v3'. The system returns generation block `ID: 9x8A-CUP`. The finalized render URL is ready: [View Graphic]. Want to apply an iterative 2x Upscale on it now?
+
+---
+
+**👤 You:**
+> "Upscale this image to 4x its size `https://example.com/small_icon.png`."
+
+**🤖 AI Agent:**
+> Upscaling protocol engaged. Submitted target to `upscale_image` invoking factor constraint '4'. The engine interpolated logical pixels correctly matching standard textures natively. Result pointer: [High-Res URL].
+
+---
+
+**👤 You:**
+> "Remove the background from the image at `https://example.com/person.jpg`."
+
+**🤖 AI Agent:**
+> Background segmentation dispatched via `remove_background`. The deep learning layer masked the subject heavily and omitted out-of-bounds layer fragments. I've received the pristine transparent PNG rendering back. The new asset is currently available at `[Extracted PNG URL]`. Would you like me to map it in a new CSS class?
+
+
 ## Installation & Usage
 
 To install and use the **Playground AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Playground AI** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

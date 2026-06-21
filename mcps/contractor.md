@@ -1,12 +1,14 @@
 # Contractor+ MCP Server
 
-Run your contracting business with job estimates, invoicing, client management, and field crew tracking in one mobile platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contractor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contractor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contractor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contractor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Run your contracting business with job estimates, invoicing, client management, and field crew tracking in one mobile platform.
 
 ## Description
 Connect your **Contractor+** account to any AI agent and take full control of your field service management and business operations through natural conversation.
@@ -49,6 +51,33 @@ No more manual status checking or digging through fragmented job logs. Your AI a
 - **list_work_orders**: List work orders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Contractor+** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active jobs and their current statuses in Contractor+."
+
+**🤖 AI Agent:**
+> I've retrieved your ongoing jobs. You have 3 active projects: 'Roof Replacement' (In Progress), 'HVAC Repair' (Scheduled), and 'Kitchen Remodel'. Would you like the crew assignments for any of these?
+
+---
+
+**👤 You:**
+> "Create a new lead for 'John Doe' at 'john@example.com'."
+
+**🤖 AI Agent:**
+> Lead created! John Doe has been successfully added to your Contractor+ CRM with ID 'cl_1024'. I've initialized his profile. Shall I create an initial estimate for a site visit?
+
+---
+
+**👤 You:**
+> "Show me the last 5 invoices and their payment status."
+
+**🤖 AI Agent:**
+> Fetching invoices... Out of the last 5, three are 'Paid' and two are 'Overdue' (Invoice #402 and #405). Total outstanding balance is $2,450.00. Would you like me to send reminders for the overdue bills?
+
+
 ## Installation & Usage
 
 To install and use the **Contractor+** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Contractor+** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

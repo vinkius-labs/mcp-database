@@ -1,12 +1,14 @@
 # Grafana MCP Server
 
-Manage observability via Grafana — search and inspect dashboards, monitor alerts, and handle data sources directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grafana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grafana-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 4
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage observability via Grafana — search and inspect dashboards, monitor alerts, and handle data sources directly from any AI agent.
 
 ## Description
 Connect your **Grafana** instance to any AI agent and take full control of your application observability, dashboard inspections, and alerting workflows through natural conversation.
@@ -49,6 +51,33 @@ List all configured data sources in Grafana
 Get currently firing alerts from Grafana Unified Alerting
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Grafana** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for dashboards tagged with 'production'"
+
+**🤖 AI Agent:**
+> Searching dashboards... I found 3 matching dashboards: 'K8s Cluster Overview' (UID: abc-123), 'HTTP Response Metrics' (UID: def-456), and 'Database Performance'. Which one would you like me to inspect for panels?
+
+---
+
+**👤 You:**
+> "Show me the queries for dashboard 'abc-123'"
+
+**🤖 AI Agent:**
+> Retrieving dashboard 'abc-123'... I found 5 panels. Highlights: 'CPU Usage' uses PromQL `sum(rate(node_cpu_seconds_total...))`, and 'Request Latency' uses `histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket...)))`. Would you like the full JSON or more queries?
+
+---
+
+**👤 You:**
+> "Are there any firing alerts right now?"
+
+**🤖 AI Agent:**
+> Checking alert rules... Yes, I found 1 firing alert: 'High Error Rate' on service 'API-v1'. It has been firing for 15 minutes. All other 12 alert rules are currently in 'Normal' state.
+
+
 ## Installation & Usage
 
 To install and use the **Grafana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Grafana** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

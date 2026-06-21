@@ -1,12 +1,14 @@
 # FantasyData (SportsDataIO) MCP Server
 
-Access real-time sports data via FantasyData (SportsDataIO) — track players, scores, and schedules for NFL, NBA, and MLB.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fantasydata-sportsdataio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fantasydata-sportsdataio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fantasydata-sportsdataio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fantasydata-sportsdataio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time sports data via FantasyData (SportsDataIO) — track players, scores, and schedules for NFL, NBA, and MLB.
 
 ## Description
 Connect your **FantasyData (SportsDataIO)** account to any AI agent and take full control of your sports data analysis through natural conversation.
@@ -47,6 +49,33 @@ Connect your **FantasyData (SportsDataIO)** account to any AI agent and take ful
 - **list_nfl_players**: List all active NFL players
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FantasyData (SportsDataIO)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active NFL players."
+
+**🤖 AI Agent:**
+> I've retrieved the NFL player roster. You have over 2,000 active players including 'Patrick Mahomes' (QB, ID: 18877) and 'Justin Jefferson' (WR, ID: 21685). Which team or position should I filter by?
+
+---
+
+**👤 You:**
+> "Show me the NBA scores for last night."
+
+**🤖 AI Agent:**
+> Fetching NBA scores for 2024-04-03... The Lakers beat the Celtics 112-105, and the Warriors won against the Mavericks 120-118. Would you like the box score for any of these games?
+
+---
+
+**👤 You:**
+> "Get the MLB schedule for the 2024 season."
+
+**🤖 AI Agent:**
+> Retrieving 2024 MLB schedule... The regular season consists of 2,430 games starting from March 28th. Opening day featured match-ups like Yankees vs Astros and Dodgers vs Cardinals.
+
+
 ## Installation & Usage
 
 To install and use the **FantasyData (SportsDataIO)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **FantasyData (SportsDataIO)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

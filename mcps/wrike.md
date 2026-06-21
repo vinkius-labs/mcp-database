@@ -1,12 +1,14 @@
 # Wrike MCP Server
 
-Manage tasks, projects, and folders on Wrike — the most versatile work management platform for teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wrike)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wrike)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wrike-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wrike-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage tasks, projects, and folders on Wrike — the most versatile work management platform for teams.
 
 ## Description
 Connect your **Wrike** account to any AI agent and manage your enterprise workflows through natural conversation.
@@ -48,6 +50,33 @@ No more manual digging through complex project folders to find an update. Your A
 Lists tasks in the Wrike account, optionally filtered by folder
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wrike** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Wrike projects."
+
+**🤖 AI Agent:**
+> I found 5 active projects in your account: 1. 'Product Launch 2026' (ID: IE...), 2. 'Q1 Marketing Campaign' (ID: IE...), 3. 'Internal Website Redesign' (ID: IE...), and 2 others. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me tasks in the 'Product Launch 2026' folder."
+
+**🤖 AI Agent:**
+> Searching folder 'Product Launch 2026' (ID: IE...)... I found 8 tasks. The most recent are: 1. 'Finalize Design Specs' (Status: Active), 2. 'Coordinate with Vendors' (Status: Active), and 3. 'Budget Approval' (Status: Completed). Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Get full details for task ID 'IEA...'."
+
+**🤖 AI Agent:**
+> Task 'Finalize Design Specs' (ID: IEA...): Description: 'Complete the UI/UX documentation for the mobile dashboard'. Status: Active, Priority: High, Assigned to: John Doe. Would you like me to check for any custom field values?
+
+
 ## Installation & Usage
 
 To install and use the **Wrike** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Wrike** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

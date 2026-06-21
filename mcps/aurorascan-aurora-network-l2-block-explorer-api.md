@@ -1,12 +1,14 @@
 # Aurorascan (Aurora Network L2 Block Explorer API) MCP Server
 
-Access Aurora Network L2 blockchain data—query balances, transaction history, and token transfers directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aurorascan-aurora-network-l2-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aurorascan-aurora-network-l2-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aurorascan-aurora-network-l2-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aurorascan-aurora-network-l2-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 30
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Aurora Network L2 blockchain data—query balances, transaction history, and token transfers directly from your AI agent.
 
 ## Description
 Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora Network L2 blockchain. This server enables real-time querying of account balances, transaction histories, and token movements through simple natural language.
@@ -65,6 +67,33 @@ Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora
 - **verify_source_code**: Verify Source Code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aurorascan (Aurora Network L2 Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current balance of address 0x123...?"
+
+**🤖 AI Agent:**
+> The current balance for address 0x123... is 4.52 ETH on the Aurora Network.
+
+---
+
+**👤 You:**
+> "List the last 5 ERC20 token transfers for address 0xabc..."
+
+**🤖 AI Agent:**
+> I found the 5 most recent ERC20 transfers for that address. Notable transfers include 100 USDC and 50 AURORA tokens. Would you like the transaction hashes for these?
+
+---
+
+**👤 You:**
+> "Show me the normal transaction history for address 0xdef... sorted by descending order."
+
+**🤖 AI Agent:**
+> Fetching transaction history... I've retrieved the latest transactions for 0xdef... including a contract interaction at block 1045231 and a simple transfer at block 1045220.
+
+
 ## Installation & Usage
 
 To install and use the **Aurorascan (Aurora Network L2 Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Aurorascan (Aurora Network L2 Block Explorer API)** MCP
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

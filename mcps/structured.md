@@ -1,12 +1,14 @@
 # Structured MCP Server
 
-Connect your AI to Structured. Programmatically manage your daily planner, tasks, and routines seamlessly directly from your terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/structured)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/structured)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/structured-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/structured-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI to Structured. Programmatically manage your daily planner, tasks, and routines seamlessly directly from your terminal.
 
 ## Description
 Integrate the powerful tracking of the **Structured** daily planner directly into your conversational AI environment. Empower your productivity by allowing your LLM to intuitively create tasks, schedule complex recurring routines, and manage your day programmatically without opening the mobile app. With this MCP connector securely attached to your Structured Pro environment, your agent can serve as an active scheduling assistant, iterating dynamically through your agenda, parsing task structures, and executing adjustments organically.
@@ -47,6 +49,51 @@ Creates a new task in Structured
 Permanently deletes a task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Structured** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Assess my active Structured environment, listing today's pending tasks, and mark the scheduled meeting block as successfully completed."
+
+**🤖 AI Agent:**
+> Validating parameters seamlessly...
+**Current Pending Tasks Mapped (`list_tasks`)**:
+- `Code Architecture Assessment`
+- `Managerial Meeting`
+
+Updating attribute structurally calling task parameter natively:
+- Task `Managerial Meeting` has been updated cleanly. `isCompleted` now reflects successfully finalized metric natively explicitly effectively correctly.
+Ready to process subsequent routine deployments actively.
+
+---
+
+**👤 You:**
+> "List all active plans for the week, and display the detailed constraints of the 'Morning Focus' routine."
+
+**🤖 AI Agent:**
+> Retrieving your routine logic matrices seamlessly...
+**Routines Acquired (`list_plans`)**:
+- `Morning Focus`
+- `Evening Winding Down`
+
+Deep inspecting context using `get_plan_details` natively...
+The 'Morning Focus' demands 90 uninterrupted minutes without communication applications.
+
+---
+
+**👤 You:**
+> "Read my user profile cleanly to extract my workspace validation level and operational timezone."
+
+**🤖 AI Agent:**
+> Auditing operational attributes accurately...
+Executing `get_user_profile` locally natively successfully.
+**Authentication Response**:
+- User Authorization: `Structured Pro` active successfully.
+- Locale Definition: `Europe/London` applied proactively.
+The context is perfectly mapped.
+
+
 ## Installation & Usage
 
 To install and use the **Structured** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +102,11 @@ To install and use the **Structured** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

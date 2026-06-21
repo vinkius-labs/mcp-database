@@ -1,12 +1,14 @@
 # Corrently Regional Green Index MCP Server
 
-Universal regional energy intelligence — get green power forecasts by ZIP code via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corrently-regional-green-index)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corrently-regional-green-index)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corrently-regional-green-index-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corrently-regional-green-index-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 2
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Universal regional energy intelligence — get green power forecasts by ZIP code via AI.
 
 ## Description
 Equip your AI agent with hyper-local energy intelligence through the **Corrently** MCP server. This integration provides real-time and forecast data for the Green Power Index (GSI), identifying when the electricity grid is cleanest in specific regions (primarily in Germany). Your agent can retrieve green index predictions by ZIP code and access current energy market prices. Whether you are automating smart home appliances, planning energy-intensive computing tasks, or researching regional grid sustainability, your agent acts as a dedicated regional energy consultant through natural conversation.
@@ -39,6 +41,33 @@ Get green electricity index for a ZIP code
 - **get_energy_market_data**: Get latest energy market prices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corrently Regional Green Index** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the green energy index for ZIP code 10117 (Berlin)?"
+
+**🤖 AI Agent:**
+> Checking the Corrently GSI for Berlin... The current index is 62, which is 'Clean'. The cleanest time to consume energy in this region will be tomorrow between 2 PM and 4 PM. Would you like to see the full forecast?
+
+---
+
+**👤 You:**
+> "Check the green power forecast for Munich (ZIP 80331)."
+
+**🤖 AI Agent:**
+> Retrieving data for Munich... The grid is currently at a moderate index of 45. However, it is expected to rise to 78 later tonight as wind production increases. It's a great time to schedule heavy loads for 11 PM.
+
+---
+
+**👤 You:**
+> "Show me the current energy market prices."
+
+**🤖 AI Agent:**
+> Fetching market data... The latest exchange price is 85.40 EUR/MWh. Prices have been stable over the last 6 hours. Would you like to see the trend chart data?
+
+
 ## Installation & Usage
 
 To install and use the **Corrently Regional Green Index** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Corrently Regional Green Index** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

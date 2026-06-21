@@ -1,12 +1,14 @@
 # Portfolio CSV Analyzer MCP Server
 
-Parse massive CSV exports from brokers like DEGIRO or XTB instantly. Streams financial data locally to prevent AI crashes, returning clean column schemas and sample data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/portfolio-csv-analyzer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/portfolio-csv-analyzer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/portfolio-csv-analyzer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/portfolio-csv-analyzer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 1
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Parse massive CSV exports from brokers like DEGIRO or XTB instantly. Streams financial data locally to prevent AI crashes, returning clean column schemas and sample data.
 
 ## Description
 When you export your trading history from DEGIRO, XTB, or Interactive Brokers, you get a massive CSV file with thousands of rows. If you upload this directly to Claude, it will exhaust its context window, hallucinate data, and eventually crash.
@@ -27,6 +29,33 @@ This MCP acts as your local AI data scientist. It uses a high-speed streaming CS
 Parse massive CSV exports from brokers (DEGIRO, XTB, Trading212) locally. Streams the file to prevent RAM crashes and returns column schemas and sample data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Portfolio CSV Analyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Parse my DEGIRO_export.csv and tell me what data columns I have available to calculate my total dividends."
+
+**🤖 AI Agent:**
+> Based on the CSV schema, you have the following columns: Date, Product, ISIN, Description, and Amount. The 'Description' column labels your dividends.
+
+---
+
+**👤 You:**
+> "Look at the schema of this broker export and write a Python script for me that sums up all my buy orders."
+
+**🤖 AI Agent:**
+> Here is a Python script using pandas that targets the 'Action' and 'Value' columns we just discovered in your CSV file.
+
+---
+
+**👤 You:**
+> "How many total rows are in this trading history CSV?"
+
+**🤖 AI Agent:**
+> The streaming parser counted exactly 4,521 rows of transaction data.
+
+
 ## Installation & Usage
 
 To install and use the **Portfolio CSV Analyzer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **Portfolio CSV Analyzer** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

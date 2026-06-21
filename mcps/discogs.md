@@ -1,12 +1,14 @@
 # Discogs MCP Server
 
-Explore the world's largest music database — search artists, releases, labels, and marketplace listings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/discogs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discogs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discogs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discogs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 13
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Explore the world's largest music database — search artists, releases, labels, and marketplace listings via AI.
 
 ## Description
 Unlock the power of the **Discogs** music database — the most comprehensive catalog of music recordings, releases, and marketplace data. Connect Discogs to your AI agent to instantly search artists, explore complete discographies, examine release details, research labels, browse marketplace listings, and analyze collector statistics — all through natural conversation.
@@ -78,6 +80,33 @@ Get a user's wantlist of desired releases
 Search the Discogs database for artists, releases, labels, and more
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Discogs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Pink Floyd's 'The Dark Side of the Moon' and show me all vinyl pressings."
+
+**🤖 AI Agent:**
+> I found the master release for 'The Dark Side of the Moon' and retrieved all vinyl versions. There are 47 pressings worldwide, including the original 1973 UK Harvest pressing, 2016 remaster, and Japanese obi editions. Here are the details with marketplace prices.
+
+---
+
+**👤 You:**
+> "Show me the complete discography of Daft Punk."
+
+**🤖 AI Agent:**
+> Here's Daft Punk's complete discography from 1992 to 2021. It includes 4 studio albums (Homework, Discovery, Human After All, Random Access Memories), 2 live albums, numerous singles and EPs, and compilation appearances. Here are all 89 releases sorted by year.
+
+---
+
+**👤 You:**
+> "What's the market value of the original 1969 Beatles 'Abbey Road' vinyl in good condition?"
+
+**🤖 AI Agent:**
+> Based on Discogs community data, the original 1969 UK Apple pressing of Abbey Road (PCS 7088) has a median sale price of $180. The lowest current listing is $125 in VG+ condition, and the highest recent sale was $350 for a near mint copy. Here are 12 active listings with prices and conditions.
+
+
 ## Installation & Usage
 
 To install and use the **Discogs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -86,4 +115,11 @@ To install and use the **Discogs** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

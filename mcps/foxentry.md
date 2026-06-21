@@ -1,12 +1,14 @@
 # Foxentry MCP Server
 
-Validate and autocomplete addresses, emails, and phone numbers in forms to eliminate bad data before it enters your systems.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/foxentry)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foxentry)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/foxentry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/foxentry-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Validate and autocomplete addresses, emails, and phone numbers in forms to eliminate bad data before it enters your systems.
 
 ## Description
 Connect your **Foxentry** data intelligence account to any AI agent and simplify how you clean your contact lists, verify identity data, and lookup business registrations through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Foxentry** data intelligence account to any AI agent and simplify
 - **validate_phone**: Validate phone
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Foxentry** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify the email 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Verification complete! The email 'john.doe@example.com' is marked as 'Valid' and active. No disposable domains or catch-all issues were detected. It is safe for your campaign.
+
+---
+
+**👤 You:**
+> "Lookup business data for registration number '12345678' in Czech Republic."
+
+**🤖 AI Agent:**
+> I've found the record. The registration number belongs to 'Acme Tech s.r.o.' located in Prague. Their primary business industry is 'Software Development'. Would you like the full address?
+
+---
+
+**👤 You:**
+> "Check if the phone number '+420 777 123 456' is valid."
+
+**🤖 AI Agent:**
+> Fetching phone data... The number +420 777 123 456 is 'Valid' and formatted correctly for the Czech Republic. It is identified as a mobile device.
+
+
 ## Installation & Usage
 
 To install and use the **Foxentry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Foxentry** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

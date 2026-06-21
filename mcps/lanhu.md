@@ -1,12 +1,14 @@
 # Lanhu MCP Server
 
-Product design collaboration platform — manage design files, handoffs, and team feedback via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lanhu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lanhu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lanhu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lanhu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Product design collaboration platform — manage design files, handoffs, and team feedback via AI.
 
 ## Description
 Empower your AI agent to orchestrate your product design workflow with **Lanhu** (蓝湖), the premier design collaboration platform for high-performance teams. By connecting Lanhu to your agent, you transform complex design handoffs and project coordination into a natural conversation. Your agent can instantly list your projects, retrieve design file information, audit layer structures, and even browse team comments without you needing to navigate the web interface. Whether you are managing a mobile app design or a large-scale enterprise system, your agent acts as a real-time design coordinator, keeping your assets organized and your production moving.
@@ -48,6 +50,33 @@ List project design files
 - **list_teams**: List all Lanhu teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lanhu** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my design projects on Lanhu."
+
+**🤖 AI Agent:**
+> I've retrieved your Lanhu projects. You have 3 active projects: 'Mobile Wallet V2', 'Admin Dashboard', and 'Marketing Landing Pages'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the comments for design file 'checkout-v1'."
+
+**🤖 AI Agent:**
+> I've listed the comments for 'checkout-v1'. There are 4 recent discussions, including feedback on the payment success message and button spacing. Would you like a detailed summary?
+
+---
+
+**👤 You:**
+> "List the layers for file 'homepage-main'."
+
+**🤖 AI Agent:**
+> I've retrieved the layers for 'homepage-main'. It includes the 'Header', 'Hero_Section', 'Features_Grid', and 'Footer' groups. Which section would you like to inspect further?
+
+
 ## Installation & Usage
 
 To install and use the **Lanhu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Lanhu** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

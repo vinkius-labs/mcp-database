@@ -1,12 +1,14 @@
 # Middesk MCP Server
 
-Business identity verification — verify entities, Secretary of State records, and tax registrations via Middesk.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/middesk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/middesk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/middesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/middesk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 9
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Business identity verification — verify entities, Secretary of State records, and tax registrations via Middesk.
 
 ## Description
 Connect your **Middesk** account to automate Business Identity (KYB) and compliance workflows. This server provides comprehensive access to Middesk's verification engine.
@@ -42,6 +44,25 @@ Create a new business verification
 Prefill business details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Middesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify the business 'Acme Corp' located in Delaware."
+
+**🤖 AI Agent:**
+> Initiating verification for Acme Corp... Submission ID #99882. I will monitor the status for you.
+
+---
+
+**👤 You:**
+> "Find SOS filings for business ID 'bus_123'."
+
+**🤖 AI Agent:**
+> Retrieving documents... Found 2 filings: Articles of Incorporation and Statement of Information.
+
+
 ## Installation & Usage
 
 To install and use the **Middesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +71,11 @@ To install and use the **Middesk** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

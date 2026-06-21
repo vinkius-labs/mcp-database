@@ -1,12 +1,14 @@
 # X Ads (Twitter) MCP Server
 
-Connect your X Ads account to any AI agent — audit campaigns, analyze line item performance, and pull engagement reports through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/x-ads-twitter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/x-ads-twitter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/x-ads-twitter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/x-ads-twitter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Connect your X Ads account to any AI agent — audit campaigns, analyze line item performance, and pull engagement reports through natural conversation.
 
 ## Description
 Connect your **X Ads** account to any AI agent and manage your entire advertising operation through natural conversation.
@@ -86,6 +88,53 @@ List custom audiences (tailored audiences) for retargeting and CRM matching
 List all targeting criteria applied to a specific line item
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **X Ads (Twitter)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my X ad accounts and tell me which ones are active."
+
+**🤖 AI Agent:**
+> You have 2 ad accounts:
+
+1. **SaaS Growth** (ID: abc123) — Active, funding via credit card ending in 4242
+2. **Product Launch Q2** (ID: def456) — Paused since June 3
+
+Would you like me to pull the active campaigns for 'SaaS Growth'?
+
+---
+
+**👤 You:**
+> "Show me the engagement metrics for all line items in account abc123, from June 1 to June 14."
+
+**🤖 AI Agent:**
+> Here are the engagement metrics for your 3 line items between June 1–14:
+
+| Line Item | Impressions | Clicks | Spend | CTR |
+|---|---|---|---|---|
+| Retargeting — Webinar | 42,100 | 1,230 | $312 | 2.92% |
+| Lookalike — SaaS | 38,500 | 890 | $278 | 2.31% |
+| Brand Awareness | 91,200 | 620 | $445 | 0.68% |
+
+The retargeting line item is outperforming by CTR. Would you like a day-by-day breakdown?
+
+---
+
+**👤 You:**
+> "Which promoted tweets are running right now on account abc123?"
+
+**🤖 AI Agent:**
+> You have 4 promoted tweets active on that account:
+
+1. "Just launched our AI integration..." — Linked to 'SaaS Growth' campaign
+2. "Watch the full product demo..." — Linked to 'Video Launch'
+3. "Free trial — no credit card..." — Linked to 'Retargeting'
+4. "Case study: 3x pipeline in 60 days..." — Linked to 'Lookalike'
+
+Want me to pull engagement stats for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **X Ads (Twitter)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -94,4 +143,11 @@ To install and use the **X Ads (Twitter)** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

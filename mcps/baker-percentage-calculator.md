@@ -1,12 +1,14 @@
 # Baker Percentage Calculator MCP Server
 
-Convert baking recipes between absolute weights (grams) and professional Baker's percentages instantly, making scaling and comparison straightforward.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/baker-percentage-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baker-percentage-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baker-percentage-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baker-percentage-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** baking
-**Tools Count:** 3
+
+**Category:** [baking](../categories/baking.md)
+
+Convert baking recipes between absolute weights (grams) and professional Baker's percentages instantly, making scaling and comparison straightforward.
 
 ## Description
 # Professional Recipe Standardization Tool
@@ -31,6 +33,33 @@ The system uses these tools to maintain rigorous adherence to established baking
 - **scale_baker_percentage_to_weights**: Scale Baker's percentages to absolute weights using a scaling factor
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Baker Percentage Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I have a batch with 400g of flour, 350g of water, and 12g of salt. Calculate the Baker's percentages for this recipe."
+
+**🤖 AI Agent:**
+> The scoring process is complete. The final calculated proportions are: Flour Base (100%), Water (87.50%), Salt (3.00%). This indicates a standard hydration level suitable for artisan loaves.
+
+---
+
+**👤 You:**
+> "We need to double this recipe, which has 12g of salt (3% B%), and scale it up. What are the new weights?"
+
+**🤖 AI Agent:**
+> Scaling by a factor of 2.0 results in the following required weights: Salt: [NEW_SALT_WEIGHT] grams, Water: [NEW_WATER_WEIGHT] grams. The proportions are maintained.
+
+---
+
+**👤 You:**
+> "I used 5g of yeast and know its professional percentage is 1.2%. What was the approximate total flour weight?"
+
+**🤖 AI Agent:**
+> Based on your input, the calculated necessary flour base weight is [CALCULATED_FLOUR_WEIGHT] grams. Please note that this batch size is small (< 5g warning).
+
+
 ## Installation & Usage
 
 To install and use the **Baker Percentage Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -39,4 +68,11 @@ To install and use the **Baker Percentage Calculator** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

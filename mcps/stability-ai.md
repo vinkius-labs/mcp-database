@@ -1,12 +1,14 @@
 # Stability AI MCP Server
 
-Connect your AI to Stability AI's powerful image generation models. Create, upscale, and edit high-quality images directly and efficiently.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stability-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stability-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stability-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stability-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Connect your AI to Stability AI's powerful image generation models. Create, upscale, and edit high-quality images directly and efficiently.
 
 ## Description
 Integrate the industry-leading generative visual capabilities of **Stability AI** seamlessly into your conversational LLM workflows. Empower your creative and design teams to rapidly generate photorealistic drafts, upscale low-resolution assets, or systematically remove backgrounds from product photography without relying on external design software. Connect your API securely to your local configuration, interact naturally via conversation to iterate on images, and streamline your entire design pipeline effortlessly.
@@ -58,6 +60,38 @@ Generate an image from a text prompt using v1 engines
 Increases image resolution while preserving detail
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stability AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a wide format concept visual depicting a sleek, futuristic electric bike stationed alongside a minimalist architectural wall structure."
+
+**🤖 AI Agent:**
+> Formatting inputs processing core parameters executing the request systematically through the established model engine...
+
+- **Processing Protocol**: Core Generation (`generate_image`)
+- **Render Resultant Instance**: [Image Received via API Data Successfully Base64]
+
+Do you wish to iterate computationally adjusting resolution density with `upscale_image`, or are requirements sufficiently fulfilled?
+
+---
+
+**👤 You:**
+> "Upscale this low-resolution image of a landscape without losing structural fidelity."
+
+**🤖 AI Agent:**
+> Command processed. Executing `upscale_image` logic... Done. Resolution enhanced successfully.
+
+---
+
+**👤 You:**
+> "Remove the background from this product photography."
+
+**🤖 AI Agent:**
+> Executing `remove_background` routine... Done. Background eradicated cleanly.
+
+
 ## Installation & Usage
 
 To install and use the **Stability AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +100,11 @@ To install and use the **Stability AI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

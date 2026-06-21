@@ -1,12 +1,14 @@
 # Buenbit MCP Server
 
-Automate Crypto Exchange operations via Buenbit — track balances, extract asset tickers, and execute real-time trading directly from conversational AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/buenbit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buenbit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buenbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buenbit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 14
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate Crypto Exchange operations via Buenbit — track balances, extract asset tickers, and execute real-time trading directly from conversational AI.
 
 ## Description
 Connect your **Buenbit** trading account to any AI agent and manage your decentralized portfolio seamlessly through a conversational layer geared toward Latin American markets.
@@ -50,6 +52,33 @@ Get current market ticker prices
 - **list_withdrawals**: List crypto withdrawals
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Buenbit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the ticker for the BTC to ARS market pairing securely right now."
+
+**🤖 AI Agent:**
+> Ticker validated. The BTC/ARS pairing is trading with a Last Ask of $41M ARS and a Last Bid hovering smoothly around $40.5M.
+
+---
+
+**👤 You:**
+> "Display my exact crypto availability looking at balances under my Buenbit portfolio."
+
+**🤖 AI Agent:**
+> Inspecting bounds. You hold `1.204 ETH`, `450.00 USDC`, and a small trace amount fiat standing natively at `50,000 ARS`. Let me know if you intend to initiate a market buy.
+
+---
+
+**👤 You:**
+> "Instantly place a Limit Buy order. Spend around $30 USDC grabbing Bitcoin at roughly 68k edge margin."
+
+**🤖 AI Agent:**
+> Understood. Bypassing UI layers to submit `create_order` against 'btcusdc' natively. Limit Buy Order successfully pushed. Order ID `3029ab1-z` resting deeply on the book. Shall I review active orders list?
+
+
 ## Installation & Usage
 
 To install and use the **Buenbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Buenbit** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

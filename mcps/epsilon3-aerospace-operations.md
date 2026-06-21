@@ -1,12 +1,14 @@
 # Epsilon3 Aerospace Operations MCP Server
 
-Equip your AI agent to manage operational procedures, track execution runs, and monitor telemetry via the Epsilon3 API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/epsilon3-aerospace-operations)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epsilon3-aerospace-operations)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epsilon3-aerospace-operations-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epsilon3-aerospace-operations-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to manage operational procedures, track execution runs, and monitor telemetry via the Epsilon3 API.
 
 ## Description
 Integrate **Epsilon3**, the leading software platform for aerospace and complex operations, directly into your AI workflow. Manage your operational procedures and checklists, track real-time procedure runs and executions, monitor flagged issues and discrepancies, and oversee your technical projects using natural language.
@@ -44,6 +46,33 @@ Integrate **Epsilon3**, the leading software platform for aerospace and complex 
 - **list_aerospace_projects**: List all high-level projects managed in Epsilon3
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Epsilon3 Aerospace Operations** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active procedure runs."
+
+**🤖 AI Agent:**
+> I've found 3 active runs, including 'Pre-Launch Checklist' (Run #102) and 'Engine Test Protocol' (Run #105). Run #102 is currently at step 15/40. Would you like the full telemetry for the Engine Test?
+
+---
+
+**👤 You:**
+> "Show me procedures for the 'Satellite-A' project."
+
+**🤖 AI Agent:**
+> For project 'Satellite-A', I've retrieved 5 procedures, including 'Solar Array Deployment' and 'Battery Health Check'. Both are in version 2.1. Should I pull the detailed steps for Solar Array Deployment?
+
+---
+
+**👤 You:**
+> "Were there any issues flagged during today's runs?"
+
+**🤖 AI Agent:**
+> Yes, 2 issues were flagged today: 'Sensor Calibration Delay' (Severity: Low) during Run #105 and 'Pressure Variance' (Severity: Medium) during Run #108. Would you like the operator comments for the Pressure Variance issue?
+
+
 ## Installation & Usage
 
 To install and use the **Epsilon3 Aerospace Operations** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Epsilon3 Aerospace Operations** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

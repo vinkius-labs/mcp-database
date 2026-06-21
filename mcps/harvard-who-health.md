@@ -1,12 +1,14 @@
 # Harvard WHO Health MCP Server
 
-Access WHO global health indicators, disease statistics, and population health data for evidence-based research and policy analysis.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-who-health)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-who-health)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harvard-who-health-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harvard-who-health-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 16
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access WHO global health indicators, disease statistics, and population health data for evidence-based research and policy analysis.
 
 ## Description
 Connect to the **WHO Global Health Observatory (GHO) API** — the world's most comprehensive source of global health statistics.
@@ -83,6 +85,33 @@ Get water and sanitation data
 Search 1000+ WHO health indicators
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Harvard WHO Health** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Compare life expectancy between USA, Brazil, Japan, and Nigeria"
+
+**🤖 AI Agent:**
+> I've compared life expectancy at birth across these four countries using WHO data, showing trends over the past decade.
+
+---
+
+**👤 You:**
+> "Show diabetes prevalence data for India"
+
+**🤖 AI Agent:**
+> I've retrieved WHO diabetes prevalence data for India, showing time-series trends in blood glucose levels and diabetes rates among adults.
+
+---
+
+**👤 You:**
+> "Get measles immunization coverage for sub-Saharan African countries"
+
+**🤖 AI Agent:**
+> I've retrieved measles immunization coverage from WHO for sub-Saharan African countries, showing DTP3 and MCV1 coverage percentages and year-over-year progress.
+
+
 ## Installation & Usage
 
 To install and use the **Harvard WHO Health** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -91,4 +120,11 @@ To install and use the **Harvard WHO Health** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

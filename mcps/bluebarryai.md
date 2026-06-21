@@ -1,12 +1,14 @@
 # bluebarry.ai MCP Server
 
-Optimize your website accessibility compliance with automated WCAG audits, issue detection, and remediation tracking.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bluebarryai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bluebarryai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bluebarryai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bluebarryai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 6
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Optimize your website accessibility compliance with automated WCAG audits, issue detection, and remediation tracking.
 
 ## Description
 Connect your **bluebarry.ai** account to any AI agent and take full control of your AI orchestration and multimedia automation workflows through natural conversation.
@@ -47,6 +49,33 @@ List all AI agents
 Send a WhatsApp message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **bluebarry.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my AI agents in bluebarry.ai."
+
+**🤖 AI Agent:**
+> I've retrieved your AI agents. You currently have 5 active personas, including 'Customer Hero' and 'Video Analyst'. Would you like the detailed configuration metadata for any of them?
+
+---
+
+**👤 You:**
+> "Analyze and summarize this YouTube video: 'https://youtube.com/watch?v=123'."
+
+**🤖 AI Agent:**
+> Processing video intelligence... The summary for the provided video highlights three key technical breakthroughs in model training. Would you like the full high-fidelity transcript summary?
+
+---
+
+**👤 You:**
+> "Send a WhatsApp welcome message to '+123456789'."
+
+**🤖 AI Agent:**
+> Message dispatched! I've successfully sent the welcome update to +123456789 via bluebarry.ai. The status is currently 'Sent'. Need help monitoring the delivery metadata?
+
+
 ## Installation & Usage
 
 To install and use the **bluebarry.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **bluebarry.ai** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

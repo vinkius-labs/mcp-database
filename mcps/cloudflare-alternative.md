@@ -1,12 +1,14 @@
 # Cloudflare MCP Server
 
-Manage DNS, Workers, KV, Pages and firewall via Cloudflare — audit records, deploy config and inspect CDN analytics from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudflare-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudflare-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 15
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage DNS, Workers, KV, Pages and firewall via Cloudflare — audit records, deploy config and inspect CDN analytics from any AI agent.
 
 ## Description
 Connect your **Cloudflare** account to any AI agent and take full control of your DNS, edge computing, CDN and security infrastructure through natural conversation.
@@ -86,6 +88,33 @@ List Cloudflare Workers scripts
 List all Cloudflare zones (domains)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cloudflare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all A records for my example.com zone."
+
+**🤖 AI Agent:**
+> I've queried your example.com zone and found 4 A records: `app` → 203.0.113.10 (proxied), `api` → 203.0.113.11 (proxied), `staging` → 203.0.113.20 (DNS only) and `db` → 10.0.0.5 (DNS only). Would you like to modify any of these?
+
+---
+
+**👤 You:**
+> "What Workers are currently deployed on my account?"
+
+**🤖 AI Agent:**
+> You have 3 Workers deployed: `api-gateway` (last deployed 2h ago, 1.2M invocations today), `image-resizer` (last deployed 5d ago, 340K invocations) and `auth-middleware` (last deployed 1 week ago, 890K invocations). The `api-gateway` is using the most CPU time.
+
+---
+
+**👤 You:**
+> "What firewall rules are active on my production zone?"
+
+**🤖 AI Agent:**
+> Your production zone has 5 active firewall rules: 1) Block traffic from known bots (action: Block, enabled), 2) Challenge requests from high-risk countries (action: Challenge, enabled), 3) Allow internal team IPs (action: Allow, enabled), 4) Rate limit /api endpoints to 1000 req/5min per IP (action: Challenge, enabled), 5) Log all 4xx responses (action: Log, enabled). Would you like the full filter expressions for any rule?
+
+
 ## Installation & Usage
 
 To install and use the **Cloudflare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -94,4 +123,11 @@ To install and use the **Cloudflare** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

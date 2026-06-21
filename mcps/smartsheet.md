@@ -1,12 +1,14 @@
 # Smartsheet MCP Server
 
-Empower your AI to read Smartsheet rows, list workspaces, and manage your spreadsheets effortlessly from your code editor.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smartsheet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartsheet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartsheet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartsheet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Empower your AI to read Smartsheet rows, list workspaces, and manage your spreadsheets effortlessly from your code editor.
 
 ## Description
 Connect your **Smartsheet** account to any AI agent and empower your team to query project configurations, internal spreadsheets, and custom reports seamlessly. Interact with your organization's grids through natural language without ever switching tabs.
@@ -42,6 +44,52 @@ Stop manually hunting down the ID of a specific project table just to wire up yo
 - **get_current_user**: Retrieves information about the current Smartsheet user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smartsheet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all sheets available in my Smartsheet account."
+
+**🤖 AI Agent:**
+> I've invoked the listing call. Your account currently has access to the following 3 sheets:
+- Q1 Marketing Budget (ID: `10023`)
+- Employee Resource Registry (ID: `82910`)
+- Bug Triage Queue (ID: `15523`)
+
+Which sheet would you like me to inspect in more detail?
+
+---
+
+**👤 You:**
+> "Retrieve the details and rows for the 'Release Candidate Tracker' sheet."
+
+**🤖 AI Agent:**
+> I matched 'Release Candidate Tracker' to ID `85739`.
+**Columns Detected**:
+1. Status (Dropdown)
+2. Task Name (Text/Number)
+3. Assigned To (Contact List)
+
+**Rows retrieved**:
+- Row 1: Status: In Progress | Task: Implement API Docs | Assigned To: J. Doe
+- Row 2: Status: Complete | Task: Docker Upgrade | Assigned To: S. Smith
+
+---
+
+**👤 You:**
+> "Summarize all our workspaces in a markdown table."
+
+**🤖 AI Agent:**
+> Sure. Using `list_workspaces`, I've compiled this table:
+
+| Workspace Name | ID | Permission Level |
+| --- | --- | --- |
+| External Consultants | `W-2391` | Admin |
+| Core Engineering Team | `W-8472` | Owner |
+| Q3 Marketing Rollouts | `W-1102` | Viewer |
+
+
 ## Installation & Usage
 
 To install and use the **Smartsheet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +98,11 @@ To install and use the **Smartsheet** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

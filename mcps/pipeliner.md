@@ -1,12 +1,14 @@
 # Pipeliner MCP Server
 
-Manage sales pipelines and opportunities via Pipeliner CRM — list leads, track deals, and monitor activities directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pipeliner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipeliner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipeliner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipeliner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage sales pipelines and opportunities via Pipeliner CRM — list leads, track deals, and monitor activities directly from any AI agent.
 
 ## Description
 Connect your **Pipeliner CRM** space to any AI agent and take full control of your sales ecosystem through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Pipeliner CRM** space to any AI agent and take full control of yo
 - **list_pipeliner_users**: List users in the Pipeliner space
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pipeliner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all sales opportunities in the 'Enterprise' pipeline."
+
+**🤖 AI Agent:**
+> I've retrieved 6 opportunities from the 'Enterprise' pipeline. Total value is $245,000. Key deals include 'Global Bank Cloud Migration' and 'City Gov ERP Phase 2'.
+
+---
+
+**👤 You:**
+> "Show me the last 5 leads added to Pipeliner."
+
+**🤖 AI Agent:**
+> I've fetched the latest leads. Recent additions include 'Tech Solutions Inc', 'Retail Group Asia', and 3 others. Would you like their contact info or lead status?
+
+---
+
+**👤 You:**
+> "What are my sales activities for this week?"
+
+**🤖 AI Agent:**
+> You have 12 activities scheduled this week: 5 follow-up calls, 3 discovery meetings, and 4 internal tasks. Would you like a daily breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Pipeliner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Pipeliner** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Clip API MCP Server
 
-Automate Mexico's leading payment gateway via Clip — generate payment links, manage refunds, and track settlements seamlessly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clip-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clip-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clip-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clip-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate Mexico's leading payment gateway via Clip — generate payment links, manage refunds, and track settlements seamlessly via AI.
 
 ## Description
 Directly empower your intelligent agents with the **Clip API**, the undisputed champion of point-of-sale and card payment gateways across Mexico. Bypass clunky merchant dashboards by commanding 10 specialized financial tools built to execute transactions, force refunds, and reconcile bulk backend settlements securely through plain text.
@@ -47,6 +49,33 @@ Directly empower your intelligent agents with the **Clip API**, the undisputed c
 Execute a full or partial refund for a settled transaction
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clip API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a new custom MXN payment link exactly for 450.50 referenced as invoice #X-99T."
+
+**🤖 AI Agent:**
+> Clip transaction mechanism engaged! I have fully generated the MXN 450.50 payment gateway link. The URL is 'https://pay.clip.mx/x99t'. It's currently active and awaiting funds capture. Shall I send it to the client via SMS logic?
+
+---
+
+**👤 You:**
+> "Refund the latest transaction specifically identified as Txn_88Z to its origin card fully."
+
+**🤖 AI Agent:**
+> Initiating vault rollback command targeting specific Clip Txn_88Z block... Full Refund sequence finalized successfully avoiding secondary validations cleverly. The entire volume will appear on the customer's bank statement cleanly within 48 to 72 business hours. Need any more void actions handled natively?
+
+---
+
+**👤 You:**
+> "Calculate my comprehensive real cash balance available anticipating the incoming bulk settlements today blindly."
+
+**🤖 AI Agent:**
+> Sweeping internal Clip balances... I calculate MXN 35,490.20 actively marked as 'Settled' and available for your incoming sweep to the pre-registered Banamex account within the next 14 hours automatically without intervention. You also hold 4,000 pending. Shall I print the daily CSV?
+
+
 ## Installation & Usage
 
 To install and use the **Clip API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Clip API** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

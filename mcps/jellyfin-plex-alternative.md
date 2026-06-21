@@ -1,12 +1,14 @@
 # Jellyfin (Plex Alternative) MCP Server
 
-Manage your media library via Jellyfin — list movies, shows, and music, track playback progress, and inspect server status directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jellyfin-plex-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jellyfin-plex-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jellyfin-plex-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jellyfin-plex-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 12
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage your media library via Jellyfin — list movies, shows, and music, track playback progress, and inspect server status directly from any AI agent.
 
 ## Description
 Connect your **Jellyfin** media server to any AI agent and take full control of your media library through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Jellyfin** media server to any AI agent and take full control of 
 - **get_system_info**: Get basic server information (version, operating system, etc.)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jellyfin (Plex Alternative)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the root libraries on my Jellyfin server."
+
+**🤖 AI Agent:**
+> I've retrieved your root libraries. You have 'Movies' (ID: 1a2b), 'TV Shows' (ID: 3c4d), and 'Music' (ID: 5e6f) configured.
+
+---
+
+**👤 You:**
+> "Show me the movies available in my library."
+
+**🤖 AI Agent:**
+> Fetching movies... I found titles including 'Big Buck Bunny' and 'Elephants Dream'. Would you like details for any of these?
+
+---
+
+**👤 You:**
+> "What is the current status and version of my Jellyfin server?"
+
+**🤖 AI Agent:**
+> Your Jellyfin server is running version 10.9.11 on Linux. The system is healthy and all services are operational.
+
+
 ## Installation & Usage
 
 To install and use the **Jellyfin (Plex Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Jellyfin (Plex Alternative)** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

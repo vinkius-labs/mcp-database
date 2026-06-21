@@ -1,12 +1,14 @@
 # Honeybadger (Error Tracking) MCP Server
 
-Monitor app exceptions and uptime via Honeybadger — list projects, resolve faults, and track deployments.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/honeybadger-error-tracking)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/honeybadger-error-tracking)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/honeybadger-error-tracking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/honeybadger-error-tracking-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Monitor app exceptions and uptime via Honeybadger — list projects, resolve faults, and track deployments.
 
 ## Description
 Connect your **Honeybadger** account to any AI agent and take full control of your exception monitoring and application health through natural conversation.
@@ -52,6 +54,33 @@ Resolve a Honeybadger fault
 - **list_deployments**: List recent deployments registered in a Honeybadger project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Honeybadger (Error Tracking)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all unresolved faults in my 'production-backend' project"
+
+**🤖 AI Agent:**
+> I've found 3 unresolved faults in 'production-backend': 'NoMethodError: undefined method [] for nil:NilClass', 'Timeout::Error', and 'ActiveRecord::RecordNotFound'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Show me the details for fault ID 123456"
+
+**🤖 AI Agent:**
+> Fault ID 123456 ('NoMethodError'): First seen 2 days ago, occurred 45 times in 'production'. Last noticed today at 10:30 AM. It's currently unassigned. Would you like to see the last notice details or the backtrace?
+
+---
+
+**👤 You:**
+> "List recent deployments for project ID 9876"
+
+**🤖 AI Agent:**
+> I've listed the 3 most recent deployments for project 9876: Revision 'a1b2c3d' by Alex (production, 2 hours ago), Revision 'e5f6g7h' by Sarah (staging, yesterday), and Revision 'i9j0k1l' by Alex (production, 3 days ago).
+
+
 ## Installation & Usage
 
 To install and use the **Honeybadger (Error Tracking)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Honeybadger (Error Tracking)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

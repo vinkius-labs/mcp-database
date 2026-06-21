@@ -1,12 +1,14 @@
 # Syncthing MCP Server
 
-Manage file synchronization via Syncthing — monitor device connections, browse directories, and control sync folders directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/syncthing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/syncthing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/syncthing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/syncthing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 28
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage file synchronization via Syncthing — monitor device connections, browse directories, and control sync folders directly from any AI agent.
 
 ## Description
 Connect your **Syncthing** instance to any AI agent and take full control of your private file synchronization infrastructure through natural conversation.
@@ -75,6 +77,33 @@ Get current system status and resource usage
 - **system_version**: Get Syncthing version
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Syncthing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all connected devices and their current status."
+
+**🤖 AI Agent:**
+> I've retrieved the connection status. You have 3 devices configured: 'Laptop-Main' (Connected), 'Backup-NAS' (Connected), and 'Phone-Sync' (Disconnected).
+
+---
+
+**👤 You:**
+> "Check the system status and resource usage of my Syncthing instance."
+
+**🤖 AI Agent:**
+> The system is healthy. Uptime is 48 hours, memory usage is 156MB, and the current version is v1.27.2. No restart is currently required.
+
+---
+
+**👤 You:**
+> "List the directories inside the path '/data/backups/photos'."
+
+**🤖 AI Agent:**
+> Browsing the path... I found 3 subdirectories: '2023-Vacation', 'Family-Events', and 'Work-Archive'.
+
+
 ## Installation & Usage
 
 To install and use the **Syncthing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Syncthing** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

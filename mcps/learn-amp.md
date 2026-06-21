@@ -1,12 +1,14 @@
 # Learn Amp MCP Server
 
-Combine learning, engagement, and performance in one people development platform that helps employees grow and organizations thrive.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/learn-amp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/learn-amp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/learn-amp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/learn-amp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Combine learning, engagement, and performance in one people development platform that helps employees grow and organizations thrive.
 
 ## Description
 Connect your **Learn Amp** organizational account to any AI agent and take full control of your learning and development workflows through natural conversation.
@@ -47,6 +49,33 @@ Deactivate a user account
 - **update_user**: Update an existing user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Learn Amp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active users in my Learn Amp account."
+
+**🤖 AI Agent:**
+> I've fetched your user directory. You have 42 active users including 'Alex Rivera' and 'Sarah Chen'. Would you like to check the learning progress for any of them?
+
+---
+
+**👤 You:**
+> "Show me all available courses related to 'Compliance'."
+
+**🤖 AI Agent:**
+> Searching the library... I found 3 items: 'GDPR Basics', 'Cybersecurity 101', and 'Annual Ethics Training'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Mark course 8823 as completed for user 1029."
+
+**🤖 AI Agent:**
+> Processing completion... Done! Item 8823 has been successfully marked as completed for user 1029. Their progress has been updated in the system.
+
+
 ## Installation & Usage
 
 To install and use the **Learn Amp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Learn Amp** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

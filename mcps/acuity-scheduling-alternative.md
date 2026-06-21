@@ -1,12 +1,14 @@
 # Acuity Scheduling MCP Server
 
-Manage your Acuity appointments and calendars — audit availability and bookings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/acuity-scheduling-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/acuity-scheduling-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/acuity-scheduling-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/acuity-scheduling-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your Acuity appointments and calendars — audit availability and bookings via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire scheduling ecosystem with **Acuity Scheduling**, the online appointment scheduling software. By connecting Acuity to your agent, you transform complex calendar management into a natural conversation. Your agent can instantly list upcoming appointments, audit availability for specific types, and manage client bookings without you ever touching a dashboard. Whether you are a solo practitioner or managing a large team, your agent acts as a real-time scheduling coordinator, ensuring your time is always efficiently allocated.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire scheduling ecosystem with **Acu
 - **reschedule_appointment**: Reschedule an appointment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Acuity Scheduling** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my upcoming appointments for this week."
+
+**🤖 AI Agent:**
+> I've retrieved your schedule. You have 3 appointments this week, including a 'Strategy Session' with John Doe on Wednesday. Would you like the details for any of them?
+
+---
+
+**👤 You:**
+> "Check if there are any slots for 'New Patient Consultation' tomorrow."
+
+**🤖 AI Agent:**
+> Checking tomorrow's availability... I've found 2 available slots for that consultation: 10:00 AM and 14:30 PM. Would you like me to book one for you?
+
+---
+
+**👤 You:**
+> "Cancel my appointment with ID 987654321."
+
+**🤖 AI Agent:**
+> I've successfully cancelled appointment 987654321. I've also verified that the slot is now back in your availability for other clients.
+
+
 ## Installation & Usage
 
 To install and use the **Acuity Scheduling** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Acuity Scheduling** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

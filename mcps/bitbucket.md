@@ -1,12 +1,14 @@
 # Bitbucket MCP Server
 
-Manage your Git repositories via Bitbucket — list pull requests, commits, and pipelines directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bitbucket)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitbucket)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitbucket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitbucket-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage your Git repositories via Bitbucket — list pull requests, commits, and pipelines directly from any AI agent.
 
 ## Description
 Connect your **Bitbucket Cloud** account to any AI agent and orchestrate your software development workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Bitbucket Cloud** account to any AI agent and orchestrate your so
 - **list_workspaces**: List all accessible workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bitbucket** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all pull requests in repository 'my-app' within workspace 'my-team'."
+
+**🤖 AI Agent:**
+> I've retrieved the pull requests for 'my-app'. There are 2 open PRs: 'Feature: New Auth' (ID: 12) and 'Fix: Memory Leak' (ID: 15).
+
+---
+
+**👤 You:**
+> "Check the status of the last pipeline run for 'my-app'."
+
+**🤖 AI Agent:**
+> The latest pipeline for 'my-app' (Build #452) completed successfully in 3 minutes and 12 seconds.
+
+---
+
+**👤 You:**
+> "List the last 5 commits in repository 'my-app'."
+
+**🤖 AI Agent:**
+> Retrieving commits... The last 5 commits include updates to the README, a bugfix for the API client, and new tests for the auth module.
+
+
 ## Installation & Usage
 
 To install and use the **Bitbucket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Bitbucket** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

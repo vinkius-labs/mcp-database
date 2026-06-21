@@ -1,12 +1,14 @@
 # Stanford bioRxiv MCP Server
 
-Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-biorxiv)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-biorxiv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-biorxiv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-biorxiv-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** education
-**Tools Count:** 16
+
+**Category:** [education](../categories/education.md)
+
+Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository.
 
 ## Description
 Connect to the **bioRxiv and medRxiv APIs** — the world's leading preprint servers for biology and health sciences.
@@ -85,6 +87,33 @@ Browse medRxiv preprints by date range
 Browse neuroscience preprints
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stanford bioRxiv** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest neuroscience preprints"
+
+**🤖 AI Agent:**
+> I've retrieved the latest neuroscience preprints from bioRxiv. Recent submissions cover topics including neural circuits, brain imaging, cognitive neuroscience, and neurological disorders.
+
+---
+
+**👤 You:**
+> "Has preprint 10.1101/2024.01.15.575123 been published in a journal?"
+
+**🤖 AI Agent:**
+> I've checked the publication tracking for this preprint. If published, I'll show the journal DOI, citation, and publication date.
+
+---
+
+**👤 You:**
+> "Find the latest genomics preprints from this week"
+
+**🤖 AI Agent:**
+> I've retrieved this week's genomics preprints from bioRxiv, including recent work on single-cell sequencing, CRISPR screens, and population genetics.
+
+
 ## Installation & Usage
 
 To install and use the **Stanford bioRxiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -93,4 +122,11 @@ To install and use the **Stanford bioRxiv** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

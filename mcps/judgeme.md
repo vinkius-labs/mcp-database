@@ -1,12 +1,14 @@
 # Judge.me MCP Server
 
-Manage product reviews, questions, and ratings via Judge.me API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/judgeme)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/judgeme)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/judgeme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/judgeme-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage product reviews, questions, and ratings via Judge.me API.
 
 ## Description
 Empower your AI agents with Judge.me's comprehensive product review platform. This MCP server allows you to list and retrieve product reviews, track customer questions and answers, manage coupons, and view shop settings directly through the Judge.me API. Ideal for automating social proof management and customer feedback analysis.
@@ -45,6 +47,33 @@ Lists all customer questions
 Lists all product reviews
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Judge.me** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all recent product reviews in Judge.me."
+
+**🤖 AI Agent:**
+> I'll fetch the latest reviews from your Judge.me account.
+
+---
+
+**👤 You:**
+> "Show me the questions asked for product ID '123'."
+
+**🤖 AI Agent:**
+> I'll retrieve the customer questions associated with that specific product.
+
+---
+
+**👤 You:**
+> "Check for any active discount coupons."
+
+**🤖 AI Agent:**
+> I'll look up the list of active coupons in your Judge.me settings.
+
+
 ## Installation & Usage
 
 To install and use the **Judge.me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Judge.me** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

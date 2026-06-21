@@ -1,12 +1,14 @@
 # Condeco (Eptura Engage) MCP Server
 
-Manage workspace bookings via Condeco — book meeting rooms, reserve hot desks, track availability, and handle office check-ins directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/condeco-eptura-engage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/condeco-eptura-engage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/condeco-eptura-engage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/condeco-eptura-engage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage workspace bookings via Condeco — book meeting rooms, reserve hot desks, track availability, and handle office check-ins directly from any AI agent.
 
 ## Description
 Connect your **Condeco** (now Eptura Engage) account to any AI agent and take full control of your enterprise workspace and desk booking workflows through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Condeco** (now Eptura Engage) account to any AI agent and take fu
 - **check_in_to_location**: Trigger physical presence capabilities executing explicit local access controls
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Condeco (Eptura Engage)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all meeting rooms in the 'New York HQ' location"
+
+**🤖 AI Agent:**
+> I found 8 rooms in New York HQ. Available spaces include 'Manhattan Boardroom' (Cap: 20, AV: Yes) and 'Brooklyn Suite' (Cap: 6, AV: No). Would you like to check availability for any of these?
+
+---
+
+**👤 You:**
+> "Book room 101 for tomorrow from 2:00 PM to 3:00 PM with title 'Weekly Sync'"
+
+**🤖 AI Agent:**
+> Room 101 booked successfully! Your reservation 'Weekly Sync' is confirmed for tomorrow. The booking has been synced to your calendar.
+
+---
+
+**👤 You:**
+> "I've arrived at the office. Check me in to location 50"
+
+**🤖 AI Agent:**
+> Check-in complete! Your arrival at location 50 has been recorded. Your pending reservations for today are now auto-confirmed.
+
+
 ## Installation & Usage
 
 To install and use the **Condeco (Eptura Engage)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Condeco (Eptura Engage)** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

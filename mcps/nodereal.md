@@ -1,12 +1,14 @@
 # Nodereal MCP Server
 
-High-performance blockchain infrastructure for Aptos and EVM networks — query accounts, blocks, and simulate transactions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nodereal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nodereal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nodereal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nodereal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 24
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+High-performance blockchain infrastructure for Aptos and EVM networks — query accounts, blocks, and simulate transactions.
 
 ## Description
 Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure provider. This MCP server allows any AI agent to interact directly with Aptos and EVM-compatible networks through reliable RPC endpoints.
@@ -59,6 +61,33 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 - **nr_get_transaction_receipts_by_block_number**: Get all receipts in a block (NodeReal Enhanced)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nodereal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the current block number for the configured EVM network."
+
+**🤖 AI Agent:**
+> I've queried the network using `eth_block_number`. The current block height is 18,452,103.
+
+---
+
+**👤 You:**
+> "Retrieve account information for Aptos address 0x1."
+
+**🤖 AI Agent:**
+> Using `aptos_get_account`, I found that address 0x1 has a sequence number of 5234 and an authentication key ending in ...a3f2.
+
+---
+
+**👤 You:**
+> "Check the ETH balance for address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e."
+
+**🤖 AI Agent:**
+> I've executed `eth_get_balance`. The balance for that address is 1.25 ETH (represented as 1250000000000000000 wei).
+
+
 ## Installation & Usage
 
 To install and use the **Nodereal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Nodereal** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

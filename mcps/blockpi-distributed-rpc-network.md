@@ -1,12 +1,14 @@
 # BlockPi (Distributed RPC Network) MCP Server
 
-Access distributed blockchain RPC nodes via BlockPi — monitor RU balances, track consumption, and execute JSON-RPC calls across multiple networks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blockpi-distributed-rpc-network)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockpi-distributed-rpc-network)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockpi-distributed-rpc-network-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockpi-distributed-rpc-network-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 5
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access distributed blockchain RPC nodes via BlockPi — monitor RU balances, track consumption, and execute JSON-RPC calls across multiple networks.
 
 ## Description
 Connect your **BlockPi** account to any AI agent to manage your distributed RPC infrastructure and interact with blockchain networks directly through natural language.
@@ -41,6 +43,33 @@ Make a generic JSON-RPC call to a supported blockchain network
 - **get_wallet_balance**: Get remaining wallet balance in USD
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BlockPi (Distributed RPC Network)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my current RU balance and wallet balance on Ethereum."
+
+**🤖 AI Agent:**
+> I've checked your BlockPi account for the Ethereum network. You have 1,250,000 RU remaining and a wallet balance of $45.20 USD.
+
+---
+
+**👤 You:**
+> "Show me the RU consumption for the last 3 days on Polygon."
+
+**🤖 AI Agent:**
+> In the last 3 days on the Polygon network, your endpoints have consumed a total of 450,000 RU.
+
+---
+
+**👤 You:**
+> "Get the latest block number on Arbitrum using an RPC call."
+
+**🤖 AI Agent:**
+> Executing `eth_blockNumber` on Arbitrum... The current block height is 184,209,112.
+
+
 ## Installation & Usage
 
 To install and use the **BlockPi (Distributed RPC Network)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **BlockPi (Distributed RPC Network)** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

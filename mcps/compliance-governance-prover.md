@@ -1,12 +1,14 @@
 # Compliance Governance Prover MCP Server
 
-An AI said 'comply with GDPR' without naming a single article. It said 'we have controls' without mapping any to a regulation. It said 'low risk' without measuring severity or fine exposure. The auditor found 4 critical gaps. That is not compliance — that is compliance theater. This tool forces five audit-grade axes: specific regulation naming, control mapping, evidence documentation, gap quantification, and named accountability.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/compliance-governance-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/compliance-governance-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/compliance-governance-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/compliance-governance-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-ml
-**Tools Count:** 1
+
+**Category:** [ai-ml](../categories/ai-ml.md)
+
+An AI said 'comply with GDPR' without naming a single article. It said 'we have controls' without mapping any to a regulation. It said 'low risk' without measuring severity or fine exposure. The auditor found 4 critical gaps. That is not compliance — that is compliance theater. This tool forces five audit-grade axes: specific regulation naming, control mapping, evidence documentation, gap quantification, and named accountability.
 
 ## Description
 ## The Problem
@@ -58,6 +60,33 @@ Tool calls are obligations. The LLM cannot skip regulation naming or ignore gap 
 Structured reflection tool for audit-grade compliance governance analysis. Forces the agent to inventory applicable regulations by jurisdiction and article, map each regulation to specific technical/procedural controls with implementation details, document audit-ready evidence artifacts with dates and coverage, quantify compliance gaps with severity and financial exposure, and assign named accountability with review cadence and escalation paths. Catches Unnamed Regulations (citing "industry standards" or "applicable regulations" without specific articles — GDPR Art. 17, SOC 2 CC6.1, PCI DSS Req. 3.4 are regulations, "best practices" is not), Unmapped Controls (claiming "we have security measures" without linking each control to the regulation it satisfies), Undocumented Evidence (asserting "we can demonstrate compliance" without naming audit artifacts, dates, and coverage periods), Unquantified Gaps (describing gaps as "minor risk" without severity scoring, fine exposure in currency, and remediation cost), and Unassigned Accountability (controls owned by "the team" or "shared responsibility" — no named person, no review date, no escalation path). Call once per compliance assessment. Analytical support, not legal advice
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Compliance Governance Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Our SaaS platform complies with industry standards and has security measures in place. We follow best practices for data protection. The team reviews compliance periodically."
+
+**🤖 AI Agent:**
+> REGULATIONS_UNNAMED — 'Industry standards' is not a regulation. 'Best practices' is not a law. Name the specific regulation: GDPR Article 6(1)(a) — lawful basis for processing. SOC 2 CC6.1 — logical access controls. PCI DSS Requirement 3.4 — render PAN unreadable. For each: jurisdiction, applicability rationale, and the specific articles that apply to your data processing operations.
+
+---
+
+**👤 You:**
+> "GDPR Art. 6(1)(a) — consent-based processing, EU jurisdiction. Control: ConsentManager SDK with granular opt-in, audit log. Evidence: penetration test (2025-03-15), 94% coverage, report #PT-2025-Q1. Gap: Art. 17 erasure SLA — severity 3, €2M exposure, €45K remediation, 6-week timeline. Owner: Sarah Chen (DPO), quarterly review, escalation to CISO within 48h."
+
+**🤖 AI Agent:**
+> COMPLIANCE_PROVEN — Audit-grade compliance analysis validated. Regulations: GDPR Art. 6(1)(a) with jurisdiction and basis. Controls: ConsentManager SDK with granular consent and audit logging. Evidence: penetration test dated 2025-03-15, 94% coverage, report referenced. Gaps: Art. 17 erasure scored severity 3, €2M exposure, €45K remediation, 6-week timeline. Accountability: Sarah Chen (DPO), quarterly review, 48h CISO escalation. Production-ready compliance posture.
+
+---
+
+**👤 You:**
+> "We comply with GDPR Article 32 — security of processing. Controls: encryption at rest (AES-256) and TLS 1.3 in transit. Last audit: Q2 2024. Risk level: low. Owner: Engineering team, reviews annually."
+
+**🤖 AI Agent:**
+> GAPS_UNQUANTIFIED — Regulation and controls pass, but gap analysis fails. 'Low risk' is not a measurement — assign severity (1-5), calculate fine exposure (Art. 83: up to €20M or 4% global turnover), estimate remediation cost, and set a timeline. Also: 'engineering team' is not an owner — name a person. And Q2 2024 audit is over a year old — what is the next scheduled assessment?
+
+
 ## Installation & Usage
 
 To install and use the **Compliance Governance Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Compliance Governance Prover** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

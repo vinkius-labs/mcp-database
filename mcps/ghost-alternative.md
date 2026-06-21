@@ -1,12 +1,14 @@
 # Ghost MCP Server
 
-Publish and monetize your content with a modern headless CMS built for newsletters, memberships, and independent creators.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ghost-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ghost-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ghost-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Publish and monetize your content with a modern headless CMS built for newsletters, memberships, and independent creators.
 
 ## Description
 Connect your **Ghost** publishing account to any AI agent and take full control of your content management and membership workflows through natural conversation.
@@ -65,6 +67,33 @@ List all content tags
 List membership tiers and plans
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ghost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my draft posts in Ghost."
+
+**🤖 AI Agent:**
+> I've retrieved your drafts. You have 3 posts in progress: 'AI Roadmap 2026', 'New Feature Launch', and 'Community Spotlight'. Would you like the full HTML content for any of these?
+
+---
+
+**👤 You:**
+> "Create a new draft titled 'Welcome to our MCP Blog'."
+
+**🤖 AI Agent:**
+> Draft created! 'Welcome to our MCP Blog' is now live in your Ghost admin panel (ID: 654321). It is currently set to 'draft' status. Should I add some initial content for you?
+
+---
+
+**👤 You:**
+> "Show me a list of all site members and their emails."
+
+**🤖 AI Agent:**
+> Fetching member directory... You have 150 registered members. Recent subscribers include 'Alice' (alice@example.com) and 'Bob' (bob@example.com). Would you like to check their membership tiers?
+
+
 ## Installation & Usage
 
 To install and use the **Ghost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Ghost** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

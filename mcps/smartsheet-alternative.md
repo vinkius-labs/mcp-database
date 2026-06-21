@@ -1,12 +1,14 @@
 # Smartsheet MCP Server
 
-Manage sheets, reports, and rows on Smartsheet with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smartsheet-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartsheet-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartsheet-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartsheet-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage sheets, reports, and rows on Smartsheet with AI agents.
 
 ## Description
 Connect your **Smartsheet** account to any AI agent to automate your enterprise work management and collaboration orchestration. Smartsheet provides a powerful platform for tracking projects and data, and this integration allows you to retrieve sheet metadata, manage rows, and search through workspaces through natural conversation.
@@ -51,6 +53,33 @@ Append new rows
 Modify existing rows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smartsheet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active sheets in my Smartsheet account."
+
+**🤖 AI Agent:**
+> I've retrieved your sheets. You have 5 active ones including 'Project Roadmap', 'Budget Tracker', and 'Team Tasks'. Which one would you like to open?
+
+---
+
+**👤 You:**
+> "Show me all active project sheets with their task completion rates and upcoming deadlines."
+
+**🤖 AI Agent:**
+> 8 active project sheets. "Product Launch Q2" (156 rows): 72% complete, 12 tasks due this week, 3 overdue (critical path items). "Website Redesign" (89 rows): 45% complete, on track, next milestone Friday. "Data Migration" (234 rows): 88% complete, final testing phase. "Marketing Campaign" (67 rows): 34% complete, 5 blocked tasks. "Office Relocation" (45 rows): 60% complete. 3 additional sheets at various stages. Total tasks across all sheets: 734. Overdue: 18 (2.5%). Resource conflicts: 4 team members over-allocated.
+
+---
+
+**👤 You:**
+> "Create a new project sheet from the Agile Sprint template and add the engineering team as collaborators."
+
+**🤖 AI Agent:**
+> Project sheet created: "Sprint 14 - API Platform". Template: Agile Sprint (columns: Story, Points, Assignee, Status, Priority, Sprint, Epic). 6 team members added as editors: Sarah Chen, James Park, Alex Rivera, Lisa Wang, David Kim, Maria Santos. Default views created: Board (Kanban by Status), Gantt (timeline), Calendar (due dates). Automation rules: status change notifications, overdue alerts, sprint burndown chart updates. Sprint dates set: May 19-30. Ready for backlog import.
+
+
 ## Installation & Usage
 
 To install and use the **Smartsheet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Smartsheet** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

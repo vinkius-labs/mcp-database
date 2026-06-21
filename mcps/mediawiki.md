@@ -1,12 +1,14 @@
 # MediaWiki MCP Server
 
-Connect to any MediaWiki instance to search pages, read content, list categories, and track recent changes directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mediawiki)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mediawiki)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mediawiki-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mediawiki-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 13
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Connect to any MediaWiki instance to search pages, read content, list categories, and track recent changes directly from your AI agent.
 
 ## Description
 Connect your AI agent to any **MediaWiki** site (like Wikipedia or a private corporate wiki) to query knowledge, inspect page history, and explore categories through natural language.
@@ -52,6 +54,33 @@ Edit a wiki page
 - **get_user_info**: Get information about the current user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MediaWiki** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search the wiki for pages related to 'Artificial Intelligence'."
+
+**🤖 AI Agent:**
+> I've searched the wiki using `search_pages`. I found several relevant entries including 'Artificial Intelligence', 'Machine Learning', and 'Neural Networks'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Get the latest content for the page 'Project_Roadmap'."
+
+**🤖 AI Agent:**
+> Using `get_page_revisions`, I've retrieved the latest content for 'Project_Roadmap'. It includes sections on Q3 goals, current blockers, and the team directory. Would you like a summary of the Q3 goals?
+
+---
+
+**👤 You:**
+> "Show me the 5 most recent changes made to the wiki."
+
+**🤖 AI Agent:**
+> I've called `list_recent_changes` with a limit of 5. Recent edits include updates to 'API Documentation' by User:Admin and a new page 'Draft:Policy' created by User:Editor1. Would you like details on any of these?
+
+
 ## Installation & Usage
 
 To install and use the **MediaWiki** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **MediaWiki** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

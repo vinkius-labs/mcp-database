@@ -1,12 +1,14 @@
 # Hallucination Detector Prover MCP Server
 
-LLMs present fabricated information as fact. This tool forces epistemic rigor: cite verifiable sources for every claim, quantify confidence per assertion, separate facts from opinions, declare knowledge boundaries, and cross-reference for internal contradictions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hallucination-detector-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hallucination-detector-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hallucination-detector-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hallucination-detector-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+LLMs present fabricated information as fact. This tool forces epistemic rigor: cite verifiable sources for every claim, quantify confidence per assertion, separate facts from opinions, declare knowledge boundaries, and cross-reference for internal contradictions.
 
 ## Description
 The most dangerous failure mode of LLMs is not producing wrong answers — it is producing wrong answers that sound right.
@@ -28,6 +30,33 @@ The engine enforces 5 Decision Pivots with 5 semantic trap lists that catch weas
 Structured reflection tool for hallucination detection — forces source attribution for every factual claim, confidence calibration with evidence quality, fact-opinion separation, knowledge boundary statement, and internal consistency verification. Catches Source Missing (presenting factual claims without verifiable attribution — "studies show that X increases Y by 40%" is hallucination. "Smith et al. (2023), Journal of Applied Psychology, doi:10.1037/apl0001234, found that X increases Y by 40% in a sample of 1,200 participants" is grounded. "Research shows" and "experts agree" are the signature phrases of fabricated evidence), Confidence Uncalibrated (treating all claims as equally certain — a claim backed by 3 peer-reviewed RCTs is not equivalent to a claim from a single blog post. "95% confident — meta-analysis of 12 RCTs" is calibrated. "Probably true" is a feeling, not a calibration), Opinion as Fact (presenting subjective assessment as objective truth — "React is the best framework" is opinion. "React has the largest npm download count at 23M/week as of 2024" is fact. The difference: a fact can be verified independently. An opinion cannot), Knowledge Exceeded (making claims beyond verifiable knowledge boundaries — "my training data ends at [date]" is honest. "This API currently supports X" is unverifiable if the API could have changed since training. Every claim has a knowledge boundary — temporal, domain, access. Stating them prevents hallucination), and Self-Contradicting (internal inconsistencies within the same response — "paragraph 2 says latency is 50ms" and "paragraph 6 says latency is 200ms." Cross-referencing all claims catches contradictions before the reader does). Call before presenting any factual information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hallucination Detector Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "An AI model achieves 95% accuracy on medical diagnosis and should be trusted for clinical decisions."
+
+**🤖 AI Agent:**
+> Verdict: SOURCE_MISSING. The '95% accuracy' claim lacks a verifiable source. Which benchmark? Which specialty? Additionally, 'should be trusted' is OPINION_AS_FACT — requires regulatory context.
+
+---
+
+**👤 You:**
+> "React is definitely the best frontend framework. Everyone uses it."
+
+**🤖 AI Agent:**
+> Verdict: OPINION_AS_FACT. 'Best framework' is opinion — by which metric? 'Definitely' triggers CONFIDENCE_UNCALIBRATED. Correct: 'React has ~40% usage share (State of JS 2024).'
+
+---
+
+**👤 You:**
+> "Based on recent data I checked, the global AI market is worth $500 billion."
+
+**🤖 AI Agent:**
+> Verdict: KNOWLEDGE_EXCEEDED. 'I checked' fabricates data access — LLMs do not browse the internet. '$500 billion' lacks source attribution.
+
+
 ## Installation & Usage
 
 To install and use the **Hallucination Detector Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -36,4 +65,11 @@ To install and use the **Hallucination Detector Prover** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

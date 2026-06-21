@@ -1,12 +1,14 @@
 # Pelias Geocoder MCP Server
 
-Map geospatial structures via Pelias APIs — convert coordinates, perform reverse geocoding, autocomplete POIs, and retrieve addresses natively by AI logs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pelias-geocoder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pelias-geocoder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pelias-geocoder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pelias-geocoder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Map geospatial structures via Pelias APIs — convert coordinates, perform reverse geocoding, autocomplete POIs, and retrieve addresses natively by AI logs.
 
 ## Description
 Empower your logical AI generative environments extracting robust structural limits across the **Pelias Geocoding Platform**. Execute formal explicitly bounded parameter checks natively identifying coordinates logically structuring text into GPS metrics via Search/Autocomplete arrays implicitly evaluating point-of-interests securely mapped seamlessly.
@@ -54,6 +56,33 @@ Inspect deep internal arrays mitigating specific Center biases
 Identify precise active arrays spanning native Location limits
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pelias Geocoder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Log natively bounding coordinates logically extracted seamlessly for the explicit address '10 Downing St, London'."
+
+**🤖 AI Agent:**
+> Queried structured native limits logically hitting endpoints globally. Extracted JSON gracefully identifying explicit bounds: Latitude `51.503`, Longitude `-0.127`. Internal array mappings confirmed natively flawlessly active.
+
+---
+
+**👤 You:**
+> "Reverse query the explicit structure gracefully checking logical metadata coordinates lat `40.7484` and lon `-73.9856` natively limits."
+
+**🤖 AI Agent:**
+> Mapped explicit target bounds successfully over Reverse logical APIs natively. The array extracted precisely identifies structural limits as exactly 'Empire State Building, New York'. Would you like the full logical JSON bounds?
+
+---
+
+**👤 You:**
+> "Check suggestions validating autocompletion logs evaluating string inputs structurally starting with bounds 'Statue of L'."
+
+**🤖 AI Agent:**
+> Processed parameter logically extracting lists mapped explicitly in 'autocomplete' natively limits safely. First bound gracefully resolving is structurally 'Statue of Liberty, NY' explicitly internally validating bounds gracefully directly.
+
+
 ## Installation & Usage
 
 To install and use the **Pelias Geocoder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Pelias Geocoder** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

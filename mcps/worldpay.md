@@ -1,12 +1,14 @@
 # Worldpay MCP Server
 
-Process payments, manage refunds, and audit settlements on Worldpay — the global leader in payment processing technology.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/worldpay)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/worldpay)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/worldpay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/worldpay-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 9
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Process payments, manage refunds, and audit settlements on Worldpay — the global leader in payment processing technology.
 
 ## Description
 Connect your **Worldpay** account to any AI agent and manage your global payment operations through natural conversation.
@@ -53,6 +55,33 @@ Creates a new payment order in Worldpay
 Refunds a previously completed payment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Worldpay** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a payment order for 50.00 GBP using token 'tok-123'."
+
+**🤖 AI Agent:**
+> I've initiated the payment order for 50.00 GBP (5000 minor units) via Worldpay. Transaction successful! Your order code is 'ORD-XYZ-789'. Would you like me to pull the full receipt details?
+
+---
+
+**👤 You:**
+> "Refund 20.00 USD for order 'ORD-ABC-456'."
+
+**🤖 AI Agent:**
+> Success! I've processed a refund of 20.00 USD (2000 minor units) for order ORD-ABC-456. The status has been updated in Worldpay and the customer will receive the funds according to their bank's policy.
+
+---
+
+**👤 You:**
+> "Show me my latest account settlements."
+
+**🤖 AI Agent:**
+> I found 3 recent settlements: 1. ID: set-101 (Amount: 1,250.50 GBP, Date: 2026-03-28), 2. ID: set-102 (Amount: 890.00 GBP, Date: 2026-03-25), and 3. ID: set-103 (Amount: 2,100.00 GBP, Date: 2026-03-22). Which batch would you like to reconcile?
+
+
 ## Installation & Usage
 
 To install and use the **Worldpay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Worldpay** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

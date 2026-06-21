@@ -1,12 +1,14 @@
 # Porter PaaS MCP Server
 
-Orchestrate Kubernetes clusters via Porter — manage apps, projects, container tags, and enforce rollouts directly with your AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/porter-paas)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/porter-paas)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/porter-paas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/porter-paas-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Orchestrate Kubernetes clusters via Porter — manage apps, projects, container tags, and enforce rollouts directly with your AI.
 
 ## Description
 Connect your **Porter** account to any AI agent and take full programmatic control over your Kubernetes infrastructure natively.
@@ -60,6 +62,33 @@ List underlying operational Helm configurations inside a namespace
 Instruct the Kubernetes API to bounce the App deployment replicas
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Porter PaaS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all applications currently running in cluster ID 5 on the Production environment."
+
+**🤖 AI Agent:**
+> I found 4 applications bound to the cluster namespace. We have `core-api`, `cron-sync-worker`, `redis-cache`, and `web-frontend`. The core API is serving on a porter.run subdomain mapping. Would you like me to get architectural configs for `core-api`?
+
+---
+
+**👤 You:**
+> "The queue worker is completely hung. Please perform a forceful restart of the `async-worker` app."
+
+**🤖 AI Agent:**
+> Command received. I've sent the signal to recycle the pod replicas for `async-worker` across cluster 4. Kubernetes is now performing a rolling flush seamlessly. It will take roughly 15 seconds to stand out new instances and attach them.
+
+---
+
+**👤 You:**
+> "We just built a hotfix on main. Deploy the image tag `d83a1b1` strictly onto `portal-frontend`."
+
+**🤖 AI Agent:**
+> I've successfully forced the container mutation! The `portal-frontend` application was patched to image tag `d83a1b1`. The cloud runner is pulling the fresh digest and orchestrating a replacement. Check the frontend in 1 minute.
+
+
 ## Installation & Usage
 
 To install and use the **Porter PaaS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Porter PaaS** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

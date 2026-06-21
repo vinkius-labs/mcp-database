@@ -1,12 +1,14 @@
 # Gift Up! MCP Server
 
-Manage gift card orders, track balances, and process redemptions via AI agents with Gift Up!.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gift-up)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gift-up)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gift-up-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gift-up-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage gift card orders, track balances, and process redemptions via AI agents with Gift Up!.
 
 ## Description
 Connect your **Gift Up!** account to any AI agent to automate your gift card management and redemption workflows through the Model Context Protocol (MCP). Gift Up! is the simplest way to sell gift cards on your own website. This MCP server enables you to retrieve gift card orders, validate codes, track remaining balances, and process partial or full redemptions directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Gift Up!** account to any AI agent to automate your gift card man
 - **update_order_metadata**: Set custom fields
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gift Up!** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the balance for gift card code 'GIFT-123-ABC'."
+
+**🤖 AI Agent:**
+> Validating code... Gift card GIFT-123-ABC is 'Active' with a remaining balance of $25.00 USD. It expires on December 31st.
+
+---
+
+**👤 You:**
+> "Redeem $10.00 from gift card 'abc-987'."
+
+**🤖 AI Agent:**
+> Redemption successful! I have deducted $10.00 from gift card abc-987. The new remaining balance is $15.00 USD.
+
+---
+
+**👤 You:**
+> "List all gift card orders from the last 7 days."
+
+**🤖 AI Agent:**
+> Retrieving orders... I found 8 orders created since last week, totaling $450.00 in gift card value. Would you like the details for the most recent one?
+
+
 ## Installation & Usage
 
 To install and use the **Gift Up!** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gift Up!** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

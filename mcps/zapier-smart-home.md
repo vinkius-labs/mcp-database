@@ -1,12 +1,14 @@
 # Zapier Smart Home MCP Server
 
-Control smart home devices via natural language through Zapier NLA API — access 5000+ app integrations for home automation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier-smart-home)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier-smart-home)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zapier-smart-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zapier-smart-home-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 12
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Control smart home devices via natural language through Zapier NLA API — access 5000+ app integrations for home automation.
 
 ## Description
 Connect to **Zapier Natural Language Actions (NLA) API** and control your entire smart home through natural language commands across 5000+ app integrations. Turn on lights, adjust thermostats, lock doors, trigger cameras, and automate any connected device — all through simple English commands.
@@ -65,6 +67,33 @@ List available smart home actions across 5000+ app integrations
 - **trigger_ai_zap**: Trigger/execute a specific AI-enabled zap
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zapier Smart Home** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What smart home actions do I have exposed?"
+
+**🤖 AI Agent:**
+> I found 4 exposed smart home actions in your Zapier account: 1) Turn on kitchen light (Philips Hue), 2) Set thermostat to 72°F (Nest), 3) Lock front door (August), 4) Turn off all lights (SmartThings). Would you like to execute any of these?
+
+---
+
+**👤 You:**
+> "Search for actions to control my living room lights."
+
+**🤖 AI Agent:**
+> I found 3 lighting actions: 1) Philips Hue - Turn on Living Room Light, 2) Philips Hue - Dim Living Room Light, 3) LIFX - Set Living Room Lamp Color. You can execute any of these using their operation ID with the execute_zapier_action tool.
+
+---
+
+**👤 You:**
+> "Turn off all the lights in the house."
+
+**🤖 AI Agent:**
+> Executing command: "turn off all the lights in the house"... Found matching action: SmartThings - Turn Off All Lights. Executing... Done! All lights have been turned off successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Zapier Smart Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Zapier Smart Home** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

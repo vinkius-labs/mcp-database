@@ -1,12 +1,14 @@
 # National Park Service MCP Server
 
-Access authoritative data about U.S. National Parks via NPS — track alerts, parks, and events directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/national-park-service)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/national-park-service)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/national-park-service-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/national-park-service-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 10
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access authoritative data about U.S. National Parks via NPS — track alerts, parks, and events directly from your AI agent.
 
 ## Description
 Connect to the **National Park Service (NPS)** API through your AI agent and explore authoritative information about U.S. National Parks using natural conversation.
@@ -49,6 +51,33 @@ List U.S. National Parks
 - **list_webcams**: List park streaming webcams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **National Park Service** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all national parks in California."
+
+**🤖 AI Agent:**
+> I've retrieved the parks for California. You have several notable ones including 'Yosemite National Park' (YOSE), 'Joshua Tree National Park' (JOTR), and 'Death Valley National Park' (DEVA). Shall I check for active alerts in Yosemite?
+
+---
+
+**👤 You:**
+> "Are there any active safety alerts for Yellowstone?"
+
+**🤖 AI Agent:**
+> I've checked the alerts for Yellowstone (YELL). There are 2 active notices: a 'Caution' due to high bear activity in certain areas and a 'Notice' about a seasonal road closure on Dunraven Pass. Would you like more details on the bear activity areas?
+
+---
+
+**👤 You:**
+> "Show me upcoming events in Grand Canyon."
+
+**🤖 AI Agent:**
+> Retrieving events for Grand Canyon (GRCA)... There is a 'Guided Rim Walk' scheduled for tomorrow at 10 AM and a 'Star Party' this Saturday evening. Shall I provide the meeting location for the rim walk?
+
+
 ## Installation & Usage
 
 To install and use the **National Park Service** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **National Park Service** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Prometheus MCP Server
 
-Monitor your infrastructure with Prometheus — run PromQL queries, analyze metrics, and manage time-series data directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/prometheus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prometheus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prometheus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prometheus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 14
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Monitor your infrastructure with Prometheus — run PromQL queries, analyze metrics, and manage time-series data directly from your AI agent.
 
 ## Description
 Connect your **Prometheus** instance to any AI agent and transform your observability data into actionable insights through natural conversation.
@@ -57,6 +59,33 @@ Create a snapshot of all current data
 - **get_status_tsdb**: Get TSDB cardinality statistics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Prometheus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Run an instant query for 'up' to see which targets are currently reachable."
+
+**🤖 AI Agent:**
+> I've executed the `query`. All 5 targets are currently returning a value of 1, meaning they are all 'up' and healthy.
+
+---
+
+**👤 You:**
+> "Show me the average CPU usage for the last 30 minutes using query_range."
+
+**🤖 AI Agent:**
+> I've fetched the range data. The average CPU usage across your nodes peaked at 45% about 10 minutes ago and has since stabilized at 20%.
+
+---
+
+**👤 You:**
+> "What is the metadata for the metric 'http_requests_total'?"
+
+**🤖 AI Agent:**
+> Using `get_metadata`, I found that 'http_requests_total' is a Counter metric. It tracks the total number of HTTP requests received, partitioned by status code and method.
+
+
 ## Installation & Usage
 
 To install and use the **Prometheus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Prometheus** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

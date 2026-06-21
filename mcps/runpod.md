@@ -1,12 +1,14 @@
 # RunPod MCP Server
 
-Integrate your AI securely to RunPod to cleanly quickly provision scalable GPU pods, manage active instances, and inspect serverless endpoints and custom templates natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/runpod)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runpod)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runpod-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runpod-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 7
+
+**Category:** [superpower](../categories/superpower.md)
+
+Integrate your AI securely to RunPod to cleanly quickly provision scalable GPU pods, manage active instances, and inspect serverless endpoints and custom templates natively.
 
 ## Description
 Connect your AI directly to **RunPod**, the leading cloud infrastructure provider for on-demand GPU computing and serverless execution. Empower your conversational agent to act as a highly proficient DevOp engineer, managing advanced computational workloads, exploring deployment options, and spinning up new hardware instances.
@@ -42,6 +44,33 @@ Creates a new GPU pod
 - **stop_pod**: Stops a running GPU pod
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RunPod** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me our stopped GPU pods."
+
+**🤖 AI Agent:**
+> I successfully verified the RunPod platform logs. You have 2 pods currently in a paused stopped status in your configured account.
+
+---
+
+**👤 You:**
+> "Check what GPU templates are available to deploy a new Llama-3 inference instance."
+
+**🤖 AI Agent:**
+> I have loaded the RunPod catalog template arrays. There are several pre-built images with focused PyTorch and vLLM installations tuned perfectly for Llama-3 text deployments. Would you like me to provision one specific GPU?
+
+---
+
+**👤 You:**
+> "Pause pod with ID 'pod_xyz_980' immediately to prevent recurring costs throughout the evening."
+
+**🤖 AI Agent:**
+> Pod 'pod_xyz_980' has been carefully stopped securely. Active hourly billing operations to compute cycles for this specific cloud target are halted.
+
+
 ## Installation & Usage
 
 To install and use the **RunPod** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **RunPod** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

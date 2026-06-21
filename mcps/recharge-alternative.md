@@ -1,12 +1,14 @@
 # Recharge MCP Server
 
-Manage subscription commerce via Recharge — handle customers, subscriptions, addresses, and delivery schedules directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/recharge-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recharge-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recharge-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recharge-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 70
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage subscription commerce via Recharge — handle customers, subscriptions, addresses, and delivery schedules directly from your AI agent.
 
 ## Description
 Connect your **Recharge** account to any AI agent to streamline your subscription operations and customer management through natural conversation.
@@ -107,6 +109,33 @@ Delete an address
 - **update_webhook**: Update a webhook
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Recharge** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent 10 customers from Recharge."
+
+**🤖 AI Agent:**
+> I've retrieved the latest customers. The list includes 'Jane Doe' (ID: 88231), 'John Smith' (ID: 88232), and 8 others. Would you like to see the details for a specific customer?
+
+---
+
+**👤 You:**
+> "Show me the delivery schedule for customer 123456."
+
+**🤖 AI Agent:**
+> Fetching the schedule for customer 123456... They have 3 upcoming deliveries: June 15th (Monthly Coffee), July 15th (Monthly Coffee), and August 15th (Monthly Coffee).
+
+---
+
+**👤 You:**
+> "Get the details for subscription ID 998877."
+
+**🤖 AI Agent:**
+> Inspecting subscription 998877... It is an active 'Premium Skincare Bundle' priced at $45.00, renewing every 30 days. The next charge date is set for June 20th.
+
+
 ## Installation & Usage
 
 To install and use the **Recharge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -115,4 +144,11 @@ To install and use the **Recharge** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

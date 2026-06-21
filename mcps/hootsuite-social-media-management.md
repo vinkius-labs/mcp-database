@@ -1,12 +1,14 @@
 # Hootsuite (Social Media Management) MCP Server
 
-Manage social media via Hootsuite — schedule posts, manage social profiles, and monitor outbound messages.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite-social-media-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hootsuite-social-media-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hootsuite-social-media-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hootsuite-social-media-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage social media via Hootsuite — schedule posts, manage social profiles, and monitor outbound messages.
 
 ## Description
 Connect your **Hootsuite** account to any AI agent and take full control of your enterprise social media management and content scheduling through natural conversation.
@@ -47,6 +49,33 @@ Schedule a social media post
 - **get_me**: Get authenticated user info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hootsuite (Social Media Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my social profiles connected to Hootsuite"
+
+**🤖 AI Agent:**
+> I've found 4 connected social profiles: 'TechCorp_Twitter' (ID: 123), 'TechCorp_LinkedIn' (ID: 456), 'Personal_IG' (ID: 789), and 'Facebook_Page' (ID: 012). Which one would you like to use for your next post?
+
+---
+
+**👤 You:**
+> "Schedule a post for tomorrow at 10 AM: 'Excited to announce our new product launch! #innovation'"
+
+**🤖 AI Agent:**
+> Scheduling post… I've set your message to be published tomorrow at 10:00 AM across Twitter and LinkedIn. The Message ID is msg-98765. Would you like to check the media upload status if you attached an image?
+
+---
+
+**👤 You:**
+> "What messages are scheduled to go out today?"
+
+**🤖 AI Agent:**
+> I've retrieved 3 scheduled messages for today: 'Q2 Roadmap Highlights' (2 PM), 'Customer Spotlight' (4 PM), and 'Industry News' (6 PM). Would you like to see the full text or social profiles for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Hootsuite (Social Media Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Hootsuite (Social Media Management)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

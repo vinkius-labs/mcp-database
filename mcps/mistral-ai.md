@@ -1,12 +1,14 @@
 # Mistral AI MCP Server
 
-Access Mistral AI models via API — chat with Claude alternatives, generate embeddings, moderate content and manage batch jobs from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mistral-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mistral-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Access Mistral AI models via API — chat with Claude alternatives, generate embeddings, moderate content and manage batch jobs from any AI agent.
 
 ## Description
 Connect your **Mistral AI** account to any AI agent and leverage European-built AI models through natural conversation.
@@ -68,6 +70,33 @@ List all available Mistral AI models
 Moderate text content with Mistral
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mistral AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a message to Mistral Large asking 'What is the capital of France?'"
+
+**🤖 AI Agent:**
+> Mistral responded: 'The capital of France is Paris. It is the most populous city in France and serves as the country's political, economic, and cultural center.'
+
+---
+
+**👤 You:**
+> "List all available Mistral models."
+
+**🤖 AI Agent:**
+> Available models: mistral-large-latest (most capable, 128K context), mistral-small-latest (efficient, 32K context), codestral-latest (code specialist, 32K context), mistral-embed (embeddings, 8K context).
+
+---
+
+**👤 You:**
+> "Moderate this text: 'I want to learn about AI safety and content filtering.'"
+
+**🤖 AI Agent:**
+> The text passed moderation with all safety scores below thresholds. Categories checked: sexual (0.01), hate (0.00), violence (0.00), self-harm (0.00), criminal (0.00). Content is safe to process.
+
+
 ## Installation & Usage
 
 To install and use the **Mistral AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Mistral AI** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

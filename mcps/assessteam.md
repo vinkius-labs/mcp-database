@@ -1,12 +1,14 @@
 # AssessTEAM MCP Server
 
-Evaluate employee performance, run 360-degree reviews, and track team goals with streamlined assessment workflows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/assessteam)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assessteam)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assessteam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assessteam-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 7
+
+**Category:** [productivity](../categories/productivity.md)
+
+Evaluate employee performance, run 360-degree reviews, and track team goals with streamlined assessment workflows.
 
 ## Description
 Connect your **AssessTEAM** account to any AI agent and simplify how you manage employee evaluations, project timesheets, and organizational profitability through natural conversation.
@@ -43,6 +45,33 @@ Connect your **AssessTEAM** account to any AI agent and simplify how you manage 
 - **list_timesheets**: List timesheet entries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AssessTEAM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects and their status."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 4 active initiatives including 'Website Redesign' (On track), 'Mobile App v2', and 'Client Audit'. Which one would you like profitability metrics for?
+
+---
+
+**👤 You:**
+> "Log 8 hours for employee 'emp_1029' on project 'proj_8823' for today."
+
+**🤖 AI Agent:**
+> Time log created! I've added 8 hours to employee emp_1029's timesheet for project proj_8823 today. The entry has been recorded successfully in AssessTEAM.
+
+---
+
+**👤 You:**
+> "Show me the latest performance evaluations."
+
+**🤖 AI Agent:**
+> I've fetched the evaluations. Over the last quarter, 15 reviews were completed. Average KPI score is 4.2/5.0. Shall I retrieve the detailed feedback for the 'Engineering' team?
+
+
 ## Installation & Usage
 
 To install and use the **AssessTEAM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **AssessTEAM** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

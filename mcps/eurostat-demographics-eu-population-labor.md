@@ -1,12 +1,14 @@
 # Eurostat Demographics — EU Population & Labor MCP Server
 
-EU demographics and labor market: population by age and sex, monthly unemployment rates, employment data, immigration by citizenship, life expectancy, and minimum wages for all 27 EU member states.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-demographics-eu-population-labor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-demographics-eu-population-labor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-demographics-eu-population-labor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-demographics-eu-population-labor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 6
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+EU demographics and labor market: population by age and sex, monthly unemployment rates, employment data, immigration by citizenship, life expectancy, and minimum wages for all 27 EU member states.
 
 ## Description
 Complete EU demographic and labor market intelligence for all 27 member states.
@@ -46,6 +48,55 @@ Get life expectancy at birth by EU country and sex
 Get minimum wage levels across EU countries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eurostat Demographics — EU Population & Labor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the youth unemployment rate across EU countries?"
+
+**🤖 AI Agent:**
+> 👥 **Youth Unemployment (Under 25)**
+
+Highest: Spain 27.4%, Greece 24.1%, Italy 21.3%
+EU average: 14.5%
+Lowest: Germany 5.8%, Netherlands 6.2%, Czechia 6.9%
+
+The North-South divide in youth employment persists.
+
+---
+
+**👤 You:**
+> "Compare minimum wages across the EU"
+
+**🤖 AI Agent:**
+> 💶 **EU Minimum Wages (EUR/month)**
+
+🔝 Luxembourg: €2,571
+🇳🇱 Netherlands: €2,070
+🇩🇪 Germany: €2,054
+🇫🇷 France: €1,767
+🇪🇸 Spain: €1,323
+...
+🇧🇬 Bulgaria: €477
+
+⚠️ No statutory minimum: Denmark, Finland, Sweden, Austria, Italy (collective bargaining).
+
+---
+
+**👤 You:**
+> "What is the life expectancy in EU countries?"
+
+**🤖 AI Agent:**
+> 🏥 **Life Expectancy at Birth**
+
+Highest: 🇪🇸 Spain 84.0, 🇮🇹 Italy 83.8, 🇫🇷 France 82.5
+EU average: 81.0
+Lowest: 🇧🇬 Bulgaria 74.2, 🇷🇴 Romania 74.6, 🇱🇻 Latvia 75.3
+
+Females average 5.4 years longer than males across EU.
+
+
 ## Installation & Usage
 
 To install and use the **Eurostat Demographics — EU Population & Labor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +105,11 @@ To install and use the **Eurostat Demographics — EU Population & Labor** MCP s
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Flodesk MCP Server
 
-Design gorgeous email campaigns with intuitive templates that grow your audience and reflect your brand without design skills.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flodesk-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flodesk-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flodesk-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flodesk-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Design gorgeous email campaigns with intuitive templates that grow your audience and reflect your brand without design skills.
 
 ## Description
 Connect your **Flodesk** account to any AI agent and take full control of your email marketing and subscriber workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual subscriber lookups or complex segment navigation. Your AI acts as
 Create or update a subscriber
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flodesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Flodesk segments."
+
+**🤖 AI Agent:**
+> I've retrieved your segments. You have 3 active lists: 'Weekly Newsletter' (ID: seg_1), 'Beta Testers' (ID: seg_2), and 'Lead Magnet' (ID: seg_3). Which one should I provide details for?
+
+---
+
+**👤 You:**
+> "Find subscriber details for 'hello@example.com'."
+
+**🤖 AI Agent:**
+> I've located the profile for hello@example.com. They are an 'Active' subscriber and belong to the 'Weekly Newsletter' segment. Would you like to see their custom field values?
+
+---
+
+**👤 You:**
+> "Add subscriber 'user@example.com' to the 'Welcome Flow' workflow."
+
+**🤖 AI Agent:**
+> Action complete! I've successfully added 'user@example.com' to the 'Welcome Flow' (ID: wflow_123). They will start receiving your automation sequence immediately.
+
+
 ## Installation & Usage
 
 To install and use the **Flodesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Flodesk** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

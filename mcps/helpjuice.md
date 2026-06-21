@@ -1,12 +1,14 @@
 # Helpjuice MCP Server
 
-Automate knowledge base management via Helpjuice — manage articles, categories, and analytics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/helpjuice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helpjuice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helpjuice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helpjuice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 12
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Automate knowledge base management via Helpjuice — manage articles, categories, and analytics directly from any AI agent.
 
 ## Description
 Connect your **Helpjuice** knowledge base to any AI agent and take full control of your internal and external documentation through natural conversation.
@@ -56,6 +58,33 @@ Search the knowledge base for articles matching a query
 - **upvote_article**: Record an upvote for an article
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Helpjuice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find articles related to 'OAuth integration'."
+
+**🤖 AI Agent:**
+> Searching knowledge base... I found 3 relevant articles: 'Setting up OAuth 2.0', 'API Authentication Guide', and 'Troubleshooting Connection Issues'. Would you like the full content for the 'Setting up OAuth 2.0' article?
+
+---
+
+**👤 You:**
+> "List all categories in my knowledge base."
+
+**🤖 AI Agent:**
+> I've retrieved your categories. You have 5 main sections: 'Getting Started', 'User Guides', 'Developer API', 'Release Notes', and 'FAQs'. Should I list the articles inside the 'Developer API' category?
+
+---
+
+**👤 You:**
+> "Show me the engagement stats for article ID 1021."
+
+**🤖 AI Agent:**
+> Retrieving analytics... Article ID 1021 ('Advanced Filtering') has had 450 views and 32 upvotes this month. It is currently one of your top-performing pieces of documentation. Would you like to see recent search terms that led users here?
+
+
 ## Installation & Usage
 
 To install and use the **Helpjuice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Helpjuice** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

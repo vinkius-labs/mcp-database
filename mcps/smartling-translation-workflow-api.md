@@ -1,12 +1,14 @@
 # Smartling (Translation Workflow API) MCP Server
 
-Automate translation workflows via Smartling — manage projects, create jobs, upload content, and download translations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smartling-translation-workflow-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartling-translation-workflow-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartling-translation-workflow-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartling-translation-workflow-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 7
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Automate translation workflows via Smartling — manage projects, create jobs, upload content, and download translations directly from any AI agent.
 
 ## Description
 Connect your **Smartling** account to any AI agent to orchestrate complex translation and localization workflows through natural language.
@@ -42,6 +44,33 @@ Connect your **Smartling** account to any AI agent to orchestrate complex transl
 - **upload_file**: Upload a file for translation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smartling (Translation Workflow API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Smartling projects."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have access to 'Mobile App Localization' (ID: a1b2c3d4) and 'Web Platform' (ID: e5f6g7h8). Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Create a new translation job called 'Spring Release' in project a1b2c3d4."
+
+**🤖 AI Agent:**
+> The job 'Spring Release' has been successfully created in project a1b2c3d4 with UID 'job_98765'. You can now start adding content to it.
+
+---
+
+**👤 You:**
+> "Download the French translation for 'strings.json' from project a1b2c3d4."
+
+**🤖 AI Agent:**
+> I've downloaded the 'fr-FR' version of 'strings.json'. The content is ready for use. Would you like me to display the translated strings?
+
+
 ## Installation & Usage
 
 To install and use the **Smartling (Translation Workflow API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Smartling (Translation Workflow API)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

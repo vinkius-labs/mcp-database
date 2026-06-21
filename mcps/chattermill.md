@@ -1,12 +1,14 @@
 # Chattermill MCP Server
 
-Analyze customer feedback and sentiment via Chattermill — track AI-powered themes, monitor NPS and CSAT, and unify feedback from every channel directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chattermill)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chattermill)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chattermill-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chattermill-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 11
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Analyze customer feedback and sentiment via Chattermill — track AI-powered themes, monitor NPS and CSAT, and unify feedback from every channel directly from any AI agent.
 
 ## Description
 Connect your **Chattermill** account to any AI agent and take full control of your customer experience (CX) intelligence through natural conversation. Unify feedback from Zendesk, App Store, Typeform, and dozens of other sources into one AI-powered view.
@@ -71,6 +73,33 @@ List custom segments defined for a project
 List AI-generated feedback themes detected in a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chattermill** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Chattermill projects and then show me the latest feedback responses from the first one."
+
+**🤖 AI Agent:**
+> Found 3 projects: 'acme', 'acme-mobile', 'acme-support'. Fetching responses for 'acme'... Showing 20 of 1,482 responses. 12 mention 'UI Complexity' with negative sentiment. Would you like to filter by date or view specific themes?
+
+---
+
+**👤 You:**
+> "What is our current NPS score for the 'acme' project?"
+
+**🤖 AI Agent:**
+> Retrieving NPS metric for 'acme'... Your current NPS is +45. This reflects all processed feedback responses. Would you like to filter by a specific date range or compare with another metric like CSAT?
+
+---
+
+**👤 You:**
+> "Show me the AI-detected themes and their categories for my mobile app project."
+
+**🤖 AI Agent:**
+> Retrieving themes for 'acme-mobile'... Found 8 active themes: 'App Crash', 'Slow Loading', 'Easy Checkout', 'Biometric Login', and 4 more. These are grouped under 3 categories: 'Performance', 'UX', and 'Security'. Would you like to see feedback volume for any specific theme?
+
+
 ## Installation & Usage
 
 To install and use the **Chattermill** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Chattermill** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Sapling (Kallidus) MCP Server
 
-Manage employee onboarding, data, and tasks via Sapling API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sapling-kallidus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sapling-kallidus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sapling-kallidus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sapling-kallidus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage employee onboarding, data, and tasks via Sapling API.
 
 ## Description
 Empower your AI agents with Sapling's (by Kallidus) HR and onboarding platform. This MCP server allows you to list and retrieve employee profiles, track onboarding and offboarding tasks, manage departments and teams, and view office locations directly through the Sapling API. Ideal for automating HR workflows and personnel management.
@@ -43,6 +45,33 @@ Lists all onboarding tasks
 Lists all internal teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sapling (Kallidus)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active employees in Sapling."
+
+**🤖 AI Agent:**
+> I'll fetch the complete list of employees from your Sapling HR account.
+
+---
+
+**👤 You:**
+> "Show me the onboarding tasks for new hires."
+
+**🤖 AI Agent:**
+> I'll retrieve the list of active onboarding tasks from Sapling.
+
+---
+
+**👤 You:**
+> "Get details for employee ID '123'."
+
+**🤖 AI Agent:**
+> I'll retrieve the full HR profile and history for that specific employee.
+
+
 ## Installation & Usage
 
 To install and use the **Sapling (Kallidus)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Sapling (Kallidus)** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

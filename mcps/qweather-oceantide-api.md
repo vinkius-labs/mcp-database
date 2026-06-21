@@ -1,12 +1,14 @@
 # QWeather Ocean/Tide API MCP Server
 
-Monitor ocean tides — audit water levels and peaks via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qweather-oceantide-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qweather-oceantide-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qweather-oceantide-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qweather-oceantide-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 2
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Monitor ocean tides — audit water levels and peaks via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire maritime research and oceanographic auditing workflow with the **QWeather Ocean/Tide API**, the specialized source for global tide data. By connecting QWeather's ocean intelligence to your agent, you transform complex water level searches into a natural conversation. Your agent can instantly retrieve real-time tide tables, audit high and low water peaks, and query specific location metadata without you ever touching a technical portal. Whether you are planning coastal logistics or conducting marine research, your agent acts as a real-time oceanographic consultant, ensuring your data is always verified and precise.
@@ -38,6 +40,33 @@ Empower your AI agent to orchestrate your entire maritime research and oceanogra
 - **get_ocean_tide_data**: Get real-time tide data for a specific location and date
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QWeather Ocean/Tide API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get tide data for location '101010100' (Shanghai) for '20240510' using QWeather."
+
+**🤖 AI Agent:**
+> I've retrieved the tide table for Shanghai! Notable peaks include a High Tide at 11:30 AM (3.5m) and a Low Tide at 5:45 PM (0.8m). Would you like the hourly water level metadata for this location?
+
+---
+
+**👤 You:**
+> "What is the tide forecast for latitude 22.3193 and longitude 114.1694 (Hong Kong)?"
+
+**🤖 AI Agent:**
+> I've retrieved the real-time tide data for those coordinates! Multiple water level peaks are identified for today. I can provide the exact height and peak type metadata to assist in your maritime audit.
+
+---
+
+**👤 You:**
+> "Show the full tide table for today."
+
+**🤖 AI Agent:**
+> I've retrieved the complete tide table for your selected location! It includes timestamped entries for all water level changes throughout the day. I can assist you with an audit of the most significant peaks if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **QWeather Ocean/Tide API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **QWeather Ocean/Tide API** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

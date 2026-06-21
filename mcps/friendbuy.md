@@ -1,12 +1,14 @@
 # Friendbuy MCP Server
 
-Manage referral programs, track purchases, and oversee rewards via AI agents with Friendbuy.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/friendbuy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/friendbuy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/friendbuy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/friendbuy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage referral programs, track purchases, and oversee rewards via AI agents with Friendbuy.
 
 ## Description
 Connect your **Friendbuy** account to any AI agent to automate your referral programs and customer loyalty workflows through the Model Context Protocol (MCP). Friendbuy is a high-growth referral marketing platform that powers word-of-mouth campaigns for leading brands. This MCP server enables you to track referral events, log conversions, and retrieve reward distributions directly through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Friendbuy** account to any AI agent to automate your referral pro
 - **track_conversion_signup**: Log a signup
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Friendbuy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all recent referral rewards distributed."
+
+**🤖 AI Agent:**
+> Retrieving rewards... I found 5 recent referral rewards, including a $20 account credit for 'advocate@example.com'.
+
+---
+
+**👤 You:**
+> "Generate a new referral code for customer 'user_123' (jane@email.com)."
+
+**🤖 AI Agent:**
+> Code generated! Jane's unique referral code is 'JANE-REF-99'. She can now share this with friends to earn rewards.
+
+---
+
+**👤 You:**
+> "Track a $50 purchase for order 'ORD-987' from 'friend@email.com' using code 'JANE-REF-99'."
+
+**🤖 AI Agent:**
+> Purchase tracked successfully! The $50 conversion for order ORD-987 has been logged, and the referral reward logic for advocate Jane has been triggered.
+
+
 ## Installation & Usage
 
 To install and use the **Friendbuy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Friendbuy** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # AcademyOfMine MCP Server
 
-Manage AcademyOfMine LMS — orchestrate courses, register learners, and track enrollments directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/academyofmine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/academyofmine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/academyofmine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/academyofmine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage AcademyOfMine LMS — orchestrate courses, register learners, and track enrollments directly from any AI agent.
 
 ## Description
 Connect your AI agents to **AcademyOfMine (AOM)**, the all-in-one platform for training and compliance. This MCP provides 11 tools to automate course management, user registration, and enrollment workflows directly from your AI agent.
@@ -48,6 +50,33 @@ Connect your AI agents to **AcademyOfMine (AOM)**, the all-in-one platform for t
 - **update_course**: Update an existing course
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AcademyOfMine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active courses in my AcademyOfMine portal and show their IDs."
+
+**🤖 AI Agent:**
+> I've fetched your course catalog. You currently have 4 active courses: 'Sales Mastery' (ID: 101), 'Cybersecurity Essentials' (ID: 102), 'Leadership Foundations' (ID: 103), and 'Product Roadmap' (ID: 104). Which one would you like to enroll a student in?
+
+---
+
+**👤 You:**
+> "Enroll student 'user_777' into course 'crs_101'."
+
+**🤖 AI Agent:**
+> Processing enrollment... Student 'user_777' has been successfully enrolled in 'Sales Mastery' (ID: crs_101). They will receive an automated invitation email from the LMS.
+
+---
+
+**👤 You:**
+> "Show me the curriculum details for course 'crs_advanced'."
+
+**🤖 AI Agent:**
+> Retrieving curriculum... Course 'Advanced Management' (ID: crs_advanced) contains 5 modules: 1. Strategic Thinking, 2. Financial Modeling, 3. Team Leadership... Would you like the lesson list for the first module?
+
+
 ## Installation & Usage
 
 To install and use the **AcademyOfMine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **AcademyOfMine** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

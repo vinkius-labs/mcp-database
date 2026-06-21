@@ -1,12 +1,14 @@
 # Omni BI Intelligence MCP Server
 
-Interact with Omni BI dashboards, models, and data exports — run queries and track metrics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omni-bi-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omni-bi-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omni-bi-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omni-bi-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Interact with Omni BI dashboards, models, and data exports — run queries and track metrics directly from your AI agent.
 
 ## Description
 Connect your **Omni BI** (omni.co) account to your AI agent and gain deep insights into your organization's data through natural conversation and programmatic query execution.
@@ -47,6 +49,33 @@ Connect your **Omni BI** (omni.co) account to your AI agent and gain deep insigh
 - **run_omni_query**: Run programmatic query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Omni BI Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our sales dashboards."
+
+**🤖 AI Agent:**
+> Retrieving dashboards... I found 5 related to sales, including 'Global Revenue Overview', 'Quarterly Performance', and 'Sales by Region'. Would you like the component details for the Revenue Overview?
+
+---
+
+**👤 You:**
+> "Run a query on the 'Orders' model for fields 'total_price' and 'status'."
+
+**🤖 AI Agent:**
+> Executing query... I've retrieved the latest 100 records from the Orders model. The data includes prices ranging from $45 to $1,200 across 'shipped' and 'pending' statuses. Shall I generate a CSV export link for the full result set?
+
+---
+
+**👤 You:**
+> "What are the field definitions for the 'Customer Retention' model?"
+
+**🤖 AI Agent:**
+> Fetching model details... The 'Customer Retention' model contains 12 fields including 'cohort_month', 'retention_rate' (measure), and 'active_user_count'. Would you like the specific calculation logic for the retention rate?
+
+
 ## Installation & Usage
 
 To install and use the **Omni BI Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Omni BI Intelligence** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

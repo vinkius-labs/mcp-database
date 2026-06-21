@@ -1,12 +1,14 @@
 # OptimoRoute MCP Server
 
-Optimize delivery routes via OptimoRoute — create orders, track driver locations, and manage route planning directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/optimoroute-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optimoroute-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optimoroute-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optimoroute-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** logistics-supply-chain
-**Tools Count:** 10
+
+**Category:** [logistics-supply-chain](../categories/logistics-supply-chain.md)
+
+Optimize delivery routes via OptimoRoute — create orders, track driver locations, and manage route planning directly from any AI agent.
 
 ## Description
 Connect your **OptimoRoute** account to any AI agent and take full control of your logistics and delivery operations through natural conversation.
@@ -45,6 +47,33 @@ Connect your **OptimoRoute** account to any AI agent and take full control of yo
 - **start_planning**: Start route optimization for a date
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OptimoRoute** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new delivery order #ABC-123 for 123 Main St for tomorrow."
+
+**🤖 AI Agent:**
+> Order #ABC-123 has been successfully created for the location '123 Main St' scheduled for 2026-10-25.
+
+---
+
+**👤 You:**
+> "Show me the real-time locations of all my drivers."
+
+**🤖 AI Agent:**
+> I've retrieved the fleet status. Driver John is at (40.7128, -74.0060), Driver Sarah is at (34.0522, -118.2437), and 3 others are currently on their routes.
+
+---
+
+**👤 You:**
+> "Start route optimization for today's pending orders."
+
+**🤖 AI Agent:**
+> Route optimization has been started for 2026-10-24. Planning ID: 98765. You can check the status using the `get_planning_status` tool.
+
+
 ## Installation & Usage
 
 To install and use the **OptimoRoute** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **OptimoRoute** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

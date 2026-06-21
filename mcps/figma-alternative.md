@@ -1,12 +1,14 @@
 # Figma MCP Server
 
-Access Figma design files, comments, components and images via API — inspect nodes, render exports and track version history from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/figma-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/figma-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/figma-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/figma-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 16
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Access Figma design files, comments, components and images via API — inspect nodes, render exports and track version history from any AI agent.
 
 ## Description
 Connect your **Figma** account to any AI agent and gain full access to your design files, comments, components and version history through natural conversation.
@@ -87,6 +89,33 @@ Post a comment on a Figma file
 Add a reaction to a Figma comment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Figma** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my recently accessed Figma files."
+
+**🤖 AI Agent:**
+> Here are your 5 most recent files: 'Mobile App v3' (modified 2h ago), 'Design System - Components' (modified yesterday), 'Landing Page Redesign' (modified 3 days ago), 'Dashboard Analytics' (modified last week) and 'Onboarding Flow' (modified 2 weeks ago).
+
+---
+
+**👤 You:**
+> "Show me all comments on my Mobile App v3 design file."
+
+**🤖 AI Agent:**
+> I found 12 comments on the file. The most recent is from Sarah: 'The button contrast doesn't meet WCAG AA standards' (2h ago, pinned to frame 47:12). There are also 3 unresolved comments from the design review meeting. Would you like the full thread for any of these?
+
+---
+
+**👤 You:**
+> "Export the hero section frame from my Landing Page design as a PNG at 2x scale."
+
+**🤖 AI Agent:**
+> Done! I've rendered node '12:34' (Hero Section) as a PNG at 2x scale. The image URL is https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/... You can download it directly from this link.
+
+
 ## Installation & Usage
 
 To install and use the **Figma** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -95,4 +124,11 @@ To install and use the **Figma** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

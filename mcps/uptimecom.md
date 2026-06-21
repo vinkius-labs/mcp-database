@@ -1,12 +1,14 @@
 # Uptime.com MCP Server
 
-Monitor website and API uptime from 30+ global locations with instant alerts when downtime hits any of your services.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/uptimecom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uptimecom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uptimecom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uptimecom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Monitor website and API uptime from 30+ global locations with instant alerts when downtime hits any of your services.
 
 ## Description
 Connect your **Uptime.com** monitoring account to any AI agent and simplify how you monitor site reliability, manage alerts, and perform root cause analysis through natural conversation.
@@ -54,6 +56,33 @@ List active integrations
 - **update_check**: Update a check
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Uptime.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active monitor checks in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your checks. You have 5 monitors active including 'Main Website' (UP), 'API Gateway' (UP), and 'Staging Server' (DOWN). Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the recent alerts history."
+
+**🤖 AI Agent:**
+> I've fetched the alert history. There were 2 downtime events today: 'Staging Server' (Down for 15m) and 'API Gateway' (Down for 2m). Both are currently back online. Shall I retrieve the RCA for the Staging Server outage?
+
+---
+
+**👤 You:**
+> "What is the uptime percentage for the 'Main Website' check?"
+
+**🤖 AI Agent:**
+> Retrieving statistics... The 'Main Website' (ID: 10293) has an uptime of 99.98% over the last 30 days, with an average response time of 150ms. No significant failures detected recently.
+
+
 ## Installation & Usage
 
 To install and use the **Uptime.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Uptime.com** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Go-UPC MCP Server
 
-Search products by barcode — audit UPC, EAN, and ISBN via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/go-upc)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/go-upc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/go-upc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/go-upc-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 5
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Search products by barcode — audit UPC, EAN, and ISBN via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire product discovery and retail auditing workflow with **Go-UPC**, the comprehensive database for barcode data. By connecting Go-UPC to your agent, you transform complex product lookups into a natural conversation. Your agent can instantly retrieve detailed product metadata, audit brand information, and identify categories from any UPC, EAN, or ISBN without you ever touching a manual lookup tool. Whether you are conducting market research or managing inventory, your agent acts as a real-time product specialist, ensuring your retail intelligence is always grounded in accurate, verified data.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire product discovery and retail au
 - **search_products**: Search for products by name (Placeholder/Info)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Go-UPC** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get details for product with UPC 012000000133 using Go-UPC."
+
+**🤖 AI Agent:**
+> I've identified that barcode as 'Pepsi Cola 12oz Can'. It belongs to the soft drink category and is manufactured by PepsiCo. Would you like the full product description or image link?
+
+---
+
+**👤 You:**
+> "Show details for book with ISBN 9780143127550."
+
+**🤖 AI Agent:**
+> I've identified ISBN 9780143127550 as 'The Martian' by Andy Weir. It's published by Penguin Books. I can provide the summary and cover metadata if you'd like.
+
+---
+
+**👤 You:**
+> "What brand is associated with barcode 064144030326?"
+
+**🤖 AI Agent:**
+> I've retrieved the details. The brand is 'Hunt's' and the product is their 'Classic Tomato Ketchup'. I can assist you with more brand auditing if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Go-UPC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Go-UPC** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

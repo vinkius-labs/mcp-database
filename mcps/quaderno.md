@@ -1,12 +1,14 @@
 # Quaderno MCP Server
 
-Bring automated tax compliance and invoicing directly into your AI workflow — calculate global taxes, issue invoices, and manage CRM contacts in seconds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/quaderno)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quaderno)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quaderno-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quaderno-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 10
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Bring automated tax compliance and invoicing directly into your AI workflow — calculate global taxes, issue invoices, and manage CRM contacts in seconds.
 
 ## Description
 Connect your **Quaderno** account to any AI agent and bring powerful tax compliance, invoicing, and customer management capabilities directly into your automated workflows.
@@ -52,6 +54,33 @@ Deletes a contact from Quaderno
 Updates an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Quaderno** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the taxes for a $150 plan sold to a user in Berlin, Germany (Postal Code 10115)."
+
+**🤖 AI Agent:**
+> Based on Quaderno's calculation (`calculate_taxes` tool), applying the standard DE tax rate (19% VAT) to the $150 amount adds $28.50 in taxes. The final user total will be $178.50. Would you like to create a transaction with these exact amounts?
+
+---
+
+**👤 You:**
+> "Fetch the billing details and history for contact ID #9822."
+
+**🤖 AI Agent:**
+> Contact #9822 is Acorn Corp (acorn-billing@example.com). They are located in NY, USA. Their VAT profile is clean. Would you like me to use `list_invoices` to find all recent transactions associated with their profile?
+
+---
+
+**👤 You:**
+> "Update contact #9822 to change its first name to 'Acorn Group Inc'."
+
+**🤖 AI Agent:**
+> I've processed the `update_contact` request. The first_name field on contact #9822 has been successfully patched to 'Acorn Group Inc'. Their records are fully refreshed.
+
+
 ## Installation & Usage
 
 To install and use the **Quaderno** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Quaderno** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

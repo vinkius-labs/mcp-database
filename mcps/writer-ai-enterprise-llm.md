@@ -1,12 +1,14 @@
 # Writer (AI Enterprise LLM) MCP Server
 
-Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/writer-ai-enterprise-llm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/writer-ai-enterprise-llm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/writer-ai-enterprise-llm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/writer-ai-enterprise-llm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 24
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data.
 
 ## Description
 Connect to **Writer**, the full-stack generative AI platform for the enterprise. This MCP server allows your AI agent to leverage the Palmyra family of models, manage complex Knowledge Graphs for RAG, and handle enterprise document processing.
@@ -58,6 +60,33 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 - **web_search**: Search the web for a query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Writer (AI Enterprise LLM)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available Writer models."
+
+**🤖 AI Agent:**
+> I've retrieved the models. You have access to palmyra-x5, palmyra-x5-32k, and palmyra-med. Which one would you like to use for your task?
+
+---
+
+**👤 You:**
+> "Create a new Knowledge Graph named 'Q4 Strategy'."
+
+**🤖 AI Agent:**
+> I have successfully created the 'Q4 Strategy' Knowledge Graph. You can now use `add_file_to_graph` to include documents for RAG analysis.
+
+---
+
+**👤 You:**
+> "Upload 'report.pdf' and list all my files."
+
+**🤖 AI Agent:**
+> File 'report.pdf' has been uploaded successfully. Your current file list includes: 'report.pdf' (ID: file-123) and 'budget.xlsx' (ID: file-456).
+
+
 ## Installation & Usage
 
 To install and use the **Writer (AI Enterprise LLM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Writer (AI Enterprise LLM)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Raven Tools MCP Server
 
-Track SEO rankings, audit website health, and generate white-label marketing reports for your clients automatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/raven-tools)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/raven-tools)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/raven-tools-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/raven-tools-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Track SEO rankings, audit website health, and generate white-label marketing reports for your clients automatically.
 
 ## Description
 Connect your **Raven Tools** account to any AI agent and take full control of your search engine optimization (SEO) orchestration and automated reporting through natural conversation.
@@ -49,6 +51,33 @@ No more manual exporting of keyword sheets or missing rank drops. Your AI acts a
 - **remove_keyword**: Remove a keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Raven Tools** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in my Raven Tools account and show the keyword summary for 'Project A'."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You currently have 10 active high-fidelity portfolios. For 'Project A' (ID: proj_123), I've identified 50 tracked keywords with an average SERP position of 5. Would you like the detailed technical metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the latest SEO audit results for 'example.com'."
+
+**🤖 AI Agent:**
+> Audit intelligence orchestrated! For example.com, I've identified a high-fidelity health score of 85%. There are 10 technical issues flagged, including 5 broken links. I've retrieved the technical step metadata for your review. Need help prioritizing the fixes?
+
+---
+
+**👤 You:**
+> "Check for any keywords with significant rank drops this week."
+
+**🤖 AI Agent:**
+> Operational monitoring orchestrated! I've identified 3 high-fidelity keywords with rank drops greater than 5 positions, including 'AI Tools'. I've retrieved the technical SERP metadata for your review. Shall I check for any corresponding site health changes?
+
+
 ## Installation & Usage
 
 To install and use the **Raven Tools** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Raven Tools** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

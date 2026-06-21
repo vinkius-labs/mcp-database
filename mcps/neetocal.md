@@ -1,12 +1,14 @@
 # NeetoCal MCP Server
 
-Let clients book appointments through your personalized scheduling page with calendar sync and automatic reminders.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/neetocal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neetocal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neetocal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neetocal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Let clients book appointments through your personalized scheduling page with calendar sync and automatic reminders.
 
 ## Description
 Connect your **NeetoCal** account to any AI agent and take full control of your scheduling orchestration and appointment management through natural conversation. NeetoCal provides a robust platform for managing bookings and team availability, and this integration allows you to retrieve booking metadata, monitor team schedules, and manage public scheduling links directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual status checking in the dashboard for new bookings. Your AI acts a
 - **reschedule_booking**: Reschedule a booking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NeetoCal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active bookings in NeetoCal."
+
+**🤖 AI Agent:**
+> I've retrieved your bookings. You have 5 active appointments including 'Discovery Call' with John Doe and 'Q4 Strategy'. Which one would you like to see more details for?
+
+---
+
+**👤 You:**
+> "Show me the available time slots for my 30-min Discovery Call link next Monday."
+
+**🤖 AI Agent:**
+> I checked your 30-min Discovery Call scheduling link for next Monday. You have 6 available slots: 9:00 AM, 10:00 AM, 11:30 AM, 1:00 PM, 2:30 PM, and 4:00 PM. Your lunch block and the 3:00 PM team standup are correctly blocked off.
+
+---
+
+**👤 You:**
+> "Cancel the booking with ID bk_293847 and notify the attendee."
+
+**🤖 AI Agent:**
+> Done. Booking bk_293847 (Product Demo with Sarah Chen on May 12th at 2:00 PM) has been cancelled. A cancellation email has been automatically sent to sarah.chen@acme.com with your configured cancellation message.
+
+
 ## Installation & Usage
 
 To install and use the **NeetoCal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **NeetoCal** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

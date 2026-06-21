@@ -1,12 +1,14 @@
 # Zoho CRM Marketing MCP Server
 
-Manage marketing campaigns, track campaign leads and contacts — full marketing automation in Zoho CRM.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-crm-marketing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-crm-marketing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-crm-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-crm-marketing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 6
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage marketing campaigns, track campaign leads and contacts — full marketing automation in Zoho CRM.
 
 ## Description
 Connect **Zoho CRM** to any AI agent — manage your entire CRM without switching tabs.
@@ -47,6 +49,33 @@ List marketing campaigns in Zoho CRM with name, type (Conference/Webinar/Email/A
 Search Zoho CRM campaigns by name or keyword to find specific marketing initiatives and their performance data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho CRM Marketing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for leads from web form"
+
+**🤖 AI Agent:**
+> 👥 **Leads from Web Form**
+| Name | Email | Company | Status |
+|---|---|---|---|
+| John Smith | john@acme.com | Acme Corp | New |
+| Maria Garcia | maria@beta.io | Beta Inc | Contacted |
+
+---
+
+**👤 You:**
+> "Create a deal: Enterprise Plan $25,000"
+
+**🤖 AI Agent:**
+> ✅ **Deal Created!**
+- Name: Enterprise Plan
+- Amount: $25,000
+- Stage: Qualification
+- Closing: 2024-03-30
+
+
 ## Installation & Usage
 
 To install and use the **Zoho CRM Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Zoho CRM Marketing** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

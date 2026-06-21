@@ -1,12 +1,14 @@
 # OpenF1 Live Data & Telemetry MCP Server
 
-Real-time Formula 1 telemetry and race data — audit lap times, car performance, and team radio via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openf1-live-data-telemetry)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openf1-live-data-telemetry)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openf1-live-data-telemetry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openf1-live-data-telemetry-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 15
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Real-time Formula 1 telemetry and race data — audit lap times, car performance, and team radio via AI.
 
 ## Description
 Transform your AI agent into a professional Formula 1 data analyst with **OpenF1**. This high-performance server provides unprecedented access to granular race data and live car telemetry directly from the track. Your agent can monitor high-frequency technical metrics such as RPM, gear usage, and throttle application, while also tracking the narrative of the race through team radio links and official FIA race control messages. Whether you are analyzing tire strategies, auditing sector times, or following live overtakes, your agent provides deep technical intelligence through natural conversation.
@@ -49,6 +51,33 @@ Transform your AI agent into a professional Formula 1 data analyst with **OpenF1
 - **get_weather_data**: Get track and air weather data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenF1 Live Data & Telemetry** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the technical telemetry for Max Verstappen in the latest session."
+
+**🤖 AI Agent:**
+> I've retrieved Verstappen's high-frequency telemetry. At the last sample, he was at 312 km/h in 7th gear at 11,200 RPM with DRS active. I also have his throttle and brake traces. Would you like to compare this to his previous lap?
+
+---
+
+**👤 You:**
+> "Analyze the tire strategy for the top 5 drivers in the current session."
+
+**🤖 AI Agent:**
+> Running the stint query... I found that Verstappen and Norris are currently on Mediums (8 laps old), while Hamilton has just pitted for new Hards. I have the full stint history for the top 5. Would you like to see the projected life of their current sets?
+
+---
+
+**👤 You:**
+> "Provide all race control messages involving 'Track Limits' from lap 10 onwards."
+
+**🤖 AI Agent:**
+> Inspecting FIA updates... I found 3 messages regarding Track Limits since lap 10. Drivers warned include Perez at Turn 4 and Leclerc at Turn 12. No penalties have been issued yet. Shall I continue monitoring for specific driver numbers?
+
+
 ## Installation & Usage
 
 To install and use the **OpenF1 Live Data & Telemetry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **OpenF1 Live Data & Telemetry** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

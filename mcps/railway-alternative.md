@@ -1,12 +1,14 @@
 # Railway MCP Server
 
-Manage cloud deployments via Railway — list projects, inspect services, track deployments and manage variables and volumes from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/railway-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/railway-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/railway-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/railway-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 11
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage cloud deployments via Railway — list projects, inspect services, track deployments and manage variables and volumes from any AI agent.
 
 ## Description
 Connect your **Railway** account to any AI agent and take full control of your cloud deployments through natural conversation.
@@ -72,6 +74,33 @@ Get current authenticated Railway user details
 List persistent volumes in a Railway project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Railway** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all my Railway projects and their services."
+
+**🤖 AI Agent:**
+> I found 3 projects: 'my-api' (2 services: api-web, postgres), 'frontend-app' (1 service: nextjs), and 'worker-service' (1 service: redis). Would you like the deployment history for any specific service?
+
+---
+
+**👤 You:**
+> "Set the DATABASE_URL variable for my api-web service in production."
+
+**🤖 AI Agent:**
+> Done! I've set the `DATABASE_URL` environment variable for the api-web service in the production environment. The new value will be available on the next deployment.
+
+---
+
+**👤 You:**
+> "What's the deployment status of my api-web service?"
+
+**🤖 AI Agent:**
+> The api-web service has 4 deployments. The most recent one deployed successfully 2 hours ago with image tag v2.3.1. The previous deployment (v2.3.0) failed due to a missing environment variable. Would you like more details?
+
+
 ## Installation & Usage
 
 To install and use the **Railway** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **Railway** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

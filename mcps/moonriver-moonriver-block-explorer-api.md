@@ -1,12 +1,14 @@
 # Moonriver (Moonriver Block Explorer API) MCP Server
 
-Query Moonriver blockchain data—blocks, transactions, account balances, and EVM tokens—directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moonriver-moonriver-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonriver-moonriver-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moonriver-moonriver-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moonriver-moonriver-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Query Moonriver blockchain data—blocks, transactions, account balances, and EVM tokens—directly from your AI agent.
 
 ## Description
 Connect to the **Moonriver** network to inspect real-time blockchain activity. This server allows your AI agent to interact with the Moonriver Block Explorer API, providing deep insights into on-chain data without leaving your chat interface.
@@ -45,6 +47,33 @@ No more manually searching through block explorers. Your AI acts as a dedicated 
 - **list_transfers**: Get account transfers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Moonriver (Moonriver Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent blocks on the Moonriver network."
+
+**🤖 AI Agent:**
+> I've retrieved the latest blocks. The most recent block is 5,120,450, produced by collator '0x...'. Would you like to see the details for a specific block height?
+
+---
+
+**👤 You:**
+> "Get details for block number 5000000."
+
+**🤖 AI Agent:**
+> Inspecting block 5,000,000... It contains 12 extrinsics and was finalized on 2023-10-15. The state root is '0x...'. Do you want to list the extrinsics for this block?
+
+---
+
+**👤 You:**
+> "Show me the list of EVM tokens available on Moonriver."
+
+**🤖 AI Agent:**
+> Fetching EVM tokens... I found several tokens including MOVR (Native), xcKSM, and various ERC-20 assets. Would you like to see the transfer history for a specific token?
+
+
 ## Installation & Usage
 
 To install and use the **Moonriver (Moonriver Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Moonriver (Moonriver Block Explorer API)** MCP server i
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

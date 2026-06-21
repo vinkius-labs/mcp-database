@@ -1,12 +1,14 @@
 # Bobascan (Boba L2 Network Block Explorer API) MCP Server
 
-Access Boba L2 Network blockchain data — query balances, transaction histories, and smart contract ABIs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bobascan-boba-l2-network-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bobascan-boba-l2-network-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bobascan-boba-l2-network-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bobascan-boba-l2-network-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 25
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Boba L2 Network blockchain data — query balances, transaction histories, and smart contract ABIs directly from your AI agent.
 
 ## Description
 Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server allows your AI to act as a blockchain analyst, retrieving real-time data from the Boba L2 explorer.
@@ -60,6 +62,33 @@ Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server all
 - **proxy_get_transaction_receipt**: eth_getTransactionReceipt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bobascan (Boba L2 Network Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the Ether balance of address 0x1234... on Boba L2?"
+
+**🤖 AI Agent:**
+> I've checked the balance for 0x1234... on the Boba Network. The current balance is 1.25 ETH.
+
+---
+
+**👤 You:**
+> "List the last 5 transactions for address 0x5678..."
+
+**🤖 AI Agent:**
+> Fetching transaction history... I found the most recent transactions for 0x5678..., including a transfer of 0.5 ETH and several contract interactions. Would you like details on a specific hash?
+
+---
+
+**👤 You:**
+> "Get the ABI for the smart contract at 0x9012..."
+
+**🤖 AI Agent:**
+> I have retrieved the ABI for the verified contract at 0x9012... You can now use this to decode transactions or prepare contract calls.
+
+
 ## Installation & Usage
 
 To install and use the **Bobascan (Boba L2 Network Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Bobascan (Boba L2 Network Block Explorer API)** MCP ser
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

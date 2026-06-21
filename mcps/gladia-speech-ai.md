@@ -1,12 +1,14 @@
 # Gladia (Speech AI) MCP Server
 
-Transcribe, translate, and analyze audio with Gladia's high-speed Speech AI — support for pre-recorded files and live streaming.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gladia-speech-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gladia-speech-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gladia-speech-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gladia-speech-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Transcribe, translate, and analyze audio with Gladia's high-speed Speech AI — support for pre-recorded files and live streaming.
 
 ## Description
 Connect **Gladia** to your AI agent to unlock enterprise-grade speech-to-text capabilities. Process audio files or live streams with advanced features like speaker diarization, multi-language translation, and automated summarization.
@@ -41,6 +43,33 @@ Connect **Gladia** to your AI agent to unlock enterprise-grade speech-to-text ca
 - **init_transcription**: Start a pre-recorded transcription job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gladia (Speech AI)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent transcription jobs."
+
+**🤖 AI Agent:**
+> I've retrieved your recent jobs. You have 5 tasks: 'Meeting_Notes.mp3' (Done), 'Interview_01.wav' (Done), and 3 others. Would you like the results for any of these?
+
+---
+
+**👤 You:**
+> "Start a transcription for this audio URL with summarization enabled: https://example.com/audio.mp3"
+
+**🤖 AI Agent:**
+> Transcription job initiated! The Job ID is `job_12345`. I've enabled summarization as requested. I'll monitor the status for you.
+
+---
+
+**👤 You:**
+> "I need a WebSocket URL to start a live transcription session in 16000Hz."
+
+**🤖 AI Agent:**
+> I've generated a live session. Here is your secure WebSocket URL: `wss://api.gladia.io/v2/live/...`. The sample rate is set to 16000Hz.
+
+
 ## Installation & Usage
 
 To install and use the **Gladia (Speech AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Gladia (Speech AI)** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

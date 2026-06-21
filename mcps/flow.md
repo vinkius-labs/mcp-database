@@ -1,12 +1,14 @@
 # Flow MCP Server
 
-Manage projects, tasks, and team collaboration via AI agents with Flow (getflow.com).
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage projects, tasks, and team collaboration via AI agents with Flow (getflow.com).
 
 ## Description
 Connect your **Flow** account to any AI agent and automate your project management and team collaboration through the Model Context Protocol (MCP). Flow (getflow.com) provides a clean and powerful platform for organizing work, tracking task progress, and facilitating team discussions. Now, you can manage your workspaces, projects, and individual tasks directly through natural conversation.
@@ -50,6 +52,33 @@ Connect your **Flow** account to any AI agent and automate your project manageme
 Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Flow projects in the 'Marketing' workspace."
+
+**🤖 AI Agent:**
+> Fetching projects... I found 4 projects in your 'Marketing' workspace, including 'Q4 Campaign' and 'Brand Guidelines'. Would you like to see the task lists for any of these?
+
+---
+
+**👤 You:**
+> "Create a new task: 'Review final design mockup' in the 'Design' list."
+
+**🤖 AI Agent:**
+> Task created! I've added 'Review final design mockup' to your 'Design' task list. The task ID is 'task_123'. Would you like to assign it to someone or set a due date?
+
+---
+
+**👤 You:**
+> "Add a comment to task 'task_123': 'Design looks great, proceed to coding'."
+
+**🤖 AI Agent:**
+> Comment added! Your feedback has been successfully posted to task 'task_123'. The team will see your update in the task discussion timeline.
+
+
 ## Installation & Usage
 
 To install and use the **Flow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Flow** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

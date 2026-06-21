@@ -1,12 +1,14 @@
 # Transport for London MCP Server
 
-Get live tube status, bus arrivals, journey planning, road disruptions and bike point data across London.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/transport-for-london)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transport-for-london)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transport-for-london-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transport-for-london-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Get live tube status, bus arrivals, journey planning, road disruptions and bike point data across London.
 
 ## Description
 Connect to **Transport for London (TfL)** and access real-time London transit data through natural conversation — no API key needed.
@@ -68,6 +70,33 @@ Get details for a specific bus stop or station
 Search for bus stops and stations by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Transport for London** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the status of the Central line?"
+
+**🤖 AI Agent:**
+> 🟢 Central line — Good Service. All trains running on time.
+
+---
+
+**👤 You:**
+> "Plan a journey from King's Cross to Heathrow."
+
+**🤖 AI Agent:**
+> Route 1: Piccadilly line direct (50min, £2.80, no changes). Route 2: Victoria to Green Park, then Jubilee to Bond Street, then Elizabeth line (45min, £3.40, 2 changes).
+
+---
+
+**👤 You:**
+> "When is the next bus at Oxford Circus?"
+
+**🤖 AI Agent:**
+> Next buses at Oxford Circus: Route 8 to Holborn (3 min), Route 55 to Walthamstow (5 min), Route 98 to Willesden (7 min), Route 13 to Archway (9 min).
+
+
 ## Installation & Usage
 
 To install and use the **Transport for London** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Transport for London** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Resemble AI MCP Server
 
-Generate high-quality AI voices, manage projects, and transform speech with Resemble AI's powerful voice cloning and synthesis tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/resemble-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resemble-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/resemble-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/resemble-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 16
+
+**Category:** [image-video](../categories/image-video.md)
+
+Generate high-quality AI voices, manage projects, and transform speech with Resemble AI's powerful voice cloning and synthesis tools.
 
 ## Description
 Connect your **Resemble AI** account to any AI agent to generate, manage, and protect high-fidelity synthetic speech through natural conversation.
@@ -53,6 +55,33 @@ Create a new clip (Text-to-Speech)
 - **verify_watermark**: Verify a watermark in an audio file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Resemble AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Resemble AI projects and their UUIDs."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 'Marketing 2024' (UUID: proj_123) and 'Game Characters' (UUID: proj_456). Which one would you like to work with?
+
+---
+
+**👤 You:**
+> "Create a new audio clip in project proj_123 saying 'Welcome to the future of voice' using voice voice_789."
+
+**🤖 AI Agent:**
+> Generating clip... Success! The clip has been created in project 'Marketing 2024'. You can access it via UUID clip_abc.
+
+---
+
+**👤 You:**
+> "Analyze this audio URL to see if it's a deepfake: https://example.com/audio.mp3"
+
+**🤖 AI Agent:**
+> Running deepfake detection... The analysis is complete. The audio shows a 98% probability of being synthetic (AI-generated).
+
+
 ## Installation & Usage
 
 To install and use the **Resemble AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Resemble AI** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

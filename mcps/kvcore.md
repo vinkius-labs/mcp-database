@@ -1,12 +1,14 @@
 # kvCORE MCP Server
 
-Manage real estate leads — search contacts, track listings, and audit agent tasks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kvcore)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kvcore)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kvcore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kvcore-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 10
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Manage real estate leads — search contacts, track listings, and audit agent tasks.
 
 ## Description
 Connect your AI agent to **kvCORE**, the primary platform for real estate professionals to manage their entire business.
@@ -44,6 +46,33 @@ Update an existing lead
 - **create_lead_note**: Add a note to a lead profile
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **kvCORE** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for a lead named 'Alice' in my kvCORE"
+
+**🤖 AI Agent:**
+> I've found one lead matching 'Alice': Alice Williams (Email: alice@example.com). She is currently in the 'Prospect' status. Would you like to see her recent property views?
+
+---
+
+**👤 You:**
+> "Show me details for the property at '123 Maple St'"
+
+**🤖 AI Agent:**
+> Retrieved listing details for 123 Maple St. It's a 3-bed, 2-bath home listed at $450,000. It has been on the market for 15 days. Would you like to see the full description?
+
+---
+
+**👤 You:**
+> "List my tasks for today"
+
+**🤖 AI Agent:**
+> You have 5 follow-up tasks for today, including calling John Doe about the new listing and sending a contract to Jane Smith. Which one would you like to mark as complete?
+
+
 ## Installation & Usage
 
 To install and use the **kvCORE** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **kvCORE** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

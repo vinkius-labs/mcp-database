@@ -1,12 +1,14 @@
 # KanbanZone MCP Server
 
-Manage projects visually with multi-board Kanban views, WIP limits, and process metrics that streamline team delivery.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kanbanzone)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kanbanzone)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kanbanzone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kanbanzone-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage projects visually with multi-board Kanban views, WIP limits, and process metrics that streamline team delivery.
 
 ## Description
 Connect your **KanbanZone** account to any AI agent and manage kanban boards through natural conversation.
@@ -43,6 +45,33 @@ Connect your **KanbanZone** account to any AI agent and manage kanban boards thr
 - **update_card**: Update an existing card
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **KanbanZone** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all boards and cards in the 'Development' board by column."
+
+**🤖 AI Agent:**
+> Boards: 3. Development (28 cards), Marketing (15), Operations (12). Development: Backlog (8), To Do (6/8), In Progress (5/5 at limit), Review (4), Testing (2), Done (3). Swimlanes: Frontend, Backend, DevOps. ⚠️ In Progress at WIP limit.
+
+---
+
+**👤 You:**
+> "Create a card 'Fix login bug' and move 'API migration' to Done."
+
+**🤖 AI Agent:**
+> Card created! 'Fix login bug' in To Do, Priority: High, Swimlane: Frontend. To Do: 6→7. Card moved! 'API migration' → Done ✅. In Progress: 5→4 (below WIP). Done: 3→4.
+
+---
+
+**👤 You:**
+> "Show swimlane breakdown and board activity for today."
+
+**🤖 AI Agent:**
+> Swimlanes: Frontend (10 cards, 2 in progress), Backend (12 cards, 2 in progress), DevOps (6 cards, 1 in progress). Today's activity: 8 actions. 3 cards moved, 2 created, 1 archived, 2 updated. Most active: Sarah (4 actions).
+
+
 ## Installation & Usage
 
 To install and use the **KanbanZone** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **KanbanZone** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

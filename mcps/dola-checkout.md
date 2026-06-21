@@ -1,12 +1,14 @@
 # Dola Checkout MCP Server
 
-Accept payments globally with a checkout experience designed for digital products, subscriptions, and one-time purchases.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dola-checkout)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dola-checkout)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dola-checkout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dola-checkout-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 12
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Accept payments globally with a checkout experience designed for digital products, subscriptions, and one-time purchases.
 
 ## Description
 Connect your **Dola Checkout** account to any AI agent and take full control of your e-commerce transaction and shopper engagement workflows through natural conversation.
@@ -51,6 +53,33 @@ Create a new webhook
 - **update_order**: Update order status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dola Checkout** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active checkout orders in my Dola account."
+
+**🤖 AI Agent:**
+> I've retrieved your recent orders. You currently have 5 active transactions, including Order #4502 (Completed) and #4503 (Pending). Would you like the shopper details for any of these?
+
+---
+
+**👤 You:**
+> "Create a checkout session for a 'MacBook Pro' priced at $1999.00."
+
+**🤖 AI Agent:**
+> Checkout session generated! I've created a new session for the MacBook Pro. You can share this secure URL with the customer: [checkout_url]. The session ID is 'sess_123'.
+
+---
+
+**👤 You:**
+> "Show the purchase history for shopper ID 'cust_789'."
+
+**🤖 AI Agent:**
+> Fetching history... Shopper cust_789 has made 3 past purchases totaling $2,450. Notable orders include a 'Workstation' and 'Monitor Stand'. Shall I check the fulfillment status for their latest order?
+
+
 ## Installation & Usage
 
 To install and use the **Dola Checkout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Dola Checkout** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

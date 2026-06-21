@@ -1,12 +1,14 @@
 # Immich (Google Photos Alternative) MCP Server
 
-Manage your self-hosted Immich photo and video library — list assets, organize albums, and handle user administration via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/immich-google-photos-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/immich-google-photos-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/immich-google-photos-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/immich-google-photos-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 26
+
+**Category:** [image-video](../categories/image-video.md)
+
+Manage your self-hosted Immich photo and video library — list assets, organize albums, and handle user administration via AI.
 
 ## Description
 Connect your self-hosted **Immich** instance to any AI agent and take full control of your digital media library through natural conversation. Immich is the leading open-source alternative to Google Photos, and this MCP server allows you to interact with your assets, albums, and server settings seamlessly.
@@ -62,6 +64,33 @@ Update an existing Immich asset
 - **upload_asset**: Upload a new photo or video to Immich
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Immich (Google Photos Alternative)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my photos in Immich."
+
+**🤖 AI Agent:**
+> I've retrieved your assets. You have 150 photos and videos available. Would you like to see the details of the most recent one?
+
+---
+
+**👤 You:**
+> "Create a new album called 'Summer Vacation 2024'."
+
+**🤖 AI Agent:**
+> The album 'Summer Vacation 2024' has been successfully created with UUID: 8f2d... You can now start adding assets to it.
+
+---
+
+**👤 You:**
+> "Get the details for asset 550e8400-e29b-41d4-a716-446655440000."
+
+**🤖 AI Agent:**
+> Inspecting asset... This is a JPEG image taken on 2023-08-15. It is currently marked as a favorite and is part of the 'Travel' album.
+
+
 ## Installation & Usage
 
 To install and use the **Immich (Google Photos Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Immich (Google Photos Alternative)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

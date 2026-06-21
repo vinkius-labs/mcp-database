@@ -1,12 +1,14 @@
 # Deterministic Datetime Engine MCP Server
 
-Equip your AI with exact temporal math. Deterministically calculate date differences, leap years, and add business days (skipping weekends) 100% locally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-datetime-engine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-datetime-engine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deterministic-datetime-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deterministic-datetime-engine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI with exact temporal math. Deterministically calculate date differences, leap years, and add business days (skipping weekends) 100% locally.
 
 ## Description
 Language Models are infamously bad at calendar math. If you ask an AI to "Add 45 business days to October 12th", it will almost always guess wrong because it cannot programmatically skip weekends and account for varying month lengths. The Datetime Operations MCP solves this by offloading temporal calculations to a strict V8 Javascript engine.
@@ -24,6 +26,25 @@ Language Models are infamously bad at calendar math. If you ask an AI to "Add 45
 - **check_leap_year**: Checks if a specific year is a leap year using the exact Gregorian calendar algorithm
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deterministic Datetime Engine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the deadline: Add 15 business days to 2024-10-01."
+
+**🤖 AI Agent:**
+> Using the add_business_days tool: The final date is 2024-10-22.
+
+---
+
+**👤 You:**
+> "Exactly how many days passed between 2020-01-01 and today?"
+
+**🤖 AI Agent:**
+> Using the calculate_date_difference tool: Exactly 1568 days (or 4 years and 3 months) have passed.
+
+
 ## Installation & Usage
 
 To install and use the **Deterministic Datetime Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -32,4 +53,11 @@ To install and use the **Deterministic Datetime Engine** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

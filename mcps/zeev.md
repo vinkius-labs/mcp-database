@@ -1,12 +1,14 @@
 # Zeev MCP Server
 
-Digitize business processes with BPMN workflows, electronic forms, and approval chains that replace paper and email chaos.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zeev)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zeev)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zeev-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zeev-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Digitize business processes with BPMN workflows, electronic forms, and approval chains that replace paper and email chaos.
 
 ## Description
 ### What you can do
@@ -40,6 +42,33 @@ Digitize business processes with BPMN workflows, electronic forms, and approval 
 - **list_tasks**: List pending tasks in Zeev
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zeev** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my pending tasks in Zeev."
+
+**🤖 AI Agent:**
+> I've found 3 pending tasks: 1. Approve Expense (ID: 123), 2. Review Contract (ID: 124), 3. Weekly Report (ID: 125).
+
+---
+
+**👤 You:**
+> "Finish task 123 with decision 'Approved'."
+
+**🤖 AI Agent:**
+> Task 123 has been successfully completed with the decision 'Approved'.
+
+---
+
+**👤 You:**
+> "Start a new 'Expense Report' process."
+
+**🤖 AI Agent:**
+> I've started a new 'Expense Report' request with ID 456.
+
+
 ## Installation & Usage
 
 To install and use the **Zeev** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Zeev** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

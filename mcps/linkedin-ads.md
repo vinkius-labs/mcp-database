@@ -1,12 +1,14 @@
 # LinkedIn Ads MCP Server
 
-Access marketing analytics, campaigns, and reporting via the LinkedIn Ads REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkedin-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkedin-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkedin-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access marketing analytics, campaigns, and reporting via the LinkedIn Ads REST API.
 
 ## Description
 Connect your **LinkedIn Ads** account to any AI agent to automate your professional marketing analytics and reporting. This MCP server enables your agent to list ad accounts, monitor campaign performance (impressions, clicks, spend), and retrieve conversion data directly from natural language interfaces using the latest LinkedIn REST API version.
@@ -43,6 +45,33 @@ Query performance metrics (impressions, clicks, spend)
 - **list_ad_creatives**: List all ad creatives for an ad account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LinkedIn Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my LinkedIn Ad accounts."
+
+**🤖 AI Agent:**
+> I've retrieved your ad accounts. You have 2 active accounts: 'Global Marketing (ID: 500123)' and 'Retargeting EMEA (ID: 500456)'.
+
+---
+
+**👤 You:**
+> "Show performance metrics for account ID '500123' for the year 2024."
+
+**🤖 AI Agent:**
+> I've queried the analytics. For the year 2024, account 500123 has generated 1,500,000 impressions and 45,000 clicks, with a total spend of $12,500.00.
+
+---
+
+**👤 You:**
+> "List all campaigns associated with my account."
+
+**🤖 AI Agent:**
+> I found 5 campaigns in your account, including 'Brand Awareness Q1', 'Lead Gen Webinar', and 'Product Demo'. Which one would you like to see demographics for?
+
+
 ## Installation & Usage
 
 To install and use the **LinkedIn Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **LinkedIn Ads** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

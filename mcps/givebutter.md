@@ -1,12 +1,14 @@
 # Givebutter MCP Server
 
-Manage fundraising campaigns, track donations, and oversee donors via AI agents with Givebutter.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/givebutter)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/givebutter)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/givebutter-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/givebutter-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 12
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Manage fundraising campaigns, track donations, and oversee donors via AI agents with Givebutter.
 
 ## Description
 Connect your **Givebutter** account to any AI agent to automate your fundraising operations and donor management through the Model Context Protocol (MCP). Givebutter is the modern fundraising platform for nonprofits and changemakers. This MCP server enables you to retrieve donation transactions, manage fundraising campaigns, and synchronize donor profiles (contacts) directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Givebutter** account to any AI agent to automate your fundraising
 - **list_donation_webhooks**: List webhook configs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Givebutter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all successful donations from the last 24 hours."
+
+**🤖 AI Agent:**
+> Retrieving donations... I found 12 successful transactions in the last 24 hours, totaling $1,250.00. Would you like to see the details for the largest one?
+
+---
+
+**👤 You:**
+> "Check the progress of our 'Annual Gala' campaign (ID: gala_2024)."
+
+**🤖 AI Agent:**
+> Fetching campaign details... The 'Annual Gala' has raised $45,000 so far, which is 75% of your $60,000 goal. There have been 150 unique donors.
+
+---
+
+**👤 You:**
+> "Log an offline donation of $50.00 from 'Alice Smith' (ID: contact_123)."
+
+**🤖 AI Agent:**
+> Donation logged! I have successfully recorded the $50.00 offline transaction for Alice Smith. The new Transaction ID is 'tx_98765'.
+
+
 ## Installation & Usage
 
 To install and use the **Givebutter** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Givebutter** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

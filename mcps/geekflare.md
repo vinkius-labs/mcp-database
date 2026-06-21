@@ -1,12 +1,14 @@
 # Geekflare MCP Server
 
-Test your website performance, security headers, and DNS configuration with a comprehensive suite of technical audit tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/geekflare)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geekflare)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geekflare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geekflare-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Test your website performance, security headers, and DNS configuration with a comprehensive suite of technical audit tools.
 
 ## Description
 Connect your **Geekflare** account to any AI agent and simplify how you monitor website performance, secure your domains, and analyze SEO health through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Geekflare** account to any AI agent and simplify how you monitor 
 - **get_whois_data**: Retrieve Whois information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Geekflare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Run a Lighthouse audit for 'https://google.com'."
+
+**🤖 AI Agent:**
+> Audit complete! Google.com has the following scores: Performance (95), SEO (100), Accessibility (92), and Best Practices (100). Would you like the detailed breakdown of performance issues?
+
+---
+
+**👤 You:**
+> "Check for broken links on 'https://example.com/blog'."
+
+**🤖 AI Agent:**
+> Scanning for broken links... I found 2 broken links on the page: 'https://example.com/old-post' (404) and 'https://example.com/deleted-image.png' (404). Shall I check other pages on this site?
+
+---
+
+**👤 You:**
+> "What are the MX and A records for 'apple.com'?"
+
+**🤖 AI Agent:**
+> Fetching DNS data... For apple.com, I found A records pointing to 17.253.144.10 and MX records for apple-com.mail.protection.outlook.com. Would you like to see the TXT or CNAME records as well?
+
+
 ## Installation & Usage
 
 To install and use the **Geekflare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Geekflare** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

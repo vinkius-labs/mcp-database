@@ -1,12 +1,14 @@
 # RandomUser API MCP Server
 
-Generate random user data — audit personas and locations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/randomuser-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/randomuser-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/randomuser-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/randomuser-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 4
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate random user data — audit personas and locations via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire persona research and data synthesis workflow with **RandomUser API**, the leading generator for realistic user profiles. By connecting RandomUser.me to your agent, you transform complex dummy data generation into a natural conversation. Your agent can instantly generate thousands of user records, audit location patterns, and retrieve profile pictures without you ever touching a technical script. Whether you are building realistic prototypes or testing application scalability, your agent acts as a real-time data architect, ensuring your test environments are always powered by diverse, high-quality records.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire persona research and data synth
 - **list_supported_nationalities**: List all country codes supported by RandomUser API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RandomUser API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate 5 random female users from 'UK' using RandomUser API."
+
+**🤖 AI Agent:**
+> I've generated 5 female personas from the UK! They include names like 'Emma Smith' and 'Sarah Jones', complete with British addresses and profile pictures. Would you like the full JSON details?
+
+---
+
+**👤 You:**
+> "Generate a random user with seed 'vinkius_test'."
+
+**🤖 AI Agent:**
+> I've retrieved the user for seed 'vinkius_test'. This will return the same persona every time you use this seed. Notable details include the name and city. Would you like me to check another seed?
+
+---
+
+**👤 You:**
+> "List all nationalities supported by RandomUser."
+
+**🤖 AI Agent:**
+> I've scanned the nationality catalog. It includes 17 countries, from Australia (AU) and Brazil (BR) to the United States (US). I can help you generate users for any of these specific regions.
+
+
 ## Installation & Usage
 
 To install and use the **RandomUser API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **RandomUser API** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

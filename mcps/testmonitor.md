@@ -1,12 +1,14 @@
 # TestMonitor MCP Server
 
-List QA projects, extract test runs, read user assignments, and fetch tracked issues strictly from your AI chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/testmonitor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testmonitor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testmonitor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testmonitor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+List QA projects, extract test runs, read user assignments, and fetch tracked issues strictly from your AI chat.
 
 ## Description
 Link up your **TestMonitor** cloud infrastructure with any AI agent to streamline QA tracking operations and retrieve real-time milestone data without having to navigate web dashboards.
@@ -47,6 +49,43 @@ Lists all projects available on the TestMonitor instance
 - **list_account_users**: Lists all users associated with the TestMonitor account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TestMonitor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all TestMonitor projects."
+
+**🤖 AI Agent:**
+> Found 1 project:
+`ID: 8840` | Name: "Vinkius CRM Engine V2" | Status: **Active**
+I can retrieve the related milestones, test cases, or registered issues matching ID 8840.
+
+---
+
+**👤 You:**
+> "Get me the details for Test Case ID 5521 from project 8840."
+
+**🤖 AI Agent:**
+> Detailing Case `5521` (API Logout Auth Rejection):
+- **Status:** Approved
+- **Requirement ID Linked:** REQ-10
+- **Step 1:** Force invalid Bearer string to the `/auth/logout` endpoint. Expected: Returns raw 401 HTTP unauthorized block immediately.
+- **Step 2:** Ensure cache header remains un-poisoned. Expected: True.
+Anything I can rewrite from this?
+
+---
+
+**👤 You:**
+> "List all issues for Project 8840."
+
+**🤖 AI Agent:**
+> Gathering active issues for Project 8840:
+1. **Issue ID:** `ISS-91` | Title: 'Registration Webhook drops payload' | State: In Progress
+2. **Issue ID:** `ISS-99` | Title: 'Avatar uploads broken on edge' | State: Open
+The project seems to currently host 2 vital reported defects. Should I inspect linked tests for `ISS-91`?
+
+
 ## Installation & Usage
 
 To install and use the **TestMonitor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +94,11 @@ To install and use the **TestMonitor** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

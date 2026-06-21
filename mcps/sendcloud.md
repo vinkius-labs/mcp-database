@@ -1,12 +1,14 @@
 # SendCloud MCP Server
 
-Leading email and SMS marketing platform — manage campaigns, templates, and addresses via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sendcloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sendcloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sendcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sendcloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Leading email and SMS marketing platform — manage campaigns, templates, and addresses via AI.
 
 ## Description
 Empower your AI agent to orchestrate your digital communication with **SendCloud**, the premier email and SMS service provider for enterprises. By connecting SendCloud to your agent, you transform complex mailing campaigns, template management, and contact list auditing into a natural conversation. Your agent can instantly send targeted emails, retrieve detailed delivery status, monitor mailing address lists, and even provide performance statistics without you ever needing to navigate the comprehensive SendCloud portal. Whether you are automating transactional notifications or coordinating large-scale marketing newsletters, your agent acts as a real-time communication assistant, keeping your messages accurate and your delivery reliable.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your digital communication with **SendCloud
 - **send_email**: Send an email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SendCloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a welcome email to 'mario@example.com' using the 'welcome-template'."
+
+**🤖 AI Agent:**
+> I've sent the welcome email to Mario. The message ID is '8821'. You can use this ID to check the delivery status later.
+
+---
+
+**👤 You:**
+> "Show me the performance stats for the last month."
+
+**🤖 AI Agent:**
+> I've retrieved your SendCloud statistics. Over the last month, you've sent 15,000 emails with a 98% delivery rate and a 25% average open rate. Should I break this down by template?
+
+---
+
+**👤 You:**
+> "List all my mailing address lists."
+
+**🤖 AI Agent:**
+> I've listed your mailing address lists. You have 3 active lists: 'Newsletter Subscribers', 'VIP Clients', and 'Internal Team'. Which one would you like to see the members for?
+
+
 ## Installation & Usage
 
 To install and use the **SendCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **SendCloud** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

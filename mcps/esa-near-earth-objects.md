@@ -1,12 +1,14 @@
 # ESA Near Earth Objects MCP Server
 
-Track near-Earth asteroids and comets, access orbital data, and monitor potential impact risks from the European Space Agency.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/esa-near-earth-objects)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esa-near-earth-objects)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/esa-near-earth-objects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/esa-near-earth-objects-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Track near-Earth asteroids and comets, access orbital data, and monitor potential impact risks from the European Space Agency.
 
 ## Description
 Connect to the **European Space Agency Near-Earth Object Coordination Centre (NEOCC)** and access the most authoritative asteroid monitoring data in Europe.
@@ -73,6 +75,33 @@ Get the ESA special priority risk list
 Get upcoming asteroid close approaches to Earth
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ESA Near Earth Objects** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all asteroids approaching Earth in the next few months."
+
+**🤖 AI Agent:**
+> I've retrieved the ESA NEOCC upcoming close approaches list. There are currently 87 objects tracked. The closest approach today is asteroid 2022UU8, passing at 3.34 million km (8.7 lunar distances) with a diameter of approximately 9 meters. Would you like me to check the risk assessment for any of these objects?
+
+---
+
+**👤 You:**
+> "Are there any asteroids currently on the ESA risk list?"
+
+**🤖 AI Agent:**
+> I've fetched the ESA risk list. There are currently several objects with non-zero cumulative impact probability. The highest-rated object has a Palermo Scale value of -2.3 and Torino Scale 0. None currently warrant public concern — all are within normal background risk levels. Would you like the orbital details for any specific object?
+
+---
+
+**👤 You:**
+> "Get me the orbital elements and physical properties of asteroid 2024YR4."
+
+**🤖 AI Agent:**
+> Querying the NEOCC database for 2024YR4... The orbital elements show a semi-major axis of 1.47 AU, eccentricity 0.42, inclination 3.8°. The physical properties indicate an estimated diameter of 40-90 meters with absolute magnitude H=24.7. This object was flagged for follow-up observations. Would you like to see its computed ephemerides for telescope planning?
+
+
 ## Installation & Usage
 
 To install and use the **ESA Near Earth Objects** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **ESA Near Earth Objects** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

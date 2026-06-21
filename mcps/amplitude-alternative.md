@@ -1,12 +1,14 @@
 # Amplitude MCP Server
 
-Track user behavior, analyze product metrics, and manage cohorts directly from your AI agent using Amplitude's powerful analytics suite.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amplitude-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplitude-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplitude-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplitude-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 21
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Track user behavior, analyze product metrics, and manage cohorts directly from your AI agent using Amplitude's powerful analytics suite.
 
 ## Description
 Connect your **Amplitude** analytics account to any AI agent to ingest events, query user profiles, and analyze product performance through natural conversation.
@@ -58,6 +60,33 @@ Send data directly to Amplitude (HTTP V2 API)
 - **upload_cohort**: Create a cohort from a list of IDs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amplitude** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Export raw event data from 2023100100 to 2023100123."
+
+**🤖 AI Agent:**
+> I've initiated the data export for that range. The raw event data is being retrieved from Amplitude's servers now.
+
+---
+
+**👤 You:**
+> "Get the profile and cohort memberships for user ID 'user_123'."
+
+**🤖 AI Agent:**
+> Fetching profile for 'user_123'... This user is part of 3 cohorts: 'Power Users', 'Early Adopters', and 'Beta Testers'. Their last active property was 'premium_plan: true'.
+
+---
+
+**👤 You:**
+> "List all behavioral cohorts in this project."
+
+**🤖 AI Agent:**
+> I found 12 behavioral cohorts. Some notable ones include 'Dormant Users' (ID: 5a2b), 'Weekly Actives' (ID: 9f1c), and 'New Signups' (ID: 3e4d).
+
+
 ## Installation & Usage
 
 To install and use the **Amplitude** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Amplitude** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

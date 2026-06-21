@@ -1,12 +1,14 @@
 # SkootEco MCP Server
 
-Connect your AI agents to SkootEco to track carbon emissions, purchase offsets, plant trees, and generate ESG compliance reports.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/skooteco)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skooteco)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skooteco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skooteco-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 18
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Connect your AI agents to SkootEco to track carbon emissions, purchase offsets, plant trees, and generate ESG compliance reports.
 
 ## Description
 Take control of your corporate sustainability targets by connecting SkootEco to your AI agents. With 18 specialized environmental tools, your AI can programmatically log emissions across all GHG scopes, purchase certified carbon offsets, track reforestation projects, and dynamically generate compliance reports.
@@ -49,6 +51,33 @@ Crucial for ESG managers, sustainability officers, and environmentally conscious
 - **purchase_offset**: Purchase carbon offset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SkootEco** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my Scope 3 supply chain emissions in SkootEco."
+
+**🤖 AI Agent:**
+> I've retrieved your emissions data. Your Scope 3 supply chain emissions for this quarter are currently at 45.2 metric tons of CO2e. This represents a 12% decrease compared to the previous quarter. Would you like a detailed breakdown by vendor?
+
+---
+
+**👤 You:**
+> "Plant 100 trees through SkootEco to offset our Q1 travel emissions."
+
+**🤖 AI Agent:**
+> Success! I've initiated the planting of 100 trees through your SkootEco account. This brings your company's total planted trees to 2,450. You can expect a digital certificate of this impact in your inbox shortly.
+
+---
+
+**👤 You:**
+> "Generate our ESG compliance report from SkootEco for the board meeting."
+
+**🤖 AI Agent:**
+> I've generated your latest ESG compliance report. The document is aligned with CSRD and TCFD frameworks and highlights your recent 15% reduction in overall carbon footprint. Should I email this PDF directly to the board members?
+
+
 ## Installation & Usage
 
 To install and use the **SkootEco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **SkootEco** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

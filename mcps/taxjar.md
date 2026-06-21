@@ -1,12 +1,14 @@
 # TaxJar MCP Server
 
-Connect your AI to TaxJar. Calculate sales tax dynamically, validate active nexus regions, and assess order tax liability natively from the terminal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/taxjar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/taxjar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/taxjar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/taxjar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Connect your AI to TaxJar. Calculate sales tax dynamically, validate active nexus regions, and assess order tax liability natively from the terminal.
 
 ## Description
 Equip your artificial assistant with precise commercial tax intelligence integrating the **TaxJar (Stripe)** MCP module. Eliminate messy dashboard navigation when calculating cross-state liabilities or verifying tax compliance blocks. Whether dealing with complex checkout computations, localized tax estimations by ZIP codes, or deep organizational nexus checks, your LLM now acts dynamically as a regulatory accountant seamlessly within your secure developer terminal workspace.
@@ -48,6 +50,39 @@ Calculates the exact sales tax for a specific order
 Validates a physical address for tax purposes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TaxJar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the effective sales tax rate for ZIP code 94107. Then let me know our registered active nexus regions and if we require collection there."
+
+**🤖 AI Agent:**
+> Interrogating local thresholds ('get_tax_rates')...
+The estimated sales tax rate for 94107 (San Francisco, CA) is 8.625%.
+Checking our configured legal scopes via 'list_nexus_regions'...
+Active Nexus registered states: CA, TX, NY. Since California is registered, tax must be actively collected for this transaction.
+
+---
+
+**👤 You:**
+> "Calculate the sales tax for a $50 apparel order shipping to New York City (Zip 10001)."
+
+**🤖 AI Agent:**
+> Querying TaxJar rates ('calculate_tax')...
+Based on the product category 'apparel' and destination Zip 10001 (NY): 
+The total tax liability is $4.44 (8.875% combined state, county, and city rate). The total order amount is $54.44.
+
+---
+
+**👤 You:**
+> "Check if our company has nexus in California."
+
+**🤖 AI Agent:**
+> Interrogating nexus compliance ('nexus_regions')...
+Yes, your account reflects an active economic nexus in California (CA). Your threshold was crossed on Jan 14th, meaning you must collect and remit sales tax for transactions in CA.
+
+
 ## Installation & Usage
 
 To install and use the **TaxJar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +91,11 @@ To install and use the **TaxJar** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

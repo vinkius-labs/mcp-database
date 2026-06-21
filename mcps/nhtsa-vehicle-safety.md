@@ -1,12 +1,14 @@
 # NHTSA Vehicle Safety MCP Server
 
-Decode VINs, search recalls and complaints, check safety ratings and find car seat inspection stations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nhtsa-vehicle-safety)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nhtsa-vehicle-safety)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nhtsa-vehicle-safety-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nhtsa-vehicle-safety-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Decode VINs, search recalls and complaints, check safety ratings and find car seat inspection stations.
 
 ## Description
 Connect to **NHTSA** (National Highway Traffic Safety Administration) and access US vehicle safety data through natural conversation — no API key needed.
@@ -74,6 +76,33 @@ Get NHTSA safety ratings for vehicles
 Get vehicle types for a specific manufacturer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NHTSA Vehicle Safety** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Decode VIN 1HGBH41JXMN109186."
+
+**🤖 AI Agent:**
+> 2021 Honda Accord Sedan. 4-door, 1.5L Turbo, FWD, Automatic. Made in Marysville, Ohio. Safety features: ABS, ESC, Tire Pressure Monitor, Front/Side Airbags.
+
+---
+
+**👤 You:**
+> "Are there any recalls for a 2023 Ford F-150?"
+
+**🤖 AI Agent:**
+> Found 3 recalls for 2023 Ford F-150: 1) Rear Axle Hub Bolt (Campaign 23V-456, 2023-07-15) — 2) Windshield Wiper Motor (Campaign 23V-789, 2023-09-20) — 3) Backup Camera Display (Campaign 24V-012, 2024-01-10).
+
+---
+
+**👤 You:**
+> "What's the safety rating for a 2024 Toyota Camry?"
+
+**🤖 AI Agent:**
+> 2024 Toyota Camry: Overall 5/5 ⭐. Frontal Crash: 5/5. Side Crash: 5/5. Rollover: 4/5. Excellent safety ratings across all categories.
+
+
 ## Installation & Usage
 
 To install and use the **NHTSA Vehicle Safety** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **NHTSA Vehicle Safety** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

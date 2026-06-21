@@ -1,12 +1,14 @@
 # QRCodeChimp MCP Server
 
-Generate branded QR codes with tracking, analytics, and dynamic content that update without reprinting for any use case.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qrcodechimp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qrcodechimp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qrcodechimp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qrcodechimp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate branded QR codes with tracking, analytics, and dynamic content that update without reprinting for any use case.
 
 ## Description
 Connect your **QRCodeChimp** account to any AI agent and take full control of your digital networking and QR orchestration through natural conversation. QRCodeChimp provides a professional-grade platform for managing Digital Business Cards (DBC) and Dynamic URL QR codes in bulk, and this integration allows you to retrieve record metadata, track analytics, and manage campaigns directly from your chat interface.
@@ -50,6 +52,33 @@ Create a new QR code
 - **update_qrcode**: Update an existing QR code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QRCodeChimp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the digital business card with slug 'john-doe-dbc'."
+
+**🤖 AI Agent:**
+> I've retrieved the card details for 'John Doe'. It is part of the 'Corporate Team' campaign and has received 150 scans this month. Would you like to see the full analytics report?
+
+---
+
+**👤 You:**
+> "Generate a dynamic QR code for our product catalog landing page with our brand colors and logo."
+
+**🤖 AI Agent:**
+> Dynamic QR code created (ID: qr_8234). Target URL: catalog.example.com/products. Design: Custom with brand blue (#1A5FE1) foreground, white background, company logo embedded center. Format: SVG (vector, print-ready). Scan tracking: enabled. Short URL: qrco.de/prod2025. The dynamic URL can be changed anytime without reprinting. Current scan count: 0 (just created). Download available in SVG, PNG (300dpi, 1000x1000), and PDF formats.
+
+---
+
+**👤 You:**
+> "Show me scan analytics for all QR codes from the Spring Marketing campaign."
+
+**🤖 AI Agent:**
+> Spring Marketing campaign: 8 QR codes, 4,567 total scans this month. Top performer: "Store Window Display" with 1,890 scans (41%). "Product Packaging" at 1,234 scans. "Flyer Insert" at 678 scans. Geographic breakdown: US 62%, UK 18%, Canada 12%, Other 8%. Peak scan time: weekdays 11 AM-2 PM. Mobile OS: iOS 58%, Android 42%. Unique scanners: 3,421 (75% unique rate). Conversion to website: 67%.
+
+
 ## Installation & Usage
 
 To install and use the **QRCodeChimp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **QRCodeChimp** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

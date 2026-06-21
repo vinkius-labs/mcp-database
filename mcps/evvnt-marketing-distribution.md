@@ -1,12 +1,14 @@
 # Evvnt Marketing & Distribution MCP Server
 
-Equip your AI agent to manage events, track syndication reports, and monitor distribution via the Evvnt API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/evvnt-marketing-distribution)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evvnt-marketing-distribution)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evvnt-marketing-distribution-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evvnt-marketing-distribution-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage events, track syndication reports, and monitor distribution via the Evvnt API.
 
 ## Description
 Integrate **Evvnt**, the leading event marketing and distribution platform, directly into your AI workflow. Manage your event listings and categories, track real-time syndication reports and site reach, monitor saved venues and partner networks, and oversee your event promotion using natural language.
@@ -44,6 +46,33 @@ Integrate **Evvnt**, the leading event marketing and distribution platform, dire
 - **list_saved_venues**: List all saved venues and locations in your account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Evvnt Marketing & Distribution** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active event marketing campaigns."
+
+**🤖 AI Agent:**
+> I've found 5 active campaigns, including 'Summer Jazz Festival' and 'Tech Innovation Workshop'. Both are currently 'Published' and distributed to the network. Would you like to see the distribution report for the Jazz Festival?
+
+---
+
+**👤 You:**
+> "Show me the distribution report for event ID '12345'."
+
+**🤖 AI Agent:**
+> For event ID '12345', I've retrieved the report: 450 total sites reached, 1,230 clicks generated, and active syndication on top partner sites. Should I pull the geographic reach summary?
+
+---
+
+**👤 You:**
+> "Check saved venues in our account."
+
+**🤖 AI Agent:**
+> You have 12 saved venues, including 'The Grand Theater', 'City Convention Center', and 'Downtown Gallery'. All profiles are active. Would you like the contact details for The Grand Theater?
+
+
 ## Installation & Usage
 
 To install and use the **Evvnt Marketing & Distribution** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Evvnt Marketing & Distribution** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

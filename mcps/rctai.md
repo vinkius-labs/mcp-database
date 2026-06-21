@@ -1,12 +1,14 @@
 # rct.ai MCP Server
 
-Create AI-powered NPCs and metaverse scenarios — manage autonomous virtual beings and narrative logic directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rctai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rctai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rctai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rctai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-apis
-**Tools Count:** 10
+
+**Category:** [developer-apis](../categories/developer-apis.md)
+
+Create AI-powered NPCs and metaverse scenarios — manage autonomous virtual beings and narrative logic directly from any AI agent.
 
 ## Description
 Connect your AI agents to **rct.ai**, the advanced narrative engine for the gaming and metaverse industry. This MCP provides 10 tools to orchestrate autonomous virtual beings using the **Morpheus Cloud** and the **Chaos Box** algorithm.
@@ -46,6 +48,33 @@ Connect your AI agents to **rct.ai**, the advanced narrative engine for the gami
 - **update_character**: Update an existing AI character configuration
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **rct.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send interaction message 'Who are you?' to NPC character 'char_123'."
+
+**🤖 AI Agent:**
+> I'm communicating with the Morpheus engine... NPC 'Guardian' (ID: char_123) responded: 'I am the keeper of the ancient scrolls. What knowledge do you seek?'. Current session status is active.
+
+---
+
+**👤 You:**
+> "List all AI characters managed in my account."
+
+**🤖 AI Agent:**
+> Retrieving your characters... I found 3 NPCs: 1. Merchant (ID: c1), 2. Guard (ID: c2), 3. Oracle (ID: c3). All are currently 'online' in the Morpheus Cloud.
+
+---
+
+**👤 You:**
+> "Get the current Chaos Box configuration."
+
+**🤖 AI Agent:**
+> Fetching Chaos Box parameters... Current logic is set to 'Stochastic-Balanced' with a randomness factor of 0.4. Would you like to adjust these values?
+
+
 ## Installation & Usage
 
 To install and use the **rct.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **rct.ai** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

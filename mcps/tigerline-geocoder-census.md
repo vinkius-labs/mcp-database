@@ -1,12 +1,14 @@
 # TIGER/Line Geocoder (Census) MCP Server
 
-Access official US Census Bureau geocoding services to convert addresses into coordinates and detailed census geography data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tigerline-geocoder-census)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tigerline-geocoder-census)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tigerline-geocoder-census-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tigerline-geocoder-census-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access official US Census Bureau geocoding services to convert addresses into coordinates and detailed census geography data.
 
 ## Description
 Connect to the **US Census Bureau TIGER/Line Geocoder** to transform location data into actionable geographic insights directly within your AI agent.
@@ -52,6 +54,33 @@ Lookup census geographies for coordinates
 - **list_vintages**: List available Census Geocoder vintages for a benchmark
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TIGER/Line Geocoder (Census)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Geocode the address '1600 Pennsylvania Ave NW, Washington, DC 20500' using the Public_AR_Current benchmark."
+
+**🤖 AI Agent:**
+> I've geocoded the address. The coordinates are Longitude: -77.03636, Latitude: 38.89715. This was matched using the Public_AR_Current benchmark.
+
+---
+
+**👤 You:**
+> "What census tract and block are located at coordinates -76.9274, 38.8459?"
+
+**🤖 AI Agent:**
+> Checking census geographies... Those coordinates correspond to Census Tract 8007, Block 1004 in Prince George's County, Maryland (using the Current vintage).
+
+---
+
+**👤 You:**
+> "List all available geocoding benchmarks."
+
+**🤖 AI Agent:**
+> I've retrieved the available benchmarks. You can use 'Public_AR_Current' (ID: 4), 'Public_AR_Census2020' (ID: 2020), or 'Public_AR_Census2010' (ID: 10) for your queries.
+
+
 ## Installation & Usage
 
 To install and use the **TIGER/Line Geocoder (Census)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **TIGER/Line Geocoder (Census)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

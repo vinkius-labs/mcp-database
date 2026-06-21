@@ -1,12 +1,14 @@
 # DigitalOcean MCP Server
 
-Deploy and manage cloud infrastructure with simple virtual servers, managed databases, and Kubernetes clusters built for developers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/digitalocean-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digitalocean-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digitalocean-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digitalocean-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 9
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Deploy and manage cloud infrastructure with simple virtual servers, managed databases, and Kubernetes clusters built for developers.
 
 ## Description
 Connect your **DigitalOcean** cloud account to any AI agent and take full control of your infrastructure management and monitoring workflows through natural conversation.
@@ -62,6 +64,33 @@ List snapshots and disk images
 List block storage volumes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DigitalOcean** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active Droplets on DigitalOcean."
+
+**🤖 AI Agent:**
+> I've retrieved your virtual machines. You have 3 active Droplets: 'Web-Server-01' (IP: 192.168.1.1), 'DB-Primary', and 'Staging'. Which one should we inspect for more details?
+
+---
+
+**👤 You:**
+> "Show me my domain names and DNS configurations."
+
+**🤖 AI Agent:**
+> Accessing DNS... I've found 2 domains: 'vinkius.com' and 'app-test.io'. Both point to DigitalOcean name servers. Would you like to see the individual A or CNAME records for 'vinkius.com'?
+
+---
+
+**👤 You:**
+> "What is the status of my database clusters?"
+
+**🤖 AI Agent:**
+> Scanning databases... Your primary PostgreSQL cluster (ID: 456) is 'Online' and healthy. Your Redis cache is also 'Online'. Shall I retrieve the connection endpoints for you?
+
+
 ## Installation & Usage
 
 To install and use the **DigitalOcean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **DigitalOcean** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

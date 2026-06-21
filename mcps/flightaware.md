@@ -1,12 +1,14 @@
 # FlightAware MCP Server
 
-Track global flight status via FlightAware AeroAPI — search flights, monitor airport arrivals and departures, check weather, and access historical flight data from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flightaware)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightaware)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flightaware-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flightaware-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Track global flight status via FlightAware AeroAPI — search flights, monitor airport arrivals and departures, check weather, and access historical flight data from any AI agent.
 
 ## Description
 Connect your **FlightAware AeroAPI** aviation data platform to any AI agent and take full control of global flight tracking, airport operations monitoring, and historical flight analysis through natural conversation.
@@ -79,6 +81,33 @@ Get historical flight data and track for a specific flight
 List all flights operated by a specific airline or operator
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FlightAware** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all active United Airlines flights from Newark (KEWR) to San Francisco (KSFO)."
+
+**🤖 AI Agent:**
+> Searching FlightAware... I found 5 active United flights on the KEWR-KSFO route today: UA123 (Boeing 737-900, departed KEWR 08:15 EST, en-route at FL370, ETA KSFO 11:42 PST), UA456 (Boeing 757-200, departed 10:30 EST, en-route at FL350, ETA 14:05 PST), UA789 (Airbus A320, departed 13:45 EST, currently climbing through FL280, ETA 17:18 PST), UA234 (Boeing 737-MAX 9, scheduled departure 16:20 EST), and UA567 (Boeing 787-9, scheduled 19:00 EST). Would you like detailed gate and terminal information for any of these flights?
+
+---
+
+**👤 You:**
+> "What is the current weather at Chicago O'Hare (KORD) and are flights being delayed due to conditions?"
+
+**🤖 AI Agent:**
+> Checking KORD weather and flight status... Current METAR observation at Chicago O'Hare: Wind 270 degrees at 18 knots gusting to 28, visibility 6 statute miles in light snow, broken clouds at 2500 feet, overcast at 4000 feet, temperature minus 4 Celsius, dewpoint minus 8, altimeter 29.87 inches Hg. Reviewing arrivals and departures: I'm seeing average delays of 25-40 minutes for inbound flights due to low ceiling and gusty crosswind conditions on runways 10L/28R. Several flights have been diverted to alternate airports (MDW, RFD). Outbound flights are experiencing similar delays with ground stops imposed periodically. Would you like me to monitor specific flights for you?
+
+---
+
+**👤 You:**
+> "Show me the complete flight history and track points for British Airways flight BAW117 from London to New York yesterday."
+
+**🤖 AI Agent:**
+> Retrieving historical flight data for BAW117... Flight BAW117 (Boeing 777-300ER, registration G-STBF) departed London Heathrow (EGLL) at 2025-04-08 10:12 UTC (scheduled 10:05 UTC, 7 minutes early) from Terminal 5 Gate A12. The flight tracked westbound across the North Atlantic via the NATS track system, filing route: KONAN L607 RESNO 52N020W 52N030W 51N040W 50N050W 49N060W J547 CAM J753 MERIT. Cruising altitude FL380 with average ground speed 485 knots. Arrived New York JFK (KJFK) at 2025-04-08 13:28 UTC (scheduled 13:45 UTC, 17 minutes early) at Terminal 7 Gate 1. Total flight time: 7 hours 16 minutes. Complete track log contains 432 position points. Would you like me to generate a route map or analyze performance metrics for this crossing?
+
+
 ## Installation & Usage
 
 To install and use the **FlightAware** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **FlightAware** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

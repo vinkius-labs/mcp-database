@@ -1,12 +1,14 @@
 # RubyGems MCP Server
 
-Manage Ruby packages directly from your AI agent — search for gems, inspect versions, and track download statistics on RubyGems.org.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rubygems)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rubygems)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rubygems-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rubygems-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 30
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Ruby packages directly from your AI agent — search for gems, inspect versions, and track download statistics on RubyGems.org.
 
 ## Description
 Connect to the **RubyGems** ecosystem to streamline your Ruby development workflow. This server allows your AI agent to interact with the world's largest Ruby package registry through natural conversation.
@@ -77,6 +79,33 @@ Search for active gems
 Remove a gem version from the index
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RubyGems** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Ruby gems related to 'redis' and show me the top results."
+
+**🤖 AI Agent:**
+> I've searched RubyGems.org for 'redis'. The most relevant gems are 'redis' (the official client), 'redis-namespace', and 'redis-objects'. Would you like the full metadata for the main 'redis' gem?
+
+---
+
+**👤 You:**
+> "What is the latest version of the 'rails' gem and when was it released?"
+
+**🤖 AI Agent:**
+> Using `get_latest_gem_version`, I found that the latest version of 'rails' is 7.1.3.2. It was released on February 21, 2024. Do you want to see the download statistics for this version?
+
+---
+
+**👤 You:**
+> "Show me the download count for 'sidekiq' version 7.2.0."
+
+**🤖 AI Agent:**
+> I've retrieved the stats using `get_gem_downloads`. For 'sidekiq' version 7.2.0, there have been approximately 1.2 million downloads. The total downloads for all versions of Sidekiq exceed 150 million.
+
+
 ## Installation & Usage
 
 To install and use the **RubyGems** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **RubyGems** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # EBI InterPro MCP Server
 
-Classify protein sequences into families, predict functional domains, and explore evolutionary relationships across species.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-interpro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-interpro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebi-interpro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebi-interpro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 16
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Classify protein sequences into families, predict functional domains, and explore evolutionary relationships across species.
 
 ## Description
 Connect to the **InterPro API** and access the world's most comprehensive resource for protein family, domain, and functional site classification.
@@ -88,6 +90,33 @@ Search proteins in InterPro by name or keyword
 Search taxonomy by organism name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EBI InterPro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What domains and families does the human TP53 protein belong to?"
+
+**🤖 AI Agent:**
+> I've retrieved all InterPro annotations for TP53 (P04637). The protein is classified into the p53 tumor suppressor family (IPR002117), contains a p53 DNA-binding domain (IPR011615), a p53 tetramerization domain (IPR010991), and a transactivation domain. These domains are conserved across vertebrates and define the functional architecture of p53 as a transcription factor and tumor suppressor.
+
+---
+
+**👤 You:**
+> "Show me all member databases in InterPro and how many entries each has."
+
+**🤖 AI Agent:**
+> I've retrieved the InterPro database overview. The platform integrates 13+ member databases: Pfam leads with over 20,000 families and domains, followed by PANTHER, Gene3D, and CDD with thousands of entries each. SMART, Prosite, HAMAP, PRINTS, PIRSF, SFLD, NCBIfam, and AntiFam complete the collection. InterPro itself has over 46,000 integrated entries that unify signatures across these databases.
+
+---
+
+**👤 You:**
+> "Which organisms have the kinase domain PF00069?"
+
+**🤖 AI Agent:**
+> I found the Pfam entry PF00069 (protein kinase domain) and retrieved its InterPro integration (IPR000719). The taxonomic distribution shows this domain is universally conserved across all kingdoms of life — from bacteria and archaea to plants, fungi, and animals. The human genome alone contains hundreds of kinase domain-containing proteins, making this one of the most expanded protein families in eukaryotic evolution.
+
+
 ## Installation & Usage
 
 To install and use the **EBI InterPro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -96,4 +125,11 @@ To install and use the **EBI InterPro** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

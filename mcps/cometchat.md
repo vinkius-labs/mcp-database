@@ -1,12 +1,14 @@
 # CometChat MCP Server
 
-Enable your AI agent to manage chat users, groups, and messages via the CometChat API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cometchat)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cometchat)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cometchat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cometchat-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enable your AI agent to manage chat users, groups, and messages via the CometChat API.
 
 ## Description
 Connect your AI assistant to **CometChat**, the communication platform providing chat, voice, and video capabilities for applications.
@@ -43,6 +45,43 @@ Connect your AI assistant to **CometChat**, the communication platform providing
 - **send_message**: Send a text message to a user or group
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CometChat** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the first 20 users in CometChat."
+
+**🤖 AI Agent:**
+> Here are the first 20 users:
+1. 'alice' — Alice Johnson (online)
+2. 'bob' — Bob Smith (offline, last seen 2h ago)
+3. 'carlos' — Carlos López (online)
+...
+Would you like to check message history for any user?
+
+---
+
+**👤 You:**
+> "Create a public group named 'Marketing Team' with GUID 'marketing-team'."
+
+**🤖 AI Agent:**
+> Group created successfully!
+- Name: Marketing Team
+- GUID: marketing-team
+- Type: Public
+- Members: 0
+Would you like to add members to this group?
+
+---
+
+**👤 You:**
+> "Retrieve the conversation history between users 'alice' and 'bob'."
+
+**🤖 AI Agent:**
+> Fetched 50 messages between Alice and Bob. The latest message from Alice is: 'I will send the reports tomorrow.' Sent at 10:45 AM today.
+
+
 ## Installation & Usage
 
 To install and use the **CometChat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +90,11 @@ To install and use the **CometChat** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

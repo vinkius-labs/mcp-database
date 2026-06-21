@@ -1,12 +1,14 @@
 # MusicBrainz MCP Server
 
-Explore the open music encyclopedia — search artists, albums, tracks, labels and musical works.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/musicbrainz)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/musicbrainz)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/musicbrainz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/musicbrainz-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 15
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Explore the open music encyclopedia — search artists, albums, tracks, labels and musical works.
 
 ## Description
 Connect to **MusicBrainz**, the world's largest open music database, and explore music metadata through natural conversation — no API key needed.
@@ -82,6 +84,33 @@ Search for album releases
 Search for musical works (compositions)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MusicBrainz** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the band Radiohead."
+
+**🤖 AI Agent:**
+> Found Radiohead (MBID: a74b1b7f-71a5-4011-9441-d0b5e4122711). Type: Group. Country: United Kingdom. Active: 1985-present. Genres: Alternative rock, electronic, experimental.
+
+---
+
+**👤 You:**
+> "Show me all albums by Miles Davis."
+
+**🤖 AI Agent:**
+> Found 200+ releases by Miles Davis. Notable albums: 'Kind of Blue' (1959), 'Bitches Brew' (1970), 'Sketches of Spain' (1960), 'Miles Ahead' (1957), 'Birth of the Cool' (1957). Includes official releases, compilations and reissues.
+
+---
+
+**👤 You:**
+> "Search for the recording of 'Bohemian Rhapsody' by Queen."
+
+**🤖 AI Agent:**
+> Found 'Bohemian Rhapsody' by Queen. Duration: 5:55. ISRC: GBAHK7500018. First released on 'A Night at the Opera' (1975). Multiple versions exist including single edit and remastered versions.
+
+
 ## Installation & Usage
 
 To install and use the **MusicBrainz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -90,4 +119,11 @@ To install and use the **MusicBrainz** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

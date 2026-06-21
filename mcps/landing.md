@@ -1,12 +1,14 @@
 # Landing MCP Server
 
-Create high-converting landing pages in minutes with AI-powered templates and drag-and-drop editing built for marketers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/landing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/landing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/landing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/landing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 7
+
+**Category:** [productivity](../categories/productivity.md)
+
+Create high-converting landing pages in minutes with AI-powered templates and drag-and-drop editing built for marketers.
 
 ## Description
 Connect your **Landing** account to any AI agent and manage landing pages through natural conversation.
@@ -43,6 +45,33 @@ Create a new webhook
 - **list_landing_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Landing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all landing pages with conversion rates and today's leads."
+
+**🤖 AI Agent:**
+> Pages: 6 active. 'SaaS Free Trial' (4.2K views, 8.5% conversion ⭐). 'Webinar Registration' (2.1K, 12.3%). 'Product Demo' (1.8K, 6.1%). 'E-book Download' (3.4K, 15.2% ⭐). 'Pricing Page' (5.1K, 3.8%). 'Contact Us' (890, 22.4%). Today's leads: 18. Top: 'E-book' (7), 'Webinar' (5), 'SaaS' (4).
+
+---
+
+**👤 You:**
+> "Show leads captured from the SaaS Free Trial page this week."
+
+**🤖 AI Agent:**
+> SaaS Free Trial leads (7 days): 32. By source: Google Ads (14, 44%), Organic (8, 25%), LinkedIn (6, 19%), Direct (4, 12%). Top: 1) john@acmecorp.com — CTO, 50+ employees. 2) sarah@techco.com — VP Eng, 200+. 3) mike@startup.io — Founder, 10-50. Conversion rate: 8.5%. Cost per lead (paid): $12.40.
+
+---
+
+**👤 You:**
+> "Browse templates and show page analytics for the Webinar page."
+
+**🤖 AI Agent:**
+> Templates: 15 available. Categories: SaaS (4), E-commerce (3), Education (2), Agency (3), Event (3). Webinar analytics: Views: 2.1K (7 days). Unique visitors: 1.8K. Conversion: 12.3% (258 registrations). Bounce rate: 38%. Avg time on page: 1.8 min. Traffic: Organic 40%, Paid 35%, Social 25%.
+
+
 ## Installation & Usage
 
 To install and use the **Landing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Landing** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

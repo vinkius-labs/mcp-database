@@ -1,12 +1,14 @@
 # Counterfactual-Variant Prover MCP Server
 
-AI models recite memorized answers to classic puzzles, failing when variables or rules are changed. This tool forces cognitive decontamination: isolate variables, compare prompt rules against standard puzzle templates, execute first-principles logic step-by-step, and prove decontaminated output.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/counterfactual-variant-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/counterfactual-variant-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/counterfactual-variant-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/counterfactual-variant-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI models recite memorized answers to classic puzzles, failing when variables or rules are changed. This tool forces cognitive decontamination: isolate variables, compare prompt rules against standard puzzle templates, execute first-principles logic step-by-step, and prove decontaminated output.
 
 ## Description
 AI models exhibit high error rates when facing variations of classic logic puzzles, math problems, or public benchmarks. Because these puzzles (like Cheryl's Birthday, Monty Hall, or River Crossing) are heavily represented in training datasets, models fall back on pattern completion rather than active reasoning. They recite the standard solution even when the prompt contains modified parameters or contradictory rules. This tool interrupts memory-based retrieval by introducing structured cognitive constraints.
@@ -34,6 +36,33 @@ Counterfactual-Variant Prover uses 5 Decision Pivots that force the agent to val
 Structured reflection tool to prevent recitation bias on logic puzzles with modified rules. Forces the agent to isolate all input variables, map rule discrepancies against the classic version, trace calculations from first principles using only modified values, and verify the output is decontaminated from memorized templates. Catches Data Recitation (reproducing the classic answer despite modified variables — the Monty Hall answer applied to a 4-door variant, the trolley problem answer applied to different constraints), Variable Contamination (using memorized values from the classic puzzle instead of the modified ones — "the answer is 42" when the modified inputs produce 37), Template Lock (applying the classic solution structure when modified rules require a different approach — using Bayesian probability when the modified rules eliminate conditional dependence), Implicit Classic Assumptions (assuming constraints from the classic version that the modified puzzle removes — "the host always opens a losing door" when the modified version says otherwise), and Partial Decontamination (correctly solving 3 of 4 steps but reverting to the classic answer for the final step — contamination often hides in the conclusion). Call once per logic puzzle that resembles a classic problem
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Counterfactual-Variant Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "In the Monty Hall problem, if the host opens a door and reveals the car (instead of a goat), should you switch to the other closed door?"
+
+**🤖 AI Agent:**
+> Verdict: DATA_RECITATION. Classic template detected but prompt rules ignored. You recited the standard switch strategy (2/3 probability). Under the modified rule, the host revealed the car, meaning the game is over — the car is no longer behind any closed door. The probability of winning by switching is 0%.
+
+---
+
+**👤 You:**
+> "A farmer must cross a river with a wolf, a goat, and a cabbage. The boat can carry the farmer and up to TWO items. Can they cross without any item being eaten?"
+
+**🤖 AI Agent:**
+> Verdict: CORRUPTED_VARIABLE. Calculation failed or classic steps leaked. You executed the 7-step sequence for a 1-item capacity boat. With a boat capacity of 2 items, the farmer can carry the wolf and the cabbage in the first trip, leave them on the other side (they do not eat each other), and then return to collect the goat. Total trips: 3, not 7.
+
+---
+
+**👤 You:**
+> "Cheryl's Birthday modified: Albert and Bernard are given a list of 10 possible dates: May 15, May 16, May 19, June 17, June 18, July 14, July 16, August 14, August 15, August 17. Albert knows the month, Bernard knows the day. Albert says: 'I don't know when, but I know Bernard doesn't know either.' Bernard says: 'Now I know.' Albert says: 'Now I know too.' What is Cheryl's Birthday?"
+
+**🤖 AI Agent:**
+> Verdict: LOGIC_PROVEN. All steps validated. (1) Classic template Cheryl's Birthday recognized. (2) Variables isolated: month and day sets. (3) Discrepancies mapped: new date list. (4) First-principles calculation: Albert's first statement rules out May and June because they contain unique days (19 and 18). Left with July 14, 16 and August 14, 15, 17. For Bernard to now know, the day cannot be 14 (appears twice). Left with July 16 and August 15, 17. For Albert to now know, the month must be July (has only 16 left, whereas August has two dates: 15 and 17). Correct answer: July 16.
+
+
 ## Installation & Usage
 
 To install and use the **Counterfactual-Variant Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -42,4 +71,11 @@ To install and use the **Counterfactual-Variant Prover** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Zenserp MCP Server
 
-Scrape live search engine results (SERP) from Google, Bing, Yandex, and DuckDuckGo using Zenserp's high-speed API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zenserp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenserp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenserp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenserp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Scrape live search engine results (SERP) from Google, Bing, Yandex, and DuckDuckGo using Zenserp's high-speed API.
 
 ## Description
 Connect your **Zenserp** account to any AI agent and harness the power of real-time search intelligence through natural conversation.
@@ -54,6 +56,33 @@ Retrieves organic search results from Google
 - **search_youtube**: Retrieves search results directly from the YouTube platform
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zenserp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search Google for 'best CRM software for small business' and show me the top 5 organic results."
+
+**🤖 AI Agent:**
+> I found the top 5 organic results for your query. 1. HubSpot CRM (https://...), 2. Zoho CRM (https://...), 3. Salesforce Essentials (https://...). Would you like me to pull the snippets for any of these?
+
+---
+
+**👤 You:**
+> "Find restaurants in 'Austin, TX' using Google Maps and show their ratings."
+
+**🤖 AI Agent:**
+> I found several highly-rated restaurants in Austin: 1. Franklin Barbecue (Rating: 4.8, 15k reviews), 2. Uchi (Rating: 4.7, 3k reviews), and 3. Terry Black's BBQ (Rating: 4.8, 12k reviews). Would you like the addresses for any of these?
+
+---
+
+**👤 You:**
+> "What are the current news headlines for 'generative AI'?"
+
+**🤖 AI Agent:**
+> Retrieving news for 'generative AI'... 1. 'New advancements in LLM reasoning' (Source: TechCrunch, 2h ago), 2. 'AI ethics board releases new guidelines' (Source: Reuters, 5h ago). Would you like to read the snippets for these articles?
+
+
 ## Installation & Usage
 
 To install and use the **Zenserp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Zenserp** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Netrows MCP Server
 
-Track global flights via Netrows Aviation API — search flights, monitor aircraft, check airport data, and access airline schedules from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/netrows)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netrows)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netrows-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netrows-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track global flights via Netrows Aviation API — search flights, monitor aircraft, check airport data, and access airline schedules from any AI agent.
 
 ## Description
 Connect your **Netrows Aviation API** flight tracking platform to any AI agent and take full control of real-time flight monitoring, aircraft intelligence, airport operations, and airline schedule analysis through natural conversation.
@@ -81,6 +83,33 @@ Search for active and recent flights by flight number, callsign, or route
 Track real-time position and status of a specific flight
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Netrows** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all active United Airlines flights from Newark to San Francisco."
+
+**🤖 AI Agent:**
+> Searching Netrows Aviation API... I found 5 active United flights on the EWR-SFO route today: UA123 (Boeing 737-900, departed EWR 08:15 EST, en-route at FL370, ETA SFO 11:42 PST), UA456 (Boeing 757-200, departed 10:30 EST, en-route at FL350, ETA 14:05 PST), UA789 (Airbus A320, departed 13:45 EST, currently climbing through FL280, ETA 17:18 PST), UA234 (Boeing 737-MAX 9, scheduled departure 16:20 EST), and UA567 (Boeing 787-9, scheduled 19:00 EST). Would you like detailed tracking data for any of these flights?
+
+---
+
+**👤 You:**
+> "Show me all airports that serve the city of London and their current flight activity."
+
+**🤖 AI Agent:**
+> Searching London airports... I found 6 airports serving the London metropolitan area: London Heathrow (LHR/EGLL) — 412 flights today (268 arrivals, 144 departures), London Gatwick (LGW/EGKK) — 287 flights (178 arrivals, 109 departures), London Stansted (STN/EGSS) — 195 flights (121 arrivals, 74 departures), London Luton (LTN/EGGW) — 143 flights (89 arrivals, 54 departures), London City (LCY/EGLC) — 98 flights (61 arrivals, 37 departures), and London Southend (SEN/EGMC) — 34 flights (21 arrivals, 13 departures). Total: 1,169 flights across all London airports today. Would you like detailed flight lists for any specific airport?
+
+---
+
+**👤 You:**
+> "Tell me about aircraft N12345 — who owns it, what type is it, and what flights has it been operating?"
+
+**🤖 AI Agent:**
+> Looking up aircraft N12345... This is a Boeing 737-800 (registration N12345) registered in the United States, operated by United Airlines. Built in 2018 (6 years old), equipped with 2 CFM56-7B jet engines. Aircraft category: Commercial Airline. Current status: Active. Recent flight activity shows this aircraft has been primarily operating United domestic routes including EWR-LAX, SFO-IAH, and ORD-DEN. Would you like me to track its current flight or show its complete recent flight history?
+
+
 ## Installation & Usage
 
 To install and use the **Netrows** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Netrows** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

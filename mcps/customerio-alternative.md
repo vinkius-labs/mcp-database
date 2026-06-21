@@ -1,12 +1,14 @@
 # Customer.io MCP Server
 
-Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/customerio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customerio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/customerio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/customerio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product.
 
 ## Description
 Connect your **Customer.io** account to any AI agent and take full control of your automated lifecycle marketing and customer engagement workflows through natural conversation.
@@ -54,6 +56,33 @@ List 1-to-1 messages
 - **dispatch_broadcast**: Trigger manual broadcast
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Customer.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns in Customer.io."
+
+**🤖 AI Agent:**
+> I've retrieved your active campaigns. You currently have 3 automated journeys running, including 'Welcome Sequence' and 'Re-engagement Flow'. Would you like the performance metrics for any of these?
+
+---
+
+**👤 You:**
+> "Show me the audience segments and their member counts."
+
+**🤖 AI Agent:**
+> Accessing segments... Your 'Premium Users' segment has 1,240 members, and 'Trial Expired' has 450. I can provide the detailed profile attributes for specific members if needed.
+
+---
+
+**👤 You:**
+> "Send a transactional email to 'jane@example.com' (ID: 'trans_123')."
+
+**🤖 AI Agent:**
+> Message dispatched! I've successfully triggered the transactional email 'trans_123' for Jane Doe. The delivery is now being tracked in your performance logs.
+
+
 ## Installation & Usage
 
 To install and use the **Customer.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Customer.io** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

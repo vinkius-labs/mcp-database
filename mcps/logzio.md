@@ -1,12 +1,14 @@
 # Logz.io MCP Server
 
-Query logs, manage alerts, and monitor triggered events in Logz.io directly from your AI agent using Elasticsearch DSL.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/logzio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logzio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/logzio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/logzio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** devops-cicd
-**Tools Count:** 31
+
+**Category:** [devops-cicd](../categories/devops-cicd.md)
+
+Query logs, manage alerts, and monitor triggered events in Logz.io directly from your AI agent using Elasticsearch DSL.
 
 ## Description
 Connect your **Logz.io** observability platform to any AI agent to streamline your DevOps and security workflows. This server allows you to interact with your logs and alerts through natural language.
@@ -73,6 +75,33 @@ Search account data using Elasticsearch Search API DSL
 - **update_user**: Update a user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Logz.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for logs with level 'ERROR' in the last 15 minutes using search_logs."
+
+**🤖 AI Agent:**
+> I've executed the search. I found 12 error logs. Most of them are related to 'Connection Timeout' in the production cluster. Would you like to see the full details of these entries?
+
+---
+
+**👤 You:**
+> "List all configured alerts and tell me which ones are currently disabled."
+
+**🤖 AI Agent:**
+> Fetching your alerts... You have 8 alerts configured. Currently, 'High Latency DB' and 'Disk Space Warning' are disabled. The other 6 are active.
+
+---
+
+**👤 You:**
+> "Show me the most recent triggered alerts with 'High' severity."
+
+**🤖 AI Agent:**
+> I found 3 triggered alerts with High severity: 'API 5xx Spike', 'Unauthorized Access Attempt', and 'Memory Usage Critical'. All were triggered within the last hour.
+
+
 ## Installation & Usage
 
 To install and use the **Logz.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **Logz.io** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

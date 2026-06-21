@@ -1,12 +1,14 @@
 # Text In Church MCP Server
 
-Keep your congregation engaged with church-specific texting, email, and communication tools that grow attendance and giving.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/text-in-church)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/text-in-church)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/text-in-church-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/text-in-church-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Keep your congregation engaged with church-specific texting, email, and communication tools that grow attendance and giving.
 
 ## Description
 Connect your **Text In Church** account to any AI agent and simplify how you manage your congregation directory, volunteer groups, and community outreach through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Text In Church** account to any AI agent and simplify how you man
 - **send_church_sms**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Text In Church** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active groups in my church account."
+
+**🤖 AI Agent:**
+> I've retrieved your groups. You have 5 active communities: 'Sunday Volunteers', 'Youth Group', 'New Members', 'Finance Committee', and 'Community Outreach'. Which one would you like to send a message to?
+
+---
+
+**👤 You:**
+> "Send an SMS to the 'Sunday Volunteers' group: 'Reminder: Briefing at 8:00 AM tomorrow'."
+
+**🤖 AI Agent:**
+> Message sent! I've triggered the SMS alert to all members of the 'Sunday Volunteers' group. Every volunteer should receive the reminder shortly.
+
+---
+
+**👤 You:**
+> "Search for a member named 'Sarah Smith' in the directory."
+
+**🤖 AI Agent:**
+> I've found the record. Sarah Smith (ID: p_10293) is a registered member. She is part of the 'Youth Group' and her last interaction was 2 days ago. Shall I retrieve her full contact details?
+
+
 ## Installation & Usage
 
 To install and use the **Text In Church** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Text In Church** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

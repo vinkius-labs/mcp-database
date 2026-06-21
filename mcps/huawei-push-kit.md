@@ -1,12 +1,14 @@
 # Huawei Push Kit / 华为推送服务 MCP Server
 
-Huawei's essential device push platform — send notifications to HMS devices via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/huawei-push-kit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/huawei-push-kit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/huawei-push-kit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/huawei-push-kit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Huawei's essential device push platform — send notifications to HMS devices via AI.
 
 ## Description
 Empower your AI agent to orchestrate your device communication and mobile engagement with **Huawei Push Kit** (华为推送服务), the essential notification layer for the Huawei Mobile Services (HMS) ecosystem. By connecting Huawei Push to your agent, you transform complex message sending, topic orchestration, and conditional targeting into a natural conversation. Your agent can instantly send high-priority notifications to specific tokens, broadcast updates to millions of topic subscribers, and manage complex boolean conditions for precise targeting without you ever needing to navigate the comprehensive AppGallery Connect console. Whether you are automating system alerts or coordinating a global marketing update, your agent acts as a real-time push coordinator, providing accurate and fast results from a single, authorized source.
@@ -46,6 +48,33 @@ Send push notification to a device token
 - **unsubscribe_from_topic**: Unsubscribe device tokens from a topic
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Huawei Push Kit / 华为推送服务** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a push notification to token 'ABCD...1234' with title 'Good Morning' and body 'Don't forget your tasks today'."
+
+**🤖 AI Agent:**
+> I've successfully sent the notification to the device token. The Huawei request ID is `1234567890`. Should I also send this update to your global announcement topic?
+
+---
+
+**👤 You:**
+> "Broadcast a system update notification to the 'all_users' topic for version '2.5.0'."
+
+**🤖 AI Agent:**
+> I've initiated the broadcast to all devices subscribed to the `all_users` topic. The message 'Version 2.5.0 is now ready for download' has been successfully submitted to Huawei Push Kit. Would you like me to monitor the delivery status?
+
+---
+
+**👤 You:**
+> "Check the connectivity status of our Huawei Push and OAuth gateways."
+
+**🤖 AI Agent:**
+> I've performed a diagnostic check. Both the Huawei OAuth authentication gateway and the Push Kit API are responding normally. Your App ID is correctly configured. Is there anything else you'd like to audit?
+
+
 ## Installation & Usage
 
 To install and use the **Huawei Push Kit / 华为推送服务** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Huawei Push Kit / 华为推送服务** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

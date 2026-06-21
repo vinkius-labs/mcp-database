@@ -1,12 +1,14 @@
 # Tronscan (TRON Blockchain Explorer API) MCP Server
 
-Explore the TRON blockchain — analyze accounts, track token balances, inspect smart contracts, and monitor network resources directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tronscan-tron-blockchain-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tronscan-tron-blockchain-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tronscan-tron-blockchain-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tronscan-tron-blockchain-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 58
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the TRON blockchain — analyze accounts, track token balances, inspect smart contracts, and monitor network resources directly from any AI agent.
 
 ## Description
 Connect to the **Tronscan API** to turn your AI agent into a powerful blockchain analyst. Access real-time data from the TRON network, from simple balance checks to deep smart contract event auditing.
@@ -93,6 +95,33 @@ Connect to the **Tronscan API** to turn your AI agent into a powerful blockchain
 - **search_v2**: Search Tronscan (v2)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tronscan (TRON Blockchain Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the detailed balance and analysis for address TXYZ..."
+
+**🤖 AI Agent:**
+> I've retrieved the analysis for address TXYZ... The account currently holds 1,500 TRX with an estimated total asset value of $180. Energy is at 95% capacity and Bandwidth is fully available.
+
+---
+
+**👤 You:**
+> "List the top verified smart contracts on TRON sorted by transaction count."
+
+**🤖 AI Agent:**
+> Fetching the top verified contracts... The most active contract is currently 'USDT Token' (TR7NH...) with over 2 million transactions, followed by 'JustLend' and 'SunSwap'.
+
+---
+
+**👤 You:**
+> "What are the recent events for the contract address TR7NH...?"
+
+**🤖 AI Agent:**
+> I've found the latest events for the USDT contract. Recent activities include multiple 'Transfer' events and 'Approval' updates. Would you like me to decode the parameters for the last five transfers?
+
+
 ## Installation & Usage
 
 To install and use the **Tronscan (TRON Blockchain Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -101,4 +130,11 @@ To install and use the **Tronscan (TRON Blockchain Explorer API)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

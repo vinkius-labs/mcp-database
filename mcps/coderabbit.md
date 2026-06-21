@@ -1,12 +1,14 @@
 # CodeRabbit MCP Server
 
-Manage AI-powered code reviews via CodeRabbit — list users, track PR review metrics, audit admin actions, and control seat assignments from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coderabbit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coderabbit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coderabbit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coderabbit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 9
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Manage AI-powered code reviews via CodeRabbit — list users, track PR review metrics, audit admin actions, and control seat assignments from any AI agent.
 
 ## Description
 Connect your **CodeRabbit** organization to any AI agent and take full control of your AI-powered code review operations through natural conversation.
@@ -57,6 +59,54 @@ Remove CodeRabbit seats from users
 Update the seat assignment mode
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CodeRabbit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all team members who don't have a CodeRabbit seat assigned."
+
+**🤖 AI Agent:**
+> I found 4 unassigned members:
+
+- **sarah.chen** (Member)
+- **marcus.dev** (Member)
+- **alex.ops** (Admin)
+- **new.hire** (Member)
+
+Would you like me to assign seats to all of them?
+
+---
+
+**👤 You:**
+> "What were our code review metrics for March 2026?"
+
+**🤖 AI Agent:**
+> Here are the March 2026 review metrics:
+
+- **Total PRs reviewed:** 142
+- **Average complexity score:** 7.3/10
+- **Average review time:** 4.2 minutes
+- **Critical issues found:** 23
+- **Suggestions accepted:** 67%
+
+Would you like a breakdown by repository or author?
+
+---
+
+**👤 You:**
+> "Show me the audit trail of admin actions from last week."
+
+**🤖 AI Agent:**
+> Audit log entries for the past 7 days:
+
+1. **seat.assigned** — admin@company.com assigned 3 seats (Mar 28)
+2. **role.promoted** — admin@company.com promoted marcus.dev to admin (Mar 29)
+3. **config.updated** — admin@company.com changed review language to TypeScript-only (Mar 30)
+
+All entries are tamper-resistant and SIEM-ready.
+
+
 ## Installation & Usage
 
 To install and use the **CodeRabbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +115,11 @@ To install and use the **CodeRabbit** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

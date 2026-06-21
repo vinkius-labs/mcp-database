@@ -1,12 +1,14 @@
 # Revolut Business MCP Server
 
-Grant your AI access to Europe's powerhouse treasury. Automate multi-currency exchange, mass payouts and real-time vendor bulk-payments.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/revolut-business)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revolut-business)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/revolut-business-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/revolut-business-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 34
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Grant your AI access to Europe's powerhouse treasury. Automate multi-currency exchange, mass payouts and real-time vendor bulk-payments.
 
 ## Description
 The **Revolut Business MCP Server** effectively bridges large-scale pan-European treasuries directly to Vinkius LLMs.
@@ -103,6 +105,33 @@ Rotate the signing secret for a webhook
 - **revolut_update_webhook**: Update a webhook configuration
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Revolut Business** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Review our Treasury balances. Scan all underlying operational wallets across Revolut right now."
+
+**🤖 AI Agent:**
+> Treasury check complete. Sweeping operational limits... We observed approximately 5 Active Wallet domains. Your USD pool registers at $14,000 liquid, while GBP rests at 50,000. No un-settled constraints present.
+
+---
+
+**👤 You:**
+> "It looks like we are short on GBP for office supplies. Please buy 500 GBP using our primary Euro reserve wallet ID natively."
+
+**🤖 AI Agent:**
+> Foreign Exchange executed! We successfully transferred the structural value. Live rates computed perfectly moving out nominal assets towards GBP. You should observe balances refilled instantly.
+
+---
+
+**👤 You:**
+> "Map a new Counterparty Profile under 'AWS Services'."
+
+**🤖 AI Agent:**
+> Completed profile injection! 'AWS Services' is now established within your internal directory and readily accepts mass payouts.
+
+
 ## Installation & Usage
 
 To install and use the **Revolut Business** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -111,4 +140,11 @@ To install and use the **Revolut Business** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

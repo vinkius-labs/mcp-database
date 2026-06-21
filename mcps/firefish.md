@@ -1,12 +1,14 @@
 # Firefish MCP Server
 
-Manage candidates, jobs, and companies through AI agents with Firefish Recruitment CRM.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firefish)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firefish)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firefish-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firefish-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 12
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage candidates, jobs, and companies through AI agents with Firefish Recruitment CRM.
 
 ## Description
 Connect your **Firefish** account to any AI agent and automate your recruitment workflows through the Model Context Protocol (MCP). Firefish is a high-performance recruitment CRM that empowers agencies to reach more candidates and close more placements. Now, you can interact with your recruitment data directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Firefish** account to any AI agent and automate your recruitment 
 - **list_placements**: List placements
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Firefish** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active job vacancies at Firefish."
+
+**🤖 AI Agent:**
+> Fetching jobs... I found 5 active job vacancies, including 'Senior Software Engineer' and 'Recruitment Consultant'. Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Search for a candidate named 'John Smith'."
+
+**🤖 AI Agent:**
+> Searching candidates... I found a profile for John Smith (ID: cand_456) with status 'Active'. He is currently listed as a 'Project Manager'.
+
+---
+
+**👤 You:**
+> "Show me the most recent recruiter actions."
+
+**🤖 AI Agent:**
+> Retrieving actions... Here are the latest actions recorded, including 'Email Sent to Candidate cand_123' and 'Interview Scheduled for Job job_789'.
+
+
 ## Installation & Usage
 
 To install and use the **Firefish** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Firefish** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

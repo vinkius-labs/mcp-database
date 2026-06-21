@@ -1,12 +1,14 @@
 # Tesla Fleet API MCP Server
 
-Physical actuator proxy mapping explicitly native commands evaluating telemetry tracking active Tesla vehicles cleanly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tesla-fleet-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tesla-fleet-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tesla-fleet-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tesla-fleet-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Physical actuator proxy mapping explicitly native commands evaluating telemetry tracking active Tesla vehicles cleanly.
 
 ## Description
 ### What you can do
@@ -60,6 +62,33 @@ Engage explicitly the internal auto-conditioning climate system cleanly resolvin
 CRITICAL FIRST STEP: Trigger Explicit ignition matrices asserting the physical vehicle wakes from idle sleep states bounding actively over SaaS proxies
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tesla Fleet API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check active fleet execution tracking natively extracting explicitly the battery SoC of vehicle XYZ safely resolving sleep delays initially."
+
+**🤖 AI Agent:**
+> Parsed logically evaluating native wake sequences (`wake_up_vehicle`) avoiding timeouts implicitly. After latency bounds resolved cleanly, (`get_vehicle_data`) extracted telemetry cleanly outputting 65% battery level appropriately safely routing inherently.
+
+---
+
+**👤 You:**
+> "Actuate physical lock boundaries explicitly mapping the endpoints locking the doors inherently securely natively targeting 'car-aabbcc' dynamically."
+
+**🤖 AI Agent:**
+> Logical validation executed cleanly bounding constraints passing seamlessly checking actively wake states safely smoothly bounding locking explicit native parameters. (`control_doors`). Commands received explicitly locking.
+
+---
+
+**👤 You:**
+> "Sound the explicit vehicle horn targeting proxy array bounds locating physical target effectively resolving native bounds gracefully mapping targets."
+
+**🤖 AI Agent:**
+> Validating native API timeouts smoothly tracking cleanly isolating `honk_horn` correctly asserting constraints parsing actively safely formatting physical responses perfectly cleanly.
+
+
 ## Installation & Usage
 
 To install and use the **Tesla Fleet API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Tesla Fleet API** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

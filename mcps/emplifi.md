@@ -1,12 +1,14 @@
 # Emplifi MCP Server
 
-Equip your AI agent to manage social profiles, track post metrics, and monitor care automation via the Emplifi API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/emplifi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emplifi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emplifi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emplifi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Equip your AI agent to manage social profiles, track post metrics, and monitor care automation via the Emplifi API.
 
 ## Description
 Integrate **Emplifi**, the unified customer experience (CX) platform, directly into your AI workflow. Manage your social media profiles across platforms, track real-time post engagement and performance metrics, monitor social listening dashboards and influencer impact, and oversee your customer care automation using natural language.
@@ -44,6 +46,33 @@ Integrate **Emplifi**, the unified customer experience (CX) platform, directly i
 - **list_organization_team_members**: List all team members and their roles in the organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Emplifi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all managed social media profiles."
+
+**🤖 AI Agent:**
+> I've found 5 social profiles, including 'Global Instagram', 'Corporate LinkedIn', and 'Support Twitter'. Would you like to see the recent post metrics for Global Instagram?
+
+---
+
+**👤 You:**
+> "Show me metrics for social post ID 'POST-12345'."
+
+**🤖 AI Agent:**
+> Post ID 'POST-12345' has 12,500 impressions, an engagement rate of 4.2%, and 850 total reactions. It is currently your top-performing post this week. Should I compare this to your average engagement?
+
+---
+
+**👤 You:**
+> "Check active customer care automation rules."
+
+**🤖 AI Agent:**
+> You have 3 active rules: 'Auto-reply to Mentions', 'Urgent Ticket Escalation', and 'Weekend Out-of-Office'. All are functioning normally. Would you like to see the trigger conditions for Urgent Ticket Escalation?
+
+
 ## Installation & Usage
 
 To install and use the **Emplifi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Emplifi** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

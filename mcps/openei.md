@@ -1,12 +1,14 @@
 # OpenEI MCP Server
 
-US electricity rate intelligence — query utility rates by location, sector, and tariff via AI for solar and energy analysis.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openei)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openei)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openei-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-intelligence
-**Tools Count:** 10
+
+**Category:** [business-intelligence](../categories/business-intelligence.md)
+
+US electricity rate intelligence — query utility rates by location, sector, and tariff via AI for solar and energy analysis.
 
 ## Description
 Access the **National Utility Rate Database** through **OpenEI** — the most comprehensive source for US electricity rate data maintained by the Department of Energy. Connect OpenEI to your AI agent to instantly query utility rates by address or coordinates, analyze rate structures across residential, commercial, and industrial sectors, retrieve complete tariff details including time-of-use periods and demand charges — all through natural conversation.
@@ -69,6 +71,33 @@ List electric utility companies in the OpenEI database
 Search for utility companies by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenEI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the residential electricity rates at 1617 Cole Blvd, Golden, CO?"
+
+**🤖 AI Agent:**
+> I found 5 residential rate options at that address served by Xcel Energy. The standard residential rate is $0.142/kWh with a tiered structure. There's also a time-of-use plan with peak hours at $0.198/kWh and off-peak at $0.089/kWh. Here are the complete rate details.
+
+---
+
+**👤 You:**
+> "Show me all utilities in California and their average commercial rates."
+
+**🤖 AI Agent:**
+> I found 127 utilities in California. The largest include PG&E (avg $0.231/kWh), SCE (avg $0.218/kWh), and SDG&E (avg $0.267/kWh). California has some of the highest electricity rates in the US. Here's the complete list with rate averages.
+
+---
+
+**👤 You:**
+> "Get the complete rate structure for commercial time-of-use rates from PG&E."
+
+**🤖 AI Agent:**
+> I retrieved the complete PG&E E-19 commercial time-of-use rate structure. It has 4 seasonal periods (Summer Peak, Summer Off-Peak, Winter Peak, Winter Off-Peak) with energy charges ranging from $0.147 to $0.326/kWh. Demand charges are $18.76/kW in summer and $12.54/kW in winter. Here's the full breakdown.
+
+
 ## Installation & Usage
 
 To install and use the **OpenEI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **OpenEI** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

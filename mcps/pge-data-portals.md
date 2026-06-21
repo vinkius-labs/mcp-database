@@ -1,12 +1,14 @@
 # PG&E Data Portals MCP Server
 
-Search and query PG&E energy datasets: usage, EV adoption, solar, grid data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-data-portals)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-data-portals)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pge-data-portals-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pge-data-portals-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search and query PG&E energy datasets: usage, EV adoption, solar, grid data.
 
 ## Description
 Connect **PG&E Data Portals** to any AI agent and programmatically search, discover, and query PG&E's public energy datasets through natural conversation.
@@ -66,6 +68,33 @@ Search the PG&E Data Portals catalog for energy datasets
 Query solar energy generation data by region and year
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PG&E Data Portals** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available PG&E datasets."
+
+**🤖 AI Agent:**
+> Found datasets including: Energy Usage by ZIP Code (monthly electricity and gas consumption by customer segment), EV Adoption (electric vehicle registrations by ZIP code), Solar Generation (installed capacity and production), Energy Efficiency Programs (participation and savings), and Grid Infrastructure (distribution circuits and substations). Which dataset would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me electricity usage for ZIP code 94102."
+
+**🤖 AI Agent:**
+> Electricity usage for 94102 (San Francisco - Mission District): Jan 2024: 2,450,000 kWh (Residential), 3,120,000 kWh (Commercial). Feb 2024: 2,280,000 kWh (Residential), 2,980,000 kWh (Commercial). Average residential bill: $142/month. Peak usage in January during winter heating season.
+
+---
+
+**👤 You:**
+> "Show EV adoption trends by ZIP code for 2024."
+
+**🤖 AI Agent:**
+> EV adoption data for 2024: 94301 (Palo Alto): 12,450 EVs registered (38% of households). 94102 (SF Mission): 3,280 EVs (15%). 94040 (Mountain View): 9,870 EVs (32%). 95054 (Santa Clara): 7,650 EVs (28%). Highest adoption in Peninsula/Silicon Valley ZIP codes with proximity to tech employers and charging infrastructure.
+
+
 ## Installation & Usage
 
 To install and use the **PG&E Data Portals** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **PG&E Data Portals** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

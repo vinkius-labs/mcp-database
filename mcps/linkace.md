@@ -1,12 +1,14 @@
 # LinkAce MCP Server
 
-Manage your bookmarks, tags, and collections via the LinkAce REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/linkace)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linkace)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linkace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linkace-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your bookmarks, tags, and collections via the LinkAce REST API.
 
 ## Description
 Connect your **LinkAce** instance to any AI agent to automate your personal knowledge base and link archiving. This MCP server enables your agent to add new bookmarks, organize them into lists and tags, and search your entire library directly from natural language interfaces.
@@ -46,6 +48,33 @@ Add a new link to your archive
 - **list_all_tags**: List all tags used for organizing bookmarks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LinkAce** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Add 'https://www.wikipedia.org' to my LinkAce bookmarks."
+
+**🤖 AI Agent:**
+> I've added Wikipedia to your LinkAce archive. The new bookmark ID is 'link-123' and it is currently marked as private.
+
+---
+
+**👤 You:**
+> "Search my LinkAce library for 'Artificial Intelligence'."
+
+**🤖 AI Agent:**
+> I found 5 bookmarks matching 'Artificial Intelligence', including links to research papers and industry news. Would you like to see the full details for any of them?
+
+---
+
+**👤 You:**
+> "List all my bookmark collections."
+
+**🤖 AI Agent:**
+> I've retrieved your collections. You have 3 active lists: 'Reading List', 'Technical Docs', and 'Work Projects'.
+
+
 ## Installation & Usage
 
 To install and use the **LinkAce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **LinkAce** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

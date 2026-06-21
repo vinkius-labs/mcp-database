@@ -1,12 +1,14 @@
 # Wazuh (SIEM) MCP Server
 
-Manage your Wazuh SIEM infrastructure—monitor agents, inspect security events, and manage manager configurations directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wazuh-siem)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wazuh-siem)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wazuh-siem-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wazuh-siem-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 21
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage your Wazuh SIEM infrastructure—monitor agents, inspect security events, and manage manager configurations directly from your AI agent.
 
 ## Description
 Connect your **Wazuh SIEM** to any AI agent to streamline security operations and endpoint monitoring through natural language.
@@ -74,6 +76,33 @@ Get Syscollector inventory
 - **upgrade_agents**: Upgrade Wazuh agents
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wazuh (SIEM)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Wazuh agents that are currently active."
+
+**🤖 AI Agent:**
+> I've retrieved the agent list. You have 12 active agents, including 'web-server-01' (Ubuntu) and 'db-master' (CentOS). Would you like to check the status of a specific one?
+
+---
+
+**👤 You:**
+> "Show me the latest Security Configuration Assessment (SCA) results."
+
+**🤖 AI Agent:**
+> Fetching SCA data... I found several failed checks related to SSH hardening and password policies on 3 agents. Should I list the specific failed policy IDs?
+
+---
+
+**👤 You:**
+> "Check the Wazuh manager logs for any recent errors."
+
+**🤖 AI Agent:**
+> Inspecting manager logs... I found a few 'connection refused' warnings from 10 minutes ago related to agent enrollment. The rest of the daemons are running normally.
+
+
 ## Installation & Usage
 
 To install and use the **Wazuh (SIEM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **Wazuh (SIEM)** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

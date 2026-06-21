@@ -1,12 +1,14 @@
 # Pivotal Tracker MCP Server
 
-Manage agile projects via Pivotal Tracker — list stories, track epics, and update tasks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pivotal-tracker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pivotal-tracker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pivotal-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pivotal-tracker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 0
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage agile projects via Pivotal Tracker — list stories, track epics, and update tasks directly from any AI agent.
 
 ## Description
 Connect your **Pivotal Tracker** workspace to any AI agent and take full control of your agile development workflows through natural conversation.
@@ -34,6 +36,33 @@ Connect your **Pivotal Tracker** workspace to any AI agent and take full control
 
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pivotal Tracker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active stories in project 12345."
+
+**🤖 AI Agent:**
+> I've retrieved 8 active stories from project 12345. Current ones include 'Implement OAuth2 flow', 'Fix CSS bug in dashboard', and 'Add user profile export'.
+
+---
+
+**👤 You:**
+> "Create a new bug story in project 12345 called 'Broken login button'."
+
+**🤖 AI Agent:**
+> Bug story 'Broken login button' has been successfully created in project 12345. Story ID: 987654321.
+
+---
+
+**👤 You:**
+> "Update story 987654321 to 'started' state."
+
+**🤖 AI Agent:**
+> Story 987654321 has been updated to 'started'. You can now begin work on this task.
+
+
 ## Installation & Usage
 
 To install and use the **Pivotal Tracker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -42,4 +71,11 @@ To install and use the **Pivotal Tracker** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

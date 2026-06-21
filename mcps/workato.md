@@ -1,12 +1,14 @@
 # Workato MCP Server
 
-Monitor automation recipes, manage job executions, and audit app connections on Workato — the leading enterprise iPaaS platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workato)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workato)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workato-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workato-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 7
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Monitor automation recipes, manage job executions, and audit app connections on Workato — the leading enterprise iPaaS platform.
 
 ## Description
 Connect your **Workato** account to any AI agent and manage your enterprise integration infrastructure through natural conversation.
@@ -47,6 +49,33 @@ No more manual digging through complex iPaaS dashboards to check if a recipe ran
 - **list_automation_recipes**: Lists all automation recipes in the Workato account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Workato** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active recipes in my Workato account."
+
+**🤖 AI Agent:**
+> I found 8 active recipes: 1. 'Salesforce to Slack Sync' (ID: 12345), 2. 'NetSuite Invoice Automation' (ID: 67890), 3. 'Zendesk Ticket Triage' (ID: 11223), and 5 others. Which one would you like to audit?
+
+---
+
+**👤 You:**
+> "Show me the last 5 jobs for the 'Salesforce to Slack Sync' recipe."
+
+**🤖 AI Agent:**
+> Retrieving jobs for recipe 12345… The last 5 jobs all completed successfully (Status: SUCCESS). The most recent run was 15 minutes ago and processed 12 records. No errors detected.
+
+---
+
+**👤 You:**
+> "Are all my app connections healthy?"
+
+**🤖 AI Agent:**
+> Checking connections… Your Salesforce, Slack, and NetSuite connections are 'ACTIVE'. However, your Jira connection is 'DISCONNECTED'. Would you like me to pull the connection details to help you re-authenticate?
+
+
 ## Installation & Usage
 
 To install and use the **Workato** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Workato** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

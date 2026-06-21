@@ -1,12 +1,14 @@
 # openFDA MCP Server
 
-Access the powerful openFDA databases for drug adverse events, food recalls, and medical device safety reports globally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openfda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openfda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openfda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 3
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access the powerful openFDA databases for drug adverse events, food recalls, and medical device safety reports globally.
 
 ## Description
 The **openFDA MCP Server** provides direct, zero-auth access to the United States Food and Drug Administration (FDA) regulatory databases. This server allows your AI agent to construct complex pharmacological queries and retrieve public health data in real-time.
@@ -33,6 +35,25 @@ Search openFDA Food Enforcement and Recalls database
 Search openFDA Medical Device Adverse Events (MAUDE)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **openFDA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the most recent food recalls related to Salmonella in California?"
+
+**🤖 AI Agent:**
+> I've searched the openFDA Food Enforcement database using the Lucene query `reason_for_recall:"salmonella" AND state:"CA"`. Here are the most recent recall events and associated product descriptions.
+
+---
+
+**👤 You:**
+> "Are there any reports of 'insomnia' after taking generic Ibuprofen?"
+
+**🤖 AI Agent:**
+> Searching the Drug Adverse Events dataset for `patient.drug.medicinalproduct:"IBUPROFEN" AND patient.reaction.reactionmeddrapt:"INSOMNIA"`. Yes, I've found multiple adverse event records. Here is a summary of the metadata.
+
+
 ## Installation & Usage
 
 To install and use the **openFDA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -41,4 +62,11 @@ To install and use the **openFDA** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

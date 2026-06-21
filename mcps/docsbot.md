@@ -1,12 +1,14 @@
 # DocsBot MCP Server
 
-Equip your AI agent to manage AI-powered knowledge bases, track sources, and query your bots via the DocsBot API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docsbot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docsbot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docsbot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docsbot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Equip your AI agent to manage AI-powered knowledge bases, track sources, and query your bots via the DocsBot API.
 
 ## Description
 Integrate **DocsBot**, the AI-powered knowledge base platform, directly into your AI workflow. Manage your custom AI bots, track their data sources (URLs, PDFs, documents), monitor indexing status, and query your bots directly using natural language.
@@ -44,6 +46,33 @@ Integrate **DocsBot**, the AI-powered knowledge base platform, directly into you
 - **search_bot_sources**: Search for specific knowledge sources by name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DocsBot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Ask our 'API Docs Bot': 'How do I authenticate using the SDK?'."
+
+**🤖 AI Agent:**
+> The bot answered: 'To authenticate using the SDK, you need to initialize the client with your API Key... [detailed steps]'. Should I pull the source links for this answer?
+
+---
+
+**👤 You:**
+> "List all data sources used by our 'Support Bot'."
+
+**🤖 AI Agent:**
+> I've found 5 sources for the 'Support Bot', including 'help.example.com', 'API-Reference.pdf', and 'Community-FAQs'. 4 sources were successfully indexed today. Would you like to see the last error for the failed source?
+
+---
+
+**👤 You:**
+> "Show me the last 5 questions asked to the 'Sales Bot'."
+
+**🤖 AI Agent:**
+> The last 5 questions for 'Sales Bot' include: 'What are your pricing plans?', 'Do you offer an annual discount?', and 'How do I upgrade?'. All questions received valid AI answers. Should I pull the detailed logs for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **DocsBot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DocsBot** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

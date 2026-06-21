@@ -1,12 +1,14 @@
 # PreciseFP MCP Server
 
-Collect client financial data digitally with compliant intake forms designed for wealth management and financial planning firms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/precisefp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/precisefp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/precisefp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/precisefp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Collect client financial data digitally with compliant intake forms designed for wealth management and financial planning firms.
 
 ## Description
 Connect your **PreciseFP** account to any AI agent and take full control of your financial planning data orchestration through natural conversation. PreciseFP is the premier platform for data gathering in the wealth management industry, and this integration allows you to retrieve client metadata, monitor engagement progress, and trigger custom 'Fact Finder' forms directly from your chat interface.
@@ -54,6 +56,33 @@ List PreciseFP accounts
 - **list_persons**: List persons in an account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PreciseFP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active client accounts in PreciseFP."
+
+**🤖 AI Agent:**
+> I've retrieved your accounts. You have 45 active clients including 'The Miller Family' and 'Robert Chen'. Would you like to see the recent activity for any of them?
+
+---
+
+**👤 You:**
+> "Show me all pending client questionnaires that have not been completed in the last 14 days."
+
+**🤖 AI Agent:**
+> 18 questionnaires pending beyond 14 days. 7 are "Financial Planning Intake" forms (average wait: 22 days). 4 are "Risk Assessment" questionnaires. 3 are "Insurance Needs Analysis" (oldest: 34 days from Robert Chen). 4 are "Estate Planning" documents. 6 clients have opened the form but not submitted. Recommended action: send automated reminders to the 12 clients who have not opened their questionnaire at all.
+
+---
+
+**👤 You:**
+> "Send the retirement planning questionnaire to the Johnson family with a 7 day deadline."
+
+**🤖 AI Agent:**
+> Questionnaire sent successfully. Template: "Retirement Planning Comprehensive". Recipients: Michael Johnson (michael@email.com) and Susan Johnson (susan@email.com). Deadline: May 20, 2025. The form includes 42 fields covering income, assets, liabilities, risk tolerance, and retirement goals. Both recipients received email notifications with secure access links. Auto-reminder emails scheduled for day 3 and day 6.
+
+
 ## Installation & Usage
 
 To install and use the **PreciseFP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **PreciseFP** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Theta MCP Server
 
-Interact with Theta Network — query blockchain data, manage AI EdgeCloud deployments, and orchestrate decentralized video delivery.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/theta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/theta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/theta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/theta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 30
+
+**Category:** [image-video](../categories/image-video.md)
+
+Interact with Theta Network — query blockchain data, manage AI EdgeCloud deployments, and orchestrate decentralized video delivery.
 
 ## Description
 Connect to the **Theta Network** ecosystem to manage decentralized infrastructure directly through your AI agent. This server provides comprehensive tools for blockchain interaction, video processing, and EdgeCloud AI resource management.
@@ -66,6 +68,33 @@ List available machine types
 - **video_unselect_ingestor**: Release an ingestor
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Theta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current version of the Theta blockchain software?"
+
+**🤖 AI Agent:**
+> I've checked the network status. The current Theta blockchain version is v4.2.0.
+
+---
+
+**👤 You:**
+> "List all available VM resources for AI deployments on EdgeCloud."
+
+**🤖 AI Agent:**
+> I've retrieved the available VM resources. You have access to several tiers including 'Small' (2 vCPU, 4GB RAM) and 'GPU-Medium' (NVIDIA T4, 16GB RAM).
+
+---
+
+**👤 You:**
+> "Show me the details for block height 25000000."
+
+**🤖 AI Agent:**
+> Fetching block 25000000... The block hash is 0xabc... and it contains 12 transactions. It was finalized at timestamp 1712345678.
+
+
 ## Installation & Usage
 
 To install and use the **Theta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Theta** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

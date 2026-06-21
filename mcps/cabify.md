@@ -1,12 +1,14 @@
 # Cabify MCP Server
 
-AI ride management for business: book rides, track trips, and manage corporate mobility via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cabify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cabify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cabify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cabify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 9
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+AI ride management for business: book rides, track trips, and manage corporate mobility via agents.
 
 ## Description
 ### What you can do
@@ -64,6 +66,33 @@ Get estimated trip duration for a Cabify ride
 Request a new Cabify ride
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cabify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get me a price estimate from Madrid Airport to our office in Gran Vía for a Cabify Executive"
+
+**🤖 AI Agent:**
+> I'll get cost estimates for all available Cabify products between those locations.
+
+---
+
+**👤 You:**
+> "Book a Cabify from the hotel to the conference center for 9am tomorrow"
+
+**🤖 AI Agent:**
+> I'll book the ride and send you the confirmation with driver details.
+
+---
+
+**👤 You:**
+> "Show me all Cabify rides from last month with total business expenses"
+
+**🤖 AI Agent:**
+> I'll pull your ride history and compile the monthly expense summary.
+
+
 ## Installation & Usage
 
 To install and use the **Cabify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Cabify** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

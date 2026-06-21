@@ -1,12 +1,14 @@
 # Storybook MCP Server
 
-Connect your AI to Storybook. Explore your design system, inspect UI components, and retrieve implementation guidance programmatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/storybook)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/storybook)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/storybook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/storybook-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 6
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Connect your AI to Storybook. Explore your design system, inspect UI components, and retrieve implementation guidance programmatically.
 
 ## Description
 Seamlessly integrate your **Storybook** design system into your conversational AI workflows. Empower front-end engineers and designers to instantly query component libraries, retrieve prop signatures, and extract documentation paths natively within their terminal. By connecting your deployed Storybook instance directly to your AI context, you eliminate context switching, prevent duplicate UI implementations, and accelerate component-driven architecture development across your entire front-end ecosystem.
@@ -45,6 +47,58 @@ List all UI components available in the Storybook Design System
 - **search_components**: Search for specific components by name or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Storybook** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Button components in my Storybook and show their props."
+
+**🤖 AI Agent:**
+> Scanning Storybook index...
+**Discovered UI Matches (`search_components`)**:
+- `Button/Primary-Action` (ID: comp-btn-01)
+- `Button/Ghost` (ID: comp-btn-02)
+
+Inspecting props via `get_story_args` on `Button/Primary-Action`:
+- **Props**: `label` (string), `isActive` (boolean), `variant` (primary/secondary), `onClick` (function).
+I can generate an isolated preview URL if needed.
+
+---
+
+**👤 You:**
+> "List the categories in the design system and browse the components rendered."
+
+**🤖 AI Agent:**
+> Mapping the interface structure...
+
+**Categories (`list_categories`)**:
+- `Atoms`
+- `Molecules`
+- `Layouts`
+
+**Components (`list_components`)**:
+- `Atoms/Input`
+- `Atoms/Tooltip`
+- `Layouts/Sidebar`
+
+Documentation endpoints have been dynamically assembled.
+
+---
+
+**👤 You:**
+> "Extract the local source code paths from the index for the Navigation Bar component and generate an iframe preview."
+
+**🤖 AI Agent:**
+> Checking local references logically...
+
+**Source Paths (`extract_docs_guidance`)**:
+Resolved path: `./src/components/NavBar.tsx`. Documentation notes suggest importing `NavProps` directly.
+
+**Preview Generated (`get_preview_url`)**:
+The isolated sandbox iframe is ready at `//storybook-instance/iframe.html?id=layout-navbar--default`.
+
+
 ## Installation & Usage
 
 To install and use the **Storybook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +107,11 @@ To install and use the **Storybook** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

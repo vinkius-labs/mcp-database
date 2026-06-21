@@ -1,12 +1,14 @@
 # Pappers MCP Server
 
-Access French company data, financial filings, and legal documents from official business registries for due diligence research.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pappers)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pappers)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pappers-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pappers-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access French company data, financial filings, and legal documents from official business registries for due diligence research.
 
 ## Description
 Connect your **Pappers.fr** account to any AI agent and take full control of your French corporate research and business intelligence through natural conversation. Pappers provides the most comprehensive database for French company legal and financial information, and this integration allows you to retrieve detailed profiles (SIREN/SIRET), monitor officer changes, and access official BODACC publications directly from your chat interface.
@@ -51,6 +53,33 @@ Verify Pappers API status
 - **search_ultimate_beneficial_owners**: Search for UBOs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pappers** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for companies named 'Vinkius' in France."
+
+**🤖 AI Agent:**
+> I've found 1 company matching 'Vinkius' in Paris (SIREN: 123456789). Would you like me to retrieve the list of directors or the latest financial statements?
+
+---
+
+**👤 You:**
+> "Look up the financial details and legal status of the French company with SIREN 443061841."
+
+**🤖 AI Agent:**
+> Company found: Pappers SAS (SIREN: 443061841). Registered in Paris, active since 2002. Legal form: SAS (Simplified Joint Stock Company). Capital: EUR 150,000. Last published revenue: EUR 2.8M (2024). Current directors: 2 listed executives. No legal proceedings or insolvency filings on record. NAF code: 6311Z (Data processing).
+
+---
+
+**👤 You:**
+> "Search for all companies in the Lyon area that operate in the software development sector."
+
+**🤖 AI Agent:**
+> Found 342 active software companies in the Lyon metropolitan area (code NAF 6201Z). 89 were created in the last 2 years. Top 5 by revenue: "Axway Software" (EUR 298M), "Esker SA" (EUR 178M), "Cegid Group" (EUR 156M), "Bonitasoft" (EUR 12M), and "Hardis Group" (EUR 9.4M). Average company age: 8.7 years.
+
+
 ## Installation & Usage
 
 To install and use the **Pappers** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Pappers** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

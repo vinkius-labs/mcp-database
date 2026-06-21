@@ -1,12 +1,14 @@
 # AdButler MCP Server
 
-Ad serving and reporting — manage publishers, zones, campaigns, and ad performance via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adbutler)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adbutler)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adbutler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adbutler-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 5
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Ad serving and reporting — manage publishers, zones, campaigns, and ad performance via AI.
 
 ## Description
 Connect your **AdButler** account to your AI agent to unlock professional ad serving management and real-time reporting. From auditing publisher inventory to monitoring campaign delivery and analyzing click-through rates (CTR), your agent handles your ad operations through natural conversation.
@@ -45,6 +47,33 @@ Retrieve the active ad zones (placements) linked to a specific AdButler publishe
 Retrieve aggregated ad performance metrics (impressions, clicks, CTR) across zones and campaigns in AdButler
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AdButler** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all publishers in my AdButler network."
+
+**🤖 AI Agent:**
+> I've retrieved the list of publishers. You have 10 active publishers, including 'Tech Daily', 'News Corp', and 'Gaming Hub'. Would you like to see the zones for any of them?
+
+---
+
+**👤 You:**
+> "Show me the performance report for the last 7 days."
+
+**🤖 AI Agent:**
+> I've retrieved your 7-day performance report. Your network served 1.2M impressions with 5,400 clicks (CTR: 0.45%) and generated $3,200 in revenue. Which metric would you like to dive deeper into?
+
+---
+
+**👤 You:**
+> "List all active zones for publisher ID 12345."
+
+**🤖 AI Agent:**
+> I've found 5 active zones for publisher 12345: 'Sidebar Banner', 'Top Leaderboard', 'Interstitial', and others. Would you like to check the current fill rate for these zones?
+
+
 ## Installation & Usage
 
 To install and use the **AdButler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **AdButler** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

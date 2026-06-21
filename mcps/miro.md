@@ -1,12 +1,14 @@
 # Miro MCP Server
 
-Manage Miro boards, items and comments via API — create boards, add sticky notes, browse items and manage members from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/miro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/miro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/miro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/miro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 14
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Miro boards, items and comments via API — create boards, add sticky notes, browse items and manage members from any AI agent.
 
 ## Description
 Connect your **Miro** account to any AI agent and take full control of your visual collaboration through natural conversation.
@@ -79,6 +81,33 @@ List comments on a Miro board
 Update a Miro board name or description
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Miro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all the sticky notes on my Sprint Planning board."
+
+**🤖 AI Agent:**
+> I found 12 sticky notes on your Sprint Planning board. Topics include: 'Implement OAuth flow', 'Fix checkout bug', 'Design new dashboard', 'Update API docs', 'Refactor auth middleware' and 7 more. Would you like the full content of any specific note?
+
+---
+
+**👤 You:**
+> "Create a new board called 'Q2 OKRs' with a description 'Quarterly objectives and key results'."
+
+**🤖 AI Agent:**
+> Done! I've created the board 'Q2 OKRs' with the description. The board is ready for collaboration. Board URL: https://miro.com/app/board/uXjV... You can now add sticky notes, cards and other items to it.
+
+---
+
+**👤 You:**
+> "Add a sticky note to my board saying 'Meeting notes: Discussed API versioning strategy' at position x:100, y:200."
+
+**🤖 AI Agent:**
+> Done! I've added the sticky note at position (100, 200) on your board with the text 'Meeting notes: Discussed API versioning strategy'. All board collaborators can see it immediately.
+
+
 ## Installation & Usage
 
 To install and use the **Miro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Miro** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

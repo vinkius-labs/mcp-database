@@ -1,12 +1,14 @@
 # Shipday MCP Server
 
-Dispatch and track local deliveries with driver management, route optimization, and real-time tracking for last-mile operations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shipday)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipday)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shipday-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shipday-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Dispatch and track local deliveries with driver management, route optimization, and real-time tracking for last-mile operations.
 
 ## Description
 Connect your **Shipday** account to any AI agent and take full control of your last-mile delivery and dispatch orchestration through natural conversation. Shipday provides a premier platform for managing local delivery operations, and this integration allows you to retrieve order metadata, assign drivers, and track delivery progress directly from your chat interface.
@@ -48,6 +50,33 @@ Create a new delivery order
 - **update_order_status**: Update the status of an order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shipday** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active delivery orders in Shipday."
+
+**🤖 AI Agent:**
+> I've retrieved your active orders. You have 4 deliveries in progress: '#ORD-101' (Picked up), '#ORD-102' (Out for delivery), and two others. Would you like to see the driver tracking for any of them?
+
+---
+
+**👤 You:**
+> "Assign driver ID 12345 to order ID 98765."
+
+**🤖 AI Agent:**
+> Assignment processed! Order 98765 is now assigned to 'Mike R.' (ID 12345). Should I notify the customer about the updated delivery status?
+
+---
+
+**👤 You:**
+> "List all available drivers in Shipday."
+
+**🤖 AI Agent:**
+> Retrieving drivers... I found 6 active drivers in your fleet. 'Marcus' and 'Sarah' are currently idle and ready for dispatch. Would you like to see their contact info?
+
+
 ## Installation & Usage
 
 To install and use the **Shipday** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Shipday** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

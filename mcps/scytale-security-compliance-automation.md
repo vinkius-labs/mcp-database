@@ -1,12 +1,14 @@
 # Scytale (Security Compliance Automation) MCP Server
 
-Automate security compliance via Scytale — manage evidence, track security controls, and monitor framework status directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scytale-security-compliance-automation)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scytale-security-compliance-automation)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scytale-security-compliance-automation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scytale-security-compliance-automation-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 8
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Automate security compliance via Scytale — manage evidence, track security controls, and monitor framework status directly from your AI agent.
 
 ## Description
 Connect your **Scytale** account to any AI agent to streamline your security audits and compliance workflows. Scytale automates the heavy lifting of SOC2, ISO 27001, HIPAA, and more.
@@ -47,6 +49,33 @@ Get current compliance status across all frameworks
 Upload a new evidence file or link
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scytale (Security Compliance Automation)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current compliance status for all frameworks."
+
+**🤖 AI Agent:**
+> I've retrieved your compliance status. You are currently 85% compliant for SOC2 and 72% for ISO 27001. Would you like to see the specific controls that need attention?
+
+---
+
+**👤 You:**
+> "List all security controls and their current state."
+
+**🤖 AI Agent:**
+> Fetching security controls... I found 45 controls. 38 are 'Passed', 4 are 'Failed', and 3 are 'In Progress'. Notable failures include 'Encryption at Rest' and 'MFA Policy'.
+
+---
+
+**👤 You:**
+> "Get the details for evidence item ID 'ev-998877'."
+
+**🤖 AI Agent:**
+> Inspecting evidence 'ev-998877'... This item is a 'Policy Document' titled 'Access Control Policy v2'. It was uploaded by Sarah J. on Oct 12th and is currently linked to 3 SOC2 controls.
+
+
 ## Installation & Usage
 
 To install and use the **Scytale (Security Compliance Automation)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Scytale (Security Compliance Automation)** MCP server i
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

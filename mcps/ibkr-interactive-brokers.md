@@ -1,12 +1,14 @@
 # IBKR (Interactive Brokers) MCP Server
 
-Manage your Interactive Brokers account — execute trades, monitor portfolio ledgers, and fetch real-time market data via the Client Portal API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ibkr-interactive-brokers)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ibkr-interactive-brokers)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ibkr-interactive-brokers-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ibkr-interactive-brokers-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 9
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage your Interactive Brokers account — execute trades, monitor portfolio ledgers, and fetch real-time market data via the Client Portal API.
 
 ## Description
 Connect your **Interactive Brokers** account to any AI agent to automate your trading workflows and portfolio monitoring through the Client Portal API.
@@ -48,6 +50,33 @@ Generate a Flex Query report
 - **tickle_session**: Maintain Client Portal API session
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IBKR (Interactive Brokers)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get a market data snapshot for ConId 265598."
+
+**🤖 AI Agent:**
+> I've retrieved the market data for ConId 265598 (AAPL). The last price is $185.92 with a daily change of +1.2%.
+
+---
+
+**👤 You:**
+> "Show me the account summary for account U1234567."
+
+**🤖 AI Agent:**
+> For account U1234567, your Net Liquidation Value is $50,230.45, with a Total Cash Balance of $12,400.10 and Maintenance Margin of $15,000.00.
+
+---
+
+**👤 You:**
+> "Cancel order 1001 for account U1234567."
+
+**🤖 AI Agent:**
+> I have successfully sent a cancellation request for order ID 1001 on account U1234567. The status is now 'Cancelled'.
+
+
 ## Installation & Usage
 
 To install and use the **IBKR (Interactive Brokers)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **IBKR (Interactive Brokers)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

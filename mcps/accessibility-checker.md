@@ -1,12 +1,14 @@
 # Accessibility Checker MCP Server
 
-Verify building compliance against universal accessibility standards (USA/EU) for corridors, ramps, and restrooms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-checker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-checker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accessibility-checker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accessibility-checker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** construction
-**Tools Count:** 4
+
+**Category:** [construction](../categories/construction.md)
+
+Verify building compliance against universal accessibility standards (USA/EU) for corridors, ramps, and restrooms.
 
 ## Description
 **Goal:** Ensure every physical space meets minimum dimensions required for people with reduced mobility.
@@ -33,6 +35,33 @@ Verify corridor or passage meets minimum clear width for universal access
 Determine if a ramp section meets maximum slope and landing requirements
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Accessibility Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze Room 302. The corridor ID is 'P-MAIN', the measured width is 1.05m, and I need to check ramp compliance for a drop of 1.8m over a horizontal run of 15m with landings."
+
+**🤖 AI Agent:**
+> Running checks: `check_corridor_and_passage` confirms passage 'P-MAIN' is compliant (1.05m). `check_ramp_compliance` determines the slope and verifies landing requirements are met.
+
+---
+
+**👤 You:**
+> "I need to check a restroom, Room ID 'B-401'. The usable floor area is 2.5 sq meters, and I have installed grab bars."
+
+**🤖 AI Agent:**
+> Using `check_bathroom_spaciousness` on Room 'B-401', the tool confirms the area is adequate (2.5m²), and verifies that safety grab bars are in place, ensuring functional compliance.
+
+---
+
+**👤 You:**
+> "Check a doorway at 'Lecture Hall Entrance'. The clear opening is 0.9m, and it's a sliding door."
+
+**🤖 AI Agent:**
+> The `check_doorway` tool analyzed the location. With an unobstructed width of 0.9m for the 'Lecture Hall Entrance', compliance is confirmed, meeting minimum accessibility standards.
+
+
 ## Installation & Usage
 
 To install and use the **Accessibility Checker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -41,4 +70,11 @@ To install and use the **Accessibility Checker** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

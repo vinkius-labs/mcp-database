@@ -1,12 +1,14 @@
 # Lyko MCP Server
 
-Access European public transit via Lyko — plan intermodal trips, check departures, search stops, and monitor transit operators from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lyko)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lyko)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lyko-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lyko-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** travel-hospitality
-**Tools Count:** 12
+
+**Category:** [travel-hospitality](../categories/travel-hospitality.md)
+
+Access European public transit via Lyko — plan intermodal trips, check departures, search stops, and monitor transit operators from any AI agent.
 
 ## Description
 Connect your **Lyko Transit API** mobility platform to any AI agent and take full control of European public transit planning, real-time departure monitoring, and multimodal journey optimization through natural conversation.
@@ -81,6 +83,33 @@ Get detailed information about a specific transit stop
 Access GTFS transit feed data for a specific operator or region
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lyko** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Plan a trip from Paris Gare du Nord to the Palace of Versailles using public transit."
+
+**🤖 AI Agent:**
+> Planning multimodal route with Lyko... I found 3 options: Option 1 (fastest): RER C from Gare d'Austerlitz to Versailles Rive Gauche — 52 minutes total, 1.2km walk from Gare du Nord to departure station, arrive at 10:23, fare €3.65. Option 2 (convenient): SNCF Transilien Line N from Gare Saint-Lazare to Versailles Rive Droite — 48 minutes, 2.1km walk to departure, depart at 09:54, arrive at 10:42, fare €3.65. Option 3 (scenic): Metro Line 6 to Bir-Hakeim, then RER C to Versailles — 68 minutes with 1 transfer, fare €3.65. All options show normal service with no delays. Would you like detailed step-by-step directions for any option?
+
+---
+
+**👤 You:**
+> "Show me all departures from Berlin Alexanderplatz station in the next 30 minutes."
+
+**🤖 AI Agent:**
+> Fetching real-time departures for Berlin Alexanderplatz... I found 23 departures in the next 30 minutes across multiple lines: S-Bahn S5 (toward Strausberg Nord, departing in 3 minutes, Platform 4, on-time), S-Bahn S7 (toward Ahrensfelde, 7 minutes, Platform 3, on-time), U-Bahn U2 (toward Ruhleben, 5 minutes, Platform B2, on-time), U-Bahn U5 (toward Hauptbahnhof, 9 minutes, Platform B1, on-time), U-Bahn U8 (toward Wittenau, 12 minutes, Platform C1, delayed 4 minutes), Tram M4 (toward Zingster Strasse, 6 minutes, Platform A, on-time), Tram M5 (toward Virchow-Klinikum, 15 minutes, Platform B, on-time), Bus 100 (toward Zoologischer Garten, 11 minutes, Platform D, on-time), and 15 more services. Would you like filtering by specific line or direction?
+
+---
+
+**👤 You:**
+> "What transit operators are available in the Netherlands, and is NS (Dutch Railways) running normally today?"
+
+**🤖 AI Agent:**
+> Checking Netherlands transit operators... I found 8 operators: NS (Nederlandse Spoorwegen) — national rail network, GVB — Amsterdam public transport (metro, tram, bus), RET — Rotterdam metro and tram, HTM — The Hague transit, Arriva — regional buses and trains, Connexxion — regional buses, Breng — Arnhem-Nijmegen regional transit, and Qbuzz — Groningen-Drenthe buses. Now checking NS network status: NS is operating normally today with all major intercity lines running on schedule. No reported disruptions, strikes, or planned works affecting main routes. Minor delays of 2-3 minutes on regional services in the Limburg area due to maintenance. High-speed international services (Thalys, Eurostar to London) are also running normally. Would you like me to check any other operator?
+
+
 ## Installation & Usage
 
 To install and use the **Lyko** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Lyko** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Daily.co MCP Server
 
-Manage video calls and WebRTC infrastructure via Daily.co — create rooms, track participants, and control meeting sessions directly from your AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dailyco)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dailyco)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dailyco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dailyco-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 50
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage video calls and WebRTC infrastructure via Daily.co — create rooms, track participants, and control meeting sessions directly from your AI.
 
 ## Description
 Connect your **Daily.co** account to any AI agent to orchestrate real-time video and audio communication workflows through natural language.
@@ -91,6 +93,33 @@ List rooms
 - **validate_meeting_token**: Validate a meeting token
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Daily.co** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current Daily rooms, limited to the last 10."
+
+**🤖 AI Agent:**
+> I've retrieved your rooms. You have 8 active rooms including 'onboarding-session', 'daily-standup', and 'support-chat-123'. Would you like the details for any specific one?
+
+---
+
+**👤 You:**
+> "Create a new public room called 'community-hangout' with recording enabled."
+
+**🤖 AI Agent:**
+> The room 'community-hangout' has been created successfully. It is public and configured with recording properties. You can access it at: https://your-domain.daily.co/community-hangout
+
+---
+
+**👤 You:**
+> "Who is currently in the 'emergency-room' and can you eject participant 'user-123'?"
+
+**🤖 AI Agent:**
+> There are currently 2 participants in 'emergency-room': 'admin-user' and 'user-123'. I am now proceeding to eject 'user-123' as requested.
+
+
 ## Installation & Usage
 
 To install and use the **Daily.co** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -99,4 +128,11 @@ To install and use the **Daily.co** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

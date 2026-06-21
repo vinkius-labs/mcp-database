@@ -1,12 +1,14 @@
 # Fieldwire MCP Server
 
-Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldwire)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fieldwire)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fieldwire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fieldwire-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** construction
-**Tools Count:** 17
+
+**Category:** [construction](../categories/construction.md)
+
+Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent.
 
 ## Description
 Connect your **Fieldwire** account to any AI agent to streamline your construction management workflows through natural conversation.
@@ -56,6 +58,33 @@ Get full data for a form (triggers job or polls)
 - **update_task**: Update an existing Fieldwire task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fieldwire** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all projects in my Fieldwire account."
+
+**🤖 AI Agent:**
+> I've found 3 active projects: 'Downtown Plaza' (UUID: ...), 'Westside Bridge' (UUID: ...), and 'City Hospital' (UUID: ...). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Create a new task 'Fix leak in Room 302' in project [UUID]."
+
+**🤖 AI Agent:**
+> Task 'Fix leak in Room 302' has been successfully created in the project. The Task UUID is 8829-abc. Would you like to assign it to a user?
+
+---
+
+**👤 You:**
+> "Show me the comments and photos for task [UUID] in project [UUID]."
+
+**🤖 AI Agent:**
+> I've retrieved the task bubbles. There are 2 comments: 'Leak identified' and 'Parts ordered', along with one photo attachment showing the pipe damage.
+
+
 ## Installation & Usage
 
 To install and use the **Fieldwire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Fieldwire** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

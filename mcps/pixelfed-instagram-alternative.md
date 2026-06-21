@@ -1,12 +1,14 @@
 # Pixelfed (Instagram Alternative) MCP Server
 
-Manage your Pixelfed presence — post photos, interact with the community, and track notifications directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pixelfed-instagram-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pixelfed-instagram-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pixelfed-instagram-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pixelfed-instagram-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 17
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage your Pixelfed presence — post photos, interact with the community, and track notifications directly from any AI agent.
 
 ## Description
 Connect your **Pixelfed** account to any AI agent to manage your decentralized photo-sharing feed through natural conversation.
@@ -56,6 +58,33 @@ Upload media
 - **verify_credentials**: Verify authenticated user credentials
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pixelfed (Instagram Alternative)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest posts from my home timeline on Pixelfed."
+
+**🤖 AI Agent:**
+> I've retrieved your home timeline. There are new photos from 'nature_lover' and 'tech_daily'. Would you like to see the details of the most recent post?
+
+---
+
+**👤 You:**
+> "Post a new status saying 'Exploring the Fediverse with MCP!' with public visibility."
+
+**🤖 AI Agent:**
+> Status created successfully! Your post is now live on your Pixelfed profile with public visibility.
+
+---
+
+**👤 You:**
+> "Check my recent notifications and tell me if I have any new followers."
+
+**🤖 AI Agent:**
+> You have 3 new notifications. 'art_fan' just followed you, and 'photo_pro' liked your latest post. Would you like to follow 'art_fan' back?
+
+
 ## Installation & Usage
 
 To install and use the **Pixelfed (Instagram Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Pixelfed (Instagram Alternative)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

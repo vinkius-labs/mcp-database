@@ -1,12 +1,14 @@
 # WebScrapingAPI MCP Server
 
-Scrape HTML, render JavaScript, and retrieve structured SERP data using WebScrapingAPI's high-proxy network.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/webscrapingapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webscrapingapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webscrapingapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webscrapingapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Scrape HTML, render JavaScript, and retrieve structured SERP data using WebScrapingAPI's high-proxy network.
 
 ## Description
 Connect your **WebScrapingAPI** account to any AI agent and harness the power of industrial-grade web scraping through natural conversation.
@@ -62,6 +64,33 @@ Retrieve structured search engine results from Google
 - **search_yandex_serp**: Retrieve structured search engine results from Yandex
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WebScrapingAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scrape the rendered HTML of 'https://example.com/dynamic-dashboard'."
+
+**🤖 AI Agent:**
+> I've scraped the dynamic page using a headless browser. Here is the rendered content, including all JavaScript-generated elements and data points from the dashboard.
+
+---
+
+**👤 You:**
+> "Search Google for 'best wireless noise cancelling headphones' and return structured results."
+
+**🤖 AI Agent:**
+> I found the top Google SERP results for your query. 1. 'Sony WH-1000XM5 review' (https://...), 2. 'Bose QuietComfort Ultra' (https://...), 3. 'Apple AirPods Max' (https://...). Would you like to see the snippets or ads associated with these?
+
+---
+
+**👤 You:**
+> "Get the price and rating for the product at 'https://amazon.com/dp/B09XXX'."
+
+**🤖 AI Agent:**
+> Successfully extracted product data from Amazon: Name: 'AcousticPro Wireless', Price: '$299.00', Rating: '4.8/5 stars (1,250 reviews)'. Would you like the full JSON extract?
+
+
 ## Installation & Usage
 
 To install and use the **WebScrapingAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **WebScrapingAPI** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

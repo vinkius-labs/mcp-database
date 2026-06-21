@@ -1,12 +1,14 @@
 # Bold MCP Server
 
-Automate payments via Bold Colombia — manage terminals, process transactions, generate payment links, and track settlements from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bold)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bold)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bold-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bold-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 14
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate payments via Bold Colombia — manage terminals, process transactions, generate payment links, and track settlements from any AI agent.
 
 ## Description
 Connect your **Bold** merchant account to any AI agent and gain full control of your Colombian payment infrastructure through natural conversation.
@@ -64,6 +66,33 @@ List all bound payment terminals
 Issue a refund for a processed payment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bold** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all the datáfono terminals connected to my Bold account."
+
+**🤖 AI Agent:**
+> I found 3 active terminals on your account: 'Smart Pro #BLD-4291' (online, last transaction 2 minutes ago), 'Smart Mini #BLD-7803' (online, idle), and 'Smart Pro #BLD-1156' (offline). Would you like to send a payment request to any of these terminals?
+
+---
+
+**👤 You:**
+> "Create a payment link for 150,000 COP for the invoice #INV-2024-089."
+
+**🤖 AI Agent:**
+> Done! I've generated a payment link for $150,000 COP. The shareable URL is: https://checkout.bold.co/pay/abc123xyz. Share it with your client via WhatsApp, email, or SMS. The link expires in 24 hours.
+
+---
+
+**👤 You:**
+> "List all transactions from the last 7 days and show me the total processed."
+
+**🤖 AI Agent:**
+> I queried your transactions from April 3 to April 10, 2026. You processed 47 transactions totaling $8,234,500 COP. 43 were approved (91.5%), 3 declined, and 1 refunded. The peak day was Friday with 12 transactions. Want me to break down by payment method?
+
+
 ## Installation & Usage
 
 To install and use the **Bold** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Bold** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

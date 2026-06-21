@@ -1,12 +1,14 @@
 # DeepSeek MCP Server
 
-Access powerful open-weight language models for reasoning, code generation, and complex problem solving at competitive cost.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deepseek)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deepseek)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deepseek-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deepseek-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 12
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Access powerful open-weight language models for reasoning, code generation, and complex problem solving at competitive cost.
 
 ## Description
 Connect your **DeepSeek Platform** account to any AI agent and take full control of your high-performance AI reasoning and development workflows through natural conversation.
@@ -51,6 +53,33 @@ Advanced logic reasoning
 - **list_api_tokens**: List API tokens
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeepSeek** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Solve this logic puzzle using Reasoner: 'If all A are B and some B are C, is every A a C?'."
+
+**🤖 AI Agent:**
+> Reasoning triggered... I've analyzed the syllogism. The answer is 'Not necessarily'. I've documented the step-by-step thinking process showing that the link between A and C is not guaranteed.
+
+---
+
+**👤 You:**
+> "Check my current DeepSeek credit balance."
+
+**🤖 AI Agent:**
+> Scanning account... Your current balance is $15.42. Your recent token usage is within limits and your API key is active. Would you like to see the breakdown of recent requests?
+
+---
+
+**👤 You:**
+> "List all available AI models on the DeepSeek platform."
+
+**🤖 AI Agent:**
+> I've retrieved the available models. You have access to: 'deepseek-chat' (V3) and 'deepseek-reasoner'. Which one would you like to use for your next query?
+
+
 ## Installation & Usage
 
 To install and use the **DeepSeek** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **DeepSeek** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

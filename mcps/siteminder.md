@@ -1,12 +1,14 @@
 # Siteminder MCP Server
 
-Manage hotel inventory, search properties, and handle reservations via Siteminder's Channels Plus and Direct Booking APIs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/siteminder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/siteminder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/siteminder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/siteminder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 18
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage hotel inventory, search properties, and handle reservations via Siteminder's Channels Plus and Direct Booking APIs.
 
 ## Description
 Connect your **Siteminder** account to any AI agent to streamline hotel distribution and reservation management through natural conversation.
@@ -53,6 +55,33 @@ Connect your **Siteminder** account to any AI agent to streamline hotel distribu
 - **smx_list_room_types**: List room types for a hotel via SMX API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Siteminder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find hotels near lat 40.7128, long -74.0060 within a 5km radius for next weekend."
+
+**🤖 AI Agent:**
+> I've searched the area. I found 3 properties available: 'Grand Plaza' (UUID: gp-123), 'Urban Stay' (UUID: us-456), and 'Boutique Inn' (UUID: bi-789). Would you like to see the room rates for any of these?
+
+---
+
+**👤 You:**
+> "Get the room types and rates for property UUID '123-abc-456'."
+
+**🤖 AI Agent:**
+> For property '123-abc-456', I found: 'Deluxe King' at $250/night and 'Standard Twin' at $180/night. Both are available for your selected dates. Should I proceed to lock a reservation?
+
+---
+
+**👤 You:**
+> "Show me the history of bookings for my account."
+
+**🤖 AI Agent:**
+> Retrieving your reservation history... You have 12 recent bookings. The latest is 'RES-99821' for 'John Doe' at 'Grand Plaza', confirmed on Oct 12th. Would you like details on a specific reference ID?
+
+
 ## Installation & Usage
 
 To install and use the **Siteminder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Siteminder** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

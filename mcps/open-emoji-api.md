@@ -1,12 +1,14 @@
 # Open Emoji API MCP Server
 
-Access emoji data — audit characters, names, and categories via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-emoji-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-emoji-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-emoji-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-emoji-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Access emoji data — audit characters, names, and categories via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire visual research and emoji auditing workflow with the **Open Emoji API**, the comprehensive source for Unicode-compliant emoji data. By connecting Open Emoji to your agent, you transform complex metadata searches into a natural conversation. Your agent can instantly retrieve emoji characters, audit category distributions, and query specific symbols without you ever touching a reference table. Whether you are building social media content or designing UI components, your agent acts as a real-time visual consultant, ensuring your data is always expressive and well-categorized.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire visual research and emoji audit
 - **search_emojis**: Search for emojis by keyword or name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Emoji API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for emojis related to 'pizza' using Open Emoji API."
+
+**🤖 AI Agent:**
+> I've retrieved the emojis for 'pizza'! The primary character is 🍕 (pizza). It belongs to the 'food-drink' group and the 'food-prepared' subgroup. Would you like to see other related food emojis?
+
+---
+
+**👤 You:**
+> "List all emojis in the 'smileys-emotion' category."
+
+**🤖 AI Agent:**
+> I've identified 100+ emojis in the 'smileys-emotion' category. Notable entries include 😀 (grinning face) and 😂 (face with tears of joy). I can provide the full Unicode names for the top matches if you'd like.
+
+---
+
+**👤 You:**
+> "What categories are available in the Open Emoji database?"
+
+**🤖 AI Agent:**
+> I've scanned the category catalog. There are 10 main groups available, including 'smileys-emotion', 'people-body', 'animals-nature', and 'activities'. I can help you search for emojis in any of these categories.
+
+
 ## Installation & Usage
 
 To install and use the **Open Emoji API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Open Emoji API** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

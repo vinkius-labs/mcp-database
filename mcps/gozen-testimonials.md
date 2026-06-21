@@ -1,12 +1,14 @@
 # GoZen Testimonials MCP Server
 
-Collect and showcase video testimonials from happy customers with branded recording pages and embeddable display widgets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gozen-testimonials)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gozen-testimonials)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gozen-testimonials-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gozen-testimonials-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 13
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Collect and showcase video testimonials from happy customers with branded recording pages and embeddable display widgets.
 
 ## Description
 Connect your **GoZen Testimonials** account to any AI agent and take full control of your social proof orchestration and automated customer review workflows through natural conversation.
@@ -50,6 +52,33 @@ No more manual following up for customer reviews or missing critical video testi
 - **list_widgets**: List widgets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GoZen Testimonials** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all new testimonials received in GoZen today."
+
+**🤖 AI Agent:**
+> I've retrieved your testimonials. You currently have 5 new high-fidelity submissions today, including a video review from 'John Client'. Would you like the detailed sentiment metadata for any of them?
+
+---
+
+**👤 You:**
+> "Check the response rate for the 'Year-End Review' campaign."
+
+**🤖 AI Agent:**
+> Campaign intelligence orchestrated! For 'Year-End Review', I've identified a high-fidelity response rate of 15% across 100 requests. I've retrieved the technical status metadata for your review. Need help sending reminders to non-respondents?
+
+---
+
+**👤 You:**
+> "Show the view count for the 'Success Story' video widget."
+
+**🤖 AI Agent:**
+> Engagement monitoring complete! The Success Story widget has received 500 high-fidelity views this month, with a 50% video completion rate. Your API connection is healthy. Shall I retrieve the detailed conversion breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **GoZen Testimonials** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **GoZen Testimonials** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

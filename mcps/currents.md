@@ -1,12 +1,14 @@
 # Currents MCP Server
 
-Access real-time global news and search millions of articles directly from your AI agent using the Currents API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/currents)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/currents)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/currents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/currents-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 6
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access real-time global news and search millions of articles directly from your AI agent using the Currents API.
 
 ## Description
 Connect your **Currents** account to any AI agent to monitor global media, track specific topics, and retrieve real-time news streams through natural language.
@@ -45,6 +47,33 @@ Get latest real-time news articles
 Search for news articles by keywords or query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Currents** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest news in technology from the US."
+
+**🤖 AI Agent:**
+> I've fetched the latest technology news from the United States. Key headlines include updates on new AI regulations and recent semiconductor breakthroughs. Would you like me to summarize any specific article?
+
+---
+
+**👤 You:**
+> "Search for articles about 'SpaceX' AND 'Mars' from the last 30 days."
+
+**🤖 AI Agent:**
+> Searching the archives... I found several articles regarding SpaceX's Mars mission plans and recent Starship tests. I can provide the links and descriptions for the top 5 results.
+
+---
+
+**👤 You:**
+> "What are the available news categories I can filter by?"
+
+**🤖 AI Agent:**
+> I've retrieved the list of supported categories. You can filter news by: business, entertainment, general, health, science, sports, and technology. Which one interests you?
+
+
 ## Installation & Usage
 
 To install and use the **Currents** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Currents** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Convertio MCP Server
 
-Enable your AI agent to convert images, documents, audio, and video files across hundreds of formats using the Convertio API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/convertio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/convertio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/convertio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/convertio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enable your AI agent to convert images, documents, audio, and video files across hundreds of formats using the Convertio API.
 
 ## Description
 Connect your AI agent to **Convertio**, the versatile file conversion platform supporting over 300 formats.
@@ -41,6 +43,33 @@ Connect your AI agent to **Convertio**, the versatile file conversion platform s
 - **list_active_jobs**: List your current active conversion jobs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Convertio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert this SVG to PNG: 'https://example.com/logo.svg'"
+
+**🤖 AI Agent:**
+> I've sent the SVG file to Convertio for PNG conversion. Conversion ID: 'a8s9df7s9'. Status: encoding. I'll notify you when the download link is ready.
+
+---
+
+**👤 You:**
+> "Check the status of conversion 'a8s9df7s9'."
+
+**🤖 AI Agent:**
+> Conversion 'a8s9df7s9' is complete! File size: 45 KB. Download your PNG here: [Download Link]. Note: the link expires in 24 hours.
+
+---
+
+**👤 You:**
+> "How many conversion credits do I have left in my Convertio account?"
+
+**🤖 AI Agent:**
+> You currently have 450 credits remaining. Your plan allows for up to 25 concurrent conversions. Would you like to see a list of your most recent jobs?
+
+
 ## Installation & Usage
 
 To install and use the **Convertio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Convertio** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

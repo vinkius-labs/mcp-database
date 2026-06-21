@@ -1,12 +1,14 @@
 # Sproof MCP Server
 
-Manage digital signatures, documents, and contacts on Sproof with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sproof)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sproof)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sproof-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sproof-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage digital signatures, documents, and contacts on Sproof with AI agents.
 
 ## Description
 Connect your **Sproof** account to any AI agent to automate your European-compliant digital signature workflows. Sproof provides a premier platform for qualified electronic signatures (QES), and this integration allows you to retrieve document metadata, monitor signature requests, and manage contacts through natural conversation.
@@ -48,6 +50,33 @@ Create a new signature request
 - **list_signers**: List all signers for a signature request
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sproof** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all pending signature requests in Sproof."
+
+**🤖 AI Agent:**
+> I've retrieved your requests. You have 3 pending documents: 'Consulting Agreement', 'Employee Handbook', and 'Vendor Terms'. Would you like to check who still needs to sign them?
+
+---
+
+**👤 You:**
+> "Show me all pending signature requests with their signing progress and deadline status."
+
+**🤖 AI Agent:**
+> 12 pending signature requests. Urgent (3): "Service Agreement - Meridian" (2/4 signed, deadline tomorrow), "NDA - TechVentures" (0/2 signed, overdue 2 days), "Employment Contract - D. Kim" (1/1 signed, awaiting notarization). In Progress (5): avg 60% completion, deadlines within 2 weeks. Awaiting Review (4): documents uploaded, not yet sent. Total documents pending: 34 pages across 12 requests. Reminders sent today: 5 (auto). Average signing time: 1.4 days. Completion rate this month: 89%.
+
+---
+
+**👤 You:**
+> "Create a new signature request for the annual vendor agreement and add three signers."
+
+**🤖 AI Agent:**
+> Signature request created: "Annual Vendor Agreement 2025-2026". Document: vendor_agreement_2025.pdf (12 pages). Signers added: 1) David Chen (Vendor, CEO) - david@vendor.com, 2) Sarah Williams (Procurement Manager) - sarah@yourcompany.com, 3) James Park (Legal Counsel) - james@yourcompany.com. Signing order: sequential (Vendor → Procurement → Legal). Signature fields placed: 6 (2 per signer). Deadline: June 1, 2025. Reminders: auto every 3 days. Audit trail: enabled. eIDAS qualified: yes. Invitation emails sent to all signers.
+
+
 ## Installation & Usage
 
 To install and use the **Sproof** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Sproof** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

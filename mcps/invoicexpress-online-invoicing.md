@@ -1,12 +1,14 @@
 # InvoiceXpress (Online Invoicing) MCP Server
 
-Manage invoicing via InvoiceXpress — create clients, track payments, and manage invoices and estimates in Portugal.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/invoicexpress-online-invoicing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/invoicexpress-online-invoicing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/invoicexpress-online-invoicing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/invoicexpress-online-invoicing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 16
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage invoicing via InvoiceXpress — create clients, track payments, and manage invoices and estimates in Portugal.
 
 ## Description
 Connect your **InvoiceXpress** account to any AI agent and take full control of your certified invoicing and client management in Portugal through natural conversation.
@@ -58,6 +60,33 @@ Criar um novo artigo ou serviço para ser faturado
 - **list_sequences**: Listar as séries de faturas ativas, ex: FT 2026/
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **InvoiceXpress (Online Invoicing)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 invoices from InvoiceXpress"
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 invoices. Highlights include FT 2026/1 (€1,200), FT 2026/2 (€450), and FT 2026/3 (€2,100). All documents are in the 'Finalized' state. Would you like the PDF link for any of these?
+
+---
+
+**👤 You:**
+> "Search for a client named 'TechPorto'"
+
+**🤖 AI Agent:**
+> I've found client 'TechPorto' (ID: 12345). Their fiscal ID is 500123456 and they are located in Porto. They have 3 active estimates pending approval. Would you like to see their contact history?
+
+---
+
+**👤 You:**
+> "What are the active VAT rates in my account?"
+
+**🤖 AI Agent:**
+> I've identified 3 active VAT rates: 23% (Normal rate, ID: 1), 13% (Intermediate rate, ID: 2), and 6% (Reduced rate, ID: 3). There are also 2 exemption codes configured for international services. I can provide the IDs for your item mappings.
+
+
 ## Installation & Usage
 
 To install and use the **InvoiceXpress (Online Invoicing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **InvoiceXpress (Online Invoicing)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

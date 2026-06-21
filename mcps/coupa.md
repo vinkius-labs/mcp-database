@@ -1,12 +1,14 @@
 # Coupa MCP Server
 
-Manage purchase orders, invoices, suppliers, and procurement workflows on Coupa — the enterprise procurement platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coupa)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coupa)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coupa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coupa-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage purchase orders, invoices, suppliers, and procurement workflows on Coupa — the enterprise procurement platform.
 
 ## Description
 Connect your **Coupa** instance to any AI agent and manage procurement operations through natural conversation.
@@ -66,6 +68,33 @@ List or search for suppliers
 Access any Coupa REST API resource directly
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coupa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending POs above $25K for the IT department."
+
+**🤖 AI Agent:**
+> Found 6 pending POs for IT > $25K. Top items: 1. PO-2026-4501 — 'Annual Cloud Licensing' ($180,000), 2. PO-2026-4512 — 'Network Equipment Refresh' ($67,500). Total pending: $412,000. Want me to approve any?
+
+---
+
+**👤 You:**
+> "Check the compliance status of supplier Acme Corp."
+
+**🤖 AI Agent:**
+> Acme Corp (ID: SUP-1045): Compliance Status: Approved ✅. Tax forms: W-9 on file (exp: Dec 2026). Insurance: Current. Diversity cert: Minority-owned (NMSDC). Performance score: 4.2/5 (last 12 months). All documents are up to date.
+
+---
+
+**👤 You:**
+> "What's the remaining budget for Marketing Q2 2026?"
+
+**🤖 AI Agent:**
+> Marketing Q2 2026 Budget: Total allocated: $450,000. Committed (POs): $285,000. Spent (invoiced): $210,000. Remaining: $165,000 (36.7%). You have 3 pending requisitions totaling $42,000 awaiting approval.
+
+
 ## Installation & Usage
 
 To install and use the **Coupa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Coupa** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

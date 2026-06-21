@@ -1,12 +1,14 @@
 # TestMu AI (formerly LambdaTest) MCP Server
 
-Manage cross-browser testing via TestMu AI — audit automation builds, inspect test sessions, and retrieve visual logs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/testmu-ai-formerly-lambdatest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/testmu-ai-formerly-lambdatest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/testmu-ai-formerly-lambdatest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/testmu-ai-formerly-lambdatest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage cross-browser testing via TestMu AI — audit automation builds, inspect test sessions, and retrieve visual logs.
 
 ## Description
 Connect your **TestMu AI (formerly LambdaTest)** account to any AI agent and take full control of your cross-browser testing and automation orchestration through natural conversation.
@@ -56,6 +58,33 @@ List all supported OS/browser capabilities available
 - **get_build_sessions**: Extract all explicit test sessions associated with a Build
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TestMu AI (formerly LambdaTest)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 automation builds in my TestMu AI account"
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 builds. Highlights include 'Prod-Regression-987' (Passed), 'Staging-UI-Check-986' (Failed - 12 sessions), and 'Critical-Hotfix-985' (Passed). Would you like to see the test sessions for the failed staging build?
+
+---
+
+**👤 You:**
+> "Show me the logs and screenshots for session ID 'abc-123-xyz'"
+
+**🤖 AI Agent:**
+> Retrieving data for session 'abc-123-xyz'… I've fetched 3 failure screenshots and the full Selenium command logs. The console shows a 'NoSuchElementException' at the login flow. Would you like the video recording link as well?
+
+---
+
+**👤 You:**
+> "Which OS and browser versions are currently supported in the grid?"
+
+**🤖 AI Agent:**
+> I've queried the platform capabilities. Currently supported: Windows 11 (Chrome 120+, Firefox 118+), macOS Sonoma (Safari 17, Chrome 120+), and latest Android/iOS versions. I can provide the full JSON matrix if you need specific sub-versions.
+
+
 ## Installation & Usage
 
 To install and use the **TestMu AI (formerly LambdaTest)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **TestMu AI (formerly LambdaTest)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

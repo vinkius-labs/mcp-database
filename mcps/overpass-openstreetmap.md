@@ -1,12 +1,14 @@
 # Overpass (OpenStreetMap) MCP Server
 
-Search OpenStreetMap data — find restaurants, shops, hospitals, schools, parks, ATMs and more worldwide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/overpass-openstreetmap)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/overpass-openstreetmap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/overpass-openstreetmap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/overpass-openstreetmap-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 16
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search OpenStreetMap data — find restaurants, shops, hospitals, schools, parks, ATMs and more worldwide.
 
 ## Description
 Connect to **Overpass API** (OpenStreetMap) and query the world's largest free geographic database through natural conversation — no API key needed.
@@ -85,6 +87,33 @@ Search for schools in a bounding box
 Search for shops in a bounding box
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Overpass (OpenStreetMap)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all restaurants in Lower Manhattan."
+
+**🤖 AI Agent:**
+> Found 250+ restaurants in Lower Manhattan (bbox: 40.70,-74.02,40.72,-73.98). Includes Italian, Chinese, Japanese, American, Mexican and many more cuisines. Names, addresses, phone numbers and opening hours included.
+
+---
+
+**👤 You:**
+> "Find ATMs within 500m of Times Square (40.7580, -73.9855)."
+
+**🤖 AI Agent:**
+> Found 18 ATMs within 500m of Times Square. Operators include Chase, Bank of America, Citibank, Wells Fargo and independent ATM networks. Locations include buildings, stores and subway stations.
+
+---
+
+**👤 You:**
+> "Find EV charging stations in downtown San Francisco."
+
+**🤖 AI Agent:**
+> Found 45 EV charging stations in downtown SF. Includes Tesla Superchargers, ChargePoint, EVgo and Blink stations. Connector types, charging speeds and access info provided.
+
+
 ## Installation & Usage
 
 To install and use the **Overpass (OpenStreetMap)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -93,4 +122,11 @@ To install and use the **Overpass (OpenStreetMap)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

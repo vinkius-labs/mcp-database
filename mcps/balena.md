@@ -1,12 +1,14 @@
 # Balena MCP Server
 
-Manage IoT fleets and edge devices via Balena — list devices, manage environment variables, and track releases directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/balena)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/balena)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/balena-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/balena-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 10
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Manage IoT fleets and edge devices via Balena — list devices, manage environment variables, and track releases directly from your AI agent.
 
 ## Description
 Connect your **BalenaCloud** account to any AI agent to orchestrate your IoT infrastructure through natural language. Monitor device health, manage fleet configurations, and handle deployments without leaving your chat interface.
@@ -53,6 +55,33 @@ List Balena releases
 - **whoami**: Get current Balena user details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Balena** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Balena fleets and their associated IDs."
+
+**🤖 AI Agent:**
+> I've retrieved your fleets. You have 3 active fleets: 'Smart-Home-Gateway' (ID: 18234), 'Industrial-Sensor-Node' (ID: 19455), and 'Edge-AI-Camera' (ID: 20112).
+
+---
+
+**👤 You:**
+> "Add a tag 'location' with value 'warehouse-north' to device 1234567."
+
+**🤖 AI Agent:**
+> Successfully created the tag 'location: warehouse-north' for device 1234567. The device metadata has been updated.
+
+---
+
+**👤 You:**
+> "What are the available balenaOS versions for a raspberrypi4-64?"
+
+**🤖 AI Agent:**
+> I found several versions for raspberrypi4-64. The latest stable releases include v2.115.18, v2.113.18, and v2.108.27. Would you like the download URL for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Balena** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Balena** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

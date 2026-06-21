@@ -1,12 +1,14 @@
 # Bazaarvoice MCP Server
 
-Analyze and manage user-generated content via Bazaarvoice — list products, reviews, and customer questions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bazaarvoice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bazaarvoice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bazaarvoice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bazaarvoice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Analyze and manage user-generated content via Bazaarvoice — list products, reviews, and customer questions directly from any AI agent.
 
 ## Description
 Connect your **Bazaarvoice** account to any AI agent and gain deep insights into your customer sentiment and product performance through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Bazaarvoice** account to any AI agent and gain deep insights into
 - **search_reviews**: Search reviews by text
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bazaarvoice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all reviews for our best-selling product."
+
+**🤖 AI Agent:**
+> I've retrieved the latest reviews. For your top product, I found 25 recent reviews. The average sentiment is highly positive, with common praise for 'durability' and 'design'. Would you like a summary of the most recent 5?
+
+---
+
+**👤 You:**
+> "Search for reviews mentioning 'battery life'."
+
+**🤖 AI Agent:**
+> Searching through reviews... I found 8 reviews mentioning battery life. 6 are positive, while 2 mention issues after one year of use. Should I summarize the negative ones for the product team?
+
+---
+
+**👤 You:**
+> "List current customer questions that need answers."
+
+**🤖 AI Agent:**
+> I found 4 unanswered questions. They cover topics like 'compatibility with older models' and 'shipping times to Europe'. Would you like the full text of these questions?
+
+
 ## Installation & Usage
 
 To install and use the **Bazaarvoice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Bazaarvoice** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

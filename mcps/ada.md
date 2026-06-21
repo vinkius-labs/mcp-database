@@ -1,12 +1,14 @@
 # Ada MCP Server
 
-AI-powered customer service automation — manage conversations, end users, and knowledge via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ada)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ada)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ada-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ada-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 4
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+AI-powered customer service automation — manage conversations, end users, and knowledge via AI.
 
 ## Description
 Connect your **Ada** account to your AI agent to unlock advanced customer service automation. From monitoring real-time conversations to managing your knowledge base and syncing user metadata, your agent handles conversational AI orchestration through natural language.
@@ -44,6 +46,17 @@ Retrieve profile information and custom metavariables for a specific Ada end use
 Add a new text article to the Ada knowledge base to immediately improve AI bot responses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ada** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 5 conversations handled by Ada."
+
+**🤖 AI Agent:**
+> I've retrieved the last 5 conversations. 4 were resolved automatically and 1 was handed off to a human agent. Would you like to see the transcript for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Ada** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +65,11 @@ To install and use the **Ada** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

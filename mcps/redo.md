@@ -1,12 +1,14 @@
 # Redo MCP Server
 
-Manage returns, track shipping protection claims, and oversee exchanges via AI agents with Redo.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/redo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/redo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/redo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/redo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage returns, track shipping protection claims, and oversee exchanges via AI agents with Redo.
 
 ## Description
 Connect your **Redo** account to any AI agent to automate your returns management and shipping protection workflows through the Model Context Protocol (MCP). Redo provides a comprehensive suite for handling customer returns, exchanges, and package protection claims for lost or damaged items. This MCP server enables you to track return requests, approve claims, and process final resolutions directly through natural conversation.
@@ -50,6 +52,33 @@ Connect your **Redo** account to any AI agent to automate your returns managemen
 - **reject_return_claim**: Reject a request
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Redo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 pending return requests."
+
+**🤖 AI Agent:**
+> Retrieving requests... I found 5 pending returns, including one from 'john@email.com' for 'Reason: Damaged in transit'. Would you like the full details?
+
+---
+
+**👤 You:**
+> "Approve the return claim for ID 'ret_abc123'."
+
+**🤖 AI Agent:**
+> Claim approved! I have successfully updated the status of return ret_abc123 to 'approved'. The customer will receive their instructions automatically.
+
+---
+
+**👤 You:**
+> "Get the shipping rates for return 'ret_abc123'."
+
+**🤖 AI Agent:**
+> Calculating rates... I found 3 shipping options for this return. Standard Ground is $8.50 and Express is $15.75. Which one would you like to select?
+
+
 ## Installation & Usage
 
 To install and use the **Redo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Redo** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

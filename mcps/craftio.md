@@ -1,12 +1,14 @@
 # Craft.io MCP Server
 
-Build product roadmaps that connect strategy to execution with visual planning tools your whole organization can follow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/craftio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/craftio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/craftio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/craftio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 13
+
+**Category:** [productivity](../categories/productivity.md)
+
+Build product roadmaps that connect strategy to execution with visual planning tools your whole organization can follow.
 
 ## Description
 Connect your **Craft.io** product management account to any AI agent and simplify how you coordinate your product strategy, manage features, and monitor roadmaps through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Craft.io** product management account to any AI agent and simplif
 - **search_companies**: Search companies
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Craft.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active workspaces in my Craft.io account."
+
+**🤖 AI Agent:**
+> I've retrieved your workspaces. You have 3 active environments: 'Mobile App Roadmap', 'Web Platform Backend', and 'Design System'. Which one would you like to see items for?
+
+---
+
+**👤 You:**
+> "Show me the last 5 items in the 'Mobile App Roadmap' (ID: 10293)."
+
+**🤖 AI Agent:**
+> I've fetched the items. For the 'Mobile App Roadmap', there are 5 recent items: 'Epic: Dark Mode Support', 'Feature: Social Login', 'Story: Fix Header Layout', and 2 others. Shall I retrieve the details for the Dark Mode epic?
+
+---
+
+**👤 You:**
+> "Create a new feature: 'AI Search Integration' in workspace 'ws_88231'."
+
+**🤖 AI Agent:**
+> Success! The feature 'AI Search Integration' has been created in workspace ws_88231 with ID item_10293. I've added it to your product backlog in Craft.io.
+
+
 ## Installation & Usage
 
 To install and use the **Craft.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Craft.io** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Cradl AI MCP Server
 
-Equip your AI agent to extract structured data from any document using Cradl AI's deep learning models.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cradl-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cradl-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cradl-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cradl-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Equip your AI agent to extract structured data from any document using Cradl AI's deep learning models.
 
 ## Description
 Integrate **Cradl AI**, the advanced document data extraction platform, directly into your AI workflow. Automate the processing of invoices, receipts, IDs, and custom forms using powerful deep learning models and natural language.
@@ -64,6 +66,33 @@ List recent document processing tasks
 Search for extraction models by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cradl AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract data from this invoice: https://example.com/inv123.pdf using my 'Invoice Parser' model."
+
+**🤖 AI Agent:**
+> Extraction started for invoice 'inv123.pdf'. I'll provide the structured data once the 'Invoice Parser' model completes the task. Should I format the results into a table?
+
+---
+
+**👤 You:**
+> "Check the status of document processing task 't8s9df7'."
+
+**🤖 AI Agent:**
+> Task 't8s9df7' is 100% complete. Cradl AI successfully extracted 15 fields with an average confidence of 98.5%. Would you like to see the extracted JSON?
+
+---
+
+**👤 You:**
+> "List all extraction models available in my account."
+
+**🤖 AI Agent:**
+> I've found 3 models: 'Invoice Parser', 'ID Document Scanner', and 'Receipt Extractor'. Which one would you like to use for your next document?
+
+
 ## Installation & Usage
 
 To install and use the **Cradl AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Cradl AI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

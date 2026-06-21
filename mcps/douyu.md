@@ -1,12 +1,14 @@
 # Douyu MCP Server
 
-Automate game broadcasting metrics via the Douyu API — monitor live streamer activity, track esports massive bullet-chats, and extract audience retention natively from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/douyu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/douyu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/douyu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/douyu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Automate game broadcasting metrics via the Douyu API — monitor live streamer activity, track esports massive bullet-chats, and extract audience retention natively from any AI agent.
 
 ## Description
 Connect your **Douyu** broadcasting enterprise keys robustly to any interactive AI agent and start commanding the deep data flowing behind of the biggest live-streaming hubs heavily scaled across the digital world.
@@ -45,6 +47,33 @@ Say goodbye to massive dashboard fatigue crossing international barriers; comman
 - **send_message**: Send a message into a streams Danmu chat
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Douyu** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Provide the real-time viewership metric block for room ID '183921'."
+
+**🤖 AI Agent:**
+> The query targeted room #183921 natively... It currently houses a massive audience retention weighing an active heat metric of precisely 12.3 million internal pulse points. It seems driven heavily via an esports tie... shall I request detailed stream titles tied to this block?
+
+---
+
+**👤 You:**
+> "List all active channels broadcasting explicitly nested inside the specific 'League of Legends' category dynamically."
+
+**🤖 AI Agent:**
+> Retrieving the list under 'LoL' mapping successfully! There are 304 live instances indexed officially. At the top rank hovers channel ID '73199' carrying half the category's weight alone. Should we refine targeting smaller emerging accounts inside?
+
+---
+
+**👤 You:**
+> "Snag the top 20 lines flashing across the screen on room 491."
+
+**🤖 AI Agent:**
+> Sniffing stream ID 491... Caught the first 20 bullet-chats smoothly cleanly formatted! Half comprise of '666' spam, while 4 explicitly mention gameplay praise. Here is the array in JSON... shall I filter spam strings fully going forward internally?
+
+
 ## Installation & Usage
 
 To install and use the **Douyu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Douyu** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

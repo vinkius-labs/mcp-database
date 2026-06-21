@@ -1,12 +1,14 @@
 # MeisterTask MCP Server
 
-Organize team tasks with visual Kanban boards, recurring workflows, and integrations that connect to your favorite tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meistertask)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meistertask)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meistertask-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meistertask-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Organize team tasks with visual Kanban boards, recurring workflows, and integrations that connect to your favorite tools.
 
 ## Description
 Connect your **MeisterTask** account to any AI agent and take full control of your agile project orchestration and team productivity through natural conversation. MeisterTask provides a flexible platform for managing project boards, and this integration allows you to retrieve board metadata, create automated task assignments, and monitor real-time team progress directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual status checking in the dashboard for task updates. Your AI acts a
 - **update_task_info**: Modify a task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MeisterTask** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in MeisterTask."
+
+**🤖 AI Agent:**
+> I've retrieved your project boards. You have 4 active environments: 'Software Development', 'Marketing Q4', 'Customer Support', and 'Internal HR'. Which one would you like to see sections for?
+
+---
+
+**👤 You:**
+> "Create a new task 'Audit API Endpoints' in the 'To Do' section of the 'Software Development' project."
+
+**🤖 AI Agent:**
+> Task created! I've added 'Audit API Endpoints' to the 'To Do' section. Would you like me to assign it to a team member or add a description?
+
+---
+
+**👤 You:**
+> "Show the latest comments for the 'Fix Login Bug' task."
+
+**🤖 AI Agent:**
+> I've retrieved the comments. The last update was from Alice: 'Found the root cause in the session handler, working on a patch' (1 hour ago).
+
+
 ## Installation & Usage
 
 To install and use the **MeisterTask** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **MeisterTask** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

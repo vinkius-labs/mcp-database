@@ -1,12 +1,14 @@
 # NVIDIA Audio MCP Server
 
-Transcribe speech, generate voices, translate audio, and clone voices via NVIDIA Audio APIs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-audio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-audio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-audio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-audio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Transcribe speech, generate voices, translate audio, and clone voices via NVIDIA Audio APIs.
 
 ## Description
 Connect **NVIDIA Audio** to any AI agent and unlock professional-grade audio processing — transcribe speech to text, generate natural voices, translate audio across languages, perform speaker diarization, and clone voices through natural conversation.
@@ -53,6 +55,33 @@ Convert text to natural-sounding speech
 Translate spoken audio to another language
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NVIDIA Audio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Transcribe this meeting recording: https://example.com/meeting.mp3"
+
+**🤖 AI Agent:**
+> Transcription: 'Welcome everyone to the Q2 review. Our revenue grew 15% compared to last quarter...'
+
+---
+
+**👤 You:**
+> "Convert this text to speech: 'Welcome to our presentation today.'"
+
+**🤖 AI Agent:**
+> Speech generated successfully! Audio data available for playback.
+
+---
+
+**👤 You:**
+> "Identify different speakers in this call: https://example.com/call.wav"
+
+**🤖 AI Agent:**
+> Detected 3 speakers: Speaker 1 (0:00-2:30), Speaker 2 (2:31-5:45), Speaker 1 (5:46-8:20).
+
+
 ## Installation & Usage
 
 To install and use the **NVIDIA Audio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **NVIDIA Audio** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

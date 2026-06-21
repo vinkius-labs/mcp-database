@@ -1,12 +1,14 @@
 # Prosper MCP Server
 
-Manage your Prosper peer-to-peer investments — check account balances, search loan listings, submit bids, and track your portfolio performance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/prosper)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prosper)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/prosper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/prosper-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 10
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage your Prosper peer-to-peer investments — check account balances, search loan listings, submit bids, and track your portfolio performance.
 
 ## Description
 Connect your **Prosper** investment account to any AI agent to automate your peer-to-peer lending strategy. Monitor your portfolio, discover new investment opportunities, and manage your notes through natural conversation.
@@ -47,6 +49,33 @@ Check the status of a submitted order
 - **submit_order**: Submit bids on listings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Prosper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is my current Prosper account balance and available cash?"
+
+**🤖 AI Agent:**
+> I've retrieved your account details. You have a total account value of $12,450.00, with $1,200.50 available in cash for new investments.
+
+---
+
+**👤 You:**
+> "Find active AA-rated loan listings that I haven't invested in yet."
+
+**🤖 AI Agent:**
+> Searching the marketplace... I found 3 active AA-rated listings where you don't have an existing investment. Would you like to see the details for Listing ID 1092384?
+
+---
+
+**👤 You:**
+> "Show me the details for loan number 123456 and its next payment date."
+
+**🤖 AI Agent:**
+> Inspecting loan 123456... The current principal balance is $2,100.00. The next payment of $145.20 is scheduled for October 15th.
+
+
 ## Installation & Usage
 
 To install and use the **Prosper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Prosper** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

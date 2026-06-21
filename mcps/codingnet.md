@@ -1,12 +1,14 @@
 # Coding.net MCP Server
 
-All-in-one DevOps platform — manage projects, repositories, and issues via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/codingnet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codingnet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codingnet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codingnet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+All-in-one DevOps platform — manage projects, repositories, and issues via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire software development lifecycle with **CODING** (Coding.net), the premier DevOps platform in China. By connecting CODING to your agent, you transform complex project management, code repository auditing, and issue tracking into a natural conversation. Your agent can instantly list projects, retrieve detailed Git repository metadata, browse active merge requests, and monitor issue progress without you ever needing to navigate the comprehensive CODING web interface. Whether you are conducting a code review or coordinating a cross-functional release, your agent acts as a real-time DevOps assistant, keeping your development data accurate and your team moving.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire software development lifecycle 
 - **list_repos**: List project repositories
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coding.net** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my DevOps projects on CODING."
+
+**🤖 AI Agent:**
+> I've retrieved your CODING projects. You have 5 active projects, including 'E-commerce Backend', 'Mobile App', and 'Infrastructure'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the latest issues for project 'Alpha'."
+
+**🤖 AI Agent:**
+> I've listed the latest issues for project 'Alpha'. There are 12 open tasks, including 'Bug: Login Timeout' and 'Feature: Dark Mode'. Would you like the details for the high-priority ones?
+
+---
+
+**👤 You:**
+> "Get the branches for repository 'main-api' in project 'Alpha'."
+
+**🤖 AI Agent:**
+> I've retrieved the branches for 'main-api'. You have 3 active branches: 'master', 'develop', and 'feature/api-v2'. Should I check for the latest commit on any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Coding.net** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Coding.net** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

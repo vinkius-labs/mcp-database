@@ -1,12 +1,14 @@
 # Xero MCP Server
 
-Manage invoices, bank transactions, and financial reports on Xero — the beautiful accounting software for small business.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/xero)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xero)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xero-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xero-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 9
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage invoices, bank transactions, and financial reports on Xero — the beautiful accounting software for small business.
 
 ## Description
 Connect your **Xero** account to any AI agent and manage your business finances through natural conversation.
@@ -53,6 +55,33 @@ Retrieves the profit and loss (PnL) report for a specific date range
 - **list_xero_payments**: Lists all payments applied to invoices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Xero** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my unpaid invoices in Xero."
+
+**🤖 AI Agent:**
+> I found 5 invoices with outstanding balances: 1. INV-001 ($1,200.00), 2. INV-005 ($450.00), 3. INV-012 ($890.00), and 2 others. Would you like the details for the largest one?
+
+---
+
+**👤 You:**
+> "What is our Profit and Loss for March 2026?"
+
+**🤖 AI Agent:**
+> PnL Report for March 2026: Total Revenue: $42,500.00, Total Expenses: $28,150.00, Net Profit: $14,350.00. This is a 12% improvement compared to February. Would you like a breakdown by category?
+
+---
+
+**👤 You:**
+> "Find the contact ID for 'Global Tech' and show their last 3 payments."
+
+**🤖 AI Agent:**
+> Contact 'Global Tech' (ID: 550e8400-e29b...) found. Their last 3 payments were: 1. $1,200.00 (2026-03-15), 2. $1,200.00 (2026-02-15), and 3. $1,200.00 (2026-01-15). All applied to recurring service invoices.
+
+
 ## Installation & Usage
 
 To install and use the **Xero** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Xero** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

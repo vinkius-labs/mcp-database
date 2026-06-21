@@ -1,12 +1,14 @@
 # BrightHR MCP Server
 
-Simplify people management with holiday tracking, shift scheduling, and absence management built for UK and ANZ businesses.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brighthr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brighthr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brighthr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brighthr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Simplify people management with holiday tracking, shift scheduling, and absence management built for UK and ANZ businesses.
 
 ## Description
 Connect your **BrightHR** account to any AI agent and take full control of your workforce management and employee lifecycle through natural conversation.
@@ -55,6 +57,33 @@ List holiday/leave requests
 - **list_configured_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BrightHR** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active employees in my organization."
+
+**🤖 AI Agent:**
+> I've retrieved your employee directory. You currently have 25 active staff members, including @user1 and @user2. Would you like to see the detailed job metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the holiday requests for employee ID 'emp_123'."
+
+**🤖 AI Agent:**
+> Fetching leave records... Employee emp_123 has 2 upcoming holiday requests: a 1-week trip in June (Approved) and a 3-day break in August (Pending). Shall I retrieve the high-fidelity absence history for them?
+
+---
+
+**👤 You:**
+> "Record a sickness absence for @user1 starting from tomorrow."
+
+**🤖 AI Agent:**
+> Absence recorded! I've successfully registered the sickness absence for @user1 in BrightHR. The start date is set for tomorrow. Shall I notify the team lead about this update?
+
+
 ## Installation & Usage
 
 To install and use the **BrightHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **BrightHR** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

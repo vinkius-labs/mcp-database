@@ -1,12 +1,14 @@
 # TransportAPI MCP Server
 
-UK public transport intelligence — live departures, journey planning, train fares, timetables, and postcode-based station search via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/transportapi-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/transportapi-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/transportapi-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+UK public transport intelligence — live departures, journey planning, train fares, timetables, and postcode-based station search via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire public transport research workflow with **TransportAPI**, Britain's leading platform for transport data. By connecting TransportAPI to your agent, you transform complex logistics searches into a natural conversation. Your agent can instantly search for stations, audit live bus and train departures, and retrieve detailed journey plans without you ever touching a travel app. Whether you are conducting urban mobility research or monitoring daily commute patterns, your agent acts as a real-time transit consultant, ensuring your data is always comprehensive and up-to-date.
@@ -58,6 +60,33 @@ Plan a public transport journey between two locations
 - **search_transport_places**: Search for train stations and bus stops by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TransportAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show live train departures for station 'EUS' (Euston) using TransportAPI."
+
+**🤖 AI Agent:**
+> I've retrieved the live departures for London Euston. Notable trains include the service to Manchester Piccadilly at 10:20 and Birmingham New Street at 10:35. Would you like the platform numbers?
+
+---
+
+**👤 You:**
+> "Plan a journey from 'London Waterloo' to 'Brighton'."
+
+**🤖 AI Agent:**
+> Journey plan retrieved! The best route is a direct train from Waterloo, taking approximately 1 hour and 10 minutes. I can provide the full list of intermediate stops and aimed departure times.
+
+---
+
+**👤 You:**
+> "Search for bus stops near coordinate 51.5074, -0.1278."
+
+**🤖 AI Agent:**
+> I've identified several bus stops near Charing Cross. Notable stops include 'Trafalgar Square' and 'Horse Guards Parade'. Would you like the live departures for any specific stop ATCO code?
+
+
 ## Installation & Usage
 
 To install and use the **TransportAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **TransportAPI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

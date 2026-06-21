@@ -1,12 +1,14 @@
 # Steam MCP Server
 
-Access Steam gaming data — player profiles, owned games, achievements, and stats via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/steam)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steam-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access Steam gaming data — player profiles, owned games, achievements, and stats via AI.
 
 ## Description
 Connect the **Steam Web API** to any AI agent and retrieve gaming data including player profiles, game libraries, achievements, and statistics through natural language.
@@ -41,6 +43,33 @@ Connect the **Steam Web API** to any AI agent and retrieve gaming data including
 - **get_user_stats_for_game**: Get user's statistics for a specific game
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Steam** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the profile of Steam user 76561197960287930."
+
+**🤖 AI Agent:**
+> Player 'Robin' is currently online. Account created in 2003, currently at Steam Level 80. Profile is public with avatar and location visible.
+
+---
+
+**👤 You:**
+> "What games does user 76561197960287930 own and how much have they played?"
+
+**🤖 AI Agent:**
+> This user owns 347 games. Top played: Counter-Strike 2 (257 hours), Dota 2 (833 hours), Team Fortress 2 (142 hours). Would you like details on any specific game?
+
+---
+
+**👤 You:**
+> "Get recent news updates for Cyberpunk 2077 (App ID 1091500)."
+
+**🤖 AI Agent:**
+> Found 3 recent news articles for Cyberpunk 2077. Latest: 'Update 2.1 — Now Available' released yesterday with new features and bug fixes.
+
+
 ## Installation & Usage
 
 To install and use the **Steam** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Steam** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # TokenTerminal (Crypto Financial Data) MCP Server
 
-Access institutional-grade crypto financial data — query project metrics, track revenue, and analyze market trends directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tokenterminal-crypto-financial-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tokenterminal-crypto-financial-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tokenterminal-crypto-financial-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tokenterminal-crypto-financial-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access institutional-grade crypto financial data — query project metrics, track revenue, and analyze market trends directly from your AI agent.
 
 ## Description
 Connect **Token Terminal** to your AI agent to unlock deep financial insights into the crypto market. Analyze blockchains and dApps using the same data used by institutional investors.
@@ -40,6 +42,33 @@ Get historical time series metrics for a project
 - **list_projects**: List all projects tracked by Token Terminal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TokenTerminal (Crypto Financial Data)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all crypto projects tracked by Token Terminal."
+
+**🤖 AI Agent:**
+> I've retrieved the list of tracked projects. There are over 100 projects including Ethereum, Solana, Uniswap, and Aave. Would you like to see details for a specific one?
+
+---
+
+**👤 You:**
+> "Show me the historical revenue and TVL for Ethereum over the last month."
+
+**🤖 AI Agent:**
+> Fetching metrics for Ethereum... In the last 30 days, Ethereum generated approximately $250M in revenue with a TVL maintaining around $50B. Would you like the daily breakdown?
+
+---
+
+**👤 You:**
+> "What is the current aggregated market data for the crypto sector?"
+
+**🤖 AI Agent:**
+> Accessing market metrics... The total crypto market revenue across all tracked protocols is currently trending upwards, led by the L1 and DeFi sectors. I can provide specific sector growth rates if needed.
+
+
 ## Installation & Usage
 
 To install and use the **TokenTerminal (Crypto Financial Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **TokenTerminal (Crypto Financial Data)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

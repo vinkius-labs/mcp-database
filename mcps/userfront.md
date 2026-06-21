@@ -1,12 +1,14 @@
 # Userfront MCP Server
 
-Manage users, multi-tenant structures, and authentication sessions directly through Userfront's identity platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/userfront)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/userfront)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/userfront-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/userfront-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 40
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage users, multi-tenant structures, and authentication sessions directly through Userfront's identity platform.
 
 ## Description
 Connect your **Userfront** workspace to your AI agent to streamline identity management and user operations. This MCP server allows you to handle complex authentication workflows, tenant hierarchies, and user data through simple natural language commands.
@@ -77,6 +79,33 @@ Search users within a tenant
 - **verify_api_key**: Verify an API key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Userfront** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new user with email 'dev@example.com' and name 'John Doe'."
+
+**🤖 AI Agent:**
+> I've created the user record for John Doe. The new User ID is `usr_abcd123`. Would you like to send them an invitation email now?
+
+---
+
+**👤 You:**
+> "Find all users in my tenant who have 'admin' in their custom data."
+
+**🤖 AI Agent:**
+> Searching... I found 3 users matching that criteria. Here are their details: [List of users]. Do you need to update any of their permissions?
+
+---
+
+**👤 You:**
+> "Create a child tenant named 'Beta Testers' under parent tenant 'ten_xyz789'."
+
+**🤖 AI Agent:**
+> The child tenant 'Beta Testers' has been successfully created with ID `ten_beta456`. You can now start migrating users to this sub-account.
+
+
 ## Installation & Usage
 
 To install and use the **Userfront** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **Userfront** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

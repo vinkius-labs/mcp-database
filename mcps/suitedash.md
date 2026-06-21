@@ -1,12 +1,14 @@
 # SuiteDash MCP Server
 
-Manage CRM, projects, tasks, and invoices on SuiteDash with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/suitedash)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/suitedash)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/suitedash-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/suitedash-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage CRM, projects, tasks, and invoices on SuiteDash with AI agents.
 
 ## Description
 Connect your **SuiteDash** account to any AI agent to automate your client portal and business management. SuiteDash provides a comprehensive all-in-one platform for CRM, project management, and billing, and this integration allows you to retrieve contact metadata, monitor project progress, and track invoices through natural conversation.
@@ -46,6 +48,33 @@ Connect your **SuiteDash** account to any AI agent to automate your client porta
 - **list_tasks**: List project tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SuiteDash** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in SuiteDash."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 4 active environments including 'Website Redesign', 'Marketing Strategy 2024', and 'New Product Launch'. Which one would you like to see tasks for?
+
+---
+
+**👤 You:**
+> "Show me all active client projects with their task progress and billing status."
+
+**🤖 AI Agent:**
+> 12 active client projects. By status: On Track (7): avg 65% complete. "Meridian Corp Rebrand" (82%, billing current, $45K invoiced of $60K). "TechVentures App" (71%, $23K of $35K). At Risk (3): "DataFlow Migration" (34%, 2 weeks behind, resource gap). Overdue (2): "ScaleUp Website" (90% complete, final review pending). Total billable hours this month: 890. Unbilled time: 45 hours ($6,750). Client portal logins this week: 34. File shares: 123 documents across all projects.
+
+---
+
+**👤 You:**
+> "Create a new client workspace for Meridian Corp with CRM, project, and billing modules enabled."
+
+**🤖 AI Agent:**
+> Client workspace created: Meridian Corp. Modules enabled: CRM (contacts, pipeline), Projects (tasks, Gantt, Kanban), Billing (invoices, estimates, payments). Portal URL: app.yourdomain.com/meridian-corp. Admin users: 2 (David Chen CEO, Sarah Williams PM). Client portal access: enabled with branded login page. File storage: 10 GB allocated. Integration: Stripe connected for online payments. Automation: welcome email sent, onboarding checklist created (8 tasks). Template applied: "Enterprise Client" workflow.
+
+
 ## Installation & Usage
 
 To install and use the **SuiteDash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **SuiteDash** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Tactiq MCP Server
 
-Manage meeting transcripts via Tactiq u2014 access summaries, action items, speaker analytics, and search across all recordings from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tactiq)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tactiq)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tactiq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tactiq-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage meeting transcripts via Tactiq u2014 access summaries, action items, speaker analytics, and search across all recordings from your AI agent.
 
 ## Description
 Connect your **Tactiq** account to any AI agent and manage all your meeting transcripts, summaries, and follow-ups through natural conversation.
@@ -47,6 +49,33 @@ No more manual searching for 'who said what' or missing critical meeting follow-
 - **search_transcripts**: Search transcripts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tactiq** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all meetings from this week."
+
+**🤖 AI Agent:**
+> You had 8 meetings this week. The longest was 'Q2 Planning' (62 min, 5 participants). Would you like to see the summary or action items from any meeting?
+
+---
+
+**👤 You:**
+> "Get the summary and action items from transcript TR-5021."
+
+**🤖 AI Agent:**
+> Summary: The team agreed on Q2 priorities, assigned 3 tasks (proposal draft by Friday, budget review next Monday, client follow-up by Sarah). 4 key decisions were made. Want me to format these as tasks?
+
+---
+
+**👤 You:**
+> "Search my transcripts for mentions of 'pricing strategy'."
+
+**🤖 AI Agent:**
+> Found 5 mentions across 3 meetings. The most detailed discussion was in 'Sales Review' (March 18), where the team spent 12 minutes on pricing tiers. Would you like to read that section?
+
+
 ## Installation & Usage
 
 To install and use the **Tactiq** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Tactiq** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

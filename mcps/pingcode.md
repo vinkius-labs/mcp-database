@@ -1,12 +1,14 @@
 # PingCode MCP Server
 
-Agile project management and R&D collaboration platform — manage work items, sprints, and wiki pages via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pingcode)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pingcode)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pingcode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pingcode-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Agile project management and R&D collaboration platform — manage work items, sprints, and wiki pages via AI.
 
 ## Description
 Empower your AI agent to orchestrate your software development lifecycle with **PingCode**, the premier agile project management platform for R&D teams. By connecting PingCode to your agent, you transform complex issue tracking, sprint planning, and knowledge management into a natural conversation. Your agent can instantly list your agile projects, create work items, monitor sprint progress, and even retrieve wiki pages without you needing to navigate the complex PingCode dashboard. Whether you are following Scrum or Kanban, your agent acts as a real-time R&D assistant, ensuring your development pipeline is always moving and your documentation is accessible.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your software development lifecycle with **
 - **list_work_items**: List work items in a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PingCode** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all agile projects in my PingCode organization."
+
+**🤖 AI Agent:**
+> I've retrieved your PingCode projects. You have 5 active agile projects, including 'Core Engine Refactor' and 'Mobile App V3'. Which one would you like to view items for?
+
+---
+
+**👤 You:**
+> "Create a new bug item in project 'Checkout Flow' titled 'Payment timeout on mobile'."
+
+**🤖 AI Agent:**
+> Done! I've created a new bug item 'Payment timeout on mobile' in the 'Checkout Flow' project. I've also set the item type to 'bug' for you. Would you like to add a description?
+
+---
+
+**👤 You:**
+> "Retrieve the content of the wiki page 'System Architecture' from repository 'PROJ-DOCS'."
+
+**🤖 AI Agent:**
+> I've retrieved the 'System Architecture' page. It contains detailed diagrams and component descriptions for the current architecture. Would you like me to summarize the key modules?
+
+
 ## Installation & Usage
 
 To install and use the **PingCode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **PingCode** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # TeamGantt MCP Server
 
-Plan projects with intuitive Gantt charts that show deadlines, dependencies, and team workloads in one visual timeline.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/teamgantt)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teamgantt)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teamgantt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teamgantt-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan projects with intuitive Gantt charts that show deadlines, dependencies, and team workloads in one visual timeline.
 
 ## Description
 Connect your **TeamGantt** account to any AI agent and simplify how you manage your project timelines, task assignments, and team resources through natural conversation.
@@ -52,6 +54,33 @@ Create Gantt link
 Update task status/dates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TeamGantt** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in my TeamGantt account."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 3 active timelines: 'Website Launch Q4', 'New Product Development', and 'Marketing Content Plan'. Which one would you like to check tasks for?
+
+---
+
+**👤 You:**
+> "Show me the tasks for 'Website Launch Q4' (ID: 10293)."
+
+**🤖 AI Agent:**
+> I've fetched the tasks. There are 5 pending items including 'Hero Section Design' (50%), 'Fix login bug' (0%), and 'API Integration' (85%). Shall I update the progress for any of these?
+
+---
+
+**👤 You:**
+> "Mark task '88231' as 100% complete."
+
+**🤖 AI Agent:**
+> Task updated! I've set the progress for task 88231 to 100% and updated its status to 'completed' in your TeamGantt project. Your timeline has been synchronized.
+
+
 ## Installation & Usage
 
 To install and use the **TeamGantt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **TeamGantt** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

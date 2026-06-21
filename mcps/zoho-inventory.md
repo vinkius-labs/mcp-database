@@ -1,12 +1,14 @@
 # Zoho Inventory MCP Server
 
-Manage inventory items, sales orders, and stock levels via the Zoho Inventory API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-inventory)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-inventory)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-inventory-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-inventory-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage inventory items, sales orders, and stock levels via the Zoho Inventory API.
 
 ## Description
 Connect your **Zoho Inventory** account to any AI agent to automate your order management and stock control. This MCP server enables your agent to interact with products, sales orders, and purchase orders directly through natural language interfaces.
@@ -50,6 +52,33 @@ List all Zoho Inventory organizations
 - **list_sales_orders**: List all sales orders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Inventory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all organizations in my Zoho Inventory account."
+
+**🤖 AI Agent:**
+> I've retrieved your organizations. You have 2 entities: 'Main Store (ID: 123456)' and 'Secondary Warehouse (ID: 789012)'. Which one would you like to access?
+
+---
+
+**👤 You:**
+> "Show the stock level for 'Professional Camera'."
+
+**🤖 AI Agent:**
+> For 'Professional Camera' (ID: 101) in organization 123456, there are currently 45 units available in stock.
+
+---
+
+**👤 You:**
+> "List my 5 most recent sales orders in organization '123456'."
+
+**🤖 AI Agent:**
+> I've fetched your latest sales orders. Recent transactions include Order #SO-001 for 'Alice Smith' ($1,500.00) and Order #SO-002 for 'Bob Jones' ($850.50).
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Inventory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Zoho Inventory** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

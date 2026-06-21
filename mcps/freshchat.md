@@ -1,12 +1,14 @@
 # Freshchat MCP Server
 
-Manage customer conversations, track messages, and oversee agents via AI agents with Freshchat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshchat)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshchat)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshchat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshchat-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 12
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage customer conversations, track messages, and oversee agents via AI agents with Freshchat.
 
 ## Description
 Connect your **Freshchat** account to any AI agent to automate your customer messaging and conversation management through the Model Context Protocol (MCP). Freshchat is a modern messaging software built for sales and support teams to engage with customers across web, mobile, and social channels. This MCP server enables you to track active chats, send real-time messages, and retrieve detailed user profiles directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Freshchat** account to any AI agent to automate your customer mes
 - **send_chat_message**: Post a new message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshchat** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all open conversations in my Freshchat account."
+
+**🤖 AI Agent:**
+> Retrieving chats... I found 4 open conversations, including one with 'John Doe' regarding 'Billing' and another with 'Sarah' about 'API Integration'.
+
+---
+
+**👤 You:**
+> "Find the Freshchat user with the email 'customer@example.com'."
+
+**🤖 AI Agent:**
+> Searching users... I found a record for 'Alice Smith' (ID: user_abc123) associated with that email. She has 2 past conversations in your account.
+
+---
+
+**👤 You:**
+> "Send a message to conversation 'conv_987': 'I am looking into this for you'."
+
+**🤖 AI Agent:**
+> Message sent! Your update has been successfully posted to conversation 'conv_987'. The customer will see your reply in their chat widget.
+
+
 ## Installation & Usage
 
 To install and use the **Freshchat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Freshchat** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Goodcall MCP Server
 
-Answer business phone calls with an AI receptionist that schedules appointments, takes messages, and never puts callers on hold.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/goodcall)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goodcall)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/goodcall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/goodcall-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 13
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Answer business phone calls with an AI receptionist that schedules appointments, takes messages, and never puts callers on hold.
 
 ## Description
 Connect your **Goodcall** account to any AI agent and manage your virtual phone agent fleet through natural conversation.
@@ -50,6 +52,33 @@ Connect your **Goodcall** account to any AI agent and manage your virtual phone 
 - **update_agent**: Update an agent
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Goodcall** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all calls from today and highlight any missed calls that need follow-up."
+
+**🤖 AI Agent:**
+> Today's call summary: 18 total calls handled by your AI agents. 15 answered successfully (83.3% answer rate), 3 missed calls. Missed calls needing follow-up: 1) +1 (555) 234-5678 at 9:14 AM — rang 4 times, no pickup. 2) +1 (555) 876-5432 at 11:02 AM — caller hung up during greeting. 3) +1 (555) 345-6789 at 2:30 PM — voicemail left. 2 bookings made today. Would you like to see the call transcripts or update the agent scripts?
+
+---
+
+**👤 You:**
+> "Show me the summary and transcript of the last call handled by the main office agent."
+
+**🤖 AI Agent:**
+> Last call for 'Main Office Agent' (agent_001): call_5678, duration 3m 42s, caller: +1 (555) 901-2345. AI Summary: Customer called about business hours and pricing for a dental cleaning. The agent confirmed operating hours (Mon-Fri 8AM-6PM, Sat 9AM-2PM) and quoted $120 for a standard cleaning. Customer booked an appointment for Thursday at 10AM. Outcome: booking completed. Transcript available — 14 exchanges between caller and agent. Would you like to read the full transcript or check the FAQ entries?
+
+---
+
+**👤 You:**
+> "Show analytics for all my agents this month — answer rates, bookings, and total call volume."
+
+**🤖 AI Agent:**
+> Monthly analytics: Total calls: 342. Answer rate: 89.5% (306 answered, 36 missed). Bookings: 78 appointments made (25.5% booking conversion). Average call duration: 2m 48s. Peak hours: 10-11 AM (52 calls) and 2-3 PM (41 calls). Agent breakdown: 1) 'Main Office' — 198 calls, 92% answer rate, 45 bookings. 2) 'After Hours' — 89 calls, 85% answer rate, 22 bookings. 3) 'Spanish Line' — 55 calls, 87% answer rate, 11 bookings. Would you like to update agent scripts or review missed calls?
+
+
 ## Installation & Usage
 
 To install and use the **Goodcall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Goodcall** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

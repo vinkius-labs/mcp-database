@@ -1,12 +1,14 @@
 # Co-Founder Synergy Prover MCP Server
 
-Two founders shook hands on 'we trust each other' — with no vesting cliff. It approved a 50/50 equity split out of politeness. It said 'we always agree' as conflict resolution. That is not synergy — that is a lawsuit. This tool forces five YC-level partnership axes: vesting protection, skill separation, deadlock resolution, equity justification, and execution velocity.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/co-founder-synergy-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/co-founder-synergy-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/co-founder-synergy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/co-founder-synergy-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** strategy
-**Tools Count:** 1
+
+**Category:** [strategy](../categories/strategy.md)
+
+Two founders shook hands on 'we trust each other' — with no vesting cliff. It approved a 50/50 equity split out of politeness. It said 'we always agree' as conflict resolution. That is not synergy — that is a lawsuit. This tool forces five YC-level partnership axes: vesting protection, skill separation, deadlock resolution, equity justification, and execution velocity.
 
 ## Description
 ## The Problem
@@ -46,6 +48,33 @@ All pass     → SYNERGY_PROVEN
 Structured reflection tool for YC-partner-level co-founder dynamics evaluation. Forces the agent to validate partnership structure with legal protections, mutually exclusive accountability, conflict resolution mechanisms, contribution-based equity, and shipping velocity. Catches Cliff Blindness (no vesting cliff — trusting handshakes instead of 4-year/1-year-cliff equity protection with forfeiture terms), Skill Overlap (two CEOs, no builder — "we both manage" means nobody is accountable), Deadlock Design (50/50 equity without tie-breaker authority — "we always agree" is a fantasy that kills startups), Equity Politeness (splitting 50/50 "to be fair" instead of calculating based on time, risk, capital, and IP contribution), and Velocity Absence ("stealth mode," perfecting the plan — no shipped product, no users, no data). Call once per founder team evaluation or partnership structure decision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Co-Founder Synergy Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We trust each other, 50/50, we both manage, we always agree, still in stealth mode."
+
+**🤖 AI Agent:**
+> CLIFF_ABSENT — Five fatal gaps: no vesting, skill overlap, deadlock, equity politeness, zero velocity.
+
+---
+
+**👤 You:**
+> "4y vesting, 1y cliff. CTO builds, CEO sells. CEO decides after 48h. 60/40 by contribution. MVP week 4, 10 users week 8, weekly deploys."
+
+**🤖 AI Agent:**
+> SYNERGY_PROVEN — Partnership validated. All axes pass. Execute.
+
+---
+
+**👤 You:**
+> "Technical co-founder wants to rebuild the entire backend (6 months). Business co-founder wants to launch in 3 markets simultaneously (needs current backend). Both have valid points. Equity is 50/50."
+
+**🤖 AI Agent:**
+> Classic build-vs-ship tension. Neither is wrong — the conflict reveals missing decision framework. Define: what is the technical debt cost of NOT rebuilding? What is the market cost of NOT launching? Make the tradeoff quantitative, not emotional. Set a 90-day compromise: launch 1 market on current backend while scoping modular rebuild.
+
+
 ## Installation & Usage
 
 To install and use the **Co-Founder Synergy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Co-Founder Synergy Prover** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

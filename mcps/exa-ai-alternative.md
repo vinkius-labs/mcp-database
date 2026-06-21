@@ -1,12 +1,14 @@
 # Exa AI MCP Server
 
-Search the web with neural embeddings that understand meaning, not just keywords, and return the most relevant results for any query.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/exa-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exa-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exa-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exa-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 12
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Search the web with neural embeddings that understand meaning, not just keywords, and return the most relevant results for any query.
 
 ## Description
 Connect your **Exa AI** (formerly Metaphor) account to any AI agent and take full control of your web research and data extraction workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual keyword-based searching or messy scraping scripts. Your AI acts a
 - **semantic_search**: Perform AI-native search
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Exa AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the latest research on room-temperature superconductors using Exa."
+
+**🤖 AI Agent:**
+> Running semantic search... I've found 5 high-quality research papers and articles from the last 3 months. Notable results include a study from Nature and a detailed technical blog from MIT. Would you like the highlights for any of these?
+
+---
+
+**👤 You:**
+> "Find pages similar to 'https://openai.com/blog/sora/' from news domains."
+
+**🤖 AI Agent:**
+> Discovery complete! I've located 3 semantically similar articles on news platforms like TechCrunch and The Verge. They discuss generative video trends and competitor reactions. Shall I extract the clean text from these links?
+
+---
+
+**👤 You:**
+> "Get the clean text content from 'https://en.wikipedia.org/wiki/Artificial_intelligence'."
+
+**🤖 AI Agent:**
+> Extraction complete! I've retrieved the clean Markdown content for the AI Wikipedia page. It includes the history, definitions, and main research areas, excluding all sidebars and ads. Would you like a summary?
+
+
 ## Installation & Usage
 
 To install and use the **Exa AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Exa AI** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

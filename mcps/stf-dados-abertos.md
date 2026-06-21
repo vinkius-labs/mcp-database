@@ -1,12 +1,14 @@
 # STF Dados Abertos MCP Server
 
-Access open data from the Brazilian Supreme Federal Court (STF) — explore datasets, resources, and institutional organizations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stf-dados-abertos)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stf-dados-abertos)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stf-dados-abertos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stf-dados-abertos-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 9
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access open data from the Brazilian Supreme Federal Court (STF) — explore datasets, resources, and institutional organizations via AI.
 
 ## Description
 Connect your AI agent to the **STF Dados Abertos** portal and explore the transparency data of the Brazilian Supreme Federal Court through natural language.
@@ -44,6 +46,33 @@ Connect your AI agent to the **STF Dados Abertos** portal and explore the transp
 - **search_packages**: Search datasets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **STF Dados Abertos** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available datasets in the STF Dados Abertos portal."
+
+**🤖 AI Agent:**
+> I've retrieved the list of datasets. Notable packages include 'Processos Eletrônicos', 'Gastos com Pessoal', and 'Decisões'. Which one would you like to explore further?
+
+---
+
+**👤 You:**
+> "Search for datasets related to 'votações'."
+
+**🤖 AI Agent:**
+> Searching... I found 3 datasets matching 'votações'. The most relevant is 'Votações em Plenário'. Would you like to see the available resources for this package?
+
+---
+
+**👤 You:**
+> "Get the details and resources for the dataset 'folha-de-pagamento'."
+
+**🤖 AI Agent:**
+> Fetching details for 'folha-de-pagamento'... This dataset contains 12 resources (CSV and JSON formats) and is maintained by the 'Secretaria de Gestão Estratégica'. Do you want to inspect a specific resource ID?
+
+
 ## Installation & Usage
 
 To install and use the **STF Dados Abertos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **STF Dados Abertos** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

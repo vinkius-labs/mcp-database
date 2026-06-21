@@ -1,12 +1,14 @@
 # Datadog MCP Server
 
-Monitor infrastructure, APM and logs via Datadog — query metrics, audit monitors, search logs and track incidents from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 16
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Monitor infrastructure, APM and logs via Datadog — query metrics, audit monitors, search logs and track incidents from any AI agent.
 
 ## Description
 Connect your **Datadog** account to any AI agent and gain full observability over your entire infrastructure, applications and logs through natural conversation.
@@ -88,6 +90,33 @@ Update an existing Datadog monitor
 List Datadog users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Datadog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all monitors that are currently in alert state."
+
+**🤖 AI Agent:**
+> I've scanned your Datadog monitors and found 3 currently in Alert state: 'High CPU Usage on web01' (metric alert, triggered 12m ago), 'API Latency P99 > 500ms' (query alert, triggered 5m ago) and 'Database Connection Pool Exhausted' (service check, critical). Would you like me to check the recent logs for any of these?
+
+---
+
+**👤 You:**
+> "Search for error logs from the payment-service in the last hour."
+
+**🤖 AI Agent:**
+> I found 14 error logs for payment-service. The most common pattern is a 'ConnectionTimeout: upstream service did not respond within 30s' from host prod-web-03, occurring 9 times in the last hour. Would you like the full log entry with stacktrace?
+
+---
+
+**👤 You:**
+> "What's our API error rate over the past 24 hours?"
+
+**🤖 AI Agent:**
+> I queried the metric `sum:api.http.5xx{env:production}.as_count()` for the past 24h. The error rate peaked at 142 errors/min at 14:30 UTC and has been trending down to ~15 errors/min currently. The 24h average is 38 errors/min. Would you like me to correlate this with recent deployments?
+
+
 ## Installation & Usage
 
 To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -96,4 +125,11 @@ To install and use the **Datadog** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

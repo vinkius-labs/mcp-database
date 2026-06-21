@@ -1,12 +1,14 @@
 # CaptionHub MCP Server
 
-Manage video localization via CaptionHub — track projects, automate transcription, and approve captions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/captionhub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/captionhub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/captionhub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/captionhub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 10
+
+**Category:** [image-video](../categories/image-video.md)
+
+Manage video localization via CaptionHub — track projects, automate transcription, and approve captions directly from any AI agent.
 
 ## Description
 Connect your **CaptionHub** account to any AI agent and orchestrate your video localization, AI-powered transcription, and subtitle approval workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **CaptionHub** account to any AI agent and orchestrate your video l
 - **update_project**: Update project metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CaptionHub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current video projects in CaptionHub."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 5 active projects, including 'Product Keynote' (ID: proj_1) and 'Training Module v2' (ID: proj_2).
+
+---
+
+**👤 You:**
+> "Start auto-transcription for the 'Product Keynote' project."
+
+**🤖 AI Agent:**
+> Auto-transcription has been triggered for 'Product Keynote' (ID: proj_1). I will monitor the progress and notify you when it's ready for review.
+
+---
+
+**👤 You:**
+> "Get the French subtitle export link for project proj_123."
+
+**🤖 AI Agent:**
+> Retrieving French caption export... Your download link is ready: https://api.captionhub.com/exports/abcd-1234.srt
+
+
 ## Installation & Usage
 
 To install and use the **CaptionHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **CaptionHub** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

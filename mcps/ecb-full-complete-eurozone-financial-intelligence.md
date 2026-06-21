@@ -1,12 +1,14 @@
 # ECB Full — Complete Eurozone Financial Intelligence MCP Server
 
-The definitive ECB Mega-Server: 14 tools for EUR exchange rates against 40+ currencies, key interest rates (MRO, DFR, MLFR), MFI bank rates, monetary aggregates (M1/M2/M3), government bond yield curves, euro banknotes, and a universal SDMX query engine for all ECB statistical data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-full-complete-eurozone-financial-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecb-full-complete-eurozone-financial-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecb-full-complete-eurozone-financial-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecb-full-complete-eurozone-financial-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 14
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The definitive ECB Mega-Server: 14 tools for EUR exchange rates against 40+ currencies, key interest rates (MRO, DFR, MLFR), MFI bank rates, monetary aggregates (M1/M2/M3), government bond yield curves, euro banknotes, and a universal SDMX query engine for all ECB statistical data.
 
 ## Description
 The **ultimate ECB Mega-Server** — 14 tools across 4 domains.
@@ -65,6 +67,41 @@ Get a full yield curve snapshot — all maturities at the latest date
 Get eurozone banknotes in circulation statistics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ECB Full — Complete Eurozone Financial Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Full eurozone briefing: EUR rates, interest rates, yield curve, and money supply"
+
+**🤖 AI Agent:**
+> 🏦 **ECB Full Briefing**
+
+💱 EUR/USD: 1.0842 | EUR/GBP: 0.8567 | EUR/JPY: 163.42
+🏦 DFR: 2.50% | MRO: 2.65% | MLFR: 2.90%
+📈 10Y Yield: 2.49% | 2Y: 2.31% (curve normal)
+💰 M3: €16,423B (+4.2% YoY)
+💶 Banknotes: €1,572B in circulation
+
+5 ECB data sources queried simultaneously.
+
+---
+
+**👤 You:**
+> "Show me the latest ECB key interest rates."
+
+**🤖 AI Agent:**
+> Here are the current key interest rates: the deposit facility rate (DFR) is at 2.50%, the main refinancing operations (MRO) is at 2.65%, and the marginal lending facility rate (MLFR) is at 2.90%.
+
+---
+
+**👤 You:**
+> "What are the latest Eurozone monetary aggregates?"
+
+**🤖 AI Agent:**
+> The latest broad monetary aggregate M3 shows an annual growth rate of 4.2%. I can break this down into M1 and M2 components if you'd like to dive deeper.
+
+
 ## Installation & Usage
 
 To install and use the **ECB Full — Complete Eurozone Financial Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +110,11 @@ To install and use the **ECB Full — Complete Eurozone Financial Intelligence**
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

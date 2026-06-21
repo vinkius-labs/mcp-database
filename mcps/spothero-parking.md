@@ -1,12 +1,14 @@
 # SpotHero Parking MCP Server
 
-Search, compare, and book parking spots in 400+ cities via SpotHero API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/spothero-parking)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spothero-parking)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spothero-parking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spothero-parking-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search, compare, and book parking spots in 400+ cities via SpotHero API.
 
 ## Description
 Connect **SpotHero** to any AI agent and simplify urban mobility — search parking by location, compare prices, book reservations, and manage vehicle details through natural conversation.
@@ -59,6 +61,33 @@ Search for available parking spots near a location for a specific time range
 Update vehicle information for an existing reservation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SpotHero Parking** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find parking near Times Square for 2 hours starting now."
+
+**🤖 AI Agent:**
+> Found 5 spots within 0.5 miles. Cheapest: Icon Parking at $15/hr. Most convenient: Edison ParkFast (2 min walk) at $22 total.
+
+---
+
+**👤 You:**
+> "Book spot 12345 from 9 AM to 5 PM tomorrow."
+
+**🤖 AI Agent:**
+> Reservation created! ID: SH-998877. Total cost: $24. QR Code sent to your email. Vehicle: Black Honda Civic (ABC-1234).
+
+---
+
+**👤 You:**
+> "What events are happening downtown tonight?"
+
+**🤖 AI Agent:**
+> Found 3 events: 1) Concert at City Hall (7 PM). 2) Sports Game at Arena (8 PM). Parking rates nearby are +20% due to high demand.
+
+
 ## Installation & Usage
 
 To install and use the **SpotHero Parking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **SpotHero Parking** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

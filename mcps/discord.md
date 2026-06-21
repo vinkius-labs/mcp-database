@@ -1,12 +1,14 @@
 # Discord MCP Server
 
-Manage communities via Discord — list server channels and members, send and edit messages, and handle channel moderation directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/discord)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/discord)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/discord-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/discord-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 15
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Manage communities via Discord — list server channels and members, send and edit messages, and handle channel moderation directly from any AI agent.
 
 ## Description
 Connect your **Discord** bot to any AI agent and take full control of your community management and real-time messaging through natural conversation.
@@ -79,6 +81,33 @@ List all roles configured in a Discord server
 Pin a message in a Discord channel
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Discord** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all channels in guild '123456789'"
+
+**🤖 AI Agent:**
+> I found 5 channels in your server. Text channels include '#general' (ID: 101) and '#announcements' (ID: 102). Voice channels include 'General VC' (ID: 201). Which one would you like to interact with?
+
+---
+
+**👤 You:**
+> "Send a message to channel '101': 'Hello community! The bot is live.'"
+
+**🤖 AI Agent:**
+> Message dispatched! 'Hello community! The bot is live.' has been sent to channel 101. The message ID is 'msg_999'.
+
+---
+
+**👤 You:**
+> "Get the last 5 messages from channel '101'"
+
+**🤖 AI Agent:**
+> Retrieving messages from channel 101... I found 5 recent posts. Highlights include a welcome message from 'System' and a question about API keys from 'User_A'. Would you like the full text of these messages?
+
+
 ## Installation & Usage
 
 To install and use the **Discord** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Discord** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

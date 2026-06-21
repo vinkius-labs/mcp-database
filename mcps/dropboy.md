@@ -1,12 +1,14 @@
 # DROPBOY MCP Server
 
-Equip your AI agent to manage logistics orders, track fleet vehicles, and monitor delivery drivers via the DROPBOY API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dropboy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dropboy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dropboy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dropboy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to manage logistics orders, track fleet vehicles, and monitor delivery drivers via the DROPBOY API.
 
 ## Description
 Integrate **DROPBOY**, the advanced logistics and delivery management platform, directly into your AI workflow. Manage your inbound and outbound delivery orders, track fleet vehicles and their operational status, monitor driver assignments and route history, and oversee your entire logistics operation using natural language.
@@ -44,6 +46,33 @@ Integrate **DROPBOY**, the advanced logistics and delivery management platform, 
 - **search_logistics_orders**: Search for orders using an order number or delivery address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DROPBOY** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active delivery orders."
+
+**🤖 AI Agent:**
+> I've found 8 active orders, including 'ORD-123' (In Progress) and 'ORD-456' (Dispatched). Would you like to see the delivery address for ORD-123?
+
+---
+
+**👤 You:**
+> "Show me the status of our fleet vehicles."
+
+**🤖 AI Agent:**
+> Currently, you have 5 vehicles 'In Operation', 2 'Available', and 1 'In Maintenance'. Vehicles include 3 Heavy Trucks and 5 Delivery Vans. Should I pull the driver assignment for the active trucks?
+
+---
+
+**👤 You:**
+> "Search for order 'ORD-9988'."
+
+**🤖 AI Agent:**
+> Order 'ORD-9988' is currently 'In Progress' and assigned to driver 'Mark Thompson'. The delivery address is '123 Business Way, New York'. ETA is 2:30 PM. Should I pull the itemized cargo list?
+
+
 ## Installation & Usage
 
 To install and use the **DROPBOY** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DROPBOY** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Smaily MCP Server
 
-Automate email marketing and automations via Smaily — manage subscribers, campaigns, and responders directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smaily)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smaily)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smaily-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smaily-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 11
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate email marketing and automations via Smaily — manage subscribers, campaigns, and responders directly from any AI agent.
 
 ## Description
 Connect your **Smaily** account to any AI agent and simplify your email marketing and automation workflows through natural conversation.
@@ -40,6 +42,33 @@ Connect your **Smaily** account to any AI agent and simplify your email marketin
 - **send_automation_email**: Trigger an automation email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smaily** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all subscribers in Smaily."
+
+**🤖 AI Agent:**
+> I've retrieved your contact list. You have 500 subscribers, including 'john@example.com' and 'alice@smith.co'.
+
+---
+
+**👤 You:**
+> "Show me the campaign performance for all email campaigns sent this quarter with engagement trends."
+
+**🤖 AI Agent:**
+> 18 campaigns sent this quarter. Total sent: 67,800. Overall open rate: 32.4% (up from 28.1% last quarter). Click rate: 5.8% (+0.9%). Unsubscribe rate: 0.14%. Top performer: "Spring Collection Launch" (45.2% open, 9.8% click). Lowest: "Monthly Digest #3" (18.4% open). A/B test insights: personalized subjects outperform generic by 34%. Best send time: Tuesday 10 AM. Automation emails (6 workflows): 89,000 sent, 42% open rate. List growth: +1,234 net subscribers.
+
+---
+
+**👤 You:**
+> "Create a new subscriber and add them to the VIP customer automation workflow."
+
+**🤖 AI Agent:**
+> Subscriber created: Maria Santos (maria@meridian.io). Tags: VIP, Enterprise, Q2-2025. Custom fields: Company (Meridian Corp), Role (VP Marketing), Source (Referral). Added to automation: "VIP Customer Journey". Workflow steps: Day 0 - Welcome email (personalized). Day 3 - Exclusive preview of new features. Day 7 - Personal thank you from CEO. Day 14 - Quarterly review invitation. Day 30 - Loyalty reward notification. Subscriber status: Active. GDPR consent: recorded.
+
+
 ## Installation & Usage
 
 To install and use the **Smaily** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Smaily** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

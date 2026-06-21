@@ -1,12 +1,14 @@
 # Clientify MCP Server
 
-Grow your sales pipeline with a CRM that combines lead capture, email marketing, and deal tracking for Spanish-speaking markets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clientify-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientify-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clientify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clientify-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Grow your sales pipeline with a CRM that combines lead capture, email marketing, and deal tracking for Spanish-speaking markets.
 
 ## Description
 Connect your **Clientify** CRM account to any AI agent and streamline your entire sales process through natural conversation.
@@ -47,6 +49,33 @@ List all contacts from Clientify
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clientify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active deals in the main pipeline."
+
+**🤖 AI Agent:**
+> I've retrieved your deals. There are 4 active opportunities including 'Project Alpha' ($5,000) and 'Enterprise License' ($12,000). Both are in the 'Discovery' stage. Would you like more details on any of these?
+
+---
+
+**👤 You:**
+> "Create a new contact for John Doe (john@example.com)."
+
+**🤖 AI Agent:**
+> Successfully created! John Doe has been added to Clientify with ID 88923. I've also linked his email address john@example.com. Shall I schedule a follow-up call for tomorrow?
+
+---
+
+**👤 You:**
+> "List all team members who have access to this account."
+
+**🤖 AI Agent:**
+> I've fetched the user directory. There are 3 active users: Sarah (Admin), Mike (Sales), and Elena (Marketing). Let me know if you need to assign a deal to one of them.
+
+
 ## Installation & Usage
 
 To install and use the **Clientify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Clientify** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # New York Times MCP Server
 
-Access top stories, article search, best-seller lists, and movie reviews via the NYTimes API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/new-york-times)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/new-york-times)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/new-york-times-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/new-york-times-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 9
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access top stories, article search, best-seller lists, and movie reviews via the NYTimes API.
 
 ## Description
 Connect the **New York Times** API to any AI agent and unlock access to over 170 years of journalism — including breaking news, historical archives, best-seller lists, and cultural reviews.
@@ -57,6 +59,33 @@ Search for articles using keywords, date ranges, and sorting
 Get top stories for a specific section
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **New York Times** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me today's top world news."
+
+**🤖 AI Agent:**
+> Top World Headlines: 1. Global Summit Reaches Climate Deal. 2. Elections in Europe Shift Political Landscape. 3. Tech Giants Face New Regulations in Asia.
+
+---
+
+**👤 You:**
+> "What is the #1 Hardcover Fiction book this week?"
+
+**🤖 AI Agent:**
+> This Week's #1 Hardcover Fiction: 'The Midnight Library' by Matt Haig. It has been on the list for 12 weeks.
+
+---
+
+**👤 You:**
+> "Find movie reviews for 'The Godfather'."
+
+**🤖 AI Agent:**
+> Found classic NYTimes reviews: 1. Original 1972 Review by Vincent Canby — 'A magnificent film'. 2. Retrospective reviews from later decades.
+
+
 ## Installation & Usage
 
 To install and use the **New York Times** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **New York Times** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

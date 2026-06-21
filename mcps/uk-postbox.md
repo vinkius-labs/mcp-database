@@ -1,12 +1,14 @@
 # UK Postbox MCP Server
 
-Manage your virtual mailbox via UK Postbox u2014 scan letters, forward mail, send correspondence, and track parcels from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-postbox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-postbox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uk-postbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uk-postbox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your virtual mailbox via UK Postbox u2014 scan letters, forward mail, send correspondence, and track parcels from your AI agent.
 
 ## Description
 Connect your **UK Postbox** account to any AI agent and manage your virtual mailbox, scan letters, forward parcels, and send physical mail through natural conversation.
@@ -47,6 +49,33 @@ Connect your **UK Postbox** account to any AI agent and manage your virtual mail
 Send a letter
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UK Postbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all unread mail in my virtual postbox."
+
+**🤖 AI Agent:**
+> You have 6 unread items: 3 letters, 2 parcels, 1 large envelope. The most recent letter is from HMRC, received today. Would you like to scan it?
+
+---
+
+**👤 You:**
+> "Scan the letter from HMRC and forward it to my home address."
+
+**🤖 AI Agent:**
+> Scan requested for the HMRC letter — it will be ready within 2 hours. I've also queued it for forwarding to your home address (London, SW1A 1AA). You'll receive tracking once posted.
+
+---
+
+**👤 You:**
+> "Send a letter to John Smith at 10 Downing Street."
+
+**🤖 AI Agent:**
+> Letter queued for printing and posting. Recipient: John Smith, 10 Downing Street, London, SW1A 2AA. Estimated delivery: 1-2 business days via Royal Mail. Would you like a tracking reference?
+
+
 ## Installation & Usage
 
 To install and use the **UK Postbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **UK Postbox** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

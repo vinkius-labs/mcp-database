@@ -1,12 +1,14 @@
 # Microsoft App Store MCP Server
 
-Manage your Microsoft Store apps — track submissions, add-ons, and package flights via the Submission API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-app-store)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-app-store)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/microsoft-app-store-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/microsoft-app-store-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Microsoft Store apps — track submissions, add-ons, and package flights via the Submission API.
 
 ## Description
 Connect your **Microsoft Store** developer account to automate app management tasks. This server interfaces with the **Microsoft Store Submission API** for real-time visibility and control.
@@ -36,6 +38,25 @@ Connect your **Microsoft Store** developer account to automate app management ta
 - **list_submissions**: List submissions for an application
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Microsoft App Store** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Microsoft Store apps."
+
+**🤖 AI Agent:**
+> Fetching applications... I've found 3 apps registered: 'Photo Editor Pro', 'TaskMaster', and 'Game Hub'.
+
+---
+
+**👤 You:**
+> "What is the status of the latest submission for 'TaskMaster'?"
+
+**🤖 AI Agent:**
+> Checking submissions... The latest submission for 'TaskMaster' (ID #115292) is currently 'PendingPublication'.
+
+
 ## Installation & Usage
 
 To install and use the **Microsoft App Store** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +65,11 @@ To install and use the **Microsoft App Store** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

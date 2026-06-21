@@ -1,12 +1,14 @@
 # DNSimple MCP Server
 
-Manage domains, DNSSEC, and email forwarding via DNSimple — list accounts, control domains, and manage DS records directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dnsimple)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dnsimple)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dnsimple-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dnsimple-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 77
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage domains, DNSSEC, and email forwarding via DNSimple — list accounts, control domains, and manage DS records directly from your AI agent.
 
 ## Description
 Connect your **DNSimple** account to any AI agent to automate your domain infrastructure and DNS management through natural language.
@@ -114,6 +116,33 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 - **update_zone_record**: Update a zone record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DNSimple** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all domains in my DNSimple account 12345."
+
+**🤖 AI Agent:**
+> I've retrieved the domains for account 12345. You have 3 domains: 'example.com', 'my-app.io', and 'test-site.net'. Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "Enable DNSSEC for the domain 'example.com' in account 12345."
+
+**🤖 AI Agent:**
+> Processing... DNSSEC has been successfully enabled for 'example.com' in account 12345. You can verify the status anytime using the get_dnssec tool.
+
+---
+
+**👤 You:**
+> "Show me the email forwarding rules for 'my-app.io' in account 9876."
+
+**🤖 AI Agent:**
+> I found 2 email forwarding rules for 'my-app.io': 'info@my-app.io' -> 'admin@gmail.com' and 'support@my-app.io' -> 'help@zendesk.com'.
+
+
 ## Installation & Usage
 
 To install and use the **DNSimple** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -122,4 +151,11 @@ To install and use the **DNSimple** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Mav MCP Server
 
-Conversational AI for SMS — automate lead qualification and engagement via Mav playbooks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mav)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mav)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mav-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mav-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 0
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Conversational AI for SMS — automate lead qualification and engagement via Mav playbooks.
 
 ## Description
 Connect your **Mav** account to any AI agent and take full control of your conversational SMS automation through natural conversation.
@@ -27,6 +29,33 @@ Connect your **Mav** account to any AI agent and take full control of your conve
 
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mav** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Mav playbooks."
+
+**🤖 AI Agent:**
+> Retrieving playbooks... You have several active playbooks, including 'Real Estate Qualification' and 'Solar Interest Check'.
+
+---
+
+**👤 You:**
+> "Trigger the 'Lead Qual' playbook for +1234567890."
+
+**🤖 AI Agent:**
+> Triggering playbook... The 'Lead Qual' (ID: 555) conversation has been successfully started for +1234567890.
+
+---
+
+**👤 You:**
+> "Show recent outcomes for lead ID 9876."
+
+**🤖 AI Agent:**
+> Checking lead status... Lead 9876 reached the 'Qualified' outcome yesterday.
+
+
 ## Installation & Usage
 
 To install and use the **Mav** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **Mav** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

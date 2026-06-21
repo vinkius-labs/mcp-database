@@ -1,12 +1,14 @@
 # FeedBlitz MCP Server
 
-Manage mailing lists, RSS feeds, and email marketing campaigns through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/feedblitz)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feedblitz)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/feedblitz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/feedblitz-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage mailing lists, RSS feeds, and email marketing campaigns through AI.
 
 ## Description
 ### What you can do
@@ -37,6 +39,33 @@ List subscribers for a syndication in FeedBlitz
 - **remove_subscriber**: Remove or unsubscribe a subscriber from FeedBlitz
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FeedBlitz** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my syndications in FeedBlitz."
+
+**🤖 AI Agent:**
+> I've fetched your syndications. You currently have 3 active lists: 'Main Newsletter', 'Blog RSS Feed', and 'Product Updates'.
+
+---
+
+**👤 You:**
+> "Add newuser@example.com to syndication ID 123."
+
+**🤖 AI Agent:**
+> Successfully added newuser@example.com to the syndication with ID 123.
+
+---
+
+**👤 You:**
+> "Show me the metrics for syndication ID 123."
+
+**🤖 AI Agent:**
+> Here are the metrics for syndication 123: 500 active subscribers, 12 recent unsubscriptions, and an open rate of 42%.
+
+
 ## Installation & Usage
 
 To install and use the **FeedBlitz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **FeedBlitz** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

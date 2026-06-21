@@ -1,12 +1,14 @@
 # CallFire MCP Server
 
-Manage voice and SMS communications via CallFire — track calls, send texts, and monitor campaigns directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/callfire)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callfire)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/callfire-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/callfire-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage voice and SMS communications via CallFire — track calls, send texts, and monitor campaigns directly from any AI agent.
 
 ## Description
 Connect your **CallFire** account to any AI agent and orchestrate your voice and SMS communications, campaign tracking, and contact engagement through natural conversation.
@@ -46,6 +48,33 @@ Connect your **CallFire** account to any AI agent and orchestrate your voice and
 - **send_sms**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CallFire** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +1234567890 saying 'Hi from Vinkius'."
+
+**🤖 AI Agent:**
+> I've sent the SMS to +1234567890. The message ID is msg_123 and it's currently marked as 'READY'.
+
+---
+
+**👤 You:**
+> "List my last 5 voice calls in CallFire."
+
+**🤖 AI Agent:**
+> I've retrieved your calls. You have 5 recent calls, including a finished call to +1987654321 and a failed attempt to +15550199.
+
+---
+
+**👤 You:**
+> "Show the details for SMS with ID 99283."
+
+**🤖 AI Agent:**
+> SMS 99283 was sent to +1234567890 on March 20th. The status is 'FINISHED' and the message body was 'Your code is 1234'.
+
+
 ## Installation & Usage
 
 To install and use the **CallFire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **CallFire** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

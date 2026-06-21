@@ -1,12 +1,14 @@
 # BunnyDoc MCP Server
 
-Manage eSignatures via BunnyDoc — track document status, manage templates, and coordinate signature requests directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bunnydoc)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bunnydoc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bunnydoc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bunnydoc-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 10
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage eSignatures via BunnyDoc — track document status, manage templates, and coordinate signature requests directly from any AI agent.
 
 ## Description
 Connect your **BunnyDoc** account to any AI agent and orchestrate your eSignature workflows, document lifecycle, and team collaboration through natural conversation.
@@ -46,6 +48,33 @@ Connect your **BunnyDoc** account to any AI agent and orchestrate your eSignatur
 - **unsubscribe_webhook**: Remove a webhook subscription
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BunnyDoc** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my document templates in BunnyDoc."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You have 3 templates: 'Employment Agreement' (ID: temp_1), 'NDA' (ID: temp_2), and 'Sales Contract' (ID: temp_3).
+
+---
+
+**👤 You:**
+> "Show the status of signature request env_99283."
+
+**🤖 AI Agent:**
+> The status for request env_99283 ('NDA - John Doe') is 'Completed'. All parties have signed the document as of March 20th.
+
+---
+
+**👤 You:**
+> "Send the 'NDA' template to Jane Smith (jane@example.com)."
+
+**🤖 AI Agent:**
+> Signature request for the 'NDA' template has been sent to Jane Smith. The new envelope ID is env_12345.
+
+
 ## Installation & Usage
 
 To install and use the **BunnyDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BunnyDoc** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

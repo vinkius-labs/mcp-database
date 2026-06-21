@@ -1,12 +1,14 @@
 # Elastic Security MCP Server
 
-Manage SIEM and SOC operations via Elastic Security — monitor detection rules, search security alerts (Signals), handle whitelisting, and audit threat coverage directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-security)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-security)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elastic-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elastic-security-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage SIEM and SOC operations via Elastic Security — monitor detection rules, search security alerts (Signals), handle whitelisting, and audit threat coverage directly from any AI agent.
 
 ## Description
 Connect your **Elastic Security** (SIEM) deployment to any AI agent and take full control of your threat detection and SOC auditing through natural conversation.
@@ -68,6 +70,33 @@ Search raw generated Elastic Security alerts (Signals)
 Enable or Disable an existing Elastic Detection Rule
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Elastic Security** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active detection rules tagged with 'Ransomware'"
+
+**🤖 AI Agent:**
+> Searching rules... I found 12 active rules matching 'Ransomware'. Highlights include 'Volume Shadow Copy Deletion via WMIC' and 'Ransomware-linked Process Execution'. Would you like the full logic for any of these?
+
+---
+
+**👤 You:**
+> "Add hostname 'dev-machine-01' to exception list 'global-whitelist'"
+
+**🤖 AI Agent:**
+> Exception added! 'dev-machine-01' has been whitelisted in 'global-whitelist'. Detection rules bound to this list will now ignore telemetry from this host, resolving the reported false positives.
+
+---
+
+**👤 You:**
+> "Search for security signals from user 'admin_root' in the last hour"
+
+**🤖 AI Agent:**
+> Retrieving signals for 'admin_root'... I found 2 alerts: 'Suspicious LDAP Query' at 10:15 AM and 'Brute Force Attempt' at 10:45 AM. I can provide the source IP and process tree for these signals.
+
+
 ## Installation & Usage
 
 To install and use the **Elastic Security** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Elastic Security** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Google Maps MCP Server
 
-Empower location intelligence via Google Maps — perform geocoding, search millions of places, retrieve rich venue details, and calculate directions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-maps)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-maps)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-maps-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Empower location intelligence via Google Maps — perform geocoding, search millions of places, retrieve rich venue details, and calculate directions directly from any AI agent.
 
 ## Description
 Connect your **Google Maps Platform** account to any AI agent and take full control of your geospatial intelligence, place discovery, and routing through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Google Maps Platform** account to any AI agent and take full cont
 - **directions**: Calculate ETA, distance, and optimal route directions between origin and destination
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Maps** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Geocode this address: '1600 Amphitheatre Pkwy, Mountain View, CA'"
+
+**🤖 AI Agent:**
+> Address geocoded! The coordinates for 1600 Amphitheatre Pkwy are Lat: 37.4223, Lng: -122.0841. These are the precise coordinates for the Googleplex headquarters.
+
+---
+
+**👤 You:**
+> "Find pizza restaurants in Brooklyn and show me details for the best one"
+
+**🤖 AI Agent:**
+> Searching for pizza in Brooklyn... I found 10 results. The top-rated is 'L'Industrie Pizzeria' (Rating: 4.8, 2k+ reviews, PlaceID: abc-123). Retrieving details... They are open until 10 PM tonight and offer outdoor seating. Would you like their phone number?
+
+---
+
+**👤 You:**
+> "Get directions from San Francisco to San Jose by train"
+
+**🤖 AI Agent:**
+> Calculating directions... By transit, the trip from San Francisco to San Jose takes approximately 1 hour and 15 minutes via Caltrain. Total distance is 48 miles. I can provide the specific line information and departure times for you.
+
+
 ## Installation & Usage
 
 To install and use the **Google Maps** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Google Maps** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

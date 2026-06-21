@@ -1,12 +1,14 @@
 # Xray (Test Management) MCP Server
 
-Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/xray-test-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xray-test-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xray-test-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xray-test-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 9
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira.
 
 ## Description
 Connect your **Xray Test Management** account to any AI agent and manage your quality assurance workflows through natural conversation.
@@ -51,6 +53,33 @@ No more manual filtering through complex Jira issue lists to find a test result.
 Lists all test cases in the Xray project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Xray (Test Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all test cases in the 'Mobile-App' project."
+
+**🤖 AI Agent:**
+> I found 15 test cases in project 'Mobile-App'. The most recent are: 1. 'Login Validation' (Key: TST-101), 2. 'Profile Update' (Key: TST-102), and 3. 'Push Notifications' (Key: TST-103). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "What were the results for execution 'EXEC-555'?"
+
+**🤖 AI Agent:**
+> Results for EXEC-555: Total Tests: 10. Passed: 8, Failed: 2 (TST-42, TST-45). Failed steps in TST-42: 'Submit payment' returned a 500 error. Would you like me to pull the logs for these failures?
+
+---
+
+**👤 You:**
+> "Show me the test plan progress for 'v2.4 Release'."
+
+**🤖 AI Agent:**
+> Plan 'v2.4 Release' (Key: PLAN-12) is 75% complete. 45/60 tests have been executed. Current status: 40 Passed, 5 Failed, 15 Pending. The regression test set is still pending execution.
+
+
 ## Installation & Usage
 
 To install and use the **Xray (Test Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Xray (Test Management)** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

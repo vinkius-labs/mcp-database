@@ -1,12 +1,14 @@
 # BIM 360 Field MCP Server
 
-Manage your construction projects via BIM 360 Field — list issues, checklists, and tasks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bim-360-field)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bim-360-field)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bim-360-field-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bim-360-field-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your construction projects via BIM 360 Field — list issues, checklists, and tasks directly from any AI agent.
 
 ## Description
 Connect your **BIM 360 Field** account to any AI agent and orchestrate your construction management and site execution workflows through natural conversation.
@@ -44,6 +46,33 @@ Connect your **BIM 360 Field** account to any AI agent and orchestrate your cons
 - **list_users**: List users associated with a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BIM 360 Field** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my BIM 360 Field projects."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You are assigned to 'Downtown Tower' (ID: proj_1) and 'City Hospital Renovation' (ID: proj_2).
+
+---
+
+**👤 You:**
+> "Show recent issues for project proj_1."
+
+**🤖 AI Agent:**
+> Retrieving issues... There are 5 open issues, including a safety hazard reported on Level 3 and a quality check pending for the HVAC installation.
+
+---
+
+**👤 You:**
+> "List all companies working on the Downtown Tower project."
+
+**🤖 AI Agent:**
+> I've retrieved the company directory for Downtown Tower. There are 12 companies involved, including 'Apex Foundations', 'Skyline Glazing', and 'City Electrical'.
+
+
 ## Installation & Usage
 
 To install and use the **BIM 360 Field** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **BIM 360 Field** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

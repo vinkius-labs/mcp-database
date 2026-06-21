@@ -1,12 +1,14 @@
 # SavvyCal MCP Server
 
-Manage your SavvyCal scheduling links, check real-time availability, and coordinate automated bookings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/savvycal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/savvycal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/savvycal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/savvycal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your SavvyCal scheduling links, check real-time availability, and coordinate automated bookings via AI.
 
 ## Description
 Connect your **SavvyCal** account to any AI agent to streamline your meeting coordination. Let your AI agent act as your personal scheduling assistant without having to constantly switch tabs.
@@ -52,6 +54,33 @@ Permanently deletes a scheduling link
 - **update_link**: Updates an existing scheduling link
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SavvyCal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "When am I available next Wednesday for my 'Consultation' link?"
+
+**🤖 AI Agent:**
+> Looking at your 'Consultation' scheduling rules, next Wednesday you have bookable slots at 10:00 AM, 11:30 AM, and 2:00 PM (EST). Should I create a quick email snippet for you to send these options?
+
+---
+
+**👤 You:**
+> "Create a new 30-minute link named Q3 Sync."
+
+**🤖 AI Agent:**
+> Done. I created the 30-minute link named 'Q3 Sync'. Your shareable URL slug is `q3-sync-abc12`. You can share `savvycal.com/your-username/q3-sync-abc12` immediately.
+
+---
+
+**👤 You:**
+> "Who am I meeting with tomorrow?"
+
+**🤖 AI Agent:**
+> You have 2 events scheduled tomorrow via SavvyCal. 1. Product Onboarding with John Doe at 9 AM. 2. Interview with Jane Smith at 2 PM. I can provide their contact email or cancel either meeting if necessary.
+
+
 ## Installation & Usage
 
 To install and use the **SavvyCal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **SavvyCal** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

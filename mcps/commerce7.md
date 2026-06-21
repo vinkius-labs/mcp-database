@@ -1,12 +1,14 @@
 # Commerce7 MCP Server
 
-Manage wine customers, orders, wine clubs, products, reservations, and inventory for your Commerce7 winery through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/commerce7)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commerce7)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/commerce7-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/commerce7-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage wine customers, orders, wine clubs, products, reservations, and inventory for your Commerce7 winery through natural conversation.
 
 ## Description
 Connect your **Commerce7** winery to any AI agent and run your entire direct-to-consumer business through natural conversation.
@@ -58,6 +60,47 @@ List wine clubs
 List tasting reservations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Commerce7** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many wine club members renewed this month?"
+
+**🤖 AI Agent:**
+> 🍷 **Wine Club Report — October 2025**
+
+👥 **Active members**: 1,247
+- Reserve Club: 342 (27%)
+- Estate Club: 589 (47%)
+- Discovery Club: 316 (26%)
+
+📈 **This month**:
+- Renewals: 89 members
+- New joins: 34
+- Cancellations: 12
+- Net growth: +22
+
+💰 **Club revenue**: $187,400
+📦 **Next shipment**: November 15 (Estate & Reserve)
+
+---
+
+**👤 You:**
+> "Show me the details for order number 'ORD-892'."
+
+**🤖 AI Agent:**
+> Order #ORD-892. Customer: Jane Doe. Items: 3x Cabernet Sauvignon 2019, 1x Chardonnay 2021. Total: $245.00. Status: Shipped.
+
+---
+
+**👤 You:**
+> "Are there any reservations for the tasting room tomorrow?"
+
+**🤖 AI Agent:**
+> Yes, you have 4 reservations for tomorrow. Total guests: 12. First reservation is at 11:00 AM (Party of 4, VIP experience).
+
+
 ## Installation & Usage
 
 To install and use the **Commerce7** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +109,11 @@ To install and use the **Commerce7** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

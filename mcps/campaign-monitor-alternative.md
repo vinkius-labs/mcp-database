@@ -1,12 +1,14 @@
 # Campaign Monitor MCP Server
 
-Design branded email campaigns, segment subscriber lists, and measure engagement with professional marketing analytics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/campaign-monitor-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaign-monitor-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/campaign-monitor-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/campaign-monitor-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 7
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Design branded email campaigns, segment subscriber lists, and measure engagement with professional marketing analytics.
 
 ## Description
 Connect your **Campaign Monitor** account to any AI agent and take full control of your professional email marketing and audience engagement workflows through natural conversation.
@@ -44,6 +46,33 @@ No more manual scrubbing through subscriber exports or slow UI navigation. Your 
 - **list_subscriber_lists**: List lists for a client
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Campaign Monitor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my clients and their associated subscriber lists."
+
+**🤖 AI Agent:**
+> I've retrieved your organization's directory. You have 2 main clients: 'Acme Corp' (ID: abc-123) and 'Global Tech'. Acme Corp has 3 lists, including 'Weekly Newsletter' and 'Product Beta'. Which one should we explore?
+
+---
+
+**👤 You:**
+> "Add 'John Doe' (john@example.com) to the 'Weekly Newsletter' list (ID: 'l_456')."
+
+**🤖 AI Agent:**
+> Subscriber added! I've successfully registered John Doe in the 'Weekly Newsletter' list. His profile is now active and he will receive your next scheduled broadcast.
+
+---
+
+**👤 You:**
+> "What is the performance summary for campaign ID 'c_789'?"
+
+**🤖 AI Agent:**
+> Fetching analytics... Campaign c_789 ('Holiday Promo') has a 22% open rate and a 4% click-through rate. Total successful deliveries: 5,420. Shall I check for any bounced addresses?
+
+
 ## Installation & Usage
 
 To install and use the **Campaign Monitor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Campaign Monitor** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

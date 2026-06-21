@@ -1,12 +1,14 @@
 # Beamer MCP Server
 
-Manage product updates and user feedback via Beamer — create posts, track analytics, and monitor feedback directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/beamer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/beamer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/beamer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/beamer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage product updates and user feedback via Beamer — create posts, track analytics, and monitor feedback directly from any AI agent.
 
 ## Description
 Connect your **Beamer** account to any AI agent and streamline your product communication and user engagement workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Beamer** account to any AI agent and streamline your product comm
 - **update_post**: Update an existing Beamer post
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Beamer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 posts published on Beamer."
+
+**🤖 AI Agent:**
+> I've retrieved your recent posts. The latest updates include 'New Dashboard UI', 'API v2 Release', and 'Mobile App Improvements'. Would you like to see the analytics for any of these?
+
+---
+
+**👤 You:**
+> "Create a new post titled 'Spring Update' with content 'We have improved performance by 20%.'"
+
+**🤖 AI Agent:**
+> I've successfully created the post 'Spring Update' (ID: 99823). It is currently in draft status. Would you like me to publish it now?
+
+---
+
+**👤 You:**
+> "Show me the latest user feedback."
+
+**🤖 AI Agent:**
+> Retrieving latest feedback... I found 3 new comments. Users are generally happy with the 'New Dashboard UI', but one user suggested adding a dark mode. Should I create a task for this in our project management tool?
+
+
 ## Installation & Usage
 
 To install and use the **Beamer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Beamer** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

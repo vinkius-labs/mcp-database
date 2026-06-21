@@ -1,12 +1,14 @@
 # Capsule CRM MCP Server
 
-Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/capsule-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/capsule-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/capsule-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/capsule-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent.
 
 ## Description
 Connect your **Capsule CRM** account to any AI agent and orchestrate your sales pipelines, contact management, and task automation through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Capsule CRM** account to any AI agent and orchestrate your sales 
 - **list_tasks**: List all tasks and reminders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Capsule CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 contacts in Capsule CRM."
+
+**🤖 AI Agent:**
+> I've retrieved your contacts. You have 5 recent parties, including 'John Doe' (Person) and 'Vinkius North' (Organization). Would you like full details for any of them?
+
+---
+
+**👤 You:**
+> "Show my open sales opportunities."
+
+**🤖 AI Agent:**
+> Retrieving opportunities... You have 3 open deals: 'New Software License' (Value: $5,000) and 'Cloud Migration Services' (Value: $12,000). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Create a task 'Follow up with John Doe' due tomorrow."
+
+**🤖 AI Agent:**
+> Task 'Follow up with John Doe' has been successfully created in your Capsule account with a due date of tomorrow.
+
+
 ## Installation & Usage
 
 To install and use the **Capsule CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Capsule CRM** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

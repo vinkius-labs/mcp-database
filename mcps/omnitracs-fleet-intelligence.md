@@ -1,12 +1,14 @@
 # Omnitracs Fleet Intelligence MCP Server
 
-Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omnitracs-fleet-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnitracs-fleet-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omnitracs-fleet-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omnitracs-fleet-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** supply-chain
-**Tools Count:** 10
+
+**Category:** [supply-chain](../categories/supply-chain.md)
+
+Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent.
 
 ## Description
 Connect your **Omnitracs** account to your AI agent and streamline your fleet management and logistics operations through natural conversation and real-time data access.
@@ -47,6 +49,33 @@ Connect your **Omnitracs** account to your AI agent and streamline your fleet ma
 - **list_fleet_vehicles**: List all fleet vehicles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Omnitracs Fleet Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all vehicles currently in my fleet."
+
+**🤖 AI Agent:**
+> Retrieving fleet vehicles... I found 25 vehicles registered. Notable units include 'Truck-101' (Active), 'Van-202' (Maintenance), and 'Trailer-303'. Would you like the current GPS location for Truck-101?
+
+---
+
+**👤 You:**
+> "Where is driver 'John Doe' right now?"
+
+**🤖 AI Agent:**
+> Fetching driver status... John Doe is currently operating vehicle 'Truck-101'. His last reported location was near Chicago, IL, at 10:45 AM. He is currently 'On Duty' and has 4 hours remaining in his shift. Shall I list his assigned stops for today?
+
+---
+
+**👤 You:**
+> "Show me the performance report for the fleet this week."
+
+**🤖 AI Agent:**
+> Generating performance report... For this week, your fleet averaged 6.5 MPG with a total idle time of 12%. You had 2 safety alerts for hard braking. Would you like to see which vehicles contributed most to the idle time?
+
+
 ## Installation & Usage
 
 To install and use the **Omnitracs Fleet Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Omnitracs Fleet Intelligence** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

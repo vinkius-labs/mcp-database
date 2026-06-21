@@ -1,12 +1,14 @@
 # Matrix/Element MCP Server
 
-Automate your Matrix communications — manage rooms, send secure messages, and sync account state directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/matrixelement)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/matrixelement)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/matrixelement-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/matrixelement-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 19
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Automate your Matrix communications — manage rooms, send secure messages, and sync account state directly from your AI agent.
 
 ## Description
 Connect your **Matrix** account to any AI agent and take full control of your decentralized communications through natural conversation.
@@ -55,6 +57,33 @@ Connect your **Matrix** account to any AI agent and take full control of your de
 - **upload_media**: Upload media to the homeserver
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Matrix/Element** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Sync my Matrix client to see if I have any new notifications."
+
+**🤖 AI Agent:**
+> I've triggered a sync. You have 3 new messages in '!engineering:matrix.org' and a new invitation to join the 'Project X' room.
+
+---
+
+**👤 You:**
+> "Send a message to room !abc:matrix.org saying 'The deployment is complete'."
+
+**🤖 AI Agent:**
+> Message sent successfully to room !abc:matrix.org with transaction ID 'txn_12345'.
+
+---
+
+**👤 You:**
+> "Search the user directory for 'bob'."
+
+**🤖 AI Agent:**
+> I found 2 users matching 'bob': Bob Smith (@bob_s:matrix.org) and Bob Builder (@builder:matrix.org).
+
+
 ## Installation & Usage
 
 To install and use the **Matrix/Element** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Matrix/Element** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

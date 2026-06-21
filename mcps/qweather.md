@@ -1,12 +1,14 @@
 # QWeather / 和风天气 MCP Server
 
-Leading professional weather data service in China — retrieve forecasts, air quality, and life indices via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qweather)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qweather)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qweather-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Leading professional weather data service in China — retrieve forecasts, air quality, and life indices via AI.
 
 ## Description
 Empower your AI agent to orchestrate your daily planning and environmental monitoring with **QWeather** (和风天气), the premier commercial weather platform in China. By connecting QWeather to your agent, you transform complex meteorological data and location-based environmental searches into a natural conversation. Your agent can instantly retrieve real-time weather, 15-day forecasts, air quality indices, severe weather warnings, and astronomical data without you ever needing to navigate a technical dashboard. Whether you are planning outdoor operations or auditing air quality across different regions, your agent acts as a real-time environmental consultant, providing accurate and fast results from a single, unified source.
@@ -48,6 +50,33 @@ Get current air quality
 - **lookup_location**: Search for location ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QWeather / 和风天气** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current weather in Beijing (101010100)?"
+
+**🤖 AI Agent:**
+> The current weather in Beijing is clear with a temperature of 22°C. The humidity is 45% and the air quality is excellent (AQI: 35). Would you like to see the forecast for the next 3 days?
+
+---
+
+**👤 You:**
+> "Check the air quality for Shanghai today."
+
+**🤖 AI Agent:**
+> I've retrieved the air quality for Shanghai. The current AQI is 75 (Moderate). PM2.5 levels are at 25 μg/m³. Outdoor activities are generally safe, but sensitive individuals should monitor the situation.
+
+---
+
+**👤 You:**
+> "Find the location ID for 'Hangzhou'."
+
+**🤖 AI Agent:**
+> I've found the location ID for Hangzhou. The ID is `101210101`. It is located in Zhejiang, China. I can now use this ID to retrieve detailed weather or air quality data for you.
+
+
 ## Installation & Usage
 
 To install and use the **QWeather / 和风天气** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **QWeather / 和风天气** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

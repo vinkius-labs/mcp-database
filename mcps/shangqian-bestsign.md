@@ -1,12 +1,14 @@
 # ShangQian / 上上签 (BestSign) MCP Server
 
-China's leading digital signature platform — manage contracts, register users, and automate signatures via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shangqian-bestsign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shangqian-bestsign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shangqian-bestsign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shangqian-bestsign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 8
+
+**Category:** [document-management](../categories/document-management.md)
+
+China's leading digital signature platform — manage contracts, register users, and automate signatures via AI.
 
 ## Description
 Empower your AI agent to orchestrate your digital document workflows and electronic signatures with **ShangQian** (BestSign / 上上签), the premier B2B digital signature platform in China. By connecting ShangQian to your agent, you transform complex contract lifecycle management, user identity verification (KYC), and signature orchestration into a natural conversation. Your agent can instantly register new personal or enterprise users, initialize contracts from pre-defined templates, retrieve detailed contract statuses, and even generate secure download links for executed documents without you ever needing to navigate the comprehensive BestSign Management Portal. Whether you are automating HR onboarding or coordinating high-volume commercial agreements, your agent acts as a real-time contract coordinator, providing accurate and fast results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your digital document workflows and electro
 - **verify_identity_v2**: Verify user identity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ShangQian / 上上签 (BestSign)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all contract templates in my ShangQian account."
+
+**🤖 AI Agent:**
+> I've retrieved your template list. You have 5 active templates, including 'Standard_Employment_Contract' (ID: `tem_8821`) and 'NDA_v2'. Would you like me to initialize a new contract using one of these?
+
+---
+
+**👤 You:**
+> "Register a new enterprise user 'Vinkius' with account 'vinkius@example.com'."
+
+**🤖 AI Agent:**
+> I've successfully registered 'Vinkius' as an enterprise user in the ShangQian system. The account is now ready for digital certificate issuance and signing. Should I retrieve the certificate details?
+
+---
+
+**👤 You:**
+> "What is the status of contract '88210934'?"
+
+**🤖 AI Agent:**
+> Contract `88210934` ('Sales Agreement') is currently 'PARTIALLY_SIGNED'. 1 out of 2 signers have completed their signatures. Would you like me to generate a download link for the current draft?
+
+
 ## Installation & Usage
 
 To install and use the **ShangQian / 上上签 (BestSign)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **ShangQian / 上上签 (BestSign)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

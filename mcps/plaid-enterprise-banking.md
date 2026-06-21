@@ -1,12 +1,14 @@
 # Plaid Enterprise Banking MCP Server
 
-Ultimate Open Banking: balances, transactions, ML fraud logic, payroll, and asset verification.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/plaid-enterprise-banking)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plaid-enterprise-banking)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plaid-enterprise-banking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plaid-enterprise-banking-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Ultimate Open Banking: balances, transactions, ML fraud logic, payroll, and asset verification.
 
 ## Description
 Connect your natural language AI directly to the **Plaid Enterprise** API ecosystem. Unlock Wall-Street grade financial intelligence by turning any compatible agent into a professional underwriter, forensic accountant, and wealth advisor.
@@ -47,6 +49,33 @@ Create a Plaid Link token for account connection
 Search financial institutions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Plaid Enterprise Banking** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Here is the access token for the client: `access-prod-1234`. Can you fetch their current credit card outstanding liabilities and highlight any accounts charging over 20% APR?"
+
+**🤖 AI Agent:**
+> Querying the Liability engine... The user has $4,200 total revolving debt. The 'Chase Sapphire' card holds $3,100 at 19.99% APR, which is fine. However, their 'Amex Platinum' currently carries $1,100 at a steep **24.5% APR**. We should advise a balance transfer.
+
+---
+
+**👤 You:**
+> "Investigate access token `access-prod-101` and check the investment brokerage holdings for AAPL and TSLA."
+
+**🤖 AI Agent:**
+> Connecting to the brokerage via Plaid Wealth... I extracted 15 security holdings. The client holds 125 shares of Apple (AAPL) priced at $185/share, yielding $23,125 total value. For Tesla (TSLA), they hold a massive 400 share position yielding a valuation of $72,000. Do you want to see the capital gains on those?
+
+---
+
+**👤 You:**
+> "Using transaction access_token `access-prod-99`, analyze all ML recurring transaction signals. What subscriptions are they paying for?"
+
+**🤖 AI Agent:**
+> Running the Recurring Transactions Model... Plaid successfully detected 5 active passive flows on the main checking account: Netflix ($15.99), Spotify ($10.99), Equinox Gym ($205.00), AWS Cloud ($89.00), and an obscure app called 'AnyDo' ($4.99). Would you like to check the fraud signal prediction for these?
+
+
 ## Installation & Usage
 
 To install and use the **Plaid Enterprise Banking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Plaid Enterprise Banking** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Bezos Flywheel Prover MCP Server
 
-A startup benchmarked against 5 competitors instead of talking to a single customer. It proposed standalone initiatives instead of a flywheel. It built an end-user product instead of infrastructure. It formed a committee instead of a two-pizza team. It optimized for this quarter instead of a 7-year thesis. That is not strategy — that is a project list. This tool forces five Bezos-level axes: customer obsession, flywheel design, infrastructure-first, Day 1 culture, and long-term compounding.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bezos-flywheel-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bezos-flywheel-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bezos-flywheel-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bezos-flywheel-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business
-**Tools Count:** 1
+
+**Category:** [business](../categories/business.md)
+
+A startup benchmarked against 5 competitors instead of talking to a single customer. It proposed standalone initiatives instead of a flywheel. It built an end-user product instead of infrastructure. It formed a committee instead of a two-pizza team. It optimized for this quarter instead of a 7-year thesis. That is not strategy — that is a project list. This tool forces five Bezos-level axes: customer obsession, flywheel design, infrastructure-first, Day 1 culture, and long-term compounding.
 
 ## Description
 ## The Problem
@@ -46,6 +48,33 @@ All pass     → FLYWHEEL_PROVEN
 Structured reflection tool for Bezos-style business strategy validation. Forces the agent to work backward from customer pain, design self-reinforcing flywheel loops, identify the infrastructure layer that becomes a platform, enforce Day 1 culture practices, and commit to 7-year compounding horizons. Catches Competitor Obsession (benchmarking rivals instead of starting from customer pain), Linear Thinking (standalone initiatives that do not loop — a project list, not a flywheel), Surface Building (end-user products without underlying infrastructure platform play), Day 2 Bureaucracy (committees and consensus instead of two-pizza teams and 70% decisions), and Short-Term Focus (quarterly optimization instead of 7-year compounding thesis). Call once per strategic evaluation, growth plan, or product roadmap
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bezos Flywheel Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Beat the competition, launch a standalone project, build an app, form a committee, optimize quarterly results."
+
+**🤖 AI Agent:**
+> COMPETITOR_OBSESSED — Five fatal gaps: competitor benchmarking, linear initiatives, surface building, Day 2 bureaucracy, short-term focus.
+
+---
+
+**👤 You:**
+> "Customer: SMBs, 4hrs/week manual invoicing, 12% error rate. Flywheel: faster invoicing → more SMBs → more data → better credit scoring → faster payments → supplier referrals → more SMBs. Infrastructure: payment engine offered as a service, 2,400 transactions/day from 12 partners. Day 1: two-pizza teams, 70% decisions, weekly delivery cadence, no committees. Long-term: Year 1-2 infrastructure, Year 3-4 $1M revenue, Year 5-6 platform standard $12M revenue, Year 7 $40M revenue 65% margin."
+
+**🤖 AI Agent:**
+> FLYWHEEL_PROVEN — Flywheel strategy validated. All five axes pass. Execute.
+
+---
+
+**👤 You:**
+> "We built internal payment processing that handles 2,400 transactions/day from 12 partners. But customer discovery shows SMBs want mobile-first invoicing, not desktop. Do we pivot the infrastructure to mobile?"
+
+**🤖 AI Agent:**
+> Partial validation — infrastructure axis passes (platform serves partners). But customer obsession demands the pivot: start from the customer pain, not the infrastructure you already built. Rebuild the press release for mobile SMBs.
+
+
 ## Installation & Usage
 
 To install and use the **Bezos Flywheel Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Bezos Flywheel Prover** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

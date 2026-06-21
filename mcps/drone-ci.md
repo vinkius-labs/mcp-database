@@ -1,12 +1,14 @@
 # Drone CI MCP Server
 
-Automate your CI/CD workflows with Drone CI—manage repositories, monitor builds, and handle secrets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/drone-ci)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drone-ci)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drone-ci-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drone-ci-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 39
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Automate your CI/CD workflows with Drone CI—manage repositories, monitor builds, and handle secrets directly from your AI agent.
 
 ## Description
 Connect your **Drone CI** server to any AI agent to streamline your DevOps lifecycle through natural language.
@@ -76,6 +78,33 @@ List all registered users (Admin)
 - **update_user**: Update a user account (Admin)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Drone CI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active repositories in Drone."
+
+**🤖 AI Agent:**
+> I've retrieved your repositories using `get_current_user_repos`. You have 3 active repos: 'acme/web-app', 'acme/api', and 'acme/docs'. Would you like to see the latest build status for any of these?
+
+---
+
+**👤 You:**
+> "Show me the logs for build #42 of the 'acme/api' repository."
+
+**🤖 AI Agent:**
+> Fetching logs for acme/api build #42 via `get_build_logs`... The build failed at the 'test' step. The error message indicates a connection timeout to the database. Would you like me to restart the build?
+
+---
+
+**👤 You:**
+> "Create a new secret named 'DB_PASSWORD' for the 'acme/web-app' repo."
+
+**🤖 AI Agent:**
+> I've initiated the creation of the secret 'DB_PASSWORD' for 'acme/web-app' using `create_secret`. Please provide the value you would like to assign to this secret.
+
+
 ## Installation & Usage
 
 To install and use the **Drone CI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **Drone CI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

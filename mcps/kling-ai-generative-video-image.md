@@ -1,12 +1,14 @@
 # Kling AI (Generative Video & Image) MCP Server
 
-Generate cinematic videos and images via Kling AI — use text-to-video, image-to-video, and AI virtual try-on.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kling-ai-generative-video-image)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kling-ai-generative-video-image)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kling-ai-generative-video-image-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kling-ai-generative-video-image-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Generate cinematic videos and images via Kling AI — use text-to-video, image-to-video, and AI virtual try-on.
 
 ## Description
 Connect your **Kling AI** account to any AI agent and take full control of state-of-the-art generative video and creative media production through natural conversation.
@@ -64,6 +66,33 @@ Drive mouth movements and synchronize speech to a video portrait
 Check the status of an AI Lip-Sync task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kling AI (Generative Video & Image)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 5-second cinematic video of a futuristic city in the rain using Kling V3"
+
+**🤖 AI Agent:**
+> Video generation task submitted to Kling V3. Task ID: 'vid-98765'. I'm monitoring the render status for you. High-fidelity motion and lighting effects are being computed. I'll provide the MP4 link as soon as it's ready.
+
+---
+
+**👤 You:**
+> "Animate this static image into a video with gentle camera pan: [url]"
+
+**🤖 AI Agent:**
+> Image-to-video task started. I've set the motion trajectory for a gentle horizontal pan. This will bring your static frame to life with consistent AI-generated dynamics. Your Task ID is 'ani-12345'.
+
+---
+
+**👤 You:**
+> "What is the status of my virtual try-on task ID 'try-456'?"
+
+**🤖 AI Agent:**
+> Your virtual try-on task 'try-456' has SUCCEEDED. The digital garment has been naturally blended onto the model. You can view and download the final high-resolution composite here: [image-url].
+
+
 ## Installation & Usage
 
 To install and use the **Kling AI (Generative Video & Image)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Kling AI (Generative Video & Image)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

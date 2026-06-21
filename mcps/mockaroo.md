@@ -1,12 +1,14 @@
 # Mockaroo MCP Server
 
-Generate realistic dummy data — audit schemas and field types via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mockaroo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mockaroo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mockaroo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mockaroo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 5
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Generate realistic dummy data — audit schemas and field types via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire data synthesis workflow with **Mockaroo**, the professional engine for realistic dummy data. By connecting Mockaroo to your agent, you transform complex data generation into a natural conversation. Your agent can instantly generate thousands of rows of data, audit saved schemas, and retrieve available field types without you ever touching a technical configuration page. Whether you are testing application performance or building realistic prototypes, your agent acts as a real-time data architect, ensuring your test environments are always powered by high-quality, diverse data.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire data synthesis workflow with **
 - **list_field_types**: List all available field types for generation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mockaroo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate 10 rows of mock data with 'id' (Row Number) and 'name' (Full Name) using Mockaroo."
+
+**🤖 AI Agent:**
+> I've generated 10 records for you! The data includes unique IDs and realistic names like 'John Doe' and 'Jane Smith'. Would you like the JSON output or more rows?
+
+---
+
+**👤 You:**
+> "List all my saved schemas in Mockaroo."
+
+**🤖 AI Agent:**
+> I've retrieved your schemas. You have 5 saved structures, including 'User Profile' and 'Sales Report'. Which one would you like to use for data generation?
+
+---
+
+**👤 You:**
+> "Generate 50 rows using my schema named 'TestUsers'."
+
+**🤖 AI Agent:**
+> Data generation complete! I've retrieved 50 rows following the 'TestUsers' structure. I can provide a summary of the generated records if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Mockaroo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Mockaroo** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

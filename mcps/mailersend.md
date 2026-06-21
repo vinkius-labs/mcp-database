@@ -1,12 +1,14 @@
 # MailerSend MCP Server
 
-Send transactional emails and manage domains via the MailerSend REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailersend)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailersend)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailersend-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailersend-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Send transactional emails and manage domains via the MailerSend REST API.
 
 ## Description
 Connect your **MailerSend** account to any AI agent to automate your transactional messaging and domain management. This MCP server enables your agent to send single or bulk emails, monitor domain verification, and track email activity directly from natural language interfaces.
@@ -48,6 +50,33 @@ Send a single transactional email
 - **verify_sender_domain**: Trigger a DNS verification check for a domain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MailerSend** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a transactional email to 'user@example.com' with subject 'Welcome' and body 'Hello!'."
+
+**🤖 AI Agent:**
+> I've sent the email to user@example.com. The message ID is '64f1abcde12345'. MailerSend has queued the delivery.
+
+---
+
+**👤 You:**
+> "List all active sender domains in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your domains. You have 2 verified domains: 'mail.example.com' and 'updates.myfirm.io'. Would you like to check the DNS settings for any of them?
+
+---
+
+**👤 You:**
+> "Show recent opened events for domain ID '98765'."
+
+**🤖 AI Agent:**
+> I found 15 'opened' events for domain 98765 in the last 7 days. Most recent interactions were from 'customer@corp.com' and 'alice@test.io'.
+
+
 ## Installation & Usage
 
 To install and use the **MailerSend** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **MailerSend** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

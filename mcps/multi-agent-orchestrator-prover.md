@@ -1,12 +1,14 @@
 # Multi-Agent Orchestrator Prover MCP Server
 
-An AI designed a multi-agent system where agents 'work together seamlessly,' data 'flows naturally between them,' and failures 'self-heal.' Three days later, Agent B crashed and the pipeline froze for 14 hours — no one knew because there was no tracing. That is not orchestration — that is hope with a tech stack. This tool forces five orchestration axes: role boundaries, handoff protocols, failure containment, consensus mechanisms, and distributed tracing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/multi-agent-orchestrator-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/multi-agent-orchestrator-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An AI designed a multi-agent system where agents 'work together seamlessly,' data 'flows naturally between them,' and failures 'self-heal.' Three days later, Agent B crashed and the pipeline froze for 14 hours — no one knew because there was no tracing. That is not orchestration — that is hope with a tech stack. This tool forces five orchestration axes: role boundaries, handoff protocols, failure containment, consensus mechanisms, and distributed tracing.
 
 ## Description
 ## The Problem
@@ -56,6 +58,33 @@ Tool calls are obligations. The LLM cannot skip role boundaries or ignore failur
 Structured reflection tool for multi-agent system design — forces explicit role boundaries, typed handoff protocols, per-agent failure containment, deterministic consensus mechanisms, and distributed observability before deploying any agent pipeline or agentic workflow. Catches Roles Undefined (agents with overlapping or vague responsibilities — a 4-agent pipeline where both the ResearchAgent and AnalysisAgent "summarize relevant information." Result: both agents produce summaries, the WriterAgent receives two partially overlapping inputs, the final response contains contradictions (ResearchAgent found 12 sources, AnalysisAgent found 8, 5 overlapped, 3 conflicted). 23% of pipeline outputs contained factual inconsistencies traceable to role overlap. Each agent must have: a name, explicit input/output contracts with typed fields, responsibility boundaries, and exclusion clauses — "does NOT evaluate quality" is as important as "DOES generate responses"), Handoffs Missing (agent-to-agent transitions that lose data or have no failure behavior — ResearchAgent returns confidence: 0.3 on a query. No handoff rule exists for low confidence. WriterAgent receives the low-confidence research and generates an authoritative-sounding response based on unreliable data. The user sees a fluent answer with no indication that the underlying evidence was weak. A handoff protocol must specify: trigger conditions (confidence > 0.7 AND sources >= 2), typed data contracts (what fields transfer), and failure behavior (retry with expanded query, escalate to human, return partial results with confidence warning)), Failures Cascading (one agent failure kills the entire pipeline — a 5-agent pipeline with no circuit breakers. The ExternalAPIAgent calls a rate-limited API. At 3 AM, the API returns 429 Too Many Requests. The agent retries infinitely. The pipeline hangs. 847 requests queue behind it. By 6 AM, the orchestrator OOM-kills. Every agent needs: timeout (hard limit), retry policy (count + backoff), fallback (cached results, degraded response), and circuit breaker (open after N consecutive failures). The pipeline needs: cascade protection — if >1 agent circuit is open, return graceful degradation), Consensus Absent (multiple agents produce conflicting outputs with no resolution mechanism — a fact-checking pipeline: VerifierAgent says "claim is true (confidence: 0.72)." CounterResearchAgent says "claim is false (confidence: 0.68)." No resolution protocol exists. The system returns... both? Neither? The first one? Random? Consensus requires: conflict detection (semantic similarity threshold), resolution protocol (voting, weighted scoring, supervisor arbitration), and deterministic tie-breaking (prefer higher confidence, more citations, or escalate to human)), and Observability Blind (agents operating as black boxes — "check the logs" is not observability. A 6-agent pipeline processes a request in 12 seconds. Which agent took 10 of those seconds? Which agent used 90% of the token budget? Which agent produced the error that was masked by a downstream retry? Without correlation IDs propagated across all agents, per-agent spans with latency/token metrics, per-agent error rates, and alerting thresholds — every production issue is a forensic investigation). Call once per agent architecture or pipeline before deployment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Multi-Agent Orchestrator Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I have a research agent and a writer agent. The research agent finds information and the writer agent writes the response. They work together seamlessly and communicate naturally."
+
+**🤖 AI Agent:**
+> HANDOFFS_MISSING — 'Seamlessly' is hope, not architecture. When does the research agent pass to the writer? What trigger condition — confidence threshold, source count, timeout? What data shape does the writer expect — { sources: Source[], summary: string, confidence: number }? What if research finds nothing — does the writer wait forever? Define trigger conditions, typed data contracts, and failure behavior for each transition.
+
+---
+
+**👤 You:**
+> "ResearchAgent: finds docs, boundary: does NOT write responses. Input: { query: string }. Output: { sources: Source[], confidence: number }. Handoff: triggers when confidence > 0.7 AND sources >= 2, else retries with expanded query. WriterAgent: generates response from research. Timeout: 30s research, 60s writer. Retry: 2x with backoff. Fallback: cached results. Circuit breaker: 3 failures → open. Consensus: supervisor scores by evidence-coverage. Tracing: UUID correlation, per-agent spans, Prometheus metrics, error_rate > 5% → alert."
+
+**🤖 AI Agent:**
+> ORCHESTRATION_PROVEN — Multi-agent orchestration validated. Roles: explicit boundaries with typed contracts and exclusions. Handoffs: trigger condition (confidence > 0.7, sources >= 2) with retry fallback. Failures: timeouts, retries with backoff, cached fallback, circuit breaker at 3 failures. Consensus: supervisor agent scores by evidence-coverage. Observability: UUID correlation, per-agent spans, Prometheus metrics with 5% error alerting. Production-ready agent architecture.
+
+---
+
+**👤 You:**
+> "Our agents have clear roles and handoff protocols. If an agent fails, the system auto-recovers — it's fault tolerant by design. We added logging so we can debug issues when they come up."
+
+**🤖 AI Agent:**
+> FAILURES_CASCADING — 'Fault tolerant by design' and 'auto-recovers' are claims, not strategies. What is the timeout per agent? What is the retry policy — how many retries, with what backoff? What is the fallback if the agent is permanently down? What is the circuit breaker threshold? Also: 'logging for debugging' is not observability — implement correlation IDs, per-agent metrics, and automated alerting.
+
+
 ## Installation & Usage
 
 To install and use the **Multi-Agent Orchestrator Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Multi-Agent Orchestrator Prover** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

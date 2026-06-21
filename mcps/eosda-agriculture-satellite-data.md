@@ -1,12 +1,14 @@
 # EOSDA Agriculture Satellite Data MCP Server
 
-Precision agriculture satellite intelligence — access NDVI, soil moisture, and crop health via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eosda-agriculture-satellite-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eosda-agriculture-satellite-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eosda-agriculture-satellite-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eosda-agriculture-satellite-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 6
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Precision agriculture satellite intelligence — access NDVI, soil moisture, and crop health via AI.
 
 ## Description
 Empower your AI agent with cutting-edge remote sensing capabilities via the **EOSDA Agriculture** MCP server. This integration provides instant access to high-resolution satellite data from Sentinel and Landsat missions, specifically processed for precision farming. Your agent can search for imagery across global datasets, calculate vegetation indices like NDVI, EVI, and MSAVI, and monitor soil moisture trends over time. Whether you are optimizing fertilizer application, auditing crop health, or monitoring land use, your agent acts as a dedicated agronomist and remote sensing specialist through natural conversation.
@@ -54,6 +56,33 @@ Get list of available vegetation indices
 Get the result of a vegetation index task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EOSDA Agriculture Satellite Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find Sentinel-2 images for my farm from the last month."
+
+**🤖 AI Agent:**
+> Searching Sentinel-2 dataset for the specified date range... I found 3 cloud-free scenes. Shall I provide the scene IDs and download links for them?
+
+---
+
+**👤 You:**
+> "Calculate the NDVI for this area: [GeoJSON coords]."
+
+**🤖 AI Agent:**
+> Initiating NDVI vegetation task for your area of interest... The task has been created with ID `task_123`. I will monitor the status and let you know once the result is ready.
+
+---
+
+**👤 You:**
+> "What is the resolution of Landsat 8 satellite data?"
+
+**🤖 AI Agent:**
+> Landsat 8 provides high-quality imagery with a spatial resolution of 30 meters for most bands. It has a revisit time of approximately 16 days.
+
+
 ## Installation & Usage
 
 To install and use the **EOSDA Agriculture Satellite Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **EOSDA Agriculture Satellite Data** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Chorus.ai (ZoomInfo) MCP Server
 
-Analyze sales conversations and meetings via Chorus.ai — track transcripts, identify key moments, and monitor team performance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chorusai-zoominfo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chorusai-zoominfo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chorusai-zoominfo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chorusai-zoominfo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 8
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Analyze sales conversations and meetings via Chorus.ai — track transcripts, identify key moments, and monitor team performance directly from any AI agent.
 
 ## Description
 Connect your **Chorus.ai (ZoomInfo)** account to any AI agent and take full control of your conversation intelligence through natural conversation. Streamline how you review and coach your sales team's interactions.
@@ -48,6 +50,33 @@ List recent meetings and calls
 - **list_chorus_users**: List all users and team members in the account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chorus.ai (ZoomInfo)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my meetings from today in Chorus.ai."
+
+**🤖 AI Agent:**
+> Retrieving today's meetings... I found 3 recordings: 'Intro Call with Acme', 'Q2 Review - Global Corp', and 'Product Feedback Session'. All are fully processed and transcribed.
+
+---
+
+**👤 You:**
+> "What were the key moments in the 'Intro Call with Acme'?"
+
+**🤖 AI Agent:**
+> Checking AI moments for the Acme call... I identified 4 key moments: 2 Next Steps (Follow up next Tuesday), 1 Competitor Mention (referencing 'Competitor X'), and 1 Pricing Discussion.
+
+---
+
+**👤 You:**
+> "Who are the members of the 'EMEA Sales' team?"
+
+**🤖 AI Agent:**
+> Retrieving user list... I found 5 members in the EMEA Sales group: Sarah Miller (Team Lead), Mike Scott, John Doe, Jane Smith, and Bob Black.
+
+
 ## Installation & Usage
 
 To install and use the **Chorus.ai (ZoomInfo)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Chorus.ai (ZoomInfo)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

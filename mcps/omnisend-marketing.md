@@ -1,12 +1,14 @@
 # Omnisend Marketing MCP Server
 
-Manage omnichannel marketing via Omnisend — track email/SMS campaigns, contacts, and segments directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/omnisend-marketing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/omnisend-marketing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/omnisend-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/omnisend-marketing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage omnichannel marketing via Omnisend — track email/SMS campaigns, contacts, and segments directly from your AI agent.
 
 ## Description
 Connect your **Omnisend** account to your AI agent and streamline your email, SMS, and omnichannel marketing operations through natural conversation.
@@ -50,6 +52,33 @@ Get account usage metrics
 - **list_audience_segments**: List audience segments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Omnisend Marketing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my active email and SMS campaigns."
+
+**🤖 AI Agent:**
+> Retrieving campaigns... I found 10 active campaigns including 'Abandoned Cart SMS', 'Welcome Email Series', and 'Spring Clearance'. Would you like the details for the Abandoned Cart campaign?
+
+---
+
+**👤 You:**
+> "How many members are in the 'VIP Customers' segment?"
+
+**🤖 AI Agent:**
+> Fetching segment info... The 'VIP Customers' segment currently has 2,450 active members. Shall I retrieve the detailed metadata for this segment?
+
+---
+
+**👤 You:**
+> "Show me our account usage for this month."
+
+**🤖 AI Agent:**
+> Retrieving usage metrics... This month you have sent 45,000 emails and 1,200 SMS messages. You are currently at 75% of your monthly email volume limit. Would you like to see the upcoming scheduled campaigns?
+
+
 ## Installation & Usage
 
 To install and use the **Omnisend Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Omnisend Marketing** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CoinPaprika API MCP Server
 
-Access cryptocurrency data — audit coins, markets, and exchanges via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coinpaprika-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinpaprika-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinpaprika-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinpaprika-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access cryptocurrency data — audit coins, markets, and exchanges via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire digital asset research and market auditing workflow with the **CoinPaprika API**, the comprehensive source for global cryptocurrency data. By connecting CoinPaprika to your agent, you transform complex market searches into a natural conversation. Your agent can instantly retrieve coin metadata, audit OHLCV price data, and query exchange lists without you ever touching a financial terminal. Whether you are conducting investment research or monitoring global market caps, your agent acts as a real-time crypto analyst, ensuring your data is always verified and precise.
@@ -48,6 +50,33 @@ List all available cryptocurrencies in the CoinPaprika database
 - **list_all_tickers**: List current prices and ticker data for all active coins
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinPaprika API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get details for 'Bitcoin' using CoinPaprika."
+
+**🤖 AI Agent:**
+> I've retrieved the details for Bitcoin (ID: btc-bitcoin)! It is currently ranked #1 with a 'coin' type status. It is identified as an active asset. Would you like the latest OHLCV price data or the global market overview?
+
+---
+
+**👤 You:**
+> "What is the latest price for 'Ethereum'?"
+
+**🤖 AI Agent:**
+> I've checked the latest OHLCV data for Ethereum. The closing price is identified as 2,500 USD with a 24-hour volume of [Volume]. I can assist you with more asset metadata if you'd like.
+
+---
+
+**👤 You:**
+> "List top cryptocurrency exchanges."
+
+**🤖 AI Agent:**
+> I've retrieved the exchange catalog from CoinPaprika! There are hundreds of exchanges listed, including Binance, Coinbase, and Kraken. I can provide the unique ID and status for each of these platforms to assist in your liquidity audit.
+
+
 ## Installation & Usage
 
 To install and use the **CoinPaprika API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **CoinPaprika API** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

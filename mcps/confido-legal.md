@@ -1,12 +1,14 @@
 # Confido Legal MCP Server
 
-Manage legal trust accounting, client payments, and compliance reporting with tools built specifically for law firms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/confido-legal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/confido-legal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/confido-legal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/confido-legal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 8
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage legal trust accounting, client payments, and compliance reporting with tools built specifically for law firms.
 
 ## Description
 Connect your **Confido Legal** account to any AI agent and take full control of your law firm's financial operations and trust-compliant payment workflows through natural conversation.
@@ -49,6 +51,33 @@ List matters
 - **list_subscriptions**: List all payment subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Confido Legal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a payment link for client ID 'cl_123': $500 for operating and $1000 for trust."
+
+**🤖 AI Agent:**
+> Payment link generated! I've created a split payment link for client cl_123. Total: $1,500.00. Funds will be routed to your Operating ($500) and Trust ($1,000) accounts upon completion. Link: [payment_url].
+
+---
+
+**👤 You:**
+> "List all active legal matters for client ID 'cl_123'."
+
+**🤖 AI Agent:**
+> I've retrieved the matters for client cl_123. You have 2 active cases: 'Estate Planning 2026' (ID: m_456) and 'Corporate Filing'. Would you like the current trust balance for either of these?
+
+---
+
+**👤 You:**
+> "Show my firm's connected bank accounts."
+
+**🤖 AI Agent:**
+> Accessing firm metadata... You have 2 connected accounts: 'Business Operating' and 'IOLTA Trust Account'. Both are verified and active for split payments. Shall I check for any pending payouts?
+
+
 ## Installation & Usage
 
 To install and use the **Confido Legal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Confido Legal** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

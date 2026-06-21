@@ -1,12 +1,14 @@
 # Asset Panda MCP Server
 
-Track and manage fixed assets with Asset Panda — audit groups, objects, and locations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/asset-panda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/asset-panda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/asset-panda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/asset-panda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** inventory-management
-**Tools Count:** 8
+
+**Category:** [inventory-management](../categories/inventory-management.md)
+
+Track and manage fixed assets with Asset Panda — audit groups, objects, and locations via AI.
 
 ## Description
 The **Asset Panda MCP Server** provides a flexible natural language interface to your asset tracking and management platform. Empower your AI agent to manage your entire inventory, from high-level entity groups to individual asset details and location tracking.
@@ -38,6 +40,33 @@ The **Asset Panda MCP Server** provides a flexible natural language interface to
 - **update_object**: Update an existing object (asset)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Asset Panda** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all asset groups in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your groups. You have several entities defined, including 'Assets', 'Employees', 'Locations', and 'Software Licenses'.
+
+---
+
+**👤 You:**
+> "Show me the assets in the 'Laptops' group (ID: 12345)."
+
+**🤖 AI Agent:**
+> I've found 15 objects in the 'Laptops' group, including 'MacBook Pro #45' and 'Dell XPS #12'.
+
+---
+
+**👤 You:**
+> "Update the status of asset 'obj_9988' in group '123' to 'In Repair'."
+
+**🤖 AI Agent:**
+> Asset 'obj_9988' has been successfully updated with the new status. The changes are now reflected in your Asset Panda account.
+
+
 ## Installation & Usage
 
 To install and use the **Asset Panda** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Asset Panda** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # iFood MCP Server
 
-AI food delivery: manage orders, menus, and restaurant operations via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ifood)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ifood)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ifood-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ifood-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+AI food delivery: manage orders, menus, and restaurant operations via agents.
 
 ## Description
 ### What you can do
@@ -69,6 +71,33 @@ Update a menu item in the iFood store catalog
 Update the status of an iFood order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **iFood** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending orders and accept them automatically"
+
+**🤖 AI Agent:**
+> I'll check your pending orders and accept them right away.
+
+---
+
+**👤 You:**
+> "Update the price of 'Combo Burger Especial' to R$32.90 and mark it as unavailable until tomorrow"
+
+**🤖 AI Agent:**
+> I'll update the item price and toggle its availability in your catalog.
+
+---
+
+**👤 You:**
+> "Change my store hours to open at 11am and close at 11pm every day this week"
+
+**🤖 AI Agent:**
+> I'll update your business hours for the entire week right now.
+
+
 ## Installation & Usage
 
 To install and use the **iFood** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **iFood** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

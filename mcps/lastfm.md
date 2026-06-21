@@ -1,12 +1,14 @@
 # Last.fm MCP Server
 
-Manage your music profile — audit listening habits, top tracks, and artists via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lastfm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lastfm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lastfm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lastfm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your music profile — audit listening habits, top tracks, and artists via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire music data ecosystem with **Last.fm**, the world's leading music discovery service. By connecting Last.fm to your agent, you transform complex listening analytics into a natural conversation. Your agent can instantly list your top tracks, audit your favorite artists, and retrieve detailed music metadata without you ever touching a dashboard. Whether you are a dedicated audiophile or a music researcher, your agent acts as a real-time curator, ensuring your musical taste is always quantified and trends are monitored.
@@ -50,6 +52,33 @@ Get the top tags on Last.fm
 Get information about a Last.fm user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Last.fm** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my top 5 tracks this month on Last.fm."
+
+**🤖 AI Agent:**
+> I've retrieved your top tracks for the last month. Your #1 song is 'Midnight Jam' by Virtual Band. Would you like the play counts for the rest of the list?
+
+---
+
+**👤 You:**
+> "Show me my recent tracks for user 'vinkius'."
+
+**🤖 AI Agent:**
+> I've found your recent listening history. You just finished listening to 'Session 42'. I can provide the timestamps for the last 10 tracks if you like.
+
+---
+
+**👤 You:**
+> "Get information about the artist 'Radiohead'."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for 'Radiohead'. They have over 5 million listeners on Last.fm. Would you like to see their top tags and summary biography?
+
+
 ## Installation & Usage
 
 To install and use the **Last.fm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Last.fm** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

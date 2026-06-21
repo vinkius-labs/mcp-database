@@ -1,12 +1,14 @@
 # Hologram.io MCP Server
 
-Automate IoT connectivity via Hologram.io — manage devices, SIM cards, and data usage directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hologramio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hologramio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hologramio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hologramio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 11
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Automate IoT connectivity via Hologram.io — manage devices, SIM cards, and data usage directly from any AI agent.
 
 ## Description
 Connect your **Hologram.io** IoT platform to any AI agent and take full control of your global cellular connectivity and device fleet through natural conversation.
@@ -53,6 +55,33 @@ Temporarily suspend data services for a specific SIM card
 - **unpause_sim_data**: Resume data services for a suspended SIM card
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hologram.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all IoT devices and show which ones are currently active."
+
+**🤖 AI Agent:**
+> I've retrieved your device list. You have 12 devices in your fleet, including 'Sensor Unit 01' (Active), 'Gateway Beta' (Active), and 'Tracker 05' (Suspended). Would you like to see the recent data usage for the active devices?
+
+---
+
+**👤 You:**
+> "Show me the total data usage for the current billing cycle."
+
+**🤖 AI Agent:**
+> Accessing billing usage... For the current cycle, your fleet has consumed 450.2 MB of data. Your monthly allowance is 1 GB, leaving you with 549.8 MB remaining. Should I check which device has the highest consumption?
+
+---
+
+**👤 You:**
+> "Find the approximate location of all devices in my account."
+
+**🤖 AI Agent:**
+> Retrieving fleet locations... I've mapped your devices based on cell tower data. Most of your fleet is currently concentrated in the 'Greater Chicago Area', with 2 units appearing near 'San Francisco'. Would you like the specific coordinates for any device?
+
+
 ## Installation & Usage
 
 To install and use the **Hologram.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Hologram.io** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

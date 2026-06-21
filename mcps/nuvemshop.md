@@ -1,12 +1,14 @@
 # Nuvemshop MCP Server
 
-Manage your Nuvemshop e-commerce via API — list products, orders, customers, coupons, and webhooks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nuvemshop)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nuvemshop)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nuvemshop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nuvemshop-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 24
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage your Nuvemshop e-commerce via API — list products, orders, customers, coupons, and webhooks directly from any AI agent.
 
 ## Description
 Connect your **Nuvemshop** store to any AI agent and take full control of your e-commerce operations through natural conversation.
@@ -163,6 +165,58 @@ or changing product status. The product_id must exist in your store.
 Update an existing product in your Nuvemshop store
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nuvemshop** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all pending orders and their total values."
+
+**🤖 AI Agent:**
+> I found 5 pending orders:
+1. **Order #10234** — João Silva — R$ 249.90 — Created: 2026-04-06
+2. **Order #10235** — Maria Santos — R$ 89.90 — Created: 2026-04-06
+3. **Order #10236** — Carlos Oliveira — R$ 459.00 — Created: 2026-04-07
+4. **Order #10237** — Ana Costa — R$ 129.90 — Created: 2026-04-07
+5. **Order #10238** — Pedro Lima — R$ 319.90 — Created: 2026-04-07
+
+Total pending revenue: R$ 1,248.60. Would you like to update the status of any order?
+
+---
+
+**👤 You:**
+> "Create a new coupon SUMMER20 with 20% discount, minimum purchase of R$ 100, valid until June 30th."
+
+**🤖 AI Agent:**
+> I've successfully created the coupon:
+- **Code**: SUMMER20
+- **Type**: Percentage discount
+- **Value**: 20%
+- **Minimum Purchase**: R$ 100.00
+- **Valid Until**: June 30, 2026
+- **Uses**: 0 / Unlimited
+
+The coupon is now active and ready for customers to use at checkout.
+
+---
+
+**👤 You:**
+> "List all products with stock below 10 units so I can reorder."
+
+**🤖 AI Agent:**
+> I found 8 products with stock below 10 units:
+1. **T-Shirt Blue M** — SKU: TSH-BLU-M — Stock: 3 — Price: R$ 49.90
+2. **T-Shirt Blue L** — SKU: TSH-BLU-L — Stock: 7 — Price: R$ 49.90
+3. **Sneaker White 42** — SKU: SNK-WHT-42 — Stock: 2 — Price: R$ 199.90
+4. **Cap Black** — SKU: CAP-BLK-001 — Stock: 5 — Price: R$ 39.90
+5. **Backpack Gray** — SKU: BPK-GRY-001 — Stock: 1 — Price: R$ 159.90
+6. **Socks Pack** — SKU: SCK-PCK-001 — Stock: 8 — Price: R$ 29.90
+7. **Belt Brown** — SKU: BLT-BRN-001 — Stock: 4 — Price: R$ 79.90
+8. **Wallet Black** — SKU: WLT-BLK-001 — Stock: 6 — Price: R$ 89.90
+
+Would you like to update stock quantities for any of these products?
+
+
 ## Installation & Usage
 
 To install and use the **Nuvemshop** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -171,4 +225,11 @@ To install and use the **Nuvemshop** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

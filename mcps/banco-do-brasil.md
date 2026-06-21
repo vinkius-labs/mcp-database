@@ -1,12 +1,14 @@
 # Banco do Brasil MCP Server
 
-Check balance, statements, pay Pix/Boleto, and manage your BB account via API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/banco-do-brasil)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/banco-do-brasil)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/banco-do-brasil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/banco-do-brasil-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Check balance, statements, pay Pix/Boleto, and manage your BB account via API.
 
 ## Description
 Connect your **Banco do Brasil** account to any AI agent and perform essential banking tasks — check balances, view transaction history, send Pix payments, and pay bills through natural conversation.
@@ -49,6 +51,33 @@ Get history of Pix transfers (Sent/Received)
 Get account statement (transactions) by date range
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Banco do Brasil** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my current balance."
+
+**🤖 AI Agent:**
+> Available Balance: R$ 2,500.00 | Credit Limit: R$ 500.00
+
+---
+
+**👤 You:**
+> "Send a Pix of R$50 to joao@email.com."
+
+**🤖 AI Agent:**
+> Pix sent successfully! End-to-End ID: E1234567890123456789012345678901.
+
+---
+
+**👤 You:**
+> "Show me the transactions from last week."
+
+**🤖 AI Agent:**
+> Found 5 transactions: 1. R$ -50.00 (Pix Sent). 2. R$ 2,000.00 (Salary Received).
+
+
 ## Installation & Usage
 
 To install and use the **Banco do Brasil** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Banco do Brasil** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

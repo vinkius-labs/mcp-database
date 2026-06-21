@@ -1,12 +1,14 @@
 # Ably MCP Server
 
-Manage real-time messaging, presence, and push notifications via Ably — publish messages, track users, and monitor channels from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ably)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ably)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ably-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ably-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 14
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage real-time messaging, presence, and push notifications via Ably — publish messages, track users, and monitor channels from your AI agent.
 
 ## Description
 Connect your **Ably** account to any AI agent to orchestrate real-time communication infrastructure through natural language. This server provides full access to the Ably REST API for robust pub/sub messaging and presence management.
@@ -51,6 +53,33 @@ Revoke Ably tokens before their expiry
 - **update_message**: Update, delete, or append to a message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ably** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Publish a message to the 'orders' channel with the event name 'new_order' and data '{"id": 123}'"
+
+**🤖 AI Agent:**
+> I've published the message to the 'orders' channel. The message was successfully accepted by Ably.
+
+---
+
+**👤 You:**
+> "Check who is currently online in the 'chat-room-1' channel."
+
+**🤖 AI Agent:**
+> I've retrieved the presence data for 'chat-room-1'. There are currently 3 active members: user_01, user_05, and admin_01.
+
+---
+
+**👤 You:**
+> "Show me the usage statistics for my Ably application."
+
+**🤖 AI Agent:**
+> I've fetched your application stats. In the last period, you had 1,250 messages published and 45 peak concurrent connections.
+
+
 ## Installation & Usage
 
 To install and use the **Ably** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Ably** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

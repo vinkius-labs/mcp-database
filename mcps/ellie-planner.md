@@ -1,12 +1,14 @@
 # Ellie Planner MCP Server
 
-Plan projects visually with AI-assisted task breakdowns, timelines, and team coordination that adapts as your work evolves.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ellie-planner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ellie-planner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ellie-planner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ellie-planner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan projects visually with AI-assisted task breakdowns, timelines, and team coordination that adapts as your work evolves.
 
 ## Description
 Connect your **Ellie Planner** account to any AI agent and take full control of your daily productivity and time-blocking workflows through natural conversation.
@@ -47,6 +49,33 @@ Create a new task
 - **update_task**: Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ellie Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current tasks for today in Ellie Planner."
+
+**🤖 AI Agent:**
+> I've retrieved your tasks for today. You have 5 active items, including 'Finish API Design' and 'Team Meeting'. Which one should we update or mark as completed?
+
+---
+
+**👤 You:**
+> "Create a task 'Research MCP Servers' in my Brain Dump."
+
+**🤖 AI Agent:**
+> Done! I've added 'Research MCP Servers' to your Brain Dump list. It's now ready for you to schedule or prioritize later.
+
+---
+
+**👤 You:**
+> "Mark task ID 't_123' as completed."
+
+**🤖 AI Agent:**
+> Action complete! Task t_123 has been successfully marked as completed in your Ellie Planner. Your progress is now updated on the dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Ellie Planner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Ellie Planner** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # DataScope MCP Server
 
-Create mobile forms for field inspections, audits, and data collection that work offline and sync when connectivity returns.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datascope)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datascope)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datascope-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datascope-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Create mobile forms for field inspections, audits, and data collection that work offline and sync when connectivity returns.
 
 ## Description
 Connect your **DataScope** account to any AI agent and take full control of your mobile form data collection and field operations through natural conversation.
@@ -45,6 +47,33 @@ List form submissions (answers)
 - **list_organization_users**: List all users in the organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DataScope** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 form submissions for form ID '1024'."
+
+**🤖 AI Agent:**
+> I've retrieved the latest submissions for form 1024. Highlights include 3 'Maintenance Checks' and 2 'Site Audits'. Would you like the detailed answers for the most recent entry?
+
+---
+
+**👤 You:**
+> "Show me all registered users in my DataScope organization."
+
+**🤖 AI Agent:**
+> I've retrieved your user directory. You currently have 10 active field members, including @user1 and @user2. Shall I check who submitted the most forms today?
+
+---
+
+**👤 You:**
+> "Get the PDF download link for submission ID 'ans_789'."
+
+**🤖 AI Agent:**
+> Link generated! You can download the professional PDF report for submission ans_789 here: [download_url]. The link is secure and ready for distribution.
+
+
 ## Installation & Usage
 
 To install and use the **DataScope** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **DataScope** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

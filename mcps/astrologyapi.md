@@ -1,12 +1,14 @@
 # AstrologyAPI MCP Server
 
-Leading global astrology platform — get daily horoscopes, birth charts, and numerology via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/astrologyapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/astrologyapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/astrologyapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/astrologyapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Leading global astrology platform — get daily horoscopes, birth charts, and numerology via AI.
 
 ## Description
 Empower your AI agent to orchestrate your celestial insights and astrological data with **AstrologyAPI**, the premier provider of global astrological calculations. By connecting AstrologyAPI to your agent, you transform complex birth chart generation, matchmaking analysis, and daily horoscope retrieval into a natural conversation. Your agent can instantly retrieve personalized predictions for any zodiac sign, calculate planetary positions based on birth metadata, and even generate numerology reports without you ever needing to navigate multiple spiritual apps or websites. Whether you are conducting a personal growth audit or coordinating spiritual wellness, your agent acts as a real-time astrological coordinator, providing accurate results from a single, authorized source.
@@ -43,6 +45,33 @@ Empower your AI agent to orchestrate your celestial insights and astrological da
 - **get_yoga_analysis**: Analyze planetary yogas
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AstrologyAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the daily prediction for 'Scorpio'."
+
+**🤖 AI Agent:**
+> I've retrieved the daily prediction for Scorpio. Today, you should focus on personal communication and emotional balance. Your health outlook is stable, and there are positive trends in your career. Would you like me to check your numerology report for today as well?
+
+---
+
+**👤 You:**
+> "Get the birth chart planets for: Born 12 Oct 1990, 14:30 in London (Lat: 51.5, Lon: -0.12, TZ: 1)."
+
+**🤖 AI Agent:**
+> I've calculated the planetary positions for that birth metadata. The Sun was in Libra, the Moon was in Cancer, and Mars was in Gemini. Should I also check the house positions or identify any specialized yogas in this chart?
+
+---
+
+**👤 You:**
+> "Generate a numerology report for 'John Doe' born on 15 Jan 1985."
+
+**🤖 AI Agent:**
+> I've generated the numerology report for John Doe. Your Destiny Number is 3, reflecting creativity and self-expression. Your Radical Number is 6. Would you like me to provide a detailed explanation of what these numbers mean for your personal growth?
+
+
 ## Installation & Usage
 
 To install and use the **AstrologyAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **AstrologyAPI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

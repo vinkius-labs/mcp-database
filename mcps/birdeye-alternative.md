@@ -1,12 +1,14 @@
 # Birdeye MCP Server
 
-Grow your local business reputation with review management, customer surveys, and listings that drive more foot traffic.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/birdeye-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/birdeye-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/birdeye-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/birdeye-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 6
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Grow your local business reputation with review management, customer surveys, and listings that drive more foot traffic.
 
 ## Description
 Connect your **Birdeye** account to any AI agent and take full control of your online reputation management and customer experience workflows through natural conversation.
@@ -43,6 +45,33 @@ No more manual logging into individual review sites or missing critical feedback
 - **trigger_survey**: Send a custom survey to a customer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Birdeye** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the latest 5-star reviews for my business in Birdeye."
+
+**🤖 AI Agent:**
+> I've retrieved your top reviews. You recently received 10 new 5-star ratings across Google and Facebook. Highlights include high praise for your 'Fast Response Time'. Would you like to see the detailed metadata for these?
+
+---
+
+**👤 You:**
+> "Send a review request to 'John Smith' (john@example.com)."
+
+**🤖 AI Agent:**
+> Customer check-in complete! I've successfully triggered a review request for John Smith. He will receive an automated notification shortly. Shall I monitor the status for any response?
+
+---
+
+**👤 You:**
+> "Show the sentiment profile for customer ID '12345'."
+
+**🤖 AI Agent:**
+> Accessing customer intelligence... John Doe (ID: 12345) has a consistently 'Positive' sentiment profile across 3 reviews and 1 survey response. His latest NPS score was 10. Need more historical context from his high-fidelity profile?
+
+
 ## Installation & Usage
 
 To install and use the **Birdeye** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Birdeye** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

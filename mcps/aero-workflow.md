@@ -1,12 +1,14 @@
 # Aero Workflow MCP Server
 
-Organize accounting firm tasks, track client work, and manage team workloads with purpose-built practice management.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aero-workflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aero-workflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aero-workflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aero-workflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Organize accounting firm tasks, track client work, and manage team workloads with purpose-built practice management.
 
 ## Description
 Connect your **Aero Workflow** account to any AI agent and take full control of your accounting practice management and automated firm operations through natural conversation.
@@ -53,6 +55,33 @@ Add a new task to Aero
 - **list_configured_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aero Workflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active workflow tasks in my Aero account."
+
+**🤖 AI Agent:**
+> I've retrieved your active tasks. You currently have 5 workflows in progress, including 'Monthly Reconciliation' and 'Payroll Audit'. Would you like the detailed high-fidelity checklists for any of these?
+
+---
+
+**👤 You:**
+> "Create a new task 'Urgent Tax Review' for customer 'Acme Corp'."
+
+**🤖 AI Agent:**
+> Workflow task created! I've successfully registered 'Urgent Tax Review' for Acme Corp. It's now visible to your staff in the Aero dashboard. Shall I list your available checklist templates to attach instructions?
+
+---
+
+**👤 You:**
+> "Show my recent time tracking logs for this week."
+
+**🤖 AI Agent:**
+> Accessing productivity data... For this week, your firm has logged a total of 120 billable hours across 8 active clients. Highlights include 40 hours for 'Global Tech'. Need the high-fidelity staff utilization report?
+
+
 ## Installation & Usage
 
 To install and use the **Aero Workflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Aero Workflow** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

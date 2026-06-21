@@ -1,12 +1,14 @@
 # Dext MCP Server
 
-Equip your AI agent to manage receipts, track invoices, and monitor accounting data via the Dext API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dext)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dext)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dext-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dext-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage receipts, track invoices, and monitor accounting data via the Dext API.
 
 ## Description
 Integrate **Dext** (formerly **Receipt Bank**), the leading bookkeeping and accounting automation platform, directly into your AI workflow. Manage your digital inbox of receipts and invoices, track supplier extraction data, and monitor accounting categories and client accounts using natural language.
@@ -44,6 +46,33 @@ Integrate **Dext** (formerly **Receipt Bank**), the leading bookkeeping and acco
 - **search_inbox_by_keyword**: Search for receipts or invoices by supplier name or description
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dext** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all items in my inbox that need review."
+
+**🤖 AI Agent:**
+> I've found 5 items pending review, including a receipt from 'Staples' ($45.00) and an invoice from 'AWS' ($120.00). Would you like to see the tax breakdown for the AWS invoice?
+
+---
+
+**👤 You:**
+> "Show me the details for the item from 'Starbucks' on June 12th."
+
+**🤖 AI Agent:**
+> I've retrieved the Starbucks receipt from June 12th. Total: $12.50. It has been categorized under 'Travel & Meals'. The extraction is 100% confident. Would you like the direct link to the document image?
+
+---
+
+**👤 You:**
+> "Search my inbox for 'office supplies'."
+
+**🤖 AI Agent:**
+> I've found 3 items matching 'office supplies' from 'Office Depot' and 'Amazon'. The total spend across these items is $215.00. Should I list the individual dates and amounts?
+
+
 ## Installation & Usage
 
 To install and use the **Dext** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dext** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

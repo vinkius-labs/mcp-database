@@ -1,12 +1,14 @@
 # Shoplazza MCP Server
 
-Launch your cross-border e-commerce store with a platform optimized for global selling, multi-currency, and localized checkout.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shoplazza-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shoplazza-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shoplazza-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shoplazza-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 11
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Launch your cross-border e-commerce store with a platform optimized for global selling, multi-currency, and localized checkout.
 
 ## Description
 Connect your **Shoplazza** store to any AI agent and take full control of your e-commerce operations and high-fidelity retail orchestration through natural conversation.
@@ -49,6 +51,33 @@ No more manual stock checks or missing order updates. Your AI acts as your dedic
 - **check_shoplazza_status**: Check API Status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shoplazza** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products and show their current price."
+
+**🤖 AI Agent:**
+> I've retrieved your products. You currently have 15 active high-fidelity profiles, including 'Classic T-Shirt' ($25) and 'Denim Jacket' ($85). Would you like to see the detailed inventory metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the last 5 orders and their fulfillment status."
+
+**🤖 AI Agent:**
+> Retail orchestrated! I've identified 5 recent high-fidelity order profiles, including order #1001 (Fulfilled) and #1002 (Processing). I've retrieved the technical fulfillment metadata for your review. Shall I summarize the sales progress?
+
+---
+
+**👤 You:**
+> "Check the available collections for the 'Summer' promotion."
+
+**🤖 AI Agent:**
+> Collection directory orchestrated! Your store currently has 5 high-fidelity promotion profiles active, including 'Summer Sale' and 'New Arrivals'. Your API connection is healthy. Shall I retrieve the detailed product orchestration metadata for these collections?
+
+
 ## Installation & Usage
 
 To install and use the **Shoplazza** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Shoplazza** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

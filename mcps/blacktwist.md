@@ -1,12 +1,14 @@
 # BlackTwist MCP Server
 
-Enrich B2B lead data with verified company information, technographics, and contact details for precision targeting.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blacktwist)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blacktwist)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blacktwist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blacktwist-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Enrich B2B lead data with verified company information, technographics, and contact details for precision targeting.
 
 ## Description
 Connect your **BlackTwist** account to any AI agent and take full control of your social media presence on **Threads** and **Bluesky** through natural conversation.
@@ -57,6 +59,33 @@ List connected social media accounts
 - **list_follow_up_templates**: List auto-plug/follow-up templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BlackTwist** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all social media accounts connected to BlackTwist."
+
+**🤖 AI Agent:**
+> I've retrieved your social profiles. You currently have a Threads account (@user1, ID: 123) and a Bluesky account (ID: 456) connected. Which one should we use for a new post?
+
+---
+
+**👤 You:**
+> "Schedule a Threads post 'Check out our new API!' for tomorrow at 2 PM."
+
+**🤖 AI Agent:**
+> Post scheduled! I've successfully queued your update 'Check out our new API!' on Threads for tomorrow at 2:00 PM. The run ID is 'post_789'. Shall I monitor the engagement once it's live?
+
+---
+
+**👤 You:**
+> "Show my engagement metrics and daily activity recap."
+
+**🤖 AI Agent:**
+> Accessing analytics... Yesterday you reached 1,500 views and 120 likes across all accounts. Your consistency score is holding at 98%. Would you like the detailed breakdown per profile?
+
+
 ## Installation & Usage
 
 To install and use the **BlackTwist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **BlackTwist** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

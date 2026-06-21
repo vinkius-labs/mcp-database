@@ -1,12 +1,14 @@
 # WhatsApp Chat Export Parser MCP Server
 
-Turn messy WhatsApp chat exports into clean, structured JSON instantly. Let your AI search years of conversations, find lost addresses, and summarize long threads local.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-chat-export-parser)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-chat-export-parser)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whatsapp-chat-export-parser-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whatsapp-chat-export-parser-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 1
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Turn messy WhatsApp chat exports into clean, structured JSON instantly. Let your AI search years of conversations, find lost addresses, and summarize long threads local.
 
 ## Description
 You know that address your landlord sent you 3 months ago in WhatsApp? Or that restaurant recommendation from Maria? Good luck scrolling through thousands of messages to find it.
@@ -27,6 +29,33 @@ This MCP solves the universal WhatsApp search problem. When you export any chat 
 Parse an exported WhatsApp chat .txt file offline. Extracts messages, senders, timestamps, and participant statistics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WhatsApp Chat Export Parser** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Parse my WhatsApp chat with Maria and find the message where she sent me an address."
+
+**🤖 AI Agent:**
+> Found it! On 03/12/2024 at 14:23, Maria sent: 'The address is Rua Augusta 42, 3rd floor, Lisbon.'
+
+---
+
+**👤 You:**
+> "Summarize my conversation with the landlord from last month."
+
+**🤖 AI Agent:**
+> Last month, you discussed 3 topics: 1) Rent payment date change (agreed to the 5th), 2) Plumbing issue (he'll send someone Friday), 3) Lease renewal (pending his response).
+
+---
+
+**👤 You:**
+> "Who sends the most messages in my group chat? Show me the statistics."
+
+**🤖 AI Agent:**
+> Participant stats: João (1,204 messages), Ana (892), Pedro (456). João sends 42% of all messages.
+
+
 ## Installation & Usage
 
 To install and use the **WhatsApp Chat Export Parser** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **WhatsApp Chat Export Parser** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

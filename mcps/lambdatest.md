@@ -1,12 +1,14 @@
 # LambdaTest MCP Server
 
-Test your website and apps across thousands of real browsers and devices in the cloud with automated and manual testing tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lambdatest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lambdatest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lambdatest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lambdatest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Test your website and apps across thousands of real browsers and devices in the cloud with automated and manual testing tools.
 
 ## Description
 Connect your **LambdaTest** account to any AI agent and manage browser testing through natural conversation.
@@ -46,6 +48,33 @@ List individual test runs
 - **update_session_status**: Set the outcome of a test
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LambdaTest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all builds and the latest test results."
+
+**🤖 AI Agent:**
+> Builds: 12 total. Latest: Build #45 — 'Regression Suite' (42 tests, 38 passed ✅, 3 failed ❌, 1 error ⚠️). Build #44 — 'Smoke Tests' (15 tests, 15 passed ✅). Build #43 — 'Cross-browser' (28 tests, 26 passed, 2 failed). Pass rate (7 days): 91%. Failed tests in Build #45: 'Login Page — Firefox 120', 'Checkout — Safari 17', 'Search — Edge 121'.
+
+---
+
+**👤 You:**
+> "Show the session details and screenshots for the failed login test."
+
+**🤖 AI Agent:**
+> Session: 'Login Page — Firefox 120'. Status: ❌ Failed. Duration: 45s. Browser: Firefox 120.0 / Windows 11. Error: Element not found '#submit-btn' (timeout after 10s). Screenshots: 3 captured. Step 1: Page loaded ✅. Step 2: Email entered ✅. Step 3: Submit click ❌ (element missing). Video recording: available (45s). Console errors: 1 — 'Uncaught TypeError: Cannot read property of null'.
+
+---
+
+**👤 You:**
+> "List available browsers and recent automation run statistics."
+
+**🤖 AI Agent:**
+> Browsers: Chrome (118-124), Firefox (115-121), Safari (16-17), Edge (118-124), Opera (104-108). OS: Windows 11/10/8, macOS Sonoma/Ventura/Monterey, Ubuntu 22/20. Stats (30 days): 456 sessions, 38 builds, 91.2% pass rate. Average duration: 2.3 min. Most tested: Chrome 124/Win11 (180 sessions). Flaky tests: 4 identified.
+
+
 ## Installation & Usage
 
 To install and use the **LambdaTest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **LambdaTest** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

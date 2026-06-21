@@ -1,12 +1,14 @@
 # Netdata MCP Server
 
-Monitor real-time infrastructure metrics, analyze system performance, and track active alerts across your nodes and Netdata Cloud spaces.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/netdata)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netdata)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netdata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netdata-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 10
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Monitor real-time infrastructure metrics, analyze system performance, and track active alerts across your nodes and Netdata Cloud spaces.
 
 ## Description
 Connect your **Netdata** monitoring infrastructure to any AI agent for instant, real-time observability and performance analysis through natural language.
@@ -49,6 +51,33 @@ List all available charts on the node
 - **list_spaces**: List all Netdata Cloud spaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Netdata** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the current information and version of the Netdata agent."
+
+**🤖 AI Agent:**
+> I've retrieved the agent info. The host is 'prod-server-01' running Netdata version v1.44.1 with 128 enabled collectors.
+
+---
+
+**👤 You:**
+> "List all available charts on this node so I can see what metrics are being collected."
+
+**🤖 AI Agent:**
+> I've compiled the list of charts. You have access to metrics for 'system.cpu', 'system.ram', 'net.eth0', and 45 other dimensions. Which one would you like to analyze?
+
+---
+
+**👤 You:**
+> "Are there any active alarms or warnings on the local agent right now?"
+
+**🤖 AI Agent:**
+> Checking alarms... I found one warning for 'disk_backlog' on /dev/sda. All other system health checks are currently clear.
+
+
 ## Installation & Usage
 
 To install and use the **Netdata** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Netdata** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

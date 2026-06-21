@@ -1,12 +1,14 @@
 # Dialog Insight MCP Server
 
-Equip your AI agent to manage marketing contacts, track campaigns, and monitor engagement via the Dialog Insight API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dialog-insight)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dialog-insight)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dialog-insight-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dialog-insight-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage marketing contacts, track campaigns, and monitor engagement via the Dialog Insight API.
 
 ## Description
 Integrate **Dialog Insight**, the powerful relationship marketing and CRM platform, directly into your AI workflow. Manage your marketing contacts, monitor email and SMS campaign performance, and track automated workflows using natural language.
@@ -44,6 +46,33 @@ Integrate **Dialog Insight**, the powerful relationship marketing and CRM platfo
 - **search_contacts_by_email**: Search for a contact record by their email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dialog Insight** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns."
+
+**🤖 AI Agent:**
+> I've found 4 active campaigns, including 'Spring Promotion 2024' and 'Monthly Newsletter'. Would you like to see the performance metrics for the largest one?
+
+---
+
+**👤 You:**
+> "Show me the performance for campaign 'Spring Promotion'."
+
+**🤖 AI Agent:**
+> The 'Spring Promotion' campaign has an open rate of 22% and a click-through rate of 3.5%. So far, it has generated 1,200 unique clicks. Should I list the top performing links?
+
+---
+
+**👤 You:**
+> "Find contact profile for 'user@example.com'."
+
+**🤖 AI Agent:**
+> I've retrieved the profile for 'user@example.com'. They are currently 'Active' and part of the 'VIP Customers' segment. Their last interaction was with the 'June Digest' email. Would you like to see their custom field values?
+
+
 ## Installation & Usage
 
 To install and use the **Dialog Insight** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dialog Insight** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

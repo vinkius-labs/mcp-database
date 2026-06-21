@@ -1,12 +1,14 @@
 # Daftra MCP Server
 
-Run your Arabic-first business with invoicing, inventory, CRM, and accounting designed for the Middle East and North Africa.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/daftra-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/daftra-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/daftra-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/daftra-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** crm
-**Tools Count:** 12
+
+**Category:** [crm](../categories/crm.md)
+
+Run your Arabic-first business with invoicing, inventory, CRM, and accounting designed for the Middle East and North Africa.
 
 ## Description
 Connect your **Daftra** account to any AI agent and take full control of your business accounting and ERP operations through natural conversation.
@@ -52,6 +54,33 @@ Create a new invoice
 - **list_products**: List all products
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Daftra** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all unpaid invoices in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your unpaid invoices. You have 3 pending payments, including Invoice #4501 for 'Ali Hassan' and #4502. Would you like the full item details for the largest invoice?
+
+---
+
+**👤 You:**
+> "Create a new client 'Ahmed Khalid' with email 'ahmed@example.com'."
+
+**🤖 AI Agent:**
+> Client created! Ahmed Khalid has been added to your Daftra database (ID: cl_123). He is now available for invoicing and project assignments. Shall I create an initial invoice for him?
+
+---
+
+**👤 You:**
+> "Show me the current treasury balances."
+
+**🤖 AI Agent:**
+> Accessing financial records... Your Main Cash account has $5,420.00 and the Business Bank account (ID: tr_456) shows $12,800.00. Both are in good standing. Need a summary of recent expenses?
+
+
 ## Installation & Usage
 
 To install and use the **Daftra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Daftra** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

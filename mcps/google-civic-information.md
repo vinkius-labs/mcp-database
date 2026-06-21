@@ -1,12 +1,14 @@
 # Google Civic Information MCP Server
 
-Manage political data — audit representatives and elections via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-civic-information)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-civic-information)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-civic-information-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-civic-information-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage political data — audit representatives and elections via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire civic participation and political auditing workflow with **Google Civic Information**, the authoritative source for localized government data. By connecting Google's civic intelligence to your agent, you transform complex political searches into a natural conversation. Your agent can instantly identify your representatives, audit upcoming elections, and retrieve detailed polling metadata without you ever touching a government portal. Whether you are conducting regional policy research or preparing for a local vote, your agent acts as a real-time civic consultant, ensuring your data is always verified and precise.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire civic participation and politic
 - **search_civic_divisions**: Search for electoral divisions (OCD-IDs) by name or location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Civic Information** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Who are my political representatives for '1600 Pennsylvania Avenue NW, Washington, DC'?"
+
+**🤖 AI Agent:**
+> I've retrieved the representatives for that address! Notable officials include the President of the United States and Congressional representatives from the District of Columbia. I can provide the party affiliation and office titles for each if you'd like.
+
+---
+
+**👤 You:**
+> "Search for civic divisions related to 'Chicago'."
+
+**🤖 AI Agent:**
+> I've identified several electoral divisions for Chicago! These include the City of Chicago and Cook County. I can provide the OCD-IDs for these divisions to assist in further representative audits.
+
+---
+
+**👤 You:**
+> "What elections are upcoming in the United States?"
+
+**🤖 AI Agent:**
+> I've retrieved the election catalog from Google Civic! Notable upcoming events include state primaries and the next General Election. I can provide the unique election IDs and dates for each of these if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Google Civic Information** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Google Civic Information** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

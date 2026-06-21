@@ -1,12 +1,14 @@
 # PG&E Public Datasets MCP Server
 
-Access PG&E public energy data: monthly usage, billing, savings, and regional comparisons.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-public-datasets)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pge-public-datasets)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pge-public-datasets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pge-public-datasets-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access PG&E public energy data: monthly usage, billing, savings, and regional comparisons.
 
 ## Description
 Access **PG&E Public Datasets** directly from any AI agent and explore energy consumption, billing trends, efficiency savings, and regional comparisons without any authentication.
@@ -60,6 +62,33 @@ Get energy efficiency program savings data from PG&E
 Get yearly energy consumption trends from PG&E public data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PG&E Public Datasets** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show monthly electricity usage by customer type."
+
+**🤖 AI Agent:**
+> Monthly electricity usage breakdown: Residential avg 650 kWh/month ($95), Commercial avg 4,200 kWh/month ($580), Industrial avg 45,000 kWh/month ($4,800), Agricultural avg 12,000 kWh/month ($1,100). Residential represents 35% of total consumption, Commercial 40%, Industrial 15%, Agricultural 10%.
+
+---
+
+**👤 You:**
+> "Compare ZIP codes 94102, 94301, and 95054."
+
+**🤖 AI Agent:**
+> Regional comparison: 94102 (SF Mission): 5.2M kWh/month, 42K customers, avg $138 bill. 94301 (Palo Alto): 4.8M kWh/month, 28K customers, avg $165 bill. 95054 (Santa Clara): 6.1M kWh/month, 35K customers, avg $152 bill. Palo Alto has highest per-customer usage despite fewer customers, likely due to larger homes and higher income.
+
+---
+
+**👤 You:**
+> "Show yearly energy consumption trends."
+
+**🤖 AI Agent:**
+> Yearly trends (2020-2024): 2020: 82,400 GWh (pandemic dip), 2021: 85,100 GWh (+3.3%), 2022: 87,800 GWh (+3.2%), 2023: 86,200 GWh (-1.8%, mild weather), 2024: 89,500 GWh (+3.8%, data center growth). Gas trends: declining 2% annually due to electrification and heat pump adoption.
+
+
 ## Installation & Usage
 
 To install and use the **PG&E Public Datasets** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **PG&E Public Datasets** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

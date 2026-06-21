@@ -1,12 +1,14 @@
 # Coassemble MCP Server
 
-Manage online training and LMS via Coassemble — track courses, monitor enrolments, and manage student groups directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coassemble)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coassemble)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coassemble-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coassemble-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage online training and LMS via Coassemble — track courses, monitor enrolments, and manage student groups directly from any AI agent.
 
 ## Description
 Connect your **Coassemble** account to any AI agent and take full control of your online training and LMS through natural conversation. Streamline how you manage learners, courses, and completion results natively.
@@ -45,6 +47,33 @@ Connect your **Coassemble** account to any AI agent and take full control of you
 - **get_training_completion_results**: List training results and grades for enrolments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coassemble** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all training courses in my Coassemble workspace."
+
+**🤖 AI Agent:**
+> Retrieving your courses... I found 8 active courses including 'Company Onboarding', 'Compliance 101', and 'Advanced Sales Training'. Which one would you like to see enrolments for?
+
+---
+
+**👤 You:**
+> "Show me the progress for user 'STU_12345'."
+
+**🤖 AI Agent:**
+> Checking progress for user STU_12345... This student is enrolled in 3 courses. They have completed 'Compliance 101' (100%) and are at 45% for 'Advanced Sales'.
+
+---
+
+**👤 You:**
+> "What are the latest completion results?"
+
+**🤖 AI Agent:**
+> Retrieving completion data... You had 12 new course completions today. The average grade is 92%, with 'Onboarding' having the highest success rate.
+
+
 ## Installation & Usage
 
 To install and use the **Coassemble** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Coassemble** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

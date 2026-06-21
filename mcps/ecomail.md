@@ -1,12 +1,14 @@
 # Ecomail MCP Server
 
-Equip your AI agent to manage email campaigns, track subscribers, and monitor marketing automation via the Ecomail API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ecomail)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ecomail)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ecomail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ecomail-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage email campaigns, track subscribers, and monitor marketing automation via the Ecomail API.
 
 ## Description
 Integrate **Ecomail**, the powerful marketing automation and email platform, directly into your AI workflow. Manage your email campaigns and templates, track contact lists and individual subscriber profiles, monitor automation results, and oversee your marketing operations using natural language.
@@ -44,6 +46,33 @@ Integrate **Ecomail**, the powerful marketing automation and email platform, dir
 - **search_marketing_subscribers**: Search for subscribers using a keyword or email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ecomail** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email marketing campaigns."
+
+**🤖 AI Agent:**
+> I've found several campaigns, including 'Spring Sale 2024', 'Welcome series', and 'Monthly Newsletter'. Would you like to see the performance metrics for the Spring Sale?
+
+---
+
+**👤 You:**
+> "Show me the subscribers in list '12345'."
+
+**🤖 AI Agent:**
+> List '12345' (Master Newsletter) has 500 subscribers. Recent additions include 'john.doe@example.com' and 'alice.smith@example.org'. Should I research the profile for John Doe?
+
+---
+
+**👤 You:**
+> "Which email templates are available for use?"
+
+**🤖 AI Agent:**
+> You have 5 active templates, including 'Standard Promo', 'Transactional Receipt', and 'Blog Update'. Would you like the unique ID for any of these templates?
+
+
 ## Installation & Usage
 
 To install and use the **Ecomail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Ecomail** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

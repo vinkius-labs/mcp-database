@@ -1,12 +1,14 @@
 # PoetryDB MCP Server
 
-Access the world's largest database of public domain poetry — search by author, title, lines, or line count directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/poetrydb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poetrydb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poetrydb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poetrydb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 8
+
+**Category:** [databases](../categories/databases.md)
+
+Access the world's largest database of public domain poetry — search by author, title, lines, or line count directly from your AI agent.
 
 ## Description
 Connect the **PoetryDB** server to your AI agent to explore thousands of classic poems and literary works through natural conversation.
@@ -51,6 +53,33 @@ Search for poems by title
 - **list_titles**: List all poem titles available in PoetryDB
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PoetryDB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all authors available in the PoetryDB."
+
+**🤖 AI Agent:**
+> I've retrieved the list of authors. There are hundreds of poets available, including classics like William Shakespeare, Emily Dickinson, and Edgar Allan Poe. Would you like to see poems from a specific author?
+
+---
+
+**👤 You:**
+> "Find 3 random poems for me."
+
+**🤖 AI Agent:**
+> Here are 3 random selections from the database: 'Ozymandias' by Percy Bysshe Shelley, 'The Raven' by Edgar Allan Poe, and 'A Bird, came down the Walk' by Emily Dickinson. Shall I provide the full text for any of these?
+
+---
+
+**👤 You:**
+> "Search for poems by John Keats that have exactly 14 lines."
+
+**🤖 AI Agent:**
+> Searching for sonnets by John Keats... I found several matches, including 'On First Looking into Chapman's Homer' and 'When I have fears that I may cease to be'. Both are 14-line sonnets. Which one would you like to read?
+
+
 ## Installation & Usage
 
 To install and use the **PoetryDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **PoetryDB** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

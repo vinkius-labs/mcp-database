@@ -1,12 +1,14 @@
 # Article Architect MCP Server
 
-Technical blog posts written by AI read like documentation — step 1, step 2, step 3, no argument, no tradeoffs, no opinion. Article Architect forces the agent to take a position, expose limitations, plan code as evidence, cite production data, and define a reader transformation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/article-architect)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/article-architect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/article-architect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/article-architect-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Technical blog posts written by AI read like documentation — step 1, step 2, step 3, no argument, no tradeoffs, no opinion. Article Architect forces the agent to take a position, expose limitations, plan code as evidence, cite production data, and define a reader transformation.
 
 ## Description
 Ask an AI agent to write a technical blog post and you get the same thing every time: a tutorial disguised as an article. "Step 1: Install X. Step 2: Configure Y. Step 3: Deploy Z." No thesis, no tradeoffs, no opinion, no production experience, no reason for the reader to trust the author over the official documentation.
@@ -50,6 +52,33 @@ Article Architect works for technical articles in any language. The pivots are u
 Structured reflection tool for architecting technical blog articles that argue, prove, and transform — not just describe. The agent must commit to a debatable thesis, expose honest tradeoffs, plan code blocks that serve as evidence, ground the argument in production experience, and define a concrete reader transformation. The tool validates logical consistency: if the thesis is a definition, it rejects. If tradeoffs are dismissive, it rejects. If code is boilerplate, it rejects. If experience is generic, it rejects
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Article Architect** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Write a technical blog post about React Server Components."
+
+**🤖 AI Agent:**
+> Verdict: NO_THESIS. 'About React Server Components' is a topic, not an argument. What POSITION are you taking? 'RSC eliminated 4 round trips from our checkout flow and cut payload by 62% — but it moved complexity to the resolver layer.' That's a thesis. Take a side. What did RSC fix, what did it break, and when should you NOT use it?
+
+---
+
+**👤 You:**
+> "Thesis: tRPC cut type errors 89% and API surface 60%, but onboarding slowed 3x. Tradeoffs: steep learning curve, runtime overhead. Code: type-error diff, API surface comparison, onboarding metrics. Evidence: 14-service migration over 3 sprints."
+
+**🤖 AI Agent:**
+> Verdict: PUBLISH_READY. Thesis is debatable (speed vs onboarding cost). Tradeoffs are painful (3x onboarding). Code is evidence (type-error diffs, not hello-world). Production is concrete (14 services, 3 sprints). Architecture validated — write it.
+
+---
+
+**👤 You:**
+> "Thesis: Kubernetes simplifies container orchestration. Tradeoffs: minor complexity overhead. Code: kubectl apply example. Evidence: widely used in production."
+
+**🤖 AI Agent:**
+> Multiple rejections. (1) NO_THESIS — 'simplifies container orchestration' is a marketing tagline, not a thesis. Compared to what? At what cost? (2) ONE_SIDED — 'minor complexity overhead' dismisses real pain. (3) ABSTRACT — kubectl apply is documentation, not evidence. (4) THEORETICAL — 'widely used in production' is generic. Fix all four.
+
+
 ## Installation & Usage
 
 To install and use the **Article Architect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Article Architect** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

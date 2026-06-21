@@ -1,12 +1,14 @@
 # Mapflow MCP Server
 
-Extract geospatial features from satellite imagery with AI that detects buildings, roads, and vegetation patterns automatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 7
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Extract geospatial features from satellite imagery with AI that detects buildings, roads, and vegetation patterns automatically.
 
 ## Description
 Connect your **Mapflow** account to any AI agent and manage geospatial AI processing through natural conversation.
@@ -46,6 +48,33 @@ Create a new project
 - **list_projects**: List all MapFlow projects
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mapflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List available AI models and my active projects."
+
+**🤖 AI Agent:**
+> AI Models: 8 available. 'Building Footprints' (v2.1), 'Road Networks' (v1.5), 'Forest Cover' (v3.0), 'Construction Sites', 'Agriculture Fields'. Active projects: 3. 'Seattle Urban Planning' (Buildings), 'Amazon Monitoring' (Forest), 'Highway Survey' (Roads).
+
+---
+
+**👤 You:**
+> "Start processing building footprints for the Seattle project."
+
+**🤖 AI Agent:**
+> Processing task started! ✅ Task ID: tsk_8901. Model: 'Building Footprints' (v2.1). Area: 14 sq km (Seattle downtown). Imagery: Maxar SecureWatch. Estimated time: 14 minutes. Status: Queued. Cost: 28 credits.
+
+---
+
+**👤 You:**
+> "Check status of task tsk_8901 and show dataset results."
+
+**🤖 AI Agent:**
+> Task tsk_8901 status: Completed ✅ (Took 12m 45s). Dataset generated: 'Seattle_Buildings_Final'. Features extracted: 14,250 polygons. Confidence score avg: 92%. Formats available: GeoJSON, Shapefile, Geopackage. Ready for download.
+
+
 ## Installation & Usage
 
 To install and use the **Mapflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Mapflow** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

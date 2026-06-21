@@ -1,12 +1,14 @@
 # Optum Eligibility MCP Server
 
-Verify patient active healthcare coverage, extract deductibles, and run real-time UHG demographics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/optum-eligibility)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/optum-eligibility)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/optum-eligibility-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/optum-eligibility-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Verify patient active healthcare coverage, extract deductibles, and run real-time UHG demographics.
 
 ## Description
 ### What you can do
@@ -36,6 +38,33 @@ Specifically built for **Hospital Receptionists**, **Clinic Managers**, and **He
 - **opt_verify_provider_network**: Checks if a specific doctor or medical facility is In-Network for the given patient policy
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Optum Eligibility** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the remaining deductibles and out-of-pocket maximum amounts for patient ID 99281."
+
+**🤖 AI Agent:**
+> Query completed. Patient 99281 has a remaining active deductible of $1,250 towards an annual ceiling.
+
+---
+
+**👤 You:**
+> "Find if John Doe is currently eligible for an MRI under policy HDHP-77."
+
+**🤖 AI Agent:**
+> Eligibility verified. John Doe is active under HDHP-77 but MRIs require prior authorization before service delivery.
+
+---
+
+**👤 You:**
+> "List all dependents covered under Member ID UB-11202."
+
+**🤖 AI Agent:**
+> Located dependents under subscriber UB-11202: 1 Spouse (Active) and 2 Toddler dependents (Active) currently attached.
+
+
 ## Installation & Usage
 
 To install and use the **Optum Eligibility** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **Optum Eligibility** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Tolstoy MCP Server
 
-Embed interactive video experiences on your website that let visitors choose their own path through shoppable video funnels.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tolstoy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tolstoy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tolstoy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tolstoy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 6
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Embed interactive video experiences on your website that let visitors choose their own path through shoppable video funnels.
 
 ## Description
 Connect your **Tolstoy** interactive video account to any AI agent and simplify how you build personalized video experiences, manage your media library, and track engagement through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Tolstoy** interactive video account to any AI agent and simplify 
 - **upload_video**: Upload a new video to Tolstoy
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tolstoy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all videos in my Tolstoy library."
+
+**🤖 AI Agent:**
+> I've retrieved your video library. You have 12 videos including 'Customer Testimonial', 'Product Walkthrough', and 'Founder Welcome'. Which one would you like to see analytics for?
+
+---
+
+**👤 You:**
+> "Show me the analytics summary for my videos."
+
+**🤖 AI Agent:**
+> I've fetched your performance summary. Over the last 30 days, your interactive videos have received 1,500 plays with an average conversion rate of 8.5%. Would you like a breakdown by specific video?
+
+---
+
+**👤 You:**
+> "Upload this video to Tolstoy: 'https://vinkius.com/intro.mp4' with name 'Introduction v2'."
+
+**🤖 AI Agent:**
+> Import initiated! I've triggered the upload of 'Introduction v2' to your library. It should be available in your Tolstoy dashboard for interactive flow building shortly.
+
+
 ## Installation & Usage
 
 To install and use the **Tolstoy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Tolstoy** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

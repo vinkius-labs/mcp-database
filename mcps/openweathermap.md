@@ -1,12 +1,14 @@
 # OpenWeatherMap MCP Server
 
-Access real-time weather data, 5-day forecasts, air quality metrics, and geocoding services globally via OpenWeatherMap.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openweathermap)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweathermap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openweathermap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openweathermap-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time weather data, 5-day forecasts, air quality metrics, and geocoding services globally via OpenWeatherMap.
 
 ## Description
 Connect **OpenWeatherMap** to your AI agent to get instant access to global meteorological data. Whether you're planning travel, monitoring environmental conditions, or building weather-aware automations, this server provides the precise data you need.
@@ -42,6 +44,33 @@ Get current air pollution data
 - **reverse_geocoding**: Convert coordinates into city names
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenWeatherMap** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current weather in London?"
+
+**🤖 AI Agent:**
+> Using `get_current_weather` for London... It's currently 15°C with light rain and 82% humidity.
+
+---
+
+**👤 You:**
+> "Give me the 5-day forecast for Tokyo."
+
+**🤖 AI Agent:**
+> Fetching the 5-day forecast via `get_forecast`... Tokyo will see mostly clear skies for the next 3 days, with temperatures ranging from 18°C to 24°C.
+
+---
+
+**👤 You:**
+> "Check the air pollution levels at latitude 40.71 and longitude -74.00."
+
+**🤖 AI Agent:**
+> Running `get_air_pollution` for those coordinates... The Air Quality Index is 2 (Fair). PM2.5 is at 12.5 μg/m³ and CO is at 320.4 μg/m³.
+
+
 ## Installation & Usage
 
 To install and use the **OpenWeatherMap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **OpenWeatherMap** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # SugarCRM (Enterprise CRM & Customer Success API) MCP Server
 
-Manage SugarCRM records, relationships, and customer data directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sugarcrm-enterprise-crm-customer-success-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sugarcrm-enterprise-crm-customer-success-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sugarcrm-enterprise-crm-customer-success-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sugarcrm-enterprise-crm-customer-success-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 10
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage SugarCRM records, relationships, and customer data directly from your AI agent.
 
 ## Description
 Connect your **SugarCRM** instance to any AI agent to streamline your customer success and sales operations. This server provides a comprehensive set of tools to interact with your CRM data using natural language.
@@ -47,6 +49,33 @@ List filtered records for a specific SugarCRM module
 - **update_record**: Update an existing SugarCRM record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SugarCRM (Enterprise CRM & Customer Success API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 5 accounts from SugarCRM."
+
+**🤖 AI Agent:**
+> I've retrieved the first 5 accounts. They include 'Nelson Inc', 'Global Tech', and 'Apex Corp'. Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Count how many Leads we have in the system."
+
+**🤖 AI Agent:**
+> There are currently 1,250 leads recorded in your SugarCRM instance.
+
+---
+
+**👤 You:**
+> "Show me all contacts related to Account ID 'acc_123'."
+
+**🤖 AI Agent:**
+> I've found 3 contacts related to that account: John Doe, Jane Smith, and Robert Brown. Do you need the contact info for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **SugarCRM (Enterprise CRM & Customer Success API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **SugarCRM (Enterprise CRM & Customer Success API)** MCP 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

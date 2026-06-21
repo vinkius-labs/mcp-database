@@ -1,12 +1,14 @@
 # Common Paper MCP Server
 
-Common Paper helps you create, send, and sign standard commercial contracts faster. Use this MCP server to automate your contract workflow and track agreement status.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/common-paper)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/common-paper)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/common-paper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/common-paper-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 10
+
+**Category:** [document-management](../categories/document-management.md)
+
+Common Paper helps you create, send, and sign standard commercial contracts faster. Use this MCP server to automate your contract workflow and track agreement status.
 
 ## Description
 Connect your **Common Paper** account to any AI agent and manage your commercial contracts through natural conversation.
@@ -45,6 +47,33 @@ No more manual drafting or navigating complex legal platforms. Your AI agent bec
 - **send_agreement**: Create and send a new agreement based on a template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Common Paper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all signed agreements in Common Paper."
+
+**🤖 AI Agent:**
+> I found 5 signed agreements in your Common Paper account. Would you like me to display their details?
+
+---
+
+**👤 You:**
+> "Send an NDA agreement to 'partner@example.com' using template ID 'tmpl-xxxx' in Common Paper."
+
+**🤖 AI Agent:**
+> I've successfully sent the NDA agreement to 'partner@example.com'. The agreement status is currently pending signature.
+
+---
+
+**👤 You:**
+> "Get the current status of agreement 'agr-yyyy' in Common Paper."
+
+**🤖 AI Agent:**
+> The agreement 'agr-yyyy' is currently fully executed. It was signed on March 15, 2026.
+
+
 ## Installation & Usage
 
 To install and use the **Common Paper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Common Paper** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

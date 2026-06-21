@@ -1,12 +1,14 @@
 # Losant MCP Server
 
-Manage IoT applications, devices, and workflows via Losant — control hardware, query time-series data, and automate smart infrastructure directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/losant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/losant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/losant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/losant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 38
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Manage IoT applications, devices, and workflows via Losant — control hardware, query time-series data, and automate smart infrastructure directly from any AI agent.
 
 ## Description
 Connect your **Losant** Enterprise IoT Platform to any AI agent and take full control of your connected environment through natural conversation.
@@ -75,6 +77,33 @@ No more navigating complex dashboards to check a sensor value or trigger a maint
 - **upload_file**: Upload a file to an application
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Losant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Losant applications."
+
+**🤖 AI Agent:**
+> I've retrieved your applications. You have 3 active apps: 'Smart Factory' (ID: 60a...), 'Office HVAC' (ID: 61b...), and 'Fleet Tracker' (ID: 62c...). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me all devices in application 60a123456789."
+
+**🤖 AI Agent:**
+> In the 'Smart Factory' application, I found 12 devices. 10 are currently 'Online' and 2 are 'Offline'. Notable devices include 'Main Boiler' and 'Assembly Line 1'. Would you like the details for a specific one?
+
+---
+
+**👤 You:**
+> "Trigger the 'Emergency Reset' virtual button in workflow 5f987654321."
+
+**🤖 AI Agent:**
+> The virtual button for 'Emergency Reset' in workflow 5f987654321 has been successfully pressed. The workflow logic is now executing.
+
+
 ## Installation & Usage
 
 To install and use the **Losant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Losant** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

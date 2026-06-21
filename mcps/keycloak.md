@@ -1,12 +1,14 @@
 # Keycloak MCP Server
 
-Manage identity and access control — list realms, manage users, configure clients, and handle security roles directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/keycloak)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keycloak)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keycloak-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keycloak-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 34
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage identity and access control — list realms, manage users, configure clients, and handle security roles directly from your AI agent.
 
 ## Description
 Connect your **Keycloak** instance to any AI agent to streamline your Identity and Access Management (IAM) workflows. This server provides comprehensive tools to audit, configure, and maintain your security infrastructure through natural language.
@@ -69,6 +71,33 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 - **update_user**: Update a user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Keycloak** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all realms available in our Keycloak instance."
+
+**🤖 AI Agent:**
+> I've retrieved the realms. You have 3 active realms: 'master', 'production-apps', and 'staging-environment'.
+
+---
+
+**👤 You:**
+> "Get the details for user ID '550e8400-e29b' in the 'production-apps' realm."
+
+**🤖 AI Agent:**
+> Fetching user data... User 'john.doe' found. Email: john@example.com, Status: Enabled, Created: 2023-10-12.
+
+---
+
+**👤 You:**
+> "Create a new group called 'Engineering-Leads' in the 'master' realm."
+
+**🤖 AI Agent:**
+> Group 'Engineering-Leads' has been successfully created in the 'master' realm.
+
+
 ## Installation & Usage
 
 To install and use the **Keycloak** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Keycloak** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

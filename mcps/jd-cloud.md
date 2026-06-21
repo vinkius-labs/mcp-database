@@ -1,12 +1,14 @@
 # JD Cloud / 京东云 MCP Server
 
-China's leading supply chain cloud platform — manage VMs, storage, and cloud infrastructure via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jd-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jd-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jd-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's leading supply chain cloud platform — manage VMs, storage, and cloud infrastructure via AI.
 
 ## Description
 Empower your AI agent to orchestrate your cloud infrastructure and supply chain assets with **JD Cloud** (京东云), the premier cloud service provider by JD.com. By connecting JD Cloud to your agent, you transform complex virtual machine management, storage bucket auditing, and billing analysis into a natural conversation. Your agent can instantly retrieve VM instance details, list Object Storage Service (OSS) buckets, audit VPC networks, and retrieve comprehensive billing summaries without you ever needing to navigate the comprehensive JD Cloud Console. Whether you are managing e-commerce backend resources or coordinating high-volume digital distribution, your agent acts as a real-time cloud operations assistant, providing accurate results from a single, authorized source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your cloud infrastructure and supply chain 
 - **list_vpc_networks**: List VPC networks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JD Cloud / 京东云** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my running virtual machines in region 'cn-north-1'."
+
+**🤖 AI Agent:**
+> I've retrieved your VM instances for the Beijing region. You have 3 active instances: 'Web_Server_01' (Running), 'DB_Master' (Running), and 'Test_Lab' (Stopped). Would you like to see the detailed specs for the 'Web_Server_01'?
+
+---
+
+**👤 You:**
+> "Check our JD Cloud billing summary from October 1st to October 15th."
+
+**🤖 AI Agent:**
+> I've retrieved the billing summary for your account. For the requested period, the total expenditure was 1,240.50 CNY. The largest cost contributors were VM instances (65%) and OSS storage (20%). Should I check the detailed usage for VM resources?
+
+---
+
+**👤 You:**
+> "Show me the list of Object Storage (OSS) buckets in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your OSS bucket list. You have 5 buckets configured, including 'assets-prod', 'backup-logs', and 'user-uploads'. Would you like me to check the region and creation date for a specific bucket?
+
+
 ## Installation & Usage
 
 To install and use the **JD Cloud / 京东云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **JD Cloud / 京东云** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

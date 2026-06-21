@@ -1,12 +1,14 @@
 # Trolley Global Payouts & Tax Compliance MCP Server
 
-Automate global payouts and tax compliance — manage recipients, payments, and tax forms via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/trolley-global-payouts-tax-compliance)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trolley-global-payouts-tax-compliance)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trolley-global-payouts-tax-compliance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trolley-global-payouts-tax-compliance-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 6
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate global payouts and tax compliance — manage recipients, payments, and tax forms via AI.
 
 ## Description
 Equip your AI agent with the most powerful platform for global payouts and tax compliance through the **Trolley** MCP server. This integration provides real-time access to your Trolley dashboard, allowing your agent to manage recipients (payees), initiate and monitor payments, and ensure regulatory compliance with automated tax form tracking. Whether you are scaling a marketplace, managing a global workforce, or auditing financial distributions, your agent acts as a dedicated financial operations specialist through natural conversation.
@@ -44,6 +46,33 @@ Get tax forms for a recipient
 - **list_recipients**: List recipients in Trolley
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Trolley Global Payouts & Tax Compliance** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my recipients in Trolley."
+
+**🤖 AI Agent:**
+> Retrieving your recipients... I found 25 payees including 'John Doe' and 'Jane Smith'. Would you like to see the details for a specific one?
+
+---
+
+**👤 You:**
+> "What is the status of my latest payments?"
+
+**🤖 AI Agent:**
+> Checking payment history... Your 10 most recent payments are all in 'completed' status, except for one pending for 'Global Services Ltd'.
+
+---
+
+**👤 You:**
+> "Check the tax form status for recipient 'R-123456'."
+
+**🤖 AI Agent:**
+> Retrieving tax documentation for R-123456... I found a W-8BEN form that was submitted and verified on January 10th. The recipient is currently compliant for payouts.
+
+
 ## Installation & Usage
 
 To install and use the **Trolley Global Payouts & Tax Compliance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Trolley Global Payouts & Tax Compliance** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

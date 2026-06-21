@@ -1,12 +1,14 @@
 # Volcengine Speech Synthesis MCP Server
 
-The massive 'TikTok Voice' TTS API — generate natural speech with ByteDance's iconic voice models.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/volcengine-speech-synthesis)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/volcengine-speech-synthesis)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/volcengine-speech-synthesis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/volcengine-speech-synthesis-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+The massive 'TikTok Voice' TTS API — generate natural speech with ByteDance's iconic voice models.
 
 ## Description
 Connect **Volcengine Speech Synthesis** (ByteDance's TTS platform) to any AI agent and generate stunning natural speech — including the iconic TikTok voices — through natural conversation.
@@ -50,6 +52,33 @@ Convert SSML (Speech Synthesis Markup Language) to speech
 Convert text to speech using Volcengine TTS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Volcengine Speech Synthesis** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate speech with the TikTok trendy female voice: 'Welcome to my video!'"
+
+**🤖 AI Agent:**
+> 🔊 Speech synthesized successfully! Using BV033_streaming (TikTok Trendy Female). Audio generated in MP3 format at 24kHz.
+
+---
+
+**👤 You:**
+> "List all available voices and show me English options."
+
+**🤖 AI Agent:**
+> 🎙️ Available voices: BV001 (Generic Female, zh), BV002 (Generic Male, zh), BV033 (TikTok Trendy Female, zh), BV113 (English Female, en), BV115 (English Male, en). English options: BV113 (Female), BV115 (Male).
+
+---
+
+**👤 You:**
+> "Synthesize this article into speech: [long article text...]"
+
+**🤖 AI Agent:**
+> 📖 Long-text synthesis started! Article split into 5 chunks. Using BV001_streaming voice. Processing will take ~30 seconds for full narration.
+
+
 ## Installation & Usage
 
 To install and use the **Volcengine Speech Synthesis** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Volcengine Speech Synthesis** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

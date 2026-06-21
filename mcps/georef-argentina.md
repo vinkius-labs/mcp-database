@@ -1,12 +1,14 @@
 # Georef Argentina MCP Server
 
-Access official Argentine geographic data—normalize addresses, list administrative divisions, and perform reverse geocoding directly from your AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/georef-argentina)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/georef-argentina)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/georef-argentina-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/georef-argentina-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 7
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access official Argentine geographic data—normalize addresses, list administrative divisions, and perform reverse geocoding directly from your AI.
 
 ## Description
 Connect your AI agent to the official **Georef Argentina** service to access precise geographic and administrative information. This server allows you to interact with the national database of provinces, departments, municipalities, and streets.
@@ -48,6 +50,33 @@ Get geographic location for a given set of coordinates
 - **get_vias**: Get a list of streets (vías) in Argentina
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Georef Argentina** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all provinces in Argentina."
+
+**🤖 AI Agent:**
+> I've retrieved the list of provinces. Argentina has 24 main jurisdictions, including Buenos Aires, Córdoba, Santa Fe, and Mendoza. Would you like to see the IDs or centroids for any of them?
+
+---
+
+**👤 You:**
+> "Normalize the address 'Av. 9 de Julio 1234, CABA'."
+
+**🤖 AI Agent:**
+> The address has been normalized. It corresponds to 'AVENIDA 9 DE JULIO 1234', located in the Autonomous City of Buenos Aires (CABA). The coordinates are Lat: -34.612, Lon: -58.381.
+
+---
+
+**👤 You:**
+> "What is the location for coordinates -34.6037, -58.3816?"
+
+**🤖 AI Agent:**
+> Those coordinates correspond to the Obelisco area in the Autonomous City of Buenos Aires (CABA), specifically within the San Nicolás neighborhood.
+
+
 ## Installation & Usage
 
 To install and use the **Georef Argentina** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Georef Argentina** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

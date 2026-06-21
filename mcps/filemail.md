@@ -1,12 +1,14 @@
 # Filemail MCP Server
 
-Transfer large files up to terabytes securely with password protection, download tracking, and branded transfer pages.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/filemail)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filemail)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filemail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filemail-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Transfer large files up to terabytes securely with password protection, download tracking, and branded transfer pages.
 
 ## Description
 Connect your **Filemail** account to any AI agent and take full control of your secure file sharing and transfer workflows through natural conversation.
@@ -47,6 +49,33 @@ No more manual status checking or complex transfer management through fragmented
 - **login**: Login to Filemail
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Filemail** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my sent transfers on Filemail."
+
+**🤖 AI Agent:**
+> I've retrieved your sent transfers. You have 5 active deliveries, including 'Project Alpha Video' (Sent yesterday) and 'Q4 Financials'. Would you like the download status for any of these?
+
+---
+
+**👤 You:**
+> "Get the download link for transfer ID 'ABC-123'."
+
+**🤖 AI Agent:**
+> Link retrieved! You can download the files for transfer ABC-123 here: [download_url]. The transfer contains 3 files and expires in 7 days.
+
+---
+
+**👤 You:**
+> "Check my Filemail account storage usage."
+
+**🤖 AI Agent:**
+> Checking storage... You are currently using 45GB of your 100GB total limit. You have 55GB of space available for new transfers.
+
+
 ## Installation & Usage
 
 To install and use the **Filemail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Filemail** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

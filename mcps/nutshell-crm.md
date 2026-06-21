@@ -1,12 +1,14 @@
 # Nutshell CRM MCP Server
 
-Manage sales and relationships via Nutshell CRM — track leads, contacts, and accounts directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nutshell-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nutshell-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nutshell-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nutshell-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 10
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage sales and relationships via Nutshell CRM — track leads, contacts, and accounts directly from your AI agent.
 
 ## Description
 Connect your **Nutshell CRM** account to your AI agent and take control of your sales pipeline and customer relationships through natural conversation using their JSON-RPC API.
@@ -48,6 +50,33 @@ List available activity types
 - **universal_search**: Search across all entities
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nutshell CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my most recent sales leads."
+
+**🤖 AI Agent:**
+> Retrieving leads... I found 5 recent leads including 'Enterprise Upgrade - Acme' ($12,000), 'New Office Solution', and 'Q4 Growth'. Would you like the full details for the Acme upgrade?
+
+---
+
+**👤 You:**
+> "Search for any contact or lead related to 'Dunder Mifflin'."
+
+**🤖 AI Agent:**
+> Executing universal search... I've found 1 Account ('Dunder Mifflin Paper Co.'), 2 Contacts ('Michael Scott', 'Dwight Schrute'), and 1 active Lead. Which record would you like to inspect?
+
+---
+
+**👤 You:**
+> "What are my upcoming activities and meetings?"
+
+**🤖 AI Agent:**
+> Retrieving activities... You have 3 scheduled items: 'Follow-up Call' with John Smith at 2:00 PM, 'Project Kickoff' tomorrow at 10:00 AM, and a 'Dinner Meeting'. Shall I retrieve the contact info for John Smith?
+
+
 ## Installation & Usage
 
 To install and use the **Nutshell CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Nutshell CRM** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

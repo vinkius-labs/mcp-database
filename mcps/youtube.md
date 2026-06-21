@@ -1,12 +1,14 @@
 # YouTube MCP Server
 
-Search for videos, retrieve detailed statistics, and audit channel performance on YouTube — the world's leading video sharing platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/youtube)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/youtube)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/youtube-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/youtube-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 4
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search for videos, retrieve detailed statistics, and audit channel performance on YouTube — the world's leading video sharing platform.
 
 ## Description
 Connect your **YouTube Data API** account to any AI agent and harness the power of global video intelligence through natural conversation.
@@ -48,6 +50,33 @@ Search for YouTube videos by keyword or exact phrase
 Fetches the top most relevant comments from a specific YouTube video
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **YouTube** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search YouTube for 'generative AI tutorials' and show me the top 5 results."
+
+**🤖 AI Agent:**
+> I found the top 5 videos for 'generative AI tutorials'. Highlights include: 1. 'GenAI for Beginners' (ID: abc-123), 2. 'Advanced LLM Prompting' (ID: def-456), and 3. 'Building with Stable Diffusion' (ID: ghi-789). Which one would you like the full details for?
+
+---
+
+**👤 You:**
+> "What are the statistics for video ID 'dQw4w9WgXcQ'?"
+
+**🤖 AI Agent:**
+> Video 'Never Gonna Give You Up' (ID: dQw4w9WgXcQ) has 1.5 billion views, 17 million likes, and approximately 2.1 million comments. It was uploaded on Oct 25, 2009. Would you like me to list the latest comments?
+
+---
+
+**👤 You:**
+> "Check the subscriber count for channel ID 'UC_x5XG1OV2P6uYZ5M1D2ogw'."
+
+**🤖 AI Agent:**
+> The channel 'Google for Developers' (ID: UC_...) currently has 2.45 million subscribers and a total of 1,250 videos. The total view count across all videos is approximately 450 million.
+
+
 ## Installation & Usage
 
 To install and use the **YouTube** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **YouTube** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Dynamic (Web3 Auth) MCP Server
 
-Manage Web3 authentication and user data via Dynamic — fetch user profiles, check wallet sanctions, and manage sessions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dynamic-web3-auth)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dynamic-web3-auth)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dynamic-web3-auth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dynamic-web3-auth-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 8
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Manage Web3 authentication and user data via Dynamic — fetch user profiles, check wallet sanctions, and manage sessions directly from any AI agent.
 
 ## Description
 Connect your **Dynamic** environment to any AI agent to streamline Web3 user management and security workflows through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Dynamic** environment to any AI agent to streamline Web3 user man
 - **revoke_session**: Revoke an active user session
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dynamic (Web3 Auth)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get user profile for user_id 'usr_123' in environment 'env_456'."
+
+**🤖 AI Agent:**
+> I've retrieved the profile for user 'usr_123'. They have a verified email (user@example.com) and a linked Ethereum wallet (0x123...a1b2). Their account was created on Oct 12, 2023.
+
+---
+
+**👤 You:**
+> "Check if the wallet address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e is sanctioned on the ETH chain."
+
+**🤖 AI Agent:**
+> I've performed the check. The address 0x742d... is NOT sanctioned on the Ethereum network for your current environment settings.
+
+---
+
+**👤 You:**
+> "What are the available event types for webhooks in this environment?"
+
+**🤖 AI Agent:**
+> I've fetched the event types. You can subscribe to: 'user.created', 'wallet.authenticated', 'session.started', and 'email.verified'. Each event includes detailed metadata in its payload.
+
+
 ## Installation & Usage
 
 To install and use the **Dynamic (Web3 Auth)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Dynamic (Web3 Auth)** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

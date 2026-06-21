@@ -1,12 +1,14 @@
 # Expedia Hotels MCP Server
 
-Automate hotel research via Expedia — search global property availability, compare room rates, and analyze guest reviews directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-hotels)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-hotels)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-hotels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-hotels-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate hotel research via Expedia — search global property availability, compare room rates, and analyze guest reviews directly from any AI agent.
 
 ## Description
 Connect your **Expedia Rapid API** account to any AI agent and take programmatic control over one of the world's largest hotel inventory networks.
@@ -73,6 +75,33 @@ Get guest reviews and ratings for a specific hotel
 Validate the current price for a specific room and rate before booking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Expedia Hotels** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find available 4-star hotels in central Paris for December 15-18, two adults."
+
+**🤖 AI Agent:**
+> I found 23 properties matching your criteria in central Paris. The top three are: 'Hôtel Le Marais' (ID: 28491) starting at €189/night with free cancellation, 'Grand Palais Suites' (ID: 74502) at €245/night including breakfast, and 'Opéra Garnier Hotel' (ID: 15893) at €210/night. Would you like me to pull the detailed rate plans for any of these?
+
+---
+
+**👤 You:**
+> "Show me the cancellation policy and rate breakdown for property 28491."
+
+**🤖 AI Agent:**
+> Here are the rate plans for Hôtel Le Marais (28491): **Standard Room** — €189/night, free cancellation until Dec 13, total €567 + €42 taxes. **Superior Room** — €229/night, non-refundable, includes daily breakfast, total €687 + €51 taxes. The standard room offers the best flexibility. Want me to check guest reviews before you decide?
+
+---
+
+**👤 You:**
+> "What are the latest guest reviews saying about property 74502?"
+
+**🤖 AI Agent:**
+> Grand Palais Suites (74502) has a 4.6/5.0 average from 892 reviews. Recent highlights: guests consistently praise the central location (50m from Champs-Élysées) and the included breakfast quality. The most common critique mentions elevator wait times during peak morning hours. Overall sentiment is strongly positive — 94% of recent reviewers recommend the property.
+
+
 ## Installation & Usage
 
 To install and use the **Expedia Hotels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **Expedia Hotels** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

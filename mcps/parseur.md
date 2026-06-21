@@ -1,12 +1,14 @@
 # Parseur MCP Server
 
-Automate document processing via Parseur — list mailboxes, upload PDFs/Emails, extract structured data pipelines, and trigger template logic natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/parseur)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/parseur)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/parseur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/parseur-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate document processing via Parseur — list mailboxes, upload PDFs/Emails, extract structured data pipelines, and trigger template logic natively.
 
 ## Description
 Bring **Parseur Document Extraction** arrays directly into your AI workflows. By explicitly mapping into powerful OCR and templating engines, your agent can push unstructured PDFs or bulk emails into remote routing limits, parsing exact text fields securely. Extract fields, examine documents, list defined parse-templates, and retry pipelines without manual intervention.
@@ -64,6 +66,33 @@ Retry parsing a failed or errored Parseur document
 Upload a document URL to a Parseur mailbox for parsing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Parseur** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my Parseur mailboxes to find the specific bounding IDs."
+
+**🤖 AI Agent:**
+> Extracted physical boundaries querying mailboxes. I found 2 limits explicitly registered: 1. 'Invoices Mailbox' (ID: xyz12), expecting PDF accounting payloads. 2. 'Web contact forms' (ID: wtf9). Should I list templates associated cleanly?
+
+---
+
+**👤 You:**
+> "Get the data schema parsed tightly inside document doc_987."
+
+**🤖 AI Agent:**
+> Running payload bounds against doc_987. Status: parsed perfectly. Extracted JSON dictionary properties explicitly reveal: Invoice_Number: 'A-201', Total_Amount: 1400.99, Date: '2026-04-10'.
+
+---
+
+**👤 You:**
+> "Upload this snippet of parsed text directly into Mailbox xyz12 for OCR processing."
+
+**🤖 AI Agent:**
+> Push executed successfully running `upload_document`. Triggered physical limits. The document natively entered 'Invoices Mailbox' parsing queue. Processing document UUID: doc_112. Status: pending. I'll dynamically pull it later if told.
+
+
 ## Installation & Usage
 
 To install and use the **Parseur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Parseur** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

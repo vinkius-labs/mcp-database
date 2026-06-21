@@ -1,12 +1,14 @@
 # Wati MCP Server
 
-Send WhatsApp template and session messages, and manage contacts on Wati — the leading WhatsApp Business API solution.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wati)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wati)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wati-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wati-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 7
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Send WhatsApp template and session messages, and manage contacts on Wati — the leading WhatsApp Business API solution.
 
 ## Description
 Connect your **Wati** account to any AI agent and power your customer communication on WhatsApp through natural conversation.
@@ -50,6 +52,33 @@ Retrieves the recent message history for a specific contact
 Sends an approved WhatsApp template message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wati** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my WhatsApp contacts in Wati."
+
+**🤖 AI Agent:**
+> I found 150 contacts. The most recent ones are 'John Doe' (+123456789), 'Jane Smith' (+987654321), and 'Robert Brown' (+112233445). Would you like the full profile details for any of them?
+
+---
+
+**👤 You:**
+> "Send the 'order_confirmation' template to +123456789."
+
+**🤖 AI Agent:**
+> I've successfully sent the 'order_confirmation' template message to +123456789 via Wati. The message has been queued for delivery.
+
+---
+
+**👤 You:**
+> "What was my last conversation with +123456789 about?"
+
+**🤖 AI Agent:**
+> Retrieving history for +123456789… The last 3 messages were: 1. Customer: 'Is my package arriving today?' 2. You: 'Yes, it's out for delivery.' 3. Customer: 'Thanks!'. Would you like me to pull more history?
+
+
 ## Installation & Usage
 
 To install and use the **Wati** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Wati** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

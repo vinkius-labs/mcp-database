@@ -1,12 +1,14 @@
 # NetEase Cloud Gaming MCP Server
 
-Manage NetEase Cloud Gaming sessions — orchestrate server instances, monitor user quotas, and scaling capacity directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/netease-cloud-gaming)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/netease-cloud-gaming)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/netease-cloud-gaming-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/netease-cloud-gaming-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage NetEase Cloud Gaming sessions — orchestrate server instances, monitor user quotas, and scaling capacity directly from any AI agent.
 
 ## Description
 Connect your AI agents to **NetEase Cloud Gaming (网易云游戏)**, the leading platform for instant cloud-native gaming. This MCP provides 10 tools to manage the entire lifecycle of cloud gaming sessions and user access controls.
@@ -46,6 +48,33 @@ Connect your AI agents to **NetEase Cloud Gaming (网易云游戏)**, the leadin
 - **stop_session**: Force stop an active cloud gaming session
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NetEase Cloud Gaming** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a cloud gaming session for game 'game_456' and user 'user_789'."
+
+**🤖 AI Agent:**
+> Initializing NetEase cloud instance... Session created successfully. ID: `sess_abc123`. The game is now loading on the remote server. Would you like to monitor the session status?
+
+---
+
+**👤 You:**
+> "List all games currently available on the NetEase Cloud platform."
+
+**🤖 AI Agent:**
+> Retrieving NetEase game catalog... I found several optimized titles including: 1. Onmyoji (ID: g1), 2. Naraka: Bladepoint (ID: g2), 3. Identity V (ID: g3). Which one would you like to launch?
+
+---
+
+**👤 You:**
+> "Show the remaining quota for user 'user_beta_1'."
+
+**🤖 AI Agent:**
+> Checking user quota... User 'user_beta_1' has 120 minutes of cloud play time remaining out of a total monthly allowance of 500 minutes.
+
+
 ## Installation & Usage
 
 To install and use the **NetEase Cloud Gaming** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **NetEase Cloud Gaming** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

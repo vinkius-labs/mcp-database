@@ -1,12 +1,14 @@
 # Clio MCP Server
 
-Manage legal practice and matters via Clio — track cases, monitor contacts, and manage firm tasks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** project-management
-**Tools Count:** 23
+
+**Category:** [project-management](../categories/project-management.md)
+
+Manage legal practice and matters via Clio — track cases, monitor contacts, and manage firm tasks directly from any AI agent.
 
 ## Description
 Connect your **Clio** account to any AI agent and take full control of your legal practice management through natural conversation. Streamline how you manage matters, contacts, and billing natively.
@@ -103,6 +105,33 @@ Get contact details
 Create a new contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my open matters in Clio."
+
+**🤖 AI Agent:**
+> Retrieving your open matters... I found 5 items: Case #2026-001 (Civil Litigation), #2026-002 (Corporate Setup), and 3 others. Which one would you like to see the details for?
+
+---
+
+**👤 You:**
+> "Show me the tasks for the 'City Refurb' matter."
+
+**🤖 AI Agent:**
+> Checking tasks for City Refurb... I found 3 items: 'File Motion' (Due Today), 'Witness Deposition' (Completed), and 'Review Contract' (Pending). Would you like to update any of these?
+
+---
+
+**👤 You:**
+> "Who is the contact for the 'Jones v. Smith' case?"
+
+**🤖 AI Agent:**
+> Retrieving contact for Jones v. Smith... The primary client is Alice Jones. I can provide her email or phone number if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Clio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -111,4 +140,11 @@ To install and use the **Clio** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

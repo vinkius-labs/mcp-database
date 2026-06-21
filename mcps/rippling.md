@@ -1,12 +1,14 @@
 # Rippling MCP Server
 
-Manage your workforce via Rippling — list employees, update profiles, and manage departments directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rippling)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rippling)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rippling-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rippling-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 7
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage your workforce via Rippling — list employees, update profiles, and manage departments directly from any AI agent.
 
 ## Description
 Connect your **Rippling** account to any AI agent to streamline HR and employee management through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Rippling** account to any AI agent to streamline HR and employee 
 - **update_employee**: Update employee information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rippling** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees currently in the company."
+
+**🤖 AI Agent:**
+> I've retrieved the employee list. You have 45 active employees. Notable entries include 'Alice Smith' (ID: emp_001) and 'Bob Jones' (ID: emp_002). Would you like to see details for a specific person?
+
+---
+
+**👤 You:**
+> "Get the full profile for employee ID 'emp_12345'."
+
+**🤖 AI Agent:**
+> Fetching details for employee emp_12345... I've found the record for Jane Doe. She is a Senior Engineer in the Product department, based in San Francisco. Would you like to update any of her information?
+
+---
+
+**👤 You:**
+> "Show me all the companies associated with my account."
+
+**🤖 AI Agent:**
+> I found 2 companies associated with your token: 'Acme Corp' (ID: comp_987) and 'Acme Logistics' (ID: comp_654). Which one would you like to inspect further?
+
+
 ## Installation & Usage
 
 To install and use the **Rippling** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Rippling** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

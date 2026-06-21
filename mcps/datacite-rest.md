@@ -1,12 +1,14 @@
 # DataCite REST MCP Server
 
-Manage and query DOIs (Digital Object Identifiers) via DataCite — retrieve metadata, list activities, and manage research records directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datacite-rest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datacite-rest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datacite-rest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datacite-rest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 12
+
+**Category:** [document-management](../categories/document-management.md)
+
+Manage and query DOIs (Digital Object Identifiers) via DataCite — retrieve metadata, list activities, and manage research records directly from your AI agent.
 
 ## Description
 Connect to the **DataCite REST API** to interact with the global infrastructure for research data. This MCP server allows your AI agent to search, retrieve, and manage DOIs and their associated metadata.
@@ -55,6 +57,33 @@ Delete a DOI (Draft state only)
 Update an existing DOI record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DataCite REST** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the metadata for DOI 10.14454/qdd3-ps68."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for DOI 10.14454/qdd3-ps68. It refers to 'DataCite Content Negotiation' published by DataCite. Would you like to see the full list of creators or the associated resource type?
+
+---
+
+**👤 You:**
+> "Search for DOIs related to 'climate change' from the last year."
+
+**🤖 AI Agent:**
+> I found several DOIs matching 'climate change'. Notable records include datasets from various repositories. I can filter these by resource type or provider if you'd like to narrow it down.
+
+---
+
+**👤 You:**
+> "List the events or citations associated with DOI 10.14454/qdd3-ps68."
+
+**🤖 AI Agent:**
+> Fetching events... I've found the links between this DOI and other resources, including citations and usage metrics recorded in the DataCite Event Data system.
+
+
 ## Installation & Usage
 
 To install and use the **DataCite REST** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **DataCite REST** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

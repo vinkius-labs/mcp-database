@@ -1,12 +1,14 @@
 # Helius (Solana) MCP Server
 
-Access high-performance Solana data—fetch assets, balances, transaction history, and priority fee estimates directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/helius-solana)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/helius-solana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/helius-solana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/helius-solana-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 14
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access high-performance Solana data—fetch assets, balances, transaction history, and priority fee estimates directly through your AI agent.
 
 ## Description
 Connect your **Helius** account to any AI agent to interact with the Solana blockchain with unprecedented speed and depth. This server leverages Helius's powerful RPC and DAS (Digital Asset Standard) API to provide real-time blockchain intelligence.
@@ -53,6 +55,33 @@ Resolve address to known entities
 - **search_assets**: Search for assets with advanced filtering
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Helius (Solana)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current balance and USD value of the wallet 86W9...?"
+
+**🤖 AI Agent:**
+> I've retrieved the balances for that wallet. It currently holds 15.5 SOL ($1,860), 500 USDC, and 3 NFTs. Total estimated value is $2,360.
+
+---
+
+**👤 You:**
+> "List all NFTs owned by 6p6... including their metadata."
+
+**🤖 AI Agent:**
+> I found 12 assets for this owner. Notable items include 'Mad Lad #402' and 'Famous Fox #123'. Would you like the full metadata for any of these?
+
+---
+
+**👤 You:**
+> "What is the recommended priority fee for a transaction right now?"
+
+**🤖 AI Agent:**
+> Based on current network conditions, the 'Medium' priority fee is approximately 5,000 micro-lamports. For urgent transactions, 'High' is recommended at 25,000 micro-lamports.
+
+
 ## Installation & Usage
 
 To install and use the **Helius (Solana)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Helius (Solana)** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

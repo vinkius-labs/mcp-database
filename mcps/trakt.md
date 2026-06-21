@@ -1,12 +1,14 @@
 # Trakt MCP Server
 
-Track TV shows and movies — search titles, get ratings, discover trending content and manage your watchlist.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/trakt)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trakt)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trakt-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trakt-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 18
+
+**Category:** [productivity](../categories/productivity.md)
+
+Track TV shows and movies — search titles, get ratings, discover trending content and manage your watchlist.
 
 ## Description
 Connect to **Trakt** and explore the world's most popular TV and movie tracking platform through natural conversation.
@@ -88,6 +90,33 @@ Get the authenticated user's watchlist
 Search for movies, shows, episodes, people or lists on Trakt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Trakt** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What movies are trending right now?"
+
+**🤖 AI Agent:**
+> Top trending movies: 1. Dune: Part Two (3.2K viewers) — 2. Oppenheimer (2.8K) — 3. Deadpool & Wolverine (2.1K) — 4. The Batman (1.9K) — 5. Poor Things (1.5K). All with viewer counts and ratings.
+
+---
+
+**👤 You:**
+> "Show me info about Breaking Bad."
+
+**🤖 AI Agent:**
+> Breaking Bad (2008-2013) — Rating: 9.5/10 from 125K votes. Genres: Drama, Crime, Thriller. Network: AMC. 5 seasons, 62 episodes. Overview: A high school chemistry teacher diagnosed with terminal cancer turns to manufacturing meth to secure his family's future.
+
+---
+
+**👤 You:**
+> "Who directed The Matrix and who starred in it?"
+
+**🤖 AI Agent:**
+> The Matrix (1999) — Directors: Lana Wachowski, Lilly Wachowski. Cast: Keanu Reeves (Neo), Laurence Fishburne (Morpheus), Carrie-Anne Moss (Trinity), Hugo Weaving (Agent Smith), Joe Pantoliano (Cypher).
+
+
 ## Installation & Usage
 
 To install and use the **Trakt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -96,4 +125,11 @@ To install and use the **Trakt** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

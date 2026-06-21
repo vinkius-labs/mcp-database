@@ -1,12 +1,14 @@
 # BILL (Bill.com) MCP Server
 
-Manage financial operations via BILL — list vendors, customers, bills, and invoices directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bill-billcom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bill-billcom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bill-billcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bill-billcom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage financial operations via BILL — list vendors, customers, bills, and invoices directly from any AI agent.
 
 ## Description
 Connect your **BILL (formerly Bill.com)** account to any AI agent and orchestrate your accounts payable and receivable workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **BILL (formerly Bill.com)** account to any AI agent and orchestrat
 - **list_vendors**: List all vendors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BILL (Bill.com)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all unpaid bills in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your unpaid bills. You have 4 pending payments, including 'Office Rent' (ID: bill_1) and 'Cloud Services' (ID: bill_2). Would you like the due dates for these?
+
+---
+
+**👤 You:**
+> "Find the vendor details for 'Global Logistics'."
+
+**🤖 AI Agent:**
+> I found a vendor matching 'Global Logistics' (ID: vend_992). Their primary contact is Mark Johnson, and they are currently set up for electronic payments.
+
+---
+
+**👤 You:**
+> "Show my last 5 customer invoices."
+
+**🤖 AI Agent:**
+> Retrieving invoices... Your 5 most recent customer invoices include 'INV-1001' (Status: Paid) and 'INV-1005' (Status: Unpaid). Would you like to see the amount for the unpaid invoice?
+
+
 ## Installation & Usage
 
 To install and use the **BILL (Bill.com)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **BILL (Bill.com)** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

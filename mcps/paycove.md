@@ -1,12 +1,14 @@
 # Paycove MCP Server
 
-Automate smart quotes, invoice generation, and CPQ workflows directly from your CRM using AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/paycove)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paycove)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paycove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paycove-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 17
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Automate smart quotes, invoice generation, and CPQ workflows directly from your CRM using AI agents.
 
 ## Description
 Transform how your organization handles billing by giving your AI agent full control over Paycove's CPQ engine. Instead of manually moving deals from your CRM to accounting, your agent can instantly draft custom quotes, send automated invoices, and monitor payment statuses in real-time.
@@ -47,6 +49,33 @@ Ideal for finance teams, sales operations, and account managers needing instant,
 - **list_quotes**: List all quotes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Paycove** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all overdue invoices in Paycove"
+
+**🤖 AI Agent:**
+> You have 3 overdue invoices totaling $4,200. The oldest one is Invoice #INV-102 for Acme Corp. Should I prepare a follow-up email?
+
+---
+
+**👤 You:**
+> "Convert quote Q-881 to an invoice"
+
+**🤖 AI Agent:**
+> I've successfully converted Quote Q-881 into Invoice INV-882. The invoice has been created in draft status. Do you want to review the line items before sending?
+
+---
+
+**👤 You:**
+> "Check the payment status for client TechStart"
+
+**🤖 AI Agent:**
+> TechStart has 2 paid invoices and 1 sent invoice awaiting payment. Their last payment of $1,500 was received 2 days ago.
+
+
 ## Installation & Usage
 
 To install and use the **Paycove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Paycove** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

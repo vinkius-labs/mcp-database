@@ -1,12 +1,14 @@
 # Moloni (Cloud Invoicing & Fiscal Management) MCP Server
 
-Manage certified invoicing via Moloni — track customers by VAT/NIF, audit invoices, and monitor stock levels.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moloni-cloud-invoicing-fiscal-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moloni-cloud-invoicing-fiscal-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moloni-cloud-invoicing-fiscal-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moloni-cloud-invoicing-fiscal-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 20
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage certified invoicing via Moloni — track customers by VAT/NIF, audit invoices, and monitor stock levels.
 
 ## Description
 Connect your **Moloni** account to any AI agent and take full control of your certified cloud invoicing, commercial management, and fiscal compliance through natural conversation.
@@ -57,6 +59,33 @@ Connect your **Moloni** account to any AI agent and take full control of your ce
 - **list_countries**: Listar referências ISO IDs e jurisdições fiscais
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Moloni (Cloud Invoicing & Fiscal Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the customer with NIF '123456789' in my Moloni account"
+
+**🤖 AI Agent:**
+> Retrieving fiscal entity… I've identified the customer 'Innovative Tech Solutions Lda' (ID: 98765) matching NIF 123456789. The account is active and has a billing address in Lisbon. Would you like to see their last 3 invoices?
+
+---
+
+**👤 You:**
+> "List all pending estimates (budgets) from this month"
+
+**🤖 AI Agent:**
+> I've retrieved 5 active estimates generated this month. Highlights include 'Web Design Quote' (€1,200), 'Monthly Maintenance' (€450), and 'Hardware Provisioning' (€3,500). None have been converted to invoices yet. Would you like to check the details for the design quote?
+
+---
+
+**👤 You:**
+> "Check the stock level for product 'Standard SaaS License' (ID: 13579)"
+
+**🤖 AI Agent:**
+> Retrieving inventory for ID 13579… You currently have 45 units available in your main warehouse. The last movement was an outbound sale 2 hours ago. There are no pending delivery notes for this item. Would you like to see the price history?
+
+
 ## Installation & Usage
 
 To install and use the **Moloni (Cloud Invoicing & Fiscal Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Moloni (Cloud Invoicing & Fiscal Management)** MCP serv
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

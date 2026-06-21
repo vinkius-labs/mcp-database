@@ -1,12 +1,14 @@
 # Freshsuccess MCP Server
 
-Manage customer success, track health scores, and oversee account usage via AI agents with Freshsuccess.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsuccess)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsuccess)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshsuccess-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshsuccess-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-operations
-**Tools Count:** 11
+
+**Category:** [business-operations](../categories/business-operations.md)
+
+Manage customer success, track health scores, and oversee account usage via AI agents with Freshsuccess.
 
 ## Description
 Connect your **Freshsuccess** (Freshdesk Customer Success) account to any AI agent to automate your customer retention and engagement operations through the Model Context Protocol (MCP). Freshsuccess empowers Customer Success Managers (CSMs) to prevent churn, increase expansion revenue, and proactively manage accounts. This MCP server enables you to track health scores, update user metadata, and log custom metrics directly through natural conversation.
@@ -49,6 +51,33 @@ List active alerts
 - **upsert_cs_user**: Create/Update user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshsuccess** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active customer success alerts."
+
+**🤖 AI Agent:**
+> Retrieving alerts... I found 3 active alerts, including a 'Drop in Login Frequency' for Acme Corp and a 'Support Ticket Spike' for Globex.
+
+---
+
+**👤 You:**
+> "Show me the health score for account 'acc_123'."
+
+**🤖 AI Agent:**
+> Fetching account health... Account 'acc_123' (Example Inc.) currently has a Health Score of 85 (Green). They are assigned to CSM Sarah Jenkins.
+
+---
+
+**👤 You:**
+> "Post a custom metric 'api_calls' with value 150 for user 'user_987'."
+
+**🤖 AI Agent:**
+> Metric recorded! I have successfully posted the value 150 for the 'api_calls' metric to user ID user_987. This will factor into their engagement score.
+
+
 ## Installation & Usage
 
 To install and use the **Freshsuccess** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Freshsuccess** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Corporate Buzzword MCP Server
 
-Generate random corporate buzzwords and professional phrases to elevate your business speak or add humor to your workflow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corporate-buzzword)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corporate-buzzword)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corporate-buzzword-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corporate-buzzword-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate random corporate buzzwords and professional phrases to elevate your business speak or add humor to your workflow.
 
 ## Description
 Elevate your corporate communication with the **Corporate Buzzword** MCP server. Whether you're looking to spice up a presentation, fill out a mockup, or just have a laugh at office jargon, this tool provides instant access to the latest in 'synergistic' and 'proactive' terminology.
@@ -36,6 +38,36 @@ Elevate your corporate communication with the **Corporate Buzzword** MCP server.
 Get a random corporate buzzword or phrase
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corporate Buzzword** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Give me a random corporate buzzword for my presentation."
+
+**🤖 AI Agent:**
+> Certainly! Here is a fresh buzzword: 'Synergistically leverage existing high-quality deliverables to drive value-added growth.'
+
+---
+
+**👤 You:**
+> "I need 3 business jargon phrases using get_random_buzzword."
+
+**🤖 AI Agent:**
+> I've generated three phrases for you:
+1. Proactively envisioneer strategic theme areas.
+2. Objectively innovate empowered manufactured products.
+3. Dynamically target high-payoff intellectual capital.
+
+---
+
+**👤 You:**
+> "What's a professional-sounding phrase for 'doing things better'?"
+
+**🤖 AI Agent:**
+> Using the buzzword generator, you could say: 'Continuously re-intermediate cross-platform schemas to optimize operational excellence.'
+
+
 ## Installation & Usage
 
 To install and use the **Corporate Buzzword** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +76,11 @@ To install and use the **Corporate Buzzword** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

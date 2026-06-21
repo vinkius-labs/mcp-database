@@ -1,12 +1,14 @@
 # Trigger.dev (Background Tasks & Jobs) MCP Server
 
-Manage background tasks and jobs via Trigger.dev — trigger tasks, monitor runs, manage schedules, and configure environment variables directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/triggerdev-background-tasks-jobs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/triggerdev-background-tasks-jobs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/triggerdev-background-tasks-jobs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/triggerdev-background-tasks-jobs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 19
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage background tasks and jobs via Trigger.dev — trigger tasks, monitor runs, manage schedules, and configure environment variables directly from your AI agent.
 
 ## Description
 Connect your **Trigger.dev** account to any AI agent to orchestrate complex background workflows and monitor job execution through natural language.
@@ -56,6 +58,33 @@ Trigger a task by its identifier
 - **update_run_metadata**: Update run metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Trigger.dev (Background Tasks & Jobs)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Trigger the 'image-processing' task with payload { 'url': 'https://example.com/img.jpg' }."
+
+**🤖 AI Agent:**
+> Task triggered successfully. Run ID: run_abc123. Status: QUEUED. You can check its progress using get_run.
+
+---
+
+**👤 You:**
+> "List the last 5 failed runs for the 'sync-data' task."
+
+**🤖 AI Agent:**
+> I've found 5 failed runs for 'sync-data'. The most recent failure (ID: run_xyz789) occurred at 10:30 AM with error: 'Connection Timeout'. Would you like to replay it?
+
+---
+
+**👤 You:**
+> "Create a daily schedule for the 'cleanup-logs' task at midnight."
+
+**🤖 AI Agent:**
+> Schedule created for 'cleanup-logs' with cron '0 0 * * *'. Deduplication key: 'daily-cleanup-logs'. The task will now run automatically every day at midnight UTC.
+
+
 ## Installation & Usage
 
 To install and use the **Trigger.dev (Background Tasks & Jobs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Trigger.dev (Background Tasks & Jobs)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

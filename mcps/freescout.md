@@ -1,12 +1,14 @@
 # FreeScout MCP Server
 
-Manage your FreeScout helpdesk — list mailboxes, handle conversations, reply to customers, and manage users directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freescout)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freescout)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freescout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freescout-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 16
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage your FreeScout helpdesk — list mailboxes, handle conversations, reply to customers, and manage users directly via AI.
 
 ## Description
 Connect your **FreeScout** helpdesk to any AI agent to streamline your customer support workflows. FreeScout is the leading open-source helpdesk, and this MCP server allows you to interact with it using natural language.
@@ -51,6 +53,33 @@ Connect your **FreeScout** helpdesk to any AI agent to streamline your customer 
 - **list_users**: List all users/agents
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FreeScout** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my mailboxes in FreeScout."
+
+**🤖 AI Agent:**
+> I've retrieved your mailboxes. You have: 'Support' (ID: 1), 'Sales' (ID: 2), and 'Billing' (ID: 3). Which one would you like to check?
+
+---
+
+**👤 You:**
+> "Show me the latest conversations in mailbox 1."
+
+**🤖 AI Agent:**
+> Found 3 recent conversations in the Support mailbox. One is regarding 'Login Issue' (ID: 502) and another about 'API Access' (ID: 505). Would you like to see the threads for any of these?
+
+---
+
+**👤 You:**
+> "Add an internal note to conversation 502 saying 'Checking with the dev team'."
+
+**🤖 AI Agent:**
+> Internal note added successfully to conversation 502. Your team will see it in the FreeScout dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **FreeScout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **FreeScout** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

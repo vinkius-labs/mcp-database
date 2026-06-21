@@ -1,12 +1,14 @@
 # Checkout.com MCP Server
 
-Manage global payments via Checkout.com — process payments, capture funds, handle refunds, and vault instruments directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/checkoutcom-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkoutcom-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkoutcom-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkoutcom-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage global payments via Checkout.com — process payments, capture funds, handle refunds, and vault instruments directly from any AI agent.
 
 ## Description
 Connect your **Checkout.com** account to any AI agent and take full control of your payment workflows through natural conversation.
@@ -53,6 +55,33 @@ Dispatch an automated validation check routing explicit Clawback logic
 Inspect deep internal arrays mitigating specific Plan Math
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Checkout.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Refund payment pay_123 for $50.00"
+
+**🤖 AI Agent:**
+> Refund request sent for pay_123. The refund of $50.00 (5000 minor units) has been successfully initiated at the gateway.
+
+---
+
+**👤 You:**
+> "Show me why payment pay_456 failed"
+
+**🤖 AI Agent:**
+> Analyzing payment actions for pay_456... The authorization was declined with code '20059' (Insufficient Funds). The bank blocked the capture during the final settlement step.
+
+---
+
+**👤 You:**
+> "Vault this instrument ID src_789 and update the holder name to 'John Doe'"
+
+**🤖 AI Agent:**
+> Instrument src_789 has been updated in the Vault. The holder name is now set to 'John Doe'. You can now use this instrument for future payment requests.
+
+
 ## Installation & Usage
 
 To install and use the **Checkout.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Checkout.com** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Gradient AI (LLM API & Finetuning) MCP Server
 
-Access powerful LLMs, fine-tune models on your own data, and generate embeddings directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gradient-ai-llm-api-finetuning)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gradient-ai-llm-api-finetuning)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gradient-ai-llm-api-finetuning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gradient-ai-llm-api-finetuning-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 19
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access powerful LLMs, fine-tune models on your own data, and generate embeddings directly through your AI agent.
 
 ## Description
 Connect to **Gradient AI** to leverage enterprise-grade LLM infrastructure. This server allows you to manage fine-tuned models, generate high-quality completions, and process text with specialized tools like sentiment analysis and entity extraction.
@@ -54,6 +56,33 @@ Connect to **Gradient AI** to leverage enterprise-grade LLM infrastructure. This
 - **summarize_document**: Summarize a document
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gradient AI (LLM API & Finetuning)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the models available in my Gradient workspace."
+
+**🤖 AI Agent:**
+> I've retrieved the models from your workspace. You have access to foundational models like 'llama3-8b' and your custom fine-tuned models such as 'customer-support-v1'.
+
+---
+
+**👤 You:**
+> "Analyze the sentiment of this text: 'The new API performance is incredible!'"
+
+**🤖 AI Agent:**
+> The sentiment analysis for that text is 'Positive' with a high confidence score. The language used indicates strong satisfaction.
+
+---
+
+**👤 You:**
+> "Generate a completion for 'Explain quantum computing' using model id 'base-llama3'."
+
+**🤖 AI Agent:**
+> Using the 'base-llama3' model: 'Quantum computing is a type of computing that uses quantum-mechanical phenomena, such as superposition and entanglement...' [Full response follows]
+
+
 ## Installation & Usage
 
 To install and use the **Gradient AI (LLM API & Finetuning)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Gradient AI (LLM API & Finetuning)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

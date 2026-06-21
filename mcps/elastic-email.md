@@ -1,12 +1,14 @@
 # Elastic Email MCP Server
 
-Equip your AI agent to manage email campaigns, track contacts, and monitor delivery logs via the Elastic Email API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-email)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elastic-email)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elastic-email-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elastic-email-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Equip your AI agent to manage email campaigns, track contacts, and monitor delivery logs via the Elastic Email API.
 
 ## Description
 Integrate **Elastic Email**, the powerful email marketing and delivery platform, directly into your AI workflow. Manage your email campaigns and templates, track contact lists and individual profiles, monitor real-time delivery logs and statuses, and oversee your marketing operations using natural language.
@@ -44,6 +46,33 @@ Integrate **Elastic Email**, the powerful email marketing and delivery platform,
 - **search_contacts_by_email**: Search for a contact using their email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Elastic Email** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns."
+
+**🤖 AI Agent:**
+> I've found several campaigns, including 'Spring Sale 2024' and 'Monthly Newsletter'. Both are currently 'Sending'. Would you like to see the performance metrics for the Spring Sale?
+
+---
+
+**👤 You:**
+> "Show me the delivery logs for today."
+
+**🤖 AI Agent:**
+> I've retrieved today's logs. Out of 500 emails sent, 485 were 'Delivered' and 15 are 'Pending'. Would you like a list of the recipient addresses for the pending emails?
+
+---
+
+**👤 You:**
+> "Search for contact 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> John Doe is a member of the 'Master List' and is currently 'Opted In'. Their last interaction was on March 15th. Should I pull their complete interaction history?
+
+
 ## Installation & Usage
 
 To install and use the **Elastic Email** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Elastic Email** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

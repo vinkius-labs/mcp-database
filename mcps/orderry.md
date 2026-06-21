@@ -1,12 +1,14 @@
 # Orderry MCP Server
 
-Manage your repair shop, orders, and inventory with Orderry and AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/orderry)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/orderry)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/orderry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/orderry-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your repair shop, orders, and inventory with Orderry and AI agents.
 
 ## Description
 ### What you can do
@@ -41,6 +43,33 @@ Manage your repair shop, orders, and inventory with Orderry and AI agents.
 - **list_warehouses**: List facility warehouses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Orderry** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active work orders in Orderry."
+
+**🤖 AI Agent:**
+> I've found 5 active orders: 1. iPhone Screen Repair (ID: 101), 2. Oil Change (ID: 102), etc.
+
+---
+
+**👤 You:**
+> "Show me all open work orders assigned to the repair team this week."
+
+**🤖 AI Agent:**
+> The repair team has 18 open work orders this week. 7 are iPhone screen replacements (average turnaround: 2 hours), 4 are laptop diagnostics, 3 are printer maintenance contracts, and 4 are custom device repairs. Total estimated revenue: $3,420. 3 orders are marked as urgent with same-day SLA commitments.
+
+---
+
+**👤 You:**
+> "Create a new work order for a MacBook Pro battery replacement for customer ID cust_2847."
+
+**🤖 AI Agent:**
+> Work order #WO-5923 created successfully. Service: MacBook Pro Battery Replacement. Customer: James Wilson (cust_2847). Estimated cost: $189. Parts required: 1x A2141 battery module (in stock). Assigned to technician: David Park. Estimated completion: May 13th. Customer has been notified via email.
+
+
 ## Installation & Usage
 
 To install and use the **Orderry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Orderry** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

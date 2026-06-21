@@ -1,12 +1,14 @@
 # D-ID MCP Server
 
-Create AI videos via D-ID — generate talking avatars from text or audio, list stock presenters, and monitor credit balance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/d-id)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/d-id)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/d-id-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/d-id-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 10
+
+**Category:** [image-video](../categories/image-video.md)
+
+Create AI videos via D-ID — generate talking avatars from text or audio, list stock presenters, and monitor credit balance directly from any AI agent.
 
 ## Description
 Connect your **D-ID** account to any AI agent and take full control of your AI video generation and digital human workflows through natural conversation.
@@ -49,6 +51,33 @@ Get status of a D-ID talk. Returns status (created/started/done/error), result_u
 - **get_credits**: Get current D-ID credit balance and plan info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **D-ID** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a talking avatar video with script: 'Welcome to our new platform!'"
+
+**🤖 AI Agent:**
+> Talk generation started! I've used a default presenter and voice to process your script. Talk ID: 'tlk_abc123'. I will monitor the status and let you know when the result URL is ready.
+
+---
+
+**👤 You:**
+> "List all available D-ID presenters"
+
+**🤖 AI Agent:**
+> I found 15 presenters. Available stock humans include 'Amy' (ID: presenter_1), 'Brian' (ID: presenter_2), and 'Claire' (ID: presenter_3). You can use these IDs to create clips instantly.
+
+---
+
+**👤 You:**
+> "How many credits do I have left in D-ID?"
+
+**🤖 AI Agent:**
+> You currently have 45 credits remaining on your 'Pro' plan. Based on your settings, this is enough to generate approximately 15 minutes of new AI video content.
+
+
 ## Installation & Usage
 
 To install and use the **D-ID** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **D-ID** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

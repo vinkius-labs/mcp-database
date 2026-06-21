@@ -1,12 +1,14 @@
 # Snowtrace (Avalanche Explorer) MCP Server
 
-Explore the Avalanche C-Chain — check AVAX balances, track ERC-20/NFT transfers, and inspect smart contract data directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/snowtrace-avalanche-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/snowtrace-avalanche-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/snowtrace-avalanche-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/snowtrace-avalanche-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 21
+
+**Category:** [databases](../categories/databases.md)
+
+Explore the Avalanche C-Chain — check AVAX balances, track ERC-20/NFT transfers, and inspect smart contract data directly from your AI agent.
 
 ## Description
 Connect to the **Snowtrace** explorer and bring real-time Avalanche blockchain data into your AI workflows. Monitor addresses, analyze transactions, and audit smart contracts without leaving your conversation.
@@ -56,6 +58,33 @@ Connect to the **Snowtrace** explorer and bring real-time Avalanche blockchain d
 - **verify_source_code**: Verify Source Code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Snowtrace (Avalanche Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current AVAX balance of 0x742d35Cc6634C0532925a3b844Bc454e4438f44e?"
+
+**🤖 AI Agent:**
+> I've checked the address on the Avalanche C-Chain. The current balance is 15.42 AVAX.
+
+---
+
+**👤 You:**
+> "Show me the last 5 ERC-20 transfers for wallet 0x123..."
+
+**🤖 AI Agent:**
+> Fetching recent token activity... I found 5 recent transfers, including 100 USDC received and two outgoing transfers of JOE tokens. Would you like the transaction hashes for these?
+
+---
+
+**👤 You:**
+> "Get the ABI for the contract at 0x60ae616a2155ee3d9a68541ba4544862310933d4."
+
+**🤖 AI Agent:**
+> I have retrieved the ABI for the verified contract. It contains 24 functions, including `swapExactTokensForTokens` and `addLiquidity`. I can help you format a specific call if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Snowtrace (Avalanche Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Snowtrace (Avalanche Explorer)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

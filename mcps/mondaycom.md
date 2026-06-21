@@ -1,12 +1,14 @@
 # Monday.com MCP Server
 
-Manage any workflow visually with customizable boards, automations, and dashboards that adapt to how your team actually works.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mondaycom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mondaycom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mondaycom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mondaycom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage any workflow visually with customizable boards, automations, and dashboards that adapt to how your team actually works.
 
 ## Description
 Connect your **Monday.com** account to any AI agent and take full control of your team's Work OS through natural conversation. Monday.com provides a flexible and powerful platform for managing complex projects, and this integration allows you to retrieve board metadata, create automated task assignments, and monitor real-time team updates directly from your chat interface.
@@ -55,6 +57,33 @@ List team members
 - **update_item_columns**: Modify row values
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Monday.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active Monday.com boards in my workspace."
+
+**🤖 AI Agent:**
+> I've retrieved your boards. You have 3 active environments: 'Q4 Product Roadmap', 'Team Tasks', and 'Marketing Launch'. Which one would you like to see items for?
+
+---
+
+**👤 You:**
+> "Create a new task 'Finalize SEO Audit' in the 'Marketing Launch' board."
+
+**🤖 AI Agent:**
+> Task created! I've added 'Finalize SEO Audit' to the Marketing Launch board. Would you like me to assign it to someone or add an initial comment?
+
+---
+
+**👤 You:**
+> "Show the latest updates for the 'Acme Corp' item."
+
+**🤖 AI Agent:**
+> I've retrieved the updates. The last comment was from Robert Chen: 'Waiting for client approval on the design specs' (2 hours ago).
+
+
 ## Installation & Usage
 
 To install and use the **Monday.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Monday.com** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

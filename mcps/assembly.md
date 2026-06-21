@@ -1,12 +1,14 @@
 # Assembly MCP Server
 
-Manage Assembly clients, companies, workspaces, and notes.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/assembly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/assembly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/assembly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/assembly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage Assembly clients, companies, workspaces, and notes.
 
 ## Description
 # Assembly
@@ -35,6 +37,33 @@ Connect your Assembly account via your API Key to manage your professional servi
 - **list_workspaces**: List all Assembly workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Assembly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all clients in Assembly."
+
+**🤖 AI Agent:**
+> I retrieved your clients. Here are the active ones: 'Vinkius', 'Google'.
+
+---
+
+**👤 You:**
+> "Get companies in my account."
+
+**🤖 AI Agent:**
+> Here are your companies, including 5 active clients.
+
+---
+
+**👤 You:**
+> "Show all workspaces and the latest notes created this month."
+
+**🤖 AI Agent:**
+> You have 3 active workspaces: 'Consulting Ops' (ws_201, 12 members), 'Product Dev' (ws_202, 8 members), and 'Finance' (ws_203, 4 members). This month you have 7 notes — the most recent are 'Q2 Revenue Forecast' (note_891, updated yesterday), 'Client Onboarding Checklist' (note_888), and 'Sprint Retrospective' (note_885). Would you like to open any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Assembly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +72,11 @@ To install and use the **Assembly** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

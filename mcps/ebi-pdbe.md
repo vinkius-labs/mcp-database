@@ -1,12 +1,14 @@
 # EBI PDBe MCP Server
 
-Explore 3D protein structures, ligand interactions, and molecular assemblies from the Protein Data Bank in Europe.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-pdbe)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebi-pdbe)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebi-pdbe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebi-pdbe-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 16
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Explore 3D protein structures, ligand interactions, and molecular assemblies from the Protein Data Bank in Europe.
 
 ## Description
 Connect to the **PDBe (Protein Data Bank in Europe) API** and access the world's most comprehensive repository of experimentally determined 3D macromolecular structures.
@@ -87,6 +89,33 @@ Get UniProt to PDB residue mappings
 Search PDB structures with full-text queries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EBI PDBe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the structure summary and quality of the SARS-CoV-2 main protease (6lu7)."
+
+**🤖 AI Agent:**
+> I've retrieved the structure summary for 6LU7, the SARS-CoV-2 main protease. It was determined by X-ray crystallography at 2.16 Å resolution. The structure contains the protease in complex with an inhibitor, providing key insights for antiviral drug design. The quality metrics show good geometry and reliable electron density.
+
+---
+
+**👤 You:**
+> "What ligands are bound in the hemoglobin structure 4hhb?"
+
+**🤖 AI Agent:**
+> I've retrieved the ligand data for hemoglobin (4HHB). The structure contains heme (protoporphyrin IX) groups as cofactors bound to each of the four globin chains. The heme groups contain iron atoms essential for oxygen binding. I also found the binding site residues that coordinate the heme cofactors.
+
+---
+
+**👤 You:**
+> "Search for cryo-EM structures of ribosome complexes."
+
+**🤖 AI Agent:**
+> I've found multiple ribosome structures determined by cryo-electron microscopy. The search returned entries from various organisms including E. coli, human, and yeast ribosomes at resolutions ranging from 2.0 to 4.0 Å. These include 70S and 80S ribosomes in complex with mRNA, tRNA, and various translation factors.
+
+
 ## Installation & Usage
 
 To install and use the **EBI PDBe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -95,4 +124,11 @@ To install and use the **EBI PDBe** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

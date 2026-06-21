@@ -1,12 +1,14 @@
 # Solcast Solar MCP Server
 
-Access solar irradiance and PV power forecasts — rooftop solar estimates, radiation data, and weather forecasts via Solcast API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/solcast-solar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solcast-solar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/solcast-solar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/solcast-solar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 11
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access solar irradiance and PV power forecasts — rooftop solar estimates, radiation data, and weather forecasts via Solcast API.
 
 ## Description
 Connect to **Solcast API** and bring high-resolution solar forecasting intelligence to any AI agent. Access rooftop PV power forecasts, solar irradiance data (GHI, DNI, DHI), and weather conditions derived from satellite cloud tracking worldwide.
@@ -248,6 +250,33 @@ EXAMPLES:
 Get weather forecasts including temperature, cloud opacity, and snow depth
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Solcast Solar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the solar forecast for my 5kW rooftop system in Sydney at -33.87, 151.21?"
+
+**🤖 AI Agent:**
+> Fetching PV power forecasts... Your 5kW system in Sydney is forecast to generate approximately 18-22kWh today. Peak production will be between 11am-2pm with output reaching 3.8-4.2kW. Cloud cover is expected mid-afternoon, reducing output to ~2kW between 3-5pm. Tomorrow looks sunnier with estimated 24kWh total.
+
+---
+
+**👤 You:**
+> "Show me the solar irradiance (GHI and DNI) forecast for my location at 34.05, -118.24."
+
+**🤖 AI Agent:**
+> Retrieving radiation forecasts... Los Angeles area (34.05, -118.24) shows strong solar irradiance today. Peak GHI reaches 850-920 W/m² around solar noon (12:30pm). DNI peaks at 780-850 W/m² under clear skies. Cloud opacity is low (10-15%) until late afternoon when increasing clouds may reduce DNI by 30-40%. Excellent conditions for solar generation.
+
+---
+
+**👤 You:**
+> "How much solar energy will a 10kW system with south-facing panels (azimuth 180°, tilt 30°) generate tomorrow at latitude -37.81, longitude 144.96?"
+
+**🤖 AI Agent:**
+> Getting detailed PV forecast... Your 10kW south-facing system in Melbourne (-37.81, 144.96) with 30° tilt is forecast to generate approximately 32-38kWh tomorrow. South orientation reduces output vs optimal north-facing in southern hemisphere. Peak output will be 5.5-6.5kW around 12-1pm. Morning and afternoon production will be moderate due to suboptimal azimuth. Daily total is about 15-20% lower than optimal north-facing configuration.
+
+
 ## Installation & Usage
 
 To install and use the **Solcast Solar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -256,4 +285,11 @@ To install and use the **Solcast Solar** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

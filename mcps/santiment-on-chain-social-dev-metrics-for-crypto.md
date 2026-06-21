@@ -1,12 +1,14 @@
 # Santiment (On-chain, Social & Dev Metrics for Crypto) MCP Server
 
-Access deep on-chain, social, and development metrics for thousands of crypto assets directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/santiment-on-chain-social-dev-metrics-for-crypto)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/santiment-on-chain-social-dev-metrics-for-crypto)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/santiment-on-chain-social-dev-metrics-for-crypto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/santiment-on-chain-social-dev-metrics-for-crypto-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access deep on-chain, social, and development metrics for thousands of crypto assets directly from your AI agent.
 
 ## Description
 Connect **Santiment** to your AI agent to unlock institutional-grade crypto market intelligence. Analyze network growth, social sentiment, and developer activity through natural language.
@@ -44,6 +46,33 @@ Fetch timeseries data for a specific metric and asset slug
 List all available projects and their slugs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Santiment (On-chain, Social & Dev Metrics for Crypto)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the daily active addresses for bitcoin from 2023-10-01 to now."
+
+**🤖 AI Agent:**
+> I've retrieved the daily active addresses for Bitcoin. The data shows a peak of 1.2M addresses on October 25th, with a steady average of 950k throughout the period.
+
+---
+
+**👤 You:**
+> "Compare the social volume of ethereum and solana for the last 7 days."
+
+**🤖 AI Agent:**
+> Comparing social volume: Ethereum maintained a higher baseline, but Solana saw a 40% spike in mentions yesterday following the latest network update.
+
+---
+
+**👤 You:**
+> "Find the top 5 projects with the highest developer activity in the last 30 days."
+
+**🤖 AI Agent:**
+> Based on developer activity (dev_activity) over the last 30 days, the top 5 projects are: 1. Cardano, 2. Polkadot, 3. Ethereum, 4. Cosmos, and 5. Chainlink.
+
+
 ## Installation & Usage
 
 To install and use the **Santiment (On-chain, Social & Dev Metrics for Crypto)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Santiment (On-chain, Social & Dev Metrics for Crypto)**
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

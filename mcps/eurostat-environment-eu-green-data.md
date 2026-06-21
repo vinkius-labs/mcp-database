@@ -1,12 +1,14 @@
 # Eurostat Environment — EU Green Data MCP Server
 
-EU environmental and energy data: greenhouse gas emissions by sector, complete energy balance sheets, electricity and gas prices, renewable energy share, waste statistics, and agricultural production for all 27 EU member states.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-environment-eu-green-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-environment-eu-green-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-environment-eu-green-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-environment-eu-green-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 6
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+EU environmental and energy data: greenhouse gas emissions by sector, complete energy balance sheets, electricity and gas prices, renewable energy share, waste statistics, and agricultural production for all 27 EU member states.
 
 ## Description
 Track the EU Green Deal progress with official environmental and energy statistics.
@@ -41,6 +43,64 @@ Get EU waste generation and treatment data
 Get EU agriculture production data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eurostat Environment — EU Green Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Which EU countries have the highest share of renewable energy?"
+
+**🤖 AI Agent:**
+> 🌱 **EU Renewable Energy Share**
+
+🇸🇪 Sweden: 65.5%
+🇫🇮 Finland: 47.9%
+🇱🇻 Latvia: 43.3%
+🇩🇰 Denmark: 41.6%
+🇪🇪 Estonia: 38.0%
+...
+EU27 average: 23.0%
+2030 target: 42.5%
+
+Hydro (Nordics) and wind (Denmark) drive the leaders.
+
+---
+
+**👤 You:**
+> "Compare electricity prices for households across the EU"
+
+**🤖 AI Agent:**
+> ⚡ **Household Electricity Prices (EUR/kWh)**
+
+Most expensive:
+🇩🇪 Germany: 0.417
+🇩🇰 Denmark: 0.391
+🇧🇪 Belgium: 0.357
+
+Cheapest:
+🇧🇬 Bulgaria: 0.117
+🇭🇺 Hungary: 0.103
+
+EU average: 0.285
+
+---
+
+**👤 You:**
+> "How have EU greenhouse gas emissions changed since 1990?"
+
+**🤖 AI Agent:**
+> 🌍 **EU27 GHG Emissions Trend**
+
+1990: 5,653 Mt CO2eq (baseline)
+2005: 5,152 Mt (-8.9%)
+2019: 4,067 Mt (-28%)
+2020: 3,723 Mt (-34%, COVID)
+2022: 3,892 Mt (-31%)
+
+EU targets: -55% by 2030, net-zero by 2050.
+Energy sector: largest reduction. Agriculture: stagnant.
+
+
 ## Installation & Usage
 
 To install and use the **Eurostat Environment — EU Green Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +109,11 @@ To install and use the **Eurostat Environment — EU Green Data** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

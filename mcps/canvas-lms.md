@@ -1,12 +1,14 @@
 # Canvas LMS MCP Server
 
-Manage Canvas LMS courses, assignments, and users directly through your AI agent — streamline educational workflows and administrative tasks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/canvas-lms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canvas-lms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canvas-lms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canvas-lms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 45
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage Canvas LMS courses, assignments, and users directly through your AI agent — streamline educational workflows and administrative tasks.
 
 ## Description
 Connect your **Canvas LMS** instance to any AI agent to automate course administration and student management through natural conversation.
@@ -80,6 +82,33 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 - **update_user**: Update an existing Canvas user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Canvas LMS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Canvas courses."
+
+**🤖 AI Agent:**
+> I've retrieved your courses. You are currently enrolled in: 'Introduction to Biology' (ID: 101), 'Advanced Mathematics' (ID: 202), and 'History 101' (ID: 303).
+
+---
+
+**👤 You:**
+> "Show me my current todo items from Canvas."
+
+**🤖 AI Agent:**
+> You have 3 items on your todo list: 'Submit Lab Report' (due tomorrow), 'Quiz: Calculus' (due Friday), and 'Peer Review: Essay' (due Sunday).
+
+---
+
+**👤 You:**
+> "List the assignments for course ID 202."
+
+**🤖 AI Agent:**
+> For 'Advanced Mathematics' (ID: 202), I found the following assignments: 'Problem Set 1', 'Midterm Exam', and 'Final Project Proposal'.
+
+
 ## Installation & Usage
 
 To install and use the **Canvas LMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Canvas LMS** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

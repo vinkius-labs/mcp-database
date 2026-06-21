@@ -1,12 +1,14 @@
 # Perenual Plant API MCP Server
 
-Manage plant data — audit species, care, and diseases via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/perenual-plant-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perenual-plant-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/perenual-plant-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/perenual-plant-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 5
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Manage plant data — audit species, care, and diseases via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire botanical research and plant auditing workflow with the **Perenual Plant API**, the comprehensive source for species-specific care data. By connecting Perenual to your agent, you transform complex plant searches into a natural conversation. Your agent can instantly identify plant species, audit watering and sunlight requirements, and query disease identification metadata without you ever touching a gardening portal. Whether you are conducting horticultural research or managing local greenhouse constraints, your agent acts as a real-time botanical consultant, ensuring your data is always verified and localized.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire botanical research and plant au
 - **search_plants**: Search for plants by common or scientific name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Perenual Plant API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'monstera' using Perenual Plant API."
+
+**🤖 AI Agent:**
+> I've retrieved the data for Monstera! Multiple species are identified, including Monstera Deliciosa and Monstera Adansonii. Would you like the care requirements or species ID for any of these?
+
+---
+
+**👤 You:**
+> "What is the care guide for species ID 5257?"
+
+**🤖 AI Agent:**
+> I've retrieved the care guide for ID 5257. It requires frequent watering and bright, indirect sunlight. I can provide the full maintenance breakdown and pruning metadata if you'd like.
+
+---
+
+**👤 You:**
+> "Search for plant diseases related to 'root rot'."
+
+**🤖 AI Agent:**
+> I've identified several conditions related to root rot. Notable markers include yellowing leaves and mushy stems. I can provide the recommended treatment and prevention steps for these issues.
+
+
 ## Installation & Usage
 
 To install and use the **Perenual Plant API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Perenual Plant API** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

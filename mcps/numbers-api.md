@@ -1,12 +1,14 @@
 # Numbers API MCP Server
 
-Facts about numbers and dates — access trivia, math, and historical data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/numbers-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/numbers-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/numbers-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/numbers-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Facts about numbers and dates — access trivia, math, and historical data via AI.
 
 ## Description
 Equip your AI agent with interesting facts and historical context for any number or date via the **Numbers API**. This server provides instant access to trivia, mathematical properties, and historical events associated with specific numbers and years. Your agent can retrieve date-specific facts, audit mathematical patterns, and provide random interesting context for numerical data without any manual search. Whether you are adding color to a presentation or verifying historical timelines, your agent acts as a dedicated numerical encyclopedia through natural conversation.
@@ -42,6 +44,33 @@ Equip your AI agent with interesting facts and historical context for any number
 - **get_year_fact**: Get a fact about a year
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Numbers API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Tell me a trivia fact about the number 42."
+
+**🤖 AI Agent:**
+> Retrieving trivia for 42... According to Douglas Adams, it's the answer to the ultimate question of life, the universe, and everything. In reality, it's also the atomic number of molybdenum.
+
+---
+
+**👤 You:**
+> "What happened on October 24th in history?"
+
+**🤖 AI Agent:**
+> Fetching historical events for October 24th... On this day in 1945, the United Nations Charter came into effect. Would you like me to find facts for another significant date?
+
+---
+
+**👤 You:**
+> "Give me a random math fact."
+
+**🤖 AI Agent:**
+> Retrieving a random mathematical property... Did you know that 1729 is the smallest number expressible as the sum of two cubes in two different ways? It's known as the Hardy-Ramanujan number.
+
+
 ## Installation & Usage
 
 To install and use the **Numbers API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Numbers API** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

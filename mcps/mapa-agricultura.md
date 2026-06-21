@@ -1,12 +1,14 @@
 # MAPA (Agricultura) MCP Server
 
-Access official Brazilian agricultural open data — search datasets, inspect rural resources, and query Ministry of Agriculture (MAPA) records.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapa-agricultura)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapa-agricultura)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapa-agricultura-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapa-agricultura-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 8
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access official Brazilian agricultural open data — search datasets, inspect rural resources, and query Ministry of Agriculture (MAPA) records.
 
 ## Description
 Connect your AI agent to the **Brazilian Ministry of Agriculture and Livestock (MAPA)** Open Data Portal. This server provides direct access to thousands of public datasets, enabling deep analysis of the Brazilian agribusiness sector.
@@ -45,6 +47,33 @@ Search for datasets matching a query
 - **list_tags**: List all tags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MAPA (Agricultura)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for datasets related to 'Agrofit' in the MAPA portal."
+
+**🤖 AI Agent:**
+> I found several datasets related to Agrofit. The main one is 'agrofit-sistema-de-agrotoxicos-fitossanitarios' (ID: 120593). Would you like to see the metadata or the available resources for this package?
+
+---
+
+**👤 You:**
+> "List all organizations responsible for agricultural data."
+
+**🤖 AI Agent:**
+> I've retrieved the list of organizations. There are 12 entities, including 'Secretaria de Defesa Agropecuária (SDA)' and 'Secretaria de Política Agrícola (SPA)'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Get the metadata for the dataset 'registro-de-agrotoxicos'."
+
+**🤖 AI Agent:**
+> Fetching metadata for 'registro-de-agrotoxicos'... This dataset is maintained by SDA and was last updated on 2023-10-15. It contains 3 resources (CSV, PDF, and XLS). Should I provide the download links?
+
+
 ## Installation & Usage
 
 To install and use the **MAPA (Agricultura)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **MAPA (Agricultura)** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

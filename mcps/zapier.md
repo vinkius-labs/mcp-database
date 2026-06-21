@@ -1,12 +1,14 @@
 # Zapier MCP Server
 
-Monitor automated workflows, audit app connections, and search for Zap templates on Zapier — the leader in AI orchestration.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zapier)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zapier-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zapier-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 5
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Monitor automated workflows, audit app connections, and search for Zap templates on Zapier — the leader in AI orchestration.
 
 ## Description
 Connect your **Zapier** account to any AI agent and manage your automation infrastructure through natural conversation.
@@ -49,6 +51,33 @@ Searches the Zapier directory for pre-made workflow templates
 - **list_zaps**: Lists all Zaps (automated workflows) in the Zapier account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zapier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Zaps in Zapier."
+
+**🤖 AI Agent:**
+> I found 5 Zaps in your account: 1. 'New Lead to Slack' (Status: ON, ID: 12345), 2. 'Shopify to Xero Sync' (Status: ON, ID: 67890), 3. 'Email to Trello' (Status: OFF, ID: 11223), and 2 others. Which one would you like to audit?
+
+---
+
+**👤 You:**
+> "What is the history for the 'New Lead to Slack' Zap?"
+
+**🤖 AI Agent:**
+> Retrieving history for Zap 12345… The last 5 runs were all successful. The most recent execution was 10 minutes ago and successfully sent a lead notification to the #sales-alerts channel.
+
+---
+
+**👤 You:**
+> "Search for templates to sync Gmail attachments to Dropbox."
+
+**🤖 AI Agent:**
+> I found several templates for Gmail to Dropbox sync. Popular options: 1. 'Save new Gmail attachments to a specific Dropbox folder', 2. 'Create Dropbox text files from new Gmail emails'. Would you like the details for these templates?
+
+
 ## Installation & Usage
 
 To install and use the **Zapier** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Zapier** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ContactOut MCP Server
 
-Find personal emails and direct phone numbers for professionals on LinkedIn to build targeted outreach lists that convert.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contactout)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contactout)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contactout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contactout-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 7
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Find personal emails and direct phone numbers for professionals on LinkedIn to build targeted outreach lists that convert.
 
 ## Description
 Connect your **ContactOut** account to any AI agent to streamline your B2B lead generation and talent acquisition workflows through natural conversation. ContactOut provides a powerful intelligence layer for discovering verified contact information and enriching professional profiles at scale.
@@ -44,6 +46,33 @@ No more manual profile scraping or guessing email formats. Your AI acts as your 
 - **search_people**: Search for people
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ContactOut** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the contact email for this LinkedIn profile: https://www.linkedin.com/in/williamhgates"
+
+**🤖 AI Agent:**
+> I've retrieved the contact details for William Gates. His verified email is 'bill@microsoft.com' and I've also found a direct phone line. Would you like the full professional enrichment data for this profile?
+
+---
+
+**👤 You:**
+> "Search for 'Python' developers in 'London' with at least 5 years of experience."
+
+**🤖 AI Agent:**
+> Searching database... I found 15 matches for Python developers in London matching your criteria. Highlights include senior profiles at 'DeepMind' and 'Revolut'. Shall I retrieve the contact info for the top 3?
+
+---
+
+**👤 You:**
+> "Check my current API credit balance on ContactOut."
+
+**🤖 AI Agent:**
+> Scanning account... You currently have 1,240 credits remaining in your account. Your connection is active and healthy. Need help enriching another lead list?
+
+
 ## Installation & Usage
 
 To install and use the **ContactOut** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **ContactOut** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

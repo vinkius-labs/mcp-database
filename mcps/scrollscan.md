@@ -1,12 +1,14 @@
 # Scrollscan MCP Server
 
-Explore the Scroll L2 blockchain — check account balances, track transactions (normal, internal, ERC20/721/1155), and inspect contract ABIs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scrollscan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrollscan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scrollscan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scrollscan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 33
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Scroll L2 blockchain — check account balances, track transactions (normal, internal, ERC20/721/1155), and inspect contract ABIs directly from your AI agent.
 
 ## Description
 Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into your AI-powered workflows. Whether you are debugging smart contracts or monitoring wallet activity, this server provides the essential tools for on-chain analysis.
@@ -68,6 +70,33 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **verify_source_code**: Verify Source Code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scrollscan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the ETH balance of address 0x1234567890abcdef1234567890abcdef12345678?"
+
+**🤖 AI Agent:**
+> I've checked the balance for that address. It currently holds 1.25 ETH on the Scroll L2 network.
+
+---
+
+**👤 You:**
+> "Show me the last 5 normal transactions for 0xabcdef..."
+
+**🤖 AI Agent:**
+> I've retrieved the transaction list using `get_normal_tx_list`. Here are the 5 most recent transactions, including hashes, block numbers, and values.
+
+---
+
+**👤 You:**
+> "Get the ERC20 token transfer events for address 0x123... on contract 0x456..."
+
+**🤖 AI Agent:**
+> Searching for ERC20 transfers... I found several transfer events for that token contract associated with your address. Would you like the details for the most recent one?
+
+
 ## Installation & Usage
 
 To install and use the **Scrollscan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Scrollscan** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

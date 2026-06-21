@@ -1,12 +1,14 @@
 # Cyberimpact MCP Server
 
-Equip your AI agent to manage email subscribers, monitor campaigns, and track marketing metrics via the Cyberimpact API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberimpact)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberimpact)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cyberimpact-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cyberimpact-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage email subscribers, monitor campaigns, and track marketing metrics via the Cyberimpact API.
 
 ## Description
 Integrate **Cyberimpact**, the Canadian email marketing platform, directly into your AI workflow. Manage your subscriber lists, monitor campaign performance, and track marketing automations using natural language.
@@ -64,6 +66,33 @@ List available email and automation templates
 Search for a subscriber profile by email keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cyberimpact** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email subscriber groups."
+
+**🤖 AI Agent:**
+> I've found 4 groups in your account: 'General Newsletter', 'VIP Customers', 'Product Updates', and 'French Leads'. Would you like to see the subscriber count for any of these?
+
+---
+
+**👤 You:**
+> "Show me the performance metrics for my last sent campaign."
+
+**🤖 AI Agent:**
+> Your latest campaign 'Monthly Digest - June' was sent to 1,200 recipients. It has a 28% open rate and a 4% click rate. No significant unsubscriptions were reported. Should I pull a detailed report?
+
+---
+
+**👤 You:**
+> "Search for subscriber 'user@example.com'."
+
+**🤖 AI Agent:**
+> I found the profile for 'user@example.com'. They are currently 'Active' and a member of the 'General Newsletter' and 'VIP Customers' groups. Would you like to see their full interaction history?
+
+
 ## Installation & Usage
 
 To install and use the **Cyberimpact** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Cyberimpact** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

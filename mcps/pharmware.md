@@ -1,12 +1,14 @@
 # PharmWare MCP Server
 
-Automate cannabis laboratory testing via PharmWare — manage samples, track test results, issue Certificates of Analysis, and monitor lab workflows from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pharmware)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pharmware)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pharmware-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pharmware-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate cannabis laboratory testing via PharmWare — manage samples, track test results, issue Certificates of Analysis, and monitor lab workflows from any AI agent.
 
 ## Description
 Connect your **PharmWare** Cannabis Testing Laboratory Platform to any AI agent and take full control of your laboratory operations, quality assurance, and compliance workflows through natural conversation.
@@ -81,6 +83,33 @@ List all laboratory users with roles and permissions
 List all laboratory workflow templates and active processes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PharmWare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all cannabis samples currently in testing and their expected completion dates."
+
+**🤖 AI Agent:**
+> Scanning active laboratory queue... I found 23 samples currently in testing across your analytical departments. Breakdown: 8 samples in Potency (HPLC) — average completion 2025-04-11, 6 samples in Terpene Profiling (GC-MS) — expected 2025-04-12, 5 samples in Pesticide Screening (LC-MS/MS) — due 2025-04-13, and 4 samples in Heavy Metals (ICP-MS) — targeting 2025-04-14. Three samples are marked as priority rush orders. Would you like the detailed status for any specific client submissions?
+
+---
+
+**👤 You:**
+> "List all pending Certificates of Analysis awaiting review and signature."
+
+**🤖 AI Agent:**
+> Reviewing CoA approval queue... I found 7 Certificates of Analysis pending quality manager review and authorized signatory approval. Notable entries: CoA-2025-0892 (Blue Dream Batch BD-4412 — potency 28.4% THC, passed all contaminant panels), CoA-2025-0893 (OG Kush Batch OG-3387 — full panel clearance), and CoA-2025-0897 (Sour Diesel Concentrate SD-C891 — residual solvents within limits). Average pending time is 18 hours. Should I prioritize the rush orders for immediate release?
+
+---
+
+**👤 You:**
+> "Check the integration status with state regulatory APIs and WeedMaps CoA publishing."
+
+**🤖 AI Agent:**
+> Querying integration health dashboard... All external platform connections are operational. Metrc seed-to-sale sync: last successful transmission 2025-04-09 14:32 UTC (147 CoAs published, 0 failures). BioTrack inventory linkage: active, last reconciliation 2025-04-09 12:00 UTC. State regulatory API (Leaf Data Systems): compliant, all mandatory submissions current through Q1 2025. WeedMaps CoA consumer portal: 12 new certificates pushed in last 24 hours, all QR codes verified active. No sync errors detected in past 7 days. Would you like me to generate an integration performance summary?
+
+
 ## Installation & Usage
 
 To install and use the **PharmWare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **PharmWare** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

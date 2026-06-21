@@ -1,12 +1,14 @@
 # Perplexity AI MCP Server
 
-Query Perplexity AI for real-time web search with citations — ask questions, deep research, reasoning, and structured answers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/perplexity-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perplexity-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/perplexity-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/perplexity-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 14
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Query Perplexity AI for real-time web search with citations — ask questions, deep research, reasoning, and structured answers directly from any AI agent.
 
 ## Description
 Connect your **Perplexity AI** API key to any AI agent and harness the power of real-time web search with AI-generated answers, citations, and related questions through natural conversation.
@@ -112,6 +114,70 @@ Example system prompt: "You are a senior software architect. Explain concepts wi
 Ask Perplexity AI with a custom system prompt to set behavior and context
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Perplexity AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the latest developments in quantum computing as of this week?"
+
+**🤖 AI Agent:**
+> Based on recent developments this week, there are three major breakthroughs in quantum computing:
+
+1. **IBM's 1000+ qubit processor** achieved new error correction milestones, reducing error rates by 50% compared to previous generations.
+2. **Google Quantum AI** demonstrated quantum advantage in optimization problems for logistics, showing 100x speedup over classical algorithms.
+3. **A team at MIT** developed a new topological qubit design that maintains coherence at higher temperatures.
+
+📚 **Sources:** Nature.com, MIT News, IBM Research Blog
+
+Would you like me to research any of these breakthroughs in more detail?
+
+---
+
+**👤 You:**
+> "Do deep research on the competitive landscape of electric vehicle manufacturers in Southeast Asia, including market share, pricing strategies, and government incentives."
+
+**🤖 AI Agent:**
+> I've conducted comprehensive research on the EV competitive landscape in Southeast Asia. Here's the analysis:
+
+## Market Leaders
+1. **BYD** — 35% market share, aggressive pricing ($15K-30K), strong government partnerships in Thailand and Indonesia
+2. **Tesla** — 18% market share, premium positioning ($40K+), expanding Supercharger network
+3. **Neta (Hozon)** — 12% market share, budget-friendly ($10K-20K), popular in Vietnam
+
+## Government Incentives
+- **Thailand:** Up to ฿150,000 ($4,200) subsidy per EV, 0% import duty until 2025
+- **Indonesia:** 0% luxury tax for EVs, $3,500 purchase incentive
+- **Vietnam:** 0% registration fee until 2027, reduced road tax
+
+## Key Strategies
+- Local manufacturing to avoid import tariffs
+- Battery swapping infrastructure partnerships
+- Fleet sales to ride-hailing platforms (Grab, Gojek)
+
+📚 **15 sources cited** including Reuters, BloombergNEF, and regional government reports.
+
+Would you like me to dive deeper into any specific country or manufacturer?
+
+---
+
+**👤 You:**
+> "Search for news about AI regulation in the European Union from the last month, restricted to europa.eu and reuters.com domains."
+
+**🤖 AI Agent:**
+> I found 5 recent articles about AI regulation in the EU from the last month, restricted to europa.eu and reuters.com:
+
+1. **EU Commission publishes implementation guidelines for the AI Act** — europa.eu, 2 weeks ago
+2. **European countries scramble to meet AI Act compliance deadlines** — reuters.com, 1 week ago
+3. **EU establishes new AI Office to enforce regulations** — europa.eu, 3 weeks ago
+4. **Industry leaders respond to EU AI Act risk classification system** — reuters.com, 4 days ago
+5. **EU member states finalize national AI regulatory frameworks** — europa.eu, 5 days ago
+
+📚 **Citations:** All 5 sources from europa.eu and reuters.com with direct links.
+
+Would you like me to summarize any of these articles in detail?
+
+
 ## Installation & Usage
 
 To install and use the **Perplexity AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -120,4 +186,11 @@ To install and use the **Perplexity AI** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

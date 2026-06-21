@@ -1,12 +1,14 @@
 # Weiban Assistant MCP Server
 
-Customer relationship management for WeCom — manage leads, customers, and group chats via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/weiban-assistant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weiban-assistant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weiban-assistant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weiban-assistant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Customer relationship management for WeCom — manage leads, customers, and group chats via AI.
 
 ## Description
 Empower your AI agent to orchestrate your customer relationship within the WeCom ecosystem with **Weiban Assistant**, the leading CRM solution for business WeChat. By connecting Weiban to your agent, you transform complex customer tracking and group chat management into a natural conversation. Your agent can instantly list your customers, retrieve detailed lead information, monitor group chat activity, and even provide staff behavior statistics without you ever needing to navigate the web interface. Whether you are managing high-volume customer inquiries or complex sales pipelines, your agent acts as a real-time sales and service assistant, keeping your data accurate and your team responsive.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your customer relationship within the WeCom
 - **list_staff**: List organization staff
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Weiban Assistant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my WeCom customers from Weiban."
+
+**🤖 AI Agent:**
+> I've retrieved your WeCom customers. You have 150 total customers, including 12 high-value accounts marked with specific tags. Would you like to view the details of the most active ones?
+
+---
+
+**👤 You:**
+> "Show me the behavior statistics for staff user 'Mario'."
+
+**🤖 AI Agent:**
+> I've listed the performance stats for Mario. Today, he has handled 42 customer messages with an average response time of 2 minutes. His customer satisfaction score is currently 4.9/5.0.
+
+---
+
+**👤 You:**
+> "Check the activity summary for our group chats."
+
+**🤖 AI Agent:**
+> I've retrieved the group chat summary. There are 25 active groups with a total of 1,200 participants. The 'VIP Customers' group is currently the most active. Would you like a detailed breakdown of engagement per group?
+
+
 ## Installation & Usage
 
 To install and use the **Weiban Assistant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Weiban Assistant** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

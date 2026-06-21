@@ -1,12 +1,14 @@
 # Cin7 Core MCP Server
 
-Equip your AI agent to manage inventory, sales orders, and purchase orders via the Cin7 Core (formerly DEAR Systems) API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cin7-core)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cin7-core)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cin7-core-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cin7-core-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage inventory, sales orders, and purchase orders via the Cin7 Core (formerly DEAR Systems) API.
 
 ## Description
 Integrate **Cin7 Core** (formerly **DEAR Systems**), the advanced cloud-based inventory management platform, directly into your AI workflow. Manage your product catalog, monitor real-time stock levels, track sales and purchase orders, and research customer and supplier data using natural language.
@@ -64,6 +66,33 @@ List all suppliers and vendors
 Search for a product using its SKU
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cin7 Core** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the stock level for product SKU 'CH-1001'?"
+
+**🤖 AI Agent:**
+> Product SKU 'CH-1001' (Premium Leather Chair) currently has 45 units available across all locations. 30 units are in the 'Main Warehouse' and 15 are in 'Distribution Center B'. Should I check if there are any pending sales orders for this SKU?
+
+---
+
+**👤 You:**
+> "List all sales orders that are currently 'Awaiting Fulfillment'."
+
+**🤖 AI Agent:**
+> I've found 12 sales orders awaiting fulfillment, including 'Order #SO-123' for 'Alpha Corp' and 'Order #SO-124' for 'Beta Industries'. Would you like to see the details for the largest order by value?
+
+---
+
+**👤 You:**
+> "Show me the contact details for supplier 'Furniture Pros'."
+
+**🤖 AI Agent:**
+> I've retrieved the profile for 'Furniture Pros'. Your main contact is 'Jane Smith' (jane.smith@furniturepros.com). They currently have 2 active purchase orders with us. Should I list their recent order history?
+
+
 ## Installation & Usage
 
 To install and use the **Cin7 Core** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Cin7 Core** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

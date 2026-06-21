@@ -1,12 +1,14 @@
 # autoRetouch MCP Server
 
-Retouch product photos at scale with AI-powered background removal, color correction, and beauty editing for e-commerce.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/autoretouch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autoretouch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/autoretouch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/autoretouch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 11
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Retouch product photos at scale with AI-powered background removal, color correction, and beauty editing for e-commerce.
 
 ## Description
 Connect your **autoRetouch** account to any AI agent and take full control of your automated image editing and high-fidelity retouching workflows through natural conversation.
@@ -50,6 +52,33 @@ Start an image processing execution
 - **list_workflows**: List all image processing workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **autoRetouch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active image processing workflows in my organization."
+
+**🤖 AI Agent:**
+> I've retrieved your workflows. You currently have 3 active AI pipelines: 'Ghost Mannequin' (ID: wf_123), 'Shadow Gen', and 'Bulk Background Remove'. Which one should we use?
+
+---
+
+**👤 You:**
+> "Run the 'Ghost Mannequin' workflow (ID: 'wf_123') on image ID 'img_456'."
+
+**🤖 AI Agent:**
+> Execution triggered! I've started processing image img_456 using the specified workflow. The execution ID is 'exec_789'. I'll monitor the status and notify you when the high-fidelity result is ready.
+
+---
+
+**👤 You:**
+> "Check status and get the result URL for execution 'exec_789'."
+
+**🤖 AI Agent:**
+> Fetching status... Execution exec_789 is currently 'Success'. You can access your high-fidelity processed image here: [result_url]. Need any help with more batch tasks?
+
+
 ## Installation & Usage
 
 To install and use the **autoRetouch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **autoRetouch** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

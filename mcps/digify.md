@@ -1,12 +1,14 @@
 # Digify MCP Server
 
-Equip your AI agent to manage secure files, track data rooms, and monitor document analytics via the Digify API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/digify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 10
+
+**Category:** [document-management](../categories/document-management.md)
+
+Equip your AI agent to manage secure files, track data rooms, and monitor document analytics via the Digify API.
 
 ## Description
 Integrate **Digify**, the leading document security and virtual data room (VDR) platform, directly into your AI workflow. Manage your secure files, monitor data room activity, and track detailed document analytics using natural language.
@@ -44,6 +46,33 @@ Integrate **Digify**, the leading document security and virtual data room (VDR) 
 - **search_secure_files**: Search for secure files by filename keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Digify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all secure files I've uploaded."
+
+**🤖 AI Agent:**
+> I've found 12 secure files in your account, including 'Q3 Financials.pdf' and 'Product Roadmap 2024.docx'. Would you like to see the view count for the most popular one?
+
+---
+
+**👤 You:**
+> "Who has viewed the 'M&A Proposal' file and for how long?"
+
+**🤖 AI Agent:**
+> The 'M&A Proposal' file has been viewed by 3 people: 'investor1@corp.com' (15 minutes), 'investor2@corp.com' (8 minutes), and 'analyst@firm.com' (45 minutes). Should I check if they have download permissions?
+
+---
+
+**👤 You:**
+> "Show me the details for our 'Investor Data Room'."
+
+**🤖 AI Agent:**
+> The 'Investor Data Room' contains 45 files and has 8 active members. 5 new documents were added this week. Would you like a list of members who haven't logged in recently?
+
+
 ## Installation & Usage
 
 To install and use the **Digify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Digify** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

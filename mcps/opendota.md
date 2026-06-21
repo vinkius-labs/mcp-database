@@ -1,12 +1,14 @@
 # OpenDota MCP Server
 
-Explore Dota 2 match data, player stats, heroes, teams and leagues — no API key required for basic access.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/opendota)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opendota)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opendota-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opendota-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 18
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Explore Dota 2 match data, player stats, heroes, teams and leagues — no API key required for basic access.
 
 ## Description
 Connect to **OpenDota** and explore the world's most comprehensive Dota 2 match database through natural conversation.
@@ -94,6 +96,33 @@ Get the list of professional teams
 Search for players, teams, leagues and heroes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenDota** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the player 'Arteezy'."
+
+**🤖 AI Agent:**
+> Found Arteezy (account ID: 87276347). Real name: Artour Babaev. Country: Canada. Current rank: Immortal. Profile picture and full stats available. Use get_player for detailed profile or get_player_recent_matches for recent games.
+
+---
+
+**👤 You:**
+> "Show me all Dota 2 heroes."
+
+**🤖 AI Agent:**
+> Found 124 heroes. Notable heroes include: Anti-Mage (agi, carry), Invoker (int, mid), Pudge (str, offlane), Phantom Assassin (agi, carry), Crystal Maiden (int, support), Axe (str, offlane) and 118 more. Each with primary attribute, attack type and role classifications.
+
+---
+
+**👤 You:**
+> "What are the all-time records for most kills in a single match?"
+
+**🤖 AI Agent:**
+> All-time kill record: 75 kills in a single match by a player on Morphling. Other top records include 70 kills (Phantom Assassin), 65 kills (Medusa) and 60 kills (Juggernaut). These are from public matches tracked by OpenDota.
+
+
 ## Installation & Usage
 
 To install and use the **OpenDota** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -102,4 +131,11 @@ To install and use the **OpenDota** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

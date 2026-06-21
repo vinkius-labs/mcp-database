@@ -1,12 +1,14 @@
 # Alchemer MCP Server
 
-Survey and feedback orchestration — manage surveys, responses, and reports via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/alchemer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alchemer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alchemer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alchemer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Survey and feedback orchestration — manage surveys, responses, and reports via AI.
 
 ## Description
 Connect your **Alchemer (formerly SurveyGizmo)** account to your AI agent to unlock professional survey management and customer feedback orchestration. From auditing survey structures and questions to retrieving real-time responses and generating granular reports, your agent handles your feedback lifecycle through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Alchemer (formerly SurveyGizmo)** account to your AI agent to unl
 - **get_account_usage**: Check account status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Alchemer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active surveys in my Alchemer account."
+
+**🤖 AI Agent:**
+> I've retrieved your surveys. You have 8 active surveys, including '2026 Customer Satisfaction', 'Product Market Fit', and 'Event Feedback'. Would you like to see the response count for any of them?
+
+---
+
+**👤 You:**
+> "Show me the last 5 responses for survey ID 1234567."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 5 responses for survey 1234567. 4 are 'Complete' and 1 is 'Partial'. Would you like me to analyze the data for specific questions in these responses?
+
+---
+
+**👤 You:**
+> "List all questions in the 'Customer Satisfaction' survey."
+
+**🤖 AI Agent:**
+> I've retrieved the question list for your Customer Satisfaction survey. It contains 15 questions, including 'Net Promoter Score (NPS)', 'Feature Rating', and 'Open Feedback'. Would you like to see the technical settings for the NPS question?
+
+
 ## Installation & Usage
 
 To install and use the **Alchemer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Alchemer** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

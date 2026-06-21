@@ -1,12 +1,14 @@
 # Airtable MCP Server
 
-Query databases, manage records, and orchestrate workflows across your connected Airtable bases with full flexibility.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airtable-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airtable-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airtable-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 7
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Query databases, manage records, and orchestrate workflows across your connected Airtable bases with full flexibility.
 
 ## Description
 Connect your **Airtable** account to any AI agent and take full control of your low-code databases and automated data management workflows through natural conversation.
@@ -46,6 +48,33 @@ Create new records
 - **update_airtable_record**: Update a record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Airtable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all records in the 'Leads' table for base 'app123XYZ'."
+
+**🤖 AI Agent:**
+> I've retrieved your leads. You currently have 15 records in table 'Leads', including 'Acme Corp' (Status: Qualified) and 'Global Tech'. Would you like the detailed high-fidelity metadata for any of these?
+
+---
+
+**👤 You:**
+> "Create a new record in table 'app123/tbl456' with fields Name='John' and Email='john@test.com'."
+
+**🤖 AI Agent:**
+> Record created! I've successfully registered John (ID: rec1024) in specified table. The high-fidelity data is now live in your Airtable base. Shall I check for any existing comments on this lead?
+
+---
+
+**👤 You:**
+> "Show the schema for base ID 'app123XYZ'."
+
+**🤖 AI Agent:**
+> Accessing base architecture... Base app123XYZ contains 3 tables: 'Leads', 'Interactions', and 'Revenue'. I've retrieved the high-fidelity field definitions and view IDs to help with automated data entry. Need a summary of the field types?
+
+
 ## Installation & Usage
 
 To install and use the **Airtable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Airtable** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

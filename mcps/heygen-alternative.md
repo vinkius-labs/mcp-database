@@ -1,12 +1,14 @@
 # HeyGen MCP Server
 
-Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/heygen-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/heygen-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/heygen-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/heygen-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 12
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication.
 
 ## Description
 Connect your **HeyGen** account to any AI agent and take full control of your AI video production and avatar workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual editing or complex timeline management for simple avatar videos. 
 - **generate_from_prompt**: One-shot prompt to video
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HeyGen** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a video from prompt: 'A professional man introducing our new AI cloud services'."
+
+**🤖 AI Agent:**
+> Triggering Video Agent... I've started a new generation job with your prompt. The task ID is 'v123456789'. I'll monitor it for you and provide the download link as soon as it's ready.
+
+---
+
+**👤 You:**
+> "Show me a list of all available English voices in HeyGen."
+
+**🤖 AI Agent:**
+> Fetching English voices... I found 15 high-quality options. Popular choices include 'Aria' (Female, Professional) and 'Davis' (Male, Narrative). Which one would you like to use for your next video?
+
+---
+
+**👤 You:**
+> "Check the status of video job 'v123456789'."
+
+**🤖 AI Agent:**
+> Checking status... Video 'v123456789' is now 100% complete! You can download it here: [download_url]. The video features a professional avatar with high-fidelity synthesis.
+
+
 ## Installation & Usage
 
 To install and use the **HeyGen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **HeyGen** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

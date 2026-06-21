@@ -1,12 +1,14 @@
 # ShipBob MCP Server
 
-Automate your e-commerce fulfillment with ShipBob — manage products, track orders, and monitor inventory levels directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shipbob)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipbob)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shipbob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shipbob-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 30
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate your e-commerce fulfillment with ShipBob — manage products, track orders, and monitor inventory levels directly from your AI agent.
 
 ## Description
 Connect your **ShipBob** account to any AI agent and take full control of your e-commerce fulfillment and supply chain through natural conversation.
@@ -69,6 +71,33 @@ List all channels the user has access to
 - **update_shipment_address**: Update the shipping address for a shipment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ShipBob** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active ShipBob sales channels."
+
+**🤖 AI Agent:**
+> I've retrieved your channels. You have 2 active installations: 'Shopify Store Front' (ID: 4567) and 'Amazon Integration' (ID: 8910).
+
+---
+
+**👤 You:**
+> "What is the current status and tracking for order 123456?"
+
+**🤖 AI Agent:**
+> Order 123456 is currently 'Shipped'. The tracking number is 1Z999AA10123456789 via UPS. It was dispatched from the Chicago fulfillment center.
+
+---
+
+**👤 You:**
+> "Show me the inventory levels for SKU 'SUMMER-HAT-01'."
+
+**🤖 AI Agent:**
+> For SKU 'SUMMER-HAT-01', you have 150 units fulfillable across all locations, with 25 units currently committed to open orders.
+
+
 ## Installation & Usage
 
 To install and use the **ShipBob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **ShipBob** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

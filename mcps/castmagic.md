@@ -1,12 +1,14 @@
 # Castmagic MCP Server
 
-Automate audio and video content repurposing via Castmagic — generate transcripts, show notes, and social posts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/castmagic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/castmagic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/castmagic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/castmagic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate audio and video content repurposing via Castmagic — generate transcripts, show notes, and social posts directly from any AI agent.
 
 ## Description
 Connect your **Castmagic** account to any AI agent and take full control of your content repurposing workflow through natural conversation. Transform long-form audio and video into ready-to-use assets instantly.
@@ -45,6 +47,33 @@ Connect your **Castmagic** account to any AI agent and take full control of your
 - **list_transcripts**: List all audio/video transcripts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Castmagic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Transcribe this audio file: https://example.com/episode1.mp3"
+
+**🤖 AI Agent:**
+> Submitting 'episode1.mp3' for transcription... I've started the job (ID: tr_12345). I'll let you know when it's finished processing.
+
+---
+
+**👤 You:**
+> "Get the magic content for transcript ID tr_12345."
+
+**🤖 AI Agent:**
+> Retrieving AI assets for tr_12345... I found show notes, 3 LinkedIn posts, and 5 suggested titles. Which one should I display first?
+
+---
+
+**👤 You:**
+> "Show me my last 10 recordings in Castmagic."
+
+**🤖 AI Agent:**
+> Retrieving your recent recordings... I found 10 entries including 'Weekly Sync' and 'Product Launch Interview'. All are successfully processed.
+
+
 ## Installation & Usage
 
 To install and use the **Castmagic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Castmagic** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

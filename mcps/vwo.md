@@ -1,12 +1,14 @@
 # VWO MCP Server
 
-Manage A/B tests, feature flags, and conversion goals on VWO — the leading experience optimization platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vwo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vwo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vwo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vwo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage A/B tests, feature flags, and conversion goals on VWO — the leading experience optimization platform.
 
 ## Description
 Connect your **VWO (Visual Website Optimizer)** account to any AI agent and take control of your experimentation and feature rollout workflows through natural conversation.
@@ -55,6 +57,33 @@ Lists all conversion goals and metrics
 Enables or disables a VWO feature flag
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **VWO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active A/B testing campaigns."
+
+**🤖 AI Agent:**
+> I found 4 active campaigns: 'Homepage Redesign' (ID: camp-101), 'Checkout Flow Optimization' (ID: camp-102), 'Pricing Page Test' (ID: camp-103), and 'Newsletter Signup Personalization' (ID: camp-104). Which one would you like to review?
+
+---
+
+**👤 You:**
+> "What are the results for the 'Checkout Flow Optimization' campaign?"
+
+**🤖 AI Agent:**
+> Results for camp-102: Variation B is the winner with 98% statistical significance. It shows a 14.5% improvement in conversion rate compared to the control. Variation A showed no significant change. Would you like me to pull more detailed metrics?
+
+---
+
+**👤 You:**
+> "Disable the feature flag for 'new_payment_gateway'."
+
+**🤖 AI Agent:**
+> I've disabled the feature flag 'new_payment_gateway' (ID: feat-555) as requested. The status has been updated successfully across all environments. Is there anything else you need me to adjust?
+
+
 ## Installation & Usage
 
 To install and use the **VWO** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **VWO** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

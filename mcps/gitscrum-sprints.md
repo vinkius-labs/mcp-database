@@ -1,12 +1,14 @@
 # GitScrum Sprints MCP Server
 
-Plan and track sprints via GitScrum — manage sprint cycles, monitor KPIs, review burndown charts, and organize user stories and epics from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-sprints)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-sprints)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitscrum-sprints-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitscrum-sprints-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 15
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan and track sprints via GitScrum — manage sprint cycles, monitor KPIs, review burndown charts, and organize user stories and epics from any AI agent.
 
 ## Description
 ### What you can do
@@ -54,6 +56,33 @@ List tasks in a project, optionally filtered by sprint
 - **list_user_stories**: List user stories in a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitScrum Sprints** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the progress of our current sprint in the web-app project?"
+
+**🤖 AI Agent:**
+> Sprint 'Sprint 14 — Auth Module' is at 68% completion: 17 of 25 tasks done, 5 in progress, 3 in backlog. Velocity is tracking above average at 34 story points. The sprint ends in 4 days. Shall I show you the burndown chart or the remaining in-progress tasks?
+
+---
+
+**👤 You:**
+> "Create a new sprint 'Sprint 15 — Payments' from April 14 to April 28."
+
+**🤖 AI Agent:**
+> Sprint created! 'Sprint 15 — Payments' runs from 2026-04-14 to 2026-04-28 (2-week cycle). The sprint is empty — would you like me to list the backlog tasks to assign into it, or create user stories for the payments feature?
+
+---
+
+**👤 You:**
+> "Show me the velocity metrics for the last completed sprint."
+
+**🤖 AI Agent:**
+> Sprint 13 metrics: velocity of 31 story points (vs 28 average), throughput of 22 tasks completed, cycle time averaging 2.1 days per task. The team improved 11% over Sprint 12. Member distribution: johndoe (12 tasks), janedoe (7), alexdev (3). Want me to compare with earlier sprints?
+
+
 ## Installation & Usage
 
 To install and use the **GitScrum Sprints** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **GitScrum Sprints** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

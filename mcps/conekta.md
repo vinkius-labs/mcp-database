@@ -1,12 +1,14 @@
 # Conekta MCP Server
 
-Equip your AI agent to securely manage Latin American payments, view transactions, and track sales using the Conekta API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/conekta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conekta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conekta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conekta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 8
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Equip your AI agent to securely manage Latin American payments, view transactions, and track sales using the Conekta API.
 
 ## Description
 Integrate your AI assistant with **Conekta**, the leading online payment gateway in Mexico and Latin America. By providing seamless connectivity to your Conekta account, your conversational agent can instantly analyze transaction data, verify specific charges, and keep track of your core e-commerce metrics directly through natural language requests.
@@ -53,6 +55,39 @@ Retrieve a paginated list of orders from Conekta
 Find a Conekta customer by their email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Conekta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if the Conekta payment with ID 'ord_2nx...4kx' was successfully processed or declined."
+
+**🤖 AI Agent:**
+> The transaction 'ord_2nx...4kx' was successfully processed. It is a charge of $1,250.00 MXN made via credit card. The payment was cleared today at 10:45 AM and the associated customer is 'Carlos Mendoza'.
+
+---
+
+**👤 You:**
+> "Summarize today's approved transactions and total revenue in MXN."
+
+**🤖 AI Agent:**
+> Today, you have 24 successfully approved transactions through Conekta. The total processed revenue is $34,800.00 MXN. There are also 2 transactions marked as 'declined' due to insufficient funds. Would you like a breakdown of the processing fees?
+
+---
+
+**👤 You:**
+> "List the last 5 chargebacks or disputed claims in our account."
+
+**🤖 AI Agent:**
+> Here are the 5 most recent chargebacks:
+1. ord_9ak - $800.00 MXN (Fraud alert)
+2. ord_7bz - $1,200.00 MXN (Unrecognized charge)
+3. ord_4cw - $500.00 MXN (Product not received)
+4. ord_8dy - $2,500.00 MXN (Duplicate charge)
+5. ord_1ex - $350.00 MXN (Fraud alert)
+Shall I pull the customer details for ord_9ak?
+
+
 ## Installation & Usage
 
 To install and use the **Conekta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +96,11 @@ To install and use the **Conekta** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

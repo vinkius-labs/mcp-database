@@ -1,12 +1,14 @@
 # CFPB Complaints MCP Server
 
-Search 13.8M+ consumer complaints against financial companies — filter by product, company, state and issue.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cfpb-complaints)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cfpb-complaints)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cfpb-complaints-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cfpb-complaints-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search 13.8M+ consumer complaints against financial companies — filter by product, company, state and issue.
 
 ## Description
 Connect to **CFPB Consumer Complaint Database** and explore 13.8M+ consumer complaints through natural conversation — no API key needed.
@@ -64,6 +66,33 @@ Get the most recent consumer complaints
 Search consumer complaints in the CFPB database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CFPB Complaints** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me recent complaints about Wells Fargo."
+
+**🤖 AI Agent:**
+> Found 15 recent complaints against Wells Fargo covering: Mortgage (incorrect information), Credit card (unauthorized charges), Bank account (unexpected fees). Companies responded to 80% of complaints.
+
+---
+
+**👤 You:**
+> "What are the most common issues with debt collection?"
+
+**🤖 AI Agent:**
+> Top debt collection issues: Attempts to collect debt not owed (35%), Continued collection after dispute (22%), Incorrect information on credit report (18%), Harassment (15%), False statements (10%).
+
+---
+
+**👤 You:**
+> "How many complaints does Equifax have?"
+
+**🤖 AI Agent:**
+> Equifax has 350,000+ complaints in the database. Top issues: Incorrect information (45%), Problem with credit report (30%), Unable to get credit report (15%). Most common product: Credit reporting.
+
+
 ## Installation & Usage
 
 To install and use the **CFPB Complaints** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **CFPB Complaints** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

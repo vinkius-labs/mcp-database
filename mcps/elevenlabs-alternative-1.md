@@ -1,12 +1,14 @@
 # ElevenLabs MCP Server
 
-Generate lifelike speech, clone voices, and create sound effects using ElevenLabs' industry-leading AI audio technology.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs-alternative-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs-alternative-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elevenlabs-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elevenlabs-alternative-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 34
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Generate lifelike speech, clone voices, and create sound effects using ElevenLabs' industry-leading AI audio technology.
 
 ## Description
 Connect your **ElevenLabs** account to any AI agent to generate high-quality audio, manage voices, and process sound directly through natural conversation.
@@ -72,6 +74,33 @@ List available models
 - **stream_speech**: Stream text to speech
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ElevenLabs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available voices in my ElevenLabs library."
+
+**🤖 AI Agent:**
+> I've retrieved your voices. You have 12 voices available, including 'Rachel' (ID: 21m00Tcm4TlvDq8ikWAM) and 'Clyde' (ID: 2EiwWnXFnvU5JabPnv8n). Would you like to use one of these for speech generation?
+
+---
+
+**👤 You:**
+> "Generate a sound effect of a futuristic laser blast."
+
+**🤖 AI Agent:**
+> Generating sound effect... I've created a 'futuristic laser blast' audio. You can now download or play the generated sound effect.
+
+---
+
+**👤 You:**
+> "Convert this text to speech using voice ID pNInz6obpgmqMArWsc7r: 'The future of audio is here.'"
+
+**🤖 AI Agent:**
+> Processing text-to-speech... I've generated the audio for your text using the specified voice. The high-quality speech file is ready.
+
+
 ## Installation & Usage
 
 To install and use the **ElevenLabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **ElevenLabs** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

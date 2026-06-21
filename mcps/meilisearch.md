@@ -1,12 +1,14 @@
 # Meilisearch MCP Server
 
-Manage your Meilisearch instance — handle indexes, documents, and search configurations directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meilisearch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meilisearch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meilisearch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meilisearch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 44
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage your Meilisearch instance — handle indexes, documents, and search configurations directly from your AI agent.
 
 ## Description
 Connect your **Meilisearch** instance to any AI agent to automate your search engine management and data indexing workflows.
@@ -78,6 +80,33 @@ Connect your **Meilisearch** instance to any AI agent to automate your search en
 - **update_settings**: Update settings of an index
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Meilisearch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Meilisearch indexes and their primary keys."
+
+**🤖 AI Agent:**
+> I've retrieved your indexes. You have 3 active indexes: 'movies' (primary key: 'id'), 'books' (primary key: 'isbn'), and 'products' (primary key: 'sku').
+
+---
+
+**👤 You:**
+> "Add these three product documents to the 'products' index: [JSON data]."
+
+**🤖 AI Agent:**
+> I've initiated the document addition for the 'products' index. The task has been enqueued with UID 452. You can check the status to confirm when the indexing is complete.
+
+---
+
+**👤 You:**
+> "Get the document with ID 'prod_99' from the 'products' index, but only show the 'name' and 'price' fields."
+
+**🤖 AI Agent:**
+> Here is the requested document from 'products': { "name": "Wireless Headphones", "price": 99.99 }.
+
+
 ## Installation & Usage
 
 To install and use the **Meilisearch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -86,4 +115,11 @@ To install and use the **Meilisearch** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

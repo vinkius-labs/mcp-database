@@ -1,12 +1,14 @@
 # RenderMe MCP Server
 
-Automate video generation via RenderMe (re.video) templates directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/renderme)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/renderme)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/renderme-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/renderme-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate video generation via RenderMe (re.video) templates directly from your AI agent.
 
 ## Description
 Connect your **RenderMe** (re.video) account to any AI agent and take full control of your automated video production and media orchestration through natural conversation. RenderMe provides a powerful API for rendering professional videos from motion templates, allowing you to trigger render jobs, manage deployments, and track media assets directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual editing or complex media processing. Your AI acts as a dedicated 
 - **create_video_render_job**: Trigger a new video rendering job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RenderMe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my video deployments in RenderMe."
+
+**🤖 AI Agent:**
+> I've retrieved your deployments. You have 3 active video templates: 'Social Intro', 'Ad Campaign v1' (ID: dep_123), and 'Product Showcase'. Which one would you like to render?
+
+---
+
+**👤 You:**
+> "Render a batch of 50 personalized certificate images for our training program graduates."
+
+**🤖 AI Agent:**
+> Batch rendering initiated: 50 personalized certificates. Template: "Professional Certificate Gold". Dynamic fields: graduate name, course title, completion date, instructor signature, unique certificate ID. Progress: 50/50 completed (100%). All certificates generated in PDF (print-ready, 300 DPI) and PNG (web) formats. Average render time: 1.2 seconds per certificate. Download link generated for the ZIP archive (124 MB). Email delivery option available for direct distribution to graduates.
+
+---
+
+**👤 You:**
+> "Show me the rendering statistics and API usage for my account this month."
+
+**🤖 AI Agent:**
+> Monthly rendering statistics. Total renders: 3,456. Successful: 3,421 (99.0%). Failed: 35 (1.0%, mostly timeout on complex templates). API calls: 4,890. Average render time: 2.1 seconds. Peak usage: Tuesday at 2 PM (234 renders/hour). By format: PNG 58%, PDF 32%, JPG 10%. Storage used: 2.3 GB of 10 GB. Plan limit: 5,000 renders/month (69.1% used). Estimated overage at current pace: none.
+
+
 ## Installation & Usage
 
 To install and use the **RenderMe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **RenderMe** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

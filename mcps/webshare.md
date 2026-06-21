@@ -1,12 +1,14 @@
 # Webshare MCP Server
 
-Manage residential and datacenter proxies, rotation settings, and authorized IPs on Webshare — the fast and affordable proxy network.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/webshare)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webshare)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/webshare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/webshare-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage residential and datacenter proxies, rotation settings, and authorized IPs on Webshare — the fast and affordable proxy network.
 
 ## Description
 Connect your **Webshare** account to any AI agent and take full control of your proxy infrastructure through natural conversation.
@@ -56,6 +58,33 @@ Removes an IP address from the authorized whitelist
 Requests an immediate replacement for a specific proxy IP
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Webshare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my active proxies and their health status."
+
+**🤖 AI Agent:**
+> I found 10 active proxies in your pool. They are all currently 'HEALTHY'. The top ones are 1.2.3.4 (Port: 8080), 5.6.7.8 (Port: 8080), and 9.10.11.12 (Port: 8080). Would you like to see the credentials for these?
+
+---
+
+**👤 You:**
+> "Authorize the IP address 192.168.1.100 for my proxy pool."
+
+**🤖 AI Agent:**
+> Success! I have added 192.168.1.100 to your Webshare authorized IP whitelist. This machine can now access your proxies without password authentication.
+
+---
+
+**👤 You:**
+> "What are my bandwidth statistics for this month?"
+
+**🤖 AI Agent:**
+> You have consumed 45.2 GB of your 100 GB monthly quota. You have approximately 54.8 GB remaining. You've made 1.2 million requests with a 98.5% success rate. Would you like to see a breakdown by day?
+
+
 ## Installation & Usage
 
 To install and use the **Webshare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Webshare** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

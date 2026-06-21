@@ -1,12 +1,14 @@
 # Semantic Scholar MCP Server
 
-Search 200M+ academic papers with AI-powered TLDR summaries, influential citation tracking, and researcher profiles from the Allen Institute for AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/semantic-scholar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semantic-scholar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semantic-scholar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semantic-scholar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 4
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Search 200M+ academic papers with AI-powered TLDR summaries, influential citation tracking, and researcher profiles from the Allen Institute for AI.
 
 ## Description
 Connect your AI agent to the **world's most AI-enhanced academic knowledge graph**, built and maintained by the Allen Institute for AI (AI2).
@@ -46,6 +48,33 @@ Find researchers and their publication metrics on Semantic Scholar
 Search 200M+ academic papers with AI-powered TLDR summaries and influence scores
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Semantic Scholar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the most cited papers on transformer architecture in deep learning?"
+
+**🤖 AI Agent:**
+> Top results include: 'Attention Is All You Need' by Vaswani et al. (2017) — 🤖 TLDR: The Transformer, a new network architecture based solely on attention mechanisms, achieves superior quality on machine translation tasks. Cited 120,000+ times (25,000+ influential). Fields: Computer Science, Linguistics.
+
+---
+
+**👤 You:**
+> "Get the full details of the LoRA paper using its ArXiv ID arXiv:2106.09685."
+
+**🤖 AI Agent:**
+> Found: 'LoRA: Low-Rank Adaptation of Large Language Models' by Edward Hu et al. (2021). 🤖 TLDR: LoRA freezes the pre-trained model weights and injects trainable rank decomposition matrices, reducing trainable parameters by 10,000x and GPU memory by 3x. Citations: 8,500+ (2,100 influential). Fields: CS, Mathematics. Available at arxiv.org/abs/2106.09685.
+
+---
+
+**👤 You:**
+> "Find the researcher Yann LeCun and show me his publication metrics."
+
+**🤖 AI Agent:**
+> Found researcher Yann LeCun — Author at Meta AI / NYU. Papers: 950+, Total Citations: 380,000+, h-index: 162. Known for pioneering work in convolutional neural networks, self-supervised learning, and modern AI architectures. Profile link and full publication list available.
+
+
 ## Installation & Usage
 
 To install and use the **Semantic Scholar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Semantic Scholar** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

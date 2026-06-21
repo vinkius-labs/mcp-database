@@ -1,12 +1,14 @@
 # Drip MCP Server
 
-Automate e-commerce marketing via Drip — manage subscribers, trigger workflows, track custom events, and audit campaigns directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/drip)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/drip)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/drip-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/drip-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate e-commerce marketing via Drip — manage subscribers, trigger workflows, track custom events, and audit campaigns directly from any AI agent.
 
 ## Description
 Connect your **Drip** account to any AI agent and take full control of your e-commerce CRM and marketing automation through natural conversation.
@@ -66,6 +68,33 @@ Record a custom event for a Drip subscriber
 - **list_tags**: List all tags in your Drip account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Drip** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for subscriber info for: hello@example.com"
+
+**🤖 AI Agent:**
+> I found the profile for hello@example.com! Tags: 'Customer', 'Newsletter'. Lead Score: 45. Lifecycle Stage: 'Subscriber'. Most recent activity: 'Opened Welcome Email' 2 hours ago. Would you like to add a new tag to this user?
+
+---
+
+**👤 You:**
+> "Add tag 'Vip-Customer' to user: user@drip.com"
+
+**🤖 AI Agent:**
+> Tag applied! I've added 'Vip-Customer' to user@drip.com. This user will now be included in your VIP segments and any related automation triggers.
+
+---
+
+**👤 You:**
+> "List all active automation workflows"
+
+**🤖 AI Agent:**
+> Retrieving workflows... I found 5 active automations including 'Post-Purchase Upsell', 'Abandoned Cart Recovery', and 'Welcome Series'. Would you like the ID for any of these to start a subscriber on them?
+
+
 ## Installation & Usage
 
 To install and use the **Drip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Drip** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

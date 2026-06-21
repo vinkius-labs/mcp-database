@@ -1,12 +1,14 @@
 # Lemon Squeezy MCP Server
 
-Sell software, subscriptions, and digital products globally with built-in tax compliance, billing, and licensing as your merchant of record.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemon-squeezy-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemon-squeezy-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 12
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Sell software, subscriptions, and digital products globally with built-in tax compliance, billing, and licensing as your merchant of record.
 
 ## Description
 Connect your **Lemon Squeezy** store to any AI agent and manage digital sales through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Lemon Squeezy** store to any AI agent and manage digital sales th
 - **list_webhooks**: List configured webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lemon Squeezy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all products with sales data and this month's revenue."
+
+**🤖 AI Agent:**
+> Products: 4. 'Pro License' ($49/one-time, 890 sales, $43.6K). 'Team Plan' ($29/mo, 234 active subs). 'Enterprise' ($99/mo, 45 active). 'Starter Kit' ($19, 1.2K sales, $22.8K). This month: $12,400 revenue. MRR: $8,850. One-time: $3,550. Orders: 68. Refunds: 2 ($98).
+
+---
+
+**👤 You:**
+> "Show active subscriptions and churn analysis."
+
+**🤖 AI Agent:**
+> Active subscriptions: 279. Team Plan: 234 ($6,786/mo). Enterprise: 45 ($4,455/mo). MRR: $11,241. This month: +18 new, -6 cancelled. Churn: 2.1% (excellent). Net revenue retention: 108%. Upcoming renewals (7 days): 32. At-risk (payment failed): 3.
+
+---
+
+**👤 You:**
+> "List customers sorted by LTV and show discount codes."
+
+**🤖 AI Agent:**
+> Top customers by LTV: 1) Acme Corp — $2,376 (Enterprise, 24 months). 2) TechCo — $1,740 (Team, 5 seats, 12 months). 3) StartupXYZ — $1,188 (Enterprise, 12 months). Total customers: 1,890. Discount codes: 3 active. 'LAUNCH20' (20% off, 45 uses). 'ANNUAL30' (30% annual, 12 uses). 'PARTNER50' (50%, partner only, 3 uses).
+
+
 ## Installation & Usage
 
 To install and use the **Lemon Squeezy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Lemon Squeezy** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

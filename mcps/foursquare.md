@@ -1,12 +1,14 @@
 # Foursquare MCP Server
 
-Empower location intelligence via Foursquare — search millions of places, retrieve rich venue details and photos, and discover nearby POIs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/foursquare)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/foursquare)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/foursquare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/foursquare-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Empower location intelligence via Foursquare — search millions of places, retrieve rich venue details and photos, and discover nearby POIs directly from any AI agent.
 
 ## Description
 Connect your **Foursquare** account to any AI agent and take full control of your geospatial intelligence and place discovery workflows through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Foursquare** account to any AI agent and take full control of you
 - **search_places**: Identify bounded routing spaces inside the Headless Foursquare POI graph
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Foursquare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find coffee shops near '40.71, -74.00'"
+
+**🤖 AI Agent:**
+> Searching places... I found 10 coffee shops nearby. Top results include 'Blue Bottle Coffee' (0.2 miles away) and 'Everyman Espresso'. Would you like the detailed ratings or hours for 'Blue Bottle'?
+
+---
+
+**👤 You:**
+> "What are the opening hours for 'Central Park Zoo'?"
+
+**🤖 AI Agent:**
+> Retrieving details for Central Park Zoo... They are open today from 10:00 AM to 5:00 PM. It is currently rated 4.5/5 by over 2,000 visitors. Would you like to see some recent photos of the zoo?
+
+---
+
+**👤 You:**
+> "Show me user tips for 'The Met Museum'"
+
+**🤖 AI Agent:**
+> Retrieving tips... Visitors recommend: 'Go early to avoid crowds', 'Don't miss the Egyptian wing', and 'The rooftop view is incredible'. I found 50+ detailed tips for your visit.
+
+
 ## Installation & Usage
 
 To install and use the **Foursquare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Foursquare** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

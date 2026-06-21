@@ -1,12 +1,14 @@
 # European Pension Estimator MCP Server
 
-Estimate monthly public pension benefits and replacement rates for the UK, Germany, France, and Spain.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/european-pension-estimator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/european-pension-estimator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/european-pension-estimator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/european-pension-estimator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+Estimate monthly public pension benefits and replacement rates for the UK, Germany, France, and Spain.
 
 ## Description
 The European Pension Estimator MCP server provides precise approximations of future retirement income across key European social security systems. By using tools like `calculate_monthly_benefit`, `get_scheme_details`, and `assess_contribution_gap`, users can simulate how different contribution years, salaries, and retirement ages impact their monthly pension amount and replacement rate in the UK, Germany, France, and Spain.
@@ -18,6 +20,33 @@ The European Pension Estimator MCP server provides precise approximations of fut
 - **calculate_monthly_benefit**: Calculate the estimated monthly pension benefit
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **European Pension Estimator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How much monthly pension will I get in Germany if I have 35 years of contributions and a salary of 3000 EUR, retiring at age 67?"
+
+**🤖 AI Agent:**
+> Based on your inputs for Germany (DE), your estimated monthly benefit is approximately 2150.00 EUR, with a replacement rate of 71.67%.
+
+---
+
+**👤 You:**
+> "What are the details for the French pension scheme?"
+
+**🤖 AI Agent:**
+> The French pension system (Retraite) has a minimum retirement age of 64. The system uses specific multipliers based on your contribution duration and salary.
+
+---
+
+**👤 You:**
+> "If I work 5 more years in the UK, how much will my monthly pension increase?"
+
+**🤖 AI Agent:**
+> By extending your career by 5 years with your current contribution history and salary, you can expect a benefit increase of approximately 120.00 EUR per month.
+
+
 ## Installation & Usage
 
 To install and use the **European Pension Estimator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -26,4 +55,11 @@ To install and use the **European Pension Estimator** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

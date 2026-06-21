@@ -1,12 +1,14 @@
 # LeafLink MCP Server
 
-Manage cannabis wholesale orders, products, and inventory via the LeafLink API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/leaflink)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/leaflink)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/leaflink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/leaflink-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage cannabis wholesale orders, products, and inventory via the LeafLink API.
 
 ## Description
 Connect your **LeafLink** account to any AI agent to automate your cannabis wholesale operations. This MCP server enables your agent to manage product listings, monitor real-time inventory, and track received orders directly from natural language.
@@ -48,6 +50,33 @@ Transition an order through its lifecycle
 - **update_product_inventory**: Update inventory level for a specific product
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LeafLink** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active wholesale orders in LeafLink."
+
+**🤖 AI Agent:**
+> I've retrieved your received orders. You have 8 active orders, including Order #ORD-101 from 'Green Valley Dispensary' and #ORD-102 from 'High Peak Wellness'. Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Check the inventory level for 'Sour Diesel Flower 3.5g'."
+
+**🤖 AI Agent:**
+> For 'Sour Diesel Flower 3.5g', I found 150 units currently in stock with 25 units reserved for pending orders, leaving 125 units available for wholesale.
+
+---
+
+**👤 You:**
+> "Accept the order #ORD-101."
+
+**🤖 AI Agent:**
+> Successfully accepted order #ORD-101. Its status has been updated in LeafLink, and the buyer has been notified.
+
+
 ## Installation & Usage
 
 To install and use the **LeafLink** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **LeafLink** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

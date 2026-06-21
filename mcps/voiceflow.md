@@ -1,12 +1,14 @@
 # Voiceflow MCP Server
 
-Design, prototype, and launch conversational AI agents with a visual builder that handles complex dialog flows without code.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/voiceflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/voiceflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/voiceflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/voiceflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Design, prototype, and launch conversational AI agents with a visual builder that handles complex dialog flows without code.
 
 ## Description
 Connect your **Voiceflow** account to any AI agent and simplify how you build, test, and monitor your conversational assistants through natural language conversation.
@@ -47,6 +49,33 @@ Connect your **Voiceflow** account to any AI agent and simplify how you build, t
 - **save_state**: Update user state/variables
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Voiceflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Voiceflow projects."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have access to: 'Customer Support Bot', 'Sales Assistant v2', and 'Internal FAQ Bot'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Ask my KB: 'What is the return policy for international orders?'"
+
+**🤖 AI Agent:**
+> According to your Knowledge Base, international orders can be returned within 30 days, but the customer is responsible for shipping costs. Would you like the source document details?
+
+---
+
+**👤 You:**
+> "Show me the last 3 transcripts for the 'Customer Support Bot'."
+
+**🤖 AI Agent:**
+> I've fetched the transcripts. Here are the 3 most recent sessions: User_8823 (Success), User_8824 (Dropped), and User_8825 (Handoff to Human). Shall I retrieve the dialogue for the dropped session?
+
+
 ## Installation & Usage
 
 To install and use the **Voiceflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Voiceflow** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

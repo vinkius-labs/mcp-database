@@ -1,12 +1,14 @@
 # Vagaro MCP Server
 
-Manage appointments, clients, staff, services, and retail for your Vagaro-powered salon, spa, or fitness business through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vagaro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vagaro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vagaro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vagaro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage appointments, clients, staff, services, and retail for your Vagaro-powered salon, spa, or fitness business through natural conversation.
 
 ## Description
 Connect your **Vagaro** business to any AI agent and manage your salon, spa, or fitness studio through natural conversation.
@@ -56,6 +58,52 @@ List fitness/wellness classes
 List retail products
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vagaro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me today's appointments."
+
+**🤖 AI Agent:**
+> Today's schedule:
+
+9:00 AM — **Jessica R.** Balayage + Cut with Sarah ($185)
+10:30 AM — **Mark T.** Men's Haircut with Mike ($35)
+11:00 AM — **Amanda L.** Deep Tissue Massage with Ana ($120)
+1:00 PM — **Sarah K.** Gel Manicure + Pedicure with Lisa ($75)
+
+4 appointments, $415 projected revenue. You have a 2-hour gap from 2:00-4:00 PM.
+
+---
+
+**👤 You:**
+> "Find Elena Gomez's profile and check her last booked service."
+
+**🤖 AI Agent:**
+> Accessing Vagaro client records ('get_client_details')...
+Elena Gomez (ID: 8841-A):
+- Status: Active VIP
+- Last Service: 'Signature Facial' on Oct 5th
+- Preferred Staff: Anna M.
+- Notes: Allergic to lavender extract.
+
+---
+
+**👤 You:**
+> "Book a 60-minute deep tissue massage for Mark Smith with John next Friday at 2 PM."
+
+**🤖 AI Agent:**
+> Executing `create_appointment` action...
+Appointment confirmed!
+- Client: Mark Smith
+- Service: Deep Tissue Massage (60 min)
+- Staff: John
+- Date: Next Friday, 2:00 PM
+- Price: $110.00
+A confirmation SMS has been sent to the client.
+
+
 ## Installation & Usage
 
 To install and use the **Vagaro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +112,11 @@ To install and use the **Vagaro** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

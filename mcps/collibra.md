@@ -1,12 +1,14 @@
 # Collibra MCP Server
 
-Enable your AI agent to manage data assets, domains, and communities via the Collibra Data Intelligence API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/collibra)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/collibra)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/collibra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/collibra-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 10
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Enable your AI agent to manage data assets, domains, and communities via the Collibra Data Intelligence API.
 
 ## Description
 Connect your AI to **Collibra**, the data intelligence platform that helps organizations find, understand, and trust their data.
@@ -43,6 +45,42 @@ Connect your AI to **Collibra**, the data intelligence platform that helps organ
 - **search_assets**: Search for assets by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Collibra** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all communities in Collibra."
+
+**🤖 AI Agent:**
+> You have 4 communities:
+1. 'Data Governance' — 12 domains, 845 assets
+2. 'Business Intelligence' — 8 domains, 532 assets
+3. 'Compliance' — 5 domains, 210 assets
+4. 'Engineering' — 15 domains, 1,204 assets
+Would you like to explore domains in any of these?
+
+---
+
+**👤 You:**
+> "Search for assets named 'Customer Data'."
+
+**🤖 AI Agent:**
+> 3 assets found matching 'Customer Data':
+1. 'Customer Data Policy' (Data Policy) — Domain: Compliance
+2. 'Customer Data Table' (Table) — Domain: Data Engineering
+3. 'Customer Data Dictionary' (Business Term) — Domain: Data Governance
+Would you like full details on any of these?
+
+---
+
+**👤 You:**
+> "Who is the Data Steward assigned to the 'Product Inventory' asset?"
+
+**🤖 AI Agent:**
+> Querying asset 'Product Inventory'... The assigned Data Steward role belongs to Alice Smith (alice.smith@example.com) in the Data Governance community.
+
+
 ## Installation & Usage
 
 To install and use the **Collibra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +89,11 @@ To install and use the **Collibra** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

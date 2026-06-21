@@ -1,12 +1,14 @@
 # Medusa (Headless E-commerce Engine) MCP Server
 
-Manage headless commerce via MedusaJS — search products, track orders, and audit customer data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/medusa-headless-e-commerce-engine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/medusa-headless-e-commerce-engine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/medusa-headless-e-commerce-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/medusa-headless-e-commerce-engine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage headless commerce via MedusaJS — search products, track orders, and audit customer data.
 
 ## Description
 Connect your **MedusaJS** store to any AI agent and take full control of your enterprise-grade headless commerce operations, catalog management, and customer CRM through natural conversation.
@@ -47,6 +49,33 @@ Connect your **MedusaJS** store to any AI agent and take full control of your en
 - **get_store_config**: Get Medusa store configuration (supported currencies, default region)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Medusa (Headless E-commerce Engine)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products in my Medusa store"
+
+**🤖 AI Agent:**
+> I've retrieved your product list. Highlights include the 'Classic Tee' (ID: prod-123), 'Cargo Pants' (ID: prod-456), and 'Tech Backpack' (ID: prod-789). Would you like to see the inventory levels for any of these?
+
+---
+
+**👤 You:**
+> "Show me the last 5 orders placed today"
+
+**🤖 AI Agent:**
+> Retrieving latest orders… I've identified 5 new orders. Highlights: Order #1001 ($45.50, Payment: Captured), Order #1002 ($120.00, Payment: Awaiting), and Order #1003 ($15.99, Status: Fulfilled). Would you like to see the shipping address for the pending order?
+
+---
+
+**👤 You:**
+> "Capture the payment for order ID 'order-987'"
+
+**🤖 AI Agent:**
+> Executing payment capture… Success. For order 'order-987', the funds have been captured from the customer's payment method. The order status has been updated to 'Awaiting Fulfillment' in Medusa.
+
+
 ## Installation & Usage
 
 To install and use the **Medusa (Headless E-commerce Engine)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Medusa (Headless E-commerce Engine)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

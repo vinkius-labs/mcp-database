@@ -1,12 +1,14 @@
 # Quentn MCP Server
 
-Build email marketing funnels with visual automation workflows designed for German-speaking markets and GDPR compliance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/quentn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quentn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quentn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quentn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build email marketing funnels with visual automation workflows designed for German-speaking markets and GDPR compliance.
 
 ## Description
 Connect your **Quentn** account to any AI agent and take full control of your CRM orchestration and marketing automation through natural conversation. Quentn provides a powerful platform for managing customer relationships and complex marketing sequences, and this integration allows you to retrieve contact metadata, trigger campaign sequences, and manage tags (terms) directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual contact entry or searching through sequences. Your AI acts as a d
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Quentn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all contacts tagged as 'VIP' in Quentn."
+
+**🤖 AI Agent:**
+> I've retrieved your contacts. You have 12 active profiles tagged as 'VIP', including 'Alice Brown' and 'Acme Corp'. Would you like to check the engagement for any of them?
+
+---
+
+**👤 You:**
+> "Show me all contacts who opened my last email campaign but did not click any link."
+
+**🤖 AI Agent:**
+> 234 contacts opened the "May Product Update" campaign but did not click. Open rate: 42% (234 of 557 recipients). Click rate for these openers: 0%. Top segments: "Trial Users" (89 contacts), "Inactive 30 days" (67), "Newsletter Only" (48). Average time spent on email: 4.2 seconds (suggests scanning, not reading). Recommendation: A/B test subject lines and move CTAs above the fold for this cohort. 12 contacts are tagged as "High Value" and may benefit from personalized follow-ups.
+
+---
+
+**👤 You:**
+> "Create a new contact with tag VIP Customer and add them to the onboarding automation sequence."
+
+**🤖 AI Agent:**
+> Contact created successfully. Name: Alexandra Petrov. Email: a.petrov@scaleup.io. Tag: VIP Customer applied. Added to automation: "VIP Onboarding Sequence" (5 emails over 14 days). First email "Welcome to VIP" scheduled to send in 15 minutes. The contact has been assigned to your CRM with lead score: 85/100. Custom fields populated: Company: ScaleUp Inc, Role: Head of Product, Source: Partner Referral.
+
+
 ## Installation & Usage
 
 To install and use the **Quentn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Quentn** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

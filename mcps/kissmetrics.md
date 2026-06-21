@@ -1,12 +1,14 @@
 # Kissmetrics MCP Server
 
-Track user behavior, set properties, and query analytics data via the Kissmetrics API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kissmetrics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kissmetrics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kissmetrics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kissmetrics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 7
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Track user behavior, set properties, and query analytics data via the Kissmetrics API.
 
 ## Description
 Connect your **Kissmetrics** account to any AI agent to automate your user behavioral analytics and tracking workflows. This MCP server enables your agent to record events, manage user properties, and query complex metric data directly from natural language interfaces.
@@ -48,6 +50,33 @@ Record a behavior event for a person
 - **set_person_properties**: Set properties for a specific person
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kissmetrics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Record a 'Purchased' event for 'user@example.com' with price 49.99."
+
+**🤖 AI Agent:**
+> I've recorded the 'Purchased' event for user@example.com. The price of 49.99 has been successfully attached as a property to this event in Kissmetrics.
+
+---
+
+**👤 You:**
+> "Set the property 'Plan Tier' to 'Enterprise' for 'customer_123'."
+
+**🤖 AI Agent:**
+> Successfully updated properties for customer_123. The 'Plan Tier' is now set to 'Enterprise' in their behavioral profile.
+
+---
+
+**👤 You:**
+> "Show me all event types defined in my account."
+
+**🤖 AI Agent:**
+> I've retrieved 15 event types from your Kissmetrics account, including 'Signed Up', 'Logged In', 'Purchased', and 'Feature Used'. Would you like to query metrics for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Kissmetrics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Kissmetrics** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

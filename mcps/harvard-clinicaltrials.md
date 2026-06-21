@@ -1,12 +1,14 @@
 # Harvard ClinicalTrials MCP Server
 
-Search and analyze clinical trial data from Harvard and ClinicalTrials.gov for research, drug development, and healthcare innovation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-clinicaltrials)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/harvard-clinicaltrials)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/harvard-clinicaltrials-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/harvard-clinicaltrials-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 16
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Search and analyze clinical trial data from Harvard and ClinicalTrials.gov for research, drug development, and healthcare innovation.
 
 ## Description
 Connect to the **ClinicalTrials.gov API v2** — the largest database of clinical studies worldwide, maintained by the U.S. National Library of Medicine.
@@ -84,6 +86,33 @@ Search for currently recruiting studies
 Search 400K+ clinical trials worldwide
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Harvard ClinicalTrials** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find recruiting Phase 3 trials for breast cancer immunotherapy"
+
+**🤖 AI Agent:**
+> I've found Phase 3 clinical trials for breast cancer immunotherapy that are currently recruiting participants, including studies testing checkpoint inhibitors and combination therapies.
+
+---
+
+**👤 You:**
+> "Search for Alzheimer's disease trials sponsored by NIH in Boston"
+
+**🤖 AI Agent:**
+> I've found NIH-sponsored Alzheimer's disease trials in Boston, including studies on amyloid-targeting therapies and cognitive interventions at major research hospitals.
+
+---
+
+**👤 You:**
+> "Find pediatric clinical trials for cystic fibrosis"
+
+**🤖 AI Agent:**
+> I've searched for pediatric cystic fibrosis trials, including CFTR modulator studies and gene therapy trials enrolling children and adolescents.
+
+
 ## Installation & Usage
 
 To install and use the **Harvard ClinicalTrials** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -92,4 +121,11 @@ To install and use the **Harvard ClinicalTrials** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

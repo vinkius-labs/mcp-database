@@ -1,12 +1,14 @@
 # LA Metro MCP Server
 
-Access Los Angeles Metro data via API — track buses and rail in real-time, check arrivals, plan rail trips, and monitor service alerts from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/la-metro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/la-metro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/la-metro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/la-metro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 12
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access Los Angeles Metro data via API — track buses and rail in real-time, check arrivals, plan rail trips, and monitor service alerts from any AI agent.
 
 ## Description
 Connect your **LA Metro API** Los Angeles public transit data platform to any AI agent and take full control of real-time Metrobus and Metro Rail tracking, arrival predictions, rail-to-rail journey planning, and service disruption monitoring through natural conversation.
@@ -81,6 +83,33 @@ Get current service alerts and disruptions across the LA Metro system
 Get next bus arrival predictions for a specific bus stop
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LA Metro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all Metrobus stops on the 720 Rapid route."
+
+**🤖 AI Agent:**
+> Fetching stops for Route 720 Rapid... I found 76 stops along this east-west rapid corridor. Key stops include: Atlantic Station (East end), Indiana Street, Soto Street, Boyle Heights, 1st/Main, Civic Center, Grand Avenue, Westlake/MacArthur Park, Wilshire/Vermont, Wilshire/Normandie, Wilshire/Western, Koreatown, Miracle Mile, Beverly Hills, Century City, Westwood/UCLA, and Santa Monica Blvd/Westwood (West end). Would you like predictions for a specific stop?
+
+---
+
+**👤 You:**
+> "What are the next Red Line trains arriving at Union Station?"
+
+**🤖 AI Agent:**
+> Fetching Red Line arrivals at Union Station (station 80222)... Next trains: North Hollywood — 3 minutes, 6 cars; North Hollywood — 11 minutes, 6 cars; North Hollywood — 19 minutes, 6 cars. All Red Line trains operating on schedule with no service alerts. Trains run approximately every 8 minutes during peak hours. Would you like me to check rail-to-rail connections from Union Station to your destination?
+
+---
+
+**👤 You:**
+> "Plan a rail journey from North Hollywood to Santa Monica."
+
+**🤖 AI Agent:**
+> Planning rail-to-rail journey... Recommended route: Take B Line (Red) from North Hollywood to 7th Street/Metro Center — 26 minutes. Transfer to E Line (Expo) at 7th Street/Metro Center heading westbound to Downtown Santa Monica — 32 minutes. Total journey time: approximately 58 minutes plus transfer time. 1 transfer required. Both lines running on schedule. Would you like me to check next train times at North Hollywood station?
+
+
 ## Installation & Usage
 
 To install and use the **LA Metro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **LA Metro** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

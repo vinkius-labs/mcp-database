@@ -1,12 +1,14 @@
 # Azure Cognitive Search MCP Server
 
-Empower your AI with enterprise retrieval — run full-text search, semantic queries, and inspect cognitive skillsets on your Azure indexes.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-cognitive-search)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/azure-cognitive-search)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/azure-cognitive-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/azure-cognitive-search-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Empower your AI with enterprise retrieval — run full-text search, semantic queries, and inspect cognitive skillsets on your Azure indexes.
 
 ## Description
 Connect your **Azure Cognitive Search** endpoints to any AI agent and bring the power of enterprise information retrieval directly into your conversational workflows.
@@ -41,6 +43,33 @@ Connect your **Azure Cognitive Search** endpoints to any AI agent and bring the 
 - **list_skillsets**: List Cognitive Services skillsets orchestrating text enrichments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Azure Cognitive Search** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Use the Get Document tool to show me the full raw JSON of record 'abc-1234'."
+
+**🤖 AI Agent:**
+> I retrieved the exact target doc 'abc-1234' from the 'employees' index. It includes 14 metadata fields, no vector map defined internally, and specifies the timestamp of ingestion. Here's a brief breakdown of its financial contents...
+
+---
+
+**👤 You:**
+> "List active Indexers and tell me if the blob-syncher is functioning."
+
+**🤖 AI Agent:**
+> I checked the 3 Azure Search indexers set up. The 'blob-syncher' ran 10 minutes ago, reporting a clean 200 success code. However, the 'sandbox-test-indexer' has been stalled for 48 hours waiting on database connection string issues.
+
+---
+
+**👤 You:**
+> "List all active skillsets enhancing our search environment currently."
+
+**🤖 AI Agent:**
+> You have a single configuration skillset named 'ocr-and-translate' applied. It chains out the Azure Cognitive Vision API to extract image text seamlessly and subsequently forces Language Service mapping toward default EN tokens via integration.
+
+
 ## Installation & Usage
 
 To install and use the **Azure Cognitive Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Azure Cognitive Search** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

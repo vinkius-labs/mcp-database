@@ -1,12 +1,14 @@
 # Zyte MCP Server
 
-Extract structured web data, perform browser automation, and fetch search engine results directly through the Zyte API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zyte)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zyte)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zyte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zyte-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 3
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Extract structured web data, perform browser automation, and fetch search engine results directly through the Zyte API.
 
 ## Description
 Connect your **Zyte API** account to any AI agent to bypass anti-bot measures and extract data from any website or search engine through natural conversation.
@@ -44,6 +46,33 @@ Search engine results via Zyte API
 Get Zyte API usage stats
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zyte** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the browser-rendered HTML from https://news.ycombinator.com"
+
+**🤖 AI Agent:**
+> I've extracted the rendered content from Hacker News. The page contains the latest tech stories and discussions. Would you like me to parse the top headlines for you?
+
+---
+
+**👤 You:**
+> "Search Google for 'best MCP servers' and give me the top 10 organic results."
+
+**🤖 AI Agent:**
+> Searching Google... I've found 10 organic results. The top links include GitHub repositories, developer blogs, and official documentation for Model Context Protocol servers.
+
+---
+
+**👤 You:**
+> "Show me my current Zyte API usage and success rates."
+
+**🤖 AI Agent:**
+> Fetching your stats... You have made 1,250 requests this month with a 99.2% success rate. Your total estimated cost so far is $5.40.
+
+
 ## Installation & Usage
 
 To install and use the **Zyte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Zyte** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

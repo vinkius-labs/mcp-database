@@ -1,12 +1,14 @@
 # Chargebee MCP Server
 
-Manage recurring subscriptions, automate billing cycles, and reduce churn with revenue operations built for SaaS growth.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chargebee-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargebee-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargebee-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargebee-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage recurring subscriptions, automate billing cycles, and reduce churn with revenue operations built for SaaS growth.
 
 ## Description
 Connect your **Chargebee** site to any AI agent and take full control of your billing workflows through natural conversation.
@@ -43,6 +45,33 @@ List Chargebee invoices
 List Chargebee subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chargebee** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active subscriptions in Chargebee."
+
+**🤖 AI Agent:**
+> I've fetched the subscriptions. You have 12 active subscriptions, including 'sub_123' (Premium Plan) and 'sub_456' (Standard Plan).
+
+---
+
+**👤 You:**
+> "Show me details for customer 'cust_789'."
+
+**🤖 AI Agent:**
+> Customer 'cust_789' is John Doe (john@example.com), based in New York. They have an active payment source on file.
+
+---
+
+**👤 You:**
+> "Find all overdue invoices."
+
+**🤖 AI Agent:**
+> I've analyzed your invoices. There are currently 3 overdue invoices totaling $450. Would you like the list of customer IDs for these invoices?
+
+
 ## Installation & Usage
 
 To install and use the **Chargebee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Chargebee** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

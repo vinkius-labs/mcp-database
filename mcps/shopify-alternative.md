@@ -1,12 +1,14 @@
 # Shopify MCP Server
 
-Build and grow your online store with the e-commerce platform that powers millions of businesses from first sale to global scale.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shopify-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shopify-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shopify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shopify-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build and grow your online store with the e-commerce platform that powers millions of businesses from first sale to global scale.
 
 ## Description
 Connect your **Shopify** store to any AI agent and take full control of your e-commerce operations and storefront management through natural conversation. Shopify provides a premier commerce platform, and this integration allows you to retrieve product metadata, monitor orders, and manage customer records directly from your chat interface.
@@ -49,6 +51,33 @@ List your Shopify products
 - **list_smart_collections**: List automated collections
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shopify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 orders from my Shopify store."
+
+**🤖 AI Agent:**
+> I've retrieved your recent orders. Your last 5 include #1001 (Fulfilled), #1002 (Pending), and three others. Would you like to see the customer details for the pending order?
+
+---
+
+**👤 You:**
+> "Search for a customer named 'John Doe' in Shopify."
+
+**🤖 AI Agent:**
+> Searching customers... I found one match for 'John Doe' (ID: 987654). He has made 3 orders and is a member of your 'VIP' group. Should I retrieve his full order history?
+
+---
+
+**👤 You:**
+> "Show me the details for product ID 123456."
+
+**🤖 AI Agent:**
+> Fetching product info... Product 123456 ('Organic Cotton T-Shirt') has 3 variants (Small, Medium, Large) with a total of 45 units in stock. Would you like to see the pricing for each variant?
+
+
 ## Installation & Usage
 
 To install and use the **Shopify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Shopify** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

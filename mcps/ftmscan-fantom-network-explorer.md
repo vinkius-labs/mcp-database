@@ -1,12 +1,14 @@
 # FtmScan (Fantom Network Explorer) MCP Server
 
-Access Fantom blockchain data directly—query wallet balances, transaction history, smart contract source code, and token transfers via FtmScan.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ftmscan-fantom-network-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ftmscan-fantom-network-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ftmscan-fantom-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ftmscan-fantom-network-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 19
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Fantom blockchain data directly—query wallet balances, transaction history, smart contract source code, and token transfers via FtmScan.
 
 ## Description
 Connect to the **Fantom Network** through FtmScan to inspect on-chain activity using natural language. This server allows your AI agent to act as a blockchain explorer, providing real-time data on accounts, transactions, and smart contracts.
@@ -54,6 +56,33 @@ Connect to the **Fantom Network** through FtmScan to inspect on-chain activity u
 - **get_transaction_status**: Check Transaction Execution Status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FtmScan (Fantom Network Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current FTM balance of address 0xbbbb6a3601eeed31c8245938021fb3d10e7c51e2?"
+
+**🤖 AI Agent:**
+> I've checked the balance for that address. It currently holds 1,250.45 FTM.
+
+---
+
+**👤 You:**
+> "Show me the last 5 normal transactions for 0xbbbb6a3601eeed31c8245938021fb3d10e7c51e2 sorted by newest."
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent normal transactions for that address. They include several transfers and contract interactions from the last few hours.
+
+---
+
+**👤 You:**
+> "Get the verified source code for the contract at 0x04068da6a83afcfa0e13ba15a6696662335d5b75."
+
+**🤖 AI Agent:**
+> I have successfully retrieved the verified source code for the contract. It appears to be a SpookySwap LP token contract written in Solidity.
+
+
 ## Installation & Usage
 
 To install and use the **FtmScan (Fantom Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **FtmScan (Fantom Network Explorer)** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

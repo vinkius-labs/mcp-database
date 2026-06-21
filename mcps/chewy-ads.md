@@ -1,12 +1,14 @@
 # Chewy Ads MCP Server
 
-Manage retail media and sponsored products via Chewy Ads — track campaigns, monitor performance, and audit keywords directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chewy-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chewy-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chewy-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chewy-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage retail media and sponsored products via Chewy Ads — track campaigns, monitor performance, and audit keywords directly from any AI agent.
 
 ## Description
 Connect your **Chewy Ads (PromoteIQ)** account to any AI agent and take full control of your retail media operations through natural conversation. Streamline how you manage sponsored products and advertising performance on Chewy.
@@ -45,6 +47,33 @@ Connect your **Chewy Ads (PromoteIQ)** account to any AI agent and take full con
 - **list_adgroup_keywords**: List keywords and their performance for an ad group
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chewy Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active campaigns in Chewy Ads."
+
+**🤖 AI Agent:**
+> Retrieving your active campaigns... I found 3: 'Puppy Food Launch', 'Cat Litter Promo', and 'Summer Treats'. Would you like to see the performance for any of these?
+
+---
+
+**👤 You:**
+> "What is my current account balance?"
+
+**🤖 AI Agent:**
+> Checking your account balance... Your current remaining budget is $1,250.00, and your daily cap is set to $100.00 across all active campaigns.
+
+---
+
+**👤 You:**
+> "Show me the top 5 keywords for the 'Cat Litter' ad group."
+
+**🤖 AI Agent:**
+> Retrieving keywords for 'Cat Litter'... The top 5 by impressions are: 'clumping litter', 'dust free litter', 'cat sand', 'unscented litter', and 'odor control'.
+
+
 ## Installation & Usage
 
 To install and use the **Chewy Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Chewy Ads** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

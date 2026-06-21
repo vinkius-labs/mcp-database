@@ -1,12 +1,14 @@
 # FirstQuadrant MCP Server
 
-Orchestrate AI-driven sales and marketing campaigns. Manage API keys, user registration, and campaign execution directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firstquadrant-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firstquadrant-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firstquadrant-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firstquadrant-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 59
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Orchestrate AI-driven sales and marketing campaigns. Manage API keys, user registration, and campaign execution directly through your AI agent.
 
 ## Description
 FirstQuadrant is an advanced platform for AI-driven outreach and campaign management. This MCP server allows you to integrate FirstQuadrant's powerful automation capabilities directly into your AI workflows.
@@ -93,6 +95,33 @@ FirstQuadrant is an advanced platform for AI-driven outreach and campaign manage
 - **update_deal**: Update a deal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FirstQuadrant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active campaigns in FirstQuadrant."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 3 active campaigns: 'Q4 Outreach' (ID: camp_001), 'Lead Nurturing' (ID: camp_002), and 'Re-engagement' (ID: camp_003).
+
+---
+
+**👤 You:**
+> "Run the campaign with ID camp_001."
+
+**🤖 AI Agent:**
+> Starting campaign 'Q4 Outreach' (camp_001) now. I will monitor the execution status for you.
+
+---
+
+**👤 You:**
+> "Generate a new API key for my development environment."
+
+**🤖 AI Agent:**
+> I've created a new API key for you. The ID is 'key_dev_99' and it is now ready for use in your development environment.
+
+
 ## Installation & Usage
 
 To install and use the **FirstQuadrant** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -101,4 +130,11 @@ To install and use the **FirstQuadrant** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

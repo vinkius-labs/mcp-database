@@ -1,12 +1,14 @@
 # MIT Open Library MCP Server
 
-Access millions of books, read them online, and explore the world largest open catalog of bibliographic data for every title.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mit-open-library)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mit-open-library)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mit-open-library-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mit-open-library-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 16
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access millions of books, read them online, and explore the world largest open catalog of bibliographic data for every title.
 
 ## Description
 Connect to the **Open Library API** — the Internet Archive's open catalog of over 20 million books.
@@ -80,6 +82,33 @@ Browse recently added books
 - **search_trending_subjects**: Browse popular books in a subject
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MIT Open Library** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find books about quantum computing published by MIT Press"
+
+**🤖 AI Agent:**
+> I've found MIT Press books on quantum computing, including textbooks on quantum algorithms, quantum information theory, and quantum error correction.
+
+---
+
+**👤 You:**
+> "Look up all books by Richard Feynman"
+
+**🤖 AI Agent:**
+> I've retrieved Richard Feynman's complete bibliography from Open Library, including The Feynman Lectures on Physics, Surely You're Joking, and QED.
+
+---
+
+**👤 You:**
+> "Find freely readable books on machine learning"
+
+**🤖 AI Agent:**
+> I've filtered for machine learning books with full-text availability on the Internet Archive. These editions can be borrowed or read online for free.
+
+
 ## Installation & Usage
 
 To install and use the **MIT Open Library** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **MIT Open Library** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

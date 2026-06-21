@@ -1,12 +1,14 @@
 # Fulcrum MCP Server
 
-Manage field data collection, track form records, and query datasets via AI agents with Fulcrum.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fulcrum)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fulcrum)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fulcrum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fulcrum-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage field data collection, track form records, and query datasets via AI agents with Fulcrum.
 
 ## Description
 Connect your **Fulcrum** environment to any AI agent to automate your field data collection and mobile inspection workflows through the Model Context Protocol (MCP). Fulcrum is a no-code mobile data collection platform used to build custom apps for field inspections, surveys, and inventory management. This MCP server enables you to retrieve dynamic form schemas, list collected records, and query massive datasets directly through natural conversation.
@@ -50,6 +52,33 @@ List roles
 - **query_records_sql**: Query data with SQL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fulcrum** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active forms/apps in my Fulcrum account."
+
+**🤖 AI Agent:**
+> Retrieving forms... I found 4 active forms, including 'Site Inspection' (ID: form_123) and 'Asset Inventory' (ID: form_456).
+
+---
+
+**👤 You:**
+> "Run a SQL query to get the last 5 records from form 'form_123'."
+
+**🤖 AI Agent:**
+> Executing query... I've retrieved the 5 most recent records from the 'Site Inspection' form. Would you like to see the specific data values for these entries?
+
+---
+
+**👤 You:**
+> "Show me the field schema for the 'Asset Inventory' form (ID: form_456)."
+
+**🤖 AI Agent:**
+> Fetching schema... The form contains 12 fields. Key fields include 'Asset Tag' (Type: Text, Required: Yes) and 'Condition' (Type: Choice).
+
+
 ## Installation & Usage
 
 To install and use the **Fulcrum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Fulcrum** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

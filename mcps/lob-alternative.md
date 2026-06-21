@@ -1,12 +1,14 @@
 # Lob MCP Server
 
-Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lob-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lob-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lob-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lob-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 9
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows.
 
 ## Description
 Connect your **Lob** account to any AI agent and manage direct mail through natural conversation.
@@ -49,6 +51,33 @@ Send a physical postcard
 - **verify_us_address**: Verify a US address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lob** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a welcome letter to a new customer and verify their address first."
+
+**🤖 AI Agent:**
+> Address verified! ✅ '123 Main St, Apt 4B, New York, NY 10001'. Deliverable: Yes. Type: Residential. Coordinates: 40.7484, -73.9967. Letter sent! ID: ltr_4521. To: John Smith. Pages: 2. Mail class: First Class. Expected delivery: Apr 30 — May 2. Cost: $0.92.
+
+---
+
+**👤 You:**
+> "Show all mail pieces sent this month with delivery status."
+
+**🤖 AI Agent:**
+> This month: 45 mail pieces. Letters: 28, Postcards: 12, Checks: 5. Delivered: 38 (84%). In Transit: 5. Processing: 2. Returned: 0. Avg delivery: 3.2 days. Total cost: $52.40. Campaign 'Spring Promo' postcards: 12 sent, 10 delivered.
+
+---
+
+**👤 You:**
+> "Create a check for $5,000 and browse mail templates."
+
+**🤖 AI Agent:**
+> Check created! ID: chk_8901. Amount: $5,000.00. To: Acme Corp, 456 Business Ave, Chicago, IL 60601. Memo: 'Q2 services payment'. Mail class: First Class. Expected delivery: May 1-3. Templates: 5 available. 'Welcome Letter' (HTML), 'Invoice Notice' (HTML), 'Thank You Card' (postcard), 'Payment Notice' (letter), 'Renewal Reminder' (postcard).
+
+
 ## Installation & Usage
 
 To install and use the **Lob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Lob** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

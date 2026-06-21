@@ -1,12 +1,14 @@
 # Novu MCP Server
 
-Automate multi-channel notifications via Novu — trigger workflows, manage subscribers, and handle preferences directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/novu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/novu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/novu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/novu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 39
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate multi-channel notifications via Novu — trigger workflows, manage subscribers, and handle preferences directly from any AI agent.
 
 ## Description
 Connect your **Novu** account to any AI agent and take full control of your notification infrastructure through natural conversation.
@@ -76,6 +78,33 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 - **upsert_subscriber_credentials**: Upsert subscriber credentials
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Novu** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Trigger the 'welcome-onboarding' workflow for subscriber 'user_99' with the payload { "name": "Alice" }."
+
+**🤖 AI Agent:**
+> I've triggered the 'welcome-onboarding' event for subscriber 'user_99'. The transaction has been initiated successfully.
+
+---
+
+**👤 You:**
+> "Search for a subscriber with the email 'support@example.com'."
+
+**🤖 AI Agent:**
+> I found a subscriber matching that email. The ID is 'sub_5544' and the name is 'Support Team'. Would you like to see their full preferences?
+
+---
+
+**👤 You:**
+> "Cancel the notification trigger with transaction ID 'tx_abc123'."
+
+**🤖 AI Agent:**
+> The workflow execution for transaction 'tx_abc123' has been successfully cancelled.
+
+
 ## Installation & Usage
 
 To install and use the **Novu** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **Novu** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

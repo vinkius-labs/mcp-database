@@ -1,12 +1,14 @@
 # EIA Coal & Mining — Solid Fuels Intelligence MCP Server
 
-U.S. coal industry data: mine-level production for every operating mine, market prices by rank (bituminous, subbituminous, lignite, anthracite), quality metrics (heat, sulfur, ash), international trade, reserves, and nuclear facility outages.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-coal-mining-solid-fuels-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-coal-mining-solid-fuels-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eia-coal-mining-solid-fuels-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eia-coal-mining-solid-fuels-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+U.S. coal industry data: mine-level production for every operating mine, market prices by rank (bituminous, subbituminous, lignite, anthracite), quality metrics (heat, sulfur, ash), international trade, reserves, and nuclear facility outages.
 
 ## Description
 Deep intelligence on U.S. coal production and the solid fuels market.
@@ -37,6 +39,55 @@ Get coal market prices by rank, region, and mine type
 - **get_coal_reserves**: Get coal reserves, productive capacity, and stocks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EIA Coal & Mining — Solid Fuels Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the largest coal mines in the U.S.?"
+
+**🤖 AI Agent:**
+> ⛏️ **Top 5 U.S. Coal Mines by Production**
+
+1. North Antelope Rochelle (WY) — 96M short tons
+2. Black Thunder (WY) — 68M
+3. Antelope Mine (WY) — 38M
+4. Belle Ayr (WY) — 28M
+5. Cordero Rojo (WY) — 26M
+
+Wyoming's Powder River Basin dominates U.S. production.
+
+---
+
+**👤 You:**
+> "What is the current price of bituminous coal?"
+
+**🤖 AI Agent:**
+> 🪨 **Bituminous Coal — Market Price**
+
+Average: $68.40/short ton
+Appalachia: $82.50/ton
+Illinois Basin: $52.30/ton
+Western: $14.80/ton (subbituminous)
+
+Prices vary dramatically by region and coal rank.
+
+---
+
+**👤 You:**
+> "Are there any nuclear plant outages right now?"
+
+**🤖 AI Agent:**
+> ☢️ **Current Nuclear Outages**
+
+3 reactors currently offline:
+1. Byron Unit 2 (IL) — Refueling, ETA: 45 days
+2. Calvert Cliffs Unit 1 (MD) — Planned maintenance
+3. South Texas Unit 2 (TX) — Unplanned, investigating
+
+90 of 93 commercial reactors operating.
+
+
 ## Installation & Usage
 
 To install and use the **EIA Coal & Mining — Solid Fuels Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +96,11 @@ To install and use the **EIA Coal & Mining — Solid Fuels Intelligence** MCP se
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

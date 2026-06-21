@@ -1,12 +1,14 @@
 # GitScrum MCP Server
 
-Manage workspaces, projects, workflows, and labels via GitScrum — browse your organizational structure and configure boards directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitscrum-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitscrum-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 16
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage workspaces, projects, workflows, and labels via GitScrum — browse your organizational structure and configure boards directly from any AI agent.
 
 ## Description
 ### What you can do
@@ -53,6 +55,33 @@ List tasks in a project
 - **workspace_stats**: Get workspace statistics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitScrum** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all the workspaces I have access to on GitScrum."
+
+**🤖 AI Agent:**
+> I found 3 workspaces on your account: 'Acme Engineering' (slug: acme-eng), 'Design Studio' (slug: design-studio), and 'Internal Ops' (slug: internal-ops). The first one has 12 active projects. Which workspace would you like to explore?
+
+---
+
+**👤 You:**
+> "Create a new project called 'Mobile App v2' in the acme-eng workspace with a description."
+
+**🤖 AI Agent:**
+> Done! 'Mobile App v2' has been created in the acme-eng workspace with slug 'mobile-app-v2'. It's set up with the default workflow columns: To Do, In Progress, Review, and Done. Shall I add custom labels or invite team members?
+
+---
+
+**👤 You:**
+> "What labels are available in the web-app project?"
+
+**🤖 AI Agent:**
+> The web-app project has 5 labels: 🔴 'Critical' (#E74C3C), 🟡 'Enhancement' (#F39C12), 🔵 'Frontend' (#3498DB), 🟢 'Backend' (#27AE60), and 🟣 'DevOps' (#9B59B6). Would you like to create additional labels or apply any of these to tasks?
+
+
 ## Installation & Usage
 
 To install and use the **GitScrum** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **GitScrum** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

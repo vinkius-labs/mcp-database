@@ -1,12 +1,14 @@
 # Printify MCP Server
 
-Automate your print-on-demand business — manage shops, create products, and track orders directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/printify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/printify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/printify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 22
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate your print-on-demand business — manage shops, create products, and track orders directly from any AI agent.
 
 ## Description
 Connect your **Printify** account to any AI agent and manage your entire print-on-demand workflow through natural conversation.
@@ -61,6 +63,33 @@ Disconnect a shop from the Printify account
 - **update_webhook**: Update an existing webhook
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Printify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Printify shops."
+
+**🤖 AI Agent:**
+> I've found 2 shops in your account: 'My Awesome Merch' (ID: 12345) and 'Summer Collection' (ID: 67890). Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Show me available t-shirt blueprints in the catalog."
+
+**🤖 AI Agent:**
+> Fetching blueprints... I found several options, including the 'Unisex Jersey Short Sleeve Tee' (ID: 6) and the 'Heavy Cotton Tee' (ID: 2). Would you like to see the print providers for one of these?
+
+---
+
+**👤 You:**
+> "What are the shipping costs for blueprint 6 from print provider 45?"
+
+**🤖 AI Agent:**
+> Checking shipping details... For the Unisex Jersey Tee (ID: 6) via Monster Digital (ID: 45), shipping starts at $4.75 for the US with an estimated handling time of 2-5 business days.
+
+
 ## Installation & Usage
 
 To install and use the **Printify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Printify** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

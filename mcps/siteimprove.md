@@ -1,12 +1,14 @@
 # Siteimprove MCP Server
 
-Monitor and improve your website quality — track accessibility, SEO, content QA, and broken links across your domains with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/siteimprove)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/siteimprove)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/siteimprove-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/siteimprove-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 9
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Monitor and improve your website quality — track accessibility, SEO, content QA, and broken links across your domains with AI agents.
 
 ## Description
 Connect your **Siteimprove** account to any AI agent to automatically pull website quality scores, accessibility issues, and SEO metrics into your workspace. Turn raw analytics into actionable insights without leaving your chat.
@@ -46,6 +48,49 @@ Stop digging through separate Siteimprove dashboards to figure out why your DCI 
 - **list_broken_links**: Lists all broken links found on a specific site
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Siteimprove** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all monitored sites in my Siteimprove account."
+
+**🤖 AI Agent:**
+> I found 3 monitored sites in your Siteimprove account:
+1. Acme Corporation Data (ID: 1547844111) - https://acme.org
+2. ACME France Store (ID: 1545698711) - https://fr.acme.org
+3. Support Desk Portal (ID: 1698782331) - https://support.acme.org
+
+For which site would you like to retrieve the DCI Summary or check broken links?
+
+---
+
+**👤 You:**
+> "Get the latest accessibility issues for site 1547844111."
+
+**🤖 AI Agent:**
+> There are 4 high-priority accessibility issues on `https://acme.org`:
+- Missing `alt` tags on 18 image elements (/blog/new-post)
+- Color contrast ratio fails WCAG 2.1 AA on the primary `#header`
+- Empty heading elements detected on (/contact)
+- Multiple duplicate IDs found across login forms.
+
+Should I group these by page?
+
+---
+
+**👤 You:**
+> "What is the DCI Summary score for my main domain?"
+
+**🤖 AI Agent:**
+> The overall DCI (Digital Certainty Index) score for your main site is **83.4**.
+- QA Score: **91.0**
+- SEO Score: **86.2**
+- Accessibility Score: **73.0**
+
+The most significant opportunity is improving your Accessibility compliance score. Should I pull the exact issues causing the low accessibility rating?
+
+
 ## Installation & Usage
 
 To install and use the **Siteimprove** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +99,11 @@ To install and use the **Siteimprove** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

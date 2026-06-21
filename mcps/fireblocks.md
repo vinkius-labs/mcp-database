@@ -1,12 +1,14 @@
 # Fireblocks MCP Server
 
-Securely manage digital assets, vault accounts, and blockchain transactions via the Fireblocks Digital Asset Platform directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fireblocks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fireblocks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fireblocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fireblocks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 40
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Securely manage digital assets, vault accounts, and blockchain transactions via the Fireblocks Digital Asset Platform directly from your AI agent.
 
 ## Description
 Connect your **Fireblocks** workspace to any AI agent to orchestrate institutional-grade digital asset operations through natural language conversation.
@@ -75,6 +77,33 @@ Connect your **Fireblocks** workspace to any AI agent to orchestrate institution
 - **validate_travel_rule**: Validate a transaction against Travel Rule requirements
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fireblocks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 10 vault accounts in my Fireblocks workspace."
+
+**🤖 AI Agent:**
+> I've retrieved your vault accounts. You have 'Main Vault' (ID: 0), 'Staking-ETH' (ID: 5), and 'Trading-Hot' (ID: 12) among others. Would you like to see the asset balances for any of these?
+
+---
+
+**👤 You:**
+> "What is the BTC balance in vault account ID 0?"
+
+**🤖 AI Agent:**
+> In vault account 0 (Main Vault), the BTC balance is 1.45 BTC available, with a total balance of 1.50 BTC (0.05 BTC pending).
+
+---
+
+**👤 You:**
+> "Create a transaction to send 0.1 ETH from vault 0 to external wallet 'Exchange-Wallet'."
+
+**🤖 AI Agent:**
+> I've initiated the transaction request. Transaction ID: tx-98765. The status is currently 'SUBMITTED' and is awaiting approval in your Fireblocks console.
+
+
 ## Installation & Usage
 
 To install and use the **Fireblocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Fireblocks** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

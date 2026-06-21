@@ -1,12 +1,14 @@
 # Listclean MCP Server
 
-Verify and validate email addresses in real-time or batch via the Listclean API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/listclean)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/listclean)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/listclean-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/listclean-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 5
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Verify and validate email addresses in real-time or batch via the Listclean API.
 
 ## Description
 Connect your **Listclean** account to any AI agent to automate your email hygiene and deliverability workflows. This MCP server enables your agent to verify single email addresses instantly, process batch validations, and monitor your verification credits directly from natural language interfaces.
@@ -44,6 +46,33 @@ Verify multiple email addresses in one batch
 Verify a single email address in real-time
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Listclean** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify the email address 'test@example.com' in Listclean."
+
+**🤖 AI Agent:**
+> I've checked the address. 'test@example.com' is marked as 🟢 Clean (valid email). You can safely send to this recipient.
+
+---
+
+**👤 You:**
+> "Show my recent email verification logs."
+
+**🤖 AI Agent:**
+> I've retrieved your logs. Your last 5 verifications include addresses from 'gmail.com', 'outlook.com', and a disposable domain. Would you like the full details for any of them?
+
+---
+
+**👤 You:**
+> "How many verification credits do I have left?"
+
+**🤖 AI Agent:**
+> You currently have 12,450 verification credits remaining in your Listclean account.
+
+
 ## Installation & Usage
 
 To install and use the **Listclean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Listclean** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

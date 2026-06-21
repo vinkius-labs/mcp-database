@@ -1,12 +1,14 @@
 # Pipefy MCP Server
 
-Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pipefy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipefy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipefy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipefy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** project-management
-**Tools Count:** 14
+
+**Category:** [project-management](../categories/project-management.md)
+
+Manage workflows via Pipefy — list pipes, create cards, move phases, update fields, and track processes directly from any AI agent.
 
 ## Description
 Connect your **Pipefy** account to any AI agent and take full control of your process management workflows through natural conversation.
@@ -117,6 +119,45 @@ Common updates: changing priority, updating contact info, modifying descriptions
 Update a specific field value on a card
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pipefy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all pipes in my organization and show me the cards in the 'IT Support' pipe."
+
+**🤖 AI Agent:**
+> I've retrieved your organization's pipes. You have 5 active pipes: 'IT Support', 'HR Onboarding', 'Purchase Requests', 'Bug Tracking', and 'Content Approval'. In the 'IT Support' pipe, I found 12 cards: 4 in 'New Requests', 5 in 'In Progress', and 3 in 'Waiting for User'. The oldest card has been waiting 5 days. Would you like the full details of any specific card?
+
+---
+
+**👤 You:**
+> "Create a new purchase request card in the Purchase Requests pipe with these details: Requester: Maria Silva, Item: MacBook Pro 16", Quantity: 2, Justification: Design team replacement."
+
+**🤖 AI Agent:**
+> I've successfully created the purchase request card:
+- **Card ID**: 12345678
+- **Title**: Purchase Request - Maria Silva
+- **Current Phase**: New Requests
+- **Fields**: Requester: Maria Silva, Item: MacBook Pro 16", Quantity: 2, Justification: Design team replacement
+
+The card is now in the 'New Requests' phase and ready for review. Would you like me to move it to 'Manager Approval' phase?
+
+---
+
+**👤 You:**
+> "Search for all cards in the IT Support pipe where the email field contains 'john@company.com' and show me their current status."
+
+**🤖 AI Agent:**
+> I found 3 cards in the IT Support pipe for john@company.com:
+
+1. **Card #12345** — 'Monitor not displaying' — Phase: In Progress — Created: 2024-04-01
+2. **Card #12389** — 'Keyboard replacement request' — Phase: Waiting for Parts — Created: 2024-04-03
+3. **Card #12401** — 'VPN access issue' — Phase: Resolved — Created: 2024-04-05
+
+Two cards are still active (In Progress and Waiting for Parts), and one is resolved. Would you like the full details of any specific card?
+
+
 ## Installation & Usage
 
 To install and use the **Pipefy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -125,4 +166,11 @@ To install and use the **Pipefy** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

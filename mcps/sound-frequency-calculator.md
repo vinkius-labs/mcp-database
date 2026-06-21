@@ -1,12 +1,14 @@
 # Sound Frequency Calculator MCP Server
 
-Calculate musical note frequencies, Solfeggio resonances, and harmonic series.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sound-frequency-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sound-frequency-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sound-frequency-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sound-frequency-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** science
-**Tools Count:** 3
+
+**Category:** [science](../categories/science.md)
+
+Calculate musical note frequencies, Solfeggio resonances, and harmonic series.
 
 ## Description
 ## Connect AI Agents to Musical Frequency Calculations
@@ -26,6 +28,33 @@ Connects through Vinkius Edge -- one URL, one token, no API keys to manage.
 - **match_solfeggio_resonance**: Identifies which Solfeggio frequency is numerically closest to a provided target frequency
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sound Frequency Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the frequency of A4 in 432Hz tuning?"
+
+**🤖 AI Agent:**
+> In the esoteric (432Hz) tuning system, the frequency for note A in octave 4 is exactly 432.0 Hz.
+
+---
+
+**👤 You:**
+> "Find the closest Solfeggio resonance for 530Hz."
+
+**🤖 AI Agent:**
+> The frequency 530Hz is closest to the 528Hz Solfeggio resonance, with a difference of only 2Hz.
+
+---
+
+**👤 You:**
+> "Generate the first 3 harmonics for 100Hz."
+
+**🤖 AI Agent:**
+> The harmonic series for 100Hz (up to 3 harmonics) is: [100.0, 200.0, 300.0].
+
+
 ## Installation & Usage
 
 To install and use the **Sound Frequency Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -34,4 +63,11 @@ To install and use the **Sound Frequency Calculator** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

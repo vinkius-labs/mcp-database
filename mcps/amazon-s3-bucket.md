@@ -1,12 +1,14 @@
 # Amazon S3 Bucket MCP Server
 
-Single-bucket object storage for AI agents — scoped access to one S3 bucket for secure, focused data operations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-s3-bucket)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-s3-bucket)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-s3-bucket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-s3-bucket-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Single-bucket object storage for AI agents — scoped access to one S3 bucket for secure, focused data operations.
 
 ## Description
 Grant your AI agent **precise, scoped access** to a single Amazon S3 bucket — no more, no less. Unlike full S3 access, this integration enforces the principle of least privilege: your agent can read, write, and manage objects exclusively within one pre-configured bucket.
@@ -53,6 +55,33 @@ List objects in the bucket
 - **put_object**: Upload an object
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amazon S3 Bucket** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all files in this bucket."
+
+**🤖 AI Agent:**
+> I've listed the contents of your bucket. You have 12 objects, including 3 CSV files in the 'reports/' prefix and 5 JSON logs under 'events/2026/'. The largest file is 'reports/annual-summary.csv' at 18 MB. Would you like me to retrieve the content of a specific file?
+
+---
+
+**👤 You:**
+> "Upload this JSON config to 'settings/app-config.json'."
+
+**🤖 AI Agent:**
+> Done! I've uploaded the JSON configuration to 'settings/app-config.json' in your bucket. The object is now available at that key. Would you like me to verify the upload by retrieving the metadata?
+
+---
+
+**👤 You:**
+> "Check the access policy on this bucket."
+
+**🤖 AI Agent:**
+> I've retrieved the bucket policy. The current configuration allows read access from a specific IAM role and denies all public access. The bucket also has server-side encryption (AES-256) enforced on all PUT operations. Your setup looks secure. Would you like me to also check the ACL?
+
+
 ## Installation & Usage
 
 To install and use the **Amazon S3 Bucket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Amazon S3 Bucket** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

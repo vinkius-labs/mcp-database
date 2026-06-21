@@ -1,12 +1,14 @@
 # World Bank Full Access MCP Server
 
-The ultimate Mega-Server integration: A massive 30-tool suite granting your AI zero-auth access to the entire World Bank catalog (29,506 indicators) across all 21 specific categories.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-full-access)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/world-bank-full-access)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/world-bank-full-access-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/world-bank-full-access-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 30
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The ultimate Mega-Server integration: A massive 30-tool suite granting your AI zero-auth access to the entire World Bank catalog (29,506 indicators) across all 21 specific categories.
 
 ## Description
 The definitive **Mega-Server** for AI-driven statistical research. Why choose one domain when your AI agent can have them all? This server bundles **30 native tools** covering every single World Bank macro-category into a single powerhouse integration.
@@ -66,6 +68,59 @@ List World Bank income levels
 - **get_inflation**: Get inflation rate (consumer prices, annual %)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **World Bank Full Access** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for gender-related indicators and pull data for Nordic countries."
+
+**🤖 AI Agent:**
+> 🌍 **Gender Indicators: Nordic Countries**
+
+Found 47 gender-related indicators. Key findings for Sweden, Norway, Denmark, and Finland: Female labor force participation averages 76%, gender parity in education is near 1.0, and maternal mortality rates are among the lowest globally.
+
+---
+
+**👤 You:**
+> "What topics are available in the World Bank data catalog?"
+
+**🤖 AI Agent:**
+> 🌍 **World Bank Topics (21 Categories)**
+
+1. Agriculture & Rural Development
+2. Aid Effectiveness
+3. Economy & Growth
+4. Education
+5. Energy & Mining
+6. Environment
+7. Financial Sector
+8. Gender
+9. Health
+10. Infrastructure
+11. Poverty
+12. Private Sector
+13. Public Sector
+14. Science & Technology
+15. Social Development
+16. Social Protection & Labor
+17. Trade
+18. Urban Development
+19. Climate Change
+20. External Debt
+21. Millenium Development Goals
+
+---
+
+**👤 You:**
+> "Find an indicator for 'women in parliament' and get data for the G7 countries."
+
+**🤖 AI Agent:**
+> 🌍 **Women in Parliament: G7 Countries**
+
+Indicator found: SG.GEN.PARL.ZS (Proportion of seats held by women in national parliaments). Results show France leads the G7 at ~37%, followed by Germany ~35%, UK ~34%, Italy ~33%, Canada ~31%, Japan ~10%, and USA ~28%.
+
+
 ## Installation & Usage
 
 To install and use the **World Bank Full Access** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +129,11 @@ To install and use the **World Bank Full Access** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

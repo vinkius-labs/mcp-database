@@ -1,12 +1,14 @@
 # Context Engineering Prover MCP Server
 
-An AI dumped 80,000 tokens into a prompt — 64,000 of them unreferenced noise. It said 'best practice' to justify the structure and 'looks good' to measure quality. That is not context engineering — that is a copy-paste pipeline. This tool forces five context axes: relevance auditing, priority structuring, token budgeting, evidence grounding, and quality measurement.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/context-engineering-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/context-engineering-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/context-engineering-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/context-engineering-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An AI dumped 80,000 tokens into a prompt — 64,000 of them unreferenced noise. It said 'best practice' to justify the structure and 'looks good' to measure quality. That is not context engineering — that is a copy-paste pipeline. This tool forces five context axes: relevance auditing, priority structuring, token budgeting, evidence grounding, and quality measurement.
 
 ## Description
 ## The Problem
@@ -56,6 +58,33 @@ Tool calls are obligations. The LLM cannot skip the relevance audit or ignore th
 Structured reflection tool for rigorous context engineering before constructing any prompt. Forces the agent to audit every context block for relevance, structure context with priority ordering and semantic delimiters, specify token budgets with per-block allocation and waste analysis, ground instruction decisions in measurable evidence, and define quantifiable quality metrics. Catches Context Dumping (including everything without justification — "all files are relevant" when 40% of tokens go to unreferenced context), Unstructured Context (no priority ordering, no delimiters, no role labels — "just paste it in" causes attention decay on critical information), Unbounded Context (no token budget — "it fits in the window" ignores that attention degrades 15-20% for middle-position tokens in long contexts), Ungrounded Instructions (vibes-based choices — "best practice" without citing test results, documented patterns, or measured improvements), and Unmeasured Quality (no metric — "looks good" instead of task accuracy on eval cases with baseline and target). Call once per prompt/context construction or evaluation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Context Engineering Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I'm building a chatbot. I'll include the entire codebase, all docs, and the full conversation history in every prompt. The context window is 128K, so it all fits."
+
+**🤖 AI Agent:**
+> CONTEXT_IRRELEVANT — 'It fits' is not a context strategy. 128K tokens with 80% unreferenced content means 102K tokens of noise degrading attention. Apply the removal test: remove a file, if the output doesn't change, that file is noise. Audit each block: what is its purpose? What breaks if removed? If removal changes nothing, the block degrades quality.
+
+---
+
+**👤 You:**
+> "Context audit: Block 1 — schema.prisma (2,400 tokens, model needs table structure for SQL generation, removal causes hallucinated column names). Block 2 — README.md conventions (800 tokens, naming patterns, removal causes inconsistent naming). Block 3 — 3 few-shot examples (1,800 tokens, reinforces output format). Budget: 8,192 total, 792 response headroom. Structure: <SYSTEM> → <SCHEMA> → <EXAMPLES>. Evidence: delimiters improved accuracy 23% on 50 eval cases. Metric: SQL accuracy on 50 test cases, baseline 62%, target 85%."
+
+**🤖 AI Agent:**
+> CONTEXT_PROVEN — Context engineering validated. Relevance: each block justified with removal test. Structure: priority-ordered with semantic delimiters. Bounds: 8,192 tokens allocated per block with 792 response headroom. Grounding: delimiters validated by A/B test (23% accuracy improvement). Measurement: SQL accuracy on 50 test cases, baseline 62%, target 85%. Production-ready context construction.
+
+---
+
+**👤 You:**
+> "I structured my context with delimiters and ordered by priority. I think the structure helps based on best practice. Token budget: it fits in the window. Quality: the outputs look better than before."
+
+**🤖 AI Agent:**
+> CONTEXT_UNGROUNDED — Structure and ordering pass, but the grounding fails. 'I think it helps' and 'best practice' are not evidence. Cite a test result: 'delimiters improved accuracy by X% on N eval cases.' Cite a documented pattern: 'diminishing returns beyond 3 examples.' Also: 'it fits' is not a token budget — allocate per block with waste ratio. 'Looks better' is not a metric — define baseline, target, and measurement method.
+
+
 ## Installation & Usage
 
 To install and use the **Context Engineering Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Context Engineering Prover** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # OpenCost (K8s Cost) MCP Server
 
-Monitor and analyze Kubernetes infrastructure costs — query workload allocations, backing assets, and cloud billing directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/opencost-k8s-cost)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opencost-k8s-cost)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opencost-k8s-cost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opencost-k8s-cost-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 6
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Monitor and analyze Kubernetes infrastructure costs — query workload allocations, backing assets, and cloud billing directly from your AI agent.
 
 ## Description
 Connect your **OpenCost** instance to any AI agent to gain real-time visibility into your Kubernetes spending and infrastructure efficiency through natural language.
@@ -43,6 +45,33 @@ Get samples of third-party service costs over time steps
 - **set_log_level**: Change OpenCost log level at runtime
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenCost (K8s Cost)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the cost allocation for all namespaces over the last 7 days."
+
+**🤖 AI Agent:**
+> I've retrieved the allocation data for the last 7 days. The 'production' namespace accounts for 65% of the spend ($420.50), followed by 'staging' at 20% ($130.00). Would you like to see the breakdown by controller kind?
+
+---
+
+**👤 You:**
+> "What are the backing asset costs for our nodes today?"
+
+**🤖 AI Agent:**
+> Querying asset data... For today, your cluster nodes have incurred a cost of $45.20. This includes compute costs for 12 m5.large instances and associated EBS volumes. No load balancer costs were detected in this window.
+
+---
+
+**👤 You:**
+> "Get the total summary for third-party service costs for the current month."
+
+**🤖 AI Agent:**
+> The total custom costs for this month sum up to $1,250.00. The largest contributors are Datadog ($800.00) and MongoDB Atlas ($450.00). Would you like to see the daily timeseries for these services?
+
+
 ## Installation & Usage
 
 To install and use the **OpenCost (K8s Cost)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **OpenCost (K8s Cost)** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

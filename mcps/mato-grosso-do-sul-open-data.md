@@ -1,12 +1,14 @@
 # Mato Grosso do Sul Open Data MCP Server
 
-Access public datasets from the state of Mato Grosso do Sul (Brazil) — list packages, search datastores, and query public records via SQL.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mato-grosso-do-sul-open-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mato-grosso-do-sul-open-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mato-grosso-do-sul-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mato-grosso-do-sul-open-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 7
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access public datasets from the state of Mato Grosso do Sul (Brazil) — list packages, search datastores, and query public records via SQL.
 
 ## Description
 Connect to the **Mato Grosso do Sul (MS) Open Data Portal** to explore and analyze public information from the Brazilian state. This server allows AI agents to programmatically access datasets, organizations, and specific resource records.
@@ -42,6 +44,33 @@ Connect to the **Mato Grosso do Sul (MS) Open Data Portal** to explore and analy
 - **list_packages**: List all dataset packages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mato Grosso do Sul Open Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the public data packages available in Mato Grosso do Sul."
+
+**🤖 AI Agent:**
+> I've retrieved the list of available packages. There are several datasets including 'frota-de-veiculos', 'receita-corrente-liquida', and 'gastos-com-pessoal'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Search for records containing 'Campo Grande' in the resource ID 550e8400-e29b-41d4-a716-446655440000."
+
+**🤖 AI Agent:**
+> Searching the DataStore... I found 15 records matching 'Campo Grande' in that resource. Most relate to urban infrastructure projects. Should I list the specific values for you?
+
+---
+
+**👤 You:**
+> "Run a SQL query to select all columns from resource 'receita-2023' where the value is greater than 1000000."
+
+**🤖 AI Agent:**
+> Executing SQL query on the DataStore... The query returned 8 high-value entries. The largest entry is for 'Transferências Constitucionais' with a value of 5,400,000. Would you like the full breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Mato Grosso do Sul Open Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Mato Grosso do Sul Open Data** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

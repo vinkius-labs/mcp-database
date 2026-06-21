@@ -1,12 +1,14 @@
 # Infinity MCP Server
 
-Organize any kind of work with flexible boards, lists, and tables that adapt to how your team thinks and operates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/infinity)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infinity)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infinity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infinity-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Organize any kind of work with flexible boards, lists, and tables that adapt to how your team thinks and operates.
 
 ## Description
 Connect your **Infinity** account to any AI agent and manage projects through natural conversation.
@@ -52,6 +54,33 @@ List all tasks/items in a board
 - **update_board_item**: Modify an existing item
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Infinity** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all workspaces and the boards in the 'Product Development' workspace."
+
+**🤖 AI Agent:**
+> Workspaces: 4. Product Development, Marketing, Operations, HR. 'Product Development' boards: 1) 'Sprint Board' (42 items, 8 folders). 2) 'Bug Tracker' (23 items). 3) 'Feature Requests' (56 items). 4) 'Roadmap' (12 items). Total: 133 items across 4 boards. Would you like to see items or folders in a specific board?
+
+---
+
+**👤 You:**
+> "Create a new task in the Sprint Board and list all items with 'In Progress' status."
+
+**🤖 AI Agent:**
+> Task created! 'Implement OAuth integration' in Sprint Board (item_4521). Assigned folder: 'Sprint 12'. Status: To Do. Priority: High. In Progress items (8): 'API rate limiting' (Sarah, 3 days), 'Dashboard redesign' (Mike, 5 days), 'Email notifications' (Lisa, 2 days), 5 others. Sprint Board: 42 → 43 items.
+
+---
+
+**👤 You:**
+> "Show the attributes on the Bug Tracker board and the folder structure."
+
+**🤖 AI Agent:**
+> Bug Tracker attributes: 8 fields. Status (dropdown: Open, In Progress, Resolved, Closed), Priority (dropdown: Critical, High, Medium, Low), Assignee (person), Due Date (date), Component (dropdown: Frontend, Backend, API, Mobile), Steps to Reproduce (text), Screenshots (file), Resolution (text). Folders: 4. 'Frontend Bugs' (8 items), 'Backend Bugs' (6), 'API Issues' (5), 'Mobile' (4). Total: 23 bug reports.
+
+
 ## Installation & Usage
 
 To install and use the **Infinity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Infinity** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

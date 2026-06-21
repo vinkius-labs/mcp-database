@@ -1,12 +1,14 @@
 # Persona MCP Server
 
-Manage identity verification workflows via Persona — handle inquiries, manage accounts, and inspect verifications directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/persona)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/persona)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/persona-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/persona-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 27
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage identity verification workflows via Persona — handle inquiries, manage accounts, and inspect verifications directly from your AI agent.
 
 ## Description
 Connect your **Persona** dashboard to any AI agent to streamline your identity verification and KYC/AML compliance workflows through natural conversation.
@@ -66,6 +68,33 @@ List all Reports
 - **update_account**: Update an Account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Persona** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent 10 identity inquiries."
+
+**🤖 AI Agent:**
+> I've retrieved the latest inquiries. There are 10 records found, including Inquiry inq_123abc (Status: completed) and inq_456def (Status: pending). Would you like to inspect the details of the pending one?
+
+---
+
+**👤 You:**
+> "Get the account details for account ID acc_789ghi."
+
+**🤖 AI Agent:**
+> Fetching account acc_789ghi... This account is associated with user 'Jane Doe', created on 2023-10-12, and currently has 2 completed verifications linked to it.
+
+---
+
+**👤 You:**
+> "Approve inquiry inq_456def."
+
+**🤖 AI Agent:**
+> Processing approval for inq_456def... The inquiry has been successfully approved. The user's status has been updated in the Persona dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Persona** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Persona** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

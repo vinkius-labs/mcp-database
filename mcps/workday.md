@@ -1,12 +1,14 @@
 # Workday MCP Server
 
-Manage workers, payroll data, org structures, and HR workflows on Workday — the enterprise HCM platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workday)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workday)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workday-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workday-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage workers, payroll data, org structures, and HR workflows on Workday — the enterprise HCM platform.
 
 ## Description
 Connect your **Workday** tenant to any AI agent and manage your human capital operations through natural conversation.
@@ -57,6 +59,33 @@ Execute a Workday Report-as-a-Service (RaaS) report
 Query any Workday REST API resource
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Workday** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many active employees do we have in the Engineering department?"
+
+**🤖 AI Agent:**
+> The Engineering supervisory organization currently has 247 active workers: 189 Regular Full-Time, 42 Contractors, and 16 Part-Time employees across 12 sub-organizations. Would you like a breakdown by location or job family?
+
+---
+
+**👤 You:**
+> "Show me the PTO balance for John Smith."
+
+**🤖 AI Agent:**
+> John Smith's Time Off Balances: Vacation — 14.5 days remaining (3 days pending approval), Sick Leave — 8 days available, Personal Days — 2 of 3 used. His next pending request is Dec 22–26 (vacation). Would you like me to approve it?
+
+---
+
+**👤 You:**
+> "Run the 'Monthly Headcount Report' for Q1 2026."
+
+**🤖 AI Agent:**
+> Monthly Headcount Report (Q1 2026): January — 1,245 (net +18), February — 1,263 (net +12), March — 1,275 (net +8). YTD net growth: +38 workers. Attrition rate: 2.1% (below 3% target). Top hiring departments: Engineering (+22), Sales (+11), Product (+5).
+
+
 ## Installation & Usage
 
 To install and use the **Workday** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Workday** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

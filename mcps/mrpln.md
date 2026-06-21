@@ -1,12 +1,14 @@
 # MRPLN MCP Server
 
-Plan manufacturing resources with production scheduling, material requirements, and capacity planning for growing factories.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mrpln)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mrpln)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mrpln-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mrpln-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Plan manufacturing resources with production scheduling, material requirements, and capacity planning for growing factories.
 
 ## Description
 Connect your **MRPLN** account to any AI agent to streamline your marketing automation and multi-channel customer engagement. MRPLN provides a unified platform for WhatsApp, SMS, and Email automation powered by AI.
@@ -47,6 +49,33 @@ Send a WhatsApp message
 - **update_customer**: Update an existing customer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MRPLN** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all customers in my MRPLN account."
+
+**🤖 AI Agent:**
+> I've retrieved your customer list. You have 45 registered leads, including 'John Smith' and 'Maria Garcia'. Would you like to see the details for a specific customer?
+
+---
+
+**👤 You:**
+> "Send a WhatsApp message to +123456789 using the 'welcome_template'."
+
+**🤖 AI Agent:**
+> WhatsApp message sent successfully to +123456789! I used the 'welcome_template' as requested.
+
+---
+
+**👤 You:**
+> "Show me the performance of the 'Winter Sale' tactic."
+
+**🤖 AI Agent:**
+> The 'Winter Sale' tactic has achieved a 15% conversion rate so far, with 200 messages sent and 30 conversions recorded. Would you like to see a channel breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **MRPLN** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **MRPLN** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

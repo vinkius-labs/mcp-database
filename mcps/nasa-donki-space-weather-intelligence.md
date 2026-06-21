@@ -1,12 +1,14 @@
 # NASA DONKI — Space Weather Intelligence MCP Server
 
-NASA's Space Weather Database: coronal mass ejections (CMEs), solar flares (C/M/X class), geomagnetic storms, interplanetary shocks, solar energetic particles, radiation belt events, and real-time notifications from the DONKI system.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-donki-space-weather-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-donki-space-weather-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-donki-space-weather-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-donki-space-weather-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 7
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+NASA's Space Weather Database: coronal mass ejections (CMEs), solar flares (C/M/X class), geomagnetic storms, interplanetary shocks, solar energetic particles, radiation belt events, and real-time notifications from the DONKI system.
 
 ## Description
 DONKI (Database Of Notifications, Knowledge, Information) is NASA's comprehensive space weather database.
@@ -45,6 +47,41 @@ Get radiation belt enhancement events from NASA DONKI
 Get all recent DONKI space weather notifications
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NASA DONKI — Space Weather Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Were there any solar flares this month?"
+
+**🤖 AI Agent:**
+> ☀️ **Solar Flares — April 2026**
+
+| Date | Class | Peak | Region |
+|------|-------|------|--------|
+| Apr 2 | M2.1 | 14:32 UT | AR 3842 |
+| Apr 3 | C7.4 | 08:15 UT | AR 3840 |
+| Apr 3 | X1.2 | 22:47 UT | AR 3842 |
+
+3 flares this month. 1 X-class — may cause HF radio blackouts.
+
+---
+
+**👤 You:**
+> "Were there any major geomagnetic storms last year?"
+
+**🤖 AI Agent:**
+> Yes, there were 12 significant geomagnetic storms last year reaching Kp index 6 or higher. The most severe was a G4-class storm in May, which caused auroras to be visible as far south as Texas.
+
+---
+
+**👤 You:**
+> "Check if any interplanetary shocks are approaching."
+
+**🤖 AI Agent:**
+> Based on DONKI data, there is 1 interplanetary shock approaching. It is linked to a CME that erupted two days ago and is expected to pass by the DSCOVR satellite within the next 8-12 hours.
+
+
 ## Installation & Usage
 
 To install and use the **NASA DONKI — Space Weather Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +90,11 @@ To install and use the **NASA DONKI — Space Weather Intelligence** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

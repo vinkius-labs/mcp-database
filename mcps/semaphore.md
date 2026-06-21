@@ -1,12 +1,14 @@
 # Semaphore MCP Server
 
-Automate CI/CD workflows, manage pipelines, and monitor build jobs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/semaphore)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/semaphore)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/semaphore-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/semaphore-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 36
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate CI/CD workflows, manage pipelines, and monitor build jobs directly from your AI agent.
 
 ## Description
 Connect your **Semaphore CI/CD** account to any AI agent and take full control of your delivery lifecycle through natural conversation.
@@ -71,6 +73,33 @@ Connect your **Semaphore CI/CD** account to any AI agent and take full control o
 - **validate_yaml**: Validate a Semaphore pipeline YAML definition
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Semaphore** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 workflows for project 'api-service'."
+
+**🤖 AI Agent:**
+> I've retrieved the latest workflows for project 'api-service'. The most recent one (ID: wf-123) was triggered on 'master' and finished successfully. Would you like to see the pipeline details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the logs for job ID 889900 to see why the build failed."
+
+**🤖 AI Agent:**
+> Fetching logs for job 889900... The logs indicate a timeout during the 'npm install' step. It seems like a network issue with the registry. Would you like me to rerun the workflow?
+
+---
+
+**👤 You:**
+> "Rerun the workflow with ID wf-554433."
+
+**🤖 AI Agent:**
+> I have triggered a rerun for workflow wf-554433. A new workflow has been created with ID wf-554434. I'll monitor it for you.
+
+
 ## Installation & Usage
 
 To install and use the **Semaphore** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Semaphore** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

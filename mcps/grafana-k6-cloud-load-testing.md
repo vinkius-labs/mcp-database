@@ -1,12 +1,14 @@
 # Grafana k6 Cloud (Load Testing) MCP Server
 
-Manage load tests via k6 Cloud — run tests, monitor performance metrics, and audit thresholds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana-k6-cloud-load-testing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grafana-k6-cloud-load-testing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grafana-k6-cloud-load-testing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grafana-k6-cloud-load-testing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage load tests via k6 Cloud — run tests, monitor performance metrics, and audit thresholds.
 
 ## Description
 Connect your **Grafana Cloud k6** account to any AI agent and take full control of your performance engineering and load testing lifecycle through natural conversation.
@@ -58,6 +60,33 @@ Get performance metrics for a k6 run
 - **get_run_thresholds**: Get threshold evaluation results for a k6 run
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Grafana k6 Cloud (Load Testing)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my load tests in k6 Cloud"
+
+**🤖 AI Agent:**
+> I've found 4 load tests: 'API Stress Test' (ID: 123), 'Checkout Flow' (ID: 456), 'Inventory Spike' (ID: 789), and 'Frontend Smoke' (ID: 012). Which one would you like to check the last run status for?
+
+---
+
+**👤 You:**
+> "Show me the performance metrics for the last run of the 'API Stress Test'"
+
+**🤖 AI Agent:**
+> Retrieving metrics for run ID 'run-98765'… Average response time: 142ms, P95: 285ms, Failed requests: 0.2%, Max VUs: 500. All metrics are within acceptable ranges. Would you like me to check the threshold details?
+
+---
+
+**👤 You:**
+> "Start a new test run for 'Checkout Flow' (ID: 456)"
+
+**🤖 AI Agent:**
+> Trigging new run for 'Checkout Flow'… Done. New Run ID is 'run-13579'. It's currently in the QUEUED state. I'll let you know when the first VUs start injecting traffic.
+
+
 ## Installation & Usage
 
 To install and use the **Grafana k6 Cloud (Load Testing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Grafana k6 Cloud (Load Testing)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

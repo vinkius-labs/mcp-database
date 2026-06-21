@@ -1,12 +1,14 @@
 # U.S. EIA Energy Data MCP Server
 
-Equip your AI agent to access official U.S. energy statistics, track electricity generation, and monitor fuel prices via the EIA API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/us-eia-energy-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-eia-energy-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-eia-energy-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-eia-energy-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Equip your AI agent to access official U.S. energy statistics, track electricity generation, and monitor fuel prices via the EIA API.
 
 ## Description
 Integrate the **U.S. Energy Information Administration (EIA)**, the official source for U.S. energy statistics and analysis, directly into your AI workflow. Access real-time and historical data on electricity generation, petroleum and gasoline prices, natural gas production, coal distribution, and renewable energy consumption using natural language.
@@ -46,6 +48,33 @@ Retrieve a high-level summary of current U.S. energy production across all sourc
 - **list_regional_fuel_prices**: Identify fuel price variations across different U.S. regions (mock logic)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **U.S. EIA Energy Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List current petroleum prices in the U.S."
+
+**🤖 AI Agent:**
+> I've retrieved the latest petroleum prices, including WTI Crude ($75.20/barrel) and Retail Gasoline ($3.45/gallon). Would you like to see regional price variations for gasoline?
+
+---
+
+**👤 You:**
+> "Show me electricity generation stats for renewable energy."
+
+**🤖 AI Agent:**
+> In the latest period, Wind generated 45,000 MWh, Solar provided 12,000 MWh, and Hydro contributed 15,000 MWh to the U.S. grid. Should I pull the historical growth trend for Solar energy?
+
+---
+
+**👤 You:**
+> "Check the latest natural gas production levels."
+
+**🤖 AI Agent:**
+> Total U.S. Dry Natural Gas production is currently at 102 billion cubic feet per day. Underground storage levels are at 3,200 Bcf. Would you like to see the breakdown by production state?
+
+
 ## Installation & Usage
 
 To install and use the **U.S. EIA Energy Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **U.S. EIA Energy Data** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

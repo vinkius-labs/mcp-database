@@ -1,12 +1,14 @@
 # Google Home MCP Server
 
-Control Google Nest devices — thermostats, cameras, and doorbells via Smart Device Management (SDM) API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-home)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-home)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-home-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Control Google Nest devices — thermostats, cameras, and doorbells via Smart Device Management (SDM) API.
 
 ## Description
 Connect to **Google Nest devices** via the Smart Device Management (SDM) API and control your smart home from any AI agent. Manage thermostats, view camera feeds, and interact with doorbells.
@@ -102,6 +104,33 @@ Set both heating and cooling temperatures on a Nest thermostat
 Stop an active camera stream from a Nest camera or doorbell
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Home** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Nest devices and show me what thermostats I have."
+
+**🤖 AI Agent:**
+> I found 4 Nest devices in your home: 1) Nest Thermostat (Living Room) — currently in HEAT mode at 21°C, 2) Nest Camera (Front Door) — streaming ready, 3) Nest Doorbell (Backyard) — battery powered, 4) Nest Hub (Kitchen). Would you like to adjust any thermostat settings?
+
+---
+
+**👤 You:**
+> "Set my living room thermostat to 22°C heating mode."
+
+**🤖 AI Agent:**
+> Setting thermostat to HEAT mode at 22°C... Done! Your Living Room Nest Thermostat is now heating to 22°C. Current room temperature is 19.5°C. The HVAC system has activated and is heating. Estimated time to reach target: approximately 15 minutes.
+
+---
+
+**👤 You:**
+> "Show me the live feed from my front door camera."
+
+**🤖 AI Agent:**
+> Generating live stream URL for Front Door Nest Camera... Stream URL generated (RTSP). The stream is active for the next 5 minutes. Use any RTSP-compatible player to view the live feed. Remember to stop the stream when done to free up resources. Would you like me to stop the stream?
+
+
 ## Installation & Usage
 
 To install and use the **Google Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -110,4 +139,11 @@ To install and use the **Google Home** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

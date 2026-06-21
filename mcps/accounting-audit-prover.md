@@ -1,12 +1,14 @@
 # Accounting & Audit Prover MCP Server
 
-Forces AI agents to validate accounting arguments against explicit US standards (FASB ASC, PCAOB), demanding real materiality thresholds, Risk of Material Misstatement (ROMM) assessments, and grounded evidence instead of vague 'GAAP' appeals.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accounting-audit-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accounting-audit-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accounting-audit-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accounting-audit-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Forces AI agents to validate accounting arguments against explicit US standards (FASB ASC, PCAOB), demanding real materiality thresholds, Risk of Material Misstatement (ROMM) assessments, and grounded evidence instead of vague 'GAAP' appeals.
 
 ## Description
 AI agents generate accounting memos and audit plans that look professional but fail fundamentally on regulatory compliance. They rely on vague appeals to 'GAAP' rather than citing specific Codification (ASC) sections, and they propose audit procedures without first quantifying Materiality or the Risk of Material Misstatement (ROMM). In auditing, 'looks correct' is not an opinion.
@@ -38,6 +40,33 @@ Accounting & Audit Prover uses 5 Decision Pivots grounded in US accounting pract
 Structured reflection tool for US accounting and audit reasoning (GAAP/FASB ASC/PCAOB/AICPA). Forces the agent to construct rigorous, standard-grounded financial analysis before concluding. Catches Standard Blindness (vague "GAAP rules" without citing ASC/PCAOB codification), Unquantified Materiality (no numerical thresholds — "significant" is not a number), Ignored ROMM (proposing procedures without assessing Risk of Material Misstatement or internal controls), Vague Procedures ("we will audit" without naming substantive or analytical tests), and Ungrounded Evidence (concluding without citing specific documentary proof). Call once per accounting issue or audit engagement area
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Accounting & Audit Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "A client recognized $50M in revenue before delivering the software. According to GAAP, this is wrong. They should wait until delivery. Validate this using the prover."
+
+**🤖 AI Agent:**
+> Verdict: STANDARD_COMPLIANCE_BLIND. 'According to GAAP' is not a citation. Cite FASB ASC 606, identify the specific performance obligation, quantify materiality, and specify the audit evidence required to verify delivery.
+
+---
+
+**👤 You:**
+> "Analyze the revenue recognition of a $5M software contract under ASC 606. Validate the conclusion with the prover, quantifying materiality at $100k, assessing ROMM as High due to complex performance obligations, and detailing specific vouching procedures."
+
+**🤖 AI Agent:**
+> Verdict: REASONING_PROVEN. Standard compliance validated (ASC 606), materiality quantified ($100k), ROMM explicitly assessed (High), substantive procedures detailed, and grounded in evidence.
+
+---
+
+**👤 You:**
+> "Under PCAOB AS 2315, we will audit the inventory balance. The materiality is $500k. We will perform tests of details on the warehouse counts. Validate this plan."
+
+**🤖 AI Agent:**
+> Verdict: ROMM_IGNORED. You cited the standard, set materiality, and proposed procedures, but completely skipped the Risk of Material Misstatement assessment. Is inherent risk high? Control risk low? Assess ROMM before testing.
+
+
 ## Installation & Usage
 
 To install and use the **Accounting & Audit Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Accounting & Audit Prover** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

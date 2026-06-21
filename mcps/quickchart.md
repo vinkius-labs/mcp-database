@@ -1,12 +1,14 @@
 # QuickChart MCP Server
 
-Automate data visualization via QuickChart — generate charts, QR codes, barcodes, and word clouds directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/quickchart)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quickchart)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quickchart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quickchart-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 9
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Automate data visualization via QuickChart — generate charts, QR codes, barcodes, and word clouds directly from any AI agent.
 
 ## Description
 Connect **QuickChart** to your AI agent to transform raw data into professional visuals instantly. This server provides a comprehensive suite of tools for generating static images of charts, codes, and text visualizations.
@@ -50,6 +52,33 @@ Render a complex chart and return as base64 data URI
 - **render_google_chart**: Render a Google Chart and return as base64 data URI
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QuickChart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a bar chart showing sales: Jan (100), Feb (150), Mar (120)."
+
+**🤖 AI Agent:**
+> I've generated the chart for you. You can view the bar chart showing the sales trend for the first quarter here: [Chart URL]
+
+---
+
+**👤 You:**
+> "Create a QR code for 'https://vurb.com' with a rounded dot style."
+
+**🤖 AI Agent:**
+> I've created your customized QR code. Here is the link to the image: [QR Code URL]
+
+---
+
+**👤 You:**
+> "Generate a word cloud from this text: 'AI automation efficiency productivity growth innovation'."
+
+**🤖 AI Agent:**
+> I've processed the text and generated a word cloud visualization for you: [Word Cloud URL]
+
+
 ## Installation & Usage
 
 To install and use the **QuickChart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **QuickChart** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

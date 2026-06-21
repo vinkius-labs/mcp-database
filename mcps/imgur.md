@@ -1,12 +1,14 @@
 # Imgur MCP Server
 
-Manage Imgur content — upload images, organize albums, and browse the gallery directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/imgur)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/imgur)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/imgur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/imgur-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 19
+
+**Category:** [image-video](../categories/image-video.md)
+
+Manage Imgur content — upload images, organize albums, and browse the gallery directly from your AI agent.
 
 ## Description
 Connect your **Imgur** account to any AI agent to automate image hosting, album organization, and gallery interactions through natural language.
@@ -54,6 +56,33 @@ Connect your **Imgur** account to any AI agent to automate image hosting, album 
 - **vote_comment**: Vote on a comment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Imgur** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search Imgur gallery for 'vintage photography' and show me the results."
+
+**🤖 AI Agent:**
+> I've searched the gallery for 'vintage photography'. I found several high-quality matches, including a collection of 1950s street scenes (ID: abc123) and a set of film portraits (ID: def456).
+
+---
+
+**👤 You:**
+> "Upload this image URL to Imgur: https://example.com/photo.jpg"
+
+**🤖 AI Agent:**
+> The image has been successfully uploaded! You can view it at https://imgur.com/xyz789. The image hash is xyz789.
+
+---
+
+**👤 You:**
+> "Get the details and description for image hash xyz789."
+
+**🤖 AI Agent:**
+> Fetching details for xyz789... The image is titled 'Sunset over Mountains', has 1,200 views, and is currently set to public visibility.
+
+
 ## Installation & Usage
 
 To install and use the **Imgur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Imgur** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Workable MCP Server
 
-Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workable)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workable)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workable-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 7
+
+**Category:** [productivity](../categories/productivity.md)
+
+Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow.
 
 ## Description
 Connect your **Workable** recruiting account to any AI agent and simplify how you manage your hiring pipelines, track candidates, and coordinate with your team through natural conversation.
@@ -42,6 +44,33 @@ Connect your **Workable** recruiting account to any AI agent and simplify how yo
 - **list_account_members**: List hiring team members
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Workable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active job openings in our Workable account."
+
+**🤖 AI Agent:**
+> I've retrieved your active jobs. You have 4 openings: 'Senior Frontend Engineer', 'Product Designer', 'DevOps Specialist', and 'Marketing Lead'. Which one would you like to see the details for?
+
+---
+
+**👤 You:**
+> "Show me the details for the candidate 'John Smith'."
+
+**🤖 AI Agent:**
+> I've fetched John Smith's profile. He is currently in the 'Interview' stage for the 'Senior Frontend Engineer' role. He has 8 years of experience and is marked as 'Highly Recommended'.
+
+---
+
+**👤 You:**
+> "Add 'Jane Doe' (jane.doe@example.com) as a candidate for the job 'ENG-101'."
+
+**🤖 AI Agent:**
+> Success! Jane Doe has been registered as a new candidate for job 'ENG-101' (shortcode: senior-frontend). I've added her email and initiated the application process.
+
+
 ## Installation & Usage
 
 To install and use the **Workable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Workable** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

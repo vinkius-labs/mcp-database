@@ -1,12 +1,14 @@
 # Aiven MCP Server
 
-Manage Aiven cloud infrastructure — provision databases, manage projects, and monitor services directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aiven)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aiven)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aiven-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aiven-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 30
+
+**Category:** [databases](../categories/databases.md)
+
+Manage Aiven cloud infrastructure — provision databases, manage projects, and monitor services directly from your AI agent.
 
 ## Description
 Connect your **Aiven** account to any AI agent to manage your open-source data infrastructure through natural language. Take full control of your managed databases and cloud resources without leaving your chat interface.
@@ -65,6 +67,33 @@ Connect your **Aiven** account to any AI agent to manage your open-source data i
 - **update_service**: Update service configuration
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aiven** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Aiven accounts I have access to."
+
+**🤖 AI Agent:**
+> I've retrieved your accounts. You have access to 'Primary-Org' (ID: acc123) and 'Dev-Sandbox' (ID: acc456).
+
+---
+
+**👤 You:**
+> "Show me the service types available for project 'ecommerce-prod'."
+
+**🤖 AI Agent:**
+> For 'ecommerce-prod', you can deploy: pg (PostgreSQL), mysql, redis, kafka, opensearch, and clickhouse.
+
+---
+
+**👤 You:**
+> "List all active services in the project 'data-analytics'."
+
+**🤖 AI Agent:**
+> I found 2 active services in 'data-analytics': 'pg-master' (PostgreSQL) and 'kafka-main' (Kafka). Both are currently in 'RUNNING' state.
+
+
 ## Installation & Usage
 
 To install and use the **Aiven** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Aiven** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

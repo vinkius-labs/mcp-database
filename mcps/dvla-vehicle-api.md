@@ -1,12 +1,14 @@
 # DVLA Vehicle API MCP Server
 
-Access UK vehicle data — audit registration, tax, and MOT via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dvla-vehicle-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dvla-vehicle-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dvla-vehicle-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dvla-vehicle-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 6
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access UK vehicle data — audit registration, tax, and MOT via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire automotive research and vehicle auditing workflow with **DVLA Vehicle API**, the official source for United Kingdom vehicle data. By connecting the Driver and Vehicle Licensing Agency (DVLA) API to your agent, you transform complex registration lookups into a natural conversation. Your agent can instantly verify tax and MOT statuses, audit vehicle specifications, and retrieve environmental metadata without you ever touching a government portal. Whether you are conducting fleet management or verifying a vehicle's history, your agent acts as a real-time automotive consultant, ensuring your data is always grounded in official, government-verified records.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire automotive research and vehicle
 - **get_vehicle_details**: Get comprehensive details for a UK vehicle by registration number
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DVLA Vehicle API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get details for UK vehicle with registration 'AA11AAA' using DVLA Vehicle API."
+
+**🤖 AI Agent:**
+> I've retrieved the details for AA11AAA! It is a Blue Ford Focus. The tax status is 'Taxed' and the MOT is valid until next year. Would you like the full technical specifications?
+
+---
+
+**👤 You:**
+> "What is the MOT status for registration 'BB22BBB'?"
+
+**🤖 AI Agent:**
+> I've checked the status for BB22BBB. The MOT is currently identified as 'Expired'. It expired on 2023-12-01. I can provide the vehicle make and colour to help you identify it.
+
+---
+
+**👤 You:**
+> "Show specifications for car registration 'CC33CCC'."
+
+**🤖 AI Agent:**
+> I've retrieved the specifications for CC33CCC. It has an engine capacity of 1998cc and uses Diesel fuel. The vehicle colour is Silver. Would you like to check its tax status as well?
+
+
 ## Installation & Usage
 
 To install and use the **DVLA Vehicle API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **DVLA Vehicle API** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

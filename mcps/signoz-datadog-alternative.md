@@ -1,12 +1,14 @@
 # SigNoz (Datadog Alternative) MCP Server
 
-Monitor infrastructure and manage alert rules via SigNoz — list, create, and update observability alerts directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/signoz-datadog-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/signoz-datadog-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/signoz-datadog-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/signoz-datadog-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 5
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Monitor infrastructure and manage alert rules via SigNoz — list, create, and update observability alerts directly from your AI agent.
 
 ## Description
 Connect your **SigNoz** instance to any AI agent to streamline your observability and monitoring workflows. SigNoz provides a powerful open-source alternative to Datadog, and this server allows you to manage your alerting infrastructure through natural conversation.
@@ -41,6 +43,33 @@ Create a new alert rule
 - **update_rule**: Update an existing alert rule
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SigNoz (Datadog Alternative)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all alert rules in my SigNoz instance."
+
+**🤖 AI Agent:**
+> I've retrieved 8 alert rules. Some active rules include 'High CPU Usage' (ID: 1), 'Database Latency' (ID: 2), and 'Service 5xx Errors' (ID: 3). Would you like to see the details for any specific rule?
+
+---
+
+**👤 You:**
+> "Show me the details of my current service account."
+
+**🤖 AI Agent:**
+> Your API key is valid. You are connected as 'Monitoring-Admin' with the following permissions: [Alerts: Read/Write, Dashboards: Read]. Your account ID is 'sa-99283'.
+
+---
+
+**👤 You:**
+> "Delete the alert rule with ID 'alert-123'."
+
+**🤖 AI Agent:**
+> The alert rule 'alert-123' has been successfully deleted from your SigNoz instance.
+
+
 ## Installation & Usage
 
 To install and use the **SigNoz (Datadog Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **SigNoz (Datadog Alternative)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

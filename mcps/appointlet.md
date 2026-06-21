@@ -1,12 +1,14 @@
 # Appointlet MCP Server
 
-Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/appointlet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appointlet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appointlet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appointlet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly.
 
 ## Description
 Connect your **Appointlet** scheduling workspace to any AI agent to streamline booking operations, access client intake forms, and orchestrate meeting lifecycles directly via natural language. Forget jumping through tabs and let your virtual agent manage your calendar logistics.
@@ -58,6 +60,33 @@ Get the Appointlet organization profile
 List all custom intake form fields for an Appointlet meeting type
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Appointlet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the meeting types on my primary scheduling page."
+
+**🤖 AI Agent:**
+> Found 3 meeting types for the page. '30-Min Tech Call' (30m, Zoom, Active). '15-Min Screening' (15m, Phone, Hidden). '1-Hour Strategy' (60m, Google Meet, Active). Should I pull the latest bookings for the Tech Call?
+
+---
+
+**👤 You:**
+> "Cancel my meeting with Alex Johnson scheduled for today and give the reason 'Flight delayed'."
+
+**🤖 AI Agent:**
+> Booking bk_298w (Meeting with Alex Johnson) has been successfully canceled. The reason 'Flight delayed' was attached, and the invitee has received an automated email. The 14:00 time slot is now open again.
+
+---
+
+**👤 You:**
+> "What answers did the attendee give in the intake form for booking bk_71m?"
+
+**🤖 AI Agent:**
+> For booking bk_71m (Acme Corp Discovery), the attendee listed 'Company Size' as '50-100 employees', 'Primary Challenge' as 'Slow CI/CD pipelines', and 'Tech Stack' as 'NextJS and Vercel'. They selected the 'Yes' checkbox for possessing spending authority.
+
+
 ## Installation & Usage
 
 To install and use the **Appointlet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Appointlet** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # folk MCP Server
 
-Manage relationships across sales, recruiting, and partnerships with a lightweight CRM that syncs contacts from everywhere.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/folk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/folk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/folk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/folk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage relationships across sales, recruiting, and partnerships with a lightweight CRM that syncs contacts from everywhere.
 
 ## Description
 Connect your **folk** CRM account to any AI agent and simplify how you manage your professional relationships, coordinate contact groups, and track interactions through natural conversation.
@@ -44,6 +46,33 @@ List folk contacts
 - **list_contact_notes**: List notes for a contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **folk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active contacts in my folk account."
+
+**🤖 AI Agent:**
+> I've retrieved your contacts. You have access to 150 profiles including 'John Doe', 'Sarah Miller', and 'Mike Ross'. Which one would you like to see the details or interaction history for?
+
+---
+
+**👤 You:**
+> "Show me the recent interactions for 'John Miller' (ID: 10293)."
+
+**🤖 AI Agent:**
+> Fetching interactions... For John Miller, there are 3 recent events: an email sent yesterday, a Zoom meeting from last week, and a call log. Would you like the details of the latest email?
+
+---
+
+**👤 You:**
+> "Add a new contact: 'Anna White' (anna@example.com)."
+
+**🤖 AI Agent:**
+> Success! Anna White (anna@example.com) has been added to your folk CRM with ID cont_88231. She is currently in your main directory. Would you like me to assign her to a group?
+
+
 ## Installation & Usage
 
 To install and use the **folk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **folk** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

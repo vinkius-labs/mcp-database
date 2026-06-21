@@ -1,12 +1,14 @@
 # Gipuzkoa Irekia MCP Server
 
-Access open data from Gipuzkoa (Spain) — search datasets, explore resources, and query organizations or thematic groups directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gipuzkoa-irekia)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gipuzkoa-irekia)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gipuzkoa-irekia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gipuzkoa-irekia-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 9
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access open data from Gipuzkoa (Spain) — search datasets, explore resources, and query organizations or thematic groups directly from any AI agent.
 
 ## Description
 Connect to the **Gipuzkoa Irekia** open data portal and empower your AI agent to explore public sector information from the Gipuzkoa region through natural conversation.
@@ -44,6 +46,33 @@ Connect to the **Gipuzkoa Irekia** open data portal and empower your AI agent to
 - **show_resource**: Get metadata for a specific resource
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gipuzkoa Irekia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the organizations that publish open data in Gipuzkoa."
+
+**🤖 AI Agent:**
+> I've retrieved the list of publishing organizations. There are several entities including 'Diputación Foral de Gipuzkoa', 'Ayuntamiento de Donostia', and various regional agencies. Would you like to see the details for a specific one?
+
+---
+
+**👤 You:**
+> "Search for datasets related to 'environment' in the Gipuzkoa Irekia catalog."
+
+**🤖 AI Agent:**
+> Searching for 'environment'... I found several datasets, such as 'Air Quality Measurements' and 'Waste Management Statistics'. Which one would you like to explore further?
+
+---
+
+**👤 You:**
+> "Show me the metadata for the dataset named 'presupuestos-municipales'."
+
+**🤖 AI Agent:**
+> Fetching metadata for 'presupuestos-municipales'... This dataset contains municipal budget information. It includes resources in CSV and XLS formats, last updated recently by the Finance Department. Do you want the specific resource IDs for downloading?
+
+
 ## Installation & Usage
 
 To install and use the **Gipuzkoa Irekia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Gipuzkoa Irekia** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Stitch Data MCP Server
 
-Automate data pipelines via Stitch — manage sources, destinations, and push data directly to your warehouse from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stitch-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stitch-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stitch-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stitch-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 21
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Automate data pipelines via Stitch — manage sources, destinations, and push data directly to your warehouse from any AI agent.
 
 ## Description
 Connect your **Stitch Data** account to any AI agent to orchestrate your ETL workflows and data ingestion through natural conversation.
@@ -68,6 +70,33 @@ Push data for one or more tables to the Import API
 Validate data format and credentials without persisting data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stitch Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my configured data destinations in Stitch."
+
+**🤖 AI Agent:**
+> I've retrieved your destinations. You have 2 active destinations: 'Production Redshift' (ID: dest_123) and 'Analytics Snowflake' (ID: dest_456).
+
+---
+
+**👤 You:**
+> "Push this batch of user records to the 'users' table using push_import_batch."
+
+**🤖 AI Agent:**
+> Processing the batch... The data has been successfully pushed to the 'users' table. Stitch has queued the records for ingestion into your warehouse.
+
+---
+
+**👤 You:**
+> "Trigger a manual sync for the source with ID src_987."
+
+**🤖 AI Agent:**
+> I've initiated the sync for source src_987. The replication job is now running and you can monitor the progress in the extraction logs.
+
+
 ## Installation & Usage
 
 To install and use the **Stitch Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Stitch Data** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

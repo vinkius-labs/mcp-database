@@ -1,12 +1,14 @@
 # Routific MCP Server
 
-Connect your AI assistant to Routific to solve complex vehicle routing problems, dispatch drivers, and manage global delivery timelines natively through chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/routific)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/routific)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/routific-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/routific-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your AI assistant to Routific to solve complex vehicle routing problems, dispatch drivers, and manage global delivery timelines natively through chat.
 
 ## Description
 Connect your conversational assistant directly to **Routific**, a premier logistics scaling platform. This integration seamlessly turns your AI into an advanced delivery dispatcher, allowing you to build multi-stop route solutions securely, manage outstanding delivery jobs, and proactively push dispatch tasks directly to drivers' mobile apps natively in one window.
@@ -52,6 +54,33 @@ Solves a standalone Vehicle Routing Problem synchronously
 - **update_saas_job**: Updates an existing delivery job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Routific** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all current delivery jobs pending in the platform right now."
+
+**🤖 AI Agent:**
+> I requested the job details leveraging the `list_platform_jobs` command natively. Your portal correctly specifies 25 outstanding order elements natively. Let me know if you would like to begin inserting these naturally via `solve_async_vrp_long` to assemble your fleet dispatch timeline operations safely.
+
+---
+
+**👤 You:**
+> "Generate a standalone route resolving 4 pending visits."
+
+**🤖 AI Agent:**
+> I've successfully generated a standalone route for the 4 pending visits using the `solve_standalone_vrp` solver. The total estimated driving time is 45 minutes, covering 12 miles. Would you like me to publish this route directly to the assigned driver?
+
+---
+
+**👤 You:**
+> "Publish the finalized route to the designated driver's mobile app."
+
+**🤖 AI Agent:**
+> The finalized route has been successfully pushed to the designated driver's Routific mobile app. They should receive a notification and see the updated manifest shortly.
+
+
 ## Installation & Usage
 
 To install and use the **Routific** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Routific** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

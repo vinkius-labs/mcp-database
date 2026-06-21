@@ -1,12 +1,14 @@
 # Adobe Acrobat Sign MCP Server
 
-Send, track, and manage e-signatures via Adobe Acrobat Sign — create agreements, check signing status, and access audit trails from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-acrobat-sign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-acrobat-sign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-acrobat-sign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-acrobat-sign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Send, track, and manage e-signatures via Adobe Acrobat Sign — create agreements, check signing status, and access audit trails from any AI agent.
 
 ## Description
 Connect your **Adobe Acrobat Sign** account to any AI agent and manage your entire e-signature workflow through natural conversation.
@@ -64,6 +66,23 @@ Send a signing reminder to all pending signers on an Adobe Sign agreement — nu
 Upload a document to Adobe Sign as a transient document — the first step before creating an agreement for signature
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Adobe Acrobat Sign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all agreements waiting for signature"
+
+**🤖 AI Agent:**
+> You have **3 agreements** out for signature:
+
+✍️ **Acme Corp NDA** — Sent to john@acme.com, viewed 1 hour ago ✅
+✍️ **TechStart MSA** — Sent to legal@techstart.io, not yet viewed ⏳
+✍️ **CloudBase SOW** — Signer 1 of 2 completed, waiting on CFO ✅
+
+The TechStart MSA hasn't been opened — shall I send a reminder?
+
+
 ## Installation & Usage
 
 To install and use the **Adobe Acrobat Sign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +91,11 @@ To install and use the **Adobe Acrobat Sign** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Midjourney MCP Server
 
-AI image generation — create, upscale, vary, and blend images using Midjourney's Imagine API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/midjourney-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/midjourney-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 9
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+AI image generation — create, upscale, vary, and blend images using Midjourney's Imagine API.
 
 ## Description
 Connect **Midjourney** image generation to any AI agent and create stunning visuals through natural conversation. Generate images from text prompts, upscale to high resolution, create variations, blend images, and even reverse-engineer prompts from existing images.
@@ -61,6 +63,33 @@ Upscale one of the 4 generated images to higher resolution
 Create a variation of one of the 4 generated images
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Midjourney** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate an image of a cyberpunk city at sunset, 16:9 aspect ratio."
+
+**🤖 AI Agent:**
+> 🎨 Image generation started! Task ID: mj_abc123. Check progress with get_task_status. Typical generation time: 30-60 seconds.
+
+---
+
+**👤 You:**
+> "Upscale image position 2 from the last generation."
+
+**🤖 AI Agent:**
+> 🔍 Image upscaled successfully! Full resolution image URL: https://cdn.midjourney.com/... You can now download or share this image.
+
+---
+
+**👤 You:**
+> "Describe this image and tell me what prompt would create it: https://example.com/art.jpg"
+
+**🤖 AI Agent:**
+> 📝 Generated prompt: 'ethereal watercolor painting of a lone wolf howling at a blood moon, dark forest silhouette, mystical atmosphere --ar 16:9 --v 6'. Use this prompt with imagine to recreate a similar image.
+
+
 ## Installation & Usage
 
 To install and use the **Midjourney** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Midjourney** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Clubspeed MCP Server
 
-Manage entertainment venues and bookings via Clubspeed — track customers, monitor reservations, and manage race heats directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clubspeed)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clubspeed)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clubspeed-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clubspeed-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** event-management
-**Tools Count:** 8
+
+**Category:** [event-management](../categories/event-management.md)
+
+Manage entertainment venues and bookings via Clubspeed — track customers, monitor reservations, and manage race heats directly from any AI agent.
 
 ## Description
 Connect your **Clubspeed** account to any AI agent and take full control of your venue management and event reservations through natural conversation. Streamline how you manage racers, bookings, and activities natively.
@@ -45,6 +47,33 @@ Connect your **Clubspeed** account to any AI agent and take full control of your
 - **list_customer_waivers**: List signed liability waivers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clubspeed** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all reservations for today in Clubspeed."
+
+**🤖 AI Agent:**
+> Retrieving today's reservations... I found 5 bookings: 'Birthday Party - Smith' (2:00 PM), 'Corporate Event - Acme' (4:30 PM), and 3 others. Would you like to see the racer counts for these?
+
+---
+
+**👤 You:**
+> "Show me the details for customer ID '12345'."
+
+**🤖 AI Agent:**
+> Checking profile for customer 12345... This is John Doe (john@example.com). He has a valid waiver signed last month and has participated in 12 races total.
+
+---
+
+**👤 You:**
+> "What are the upcoming race heats?"
+
+**🤖 AI Agent:**
+> Retrieving upcoming heats... You have 2 heats scheduled in the next hour: Heat #45 (Pro Karting) at 11:15 AM and Heat #46 (Junior Karting) at 11:30 AM.
+
+
 ## Installation & Usage
 
 To install and use the **Clubspeed** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Clubspeed** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

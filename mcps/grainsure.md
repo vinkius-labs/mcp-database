@@ -1,12 +1,14 @@
 # GrainSure MCP Server
 
-Access silo monitoring via GrainSure — track grain fill levels, usage rates, predicted days to empty, and manage deliveries from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grainsure)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grainsure)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grainsure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grainsure-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 12
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access silo monitoring via GrainSure — track grain fill levels, usage rates, predicted days to empty, and manage deliveries from any AI agent.
 
 ## Description
 Connect your **GrainSure Silo Monitoring API** to any AI agent and take full control of real-time grain fill level tracking, usage rate analysis, predictive days-to-empty forecasting, and automated delivery management through natural conversation.
@@ -80,6 +82,33 @@ Get health status of the level monitoring sensor for a specific silo
 Get historical grain usage data for a specific silo
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GrainSure** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current fill levels for all my silos."
+
+**🤖 AI Agent:**
+> Fetching current silo levels... Silo 1 (Wheat): 78% full, 156 tonnes remaining, sensor updated 2 minutes ago. Silo 2 (Barley): 45% full, 90 tonnes remaining, updated 5 minutes ago. Silo 3 (Corn): 22% full, 44 tonnes remaining — LOW STOCK alert triggered, updated 1 minute ago. Silo 4 (Oats): 91% full, 182 tonnes remaining, updated 3 minutes ago. Total farm inventory: 472 tonnes across 4 silos. Priority action: Silo 3 is approaching critical levels — consider ordering delivery within the next 3-5 days. Would you like predicted days-to-empty for each silo?
+
+---
+
+**👤 You:**
+> "How many days until my wheat silo runs empty?"
+
+**🤖 AI Agent:**
+> Checking days-to-empty prediction for wheat silo (Silo 1)... Current fill: 78% (156 tonnes). Average daily usage: 3.2 tonnes/day. Predicted days to empty: 49 days. Predicted empty date: May 26, 2026. Confidence: 92%. Usage trend: Stable consumption over the past 30 days with slight increase during the last week. Recommendation: No immediate action required. Consider scheduling next delivery in approximately 35 days to maintain comfortable stock levels. Would you like to see the detailed usage history for this silo?
+
+---
+
+**👤 You:**
+> "Order 30 tonnes of barley for silo 2 with delivery next week."
+
+**🤖 AI Agent:**
+> Creating delivery order for Silo 2 (Barley)... Order confirmed! Order ID: ORD-2026-0417. Quantity: 30 tonnes of Barley. Preferred delivery date: April 21, 2026. Estimated supplier response time: 24 hours. Current silo status: 45% full (90 tonnes), predicted to last 28 days. This delivery will bring the silo to approximately 90% capacity. You will receive confirmation from the supplier within 24 hours. Would you like to set up an automatic reorder threshold for this silo?
+
+
 ## Installation & Usage
 
 To install and use the **GrainSure** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **GrainSure** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

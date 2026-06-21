@@ -1,12 +1,14 @@
 # Mercado Livre Interactions MCP Server
 
-Answer buyer questions, check reputation, and view metrics on Mercado Livre.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-livre-interactions)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-livre-interactions)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercado-livre-interactions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercado-livre-interactions-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Answer buyer questions, check reputation, and view metrics on Mercado Livre.
 
 ## Description
 Connect **Mercado Livre Interactions** to any AI agent and manage your seller reputation — answer questions, view performance metrics, and handle buyer communication through natural conversation.
@@ -38,6 +40,33 @@ List unanswered questions from buyers
 - **get_reputation**: Get seller reputation level and metrics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mercado Livre Interactions** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my unanswered questions."
+
+**🤖 AI Agent:**
+> Found 2 unanswered questions: 1. 'Does it come with a charger?'. 2. 'Is it compatible with iPhone 15?'.
+
+---
+
+**👤 You:**
+> "Answer question 999 with 'Yes, it includes the original charger.'"
+
+**🤖 AI Agent:**
+> Answer sent successfully! The buyer will receive a notification.
+
+---
+
+**👤 You:**
+> "Check my seller reputation and metrics."
+
+**🤖 AI Agent:**
+> Reputation Level: Green (MercadoLíder). Metrics: Late shipments 2%, Cancellations 1%, Claims 0.5%.
+
+
 ## Installation & Usage
 
 To install and use the **Mercado Livre Interactions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Mercado Livre Interactions** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

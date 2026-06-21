@@ -1,12 +1,14 @@
 # Logto (Auth Platform) MCP Server
 
-Manage users, roles, and organizations in your Logto auth tenant directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/logto-auth-platform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logto-auth-platform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/logto-auth-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/logto-auth-platform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 23
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage users, roles, and organizations in your Logto auth tenant directly from your AI agent.
 
 ## Description
 Connect your **Logto** authentication platform to any AI agent and take full control of your identity management and access control workflows.
@@ -58,6 +60,33 @@ Connect your **Logto** authentication platform to any AI agent and take full con
 - **verify_user_password**: Verify a user password (Management API)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Logto (Auth Platform)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 10 users in my Logto tenant."
+
+**🤖 AI Agent:**
+> I've retrieved the user list. You have users like 'admin_user' (ID: user_1) and 'dev_test' (ID: user_2). Would you like to see the full details for any of them?
+
+---
+
+**👤 You:**
+> "Create a new User role called 'Support Agent' with a description."
+
+**🤖 AI Agent:**
+> The role 'Support Agent' has been successfully created. It is now available for assignment to your users.
+
+---
+
+**👤 You:**
+> "Show me all members of the organization with ID 'org_999'."
+
+**🤖 AI Agent:**
+> Fetching members for organization 'org_999'... I found 3 members: Alice, Bob, and Charlie. Would you like to inspect Alice's specific permissions?
+
+
 ## Installation & Usage
 
 To install and use the **Logto (Auth Platform)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Logto (Auth Platform)** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # HotDocs MCP Server
 
-Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hotdocs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotdocs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotdocs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotdocs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 14
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent.
 
 ## Description
 Connect your **HotDocs Advance** tenancy to any AI agent and take full control of your document automation workflows through natural conversation.
@@ -116,6 +118,38 @@ Answer XML format example: <AnswerSet><A v="VariableName"><V>Answer Value</V></A
 Update answers for a work item using XML answer format
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HotDocs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available template packages in my HotDocs tenancy."
+
+**🤖 AI Agent:**
+> I've fetched your template packages. You currently have 3 template packages available: 'Employment Contract Template' (ID: emp-ctr-001), 'NDA Template' (ID: nda-std-002), and 'Service Agreement Template' (ID: svc-agr-003). Which template would you like to use for document assembly?
+
+---
+
+**👤 You:**
+> "Create a new work item 'contract-2024-001' using the employment contract template and assemble a document with these details: employee name is John Smith, position is Software Engineer, start date is March 1st 2024, salary is $95,000."
+
+**🤖 AI Agent:**
+> I've completed the full document assembly workflow:
+1. Created work item 'contract-2024-001' successfully
+2. Injected the employee data as answer XML
+3. Completed document assembly
+
+The document is now ready. I found 1 assembled document: 'Employment_Contract_John_Smith.docx' (Document ID: doc-789456). Would you like me to download it for you?
+
+---
+
+**👤 You:**
+> "Show me all work items created in the last 30 days and check if there are any unanswered variables in the documents."
+
+**🤖 AI Agent:**
+> I found 8 work items created in the date range 2024-03-08 to 2024-04-07. Checking documents for unanswered variables... I noticed 2 work items have incomplete interviews with unanswered variables: 'contract-2024-005' has 3 unanswered variables (emergency_contact, benefits_selection, stock_options) and 'nda-2024-012' has 1 unanswered variable (jurisdiction_state). Would you like me to provide the details of these unanswered variables?
+
+
 ## Installation & Usage
 
 To install and use the **HotDocs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -124,4 +158,11 @@ To install and use the **HotDocs** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

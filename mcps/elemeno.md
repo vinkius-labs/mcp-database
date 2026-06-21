@@ -1,12 +1,14 @@
 # Elemeno MCP Server
 
-Equip your AI agent to manage content collections, track singletons, and monitor items via the Elemeno CMS API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elemeno)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elemeno)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elemeno-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elemeno-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI agent to manage content collections, track singletons, and monitor items via the Elemeno CMS API.
 
 ## Description
 Integrate **Elemeno**, the headless CMS designed for developers, directly into your AI workflow. Manage your content collections and singletons (global pages), track individual items and their publishing statuses, monitor field schemas, and oversee your entire content library using natural language.
@@ -44,6 +46,33 @@ Integrate **Elemeno**, the headless CMS designed for developers, directly into y
 - **search_collection_content**: Search for items within a collection using a title or slug keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Elemeno** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all content collections in my project."
+
+**🤖 AI Agent:**
+> I've found 4 collections, including 'Blog Posts', 'Team Members', and 'Products'. Would you like to see the items within the Blog Posts collection?
+
+---
+
+**👤 You:**
+> "Show me the items in the 'Services' collection."
+
+**🤖 AI Agent:**
+> The Services collection has 5 items, including 'Web Design' (published), 'SEO Optimization' (published), and 'Mobile App Dev' (draft). Should I pull the full content for Web Design?
+
+---
+
+**👤 You:**
+> "What is the content of the 'Contact Page' singleton?"
+
+**🤖 AI Agent:**
+> The 'Contact Page' singleton contains fields for 'Hero Title', 'Office Address', and 'Support Email'. The published title is 'Get in Touch with Us'. Would you like the full JSON data for this page?
+
+
 ## Installation & Usage
 
 To install and use the **Elemeno** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Elemeno** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Midjourney AI (Generative Image Arts) MCP Server
 
-Generate professional AI art via Midjourney — use 'imagine' for text-to-image, upscale grids, and perform camera edits.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney-ai-generative-image-arts)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/midjourney-ai-generative-image-arts)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/midjourney-ai-generative-image-arts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/midjourney-ai-generative-image-arts-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 10
+
+**Category:** [superpower](../categories/superpower.md)
+
+Generate professional AI art via Midjourney — use 'imagine' for text-to-image, upscale grids, and perform camera edits.
 
 ## Description
 Connect your **Midjourney** account to any AI agent and take full control of state-of-the-art generative art production and professional creative tools through natural conversation.
@@ -57,6 +59,33 @@ Create variant branches from a specific Midjourney grid image
 - **zoom_out_image**: Widen the perspective zooming out explicitly
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Midjourney AI (Generative Image Arts)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a futuristic cyberpunk city at sunset with neon reflections in 16:9"
+
+**🤖 AI Agent:**
+> Generating image… I've triggered the Midjourney imagine task with your prompt and a 16:9 aspect ratio. Your Job ID is 'mj-98765'. I'm monitoring the process. High-fidelity textures and lighting are being computed. I'll provide the 2x2 grid URL as soon as it's ready.
+
+---
+
+**👤 You:**
+> "Upscale the first image from grid ID 'mj-98765'"
+
+**🤖 AI Agent:**
+> Upscaling tile 1… I've triggered the high-resolution render for your first choice. This will isolate the image and apply advanced AI detail enhancement. I'll provide the final high-res URL once the upscale job completes.
+
+---
+
+**👤 You:**
+> "Describe the contents of this image: [url]"
+
+**🤖 AI Agent:**
+> Analyzing visual concepts… I've retrieved 4 candidate prompts from Midjourney: 1) 'Minimalist architectural sketch in charcoal', 2) 'Brutalist concrete building perspective', 3) 'Abstract geometric shadows on stone', and 4) 'Architectural blueprint style'. Would you like to use any of these to generate a new variation?
+
+
 ## Installation & Usage
 
 To install and use the **Midjourney AI (Generative Image Arts)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Midjourney AI (Generative Image Arts)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

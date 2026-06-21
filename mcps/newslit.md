@@ -1,12 +1,14 @@
 # Newslit MCP Server
 
-Track news coverage, analyze media impact, and discover press opportunities with media intelligence tools for communications teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/newslit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/newslit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/newslit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/newslit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Track news coverage, analyze media impact, and discover press opportunities with media intelligence tools for communications teams.
 
 ## Description
 Connect your **Newslit** account to any AI agent and take full control of your news monitoring and market intelligence through natural conversation. Newslit provides a powerful News API for generating targeted news briefs and story collections, and this integration allows you to retrieve report metadata, create customized monitoring filters, and ingest real-time news stories directly from your chat interface.
@@ -45,6 +47,33 @@ Create a new news report
 - **update_report**: Update an existing report
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Newslit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my news reports in Newslit."
+
+**🤖 AI Agent:**
+> I've retrieved your reports. You have 3 active environments: 'Tech Trends', 'Industry Rivals', and 'Sustainability'. Which one would you like to see stories from?
+
+---
+
+**👤 You:**
+> "Get the full details and story coverage for report ID rpt_4521."
+
+**🤖 AI Agent:**
+> Report "Q1 Brand Mentions" (rpt_4521) contains 147 stories collected over the last 90 days. Top sources include Reuters (12 mentions), TechCrunch (8 mentions), and Bloomberg (6 mentions). Overall sentiment is 72% positive, 18% neutral, and 10% negative.
+
+---
+
+**👤 You:**
+> "Create a new media monitoring report tracking mentions of artificial intelligence in tech news."
+
+**🤖 AI Agent:**
+> Your new report "AI Media Monitor" has been created successfully with ID rpt_4589. It is configured to track the keyword "artificial intelligence" across all indexed tech news sources. Initial results are being collected and should populate within the next few minutes.
+
+
 ## Installation & Usage
 
 To install and use the **Newslit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Newslit** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

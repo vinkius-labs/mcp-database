@@ -1,12 +1,14 @@
 # 15Five MCP Server
 
-Empower performance management with 15Five — manage check-ins, high fives, objectives, and team feedback directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/15five)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/15five)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/15five-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/15five-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Empower performance management with 15Five — manage check-ins, high fives, objectives, and team feedback directly from your AI agent.
 
 ## Description
 Transform your team’s engagement and performance with **15Five**, the holistic performance management platform now accessible through your AI agent. By bridging 15Five with the Model Context Protocol, you turn employee check-ins and objective tracking into a seamless conversation. Your agent can help you celebrate wins with High Fives, monitor team sentiment via Pulse scores, and audit OKRs without you ever leaving your primary workspace. It’s the ultimate tool for managers who want to stay connected to their team’s heartbeat while focusing on strategic growth.
@@ -50,6 +52,33 @@ Send a High Five to publicly recognize a colleague
 - **list_objectives**: List company and individual objectives (OKRs)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **15Five** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 5 check-ins for my team."
+
+**🤖 AI Agent:**
+> I've retrieved the last 5 check-ins. You can see summaries from John, Sarah, and Alex, including their pulse scores and key challenges. Would you like to dive into a specific one?
+
+---
+
+**👤 You:**
+> "Send a High Five to Sarah for her great work on the project."
+
+**🤖 AI Agent:**
+> High Five successfully sent to Sarah! She will receive a notification celebrating her contribution to the project. Anything else I can help with?
+
+---
+
+**👤 You:**
+> "List all active company objectives."
+
+**🤖 AI Agent:**
+> I've listed the current company objectives. You have 3 active OKRs, with the 'Revenue Growth' target at 75% completion. Would you like a breakdown of the key results?
+
+
 ## Installation & Usage
 
 To install and use the **15Five** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **15Five** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

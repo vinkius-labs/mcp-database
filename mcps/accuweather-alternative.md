@@ -1,12 +1,14 @@
 # AccuWeather MCP Server
 
-Access real-time weather data, detailed forecasts, and location-based climate insights directly from your AI agent using AccuWeather's global network.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accuweather-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accuweather-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accuweather-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accuweather-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 13
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time weather data, detailed forecasts, and location-based climate insights directly from your AI agent using AccuWeather's global network.
 
 ## Description
 Connect your **AccuWeather** API to any AI agent to integrate hyper-local weather intelligence into your workflows. This server provides comprehensive access to the world's most accurate weather data.
@@ -50,6 +52,33 @@ Connect your **AccuWeather** API to any AI agent to integrate hyper-local weathe
 Get a list of top cities globally or by region
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AccuWeather** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the city 'London' and tell me the current weather conditions."
+
+**🤖 AI Agent:**
+> I've found London (Location Key: 328328). The current conditions are: Overcast, 12°C with a humidity of 82%. Would you like the hourly forecast as well?
+
+---
+
+**👤 You:**
+> "What is the 5-day forecast for location key 349727?"
+
+**🤖 AI Agent:**
+> Fetching the 5-day forecast for New York (349727)... Expect sunny intervals on Monday (High 22°C), followed by light rain on Tuesday and Wednesday. Thursday and Friday will be clear and cool.
+
+---
+
+**👤 You:**
+> "Find the location key for coordinates 40.7128, -74.0060."
+
+**🤖 AI Agent:**
+> The coordinates 40.7128, -74.0060 correspond to New York, NY. The Location Key is 349727. I can now fetch forecasts or current conditions for this area.
+
+
 ## Installation & Usage
 
 To install and use the **AccuWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **AccuWeather** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

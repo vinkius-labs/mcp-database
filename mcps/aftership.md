@@ -1,12 +1,14 @@
 # AfterShip MCP Server
 
-Track packages worldwide — create, manage, and monitor shipments via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aftership)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aftership-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aftership-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Track packages worldwide — create, manage, and monitor shipments via AI.
 
 ## Description
 Connect **AfterShip** tracking platform to any AI agent and track packages from 1,000+ couriers worldwide, auto-detect shipping companies, and manage all your shipments through natural language.
@@ -55,6 +57,33 @@ Retrack an expired tracking
 Update an existing tracking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AfterShip** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Track my package with tracking number 1Z999AA10123456784."
+
+**🤖 AI Agent:**
+> I've created tracking for 1Z999AA10123456784 via UPS. Status: In Transit. Latest checkpoint: Package arrived at facility in Chicago, IL on Jan 15. Expected delivery: Jan 18.
+
+---
+
+**👤 You:**
+> "What courier handles tracking number 9400111899223344556677?"
+
+**🤖 AI Agent:**
+> Based on the tracking number format, this is most likely a USPS package (98.5% confidence). Other possibilities include DHL eCommerce (1.5%).
+
+---
+
+**👤 You:**
+> "Show me all my active trackings."
+
+**🤖 AI Agent:**
+> You have 5 active trackings: 2 In Transit (UPS, FedEx), 1 Out for Delivery (USPS), 1 Pending (DHL), and 1 Attempted Delivery (Canada Post). The USPS package is expected to be delivered today.
+
+
 ## Installation & Usage
 
 To install and use the **AfterShip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **AfterShip** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Codat Financial Data MCP Server
 
-Pull financial data from your customers accounting, banking, and commerce platforms through a single standardized API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/codat-financial-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/codat-financial-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/codat-financial-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/codat-financial-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 12
+
+**Category:** [data-management](../categories/data-management.md)
+
+Pull financial data from your customers accounting, banking, and commerce platforms through a single standardized API.
 
 ## Description
 Connect your **Codat.io** account to any AI agent and take full control of your business data standardization and financial monitoring workflows through natural conversation.
@@ -55,6 +57,33 @@ List active data links for a company
 - **list_accounting_invoices**: List standardized invoices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Codat Financial Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all business entities (companies) in my Codat account."
+
+**🤖 AI Agent:**
+> I've retrieved your company directory. You have 3 active entities: 'Acme Corp' (ID: abc-123), 'Main St Cafe', and 'Global Logistics'. Which one should we check for data connections?
+
+---
+
+**👤 You:**
+> "Show the latest standardized invoices for company 'abc-123'."
+
+**🤖 AI Agent:**
+> Fetching accounting data... For Acme Corp (abc-123), I found 5 recent invoices totaling $12,500. Most are from their Xero connection. Would you like the detailed line items for the largest one?
+
+---
+
+**👤 You:**
+> "What is the data sync status for 'Acme Corp'?"
+
+**🤖 AI Agent:**
+> Scanning progress... Data synchronization for Acme Corp is 85% complete. Accounting invoices are fully synced, while Banking transactions are currently being processed. Shall I alert you once it's finished?
+
+
 ## Installation & Usage
 
 To install and use the **Codat Financial Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Codat Financial Data** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

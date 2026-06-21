@@ -1,12 +1,14 @@
 # The Movie Database (TMDb) MCP Server
 
-Search movies, TV shows, people, get details, cast, trailers, and discover content via TMDb API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/the-movie-database-tmdb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-movie-database-tmdb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-movie-database-tmdb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-movie-database-tmdb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 15
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Search movies, TV shows, people, get details, cast, trailers, and discover content via TMDb API.
 
 ## Description
 Connect **The Movie Database (TMDb)** to any AI agent and unlock the world's most comprehensive movie and TV show database through natural conversation. TMDb is the same database used by major streaming platforms, media players, and entertainment apps worldwide.
@@ -91,6 +93,33 @@ Get a list of the highest-rated TV shows of all time on TMDb
 Get trending content (movies, TV shows, or people) on TMDb for today or this week
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **The Movie Database (TMDb)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What movies are trending today?"
+
+**🤖 AI Agent:**
+> Today's trending movies: 1) Dune: Part Three ⭐7.9 (popularity: 2345), 2) The Fantastic Four: First Steps ⭐7.2 (popularity: 1890), 3) Thunderbolts* ⭐7.6 (popularity: 1654), 4) Mission: Impossible — The Final Reckoning ⭐7.4 (popularity: 1432), 5) The Accountant 2 ⭐7.1 (popularity: 1234). Would you like more details or trailers for any of these?
+
+---
+
+**👤 You:**
+> "Search for movies directed by Christopher Nolan with rating above 8."
+
+**🤖 AI Agent:**
+> Found highly-rated Christopher Nolan films: 1) The Dark Knight (2008) ⭐9.0 - When the menace known as the Joker wreaks havoc..., 2) Inception (2010) ⭐8.8 - A thief who steals corporate secrets through dream-sharing technology..., 3) Interstellar (2014) ⭐8.7 - A team of explorers travel through a wormhole in space..., 4) The Prestige (2006) ⭐8.5 - Two stage magicians engage in competitive one-upmanship... Would you like full details or cast for any of these?
+
+---
+
+**👤 You:**
+> "Who starred in The Matrix and what other movies have they been in?"
+
+**🤖 AI Agent:**
+> The Matrix (1999) main cast: Keanu Reeves as Neo, Laurence Fishburne as Morpheus, Carrie-Anne Moss as Trinity, Hugo Weaving as Agent Smith. Keanu Reeves' notable films include: John Wick series, Speed, Constantine, John Wick: Chapter 4, The Devil's Advocate, and Point Break. Would you like details on any of these films?
+
+
 ## Installation & Usage
 
 To install and use the **The Movie Database (TMDb)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -99,4 +128,11 @@ To install and use the **The Movie Database (TMDb)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

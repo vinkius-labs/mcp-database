@@ -1,12 +1,14 @@
 # Suivision (Sui Blockchain Explorer API) MCP Server
 
-Explore the Sui blockchain — query transactions, inspect accounts, analyze coins, and track on-chain objects directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/suivision-sui-blockchain-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/suivision-sui-blockchain-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/suivision-sui-blockchain-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/suivision-sui-blockchain-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 17
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Sui blockchain — query transactions, inspect accounts, analyze coins, and track on-chain objects directly from your AI agent.
 
 ## Description
 Connect to the **Suivision API** to gain deep visibility into the Sui Network. This MCP server allows any AI agent to act as a powerful blockchain explorer, retrieving real-time data about transactions, account balances, and smart contract packages.
@@ -55,6 +57,33 @@ List recent transactions on the Sui network
 - **list_validators**: List current network validators
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Suivision (Sui Blockchain Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 transactions on the Sui network."
+
+**🤖 AI Agent:**
+> I've retrieved the latest activity. Recent transactions include digests like `5A2b...` and `8Xz9...`. Would you like me to inspect the details of the most recent one?
+
+---
+
+**👤 You:**
+> "What are the coin balances for the address 0x123...?"
+
+**🤖 AI Agent:**
+> Checking the account... This address holds 150.5 SUI and 2,000 USDC. I also found 3 other minor coin types. Should I list the metadata for these coins?
+
+---
+
+**👤 You:**
+> "Get the metadata and supply for the SUI coin type."
+
+**🤖 AI Agent:**
+> The SUI coin (0x2::sui::SUI) has 9 decimals. The current total supply is approximately 10 billion. Is there another coin type you'd like to analyze?
+
+
 ## Installation & Usage
 
 To install and use the **Suivision (Sui Blockchain Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Suivision (Sui Blockchain Explorer API)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

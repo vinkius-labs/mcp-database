@@ -1,12 +1,14 @@
 # Videco MCP Server
 
-Create and manage personalized videos via Videco u2014 launch campaigns, capture leads, and track analytics from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/videco)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/videco)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/videco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/videco-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Create and manage personalized videos via Videco u2014 launch campaigns, capture leads, and track analytics from your AI agent.
 
 ## Description
 Connect your **Videco** account to any AI agent and manage personalized videos, campaigns, leads, and analytics through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Videco** account to any AI agent and manage personalized videos, 
 - **list_videos**: List all videos
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Videco** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my personalized videos."
+
+**🤖 AI Agent:**
+> You have 12 videos. The most viewed is 'Welcome Onboarding' with 3,400 views (4.2% CTR). 3 videos were created this month. Would you like analytics for any video?
+
+---
+
+**👤 You:**
+> "Show analytics for video VID-2048."
+
+**🤖 AI Agent:**
+> Video VID-2048 'Product Demo': 1,200 views, avg watch time 2:34, completion rate 68%, CTA click rate 5.1%. 42 leads captured. Best performing day: Tuesday. Want to see lead details?
+
+---
+
+**👤 You:**
+> "Create a campaign called 'Spring Launch' with video VID-2048."
+
+**🤖 AI Agent:**
+> Campaign 'Spring Launch' created with video VID-2048. Campaign ID: CMP-891. Ready to deploy. Would you like to set a target audience or schedule?
+
+
 ## Installation & Usage
 
 To install and use the **Videco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Videco** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

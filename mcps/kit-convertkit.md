@@ -1,12 +1,14 @@
 # Kit (ConvertKit) MCP Server
 
-Enable your AI agent to manage email subscribers, organize tags, and monitor broadcast campaigns via the Kit API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kit-convertkit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kit-convertkit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kit-convertkit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kit-convertkit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enable your AI agent to manage email subscribers, organize tags, and monitor broadcast campaigns via the Kit API.
 
 ## Description
 Integrate your AI assistant with **Kit** (formerly ConvertKit), the email marketing platform for creators.
@@ -43,6 +45,33 @@ Integrate your AI assistant with **Kit** (formerly ConvertKit), the email market
 - **update_subscriber**: Update subscriber metadata or custom fields
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kit (ConvertKit)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the profile and tags for 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Subscriber 'John Doe' is active. Tags: 'Welcome Sequence Completed', 'VIP Customers'. Last broadcast interaction: 3 days ago.
+
+---
+
+**👤 You:**
+> "Show the open rate and clicks from my latest broadcast."
+
+**🤖 AI Agent:**
+> Your latest broadcast 'Monthly Creator Tips' was sent to 14,500 subscribers. Open rate: 42.1% (6,104 opens). Unique clicks: 1,215 (CTR: 8.3%). Want me to check the top performing link?
+
+---
+
+**👤 You:**
+> "List all tags available in my Kit account so I can categorize new leads."
+
+**🤖 AI Agent:**
+> I've retrieved 12 tags from your account, including 'Newsletter Subscriber', 'Ebook Download', and 'Webinar-2024-Attendee'. Which tag should we apply to the current segment?
+
+
 ## Installation & Usage
 
 To install and use the **Kit (ConvertKit)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Kit (ConvertKit)** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

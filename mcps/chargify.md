@@ -1,12 +1,14 @@
 # Chargify MCP Server
 
-Automate recurring billing via Chargify (Maxio) — manage subscriptions, customers, plans, and revenue holds directly via AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chargify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate recurring billing via Chargify (Maxio) — manage subscriptions, customers, plans, and revenue holds directly via AI agents.
 
 ## Description
 Connect your **Chargify (Maxio)** site to any AI agent and take absolute control of your SaaS revenue operations by simply chatting. Bypass massive spreadsheets, complex API docs, and tedious financial dashboards.
@@ -60,6 +62,37 @@ Dispatch an automated validation check routing explicit Resume logic
 - **update_subscription_product**: Identify precise active arrays spanning native Plan tracking/Upgrades
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chargify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We promised Acme Corp a grace period. Put a hold on subscription 4040 immediately."
+
+**🤖 AI Agent:**
+> Hold placed effectively. Subscription `4040` matches the Acme bounds and is now in a clamped state. No further billing will process until you instruct me to actively resume it.
+
+---
+
+**👤 You:**
+> "List our product catalog. I need to know the IDs to upgrade an account."
+
+**🤖 AI Agent:**
+> Here is the active product catalog. We mapped 3 product tiers:
+- Basic Plan (ID: 101)
+- Pro Plan (ID: 102)
+- Enterprise (ID: 103)
+Would you like me to update a customer's subscription to one of these IDs?
+
+---
+
+**👤 You:**
+> "Customer sub_899 just requested cancellation via email. Reason: 'budget cuts'. Please process it."
+
+**🤖 AI Agent:**
+> Subscription `sub_899` stands irreversibly canceled. I mapped 'budget cuts' internally as the churn tracking reason for your financial analysts. The billing stream is officially terminated.
+
+
 ## Installation & Usage
 
 To install and use the **Chargify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +101,11 @@ To install and use the **Chargify** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

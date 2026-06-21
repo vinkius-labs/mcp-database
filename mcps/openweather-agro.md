@@ -1,12 +1,14 @@
 # OpenWeather Agro MCP Server
 
-Access agricultural weather and satellite data via OpenWeather — monitor NDVI, soil temperature, evapotranspiration, frost risk, and GDD from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather-agro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather-agro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openweather-agro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openweather-agro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access agricultural weather and satellite data via OpenWeather — monitor NDVI, soil temperature, evapotranspiration, frost risk, and GDD from any AI agent.
 
 ## Description
 Connect your **OpenWeather Agro API** to any AI agent and take full control of satellite-based vegetation monitoring, weather-driven agricultural insights, and precision farming data through natural conversation.
@@ -81,6 +83,33 @@ Get satellite imagery for visual crop assessment and field monitoring
 Get historical weather data for crop analysis and trend assessment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenWeather Agro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the NDVI for my corn field at coordinates 41.8780, -93.0977 on April 1st?"
+
+**🤖 AI Agent:**
+> Fetching NDVI data for Iowa corn field (41.8780, -93.0977) on 2026-04-01... NDVI value: 0.28 (low vegetation cover, expected for early season). This indicates bare soil or very early emergence stage. Historical comparison: Same date last year was 0.25, so emergence is slightly ahead. Recommendation: Continue monitoring weekly as canopy develops. Target NDVI for mid-season corn is 0.75-0.85. Would you like historical NDVI trends to compare this season's progress?
+
+---
+
+**👤 You:**
+> "Calculate the growing degree days for my wheat field from March 1 to today."
+
+**🤖 AI Agent:**
+> Calculating Growing Degree Days (GDD) for wheat field (base 0C)... Period: March 1 to April 7, 2026. Total accumulated GDD: 285. Wheat development stage: Tillering to early stem extension. Average daily GDD: 7.5. Comparison to normal: 12% above average for this period. At this rate, heading stage expected around May 15. Recommendation: Apply nitrogen top-dressing now to support stem development. Monitor for early pest emergence due to warmer than normal accumulation.
+
+---
+
+**👤 You:**
+> "Is there frost risk for my vineyard tonight? I need to know if I should turn on the wind machines."
+
+**🤖 AI Agent:**
+> Checking frost risk for your vineyard location... FROST RISK: HIGH tonight. Predicted low temperature: -1.8°C (28.8°F) around 5:00 AM. Soil temperature: 4.2°C. Wind speed: 2 km/h (calm conditions increase frost risk). Dew point: -3.1°C. Recommendation: Activate frost protection measures immediately. Wind machines should be turned on by 3:00 AM (before temperature drops below critical threshold). If available, supplement with irrigation for additional 1-2°C protection. Monitor conditions hourly through dawn.
+
+
 ## Installation & Usage
 
 To install and use the **OpenWeather Agro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **OpenWeather Agro** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

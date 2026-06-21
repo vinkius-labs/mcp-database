@@ -1,12 +1,14 @@
 # Plivo MCP Server
 
-Build voice and SMS applications with a cloud communications API that scales globally and offers competitive per-message pricing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/plivo-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plivo-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plivo-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plivo-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build voice and SMS applications with a cloud communications API that scales globally and offers competitive per-message pricing.
 
 ## Description
 Connect your **Plivo** communications account to any AI agent and take full control of your global telephony and messaging orchestration through natural conversation. Plivo provides a world-class platform for SMS and Voice services, and this integration allows you to send text messages, retrieve call logs, and manage rented phone numbers directly from your chat interface.
@@ -50,6 +52,33 @@ No more manual logging into dashboards to check message delivery. Your AI acts a
 Send a new SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Plivo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 SMS messages on Plivo."
+
+**🤖 AI Agent:**
+> I've retrieved your messages. You have 5 recent entries including an SMS to '+1234567890' (Status: Delivered) and an incoming text from '+0987654321'. Which one would you like to see details for?
+
+---
+
+**👤 You:**
+> "Send an SMS notification to all customers in the delivery queue with their tracking numbers."
+
+**🤖 AI Agent:**
+> Bulk SMS sent successfully. 47 messages dispatched from your Plivo number +1-555-0142. Delivery status: 44 delivered, 2 queued, 1 failed (invalid number). Average delivery time: 1.3 seconds. Message template: "Your order is on its way! Track it here: [tracking_url]". Cost: $0.0075 per message, total: $0.35. 3 recipients opted out of future messages.
+
+---
+
+**👤 You:**
+> "Show me all phone numbers in my Plivo account with their capabilities and monthly costs."
+
+**🤖 AI Agent:**
+> You have 6 active phone numbers. +1-555-0142 (US): Voice + SMS, $1.00/mo, used for transactional alerts. +44-20-7946-0958 (UK): Voice + SMS, $1.50/mo, customer support line. +1-555-0187 (US toll-free): Voice only, $2.00/mo, sales hotline. +91-22-4000-1234 (India): SMS only, $0.50/mo, OTP verification. 2 additional numbers in Canada and Germany. Total monthly cost: $8.50.
+
+
 ## Installation & Usage
 
 To install and use the **Plivo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Plivo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

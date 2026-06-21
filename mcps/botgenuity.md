@@ -1,12 +1,14 @@
 # BotGenuity MCP Server
 
-Create and manage AI chatbots with custom knowledge bases that answer customer questions accurately around the clock.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/botgenuity)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botgenuity)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/botgenuity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/botgenuity-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 6
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Create and manage AI chatbots with custom knowledge bases that answer customer questions accurately around the clock.
 
 ## Description
 Connect your **BotGenuity** account to any AI agent and take full control of your automated customer engagement and chatbot operations through natural conversation.
@@ -43,6 +45,33 @@ No more manual toggling between chatbot portals or digging through individual le
 - **chat_with_bot**: Send a message to a chatbot and get a response
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BotGenuity** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my chatbots in BotGenuity."
+
+**🤖 AI Agent:**
+> I've retrieved your chatbots. You currently have 3 active bots, including 'Customer Hero' (ID: B123) and 'Sales Assistant'. Which one should we check for lead activity?
+
+---
+
+**👤 You:**
+> "Show the captured leads for chatbot ID 'B123'."
+
+**🤖 AI Agent:**
+> Fetching leads... Chatbot B123 has captured 12 new leads today, including @user1 and @user2. I've retrieved their contact metadata and high-fidelity interest tags for you.
+
+---
+
+**👤 You:**
+> "Ask my 'Customer Hero' bot: 'What are our shipping rates?'."
+
+**🤖 AI Agent:**
+> Bot response received: 'Our standard shipping is $5.99, or free for orders over $50.' Shall I check the session logs for this interaction?
+
+
 ## Installation & Usage
 
 To install and use the **BotGenuity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **BotGenuity** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

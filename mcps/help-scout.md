@@ -1,12 +1,14 @@
 # Help Scout MCP Server
 
-Automate customer support via Help Scout — manage conversations, customers, and team workflows directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/help-scout)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/help-scout)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/help-scout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/help-scout-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Automate customer support via Help Scout — manage conversations, customers, and team workflows directly from any AI agent.
 
 ## Description
 Connect your **Help Scout** help desk to any AI agent and take full control of your customer communication and support operations through natural conversation.
@@ -54,6 +56,33 @@ List support conversations/tickets
 - **update_convo_status**: Change the status of a conversation (e.g., active, closed)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Help Scout** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active conversations in the 'Main' mailbox."
+
+**🤖 AI Agent:**
+> I've retrieved your active conversations. You have 5 threads requiring attention, including 'Refund request' from John, 'Feature question' from Maria, and 'API error' from David. Would you like to see the last message for any of these?
+
+---
+
+**👤 You:**
+> "Search for conversations from 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Searching Help Scout... I found 2 conversations for John Doe. One is 'Closed' regarding an old order, and the other is 'Active' regarding a new support query. Should I retrieve the full transcript for the active thread?
+
+---
+
+**👤 You:**
+> "Add an internal note to conversation ID 12345: 'Confirmed with engineering, fix arriving tomorrow'."
+
+**🤖 AI Agent:**
+> Note added! I've successfully logged your update to conversation 12345. This note is internal-only and will not be seen by the customer. Would you like to set the status to 'Pending' while we wait for the fix?
+
+
 ## Installation & Usage
 
 To install and use the **Help Scout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Help Scout** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

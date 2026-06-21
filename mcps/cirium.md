@@ -1,12 +1,14 @@
 # Cirium MCP Server
 
-Automate flight tracking and aviation data via Cirium — monitor flight statuses, airport traffic, and global schedules directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cirium)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cirium)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cirium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cirium-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 9
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Automate flight tracking and aviation data via Cirium — monitor flight statuses, airport traffic, and global schedules directly from any AI agent.
 
 ## Description
 Connect your **Cirium** developer account to any AI agent to access the world's most comprehensive aviation data through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Cirium** developer account to any AI agent to access the world's 
 - **get_schedules_by_carrier**: Get scheduled flights for a specific carrier on a date
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cirium** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the status of flight AA 100 for October 25th, 2023?"
+
+**🤖 AI Agent:**
+> I'm checking the status for American Airlines flight 100 on 2023-10-25. The flight departed JFK on time at 18:15 and is currently estimated to arrive at LHR at 06:20 local time.
+
+---
+
+**👤 You:**
+> "Show me all flights scheduled between LAX and JFK for tomorrow."
+
+**🤖 AI Agent:**
+> I've retrieved the schedules for the LAX to JFK route. There are 12 scheduled flights tomorrow, including Delta DL442 at 08:00 and JetBlue B624 at 10:30. Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "Where is flight DL 456 right now?"
+
+**🤖 AI Agent:**
+> Fetching the current track for Delta flight 456... The aircraft is currently over the Atlantic at 35,000 feet, heading Northeast at 540 knots. It is approximately 2 hours from its destination.
+
+
 ## Installation & Usage
 
 To install and use the **Cirium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Cirium** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

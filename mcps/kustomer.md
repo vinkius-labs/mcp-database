@@ -1,12 +1,14 @@
 # Kustomer MCP Server
 
-Manage customer service — list conversations, audit customers, and search timelines.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kustomer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kustomer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kustomer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kustomer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage customer service — list conversations, audit customers, and search timelines.
 
 ## Description
 Connect your AI agent to **Kustomer** to streamline your support operations and customer data auditing.
@@ -46,6 +48,33 @@ Perform a deep search across the customer timeline
 - **check_kustomer_api_status**: Check the status of the Kustomer API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kustomer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the 10 most recent support conversations in Kustomer"
+
+**🤖 AI Agent:**
+> I've retrieved the latest 10 conversations. 4 are currently 'Open' and assigned to agents, while 6 are 'Done'. Would you like to audit the messages for the open ones?
+
+---
+
+**👤 You:**
+> "Show the full profile for customer '65a4b3c2d1e0f'"
+
+**🤖 AI Agent:**
+> Retrieved profile for Jane Doe. She is a 'Platinum' member with a lifetime value of $1,200. Her last contact was via Email 2 days ago regarding a shipping delay.
+
+---
+
+**👤 You:**
+> "Search the timeline for customers from 'Brazil'"
+
+**🤖 AI Agent:**
+> Searching timeline… I found 15 customers associated with 'Brazil'. 10 have active conversations. Would you like a list of their email addresses?
+
+
 ## Installation & Usage
 
 To install and use the **Kustomer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Kustomer** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

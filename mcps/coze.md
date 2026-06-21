@@ -1,12 +1,14 @@
 # Coze MCP Server
 
-Orchestrate Coze bots — manage conversations, handle RAG datasets, and trigger bot actions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coze)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coze)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coze-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coze-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate Coze bots — manage conversations, handle RAG datasets, and trigger bot actions directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Coze** (扣子), the advanced bot orchestration platform by ByteDance. This MCP provides 11 tools to manage the full lifecycle of your bots, from chat interactions to knowledge base document ingestion.
@@ -47,6 +49,33 @@ Connect your AI agents to **Coze** (扣子), the advanced bot orchestration plat
 - **get_conversation_history**: Retrieve the message list from a conversation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coze** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Chat with bot 'bot_123' and ask 'Tell me about the history of Tokyo'."
+
+**🤖 AI Agent:**
+> Initializing Coze chat session... The bot responded: 'Tokyo, originally known as Edo, has a rich history dating back to the 12th century...' Would you like to continue the conversation?
+
+---
+
+**👤 You:**
+> "List all active workspaces in my Coze account."
+
+**🤖 AI Agent:**
+> Fetching your Coze spaces... I found 2 active workspaces: 1. Main Project (ID: sp_1), 2. Sandbox (ID: sp_2). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Upload the content of 'manual.txt' to dataset 'ds_999'."
+
+**🤖 AI Agent:**
+> Reading 'manual.txt' and preparing for upload... Content successfully pushed to dataset 'ds_999'. The information is now being indexed for your RAG workflows.
+
+
 ## Installation & Usage
 
 To install and use the **Coze** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Coze** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

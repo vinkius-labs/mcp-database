@@ -1,12 +1,14 @@
 # Paraíba Open Data MCP Server
 
-Access official public spending, budget, and payroll data from the State of Paraíba, Brazil, directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/paraiba-open-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/paraiba-open-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/paraiba-open-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/paraiba-open-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 20
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access official public spending, budget, and payroll data from the State of Paraíba, Brazil, directly through your AI agent.
 
 ## Description
 The **Paraíba MCP Server** connects your AI agent to the official Dados Abertos portal of the State of Paraíba. This integration allows for real-time auditing and analysis of public finances, government contracts, and personnel spending through natural conversation.
@@ -55,6 +57,33 @@ The **Paraíba MCP Server** connects your AI agent to the official Dados Abertos
 - **get_unidade_orcamentaria**: Get Unidade Orçamentária (Budgetary Unit) data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Paraíba Open Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the budget allocation (dotação) for Paraíba in 2024."
+
+**🤖 AI Agent:**
+> I've retrieved the budget allocation data for 2024. The total authorized amount is distributed across various departments. Would you like a breakdown by month or by management unit?
+
+---
+
+**👤 You:**
+> "What was the payroll summary for March 2024?"
+
+**🤖 AI Agent:**
+> For March 2024, the payroll summary shows the total gross and net values for state employees. I can provide the specific totals for active, inactive, and pensioned personnel if needed.
+
+---
+
+**👤 You:**
+> "List the daily allowances (diárias) paid in January 2024."
+
+**🤖 AI Agent:**
+> I found the records for daily allowances in January 2024. The data includes the names of recipients, the purpose of travel, and the amounts paid. Should I summarize the top spending units?
+
+
 ## Installation & Usage
 
 To install and use the **Paraíba Open Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Paraíba Open Data** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

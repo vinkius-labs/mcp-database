@@ -1,12 +1,14 @@
 # Looker (Business Intelligence & Data) MCP Server
 
-Manage your BI environment via Looker — list dashboards, execute inline queries, and audit saved Looks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/looker-business-intelligence-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/looker-business-intelligence-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/looker-business-intelligence-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/looker-business-intelligence-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your BI environment via Looker — list dashboards, execute inline queries, and audit saved Looks.
 
 ## Description
 Connect your **Looker** instance to any AI agent and take full control of your enterprise business intelligence and data analytics through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Looker** instance to any AI agent and take full control of your e
 - **run_inline_query**: Execute queries building models specifically fetching literal dimensions dynamically natively
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Looker (Business Intelligence & Data)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 dashboards created in my Looker instance"
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent dashboards. Highlights include 'Q1 Sales Overview' (ID: 123), 'User Engagement Deep-Dive' (ID: 456), and 'Inventory Health' (ID: 789). Would you like to see the filters for the sales overview?
+
+---
+
+**👤 You:**
+> "Run a query using model 'sales' and view 'orders' for fields 'orders.created_date' and 'orders.total_amount'"
+
+**🤖 AI Agent:**
+> Executing inline query… I've retrieved the data from the 'sales' model. For the last 10 orders, the created dates range from yesterday to today, with a total amount of $12,450. Would you like the full 100-row result set?
+
+---
+
+**👤 You:**
+> "Find all dashboards related to 'Marketing ROI'"
+
+**🤖 AI Agent:**
+> I've searched your content metadata and identified 2 dashboards: 'Global Marketing ROI' (ID: 987) and 'Channel Specific ROI - Beta' (ID: 654). I can fetch the UUIDs and folder paths for either of these.
+
+
 ## Installation & Usage
 
 To install and use the **Looker (Business Intelligence & Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Looker (Business Intelligence & Data)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Teachable (Extended) MCP Server
 
-Manage your Teachable school — list courses, manage users, track transactions, and monitor webhooks directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/teachable-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/teachable-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/teachable-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/teachable-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 7
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your Teachable school — list courses, manage users, track transactions, and monitor webhooks directly from your AI agent.
 
 ## Description
 Connect your **Teachable** school to any AI agent to streamline your course management and student operations through natural conversation.
@@ -50,6 +52,33 @@ List all users in the Teachable school
 - **list_webhooks**: List all registered webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Teachable (Extended)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all courses that are currently published in my school."
+
+**🤖 AI Agent:**
+> I've retrieved your published courses. You have 3 active courses: 'Mastering MCP' (ID: 101), 'AI for Beginners' (ID: 102), and 'Advanced React' (ID: 103). Would you like more details on any of these?
+
+---
+
+**👤 You:**
+> "Create a new user with the email 'newstudent@example.com' and name 'John Doe'."
+
+**🤖 AI Agent:**
+> User 'John Doe' has been successfully created with ID 987654. They are now registered in your Teachable school.
+
+---
+
+**👤 You:**
+> "Show me the recent transactions for course ID 554433."
+
+**🤖 AI Agent:**
+> I found 2 recent transactions for course 554433. One for $99.00 (User: 123) and another for $99.00 (User: 456). Neither has been refunded.
+
+
 ## Installation & Usage
 
 To install and use the **Teachable (Extended)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Teachable (Extended)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

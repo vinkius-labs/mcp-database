@@ -1,12 +1,14 @@
 # Ebby MCP Server
 
-Equip your AI agent to manage audio transcriptions, track processing status, and retrieve text via the Ebby API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ebby)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ebby)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ebby-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ebby-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage audio transcriptions, track processing status, and retrieve text via the Ebby API.
 
 ## Description
 Integrate **Ebby**, the powerful automatic transcription and subtitling platform, directly into your AI workflow. Manage your audio and video transcriptions, track real-time processing statuses and durations, retrieve transcribed text in various formats (TXT, SRT, VTT), and oversee speaker identification using natural language.
@@ -44,6 +46,33 @@ Integrate **Ebby**, the powerful automatic transcription and subtitling platform
 - **search_transcriptions_by_name**: Search for transcriptions using a filename or title keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ebby** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all completed transcriptions."
+
+**🤖 AI Agent:**
+> I've found 8 completed transcriptions, including 'Interview_John_Doe.mp3' and 'Q2_Board_Meeting.mp4'. Both are ready for export. Would you like to retrieve the text for the Interview?
+
+---
+
+**👤 You:**
+> "Show me the transcribed text for 'Interview_John_Doe.mp3' in SRT format."
+
+**🤖 AI Agent:**
+> I've retrieved the SRT captions for 'Interview_John_Doe.mp3'. The file includes timestamps and identified speakers. Would you like the full JSON output or just a preview of the first few lines?
+
+---
+
+**👤 You:**
+> "Check how many minutes are remaining in my Ebby account."
+
+**🤖 AI Agent:**
+> Your Ebby account has 150 transcription minutes remaining. Your current plan is 'Pro Monthly' and your next renewal is on April 15th. Should I list the most recent files currently in progress?
+
+
 ## Installation & Usage
 
 To install and use the **Ebby** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Ebby** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Contingency Budget Calculator MCP Server
 
-Calculate essential contingency reserves for architectural and construction projects based on development phases.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contingency-budget-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contingency-budget-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contingency-budget-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contingency-budget-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Calculate essential contingency reserves for architectural and construction projects based on development phases.
 
 ## Description
 This MCP server provides a specialized calculation engine for determining financial buffers in construction and architecture projects. As project uncertainty decreases through the design, construction documents, and construction phases, the required contingency reserves also shift. Using tools like `calculate_contingency_amounts`, `get_phase_percentage_bounds`, and `analyze_budget_impact`, you can precisely quantify risks related to design, site conditions, and market volatility. This allows project managers to maintain accurate budget projections throughout the entire project lifecycle.
@@ -18,6 +20,33 @@ This MCP server provides a specialized calculation engine for determining financ
 - **calculate_contingency_amounts**: Calculate specific contingency amounts for each risk category
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Contingency Budget Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the contingency amounts for a $1,000,000 project in the design phase."
+
+**🤖 AI Agent:**
+> The calculation for a $1,000,000 budget in the design phase recommends: Design Risk: $200,000, Site Risk: $100,000, and Market Risk: $150,000.
+
+---
+
+**👤 You:**
+> "What are the percentage bounds for the construction phase?"
+
+**🤖 AI Agent:**
+> For the construction phase, the minimum contingency is 3% and the maximum is 5%.
+
+---
+
+**👤 You:**
+> "Analyze the budget impact for a $500,000 project in the construction documents phase."
+
+**🤖 AI Agent:**
+> The total contingency amount required is $75,000, bringing the new total projected budget to $575,000.
+
+
 ## Installation & Usage
 
 To install and use the **Contingency Budget Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -26,4 +55,11 @@ To install and use the **Contingency Budget Calculator** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # PitchBox MCP Server
 
-Manage influencer outreach and content marketing via PitchBox — list projects, track opportunities, and monitor emails directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pitchbox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pitchbox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pitchbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pitchbox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage influencer outreach and content marketing via PitchBox — list projects, track opportunities, and monitor emails directly from any AI agent.
 
 ## Description
 Connect your **PitchBox** account to any AI agent and take full control of your outreach and link-building workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **PitchBox** account to any AI agent and take full control of your 
 - **list_pitchbox_tasks**: List active tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PitchBox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active campaigns in my 'Guest Posting' project."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. In the 'Guest Posting' project, you have 4 active ones: 'Tech Blogs Q4', 'Lifestyle Outlets', 'Marketing Insights', and 'Industry News'.
+
+---
+
+**👤 You:**
+> "Show me the status of the link-building opportunity for 'example.com'."
+
+**🤖 AI Agent:**
+> The opportunity for 'example.com' (ID: 98765) is currently in the 'Replied' stage. A follow-up email was sent 2 days ago. Would you like to see the last email message?
+
+---
+
+**👤 You:**
+> "What outreach tasks are assigned to me for today?"
+
+**🤖 AI Agent:**
+> You have 5 tasks for today: 'Review pitches for Campaign 123', 'Verify contact for Opp 456', and 3 personalization tasks. Would you like to start with the reviews?
+
+
 ## Installation & Usage
 
 To install and use the **PitchBox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **PitchBox** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

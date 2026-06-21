@@ -1,12 +1,14 @@
 # Zealy MCP Server
 
-Automate community growth and engagement on Zealy — manage quests, track leaderboards, and reward users directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zealy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zealy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zealy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zealy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 23
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Automate community growth and engagement on Zealy — manage quests, track leaderboards, and reward users directly from your AI agent.
 
 ## Description
 Connect your **Zealy** community to any AI agent to streamline your Web3 and community marketing workflows. Take full control of your gamification strategy through natural conversation.
@@ -64,6 +66,39 @@ Get the all-time or sprint leaderboard
 - **get_referral_code**: Retrieve a user referral code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zealy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the user with Discord ID '123456789' in the 'my-community' subdomain."
+
+**🤖 AI Agent:**
+> I found the user! Their Zealy UUID is `abc-123-def`. They are currently Level 5 with 1,200 XP. Would you like to see their full profile?
+
+---
+
+**👤 You:**
+> "Add 500 XP to user 'abc-123-def' in 'my-community' for 'Exceptional Content Creation'."
+
+**🤖 AI Agent:**
+> Successfully added 500 XP to the user. Their new total is 1,700 XP. The transaction has been logged with the label 'Exceptional Content Creation'.
+
+---
+
+**👤 You:**
+> "List the top 5 users on the leaderboard for the 'my-community' subdomain."
+
+**🤖 AI Agent:**
+> Here are the top 5 contributors: 
+1. UserA (5,000 XP)
+2. UserB (4,850 XP)
+3. UserC (4,200 XP)
+4. UserD (3,900 XP)
+5. UserE (3,750 XP)
+Would you like to inspect any of these users specifically?
+
+
 ## Installation & Usage
 
 To install and use the **Zealy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +107,11 @@ To install and use the **Zealy** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

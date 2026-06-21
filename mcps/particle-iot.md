@@ -1,12 +1,14 @@
 # Particle IoT MCP Server
 
-Access Particle IoT devices via API — read sensor variables, control device functions, manage devices, and publish events from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/particle-iot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/particle-iot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/particle-iot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/particle-iot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 8
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access Particle IoT devices via API — read sensor variables, control device functions, manage devices, and publish events from any AI agent.
 
 ## Description
 Connect your **Particle IoT API** to any AI agent and take full control of your IoT device fleet, sensor monitoring, remote actuator control, and event management through natural conversation.
@@ -63,6 +65,33 @@ Rename a specific Particle IoT device
 Remove a Particle IoT device from your account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Particle IoT** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all my connected Particle devices and their online status."
+
+**🤖 AI Agent:**
+> Fetching device list... Found 5 devices. Device 1: 'Greenhouse Sensor' (ID: a1b2c3) - Online, Firmware: 5.8.0, Last seen: 1 min ago. Device 2: 'Irrigation Pump' (ID: d4e5f6) - Online, Firmware: 5.8.0, Last seen: 2 mins ago. Device 3: 'Soil Moisture Node' (ID: g7h8i9) - Offline, Last seen: 3 hours ago. Device 4: 'Weather Station' (ID: j0k1l2) - Online, Firmware: 5.7.2, Last seen: 30 secs ago. Device 5: 'Tank Level Sensor' (ID: m3n4o5) - Online, Firmware: 5.8.0, Last seen: 45 secs ago. Total: 4 online, 1 offline. Would you like to troubleshoot the offline device?
+
+---
+
+**👤 You:**
+> "Read the current soil moisture from my greenhouse sensor."
+
+**🤖 AI Agent:**
+> Reading variable 'soilMoisture' from device 'Greenhouse Sensor'... Current value: 68%. Status: Adequate moisture for most crops. Historical trend: Stable over the last 6 hours. Recommendation: No irrigation needed at this time. Next check recommended in 2 hours. Would you like to read the temperature as well?
+
+---
+
+**👤 You:**
+> "Turn on the irrigation pump for 15 minutes."
+
+**🤖 AI Agent:**
+> Calling function 'pumpOn' on device 'Irrigation Pump' with argument '900' (15 minutes)... Result: Success (return code 1). Pump activated successfully. Estimated water delivery: 250 liters based on flow rate. Status: Pump running, will auto-shutoff in 15 minutes. Would you like me to monitor soil moisture during the irrigation cycle?
+
+
 ## Installation & Usage
 
 To install and use the **Particle IoT** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Particle IoT** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Holded MCP Server
 
-Automate business management via Holded — manage invoices, contacts, and projects directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/holded)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/holded)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/holded-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/holded-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 11
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate business management via Holded — manage invoices, contacts, and projects directly from any AI agent.
 
 ## Description
 Connect your **Holded** ERP platform to any AI agent and take full control of your invoicing, CRM, and project management through natural conversation.
@@ -55,6 +57,33 @@ List all invoices in your Holded account
 Update the stock level for a specific product
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Holded** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects and show the last task for each."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 3 active workflows: 'Website Launch' (ID: proj_102), 'Q2 Campaign', and 'Product Beta'. For the Website Launch, the latest task is 'Final QA Check' (ID: task_992). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Find contact 'Acme Corp' and show their recent invoices."
+
+**🤖 AI Agent:**
+> I've found Acme Corp (ID: contact_552). They have 2 recent invoices: INV-2024-01 ($1,250.00 - Paid) and INV-2024-05 ($3,000.00 - Pending). Would you like to see the items included in the pending invoice?
+
+---
+
+**👤 You:**
+> "Show me the details for product ID 'prod_992' and its stock level."
+
+**🤖 AI Agent:**
+> Accessing inventory... Product 'prod_992' (Wireless Mouse) currently has 45 units in stock across 2 warehouses. The main warehouse has 30 units and the secondary has 15. Should I update the stock level for any specific location?
+
+
 ## Installation & Usage
 
 To install and use the **Holded** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Holded** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

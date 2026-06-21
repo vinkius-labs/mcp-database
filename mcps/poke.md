@@ -1,12 +1,14 @@
 # Poké MCP Server
 
-Access the ultimate Pokémon encyclopedia — query berries, contest effects, and encounter methods directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/poke)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/poke)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/poke-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/poke-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 49
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access the ultimate Pokémon encyclopedia — query berries, contest effects, and encounter methods directly from your AI agent.
 
 ## Description
 Connect to the **PokéAPI** through this MCP server to explore the vast world of Pokémon data. This integration allows any AI agent to retrieve detailed information about items, mechanics, and world interactions.
@@ -83,6 +85,33 @@ Connect to the **PokéAPI** through this MCP server to explore the vast world of
 - **list_versions**: List versions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Poké** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 10 berries available in the database."
+
+**🤖 AI Agent:**
+> I've retrieved the first 10 berries: cheri, chesto, pecha, rawst, aspear, leppa, oran, persim, lum, and nanab. Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "What are the effects of the contest type 'cool'?"
+
+**🤖 AI Agent:**
+> The 'cool' contest type (ID: 1) is associated with specific move appeals. In contests, using 'cool' moves will yield higher points if the audience is looking for that style. Would you like to see the list of contest effects?
+
+---
+
+**👤 You:**
+> "Show me the different encounter methods available."
+
+**🤖 AI Agent:**
+> I found several encounter methods, including 'walk' (walking in tall grass), 'old-rod' (fishing), 'surf' (moving on water), and 'headbutt' (shaking trees). Which one would you like to explore further?
+
+
 ## Installation & Usage
 
 To install and use the **Poké** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -91,4 +120,11 @@ To install and use the **Poké** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

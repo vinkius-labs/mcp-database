@@ -1,12 +1,14 @@
 # Spoonacular MCP Server
 
-Search recipes, find meals by ingredients, and analyze nutritional data directly from your AI agent using the Spoonacular food database.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spoonacular-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spoonacular-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 22
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search recipes, find meals by ingredients, and analyze nutritional data directly from your AI agent using the Spoonacular food database.
 
 ## Description
 Connect the **Spoonacular** food and recipe API to your AI agent to transform it into a professional culinary assistant. Access a massive database of recipes, ingredients, and nutritional information through natural conversation.
@@ -53,6 +55,33 @@ No more manual searching through ad-heavy recipe blogs. Your AI acts as a digita
 - **search_grocery_products**: Search for grocery products
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Spoonacular** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for healthy Mediterranean dinner recipes that are gluten-free."
+
+**🤖 AI Agent:**
+> I've found several Mediterranean options using `search_recipes`. Top results include 'Grilled Greek Chicken' and 'Quinoa Tabbouleh'. Would you like the full instructions for one of these?
+
+---
+
+**👤 You:**
+> "I have salmon, asparagus, and lemon. What can I cook?"
+
+**🤖 AI Agent:**
+> Using `find_recipes_by_ingredients`, I found a 'Sheet Pan Lemon Herb Salmon' recipe that uses all three. It only requires 2 additional pantry staples. Should I get the full recipe info?
+
+---
+
+**👤 You:**
+> "Find recipes with at least 30g of protein and less than 500 calories."
+
+**🤖 AI Agent:**
+> I've queried `find_recipes_by_nutrients` for those specific macros. I found a 'High-Protein Turkey Chili' (35g protein, 420 cal). Would you like to see the ingredient list?
+
+
 ## Installation & Usage
 
 To install and use the **Spoonacular** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Spoonacular** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

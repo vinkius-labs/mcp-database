@@ -1,12 +1,14 @@
 # PagBank PagSeguro MCP Server
 
-Create Pix, Boleto, and Card payment links, and manage transactions via PagBank API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pagbank-pagseguro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pagbank-pagseguro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pagbank-pagseguro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pagbank-pagseguro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 9
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Create Pix, Boleto, and Card payment links, and manage transactions via PagBank API.
 
 ## Description
 Connect **PagBank (PagSeguro)** to any AI agent and unlock Brazil's leading payment solutions — generate Pix QR codes, Boleto payments, and checkout links for credit cards through natural conversation.
@@ -47,6 +49,33 @@ Create a payment link (checkout) for multiple items
 - **search_transactions**: Search for transactions by date range
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PagBank PagSeguro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a Pix payment of R$99.90 for reference 'ORDER-001'."
+
+**🤖 AI Agent:**
+> Pix payment created! Status: WAITING. QR Code generated for user to scan.
+
+---
+
+**👤 You:**
+> "Show me the balance of my account."
+
+**🤖 AI Agent:**
+> Current Available Balance: R$ 1,250.45.
+
+---
+
+**👤 You:**
+> "Cancel transaction 12345-ABCDE-67890."
+
+**🤖 AI Agent:**
+> Transaction cancelled successfully! Status: CANCELLED.
+
+
 ## Installation & Usage
 
 To install and use the **PagBank PagSeguro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **PagBank PagSeguro** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

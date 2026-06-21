@@ -1,12 +1,14 @@
 # Polar.sh MCP Server
 
-Monetize your open-source projects. Manage products, orders, subscriptions, and invoices directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/polarsh-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/polarsh-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/polarsh-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/polarsh-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 36
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Monetize your open-source projects. Manage products, orders, subscriptions, and invoices directly through your AI agent.
 
 ## Description
 Connect your **Polar.sh** account to any AI agent to manage your open-source monetization and SaaS billing directly through natural language.
@@ -72,6 +74,33 @@ List products
 - **validate_portal_license_key**: Validate a license key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Polar.sh** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active products on Polar."
+
+**🤖 AI Agent:**
+> I've retrieved your products. You have 3 active items: 'Developer Pro' (ID: prod_1), 'Sponsorship' (ID: prod_2), and 'API Access' (ID: prod_3). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Get the details for order ID 'ord_123' and generate an invoice."
+
+**🤖 AI Agent:**
+> Order 'ord_123' was placed by user@example.com for $50.00. I have successfully triggered the `generate_invoice` action for this order. You can now retrieve the invoice data using `get_invoice`.
+
+---
+
+**👤 You:**
+> "Revoke subscription 'sub_999' immediately."
+
+**🤖 AI Agent:**
+> I have successfully revoked subscription 'sub_999'. The customer's access to the associated product benefits has been terminated.
+
+
 ## Installation & Usage
 
 To install and use the **Polar.sh** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **Polar.sh** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

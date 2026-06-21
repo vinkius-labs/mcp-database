@@ -1,12 +1,14 @@
 # Vonage MCP Server
 
-Send SMS, WhatsApp, and Viber messages, and manage virtual numbers and 2FA via Vonage communications platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vonage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vonage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vonage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vonage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Send SMS, WhatsApp, and Viber messages, and manage virtual numbers and 2FA via Vonage communications platform.
 
 ## Description
 Connect your **Vonage** account to any AI agent and power your global communications through natural conversation.
@@ -61,6 +63,33 @@ Updates the inbound SMS callback URL for a virtual number
 Starts a 2FA identity verification by sending an OTP code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vonage** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +123456789 saying 'Your order is ready for pickup!'."
+
+**🤖 AI Agent:**
+> I've sent the SMS to +123456789 via Vonage. Message: 'Your order is ready for pickup!'. The message was successfully dispatched (Message ID: msg-abc).
+
+---
+
+**👤 You:**
+> "Start a verification for number +123456789 with brand 'MyCoolApp'."
+
+**🤖 AI Agent:**
+> Identity verification started for +123456789. The OTP code has been sent. Your Request ID is 'req-xyz'. Please let me know the code when you receive it to complete the check.
+
+---
+
+**👤 You:**
+> "What is my current account balance and the SMS price for the UK?"
+
+**🤖 AI Agent:**
+> Your current Vonage balance is 42.50 EUR. For the United Kingdom (GB), the outbound SMS price is approximately 0.045 EUR per message. You have enough credit for roughly 944 messages.
+
+
 ## Installation & Usage
 
 To install and use the **Vonage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Vonage** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

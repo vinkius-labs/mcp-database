@@ -1,12 +1,14 @@
 # Craftboxx MCP Server
 
-Equip your AI agent to manage craft orders, appointments, and resources directly via the Craftboxx API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/craftboxx)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/craftboxx)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/craftboxx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/craftboxx-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to manage craft orders, appointments, and resources directly via the Craftboxx API.
 
 ## Description
 Integrate **Craftboxx**, the specialized software for craft businesses, directly into your AI workflow. Manage your orders, schedule field appointments, and track company resources using natural language.
@@ -44,6 +46,33 @@ Integrate **Craftboxx**, the specialized software for craft businesses, directly
 - **list_tasks**: List all open and completed tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Craftboxx** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active craft orders for this week."
+
+**🤖 AI Agent:**
+> I've found 5 active orders for this week, including 'Roof Repair - Main St' and 'Electrical Wiring - Office Block'. Would you like to see the assigned employees for these?
+
+---
+
+**👤 You:**
+> "Show me the appointments scheduled for tomorrow."
+
+**🤖 AI Agent:**
+> Tomorrow you have 3 appointments: 08:00 - Customer Consultation (ID: 123), 11:30 - Site Survey (ID: 124), and 15:00 - Maintenance Check (ID: 125). Should I provide details for any of them?
+
+---
+
+**👤 You:**
+> "What is the status of company vehicle 'Sprinter - B-CX 101'?"
+
+**🤖 AI Agent:**
+> The vehicle 'Sprinter - B-CX 101' is currently 'Available' and located at the 'Central Depot'. Its last maintenance was on February 10th. Would you like to assign it to a new order?
+
+
 ## Installation & Usage
 
 To install and use the **Craftboxx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Craftboxx** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

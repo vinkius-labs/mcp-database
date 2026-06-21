@@ -1,12 +1,14 @@
 # Certn MCP Server
 
-Automate background checks and screenings for HR and Property Management via Certn — invite applicants, run quickscreens, and retrieve reports.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/certn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/certn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/certn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/certn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 18
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Automate background checks and screenings for HR and Property Management via Certn — invite applicants, run quickscreens, and retrieve reports.
 
 ## Description
 Connect your **Certn** account to any AI agent to streamline your background screening processes for both Human Resources and Property Management through natural conversation.
@@ -53,6 +55,33 @@ Connect your **Certn** account to any AI agent to streamline your background scr
 - **quick_pm_application**: Screen a tenant instantly for Property Management
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Certn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all current HR applicants and their statuses."
+
+**🤖 AI Agent:**
+> I've retrieved the list of HR applications. You have 3 pending (John Doe, Jane Smith) and 5 completed reports. Would you like to see the details for a specific applicant?
+
+---
+
+**👤 You:**
+> "Invite a new applicant for HR screening: John Doe (john.doe@email.com)."
+
+**🤖 AI Agent:**
+> Invitation sent! John Doe has been invited via email to complete their background check application. The Application ID is 'hr_app_98765'.
+
+---
+
+**👤 You:**
+> "Download the PDF report for applicant ID 550e8400."
+
+**🤖 AI Agent:**
+> I've generated the PDF report for applicant 550e8400. You can access the document here: [Link].
+
+
 ## Installation & Usage
 
 To install and use the **Certn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Certn** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

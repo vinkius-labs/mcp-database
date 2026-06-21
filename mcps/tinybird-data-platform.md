@@ -1,12 +1,14 @@
 # Tinybird Data Platform MCP Server
 
-Analyze real-time data via Tinybird — manage Data Sources, inspect Pipes, and query endpoints directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tinybird-data-platform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tinybird-data-platform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tinybird-data-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tinybird-data-platform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Analyze real-time data via Tinybird — manage Data Sources, inspect Pipes, and query endpoints directly.
 
 ## Description
 Connect your AI agent to **Tinybird**, the real-time data platform for developers. This integration allows you to oversee your analytical infrastructure, manage ingestion storage (Data Sources), and interact with transformation logic (Pipes) through natural conversation.
@@ -45,6 +47,25 @@ Connect your AI agent to **Tinybird**, the real-time data platform for developer
 - **query_pipe_data**: Execute a Pipe and retrieve the results as JSON
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tinybird Data Platform** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all data sources in my Tinybird workspace."
+
+**🤖 AI Agent:**
+> Fetching data sources... I found 3 sources: 'events_log' (1.2M rows), 'users_data' (50k rows), and 'api_analytics' (800k rows). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Run the pipe 'monthly_revenue_summary' with limit 5."
+
+**🤖 AI Agent:**
+> Executing pipe... Here are the top 5 records from 'monthly_revenue_summary': 1. Jan ($12k), 2. Feb ($15k), 3. Mar ($11k)...
+
+
 ## Installation & Usage
 
 To install and use the **Tinybird Data Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +74,11 @@ To install and use the **Tinybird Data Platform** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

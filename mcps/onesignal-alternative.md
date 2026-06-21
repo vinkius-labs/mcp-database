@@ -1,12 +1,14 @@
 # OneSignal MCP Server
 
-Send push notifications, emails, and in-app messages to millions of users with segmentation and A/B testing built in.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/onesignal-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onesignal-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onesignal-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onesignal-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Send push notifications, emails, and in-app messages to millions of users with segmentation and A/B testing built in.
 
 ## Description
 Connect your **OneSignal** account to any AI agent and take full control of your customer engagement and notification orchestration through natural conversation. OneSignal is the market leader for omnichannel delivery, and this integration allows you to dispatch real-time push notifications, manage audience segments, and monitor delivery analytics directly from your chat interface.
@@ -51,6 +53,33 @@ List your applications
 - **list_app_players**: List subscribed devices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OneSignal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 push notifications sent from OneSignal."
+
+**🤖 AI Agent:**
+> I've retrieved your notification history. You have 5 recent broadcasts including 'Black Friday Launch' (Status: Sent) and 'App Update'. Would you like to see the click-through rates for any of them?
+
+---
+
+**👤 You:**
+> "Send a push notification to the segment named VIP Users with a promotional message."
+
+**🤖 AI Agent:**
+> Push notification sent successfully to the "VIP Users" segment. 4,287 devices targeted across iOS (2,103) and Android (2,184). The message "Exclusive early access to our summer collection is live" was delivered with a deep link to your promotion page. Estimated delivery time: under 30 seconds.
+
+---
+
+**👤 You:**
+> "Show me the delivery and click-through analytics for notification ID ntf_8923."
+
+**🤖 AI Agent:**
+> Notification ntf_8923 "Flash Sale Alert" was sent to 12,450 subscribers. Delivered: 11,892 (95.5%). Opened: 3,214 (27% CTR). Clicked: 1,847 (14.8% click rate). iOS performed better with 31% CTR versus Android at 24%. Peak engagement was within the first 15 minutes after delivery.
+
+
 ## Installation & Usage
 
 To install and use the **OneSignal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **OneSignal** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

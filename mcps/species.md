@@ -1,12 +1,14 @@
 # Species MCP Server
 
-Access the GBIF Backbone Taxonomy to search, match, and explore species data, hierarchies, and biological media directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/species)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/species)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/species-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/species-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the GBIF Backbone Taxonomy to search, match, and explore species data, hierarchies, and biological media directly from your AI agent.
 
 ## Description
 Connect to the **GBIF Backbone Taxonomy**, the most comprehensive database of biological names and classifications. This server enables your AI to act as a digital biologist, navigating millions of species records with precision.
@@ -44,6 +46,33 @@ Connect to the **GBIF Backbone Taxonomy**, the most comprehensive database of bi
 - **get_species_synonyms**: List taxonomic synonyms for a specific taxon
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Species** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the scientific name and details of the 'Red Panda'."
+
+**🤖 AI Agent:**
+> I found a match: *Ailurus fulgens* (ID: 2433668). It belongs to the family Ailuridae. Would you like to see its full taxonomic hierarchy or available media?
+
+---
+
+**👤 You:**
+> "List all child taxa for the genus 'Panthera'."
+
+**🤖 AI Agent:**
+> Retrieving children for *Panthera* (ID: 2435194)... I've found several species including *Panthera leo* (Lion), *Panthera tigris* (Tiger), and *Panthera onca* (Jaguar).
+
+---
+
+**👤 You:**
+> "Get descriptions and synonyms for the taxon with ID 5231190."
+
+**🤖 AI Agent:**
+> For Taxon ID 5231190 (*Monachus monachus*), I have retrieved 3 synonyms and detailed descriptions regarding its habitat and conservation status. Would you like me to summarize the text?
+
+
 ## Installation & Usage
 
 To install and use the **Species** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Species** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

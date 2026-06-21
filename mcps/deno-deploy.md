@@ -1,12 +1,14 @@
 # Deno Deploy MCP Server
 
-Manage your Deno Deploy infrastructure — list apps, create deployments, and stream logs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deno-deploy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deno-deploy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deno-deploy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deno-deploy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 15
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage your Deno Deploy infrastructure — list apps, create deployments, and stream logs directly from your AI agent.
 
 ## Description
 Connect your **Deno Deploy** account to any AI agent to orchestrate your edge computing infrastructure through natural conversation. This server provides comprehensive tools for managing the lifecycle of your serverless applications.
@@ -52,6 +54,33 @@ List Deno Deploy applications
 - **update_layer**: Update an existing layer
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deno Deploy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Deno Deploy apps and show their current status."
+
+**🤖 AI Agent:**
+> I've retrieved your applications. You have 3 active apps: 'api-gateway' (running), 'web-frontend' (running), and 'auth-service' (deploying). Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the last 50 error logs for the app 'api-gateway'."
+
+**🤖 AI Agent:**
+> Fetching logs for 'api-gateway'... I found 12 error entries in the last hour, mostly related to 'Database Connection Timeout'. Would you like me to list the full stack traces?
+
+---
+
+**👤 You:**
+> "Check the deployment progress for revision ID 7e8f9a0b."
+
+**🤖 AI Agent:**
+> The deployment for revision 7e8f9a0b is currently at the 'Uploading Assets' stage (65% complete). I will continue to monitor the progress for you.
+
+
 ## Installation & Usage
 
 To install and use the **Deno Deploy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Deno Deploy** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

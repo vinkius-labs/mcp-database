@@ -1,12 +1,14 @@
 # GDACS MCP Server
 
-Monitor global disaster alerts — earthquakes, cyclones, floods, volcanoes, wildfires and droughts with real-time impact estimates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gdacs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gdacs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gdacs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gdacs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Monitor global disaster alerts — earthquakes, cyclones, floods, volcanoes, wildfires and droughts with real-time impact estimates.
 
 ## Description
 Connect to **GDACS** (Global Disaster Alert and Coordination System) and monitor worldwide disaster activity through natural conversation — no API key needed.
@@ -71,6 +73,33 @@ Get latest volcanic activity worldwide
 Get latest wildfires worldwide
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GDACS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What earthquakes happened in the last 7 days?"
+
+**🤖 AI Agent:**
+> Found 12 earthquakes in the past 7 days. Notable: M6.8 Japan (orange alert, 2M people affected), M5.9 Turkey (green alert), M5.6 Indonesia (green alert). All with depth, coordinates and impact estimates.
+
+---
+
+**👤 You:**
+> "Are there any active cyclones right now?"
+
+**🤖 AI Agent:**
+> Found 2 active tropical cyclones: Cyclone Freddy (Category 3, Mozambique channel, orange alert) with sustained winds 185km/h affecting 1.2M people. Tropical Storm 03W (Pacific, green alert) with winds 95km/h.
+
+---
+
+**👤 You:**
+> "Show me flood alerts for the last 3 days."
+
+**🤖 AI Agent:**
+> Found 3 flood events in the past 3 days: Kenya (orange alert, 500K affected), Somalia (green alert, 150K affected), Northern Australia (green alert, localized). All with severity estimates and response status.
+
+
 ## Installation & Usage
 
 To install and use the **GDACS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **GDACS** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

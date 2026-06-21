@@ -1,12 +1,14 @@
 # Increase MCP Server
 
-Your very own programmatic commercial bank. Construct completely new bank accounts, fetch balance ledgers, map Routing numbers and fire wire limits.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/increase)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/increase)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/increase-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/increase-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 12
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Your very own programmatic commercial bank. Construct completely new bank accounts, fetch balance ledgers, map Routing numbers and fire wire limits.
 
 ## Description
 The **Increase MCP Server** connects AI to a physical, fully compliant commercial US bank built explicitly top-down for programmatic transactions.
@@ -44,6 +46,33 @@ The **Increase MCP Server** connects AI to a physical, fully compliant commercia
 - **increase_simulate_inbound_wire**: Simulate receiving a Wire inbound (SANDBOX ONLY)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Increase** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Use our main test routing sandbox mechanism to simulate inbound an external payload of $1000 into Account ID 'acc_1234'."
+
+**🤖 AI Agent:**
+> Simulation dispatched! Expected parameters were simulated into the core routing infrastructure successfully. The endpoint responded and acknowledged $1,000 artificial liquidity injection into your routing destination target. Validate your app webhooks now.
+
+---
+
+**👤 You:**
+> "Audit our entire open accounts layout right now."
+
+**🤖 AI Agent:**
+> Found exactly 4 Demand Deposit accounts running 'opened' conditions. They map respectively under entity groups 'Operational', 'Cloud Subscriptions', 'Holding', and 'Local Dev'. Current aggregate counts reflect stability.
+
+---
+
+**👤 You:**
+> "Spin up a new fresh physical corporate banking account dedicated uniquely to 'Server Spends'. Send the Routing number to me."
+
+**🤖 AI Agent:**
+> Success chain completed in sequence. First, entity 'Server Spends' received a booked ID structure constraint within banking logic. Secondly, the routing generator hooked an incoming ABA/Account array assigned completely to this context. Account numbers are currently available.
+
+
 ## Installation & Usage
 
 To install and use the **Increase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Increase** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

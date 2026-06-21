@@ -1,12 +1,14 @@
 # Files.com MCP Server
 
-Securely manage Files.com storage, users, and permissions. List folders, move files, and automate workflows through natural language.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/filescom-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filescom-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filescom-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filescom-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 17
+
+**Category:** [document-management](../categories/document-management.md)
+
+Securely manage Files.com storage, users, and permissions. List folders, move files, and automate workflows through natural language.
 
 ## Description
 Connect your **Files.com** account to any AI agent to streamline enterprise file management and user administration through natural conversation.
@@ -53,6 +55,33 @@ List all users
 - **update_user**: Update an existing user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Files.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all files and folders inside the /marketing/2024 directory."
+
+**🤖 AI Agent:**
+> I've scanned the /marketing/2024 folder. It contains 3 subfolders (Campaigns, Assets, Reports) and 2 files: 'strategy_v1.pdf' and 'budget.xlsx'.
+
+---
+
+**👤 You:**
+> "Create a new user with username 'dev_team_lead' and email 'lead@company.com'."
+
+**🤖 AI Agent:**
+> User 'dev_team_lead' has been successfully created with ID 88291. Would you like me to add them to any specific groups now?
+
+---
+
+**👤 You:**
+> "Move 'invoice_99.pdf' from /uploads to /finance/invoices."
+
+**🤖 AI Agent:**
+> The file 'invoice_99.pdf' has been moved to /finance/invoices. The operation was successful.
+
+
 ## Installation & Usage
 
 To install and use the **Files.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Files.com** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

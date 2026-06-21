@@ -1,12 +1,14 @@
 # Sumsub MCP Server
 
-Automate identity verification (KYC/AML) via Sumsub — create applicants, check verification status, and manage documents directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sumsub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumsub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sumsub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sumsub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 5
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Automate identity verification (KYC/AML) via Sumsub — create applicants, check verification status, and manage documents directly from any AI agent.
 
 ## Description
 Connect your **Sumsub** account to any AI agent to streamline your identity verification and compliance workflows through natural conversation.
@@ -41,6 +43,33 @@ No more manual status checks in the dashboard. Your AI acts as a compliance assi
 - **get_applicant**: Get applicant data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sumsub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new Sumsub applicant for user 'ext_user_99' at the 'basic-kyc' level."
+
+**🤖 AI Agent:**
+> I've created the applicant. The Sumsub Applicant ID is '65b2f...a1'. You can now proceed with document uploads or status checks for this user.
+
+---
+
+**👤 You:**
+> "Check the verification status for applicant ID 65b2f8e9c1234567890."
+
+**🤖 AI Agent:**
+> The applicant '65b2f8e9c1234567890' is currently in the 'pending' state. Sumsub is reviewing the submitted documents.
+
+---
+
+**👤 You:**
+> "Generate a WebSDK access token for user 'user_456' at the 'advanced-verification' level."
+
+**🤖 AI Agent:**
+> Generated token: 'sb:eyJhbG...'. You can use this token to initialize the Sumsub WebSDK for 'user_456'.
+
+
 ## Installation & Usage
 
 To install and use the **Sumsub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Sumsub** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

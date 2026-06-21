@@ -1,12 +1,14 @@
 # Dynamo Software MCP Server
 
-Equip your AI agent to manage alternative investments, track portfolios, and monitor funds via the Dynamo API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dynamo-software)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dynamo-software)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dynamo-software-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dynamo-software-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to manage alternative investments, track portfolios, and monitor funds via the Dynamo API.
 
 ## Description
 Integrate **Dynamo Software**, the industry-leading platform for alternative investment management, directly into your AI workflow. Manage your investment funds and strategies, track investor profiles and commitment statuses, monitor portfolio valuations and activity logs, and oversee your entire investment lifecycle using natural language.
@@ -44,6 +46,33 @@ Integrate **Dynamo Software**, the industry-leading platform for alternative inv
 - **search_investment_funds**: Search for funds using a name keyword or category
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dynamo Software** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active investors in our platform."
+
+**🤖 AI Agent:**
+> I've found several active investors, including 'Heritage Pension Fund' and 'Global Wealth Partners'. Both are currently 'Funded'. Would you like to see the last activity for Heritage Pension Fund?
+
+---
+
+**👤 You:**
+> "Show me the top high-valuation investment funds."
+
+**🤖 AI Agent:**
+> The top funds by valuation are 'Growth Equity Fund IV' ($1.2B) and 'Global Infrastructure III' ($850M). Should I pull the performance metrics for Growth Equity Fund IV?
+
+---
+
+**👤 You:**
+> "What are the most recent activities recorded in Dynamo?"
+
+**🤖 AI Agent:**
+> The latest activities include a 'Research Note' on Cloud Tech trends and an 'Investor Meeting' with Alice Smith. Both were recorded today. Would you like a summary of the Research Note?
+
+
 ## Installation & Usage
 
 To install and use the **Dynamo Software** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dynamo Software** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

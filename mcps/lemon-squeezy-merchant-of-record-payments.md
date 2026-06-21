@@ -1,12 +1,14 @@
 # Lemon Squeezy (Merchant of Record & Payments) MCP Server
 
-Manage your Lemon Squeezy store, products, and customers directly through AI — handle payments and subscriptions via natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-merchant-of-record-payments)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lemon-squeezy-merchant-of-record-payments)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lemon-squeezy-merchant-of-record-payments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lemon-squeezy-merchant-of-record-payments-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 60
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your Lemon Squeezy store, products, and customers directly through AI — handle payments and subscriptions via natural conversation.
 
 ## Description
 Connect your **Lemon Squeezy** account to any AI agent to manage your Merchant of Record and payment workflows through natural conversation.
@@ -96,6 +98,33 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **validate_license**: Validate a license key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lemon Squeezy (Merchant of Record & Payments)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Lemon Squeezy stores."
+
+**🤖 AI Agent:**
+> I've retrieved your stores. You have one active store: 'My Digital Shop' (ID: 45678). Would you like to see the products or customers for this store?
+
+---
+
+**👤 You:**
+> "Create a new customer named Alice Smith with email alice@example.com for store 45678."
+
+**🤖 AI Agent:**
+> Processing... Alice Smith has been successfully created as a customer in store 45678 with ID 987654.
+
+---
+
+**👤 You:**
+> "Get the details for product ID 12345."
+
+**🤖 AI Agent:**
+> Fetching product data... Product 'SaaS Pro Plan' (ID: 12345) is active. It is priced at $49.00 and currently has 152 active subscribers.
+
+
 ## Installation & Usage
 
 To install and use the **Lemon Squeezy (Merchant of Record & Payments)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -104,4 +133,11 @@ To install and use the **Lemon Squeezy (Merchant of Record & Payments)** MCP ser
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

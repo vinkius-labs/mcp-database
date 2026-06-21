@@ -1,12 +1,14 @@
 # Editorial Prover MCP Server
 
-Every AI agent writes the same way — uniform sentences, identical rhythm, filler words. Editorial Prover breaks the pattern with a structured self-audit: name the reader, justify the hook, map the rhythm, find the weakest sentence, and prove the paragraph structure varies.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/editorial-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/editorial-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/editorial-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/editorial-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Every AI agent writes the same way — uniform sentences, identical rhythm, filler words. Editorial Prover breaks the pattern with a structured self-audit: name the reader, justify the hook, map the rhythm, find the weakest sentence, and prove the paragraph structure varies.
 
 ## Description
 Every AI agent writes the same way. Uniform sentences, identical paragraph structures, filler words like "delve" and "leverage", hedging instead of committing, bullet lists instead of prose. Readers spot it instantly. Detectors flag it in seconds. Editorial Prover eliminates this problem at the source.
@@ -50,6 +52,33 @@ The tool validates pivot consistency. If the agent claims varied rhythm but sent
 Editorial thinking amplifier for any AI agent that writes content, in any language. Forces structured editorial self-audit through 5 Decision Pivots about the reader, the hook, the rhythm, the weakest sentence, and paragraph structure. The act of answering these questions IS the quality improvement. Includes language-agnostic burstiness validation as consistency backup. Based on burstiness analysis (GPTZero 2024) and syntactic template detection (Northeastern 2025). Catches Unfocused Writing (no specific audience — "for developers" when the real audience is "backend engineers debugging production memory leaks at 2 AM"), Weak Hooks (headline that describes instead of committing — "An Introduction to Caching" vs "Your Database is Doing Work It Already Did — Stop That"), Monotone Rhythm (every sentence is 15-20 words, same structure — subject-verb-object on repeat. Human writing bursts: 4-word punch. Then a 35-word explanation that winds through a subordinate clause. Then another punch. AI writing flatlines), Bloated Prose (filler sentences that say nothing — "It is important to note that..." "In order to effectively..." "It should be mentioned that..." — cut all of them), and Repetitive Structure (every paragraph follows claim→explanation→example. Humans vary: question→answer, story→lesson, evidence→conclusion, single-sentence paragraph for impact). Call BEFORE publishing any written content
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Editorial Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I'm writing a landing page headline for a CLI tool that automates database migrations. Audit my copy: 'A comprehensive tool for streamlined database migration management.'"
+
+**🤖 AI Agent:**
+> Verdict: WEAK_HOOK. Your headline describes the feature ('comprehensive tool for streamlined management') instead of selling the benefit. It hedges with generic adjectives. Rewrite to commit: 'Stop breaking production with manual migrations.' — that's a position, a pain point, and urgency in 7 words.
+
+---
+
+**👤 You:**
+> "I wrote a 4-paragraph product description in Portuguese. Every paragraph starts with 'Esta ferramenta...' — is that a problem?"
+
+**🤖 AI Agent:**
+> Verdict: REPETITIVE. Starting 4 paragraphs with the same structure is the #1 marker of AI-generated text (Northeastern syntactic templates research, 2025). Map your structures: P1: problem→consequence, P2: 'Esta ferramenta' statement→evidence, P3: question→answer, P4: testimonial→CTA. Each paragraph must have a different architecture.
+
+---
+
+**👤 You:**
+> "After auditing all 3 sections of my README, what's the editorial report?"
+
+**🤖 AI Agent:**
+> Editorial Report — 3 sections audited: Section 1 (intro): PUBLISH_READY. Section 2 (features): MONOTONE → revised → PUBLISH_READY. Section 3 (getting started): PUBLISH_READY. Recommendation: CONTENT_APPROVED. Revision cycles: 1. Average burstiness CV: 0.47 (human-like rhythm).
+
+
 ## Installation & Usage
 
 To install and use the **Editorial Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Editorial Prover** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

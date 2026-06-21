@@ -1,12 +1,14 @@
 # 5E Arena MCP Server
 
-Automate competitive CS2 tracking via 5E Arena — fetch deep matchmaking stats, global leaderboards, and player performance scores natively from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/5e-arena)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/5e-arena)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/5e-arena-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/5e-arena-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate competitive CS2 tracking via 5E Arena — fetch deep matchmaking stats, global leaderboards, and player performance scores natively from any AI agent.
 
 ## Description
 Link the foremost API core of **5EPlay Arena** into your AI routines unleashing programmatic control over sprawling competitive Counter-Strike architectures avoiding cumbersome web portals forever natively.
@@ -45,6 +47,33 @@ No more refreshing bloated leaderboards checking for a friend's rank fluctuation
 - **search_player**: Search the 5E user database by partial name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **5E Arena** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Provide the real-time match stats block for user ID 's1mple_pro'."
+
+**🤖 AI Agent:**
+> Targeting identifier 's1mple_pro'... Profile fetched! The entity boasts an outstanding 1.4 KD spanning their recent competitive chunk, wielding the AWP predominantly. Would you like an extraction plotting their map dominance matrix next?
+
+---
+
+**👤 You:**
+> "List all banned accounts indexed currently over the regional clean-up loop."
+
+**🤖 AI Agent:**
+> Retrieving the penalty ledger mapping successfully! The VAC loop indicates 12 accounts neutralized in this tier for the past hour alone linked with scripting. Should we filter by ELO level observing which brackets are most contaminated currently?
+
+---
+
+**👤 You:**
+> "Find out the top weapon accuracy for 'NIKO' over the past 30 days."
+
+**🤖 AI Agent:**
+> Processing aim arrays... User NIKO showcases an aggressive 64% total headshot percentage via the Desert Eagle rounding a jaw-dropping level across the span isolated requested actively here. Shall I aggregate the same metrics pulling side-arm stats versus AR equivalents comprehensively?
+
+
 ## Installation & Usage
 
 To install and use the **5E Arena** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **5E Arena** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

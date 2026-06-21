@@ -1,12 +1,14 @@
 # Copysmith MCP Server
 
-Generate marketing copy, product descriptions, and ad variations at scale with AI trained on high-performing content.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/copysmith)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/copysmith)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/copysmith-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/copysmith-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate marketing copy, product descriptions, and ad variations at scale with AI trained on high-performing content.
 
 ## Description
 Connect your **Copysmith** account to any AI agent and take full control of your marketing content production and AI-driven copywriting workflows through natural conversation.
@@ -53,6 +55,33 @@ List files
 List all content templates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Copysmith** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a product description for 'AI Project Manager' using the 'Product Description' template."
+
+**🤖 AI Agent:**
+> Generation triggered! I've started creating your product description for 'AI Project Manager'. The job ID is 'gen_123'. I'll retrieve the finalized copy for you as soon as it's ready.
+
+---
+
+**👤 You:**
+> "Show me all my content folders and files in Copysmith."
+
+**🤖 AI Agent:**
+> I've retrieved your content hierarchy. You have 2 folders: 'Q1 Campaigns' and 'Drafts', with a total of 15 saved files. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Check my remaining credits balance."
+
+**🤖 AI Agent:**
+> Scanning account... You have 1,240 credits remaining. Based on your current usage, you can generate approximately 50 more high-quality articles. Need any help with a new campaign?
+
+
 ## Installation & Usage
 
 To install and use the **Copysmith** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Copysmith** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

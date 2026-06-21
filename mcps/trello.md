@@ -1,12 +1,14 @@
 # Trello MCP Server
 
-Automate project management via Trello — list boards, manage lists, and inspect or create cards directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/trello)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trello)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trello-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trello-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 16
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate project management via Trello — list boards, manage lists, and inspect or create cards directly from any AI agent.
 
 ## Description
 Connect your **Trello** organizational account to any AI agent and take full control of your agile project management workflows through natural conversation.
@@ -67,6 +69,33 @@ Search for Trello cards by keyword
 - **update_card**: Update an existing Trello card
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Trello** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the boards under my Trello account right now."
+
+**🤖 AI Agent:**
+> I've retrieved your boards. You currently operate 'Development Sprints' (ID: 64fa8211), 'Content Marketing' (ID: 64ea9bc), and 'IT Tickets'. Which one should we dive into?
+
+---
+
+**👤 You:**
+> "Can you check the cards currently inside the 'To Do' list ID 618ab221?"
+
+**🤖 AI Agent:**
+> Running the extraction... I found 4 cards currently in 'To Do'. These include 'Update Auth Module' (ID: 63ab), 'Setup DB Indexes' (ID: 6511), and two others. Would you like to read the details for the Auth task?
+
+---
+
+**👤 You:**
+> "Create a new board card called 'Verify Webhooks' with the description 'Check timeout limits under high load' on list 618ab221."
+
+**🤖 AI Agent:**
+> Task accomplished. 'Verify Webhooks' has been successfully created with an attached ID of 660f9a2bccd. Feel free to ask if you need to fetch its timeline or update the card further.
+
+
 ## Installation & Usage
 
 To install and use the **Trello** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **Trello** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

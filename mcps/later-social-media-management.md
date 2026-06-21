@@ -1,12 +1,14 @@
 # Later (Social Media Management) MCP Server
 
-Manage social media via Later — schedule posts, access your media library, and analyze profile performance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/later-social-media-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/later-social-media-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/later-social-media-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/later-social-media-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage social media via Later — schedule posts, access your media library, and analyze profile performance.
 
 ## Description
 Connect your **Later** account to any AI agent and take full control of your visual social media planning and multi-profile scheduling through natural conversation.
@@ -48,6 +50,33 @@ List Later media library items
 - **get_calendar**: Get the Later global content calendar for a multi-profile date slice
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Later (Social Media Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my connected social profiles in Later"
+
+**🤖 AI Agent:**
+> I've found 4 connected profiles: 'techcorp_ig' (Instagram, ID: 123), 'techcorp_tt' (TikTok, ID: 456), 'techcorp_pin' (Pinterest, ID: 789), and 'TechCorp_Official' (LinkedIn, ID: 012). Which one would you like to schedule content for?
+
+---
+
+**👤 You:**
+> "What posts are scheduled for the coming weekend?"
+
+**🤖 AI Agent:**
+> Retrieving calendar for Saturday and Sunday… I've identified 2 posts: 1) Instagram: 'Product Spotlight' (Saturday at 10 AM), 2) TikTok: 'Behind the Scenes' (Sunday at 2 PM). Your calendar looks well-balanced. Would you like to add a Pinterest post?
+
+---
+
+**👤 You:**
+> "Show me the performance metrics for my Instagram profile from last month"
+
+**🤖 AI Agent:**
+> Retrieving analytics for 'techcorp_ig'… Last month, you achieved 125,400 total impressions, reached 45,200 unique accounts, and had 3,850 total interactions (likes, comments, saves). This is a 12% increase compared to the previous month. Great progress!
+
+
 ## Installation & Usage
 
 To install and use the **Later (Social Media Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Later (Social Media Management)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

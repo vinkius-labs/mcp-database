@@ -1,12 +1,14 @@
 # Plasmic (Visual Headless Page Builder) MCP Server
 
-Manage Plasmic projects, pages, and components via AI — list projects, inspect page structures, and trigger publishes directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/plasmic-visual-headless-page-builder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plasmic-visual-headless-page-builder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plasmic-visual-headless-page-builder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plasmic-visual-headless-page-builder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 9
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Plasmic projects, pages, and components via AI — list projects, inspect page structures, and trigger publishes directly.
 
 ## Description
 Connect your **Plasmic** visual headless page builder to any AI agent and take full control of your web projects through natural conversation.
@@ -45,6 +47,33 @@ No more switching between the Plasmic Studio and your terminal to check project 
 - **update_project**: Programmatically updates Plasmic projects
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Plasmic (Visual Headless Page Builder)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Plasmic projects."
+
+**🤖 AI Agent:**
+> I've found 3 projects in your account: 'Marketing Site' (ID: 8vK...), 'E-commerce Store' (ID: 2mP...), and 'Documentation' (ID: 9qL...). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Show me the pages for project ID 8vK..."
+
+**🤖 AI Agent:**
+> Fetching pages for 'Marketing Site'... I found 4 pages: 'Home' (/), 'About Us' (/about), 'Pricing' (/pricing), and 'Contact' (/contact).
+
+---
+
+**👤 You:**
+> "Publish the latest changes for project 8vK..."
+
+**🤖 AI Agent:**
+> Publishing 'Marketing Site' (ID: 8vK...) now... The project has been successfully published to production.
+
+
 ## Installation & Usage
 
 To install and use the **Plasmic (Visual Headless Page Builder)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Plasmic (Visual Headless Page Builder)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

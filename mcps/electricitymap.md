@@ -1,12 +1,14 @@
 # ElectricityMap MCP Server
 
-Access real-time and forecasted electricity carbon intensity and power breakdown data for over 200 regions worldwide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/electricitymap)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/electricitymap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/electricitymap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/electricitymap-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time and forecasted electricity carbon intensity and power breakdown data for over 200 regions worldwide.
 
 ## Description
 Connect to **ElectricityMap** to empower your AI agent with global grid transparency. Track the carbon footprint of electricity in real-time, analyze historical trends, and optimize consumption based on green energy forecasts.
@@ -43,6 +45,33 @@ Connect to **ElectricityMap** to empower your AI agent with global grid transpar
 - **get_power_breakdown_latest**: Get latest power breakdown for a zone
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ElectricityMap** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current carbon intensity in France (FR)?"
+
+**🤖 AI Agent:**
+> I've checked the latest data for France (FR). The current carbon intensity is 45 gCO2eq/kWh, which is quite low due to high nuclear and wind production.
+
+---
+
+**👤 You:**
+> "Show me the power breakdown for zone DK-DK1 right now."
+
+**🤖 AI Agent:**
+> The power breakdown for DK-DK1 shows that 65% of electricity is currently coming from wind, 15% from solar, and the rest from biomass and imports.
+
+---
+
+**👤 You:**
+> "What is the forecasted carbon intensity for Germany (DE) for the next few hours?"
+
+**🤖 AI Agent:**
+> The forecast for Germany (DE) indicates that carbon intensity will drop from 350 to 280 gCO2eq/kWh over the next 4 hours as solar production increases.
+
+
 ## Installation & Usage
 
 To install and use the **ElectricityMap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **ElectricityMap** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # HigherGov MCP Server
 
-Find and track government contracts, grants, and procurement opportunities with intelligence built for public sector vendors.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/highergov)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/highergov)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/highergov-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/highergov-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 12
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Find and track government contracts, grants, and procurement opportunities with intelligence built for public sector vendors.
 
 ## Description
 Connect your **HigherGov** account to any AI agent and take full control of your government market research and procurement tracking through natural conversation.
@@ -49,6 +51,33 @@ No more manual searching through fragmented government portals. Your AI acts as 
 - **search_by_id**: Search using a HigherGov Search ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HigherGov** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all current federal opportunities related to 'Cybersecurity' in Washington."
+
+**🤖 AI Agent:**
+> Searching federal solicitations... I found 3 active opportunities for 'Cybersecurity' in WA. The largest is a NIST solicitation for 'Zero Trust Architecture Support' (ID: NIST-2026-001). Would you like to see the document list for this RFP?
+
+---
+
+**👤 You:**
+> "Show me recent contract awards for 'Lockheed Martin'."
+
+**🤖 AI Agent:**
+> Retrieving Lockheed Martin awards... In the last quarter, they were awarded 5 major contracts totaling $1.2B, primarily with the DoD. Notable projects include 'F-35 Sustainment' and 'Satellite Navigation Upgrades'. Should I detail the agency spend for these?
+
+---
+
+**👤 You:**
+> "List all grant awards in the state of 'Florida' for 2026."
+
+**🤖 AI Agent:**
+> Scanning grant awards for Florida... I found 12 awarded grants so far in 2026. The most frequent agency is HHS, focusing on 'Community Health' and 'Infrastructure Development'. Would you like the list of recipient organizations?
+
+
 ## Installation & Usage
 
 To install and use the **HigherGov** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **HigherGov** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

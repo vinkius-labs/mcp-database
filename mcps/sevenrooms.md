@@ -1,12 +1,14 @@
 # SevenRooms MCP Server
 
-Manage restaurant reservations, guest CRM profiles, waitlists, table availability, and events for your SevenRooms venues through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sevenrooms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sevenrooms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sevenrooms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sevenrooms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** event-management
-**Tools Count:** 8
+
+**Category:** [event-management](../categories/event-management.md)
+
+Manage restaurant reservations, guest CRM profiles, waitlists, table availability, and events for your SevenRooms venues through natural conversation.
 
 ## Description
 Connect your **SevenRooms** restaurant to any AI agent — the premium hospitality CRM.
@@ -43,6 +45,54 @@ Check table availability
 List restaurant events
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SevenRooms** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Who are the VIP guests dining tonight and what are their preferences?"
+
+**🤖 AI Agent:**
+> 🍷 **Tonight's VIP Guests — Oct 18**
+
+⭐ **James Henderson** — 19:30, party of 4
+   💎 Platinum | 23 visits | $18,400 LTV
+   🍷 Prefers: Burgundy, booth seating
+   ⚠️ Allergy: shellfish
+   🎂 Wife's birthday!
+
+⭐ **Dr. Sarah Chen** — 20:00, party of 2
+   💎 Gold | 11 visits | $6,200 LTV
+   🥩 Prefers: rare steak, bar seating
+   📝 Last order: Wagyu A5, Barolo 2018
+
+---
+
+**👤 You:**
+> "Check availability for a party of 4 this Friday at 8 PM."
+
+**🤖 AI Agent:**
+> 📅 **Availability — Friday 8 PM (Party of 4)**
+
+✅ 19:45 (Dining Room)
+✅ 20:00 (Patio)
+✅ 20:15 (Bar seating)
+
+Would you like me to book any of these slots?
+
+---
+
+**👤 You:**
+> "What events are scheduled for next month?"
+
+**🤖 AI Agent:**
+> 🍷 **Upcoming Events (Next Month)**
+
+1. **Wine Dinner Series** | Nov 5, 19:00 | 20 tickets sold, 5 remaining
+2. **Chef's Table Experience** | Nov 15, 20:00 | Fully booked
+3. **Holiday Private Dining** | Nov 25, 18:00 | Open availability
+
+
 ## Installation & Usage
 
 To install and use the **SevenRooms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +101,11 @@ To install and use the **SevenRooms** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Donorbox MCP Server
 
-Collect donations and manage fundraising campaigns with recurring giving, peer-to-peer pages, and donor management for nonprofits.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/donorbox-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorbox-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/donorbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/donorbox-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 12
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Collect donations and manage fundraising campaigns with recurring giving, peer-to-peer pages, and donor management for nonprofits.
 
 ## Description
 Connect your **Donorbox** account to any AI agent and take full control of your nonprofit fundraising and donor engagement workflows through natural conversation.
@@ -55,6 +57,33 @@ List all donors
 - **update_donor_info**: Modify a donor record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Donorbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 donations in my Donorbox account."
+
+**🤖 AI Agent:**
+> I've retrieved your latest 5 donations. You've received a total of $450 across them, including a $100 gift from 'John Doe' for the 'Winter Fund'. Would you like the transaction metadata for these?
+
+---
+
+**👤 You:**
+> "Check recurring plans for donor 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Searching subscriptions... John Doe (ID: d_123) has 1 active monthly plan for $25.00. The last payment was successful on March 1st. Shall I retrieve their full donation history?
+
+---
+
+**👤 You:**
+> "Pause the recurring plan with ID 'pln_456'."
+
+**🤖 AI Agent:**
+> Action complete! Recurring plan pln_456 has been successfully paused. The donor will not be charged until the plan is resumed. I've logged this update in your Donorbox history.
+
+
 ## Installation & Usage
 
 To install and use the **Donorbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Donorbox** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

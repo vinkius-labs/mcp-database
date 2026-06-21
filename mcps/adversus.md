@@ -1,12 +1,14 @@
 # Adversus MCP Server
 
-Manage outbound sales calls, track lead pipelines, and boost call center productivity with intelligent dialing automation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adversus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adversus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adversus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adversus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 7
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage outbound sales calls, track lead pipelines, and boost call center productivity with intelligent dialing automation.
 
 ## Description
 Connect your **Adversus** account to any AI agent and take full control of your outbound sales operations, telemarketing, and CRM orchestration through natural conversation.
@@ -44,6 +46,33 @@ No more manual toggling between dialer tabs or digging through complex lead tabl
 - **list_account_users**: List team users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Adversus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active campaigns and their performance in Adversus."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You currently have 3 active outreach campaigns, including 'Q2 Renewals' and 'New Business'. One campaign shows a high answer rate. Would you like the detailed high-fidelity metadata for it?
+
+---
+
+**👤 You:**
+> "Add 'John Doe' (+15550123) to the 'New Business' campaign (ID: 'camp_456')."
+
+**🤖 AI Agent:**
+> Contact orchestrated! I've successfully registered John Doe in the 'New Business' campaign. He is now in the dialer queue and ready for automated outreach. Need help checking his profile history?
+
+---
+
+**👤 You:**
+> "Show the last 5 leads captured across all my campaigns."
+
+**🤖 AI Agent:**
+> Accessing global leads... I found 5 recent contacts, including @user1 and @user2. All were successfully assigned to their respective high-fidelity sequences. Shall I retrieve the detailed CRM metadata for the most recent lead?
+
+
 ## Installation & Usage
 
 To install and use the **Adversus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Adversus** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

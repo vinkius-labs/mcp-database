@@ -1,12 +1,14 @@
 # Cal.com MCP Server
 
-Manage your scheduling via Cal.com — track bookings, manage event types, and coordinate meetings directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/calcom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calcom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/calcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/calcom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage your scheduling via Cal.com — track bookings, manage event types, and coordinate meetings directly from any AI agent.
 
 ## Description
 Connect your **Cal.com** account to any AI agent and orchestrate your scheduling, booking management, and availability through natural conversation.
@@ -58,6 +60,33 @@ List all event types (meeting templates)
 - **list_memberships**: List organization and team memberships
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cal.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my upcoming bookings in Cal.com."
+
+**🤖 AI Agent:**
+> I've retrieved your bookings. You have 3 upcoming meetings: 'Sync with Team' (ID: book_1), 'Intro Call' (ID: book_2), and 'Design Review' (ID: book_3).
+
+---
+
+**👤 You:**
+> "Show the event types I have configured."
+
+**🤖 AI Agent:**
+> Retrieving event types... You have 3 templates: '15 Minute Meeting' (Slug: 15-min), '30 Minute Coffee' (Slug: coffee), and 'Full Audit' (Slug: audit).
+
+---
+
+**👤 You:**
+> "Cancel booking with ID 99283."
+
+**🤖 AI Agent:**
+> Booking 99283 has been successfully cancelled in your Cal.com account. Notification emails have been sent to participants.
+
+
 ## Installation & Usage
 
 To install and use the **Cal.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Cal.com** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

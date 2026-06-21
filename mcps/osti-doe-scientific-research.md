@@ -1,12 +1,14 @@
 # OSTI (DOE Scientific Research) MCP Server
 
-Access Department of Energy research, datasets, and scientific publications. Search records, retrieve metadata, and manage DOI registrations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/osti-doe-scientific-research)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/osti-doe-scientific-research)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/osti-doe-scientific-research-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/osti-doe-scientific-research-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 6
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access Department of Energy research, datasets, and scientific publications. Search records, retrieve metadata, and manage DOI registrations.
 
 ## Description
 Connect to the **Office of Scientific and Technical Information (OSTI)** to query the US Department of Energy's vast research output. This MCP server allows AI agents to navigate millions of research records and datasets through natural conversation.
@@ -43,6 +45,33 @@ Reserve a DOI via E-Link API
 - **submit_record**: Submit/Update a record and register DOI via E-Link API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OSTI (DOE Scientific Research)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for research papers about 'quantum computing' published in 2023."
+
+**🤖 AI Agent:**
+> I've found several records for 'quantum computing' from 2023. Notable entries include 'Quantum Error Correction in Scalable Architectures' (OSTI ID: 1982341) and 'Advances in Superconducting Qubits'. Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Find scientific datasets related to 'solar irradiance' in the DOE Data Explorer."
+
+**🤖 AI Agent:**
+> Searching the Data Explorer... I've identified 3 datasets. The most relevant is 'High-Resolution Solar Irradiance Data for the Southwestern US' (OSTI ID: 150432). It includes hourly measurements from 2018-2022.
+
+---
+
+**👤 You:**
+> "Get the complete metadata for OSTI record ID 1015678."
+
+**🤖 AI Agent:**
+> Retrieving record 1015678... This is a technical report titled 'Atmospheric Radiation Measurement (ARM) User Facility'. It was authored by the Pacific Northwest National Laboratory and sponsored by the Office of Science.
+
+
 ## Installation & Usage
 
 To install and use the **OSTI (DOE Scientific Research)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **OSTI (DOE Scientific Research)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

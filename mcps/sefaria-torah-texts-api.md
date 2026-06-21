@@ -1,12 +1,14 @@
 # Sefaria Torah Texts API MCP Server
 
-Access sacred texts — audit Torah, Talmud, and library via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sefaria-torah-texts-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sefaria-torah-texts-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sefaria-torah-texts-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sefaria-torah-texts-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 5
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access sacred texts — audit Torah, Talmud, and library via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire religious research and textual auditing workflow with the **Sefaria Torah Texts API**, the comprehensive source for Jewish sacred literature. By connecting Sefaria to your agent, you transform complex scriptural searches into a natural conversation. Your agent can instantly retrieve texts by reference, audit library indices, and query daily reading calendars without you ever touching a physical book. Whether you are conducting academic research or managing daily study constraints, your agent acts as a real-time theological consultant, ensuring your data is always verified and precise.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire religious research and textual 
 - **search_sacred_texts**: Search for keywords or phrases across the entire Sefaria library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sefaria Torah Texts API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get text for 'Genesis 1:1' using Sefaria."
+
+**🤖 AI Agent:**
+> I've retrieved the text for Genesis 1:1! In English: "In the beginning God created the heaven and the earth." In Hebrew: "בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ". Would you like the full chapter metadata or the next verse?
+
+---
+
+**👤 You:**
+> "What is the Daf Yomi for today?"
+
+**🤖 AI Agent:**
+> I've retrieved the reading calendar for today! The current Daf Yomi is identified as [Tractate and Page]. I can provide the full text and commentary links for this section if you'd like.
+
+---
+
+**👤 You:**
+> "Search for texts about 'justice' in Sefaria."
+
+**🤖 AI Agent:**
+> I've identified several passages about justice in the Sefaria library! Notable entries include verses from Deuteronomy and the Prophets. I can provide the full citations and bilingual text for each of these matches.
+
+
 ## Installation & Usage
 
 To install and use the **Sefaria Torah Texts API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Sefaria Torah Texts API** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

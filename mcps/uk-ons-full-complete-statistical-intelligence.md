@@ -1,12 +1,14 @@
 # UK ONS Full — Complete Statistical Intelligence MCP Server
 
-The definitive UK ONS Mega-Server: 20 tools spanning GDP, inflation, retail sales, card spending, household income, weekly deaths, well-being, population projections, trade, business counts, and a universal query engine for any of the 337+ available datasets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-ons-full-complete-statistical-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uk-ons-full-complete-statistical-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uk-ons-full-complete-statistical-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uk-ons-full-complete-statistical-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 20
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+The definitive UK ONS Mega-Server: 20 tools spanning GDP, inflation, retail sales, card spending, household income, weekly deaths, well-being, population projections, trade, business counts, and a universal query engine for any of the 337+ available datasets.
 
 ## Description
 The **ultimate UK ONS Mega-Server** — 20 tools across 4 domains.
@@ -81,6 +83,41 @@ Get UK business counts by enterprises and local units, by industry and geography
 Get UK traffic camera activity — experimental economic indicator
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UK ONS Full — Complete Statistical Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Full UK economic briefing: GDP, inflation, retail, and trade"
+
+**🤖 AI Agent:**
+> 🇬🇧 **UK Economic Briefing**
+
+💰 GDP: +0.3% Q3 2025 (quarterly)
+📈 CPIH: 3.2% (February 2026)
+🛒 Retail: +1.2% monthly (volume)
+🚢 Trade: -£8.6B deficit with EU
+💳 Card Spending: +2.1% vs pre-pandemic
+
+5 ONS datasets queried simultaneously.
+
+---
+
+**👤 You:**
+> "Can you compare UK GDP growth with the inflation rate (CPIH) over the last year?"
+
+**🤖 AI Agent:**
+> Based on recent ONS data: In the 12 months to February 2026, the CPIH annual inflation rate was 3.2%. Concurrently, UK GDP saw an estimated growth of 0.3% in the latest quarter, indicating low growth against persistent inflation.
+
+---
+
+**👤 You:**
+> "Give me a summary of UK population projections and life expectancy."
+
+**🤖 AI Agent:**
+> According to the latest ONS projections, the UK population is projected to grow to over 70 million by 2036. Period life expectancy at birth in the UK is currently estimated at 79.0 years for males and 82.9 years for females.
+
+
 ## Installation & Usage
 
 To install and use the **UK ONS Full — Complete Statistical Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +126,11 @@ To install and use the **UK ONS Full — Complete Statistical Intelligence** MCP
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

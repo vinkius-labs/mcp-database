@@ -1,12 +1,14 @@
 # SketricGen MCP Server
 
-Connect your AI agents to SketricGen to run multi-agent workflows, manage knowledge bases, debug traces, and interact with contacts.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sketricgen)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sketricgen)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sketricgen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sketricgen-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 18
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect your AI agents to SketricGen to run multi-agent workflows, manage knowledge bases, debug traces, and interact with contacts.
 
 ## Description
 Empower your AI agents to securely orchestrate complex workflows using the SketricGen platform. With 18 dedicated tools, your AI can now programmatically trigger multi-agent tasks, inject relevant contacts into context, construct searchable knowledge bases, and granularly inspect execution traces.
@@ -49,6 +51,33 @@ Designed for AI engineers, prompt designers, and automation teams seeking an adv
 - **run_workflow**: Run AI workflow
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SketricGen** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Run my customer support agent workflow in SketricGen with the question 'How do I reset my password?'"
+
+**🤖 AI Agent:**
+> I've successfully triggered the customer support workflow. The agent accessed the 'Password Reset Guide' from your knowledge base and generated a step-by-step response. Would you like me to send this reply to the user?
+
+---
+
+**👤 You:**
+> "Show me the execution trace and credit usage for my last SketricGen workflow run."
+
+**🤖 AI Agent:**
+> Retrieving the execution trace... Your last workflow completed in 4.2 seconds and consumed 15 credits. It successfully executed 3 tool calls and queried the main knowledge base once. Do you want to see the specific input and output for each node?
+
+---
+
+**👤 You:**
+> "List all knowledge bases in SketricGen and show which agents are connected to each."
+
+**🤖 AI Agent:**
+> You have two active knowledge bases: 'Internal HR Docs' (connected to the HR Assistant agent) and 'Public FAQs' (connected to the Support Bot and Sales Bot). The 'Public FAQs' base currently contains 45 indexed documents.
+
+
 ## Installation & Usage
 
 To install and use the **SketricGen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **SketricGen** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

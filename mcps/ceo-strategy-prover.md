@@ -1,12 +1,14 @@
 # CEO Strategy Prover MCP Server
 
-A CEO asked an AI for strategy. It fit in a Jira ticket. It said 'better product' as a competitive moat. It cited 'the industry' instead of naming companies. It delivered a vision with no metrics or kill criteria. That is not strategy — that is a slide deck. This tool forces five CEO-level strategic axes: platform thinking, competitive intelligence, structural moats, metric-driven execution, and market reality validation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ceo-strategy-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ceo-strategy-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ceo-strategy-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ceo-strategy-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** strategy
-**Tools Count:** 1
+
+**Category:** [strategy](../categories/strategy.md)
+
+A CEO asked an AI for strategy. It fit in a Jira ticket. It said 'better product' as a competitive moat. It cited 'the industry' instead of naming companies. It delivered a vision with no metrics or kill criteria. That is not strategy — that is a slide deck. This tool forces five CEO-level strategic axes: platform thinking, competitive intelligence, structural moats, metric-driven execution, and market reality validation.
 
 ## Description
 ## The Problem
@@ -46,6 +48,33 @@ All pass     → STRATEGY_PROVEN
 Structured reflection tool for Big Tech CEO-level market strategy validation. Forces the agent to think at platform/ecosystem level, ground every move in specific competitive precedents, identify structural moats that compound over time, define metric-driven execution with kill criteria, and validate market reality with TAM, competitive response, and timing thesis. Catches Small Thinking (features instead of ecosystems — "add a feature" is a Jira ticket, not a strategy), Unanchored Strategy (no competitive precedents — "others have tried" tells you nothing), Moat Blindness ("better product" instead of structural advantage — competitors hire engineers too), Execution Gap (vision without metrics, milestones, team, budget, or kill criteria), and Market Disconnect (ignoring TAM with source, competitive response modeling, timing thesis). Call once per strategic challenge, market entry, or competitive play
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CEO Strategy Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Add a feature to improve conversion. We are better than competitors. The market is large. Others have tried similar approaches. Execute the strategy and dominate the space."
+
+**🤖 AI Agent:**
+> SMALL_THINKING — Five fatal gaps: feature-level thinking, vague precedents, weak moat, vision-without-plan, market-blind language.
+
+---
+
+**👤 You:**
+> "Platform: become data infrastructure for healthcare — third-party apps build on APIs, each integration increases switching costs. Precedent: Veeva built vertical CRM for pharma, captured 80% share in 5 years. Moat: network effects + data flywheel (2M patient records). Execution: North Star weekly active integrations, 90-day 50 providers, 6-month $500K ARR, kill if <20 at month 6. Market: $47B health IT (Gartner, 22% CAGR), AWS will react in 18mo — our moat is vertical specialization. HIPAA compliance is our barrier. API-first adoption hit 40% in 2025."
+
+**🤖 AI Agent:**
+> STRATEGY_PROVEN — CEO-level strategy validated. All five axes pass. Execute.
+
+---
+
+**👤 You:**
+> "We have a strong product but our organizational structure has 6 management layers for 80 employees. Decision cycles take 3 weeks. Should we restructure?"
+
+**🤖 AI Agent:**
+> Organizational friction detected. 6 layers for 80 people is bureaucratic overhead. Flatten to 3 layers maximum. Empower teams with decision authority. Speed is a strategic weapon.
+
+
 ## Installation & Usage
 
 To install and use the **CEO Strategy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **CEO Strategy Prover** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

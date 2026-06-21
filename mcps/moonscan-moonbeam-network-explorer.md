@@ -1,12 +1,14 @@
 # Moonscan (Moonbeam Network Explorer) MCP Server
 
-Access Moonbeam blockchain data via Moonscan — check GLMR balances, track transactions, and inspect smart contracts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moonscan-moonbeam-network-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moonscan-moonbeam-network-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moonscan-moonbeam-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moonscan-moonbeam-network-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 26
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Moonbeam blockchain data via Moonscan — check GLMR balances, track transactions, and inspect smart contracts directly from any AI agent.
 
 ## Description
 Connect your **Moonscan** API key to any AI agent to explore the Moonbeam Network with ease. This server provides a comprehensive suite of tools for querying on-chain data without leaving your conversation.
@@ -61,6 +63,33 @@ Connect your **Moonscan** API key to any AI agent to explore the Moonbeam Networ
 - **proxy_eth_get_transaction_receipt**: Proxy: eth_getTransactionReceipt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Moonscan (Moonbeam Network Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current GLMR balance for 0x21130d97301b6A5723dC95ca7519483491744ef1?"
+
+**🤖 AI Agent:**
+> The address 0x2113... currently holds 1,250.45 GLMR.
+
+---
+
+**👤 You:**
+> "List the last 5 normal transactions for address 0x21130d97301b6A5723dC95ca7519483491744ef1 sorted by desc."
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent transactions. The latest one was a transfer of 50 GLMR to 0xabc... at block 4,500,123.
+
+---
+
+**👤 You:**
+> "Get the ABI for the smart contract at 0xacc15dc74880c9944775448304b263d191c6077f."
+
+**🤖 AI Agent:**
+> I have successfully retrieved the ABI for the contract. It includes functions like `transfer`, `balanceOf`, and `approve`. Would you like me to explain any specific function?
+
+
 ## Installation & Usage
 
 To install and use the **Moonscan (Moonbeam Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Moonscan (Moonbeam Network Explorer)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

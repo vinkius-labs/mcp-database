@@ -1,12 +1,14 @@
 # Broadage Sports MCP Server
 
-Access real-time sports data via Broadage — track scores, matches, and lineups directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/broadage-sports)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/broadage-sports)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/broadage-sports-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/broadage-sports-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time sports data via Broadage — track scores, matches, and lineups directly from any AI agent.
 
 ## Description
 Connect your **Broadage Sports** account to any AI agent and orchestrate your sports research, live score tracking, and match analysis workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Broadage Sports** account to any AI agent and orchestrate your sp
 - **list_tournaments**: List all available sports tournaments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Broadage Sports** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show the live soccer scores for today."
+
+**🤖 AI Agent:**
+> I've checked the live matches. Currently, Arsenal is leading 2-1 against Chelsea (75'), and Real Madrid is drawing 0-0 with Barcelona (20').
+
+---
+
+**👤 You:**
+> "What's the starting lineup for the match with ID 12345?"
+
+**🤖 AI Agent:**
+> Retrieving lineup for match 12345... Team A is playing a 4-3-3 formation with Smith in goal. Team B is using a 4-4-2. Would you like the list of substitutes?
+
+---
+
+**👤 You:**
+> "Show match statistics for match 12345."
+
+**🤖 AI Agent:**
+> Retrieving stats for match 12345... Possession is 55% for Team A, they have 12 shots total (5 on target), and 6 corners. Team B has 45% possession.
+
+
 ## Installation & Usage
 
 To install and use the **Broadage Sports** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Broadage Sports** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Swiftfox MCP Server
 
-Generate product mockups and marketing visuals instantly with AI that places your designs on real-world backgrounds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/swiftfox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/swiftfox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/swiftfox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/swiftfox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 11
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Generate product mockups and marketing visuals instantly with AI that places your designs on real-world backgrounds.
 
 ## Description
 Connect your **Swiftfox** account to any AI agent and take full control of your member management, engagement strategy, and communication campaigns through natural conversation.
@@ -64,6 +66,33 @@ Get the authenticated Swiftfox user profile
 List subscriptions for a specific person
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Swiftfox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recently active members in Swiftfox."
+
+**🤖 AI Agent:**
+> I've fetched the latest active members. The list includes: Robert Lewin (Last seen 2h ago), Martha Stewart, and David Beckham. Would you like to check the interaction history for any of them?
+
+---
+
+**👤 You:**
+> "Log a new interaction: 'Follow-up call completed' for member ID '10293'."
+
+**🤖 AI Agent:**
+> Interaction logged! I've added the note 'Follow-up call completed' to member 10293's profile. The engagement history has been updated in Swiftfox.
+
+---
+
+**👤 You:**
+> "Show me the details for member 'Martha Stewart'."
+
+**🤖 AI Agent:**
+> I've retrieved Martha Stewart's profile (ID: m_88231). She is a 'VIP Donor' and her last campaign interaction was 'Newsletter Open' yesterday. Shall I list her full contact data?
+
+
 ## Installation & Usage
 
 To install and use the **Swiftfox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Swiftfox** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # GetYourGuide MCP Server
 
-Search and book tours, activities, and travel experiences via AI agents with GetYourGuide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/getyourguide)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getyourguide)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/getyourguide-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/getyourguide-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Search and book tours, activities, and travel experiences via AI agents with GetYourGuide.
 
 ## Description
 Connect your AI agent to the **GetYourGuide** global marketplace to automate travel activity discovery and booking through the Model Context Protocol (MCP). GetYourGuide is the leading platform for finding and booking unforgettable travel experiences, from guided tours to skip-the-line tickets. This MCP server enables you to search for activities in any destination, check real-time availability, and manage travel bookings directly through natural conversation.
@@ -50,6 +52,33 @@ Connect your AI agent to the **GetYourGuide** global marketplace to automate tra
 - **get_partner_details**: Get account identity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GetYourGuide** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for guided tours of the Eiffel Tower in Paris."
+
+**🤖 AI Agent:**
+> Searching activities... I found several options for the Eiffel Tower, including 'Priority Access Tour' (ID: 123) and 'Summit Guided Tour'. Which one would you like to check availability for?
+
+---
+
+**👤 You:**
+> "Is the 'Louvre Museum Skip-the-Line Ticket' available for October 10th?"
+
+**🤖 AI Agent:**
+> Checking availability... Yes, there are 15 slots available for October 10th at various times starting from 09:00 AM. Prices start at $22.00.
+
+---
+
+**👤 You:**
+> "Show me the status of my booking 'GYG-ABC-123-XYZ'."
+
+**🤖 AI Agent:**
+> Fetching booking... Your reservation for the 'Venice Gondola Ride' is 'Confirmed'. The meeting point is San Marco Square at 10:30 AM tomorrow. Would you like the meeting point coordinates?
+
+
 ## Installation & Usage
 
 To install and use the **GetYourGuide** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **GetYourGuide** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

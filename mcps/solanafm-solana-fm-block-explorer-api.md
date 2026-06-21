@@ -1,12 +1,14 @@
 # SolanaFM (Solana FM Block Explorer API) MCP Server
 
-Access Solana blockchain data via SolanaFM — inspect blocks, transactions, account metadata, and token balances directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/solanafm-solana-fm-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/solanafm-solana-fm-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/solanafm-solana-fm-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/solanafm-solana-fm-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access Solana blockchain data via SolanaFM — inspect blocks, transactions, account metadata, and token balances directly from any AI agent.
 
 ## Description
 Connect to the **SolanaFM** block explorer API to empower your AI agent with deep indexing capabilities for the Solana network.
@@ -42,6 +44,33 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 - **get_transaction**: Get details for a specific transaction
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SolanaFM (Solana FM Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the details for Solana block at slot 250000000."
+
+**🤖 AI Agent:**
+> I've retrieved the details for block 250000000. It contains 2,450 transactions and was produced by validator 'Chorus One'. Would you like to see the list of transaction signatures in this block?
+
+---
+
+**👤 You:**
+> "Show me all token accounts owned by 7xKX... (address)."
+
+**🤖 AI Agent:**
+> Analyzing the wallet... I found 3 token accounts for this address: 500 USDC, 1.5 SOL, and 10,000 BONK. Do you need the specific mint addresses for these tokens?
+
+---
+
+**👤 You:**
+> "List the last transactions for account address 7xKX... (address)."
+
+**🤖 AI Agent:**
+> I've fetched the recent transaction history. There are 5 recent activities, including a 'Transfer' of 2 SOL and a 'Swap' on Jupiter. Would you like the full details for the most recent transaction signature?
+
+
 ## Installation & Usage
 
 To install and use the **SolanaFM (Solana FM Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **SolanaFM (Solana FM Block Explorer API)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

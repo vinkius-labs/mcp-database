@@ -1,12 +1,14 @@
 # Zoho CRM MCP Server
 
-Manage leads, contacts, and deals on Zoho CRM — the AI-powered sales platform for growing teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage leads, contacts, and deals on Zoho CRM — the AI-powered sales platform for growing teams.
 
 ## Description
 Connect your **Zoho CRM** account to any AI agent and manage your entire sales lifecycle through natural conversation.
@@ -52,6 +54,33 @@ List all CRM leads
 - **list_tasks**: List all tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 leads in my Zoho CRM account."
+
+**🤖 AI Agent:**
+> I found your 5 most recent leads: 1. John Doe (Acme Corp), 2. Jane Smith (Global Tech), 3. Robert Brown (Stark Industries), and 2 others. Which one would you like to see the contact details for?
+
+---
+
+**👤 You:**
+> "What is the current status of the deal with ID '12345678'?"
+
+**🤖 AI Agent:**
+> Deal 'Enterprise Expansion' (ID: 12345678): Stage: Negotiation/Review, Value: $45,000.00, Expected Closing: 2026-04-15. Owner: Alice Johnson. Would you like me to check for any recent call logs related to this deal?
+
+---
+
+**👤 You:**
+> "List all tasks assigned to me in Zoho CRM."
+
+**🤖 AI Agent:**
+> I found 4 active tasks assigned to you: 1. 'Follow up with John Doe', 2. 'Draft proposal for Global Tech', 3. 'Verify billing for Stark Industries', and 4. 'Update product catalog'. Which one would you like to update?
+
+
 ## Installation & Usage
 
 To install and use the **Zoho CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Zoho CRM** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

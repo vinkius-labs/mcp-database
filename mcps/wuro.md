@@ -1,12 +1,14 @@
 # Wuro MCP Server
 
-Manage your business billing, product catalog, and contacts with Wuro.fr through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wuro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wuro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wuro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wuro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your business billing, product catalog, and contacts with Wuro.fr through AI.
 
 ## Description
 Connect your **Wuro.fr** account to any AI agent to automate your business billing and CRM workflows. Manage invoices, quotes, and your customer database through natural conversation.
@@ -52,6 +54,25 @@ Create a new quote/estimate
 - **list_quotes**: List all quotes/estimates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wuro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent invoices in Wuro."
+
+**🤖 AI Agent:**
+> I've retrieved your latest invoices. The most recent is Invoice #F-2024-001 (Total: €1,250.00, Status: Paid). Would you like the details for any other record?
+
+---
+
+**👤 You:**
+> "Create a new contact 'Jean Dupont' with email jean@example.com."
+
+**🤖 AI Agent:**
+> Successfully created the contact 'Jean Dupont' in Wuro. He has been added to your database as a new client prospect. Would you like to create a quote for him?
+
+
 ## Installation & Usage
 
 To install and use the **Wuro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +81,11 @@ To install and use the **Wuro** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

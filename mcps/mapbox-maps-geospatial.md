@@ -1,12 +1,14 @@
 # Mapbox (Maps & Geospatial) MCP Server
 
-Build with location data via Mapbox — geocode addresses, calculate routes, and solve trip optimization.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-maps-geospatial)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-maps-geospatial)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapbox-maps-geospatial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapbox-maps-geospatial-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build with location data via Mapbox — geocode addresses, calculate routes, and solve trip optimization.
 
 ## Description
 Connect your **Mapbox** account to any AI agent and take full control of world-class geocoding, navigation, and geospatial intelligence through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Mapbox** account to any AI agent and take full control of world-c
 - **generate_static_map**: Generate a static map image URL centered on coordinates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mapbox (Maps & Geospatial)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the coordinates for 'Golden Gate Bridge' in San Francisco"
+
+**🤖 AI Agent:**
+> Resolving place… I've found the Golden Gate Bridge at latitude 37.8199 and longitude -122.4783. It is classified as a POI (Point of Interest). Would you like me to find driving directions to this location?
+
+---
+
+**👤 You:**
+> "Get driving directions from New York to Philadelphia with traffic-aware ETA"
+
+**🤖 AI Agent:**
+> Calculating route… The optimal path via I-95 S is approximately 152 km. With current traffic conditions, the estimated travel time is 1 hour and 45 minutes. I can provide the detailed turn-by-turn navigation data if you'd like.
+
+---
+
+**👤 You:**
+> "What areas are within a 5-minute walk from '-73.9857,40.7484'?"
+
+**🤖 AI Agent:**
+> Computing isochrone… I've generated a 5-minute walking polygon centered near the Empire State Building. This area covers approximately 0.8 square kilometers. Would you like me to provide the GeoJSON coordinates for this reachable zone?
+
+
 ## Installation & Usage
 
 To install and use the **Mapbox (Maps & Geospatial)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Mapbox (Maps & Geospatial)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

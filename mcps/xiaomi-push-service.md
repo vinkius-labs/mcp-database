@@ -1,12 +1,14 @@
 # Xiaomi Push Service / 小米推送 MCP Server
 
-Xiaomi's essential device push platform — send notifications to MIUI and Global devices via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/xiaomi-push-service)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/xiaomi-push-service)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/xiaomi-push-service-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/xiaomi-push-service-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Xiaomi's essential device push platform — send notifications to MIUI and Global devices via AI.
 
 ## Description
 Empower your AI agent to orchestrate your device communication and mobile engagement with **Xiaomi Push Service** (小米推送), the premier notification platform for the Xiaomi ecosystem. By connecting Xiaomi Push to your agent, you transform complex message sending, alias mapping, and regional broadcasting into a natural conversation. Your agent can instantly send notifications to specific Registration IDs, target users by their custom aliases, and broadcast updates to millions of devices across various regional gateways (China, Global, Europe, India, Russia) without you ever needing to navigate the comprehensive MiPush Console. Whether you are automating high-priority alerts or coordinating a system-wide update, your agent acts as a real-time push coordinator, providing accurate and fast results from a single, authorized source.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your device communication and mobile engage
 - **unsubscribe_from_topic**: Unsubscribe a device from a topic
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Xiaomi Push Service / 小米推送** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a push notification to Xiaomi RegID 'ABCD...1234' with title 'Welcome' and body 'Glad to have you here!'."
+
+**🤖 AI Agent:**
+> I've successfully sent the notification to the Registration ID. The Xiaomi message ID is `1234567890`. Should I also verify if this RegID is correctly formatted?
+
+---
+
+**👤 You:**
+> "Push an urgent alert to user alias 'user_8821' saying 'Your account has a new login'."
+
+**🤖 AI Agent:**
+> I've initiated the high-priority push to the user alias `user_8821`. The message has been submitted to the Xiaomi gateway. Would you like me to check the connectivity status of your configured region?
+
+---
+
+**👤 You:**
+> "Broadcast a global announcement to all users: 'Maintenance starts at 10 PM tonight'."
+
+**🤖 AI Agent:**
+> I've started the broadcast to all devices registered to your application. The maintenance announcement has been successfully sent via Xiaomi Push. Should I verify which region is currently active for these operations?
+
+
 ## Installation & Usage
 
 To install and use the **Xiaomi Push Service / 小米推送** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Xiaomi Push Service / 小米推送** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

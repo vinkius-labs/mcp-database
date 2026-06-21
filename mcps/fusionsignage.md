@@ -1,12 +1,14 @@
 # FusionSignage MCP Server
 
-Control digital signage screens remotely with content scheduling, playlist management, and real-time display monitoring.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionsignage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionsignage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fusionsignage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fusionsignage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 17
+
+**Category:** [productivity](../categories/productivity.md)
+
+Control digital signage screens remotely with content scheduling, playlist management, and real-time display monitoring.
 
 ## Description
 Connect your **FusionSignage** account to any AI agent and manage your digital signage network through natural conversation.
@@ -53,6 +55,33 @@ Connect your **FusionSignage** account to any AI agent and manage your digital s
 - **update_screen**: Update a screen
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FusionSignage** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all screens and highlight any that are offline."
+
+**🤖 AI Agent:**
+> Your signage network has 12 screens. 10 online, 2 offline. ⚠️ Offline screens: 1) 'Lobby Display' (screen_003, last seen 2 hours ago, assigned: 'Welcome Playlist'). 2) 'Cafeteria Menu' (screen_008, last seen 45 min ago, assigned: 'Lunch Menu'). Online screens include: 'Reception TV' (screen_001, playing 'Corporate News'), 'Meeting Room A' (screen_002, playing 'Room Schedule'), and 8 others. Would you like to update the offline screen configurations or assign new playlists?
+
+---
+
+**👤 You:**
+> "Create a new promotional playlist with our latest media and assign it to all lobby screens."
+
+**🤖 AI Agent:**
+> Media library: 34 files available. Latest uploads: 'spring_promo_2025.mp4' (15s, uploaded today), 'new_menu_banner.jpg', 'loyalty_program.mp4' (30s). Playlist created! ID: pl_892, Name: 'Spring Promo 2025', Items: 3 media files, Total duration: 55s loop. Assigned to 3 lobby screens: 'Lobby Display' (screen_003), 'Lobby Left' (screen_004), 'Lobby Right' (screen_005). All screens will update within 60 seconds. Would you like to create a schedule or update the playlist?
+
+---
+
+**👤 You:**
+> "Show all content schedules and the screen groups configured in our account."
+
+**🤖 AI Agent:**
+> Active schedules: 4. 1) 'Business Hours' — Mon-Fri 8AM-6PM, plays 'Corporate News' on all lobby screens. 2) 'Lunch Menu' — Mon-Fri 11AM-2PM, plays 'Daily Menu' on cafeteria screens. 3) 'Weekend Mode' — Sat-Sun all day, plays 'Welcome Loop' on reception. 4) 'After Hours' — Mon-Fri 6PM-8AM, plays 'Security Info' on all screens. Screen groups: 1) 'Lobby' (3 screens). 2) 'Cafeteria' (2 screens). 3) 'Meeting Rooms' (5 screens). 4) 'External' (2 screens). Would you like to create a new schedule or modify a group?
+
+
 ## Installation & Usage
 
 To install and use the **FusionSignage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **FusionSignage** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

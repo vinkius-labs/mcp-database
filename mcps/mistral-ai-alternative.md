@@ -1,12 +1,14 @@
 # Mistral AI MCP Server
 
-Build with European open-weight language models that deliver strong reasoning, multilingual capability, and efficient inference.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mistral-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mistral-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mistral-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Build with European open-weight language models that deliver strong reasoning, multilingual capability, and efficient inference.
 
 ## Description
 Connect your **Mistral AI** account to any AI agent and leverage Mistral's open and commercial models through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Mistral AI** account to any AI agent and leverage Mistral's open 
 - **translate_text**: Translate text between languages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mistral AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available Mistral models."
+
+**🤖 AI Agent:**
+> Available models: 8. 1) mistral-large-latest (Top tier reasoning). 2) mistral-small-latest (Cost-effective). 3) open-mixtral-8x22b (Open weights). 4) mistral-embed (Embeddings). 5) codestral-latest (Code generation). Plus 3 older versions.
+
+---
+
+**👤 You:**
+> "Generate a completion using mistral-large-latest."
+
+**🤖 AI Agent:**
+> Generation complete! ✅ Model: mistral-large-latest. Output: 'Bonjour! Here is a concise explanation of quantum computing...' Tokens used: 45 prompt, 120 completion.
+
+---
+
+**👤 You:**
+> "Generate embeddings for a list of 3 sentences."
+
+**🤖 AI Agent:**
+> Embeddings generated! ✅ Model: mistral-embed. Input: 3 sentences. Output: 3 vectors (Dimensions: 1024 each). Total tokens used: 48. Ready for vector DB insertion.
+
+
 ## Installation & Usage
 
 To install and use the **Mistral AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Mistral AI** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

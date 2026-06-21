@@ -1,12 +1,14 @@
 # TzKT (Tezos Indexer & Explorer API) MCP Server
 
-Access real-time Tezos blockchain data — explore accounts, smart contracts, and transaction history directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tzkt-tezos-indexer-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tzkt-tezos-indexer-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tzkt-tezos-indexer-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tzkt-tezos-indexer-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 25
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access real-time Tezos blockchain data — explore accounts, smart contracts, and transaction history directly from your AI agent.
 
 ## Description
 Connect to the **TzKT API**, the most advanced indexer for the Tezos blockchain. This MCP server allows your AI agent to query live on-chain data, analyze smart contract storage, and track financial operations across Mainnet and testnets.
@@ -62,6 +64,33 @@ List accounts with filters
 - **list_transactions**: List transactions with advanced filtering
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TzKT (Tezos Indexer & Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the top 5 accounts on Tezos mainnet with a balance greater than 1000 XTZ."
+
+**🤖 AI Agent:**
+> I've queried the mainnet accounts. Here are 5 accounts with balances over 1000 XTZ, including tz1... (Balance: 1500 XTZ) and tz1... (Balance: 1200 XTZ). Would you like to see the full report for any of these?
+
+---
+
+**👤 You:**
+> "What are the available entrypoints for the smart contract KT1PWx2mnDuep3UMCcAgST9SetSjSEu7RZK1?"
+
+**🤖 AI Agent:**
+> I've retrieved the entrypoints for that contract. It features several callable functions including 'transfer', 'mint', 'burn', and 'set_metadata'. Which one would you like to inspect further?
+
+---
+
+**👤 You:**
+> "Get the details for the Tezos transaction with hash ooVp... on Ghostnet."
+
+**🤖 AI Agent:**
+> Searching Ghostnet for operation ooVp... Found it! This was a transaction of 50 XTZ from tz1... to tz1... confirmed at block level 1,234,567. The status is 'applied'.
+
+
 ## Installation & Usage
 
 To install and use the **TzKT (Tezos Indexer & Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **TzKT (Tezos Indexer & Explorer API)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

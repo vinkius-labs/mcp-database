@@ -1,12 +1,14 @@
 # Marvel Comics MCP Server
 
-Explore the Marvel universe — search characters, comics, series, events and creators with full metadata from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/marvel-comics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marvel-comics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marvel-comics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marvel-comics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 10
+
+**Category:** [content-management](../categories/content-management.md)
+
+Explore the Marvel universe — search characters, comics, series, events and creators with full metadata from any AI agent.
 
 ## Description
 Connect to the **Marvel Comics API** and explore the entire Marvel universe through natural conversation.
@@ -67,6 +69,33 @@ Search Marvel events by name or character
 Search Marvel series by title or character
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Marvel Comics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all characters whose names start with 'Iron'."
+
+**🤖 AI Agent:**
+> Found 5 characters: Iron Man (Tony Stark) - Genius billionaire inventor in a powered suit of armor, Iron Fist (Danny Rand) - Martial artist with mystical chi-powered fist, Iron Patriot, Ironheart (Riri Williams) - Teen genius who built her own armor, and Iron Lad (young Kang variant).
+
+---
+
+**👤 You:**
+> "What comics feature the X-Men?"
+
+**🤖 AI Agent:**
+> I found 200+ comics featuring the X-Men character (ID 1009726). Recent titles include 'X-Men #25' (2024), 'X-Men: Red', 'Uncanny X-Men', 'New Mutants' and 'X-Factor'. Results include issue numbers, formats (comic, hardcover, trade paperback), cover dates and prices.
+
+---
+
+**👤 You:**
+> "Tell me about the Civil War event."
+
+**🤖 AI Agent:**
+> Civil War (2006-2007) was a major Marvel crossover event written by Mark Millar with art by Steve McNiven. The conflict divided heroes over the Superhuman Registration Act, pitting Iron Man against Captain America. The event spanned 7 main issues and over 100 tie-in comics across multiple series.
+
+
 ## Installation & Usage
 
 To install and use the **Marvel Comics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **Marvel Comics** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

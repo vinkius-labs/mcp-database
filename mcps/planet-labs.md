@@ -1,12 +1,14 @@
 # Planet Labs MCP Server
 
-Access daily satellite imagery via Planet Labs — search PSScene, SkySat, and RapidEye imagery, filter by cloud cover, and set up automated imagery delivery from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/planet-labs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planet-labs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planet-labs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planet-labs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access daily satellite imagery via Planet Labs — search PSScene, SkySat, and RapidEye imagery, filter by cloud cover, and set up automated imagery delivery from any AI agent.
 
 ## Description
 Connect your **Planet Labs API** to any AI agent and take full control of daily satellite imagery search, discovery, automated delivery, and imagery analysis through natural conversation.
@@ -81,6 +83,33 @@ Execute a saved search and retrieve imagery results
 Get statistical histograms of available imagery for an area and time period
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Planet Labs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find cloud-free PSScene imagery over my farm boundary from the last 30 days."
+
+**🤖 AI Agent:**
+> Searching Planet catalog for PSScene imagery... Found 12 scenes matching your criteria. Best match: 2025-04-02 acquisition with 3% cloud cover, sun elevation 52 degrees. Available assets: visual (true-color PNG), analytic (surface reflectance GeoTIFF), analytic_udm2 (with uncertainty mask). Download URLs ready for all asset types. Would you like me to filter by even lower cloud cover or search for SkySat sub-meter imagery instead?
+
+---
+
+**👤 You:**
+> "Show me what satellite imagery types are available and their resolutions."
+
+**🤖 AI Agent:**
+> Listing available item types... PSScene (PlanetScope): 3-5m resolution, daily global coverage, 200+ satellites. Assets: visual, analytic, analytic_udm2, thumbnail. SkySat: 0.5-0.9m sub-meter resolution, video capable, high-detail site inspection. Assets: visual, analytic, ortho_analytic, udm2. RapidEye: 5m resolution, 5-band sensor with red-edge, archive since 2009. Assets: visual, analytic, udm. Landsat 8/9: 30m resolution, USGS partnership, 16-day revisit. Assets: visual, analytic. Sentinel-2: 10-20m resolution, ESA partnership, 5-day revisit. Assets: visual, analytic. Which type would you like to search for?
+
+---
+
+**👤 You:**
+> "Create a daily subscription for cloud-free imagery over my monitoring area."
+
+**🤖 AI Agent:**
+> Creating subscription for daily cloud-free imagery... Subscription created successfully! Name: Daily Monitoring, Item types: PSScene, Max cloud cover: 10%. Status: Active. New imagery matching your criteria will be delivered automatically as it becomes available. You can manage this subscription with list_subscriptions and modify filters anytime. Would you like to add delivery to cloud storage (S3, GCS, Azure) or set up webhook notifications?
+
+
 ## Installation & Usage
 
 To install and use the **Planet Labs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Planet Labs** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

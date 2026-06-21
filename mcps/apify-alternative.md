@@ -1,12 +1,14 @@
 # Apify MCP Server
 
-Manage your cloud automation — audit actors, tasks, and datasets via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apify-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apify-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apify-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 10
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Manage your cloud automation — audit actors, tasks, and datasets via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire cloud automation and web scraping ecosystem with **Apify**, the leading platform for scaleable automation. By connecting Apify to your agent, you transform complex actor management into a natural conversation. Your agent can instantly list your actors, audit task execution, and retrieve dataset items without you ever touching a technical console. Whether you are running data pipelines or managing automated workflows, your agent acts as a real-time automation operator, ensuring your cloud jobs are always monitored and your data is organized.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire cloud automation and web scrapi
 - **list_tasks**: List Apify actor tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Apify actors."
+
+**🤖 AI Agent:**
+> I've retrieved your actors. You have 5 active actors, including 'Website Content Crawler' and 'Google Maps Scraper'. Which one would you like to audit for recent runs?
+
+---
+
+**👤 You:**
+> "Show me the last 5 runs for actor ID xxxx."
+
+**🤖 AI Agent:**
+> I've found the last 5 runs. The most recent one was completed successfully in 2 minutes. Two other runs had warnings. Would you like the full log details?
+
+---
+
+**👤 You:**
+> "Get items from dataset ID yyyy."
+
+**🤖 AI Agent:**
+> I've retrieved the data from that dataset. It contains 50 items related to 'Competitor Pricing'. I can summarize the top findings or provide the full list.
+
+
 ## Installation & Usage
 
 To install and use the **Apify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Apify** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

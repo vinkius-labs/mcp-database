@@ -1,12 +1,14 @@
 # Nearblocks (Near Blockchain Explorer API) MCP Server
 
-Explore the Near blockchain — query account balances, transactions, tokens, and network statistics directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nearblocks-near-blockchain-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nearblocks-near-blockchain-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nearblocks-near-blockchain-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nearblocks-near-blockchain-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 11
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Near blockchain — query account balances, transactions, tokens, and network statistics directly via AI.
 
 ## Description
 Connect to the **Nearblocks API** to inspect the Near Protocol blockchain. This MCP server allows any AI agent to fetch real-time data about accounts, transactions, blocks, and tokens without leaving the chat interface.
@@ -45,6 +47,33 @@ Connect to the **Nearblocks API** to inspect the Near Protocol blockchain. This 
 - **get_transaction_details**: Get details of a specific transaction
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nearblocks (Near Blockchain Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the latest blocks from the Near blockchain."
+
+**🤖 AI Agent:**
+> I've retrieved the most recent blocks. The latest block is at height 115,234,001 with hash '9aB...'. Would you like to see the details of a specific block?
+
+---
+
+**👤 You:**
+> "Show me the transaction history for account 'vinkius.near'."
+
+**🤖 AI Agent:**
+> I found 10 recent transactions for 'vinkius.near'. The most recent was a 'FunctionCall' to 'app.near' 5 minutes ago. Should I fetch the full details for that specific transaction?
+
+---
+
+**👤 You:**
+> "What are the details for transaction hash 8nZ...?"
+
+**🤖 AI Agent:**
+> Transaction 8nZ... was successful. It involved a transfer of 5 NEAR from 'sender.near' to 'receiver.near' at block 115,233,980. Gas used: 2.4 Tgas.
+
+
 ## Installation & Usage
 
 To install and use the **Nearblocks (Near Blockchain Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Nearblocks (Near Blockchain Explorer API)** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

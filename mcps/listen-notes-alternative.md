@@ -1,12 +1,14 @@
 # Listen Notes MCP Server
 
-Search and access the world's most comprehensive podcast database — find episodes, podcasts, and curated lists via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/listen-notes-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/listen-notes-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/listen-notes-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/listen-notes-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 14
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Search and access the world's most comprehensive podcast database — find episodes, podcasts, and curated lists via AI.
 
 ## Description
 Connect your AI agent to **Listen Notes**, the premier search engine for podcasts. This integration allows you to navigate millions of audio programs and episodes with precision through natural language.
@@ -49,6 +51,33 @@ Connect your AI agent to **Listen Notes**, the premier search engine for podcast
 - **typeahead**: Suggest search terms, genres, and podcasts as the user types
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Listen Notes** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for podcasts about 'quantum computing' in English."
+
+**🤖 AI Agent:**
+> I found several podcasts about quantum computing. Top results include 'The Quantum Insider' and 'Quantum Computing Now'. Would you like to see the latest episodes for any of these?
+
+---
+
+**👤 You:**
+> "Get the details and episode list for podcast ID '4d3fe71774444916851c37235d86a983'."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for 'The Daily'. It currently has 1,500+ episodes. The most recent episode is 'The Sunday Read'. Should I fetch the full description for this episode?
+
+---
+
+**👤 You:**
+> "Find an episode titled 'The Future of AI' within the podcast 'Lex Fridman Podcast'."
+
+**🤖 AI Agent:**
+> Searching titles... I found the episode 'The Future of AI' in the Lex Fridman Podcast. It was published on May 12th and features Sam Altman. Would you like the full metadata?
+
+
 ## Installation & Usage
 
 To install and use the **Listen Notes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Listen Notes** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

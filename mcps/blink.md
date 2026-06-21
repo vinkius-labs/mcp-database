@@ -1,12 +1,14 @@
 # BL.INK MCP Server
 
-Manage enterprise links via BL.INK — shorten URLs, track analytics, and manage branded domains directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blink)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blink)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blink-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blink-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage enterprise links via BL.INK — shorten URLs, track analytics, and manage branded domains directly from any AI agent.
 
 ## Description
 Connect your **BL.INK** account to any AI agent and orchestrate your enterprise link management and analytics workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **BL.INK** account to any AI agent and orchestrate your enterprise 
 - **update_link**: Update an existing link
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BL.INK** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Shorten this URL using BL.INK: https://vurb.vinkius.com/llms.txt"
+
+**🤖 AI Agent:**
+> I've shortened the link! Your new BL.INK short link is `bl.ink/xyz123`. The destination is pointing to your LLM documentation.
+
+---
+
+**👤 You:**
+> "Show me the analytics for link link_99283."
+
+**🤖 AI Agent:**
+> Retrieving metrics... This link has received 1,250 clicks in the last 30 days. Most of the traffic is coming from social media platforms.
+
+---
+
+**👤 You:**
+> "List my configured branded domains."
+
+**🤖 AI Agent:**
+> I've retrieved your domains. You have 2 active branded domains: 'go.company.com' (ID: dom_1) and 'links.brand.net' (ID: dom_2).
+
+
 ## Installation & Usage
 
 To install and use the **BL.INK** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BL.INK** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

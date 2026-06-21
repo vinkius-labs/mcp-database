@@ -1,12 +1,14 @@
 # Gumlet MCP Server
 
-Optimize images and stream video with automatic format conversion, lazy loading, and CDN delivery that loads pages faster.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gumlet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gumlet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gumlet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gumlet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 12
+
+**Category:** [image-video](../categories/image-video.md)
+
+Optimize images and stream video with automatic format conversion, lazy loading, and CDN delivery that loads pages faster.
 
 ## Description
 Connect your **Gumlet** account to any AI agent and take full control of your video hosting and image optimization workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual status checking or complex asset management through slow web dash
 - **update_video_thumbnail**: Set thumbnail offset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gumlet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new video upload in collection 'col_123' titled 'Annual Report 2026'."
+
+**🤖 AI Agent:**
+> Upload initialized! I've created the asset 'Annual Report 2026' (ID: asset_987). You can now upload your file to the following URL: [upload_url]. I'll monitor the transcoding status for you.
+
+---
+
+**👤 You:**
+> "Check the transcoding status of video 'asset_987'."
+
+**🤖 AI Agent:**
+> Checking asset_987... The video is currently 75% through transcoding. I'll alert you as soon as the HLS and DASH streams are ready for playback.
+
+---
+
+**👤 You:**
+> "Show me the viewing stats for my latest product video."
+
+**🤖 AI Agent:**
+> Fetching analytics... Your latest video has 1,250 unique views and has consumed 45GB of bandwidth this month. Most viewers are based in North America and Europe.
+
+
 ## Installation & Usage
 
 To install and use the **Gumlet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gumlet** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

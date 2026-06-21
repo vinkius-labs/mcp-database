@@ -1,12 +1,14 @@
 # College Scorecard API MCP Server
 
-Access US college data — audit school performance and costs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/college-scorecard-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/college-scorecard-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/college-scorecard-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/college-scorecard-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access US college data — audit school performance and costs via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire higher education research workflow with **College Scorecard API**, the authoritative source for United States school performance and cost data. By connecting the Department of Education's API to your agent, you transform complex college searches into a natural conversation. Your agent can instantly search for schools, audit enrollment metadata, and retrieve detailed program reports without you ever touching a government portal. Whether you are a student planning your future or a researcher monitoring academic trends, your agent acts as a real-time education consultant, ensuring your data is always grounded in official, government-verified records.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire higher education research workf
 - **search_colleges**: Search for colleges and universities in the US
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **College Scorecard API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for schools named 'Harvard' using College Scorecard API."
+
+**🤖 AI Agent:**
+> I've retrieved several matches for Harvard. Notable entries include Harvard University in Cambridge, MA. Would you like the enrollment details or the official school website link?
+
+---
+
+**👤 You:**
+> "List colleges in the state of 'NY'."
+
+**🤖 AI Agent:**
+> I've retrieved the list of schools in New York. Notable entries include NYU, Columbia, and Cornell. I can provide the specific ID and city for each if you'd like.
+
+---
+
+**👤 You:**
+> "What is the student size for school ID 166027?"
+
+**🤖 AI Agent:**
+> I've identified school ID 166027 as Harvard University. The latest student body size is approximately 7,500 undergraduates. Would you like the full program and cost metadata for this school?
+
+
 ## Installation & Usage
 
 To install and use the **College Scorecard API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **College Scorecard API** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

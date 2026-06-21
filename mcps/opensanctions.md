@@ -1,12 +1,14 @@
 # OpenSanctions MCP Server
 
-Screen persons and companies against global sanctions lists and PEP databases for KYC/AML compliance.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/opensanctions)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/opensanctions)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/opensanctions-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/opensanctions-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 8
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Screen persons and companies against global sanctions lists and PEP databases for KYC/AML compliance.
 
 ## Description
 Connect to **OpenSanctions** and access the world's largest open sanctions and PEP screening database through natural conversation — no API key needed for non-commercial use.
@@ -60,6 +62,33 @@ Search for persons in the sanctions database
 Search for vessels (ships) in the sanctions database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenSanctions** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Screen 'Vladimir Putin' against sanctions lists."
+
+**🤖 AI Agent:**
+> Found multiple matches for Vladimir Putin in OFAC, EU and UK sanctions lists. Includes aliases, dates of birth, nationalities and sanctions details.
+
+---
+
+**👤 You:**
+> "Search for companies sanctioned in Russia."
+
+**🤖 AI Agent:**
+> Found 50+ sanctioned companies with Russian connections. Includes Gazprom, Rosneft, Sberbank and many others across OFAC, EU and UK sanctions lists.
+
+---
+
+**👤 You:**
+> "What sanctions datasets are available?"
+
+**🤖 AI Agent:**
+> Available datasets: US OFAC (9,000+ entities), EU Consolidated List (6,000+), UN Security Council (700+), UK HMT (3,000+), and 40+ more global sanctions regimes.
+
+
 ## Installation & Usage
 
 To install and use the **OpenSanctions** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **OpenSanctions** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

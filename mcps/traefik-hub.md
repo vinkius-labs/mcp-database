@@ -1,12 +1,14 @@
 # Traefik Hub MCP Server
 
-Cloud-native API Management & Gateway evaluating proxy topologies explicitly running Kubernetes integrations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/traefik-hub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/traefik-hub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/traefik-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/traefik-hub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 8
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Cloud-native API Management & Gateway evaluating proxy topologies explicitly running Kubernetes integrations.
 
 ## Description
 ### What you can do
@@ -42,6 +44,33 @@ Explicitly targeted bridging **Cloud Infrastructure Teams**, **Kubernetes Operat
 - **traefik_revoke_subscription**: Ban and completely tear down an active API consumer token gracefully
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Traefik Hub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scan explicitly active logic bounds listing all deployed Kubernetes Traefik Agents across our namespace hubs completely."
+
+**🤖 AI Agent:**
+> Processing trace limits targeting agents natively (`list_active_agents`). Hub mapped boundaries extracting safely explicitly online cluster instances running optimally effectively isolating 3 pods successfully.
+
+---
+
+**👤 You:**
+> "Deny active third party application logic limits explicitly mapping the execution onto subscription ID 'uuid-abc-123' natively."
+
+**🤖 AI Agent:**
+> Triggering restriction execution limits targeting identity explicitly naturally via `revoke_subscription`. Traefik Gateway SaaS successfully completely suspended logical mapping isolating external connections efficiently natively.
+
+---
+
+**👤 You:**
+> "Dump explicit gateway latencies bounding logic usage limits across the deployed API instance mapping."
+
+**🤖 AI Agent:**
+> Routing exact native query limitations securely onto `get_api_metrics`. Execution trace exposed logical distribution bounds verifying active successful requests gracefully isolating error clusters naturally.
+
+
 ## Installation & Usage
 
 To install and use the **Traefik Hub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Traefik Hub** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

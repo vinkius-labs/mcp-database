@@ -1,12 +1,14 @@
 # Formsite MCP Server
 
-Manage forms, retrieve results, and automate data collection via AI agents with Formsite.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/formsite)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formsite)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formsite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formsite-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage forms, retrieve results, and automate data collection via AI agents with Formsite.
 
 ## Description
 Connect your **Formsite** account to any AI agent to automate your form results retrieval and data management through the Model Context Protocol (MCP). Formsite is a professional form builder that enables organizations to create sophisticated forms and surveys. This MCP server allows you to list your forms, fetch real-time results, and manage webhooks directly through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Formsite** account to any AI agent to automate your form results 
 - **list_webhooks**: List form webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Formsite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all forms in my Formsite account and their directory names."
+
+**🤖 AI Agent:**
+> Retrieving forms... I found 5 forms, including 'Annual Survey' (dir: survey_2023) and 'Contact Form' (dir: contact_us). Which one would you like to check results for?
+
+---
+
+**👤 You:**
+> "Show me the 10 most recent results for form 'survey_2023'."
+
+**🤖 AI Agent:**
+> Fetching results... For survey_2023, I found 10 recent submissions. Key feedback includes requests for 'Faster shipping' and 'More color options'.
+
+---
+
+**👤 You:**
+> "What fields are defined in my 'Contact' form (dir: contact_us)?"
+
+**🤖 AI Agent:**
+> Inspecting form items... The 'Contact Form' includes fields for 'Name', 'Email Address', 'Subject', and 'Message (Paragraph Text)'.
+
+
 ## Installation & Usage
 
 To install and use the **Formsite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Formsite** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

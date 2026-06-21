@@ -1,12 +1,14 @@
 # Clerk MCP Server
 
-Manage authentication and users via Clerk — track active sessions, monitor organizations, and manage invitations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clerk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clerk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clerk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clerk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 8
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage authentication and users via Clerk — track active sessions, monitor organizations, and manage invitations directly from any AI agent.
 
 ## Description
 Connect your **Clerk** account to any AI agent and take full control of your authentication and user management through natural conversation. Streamline how you monitor your user base and B2B organizations natively.
@@ -45,6 +47,33 @@ Connect your **Clerk** account to any AI agent and take full control of your aut
 - **list_clerk_users**: List all users in your Clerk application
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clerk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my users in Clerk."
+
+**🤖 AI Agent:**
+> Retrieving your user list... I found 150 total users. The most recent signup was John Doe (john@example.com) yesterday. Would you like to see more details?
+
+---
+
+**👤 You:**
+> "Show me the dashboard summary for my auth system."
+
+**🤖 AI Agent:**
+> Analyzing auth dashboard... You have 150 total users, 12 active sessions right now, and 5 pending invitations. The system health is optimal.
+
+---
+
+**👤 You:**
+> "Check the status of invitation ID 'inv_12345'."
+
+**🤖 AI Agent:**
+> Checking invitation inv_12345... This invitation was sent to sarah@example.com and is currently 'Pending'. It has not been accepted yet.
+
+
 ## Installation & Usage
 
 To install and use the **Clerk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Clerk** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

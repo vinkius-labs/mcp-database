@@ -1,12 +1,14 @@
 # Autenti MCP Server
 
-Sign documents digitally with legal-grade electronic signatures that comply with European eIDAS regulations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/autenti)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/autenti)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/autenti-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/autenti-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 12
+
+**Category:** [document-management](../categories/document-management.md)
+
+Sign documents digitally with legal-grade electronic signatures that comply with European eIDAS regulations.
 
 ## Description
 Connect your **Autenti** account to any AI agent and take full control of your professional document signing workflows and e-signature compliance through natural conversation.
@@ -53,6 +55,33 @@ Execute a discovered action (e.g., Send, Sign, Reject)
 - **list_configured_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Autenti** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active document signature processes."
+
+**🤖 AI Agent:**
+> I've retrieved your active processes. You currently have 3 documents in progress, including 'Service Agreement' (Status: SENT) and 'NDA'. Would you like the detailed participant metadata for any of these?
+
+---
+
+**👤 You:**
+> "What actions can I take on process 'proc_123'?"
+
+**🤖 AI Agent:**
+> For process proc_123, you can currently perform the following high-fidelity actions: 'SIGN_DOCUMENT', 'REJECT', or 'CANCEL'. Shall I proceed with the signature for you?
+
+---
+
+**👤 You:**
+> "Add 'John Doe' (john@example.com) to my Autenti contacts."
+
+**🤖 AI Agent:**
+> Contact created! John Doe has been successfully added to your Autenti address book (ID: cont_456). He is now available for process association. Shall I start a new signature workflow for him?
+
+
 ## Installation & Usage
 
 To install and use the **Autenti** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Autenti** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

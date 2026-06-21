@@ -1,12 +1,14 @@
 # UnifyApps MCP Server
 
-Automate integration workflows via UnifyApps — monitor execution logs, check active flows, audit connections, and list configured AI agents autonomously.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unifyapps)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unifyapps)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unifyapps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unifyapps-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate integration workflows via UnifyApps — monitor execution logs, check active flows, audit connections, and list configured AI agents autonomously.
 
 ## Description
 Connect your **UnifyApps** hub to any AI agent and take fully autonomous control over mapping internal automation flows, scanning linked platform connections, and managing global workflow status directly inside chat.
@@ -42,6 +44,33 @@ Don't let rogue automation jobs fail silently. Allow a conversational agent to v
 - **list_integrations**: Lists all configured integrations in UnifyApps
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UnifyApps** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active integration configurations built within our system environment."
+
+**🤖 AI Agent:**
+> Found 4 distinct integrations spanning: 1. Salesforce CRM (ID: sf_11xx), 2. Outlook (ID: out_20A), 3. Stripe Payments (ID: str_09), and 4. Twilio SMS. Would you like me to deeply inspect the payload mapping of Salesforce?
+
+---
+
+**👤 You:**
+> "Isolate execution logs for our overarching flows specifically looking out for the most recent actions resolving internally."
+
+**🤖 AI Agent:**
+> Executions polled successfully. Among the last 30 actions, 28 were successful HTTP outputs. However, the last 2 triggers connected to 'Stripe' failed via timeout errors. I strongly recommend analyzing the configuration mapping.
+
+---
+
+**👤 You:**
+> "Can you check the details of integration connection ID int_99xx1 to see if its credentials are fully configured?"
+
+**🤖 AI Agent:**
+> Integration parsed successfully: ID int_99xx1 correlates mapping the 'Hubspot Source'. Current status reads active and authenticated accurately. No configuration or connectivity mismatch encountered.
+
+
 ## Installation & Usage
 
 To install and use the **UnifyApps** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **UnifyApps** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Twilio SendGrid MCP Server
 
-Equip your AI agent with capabilities to natively dispatch HTML emails, prune suppression bounce lists, and manage marketing contacts via the SendGrid API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/twilio-sendgrid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twilio-sendgrid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twilio-sendgrid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twilio-sendgrid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 16
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Equip your AI agent with capabilities to natively dispatch HTML emails, prune suppression bounce lists, and manage marketing contacts via the SendGrid API.
 
 ## Description
 Unleash your AI agent over **Twilio SendGrid's** trusted enterprise email platform. Transform your chat interface into a fully-fledged communications command center. By implementing this MCP server, your LLM gains the power to investigate unaddressed hard bounces, dispatch highly contextual custom emails, and automatically organize sprawling marketing directories.
@@ -68,6 +70,33 @@ List all verified sender identities
 Sends an email via SendGrid SMTP relay
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Twilio SendGrid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Using the SendGrid API, list emails that have bounced recently to audit our hygiene."
+
+**🤖 AI Agent:**
+> I've invoked `list_bounces` spanning your latest transmissions. You have exactly 4 hard-bounced targets stored within suppression parameters. For instance, 'hello@fake-email-z.com' returned an error string: 550 Relay Denied. Do you want me to automatically execute the `delete_bounce` directive on any specific valid records to unblock them?
+
+---
+
+**👤 You:**
+> "Dispatch an HTML email from 'marketing@mybrand.com' to 'client@test.com' with subject 'Special Delivery'. Use standard <h1>."
+
+**🤖 AI Agent:**
+> The transmission has been completed effectively. The `dispatch_email` tool received identical constraints, leveraging 'marketing@mybrand.com'. The SendGrid HTTP payload accepted your outbound message synchronously and queued it upon the global outgoing rail successfully.
+
+---
+
+**👤 You:**
+> "Audit the Dynamic Transactional Templates list. Summarize findings."
+
+**🤖 AI Agent:**
+> I've engaged `list_dynamic_templates` surveying your internal dashboard environment. Your vault holds 7 different distinct design layouts. The most recently updated is the 'Welcome Onboarding Form' attached to template ID (d-f018x8axxx...). Would you like me to dive into `get_template_details` for that specific iteration to reverse-engineer its internal blocks?
+
+
 ## Installation & Usage
 
 To install and use the **Twilio SendGrid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Twilio SendGrid** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

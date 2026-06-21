@@ -1,12 +1,14 @@
 # Weather (Open-Meteo) MCP Server
 
-Get real-time weather, high-precision forecasts, air quality data, and severe weather alerts for any city worldwide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/weather-open-meteo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weather-open-meteo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weather-open-meteo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weather-open-meteo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 7
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Get real-time weather, high-precision forecasts, air quality data, and severe weather alerts for any city worldwide.
 
 ## Description
 Connect to **Open-Meteo** and empower your AI agent with high-precision meteorological data through natural conversation. This server provides comprehensive weather insights for any location on Earth without requiring complex API configurations.
@@ -61,6 +63,33 @@ Compare current weather conditions across multiple cities side by side, with com
 Find the best time windows in the next 72 hours to do an outdoor activity in any city, with a comfort score
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Weather (Open-Meteo)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the weather like in Tokyo right now?"
+
+**🤖 AI Agent:**
+> In Tokyo, Japan, it's currently 18°C with partly cloudy skies (⛅). The humidity is 65% and there is a light breeze from the South at 12 km/h. It feels like 17°C.
+
+---
+
+**👤 You:**
+> "Give me the 7-day forecast for London."
+
+**🤖 AI Agent:**
+> Here is the 7-day forecast for London: Tomorrow will be rainy with a high of 14°C. Wednesday looks clear and sunny (☀️) at 16°C. The rest of the week will be mostly cloudy with temperatures between 12°C and 15°C. Would you like the hourly details for any specific day?
+
+---
+
+**👤 You:**
+> "Compare the weather between New York and Miami."
+
+**🤖 AI Agent:**
+> Comparing conditions: New York is currently 8°C and overcast (☁️), while Miami is much warmer at 26°C with clear skies (☀️). New York is experiencing light rain, whereas Miami is dry. It's significantly warmer in Miami right now.
+
+
 ## Installation & Usage
 
 To install and use the **Weather (Open-Meteo)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Weather (Open-Meteo)** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Open-Meteo MCP Server
 
-Get weather forecasts, historical data and air quality — no API key required, open-source weather data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-meteo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-meteo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-meteo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Get weather forecasts, historical data and air quality — no API key required, open-source weather data.
 
 ## Description
 Connect to **Open-Meteo** and access global weather forecasts through natural conversation — no API key needed.
@@ -54,6 +56,33 @@ Find coordinates for a place name
 Get historical weather data for a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open-Meteo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the weather forecast for São Paulo this week?"
+
+**🤖 AI Agent:**
+> São Paulo (23.55°S, 46.63°W): Today 26°C/18°C, partly cloudy with 30% chance of rain. Tomorrow 24°C/17°C, light rain expected. Wednesday 22°C/16°C, overcast. Wind: 10-15 km/h. Humidity: 65-80%. UV index moderate (5-6).
+
+---
+
+**👤 You:**
+> "What was the temperature in Tokyo on July 15, 2024?"
+
+**🤖 AI Agent:**
+> Tokyo on July 15, 2024: High 32°C, Low 25°C. Hourly data shows temperatures peaked at 2 PM. Humidity 70%, light winds 5 km/h from the southeast. No precipitation recorded.
+
+---
+
+**👤 You:**
+> "What's the air quality in Beijing right now?"
+
+**🤖 AI Agent:**
+> Beijing air quality: PM2.5 at 85 μg/m³ (unhealthy for sensitive groups), PM10 at 120 μg/m³, NO2 at 45 μg/m³, O3 at 65 μg/m³. Overall AQI: 165 (Unhealthy). Sensitive groups should reduce outdoor exposure.
+
+
 ## Installation & Usage
 
 To install and use the **Open-Meteo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Open-Meteo** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

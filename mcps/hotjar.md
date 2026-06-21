@@ -1,12 +1,14 @@
 # Hotjar MCP Server
 
-Understand your users with heatmaps, session recordings, and feedback surveys that reveal exactly why visitors leave your site.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotjar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotjar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotjar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 15
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Understand your users with heatmaps, session recordings, and feedback surveys that reveal exactly why visitors leave your site.
 
 ## Description
 Connect your **Hotjar** account to any AI agent and access user experience analytics through natural conversation.
@@ -52,6 +54,33 @@ Connect your **Hotjar** account to any AI agent and access user experience analy
 - **lookup_user**: Lookup user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hotjar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show the NPS survey results and the top feedback submissions this month."
+
+**🤖 AI Agent:**
+> NPS Survey 'Product Satisfaction Q2' (survey_401): NPS Score: 42 (Good). Promoters: 58%, Passives: 26%, Detractors: 16%. Completion rate: 34.2% (342 responses / 1,000 views). Response trend: +8% vs last month. Top feedback submissions: 1) ⭐⭐⭐⭐⭐ 'Love the new dashboard redesign!' — /dashboard page. 2) ⭐⭐ 'Checkout is too slow on mobile' — /checkout (screenshot attached). 3) ⭐⭐⭐⭐ 'Would be great to have dark mode' — /settings. 4) ⭐ 'Can't find the export button' — /reports. Would you like to see the heatmap for the checkout page or the full survey responses?
+
+---
+
+**👤 You:**
+> "Show the heatmap data for our pricing page and the conversion funnel from landing to signup."
+
+**🤖 AI Agent:**
+> Pricing page heatmap (heatmap_089): Click data: 'Pro Plan CTA' button — 342 clicks (hottest). 'Compare Plans' toggle — 189 clicks. 'Enterprise Contact' link — 67 clicks. FAQ accordion — 45 clicks. Scroll data: 78% of users scroll past the hero section. Only 34% reach the FAQ section at bottom. Conversion funnel 'Landing → Signup': Step 1: Landing page — 8,400 visitors (100%). Step 2: Pricing page — 3,200 (38.1%, -61.9% drop). Step 3: Plan selection — 1,100 (34.4%, -65.6% drop). Step 4: Signup form — 680 (61.8%, -38.2% drop). Step 5: Completed signup — 420 (61.8% of form, 5% overall). Biggest drop-off: Landing → Pricing (61.9%). Would you like to see session recordings from the pricing page?
+
+---
+
+**👤 You:**
+> "Look up user behavior for user ID 'usr_12345' and show their session recordings."
+
+**🤖 AI Agent:**
+> User 'usr_12345': 7 sessions over 3 weeks. Device: Chrome/Desktop (5 sessions), Safari/Mobile (2). Total time on site: 48 minutes. Pages viewed: 23. Key behaviors: Visited /pricing 4 times but never clicked a CTA. Spent 8 minutes on /features reading comparison table. Submitted feedback: 'Pricing is confusing' (2 stars). Session recordings: 1) rec_7701 (Apr 20, 12 min, 6 pages — desktop). 2) rec_7689 (Apr 15, 8 min, 4 pages). 3) rec_7645 (Apr 10, 5 min, 3 pages — mobile). This user shows high interest but pricing friction. Would you like to watch a specific recording?
+
+
 ## Installation & Usage
 
 To install and use the **Hotjar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Hotjar** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

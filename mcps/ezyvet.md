@@ -1,12 +1,14 @@
 # ezyVet MCP Server
 
-Manage your veterinary practice via ezyVet — list patients, appointments, invoices, and consults directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ezyvet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ezyvet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ezyvet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ezyvet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage your veterinary practice via ezyVet — list patients, appointments, invoices, and consults directly through your AI agent.
 
 ## Description
 Connect your **ezyVet** Practice Management account to any AI agent and take full control of your clinical workflows through natural conversation.
@@ -48,6 +50,33 @@ Connect your **ezyVet** Practice Management account to any AI agent and take ful
 - **list_products**: List all ezyVet products
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ezyVet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all patients (animals) registered in the system."
+
+**🤖 AI Agent:**
+> I've retrieved the animal records. You have 'Bella' (Labrador, ID: 101) and 'Luna' (Persian Cat, ID: 102) among others. Which patient would you like to drill into?
+
+---
+
+**👤 You:**
+> "Check today's appointments."
+
+**🤖 AI Agent:**
+> Searching the schedule... You have 3 appointments booked for today: 'Annual Checkup' at 10:00 AM and 'Vaccination' at 2:00 PM. Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "List the most recent invoices."
+
+**🤖 AI Agent:**
+> Fetching financial records... The most recent invoices are INV-001 ($150.00, Paid) and INV-002 ($85.00, Pending). Shall I show you the details for INV-002?
+
+
 ## Installation & Usage
 
 To install and use the **ezyVet** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **ezyVet** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Sentry MCP Server
 
-Grant your AI agent full access to Sentry's Application Performance Monitoring tools to track raw exceptions, resolve error logs, and inspect crash stack traces dynamically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sentry)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sentry-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sentry-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Grant your AI agent full access to Sentry's Application Performance Monitoring tools to track raw exceptions, resolve error logs, and inspect crash stack traces dynamically.
 
 ## Description
 Equip your favorite LLM interface with direct, real-time investigative access over your application's **Sentry** operational environments. Skip the grueling task of combing through the rigid crash dashboard visually. Now, your AI can pull up the latest software exceptions directly into Cursor or an MCP-enabled chat window, read the contextual stack trace natively, and even close out resolved bugs.
@@ -48,6 +50,33 @@ Resolves an issue in Sentry
 - **list_issues**: Lists all issues (errors) in a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sentry** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Enumerate the most recently flared active open errors across the 'frontend-ui' project portal in Sentry."
+
+**🤖 AI Agent:**
+> I've successfully interrogated the Sentry API via `list_issues` scoping specifically down to the 'frontend-ui' project slug. Your dashboard flags 5 overarching unhandled exceptions aggressively repeating. The paramount threat ranks an ID marking 'TypeError: Cannot read properties of undefined (reading 'auth_token')' with ~4,200 events escalating in merely six hours. Should I invoke the agent to dig deep into this specific issue details block?
+
+---
+
+**👤 You:**
+> "Fetch all pertinent internal parameters regarding issue id 6B3VX4921."
+
+**🤖 AI Agent:**
+> After meticulously scanning via `get_issue_details` parameter boundaries, issue block 6B3VX4921 centers around a PostgreSQL Deadlock collision error. The stack trace isolates its organic foundation originating from your `payment_processor.ts` dependency specifically on Line 132. Over 300 users were severely impacted since Tuesday. Noticeably, this fault correlates concurrently with a massive migration you pushed recently.
+
+---
+
+**👤 You:**
+> "I've deployed a patch fixing the deadlock in db.ts. Mutate this specific issue globally to 'resolved'."
+
+**🤖 AI Agent:**
+> Got it. I've initiated an asynchronous payload signaling tool `resolve_issue` applied effectively corresponding to your specified ID within the active ecosystem. Subsequent polling shows this entity has correctly adopted the formal status value: 'RESOLVED'. Sentry charts will stop screaming out and notifying on channel hooks.
+
+
 ## Installation & Usage
 
 To install and use the **Sentry** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Sentry** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

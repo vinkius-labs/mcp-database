@@ -1,12 +1,14 @@
 # Monday.com (Work Management & CRM) MCP Server
 
-Manage work via Monday.com — list project boards, track task items, and audit team workspaces.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mondaycom-work-management-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mondaycom-work-management-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mondaycom-work-management-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mondaycom-work-management-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage work via Monday.com — list project boards, track task items, and audit team workspaces.
 
 ## Description
 Connect your **Monday.com** account to any AI agent and take full control of your enterprise work management, project tracking, and team collaboration through natural conversation.
@@ -53,6 +55,33 @@ Permanently delete a board item
 - **list_workspaces**: List Monday.com workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Monday.com (Work Management & CRM)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all boards in my Monday.com account"
+
+**🤖 AI Agent:**
+> I've retrieved 3 project boards from your account: 'Product Roadmap 2026' (ID: 12345), 'Marketing Campaign' (ID: 67890), and 'Inventory Sync' (ID: 13579). Which one would you like to list the tasks for?
+
+---
+
+**👤 You:**
+> "Show me all tasks in the 'Product Roadmap 2026' board"
+
+**🤖 AI Agent:**
+> Retrieving items from 'Product Roadmap 2026'… I've identified 12 tasks. Highlights include 'API Integration' (Status: Done), 'Mobile UI Design' (Status: Working on it), and 'Beta Testing' (Status: Stuck). Would you like to see the assignee for any of these?
+
+---
+
+**👤 You:**
+> "List all active team members in our Monday account"
+
+**🤖 AI Agent:**
+> I've retrieved your Monday.com user directory. There are 25 active members, including 'Alex Smith' (Admin), 'Sarah Johnson' (Member), and 'Mark Rivera'. I can help you find their internal IDs for task assignments if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Monday.com (Work Management & CRM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Monday.com (Work Management & CRM)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

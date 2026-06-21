@@ -1,12 +1,14 @@
 # Modal (Serverless AI Infrastructure) MCP Server
 
-Manage serverless compute via Modal — audit active apps, track GPU deployments, and monitor network volumes.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/modal-serverless-ai-infrastructure)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/modal-serverless-ai-infrastructure)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/modal-serverless-ai-infrastructure-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/modal-serverless-ai-infrastructure-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 7
+
+**Category:** [superpower](../categories/superpower.md)
+
+Manage serverless compute via Modal — audit active apps, track GPU deployments, and monitor network volumes.
 
 ## Description
 Connect your **Modal** account to any AI agent and take full control of your high-performance AI infrastructure, serverless GPU deployments, and persistent storage through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Modal** account to any AI agent and take full control of your hig
 - **get_deployment**: Get an explicitly tracked deployment detail mapped bound
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Modal (Serverless AI Infrastructure)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active Modal apps running in my account"
+
+**🤖 AI Agent:**
+> I've retrieved your active Modal apps. Currently, 2 apps are running: 'gpu-trainer-alpha' (ID: ap-123, State: Running) and 'image-gen-service' (ID: ap-456, State: Initializing). Would you like to check the resource allocation for the GPU trainer?
+
+---
+
+**👤 You:**
+> "Force stop Modal app ID 'ap-123'"
+
+**🤖 AI Agent:**
+> Executing stop command… Success. Modal app 'ap-123' has been forcefully terminated. The serverless container has been spun down, and no further billing cycles will be triggered for this specific execution ID.
+
+---
+
+**👤 You:**
+> "Show me all persistent volumes configured in my workspace"
+
+**🤖 AI Agent:**
+> I've identified 3 persistent disk volumes: 'model-cache-v1' (Size: 50GB), 'training-datasets' (Size: 200GB), and 'user-data-store'. I can provide the mount paths for any of these volumes if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Modal (Serverless AI Infrastructure)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Modal (Serverless AI Infrastructure)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Dastra MCP Server
 
-Stay GDPR compliant with privacy management tools for data mapping, consent records, and breach notification workflows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dastra)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dastra)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dastra-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dastra-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 12
+
+**Category:** [document-management](../categories/document-management.md)
+
+Stay GDPR compliant with privacy management tools for data mapping, consent records, and breach notification workflows.
 
 ## Description
 Connect your **Dastra** account to any AI agent and take full control of your data privacy and GDPR/LGPD compliance workflows through natural conversation.
@@ -51,6 +53,33 @@ List actors
 - **update_dsr**: Update an existing DSR
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dastra** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active workspaces in my Dastra account."
+
+**🤖 AI Agent:**
+> I've retrieved your workspaces. You have 3 active environments: 'Core Operations' (ID: ws_123), 'Marketing', and 'HR Data'. Which one should we check for pending DSR requests?
+
+---
+
+**👤 You:**
+> "Show pending DSR requests for workspace 'ws_123'."
+
+**🤖 AI Agent:**
+> Scanning workspace... I found 2 pending requests: 'Right of Access' from @user1 and 'Erasure Request' (ID: dsr_456). Would you like the full details for the access request?
+
+---
+
+**👤 You:**
+> "Register a new data breach 'Server Unauthorized Access' in workspace 'ws_123'."
+
+**🤖 AI Agent:**
+> Breach documented! I've successfully registered the 'Server Unauthorized Access' incident in workspace ws_123. The incident ID is 'br_789'. I'll now help you monitor the investigation status.
+
+
 ## Installation & Usage
 
 To install and use the **Dastra** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Dastra** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

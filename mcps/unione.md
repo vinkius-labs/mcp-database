@@ -1,12 +1,14 @@
 # UniOne MCP Server
 
-Send transactional and bulk emails with high deliverability, detailed analytics, and infrastructure that handles millions of messages.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unione)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unione)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unione-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unione-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Send transactional and bulk emails with high deliverability, detailed analytics, and infrastructure that handles millions of messages.
 
 ## Description
 Connect your **UniOne** email delivery account to any AI agent and simplify how you manage your transactional messaging, email templates, and delivery tracking through natural conversation.
@@ -47,6 +49,33 @@ Connect your **UniOne** email delivery account to any AI agent and simplify how 
 - **set_webhook**: Configure a webhook
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UniOne** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all email templates in my UniOne account."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You have 4 active templates: 'Welcome Email', 'Password Reset', 'Order Receipt', and 'Monthly Newsletter'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Send the 'welcome_01' template to 'user@example.com'."
+
+**🤖 AI Agent:**
+> Email sent successfully! I've triggered the 'welcome_01' template to user@example.com. The delivery ID is JOB-88231. Shall I track the open status for you?
+
+---
+
+**👤 You:**
+> "Check the suppression list for any recent bounces."
+
+**🤖 AI Agent:**
+> I've fetched the suppression list. I found 2 recent entries: 'old@example.com' (Hard Bounce) and 'spam@test.com' (Unsubscribed). Shall I add another email to this list?
+
+
 ## Installation & Usage
 
 To install and use the **UniOne** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **UniOne** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

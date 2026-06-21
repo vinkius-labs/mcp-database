@@ -1,12 +1,14 @@
 # Language Detector Engine MCP Server
 
-Detect the language of any text local using exact n-gram analysis. Supports 400+ languages. When AI guesses wrong on short or mixed text, this engine proves it.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/language-detector-engine)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/language-detector-engine)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/language-detector-engine-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/language-detector-engine-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 1
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Detect the language of any text local using exact n-gram analysis. Supports 400+ languages. When AI guesses wrong on short or mixed text, this engine proves it.
 
 ## Description
 Your customer support agent receives a ticket: 'O produto não chegou'. The AI routes it to the Spanish queue. The agent wastes time, the customer gets angry, SLA drops. Why? Because the AI 'guessed' the language probabilistically instead of calculating it.
@@ -27,6 +29,33 @@ This MCP uses `franc` (200K+ weekly downloads, inspired by Google's CLD2) to per
 Detect the language of any text using n-gram analysis. Supports 400+ languages. Returns ISO 639-3 codes (e.g., "por", "eng", "spa")
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Language Detector Engine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Detect the language of this support ticket: 'Não consigo acessar minha conta desde ontem'."
+
+**🤖 AI Agent:**
+> Detected Language: 'por' (Portuguese). 100% confidence.
+
+---
+
+**👤 You:**
+> "We only support English and Spanish. Detect the language of 'Hola como estas' using the whitelist."
+
+**🤖 AI Agent:**
+> Detected Language: 'spa' (Spanish) from the allowed list ['eng', 'spa'].
+
+---
+
+**👤 You:**
+> "Get the top 3 language probabilities for this ambiguous name: 'Alejandro'."
+
+**🤖 AI Agent:**
+> Top Candidates: 1. spa (Spanish): 100% | 2. glg (Galician): 82% | 3. cat (Catalan): 64%
+
+
 ## Installation & Usage
 
 To install and use the **Language Detector Engine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **Language Detector Engine** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

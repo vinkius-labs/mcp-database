@@ -1,12 +1,14 @@
 # Mashvisor MCP Server
 
-Access real estate data, property search, and investment analytics — analyze rental rates, ownership info, and market performance via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mashvisor-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mashvisor-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mashvisor-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mashvisor-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 16
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Access real estate data, property search, and investment analytics — analyze rental rates, ownership info, and market performance via AI.
 
 ## Description
 Connect your **Mashvisor** account to any AI agent to transform how you analyze real estate markets. Access professional-grade data for residential properties, Airbnb analytics, and investment performance metrics through natural conversation.
@@ -53,6 +55,33 @@ No more manual spreadsheet updates or jumping between tabs to find property owne
 - **validate_city**: Validate a city name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mashvisor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for properties in Miami, FL with at least 3 beds and a price under $600,000."
+
+**🤖 AI Agent:**
+> I've found several properties in Miami matching your criteria. For example, a 3-bed property at [Address] is listed for $585,000. Would you like the full property profile for any of these?
+
+---
+
+**👤 You:**
+> "Get the full property profile and historical sales for property ID 123456."
+
+**🤖 AI Agent:**
+> Fetching data for ID 123456... The profile includes a Mashvisor AVM of $450,000. Historical sales show it was last sold in 2018 for $310,000. It also has a tax history of $4,200 annually.
+
+---
+
+**👤 You:**
+> "What are the top neighborhoods for investment in Orlando, FL?"
+
+**🤖 AI Agent:**
+> Analyzing Orlando market... The top neighborhoods based on investment performance are 'Downtown' (Cash on Cash: 5.2%) and 'Lake Nona' (Cash on Cash: 4.8%). Would you like a detailed overview of 'Downtown'?
+
+
 ## Installation & Usage
 
 To install and use the **Mashvisor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Mashvisor** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

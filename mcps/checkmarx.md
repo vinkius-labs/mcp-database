@@ -1,12 +1,14 @@
 # Checkmarx MCP Server
 
-Automate AppSec via Checkmarx One — trigger core scans, analyze vulnerabilities, discover Best Fix Locations (BFL), and monitor KICS results.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/checkmarx)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkmarx)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkmarx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkmarx-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Automate AppSec via Checkmarx One — trigger core scans, analyze vulnerabilities, discover Best Fix Locations (BFL), and monitor KICS results.
 
 ## Description
 Connect your **Checkmarx One** enterprise environment to any AI agent and take programmatic control over your Application Security posture. Analyze deep code flaws through natural chat instead of navigating complex cyber dashboards.
@@ -65,6 +67,33 @@ Check the precise status and configuration of a Checkmarx scan
 Download SAST and security vulnerability findings for a scan
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Checkmarx** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most severe vulnerabilities found in the last Checkmarx scan."
+
+**🤖 AI Agent:**
+> Found 12 vulnerabilities in scan #4521. Critical: 2 SQL Injection (CWE-89) in `/api/users.js:142` and `/auth/login.ts:87`. High: 3 XSS (CWE-79). Medium: 7. Use `get_bfl` to find the optimal fix location for each.
+
+---
+
+**👤 You:**
+> "Trigger a new SAST scan for my current Checkmarx project."
+
+**🤖 AI Agent:**
+> SAST scan initiated successfully for project 'web-app' on branch 'main'. Scan ID: #4522. Estimated completion: ~8 minutes. I'll notify you when results are ready.
+
+---
+
+**👤 You:**
+> "How do I fix the SQL injection vulnerability found in the Checkmarx report?"
+
+**🤖 AI Agent:**
+> The SQL injection in `auth/login.ts:87` can be fixed by using parameterized queries. Best Fix Location (BFL) analysis shows the root cause is at line 82 where user input flows unsanitized into the query builder. Replace the string concatenation with a prepared statement.
+
+
 ## Installation & Usage
 
 To install and use the **Checkmarx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Checkmarx** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

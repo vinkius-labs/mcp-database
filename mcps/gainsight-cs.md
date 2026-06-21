@@ -1,12 +1,14 @@
 # Gainsight CS MCP Server
 
-Manage customer success, track health scores, and oversee the timeline via AI agents with Gainsight CS.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gainsight-cs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gainsight-cs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gainsight-cs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gainsight-cs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 12
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage customer success, track health scores, and oversee the timeline via AI agents with Gainsight CS.
 
 ## Description
 Connect your **Gainsight Customer Success** (NXT) instance to any AI agent to automate your customer retention and engagement operations through the Model Context Protocol (MCP). Gainsight is the industry-standard platform for customer success, empowering CSMs to manage health scores, track activities, and close CTAs. This MCP server enables you to retrieve company metadata, log timeline events, and oversee cockpit tasks directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Gainsight Customer Success** (NXT) instance to any AI agent to au
 - **list_timeline_events**: List timeline activities
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gainsight CS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my top 5 customer companies and their health scores."
+
+**🤖 AI Agent:**
+> Retrieving companies... I found your top customers, including 'Acme Corp' (Health: 85/Green) and 'Globex' (Health: 42/Red). Would you like to see the pending CTAs for Globex?
+
+---
+
+**👤 You:**
+> "Log a 'Call' activity for 'Acme Corp' (ID: 12345) saying 'Discussed Q4 renewal'."
+
+**🤖 AI Agent:**
+> Activity logged! I have successfully added the 'Discussed Q4 renewal' entry to the Acme Corp timeline. It is now visible to the entire team.
+
+---
+
+**👤 You:**
+> "Show me all pending CTAs in my Gainsight cockpit."
+
+**🤖 AI Agent:**
+> Fetching cockpit... I found 4 pending CTAs, including 'Risk: Low Adoption' for Stark Industries and 'Expansion: Add Seats' for Wayne Enterprises.
+
+
 ## Installation & Usage
 
 To install and use the **Gainsight CS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gainsight CS** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Vinsight MCP Server
 
-Manage wine, beer, and spirits production — inventory, sales orders, batches, vessels, and lab results for your Vinsight operation through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vinsight)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vinsight)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vinsight-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vinsight-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage wine, beer, and spirits production — inventory, sales orders, batches, vessels, and lab results for your Vinsight operation through natural conversation.
 
 ## Description
 Connect your **Vinsight** operation to any AI agent and manage your entire beverage production business through natural conversation.
@@ -68,6 +70,57 @@ List production batches
 List tanks and barrels
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vinsight** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's our current Chardonnay 2024 inventory?"
+
+**🤖 AI Agent:**
+> 🏭 **Chardonnay 2024 — Inventory Report**
+
+📦 **Stock levels**:
+- Available: **4,200 bottles** (350 cases)
+- Committed (orders): 1,800 bottles
+- On-hand total: 6,000 bottles
+
+🛢️ **Bulk stock**: 2,400L in Tank S-12
+📍 **Warehouse**: Main Cellar (bonded)
+
+📊 **Sales velocity**: ~600 bottles/month
+⏰ **Stock duration**: ~7 months at current rate
+
+💡 Consider scheduling next bottling run in Q1 2026.
+
+---
+
+**👤 You:**
+> "Create a new production order to blend 500L of 'Batch 44' into Tank 12."
+
+**🤖 AI Agent:**
+> Executing `create_production_order`...
+Production Order #PO-9912 successfully registered.
+Action: Transfer & Blend
+Source: Batch 44 (500L)
+Destination: Tank 12
+Status: Pending execution by Cellar Team.
+
+---
+
+**👤 You:**
+> "Check the latest lab results for the Pinot Noir fermentations in Tank B."
+
+**🤖 AI Agent:**
+> Fetching QC analysis ('get_lab_results')...
+Tank B (Pinot Noir 2025 - Fermentation):
+- pH: 3.45
+- TA: 6.2 g/L
+- Temp: 24°C
+- Brix: 4.5° (Dropping steadily)
+- Residual Sugar: Not tested yet.
+
+
 ## Installation & Usage
 
 To install and use the **Vinsight** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +129,11 @@ To install and use the **Vinsight** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

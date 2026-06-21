@@ -1,12 +1,14 @@
 # MightyCall MCP Server
 
-Set up a professional virtual phone system with call routing, voicemail, and analytics that makes your small team sound big.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mightycall)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mightycall)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mightycall-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mightycall-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 6
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Set up a professional virtual phone system with call routing, voicemail, and analytics that makes your small team sound big.
 
 ## Description
 Connect your **MightyCall** account to any AI agent to streamline your business communications and call center operations. MightyCall provides a powerful REST API (v4) for programmatically managing inbound and outbound calls, retrieving voicemails, and organizing your contact list.
@@ -43,6 +45,33 @@ Connect your **MightyCall** account to any AI agent to streamline your business 
 Initiate an outgoing call
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MightyCall** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all recent calls in my MightyCall account."
+
+**🤖 AI Agent:**
+> I've retrieved your recent calls. You have 5 activities today, including 3 inbound calls from 'Alice Brown' and 2 outbound follow-ups. Would you like to see the duration for any of them?
+
+---
+
+**👤 You:**
+> "Show me any unread voicemails."
+
+**🤖 AI Agent:**
+> I've checked your voicemails. You have 2 unread messages from yesterday afternoon. One is from an unknown number (+123...) and another from 'Global Tech'.
+
+---
+
+**👤 You:**
+> "Make a call from my main number (+198765432) to +123456789."
+
+**🤖 AI Agent:**
+> Call initiated successfully! I've triggered the outgoing call from your main number (+198765432) to +123456789. Your desk phone or app should ring shortly.
+
+
 ## Installation & Usage
 
 To install and use the **MightyCall** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **MightyCall** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # FusionAuth (Enterprise Identity & Auth) MCP Server
 
-Manage enterprise identity, users, and applications via FusionAuth — create users, list applications, and handle authentication flows directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionauth-enterprise-identity-auth)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusionauth-enterprise-identity-auth)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fusionauth-enterprise-identity-auth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fusionauth-enterprise-identity-auth-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 50
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage enterprise identity, users, and applications via FusionAuth — create users, list applications, and handle authentication flows directly from any AI agent.
 
 ## Description
 Connect your **FusionAuth** instance to any AI agent to streamline identity management and authentication workflows through natural conversation.
@@ -91,6 +93,33 @@ Retrieve a User from FusionAuth
 - **update_webhook**: Update a Webhook
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FusionAuth (Enterprise Identity & Auth)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our applications in FusionAuth."
+
+**🤖 AI Agent:**
+> I've retrieved your applications. You have 3 active apps: 'Main Web Portal' (ID: 8a7...), 'Mobile API' (ID: 2f1...), and 'Internal Dashboard'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Find the user with email 'admin@company.com'."
+
+**🤖 AI Agent:**
+> I found the user: Admin User (ID: 550e...). Their account is currently 'Active' and they belong to the default tenant. Would you like to see their full profile data?
+
+---
+
+**👤 You:**
+> "Create a user with the email 'test@example.com' and username 'test_user'."
+
+**🤖 AI Agent:**
+> User 'test_user' has been created successfully with ID 9b1... and email 'test@example.com'. I can now assign roles to this user if you provide an application ID.
+
+
 ## Installation & Usage
 
 To install and use the **FusionAuth (Enterprise Identity & Auth)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -99,4 +128,11 @@ To install and use the **FusionAuth (Enterprise Identity & Auth)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

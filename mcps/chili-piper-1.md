@@ -1,12 +1,14 @@
 # Chili Piper MCP Server
 
-Automate demand conversion via Chili Piper — manage concierge routes, distribution queues, and generate instant booking links directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chili-piper-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chili-piper-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chili-piper-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 10
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Automate demand conversion via Chili Piper — manage concierge routes, distribution queues, and generate instant booking links directly from any AI agent.
 
 ## Description
 Connect your **Chili Piper** account to any AI agent and turn inbound leads into meetings through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Chili Piper** account to any AI agent and turn inbound leads into
 - **get_availability**: Retrieve explicit analytics/statistics representing physical white-space
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chili Piper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Concierge routes"
+
+**🤖 AI Agent:**
+> I found 5 Concierge routes. The active ones are: 'Inbound Demo' (ID: route_1), 'Customer Support' (ID: route_2), and 'Partner Program' (ID: route_3). Would you like to see the logic for any of these?
+
+---
+
+**👤 You:**
+> "Generate a booking link for sarah@example.com using the 'Inbound Demo' route"
+
+**🤖 AI Agent:**
+> Booking link generated for Sarah: https://mycompany.chilipiper.com/book/me/sarah-demo?email=sarah@example.com. This link is ready to be shared.
+
+---
+
+**👤 You:**
+> "What is the availability of rep @JohnDoe for tomorrow?"
+
+**🤖 AI Agent:**
+> John Doe has 4 free slots tomorrow: 10:00 AM, 11:30 AM, 2:00 PM, and 4:30 PM. All times are in his local timezone (EST).
+
+
 ## Installation & Usage
 
 To install and use the **Chili Piper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Chili Piper** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

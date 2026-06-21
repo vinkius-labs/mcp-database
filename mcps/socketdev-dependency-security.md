@@ -1,12 +1,14 @@
 # Socket.dev (Dependency Security) MCP Server
 
-Protect your software supply chain by scanning dependencies, checking package security scores, and monitoring threat feeds directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/socketdev-dependency-security)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/socketdev-dependency-security)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/socketdev-dependency-security-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/socketdev-dependency-security-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Protect your software supply chain by scanning dependencies, checking package security scores, and monitoring threat feeds directly from your AI agent.
 
 ## Description
 Connect **Socket.dev** to your AI agent to proactively defend against supply chain attacks. This MCP server allows you to analyze open-source packages, scan manifest files, and monitor for malicious dependencies without leaving your development environment.
@@ -53,6 +55,33 @@ Get the security score for a specific package
 - **list_reports**: List reports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Socket.dev (Dependency Security)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the security score for the npm package 'axios'."
+
+**🤖 AI Agent:**
+> I've checked the security score for `pkg:npm/axios`. It currently has a high security score of 98/100, with no critical issues detected in the latest version.
+
+---
+
+**👤 You:**
+> "List all security reports for my organization."
+
+**🤖 AI Agent:**
+> I've retrieved the reports. You have 3 recent scans available. Would you like me to get the details for the most recent report (ID: rep_12345)?
+
+---
+
+**👤 You:**
+> "Show me the real-time threat feed from Socket."
+
+**🤖 AI Agent:**
+> Fetching the threat feed... I found several recently flagged malicious packages, including 'discord-selfbot-v14' which was flagged for containing malware. Be cautious if these appear in your dependencies.
+
+
 ## Installation & Usage
 
 To install and use the **Socket.dev (Dependency Security)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Socket.dev (Dependency Security)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

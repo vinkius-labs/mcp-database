@@ -1,12 +1,14 @@
 # Pulumi MCP Server
 
-Manage cloud infrastructure via Pulumi — list stacks, track deployments, audit outputs and tag resources from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pulumi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pulumi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pulumi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pulumi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 11
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage cloud infrastructure via Pulumi — list stacks, track deployments, audit outputs and tag resources from any AI agent.
 
 ## Description
 Connect your **Pulumi** account to any AI agent and take full control of your infrastructure-as-code through natural conversation.
@@ -70,6 +72,33 @@ List all stacks in a Pulumi organization
 Set a tag on a Pulumi stack
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pulumi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all stacks in my organization."
+
+**🤖 AI Agent:**
+> I found 6 stacks in your organization: 'my-infra/dev' (last updated 2h ago, 24 resources), 'my-infra/staging' (last updated yesterday, 24 resources), 'my-infra/prod' (last updated 3 days ago, 24 resources), 'networking/prod' (last updated last week, 8 resources), 'database/dev' and 'database/prod' (both created but never updated).
+
+---
+
+**👤 You:**
+> "What was the result of the latest deployment to my-infra/prod?"
+
+**🤖 AI Agent:**
+> The latest deployment (v12) to my-infra/prod succeeded 3 days ago. It created 2 resources (new S3 bucket and CloudFront distribution), updated 1 resource (EC2 instance type changed) and left 21 unchanged. The deployment took 4 minutes and was triggered by user alice.
+
+---
+
+**👤 You:**
+> "Show me the exported outputs from the prod stack."
+
+**🤖 AI Agent:**
+> The prod stack exports the following outputs: `api_url: https://api.example.com`, `cdn_url: https://cdn.example.com`, `db_endpoint: postgres://db.example.com:5432`, `s3_bucket_arn: arn:aws:s3:::my-prod-bucket` and `vpc_id: vpc-0abc123`. Would you like details on any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Pulumi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Pulumi** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

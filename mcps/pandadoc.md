@@ -1,12 +1,14 @@
 # PandaDoc MCP Server
 
-Create, send, and track documents, proposals, and e-signatures via PandaDoc — manage the entire document lifecycle from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pandadoc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pandadoc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pandadoc-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 10
+
+**Category:** [document-management](../categories/document-management.md)
+
+Create, send, and track documents, proposals, and e-signatures via PandaDoc — manage the entire document lifecycle from any AI agent.
 
 ## Description
 Connect your **PandaDoc** account to any AI agent and automate your document workflows through natural conversation.
@@ -65,6 +67,39 @@ List all PandaDoc templates available for document creation — proposals, contr
 Send a PandaDoc document for signature — transitions it from draft to sent and notifies all recipients via email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PandaDoc** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all proposals waiting for signature"
+
+**🤖 AI Agent:**
+> You have **3 proposals** awaiting signature:
+
+📄 **Acme Corp — Q2 Service Proposal** — Sent 2 days ago, viewed yesterday ✅
+📄 **TechStart — Annual License Agreement** — Sent Monday, not yet viewed ⏳
+📄 **CloudBase — Consulting SOW** — Sent today, viewed 1 hour ago ✅
+
+The TechStart agreement hasn't been opened — would you like me to check the contact details?
+
+---
+
+**👤 You:**
+> "Create a new NDA for Jane Doe at Global Solutions."
+
+**🤖 AI Agent:**
+> I've started drafting a new NDA using the standard template for Jane Doe at Global Solutions. I need the company address and Jane's email to proceed. Can you provide those?
+
+---
+
+**👤 You:**
+> "Did Acme Corp sign the contract I sent yesterday?"
+
+**🤖 AI Agent:**
+> The contract 'Acme Corp Q3 agreement' was viewed by their team today at 9:14 AM, but it has not been signed yet. Would you like me to draft a gentle follow-up email?
+
+
 ## Installation & Usage
 
 To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +108,11 @@ To install and use the **PandaDoc** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

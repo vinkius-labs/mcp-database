@@ -1,12 +1,14 @@
 # EmailListVerify MCP Server
 
-Equip your AI agent to verify email deliverability, manage bulk verification jobs, and track credits via the EmailListVerify API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/emaillistverify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emaillistverify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emaillistverify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emaillistverify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 9
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to verify email deliverability, manage bulk verification jobs, and track credits via the EmailListVerify API.
 
 ## Description
 Integrate **EmailListVerify**, the powerful bulk email verification platform, directly into your AI workflow. Verify individual email addresses for deliverability, manage large-scale verification jobs and files, monitor real-time processing statuses, and oversee your verification credits using natural language.
@@ -45,6 +47,33 @@ Get the current status and results summary for a specific bulk verification job
 - **verify_single_email**: Verify a single email address for deliverability
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EmailListVerify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify if 'test@example.com' is a valid email address."
+
+**🤖 AI Agent:**
+> I've verified 'test@example.com'. The status is 'ok' (Valid). It has valid MX records and the SMTP check passed. Should I check if it's a disposable email address?
+
+---
+
+**👤 You:**
+> "Show me the status of our last 5 verification jobs."
+
+**🤖 AI Agent:**
+> I've retrieved your recent jobs. 4 are 'Finished' and 1 is 'In Progress' (65% complete). Finished lists include 'Newsletter_Clean_Q1.csv' and 'Leads_Export.txt'. Would you like the results summary for Newsletter_Clean_Q1?
+
+---
+
+**👤 You:**
+> "How many verification credits do I have left?"
+
+**🤖 AI Agent:**
+> You currently have 12,450 verification credits remaining in your account. Your last purchase was for 20,000 credits on March 1st. Should I list any recently processed files that used these credits?
+
+
 ## Installation & Usage
 
 To install and use the **EmailListVerify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **EmailListVerify** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

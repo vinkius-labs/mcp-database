@@ -1,12 +1,14 @@
 # Jestor MCP Server
 
-Manage data, workflows, and records via Jestor low-code API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jestor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jestor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jestor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jestor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-operations
-**Tools Count:** 10
+
+**Category:** [business-operations](../categories/business-operations.md)
+
+Manage data, workflows, and records via Jestor low-code API.
 
 ## Description
 Empower your AI agents with Jestor's low-code internal tools platform. This MCP server allows you to list objects (tables), retrieve and list records, manage users, and monitor workflows and dashboards directly through the Jestor API. Ideal for automating internal operations and database management.
@@ -45,6 +47,33 @@ Lists all configured webhooks
 Lists all automated workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jestor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all objects in my Jestor account."
+
+**🤖 AI Agent:**
+> I'll fetch the list of all tables and objects for you.
+
+---
+
+**👤 You:**
+> "Show me the records for the 'Invoices' object."
+
+**🤖 AI Agent:**
+> I'll retrieve the records from your Invoices table in Jestor.
+
+---
+
+**👤 You:**
+> "Check the status of my workflows."
+
+**🤖 AI Agent:**
+> I'll look up the list of configured workflows and their status in Jestor.
+
+
 ## Installation & Usage
 
 To install and use the **Jestor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Jestor** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Freelancer Budget Prover MCP Server
 
-A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freelancer-budget-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freelancer-budget-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freelancer-budget-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freelancer-budget-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 1
+
+**Category:** [finance](../categories/finance.md)
+
+A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis.
 
 ## Description
 ## The Problem
@@ -24,6 +26,33 @@ A designer charged $100/hour and calculated annual income as $208,000. Then real
 Structured reflection tool for realistic freelancer financial planning — forces revenue modeling with utilization rates, complete cost accounting, cash flow planning for irregular income, cost-plus pricing calculation, and profitability analysis on ALL hours worked. Catches Revenue Fantasy (hourly rate × 2,080 hours — the fantasy that ignores utilization. A freelancer billing $150/hr at 65% utilization earns $101,400, not $312,000. The 35% non-billable time includes proposals, admin, accounting, marketing, learning, and the 2-week gaps between contracts that nobody plans for), Invisible Costs (forgetting that self-employment tax is 15.3%, health insurance is $400-800/month, liability insurance is $1,200/year, tools are $3,600/year, accounting is $2,400/year, retirement contributions have no employer match — freelancers pay the employer AND employee share of everything. Total hidden costs: 35-45% of gross revenue), Cash Flow Blindness (ignoring that 42% of invoices are paid late per Freelancers Union, Net-60 means you work in January and get paid in March, seasonal gaps mean 2 months/year with zero income, and illness means zero revenue with no sick days), Underpricing (using "market rate" instead of calculating the minimum viable rate — total costs ÷ (1 - margin) ÷ billable hours. "What others charge" ignores YOUR costs), and Scope Creep Exposure (undefined deliverables, unlimited revisions, and "quick favors" — scope creep costs the average freelancer 15-20% of billable revenue per year. Every hour of free work is an hour you cannot bill). Call once per freelancer financial plan or pricing decision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freelancer Budget Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I charge $95/hour. Potential income: $95 × 2,080 = $197,600. Low expenses. Clients pay on time."
+
+**🤖 AI Agent:**
+> REVENUE_FANTASY — 2,080h ignores 35% non-billable. 'Low expenses' ignores $75K+ invisible costs. 'Clients pay on time' contradicts 42% late rate.
+
+---
+
+**👤 You:**
+> "Revenue: $95/hr × 1,352h (65%) = $128,440. Costs: $79,764 total. Net: $48,676. Cash flow: Net-30, 18% late, $24K emergency. Pricing: min $79.20/hr, current $95. Profit: 37.9% margin, scope creep 3/12 projects +40%."
+
+**🤖 AI Agent:**
+> BUDGET_PROVEN — All five axes validated.
+
+---
+
+**👤 You:**
+> "Revenue: $110/hr × 1,400h. Costs: $76,462. Cash flow: 'clients pay on time.' Pricing: 'based on what competitors charge.'"
+
+**🤖 AI Agent:**
+> CASHFLOW_BLIND — No late payment buffer, no emergency fund, no seasonal gap plan. Pricing from competitors not from YOUR costs.
+
+
 ## Installation & Usage
 
 To install and use the **Freelancer Budget Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -32,4 +61,11 @@ To install and use the **Freelancer Budget Prover** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

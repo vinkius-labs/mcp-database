@@ -1,12 +1,14 @@
 # Namsor MCP Server
 
-Automate name analytics via Namsor — predict gender, origin, and ethnicity directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/namsor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/namsor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/namsor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/namsor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 6
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate name analytics via Namsor — predict gender, origin, and ethnicity directly from any AI agent.
 
 ## Description
 Connect your **Namsor** account to any AI agent and simplify your name analytics and demographic enrichment through natural conversation.
@@ -37,6 +39,33 @@ Predict US ethnicity from name
 - **parse_full_name**: Parse a full name string
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Namsor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Predict the gender for the name 'Jean Dupont'."
+
+**🤖 AI Agent:**
+> Based on Namsor analytics, 'Jean Dupont' is predicted as Male with 98% probability in France.
+
+---
+
+**👤 You:**
+> "What is the likely country of origin for the name Yuki Tanaka?"
+
+**🤖 AI Agent:**
+> Based on onomastic analysis, the name Yuki Tanaka has a 97.2% probability of Japanese origin. The top region match is East Asia with strong confidence in the JP country code.
+
+---
+
+**👤 You:**
+> "Parse the full name Dr. Maria Elena Rodriguez-Garcia into its components."
+
+**🤖 AI Agent:**
+> I parsed the name successfully. Title: Dr., First Name: Maria Elena, Last Name: Rodriguez-Garcia. The name structure suggests a Hispanic compound surname pattern with a professional prefix.
+
+
 ## Installation & Usage
 
 To install and use the **Namsor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **Namsor** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Credly MCP Server
 
-Equip your AI agent to manage digital badges, monitor issuance, and track recipient skills via the Credly API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/credly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/credly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/credly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/credly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 10
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Equip your AI agent to manage digital badges, monitor issuance, and track recipient skills via the Credly API.
 
 ## Description
 Integrate **Credly**, the world's largest digital credential network, directly into your AI workflow. Manage your organization's badge templates, audit issued credentials, and track member skills using natural language.
@@ -44,6 +46,33 @@ Integrate **Credly**, the world's largest digital credential network, directly i
 - **list_badge_templates**: List all badge templates available for issuance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Credly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all badges issued by my organization in the last month."
+
+**🤖 AI Agent:**
+> I've found 25 badges issued in the last 30 days. Most are for the 'Cloud Architecture' and 'Agile Leadership' templates. Would you like to see the names of the recipients?
+
+---
+
+**👤 You:**
+> "Show me the details for badge ID 'b8s9df7'."
+
+**🤖 AI Agent:**
+> Badge 'b8s9df7' was issued to John Doe for completing 'Python for Data Science'. It is currently 'Accepted'. The associated skills include 'Data Analysis' and 'Python'. Should I list the criteria for this badge?
+
+---
+
+**👤 You:**
+> "What skills are associated with the 'Senior DevOps Engineer' badge template?"
+
+**🤖 AI Agent:**
+> The 'Senior DevOps Engineer' template is mapped to several skills: 'CI/CD Pipelines', 'Kubernetes Orchestration', 'Infrastructure as Code', and 'Cloud Security'. Would you like to see which employees have already earned this badge?
+
+
 ## Installation & Usage
 
 To install and use the **Credly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Credly** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

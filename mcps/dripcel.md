@@ -1,12 +1,14 @@
 # Dripcel MCP Server
 
-Equip your AI agent to manage WhatsApp instances, track contacts, and monitor messaging automation via the Dripcel API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dripcel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dripcel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dripcel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dripcel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Equip your AI agent to manage WhatsApp instances, track contacts, and monitor messaging automation via the Dripcel API.
 
 ## Description
 Integrate **Dripcel**, the powerful WhatsApp automation platform, directly into your AI workflow. Manage your WhatsApp instances and connection statuses, track identified contacts and phone numbers, monitor message history and templates, and oversee your messaging operations using natural language.
@@ -44,6 +46,33 @@ Integrate **Dripcel**, the powerful WhatsApp automation platform, directly into 
 - **send_whatsapp_message**: Send a text message via a specific WhatsApp instance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dripcel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active WhatsApp instances."
+
+**🤖 AI Agent:**
+> I've found 3 active instances, including 'Main Office' (Connected) and 'Sales Team' (Connected). Would you like to see the connection status for the third instance?
+
+---
+
+**👤 You:**
+> "Send message 'Your order is ready' to '+1 555-0123' via instance 'main_inst'."
+
+**🤖 AI Agent:**
+> I've successfully sent the message 'Your order is ready' to +1 555-0123. The message ID is 'DRIP-MSG-7788'. Should I check the delivery status for you in a moment?
+
+---
+
+**👤 You:**
+> "Check the connection health for instance 'sales_inst'."
+
+**🤖 AI Agent:**
+> Instance 'sales_inst' is currently 'Connected' and authenticated. Battery level is at 85% and signal strength is strong. Should I list the most recent messages for this instance?
+
+
 ## Installation & Usage
 
 To install and use the **Dripcel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dripcel** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

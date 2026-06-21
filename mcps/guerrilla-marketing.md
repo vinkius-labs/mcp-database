@@ -1,12 +1,14 @@
 # Guerrilla Marketing MCP Server
 
-Real guerrilla costs nothing — only sweat equity. Most AI-generated tactics quietly sneak in paid spend and call it creative. This tool makes the agent prove zero cost, pinpoint the exact ambush moment, design a sharing trigger, assess risk, and trace every play back to revenue.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/guerrilla-marketing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/guerrilla-marketing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/guerrilla-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/guerrilla-marketing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Real guerrilla costs nothing — only sweat equity. Most AI-generated tactics quietly sneak in paid spend and call it creative. This tool makes the agent prove zero cost, pinpoint the exact ambush moment, design a sharing trigger, assess risk, and trace every play back to revenue.
 
 ## Description
 AI agents asked for guerrilla marketing produce the same 5 things every time: "go viral on TikTok", "create shareable content", "leverage social media", "do something creative", "make noise". This is not guerrilla — it's generic advice with a rebellious label. Real guerrilla marketing has three non-negotiable constraints: zero media cost, precision targeting, and built-in amplification.
@@ -49,6 +51,33 @@ The tool validates logical consistency. If the agent says `GUERRILLA_APPROVED` b
 Structured reflection tool for guerrilla marketing with zero CAC — forces validation that a tactic is truly $0 media cost, precisely ambush-targeted, inherently shareable, risk-aware, and traceable to revenue. Based on Levinson (1984), Hutter & Hoffmann (2011), and modern zero-CAC growth. Catches Budget Bloat ("low-cost" is not guerrilla — guerrilla is ZERO media spend. Only sweat equity: time and creativity. The moment you spend $1 on promotion, it is paid marketing with a guerrilla costume. $50 on Reddit ads = paid. $0 on a Reddit teardown post = guerrilla), Spray-and-Pray (posting on "social media" without precision targeting — guerrilla is an AMBUSH, not a broadcast. You need the exact subreddit, HN thread type, Slack community, or conference hallway where the ICP's attention is unguarded. "Social media" is a continent, not a coordinate), Dead-on-Arrival (no viral mechanism — "it will go viral" is not a strategy. WHY does Person A share this with Person B? Social currency (looks smart sharing it), emotion (outrage/delight/surprise), practical value (genuinely useful), controversy (forces response), or identity signal (aligns with self-image). Without a designed trigger, content dies silently), Reckless Execution (ignoring legal, reputational, and platform risks — every guerrilla tactic has risk. Competitor name-drops can trigger trademark claims. Platform ToS violations get accounts banned. "No risk" means you have not thought about it), and Untraceable Results (no attribution path from guerrilla hit to revenue — "we got exposure" is not a business outcome. Unique UTM links, dedicated landing pages, referral codes, "how did you hear about us" fields — without attribution, you cannot tell if the tactic worked). Call once per guerrilla marketing tactic
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Guerrilla Marketing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I want to grow my SaaS by creating viral content on social media. Validate this guerrilla tactic."
+
+**🤖 AI Agent:**
+> Verdict: SPRAY_AND_PRAY. 'Social media' is not an ambush point — it's a continent. Where EXACTLY is your ICP's attention unguarded? Which subreddit, which Slack community, which HN thread type? Guerrilla is a sniper shot, not carpet bombing. Name the exact place and moment.
+
+---
+
+**👤 You:**
+> "My ICP is 'DevOps engineers at Series A startups who monitor r/devops and HN daily, frustrated with $200/month observability bills.' I'll write a detailed teardown of a competitor's pricing page, post it on r/devops the day they announce a price increase, with a UTM-tagged link to our free tier. The sharing trigger is outrage at price gouging. Risk: could be seen as competitor bashing — mitigated by keeping the tone factual and data-driven."
+
+**🤖 AI Agent:**
+> Verdict: GUERRILLA_APPROVED. Zero cost (writing is sweat equity). Ambush point is precise (r/devops, timed to competitor's price increase announcement). Viral mechanism is designed (outrage at price gouging = high share trigger in DevOps community). Risk identified and mitigated (factual tone prevents bashing perception). Attribution path defined (UTM-tagged link to free tier). CAC = $0. Execute.
+
+---
+
+**👤 You:**
+> "I want to boost our brand awareness by doing a creative stunt at a tech conference. We'd hire actors to wear branded t-shirts and hand out stickers in the hallway. Validate as guerrilla."
+
+**🤖 AI Agent:**
+> Verdict: BUDGET_BLOAT. Multiple failures. (1) Hiring actors is paid spend — not guerrilla. (2) 'Boost brand awareness' is a vanity outcome with no attribution path to revenue. (3) Handing out stickers is the oldest conference play in history — zero shareability, zero surprise factor. Strip the budget: do it yourself, in your own t-shirt, with a controversial sign that people photograph and share because it says something nobody else will say.
+
+
 ## Installation & Usage
 
 To install and use the **Guerrilla Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Guerrilla Marketing** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

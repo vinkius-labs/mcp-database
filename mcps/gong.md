@@ -1,12 +1,14 @@
 # Gong MCP Server
 
-Unlock revenue intelligence by analyzing calls, transcripts, and customer interactions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gong)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gong)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gong-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gong-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 12
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Unlock revenue intelligence by analyzing calls, transcripts, and customer interactions.
 
 ## Description
 Connect your **Gong** organizational account to your AI agent and gain deep insights into your sales conversations and customer interactions. Use natural language to query transcripts, analyze team performance, and track deal progress.
@@ -49,6 +51,33 @@ Your AI acts as a dedicated sales analyst, helping you identify what separates y
 - **search_calls**: Search for calls with complex filters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gong** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Summarize the transcript for call ID 839201."
+
+**🤖 AI Agent:**
+> Analyzing transcript... The call involved a discussion about pricing tiers and API integration. The customer expressed interest in the Enterprise plan but requested more details on the security audit process. Key takeaway: Follow up with the SOC2 report.
+
+---
+
+**👤 You:**
+> "Which calls last week mentioned our competitor 'CompetitorX'?"
+
+**🤖 AI Agent:**
+> Searching trackers... I found 3 calls where 'CompetitorX' was mentioned. In call #93021, the customer compared their feature set to ours. Would you like me to pull the specific snippets from those transcripts?
+
+---
+
+**👤 You:**
+> "Show me the interaction stats for user Marcus R. for the last 30 days."
+
+**🤖 AI Agent:**
+> Retrieving metrics... Marcus R. had 45 calls with an average duration of 22 minutes. His 'Talk-to-Listen' ratio was 45%, which is within the target range. However, his longest monologue increased by 10% compared to last month.
+
+
 ## Installation & Usage
 
 To install and use the **Gong** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gong** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

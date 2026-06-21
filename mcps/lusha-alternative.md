@@ -1,12 +1,14 @@
 # Lusha MCP Server
 
-Enrich your prospect data with verified direct dials and email addresses from a B2B contact intelligence platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lusha-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lusha-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lusha-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lusha-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Enrich your prospect data with verified direct dials and email addresses from a B2B contact intelligence platform.
 
 ## Description
 Connect your **Lusha** account to any AI agent and take full control of your sales prospecting and data enrichment through natural conversation. Lusha provides a premier B2B database, and this integration allows you to retrieve high-fidelity contact details (email, phone), enrich company metadata, and search for new prospects directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual copy-pasting from LinkedIn profiles. Your AI acts as a dedicated 
 - **test_lusha_auth**: Verify API key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lusha** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Enrich this contact: John Miller at Acme Corp."
+
+**🤖 AI Agent:**
+> I've enriched the contact. John Miller is the 'VP of Sales' at Acme Corp. His verified email is j.miller@acme.com and I've also found a direct office number.
+
+---
+
+**👤 You:**
+> "Search for companies in New York with 500-1000 employees in the SaaS industry."
+
+**🤖 AI Agent:**
+> I've found 12 companies matching your criteria, including 'CloudStream' and 'DataVibe'. Would you like me to retrieve the LinkedIn URLs for their decision-makers?
+
+---
+
+**👤 You:**
+> "Check my Lusha credit balance."
+
+**🤖 AI Agent:**
+> You currently have 450 credits remaining in your monthly plan. Your next renewal is in 12 days.
+
+
 ## Installation & Usage
 
 To install and use the **Lusha** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Lusha** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

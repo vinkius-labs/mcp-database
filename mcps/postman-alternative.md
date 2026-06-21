@@ -1,12 +1,14 @@
 # Postman MCP Server
 
-Design, test, and document APIs collaboratively with the world most popular API development platform used by millions of developers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/postman-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postman-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postman-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postman-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 9
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Design, test, and document APIs collaboratively with the world most popular API development platform used by millions of developers.
 
 ## Description
 Connect your **Postman** organizational account to any AI agent and take full control of your API development and documentation workflows through natural conversation.
@@ -58,6 +60,33 @@ List all scheduled collection monitors
 List all accessible Postman workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Postman** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Postman workspaces."
+
+**🤖 AI Agent:**
+> I've fetched your workspaces. You currently have access to: 'Core Payments API' (ID: ws-123) and 'Partner Integrations' (ID: ws-456). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the items in collection ID [ID]."
+
+**🤖 AI Agent:**
+> Accessing collection... I found 8 requests inside. Key endpoints include 'POST /login' and 'GET /user/profile'. Would you like the full details of the '/user/profile' request?
+
+---
+
+**👤 You:**
+> "Check the status of my API monitors."
+
+**🤖 AI Agent:**
+> Running the check... All 3 monitors are currently active. 'Production Health' passed its last run, while 'Staging API' reported a minor latency warning. Should I drill down into the 'Staging' results?
+
+
 ## Installation & Usage
 
 To install and use the **Postman** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Postman** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

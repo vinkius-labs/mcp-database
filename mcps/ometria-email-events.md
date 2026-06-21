@@ -1,12 +1,14 @@
 # Ometria Email Events MCP Server
 
-Track and analyze email engagement events via Ometria — monitor opens, clicks, and bounces directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-email-events)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ometria-email-events)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ometria-email-events-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ometria-email-events-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Track and analyze email engagement events via Ometria — monitor opens, clicks, and bounces directly from your AI agent.
 
 ## Description
 Connect your **Ometria** account to your AI agent and gain granular visibility into your email marketing performance through real-time event tracking and natural conversation.
@@ -49,6 +51,33 @@ List all email engagement events
 - **list_email_unsubscribes**: List email unsubscribe events
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ometria Email Events** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all email open events from the last hour."
+
+**🤖 AI Agent:**
+> Retrieving recent opens... I found 45 open events in the last hour. Most activity is coming from the 'Holiday Special' campaign. Would you like to see which specific links were clicked as well?
+
+---
+
+**👤 You:**
+> "How many bounces occurred in campaign 'camp_98765'?"
+
+**🤖 AI Agent:**
+> Checking campaign events... Campaign camp_98765 recorded 12 bounces. 8 were 'Permanent' (hard bounces) and 4 were 'Transient'. Shall I list the contact emails that hard bounced so you can clean your list?
+
+---
+
+**👤 You:**
+> "Show me the email engagement history for 'john@example.com'."
+
+**🤖 AI Agent:**
+> Fetching contact history... John Smith (john@example.com) has a very active history: 12 opens and 5 clicks across 3 campaigns in the last 30 days. He recently clicked a link in the 'Loyalty Rewards' email. Would you like the full timestamped log?
+
+
 ## Installation & Usage
 
 To install and use the **Ometria Email Events** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Ometria Email Events** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

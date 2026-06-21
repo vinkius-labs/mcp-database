@@ -1,12 +1,14 @@
 # AgentMail MCP Server
 
-Give your AI agents their own email inbox to read, send, and reply to messages natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/agentmail)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agentmail)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agentmail-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agentmail-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Give your AI agents their own email inbox to read, send, and reply to messages natively.
 
 ## Description
 Connect **AgentMail** to your AI agent and unlock a programmable email client. Stop relying on complex integrations and grant your agent its own functional inbox to communicate with the world.
@@ -65,6 +67,33 @@ Forward an existing email message
 - **update_message**: Update an existing message metadata (like marking it as read)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AgentMail** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new inbox for our support team."
+
+**🤖 AI Agent:**
+> I have created a new inbox with the address support-agent-123@agentmail.to. It is now active and ready to receive messages. Would you like me to configure an automated welcome reply?
+
+---
+
+**👤 You:**
+> "Check all my unread threads in the main inbox today."
+
+**🤖 AI Agent:**
+> You have 2 unread threads. The first is an inquiry from a prospective client asking for pricing details. The second is a generic marketing email. Would you like me to draft a contextual reply for the client?
+
+---
+
+**👤 You:**
+> "Reply to the client thanking them and attach the pricing PDF."
+
+**🤖 AI Agent:**
+> The email has been successfully sent. I replied directly to the client's thread, thanked them for their interest, and included the 'Pricing_2024.pdf' attachment as requested.
+
+
 ## Installation & Usage
 
 To install and use the **AgentMail** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **AgentMail** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

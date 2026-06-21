@@ -1,12 +1,14 @@
 # Maileroo MCP Server
 
-Deliver transactional emails reliably at scale with an SMTP relay and API that prioritizes inbox placement and speed.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/maileroo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maileroo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maileroo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maileroo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Deliver transactional emails reliably at scale with an SMTP relay and API that prioritizes inbox placement and speed.
 
 ## Description
 Connect your **Maileroo** account to any AI agent and manage transactional email through natural conversation.
@@ -40,6 +42,33 @@ Connect your **Maileroo** account to any AI agent and manage transactional email
 - **send_transactional_email**: Send a transactional email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Maileroo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify an email address and send a welcome email."
+
+**🤖 AI Agent:**
+> Verified! ✅ sarah@company.com — Valid, deliverable, no disposable domain. MX records: OK. Email sent! To: sarah@company.com. Subject: 'Welcome to our platform'. Template: 'welcome_v2'. Status: Delivered ✅ (1.2s). Message ID: msg_4521.
+
+---
+
+**👤 You:**
+> "Show delivery analytics and bounce report."
+
+**🤖 AI Agent:**
+> Delivery (7 days): 1,245 sent. Delivered: 1,208 (97% ✅). Bounced: 28 (2.2%). Soft: 18, Hard: 10. Complaints: 3 (0.2%). Avg delivery time: 1.8s. Suppression list: 45 addresses. Top bounce domain: outlook.com (8).
+
+---
+
+**👤 You:**
+> "Bulk verify a list of 5 email addresses."
+
+**🤖 AI Agent:**
+> Bulk verification complete! 5 addresses. ✅ Valid: 3 (sarah@company.com, mike@techco.io, lisa@startup.com). ⚠️ Risky: 1 (info@temp-mail.org — disposable domain). ❌ Invalid: 1 (john@nonexistent.xyz — MX not found). Recommendation: Remove 1 invalid, flag 1 risky.
+
+
 ## Installation & Usage
 
 To install and use the **Maileroo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Maileroo** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

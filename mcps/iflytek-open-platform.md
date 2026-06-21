@@ -1,12 +1,14 @@
 # iFLYTEK Open Platform / 讯飞开放平台 MCP Server
 
-China's leading voice and NLP platform — convert speech to text, synthesize voice, and analyze text via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/iflytek-open-platform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iflytek-open-platform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iflytek-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iflytek-open-platform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's leading voice and NLP platform — convert speech to text, synthesize voice, and analyze text via AI.
 
 ## Description
 Empower your AI agent to orchestrate your voice and natural language operations with **iFLYTEK**, the premier speech intelligence platform in China. By connecting iFLYTEK to your agent, you transform complex audio transcription, voice synthesis, and linguistic analysis into a natural conversation. Your agent can instantly convert text to speech, transcribe audio files, translate between languages, and extract key insights from text (sentiment, keywords, entities) without you ever needing to navigate the comprehensive web console. Whether you are building an automated customer service line or auditing textual content, your agent acts as a real-time linguistic assistant, providing accurate and reliable results from a single, unified source.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your voice and natural language operations 
 - **translate**: Translate text between languages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **iFLYTEK Open Platform / 讯飞开放平台** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert this text to speech: 'Hello, welcome to the world of AI!'."
+
+**🤖 AI Agent:**
+> I've synthesized the voice for you. The audio data has been generated and is ready for use. Would you like to use a specific voice model or change the speech rate?
+
+---
+
+**👤 You:**
+> "Translate 'Artificial Intelligence' from English to Chinese."
+
+**🤖 AI Agent:**
+> I've translated your text. 'Artificial Intelligence' in Chinese is '人工智能' (Rén gōng zhì néng). Should I also analyze the sentiment of this phrase or extract keywords?
+
+---
+
+**👤 You:**
+> "Summarize this long text about future tech trends: [Text]."
+
+**🤖 AI Agent:**
+> I've generated a summary. The main points are: 1) AI integration in daily hardware, 2) Growth of edge computing, and 3) Decentralized cloud storage. Would you like me to identify the key entities mentioned in the full text?
+
+
 ## Installation & Usage
 
 To install and use the **iFLYTEK Open Platform / 讯飞开放平台** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **iFLYTEK Open Platform / 讯飞开放平台** MCP server
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

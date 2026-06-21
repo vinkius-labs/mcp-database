@@ -1,12 +1,14 @@
 # Vertex AI Search MCP Server
 
-Search across your enterprise data using Google's semantic search and generative AI grounding.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vertex-ai-search)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vertex-ai-search)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vertex-ai-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vertex-ai-search-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 7
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Search across your enterprise data using Google's semantic search and generative AI grounding.
 
 ## Description
 Connect your **Vertex AI Search** account to any AI agent and harness the power of Google's semantic search technology on your own enterprise data through natural conversation.
@@ -54,6 +56,33 @@ Retrieves personalized recommendations based on user events
 Performs a search query across documents in a specific data store
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vertex AI Search** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available data stores in Vertex AI Search."
+
+**🤖 AI Agent:**
+> I found 3 data stores: 'documentation-v1' (ID: doc-123), 'hr-policies' (ID: hr-456), and 'product-catalog' (ID: prod-789). Which one would you like to search through?
+
+---
+
+**👤 You:**
+> "Based on our documentation, what is our remote work policy?"
+
+**🤖 AI Agent:**
+> Grounded in the 'hr-policies' data store: Our remote work policy allows for up to 3 days of work from home per week, provided there is prior alignment with the team manager. Employees must ensure a stable internet connection and maintain core working hours. Would you like me to pull the full document?
+
+---
+
+**👤 You:**
+> "Search the product catalog for 'blue wireless headphones'."
+
+**🤖 AI Agent:**
+> I found several matches in 'product-catalog': 1. 'CloudBass Pro Blue' (In Stock), 2. 'SkyBuds v2 Azure' (Limited Stock), and 3. 'Oceanic Beats Wireless' (Discontinued). I can provide more details on features or pricing for any of these.
+
+
 ## Installation & Usage
 
 To install and use the **Vertex AI Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Vertex AI Search** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

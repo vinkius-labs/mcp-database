@@ -1,12 +1,14 @@
 # Homerun MCP Server
 
-Automate recruitment workflows via Homerun — manage job applications, track candidates, and oversee vacancies directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/homerun)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/homerun)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/homerun-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/homerun-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate recruitment workflows via Homerun — manage job applications, track candidates, and oversee vacancies directly from any AI agent.
 
 ## Description
 Connect your **Homerun** account to any AI agent and streamline your hiring process through natural conversation. Manage your entire talent pipeline without switching between tabs.
@@ -46,6 +48,33 @@ Connect your **Homerun** account to any AI agent and streamline your hiring proc
 - **upload_job_application_photo**: Upload an applicant photo to a job application
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Homerun** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active job applications for vacancy ID 'vac_123'."
+
+**🤖 AI Agent:**
+> I've found 3 active applications for that vacancy. Candidates include John Doe (Stage: Review), Jane Smith (Stage: Interview), and Alex Brown (Stage: Review). Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Get the full details for job application 887766, including notes and sources."
+
+**🤖 AI Agent:**
+> Fetching details for application 887766... This is for 'Michael Scott'. He was sourced via LinkedIn. There is one note from the recruiter: 'Strong leadership background, highly recommended for the regional manager position'.
+
+---
+
+**👤 You:**
+> "Update application 554433: set the stage to 'hired'."
+
+**🤖 AI Agent:**
+> Successfully updated application 554433. The candidate has been moved to the 'hired' stage. Would you like me to check if there are any other pending tasks for this vacancy?
+
+
 ## Installation & Usage
 
 To install and use the **Homerun** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Homerun** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # WorkflowMax MCP Server
 
-Manage jobs, clients, and timesheets via WorkflowMax by BlueRock directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workflowmax)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workflowmax)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workflowmax-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workflowmax-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage jobs, clients, and timesheets via WorkflowMax by BlueRock directly from your AI agent.
 
 ## Description
 Connect your **WorkflowMax by BlueRock** account to any AI agent to automate your job management and time tracking workflows. WorkflowMax provides an all-in-one platform for managing projects, client relations, and billable hours through natural conversation.
@@ -62,6 +64,25 @@ List timesheet entries
 - **update_job**: Update an existing job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WorkflowMax** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active jobs in my WorkflowMax account."
+
+**🤖 AI Agent:**
+> I've retrieved 5 active jobs, including 'Website Redesign' (job_123) and 'Tax Audit 2024' (job_456). Would you like to see the recorded timesheets for any of them?
+
+---
+
+**👤 You:**
+> "Log 2 hours for task 'Design' on job 'job_123'."
+
+**🤖 AI Agent:**
+> Done! I've successfully logged 120 minutes against the 'Design' task for the specified job. The entry is now visible in your WorkflowMax timesheets.
+
+
 ## Installation & Usage
 
 To install and use the **WorkflowMax** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +91,11 @@ To install and use the **WorkflowMax** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

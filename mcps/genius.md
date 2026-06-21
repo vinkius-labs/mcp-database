@@ -1,12 +1,14 @@
 # Genius MCP Server
 
-Search songs, get lyrics, annotations and artist info — the world's largest lyrics database.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/genius)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genius)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/genius-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/genius-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 7
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Search songs, get lyrics, annotations and artist info — the world's largest lyrics database.
 
 ## Description
 Connect to **Genius** and access the world's largest lyrics database through natural conversation.
@@ -57,6 +59,33 @@ Get annotations (explainer text) for a specific song
 Search for songs on Genius by title, lyrics or artist
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Genius** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Bohemian Rhapsody."
+
+**🤖 AI Agent:**
+> Found: Bohemian Rhapsody — Queen. 15M+ pageviews. Release: 1975. Album: A Night at the Opera. 🔗 genius.com/Queen-bohemian-rhapsody-lyrics
+
+---
+
+**👤 You:**
+> "Get the lyrics for Bohemian Rhapsody."
+
+**🤖 AI Agent:**
+> Full lyrics returned including all verses: 'Is this the real life? Is this just fantasy...' through 'Anyway the wind blows'. Includes artist, album, producers and release date.
+
+---
+
+**👤 You:**
+> "Show me annotations for 'Scaramouche' in Bohemian Rhapsody."
+
+**🤖 AI Agent:**
+> Found annotation for 'Scaramouche, Scaramouche, will you do the Fandango': Explains the commedia dell'arte character reference and the Fandango dance. 500+ upvotes.
+
+
 ## Installation & Usage
 
 To install and use the **Genius** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Genius** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

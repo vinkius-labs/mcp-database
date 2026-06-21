@@ -1,12 +1,14 @@
 # Rancher MCP Server
 
-Equip your AI to manage Kubernetes environments directly through Rancher, overseeing clusters, namespaces, and active pods.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rancher)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rancher)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rancher-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rancher-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI to manage Kubernetes environments directly through Rancher, overseeing clusters, namespaces, and active pods.
 
 ## Description
 Connect your **Rancher** Kubernetes management platform to your AI agent, allowing seamless orchestration of your container infrastructure directly from a chat interface. By integrating this server, your AI can introspect and interact with multiple remote Kubernetes clusters managed governed by your Rancher deployment.
@@ -46,6 +48,33 @@ Lists logical projects within a cluster
 - **list_workloads**: Lists all Kubernetes workloads (Deployments, StatefulSets) in a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rancher** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all Kubernetes clusters managed by my Rancher instance."
+
+**🤖 AI Agent:**
+> Through `list_clusters`, I have enumerated your environment. You have 2 visible instances: 'production-us-east' (State: Active) and 'staging-development' (State: Provisioning).
+
+---
+
+**👤 You:**
+> "Query the namespaces available inside cluster 'c-8xk9z'."
+
+**🤖 AI Agent:**
+> I requested `list_namespaces` for the cluster ID 'c-8xk9z'. It contains several namespaces, including: 'default', 'kube-system', 'monitoring-setup', and 'frontend-tier'.
+
+---
+
+**👤 You:**
+> "Check the status of the 'auth-service' pod located in the 'backend-production' namespace on cluster 'c-lq4x2'."
+
+**🤖 AI Agent:**
+> Checking pod metrics... Using `list_pods`, the 'auth-service' pod is marked 'Running', executing in the requested namespace. No crash loops were detected in its recent container history.
+
+
 ## Installation & Usage
 
 To install and use the **Rancher** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Rancher** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # BoxLock MCP Server
 
-Secure package deliveries with smart lockbox technology that verifies carriers and prevents porch theft at the door.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/boxlock)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boxlock)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boxlock-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boxlock-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 7
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Secure package deliveries with smart lockbox technology that verifies carriers and prevents porch theft at the door.
 
 ## Description
 Connect your **BoxLock Control** (v3) account to any AI agent and take full control of your physical security and automated supply chain logistics through natural conversation.
@@ -46,6 +48,33 @@ No more manual status checking of individual locks or missing delivery attempts.
 Remotely authorize a lock to be opened
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BoxLock** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active smart locks in my organization."
+
+**🤖 AI Agent:**
+> I've retrieved your smart locks. You currently have 5 active devices, including 'Front Gate' (Battery: 85%) and 'Loading Dock B'. Which one would you like to inspect for activity logs?
+
+---
+
+**👤 You:**
+> "Authorize 'Loading Dock B' (ID: 'lock_123') to be opened for worker '101' for the next hour."
+
+**🤖 AI Agent:**
+> Remote opening authorized! The lock 'Loading Dock B' can now be opened when the physical button is pressed by worker 101. The authorization expires in 60 minutes. Shall I monitor for the opening event?
+
+---
+
+**👤 You:**
+> "Show the last 5 access events for all locks from today."
+
+**🤖 AI Agent:**
+> Accessing audit logs... Today's last 5 events include 3 successful openings at 'Warehouse West' and 2 barcode scans for asset 'P-500'. All interactions were within high-fidelity norms. Need more historical context?
+
+
 ## Installation & Usage
 
 To install and use the **BoxLock** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BoxLock** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

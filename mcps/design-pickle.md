@@ -1,12 +1,14 @@
 # Design Pickle MCP Server
 
-Equip your AI agent to manage graphic design requests, track brand profiles, and monitor your production queue via the Design Pickle API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/design-pickle)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/design-pickle)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/design-pickle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/design-pickle-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage graphic design requests, track brand profiles, and monitor your production queue via the Design Pickle API.
 
 ## Description
 Integrate **Design Pickle**, the world's leading unlimited graphic design service, directly into your AI workflow. Manage your creative projects, audit your brand guidelines and profiles, and track the status of your design queue using natural language.
@@ -46,6 +48,33 @@ List all graphic design requests in your Design Pickle account
 - **search_design_requests**: Search for design requests using a keyword in the title
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Design Pickle** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my design requests currently in progress."
+
+**🤖 AI Agent:**
+> I've found 3 design requests in progress: 'Social Media Banner Set', 'Q3 Presentation Deck', and 'New Product Logo'. Would you like to see the estimated delivery time for any of these?
+
+---
+
+**👤 You:**
+> "Show me our brand profile guidelines for 'Main Brand'."
+
+**🤖 AI Agent:**
+> I've retrieved the 'Main Brand' profile. It includes your primary logo (Main_Logo.png), color palette (#3498db, #2ecc71, #f1c40f), and typography settings (Open Sans, Roboto). Should I check if these guidelines are applied to your recent requests?
+
+---
+
+**👤 You:**
+> "What is the status of our production queue?"
+
+**🤖 AI Agent:**
+> Your production queue currently has 5 active requests. 2 are being worked on by your assigned designers, and 3 are in the triage phase. The next delivery is expected within 24 hours. Would you like a detailed breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Design Pickle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Design Pickle** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

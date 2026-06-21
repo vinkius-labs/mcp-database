@@ -1,12 +1,14 @@
 # NOAA Full — Ultimate Weather & Climate Intelligence MCP Server
 
-The definitive NOAA Mega-Server: 36 tools spanning weather forecasts, severe alerts, current observations, aviation METARs/TAFs, marine tides and currents, space weather aurora and solar wind, and decades of historical climate records — all from 5 official NOAA APIs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-full-ultimate-weather-climate-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-full-ultimate-weather-climate-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-full-ultimate-weather-climate-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-full-ultimate-weather-climate-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 36
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The definitive NOAA Mega-Server: 36 tools spanning weather forecasts, severe alerts, current observations, aviation METARs/TAFs, marine tides and currents, space weather aurora and solar wind, and decades of historical climate records — all from 5 official NOAA APIs.
 
 ## Description
 The **ultimate NOAA Mega-Server** — 36 tools across 7 domains from 5 official APIs.
@@ -132,6 +134,39 @@ Get the 10.7cm solar radio flux — a proxy for solar activity level
 Get the Dst index — real-time geomagnetic storm intensity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NOAA Full — Ultimate Weather & Climate Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Full weather briefing: NYC forecast, alerts, airport conditions, and tides"
+
+**🤖 AI Agent:**
+> 🗽 **NYC Full Briefing**
+
+🌤️ Forecast: Partly cloudy, High 72°F, T-storms Thursday
+⚠️ Alerts: None active for NYC metro
+✈️ KJFK METAR: 22°C, SW 12kt, SCT030, VIS 10+
+🌊 Battery Tide: High 1.52m at 11:58 AM
+
+4 NOAA systems queried simultaneously.
+
+---
+
+**👤 You:**
+> "Is there any space weather activity and can I see the aurora?"
+
+**🤖 AI Agent:**
+> 🌌 **Space Weather + Aurora Check**
+
+Kp: 4 (Active), Forecast: 5 tonight
+Solar Wind: 520 km/s, Bz: -6 nT ✅
+Dst: -42 nT (mild disturbance)
+F10.7 Flux: 155 SFU (elevated)
+
+Aurora visible tonight from northern US states and southern Canada.
+
+
 ## Installation & Usage
 
 To install and use the **NOAA Full — Ultimate Weather & Climate Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -140,4 +175,11 @@ To install and use the **NOAA Full — Ultimate Weather & Climate Intelligence**
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

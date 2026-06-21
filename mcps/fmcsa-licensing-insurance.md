@@ -1,12 +1,14 @@
 # FMCSA Licensing & Insurance MCP Server
 
-Access real-time FMCSA data to verify motor carrier licensing, insurance, safety ratings, and authority status directly through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fmcsa-licensing-insurance)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fmcsa-licensing-insurance)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fmcsa-licensing-insurance-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fmcsa-licensing-insurance-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 9
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access real-time FMCSA data to verify motor carrier licensing, insurance, safety ratings, and authority status directly through AI.
 
 ## Description
 Connect your AI agent to the **Federal Motor Carrier Safety Administration (FMCSA)** database to perform deep due diligence on trucking companies and motor carriers. This server enables instant retrieval of official government records for compliance, safety, and operational verification.
@@ -49,6 +51,33 @@ Retrieve carrier details by U.S. DOT number
 Search carriers by Legal or DBA name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FMCSA Licensing & Insurance** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for carriers with the name 'Blue Sky Logistics'."
+
+**🤖 AI Agent:**
+> I found 3 carriers matching 'Blue Sky Logistics'. The primary one is based in Ohio with DOT number 2938475. Would you like to see its full safety profile?
+
+---
+
+**👤 You:**
+> "Get the safety BASIC measures and OOS data for DOT 1234567."
+
+**🤖 AI Agent:**
+> Retrieving safety data for DOT 1234567... The carrier has a 'Satisfactory' rating. Their Unsafe Driving BASIC is at 15% and they have 0 active Out-of-Service orders.
+
+---
+
+**👤 You:**
+> "What types of cargo is carrier DOT 987654 authorized to carry?"
+
+**🤖 AI Agent:**
+> Checking cargo authorization for DOT 987654... This carrier is authorized for General Freight, Household Goods, and Refrigerated Food.
+
+
 ## Installation & Usage
 
 To install and use the **FMCSA Licensing & Insurance** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **FMCSA Licensing & Insurance** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

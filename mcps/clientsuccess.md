@@ -1,12 +1,14 @@
 # ClientSuccess MCP Server
 
-Manage customer success and retention via ClientSuccess — track client health, monitor subscriptions, and manage success cycles directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clientsuccess)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientsuccess)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clientsuccess-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clientsuccess-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 8
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage customer success and retention via ClientSuccess — track client health, monitor subscriptions, and manage success cycles directly from any AI agent.
 
 ## Description
 Connect your **ClientSuccess** account to any AI agent and take full control of your customer success operations through natural conversation. Streamline how you manage account health and revenue retention natively.
@@ -45,6 +47,33 @@ Connect your **ClientSuccess** account to any AI agent and take full control of 
 - **list_client_success_tasks**: List all tasks and to-dos for a specific client
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClientSuccess** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my clients with a 'Risk' health status."
+
+**🤖 AI Agent:**
+> Retrieving clients at risk... I found 3 accounts with low health scores: 'Global Tech', 'Startup Inc', and 'Fast Logistics'. Would you like to see their last interaction notes?
+
+---
+
+**👤 You:**
+> "Show me the subscriptions for 'Acme Corp'."
+
+**🤖 AI Agent:**
+> Checking subscriptions for Acme Corp... They have 1 active contract: 'Enterprise SaaS Plan' ($12,000/year) expiring on Dec 31, 2026. It is set to auto-renew.
+
+---
+
+**👤 You:**
+> "What are the pending tasks for the 'Global Tech' account?"
+
+**🤖 AI Agent:**
+> Retrieving tasks for Global Tech... There are 3 pending items: 'Quarterly Business Review' (Due tomorrow), 'Update Success Plan', and 'Schedule Training Session'.
+
+
 ## Installation & Usage
 
 To install and use the **ClientSuccess** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ClientSuccess** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

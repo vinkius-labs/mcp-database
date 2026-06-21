@@ -1,12 +1,14 @@
 # ChargeDesk MCP Server
 
-Manage billing and payments via ChargeDesk — track charges, refund payments, and manage customers across multiple gateways directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chargedesk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chargedesk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chargedesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chargedesk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 8
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage billing and payments via ChargeDesk — track charges, refund payments, and manage customers across multiple gateways directly from any AI agent.
 
 ## Description
 Connect your **ChargeDesk** account to any AI agent and take full control of your billing and payment operations across Stripe, PayPal, Braintree, and more through natural conversation. Streamline customer support and financial management.
@@ -45,6 +47,33 @@ Connect your **ChargeDesk** account to any AI agent and take full control of you
 - **refund_chargedesk_payment**: Refund a specific charge
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ChargeDesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 10 charges in ChargeDesk."
+
+**🤖 AI Agent:**
+> Retrieving recent charges... I found 10 items totaling $1,450.00. Most were via Stripe and PayPal. Would you like to see the customer details for any of these?
+
+---
+
+**👤 You:**
+> "Refund $25.00 for charge ID 'ch_123456'."
+
+**🤖 AI Agent:**
+> Processing partial refund of $25.00 for ch_123456... The refund has been successfully initiated on the original gateway. The status in ChargeDesk is now 'Partially Refunded'.
+
+---
+
+**👤 You:**
+> "List all my connected payment gateways."
+
+**🤖 AI Agent:**
+> Checking connected gateways... You have 3 active gateways: Stripe (Live), PayPal (Live), and Braintree (Sandbox). All are reporting a healthy connection.
+
+
 ## Installation & Usage
 
 To install and use the **ChargeDesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ChargeDesk** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

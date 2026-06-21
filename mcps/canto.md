@@ -1,12 +1,14 @@
 # Canto MCP Server
 
-Empower your AI agents to manage, search, and update your Canto digital assets, albums, and folder structures effortlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/canto)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/canto)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/canto-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/canto-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 10
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Empower your AI agents to manage, search, and update your Canto digital assets, albums, and folder structures effortlessly.
 
 ## Description
 Connect your **Canto** Digital Asset Management (DAM) account to any AI agent and take full control of your media library through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Canto** Digital Asset Management (DAM) account to any AI agent an
 - **patch_image_metadata**: Dispatch an automated validation check routing explicit Metadata rewrites
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Canto** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search my Canto library for all 'Q3 Marketing Pipeline' assets and list their metadata."
+
+**🤖 AI Agent:**
+> I searched the term 'Q3 Marketing Pipeline' and found 5 matching assets. The primary image (ID: M9X...) is tagged as 'Promo Banner' with a file size of 2MB. I can assign these matched assets to a new album if you'd like to organize them.
+
+---
+
+**👤 You:**
+> "Create a new folder named 'Creative Ops 2026' and an album named 'Campaign Drafts' inside it."
+
+**🤖 AI Agent:**
+> I've successfully created the folder 'Creative Ops 2026' (ID: F4L...). I then provisioned the album 'Campaign Drafts' nested directly inside your new folder. It is ready to accept newly assigned assets.
+
+---
+
+**👤 You:**
+> "Get the metadata for asset ID 'J5R...' and update its custom tag field to 'Approved'."
+
+**🤖 AI Agent:**
+> I pulled the metadata for asset 'J5R...', which originally contained a tag called 'In Review'. I submitted a metadata update patching the customFields to 'Approved'. Your changes are now live and visible in your Canto workspace.
+
+
 ## Installation & Usage
 
 To install and use the **Canto** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Canto** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

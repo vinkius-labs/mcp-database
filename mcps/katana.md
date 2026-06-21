@@ -1,12 +1,14 @@
 # Katana MCP Server
 
-Automate manufacturing ERP workflows, sales orders, and inventory via Katana Cloud Manufacturing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/katana)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/katana)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/katana-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/katana-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 11
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate manufacturing ERP workflows, sales orders, and inventory via Katana Cloud Manufacturing.
 
 ## Description
 Connect your **Katana Cloud Manufacturing** account to any AI agent to streamline your production and shop floor operations. This MCP server enables your agent to interact with products, materials, and complex manufacturing workflows directly from natural language interfaces.
@@ -48,6 +50,33 @@ Create a new sales order
 - **list_suppliers**: List all suppliers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Katana** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active sales orders in Katana."
+
+**🤖 AI Agent:**
+> I've retrieved your sales orders. You have 15 active orders, including SO-101 for 'Acme Corp' and SO-102 for 'Tech Solutions'.
+
+---
+
+**👤 You:**
+> "Check the inventory level for variant ID 'VAR_987'."
+
+**🤖 AI Agent:**
+> For variant 'VAR_987', there are currently 45 units in stock, with 10 units committed to existing sales orders.
+
+---
+
+**👤 You:**
+> "List all my manufacturing orders."
+
+**🤖 AI Agent:**
+> I've fetched 8 manufacturing orders. Current jobs include production of 'Wooden Table' and 'Office Chair'.
+
+
 ## Installation & Usage
 
 To install and use the **Katana** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Katana** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

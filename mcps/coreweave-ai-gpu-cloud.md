@@ -1,12 +1,14 @@
 # CoreWeave (AI GPU Cloud) MCP Server
 
-Manage high-performance AI infrastructure on CoreWeave — provision GPU clusters, configure VPCs, and orchestrate inference gateways directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coreweave-ai-gpu-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coreweave-ai-gpu-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coreweave-ai-gpu-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coreweave-ai-gpu-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 24
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Manage high-performance AI infrastructure on CoreWeave — provision GPU clusters, configure VPCs, and orchestrate inference gateways directly from your AI agent.
 
 ## Description
 Connect your **CoreWeave** account to any AI agent to manage specialized GPU cloud infrastructure through natural language conversation.
@@ -61,6 +63,33 @@ Update a CKS cluster
 - **update_capacity_claim**: Update an Inference Capacity Claim
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoreWeave (AI GPU Cloud)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active CoreWeave clusters."
+
+**🤖 AI Agent:**
+> I've retrieved your CKS clusters. You have 2 active clusters: 'production-gpu-1' (ID: cks-7721) and 'research-test-bed' (ID: cks-8832). Would you like details on either of them?
+
+---
+
+**👤 You:**
+> "Show me the details for VPC ID vpc-99402."
+
+**🤖 AI Agent:**
+> Fetching VPC details... VPC 'vpc-99402' is currently active with CIDR block 10.0.0.0/16. It is configured for high-bandwidth interconnects between your GPU nodes.
+
+---
+
+**👤 You:**
+> "List all inference deployments and gateways currently configured."
+
+**🤖 AI Agent:**
+> I've compiled the list. You have 3 active inference gateways routing traffic to 5 deployments, including your 'llama-3-70b-prod' service. All gateways are reporting healthy status.
+
+
 ## Installation & Usage
 
 To install and use the **CoreWeave (AI GPU Cloud)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **CoreWeave (AI GPU Cloud)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

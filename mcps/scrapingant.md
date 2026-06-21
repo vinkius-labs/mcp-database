@@ -1,12 +1,14 @@
 # ScrapingAnt MCP Server
 
-Extract web data reliably with rotating proxies, headless Chrome rendering, and CAPTCHA solving built into every request.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapingant)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scrapingant)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scrapingant-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scrapingant-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Extract web data reliably with rotating proxies, headless Chrome rendering, and CAPTCHA solving built into every request.
 
 ## Description
 Connect your **ScrapingAnt** account to any AI agent and take full control of your web data extraction and scraping orchestration through natural conversation. ScrapingAnt provides a high-performance scraping API with rotating proxies and headless browser rendering, and this integration allows you to retrieve raw HTML, convert pages to Markdown, and use AI-driven data extraction directly from your chat interface.
@@ -46,6 +48,33 @@ Scrape a webpage with browser rendering
 - **get_api_usage**: Check API credit usage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ScrapingAnt** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the latest product prices from 'https://example.com/shop' using AI."
+
+**🤖 AI Agent:**
+> Processing extraction... I've retrieved 5 products from the shop. 'Item A' is $19.99 and 'Item B' is $25.00. Would you like the full JSON results?
+
+---
+
+**👤 You:**
+> "Convert the page 'https://example.com/blog/post-1' to Markdown."
+
+**🤖 AI Agent:**
+> Retrieving page content... I've successfully converted the blog post to Markdown. It includes the main heading, 3 subheaders, and all body text. Should I save this content for you?
+
+---
+
+**👤 You:**
+> "Check my current API credit balance in ScrapingAnt."
+
+**🤖 AI Agent:**
+> Fetching usage stats... You have 4,500 credits remaining out of your 5,000 monthly limit. Your plan resets in 12 days.
+
+
 ## Installation & Usage
 
 To install and use the **ScrapingAnt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **ScrapingAnt** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

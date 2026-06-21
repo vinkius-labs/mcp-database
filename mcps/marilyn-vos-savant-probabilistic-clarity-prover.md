@@ -1,12 +1,14 @@
 # Marilyn vos Savant Probabilistic Clarity Prover MCP Server
 
-Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/marilyn-vos-savant-probabilistic-clarity-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/marilyn-vos-savant-probabilistic-clarity-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/marilyn-vos-savant-probabilistic-clarity-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/marilyn-vos-savant-probabilistic-clarity-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion.
 
 ## Description
 ## The Problem
@@ -60,6 +62,33 @@ Tool calls are obligations — instructions are suggestions. The agent cannot sk
 Structured reflection tool for probabilistic reasoning — forces intuition-vs-computation verification, base rate accounting, sample scrutiny, framing analysis, and independence testing before accepting any data-driven conclusion or risk assessment. Catches Intuition Unchecked (accepting a gut answer without computing the actual probability — the Monty Hall problem: intuition says 50/50, math says 2/3 for switching. 10,000 PhDs wrote to Marilyn vos Savant insisting she was wrong — they trusted intuition over computation. The birthday paradox: 23 people in a room, intuition says ~6% chance of a shared birthday. Actual probability: 50.7%. Human probabilistic intuition is systematically miscalibrated — every gut answer must be checked against actual computation), Base Rate Neglected (ignoring prior probability when evaluating new evidence — a medical test is 99% accurate. A patient tests positive. Intuition: 99% chance of disease. Reality: if the disease prevalence is 1 in 1,000 (base rate 0.1%), the posterior probability is only ~9% (Bayes' theorem: P(disease|+) = 0.001 × 0.99 / (0.001 × 0.99 + 0.999 × 0.01) ≈ 9%). Without the base rate, a 99% accurate test feels like 99% certainty — it is 9%), Sample Unexamined (accepting "studies show" without examining sample size, selection bias, and survivorship — "our users love the product" based on an NPS survey sent to active users. The 67% who churned last quarter were never surveyed. N=47 self-selected respondents is anecdote, not data. A convenience sample from Twitter followers is not representative of your customer base. Survivorship bias: studying successful startups to find patterns ignores the 90% that failed using the same patterns), Framing Accepted (answering the question as asked without questioning whether the question itself is misleading — "Would you rather save 200 people out of 600, or have a 33% chance of saving all 600?" and "Would you rather let 400 people die, or have a 67% chance that all 600 die?" — identical outcomes, systematically different choices. The Monty Hall problem's framing hides that your original 1/3 choice never changed — the question makes it feel like a new 50/50 choice. Every question has a frame — the frame shapes the answer), and Independence Assumed (treating correlated events as independent — the gambler's fallacy: assuming a roulette wheel has memory ("it's due for red"). The reverse: assuming sales are independent when they have strong seasonality. A portfolio of "diversified" mortgage-backed securities that all correlate with the same housing market is not diversified — the 2008 financial crisis was, at its core, an independence assumption failure. Correlation ≠ independence, and "each event is independent" must be tested, not assumed). Call once per risk assessment, statistical claim, or data-driven conclusion
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Marilyn vos Savant Probabilistic Clarity Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Our new feature has a 95% approval rate in user testing. Should we ship it?"
+
+**🤖 AI Agent:**
+> SAMPLE_UNEXAMINED — 95% approval from whom? How many testers? Self-selected or random? Early adopters or representative users? Survivorship: who dropped out before completing the test?
+
+---
+
+**👤 You:**
+> "We had 3 production incidents this month. Clearly our deployment process is broken."
+
+**🤖 AI Agent:**
+> BASE_RATE_NEGLECTED — 3 incidents this month. What is the base rate? How many last month? Last quarter? If the average is 4, this month is actually better. Without the prior, you cannot judge the signal.
+
+---
+
+**👤 You:**
+> "Should we switch from PostgreSQL to MongoDB? The team seems split 50/50."
+
+**🤖 AI Agent:**
+> FRAMING_ACCEPTED — The 50/50 split frames this as a coin flip. It is not. Who are the 50%? DBAs vs. frontend devs? The framing hides that expertise weighting matters more than headcount.
+
+
 ## Installation & Usage
 
 To install and use the **Marilyn vos Savant Probabilistic Clarity Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Marilyn vos Savant Probabilistic Clarity Prover** MCP s
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

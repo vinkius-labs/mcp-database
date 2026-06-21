@@ -1,12 +1,14 @@
 # Baidu Qianfan MCP Server
 
-Orchestrate Baidu Qianfan AI models — manage chat completions, embeddings, and prompt templates directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-qianfan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baidu-qianfan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baidu-qianfan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baidu-qianfan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate Baidu Qianfan AI models — manage chat completions, embeddings, and prompt templates directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Baidu Qianfan** (百度千帆), the enterprise-grade LLM platform. This MCP provides 10 tools to automate interactions with Ernie Bot and other foundation models, including chat completions, vector embeddings, and prompt engineering.
@@ -45,6 +47,33 @@ Send a message to a Baidu Qianfan model
 - **text_to_image**: Generate an image from a text prompt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Baidu Qianfan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Chat with Ernie Bot 4.0 and ask 'Write a formal apology letter for a late shipment'."
+
+**🤖 AI Agent:**
+> Connecting to Qianfan engine... Ernie 4.0 responded: 'Subject: Formal Apology... We sincerely regret the delay in your shipment #12345...' Would you like me to refine the tone?
+
+---
+
+**👤 You:**
+> "Generate embeddings for the text 'The quick brown fox jumps over the lazy dog'."
+
+**🤖 AI Agent:**
+> Retrieving embeddings... I've generated a 384-dimensional vector for your input using Baidu's embedding-v1 model. The data is ready for your RAG search index.
+
+---
+
+**👤 You:**
+> "List all my prompt templates in Qianfan."
+
+**🤖 AI Agent:**
+> Fetching templates... I found 3 templates: 1. Code-Review-Expert (ID: tp_1), 2. Creative-Writer (ID: tp_2), 3. SQL-Generator (ID: tp_3). Which one would you like to use?
+
+
 ## Installation & Usage
 
 To install and use the **Baidu Qianfan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Baidu Qianfan** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

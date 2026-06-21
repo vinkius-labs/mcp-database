@@ -1,12 +1,14 @@
 # BreezoMeter Air Quality & Pollen MCP Server
 
-Universal air quality intelligence — get real-time AQI, pollutants, and pollen data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/breezometer-air-quality-pollen)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/breezometer-air-quality-pollen)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/breezometer-air-quality-pollen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/breezometer-air-quality-pollen-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** lifestyle
-**Tools Count:** 2
+
+**Category:** [lifestyle](../categories/lifestyle.md)
+
+Universal air quality intelligence — get real-time AQI, pollutants, and pollen data via AI.
 
 ## Description
 Equip your AI agent with hyper-local environmental intelligence through the **BreezoMeter** MCP server. This integration provides real-time access to accurate air quality and pollen data for any coordinate on Earth. Your agent can retrieve the BreezoMeter Air Quality Index (BAQI), identify dominant pollutants (PM2.5, NO2, etc.), and provide actionable health recommendations for sensitive groups. It also tracks pollen levels from various plants and trees to help users manage allergies. Whether you are building a health-tracking app, planning outdoor activities, or researching urban pollution, your agent acts as a dedicated environmental consultant through natural conversation.
@@ -37,6 +39,33 @@ Equip your AI agent with hyper-local environmental intelligence through the **Br
 - **get_pollen_levels**: Get current pollen data for a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BreezoMeter Air Quality & Pollen** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the air quality in New York right now?"
+
+**🤖 AI Agent:**
+> Retrieving air quality for New York... The current BAQI score is 72, which is 'Good'. The dominant pollutant is PM2.5. I also have health recommendations for outdoor activities. Would you like to see them?
+
+---
+
+**👤 You:**
+> "Check the pollen risk in Berlin today."
+
+**🤖 AI Agent:**
+> I've fetched the pollen data for Berlin. Currently, grass pollen is at a 'Moderate' risk level, while tree pollen remains 'Low'. I can provide a more detailed breakdown if needed.
+
+---
+
+**👤 You:**
+> "Are there any health warnings for sensitive groups in London?"
+
+**🤖 AI Agent:**
+> Analyzing London's environment... The AQI is currently 45. For sensitive groups (like those with asthma), it is recommended to limit prolonged outdoor exertion today. Would you like to see the specific pollutants causing this?
+
+
 ## Installation & Usage
 
 To install and use the **BreezoMeter Air Quality & Pollen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **BreezoMeter Air Quality & Pollen** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

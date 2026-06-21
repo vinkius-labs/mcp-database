@@ -1,12 +1,14 @@
 # PayFit MCP Server
 
-Automate HR and payroll operations via PayFit — list collaborators, fetch payslips securely, overview company structure, and export accounting entries via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/payfit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payfit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payfit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payfit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 7
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Automate HR and payroll operations via PayFit — list collaborators, fetch payslips securely, overview company structure, and export accounting entries via AI.
 
 ## Description
 Bring **PayFit Global Payroll** into your automated AI workflows natively. Providing a strict programmatic bridge to your company's HR and accounting infrastructure, this agent dynamically maps active employees, monitors valid compliance contracts, securely extracts monthly payslip distributions, and generates valid accounting entries directly via chat.
@@ -41,6 +43,33 @@ Bring **PayFit Global Payroll** into your automated AI workflows natively. Provi
 - **get_accounting_entries**: Get accounting entries for a specific payroll period (YYYYMM format)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PayFit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch the metadata configuration belonging to our main running PayFit company entity."
+
+**🤖 AI Agent:**
+> Connected successfully via `get_company`. The explicit bounds show entity 'Vinkius Global'. Registration country boundary set internally to 'FR'. Total active modules detected natively: 4. Would you like me to parse the connected departments next?
+
+---
+
+**👤 You:**
+> "Scan our active architecture fetching a strict list of all collaborators and contracts."
+
+**🤖 AI Agent:**
+> Invoked explicitly bounding lists targeting `collaborators`. The array returned 40 limits natively. 1: Alice Engineering (ID xy1...). 2: John Security (ID zw2...). I also pulled their relative contract states logic. Ask me specifically for Alice's limits.
+
+---
+
+**👤 You:**
+> "Retrieve global accounting transactions executed during March."
+
+**🤖 AI Agent:**
+> Pulled exact structures hitting `get_accounting_entries`. The payload reveals 12 distinct localized payroll ledger objects matching explicit debit and credit rules. Should I serialize these dynamically strictly into a table visual format for your review?
+
+
 ## Installation & Usage
 
 To install and use the **PayFit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **PayFit** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

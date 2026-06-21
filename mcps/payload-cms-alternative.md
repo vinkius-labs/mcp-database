@@ -1,12 +1,14 @@
 # Payload CMS MCP Server
 
-Manage your Payload CMS content directly from any AI agent — query collections, update documents, and manage globals via REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/payload-cms-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payload-cms-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payload-cms-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payload-cms-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage your Payload CMS content directly from any AI agent — query collections, update documents, and manage globals via REST API.
 
 ## Description
 Connect your **Payload CMS** instance to any AI agent and take full control of your headless content management through natural conversation.
@@ -48,6 +50,33 @@ Get a Payload CMS global
 - **update_preference**: Update a user preference in Payload CMS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Payload CMS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the last 3 documents in the 'posts' collection sorted by creation date."
+
+**🤖 AI Agent:**
+> I've retrieved the 3 most recent posts from your collection. They include 'New Features in v3', 'Getting Started with MCP', and 'API Best Practices'. Would you like to see the full content of any of these?
+
+---
+
+**👤 You:**
+> "Update the document with ID 673c2 in the 'products' collection to set the price to 49.99."
+
+**🤖 AI Agent:**
+> I have successfully updated the product (ID: 673c2). The price is now set to 49.99. Is there anything else you'd like to modify in this document?
+
+---
+
+**👤 You:**
+> "Get the current data for the 'header' global."
+
+**🤖 AI Agent:**
+> I've fetched the 'header' global data. It currently contains the site logo URL, a navigation array with 5 links, and a 'sticky' setting set to true. Do you need to update any of these fields?
+
+
 ## Installation & Usage
 
 To install and use the **Payload CMS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Payload CMS** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

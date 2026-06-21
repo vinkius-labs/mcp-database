@@ -1,12 +1,14 @@
 # GraphHopper MCP Server
 
-Empower routing and geocoding via GraphHopper — calculate optimal routes, perform reverse geocoding, solve vehicle routing problems, and analyze reachability directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/graphhopper)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/graphhopper)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/graphhopper-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/graphhopper-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Empower routing and geocoding via GraphHopper — calculate optimal routes, perform reverse geocoding, solve vehicle routing problems, and analyze reachability directly from any AI agent.
 
 ## Description
 Connect your **GraphHopper** account to any AI agent and take full control of your geospatial routing, geocoding, and fleet optimization through natural conversation.
@@ -48,6 +50,33 @@ Connect your **GraphHopper** account to any AI agent and take full control of yo
 - **poll_vrp_solution**: Retrieve the exact structural matching verifying Delivery alternatives
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GraphHopper** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate a car route between '40.71, -74.00' and '40.75, -73.98'"
+
+**🤖 AI Agent:**
+> Route calculated! I've found the optimal driving path. Total distance: 3.5 miles. Estimated time: 12 minutes. I can provide the step-by-step turn directions for you now.
+
+---
+
+**👤 You:**
+> "Show me the 10-minute reachability zone from central Berlin"
+
+**🤖 AI Agent:**
+> Isochrone generated! I've mapped the area reachable within 10 minutes from your location in Berlin. I can provide the polygon coordinates or verify if specific addresses fall within this boundary.
+
+---
+
+**👤 You:**
+> "Reverse geocode these coordinates: '48.85, 2.35'"
+
+**🤖 AI Agent:**
+> Coordinates matched! The location for 48.85, 2.35 corresponds to 'Rue de Rivoli, Paris, France'. It is located in the 4th arrondissement. Would you like more venue details for this spot?
+
+
 ## Installation & Usage
 
 To install and use the **GraphHopper** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **GraphHopper** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

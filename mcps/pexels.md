@@ -1,12 +1,14 @@
 # Pexels MCP Server
 
-Retrieve free high-quality stock media via Pexels — search photos, track videos natively, and explore curated visual collections entirely through AI constraints.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pexels)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pexels)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pexels-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pexels-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 10
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Retrieve free high-quality stock media via Pexels — search photos, track videos natively, and explore curated visual collections entirely through AI constraints.
 
 ## Description
 Equip intelligent LLM models explicitly executing boundaries isolating **Pexels Content** dynamically. Explore robust visual libraries querying granular enterprise bounds seamlessly pulling media. Authenticate securely retrieving native photos, parsing specific video arrays natively mapped against explicit queries, and extracting exact media collections intelligently smoothly efficiently securely appropriately correctly seamlessly accurately nicely smartly. Programmatically track high-fidelity assets globally decoupled without navigating heavily mapped visual portals tracking parameters safely reliably efficiently correctly properly effectively correctly safely beautifully cleanly.
@@ -46,6 +48,33 @@ Search for free stock photos on Pexels
 - **search_videos**: Search for free stock videos
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pexels** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check matrices explicitly discovering global array targets isolating high quality photos nicely querying 'Sunset Architecture' properly."
+
+**🤖 AI Agent:**
+> Queried structured parameters resolving confidently exactly explicitly mapped parsing targets perfectly seamlessly explicit correctly seamlessly gracefully safely tracking effectively parsing parameters successfully securely actively tracking. Fetched 15 high-quality explicit boundaries logically successfully tracking naturally correctly nicely tracking images securely flawlessly cleanly carefully tracking properties successfully cleanly.
+
+---
+
+**👤 You:**
+> "Log natively bounding arrays searching specific motion queries seamlessly exploring 'Office Working' video loops perfectly cleanly appropriately gracefully elegantly explicit bounding efficiently."
+
+**🤖 AI Agent:**
+> Dispatched JSON gracefully natively securely explicit explicit correctly smoothly resolving loops identifying accurately cleanly video parameters actively successfully bounds explicit safely carefully seamlessly actively seamlessly logically intelligently correctly mapping. The boundaries accurately properly returned 10 motion tracks safely explicit smoothly successfully tracking durations gracefully tracking properly explicit cleanly seamlessly smoothly seamlessly smoothly successfully flawlessly cleanly tracking naturally.
+
+---
+
+**👤 You:**
+> "Read explicit parameter bounds exploring natively extracting featured collection networks reliably optimally strictly securely beautifully neatly firmly cleanly nicely safely."
+
+**🤖 AI Agent:**
+> Passed explicitly mapped variables checking properties tracing flawlessly gracefully smoothly smoothly successfully carefully explicitly firmly smoothly gracefully safely seamlessly explicitly smoothly cleanly appropriately intelligently properly identifying successfully gracefully explicitly efficiently reliably accurately tracking explicit parameters explicit safely properly correctly seamlessly tracking creatively firmly smartly elegantly intelligently perfectly smoothly cleanly checking efficiently securely correctly checking cleanly tracking reliably cleanly effectively accurately checking reliably explicit.
+
+
 ## Installation & Usage
 
 To install and use the **Pexels** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Pexels** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

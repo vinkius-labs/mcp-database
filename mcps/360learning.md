@@ -1,12 +1,14 @@
 # 360Learning MCP Server
 
-Collaborative learning platform — manage users, courses, paths, and training statistics via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/360learning)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/360learning)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/360learning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/360learning-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Collaborative learning platform — manage users, courses, paths, and training statistics via AI.
 
 ## Description
 Empower your corporate education strategy with **360Learning**, the collaborative learning platform now fully integrated with your AI agent. By connecting 360Learning via the Model Context Protocol, you transform learning management from a complex administrative task into a natural conversation. Your agent can now seamlessly provision learners, audit course completions, and retrieve real-time training statistics without you ever navigating a LMS dashboard. It’s the smartest way to scale knowledge sharing and ensure your team stays ahead of the curve.
@@ -52,6 +54,33 @@ Retrieve training completion rates and assessment scores
 List all training groups, departments, or cohorts in the platform
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **360Learning** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active users in my 360Learning platform."
+
+**🤖 AI Agent:**
+> I've retrieved the list of active users. You have 150 learners and 5 admins currently registered. Would you like to see details for a specific user?
+
+---
+
+**👤 You:**
+> "Show me the training statistics for the 'Marketing' group."
+
+**🤖 AI Agent:**
+> I've compiled the training stats for the Marketing group. The average completion rate is 82% with an average assessment score of 88. Would you like a list of users who haven't finished their courses?
+
+---
+
+**👤 You:**
+> "List all available courses in the catalog."
+
+**🤖 AI Agent:**
+> I've retrieved the 360Learning course catalog. You have 24 active courses, including 'Onboarding 2024' and 'Advanced Sales Techniques'. Which one would you like to explore in detail?
+
+
 ## Installation & Usage
 
 To install and use the **360Learning** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **360Learning** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

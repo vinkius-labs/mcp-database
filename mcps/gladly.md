@@ -1,12 +1,14 @@
 # Gladly MCP Server
 
-Automate customer support workflows via Gladly — manage agents, search knowledge base answers, and update content directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gladly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gladly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gladly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gladly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 20
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Automate customer support workflows via Gladly — manage agents, search knowledge base answers, and update content directly.
 
 ## Description
 Connect your **Gladly** platform to any AI agent to streamline your customer service operations and knowledge management through natural language.
@@ -55,6 +57,33 @@ Connect your **Gladly** platform to any AI agent to streamline your customer ser
 - **update_business_hours**: Update business hours
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gladly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active agents in our Gladly organization."
+
+**🤖 AI Agent:**
+> I've retrieved the agent list. You currently have 12 agents active, including 'Sarah Miller' (ID: ag_123) and 'James Wilson' (ID: ag_456). Would you like to see details for a specific agent?
+
+---
+
+**👤 You:**
+> "Search public answers for 'shipping policy' in org 5521."
+
+**🤖 AI Agent:**
+> Searching... I found 3 relevant public answers. The top result is 'Standard Shipping Times' (ID: ans_99). Would you like me to fetch the full content of this answer?
+
+---
+
+**👤 You:**
+> "Check the call recording status for agent ag_123."
+
+**🤖 AI Agent:**
+> The call recording status for agent ag_123 is currently set to 'Enabled'. Would you like to disable it?
+
+
 ## Installation & Usage
 
 To install and use the **Gladly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Gladly** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

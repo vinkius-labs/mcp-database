@@ -1,12 +1,14 @@
 # Jira Cloud MCP Server
 
-Manage projects, search issues, and track tasks via Jira Cloud API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jira-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jira-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 17
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage projects, search issues, and track tasks via Jira Cloud API.
 
 ## Description
 Empower your AI agents with Jira Cloud's powerful project management platform. This MCP server allows you to list and retrieve project details, search for issues using JQL, track priorities and statuses, and view dashboards directly through the Jira Cloud API. Ideal for automating software development workflows and team collaboration.
@@ -66,6 +68,33 @@ Searches for issues using Jira Query Language (JQL)
 Update fields on an existing Jira issue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jira Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in Jira."
+
+**🤖 AI Agent:**
+> I'll fetch the list of all projects you have access to in Jira.
+
+---
+
+**👤 You:**
+> "Search for all issues assigned to 'user@example.com'."
+
+**🤖 AI Agent:**
+> I'll use JQL to find all issues assigned to that specific user.
+
+---
+
+**👤 You:**
+> "Get details for issue 'PROJ-123'."
+
+**🤖 AI Agent:**
+> I'll retrieve the full details, including status and priorities, for that Jira issue.
+
+
 ## Installation & Usage
 
 To install and use the **Jira Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Jira Cloud** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # DocuSeal MCP Server
 
-Automate document signing workflows via DocuSeal — manage templates, send signature requests, and track signers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/docuseal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/docuseal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/docuseal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/docuseal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate document signing workflows via DocuSeal — manage templates, send signature requests, and track signers directly from any AI agent.
 
 ## Description
 Connect your **DocuSeal** account to any AI agent to streamline your electronic signature processes through natural language. This MCP server provides full control over document templates and signing lifecycles.
@@ -49,6 +51,33 @@ Create a new template from HTML
 - **update_template**: Update an existing template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DocuSeal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available document templates in DocuSeal."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You have 3 active templates: 'NDA 2024' (ID: 101), 'Service Agreement' (ID: 102), and 'Onboarding Form' (ID: 103).
+
+---
+
+**👤 You:**
+> "Create a signature request for template 102 for john@example.com."
+
+**🤖 AI Agent:**
+> Submission created successfully. A signature request for the 'Service Agreement' has been sent to John (john@example.com). Submission ID: 5001.
+
+---
+
+**👤 You:**
+> "Check the status of the signer with ID 88291."
+
+**🤖 AI Agent:**
+> Signer 'Alice Smith' (ID: 88291) has received the document but has not signed it yet. The last update was 2 hours ago.
+
+
 ## Installation & Usage
 
 To install and use the **DocuSeal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **DocuSeal** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

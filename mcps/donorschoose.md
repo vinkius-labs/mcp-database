@@ -1,12 +1,14 @@
 # DonorsChoose MCP Server
 
-Equip your AI agent to search classroom projects, track funding needs, and monitor educational proposals via the DonorsChoose API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/donorschoose)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/donorschoose)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/donorschoose-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/donorschoose-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 10
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Equip your AI agent to search classroom projects, track funding needs, and monitor educational proposals via the DonorsChoose API.
 
 ## Description
 Integrate **DonorsChoose**, the leading crowdfunding platform for public school teachers, directly into your AI workflow. Search for classroom projects across the US, filter by state, subject, or ZIP code, monitor urgent funding needs, and retrieve detailed information for educational proposals using natural language.
@@ -44,6 +46,33 @@ Integrate **DonorsChoose**, the leading crowdfunding platform for public school 
 - **search_classroom_projects**: Search for DonorsChoose classroom projects using keywords
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DonorsChoose** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for classroom projects in New York about 'Literacy'."
+
+**🤖 AI Agent:**
+> I've found 8 projects in New York focused on Literacy, including 'Books for Our Classroom Library' and 'Reading Corner Rug'. Would you like to see the funding goal for any of these?
+
+---
+
+**👤 You:**
+> "Show me urgent projects near ZIP code '90210'."
+
+**🤖 AI Agent:**
+> I've identified 3 urgent projects near 90210, including a science lab request at Beverly Hills High. One project is only $50 away from being fully funded. Should I pull the details for that one?
+
+---
+
+**👤 You:**
+> "List the newest classroom proposals."
+
+**🤖 AI Agent:**
+> The latest proposals include projects for 'Special Education Sensory Tools' in Texas and 'Music Room Instruments' in Florida. Both were posted in the last hour. Would you like to see the school names for these new projects?
+
+
 ## Installation & Usage
 
 To install and use the **DonorsChoose** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DonorsChoose** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

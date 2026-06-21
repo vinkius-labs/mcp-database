@@ -1,12 +1,14 @@
 # edX MCP Server
 
-Manage Open edX courses, enrollments, and user profiles — list learning paths, track student grades, and handle registrations via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/edx-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edx-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edx-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edx-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage Open edX courses, enrollments, and user profiles — list learning paths, track student grades, and handle registrations via AI.
 
 ## Description
 Connect your **Open edX** platform to any AI agent to streamline course administration and student tracking through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Open edX** platform to any AI agent to streamline course administ
 - **update_user_profile**: Update Open edX user profile
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **edX** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available courses on our edX platform."
+
+**🤖 AI Agent:**
+> I've retrieved the course list. You have 3 active courses: 'Introduction to AI' (ID: course-v1:Org+AI101+2024), 'Advanced Python' (ID: course-v1:Org+PY201+2024), and 'Data Science Basics'.
+
+---
+
+**👤 You:**
+> "Enroll me in the course course-v1:Org+AI101+2024."
+
+**🤖 AI Agent:**
+> Processing enrollment... Success! You are now enrolled in 'Introduction to AI'. You can start accessing the course materials immediately.
+
+---
+
+**👤 You:**
+> "Show me the grades for user 'jdoe' in the Python course."
+
+**🤖 AI Agent:**
+> Fetching grades for 'jdoe'... In 'Advanced Python', the user has a current grade of 85%. All assignments are completed except for the final project which is pending.
+
+
 ## Installation & Usage
 
 To install and use the **edX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **edX** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

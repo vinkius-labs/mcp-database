@@ -1,12 +1,14 @@
 # Jiguang Aurora / 极光 MCP Server
 
-Dominant push notification platform in China — manage device segments, schedules, and delivery reports via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jiguang-aurora)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jiguang-aurora)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jiguang-aurora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jiguang-aurora-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Dominant push notification platform in China — manage device segments, schedules, and delivery reports via AI.
 
 ## Description
 Empower your AI agent to orchestrate your push notification infrastructure with **Jiguang Aurora** (极光), the premier CPaaS provider in China. By connecting Jiguang to your agent, you transform complex device targeting, scheduled messaging, and multi-platform delivery into a natural conversation. Your agent can instantly send targeted push notifications, retrieve detailed device metadata by Registration ID, manage complex delivery schedules, and audit real-time message reports without you ever needing to navigate the comprehensive Jiguang portal. Whether you are automating user verification or coordinating large-scale promotional alerts, your agent acts as a real-time messaging assistant, keeping your communication flow accurate and your users informed.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your push notification infrastructure with 
 - **update_device**: Update device tags and alias
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jiguang Aurora / 极光** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a push notification to Registration ID '1a0918c...'."
+
+**🤖 AI Agent:**
+> I've sent the targeted push notification to the specified device. The message ID is '8821'. Would you like me to check the delivery status in a few minutes?
+
+---
+
+**👤 You:**
+> "Schedule a push task for tomorrow at 10 AM."
+
+**🤖 AI Agent:**
+> Done! I've created a scheduled push task. It is set to trigger tomorrow at 10:00 AM. You can find this task in your schedule list with ID '9920'.
+
+---
+
+**👤 You:**
+> "Show me the user activity report for the last 7 days."
+
+**🤖 AI Agent:**
+> I've retrieved the user activity report. Over the last 7 days, you had an average of 12,500 daily active users and 450 new device registrations. Should I break this down by platform (iOS/Android)?
+
+
 ## Installation & Usage
 
 To install and use the **Jiguang Aurora / 极光** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Jiguang Aurora / 极光** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

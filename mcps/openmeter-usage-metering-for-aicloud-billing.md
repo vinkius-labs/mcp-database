@@ -1,12 +1,14 @@
 # OpenMeter (Usage Metering for AI/Cloud Billing) MCP Server
 
-Meter AI usage, manage customer entitlements, and automate cloud billing via OpenMeter's high-performance usage tracking API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openmeter-usage-metering-for-aicloud-billing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openmeter-usage-metering-for-aicloud-billing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openmeter-usage-metering-for-aicloud-billing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openmeter-usage-metering-for-aicloud-billing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 9
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Meter AI usage, manage customer entitlements, and automate cloud billing via OpenMeter's high-performance usage tracking API.
 
 ## Description
 Connect **OpenMeter** to your AI agent to handle complex usage-based billing and entitlement management for AI and Cloud services through natural language.
@@ -48,6 +50,33 @@ Your AI now acts as a billing operations specialist, capable of tracking consump
 Upsert subjects in OpenMeter
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenMeter (Usage Metering for AI/Cloud Billing)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Ingest a 'tokens' event for subject 'cust_99' with 150 tokens from source 'gpt-wrapper'."
+
+**🤖 AI Agent:**
+> I've successfully ingested the usage event. Event ID: `evt_01H...`. 150 tokens have been recorded for customer `cust_99`.
+
+---
+
+**👤 You:**
+> "Create a new feature called 'Image Generation' with key 'img_gen' and meter slug 'images_total'."
+
+**🤖 AI Agent:**
+> Feature 'Image Generation' (img_gen) has been created and linked to the 'images_total' meter. You can now assign entitlements for this feature to your customers.
+
+---
+
+**👤 You:**
+> "Get the details for customer with key 'acme-corp-001'."
+
+**🤖 AI Agent:**
+> Retrieved customer: ACME Corp (ID: `cust_abc123`). Usage is attributed to subjects: `['acme-corp-001']`.
+
+
 ## Installation & Usage
 
 To install and use the **OpenMeter (Usage Metering for AI/Cloud Billing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **OpenMeter (Usage Metering for AI/Cloud Billing)** MCP s
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

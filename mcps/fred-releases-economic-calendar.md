@@ -1,12 +1,14 @@
 # FRED Releases — Economic Calendar MCP Server
 
-Track every U.S. economic data release: Employment Situation, GDP Advance, CPI, Federal Funds Rate, and hundreds more — with release schedules, historical dates, and the complete series within each release.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-releases-economic-calendar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-releases-economic-calendar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fred-releases-economic-calendar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fred-releases-economic-calendar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 4
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Track every U.S. economic data release: Employment Situation, GDP Advance, CPI, Federal Funds Rate, and hundreds more — with release schedules, historical dates, and the complete series within each release.
 
 ## Description
 Never miss an economic data release again. FRED Releases gives your AI agent real-time awareness of the U.S. economic calendar.
@@ -38,6 +40,57 @@ Get release dates for economic data
 Get all series within a FRED release
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FRED Releases — Economic Calendar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "When is the next Employment Situation release?"
+
+**🤖 AI Agent:**
+> 📅 **Employment Situation (Release #10)**
+
+Next release: February 7, 2025 (8:30 AM ET)
+Previous: January 10, 2025
+Source: Bureau of Labor Statistics (BLS)
+
+This release contains UNRATE, PAYEMS, and 500+ employment series.
+
+---
+
+**👤 You:**
+> "What series are included in the GDP release?"
+
+**🤖 AI Agent:**
+> 💰 **GDP Release (#53) — Key Series**
+
+- GDP — Gross Domestic Product
+- GDPC1 — Real GDP (Chained 2017 Dollars)
+- A191RL1Q225SBEA — Real GDP % Change
+- PCEC — Personal Consumption
+- GPDI — Gross Private Domestic Investment
+
++200 more series in this release.
+
+---
+
+**👤 You:**
+> "Show me the upcoming economic calendar for this week"
+
+**🤖 AI Agent:**
+> 📅 **This Week — Economic Releases**
+
+| Date | Release | Source |
+|------|---------|--------|
+| Mon | ISM Manufacturing | ISM |
+| Tue | JOLTS Job Openings | BLS |
+| Wed | ADP Employment | ADP |
+| Thu | Initial Claims | DOL |
+| Fri | Employment Situation | BLS |
+
+The Jobs Report (Friday) is the market-moving headline event.
+
+
 ## Installation & Usage
 
 To install and use the **FRED Releases — Economic Calendar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +99,11 @@ To install and use the **FRED Releases — Economic Calendar** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

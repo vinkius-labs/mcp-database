@@ -1,12 +1,14 @@
 # Pics.io MCP Server
 
-Organize and share creative assets with a digital asset management platform that tags, searches, and delivers files fast.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/picsio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/picsio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/picsio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/picsio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Organize and share creative assets with a digital asset management platform that tags, searches, and delivers files fast.
 
 ## Description
 Connect your **Pics.io** account to any AI agent and take full control of your Digital Asset Management (DAM) orchestration through natural conversation. Pics.io provides a powerful platform for organizing large volumes of media, and this integration allows you to retrieve asset metadata, manage hierarchical collections, and track version histories directly from your chat interface.
@@ -50,6 +52,33 @@ List all digital assets
 - **update_asset**: Update asset metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pics.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all assets tagged with 'Summer 2024'."
+
+**🤖 AI Agent:**
+> I've retrieved your assets. You have 12 files matching 'Summer 2024', including 8 high-res photos and 4 videos. Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Search for all brand photography assets tagged with summer campaign 2025."
+
+**🤖 AI Agent:**
+> Found 34 assets matching "summer campaign 2025". 18 are high-resolution photos (4K+), 8 are social media graphics (1080x1080), 5 are banner images (1920x600), and 3 are video thumbnails. Top collection: "Beach Lifestyle" with 12 assets. All assets have approved brand guidelines tags. 6 were uploaded in the last 7 days by the creative team.
+
+---
+
+**👤 You:**
+> "Create a new collection called Q3 Marketing Materials and move the approved assets into it."
+
+**🤖 AI Agent:**
+> Collection "Q3 Marketing Materials" created successfully (ID: col_8234). 27 approved assets have been organized into the collection: 14 product photos, 8 social templates, 3 presentation decks, and 2 brand guideline documents. The collection has been shared with the marketing team (view access) and the design team (edit access). A shareable link has been generated for external agency collaboration.
+
+
 ## Installation & Usage
 
 To install and use the **Pics.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Pics.io** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

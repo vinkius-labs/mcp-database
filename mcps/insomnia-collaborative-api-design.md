@@ -1,12 +1,14 @@
 # Insomnia (Collaborative API Design) MCP Server
 
-Manage API designs and collections via Insomnia — list organizations, projects, and files, and audit API specs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/insomnia-collaborative-api-design)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/insomnia-collaborative-api-design)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/insomnia-collaborative-api-design-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/insomnia-collaborative-api-design-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage API designs and collections via Insomnia — list organizations, projects, and files, and audit API specs.
 
 ## Description
 Connect your **Insomnia Cloud** account to any AI agent and take full control of your collaborative API development and design lifecycle through natural conversation.
@@ -60,6 +62,33 @@ List environments in an Insomnia project. Environments hold variables (base URLs
 - **list_mocks**: List mock servers in an Insomnia project. Mock servers simulate API responses for testing. Returns mock names, URLs, and statuses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Insomnia (Collaborative API Design)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Insomnia projects in organization 'org-123'"
+
+**🤖 AI Agent:**
+> I've found 4 projects in organization 'org-123': 'Payments API', 'User Authentication', 'Inventory Management', and 'External Webhooks'. Which one would you like to see files for?
+
+---
+
+**👤 You:**
+> "Show me the OpenAPI spec for the 'Payments API' file"
+
+**🤖 AI Agent:**
+> Retrieving file 'Payments API'… I've fetched the content. It contains a full OpenAPI 3.0 specification with 12 endpoints, including '/charge', '/refund', and '/dispute'. Would you like a summary of the available paths?
+
+---
+
+**👤 You:**
+> "What are the active mock servers in our 'Inventory' project?"
+
+**🤖 AI Agent:**
+> I've identified 2 mock servers in 'Inventory': 1) 'Production Mock' (Status: Active, URL: https://mock.insomnia.rest/inv-prod), 2) 'Beta Features' (Status: Inactive). Would you like to check the environment variables for the production mock?
+
+
 ## Installation & Usage
 
 To install and use the **Insomnia (Collaborative API Design)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Insomnia (Collaborative API Design)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

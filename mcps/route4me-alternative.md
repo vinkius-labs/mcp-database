@@ -1,12 +1,14 @@
 # Route4Me MCP Server
 
-Connect your Route4Me account to AI agents to manage addresses, routes, optimizations, and vehicles.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/route4me-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/route4me-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/route4me-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/route4me-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Connect your Route4Me account to AI agents to manage addresses, routes, optimizations, and vehicles.
 
 ## Description
 ### What you can do
@@ -38,6 +40,35 @@ Create a new address in Route4Me
 - **update_address**: Update an existing address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Route4Me** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active vehicles assigned to my fleet."
+
+**🤖 AI Agent:**
+> Checking your Route4Me profile... Here are your fleet vehicles:
+1. 2020 Ford Transit (ID: xyz)
+2. 2018 Toyota Van (ID: abc)
+
+---
+
+**👤 You:**
+> "Fetch the latest route optimizations."
+
+**🤖 AI Agent:**
+> I've pulled the 10 most recent optimizations from Route4Me. Most recent ID: ABCDEF1234, encompassing 40 stops.
+
+---
+
+**👤 You:**
+> "Add a new address coordinate to the book."
+
+**🤖 AI Agent:**
+> Done! Customer record inserted successfully into your Route4Me address book.
+
+
 ## Installation & Usage
 
 To install and use the **Route4Me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +77,11 @@ To install and use the **Route4Me** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

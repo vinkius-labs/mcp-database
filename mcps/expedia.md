@@ -1,12 +1,14 @@
 # Expedia MCP Server
 
-Automate travel planning via Expedia — search hotels, compare flights, find rental cars, and build complete trip itineraries directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 13
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate travel planning via Expedia — search hotels, compare flights, find rental cars, and build complete trip itineraries directly from any AI agent.
 
 ## Description
 Connect your **Expedia Group** developer account to any AI agent and take programmatic control over one of the world's largest travel ecosystems — hotels, flights, and car rentals in a single integration.
@@ -56,6 +58,52 @@ Cancel an existing flight booking
 Search for geographic regions by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Expedia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Plan a complete trip to Tokyo: find hotels near Shibuya for March 10-14, a round-trip flight from LAX, and a rental car at Narita airport."
+
+**🤖 AI Agent:**
+> Here's your Tokyo trip plan:
+
+**Hotel:** 'Park Hotel Tokyo' near Shibuya — ¥28,000/night (≈$187), 4.5★, free cancellation until Mar 8. Total: ¥112,000.
+
+**Flight:** LAX → NRT, Delta DL7, departing 11:30 AM, arriving 3:45 PM+1. Economy from $892 round-trip.
+
+**Car:** Compact sedan at Narita — ¥4,200/day ($28) from Toyota Rent a Car, unlimited km.
+
+Estimated total: ~$1,750 for 4 nights. Want me to pull detailed quotes for any of these, or should I book the hotel first?
+
+---
+
+**👤 You:**
+> "Compare direct flights from JFK to London Heathrow for next Friday."
+
+**🤖 AI Agent:**
+> I found 6 direct flights from JFK to LHR for Friday:
+
+1. **British Airways BA178** — Departs 7:00 PM, arrives 7:05 AM+1, from $684
+2. **Delta DL1** — Departs 8:30 PM, arrives 8:40 AM+1, from $712
+3. **American AA100** — Departs 10:00 PM, arrives 10:15 AM+1, from $698
+
+BA178 is the best value and has the earliest arrival. Want me to pull a detailed quote with baggage and seat options for any of these?
+
+---
+
+**👤 You:**
+> "Get a room quote for property PRO-48291 for two nights starting tomorrow."
+
+**🤖 AI Agent:**
+> Here are the room quotes for PRO-48291 (Grand Central Hotel):
+
+**Standard Double** — $189/night, total $378 + $56 taxes. Free cancellation until 6 PM day of check-in.
+**Deluxe King Suite** — $279/night, total $558 + $83 taxes. Non-refundable, includes breakfast.
+
+The Standard Double offers the safest option with free cancellation. Would you like me to proceed with booking, or should I search for alternative properties in the area first?
+
+
 ## Installation & Usage
 
 To install and use the **Expedia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +112,11 @@ To install and use the **Expedia** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

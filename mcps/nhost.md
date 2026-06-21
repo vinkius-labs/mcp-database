@@ -1,12 +1,14 @@
 # Nhost MCP Server
 
-Manage Nhost authentication and storage — handle user sign-ins, registrations, profile management, and file uploads directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nhost)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nhost)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nhost-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nhost-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 15
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Nhost authentication and storage — handle user sign-ins, registrations, profile management, and file uploads directly from any AI agent.
 
 ## Description
 Connect your **Nhost** project to any AI agent to manage your backend services through natural language. This server provides a comprehensive interface for Nhost's Authentication and Storage services.
@@ -57,6 +59,33 @@ Retrieve the authenticated user profile information
 Upload a file to a bucket
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nhost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Sign in user dev@example.com with password 'securePass123'."
+
+**🤖 AI Agent:**
+> I've initiated the sign-in process for dev@example.com using `signin_email_password`. The session has been successfully established.
+
+---
+
+**👤 You:**
+> "Show me the profile details for the current authenticated user."
+
+**🤖 AI Agent:**
+> Fetching profile... Using `get_user`, I've retrieved the account details: User ID 'usr_7721', Email 'dev@example.com', and the account is currently active.
+
+---
+
+**👤 You:**
+> "Upload a file named 'config.json' with content '{"theme": "dark"}'."
+
+**🤖 AI Agent:**
+> Processing upload... I've used `upload_file` to save 'config.json' to your Nhost Storage. The file is now available in your default bucket.
+
+
 ## Installation & Usage
 
 To install and use the **Nhost** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Nhost** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

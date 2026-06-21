@@ -1,12 +1,14 @@
 # Amplience MCP Server
 
-Connect your Amplience CMS to your AI agent — query hubs, pull content, edit schemas, and deploy live items easily via chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amplience)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplience)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplience-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplience-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Connect your Amplience CMS to your AI agent — query hubs, pull content, edit schemas, and deploy live items easily via chat.
 
 ## Description
 Link your **Amplience** headless CMS to any intelligent AI agent to completely rethink how you handle your enterprise content architecture, deploying components natively through standard conversation.
@@ -48,6 +50,40 @@ List all accessible Amplience Hubs (environments)
 - **update_content_item**: Update an existing content item data structure matching its current schema
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amplience** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Identify all active repositories present inside my default Amplience Hub."
+
+**🤖 AI Agent:**
+> Extracted Repositories:
+1. Core Web Components (ID: `6k33i1`)
+2. Blog Content (ID: `6m75o9`)
+3. Banner Ad Images (ID: `9q82y3`)
+Which one would you like me to inspect into its foundational folder paths?
+
+---
+
+**👤 You:**
+> "Pull the structural metadata (schema lock and payload) of item '5tYv92'."
+
+**🤖 AI Agent:**
+> Here is Content Item '5tYv92' ('Spring Banner 2024'):
+Schema Lock Version: 5
+Payload: `{ "title": "Spring Sales!", "href": "/shop/spring" }`
+If you want to modify this banner output structure, simply provide the changes.
+
+---
+
+**👤 You:**
+> "Publish the newly edited Content '5tYv92' to the global live network."
+
+**🤖 AI Agent:**
+> Understood. Bypassing draft constraints and hitting publication edge. Content Item '5tYv92' has been published correctly from mapping to live domain! Would you like me to fetch the delivery URL JSON logic for verification?
+
+
 ## Installation & Usage
 
 To install and use the **Amplience** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +92,11 @@ To install and use the **Amplience** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

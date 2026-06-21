@@ -1,12 +1,14 @@
 # Simple Fatoora MCP Server
 
-Generate ZATCA-compliant electronic invoices for Saudi Arabian businesses with automated tax calculations and QR code embedding.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/simple-fatoora)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simple-fatoora)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simple-fatoora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simple-fatoora-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate ZATCA-compliant electronic invoices for Saudi Arabian businesses with automated tax calculations and QR code embedding.
 
 ## Description
 Connect your **Simple Fatoora** account to any AI agent and take full control of your e-invoicing and business financial orchestration through natural conversation. Simple Fatoora provides a specialized platform for creating ZATCA-compliant invoices and managing small business accounting, and this integration allows you to retrieve invoice metadata, manage client databases, and track inventory directly from your chat interface.
@@ -52,6 +54,33 @@ Create a VAT Tax Invoice (B2B)
 - **update_client**: Update an existing client
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Simple Fatoora** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active invoices in Simple Fatoora."
+
+**🤖 AI Agent:**
+> I've retrieved your invoices. You have 5 active records including 'INV-1001' (Paid) and 'INV-1002' (Draft). Would you like the full PDF data for any of them?
+
+---
+
+**👤 You:**
+> "Create a simplified invoice for client 'John Miller' with a 'Consultation' item for 500 SAR."
+
+**🤖 AI Agent:**
+> Simplified invoice created! Client: John Miller, Item: Consultation, Total: 500 SAR. The invoice is ZATCA-compliant. Should I retrieve the QR code data for you?
+
+---
+
+**👤 You:**
+> "Search for a client named 'Acme Corp' in my database."
+
+**🤖 AI Agent:**
+> Searching clients... I found one match for 'Acme Corp' (ID: 98765). They have a registered VAT number and 3 previous invoices. Would you like to see their contact history?
+
+
 ## Installation & Usage
 
 To install and use the **Simple Fatoora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Simple Fatoora** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # WHOOP MCP Server
 
-Track your WHOOP health metrics — workouts, sleep, recovery, strain, HRV and body measurements from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/whoop)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whoop)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whoop-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whoop-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Track your WHOOP health metrics — workouts, sleep, recovery, strain, HRV and body measurements from any AI agent.
 
 ## Description
 Connect your **WHOOP** account to any AI agent and access your personal health data through natural conversation.
@@ -69,6 +71,33 @@ Get a specific WHOOP workout by ID
 Get your WHOOP workout data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WHOOP** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my recovery score from today."
+
+**🤖 AI Agent:**
+> Today's recovery: 78% (Good). Resting HR: 52 bpm, HRV: 68ms, sleep balance: 8h 12m. You're well recovered and ready for high strain today.
+
+---
+
+**👤 You:**
+> "How did I sleep last night?"
+
+**🤖 AI Agent:**
+> Last night's sleep: 7h 45m total. Sleep performance: 85%. Light sleep: 3h 20m, Deep sleep: 2h 10m, REM: 1h 45m, Awake: 30m. Respiratory rate: 14 breaths/min. 2 disturbances.
+
+---
+
+**👤 You:**
+> "Show me my workouts from this week."
+
+**🤖 AI Agent:**
+> This week's workouts: 1. Running (45min, strain 14.2, avg HR 152, 520 cal) — 2. Weight Training (60min, strain 12.8, avg HR 138, 410 cal) — 3. Cycling (30min, strain 10.5, avg HR 145, 350 cal). Total weekly strain: 37.5.
+
+
 ## Installation & Usage
 
 To install and use the **WHOOP** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **WHOOP** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

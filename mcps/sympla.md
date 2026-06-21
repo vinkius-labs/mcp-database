@@ -1,12 +1,14 @@
 # Sympla MCP Server
 
-Orchestrate Sympla events — manage ticket orders, handle check-ins, and track event statistics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sympla)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sympla)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sympla-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sympla-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing
-**Tools Count:** 10
+
+**Category:** [marketing](../categories/marketing.md)
+
+Orchestrate Sympla events — manage ticket orders, handle check-ins, and track event statistics directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Sympla**, the leading event management and ticketing platform in Brazil. This MCP provides 10 tools to manage the full lifecycle of your events, from attendee list orchestration and ticket order retrieval to real-time check-in processing and event performance analytics.
@@ -47,6 +49,33 @@ Connect your AI agents to **Sympla**, the leading event management and ticketing
 - **search_participant_by_ticket**: Find a participant using their ticket number
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sympla** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all participants registered for my event 'Tech Conf 2024' (ID: 123456)."
+
+**🤖 AI Agent:**
+> Retrieving attendee list for 'Tech Conf 2024'... I've found 45 registered participants. Key attendees include John Doe (Premium Ticket), Jane Smith (General Admission), and Robert Brown (VIP). Would you like the full export?
+
+---
+
+**👤 You:**
+> "Show me the sales performance summary for event ID 'ev_999'."
+
+**🤖 AI Agent:**
+> Connecting to Sympla stats engine... For event 'Summer Festival' (ID: ev_999): 150/200 tickets sold (75% occupancy). Total revenue: R$ 7,500.00. Sales peaked yesterday between 6 PM and 9 PM.
+
+---
+
+**👤 You:**
+> "Perform check-in for ticket ID 'tkt_abc123'."
+
+**🤖 AI Agent:**
+> Requesting check-in from Sympla server... Success! Ticket 'tkt_abc123' has been checked in. Participant: Alice White. Attendance count for your event has been updated.
+
+
 ## Installation & Usage
 
 To install and use the **Sympla** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Sympla** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Render MCP Server
 
-Equip your AI to orchestrate cloud infrastructure, manage service deployments, and execute scaling operations natively on your Render platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/render)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/render)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/render-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/render-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Equip your AI to orchestrate cloud infrastructure, manage service deployments, and execute scaling operations natively on your Render platform.
 
 ## Description
 Connect your AI assistant directly to your **Render** cloud infrastructure via their official capabilities API. By granting your agent access to your hosting environments, you transform standard chat text into a powerful DevOps control center. Command deployments, scale back background workers to save costs, and instantiate brand-new services linked directly from your GitHub repositories without ever opening the Render dashboard.
@@ -48,6 +50,33 @@ Permanently deletes a Render service
 - **update_service_branch**: Updates the tracked GitHub branch for a service
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Render** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my web services, then suspend the one named 'old-staging-app'."
+
+**🤖 AI Agent:**
+> I checked your services utilizing `list_services`. I found the matching instance ('old-staging-app', ID: srv-...a1s). By executing `suspend_service`, the application is now safely paused, terminating related compute billing operations momentarily until you need it again.
+
+---
+
+**👤 You:**
+> "Check the recent deployment history for my main front-end service (srv-xyz123)."
+
+**🤖 AI Agent:**
+> Pulling data using the `list_deploys` interface on `srv-xyz123`, I can confirm the last 3 deployments occurred at [10:30 AM], [11:15 AM], and [1:00 PM]. The most recent deployment completed successfully and is live.
+
+---
+
+**👤 You:**
+> "Trigger a force deployment on service ID 'srv-backend88' and clear its build cache."
+
+**🤖 AI Agent:**
+> Deploy triggered using `trigger_deploy` with instructions pointing at `srv-backend88`. As requested, I bypassed internal optimizations establishing a true clean slate by clearing the previous build cache prior to cloning code.
+
+
 ## Installation & Usage
 
 To install and use the **Render** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Render** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

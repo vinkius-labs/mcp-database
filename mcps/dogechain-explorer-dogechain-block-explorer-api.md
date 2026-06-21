@@ -1,12 +1,14 @@
 # Dogechain Explorer (Dogechain Block Explorer API) MCP Server
 
-Automate Dogecoin blockchain analysis via Dogechain — check address balances, inspect transactions, and query block data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dogechain-explorer-dogechain-block-explorer-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dogechain-explorer-dogechain-block-explorer-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dogechain-explorer-dogechain-block-explorer-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dogechain-explorer-dogechain-block-explorer-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 17
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate Dogecoin blockchain analysis via Dogechain — check address balances, inspect transactions, and query block data directly from any AI agent.
 
 ## Description
 Connect the **Dogechain** block explorer to your AI agent to monitor the Dogecoin network in real-time. Perform deep on-chain analysis, verify wallet balances, and track transaction flows through natural language.
@@ -58,6 +60,33 @@ Get unspent outputs (UTXOs) for an address
 - **q_get_sent_by_address**: Quick query: Get total amount ever sent
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dogechain Explorer (Dogechain Block Explorer API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current balance of Dogecoin address D8v963B9wS4En543S8Z6eS6S6S6S6S6S6S?"
+
+**🤖 AI Agent:**
+> I've checked the address. The current balance for D8v963... is 1,250.50 DOGE (Confirmed: 1,250.50, Unconfirmed: 0.00).
+
+---
+
+**👤 You:**
+> "Show me the details for transaction hash 76a4c8..."
+
+**🤖 AI Agent:**
+> Fetching transaction details... This transaction was included in block 4,500,123. It involved 2 inputs and 1 output, with a total value of 5,000 DOGE and 12 confirmations.
+
+---
+
+**👤 You:**
+> "List the unspent outputs (UTXOs) for address D6r..."
+
+**🤖 AI Agent:**
+> I found 3 unspent outputs for address D6r... Totaling 450 DOGE. The largest UTXO is 300 DOGE from transaction hash b2f1...
+
+
 ## Installation & Usage
 
 To install and use the **Dogechain Explorer (Dogechain Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Dogechain Explorer (Dogechain Block Explorer API)** MCP
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

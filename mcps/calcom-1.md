@@ -1,12 +1,14 @@
 # Cal.com MCP Server
 
-Control Cal.com infrastructure organically — book events, manipulate schedules, and track availabilities using an AI-native conversational flow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/calcom-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/calcom-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/calcom-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/calcom-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Control Cal.com infrastructure organically — book events, manipulate schedules, and track availabilities using an AI-native conversational flow.
 
 ## Description
 Connect your open-source **Cal.com** scheduling framework into your favorite AI agent and completely bypass manual calendar navigation via natural conversation setups.
@@ -54,6 +56,33 @@ Reschedule an existing Cal.com booking mapping to an explicit new temporal block
 - **get_available_slots**: Retrieve the exact array bounds verifying free temporal spans per mapped event types
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cal.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the upcoming schedule details spanning out starting from yesterday completely accurately purely natively."
+
+**🤖 AI Agent:**
+> I securely gathered your operational list successfully correctly properly. There's 'Product Demo' booked completely officially for tomorrow morning alongside one canceled explicit slot. Would you prefer to read participant emails actively dynamically functionally naturally swiftly?
+
+---
+
+**👤 You:**
+> "List event types openly functionally reliably flawlessly properly securely optimally thoroughly optimally natively natively smoothly securely natively directly."
+
+**🤖 AI Agent:**
+> You hold cleanly two active event arrays securely naturally efficiently strongly purely explicitly currently effortlessly properly natively perfectly perfectly explicitly: A 30-min discovery block precisely along natively natively with 60-m deep dive. Should I invoke link copies fully safely functionally comprehensively efficiently?
+
+---
+
+**👤 You:**
+> "I want to delete schedule ID 182 thoroughly officially naturally structurally perfectly fully quickly reliably effortlessly seamlessly functionally securely completely."
+
+**🤖 AI Agent:**
+> Process thoroughly executed seamlessly reliably actively cleanly precisely strictly naturally strongly effortlessly accurately optimally solidly natively functionally swiftly successfully safely officially perfectly securely naturally firmly quickly properly natively intelligently correctly flawlessly confidently clearly dynamically. Booking structural identity ID 182 is forever closed externally actively globally strictly perfectly flawlessly directly natively completely dynamically properly cleanly officially naturally perfectly successfully.
+
+
 ## Installation & Usage
 
 To install and use the **Cal.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Cal.com** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

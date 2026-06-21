@@ -1,12 +1,14 @@
 # Contentstack MCP Server
 
-Manage headless CMS via Contentstack — list and create entries, audit content types, handle media assets, and publish to environments directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/contentstack-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/contentstack-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/contentstack-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 10
+
+**Category:** [content-management](../categories/content-management.md)
+
+Manage headless CMS via Contentstack — list and create entries, audit content types, handle media assets, and publish to environments directly from any AI agent.
 
 ## Description
 Connect your **Contentstack** account to any AI agent and take full control of your agentic experience platform and headless CMS through natural conversation.
@@ -49,6 +51,33 @@ Dispatch an automated validation check routing CMS Data Live
 - **update_cms_entry**: Mutate global Web CRM boundaries substituting Draft values safely
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Contentstack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all entries for content type 'homepage'"
+
+**🤖 AI Agent:**
+> I found 3 entries for 'homepage'. The latest is 'Main Homepage v2' (UID: entry_123). Would you like to see the draft values for this entry?
+
+---
+
+**👤 You:**
+> "Publish entry 'entry_456' of type 'blog_post' to production"
+
+**🤖 AI Agent:**
+> Publishing request sent! 'entry_456' is now being pushed to the 'production' environment. I will notify you once the sequence is complete.
+
+---
+
+**👤 You:**
+> "Show me the details for content model 'product_schema'"
+
+**🤖 AI Agent:**
+> Retrieving schema for 'product_schema'... This model includes fields like 'product_name' (Text), 'sku' (Symbol), 'price' (Number), and 'gallery' (File Reference). I can decode the specific validation rules for you.
+
+
 ## Installation & Usage
 
 To install and use the **Contentstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Contentstack** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

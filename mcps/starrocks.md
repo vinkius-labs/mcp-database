@@ -1,12 +1,14 @@
 # StarRocks MCP Server
 
-High-performance analytical database — manage clusters, tables, and query data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/starrocks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/starrocks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/starrocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/starrocks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 10
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+High-performance analytical database — manage clusters, tables, and query data via AI.
 
 ## Description
 Empower your AI agent to orchestrate your high-performance OLAP infrastructure with **StarRocks**, the leading distributed analytical database. By connecting StarRocks to your agent, you transform complex cluster auditing, schema management, and data querying into a natural conversation. Your agent can instantly list databases, retrieve table schemas, monitor backend nodes, and even execute complex SQL queries without you ever needing to open a SQL terminal or the StarRocks Manager. Whether you are conducting a data audit or monitoring real-time ingestion jobs, your agent acts as a real-time data reliability assistant, keeping your analytical platform accurate and your insights moving.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your high-performance OLAP infrastructure w
 - **list_views**: List database views
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **StarRocks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all databases in my StarRocks cluster."
+
+**🤖 AI Agent:**
+> I've retrieved your StarRocks databases. You have 5 databases, including 'sales_analytics', 'user_behavior', and 'logs_archive'. Which one would you like to see the tables for?
+
+---
+
+**👤 You:**
+> "Show me the average order value from the 'sales' table."
+
+**🤖 AI Agent:**
+> I've executed the query. The average order value across the 'sales' table is $142.50. Would you like a breakdown of this metric by region or product category?
+
+---
+
+**👤 You:**
+> "Check for any offline backend nodes."
+
+**🤖 AI Agent:**
+> I've checked the backend nodes. All 10 Backend (BE) nodes are currently online and healthy. CPU and memory usage across the cluster is within normal limits.
+
+
 ## Installation & Usage
 
 To install and use the **StarRocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **StarRocks** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

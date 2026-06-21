@@ -1,12 +1,14 @@
 # Bandsintown MCP Server
 
-Find concerts and live music events — search artists, browse tour dates, discover venues and get ticket links.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bandsintown)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bandsintown)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bandsintown-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bandsintown-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 7
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Find concerts and live music events — search artists, browse tour dates, discover venues and get ticket links.
 
 ## Description
 Connect to **Bandsintown** and discover live music events worldwide through natural conversation — no API key needed.
@@ -50,6 +52,33 @@ Get recommended events by location
 Get upcoming events at a specific venue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bandsintown** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What concerts are coming up for Taylor Swift?"
+
+**🤖 AI Agent:**
+> Taylor Swift has 15 upcoming tour dates. Next shows: São Paulo (Allianz Parque, Dec 15), Buenos Aires (River Plate, Dec 20), London (Wembley, Jun 2025). All dates include venue info and ticket links.
+
+---
+
+**👤 You:**
+> "Find recommended concerts in New York."
+
+**🤖 AI Agent:**
+> Found 25+ recommended events in New York: 1. The Strokes at Madison Square Garden (Dec 18) — 2. Billie Eilish at Barclays Center (Dec 22) — 3. Radiohead at Forest Hills Stadium (Jul 2025). All with venue details and ticket links.
+
+---
+
+**👤 You:**
+> "What shows are happening at Red Rocks Amphitheatre?"
+
+**🤖 AI Agent:**
+> Red Rocks Amphitheatre has 40+ upcoming shows. Notable acts: Zach Bryan (Jun 15), Tyler the Creator (Jul 22), Dead & Company (Aug 10), Widespread Panic (Sep 5-7). The iconic outdoor venue near Denver hosts concerts from May through October.
+
+
 ## Installation & Usage
 
 To install and use the **Bandsintown** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Bandsintown** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

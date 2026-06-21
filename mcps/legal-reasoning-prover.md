@@ -1,12 +1,14 @@
 # Legal Reasoning Prover MCP Server
 
-A legal memo cited cases that do not exist and confused jurisdiction. Legal Reasoning Prover forces IRAC-based arguments grounded in US law — real Bluebook citations, jurisdiction analysis, ABA-compliant counter-arguments, and specific remedies.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-reasoning-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-reasoning-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legal-reasoning-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legal-reasoning-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+A legal memo cited cases that do not exist and confused jurisdiction. Legal Reasoning Prover forces IRAC-based arguments grounded in US law — real Bluebook citations, jurisdiction analysis, ABA-compliant counter-arguments, and specific remedies.
 
 ## Description
 AI agents hallucinate legal citations at an alarming rate. Stanford HAI (2024) documented that LLMs fabricate case names in 30-40% of legal analysis outputs. The citations look right — proper party names, plausible reporter volumes, realistic court designations. But the cases don't exist. The holdings are invented. And the conclusions don't follow from the rules stated.
@@ -46,6 +48,33 @@ AI-generated legal reasoning fails for five specific reasons:
 Structured reflection tool for US legal reasoning — forces IRAC methodology, Bluebook-verifiable citations, jurisdiction identification, counter-argument engagement, and actionable remedies grounded in ABA Model Rules and federal/state procedural frameworks. Catches Syllogism Broken (the legal conclusion does not follow from the rule applied to the facts — "the contract is void because the defendant acted in bad faith" skips the syllogism. Major premise: under Restatement (Second) of Contracts § 205, every contract imposes an obligation of good faith and fair dealing. Minor premise: the defendant refused to process legitimate claims for 6 months despite contractual obligation. Conclusion: the defendant breached the implied covenant. If the conclusion does not follow from premise + facts, the reasoning is broken), Authority Ungrounded (citing fabricated or inaccurately characterized cases — LLMs hallucinate 30-40% of legal citations. "Johnson v. State (2021)" with no reporter volume, no page, no court is unverifiable. A Bluebook citation: "Bell Atl. Corp. v. Twombly, 550 U.S. 544, 570 (2007) — plausibility standard for pleadings." The holding must be accurately stated — mischaracterizing a holding is worse than no citation), Jurisdiction Blind (analyzing without identifying which court has jurisdiction and why — subject matter jurisdiction (federal question under 28 U.S.C. § 1331, diversity under § 1332, supplemental under § 1367), personal jurisdiction (minimum contacts under Int'l Shoe Co. v. Washington, 326 U.S. 310 (1945)), governing substantive law under Erie, and choice-of-law analysis. "Under US law" is not jurisdiction — the US has 50 states, 94 federal districts, and 13 circuits), Counter Absent (ignoring adverse authority in violation of ABA Model Rule 3.3(a)(2) — counsel must disclose directly adverse controlling authority in the jurisdiction. "There are no counterarguments" means the analysis is incomplete. The opposing position must be stated at its strongest, then distinguished on facts, law, or policy), and Remedy Detached (concluding with "consult an attorney" instead of a specific procedural step — a remedy must name the procedural vehicle (Motion for Summary Judgment under FRCP 56, Complaint under FRCP 8, Appeal under FRAP 4), the statutory basis, the specific relief sought (injunction scope, damages theory, declaratory judgment), and the standard of review). Call once per legal issue or IRAC analysis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Legal Reasoning Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "A client was fired after reporting safety violations. Analyze whether they have a wrongful termination claim under federal law."
+
+**🤖 AI Agent:**
+> Verdict: JURISDICTION_BLIND. You state 'federal law' but don't identify which statute — SOX § 806 (public company whistleblower)? OSHA § 11(c) (workplace safety retaliation)? False Claims Act 31 U.S.C. § 3730(h) (government contractor fraud)? Each has different elements, filing deadlines, and administrative exhaustion requirements. Name the statute, the court, and whether the employee exhausted administrative remedies before filing suit.
+
+---
+
+**👤 You:**
+> "Issue: Whether employer violated Title VII (PDA) by terminating employee after pregnancy announcement. Rule: 42 U.S.C. § 2000e; McDonnell Douglas, 411 U.S. 792 (1973). Application: Pregnancy announced March 1, PIP March 15 (no prior warnings), terminated April 1. Three comparable non-pregnant employees retained. Jurisdiction: NDIL, 7th Circuit. Counter: Employer claims performance; Ortiz v. Werner, 834 F.3d 760 (7th Cir. 2016). Remedy: EEOC charge within 300 days, back pay, damages capped $300K."
+
+**🤖 AI Agent:**
+> Verdict: REASONING_PROVEN. Syllogism sound — PDA elements mapped to facts (temporal proximity, no prior warnings, comparator retention). Authority grounded — McDonnell Douglas and Ortiz v. Werner properly cited. Jurisdiction identified — NDIL, 7th Circuit, 28 U.S.C. § 1331. Counter addressed — pretext analysis distinguishes performance defense. Remedy specific — EEOC timeline, damages cap, statutory fees.
+
+---
+
+**👤 You:**
+> "The contract has a non-compete clause. Analyze whether it's enforceable. Courts have generally held that non-competes must be reasonable. The law supports the client's position that this is too broad."
+
+**🤖 AI Agent:**
+> Multiple rejections. (1) AUTHORITY_UNGROUNDED — 'courts have generally held' is weasel authority. Which court? Which case? (2) JURISDICTION_BLIND — non-compete enforceability varies by state. California bans them (Bus. & Prof. Code § 16600), Texas requires ancillary agreement, Illinois requires $75K salary. Which state governs? (3) SYLLOGISM_BROKEN — 'too broad' lacks element-by-element analysis of scope, duration, and restriction.
+
+
 ## Installation & Usage
 
 To install and use the **Legal Reasoning Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Legal Reasoning Prover** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

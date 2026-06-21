@@ -1,12 +1,14 @@
 # Zenoti MCP Server
 
-Manage guests, appointments, therapists, invoices, memberships, and gift cards for your Zenoti-powered spa or salon enterprise through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zenoti)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zenoti)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zenoti-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zenoti-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 14
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage guests, appointments, therapists, invoices, memberships, and gift cards for your Zenoti-powered spa or salon enterprise through natural conversation.
 
 ## Description
 Connect your **Zenoti** organization to any AI agent and manage your spa, salon, or medspa enterprise through natural conversation.
@@ -66,6 +68,51 @@ List spa/salon services
 - **list_therapists**: List therapists and providers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zenoti** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show today's appointments at the downtown center."
+
+**🤖 AI Agent:**
+> Downtown Spa — Today's appointments:
+
+🧖 9:00 AM — **Jessica M.** 90-min Deep Tissue with Mark (Room 3) — $165
+💆 10:00 AM — **Sarah K.** Anti-Aging Facial with Ana (Room 1) — $120
+💅 10:30 AM — **Amanda R.** Gel Manicure + Pedicure with Lisa (Station 4) — $85
+🧖 11:30 AM — **David L.** Hot Stone Massage with Maria (Room 2) — $145
+
+4 appointments, $515 projected revenue. Room 3 is open from 12:00–3:00 PM.
+
+---
+
+**👤 You:**
+> "Find the profile for guest Maria Gonzalez and check her loyalty points."
+
+**🤖 AI Agent:**
+> Accessing Zenoti guest records ('get_guest')...
+Maria Gonzalez (Guest ID: G-44291):
+- Membership: Gold VIP Tier
+- Loyalty Points: 4,500 (Value: $45.00)
+- Preferences: Prefers female therapists, deep tissue pressure.
+- Last Visit: Sept 20th.
+
+---
+
+**👤 You:**
+> "What is the total revenue collected across all centers today?"
+
+**🤖 AI Agent:**
+> Running real-time enterprise report ('get_revenue_report')...
+Enterprise Daily Totals (As of 3:45 PM):
+- **Total Revenue**: $24,850.00
+  - Services: $16,200.00
+  - Retail: $3,400.00
+  - Memberships: $5,250.00
+Top Center: Downtown ($6,400). Lowest: North Creek ($1,200).
+
+
 ## Installation & Usage
 
 To install and use the **Zenoti** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +121,11 @@ To install and use the **Zenoti** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

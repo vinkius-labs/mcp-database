@@ -1,12 +1,14 @@
 # Gong MCP Server
 
-Analyze sales conversations with AI that reveals winning patterns, coach reps with data, and forecast revenue with precision.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gong-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gong-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gong-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gong-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 14
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Analyze sales conversations with AI that reveals winning patterns, coach reps with data, and forecast revenue with precision.
 
 ## Description
 Connect your **Gong** account to any AI agent and unlock conversation intelligence insights through natural conversation.
@@ -51,6 +53,33 @@ Connect your **Gong** account to any AI agent and unlock conversation intelligen
 - **list_users**: List users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gong** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all calls from this week and the transcript for the longest one."
+
+**🤖 AI Agent:**
+> Found 28 calls this week. The longest was 'Enterprise Demo — Acme Corp' (call_7891, 52 minutes, 4 participants). Speakers: Sarah Chen (rep, 58% talk time), John Miller (prospect, 35%), Lisa Park (SE, 7%). Key topics discussed: pricing tiers, SSO integration, data migration timeline. Action items: 1) Send SOW by Friday. 2) Schedule security review. 3) Provide reference customers. Would you like to see the scorecard evaluation or the full transcript?
+
+---
+
+**👤 You:**
+> "Compare the call performance of Sarah and Mike this quarter using their stats and scorecards."
+
+**🤖 AI Agent:**
+> Sarah Chen (user_201): 89 calls, avg duration 34 min, talk ratio 52/48 (ideal), avg scorecard: 8.4/10. Top strength: discovery questions (9.1). Area to improve: closing technique (7.2). Mike Torres (user_205): 72 calls, avg duration 28 min, talk ratio 65/35 (over-talking), avg scorecard: 7.1/10. Top strength: product knowledge (8.8). Area to improve: active listening (5.9). Recommendation: Mike could benefit from Sarah's coaching library calls on discovery methodology. Would you like to see the library calls?
+
+---
+
+**👤 You:**
+> "Show the deal pipeline and highlight deals that have had no calls in the last 2 weeks."
+
+**🤖 AI Agent:**
+> Deal pipeline: 24 active deals totaling $1.2M. Stage breakdown: Prospecting (8, $280K), Discovery (6, $340K), Demo (5, $290K), Negotiation (3, $190K), Closing (2, $100K). ⚠️ 4 deals have had no calls in 14+ days: 1) 'DataFlow Inc' ($45K, Negotiation, last call 18 days ago). 2) 'CloudSync' ($30K, Discovery, 16 days). 3) 'FinTrack' ($25K, Demo, 15 days). 4) 'LogiPro' ($20K, Prospecting, 21 days). These are at risk of going cold. Would you like to check the last call transcripts?
+
+
 ## Installation & Usage
 
 To install and use the **Gong** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Gong** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

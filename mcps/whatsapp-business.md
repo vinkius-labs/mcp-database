@@ -1,12 +1,14 @@
 # WhatsApp Business MCP Server
 
-Send text, media, and interactive messages on WhatsApp — the world's most popular messaging platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-business)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whatsapp-business)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whatsapp-business-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whatsapp-business-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 9
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Send text, media, and interactive messages on WhatsApp — the world's most popular messaging platform.
 
 ## Description
 Connect your **WhatsApp Business API** account to any AI agent and power your customer engagement through natural conversation.
@@ -65,6 +67,33 @@ Sends a Meta-approved Template message to initiate or resume a conversation
 Sends a free-form conversational text message to a user on WhatsApp
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WhatsApp Business** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a WhatsApp message to +123456789 saying 'Hi, your appointment is confirmed for 3 PM!'."
+
+**🤖 AI Agent:**
+> I've sent the message to +123456789 via WhatsApp. The message ID is 'wamid.HBgMMTIzNDU2Nzg5...' and it has been successfully queued for delivery.
+
+---
+
+**👤 You:**
+> "Send the 'welcome_offer' template to +123456789 in en_US."
+
+**🤖 AI Agent:**
+> Success! I've initiated contact with +123456789 using the 'welcome_offer' template in English (US). The conversation has been resumed.
+
+---
+
+**👤 You:**
+> "Send a quick reply message to +123456789: 'How would you like to proceed?' with buttons 'Yes', 'No', 'Maybe'."
+
+**🤖 AI Agent:**
+> I've dispatched the interactive message block to +123456789. The user will see 'How would you like to proceed?' followed by your 3 custom buttons.
+
+
 ## Installation & Usage
 
 To install and use the **WhatsApp Business** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **WhatsApp Business** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

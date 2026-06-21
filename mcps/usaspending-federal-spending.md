@@ -1,12 +1,14 @@
 # USAspending (Federal Spending) MCP Server
 
-Analyze US federal spending data — query agency budgets, track awards, and explore geographic spending patterns directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/usaspending-federal-spending)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usaspending-federal-spending)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usaspending-federal-spending-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usaspending-federal-spending-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 32
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Analyze US federal spending data — query agency budgets, track awards, and explore geographic spending patterns directly from your AI agent.
 
 ## Description
 Connect to the official **USAspending** database and gain unprecedented transparency into how the United States government allocates its budget. This server allows any AI agent to query real-time federal financial data, from high-level agency overviews to specific contract details.
@@ -69,6 +71,33 @@ Grouped spending data for visualizations
 - **search_spending_over_time**: Aggregated transaction amounts over time
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **USAspending (Federal Spending)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the agency overview for the Department of Energy using toptier code 089."
+
+**🤖 AI Agent:**
+> I've retrieved the overview for the Department of Energy (089). For the current fiscal year, they have total budgetary resources of $X billion and have obligated $Y billion across various programs.
+
+---
+
+**👤 You:**
+> "List all sub-agencies and their obligated amounts for the Department of Justice (toptier code 015)."
+
+**🤖 AI Agent:**
+> The Department of Justice (015) has several sub-agencies. The Federal Bureau of Investigation (FBI) has obligated $A, while the Drug Enforcement Administration (DEA) has obligated $B. Would you like a full breakdown?
+
+---
+
+**👤 You:**
+> "Search for spending by geography for the state of Texas in fiscal year 2023."
+
+**🤖 AI Agent:**
+> In fiscal year 2023, federal spending in Texas was distributed across various counties. Harris County received the highest amount at $C, followed by Dallas County at $D. Most of this was categorized under 'Contracts'.
+
+
 ## Installation & Usage
 
 To install and use the **USAspending (Federal Spending)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **USAspending (Federal Spending)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

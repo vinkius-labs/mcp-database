@@ -1,12 +1,14 @@
 # Flickr MCP Server
 
-Search photos, explore albums, and retrieve detailed image metadata from the Flickr community.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flickr-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flickr-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flickr-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flickr-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 5
+
+**Category:** [image-video](../categories/image-video.md)
+
+Search photos, explore albums, and retrieve detailed image metadata from the Flickr community.
 
 ## Description
 Connect to the **Flickr** API to search one of the world's largest photo libraries and extract rich metadata directly through your AI agent.
@@ -40,6 +42,33 @@ Connect to the **Flickr** API to search one of the world's largest photo librari
 - **test_echo**: A testing method that echoes back all passed parameters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flickr** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for photos of 'mountains' with the tag 'landscape'."
+
+**🤖 AI Agent:**
+> I've searched Flickr for 'mountains' with the tag 'landscape'. I found several high-quality images. Would you like the details for any specific photo ID?
+
+---
+
+**👤 You:**
+> "Get the metadata and description for photo ID 534211092."
+
+**🤖 AI Agent:**
+> Fetching info for photo 534211092... This photo is titled 'Golden Gate at Sunset' by user 'sf_photog'. It was taken with a Sony A7III and has 1,200 views.
+
+---
+
+**👤 You:**
+> "List all albums for the user with ID 12345678@N01."
+
+**🤖 AI Agent:**
+> I found 3 public albums for this user: 'Summer Vacation 2023', 'Street Photography', and 'Macro Shots'. Which one would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **Flickr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Flickr** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

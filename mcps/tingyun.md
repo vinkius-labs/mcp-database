@@ -1,12 +1,14 @@
 # Tingyun / 听云 MCP Server
 
-Leading APM and observability platform — manage applications, alerts, and performance metrics via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tingyun)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tingyun)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tingyun-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tingyun-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Leading APM and observability platform — manage applications, alerts, and performance metrics via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire digital performance stack with **Tingyun** (听云), the premier APM and observability platform. By connecting Tingyun to your agent, you transform complex application monitoring, incident response, and performance auditing into a natural conversation. Your agent can instantly list monitored applications, retrieve real-time performance summaries, browse active alerts, and query specific metric data without you ever needing to navigate the Tingyun console. Whether you are troubleshooting a production bottleneck or auditing system health across a distributed architecture, your agent acts as a real-time site reliability assistant, keeping your performance data accurate and your systems responsive.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire digital performance stack with 
 - **list_alert_policies**: List alert policies
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Tingyun / 听云** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all applications monitored by Tingyun."
+
+**🤖 AI Agent:**
+> I've retrieved your monitored applications. You have 12 APM applications, including 'Checkout Service', 'User API', and 'Auth Gateway'. Which one would you like to check the summary for?
+
+---
+
+**👤 You:**
+> "Show me the performance summary for application ID 12345."
+
+**🤖 AI Agent:**
+> I've retrieved the summary for app 12345. Average response time is 150ms, error rate is 0.05%, and Apdex score is 0.95. Would you like to see the database dependency list?
+
+---
+
+**👤 You:**
+> "Check for any critical alerts in Tingyun from today."
+
+**🤖 AI Agent:**
+> I've checked for alerts. There is 1 Critical alert for 'High Latency' on the 'Payment Service' and 2 Warnings regarding disk usage. Should I retrieve the alert detail for the high latency incident?
+
+
 ## Installation & Usage
 
 To install and use the **Tingyun / 听云** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Tingyun / 听云** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

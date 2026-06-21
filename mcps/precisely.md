@@ -1,12 +1,14 @@
 # Precisely MCP Server
 
-Equip your AI with precise location intelligence — geocode addresses, resolve property risks, calculate local taxes, and analyze demographics globally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/precisely)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/precisely)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/precisely-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/precisely-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Equip your AI with precise location intelligence — geocode addresses, resolve property risks, calculate local taxes, and analyze demographics globally.
 
 ## Description
 Fuse the **Precisely** geospatial intelligence network directly into your AI workflows, enabling your agents to accurately pinpoint addresses globally, extract demographics, and evaluate location-based risks with unparalleled precision.
@@ -66,6 +68,33 @@ Resolve the timezone and current UTC offset for any geographic coordinate using 
 Validate and standardize a postal address against authoritative reference datasets using the Precisely Address Verification API, returning USPS/Royal Mail/local postal authority standardized formatting and deliverability status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Precisely** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the exact sales tax for an e-commerce order delivered to '1 Market St, San Francisco, CA'?"
+
+**🤖 AI Agent:**
+> First I geocoded '1 Market Street, San Francisco, CA'. I retrieved coordinates `37.794, -122.395`. Evaluating `get_local_tax`, the combined sales tax rate there is exactly 8.625% (State: 6.0%, County: 0.25%, City: 1.25%, Special: 1.125%).
+
+---
+
+**👤 You:**
+> "Check the crime risk around the latitude 40.7128 and longitude -74.0060 relative to the national average."
+
+**🤖 AI Agent:**
+> I queried `enrich_crime_risk` for `40.7128, -74.0060` (Lower Manhattan). The overall crime index is 231, meaning the risk is 2.3x higher than the national baseline score of 100. The highest driver is the Personal Property theft index.
+
+---
+
+**👤 You:**
+> "Can you verify if '350 5th Ave New York 10118' is a real deliverable address? If yes, give me its timezone."
+
+**🤖 AI Agent:**
+> Using `verify_address`, I confirm it standardizes perfectly to '350 5TH AVE, NEW YORK, NY 10118-0110' (The Empire State Building), fully deliverable. Extracting `get_timezone` with its coordinates, it operates under `America/New_York` (UTC-05:00).
+
+
 ## Installation & Usage
 
 To install and use the **Precisely** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Precisely** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

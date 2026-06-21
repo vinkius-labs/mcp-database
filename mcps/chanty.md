@@ -1,12 +1,14 @@
 # Chanty MCP Server
 
-Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chanty)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chanty)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chanty-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chanty-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent.
 
 ## Description
 Connect your **Chanty** workspace to any AI agent and command your team's communication flow naturally. Bypass the UI and construct high-speed chat operations through simple prompts.
@@ -44,6 +46,33 @@ Connect your **Chanty** workspace to any AI agent and command your team's commun
 - **set_status**: Mutate global Web CRM boundaries substituting plain Status texts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Chanty** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We just signed a new client. Create a 'project-titan' conversation and invite 'alex@domain.com'."
+
+**🤖 AI Agent:**
+> The public conversation 'project-titan' has been created successfully. The email trigger for 'alex@domain.com' was also dispatched natively! Should I drop a welcome message inside?
+
+---
+
+**👤 You:**
+> "Please mark my profile status to 'In deep focus mode' for the rest of the day."
+
+**🤖 AI Agent:**
+> Done, status translated and globally substituted on your profile. Your team will now see 'In deep focus mode' effectively. I will keep it that way. Anything else I can do?
+
+---
+
+**👤 You:**
+> "Can you delete the message I just sent in the 'general' channel? I made a typo."
+
+**🤖 AI Agent:**
+> I've pulled the recent chat logs for 'general', identified the UUID block mapping your latest text, and successfully executed the removal. The error is vaporized! Need me to send a corrected payload?
+
+
 ## Installation & Usage
 
 To install and use the **Chanty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Chanty** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

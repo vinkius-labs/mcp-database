@@ -1,12 +1,14 @@
 # Twelve Labs (Video Understanding) MCP Server
 
-Search, analyze, and extract semantic insights from video content using Twelve Labs' powerful multimodal AI models.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/twelve-labs-video-understanding)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twelve-labs-video-understanding)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twelve-labs-video-understanding-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twelve-labs-video-understanding-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 18
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Search, analyze, and extract semantic insights from video content using Twelve Labs' powerful multimodal AI models.
 
 ## Description
 Connect **Twelve Labs** to your AI agent to unlock the full potential of video understanding. This server allows your agent to index video files, perform complex semantic searches, and generate deep analytical insights from visual and audio data.
@@ -57,6 +59,33 @@ Create an entity
 - **update_index**: Update an index name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Twelve Labs (Video Understanding)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Twelve Labs video indexes."
+
+**🤖 AI Agent:**
+> I've retrieved your indexes. You have 3 active indexes: 'Marketing-2024' (ID: idx_abc123), 'Product-Demos' (ID: idx_def456), and 'Security-Feed' (ID: idx_ghi789).
+
+---
+
+**👤 You:**
+> "Create a new index named 'Webinar-Archive' using the Marengo 3.0 model with visual and audio options."
+
+**🤖 AI Agent:**
+> Index 'Webinar-Archive' has been created successfully with ID: idx_web987. It is configured with the Marengo 3.0 model for both visual and audio analysis.
+
+---
+
+**👤 You:**
+> "Search for 'a person presenting a slideshow' in index idx_abc123."
+
+**🤖 AI Agent:**
+> Searching... I found 2 relevant matches in index idx_abc123. The first is at 02:15 in 'Q3-Review.mp4' and the second is at 10:45 in 'Strategy-Session.mp4'.
+
+
 ## Installation & Usage
 
 To install and use the **Twelve Labs (Video Understanding)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Twelve Labs (Video Understanding)** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

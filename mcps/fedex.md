@@ -1,12 +1,14 @@
 # FedEx MCP Server
 
-AI logistics: track shipments, get rates, create shipments, and find locations via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fedex)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fedex)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fedex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fedex-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+AI logistics: track shipments, get rates, create shipments, and find locations via agents.
 
 ## Description
 ### What you can do
@@ -64,6 +66,33 @@ Track a single FedEx package by tracking number
 Validate and standardize a shipping address with FedEx
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FedEx** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Track package 123456789012 and tell me when it will be delivered"
+
+**🤖 AI Agent:**
+> I'll retrieve the tracking history and estimated delivery date for your package.
+
+---
+
+**👤 You:**
+> "How much to ship a 5lb box from 10001 to 90210 via FedEx Ground?"
+
+**🤖 AI Agent:**
+> I'll get rate quotes for all available FedEx services between those ZIP codes.
+
+---
+
+**👤 You:**
+> "Find the nearest FedEx drop-off location to 37201"
+
+**🤖 AI Agent:**
+> I'll search for FedEx locations near that ZIP code and show you the closest options.
+
+
 ## Installation & Usage
 
 To install and use the **FedEx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **FedEx** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

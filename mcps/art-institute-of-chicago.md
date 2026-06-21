@@ -1,12 +1,14 @@
 # Art Institute of Chicago MCP Server
 
-Search and explore the Art Institute of Chicago's digital collection—artworks, artists, and gallery locations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/art-institute-of-chicago)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/art-institute-of-chicago)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/art-institute-of-chicago-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/art-institute-of-chicago-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 31
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Search and explore the Art Institute of Chicago's digital collection—artworks, artists, and gallery locations.
 
 ## Description
 Access one of the world's most impressive art collections directly through your AI agent. The **Art Institute of Chicago** MCP server allows you to query thousands of artworks, research artist biographies, and explore the museum's physical and digital archives.
@@ -66,6 +68,33 @@ Access one of the world's most impressive art collections directly through your 
 - **search_tours**: Search tours
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Art Institute of Chicago** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for artworks by Georges Seurat in the Art Institute of Chicago collection."
+
+**🤖 AI Agent:**
+> I found several artworks by Georges Seurat. The most famous is 'A Sunday on La Grande Jatte — 1884' (ID: 27992). Would you like to see the full details or the IIIF manifest for this painting?
+
+---
+
+**👤 You:**
+> "Get the details for artwork ID 16568."
+
+**🤖 AI Agent:**
+> Artwork 16568 is 'The Old Guitarist' by Pablo Picasso, created in 1903. It is an oil on panel painting from his Blue Period. It is currently located in Gallery 249.
+
+---
+
+**👤 You:**
+> "List the first 5 galleries in the museum."
+
+**🤖 AI Agent:**
+> Here are the first 5 galleries: Gallery 101 (Ancient Art), Gallery 102, Gallery 103, Gallery 104, and Gallery 105. Would you like to know which artworks are currently displayed in any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Art Institute of Chicago** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Art Institute of Chicago** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

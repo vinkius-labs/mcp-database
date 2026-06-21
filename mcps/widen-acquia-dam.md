@@ -1,12 +1,14 @@
 # Widen (Acquia DAM) MCP Server
 
-Search and manage digital assets, metadata, and CDN embed links on Widen (Acquia DAM) — the leading enterprise DAM solution.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/widen-acquia-dam)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/widen-acquia-dam)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/widen-acquia-dam-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/widen-acquia-dam-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search and manage digital assets, metadata, and CDN embed links on Widen (Acquia DAM) — the leading enterprise DAM solution.
 
 ## Description
 Connect your **Widen (Acquia DAM)** account to any AI agent and take control of your enterprise digital assets through natural conversation.
@@ -56,6 +58,33 @@ Search for assets in Acquia DAM (Widen) using the internal search syntax
 Updates the metadata fields of an existing asset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Widen (Acquia DAM)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for assets with 'marketing' in the category and 'banner' in the filename."
+
+**🤖 AI Agent:**
+> I found 3 assets matching your query: 1. 'summer_banner_v1.jpg' (ID: wid-101), 2. 'winter_sale_banner.png' (ID: wid-102), and 3. 'logo_banner_final.ai' (ID: wid-103). Would you like to see the details or embed links for any of these?
+
+---
+
+**👤 You:**
+> "Get the CDN embed links for asset ID 'wid-101'."
+
+**🤖 AI Agent:**
+> Here are the active CDN links for asset wid-101: 1. Public Image URL: https://embed.widen.net/img/..., 2. Responsive Snippet: <img src='...' />, 3. Original File: https://embed.widen.net/file/... Would you like the HTML code for a specific size?
+
+---
+
+**👤 You:**
+> "List all global categories in our Widen DAM."
+
+**🤖 AI Agent:**
+> I found 5 top-level categories: 'Brand Guidelines', 'Product Photos', 'Marketing Campaigns', 'Internal Documentation', and 'Legacy Archive'. Which category would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **Widen (Acquia DAM)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Widen (Acquia DAM)** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

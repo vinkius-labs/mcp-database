@@ -1,12 +1,14 @@
 # MySportsFeeds MCP Server
 
-Access real-time and historical sports data for NFL, MLB, NBA, NHL, and more—get standings, player stats, and game boxscores directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mysportsfeeds)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mysportsfeeds)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mysportsfeeds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mysportsfeeds-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time and historical sports data for NFL, MLB, NBA, NHL, and more—get standings, player stats, and game boxscores directly.
 
 ## Description
 Connect to **MySportsFeeds** to bring professional sports data into your AI workflows. Query live scores, seasonal standings, and deep player statistics across major leagues including NFL, MLB, NBA, NHL, CBB, and CFB.
@@ -47,6 +49,33 @@ Connect to **MySportsFeeds** to bring professional sports data into your AI work
 - **get_team_stats_totals**: Get seasonal team stats totals
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MySportsFeeds** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the seasonal standings for the MLB 2023-regular season."
+
+**🤖 AI Agent:**
+> I've retrieved the MLB 2023-regular standings. The AL East is led by the Baltimore Orioles (101-61) followed by the Tampa Bay Rays (99-63). Would you like to see the full division breakdown?
+
+---
+
+**👤 You:**
+> "Show me the play-by-play for the NBA game with ID 60234 in the 2023-2024-regular season."
+
+**🤖 AI Agent:**
+> Fetching play-by-play data for game 60234... The game started with a jump ball won by the home team. Notable events include a 3-pointer by Curry at 10:42 in the 1st. Should I summarize the scoring runs?
+
+---
+
+**👤 You:**
+> "What are the latest player injuries in the NHL?"
+
+**🤖 AI Agent:**
+> I've scanned the latest NHL injury reports. Current notable injuries include Connor McDavid (Upper Body, Day-to-day) and Nathan MacKinnon (Lower Body, Out 2 weeks). Would you like the full list for a specific team?
+
+
 ## Installation & Usage
 
 To install and use the **MySportsFeeds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **MySportsFeeds** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

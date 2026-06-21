@@ -1,12 +1,14 @@
 # Corsizio MCP Server
 
-Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corsizio-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corsizio-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corsizio-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corsizio-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees.
 
 ## Description
 Connect your **Corsizio** account to any AI agent and take full control of your event registration and participant engagement workflows through natural conversation.
@@ -51,6 +53,33 @@ List all events
 - **list_payouts**: List account payouts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corsizio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active events in my Corsizio account."
+
+**🤖 AI Agent:**
+> I've retrieved your active events. You currently have 3 sessions: 'AI Workshop 2026' (ID: ev_123), 'Design Sprint', and 'Coding Bootcamp'. Which one would you like the attendee list for?
+
+---
+
+**👤 You:**
+> "Show the attendee details for event ID 'ev_123'."
+
+**🤖 AI Agent:**
+> Fetching attendee list... Event ev_123 has 15 participants registered, including 'John Doe' and 'Jane Smith'. I can provide individual profile metadata for any of them if needed.
+
+---
+
+**👤 You:**
+> "Get the latest feedback for 'AI Workshop 2026'."
+
+**🤖 AI Agent:**
+> Scanning feedback... For 'AI Workshop 2026', I found 5 recent reviews with an average score of 4.8. Highlights include praise for the hands-on sessions. Would you like to see the detailed comments?
+
+
 ## Installation & Usage
 
 To install and use the **Corsizio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Corsizio** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

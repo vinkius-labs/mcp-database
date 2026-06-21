@@ -1,12 +1,14 @@
 # Greenspark MCP Server
 
-Embed climate action into your product via Greenspark — plant trees, offset carbon, and track impact via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/greenspark)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/greenspark)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/greenspark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/greenspark-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Embed climate action into your product via Greenspark — plant trees, offset carbon, and track impact via AI.
 
 ## Description
 Connect your **Greenspark** account to any AI agent and automate your business's environmental impact. Use natural language to trigger verified climate actions like planting trees or rescuing ocean plastic, and monitor your total sustainability goals in real-time.
@@ -48,6 +50,33 @@ Connect your **Greenspark** account to any AI agent and automate your business's
 - **list_webhooks**: List configured API webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Greenspark** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my total climate impact summary"
+
+**🤖 AI Agent:**
+> Retrieving your impact summary... To date, your business has: 1. Planted 1,240 trees. 2. Offset 45,000 kg of CO2. 3. Rescued 12,500 plastic bottles. Would you like to see the specific projects these impacts supported?
+
+---
+
+**👤 You:**
+> "Plant 10 trees for our latest customer sale"
+
+**🤖 AI Agent:**
+> Processing climate action... Success! I've triggered the planting of 10 trees via the Eden Reforestation Projects. Your total tree count is now 1,250.
+
+---
+
+**👤 You:**
+> "Estimate the carbon footprint of a $50 flight purchase"
+
+**🤖 AI Agent:**
+> Calculating footprint... For a $50 transaction in the 'Airlines' category, the estimated impact is 125 kg of CO2e. Would you like to offset this amount now?
+
+
 ## Installation & Usage
 
 To install and use the **Greenspark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Greenspark** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

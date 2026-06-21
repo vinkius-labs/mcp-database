@@ -1,12 +1,14 @@
 # Clearout MCP Server
 
-Verify email addresses in bulk before sending campaigns to protect your sender reputation and improve deliverability rates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clearout)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearout)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clearout-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clearout-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Verify email addresses in bulk before sending campaigns to protect your sender reputation and improve deliverability rates.
 
 ## Description
 Connect your **Clearout** email intelligence account to any AI agent and simplify how you clean your contact lists, verify deliverability, and discover professional email addresses through natural conversation.
@@ -50,6 +52,33 @@ Verify emails in bulk
 - **verify_email**: Verify a single email
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clearout** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify if the email 'john.doe@example.com' is safe to send to."
+
+**🤖 AI Agent:**
+> Verification complete! The email 'john.doe@example.com' is marked as 'Valid' with a deliverability score of 98/100. It is a legitimate corporate address and safe for your campaign.
+
+---
+
+**👤 You:**
+> "Find the professional email for 'Steve Jobs' at 'apple.com'."
+
+**🤖 AI Agent:**
+> I've attempted to find the address. Clearout suggests 'steve@apple.com' with a high confidence score. Would you like me to verify its deliverability as well?
+
+---
+
+**👤 You:**
+> "How many validation credits do I have left?"
+
+**🤖 AI Agent:**
+> Checking credits... You currently have 4,520 validation credits remaining in your Clearout account. This is sufficient for your upcoming bulk list cleaning.
+
+
 ## Installation & Usage
 
 To install and use the **Clearout** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Clearout** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

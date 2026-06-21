@@ -1,12 +1,14 @@
 # WorkOS MCP Server
 
-Manage enterprise organizations, SSO connections, and directory sync on WorkOS — the platform for enterprise-ready features.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/workos)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/workos)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/workos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/workos-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage enterprise organizations, SSO connections, and directory sync on WorkOS — the platform for enterprise-ready features.
 
 ## Description
 Connect your **WorkOS** account to any AI agent and manage your enterprise identity infrastructure through natural conversation.
@@ -56,6 +58,33 @@ Retrieves metadata for a specific directory instance
 - **list_directory_users**: Lists all users synced from a directory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WorkOS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all organizations in my WorkOS account."
+
+**🤖 AI Agent:**
+> I found 5 organizations: 1. 'Acme Corp' (ID: org_01E...), 2. 'Global Tech' (ID: org_01F...), 3. 'Stark Industries' (ID: org_01G...), and 2 others. Which one would you like to see details for?
+
+---
+
+**👤 You:**
+> "Check the status of SSO connections for 'Acme Corp'."
+
+**🤖 AI Agent:**
+> Acme Corp (org_01E...) has 2 active SSO connections: 1. Okta SAML (Status: ACTIVE, ID: conn_01H...) and 2. Azure AD OIDC (Status: ACTIVE, ID: conn_01I...). Both links are healthy and operational.
+
+---
+
+**👤 You:**
+> "List all users synced from the directory 'dir_01J...'."
+
+**🤖 AI Agent:**
+> I found 120 users in directory dir_01J.... The most recently synced users are: 1. John Doe (john@acme.com), 2. Jane Smith (jane@acme.com), and 3. Robert Brown (robert@acme.com). Would you like to see the full roster or filter by group?
+
+
 ## Installation & Usage
 
 To install and use the **WorkOS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **WorkOS** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

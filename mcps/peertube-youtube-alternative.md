@@ -1,12 +1,14 @@
 # PeerTube (YouTube Alternative) MCP Server
 
-Interact with decentralized PeerTube instances — manage video feeds, download content, and handle user registration via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/peertube-youtube-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/peertube-youtube-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/peertube-youtube-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/peertube-youtube-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Interact with decentralized PeerTube instances — manage video feeds, download content, and handle user registration via AI.
 
 ## Description
 Connect your **PeerTube** instance to any AI agent to explore the decentralized video ecosystem. This server allows you to interact with the Fediverse's leading video platform through natural language.
@@ -52,6 +54,33 @@ Get user access token
 - **register_user**: Register a new user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PeerTube (YouTube Alternative)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the local OAuth client credentials for this PeerTube instance."
+
+**🤖 AI Agent:**
+> I've retrieved the OAuth client details. The Client ID is `...` and the Client Secret is `...`. You can use these to request a user token.
+
+---
+
+**👤 You:**
+> "Show me the latest video comments feed in JSON format."
+
+**🤖 AI Agent:**
+> Fetching the comments feed... I've found the latest comments in JSON format. Would you like me to summarize the most recent discussions?
+
+---
+
+**👤 You:**
+> "Generate a download link for the video with ID 'a1b2c3d4'."
+
+**🤖 AI Agent:**
+> Processing request... I have generated a download link for video 'a1b2c3d4'. You can access the mp4 file here: [Link].
+
+
 ## Installation & Usage
 
 To install and use the **PeerTube (YouTube Alternative)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **PeerTube (YouTube Alternative)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

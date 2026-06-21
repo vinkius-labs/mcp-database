@@ -1,12 +1,14 @@
 # CleverTap MCP Server
 
-Manage customer engagement and analytics via CleverTap — track campaigns, monitor user segments, and audit event data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clevertap)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clevertap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clevertap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clevertap-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 8
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage customer engagement and analytics via CleverTap — track campaigns, monitor user segments, and audit event data directly from any AI agent.
 
 ## Description
 Connect your **CleverTap** account to any AI agent and take full control of your customer engagement and retention strategies through natural conversation. Streamline how you monitor campaigns and analyze user behavior natively.
@@ -45,6 +47,33 @@ Connect your **CleverTap** account to any AI agent and take full control of your
 - **list_user_profile_properties**: List all user profile properties and attributes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CleverTap** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my CleverTap campaigns from last month."
+
+**🤖 AI Agent:**
+> Retrieving campaigns from last month... I found 5 items: 'Summer Sale Push' (Completed), 'Welcome Email Series' (Running), and 3 others. Would you like the performance report for any of these?
+
+---
+
+**👤 You:**
+> "What is the performance report for campaign ID 1457432732?"
+
+**🤖 AI Agent:**
+> Checking performance for campaign 1457432732... This campaign sent 50,000 messages, had 4,500 clicks (9% CTR), and resulted in 1,200 conversions (2.4% conversion rate).
+
+---
+
+**👤 You:**
+> "Show me the custom event schemas in my account."
+
+**🤖 AI Agent:**
+> Retrieving event schemas... You have 12 custom events defined, including 'Product Viewed', 'Add to Cart', 'Charged', and 'Search Executed'. I can provide the attributes for any of these.
+
+
 ## Installation & Usage
 
 To install and use the **CleverTap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **CleverTap** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

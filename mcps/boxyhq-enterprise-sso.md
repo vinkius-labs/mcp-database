@@ -1,12 +1,14 @@
 # BoxyHQ (Enterprise SSO) MCP Server
 
-Manage Enterprise SSO and Directory Sync (SCIM) via BoxyHQ — configure SAML/OIDC connections and automate user provisioning directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/boxyhq-enterprise-sso)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/boxyhq-enterprise-sso)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/boxyhq-enterprise-sso-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/boxyhq-enterprise-sso-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 8
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage Enterprise SSO and Directory Sync (SCIM) via BoxyHQ — configure SAML/OIDC connections and automate user provisioning directly from your AI agent.
 
 ## Description
 Connect your **BoxyHQ** instance to any AI agent to streamline enterprise authentication and user lifecycle management through natural language.
@@ -45,6 +47,33 @@ Create a Directory Sync (SCIM) connection
 - **update_connection**: Update an existing SSO connection
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BoxyHQ (Enterprise SSO)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Add a new SAML connection for tenant 'acme.com' and product 'saas-app' using metadata URL 'https://idp.com/metadata.xml'."
+
+**🤖 AI Agent:**
+> I've successfully created the SAML connection for acme.com. The Client ID is `conn_abc123`. You can now use this for SSO authentication.
+
+---
+
+**👤 You:**
+> "List all SSO connections for the product 'enterprise-portal'."
+
+**🤖 AI Agent:**
+> I found 3 connections for 'enterprise-portal': 'Globex Corp' (SAML), 'Initech' (OIDC), and 'Umbrella' (SAML). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Create an Okta SCIM directory for tenant 'piedpiper' and product 'cloud-storage'."
+
+**🤖 AI Agent:**
+> The Okta SCIM directory for piedpiper has been created. SCIM Base URL: `https://sso.boxyhq.com/api/scim/v2.0/piedpiper`. Please provide this to the customer to start syncing users.
+
+
 ## Installation & Usage
 
 To install and use the **BoxyHQ (Enterprise SSO)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **BoxyHQ (Enterprise SSO)** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

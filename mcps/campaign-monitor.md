@@ -1,12 +1,14 @@
 # Campaign Monitor MCP Server
 
-Manage email marketing via Campaign Monitor — track campaigns, manage subscribers, and monitor performance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/campaign-monitor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaign-monitor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/campaign-monitor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/campaign-monitor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email marketing via Campaign Monitor — track campaigns, manage subscribers, and monitor performance directly from any AI agent.
 
 ## Description
 Connect your **Campaign Monitor** account to any AI agent and orchestrate your email marketing, subscriber management, and multi-channel campaigns through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Campaign Monitor** account to any AI agent and orchestrate your e
 - **list_email_templates**: List all templates for a client
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Campaign Monitor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my clients in Campaign Monitor."
+
+**🤖 AI Agent:**
+> I've retrieved your clients. You have 3 clients managed: 'Vinkius North' (ID: cli_1), 'Global Solutions' (ID: cli_2), and 'Tech Corp' (ID: cli_3).
+
+---
+
+**👤 You:**
+> "Show the lists for client cli_123."
+
+**🤖 AI Agent:**
+> Retrieving lists for client cli_123... You have 2 lists: 'Weekly Newsletter' (ID: list_1) and 'Event Attendees' (ID: list_2).
+
+---
+
+**👤 You:**
+> "Add Jane Smith (jane@example.com) to the 'Weekly Newsletter' list."
+
+**🤖 AI Agent:**
+> Jane Smith has been successfully added to the 'Weekly Newsletter' list in your Campaign Monitor account.
+
+
 ## Installation & Usage
 
 To install and use the **Campaign Monitor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Campaign Monitor** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Electricity Maps Carbon Intelligence MCP Server
 
-Universal energy and carbon intelligence — get real-time electricity mix and carbon data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/electricity-maps-carbon-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/electricity-maps-carbon-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/electricity-maps-carbon-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/electricity-maps-carbon-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 3
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Universal energy and carbon intelligence — get real-time electricity mix and carbon data via AI.
 
 ## Description
 Equip your AI agent with real-time global energy intelligence through the **Electricity Maps** MCP server. This integration provides instant access to the carbon intensity of electricity production and the detailed power breakdown (solar, wind, nuclear, coal, etc.) for over 100 countries and regions. Your agent can retrieve the exact gCO2eq/kWh for specific zones and monitor the renewable percentage of the grid. Whether you are optimizing server workloads for sustainability, auditing corporate emissions, or researching global energy transitions, your agent acts as a dedicated energy analyst through natural conversation.
@@ -42,6 +44,17 @@ Get power production breakdown for a zone
 - **list_energy_zones**: List all available energy zones
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Electricity Maps Carbon Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the energy mix in France right now?"
+
+**🤖 AI Agent:**
+> Retrieving data for France (FR)... The French grid is currently powered primarily by nuclear energy, followed by wind and hydro. The current carbon intensity is quite low at 45 gCO2eq/kWh. Would you like to see the exact MW breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Electricity Maps Carbon Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +63,11 @@ To install and use the **Electricity Maps Carbon Intelligence** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

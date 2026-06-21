@@ -1,12 +1,14 @@
 # Founder Vision Prover MCP Server
 
-A pitch deck said '1% of a $10B market' and 'run Facebook ads.' That is not a startup — that is a PowerPoint. This tool forces it to prove behavioral pain, calculate bottom-up TAM, show cohort retention, build a $0 CAC moat, and model unit economics that recycle capital in under 12 months.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/founder-vision-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/founder-vision-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/founder-vision-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/founder-vision-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business & strategy
-**Tools Count:** 1
+
+**Category:** [business & strategy](../categories/business-strategy.md)
+
+A pitch deck said '1% of a $10B market' and 'run Facebook ads.' That is not a startup — that is a PowerPoint. This tool forces it to prove behavioral pain, calculate bottom-up TAM, show cohort retention, build a $0 CAC moat, and model unit economics that recycle capital in under 12 months.
 
 ## Description
 ## The Problem
@@ -56,6 +58,33 @@ Tool calls are obligations — instructions are suggestions. The LLM cannot skip
 Structured reflection tool that forces YC-partner-level scrutiny on startup ideas — validating behavioral evidence, bottom-up market sizing, retention physics, distribution moats, and unit economics before concluding viability. Catches Behavioral Void (no present-tense customer hack — "they are frustrated" is a feeling, not evidence. "Restaurant managers pay an intern $1K/month to manually update a Google Sheet every night because no tool integrates POS, inventory, and labor scheduling" — THAT is behavioral evidence. If nobody is hacking a workaround today, the pain is not severe enough to pay for), Top-Down TAM Delusion ("the market is $10B per Gartner, if we capture 1%..." — top-down TAM is a fantasy that makes every startup look viable. Bottom-up: 15,000 mid-market restaurants × $2,400/year = $36M TAM. That is real, reachable, and small enough to force honest strategy), Retention Death (leaky bucket — signups, downloads, and waitlist size are vanity metrics. Month 3 cohort retention is truth. <30% consumer or <80% SaaS = the product does not retain. Growth cannot outrun churn forever), Distribution Naivety (Facebook Ads is a tax, not a moat — paid acquisition scales linearly with spend. A distribution MOAT is structural: network effects, virality, product-led growth, UGC SEO. How does each user bring the next user at $0 CAC?), and Zombie Economics (CAC payback >12 months means capital cycles too slowly for venture scale — if it takes 18 months to recover customer acquisition cost, the startup needs 3x more capital to reach the same milestone as a competitor with 6-month payback). Call once per startup idea or business model evaluation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Founder Vision Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I want to build a better CRM. The global CRM market is $50B according to Gartner. If we capture just 1% we'll be a unicorn. We'll acquire users via Google Ads and hire a sales team."
+
+**🤖 AI Agent:**
+> TOP_DOWN_DELUSION + DISTRIBUTION_NAIVE — "Gartner says $50B" is top-down nonsense. Count the ACTUAL reachable customers and multiply by your price. And "Google Ads + sales team" is a double tax — both scale linearly with spend and decay with competition. Define a structural $0 CAC loop or accept you're building a lifestyle business.
+
+---
+
+**👤 You:**
+> "Restaurant managers pay an intern $1k/month to update inventory in a Google Sheet every night. We charge $200/month. 15,000 mid-market restaurants in the US × $2,400/year = $36M TAM. Month 3 retention: 85%. Gross margin: 92%. Each restaurant invites their suppliers to the platform (network effect), driving CAC to $0. CAC: $300, payback: 1.5 months. Crossover: month 14."
+
+**🤖 AI Agent:**
+> VISION_PROVEN — Founder Vision Validated. Behavioral pain: intern hack exists ($1k/month waste). Bottom-up TAM: 15,000 × $2,400 = $36M. Retention: 85% M3 (above 80% SaaS threshold). Margin: 92%. Distribution: supplier network effect drives CAC toward $0. Unit economics: 1.5-month payback, crossover at month 14. Execute.
+
+---
+
+**👤 You:**
+> "Users are annoyed that they have to use two different apps to book flights and hotels. We will build an all-in-one travel app. We have 50,000 downloads and a waitlist of 10,000 people."
+
+**🤖 AI Agent:**
+> BEHAVIORAL_VOID — "Annoyed" is not a venture-scale pain. Customers are NOT hacking a solution — they are not paying interns or duct-taping spreadsheets to combine flight and hotel bookings. This is a vitamin, not a painkiller. And 50,000 downloads and a waitlist are vanity metrics — they prove interest, not retention. Show Month 3 cohort data.
+
+
 ## Installation & Usage
 
 To install and use the **Founder Vision Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Founder Vision Prover** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Corescan (Core DAO Blockchain Explorer) MCP Server
 
-Explore the Core DAO blockchain — check balances, track transactions, inspect smart contracts, and monitor network stats directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corescan-core-dao-blockchain-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/corescan-core-dao-blockchain-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/corescan-core-dao-blockchain-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/corescan-core-dao-blockchain-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 15
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Core DAO blockchain — check balances, track transactions, inspect smart contracts, and monitor network stats directly via AI.
 
 ## Description
 Connect to **Corescan**, the premier block explorer for the Core DAO network, and empower your AI agent with real-time on-chain data. This server provides comprehensive access to the Core DAO ecosystem, allowing for deep analysis of accounts, tokens, and smart contracts.
@@ -50,6 +52,33 @@ Connect to **Corescan**, the premier block explorer for the Core DAO network, an
 - **get_tx_status**: Check contract execution status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Corescan (Core DAO Blockchain Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the CORE balance of address 0x393849...?"
+
+**🤖 AI Agent:**
+> The address 0x393849... currently holds 150.25 CORE on the Core DAO network.
+
+---
+
+**👤 You:**
+> "List the last 5 normal transactions for address 0xabc123..."
+
+**🤖 AI Agent:**
+> I've retrieved the last 5 transactions for 0xabc123... The most recent was a transfer of 10 CORE to 0xdef... in block 1234567.
+
+---
+
+**👤 You:**
+> "Get the ABI for the smart contract at 0x789ghi..."
+
+**🤖 AI Agent:**
+> I have successfully fetched the ABI for the contract at 0x789ghi... It includes functions like 'transfer', 'balanceOf', and 'mint'. Would you like me to explain any specific function?
+
+
 ## Installation & Usage
 
 To install and use the **Corescan (Core DAO Blockchain Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Corescan (Core DAO Blockchain Explorer)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

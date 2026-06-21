@@ -1,12 +1,14 @@
 # Spoonacular MCP Server
 
-The most comprehensive recipe API — search recipes, plan meals, find dishes by ingredients, and get full nutritional analysis for everything you cook.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spoonacular)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spoonacular-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spoonacular-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 4
+
+**Category:** [productivity](../categories/productivity.md)
+
+The most comprehensive recipe API — search recipes, plan meals, find dishes by ingredients, and get full nutritional analysis for everything you cook.
 
 ## Description
 The **Spoonacular MCP Server** connects your AI agent to the world's leading recipe and food intelligence platform — the gold standard for recipe search, meal planning, and nutritional analysis.
@@ -35,6 +37,45 @@ Find recipes based on ingredients you have available
 Search for recipes with optional filters for cuisine, diet, and nutrition
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Spoonacular** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What can I make with chicken, rice, and garlic?"
+
+**🤖 AI Agent:**
+> Great ingredients! I found 10 recipes you can make: Garlic Butter Chicken with Rice (uses all 3!), Chicken Fried Rice, Arroz con Pollo, and more. The top match uses all your ingredients and only needs soy sauce and butter to complete.
+
+---
+
+**👤 You:**
+> "Find a gluten-free dessert recipe under 300 calories."
+
+**🤖 AI Agent:**
+> 🍰 **Gluten-Free Low-Calorie Desserts**
+
+1. **Almond Flour Brownies**: 250 calories (GF, Vegetarian)
+2. **Berry Chia Pudding**: 180 calories (GF, Vegan)
+3. **Baked Cinnamon Apples**: 120 calories (GF, Vegan)
+
+---
+
+**👤 You:**
+> "Show me the nutritional breakdown for spaghetti bolognese."
+
+**🤖 AI Agent:**
+> 🍝 **Nutritional Fact: Spaghetti Bolognese (Per Serving)**
+
+- **Calories**: 450 kcal
+- **Protein**: 24g
+- **Fat**: 15g (Sat: 4g)
+- **Carbs**: 56g (Fiber: 4g)
+- **Sodium**: 850mg
+
+*Would you like the full recipe?*
+
+
 ## Installation & Usage
 
 To install and use the **Spoonacular** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +84,11 @@ To install and use the **Spoonacular** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

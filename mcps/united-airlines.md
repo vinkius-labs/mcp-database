@@ -1,12 +1,14 @@
 # United Airlines MCP Server
 
-Track United Airlines flights, schedules, routes, delays, and fleet data in real-time via AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/united-airlines)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/united-airlines)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/united-airlines-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/united-airlines-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Track United Airlines flights, schedules, routes, delays, and fleet data in real-time via AI agents.
 
 ## Description
 Connect **United Airlines** flight data to any AI agent and gain instant visibility into live flight tracking, airport schedules, route networks, delays, and aircraft fleet information through natural conversation.
@@ -76,6 +78,33 @@ Get scheduled United Airlines flights at an airport for a future date
 Check if United Airlines operates a route between two specific airports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **United Airlines** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current status of United flight UA234?"
+
+**🤖 AI Agent:**
+> Flight UA234 is currently active and en route from Newark (EWR) to Los Angeles (LAX). Scheduled departure was 14:30 EST from Terminal C, Gate 72. Estimated arrival at LAX is 17:45 PST at Terminal 7. The flight is operating on time.
+
+---
+
+**👤 You:**
+> "Show me all United Airlines departures from San Francisco (SFO) today."
+
+**🤖 AI Agent:**
+> I found 18 United departures from SFO today. Notable flights include UA1 to Newark (departing 07:00), UA890 to Tokyo Narita (13:20), UA234 to Chicago O'Hare (15:30), and UA856 to London Heathrow (16:45). Would you like details on any specific flight?
+
+---
+
+**👤 You:**
+> "Are there any delayed United arrivals at Chicago O'Hare (ORD) right now?"
+
+**🤖 AI Agent:**
+> Yes, I found 3 delayed United arrivals at ORD: UA1234 from Denver (delayed by 45 min), UA567 from Washington Dulles (delayed by 30 min), and UA890 from San Francisco (delayed by 1 hour 15 min). All are expected to land within the next 2 hours.
+
+
 ## Installation & Usage
 
 To install and use the **United Airlines** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **United Airlines** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

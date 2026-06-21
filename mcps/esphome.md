@@ -1,12 +1,14 @@
 # ESPHome MCP Server
 
-Control and monitor your ESPHome-powered IoT devices directly from any AI agent via the Web Server API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/esphome)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/esphome)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/esphome-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/esphome-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Control and monitor your ESPHome-powered IoT devices directly from any AI agent via the Web Server API.
 
 ## Description
 Connect your **ESPHome** microcontrollers to any AI agent and take full control of your smart home or industrial IoT setup through natural conversation.
@@ -50,6 +52,33 @@ Get the state of an ESPHome entity
 - **switch_action**: Perform an action on a switch entity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ESPHome** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current reading of the 'living_room_temperature' sensor?"
+
+**🤖 AI Agent:**
+> Checking the sensor... The current state of 'living_room_temperature' is 22.5°C.
+
+---
+
+**👤 You:**
+> "Turn on the kitchen light and set it to a warm orange color."
+
+**🤖 AI Agent:**
+> I've sent the command to the kitchen light. It is now on with the RGB values set to (255, 165, 0).
+
+---
+
+**👤 You:**
+> "Close the garage door cover."
+
+**🤖 AI Agent:**
+> Executing the close action on the garage door cover. The command has been sent successfully.
+
+
 ## Installation & Usage
 
 To install and use the **ESPHome** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **ESPHome** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

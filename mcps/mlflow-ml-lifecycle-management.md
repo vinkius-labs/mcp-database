@@ -1,12 +1,14 @@
 # MLflow (ML Lifecycle Management) MCP Server
 
-Manage ML lifecycle via MLflow — track training runs, monitor metrics, and audit the model registry.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mlflow-ml-lifecycle-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mlflow-ml-lifecycle-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mlflow-ml-lifecycle-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mlflow-ml-lifecycle-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 6
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Manage ML lifecycle via MLflow — track training runs, monitor metrics, and audit the model registry.
 
 ## Description
 Connect your **MLflow** tracking server to any AI agent and take full control of your machine learning experiments, training telemetry, and model registry through natural conversation.
@@ -42,6 +44,33 @@ Connect your **MLflow** tracking server to any AI agent and take full control of
 - **list_artifacts**: List static artifacts attached over a specific Run
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MLflow (ML Lifecycle Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all training runs for the 'Sentiment Analysis' experiment"
+
+**🤖 AI Agent:**
+> Retrieving training history… I've identified 12 runs for 'Sentiment Analysis'. The latest run 'bright-fox-123' achieved 92% accuracy with a 0.12 loss. Other recent runs show similar performance with varying hyperparameters. Would you like to see the parameter logs for the best run?
+
+---
+
+**👤 You:**
+> "What models are currently marked as 'Production' in the registry?"
+
+**🤖 AI Agent:**
+> Scanning model registry… I've identified 3 models in Production: 'Customer-Churn-Classifier' (v4), 'Product-Recommender-Engine' (v12), and 'Demand-Forecaster' (v2). I can provide the tracking URI or source run ID for any of these production models if you'd like.
+
+---
+
+**👤 You:**
+> "Show me the artifacts saved for run ID 'bright-fox-123'"
+
+**🤖 AI Agent:**
+> Retrieving artifacts for 'bright-fox-123'… I've identified the following files: 1) 'model.pkl' (Pickled model), 2) 'confusion_matrix.png' (Visualization), 3) 'feature_importance.csv', and 4) 'conda.yaml'. I can provide the source tracking path for these files securely.
+
+
 ## Installation & Usage
 
 To install and use the **MLflow (ML Lifecycle Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **MLflow (ML Lifecycle Management)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

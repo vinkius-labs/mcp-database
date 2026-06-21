@@ -1,12 +1,14 @@
 # DevSkiller MCP Server
 
-Equip your AI agent to manage technical assessments, track candidates, and monitor test results via the DevSkiller API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/devskiller)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devskiller)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devskiller-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devskiller-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI agent to manage technical assessments, track candidates, and monitor test results via the DevSkiller API.
 
 ## Description
 Integrate **DevSkiller**, the technical screening and talent assessment platform, directly into your AI workflow. Manage your candidate pipeline, send test invitations, and retrieve detailed assessment reports and skill scores using natural language.
@@ -44,6 +46,33 @@ Integrate **DevSkiller**, the technical screening and talent assessment platform
 - **search_candidates_by_identity**: Search for a candidate by name or email keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DevSkiller** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all candidates who scored above 85% in recent tests."
+
+**🤖 AI Agent:**
+> I've found 3 candidates with scores above 85%: 'Alice Johnson' (92%), 'Bob Miller' (88%), and 'Kenji Tanaka' (86%). Would you like to see the detailed report for Alice?
+
+---
+
+**👤 You:**
+> "Show me the assessment status for candidate 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> John Doe has currently completed 2 out of 3 tasks in the 'Senior Backend Developer' test. He has 15 minutes remaining. Should I notify you when he submits the final result?
+
+---
+
+**👤 You:**
+> "Invite 'Sarah Smith' (sarah@example.com) to the 'Frontend React' test."
+
+**🤖 AI Agent:**
+> I've successfully sent an invitation to Sarah Smith for the 'Frontend React' test (ID: FR-101). She will receive an email with instructions shortly. Would you like me to track her progress?
+
+
 ## Installation & Usage
 
 To install and use the **DevSkiller** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DevSkiller** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

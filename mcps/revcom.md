@@ -1,12 +1,14 @@
 # Rev.com MCP Server
 
-Automate human-powered transcription via Rev.com — manage orders, captions, and file metadata with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/revcom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/revcom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/revcom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/revcom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate human-powered transcription via Rev.com — manage orders, captions, and file metadata with AI.
 
 ## Description
 Connect your **Rev.com** account to any AI agent and take full control of your professional transcription and captioning orchestration through natural conversation. Rev.com provides the world's most accurate human-powered media services, and this integration allows you to retrieve order metadata, monitor attachment statuses, and manage professional invoices directly from your chat interface.
@@ -52,6 +54,33 @@ Get current user profile
 List all transcription and captioning orders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rev.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 orders in Rev.com."
+
+**🤖 AI Agent:**
+> I've retrieved your orders. Your last 5 include 'ORD-9912' (Complete), 'ORD-9913' (In Progress), and three others. Would you like to see the attachments for the in-progress order?
+
+---
+
+**👤 You:**
+> "Show me all active transcription and captioning orders with their progress and delivery estimates."
+
+**🤖 AI Agent:**
+> 7 active orders. "Board Meeting Recording" (1:42:00): Transcription 78% complete, delivery: today 5 PM. "Product Demo Video" (0:23:00): Captioning in progress, 45% complete, delivery: tomorrow 10 AM. "Podcast Episode 47" (0:58:00): Translation to Spanish, 30% complete, delivery: Wednesday. "Training Series" (3 videos, total 2:15:00): Queued, starts processing in 2 hours. 3 additional caption orders at various stages. Total spend this month: $1,234.
+
+---
+
+**👤 You:**
+> "Submit a new transcription order for a 45-minute investor call recording with timestamps."
+
+**🤖 AI Agent:**
+> Transcription order created: #ORD-8923. File: investor_call_may13.mp3 (45:12 duration). Service: Human transcription (99%+ accuracy). Options: Timestamps every 30 seconds, speaker identification (2 speakers detected), verbatim transcription. Turnaround: 24 hours (rush available for +50%). Estimated cost: $56.40 ($1.25/min). Output formats: DOCX, TXT, SRT. Order status: Processing. You'll receive an email when the transcript is ready for review.
+
+
 ## Installation & Usage
 
 To install and use the **Rev.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Rev.com** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

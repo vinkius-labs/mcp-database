@@ -1,12 +1,14 @@
 # Flexport MCP Server
 
-Manage global freight shipments, purchase orders, and logistics documents via AI agents with Flexport.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flexport-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flexport-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage global freight shipments, purchase orders, and logistics documents via AI agents with Flexport.
 
 ## Description
 Connect your **Flexport** account to any AI agent and automate your global trade and freight operations through the Model Context Protocol (MCP). Flexport is the modern freight forwarder that provides full visibility and control over your supply chain. Now, you can track shipments, manage purchase orders, and retrieve essential logistics documentation directly through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Flexport** account to any AI agent and automate your global trade
 - **list_shipments**: List freight shipments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flexport** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent freight shipments and their status."
+
+**🤖 AI Agent:**
+> Fetching shipments... I found 5 recent shipments, including 'SHIP-123' (In Transit - Ocean) and 'SHIP-456' (Arrival - Air). Would you like the tracking details or associated documents for any of these?
+
+---
+
+**👤 You:**
+> "Show me all purchase orders pending for this quarter."
+
+**🤖 AI Agent:**
+> Retrieving purchase orders... You have 8 active POs, with 3 marked as 'Pending Vendor Confirmation'. Would you like me to drill down into the line items for these pending orders?
+
+---
+
+**👤 You:**
+> "Get the download link for the Bill of Lading for shipment 'SHIP-789'."
+
+**🤖 AI Agent:**
+> Generating document link... I've retrieved a secure temporary link for the Bill of Lading associated with SHIP-789. You can download the file here: https://api.flexport.com/documents/doc_abc/download.
+
+
 ## Installation & Usage
 
 To install and use the **Flexport** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Flexport** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

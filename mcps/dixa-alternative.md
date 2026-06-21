@@ -1,12 +1,14 @@
 # Dixa MCP Server
 
-Route customer conversations to the right agent across phone, email, chat, and messaging with intelligent prioritization.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dixa-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dixa-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dixa-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dixa-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Route customer conversations to the right agent across phone, email, chat, and messaging with intelligent prioritization.
 
 ## Description
 Connect your **Dixa** account to any AI agent and take full control of your omnichannel customer service and team coordination workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual ticket shuffling or digging through agent lists in the portal. Yo
 - **create_conversation**: Add new support chat
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dixa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active conversations in Dixa."
+
+**🤖 AI Agent:**
+> I've retrieved your active conversations. You currently have 4 tickets needing attention, including 'Refund Request' (ID: conv_1) and 'Login Issue'. Which one would you like to reassign or resolve?
+
+---
+
+**👤 You:**
+> "Find the customer profile for 'jane.doe@example.com'."
+
+**🤖 AI Agent:**
+> I've located Jane Doe's profile (ID: usr_123). She has a history of 3 past conversations and is currently assigned to the 'VIP' queue. Shall I retrieve her full interaction history?
+
+---
+
+**👤 You:**
+> "Mark conversation ID 'conv_456' as resolved."
+
+**🤖 AI Agent:**
+> Action complete! Conversation conv_456 has been successfully marked as resolved in Dixa. The status is now updated on your dashboard. Need help with any other tickets?
+
+
 ## Installation & Usage
 
 To install and use the **Dixa** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Dixa** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

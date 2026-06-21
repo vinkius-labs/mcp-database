@@ -1,12 +1,14 @@
 # Grain Watch MCP Server
 
-Access silo temperature monitoring via Grain Watch — track grain temperature, humidity, hot spots, and spoilage risk from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grain-watch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grain-watch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grain-watch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grain-watch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 12
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access silo temperature monitoring via Grain Watch — track grain temperature, humidity, hot spots, and spoilage risk from any AI agent.
 
 ## Description
 Connect your **Grain Watch Silo Temperature Monitoring API** to any AI agent and take full control of real-time temperature tracking, humidity monitoring, hot spot detection, and AI-powered spoilage risk assessment through natural conversation.
@@ -80,6 +82,33 @@ Get AI-powered spoilage risk assessment for a specific silo
 Get historical temperature readings to detect trends and hot spot development
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Grain Watch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current temperature readings for silo 3."
+
+**🤖 AI Agent:**
+> Fetching temperature readings for silo 3 (Wheat, 85% full)... Top zone: 18.2C (avg), Middle zone: 19.5C (avg), Bottom zone: 17.8C (avg), Center core: 20.1C. All 24 temperature lines reporting normal. Maximum temperature: 20.1C at center core. Temperature spread: 2.3C (within normal range). Assessment: Grain temperature is NORMAL — no hot spots detected. Temperature gradient is typical for stored wheat. Continue routine monitoring. Would you like to see the 30-day temperature trend?
+
+---
+
+**👤 You:**
+> "Check for any hot spot alerts across my facility."
+
+**🤖 AI Agent:**
+> Checking facility hot spot alerts... 1 active hot spot detected. Silo 7 (Corn) — Zone: Center-mid depth, Temperature: 28.5C (7.2C above average). Detected 6 hours ago, trend: Rising. Recommended action: Activate aeration immediately and monitor temperature every 2 hours. All other silos are within normal temperature ranges. Facility average temperature: 19.3C. Would you like me to show the temperature history for silo 7 to see how quickly this hot spot developed?
+
+---
+
+**👤 You:**
+> "Give me a facility-wide overview of all silo temperatures and any active alerts."
+
+**🤖 AI Agent:**
+> Generating facility overview... Total monitored silos: 12. Average temperature: 19.3C (normal range). Active hot spots: 1 (Silo 7, center-mid zone at 28.5C). Temperature alerts: 1 critical, 0 warnings. Sensor health: 96% online (1 sensor offline in Silo 4, scheduled maintenance). Overall spoilage risk: LOW for 10 silos, MODERATE for Silo 7, LOW for Silo 4. Priority action: Address hot spot in Silo 7 with immediate aeration. Schedule sensor replacement in Silo 4 within 1 week. Would you like detailed recommendations for each alert?
+
+
 ## Installation & Usage
 
 To install and use the **Grain Watch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Grain Watch** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

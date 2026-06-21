@@ -1,12 +1,14 @@
 # AEMO Australian Energy MCP Server
 
-Access Australian electricity market data — spot prices, demand, generation by fuel type, emissions, and renewable energy proportions via OpenElectricity API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aemo-australian-energy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aemo-australian-energy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aemo-australian-energy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aemo-australian-energy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access Australian electricity market data — spot prices, demand, generation by fuel type, emissions, and renewable energy proportions via OpenElectricity API.
 
 ## Description
 Connect to **OpenElectricity API** (powered by AEMO data) and bring real-time Australian energy market intelligence to any AI agent. Monitor the National Electricity Market (NEM) and Wholesale Electricity Market (WEM), track renewable energy transition, and analyze power generation across all Australian states.
@@ -73,6 +75,33 @@ Get renewable energy proportion data
 - **get_user_profile**: Get current user profile and API account details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AEMO Australian Energy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current electricity spot price across all Australian states?"
+
+**🤖 AI Agent:**
+> I've fetched the current 5-minute spot prices for the NEM. NSW is trading at $85/MWh, VIC at $72/MWh, QLD at $91/MWh, SA at $68/MWh, and TAS at $79/MWh. South Australia has the lowest price driven by strong wind generation. The national average is $79/MWh.
+
+---
+
+**👤 You:**
+> "Show me the energy mix breakdown for the NEM right now — what percentage comes from solar, wind, coal, and gas?"
+
+**🤖 AI Agent:**
+> Here's the current generation mix for the NEM: Coal 48%, Gas 12%, Wind 18%, Utility Solar 11%, Rooftop Solar 7%, Hydro 3%, Battery 1%. Renewables total 39% right now. Coal remains the dominant source but wind and solar combined are approaching 30%.
+
+---
+
+**👤 You:**
+> "What is the renewable energy percentage in Australia today compared to this time last year?"
+
+**🤖 AI Agent:**
+> Fetching renewable proportion data... Today the NEM is generating 39% of its electricity from renewable sources. Comparing to the same week last year, renewables accounted for 35%. This represents a 4 percentage point increase year-over-year, driven primarily by new wind farm commissioning and expanded rooftop solar adoption.
+
+
 ## Installation & Usage
 
 To install and use the **AEMO Australian Energy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **AEMO Australian Energy** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

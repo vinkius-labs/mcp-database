@@ -1,12 +1,14 @@
 # Flinks MCP Server
 
-Connect to financial institutions to aggregate banking data, verify income, and perform deep transaction analysis via Flinks.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flinks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flinks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flinks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flinks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 15
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Connect to financial institutions to aggregate banking data, verify income, and perform deep transaction analysis via Flinks.
 
 ## Description
 Connect your **Flinks** instance to any AI agent to access real-time banking data, verify financial health, and automate KYC workflows through natural conversation.
@@ -56,6 +58,33 @@ Retrieve full account details including transactions and KYC
 - **set_scheduled_refresh**: Enable or disable nightly refreshes for a specific account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flinks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all supported financial institutions in Canada."
+
+**🤖 AI Agent:**
+> I've retrieved the list of institutions for Canada. Major ones include RBC Royal Bank, TD Canada Trust, and Scotiabank. Would you like the full list or details for a specific one?
+
+---
+
+**👤 You:**
+> "Analyze the income stability for the account linked to RequestId 'req_12345'."
+
+**🤖 AI Agent:**
+> Using the `get_income_attributes` tool, I've analyzed the data. The user has a stable monthly income of approximately $4,500 from 'TechCorp Inc', with consistent deposits over the last 6 months.
+
+---
+
+**👤 You:**
+> "Get the categorized transactions for RequestId 'req_67890'."
+
+**🤖 AI Agent:**
+> I've fetched the categorization data. Significant spending categories include 'Housing' (35%), 'Groceries' (15%), and 'Transportation' (10%). Would you like a detailed breakdown of the 'Groceries' category?
+
+
 ## Installation & Usage
 
 To install and use the **Flinks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Flinks** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

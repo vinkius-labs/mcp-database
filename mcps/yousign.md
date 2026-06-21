@@ -1,12 +1,14 @@
 # Yousign MCP Server
 
-Manage electronic signatures, signers, and document requests on Yousign — the leading eSignature platform for European teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/yousign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yousign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yousign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yousign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 8
+
+**Category:** [document-management](../categories/document-management.md)
+
+Manage electronic signatures, signers, and document requests on Yousign — the leading eSignature platform for European teams.
 
 ## Description
 Connect your **Yousign** account to any AI agent and manage your electronic signature infrastructure through natural conversation.
@@ -56,6 +58,33 @@ Permanently cancels an ongoing signature request
 - **get_consumption**: Retrieves API consumption and quota details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Yousign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all ongoing signature requests in Yousign."
+
+**🤖 AI Agent:**
+> I found 3 ongoing requests: 1. 'Partnership Agreement' (ID: req-101), 2. 'Employment Contract - John' (ID: req-102), and 3. 'Vendor Terms' (ID: req-103). Would you like to see the signer status for any of these?
+
+---
+
+**👤 You:**
+> "Add 'Jane Smith' (jane@example.com) as a signer to request ID 'req-101'."
+
+**🤖 AI Agent:**
+> Success! I've added Jane Smith as a signer to the 'Partnership Agreement' (req-101). Would you like to add more signers or activate the request now?
+
+---
+
+**👤 You:**
+> "Check our current API consumption and credits."
+
+**🤖 AI Agent:**
+> You have consumed 45 out of 100 signatures in your current billing cycle. You have 55 signature credits remaining. Would you like me to list the most recent signed documents?
+
+
 ## Installation & Usage
 
 To install and use the **Yousign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Yousign** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

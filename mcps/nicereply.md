@@ -1,12 +1,14 @@
 # Nicereply MCP Server
 
-Measure customer satisfaction via Nicereply — track survey responses, ratings, and stats directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nicereply)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nicereply)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nicereply-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nicereply-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Measure customer satisfaction via Nicereply — track survey responses, ratings, and stats directly from your AI agent.
 
 ## Description
 Connect your **Nicereply** account to your AI agent and gain deep insights into your customer satisfaction and agent performance through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Nicereply** account to your AI agent and gain deep insights into 
 - **list_users**: List workspace users (agents)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nicereply** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest customer feedback responses."
+
+**🤖 AI Agent:**
+> I've retrieved the recent responses. You have 5 new ratings: 4 'Great' and 1 'Neutral'. The neutral feedback mentioned 'Slow response time' from a ticket yesterday. Would you like the full details for that response?
+
+---
+
+**👤 You:**
+> "What is the current performance of our CSAT survey?"
+
+**🤖 AI Agent:**
+> Fetching CSAT survey stats... Your current CSAT score is 92%, based on 156 responses this month. This is a 2% increase compared to last month. Shall I provide a breakdown of the scores?
+
+---
+
+**👤 You:**
+> "List all active surveys in my Nicereply account."
+
+**🤖 AI Agent:**
+> Retrieving surveys... You have 3 active surveys: 'Post-Ticket CSAT' (ID: srv_123), 'Product Feedback NPS' (ID: srv_456), and 'Onboarding CES'. Which one would you like more information about?
+
+
 ## Installation & Usage
 
 To install and use the **Nicereply** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Nicereply** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

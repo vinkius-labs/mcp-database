@@ -1,12 +1,14 @@
 # Postmark MCP Server
 
-Equip your AI to send emails, monitor delivery stats, track bounces, and manage Postmark templates directly from your chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/postmark)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/postmark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/postmark-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Equip your AI to send emails, monitor delivery stats, track bounces, and manage Postmark templates directly from your chat.
 
 ## Description
 Connect your **Postmark** server safely to any AI agent, granting it the ability to dispatch transactional emails, debug delivery failures, and inspect mailing architectures directly via conversational prompts.
@@ -46,6 +48,33 @@ Forget logging into dashboards to copy-paste trace IDs. Ask the model to 'find t
 - **send_with_template**: Send an email using a template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Postmark** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Can you check if we had any hard bounces yesterday, and tell me why?"
+
+**🤖 AI Agent:**
+> I checked `list_bounces`. You had exactly 2 hard bounces related to the `@test.local` domain. Fetching `get_bounce_logs` for UUID `192...`, the upstream MTA rejected it throwing a `550 5.1.1 User Unknown` SMTP code. The inbox genuinely doesn't exist.
+
+---
+
+**👤 You:**
+> "List all active Postmark templates, then delete the one clearly named 'Legacy Promo'."
+
+**🤖 AI Agent:**
+> Listing your templates... Found 5 active. I have identified 'Legacy Promo' mapped to `template_id` 89321. I'm now invoking `delete_template` on 89321. The layout has been completely purged from your Postmark server.
+
+---
+
+**👤 You:**
+> "Send a welcome email through Postmark using template ID `10101` to `user@example.com`."
+
+**🤖 AI Agent:**
+> Dispatched gracefully using `send_with_template`. Postmark accepted the request to route template `10101` towards `user@example.com` specifying the sender address `admin@yourdomain.com`. It resolved via message UUID `abc-123`.
+
+
 ## Installation & Usage
 
 To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Postmark** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

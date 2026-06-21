@@ -1,12 +1,14 @@
 # Resend MCP Server
 
-Send emails and manage domains via Resend — send transactional emails, track deliveries, manage domains and API keys from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/resend-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resend-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/resend-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/resend-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 14
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Send emails and manage domains via Resend — send transactional emails, track deliveries, manage domains and API keys from any AI agent.
 
 ## Description
 Connect your **Resend** account to any AI agent and take full control of your email infrastructure through natural conversation.
@@ -80,6 +82,33 @@ Update a scheduled email
 Verify a domain's DNS records
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Resend** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a welcome email to newuser@example.com from onboarding@myapp.com."
+
+**🤖 AI Agent:**
+> Done! I've sent a welcome email to newuser@example.com. The email ID is 49a3999c-0ce1-4ea6-ab68-afcd6cc2e934 and it was accepted by the Resend API for delivery. You can track its status using `get_email`.
+
+---
+
+**👤 You:**
+> "Show me all domains configured in my Resend account."
+
+**🤖 AI Agent:**
+> I found 2 domains: 'myapp.com' (verified, us-east-1) and 'notifications.io' (not_verified, us-east-1). The notifications.io domain needs DNS records configured — would you like the SPF and DKIM records?
+
+---
+
+**👤 You:**
+> "Create a new API key called 'production-sending' with sending permissions only."
+
+**🤖 AI Agent:**
+> Done! I've created the API key 'production-sending' with 'sending' permissions. The key value is `re_2mXq9K...` — make sure to copy and store it securely as it won't be shown again.
+
+
 ## Installation & Usage
 
 To install and use the **Resend** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Resend** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

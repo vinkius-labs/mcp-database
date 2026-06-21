@@ -1,12 +1,14 @@
 # Brevo MCP Server
 
-Automate transactional messaging via Brevo — send emails, SMS, and WhatsApp messages, manage templates, and track delivery statistics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo-alternative-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brevo-alternative-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brevo-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brevo-alternative-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 45
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate transactional messaging via Brevo — send emails, SMS, and WhatsApp messages, manage templates, and track delivery statistics directly from any AI agent.
 
 ## Description
 Connect your **Brevo** account to any AI agent to orchestrate your transactional communication and marketing workflows through natural conversation.
@@ -80,6 +82,33 @@ Connect your **Brevo** account to any AI agent to orchestrate your transactional
 - **update_email_template**: Update an existing email template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brevo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a transactional email to contact@example.com with the subject 'Order Confirmed' and HTML content 'Your order #123 is on its way!'"
+
+**🤖 AI Agent:**
+> I've sent the transactional email. The message has been queued successfully and assigned a message ID for tracking.
+
+---
+
+**👤 You:**
+> "List all my current email templates in Brevo."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You have 4 active templates, including 'Welcome Series', 'Password Reset', and 'Monthly Newsletter'. Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Show me the statistics for my SMS activity from the last 30 days."
+
+**🤖 AI Agent:**
+> Fetching SMS reports... In the last 30 days, you sent 150 messages with a 98% delivery rate and 0% hard bounces. Would you like to see the unaggregated event logs for more detail?
+
+
 ## Installation & Usage
 
 To install and use the **Brevo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Brevo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

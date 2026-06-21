@@ -1,12 +1,14 @@
 # Betterfly MCP Server
 
-Automate ESG and HR Wellness data via Betterfly — track global corporate steps, extract social donations, and orchestrate health engagement via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/betterfly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/betterfly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/betterfly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/betterfly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate ESG and HR Wellness data via Betterfly — track global corporate steps, extract social donations, and orchestrate health engagement via agents.
 
 ## Description
 Connect your **Betterfly** Corporate API to any AI agent and bring ESG (Environmental, Social, and Governance) analytics naturally into your chats.
@@ -50,6 +52,33 @@ List wellness activities
 - **pause_user**: Temporarily restrict a user account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Betterfly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Review the company-wide metrics and highlight our total generated ESG impact via Betterfly."
+
+**🤖 AI Agent:**
+> Extracted! Your company has translated a stunning 20,400,000 recorded steps into $5,230 USD directed evenly towards clean water foundations globally. Total engagement rate maintains 84% weekly usage.
+
+---
+
+**👤 You:**
+> "Check the available balance and internal unlocked perks for user ID 40x889a."
+
+**🤖 AI Agent:**
+> Inspecting node 40x889a. This user currently maintains 340 Bettercoins and their life insurance policy has safely scaled dynamically to cover +120k coverage scope.
+
+---
+
+**👤 You:**
+> "What rewards are officially active for redemption locally today?"
+
+**🤖 AI Agent:**
+> Querying local incentives... You've got an active 'Starbucks Reserve' reward node requiring 500 coins, and an internal 'Company Extra Custom Day Off' tier requiring an incredible 12,000 accumulated coins to ignite.
+
+
 ## Installation & Usage
 
 To install and use the **Betterfly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Betterfly** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

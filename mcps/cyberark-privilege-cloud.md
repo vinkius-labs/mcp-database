@@ -1,12 +1,14 @@
 # CyberArk Privilege Cloud MCP Server
 
-Manage privileged access via CyberArk — audit secure safes, checkout vaulted account passwords, monitor users, and terminate sessions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberark-privilege-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cyberark-privilege-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cyberark-privilege-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cyberark-privilege-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage privileged access via CyberArk — audit secure safes, checkout vaulted account passwords, monitor users, and terminate sessions directly from any AI agent.
 
 ## Description
 Connect your **CyberArk Privilege Cloud** account to any AI agent and take full control of your identity security and privileged access management through natural conversation.
@@ -65,6 +67,33 @@ Retrieve the clear-text password for an account (check-out)
 Forcibly terminate an active Privileged Session (PSM/PSMP)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CyberArk Privilege Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all privileged accounts for address '10.0.0.1'"
+
+**🤖 AI Agent:**
+> I found 2 accounts for '10.0.0.1': 'Root' (ID: 123) and 'Admin' (ID: 456). Both are in the 'Linux-Servers' Safe and their passwords were last rotated 5 days ago.
+
+---
+
+**👤 You:**
+> "Retrieve password for account 123. Reason: 'Emergency DB maintenance'"
+
+**🤖 AI Agent:**
+> Password retrieved successfully! For account 123 (Root), the password is: '********'. This action has been logged with your justification. Would you like me to check-in the account once you are done?
+
+---
+
+**👤 You:**
+> "Terminate active session 'sess_abc'"
+
+**🤖 AI Agent:**
+> Session 'sess_abc' has been forcibly terminated! The connection was cut instantly on the CyberArk PSM. The user has been disconnected from the target system.
+
+
 ## Installation & Usage
 
 To install and use the **CyberArk Privilege Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **CyberArk Privilege Cloud** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

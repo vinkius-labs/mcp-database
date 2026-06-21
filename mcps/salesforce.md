@@ -1,12 +1,14 @@
 # Salesforce MCP Server
 
-Connect your Salesforce CRM to any AI agent — query records with SOQL, manage accounts, contacts, opportunities, run reports, and perform CRUD operations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesforce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesforce-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Connect your Salesforce CRM to any AI agent — query records with SOQL, manage accounts, contacts, opportunities, run reports, and perform CRUD operations.
 
 ## Description
 Connect your **Salesforce** CRM to any AI agent and manage your entire sales pipeline through natural conversation.
@@ -53,6 +55,56 @@ Update an existing Salesforce record
 Delete a Salesforce record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Salesforce** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all open opportunities worth over $50,000."
+
+**🤖 AI Agent:**
+> Found 7 open opportunities over $50,000:
+
+1. **Acme Corp - Enterprise License** — $120,000 (Stage: Negotiation)
+2. **TechStart - Platform Migration** — $85,000 (Stage: Proposal)
+3. **GlobalRetail - API Integration** — $67,500 (Stage: Discovery)
+...
+
+Total pipeline value: $487,500
+
+---
+
+**👤 You:**
+> "Create a new lead for John Smith from TechCo, email john@techco.com."
+
+**🤖 AI Agent:**
+> ✅ Lead created successfully!
+
+- **Name**: John Smith
+- **Company**: TechCo
+- **Email**: john@techco.com
+- **ID**: 00Q8Z00001kL2mN
+- **Status**: Open - Not Contacted
+
+---
+
+**👤 You:**
+> "Run the Monthly Sales Report."
+
+**🤖 AI Agent:**
+> 📊 Monthly Sales Report (March 2026):
+
+| Metric | Value |
+|--------|-------|
+| Total Revenue | $2.4M |
+| Deals Closed | 34 |
+| Avg Deal Size | $70,588 |
+| Win Rate | 28% |
+| Pipeline Growth | +15% |
+
+Top performer: Sarah Chen ($485K closed)
+
+
 ## Installation & Usage
 
 To install and use the **Salesforce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +113,11 @@ To install and use the **Salesforce** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

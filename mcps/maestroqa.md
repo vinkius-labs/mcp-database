@@ -1,12 +1,14 @@
 # MaestroQA MCP Server
 
-Access quality assurance reviews, QA scores, and export performance data via the MaestroQA API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/maestroqa)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maestroqa)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maestroqa-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maestroqa-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 7
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Access quality assurance reviews, QA scores, and export performance data via the MaestroQA API.
 
 ## Description
 Connect your **MaestroQA** account to any AI agent to automate your customer service quality assurance and performance reporting. This MCP server enables your agent to list tickets, monitor QA scores, request detailed data exports, and sync external CSAT scores directly from natural language interfaces.
@@ -46,6 +48,33 @@ Initialize a raw QA data export (Async)
 List tickets and their QA statuses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MaestroQA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all support tickets awaiting QA review in MaestroQA."
+
+**🤖 AI Agent:**
+> I've retrieved the list of tickets. You have 15 tickets currently marked as 'Pending', including Ticket #12345 from 'Support Team A'. Would you like to see the full metadata for any of them?
+
+---
+
+**👤 You:**
+> "Request a raw data export for the month of July in MaestroQA."
+
+**🤖 AI Agent:**
+> I've submitted the export request for July (Start: 2024-07-01, End: 2024-07-31). The export ID is 'exp-98765'. I will check for the download links shortly.
+
+---
+
+**👤 You:**
+> "Show the QA score for ticket ID 'ticket-54321'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for ticket 54321. The Internal Quality Score (IQS) is 🟢 95%. It was graded on 2024-08-15 using the 'Global Support Rubric'.
+
+
 ## Installation & Usage
 
 To install and use the **MaestroQA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **MaestroQA** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Percy MCP Server
 
-Execute visual regression tests via Percy — track visual diffs natively, inspect snapshot limits, approve builds, and verify UI components using AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/percy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/percy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/percy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/percy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Execute visual regression tests via Percy — track visual diffs natively, inspect snapshot limits, approve builds, and verify UI components using AI.
 
 ## Description
 Inject precision quality assurance workflows directly bounding LLM models via the **Percy Visual Testing API** (by BrowserStack). Programmatically verify pixel regressions executing queries evaluating visual boundaries natively across target projects. Inspect deep status arrays parsing CI build limits dynamically, extract metrics evaluating granular snapshot checkpoints asynchronously, and force immediate test baseline approvals seamlessly directly from explicit prompt commands naturally.
@@ -46,6 +48,33 @@ Approve all unreviewed snapshots in a Percy build. Marks the entire build as vis
 - **list_browsers**: List all supported browser families on Percy. Returns browser names, versions, and OS combinations for cross-browser visual testing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Percy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Log explicitly the builds targeting structural limits seamlessly isolating project 'org-slug/my-app' dynamically checking bounding states natively."
+
+**🤖 AI Agent:**
+> Queried structured native limits logically hitting endpoints gracefully globally. Validated boundaries tracking 3 explicit recent builds logically seamlessly natively. Top bound is Build ID 9091x running structurally 'unreviewed' accurately completely actively globally.
+
+---
+
+**👤 You:**
+> "Reverse check explicit structures extracting limits comparing properties cleanly bounding snapshot ID 'snap_778' natively efficiently."
+
+**🤖 AI Agent:**
+> Mapped explicit target bounds successfully routing API queries globally resolving gracefully testing results gracefully efficiently. Captured snapshot limits natively show structural bounds identifying a 3.2% exact diff regression rendering gracefully explicitly locally tracking arrays.
+
+---
+
+**👤 You:**
+> "Force explicit validation mutating boundaries executing structurally an approval across build ID '8910' automatically natively flawlessly securely."
+
+**🤖 AI Agent:**
+> Dispatched JSON gracefully natively mutating endpoint execution safely actively explicitly properly mapping target specifications limits. Build '8910' structurally updated effectively generating bounding approval. Pipeline logic seamlessly gracefully confirmed natively securely correctly completely logically active.
+
+
 ## Installation & Usage
 
 To install and use the **Percy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Percy** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

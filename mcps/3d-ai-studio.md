@@ -1,12 +1,14 @@
 # 3D AI Studio MCP Server
 
-Generate and process 3D models via 3D AI Studio — text-to-3D, image-to-3D, AI texturing, remeshing, rendering, and mesh tools from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/3d-ai-studio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/3d-ai-studio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/3d-ai-studio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/3d-ai-studio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 12
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Generate and process 3D models via 3D AI Studio — text-to-3D, image-to-3D, AI texturing, remeshing, rendering, and mesh tools from any AI agent.
 
 ## Description
 Connect your **3D AI Studio API** to any AI agent and take full control of production-quality 3D generation, AI texturing, mesh processing, and rendering through natural conversation.
@@ -81,6 +83,33 @@ Bake texture maps onto 3D models for optimized rendering
 Calculate volume and physical measurements of 3D models
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **3D AI Studio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 3D model of a medieval castle from text description."
+
+**🤖 AI Agent:**
+> Generating 3D model using TRELLIS.2-4B... Prompt: medieval castle with towers, battlements, stone walls, drawbridge. Generation complete! Model in GLB format (24.6 MB) with PBR textures. Download: https://cdn.3daistudio.com/models/medieval_castle.glb. The model features 180K polygons with detailed stone textures, normal maps, and ambient occlusion. Compatible with Unity, Unreal Engine, Blender, and 3D viewers. Would you like a low-poly version or AI texturing with different materials?
+
+---
+
+**👤 You:**
+> "Apply rusty metal texture to this 3D model: https://example.com/car.glb"
+
+**🤖 AI Agent:**
+> Applying AI texturing with rusty metal style... Processing model: https://example.com/car.glb. Texturing complete! Model with new PBR textures (4K resolution). Download: https://cdn.3daistudio.com/textured/car_rusty_metal.glb. Generated texture maps: albedo (rusty orange-brown), normal (pitted surface), metallic (0.9), roughness (0.7). The model maintains original geometry with completely restyled surface materials. Would you like to try a different style like polished chrome or weathered paint?
+
+---
+
+**👤 You:**
+> "Repair this mesh for 3D printing and calculate the volume in PLA material."
+
+**🤖 AI Agent:**
+> Repairing mesh... Fixed 12 non-manifold edges, 3 holes filled, 8 inverted normals corrected. Model is now watertight. Calculating volume with PLA density (1.24 g/cm3): Volume: 45.8 cm3, Surface area: 128.4 cm2, Estimated weight: 56.8 grams, Bounding box: 6.2 x 4.1 x 3.8 cm. Converted to STL format for 3D printing. Download: https://cdn.3daistudio.com/repaired/model_printable.stl. The model is ready for slicing with Cura, PrusaSlicer, or Bambu Studio. Would you like me to optimize the mesh further for faster printing?
+
+
 ## Installation & Usage
 
 To install and use the **3D AI Studio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **3D AI Studio** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

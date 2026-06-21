@@ -1,12 +1,14 @@
 # Makeswift MCP Server
 
-Build stunning Next.js websites with a visual editor that lets marketers update pages without touching code or deployments.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/makeswift)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/makeswift)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/makeswift-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/makeswift-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Build stunning Next.js websites with a visual editor that lets marketers update pages without touching code or deployments.
 
 ## Description
 Connect your **Makeswift** site to any AI agent and simplify your visual building and content management workflows through natural conversation.
@@ -38,6 +40,33 @@ Connect your **Makeswift** site to any AI agent and simplify your visual buildin
 - **list_snapshots**: List content snapshots
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Makeswift** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all pages in my Makeswift project."
+
+**🤖 AI Agent:**
+> I've fetched your pages. You have 10 pages, including 'Home' (Published), 'About Us' (Draft), and 'Contact' (Published).
+
+---
+
+**👤 You:**
+> "Create a new snapshot called 'Pre-Launch Backup'."
+
+**🤖 AI Agent:**
+> Success! The snapshot 'Pre-Launch Backup' (ID: snap_abc123) has been created. Your current site content is now saved as a version.
+
+---
+
+**👤 You:**
+> "Show me the site configuration details."
+
+**🤖 AI Agent:**
+> Your site 'My Awesome Store' is on the 'Pro' plan. Primary hostname is 'example.com' and you have 2 locales configured (en-US, pt-BR).
+
+
 ## Installation & Usage
 
 To install and use the **Makeswift** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Makeswift** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

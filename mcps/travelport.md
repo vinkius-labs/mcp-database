@@ -1,12 +1,14 @@
 # Travelport MCP Server
 
-Access Travelport's Global Distribution System to search and book flights, hotels, and manage travel reservations directly through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/travelport)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/travelport)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/travelport-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/travelport-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 21
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access Travelport's Global Distribution System to search and book flights, hotels, and manage travel reservations directly through AI.
 
 ## Description
 Connect to **Travelport**, the world's leading travel commerce platform, and empower your AI agent to handle complex travel itineraries, real-time flight searches, and hotel bookings.
@@ -56,6 +58,33 @@ Connect to **Travelport**, the world's leading travel commerce platform, and emp
 - **verify_address**: Verify a payment card address (AAVS)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Travelport** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for flights from JFK to LHR departing on October 15th and returning on October 22nd."
+
+**🤖 AI Agent:**
+> I've found several options for your trip. The best-priced offering is with British Airways at $650. Would you like me to price this specific offer or look for the next leg options?
+
+---
+
+**👤 You:**
+> "Find available hotels in Tokyo for a 3-night stay starting tomorrow."
+
+**🤖 AI Agent:**
+> Searching Tokyo stays... I found 12 available properties. The 'Park Hyatt Tokyo' has availability starting at $450/night. Shall I check the specific availability and rules for this hotel?
+
+---
+
+**👤 You:**
+> "Create a new booking workbench and add traveler John Doe to it."
+
+**🤖 AI Agent:**
+> Workbench created successfully (ID: WB-98765). I have added John Doe as the primary traveler. What flight or hotel offer should I add to this session?
+
+
 ## Installation & Usage
 
 To install and use the **Travelport** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Travelport** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

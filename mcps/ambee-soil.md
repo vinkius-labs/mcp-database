@@ -1,12 +1,14 @@
 # Ambee Soil MCP Server
 
-Access real-time soil data via Ambee — monitor soil moisture, temperature, and properties globally for precision agriculture from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ambee-soil)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ambee-soil)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ambee-soil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ambee-soil-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 5
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access real-time soil data via Ambee — monitor soil moisture, temperature, and properties globally for precision agriculture from any AI agent.
 
 ## Description
 Connect your **Ambee Soil API** to any AI agent and take full control of real-time soil moisture tracking, temperature monitoring, historical trend analysis, and soil property assessment through natural conversation.
@@ -53,6 +55,33 @@ Get soil data for multiple points within a radius of a location
 Get detailed soil physical and chemical properties for a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ambee Soil** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current soil moisture and temperature at my farm in Iowa (41.8780, -93.0977)?"
+
+**🤖 AI Agent:**
+> Fetching real-time soil data for Iowa coordinates... Current conditions: Soil Moisture is 32.4% (moderate, adequate for corn growth stage). Soil Temperature is 18.2°C (64.8°F), ideal for nutrient uptake. Data timestamp: 2026-04-07 14:00 UTC. Based on these readings, irrigation is not immediately required but should be monitored over the next 48 hours. Would you like historical trends for the past 30 days to see moisture patterns?
+
+---
+
+**👤 You:**
+> "Show me soil moisture trends over the last 60 days for my location."
+
+**🤖 AI Agent:**
+> Analyzing 60-day soil moisture history... Day 1-15: Average 38% (post-rainfall recovery). Day 16-30: Dropped to 28% (dry spell). Day 31-45: Rebounded to 35% (irrigation applied). Day 46-60: Currently stabilizing at 32%. Overall trend shows a gradual drying pattern with one successful irrigation intervention. Soil moisture is currently in the moderate range. Recommended action: Schedule irrigation within 5-7 days if no rainfall is forecasted. Would you like a comparison with historical averages for this time of year?
+
+---
+
+**👤 You:**
+> "What are the soil properties at my vineyard location? I need to know the pH and organic carbon."
+
+**🤖 AI Agent:**
+> Retrieving soil properties for your vineyard... Soil Composition: Sandy Loam (Sand: 62%, Silt: 24%, Clay: 14%). pH Level: 6.4 (slightly acidic, optimal for grape cultivation). Organic Carbon: 1.8% (good fertility level). Bulk Density: 1.42 g/cm3. Cation Exchange Capacity: 14.2 cmol/kg. Water Holding Capacity: 18%. Assessment: Your soil is well-suited for viticulture with good drainage and adequate nutrient retention. The slightly acidic pH is ideal for most grape varietals. Consider adding organic matter to boost carbon content above 2%. Would you like crop suitability recommendations based on these soil properties?
+
+
 ## Installation & Usage
 
 To install and use the **Ambee Soil** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Ambee Soil** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

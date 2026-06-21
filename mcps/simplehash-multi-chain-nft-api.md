@@ -1,12 +1,14 @@
 # SimpleHash (Multi-chain NFT API) MCP Server
 
-Access comprehensive NFT data across 50+ chains — query wallet holdings, metadata, collection details, and transfer history.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/simplehash-multi-chain-nft-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplehash-multi-chain-nft-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplehash-multi-chain-nft-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplehash-multi-chain-nft-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access comprehensive NFT data across 50+ chains — query wallet holdings, metadata, collection details, and transfer history.
 
 ## Description
 Connect to **SimpleHash**, the most comprehensive NFT API, and empower your AI agent with real-time multi-chain data. This server allows you to query NFT information across Ethereum, Polygon, Solana, Bitcoin (Ordinals), and dozens of other networks through a single interface.
@@ -42,6 +44,33 @@ Connect to **SimpleHash**, the most comprehensive NFT API, and empower your AI a
 - **get_nfts_by_wallet**: Retrieve all NFTs owned by a specific wallet address across multiple chains
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SimpleHash (Multi-chain NFT API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all NFTs owned by 0x742d35Cc6634C0532925a3b844Bc454e4438f44e on ethereum and polygon."
+
+**🤖 AI Agent:**
+> I've found 12 NFTs for that address across Ethereum and Polygon. Notable items include 2 Bored Ape Yacht Club tokens and 5 Polygon-based gaming assets. Would you like the full list or details on a specific one?
+
+---
+
+**👤 You:**
+> "Get the metadata and image for NFT token 123 in contract 0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d on ethereum."
+
+**🤖 AI Agent:**
+> Fetching details for BAYC #123... I have the metadata: it has 'Robot Eyes' and 'Blue Fur' traits. The high-res image is available at the IPFS gateway. Would you like me to show the full attribute list?
+
+---
+
+**👤 You:**
+> "Show me the recent transfer history for wallet 0x123... on ethereum."
+
+**🤖 AI Agent:**
+> I've retrieved the last 10 transfers for this wallet. There were 3 sales on OpenSea and 2 direct transfers in the past 48 hours. Should I break down the prices and timestamps for these events?
+
+
 ## Installation & Usage
 
 To install and use the **SimpleHash (Multi-chain NFT API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **SimpleHash (Multi-chain NFT API)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

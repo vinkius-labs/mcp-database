@@ -1,12 +1,14 @@
 # Navitia MCP Server
 
-Access European public transit via Navitia — plan multimodal journeys, check schedules, track disruptions, and explore transit networks from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/navitia)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navitia)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/navitia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/navitia-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** transportation-logistics
-**Tools Count:** 11
+
+**Category:** [transportation-logistics](../categories/transportation-logistics.md)
+
+Access European public transit via Navitia — plan multimodal journeys, check schedules, track disruptions, and explore transit networks from any AI agent.
 
 ## Description
 Connect your **Navitia** multimodal transit API to any AI agent and take full control of European public transportation planning, real-time service monitoring, and accessibility analysis through natural conversation.
@@ -77,6 +79,33 @@ Search for transit stops, stations, addresses, and POIs by name
 Get full timetable for a specific transit stop
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Navitia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Plan a trip from Gare du Nord to the Eiffel Tower using public transit in Paris."
+
+**🤖 AI Agent:**
+> Planning multimodal journey with Navitia... I found 3 options: Option 1 (fastest): Metro Line 4 from Gare du Nord to Saint-Michel, then RER C to Champ de Mars-Tour Eiffel — 28 minutes total, 1 transfer, fare ~€2.15 with t+ ticket, departure at 09:42, arrival at 10:10. Option 2 (direct): Bus 42 from Gare du Nord to Champ de Mars — 42 minutes, no transfers, fare €2.15, departure at 09:38, arrival at 10:20. Option 3 (scenic walk): Metro Line 5 to Place d'Italie, then Line 6 (aerial) to Bir-Hakeim, 8-minute walk to Eiffel Tower — 35 minutes, 1 transfer, elevated metro segment with panoramic views. All options show normal service with no disruptions. Would you like step-by-step walking directions for any option?
+
+---
+
+**👤 You:**
+> "Show me all metro departures from Chatelet station in the next 20 minutes."
+
+**🤖 AI Agent:**
+> Searching for Chatelet metro stops... Found multiple platforms. Fetching real-time departures: Line 1 (direction La Defense — departing in 3 minutes, on-time), Line 1 (direction Vincennes — 7 minutes, on-time), Line 4 (direction Bagneux-Lucie Aubrac — 4 minutes, on-time), Line 4 (direction Porte de Clignancourt — 9 minutes, delayed 2 minutes), Line 7 (direction Villejuif-Louis Aragon — 6 minutes, on-time), Line 7 (direction La Courneuve-8 Mai 1945 — 11 minutes, on-time), Line 11 (direction Rosny-Bois-Perrier — 8 minutes, on-time), and Line 14 (direction Aeroport d'Orly — 12 minutes, on-time). All services operated by RATP. No active disruptions on any lines. Would you like detailed route information for any specific line?
+
+---
+
+**👤 You:**
+> "What areas can I reach within 45 minutes by public transit from Lyon Part-Dieu station?"
+
+**🤖 AI Agent:**
+> Generating isochrone from Lyon Part-Dieu with 45-minute radius (2700 seconds)... The reachable area covers most of Lyon metropolitan area including: City center (Presqu'ile) — 15 minutes by Metro A, Villeurbanne — 10 minutes by Metro A or Tram T1, Confluence district — 20 minutes by Tram T1, Gerland — 15 minutes by Metro B, Vaise — 20 minutes by Metro D, Caluire-et-Cuire — 25 minutes by Bus C, Ecully — 30 minutes by Tram T6, Bron — 30 minutes by Tram T3, Venissieux — 25 minutes by Metro D, and Oullins — 15 minutes by Metro B. Total accessible area spans approximately 12km radius. Would you like the full GeoJSON polygon for mapping, or details about accessibility to any specific neighborhood?
+
+
 ## Installation & Usage
 
 To install and use the **Navitia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **Navitia** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

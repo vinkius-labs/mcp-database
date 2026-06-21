@@ -1,12 +1,14 @@
 # Doofinder MCP Server
 
-Empower e-commerce search via Doofinder — perform keyword and filtered searches, get predictive suggestions, and audit search analytics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/doofinder)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doofinder)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doofinder-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doofinder-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Empower e-commerce search via Doofinder — perform keyword and filtered searches, get predictive suggestions, and audit search analytics directly from any AI agent.
 
 ## Description
 Connect your **Doofinder** account to any AI agent and take full control of your e-commerce search and discovery workflows through natural conversation.
@@ -50,6 +52,33 @@ Perform structural extraction of properties driving active Account logic
 - **suggest**: Enumerate explicitly attached structured rules exporting active Billing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Doofinder** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'summer shoes' in Doofinder"
+
+**🤖 AI Agent:**
+> Searching for 'summer shoes'... I found 45 products. Highlights include 'Beach Sandals' ($25.00) and 'Breathable Runners' ($85.00). Would you like to filter these results by brand or color?
+
+---
+
+**👤 You:**
+> "Show me the search stats for the last 7 days"
+
+**🤖 AI Agent:**
+> Retrieving stats... In the last 7 days, your search engine processed 12,000 queries with an average CTR of 8.5%. There were 1,020 total clicks. Your search velocity is trending up by 5%.
+
+---
+
+**👤 You:**
+> "Get suggestions for partial query 'iph'"
+
+**🤖 AI Agent:**
+> Suggestions for 'iph': 'iphone 15', 'iphone case', 'iphone screen protector', and 'iphone charger'. Which one are you looking for?
+
+
 ## Installation & Usage
 
 To install and use the **Doofinder** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Doofinder** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

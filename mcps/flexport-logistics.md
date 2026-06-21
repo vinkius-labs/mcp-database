@@ -1,12 +1,14 @@
 # Flexport Logistics MCP Server
 
-Manage e-commerce fulfillment, inventory, and returns via AI agents with Flexport Logistics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport-logistics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport-logistics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flexport-logistics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flexport-logistics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage e-commerce fulfillment, inventory, and returns via AI agents with Flexport Logistics.
 
 ## Description
 Connect your **Flexport Logistics** account to any AI agent and automate your e-commerce fulfillment and warehousing operations through the Model Context Protocol (MCP). Flexport Logistics (formerly Deliverr) provides a high-speed fulfillment network that ensures your customers get their orders fast. Now, you can manage orders, track real-time inventory, and handle returns directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Flexport Logistics** account to any AI agent and automate your e-
 - **list_returns**: List customer returns
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flexport Logistics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the current inventory level for SKU 'SKU-999'."
+
+**🤖 AI Agent:**
+> Checking inventory... For SKU 'SKU-999', you have 150 units available across the network, with the largest concentration in the California fulfillment center.
+
+---
+
+**👤 You:**
+> "List all fulfillment orders that were shipped today."
+
+**🤖 AI Agent:**
+> Retrieving orders... I found 12 fulfillment orders shipped today, including orders for 'Customer A' and 'Customer B'. Would you like the tracking numbers for these shipments?
+
+---
+
+**👤 You:**
+> "Show me the status of my inbound shipment 'INB-123'."
+
+**🤖 AI Agent:**
+> Fetching inbound details... Shipment 'INB-123' is currently 'In Transit' and is expected to arrive at the warehouse by Friday. I'll notify you once it's been received and processed.
+
+
 ## Installation & Usage
 
 To install and use the **Flexport Logistics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Flexport Logistics** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

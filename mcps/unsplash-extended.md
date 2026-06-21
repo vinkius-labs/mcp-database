@@ -1,12 +1,14 @@
 # Unsplash MCP Server
 
-Access millions of high-resolution images — search photos, manage collections, and track download statistics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unsplash-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/unsplash-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/unsplash-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/unsplash-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 28
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Access millions of high-resolution images — search photos, manage collections, and track download statistics directly from any AI agent.
 
 ## Description
 Connect your **Unsplash** developer account to any AI agent and integrate the world's most popular open image library into your creative workflows.
@@ -63,6 +65,33 @@ Connect your **Unsplash** developer account to any AI agent and integrate the wo
 - **update_me**: Update the authenticated user profile
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Unsplash** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 3 high-resolution photos of 'minimalist workspace' in landscape orientation."
+
+**🤖 AI Agent:**
+> I've found 3 minimalist workspace photos for you. [Photo 1: Clean desk with laptop], [Photo 2: Bright office with plants], [Photo 3: Zen wooden desk]. Would you like the download links for any of these?
+
+---
+
+**👤 You:**
+> "Get a random photo from the 'Architecture' topic."
+
+**🤖 AI Agent:**
+> Here is a stunning random photo from the Architecture topic: [Image of a modern spiral staircase]. It was taken by 'UserXYZ'. Do you want to see more from this photographer?
+
+---
+
+**👤 You:**
+> "Show me the statistics for the user 'unsplash_photographer'."
+
+**🤖 AI Agent:**
+> The user 'unsplash_photographer' has impressive engagement: 1.2M total views and 450k downloads across their 120 uploaded photos. Would you like to see their most popular collections?
+
+
 ## Installation & Usage
 
 To install and use the **Unsplash** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Unsplash** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

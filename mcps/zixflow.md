@@ -1,12 +1,14 @@
 # Zixflow MCP Server
 
-Manage sales collections, contacts, and transactions via the Zixflow API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zixflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zixflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zixflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zixflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 7
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage sales collections, contacts, and transactions via the Zixflow API.
 
 ## Description
 Connect your **Zixflow** workspace to any AI agent to automate your sales and CRM operations. This MCP server enables your agent to interact with collections (People, Company, etc.), manage individual records, and track wallet transactions directly from natural language.
@@ -46,6 +48,33 @@ List records within a specific collection
 - **update_collection_record**: Update an existing record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zixflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all data collections in my Zixflow workspace."
+
+**🤖 AI Agent:**
+> I've retrieved your collections. You have 2 main collections: 'People' (ID: 123) and 'Company' (ID: 456). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show details for record with ID '98765'."
+
+**🤖 AI Agent:**
+> I've fetched the details for record 98765. It's 'John Smith' from 'Acme Corp'. Current status is 'Warm Lead' and his email is john@acme.com.
+
+---
+
+**👤 You:**
+> "List my recent wallet transactions."
+
+**🤖 AI Agent:**
+> I found 5 recent transactions. The latest was a deduction of $10.50 for 'Campaign SMS Fees' on June 1st.
+
+
 ## Installation & Usage
 
 To install and use the **Zixflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Zixflow** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

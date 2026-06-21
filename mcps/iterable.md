@@ -1,12 +1,14 @@
 # Iterable MCP Server
 
-Manage cross-channel marketing campaigns, users, and templates via Iterable API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/iterable)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iterable)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iterable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iterable-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Manage cross-channel marketing campaigns, users, and templates via Iterable API.
 
 ## Description
 Empower your AI agents to manage your cross-channel marketing with Iterable. This MCP server allows you to list campaigns, retrieve user profiles, track engagement metrics, manage contact lists, and view message templates directly through the Iterable API. Ideal for automating growth marketing and customer lifecycle management.
@@ -45,6 +47,33 @@ Lists all configured webhooks
 Lists all automation workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Iterable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active marketing campaigns in my Iterable account."
+
+**🤖 AI Agent:**
+> I'll fetch the list of your active campaigns from Iterable.
+
+---
+
+**👤 You:**
+> "Show me the details for user 'customer@example.com'."
+
+**🤖 AI Agent:**
+> I'll retrieve the profile and activity history for that user from Iterable.
+
+---
+
+**👤 You:**
+> "Check the metrics for campaign ID '123'."
+
+**🤖 AI Agent:**
+> I'll look up the performance metrics and engagement data for that specific campaign.
+
+
 ## Installation & Usage
 
 To install and use the **Iterable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Iterable** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

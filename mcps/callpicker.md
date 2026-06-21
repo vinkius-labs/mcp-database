@@ -1,12 +1,14 @@
 # Callpicker MCP Server
 
-Track and analyze inbound calls with attribution data that shows which marketing channels drive your best phone leads.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/callpicker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/callpicker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/callpicker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/callpicker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 9
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Track and analyze inbound calls with attribution data that shows which marketing channels drive your best phone leads.
 
 ## Description
 Connect your **Callpicker** account to any AI agent and take full control of your cloud-based business telephony and virtual PBX workflows through natural conversation.
@@ -46,6 +48,33 @@ No more manual logging of phone results or digging through complex PBX portals. 
 - **make_call**: Initiate a phone call
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Callpicker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Initiate a call to '+1234567890' from my virtual number '+0987654321'."
+
+**🤖 AI Agent:**
+> Call triggered! I've successfully initiated the outgoing call via Callpicker. The PBX is now bridging the connection to +1234567890. Shall I notify you when the call completes?
+
+---
+
+**👤 You:**
+> "Show the last 5 call logs with duration and status."
+
+**🤖 AI Agent:**
+> Accessing call logs... Your last 5 interactions include 3 answered calls (avg 5m 12s) and 2 missed. The most recent was a 12-minute consultation. Need the high-fidelity CDR report for these?
+
+---
+
+**👤 You:**
+> "Get the download link for call recording ID '789'."
+
+**🤖 AI Agent:**
+> Link generated! You can download the recording for interaction 789 here: [recording_url]. The link is secure and valid for 24 hours. Would you like a summary of the PBX status?
+
+
 ## Installation & Usage
 
 To install and use the **Callpicker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Callpicker** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # BambooHR MCP Server
 
-Official HR software automation — manage employee directories, time off requests, and company reports via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bamboohr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bamboohr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bamboohr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bamboohr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Official HR software automation — manage employee directories, time off requests, and company reports via AI.
 
 ## Description
 Orchestrate your human resources operations with **BambooHR**, the leading platform for small and medium businesses. By connecting BambooHR to your AI agent, you transform complex people management into a natural conversation. Your agent can instantly search the employee directory, audit time off requests, identify who is out of the office today, and retrieve custom company reports without you ever navigating through dense HR menus. Whether you're a manager checking team availability or an HR admin updating records, your agent acts as a direct bridge to your people data, ensuring your organizational culture stays agile and informed.
@@ -48,6 +50,33 @@ Orchestrate your human resources operations with **BambooHR**, the leading platf
 - **whos_out**: List employees who are out (time off) for a date range
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BambooHR** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Who is out of the office today?"
+
+**🤖 AI Agent:**
+> Checking BambooHR... Today, Jane Doe (Vacation) and John Smith (Sick Leave) are out. Would you like to check availability for a different date range?
+
+---
+
+**👤 You:**
+> "Search for 'Sarah' in the employee directory."
+
+**🤖 AI Agent:**
+> I found Sarah Miller. She is a 'Senior Engineer' in the 'Product' team. Her email is sarah.miller@example.com. Would you like her extension or office location?
+
+---
+
+**👤 You:**
+> "What are my available time off types?"
+
+**🤖 AI Agent:**
+> Retrieving time off types... You have access to: Vacation, Sick Leave, Personal Day, and Bereavement. Which one would you like to request?
+
+
 ## Installation & Usage
 
 To install and use the **BambooHR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **BambooHR** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

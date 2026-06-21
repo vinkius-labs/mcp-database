@@ -1,12 +1,14 @@
 # Common Room MCP Server
 
-Unify community signals from Slack, Discord, GitHub, and social media to identify your most engaged users and advocates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/common-room-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/common-room-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/common-room-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/common-room-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 12
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Unify community signals from Slack, Discord, GitHub, and social media to identify your most engaged users and advocates.
 
 ## Description
 Connect your **Common Room** account to any AI agent and take full control of your community orchestration and B2B relationship intelligence through natural conversation.
@@ -53,6 +55,33 @@ List community segments
 - **update_member**: Update member profile
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Common Room** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all members in the 'Highly Engaged' segment."
+
+**🤖 AI Agent:**
+> I've retrieved the 'Highly Engaged' segment. You have 15 members in this category, including top contributors from GitHub and Slack. Would you like the Person360 profiles for the top 3?
+
+---
+
+**👤 You:**
+> "Get the community profile for 'john@example.com'."
+
+**🤖 AI Agent:**
+> I've located John's Person360 profile. He is active on Slack and GitHub (username: john_dev). His current sentiment is 'Positive' and he is tagged as a 'Power User'. Shall I check his latest activity signals?
+
+---
+
+**👤 You:**
+> "Report a new Slack activity for member ID 'abc-123'."
+
+**🤖 AI Agent:**
+> Activity ingested! I've successfully registered the new Slack signal for member abc-123. The interaction is now visible in their community timeline and engagement score. Need help with other members?
+
+
 ## Installation & Usage
 
 To install and use the **Common Room** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Common Room** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ClockShark MCP Server
 
-Track field crew hours with GPS-verified timesheets, job costing, and scheduling that keeps construction teams on budget.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clockshark)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clockshark)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clockshark-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clockshark-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Track field crew hours with GPS-verified timesheets, job costing, and scheduling that keeps construction teams on budget.
 
 ## Description
 Connect your **ClockShark** account to any AI agent and take full control of your field service workforce and time-tracking workflows through natural conversation.
@@ -47,6 +49,33 @@ No more manual following up on missing timesheets or digging through complex sch
 - **list_timesheets**: List time tracking entries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClockShark** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active employees in my ClockShark account."
+
+**🤖 AI Agent:**
+> I've retrieved your employee directory. You currently have 10 active staff members, including @user1 and @user2. Would you like to check the current timesheet for any of them?
+
+---
+
+**👤 You:**
+> "Schedule a shift for 'John' (ID: 123) for tomorrow from 8 AM to 5 PM."
+
+**🤖 AI Agent:**
+> Shift scheduled! I've successfully assigned John to a new work shift for tomorrow. The assignment is now visible on your team's schedule. Shall I alert him via notification?
+
+---
+
+**👤 You:**
+> "Show the timesheets for 'last_week'."
+
+**🤖 AI Agent:**
+> Fetching historical records... Last week, your crew logged a total of 320 hours across 5 active jobs. Highlights include 120 hours on the 'Riverfront Project'. Would you like the breakdown per employee?
+
+
 ## Installation & Usage
 
 To install and use the **ClockShark** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **ClockShark** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

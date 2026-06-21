@@ -1,12 +1,14 @@
 # Faker MCP Server
 
-Generate high-quality mock data for development and testing — including addresses, persons, companies, and products in multiple locales.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/faker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/faker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/faker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/faker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 11
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Generate high-quality mock data for development and testing — including addresses, persons, companies, and products in multiple locales.
 
 ## Description
 Connect the **Faker** MCP server to your AI agent to instantly generate realistic placeholder data for your applications. Whether you need to populate a database, test an API, or create UI mockups, Faker provides a comprehensive suite of tools to generate structured data on demand.
@@ -54,6 +56,33 @@ Generate mock personal information
 - **get_users**: Generate mock user account data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Faker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate 5 fake company profiles with websites and VAT numbers."
+
+**🤖 AI Agent:**
+> I've generated 5 mock companies for you, including 'TechFlow Solutions' and 'Global Logistics Inc.', complete with their registered VAT numbers and official websites.
+
+---
+
+**👤 You:**
+> "I need 10 random addresses in Germany using the de_DE locale."
+
+**🤖 AI Agent:**
+> Here are 10 German addresses. They include street names like 'Hauptstraße' and 'Goethestraße' with valid postal codes and city names formatted for the de_DE region.
+
+---
+
+**👤 You:**
+> "Give me 3 mock books with titles and authors."
+
+**🤖 AI Agent:**
+> I've retrieved 3 mock books: 'The Silent Echo' by Jane Doe, 'Digital Horizons' by John Smith, and 'Beyond the Veil' by Alice Johnson.
+
+
 ## Installation & Usage
 
 To install and use the **Faker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Faker** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

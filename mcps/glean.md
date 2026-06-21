@@ -1,12 +1,14 @@
 # Glean MCP Server
 
-Empower enterprise search via Glean — search across all SaaS apps, retrieve AI answers, manage custom indexing, and handle chat directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/glean)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glean)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glean-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glean-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 10
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Empower enterprise search via Glean — search across all SaaS apps, retrieve AI answers, manage custom indexing, and handle chat directly from any AI agent.
 
 ## Description
 Connect your **Glean** enterprise account to any AI agent and take full control of your corporate-wide knowledge discovery and AI-powered workspace through natural conversation.
@@ -53,6 +55,33 @@ Perform structural extraction of properties driving active Account logic
 - **get_suggestions**: Irreversibly vaporize explicit validations extracting rich Churn flags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Glean** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'Q2 hiring plan' in all apps"
+
+**🤖 AI Agent:**
+> Searching corporate knowledge... I found 3 documents across Google Drive and Confluence. The most relevant is 'Final Hiring Plan Q2' (ID: doc_abc). Would you like me to get an AI-generated summary of its contents?
+
+---
+
+**👤 You:**
+> "Who knows about 'React Native' in my company?"
+
+**🤖 AI Agent:**
+> Searching people... I found 2 colleagues with 'React Native' listed in their skills: Alice Smith (Mobile Lead) and Bob Johnson (Senior Engineer). Would you like their contact details or recent Slack activity?
+
+---
+
+**👤 You:**
+> "Get AI answer for: 'What is our expense policy for business travel?'"
+
+**🤖 AI Agent:**
+> Synthesizing answer... According to the Employee Handbook in Confluence, our business travel policy allows for $50/day in meal reimbursements and requires all flights to be booked via the Corporate Portal at least 2 weeks in advance.
+
+
 ## Installation & Usage
 
 To install and use the **Glean** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Glean** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

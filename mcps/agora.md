@@ -1,12 +1,14 @@
 # Agora MCP Server
 
-Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/agora)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agora)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agora-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agora-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** infrastructure
-**Tools Count:** 10
+
+**Category:** [infrastructure](../categories/infrastructure.md)
+
+Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent.
 
 ## Description
 Connect your AI agents to **Agora**, the leading real-time engagement platform for video, voice, and interactive streaming. This MCP provides 10 tools to manage communication channels, orchestrate cloud recording sessions, and monitor granular usage metrics programmatically.
@@ -49,6 +51,33 @@ Request a resource ID for cloud recording
 - **stop_cloud_recording**: Stop an ongoing cloud recording
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Agora** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all users currently connected to Agora channel 'room_101' in project 'app_abc'."
+
+**🤖 AI Agent:**
+> Retrieving channel users... I found 3 UIDs connected to 'room_101': 1. UID: 777, 2. UID: 888, 3. UID: 999. Would you like to check the connection quality for any of these users?
+
+---
+
+**👤 You:**
+> "Start a cloud recording for channel 'webinar_live' with AppID 'my_agora_app_id'."
+
+**🤖 AI Agent:**
+> Initializing Agora cloud recording... Success! The recording session for 'webinar_live' has started. Resource ID: `res_xyz123`, SID: `sid_789abc`. I will monitor the status for you.
+
+---
+
+**👤 You:**
+> "Show my project's RTC usage for the last 7 days."
+
+**🤖 AI Agent:**
+> Fetching Agora usage metrics... In the last 7 days, your project consumed 1,200 video minutes (HD) and 450 audio minutes. Peak concurrency was 25 users on April 10th.
+
+
 ## Installation & Usage
 
 To install and use the **Agora** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Agora** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

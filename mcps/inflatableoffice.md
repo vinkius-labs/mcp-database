@@ -1,12 +1,14 @@
 # InflatableOffice MCP Server
 
-Run your party rental and inflatable business with online booking, inventory management, and delivery route planning.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/inflatableoffice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inflatableoffice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inflatableoffice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inflatableoffice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 6
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Run your party rental and inflatable business with online booking, inventory management, and delivery route planning.
 
 ## Description
 Connect your **InflatableOffice** account to any AI agent and manage your party rental business through natural conversation.
@@ -40,6 +42,33 @@ Connect your **InflatableOffice** account to any AI agent and manage your party 
 - **list_leads**: List InflatableOffice leads
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **InflatableOffice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all leads and the upcoming scheduled events for this weekend."
+
+**🤖 AI Agent:**
+> Leads: 12 active. Hot (3): Johnson Birthday Party ($450), Martinez Graduation ($680), Smith Corporate Event ($1,200). Warm (5). Cold (4). Weekend events: 4 scheduled. Sat: 'Johnson Birthday' — 2 bounce houses, 1 slide. Delivery 9 AM. 'Garcia Wedding' — tent, tables, chairs. Sun: 'Community Fair' — 5 inflatables. 'Park Fundraiser' — 3 units. Total weekend revenue: $3,200.
+
+---
+
+**👤 You:**
+> "Create a new lead for a corporate event and show the rental inventory."
+
+**🤖 AI Agent:**
+> Lead created! Company: TechCorp Annual Picnic. Contact: David Williams, david@techcorp.com. Date: May 15. Budget: $2,500. Status: Hot. Rental inventory: 45 items. Inflatables: Bounce Houses (8, from $150/day), Slides (4, from $200), Obstacle Courses (3, from $350). Tents: 10x10 ($75), 20x20 ($150), 30x30 ($300). Tables & Chairs: Round tables ($15), folding chairs ($2). Currently available: 38 of 45.
+
+---
+
+**👤 You:**
+> "Show all customers and their rental history."
+
+**🤖 AI Agent:**
+> Customers: 156 total. Top by revenue: 1) Johnson Family — 8 events, $3,400 lifetime. 2) Martinez Events — 5 events, $2,800. 3) Smith Corp — 3 events, $2,100. Recent customers: Garcia Wedding (new, 1 event). Community Center (recurring, 12 events). Average lifetime value: $425. Repeat rate: 42%. Would you like to create a lead or check events?
+
+
 ## Installation & Usage
 
 To install and use the **InflatableOffice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **InflatableOffice** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

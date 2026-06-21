@@ -1,12 +1,14 @@
 # MeteoSource MCP Server
 
-Monitor global weather — audit forecasts and places via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meteosource)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meteosource)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meteosource-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meteosource-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Monitor global weather — audit forecasts and places via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire meteorological research and weather auditing workflow with **MeteoSource**, the comprehensive source for hyper-local weather data. By connecting the MeteoSource API to your agent, you transform complex forecast searches into a natural conversation. Your agent can instantly search for monitored places, audit daily and hourly forecasts, and retrieve timezone metadata without you ever touching a weather portal. Whether you are planning outdoor events or conducting regional climate audits, your agent acts as a real-time meteorological consultant, ensuring your data is always precise and localized.
@@ -41,6 +43,33 @@ Empower your AI agent to orchestrate your entire meteorological research and wea
 - **search_weather_places**: Search for a place by name to get its place_id for forecasts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MeteoSource** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get weather forecast for 'London' using MeteoSource."
+
+**🤖 AI Agent:**
+> I've retrieved the weather for London! The current temperature is 12°C with light rain. The daily summary shows similar conditions for the next 3 days. Would you like the detailed hourly breakdown?
+
+---
+
+**👤 You:**
+> "Search for weather station near latitude 48.8566 and longitude 2.3522."
+
+**🤖 AI Agent:**
+> I've identified the nearest place! It corresponds to Paris, France. I can retrieve the full point forecast or timezone metadata for this location if you'd like.
+
+---
+
+**👤 You:**
+> "What is the timezone for place 'tokyo'?"
+
+**🤖 AI Agent:**
+> I've retrieved the timezone information. Tokyo is located in the 'Asia/Tokyo' timezone, currently identified as GMT+9. I can assist you with more temporal auditing if needed.
+
+
 ## Installation & Usage
 
 To install and use the **MeteoSource** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **MeteoSource** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

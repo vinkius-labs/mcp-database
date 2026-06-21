@@ -1,12 +1,14 @@
 # Geocode.xyz MCP Server
 
-Convert addresses to coordinates, perform reverse geocoding, and extract location data from text with Geocode.xyz.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/geocodexyz)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/geocodexyz)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/geocodexyz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/geocodexyz-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 5
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Convert addresses to coordinates, perform reverse geocoding, and extract location data from text with Geocode.xyz.
 
 ## Description
 Empower your AI agent with global geographic intelligence using the **Geocode.xyz** MCP server. This integration provides a robust suite of tools for mapping, location extraction, and spatial analysis.
@@ -42,6 +44,33 @@ Identify and extract location names from free-form text
 - **reverse_geocode**: Convert latitude and longitude coordinates into a physical address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Geocode.xyz** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the coordinates for 'The Colosseum in Rome'."
+
+**🤖 AI Agent:**
+> I've located the Colosseum. The coordinates are Latitude: 41.8902, Longitude: 12.4922.
+
+---
+
+**👤 You:**
+> "What address is located at latitude 48.8584 and longitude 2.2945?"
+
+**🤖 AI Agent:**
+> The coordinates 48.8584, 2.2945 correspond to the Eiffel Tower, located at Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France.
+
+---
+
+**👤 You:**
+> "Extract all locations from this text: 'Our team is traveling from New York to London next week.'"
+
+**🤖 AI Agent:**
+> I've parsed the text and found two locations: 'New York' (USA) and 'London' (United Kingdom).
+
+
 ## Installation & Usage
 
 To install and use the **Geocode.xyz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Geocode.xyz** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

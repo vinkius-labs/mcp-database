@@ -1,12 +1,14 @@
 # TollGuru MCP Server
 
-Global toll intelligence — calculate costs by address, coordinates, polyline, or GPS tracks with fuel estimates and multi-vehicle support.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tollguru-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tollguru-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tollguru-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tollguru-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Global toll intelligence — calculate costs by address, coordinates, polyline, or GPS tracks with fuel estimates and multi-vehicle support.
 
 ## Description
 Equip your AI agent with the most accurate toll intelligence available via **TollGuru**. This unified server provides your agent with instant access to toll costs, fuel consumption estimates, and route optimization for thousands of roads worldwide. Your agent can instantly calculate the total cost of a journey, audit individual toll booth prices, and suggest the most cost-effective path without you ever checking a map or calculator manually. Whether you are planning long-haul logistics or optimizing a personal road trip, your agent acts as a dedicated travel cost analyst through natural conversation.
@@ -53,6 +55,33 @@ Calculate tolls for an encoded route polyline
 Get total API transaction count for your account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TollGuru** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate tolls from New York to Philadelphia for a standard car."
+
+**🤖 AI Agent:**
+> Retrieving route costs from NYC to Philly... For a 2-axle auto, the total toll cost is approximately $25.50 using a tag or $32.00 in cash. I can list the individual tolls like the Holland Tunnel and NJ Turnpike.
+
+---
+
+**👤 You:**
+> "What is the cheapest route from San Francisco to Los Angeles considering tolls?"
+
+**🤖 AI Agent:**
+> Analyzing routes between SF and LA... I've found a path with zero tolls taking the I-5 S, though it may take slightly longer. The alternative route via the coastal highway has $15 in bridge tolls. Which one do you prefer?
+
+---
+
+**👤 You:**
+> "How much does a 5-axle truck pay in tolls from Chicago to Miami?"
+
+**🤖 AI Agent:**
+> Fetching heavy vehicle rates for the Chicago-Miami corridor... For a 5-axle truck, the total estimated toll cost is $145.00. I have the breakdown of state-by-state charges and tag vs cash options ready for you.
+
+
 ## Installation & Usage
 
 To install and use the **TollGuru** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **TollGuru** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Finmo MCP Server
 
-Manage global pay-ins, payouts, and multi-currency wallets through AI agents with Finmo.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/finmo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finmo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finmo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finmo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 12
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage global pay-ins, payouts, and multi-currency wallets through AI agents with Finmo.
 
 ## Description
 Connect your **Finmo** account to any AI agent and automate your global treasury and payment operations through the Model Context Protocol (MCP). Finmo provides a unified platform for managing multi-currency liquidity, local collection methods, and cross-border disbursements, now accessible directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Finmo** account to any AI agent and automate your global treasury
 - **list_wallets**: List organization wallets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Finmo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the available pay-in methods for Singapore (SG) in SGD?"
+
+**🤖 AI Agent:**
+> Checking methods... For Singapore (SG), Finmo supports several pay-in methods including FAST, PayNow, and local bank transfers in SGD. Would you like the specific details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the current balance of all my organization wallets."
+
+**🤖 AI Agent:**
+> Retrieving balances... You have 3 active wallets: USD ($12,450.00), EUR (€8,200.00), and SGD (S$15,000.00). Your total liquidity is being tracked across these accounts.
+
+---
+
+**👤 You:**
+> "Get a live exchange rate to sell 1000 USD for EUR."
+
+**🤖 AI Agent:**
+> Fetching live quote... The current exchange rate for 1000 USD is approximately 920.50 EUR. This quote is valid for the next 60 seconds if you wish to proceed with the conversion.
+
+
 ## Installation & Usage
 
 To install and use the **Finmo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Finmo** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

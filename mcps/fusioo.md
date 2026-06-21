@@ -1,12 +1,14 @@
 # Fusioo MCP Server
 
-Manage collaborative workspaces, track records, and oversee custom apps via AI agents with Fusioo.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fusioo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fusioo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fusioo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fusioo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage collaborative workspaces, track records, and oversee custom apps via AI agents with Fusioo.
 
 ## Description
 Connect your **Fusioo** workspace to any AI agent to automate your project management and database workflows through the Model Context Protocol (MCP). Fusioo is a highly customizable workspace platform that allows you to build your own apps to manage everything from CRM to project tracking. This MCP server enables you to retrieve app schemas, manage individual records, and monitor workspace activity directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Fusioo** workspace to any AI agent to automate your project manag
 - **update_app_record**: Modify a record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fusioo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the custom apps in my Fusioo workspace."
+
+**🤖 AI Agent:**
+> Retrieving apps... I found 4 custom apps: 'Projects' (ID: app_123), 'Clients' (ID: app_456), 'Tasks', and 'Inventory'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Get the last 5 records from the 'Projects' app (ID: app_123)."
+
+**🤖 AI Agent:**
+> Fetching records... For 'Projects', I found 5 recent entries, including 'Q4 Marketing Campaign' (Status: In Progress) and 'Server Migration' (Status: Completed).
+
+---
+
+**👤 You:**
+> "How many records are currently in my 'Leads' app (ID: app_789)?"
+
+**🤖 AI Agent:**
+> Calculating records... There are currently 156 records in your 'Leads' app. Would you like to see the most recent ones?
+
+
 ## Installation & Usage
 
 To install and use the **Fusioo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Fusioo** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

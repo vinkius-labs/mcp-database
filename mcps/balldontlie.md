@@ -1,12 +1,14 @@
 # BallDontLie MCP Server
 
-NBA data platform — access player stats, team info, and game results via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/balldontlie)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/balldontlie)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/balldontlie-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/balldontlie-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+NBA data platform — access player stats, team info, and game results via AI.
 
 ## Description
 Equip your AI agent with the most accessible NBA intelligence via **BallDontLie**. This unified server provides your agent with instant access to extensive basketball data, including player profiles, team technical details, and historical game results. Your agent can search for specific players, audit team rosters, and retrieve real-time or historical statistics without you ever manually checking a sports site. Whether you are analyzing season averages or tracking live game scores, your agent acts as a dedicated sports data analyst through natural conversation.
@@ -45,6 +47,33 @@ Equip your AI agent with the most accessible NBA intelligence via **BallDontLie*
 - **get_season_averages**: Get season averages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BallDontLie** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are LeBron James's career stats on BallDontLie?"
+
+**🤖 AI Agent:**
+> Searching for LeBron James... I've found his profile (ID: 237). He plays for the Los Angeles Lakers. I can now pull his season averages or specific game stats for you.
+
+---
+
+**👤 You:**
+> "Show me the scores for NBA games yesterday."
+
+**🤖 AI Agent:**
+> Retrieving game results for yesterday... There were 5 games played. Notable results include the Warriors beating the Suns 115-110 and the Celtics winning over the Bucks 120-105.
+
+---
+
+**👤 You:**
+> "Get the season averages for player ID 237 in 2023."
+
+**🤖 AI Agent:**
+> Fetching 2023 season averages for player 237... In that season, they averaged 25.7 points, 7.3 rebounds, and 8.3 assists per game across 71 games played.
+
+
 ## Installation & Usage
 
 To install and use the **BallDontLie** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **BallDontLie** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

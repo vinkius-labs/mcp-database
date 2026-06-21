@@ -1,12 +1,14 @@
 # Qualtrics MCP Server
 
-Automate survey management and data collection via Qualtrics — list surveys, manage distributions, and export responses directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qualtrics-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qualtrics-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qualtrics-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qualtrics-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 15
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Automate survey management and data collection via Qualtrics — list surveys, manage distributions, and export responses directly from any AI agent.
 
 ## Description
 Connect your **Qualtrics** account to any AI agent and take full control of your Experience Management (XM) workflows through natural conversation.
@@ -50,6 +52,33 @@ Connect your **Qualtrics** account to any AI agent and take full control of your
 - **update_survey**: Update an existing survey
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Qualtrics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Qualtrics surveys."
+
+**🤖 AI Agent:**
+> I've retrieved your surveys. You have 3 active surveys: 'Customer Satisfaction 2024' (ID: SV_123), 'Employee Engagement' (ID: SV_456), and 'Product Feedback' (ID: SV_789).
+
+---
+
+**👤 You:**
+> "Create a new survey named 'Market Research Q3' in English."
+
+**🤖 AI Agent:**
+> The survey 'Market Research Q3' has been successfully created with ID: SV_98765. You can now start adding questions or setting up distributions.
+
+---
+
+**👤 You:**
+> "Export the responses for survey SV_12345 in CSV format."
+
+**🤖 AI Agent:**
+> I've initiated the export for survey SV_12345. The Export ID is ES_abc123. I will monitor the progress for you.
+
+
 ## Installation & Usage
 
 To install and use the **Qualtrics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Qualtrics** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

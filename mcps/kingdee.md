@@ -1,12 +1,14 @@
 # Kingdee / 金蝶 MCP Server
 
-Comprehensive enterprise ERP platform — manage materials, customers, and business flows via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kingdee)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kingdee)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kingdee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kingdee-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Comprehensive enterprise ERP platform — manage materials, customers, and business flows via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire enterprise operations with **Kingdee** (金蝶), the premier ERP platform in China. By connecting Kingdee to your agent, you transform complex business management, supply chain tracking, and financial auditing into a natural conversation. Your agent can instantly list master data forms, create or update records, monitor approval statuses, and execute complex business queries without you ever needing to navigate the comprehensive Kingdee Cloud Cosmic interface. Whether you are managing high-volume purchase orders or auditing customer records, your agent acts as a real-time operations assistant, keeping your ERP data accurate and your business flows moving.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire enterprise operations with **Ki
 - **view_form**: View ERP form details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kingdee / 金蝶** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active purchase orders in Kingdee."
+
+**🤖 AI Agent:**
+> I've retrieved your active purchase orders. You have 12 open orders, including transactions for 'Steel Pipes' and 'Industrial Lubricants'. Would you like to check the approval status for any of them?
+
+---
+
+**👤 You:**
+> "Get the details for material 'MAT-8821'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for material MAT-8821. It is currently in stock with 500 units available in the 'Main Warehouse'. The status is 'Audited'. Would you like to see the linked supplier information?
+
+---
+
+**👤 You:**
+> "Audit the sales orders 'SAL-9920' and 'SAL-9921'."
+
+**🤖 AI Agent:**
+> Done! I've successfully audited the specified sales orders. They are now marked as 'Approved' in your Kingdee ERP system and are ready for fulfillment.
+
+
 ## Installation & Usage
 
 To install and use the **Kingdee / 金蝶** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Kingdee / 金蝶** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

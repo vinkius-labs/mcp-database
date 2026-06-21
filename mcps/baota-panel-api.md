@@ -1,12 +1,14 @@
 # Baota Panel / 宝塔面板 API MCP Server
 
-Leading server management panel in China — manage websites, databases, and system resources via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/baota-panel-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/baota-panel-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/baota-panel-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/baota-panel-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 10
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Leading server management panel in China — manage websites, databases, and system resources via AI.
 
 ## Description
 Empower your AI agent to orchestrate your server infrastructure with **Baota Panel** (宝塔面板), the dominant web hosting control panel in China. By connecting Baota to your agent, you transform complex server administration, website maintenance, and resource monitoring into a natural conversation. Your agent can instantly list managed websites, retrieve real-time system load, monitor database health, and even browse administrative logs without you ever needing to log in to the panel interface. Whether you are conducting a security audit or monitoring server performance, your agent acts as a real-time SRE assistant, keeping your infrastructure accurate and your services online.
@@ -49,6 +51,33 @@ List installed software
 - **list_sites**: List websites
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Baota Panel / 宝塔面板 API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the system resource usage on my server."
+
+**🤖 AI Agent:**
+> I've retrieved the system load. CPU usage is currently at 15%, RAM usage is 45%, and the load average is 0.5. Your server is operating well within normal limits.
+
+---
+
+**👤 You:**
+> "List all websites managed by Baota."
+
+**🤖 AI Agent:**
+> I've retrieved your websites from Baota Panel. You have 5 active sites, including 'marketing-landing.com' and 'api-server.net'. Would you like more details for any of them?
+
+---
+
+**👤 You:**
+> "Show me the last 5 administrative logs."
+
+**🤖 AI Agent:**
+> I've listed the last 5 logs from the panel. They include recent site creations, database backups, and security configuration changes. Should I retrieve the full details for the most recent entry?
+
+
 ## Installation & Usage
 
 To install and use the **Baota Panel / 宝塔面板 API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Baota Panel / 宝塔面板 API** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

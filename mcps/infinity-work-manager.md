@@ -1,12 +1,14 @@
 # Infinity Work Manager MCP Server
 
-Manage work items, boards, comments, and folders via Infinity API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/infinity-work-manager)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/infinity-work-manager)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/infinity-work-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/infinity-work-manager-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 15
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage work items, boards, comments, and folders via Infinity API.
 
 ## Description
 Connect **Infinity** to any AI agent and manage your work management platform — create and update items, manage boards, add comments, organize folders, and track project progress through natural conversation.
@@ -64,6 +66,33 @@ Get the authenticated user profile
 List all workspaces accessible to the user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Infinity Work Manager** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all workspaces I have access to."
+
+**🤖 AI Agent:**
+> Found 3 workspaces: 1. Marketing Team. 2. Product Development. 3. Operations.
+
+---
+
+**👤 You:**
+> "List all items in board 123 of workspace 456."
+
+**🤖 AI Agent:**
+> Found 15 items: 1. Design Homepage. 2. Update API Docs. 3. Fix Login Bug. 4. Launch Campaign.
+
+---
+
+**👤 You:**
+> "Create a new item called 'Sprint Planning' in board 123 with status 'In Progress'."
+
+**🤖 AI Agent:**
+> Item created successfully! 'Sprint Planning' added to board 123 with status 'In Progress'.
+
+
 ## Installation & Usage
 
 To install and use the **Infinity Work Manager** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Infinity Work Manager** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

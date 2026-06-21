@@ -1,12 +1,14 @@
 # Pylon MCP Server
 
-Automate B2B support and CRM via Pylon — manage issues, accounts, and knowledge bases with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pylon)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pylon)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pylon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pylon-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate B2B support and CRM via Pylon — manage issues, accounts, and knowledge bases with AI.
 
 ## Description
 Connect your **Pylon CRM** (getpylon.com) account to any AI agent and take full control of your customer support and post-sales orchestration through natural conversation. Pylon provides a specialized platform for managing B2B relationships directly within shared channels like Slack and Microsoft Teams, and this integration allows you to retrieve issue metadata, manage account profiles, and search knowledge bases directly from your chat interface.
@@ -50,6 +52,33 @@ Create a new issue
 - **update_issue**: Update a support issue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pylon** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all open issues in my Pylon account."
+
+**🤖 AI Agent:**
+> I've retrieved your issues. You have 3 open support tickets including 'Integration bug' and 'Billing question'. Would you like to see the messages for any of them?
+
+---
+
+**👤 You:**
+> "Show me all open support issues assigned to the engineering team sorted by priority."
+
+**🤖 AI Agent:**
+> 18 open issues assigned to Engineering. Critical (3): "API rate limiting not working" (Acme Corp, 4 hours old), "Data sync failure" (TechFlow, 6 hours), "Authentication timeout" (Meridian, 2 days). High (7): includes payment processing delays, webhook delivery issues, and SDK compatibility bugs. Medium (5): feature requests and configuration questions. Low (3): documentation corrections. Average first response time: 23 minutes. SLA compliance: 94%.
+
+---
+
+**👤 You:**
+> "Reply to the Acme Corp API rate limiting issue with a status update and estimated resolution time."
+
+**🤖 AI Agent:**
+> Reply sent to Acme Corp issue #ISS-4521. Message: "Hi team, we've identified the root cause of the rate limiting issue. A configuration change in our load balancer was incorrectly throttling requests below the documented limits. A fix has been deployed to staging and is being validated. ETA for production: within 2 hours." Status updated to: In Progress. Priority maintained: Critical. Internal note added for the engineering team with the specific config change details.
+
+
 ## Installation & Usage
 
 To install and use the **Pylon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Pylon** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

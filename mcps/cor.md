@@ -1,12 +1,14 @@
 # COR MCP Server
 
-Optimize creative agency profitability with project tracking, resource allocation, and real-time margin analysis for every job.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 13
+
+**Category:** [productivity](../categories/productivity.md)
+
+Optimize creative agency profitability with project tracking, resource allocation, and real-time margin analysis for every job.
 
 ## Description
 Connect your **COR** account to any AI agent and take full control of your professional services project management and profitability orchestration through natural conversation.
@@ -53,6 +55,33 @@ List tasks
 - **list_cor_team_members**: List team users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **COR** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects and show their status."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You currently have 12 active high-fidelity projects, including 'Website Redesign' (In Progress) and 'Mobile App Launch' (Planning). Would you like to see the profitability metrics for any of them?
+
+---
+
+**👤 You:**
+> "Show tasks assigned to project 'COR Integration'."
+
+**🤖 AI Agent:**
+> Pipeline orchestrated! For the project 'COR Integration', I've identified 8 active high-fidelity tasks, including 'API Mapping' and 'Presenter Logic'. I've retrieved the current status and assignee for each. Shall I summarize the progress?
+
+---
+
+**👤 You:**
+> "Check the team members in the 'Development' team."
+
+**🤖 AI Agent:**
+> Team directory orchestrated! The 'Development' team currently has 5 high-fidelity profiles, including 'Alex' (Dev Lead) and 'Sarah' (Senior FE). Your API connection is healthy. Shall I retrieve the detailed time log metadata for this team?
+
+
 ## Installation & Usage
 
 To install and use the **COR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **COR** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

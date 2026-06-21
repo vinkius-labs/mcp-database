@@ -1,12 +1,14 @@
 # BallotReady MCP Server
 
-Civic data and election information — track upcoming elections, candidates, and districts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ballotready)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ballotready)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ballotready-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ballotready-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Civic data and election information — track upcoming elections, candidates, and districts via AI.
 
 ## Description
 Empower your AI agent to navigate the complex landscape of civic engagement with **BallotReady**, the leading platform for nonpartisan election information. By connecting BallotReady to your agent, you transform dense voter data into a natural conversation. Your agent can instantly identify upcoming local, state, and national elections based on a specific address, retrieve detailed candidate profiles, audit voting districts, and even explain ballot measures without you ever searching through government portals. Whether you're building a voter outreach tool or a civic dashboard, your agent acts as a direct, reliable bridge to the democratic process.
@@ -46,6 +48,33 @@ Empower your AI agent to navigate the complex landscape of civic engagement with
 - **list_positions**: List specific offices up for election
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BallotReady** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What elections are coming up for the address 123 Main St, Chicago, IL?"
+
+**🤖 AI Agent:**
+> I've found 2 upcoming elections for that address: the General Election on November 3rd and a Municipal Special Election on June 15th. Would you like to see the candidates or ballot measures for either?
+
+---
+
+**👤 You:**
+> "Show me the profile for candidate ID 98765."
+
+**🤖 AI Agent:**
+> Candidate Profile: Jane Smith. She is running for State Senate. Her platform focuses on education reform and infrastructure. I can provide more details on her previous experience if needed.
+
+---
+
+**👤 You:**
+> "Which voting districts cover 1600 Pennsylvania Ave NW, Washington, DC?"
+
+**🤖 AI Agent:**
+> Retrieving district mapping... That address is covered by DC's At-Large Congressional District and DC Council Ward 2. I can also list the current officeholders for these districts.
+
+
 ## Installation & Usage
 
 To install and use the **BallotReady** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BallotReady** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

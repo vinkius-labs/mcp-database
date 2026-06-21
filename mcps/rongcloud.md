@@ -1,12 +1,14 @@
 # RongCloud MCP Server
 
-Leading IM and RTC platform in China — manage users, messages, and chatrooms via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rongcloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rongcloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rongcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rongcloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Leading IM and RTC platform in China — manage users, messages, and chatrooms via AI.
 
 ## Description
 Empower your AI agent to orchestrate your communication infrastructure with **RongCloud** (融云), the dominant IM and RTC platform in China. By connecting RongCloud to your agent, you transform complex user management, real-time messaging, and chatroom control into a natural conversation. Your agent can instantly retrieve connection tokens for users, monitor online status, send private or chatroom messages, and manage user blocks or blacklists without you ever needing to navigate the RongCloud Developer Console. Whether you are building a high-volume social app or coordinating enterprise communication, your agent acts as a real-time messaging assistant, keeping your communication flow accurate and your user data secure.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your communication infrastructure with **Ro
 - **send_private_msg**: Send private message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RongCloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get an IM token for user 'mario-123'."
+
+**🤖 AI Agent:**
+> I've retrieved the connection token for Mario. You can use this token to initialize the client SDK for this user session.
+
+---
+
+**👤 You:**
+> "Check if user 'renato-456' is currently online."
+
+**🤖 AI Agent:**
+> I've checked the status for Renato. He is currently 'Online' and connected to the IM server.
+
+---
+
+**👤 You:**
+> "Send a text message to chatroom 'room-8821' from user 'bot-01'."
+
+**🤖 AI Agent:**
+> Done! I've sent your message to all participants in chatroom 'room-8821'. The message has been successfully broadcasted.
+
+
 ## Installation & Usage
 
 To install and use the **RongCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **RongCloud** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Giphy MCP Server
 
-Enhance conversations with GIPHY — search millions of GIFs, stickers, and emojis, or translate text into visual expressions directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/giphy-alternative-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giphy-alternative-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/giphy-alternative-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/giphy-alternative-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 22
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Enhance conversations with GIPHY — search millions of GIFs, stickers, and emojis, or translate text into visual expressions directly from your AI agent.
 
 ## Description
 Connect the **GIPHY** library to your AI agent to bring visual flair and personality to any interaction. Access the world's largest library of animated content through simple natural language commands.
@@ -60,6 +62,33 @@ Get trending GIPHY Clips
 - **upload_gif**: Upload a GIF to GIPHY
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Giphy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top trending GIFs on GIPHY right now."
+
+**🤖 AI Agent:**
+> I've retrieved the current trending GIFs. Highlights include a celebratory dance, a cute sleeping puppy, and a popular movie reaction. Would you like to see more or search for something specific?
+
+---
+
+**👤 You:**
+> "Search for a 'happy dance' sticker."
+
+**🤖 AI Agent:**
+> I found several 'happy dance' stickers with transparent backgrounds. Here are the top results featuring animated characters and colorful typography. Which one would you like to use?
+
+---
+
+**👤 You:**
+> "Translate 'good morning' into a GIF."
+
+**🤖 AI Agent:**
+> Using GIPHY's translation algorithm, I've found the perfect 'good morning' GIF: a bright sunrise with steaming coffee. Does this capture the mood you're looking for?
+
+
 ## Installation & Usage
 
 To install and use the **Giphy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Giphy** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

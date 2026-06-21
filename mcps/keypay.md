@@ -1,12 +1,14 @@
 # KeyPay MCP Server
 
-Manage payroll, employees, and pay runs via the Employment Hero Payroll (KeyPay) API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/keypay)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keypay)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keypay-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keypay-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 10
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage payroll, employees, and pay runs via the Employment Hero Payroll (KeyPay) API.
 
 ## Description
 Connect your **KeyPay** (now Employment Hero Payroll) account to any AI agent to streamline your payroll operations. This MCP server enables your agent to interact with businesses, pay runs, employees, and compliance data directly.
@@ -45,6 +47,33 @@ Connect your **KeyPay** (now Employment Hero Payroll) account to any AI agent to
 - **list_pay_slips**: List payslips for an employee
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **KeyPay** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all businesses in my KeyPay account."
+
+**🤖 AI Agent:**
+> I've retrieved your businesses. You have 3 registered entities: 'Acme Australia', 'Acme Global Services', and 'Tech Ventures Pty Ltd'.
+
+---
+
+**👤 You:**
+> "Show me the pay runs for business ID '12345'."
+
+**🤖 AI Agent:**
+> For business 12345, I found 5 recent pay runs. The latest is 'Fortnightly Pay Period' ending May 15th, currently marked as 'Finalised'.
+
+---
+
+**👤 You:**
+> "Find employee 'John Smith' in business '12345'."
+
+**🤖 AI Agent:**
+> I've found 'John Smith' (ID: 98765) in business 12345. He is currently active and listed as a 'Senior Developer'.
+
+
 ## Installation & Usage
 
 To install and use the **KeyPay** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **KeyPay** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

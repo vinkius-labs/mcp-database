@@ -1,12 +1,14 @@
 # Cvent MCP Server
 
-Equip your AI agent to manage event registrations, sessions, and attendees directly via the Cvent API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cvent)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cvent)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cvent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cvent-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage event registrations, sessions, and attendees directly via the Cvent API.
 
 ## Description
 Integrate **Cvent**, the world's leading event management platform, directly into your AI workflow. Manage your large-scale conferences, meetings, and seminars, track attendee lists, and monitor event sessions using natural language.
@@ -64,6 +66,33 @@ List venues configured in the account
 Search for events using a filter string
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cvent** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active events in my Cvent account."
+
+**🤖 AI Agent:**
+> I've found 3 active events: 'Annual Global Summit', 'Q3 Sales Kickoff', and 'Product Launch 2024'. Would you like to see the registration status for any of these?
+
+---
+
+**👤 You:**
+> "Show me the speakers for the 'Annual Global Summit' event."
+
+**🤖 AI Agent:**
+> The 'Annual Global Summit' (ID: 123) has 12 speakers confirmed, including 'Dr. Aris Thorne' and 'Sarah Jenkins'. Should I list their session assignments?
+
+---
+
+**👤 You:**
+> "Who is registered for the 'Q3 Sales Kickoff' event?"
+
+**🤖 AI Agent:**
+> There are currently 45 people registered for 'Q3 Sales Kickoff'. 30 have completed their registration, and 15 are pending. Would you like to see the list of pending attendees?
+
+
 ## Installation & Usage
 
 To install and use the **Cvent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Cvent** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Grain MCP Server
 
-Manage AI meeting notes via Grain — list and search recordings, retrieve transcripts and AI insights, and track action items directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grain)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grain)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grain-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grain-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 12
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage AI meeting notes via Grain — list and search recordings, retrieve transcripts and AI insights, and track action items directly from any AI agent.
 
 ## Description
 Connect your **Grain.com** account to any AI agent and take full control of your team meeting recordings, automated transcriptions, and AI-powered insights through natural conversation.
@@ -52,6 +54,33 @@ Connect your **Grain.com** account to any AI agent and take full control of your
 - **get_insights**: Retrieve AI-generated insights from a recording
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Grain** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my meeting recordings from today"
+
+**🤖 AI Agent:**
+> Retrieving your recordings... I found 2 meetings today: 'Product Roadmap Sync' (45m) and 'Client Q&A'. Would you like the AI summary or action items for the roadmap sync?
+
+---
+
+**👤 You:**
+> "What were the key decisions in the 'Roadmap Sync' meeting?"
+
+**🤖 AI Agent:**
+> Retrieving insights... In the 'Roadmap Sync', the team decided to: 1. Prioritize the API V2 launch for June. 2. Postpone the dashboard refactor to Q3. I've also identified 3 linked action items for the engineering team.
+
+---
+
+**👤 You:**
+> "Search for recordings mentioning 'pricing strategy'"
+
+**🤖 AI Agent:**
+> Searching recordings... I found 3 meetings mentioning 'pricing strategy'. The most relevant is 'Q3 Pricing Workshop' from last Friday. Would you like to see the specific transcript segments where this was discussed?
+
+
 ## Installation & Usage
 
 To install and use the **Grain** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Grain** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

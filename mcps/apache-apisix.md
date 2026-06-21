@@ -1,12 +1,14 @@
 # Apache APISIX MCP Server
 
-Manage your cloud-native API Gateway via AI — configure routes, services, upstreams, and consumers through the APISIX Admin API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apache-apisix)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apache-apisix)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apache-apisix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apache-apisix-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 50
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage your cloud-native API Gateway via AI — configure routes, services, upstreams, and consumers through the APISIX Admin API.
 
 ## Description
 Connect your **Apache APISIX** instance to any AI agent to orchestrate high-performance traffic management through natural language.
@@ -85,6 +87,33 @@ Connect your **Apache APISIX** instance to any AI agent to orchestrate high-perf
 - **delete_upstream**: Delete an APISIX Upstream
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apache APISIX** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active routes in my APISIX gateway."
+
+**🤖 AI Agent:**
+> I've retrieved your routes. You have 3 active routes: 'api-v1' (ID: 1), 'auth-service' (ID: 2), and 'dashboard' (ID: 3). Would you like to see the details for any of them?
+
+---
+
+**👤 You:**
+> "Show me the configuration for upstream ID 'backend-cluster'."
+
+**🤖 AI Agent:**
+> Fetching upstream 'backend-cluster'... This upstream uses 'roundrobin' balancing with two nodes: 192.168.1.10:8080 (weight 1) and 192.168.1.11:8080 (weight 1).
+
+---
+
+**👤 You:**
+> "List all consumers to check who has access to the API."
+
+**🤖 AI Agent:**
+> I found 2 consumers: 'mobile-app-client' and 'internal-dev-team'. Both are active and linked to their respective authentication plugins.
+
+
 ## Installation & Usage
 
 To install and use the **Apache APISIX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -93,4 +122,11 @@ To install and use the **Apache APISIX** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Ezus MCP Server
 
-Streamline travel agency operations via Ezus — manage projects, clients, suppliers, and invoices through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ezus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ezus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ezus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ezus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 12
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Streamline travel agency operations via Ezus — manage projects, clients, suppliers, and invoices through your AI agent.
 
 ## Description
 Connect your **Ezus** travel management account to any AI agent and take full control of your agency's workflows through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Ezus** travel management account to any AI agent and take full co
 - **list_products**: List all Ezus products
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ezus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my recent travel projects on Ezus."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 'Summer in Paris' (ID: 789) and 'Tokyo Explorer' (ID: 456) currently active. Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the details for client ID 12345."
+
+**🤖 AI Agent:**
+> Inspecting client 12345... This is 'John Doe', a frequent traveler with a preference for luxury stays. They are currently associated with the 'Swiss Alps Adventure' project.
+
+---
+
+**👤 You:**
+> "Get all products available in the catalog."
+
+**🤖 AI Agent:**
+> Fetching catalog... I found 12 products including 'Safari Package', 'Guided City Tour', and 'Airport Transfer'. Which one should I inspect further?
+
+
 ## Installation & Usage
 
 To install and use the **Ezus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Ezus** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Sauce Labs MCP Server
 
-Monitor and manage UI/E2E test automation at scale via AI — stop failing jobs, inspect video logs, and check pipeline concurrency metrics.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sauce-labs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sauce-labs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sauce-labs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sauce-labs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 11
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Monitor and manage UI/E2E test automation at scale via AI — stop failing jobs, inspect video logs, and check pipeline concurrency metrics.
 
 ## Description
 Connect your **Sauce Labs** account to any AI agent to bring your entire test execution landscape directly into your chat workflow. Say goodbye to jumping between CI/CD tools and the Sauce Labs dashboard to investigate failures.
@@ -51,6 +53,33 @@ Lists all supported OS and browser combinations
 - **stop_job**: Stops a running test job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sauce Labs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is our current concurrency usage vs limit in Sauce Labs?"
+
+**🤖 AI Agent:**
+> I checked your concurrency data. You are currently using 12 out of your 25 allowed parallel sessions. There are currently no queued jobs. You have plenty of capacity to spin up a new test run.
+
+---
+
+**👤 You:**
+> "Show me the jobs that failed in my last automation build."
+
+**🤖 AI Agent:**
+> In your most recent build ('Nightly Regression 2.4.1'), exactly 1 out of 45 jobs failed. Job ID: fbd198. The failure occurred on Chrome version 114 (Windows 10). Would you like the deep link to the video asset or the error log for this job?
+
+---
+
+**👤 You:**
+> "Stop the test job ID 4f4f391e0 because it's stuck."
+
+**🤖 AI Agent:**
+> I've successfully terminated Job ID 4f4f391e0. The status has changed to 'aborted' and the underlying machine node has been freed, releasing 1 concurrent session to the pool.
+
+
 ## Installation & Usage
 
 To install and use the **Sauce Labs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Sauce Labs** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

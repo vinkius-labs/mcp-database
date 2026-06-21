@@ -1,12 +1,14 @@
 # Serviceform MCP Server
 
-Convert website visitors with chatbots, forms, and booking widgets that generate leads and collect data without friction.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/serviceform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/serviceform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/serviceform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/serviceform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Convert website visitors with chatbots, forms, and booking widgets that generate leads and collect data without friction.
 
 ## Description
 Connect your **Serviceform** account to any AI agent and take full control of your conversational marketing and lead orchestration through natural conversation. Serviceform provides a comprehensive platform for building chatbots, forms, and interactive multi-channel engagement, and this integration allows you to retrieve chat logs, manage flex spaces, and extract lead metadata directly from your chat interface.
@@ -46,6 +48,33 @@ List chat histories
 - **list_spaces**: List flex spaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Serviceform** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active flex spaces in my Serviceform account."
+
+**🤖 AI Agent:**
+> I've retrieved your spaces. You have 3 active environments: 'Sales Support', 'Marketing Hub', and 'General Inquiries'. Which one would you like to see items for?
+
+---
+
+**👤 You:**
+> "Show me the last 3 leads from today."
+
+**🤖 AI Agent:**
+> Fetching latest leads... I found 3 new contacts including 'John Doe' (ID: 9912) and 'Alice Brown' (ID: 9913). Would you like to see the full profile for any of them?
+
+---
+
+**👤 You:**
+> "List all my chatbots in Serviceform."
+
+**🤖 AI Agent:**
+> Retrieving chatbots... You have 5 configured bots including 'Site Helper', 'Pricing Assistant', and 'Lead Generator v2'. Should I check the statistics for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Serviceform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Serviceform** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

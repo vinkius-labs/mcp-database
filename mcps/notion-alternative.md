@@ -1,12 +1,14 @@
 # Notion MCP Server
 
-Manage Notion pages, databases and blocks via API — search content, query databases, create rows and append blocks from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/notion-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/notion-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/notion-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/notion-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 13
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Notion pages, databases and blocks via API — search content, query databases, create rows and append blocks from any AI agent.
 
 ## Description
 Connect your **Notion** workspace to any AI agent and take full control of your pages, databases and content through natural conversation.
@@ -77,6 +79,33 @@ Search pages and databases in Notion
 Update properties of a Notion page
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Notion** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all pages related to 'Q4 planning'."
+
+**🤖 AI Agent:**
+> I found 3 pages matching 'Q4 planning': 'Q4 OKRs' (database), 'Q4 Budget Review' (page, last edited 2 days ago) and 'Q4 Team Retrospective' (page, last edited last week). Would you like to see the content of any of these?
+
+---
+
+**👤 You:**
+> "Query my Task Tracker database and show me all items with status 'In Progress'."
+
+**🤖 AI Agent:**
+> I found 12 tasks with status 'In Progress' in your Task Tracker database. The highest priority items are 'Implement OAuth flow' (due tomorrow), 'Fix checkout bug' (due today) and 'Update API documentation' (no due date). Want me to show all 12?
+
+---
+
+**👤 You:**
+> "Add a new task to my Task Tracker called 'Review PR #234' with status 'To Do'."
+
+**🤖 AI Agent:**
+> Done! I've created a new page 'Review PR #234' in your Task Tracker database with status set to 'To Do'. The page URL is notion.so/your-workspace/... You can add more properties or blocks to it anytime.
+
+
 ## Installation & Usage
 
 To install and use the **Notion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **Notion** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

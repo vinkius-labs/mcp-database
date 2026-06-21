@@ -1,12 +1,14 @@
 # VATNode MCP Server
 
-Validate and audit VAT numbers — identify tax rates and companies via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vatnode)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vatnode)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vatnode-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vatnode-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 6
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Validate and audit VAT numbers — identify tax rates and companies via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire VAT validation and tax auditing workflow with **VATNode**, the reliable source for global VAT intelligence. By connecting VATNode to your agent, you transform complex tax compliance tasks into a natural conversation. Your agent can instantly verify if a VAT number is valid, audit company registration details, and retrieve current tax rates for any country without you ever touching a manual lookup tool. Whether you are conducting financial due diligence or managing international invoicing, your agent acts as a real-time tax consultant, ensuring your business data is always verified and compliant.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire VAT validation and tax auditing
 - **validate_vat_number**: Verify if a VAT number is valid and retrieve company metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **VATNode** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Validate the VAT number 'DE123456789' using VATNode."
+
+**🤖 AI Agent:**
+> VAT number validated! The ID is valid and corresponds to a registered company in Germany. I've retrieved the company name and address. Would you like the current VAT rates for Germany as well?
+
+---
+
+**👤 You:**
+> "What are the standard VAT rates in 'France' (FR)?"
+
+**🤖 AI Agent:**
+> I've retrieved the VAT rates for France. The standard rate is 20%. Reduced rates of 10%, 5.5%, and 2.1% are also available for specific categories. I can assist you with more tax auditing if needed.
+
+---
+
+**👤 You:**
+> "List all countries with a standard VAT rate above 20%."
+
+**🤖 AI Agent:**
+> I've scanned the global rate catalog. Countries with standard rates above 20% include Hungary (27%), Denmark (25%), and Sweden (25%). Would you like the full list of metadata for these countries?
+
+
 ## Installation & Usage
 
 To install and use the **VATNode** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **VATNode** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

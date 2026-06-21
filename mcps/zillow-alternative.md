@@ -1,12 +1,14 @@
 # Zillow MCP Server
 
-Access real estate data, Zestimates, and property details directly from Zillow — search addresses, get valuations, and analyze market trends.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zillow-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zillow-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zillow-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zillow-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 12
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Access real estate data, Zestimates, and property details directly from Zillow — search addresses, get valuations, and analyze market trends.
 
 ## Description
 Connect your **Zillow** API access to any AI agent to retrieve comprehensive real estate data and property valuations through natural conversation.
@@ -54,6 +56,33 @@ Returns a list of subregions for a specified region
 - **get_zestimate**: Returns the most recent Zestimate for a ZPID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zillow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the ZPID and Zestimate for 2150 N 107th St, Seattle, WA 98133."
+
+**🤖 AI Agent:**
+> I've located the property. The Zillow Property ID (ZPID) is 48749425. The current Zestimate is $845,000 with a valuation range between $802,000 and $887,000.
+
+---
+
+**👤 You:**
+> "Show me 5 comparable sales for ZPID 48749425."
+
+**🤖 AI Agent:**
+> I've found 5 comparable sales near that property. Prices range from $820,000 to $865,000. Would you like the deep property details for these comps?
+
+---
+
+**👤 You:**
+> "Generate a 5-year historical Zestimate chart for ZPID 48749425."
+
+**🤖 AI Agent:**
+> I've generated the chart URL for you. You can view the 5-year historical trend for this property here: [Chart URL]. It shows a steady 12% increase over the last period.
+
+
 ## Installation & Usage
 
 To install and use the **Zillow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Zillow** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

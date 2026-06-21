@@ -1,12 +1,14 @@
 # Lexzur MCP Server
 
-Manage legal operations with contract lifecycle tracking, matter management, and compliance workflows for corporate legal teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lexzur)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lexzur)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lexzur-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lexzur-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage legal operations with contract lifecycle tracking, matter management, and compliance workflows for corporate legal teams.
 
 ## Description
 Connect your **Lexzur** (formerly App4Legal) account to any AI agent and take full control of your legal practice management and automated case workflows through natural conversation.
@@ -47,6 +49,33 @@ No more manual logging into complex legal dashboards or missing case updates. Yo
 - **list_time_logs**: List time entries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lexzur** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active corporate matters in my Lexzur account."
+
+**🤖 AI Agent:**
+> I've retrieved your corporate matters. You currently have 15 active portfolios, including 'M&A Deal A' and 'Global Audit'. Would you like the detailed high-fidelity metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the status of litigation case 'Case_123'."
+
+**🤖 AI Agent:**
+> Accessing case architecture... Case_123 is currently in the 'Trial' stage. The high-fidelity history shows the last update was yesterday regarding 'Evidence Submission'. Need help checking upcoming deadlines for this case?
+
+---
+
+**👤 You:**
+> "Retrieve the contact details for company 'Acme Legal'."
+
+**🤖 AI Agent:**
+> Contact orchestrated! I've successfully retrieved the high-fidelity metadata for Acme Legal (ID: comp_789). They have 3 linked lawyers and 5 active matters. Shall I list the detailed history for this company?
+
+
 ## Installation & Usage
 
 To install and use the **Lexzur** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Lexzur** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

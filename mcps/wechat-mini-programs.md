@@ -1,12 +1,14 @@
 # WeChat Mini-Programs / 微信小程序 MCP Server
 
-China's dominant mini-app ecosystem — manage users, phone numbers, and messaging via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wechat-mini-programs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wechat-mini-programs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wechat-mini-programs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wechat-mini-programs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+China's dominant mini-app ecosystem — manage users, phone numbers, and messaging via AI.
 
 ## Description
 Empower your AI agent to orchestrate your mini-app operations and subscriber engagement with **WeChat Mini-Programs** (微信小程序), the dominant application platform in China. By connecting WeChat to your agent, you transform complex session management, phone number retrieval, and subscriber messaging into a natural conversation. Your agent can instantly exchange login codes for sessions, retrieve verified user phone numbers, generate unlimited scene QR codes, and audit content security without you ever needing to navigate the comprehensive WeChat MP portal. Whether you are automating user onboarding or coordinating a targeted notification blast, your agent acts as a real-time mini-app operations assistant, providing accurate and reliable results from a single, unified source.
@@ -48,6 +50,33 @@ Exchange code for session
 - **send_subscribe_message**: Send subscribe message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WeChat Mini-Programs / 微信小程序** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Exchange login code '0138...' for a user session."
+
+**🤖 AI Agent:**
+> I've successfully exchanged the code. The user's OpenID is `o88210934...`. The session key has been retrieved and stored securely. Would you like to check this user's profile or verified phone number?
+
+---
+
+**👤 You:**
+> "Send a subscribe message to 'o992018...' with template ID 'TEMP_8821'."
+
+**🤖 AI Agent:**
+> I've sent the structured subscribe message. The message ID is `88210934`. The user will receive the notification on their WeChat app immediately. Should I check the page-level visit trends for your mini-program?
+
+---
+
+**👤 You:**
+> "Generate an unlimited QR code for scene 'referral_8821' on page 'pages/index/index'."
+
+**🤖 AI Agent:**
+> I've generated the unlimited QR code for you. The binary data is ready for processing. This code will automatically pass the 'referral_8821' scene parameter to your mini-program when scanned. Would you like me to check the security of this page path?
+
+
 ## Installation & Usage
 
 To install and use the **WeChat Mini-Programs / 微信小程序** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **WeChat Mini-Programs / 微信小程序** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

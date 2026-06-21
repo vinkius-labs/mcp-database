@@ -1,12 +1,14 @@
 # Aconex MCP Server
 
-Manage construction and engineering projects via Aconex — list projects, search directories, copy projects, and invite users directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aconex)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aconex)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aconex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aconex-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 13
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage construction and engineering projects via Aconex — list projects, search directories, copy projects, and invite users directly from any AI agent.
 
 ## Description
 Connect your **Aconex** account to any AI agent and take control of your construction and engineering project management workflows through natural conversation.
@@ -55,6 +57,36 @@ List users within an organization
 Enable or disable existing users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Aconex** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active projects in Aconex."
+
+**🤖 AI Agent:**
+> I have retrieved your active projects. You have access to: 'Metropolitan Highway Expansion' (ID: 849201) and 'Downtown Commercial Tower' (ID: 302948). Would you like to inspect the details of either project?
+
+---
+
+**👤 You:**
+> "Search the global directory for users with the family name 'Smith' in the organization 'BuildCorp'."
+
+**🤖 AI Agent:**
+> Searching the Global Directory... I found 2 matching users:
+1. John Smith (john.smith@buildcorp.com)
+2. Sarah Smith (sarah.smith@buildcorp.com)
+Would you like to invite either of them to a project?
+
+---
+
+**👤 You:**
+> "Invite user 'usr-92018' to project 849201."
+
+**🤖 AI Agent:**
+> I've sent an invitation to user 'usr-92018' for project 849201 ('Metropolitan Highway Expansion'). They will receive a notification to join the project directory.
+
+
 ## Installation & Usage
 
 To install and use the **Aconex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +95,11 @@ To install and use the **Aconex** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

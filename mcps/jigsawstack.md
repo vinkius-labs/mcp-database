@@ -1,12 +1,14 @@
 # JigsawStack MCP Server
 
-Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jigsawstack)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jigsawstack)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jigsawstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jigsawstack-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform.
 
 ## Description
 Connect your **JigsawStack** account to any AI agent and access AI-powered utilities through natural conversation.
@@ -43,6 +45,33 @@ Connect your **JigsawStack** account to any AI agent and access AI-powered utili
 - **ai_web_search**: Perform an AI-powered web search
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **JigsawStack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scrape the top 10 products from this e-commerce page and validate the contact emails."
+
+**🤖 AI Agent:**
+> Scraped 10 products from example-shop.com. 1) 'Wireless Headphones' ($79.99, 4.5★). 2) 'Smart Watch' ($199.99, 4.8★). 3) 'USB-C Hub' ($34.99, 4.2★). Emails validated: contact@shop.com ✅ valid, support@shop.com ✅ valid, info@shop.com ⚠️ catch-all.
+
+---
+
+**👤 You:**
+> "Generate a SQL query to find the top 5 customers by revenue and geocode their addresses."
+
+**🤖 AI Agent:**
+> SQL generated: `SELECT c.name, SUM(o.total) as revenue FROM customers c JOIN orders o ON c.id = o.customer_id GROUP BY c.id ORDER BY revenue DESC LIMIT 5`. Geocoded: 1) '123 Main St, NYC' → 40.7128, -74.0060. 2) '456 Market St, SF' → 37.7749, -122.4194. 3) '789 Michigan Ave, Chicago' → 41.8781, -87.6298.
+
+---
+
+**👤 You:**
+> "Translate this product description to Spanish, French, and Portuguese."
+
+**🤖 AI Agent:**
+> Translations complete! ES: 'Transforma tus datos en insights accionables con nuestra plataforma de analytics.' FR: 'Transformez vos données en insights actionnables avec notre plateforme d'analytics.' PT: 'Transforme seus dados em insights acionáveis com nossa plataforma de analytics.' All 3 translations delivered with natural phrasing.
+
+
 ## Installation & Usage
 
 To install and use the **JigsawStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **JigsawStack** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

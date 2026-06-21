@@ -1,12 +1,14 @@
 # WhoisXML MCP Server
 
-Access comprehensive domain intelligence, WHOIS records, IP geolocation, and email verification directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/whoisxml)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/whoisxml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/whoisxml-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/whoisxml-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 4
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Access comprehensive domain intelligence, WHOIS records, IP geolocation, and email verification directly from your AI agent.
 
 ## Description
 Connect the **WhoisXML API** to your AI agent to perform deep network reconnaissance and data validation through natural language.
@@ -38,6 +40,33 @@ Connect the **WhoisXML API** to your AI agent to perform deep network reconnaiss
 - **verify_email**: Check if an email address is valid and exists
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WhoisXML** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the WHOIS record for google.com."
+
+**🤖 AI Agent:**
+> I've retrieved the WHOIS data for google.com. It was registered via MarkMonitor Inc. on 1997-09-15 and is set to expire on 2028-09-14.
+
+---
+
+**👤 You:**
+> "Where is the IP address 8.8.8.8 located?"
+
+**🤖 AI Agent:**
+> The IP address 8.8.8.8 is located in Mountain View, California, United States. It is operated by Google LLC.
+
+---
+
+**👤 You:**
+> "Verify if the email test@example.com is valid."
+
+**🤖 AI Agent:**
+> I checked test@example.com. The syntax is valid, but the domain does not have active MX records, suggesting it cannot receive emails.
+
+
 ## Installation & Usage
 
 To install and use the **WhoisXML** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **WhoisXML** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

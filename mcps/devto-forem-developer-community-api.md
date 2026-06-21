@@ -1,12 +1,14 @@
 # Dev.to (Forem Developer Community API) MCP Server
 
-Manage your Dev.to presence — publish articles, track engagement, and interact with the developer community directly through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/devto-forem-developer-community-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devto-forem-developer-community-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devto-forem-developer-community-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devto-forem-developer-community-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 36
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your Dev.to presence — publish articles, track engagement, and interact with the developer community directly through AI.
 
 ## Description
 Connect your **Dev.to** (Forem) account to your AI agent to streamline your technical writing and community management. This server provides full access to the Forem API, allowing you to handle content and community interactions without leaving your workspace.
@@ -71,6 +73,33 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 - **update_page**: Update page by ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dev.to (Forem Developer Community API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the top 5 articles about 'webdev' from the last 7 days."
+
+**🤖 AI Agent:**
+> I've found the top 5 articles for #webdev: 1. 'Modern CSS Techniques' by Jane Doe... [details]. Would you like me to summarize any of these?
+
+---
+
+**👤 You:**
+> "Show me my unpublished drafts on Dev.to."
+
+**🤖 AI Agent:**
+> You have 3 unpublished drafts: 'Understanding MCP', 'Rust for Beginners', and 'API Design Tips'. Which one would you like to work on?
+
+---
+
+**👤 You:**
+> "Get the latest comments for article ID 123456."
+
+**🤖 AI Agent:**
+> I've retrieved the comments for article 123456. There are 2 new comments: 'Great post!' from user123 and a question about implementation from dev_guru. Should I draft a reply?
+
+
 ## Installation & Usage
 
 To install and use the **Dev.to (Forem Developer Community API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Dev.to (Forem Developer Community API)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # arXiv MCP Server
 
-Access millions of scientific papers from arXiv — search by author, category, or keyword and fetch metadata directly from the open-access archive.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arxiv-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arxiv-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arxiv-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arxiv-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 4
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access millions of scientific papers from arXiv — search by author, category, or keyword and fetch metadata directly from the open-access archive.
 
 ## Description
 Connect to **arXiv**, the premier open-access archive for millions of scholarly articles in physics, mathematics, computer science, and more. This MCP server allows your AI agent to browse, search, and harvest scientific knowledge directly from the source.
@@ -46,6 +48,33 @@ Get the daily RSS feed for a specific arXiv category
 Search arXiv for articles using the legacy Query API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **arXiv** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search arXiv for recent papers about 'Large Language Models' in the computer science category."
+
+**🤖 AI Agent:**
+> I've found several recent papers on Large Language Models. Notable titles include 'Attention is All You Need' and 'Language Models are Few-Shot Learners'. Would you like the full metadata for any of these?
+
+---
+
+**👤 You:**
+> "Get the daily RSS feed for the 'cs.AI' category to see today's new submissions."
+
+**🤖 AI Agent:**
+> Fetching today's updates for Artificial Intelligence... I've retrieved the latest 10 submissions, including papers on neural network optimization and reinforcement learning. Should I summarize the top results?
+
+---
+
+**👤 You:**
+> "Use OAI-PMH to list the metadata formats available on arXiv."
+
+**🤖 AI Agent:**
+> I've queried the OAI-PMH interface. arXiv supports several metadata formats including 'oai_dc', 'arXiv', and 'arXivRaw'. Which format would you like to use for harvesting records?
+
+
 ## Installation & Usage
 
 To install and use the **arXiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **arXiv** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Sharetribe MCP Server
 
-Equip your AI agent to autonomously manage your marketplace. Approve listings, transition transaction states, audit user profiles, and moderate reviews.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sharetribe)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sharetribe)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sharetribe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sharetribe-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to autonomously manage your marketplace. Approve listings, transition transaction states, audit user profiles, and moderate reviews.
 
 ## Description
 Grant your AI agent (like Claude or Cursor) absolute administrative dominion over your custom marketplace. The **Sharetribe MCP** equips your LLM to act as a fully autonomous moderator and operations manager. Forget navigating complex vendor panels—now you can manage supply, moderate transactions, and govern your community via natural conversational prompts interacting deeply with your Integration API.
@@ -32,6 +34,25 @@ Grant your AI agent (like Claude or Cursor) absolute administrative dominion ove
 Transitions a transaction to a new state
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sharetribe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve all listings that are currently stuck in the 'pendingApproval' state."
+
+**🤖 AI Agent:**
+> Initiating a tactical sweep utilizing `list_listings` aggressively filtered strictly down to the `pendingApproval` state index revealed 4 latent entries idling without resolution. These include "Vintage Bicycle Framework" and three subsequent ambiguous property rental offerings.
+
+---
+
+**👤 You:**
+> "Retrieve the details and lifecycle state of the specific transaction bound to the order ID 9c42c2-8491-a9f."
+
+**🤖 AI Agent:**
+> Drilling precisely using the `get_transaction` node on string identifier '9c42c2-8491-a9f' unearthed an active, persistent booking element. The current underlying lifecycle state displays officially locked as `transition/preauthorized`.
+
+
 ## Installation & Usage
 
 To install and use the **Sharetribe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -40,4 +61,11 @@ To install and use the **Sharetribe** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

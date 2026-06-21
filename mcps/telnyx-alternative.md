@@ -1,12 +1,14 @@
 # Telnyx MCP Server
 
-Manage your Telnyx communications — audit phone numbers, messages, and calls via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telnyx-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telnyx-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Manage your Telnyx communications — audit phone numbers, messages, and calls via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire global communication infrastructure with **Telnyx**, the leading platform for mission-critical connectivity. By connecting Telnyx to your agent, you transform complex telecom management into a natural conversation. Your agent can instantly list your phone numbers, audit message delivery, and retrieve call logs without you ever touching a technical portal. Whether you are providing secure alerts or managing global voice infrastructure, your agent acts as a real-time telecom strategist, ensuring your communication is always reliable and your account data is organized.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire global communication infrastruc
 - **send_message**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Telnyx** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Telnyx phone numbers."
+
+**🤖 AI Agent:**
+> I've retrieved your phone numbers. You have 2 active numbers: '+1 234 567 890' and '+1 987 654 321'. Both are active and ready for voice/SMS.
+
+---
+
+**👤 You:**
+> "Check my Telnyx account balance."
+
+**🤖 AI Agent:**
+> I've retrieved your balance. You currently have $125.50 available in your Telnyx account. Credit limit is $0.00.
+
+---
+
+**👤 You:**
+> "Show me the last 5 calls for my project."
+
+**🤖 AI Agent:**
+> I've found 5 recent calls. Notable interactions include an outbound call to '+1 111 2222' with status 'completed'. Would you like the full metadata for any specific call?
+
+
 ## Installation & Usage
 
 To install and use the **Telnyx** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Telnyx** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

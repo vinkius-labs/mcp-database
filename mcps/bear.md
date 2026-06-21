@@ -1,12 +1,14 @@
 # Bear MCP Server
 
-Manage your Bear notes via AI — search, create, and organize your markdown knowledge base autonomously.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bear)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bear)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bear-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your Bear notes via AI — search, create, and organize your markdown knowledge base autonomously.
 
 ## Description
 Connect your **Bear App** database to any AI agent and manage your entire localized knowledge base through natural conversation.
@@ -50,6 +52,33 @@ Retrieve the exact Tags taxonomy nesting globally
 - **delete_tag**: Destroy entirely a Tag constraint globally
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bear** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search my Bear notes for anything mentioning 'Database Migration 2026'."
+
+**🤖 AI Agent:**
+> The query returned 3 explicit note UUIDs. The highly relevant document is titled 'Q1 Migration Plan' (UUID: FE12...). Should I open this full exact note fetching its entire underlying Markdown syntax?
+
+---
+
+**👤 You:**
+> "Rename the tag '#project/legacy' to '#archive/legacy_projects' across all my notes."
+
+**🤖 AI Agent:**
+> Globally executed target mutation. The tag '#project/legacy' has been fully reconstructed into '#archive/legacy_projects'. Bear natively propagated changes eliminating any obsolete string traces successfully.
+
+---
+
+**👤 You:**
+> "Create a new note with the title 'Meeting Notes - App V2' and tag it 'work/meetings/vurb'."
+
+**🤖 AI Agent:**
+> The note 'Meeting Notes - App V2' has been initialized via API injection and synced instantly. Its explicitly nested taxonomy tag 'work/meetings/vurb' binds correctly inside the local knowledge cache.
+
+
 ## Installation & Usage
 
 To install and use the **Bear** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Bear** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

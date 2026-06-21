@@ -1,12 +1,14 @@
 # Wiagro MCP Server
 
-Access smart silobag monitoring via Wiagro — track temperature, humidity, CO2, rupture detection, and grain quality from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wiagro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wiagro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wiagro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wiagro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 12
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access smart silobag monitoring via Wiagro — track temperature, humidity, CO2, rupture detection, and grain quality from any AI agent.
 
 ## Description
 Connect your **Wiagro Smart Silobag API** to any AI agent and take full control of IoT-based grain condition monitoring, rupture detection, satellite environmental monitoring, and silobag quality management through natural conversation.
@@ -80,6 +82,33 @@ List all silobags and conventional silos monitored by Wiagro
 Get historical temperature readings to detect hot spots and spoilage heating in a silobag
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wiagro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current temperature, humidity, and CO2 readings for silobag 3."
+
+**🤖 AI Agent:**
+> Fetching current readings for silobag 3 (Corn, 85% full)... Temperature: 22.3°C average across all sensors (max 23.1°C at center, min 21.5°C at edges). Humidity: 14.8% intergranular humidity (stable, within safe range). CO2: 920 ppm (normal, no biological activity detected). All 12 IoT sensors reporting healthy. Assessment: Grain condition is GOOD — no spoilage indicators detected. Temperature is uniform with no hot spots. Continue routine monitoring. Would you like to see the 30-day temperature trend?
+
+---
+
+**👤 You:**
+> "Check for any silobag rupture alerts or active warnings across my facility."
+
+**🤖 AI Agent:**
+> Checking facility alerts... No rupture alerts detected — all silobags are structurally intact according to satellite monitoring. Active warnings: 1 alert found. Silobag 7 — CO2 level approaching threshold (1450 ppm, warning level is 1500 ppm). Recommended action: Increase monitoring frequency and consider targeted aeration if CO2 continues rising. All other silobags are within normal parameters. Facility quality score: 94/100. Would you like detailed sensor readings for silobag 7?
+
+---
+
+**👤 You:**
+> "Give me a quality assessment for all my monitored silobags."
+
+**🤖 AI Agent:**
+> Generating quality assessments... Silobag 1 (Soybeans): Quality score 91/100 — Excellent condition, stable temperature at 18°C, CO2 at 780 ppm. Estimated storage life: 4+ months. Silobag 2 (Wheat): Quality score 87/100 — Good condition, minor temperature variation (20-22°C), CO2 at 890 ppm. Storage life: 3+ months. Silobag 3 (Corn): Quality score 94/100 — Excellent condition, uniform temperature, CO2 at 920 ppm. Storage life: 4+ months. Silobag 7 (Sorghum): Quality score 72/100 — FAIR condition, elevated CO2 trend (1450 ppm), requires closer monitoring. Storage life: 1-2 months if conditions stabilize. Priority action: Investigate silobag 7 CO2 increase. Overall facility average: 86/100.
+
+
 ## Installation & Usage
 
 To install and use the **Wiagro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Wiagro** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

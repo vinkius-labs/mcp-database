@@ -1,12 +1,14 @@
 # Coolify MCP Server
 
-Manage self-hosting via Coolify — monitor servers, deploy applications, manage databases, and trigger builds directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coolify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coolify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coolify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coolify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage self-hosting via Coolify — monitor servers, deploy applications, manage databases, and trigger builds directly from any AI agent.
 
 ## Description
 Connect your **Coolify** instance to any AI agent and take full control of your self-hosting and private cloud workflows through natural conversation.
@@ -65,6 +67,33 @@ Halt execution algorithms suspending the mapped Application
 Trigger a raw build pipeline fetching the latest Git commit
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coolify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active servers in my Coolify instance"
+
+**🤖 AI Agent:**
+> I found 2 servers: 'Main-Hetzner-Node' (UUID: abc-123) and 'Backup-Vultr' (UUID: def-456). Both are connected and running Docker Swarm. Would you like to see the applications on either of these?
+
+---
+
+**👤 You:**
+> "Trigger a deployment for application 'backend-api'"
+
+**🤖 AI Agent:**
+> Deployment triggered for 'backend-api'! Coolify is now fetching the latest Git commit and rebuilding the Nixpacks image. I will notify you once the new version is live.
+
+---
+
+**👤 You:**
+> "What is the connection string for database 'user-db-prod'?"
+
+**🤖 AI Agent:**
+> Retrieving connection string for 'user-db-prod'... The internal URI is: postgres://user:pass@coolify-db-abc:5432/user_db. This URI is only accessible within your internal Docker network.
+
+
 ## Installation & Usage
 
 To install and use the **Coolify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Coolify** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # LangSmith (LLM Observability & Hub) MCP Server
 
-Monitor LLM apps via LangSmith — track traces, audit prompt templates, and manage evaluation datasets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/langsmith-llm-observability-hub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langsmith-llm-observability-hub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langsmith-llm-observability-hub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langsmith-llm-observability-hub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 6
+
+**Category:** [superpower](../categories/superpower.md)
+
+Monitor LLM apps via LangSmith — track traces, audit prompt templates, and manage evaluation datasets.
 
 ## Description
 Connect your **LangSmith** account to any AI agent and take full control of your LLM observability, tracing, and prompt management through natural conversation.
@@ -46,6 +48,33 @@ List explicit LLM invocation runs within a specific project
 - **list_annotation_queues**: List active human-in-the-loop annotation queues
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LangSmith (LLM Observability & Hub)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active tracing projects in LangSmith"
+
+**🤖 AI Agent:**
+> I've found 4 active tracing projects: 'Production-Bot-V2', 'Staging-RAG-Explorer', 'Customer-Support-Agent', and 'Internal-Testing-Suite'. Which one would you like to see the recent runs for?
+
+---
+
+**👤 You:**
+> "Show me the telemetry for the last run in the 'Production-Bot-V2' project"
+
+**🤖 AI Agent:**
+> Retrieving data for run ID 'run-98765'… The execution was successful. Total tokens: 1,420 (Prompt: 850, Completion: 570). Latency: 2.4s. The agent successfully used the 'Web-Search' tool before generating the answer. No errors detected.
+
+---
+
+**👤 You:**
+> "List all prompts hosted in our Hub repository"
+
+**🤖 AI Agent:**
+> I've identified 3 prompts in your Hub: 'summarization-agent-v1', 'customer-service-v3', and 'data-extraction-helper'. I can retrieve the full instruction text and version history for any of these.
+
+
 ## Installation & Usage
 
 To install and use the **LangSmith (LLM Observability & Hub)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **LangSmith (LLM Observability & Hub)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

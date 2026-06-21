@@ -1,12 +1,14 @@
 # Doctolib MCP Server
 
-Manage medical appointments via Doctolib — search practitioners by specialty and city, track availabilities, and book consultations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/doctolib)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doctolib)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doctolib-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doctolib-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage medical appointments via Doctolib — search practitioners by specialty and city, track availabilities, and book consultations directly from any AI agent.
 
 ## Description
 Connect your **Doctolib** partner account to any AI agent and take full control of your healthcare scheduling and practitioner research through natural conversation.
@@ -48,6 +50,33 @@ Rechercher des praticiens par spécialité et ville
 - **motifs_consultation**: Lister les motifs de consultation d'un praticien
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Doctolib** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for general practitioners in Paris"
+
+**🤖 AI Agent:**
+> I found 5 general practitioners in Paris. Top results include 'Dr. Martin' (75001) and 'Dr. Lefebvre' (75008). Would you like to check their available slots for this week?
+
+---
+
+**👤 You:**
+> "What are the available slots for Dr. Martin (ID: 123) tomorrow?"
+
+**🤖 AI Agent:**
+> Dr. Martin has 3 slots available tomorrow: 10:00 AM, 11:30 AM, and 2:00 PM. Would you like to book one of these using your registered email?
+
+---
+
+**👤 You:**
+> "List my upcoming medical appointments"
+
+**🤖 AI Agent:**
+> Retrieving appointments... You have 1 upcoming consultation: 'Dr. Martin' on Wednesday at 10:00 AM. I can provide the practice address and motive for you.
+
+
 ## Installation & Usage
 
 To install and use the **Doctolib** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Doctolib** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Eiffel Structural Prover MCP Server
 
-Peak season. 18,000 failed fulfillments in 23 minutes. Processing center collapsed at 4x normal volume. Plan said 'additional staff will handle it.' Nobody calculated the load. Nobody tested what happens when sorting exhausts while staging overflows while delivery schedules expire simultaneously. Eiffel calculated wind force at every height — 7 tons/m² at the summit. He manufactured 18,038 iron pieces to 0.1mm tolerance, tested each individually. This tool forces structural rigor: quantify loads, modularize components, account for environmental forces, prove with math, align stakeholders.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eiffel-structural-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eiffel-structural-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eiffel-structural-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eiffel-structural-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** architecture
-**Tools Count:** 1
+
+**Category:** [architecture](../categories/architecture.md)
+
+Peak season. 18,000 failed fulfillments in 23 minutes. Processing center collapsed at 4x normal volume. Plan said 'additional staff will handle it.' Nobody calculated the load. Nobody tested what happens when sorting exhausts while staging overflows while delivery schedules expire simultaneously. Eiffel calculated wind force at every height — 7 tons/m² at the summit. He manufactured 18,038 iron pieces to 0.1mm tolerance, tested each individually. This tool forces structural rigor: quantify loads, modularize components, account for environmental forces, prove with math, align stakeholders.
 
 ## Description
 AI agents design structures that collapse under real-world loads. They design for the happy path. They estimate instead of calculating. They build monoliths and test nothing in isolation.
@@ -55,6 +57,33 @@ LLMs commit five structural failures:
 Structured reflection tool for Eiffel-grade structural engineering — quantifying load forces, designing modular prefabricated components, accounting for environmental forces beyond normal operation, proving structural decisions with calculations, and aligning stakeholders with evidence. Catches Load Unanalyzed (designing without quantifying the forces — "should handle the workload" without measuring static baseline, dynamic peaks, force concentration points, and structural limits. Eiffel calculated 7 tons of wind pressure per m² at the summit before drawing a single line), Modularity Absent (monolithic design where everything depends on everything — no independently testable components, no defined interfaces, no replaceability. Eiffel manufactured 18,038 pieces off-site to 0.1mm tolerance, each testable in isolation), Environment Ignored (designing only for normal conditions — no wind spikes, no seasonal variation, no accumulated degradation, no disruptive change. The Tower's curved silhouette is wind mathematics, not aesthetic decoration), Rigor Missing ("should be enough" instead of calculations with measured inputs, numeric results, and explicit safety margins. Eiffel predicted tower deflection to centimeters before construction), and Stakeholder Blindness ("too complex to explain" — Eiffel published his calculations in newspapers when critics attacked the Tower. Evidence is the only persuasion). Call once per structure, organization, or load-bearing design
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eiffel Structural Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Our order fulfillment center should handle volume well. Additional staff will take care of spikes. The operation performs well under normal conditions, and the capacity should be big enough for our needs."
+
+**🤖 AI Agent:**
+> LOAD_UNANALYZED — 'Should handle volume,' 'additional staff will take care,' 'under normal conditions,' 'should be big enough' — four structural weaknesses in three sentences. Eiffel calculated 7 tons of wind pressure per square meter at the tower's summit. He did not say 'the structure should handle wind.' What is YOUR peak volume? At what concurrent order count does your sorting capacity exhaust? What is the average processing time under 4x normal volume? 'Additional staff' is not a load analysis — it is hope with a payroll bill. Calculate the forces.
+
+---
+
+**👤 You:**
+> "Load: 850 orders/day baseline (measured Mar 1-15). Peak 3,400/day (holiday season). Sorting 200/hour max at 80% utilization. Yield point: 4,200/day — cycle time >2h, cascading delays (time study Mar 20). Modularity: 3 stations — Receiving, Picking, Shipping. Each testable via audits. Handoff via standardized order ticket. Environment: promotional spikes 4x in 23 min, seasonal Dec 2.3x baseline, supplier format changing Q4, safety regulation Q2 2025. Math: L = λW. Peak 425/hour × 28 min = 198 concurrent. Sorting capacity 200/hour. Headroom 1% — unsafe. Expand to 300/hour for 52% margin at $4,700/month. Stakeholder: supplier format transition $18K over 3 months vs $350K exposure per incident post-discontinuation."
+
+**🤖 AI Agent:**
+> STRUCTURE_PROVEN — Eiffel Method complete. Load: 850 orders/day baseline (tracking system measured), 3,400 peak (holiday season measured), yield at 4,200 (time study March 20) — forces quantified with sources. Modularity: 3 stations (Receiving, Picking, Shipping) with audit protocols, standardized handoff interfaces, verified transfers — testable in isolation. Environment: wind (4x promotional spikes), temperature (Dec 2.3x seasonal), corrosion (supplier format change Q4), seismic (safety regulation Q2 2025) — four force vectors documented. Math: Queuing theory proves sorting at 99% utilization during peak (198/200) — only 1% headroom is structurally unsafe. Sorting → 300/hour provides 52% margin for $4,700/month. Stakeholder: format transition translated to $18K cost vs $350K exposure per incident, timeline and ROI documented. This structure stands.
+
+---
+
+**👤 You:**
+> "Load: 850 orders/day, capacity yields at 4,200. Modularity: Receiving, Picking, and Shipping stations are independently operated with quality audits. Environment: assuming no disruptions and under standard volume, the operation performs well. We also need to transition to the new supplier format but it is too technical to explain to the leadership team."
+
+**🤖 AI Agent:**
+> ENVIRONMENT_IGNORED — Load passes: 850 orders/day baseline, 4,200 yield point — forces quantified. Modularity passes: 3 independent stations with quality audits. But environment fails catastrophically: 'assuming no disruptions' and 'under standard volume' are sunny-day thinking. The Eiffel Tower's curve is an exponential function minimizing WIND — the force nobody plans for. What happens during a promotional spike (wind)? During December volume surge (temperature)? When the supplier discontinues the old format (corrosion)? When the new safety regulation takes effect (seismic)? Additionally: 'too technical to explain to the leadership team' — Eiffel published structural calculations in newspapers when 300 artists attacked. Translate: transition cost ($X) vs throughput exposure ($Y per incident). 'Trust us' is not alignment.
+
+
 ## Installation & Usage
 
 To install and use the **Eiffel Structural Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Eiffel Structural Prover** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

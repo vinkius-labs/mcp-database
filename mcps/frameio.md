@@ -1,12 +1,14 @@
 # Frame.io MCP Server
 
-Collaborate on video, manage creative assets, and track comments via AI agents with Frame.io.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/frameio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frameio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frameio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frameio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 12
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Collaborate on video, manage creative assets, and track comments via AI agents with Frame.io.
 
 ## Description
 Connect your **Frame.io** account to any AI agent to automate your video collaboration and creative workflows through the Model Context Protocol (MCP). Frame.io is the industry-leading platform for reviewing and approving media, allowing teams to stay in sync from anywhere in the world. This MCP server enables you to manage your projects, retrieve asset metadata, and participate in time-coded discussions directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Frame.io** account to any AI agent to automate your video collabo
 - **list_teams**: List Frame.io teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Frame.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my projects in Frame.io team 'team_abc123'."
+
+**🤖 AI Agent:**
+> Retrieving projects... I found 4 active projects in your team, including 'Spring Campaign' and 'Product Launch Video'. Would you like to see the assets for any of these?
+
+---
+
+**👤 You:**
+> "Show me the last 5 comments on video asset 'vid_9876'."
+
+**🤖 AI Agent:**
+> Fetching comments... I found 5 recent updates for 'vid_9876', including a request to 'fix the color grade at 00:45' and a note about 'audio levels being too low'.
+
+---
+
+**👤 You:**
+> "Add a comment to 'vid_9876': 'Great work, let\'s proceed to export' at 120 seconds."
+
+**🤖 AI Agent:**
+> Comment added! Your feedback has been successfully posted to 'vid_9876' at the 02:00 mark. Your team will see your approval in the project timeline.
+
+
 ## Installation & Usage
 
 To install and use the **Frame.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Frame.io** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

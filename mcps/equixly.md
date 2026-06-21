@@ -1,12 +1,14 @@
 # Equixly MCP Server
 
-Automate API security testing via Equixly — manage target services, trigger autonomous AI pentests, and audit vulnerability findings directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/equixly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/equixly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/equixly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/equixly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate API security testing via Equixly — manage target services, trigger autonomous AI pentests, and audit vulnerability findings directly from any AI agent.
 
 ## Description
 Connect your **Equixly** account to any AI agent and take full control of your autonomous API security testing and vulnerability management through natural conversation.
@@ -68,6 +70,33 @@ Launch a new autonomous AI penetration test against a service
 Upload an API specification (OpenAPI, Postman, etc.) to a service
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Equixly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Trigger a security scan for API service 'Billing-v1'"
+
+**🤖 AI Agent:**
+> Pentest initiated! I've triggered an autonomous attack session for 'Billing-v1' (ID: svc_123). The AI Hacker is now exploring and testing your API. I'll notify you when the results are ready.
+
+---
+
+**👤 You:**
+> "Show me the critical findings from the latest scan of service 'Payments'"
+
+**🤖 AI Agent:**
+> Retrieving findings for 'Payments'... I found 2 critical vulnerabilities: 'Unauthenticated IDOR on /users/me' and 'BOLA on /orders/{id}'. Would you like the remediation guidance for these?
+
+---
+
+**👤 You:**
+> "List all registered API target services"
+
+**🤖 AI Agent:**
+> I found 3 registered services: 'Billing-v1' (https://api.billing.com), 'Payments' (https://pay.example.com), and 'Auth-Service'. Each is configured for continuous security monitoring.
+
+
 ## Installation & Usage
 
 To install and use the **Equixly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Equixly** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

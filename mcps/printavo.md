@@ -1,12 +1,14 @@
 # Printavo MCP Server
 
-Manage your print shop with order tracking, production scheduling, and invoicing built for screen printing and custom apparel.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/printavo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/printavo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/printavo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/printavo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your print shop with order tracking, production scheduling, and invoicing built for screen printing and custom apparel.
 
 ## Description
 Connect your **Printavo** account to any AI agent and take full control of your screen printing and embroidery shop orchestration through natural conversation. Printavo provides a robust platform for shop management, and this integration allows you to retrieve order metadata, manage customer records, and monitor production statuses directly from your chat interface.
@@ -50,6 +52,33 @@ Create a new order or quote
 - **update_order**: Update an existing order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Printavo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active orders in my Printavo shop."
+
+**🤖 AI Agent:**
+> I've retrieved your orders. You have 5 active jobs including 'High School Seniors 2024' (Status: In Production) and 'Tech Conference Tees'. Which one would you like to see more details for?
+
+---
+
+**👤 You:**
+> "Show me all orders currently in production with their due dates and customer details."
+
+**🤖 AI Agent:**
+> 24 orders currently in production. 5 are due today: "Meridian Corp Polos" (200 units, screen print), "Tech Summit T-Shirts" (500 units, DTG), "Valley School Hoodies" (150 units, embroidery), "Startup Branded Caps" (300 units), and "Restaurant Staff Uniforms" (75 units). 8 orders are due within the next 3 days. 3 orders are flagged as at-risk due to material shortages. Total production value: $47,800.
+
+---
+
+**👤 You:**
+> "Create a new order for Tech Summit requesting 500 custom t-shirts with front and back printing."
+
+**🤖 AI Agent:**
+> Order created: #ORD-4892. Customer: Tech Summit Events. Product: Custom T-Shirts x 500. Decoration: Screen print (front: full color logo, back: event schedule). Sizes: S(50), M(150), L(200), XL(75), 2XL(25). Base color: Navy Blue. Production estimate: 5 business days. Total quote: $4,750 ($9.50/unit). Status set to "Pending Approval". Customer notification email sent with approval link.
+
+
 ## Installation & Usage
 
 To install and use the **Printavo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Printavo** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

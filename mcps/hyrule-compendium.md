@@ -1,12 +1,14 @@
 # Hyrule Compendium MCP Server
 
-Access the comprehensive Breath of the Wild and Tears of the Kingdom compendium — search creatures, monsters, materials, and equipment directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hyrule-compendium)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyrule-compendium)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyrule-compendium-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyrule-compendium-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 3
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the comprehensive Breath of the Wild and Tears of the Kingdom compendium — search creatures, monsters, materials, and equipment directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **Hyrule Compendium** and explore the vast world of Zelda: Breath of the Wild and Tears of the Kingdom through natural conversation.
@@ -39,6 +41,33 @@ Connect your AI agent to the **Hyrule Compendium** and explore the vast world of
 Get a single entry by ID or name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hyrule Compendium** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the details for entry number 100 in the compendium."
+
+**🤖 AI Agent:**
+> I've retrieved entry #100. It is the 'Blue Sparrow', a small bird found in the Lanayru Great Spring and Hyrule Ridge areas. It drops Chickloo Tree Nuts when startled.
+
+---
+
+**👤 You:**
+> "List all monsters found in Hyrule."
+
+**🤖 AI Agent:**
+> Fetching the monster category... I've found various entries including Bokoblins, Moblins, and Lynels. Would you like details on a specific monster or a list of the most dangerous ones?
+
+---
+
+**👤 You:**
+> "Get all materials used for cooking or upgrades."
+
+**🤖 AI Agent:**
+> Accessing the materials category... I've found entries like 'Silent Princess', 'Big Hearty Truffle', and 'Voltfin Trout'. Which material would you like to know more about?
+
+
 ## Installation & Usage
 
 To install and use the **Hyrule Compendium** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Hyrule Compendium** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

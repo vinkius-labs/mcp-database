@@ -1,12 +1,14 @@
 # Audiomack Music MCP Server
 
-Explore and discover music via Audiomack — search for songs, albums, and trending artists directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/audiomack-music)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audiomack-music)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/audiomack-music-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/audiomack-music-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 6
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Explore and discover music via Audiomack — search for songs, albums, and trending artists directly from any AI agent.
 
 ## Description
 Connect your AI agent to **Audiomack**, the leading platform for artist-first music discovery. This integration allows you to browse millions of tracks, track trending charts, and inspect detailed profiles for your favorite artists through natural conversation.
@@ -43,6 +45,33 @@ This integration uses Audiomack's REST API with secure OAuth 1.0a signing for al
 - **search_music**: Search for songs, albums, or artists on Audiomack
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Audiomack Music** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the latest trending songs on Audiomack."
+
+**🤖 AI Agent:**
+> Fetching trending songs... I found several popular tracks, including 'Million Dollar Baby' and 'Not Like Us'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the discography for artist 'Eminem'."
+
+**🤖 AI Agent:**
+> Retrieving data for Eminem... He has several albums available on Audiomack, including 'The Slim Shady LP', 'The Marshall Mathers LP', and 'The Eminem Show'.
+
+---
+
+**👤 You:**
+> "Get details for the artist 'Kendrick Lamar' on Audiomack."
+
+**🤖 AI Agent:**
+> Inspecting Kendrick Lamar's profile... He is a verified artist with millions of plays. I've found his biography and links to his verified social profiles. Would you like to see his top trending tracks?
+
+
 ## Installation & Usage
 
 To install and use the **Audiomack Music** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Audiomack Music** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

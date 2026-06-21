@@ -1,12 +1,14 @@
 # VTEX Catalog MCP Server
 
-Search products, manage SKUs, update stock levels, and explore categories and brands on your VTEX store — all from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vtex-catalog)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vtex-catalog)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vtex-catalog-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vtex-catalog-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search products, manage SKUs, update stock levels, and explore categories and brands on your VTEX store — all from any AI agent.
 
 ## Description
 Connect your **VTEX** Catalog API to any AI agent and manage your entire product catalog through natural conversation.
@@ -45,6 +47,46 @@ Search for products by text, brand, or category
 - **manage_stock**: Update the available quantity of a SKU
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **VTEX Catalog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'Nike Air Max' in my VTEX catalog"
+
+**🤖 AI Agent:**
+> Found **8 products** matching 'Nike Air Max':
+
+1. **Nike Air Max 90** — R$ 799.90 (3 SKUs: White/Black/Grey)
+2. **Nike Air Max 270** — R$ 899.90 (2 SKUs: Black/Red)
+3. **Nike Air Max Plus** — R$ 1,099.90 (4 SKUs)
+
+Would you like the full specification sheet for any of these, or check stock levels for a specific SKU?
+
+---
+
+**👤 You:**
+> "Update the stock of SKU 12345 to 150 units"
+
+**🤖 AI Agent:**
+> Stock updated! SKU **12345** now has **150 units** available in your primary warehouse. The previous balance was 23 units. The inventory change is reflected immediately across all VTEX sales channels.
+
+---
+
+**👤 You:**
+> "Show me the details of category 5678"
+
+**🤖 AI Agent:**
+> Category **5678** — **Running Shoes**
+
+📂 Parent: Shoes (ID: 1234)
+🏷️ Active: Yes
+📦 Products: 42 products listed
+🔗 URL: /shoes/running-shoes
+
+Would you like to list all products in this category or check a specific brand within it?
+
+
 ## Installation & Usage
 
 To install and use the **VTEX Catalog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +95,11 @@ To install and use the **VTEX Catalog** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Alexa Smart Home MCP Server
 
-Control Alexa-connected smart home devices — lights, thermostats, speakers, and sensors via Alexa Smart Properties API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/alexa-smart-home)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alexa-smart-home)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alexa-smart-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alexa-smart-home-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 16
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Control Alexa-connected smart home devices — lights, thermostats, speakers, and sensors via Alexa Smart Properties API.
 
 ## Description
 Connect to **Alexa Smart Home** devices via the Alexa Smart Properties API and control your smart home from any AI agent. Manage lights, thermostats, speakers, and sensors across your connected endpoints.
@@ -107,6 +109,33 @@ Update the friendly name of an Alexa-connected device
 Update the room/unit assignment for an Alexa-connected device
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Alexa Smart Home** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Alexa-connected smart home devices."
+
+**🤖 AI Agent:**
+> I found 6 Alexa-connected devices in your account: 1) Living Room Lamp (Philips Hue) — brightness controllable, 2) Bedroom Thermostat (Ecobee) — temperature monitoring, 3) Kitchen Echo (Amazon) — speaker volume controllable, 4) Front Porch Light (LIFX) — on/off and brightness, 5) Hallway Temperature Sensor, 6) Office Smart Plug. Would you like to control any of these devices?
+
+---
+
+**👤 You:**
+> "Turn on the living room lamp and set brightness to 70%."
+
+**🤖 AI Agent:**
+> Turning on the Living Room Lamp... Done! The lamp is now ON. Setting brightness to 70%... Done! Your Living Room Lamp is now at 70% brightness.
+
+---
+
+**👤 You:**
+> "What's the current temperature in the bedroom and what mode is the thermostat in?"
+
+**🤖 AI Agent:**
+> Checking bedroom thermostat... Current temperature reading: 21.5°C (70.7°F). The thermostat is currently in HEAT mode with a target temperature of 22°C (71.6°F). The HVAC system is actively heating to reach the target.
+
+
 ## Installation & Usage
 
 To install and use the **Alexa Smart Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -115,4 +144,11 @@ To install and use the **Alexa Smart Home** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

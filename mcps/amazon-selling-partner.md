@@ -1,12 +1,14 @@
 # Amazon Selling Partner MCP Server
 
-E-commerce and marketplace orchestration — manage orders, FBA inventory, and catalogs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-selling-partner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-selling-partner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-selling-partner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-selling-partner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+E-commerce and marketplace orchestration — manage orders, FBA inventory, and catalogs via AI.
 
 ## Description
 Connect your **Amazon Selling Partner (SP-API)** account to your AI agent to unlock professional e-commerce and marketplace orchestration. From managing incoming orders and auditing FBA inventory to researching the Amazon product catalog and requesting asynchronous reports, your agent handles your seller operations through natural conversation.
@@ -48,6 +50,33 @@ Request a report
 - **list_product_types**: List product types
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amazon Selling Partner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my recent Amazon orders."
+
+**🤖 AI Agent:**
+> I've retrieved your recent orders. There are 5 pending orders waiting for fulfillment. Would you like me to retrieve the order items for the first order in the list?
+
+---
+
+**👤 You:**
+> "Show the FBA inventory summary for my top products."
+
+**🤖 AI Agent:**
+> I've checked your FBA inventory. Your top selling item currently has 120 units available, with 25 units inbound. One of your items is out of stock. Let me list the details for you.
+
+---
+
+**👤 You:**
+> "Search the Amazon catalog for ASIN 'B012345678'."
+
+**🤖 AI Agent:**
+> I've retrieved the catalog details for ASIN B012345678. It's a 'Wireless Bluetooth Headset' currently listed in the Electronics category. Would you like to see the pricing and dimensions metadata?
+
+
 ## Installation & Usage
 
 To install and use the **Amazon Selling Partner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Amazon Selling Partner** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

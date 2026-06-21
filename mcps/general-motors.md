@@ -1,12 +1,14 @@
 # General Motors MCP Server
 
-AI connected car: control GM vehicles, check diagnostics, and track location via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/general-motors)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/general-motors)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/general-motors-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/general-motors-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+AI connected car: control GM vehicles, check diagnostics, and track location via agents.
 
 ## Description
 ### What you can do
@@ -79,6 +81,33 @@ Remotely stop the running engine of a GM vehicle
 Unlock the doors of a specific GM vehicle remotely
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **General Motors** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Start the engine on my Bolt EV and tell me the current battery charge level and estimated driving range."
+
+**🤖 AI Agent:**
+> Engine started remotely on your 2024 Chevrolet Bolt EV (VIN: ...7X92). Battery charge: 78% (estimated range: 215 miles). Cabin pre-conditioning: active (72°F). Estimated ready time: 3 minutes.
+
+---
+
+**👤 You:**
+> "Get the current GPS location of my GMC Sierra and flash the lights so I can spot it in the parking lot."
+
+**🤖 AI Agent:**
+> Your 2024 GMC Sierra is located at: 350 5th Avenue, New York, NY 10118 (parking level B2). Coordinates: 40.7484° N, 73.9857° W. Lights flashed successfully — look for the blinking hazards. Last parked: 2 hours ago.
+
+---
+
+**👤 You:**
+> "Send the navigation destination 'Home' to my Cadillac's infotainment system so it's ready when I get in the car."
+
+**🤖 AI Agent:**
+> Navigation destination 'Home' sent to your 2024 Cadillac Escalade. The route will appear on the infotainment screen when you enter the vehicle. Estimated drive time: 25 minutes (14.2 miles via I-95 N). Current traffic: moderate.
+
+
 ## Installation & Usage
 
 To install and use the **General Motors** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **General Motors** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ONES MCP Server
 
-Enterprise R&D project management platform — manage tasks, projects, and workflows via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ones)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ones)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ones-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ones-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enterprise R&D project management platform — manage tasks, projects, and workflows via AI.
 
 ## Description
 Empower your AI agent to orchestrate your R&D lifecycle with **ONES**, the leading enterprise project management platform. By connecting ONES to your agent, you transform complex issue tracking, requirement management, and workflow auditing into a natural conversation. Your agent can instantly list your projects, create new tasks, update statuses, and even browse team members without you needing to navigate the comprehensive ONES dashboard. Whether you are following Scrum, Kanban, or Waterfall, your agent acts as a real-time R&D assistant, keeping your projects organized and your team aligned.
@@ -48,6 +50,33 @@ List task types
 - **update_task**: Update an existing ONES task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ONES** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active R&D projects on ONES."
+
+**🤖 AI Agent:**
+> I've retrieved your active ONES projects. You have 4 active projects, including 'Core Platform V2' and 'Security Hardening'. Which one would you like to review?
+
+---
+
+**👤 You:**
+> "Create a new task in project 'Mobile SDK' titled 'Implement OAuth2 login'."
+
+**🤖 AI Agent:**
+> Done! I've created the task 'Implement OAuth2 login' in the 'Mobile SDK' project. Would you like to assign it to someone or add a more detailed description?
+
+---
+
+**👤 You:**
+> "Show me the recent activity summary for our organization."
+
+**🤖 AI Agent:**
+> I've retrieved the organization summary. In the last 7 days, 150 tasks were created and 120 were completed across 8 projects. Your team velocity remains stable. Would you like a breakdown by project?
+
+
 ## Installation & Usage
 
 To install and use the **ONES** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **ONES** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

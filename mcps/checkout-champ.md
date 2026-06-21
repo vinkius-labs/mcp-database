@@ -1,12 +1,14 @@
 # Checkout Champ MCP Server
 
-Manage CRM and order workflows via Checkout Champ — track leads, monitor orders, and analyze transactions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/checkout-champ)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/checkout-champ)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/checkout-champ-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/checkout-champ-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage CRM and order workflows via Checkout Champ — track leads, monitor orders, and analyze transactions directly from any AI agent.
 
 ## Description
 Connect your **Checkout Champ** account to any AI agent and take full control of your e-commerce CRM and order management through natural conversation. Streamline your sales funnel and customer logistics.
@@ -45,6 +47,33 @@ Connect your **Checkout Champ** account to any AI agent and take full control of
 - **list_champ_transactions**: List recent financial transactions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Checkout Champ** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 5 orders in Checkout Champ."
+
+**🤖 AI Agent:**
+> Retrieving recent orders... I found 5 items: Order #12345 (John Doe - $99.00), #12346 (Jane Smith - $45.00), and 3 others. Would you like to check the shipping status for any of these?
+
+---
+
+**👤 You:**
+> "What is my total sales volume for today?"
+
+**🤖 AI Agent:**
+> Checking today's transactions... You have 15 successful orders totaling $1,250.00 and 2 declined transactions. Would you like to see the decline reasons?
+
+---
+
+**👤 You:**
+> "List all active campaigns."
+
+**🤖 AI Agent:**
+> Retrieving active campaigns... I found 3: 'Summer Sale 2024', 'Retargeting Blitz', and 'New Product Launch'. I can provide performance data for each if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Checkout Champ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Checkout Champ** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Gameball MCP Server
 
-Automate loyalty programs and gamification via Gameball — manage customer profiles, track points, and handle order rewards directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gameball-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gameball-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gameball-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gameball-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate loyalty programs and gamification via Gameball — manage customer profiles, track points, and handle order rewards directly from any AI agent.
 
 ## Description
 Connect your **Gameball** account to any AI agent to orchestrate your loyalty and retention strategies through natural conversation.
@@ -47,6 +49,33 @@ Hold points for temporary redemption
 - **track_order**: Track an order to award points and finalize redemptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gameball** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the points balance for customer ID 'cust_98765'."
+
+**🤖 AI Agent:**
+> I've retrieved the balance for customer cust_98765. They currently have 1,250 points (valued at $12.50). Note that 200 points are set to expire on the 30th of next month.
+
+---
+
+**👤 You:**
+> "Track a new order of $150 for customer 'cust_123' with order ID 'ORD-999'."
+
+**🤖 AI Agent:**
+> Order ORD-999 has been successfully tracked for customer cust_123. Based on the $150 total, the customer has been awarded 150 loyalty points.
+
+---
+
+**👤 You:**
+> "Create a customer profile for 'Alice Smith' with email 'alice@example.com' and ID 'alice_001'."
+
+**🤖 AI Agent:**
+> I've created the profile for Alice Smith (ID: alice_001). Her details are now synchronized with Gameball for loyalty tracking.
+
+
 ## Installation & Usage
 
 To install and use the **Gameball** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Gameball** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

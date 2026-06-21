@@ -1,12 +1,14 @@
 # Black Duck (Synopsys) MCP Server
 
-Secure your open source supply chain via Black Duck — list projects, versions, and vulnerabilities directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/black-duck-synopsys)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/black-duck-synopsys)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/black-duck-synopsys-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/black-duck-synopsys-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Secure your open source supply chain via Black Duck — list projects, versions, and vulnerabilities directly from any AI agent.
 
 ## Description
 Connect your **Black Duck (Synopsys)** instance to any AI agent and orchestrate your open source security and license compliance workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Black Duck (Synopsys)** instance to any AI agent and orchestrate 
 - **search_projects**: Search projects by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Black Duck (Synopsys)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all versions for project 'Web-Portal'."
+
+**🤖 AI Agent:**
+> I've retrieved the versions for 'Web-Portal'. You have 3 versions: '1.0.0' (ID: v1), '1.1.0-beta' (ID: v2), and 'latest' (ID: v3).
+
+---
+
+**👤 You:**
+> "Identify any critical vulnerabilities in the backend service repository."
+
+**🤖 AI Agent:**
+> Scanning project 'Backend Service'. Found 2 Critical CVEs linked to active OpenSSL dependencies (CVE-2023-xxxx). Actions recommended immediately.
+
+---
+
+**👤 You:**
+> "Fetch the BOM status for project Alpha version 2.0."
+
+**🤖 AI Agent:**
+> The Bill of Materials (BOM) for Alpha v2.0 is perfectly 'UP_TO_DATE' and fully synchronized within the compliance policy guidelines.
+
+
 ## Installation & Usage
 
 To install and use the **Black Duck (Synopsys)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Black Duck (Synopsys)** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

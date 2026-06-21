@@ -1,12 +1,14 @@
 # Sumo Logic MCP Server
 
-Manage logs, metrics, and collectors via Sumo Logic — run search jobs, monitor infrastructure, and manage collectors directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sumo-logic-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumo-logic-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sumo-logic-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sumo-logic-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 19
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Manage logs, metrics, and collectors via Sumo Logic — run search jobs, monitor infrastructure, and manage collectors directly from any AI agent.
 
 ## Description
 Connect your **Sumo Logic** account to any AI agent to streamline your observability and log management workflows through natural conversation.
@@ -58,6 +60,33 @@ Create an asynchronous log search job
 - **update_source**: Update an existing Source
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sumo Logic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Sumo Logic collectors."
+
+**🤖 AI Agent:**
+> I've retrieved your collectors. You have 3 active collectors: 'Prod-Receiver' (ID: 1023), 'Staging-Logs' (ID: 1024), and 'Cloud-Hosted' (ID: 1025).
+
+---
+
+**👤 You:**
+> "Search for 'error' in logs for the last 15 minutes."
+
+**🤖 AI Agent:**
+> I've initiated a search job (ID: job_98765). I will poll the status and let you know when the results are ready.
+
+---
+
+**👤 You:**
+> "Get the records for search job ID job_98765."
+
+**🤖 AI Agent:**
+> The search job is complete. I found 12 records matching 'error'. Most common message: 'Connection timeout at 10.0.0.1'.
+
+
 ## Installation & Usage
 
 To install and use the **Sumo Logic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Sumo Logic** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

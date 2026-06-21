@@ -1,12 +1,14 @@
 # Cisco Meraki MCP Server
 
-Manage cloud-managed networking via Cisco Meraki — track devices, monitor clients, and audit network health directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cisco-meraki)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cisco-meraki)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cisco-meraki-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cisco-meraki-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage cloud-managed networking via Cisco Meraki — track devices, monitor clients, and audit network health directly from any AI agent.
 
 ## Description
 Connect your **Cisco Meraki** dashboard to any AI agent and take full control of your cloud-managed IT infrastructure through natural conversation. Streamline how you monitor wireless, switching, and security appliances.
@@ -45,6 +47,33 @@ Connect your **Cisco Meraki** dashboard to any AI agent and take full control of
 - **list_meraki_organizations**: List all organizations the API key has access to
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cisco Meraki** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Meraki organizations."
+
+**🤖 AI Agent:**
+> Retrieving your organizations... I found 2: 'Acme Corp' (ID: 123456) and 'Global Distribution' (ID: 789012). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the status of devices in the 'London Office' network."
+
+**🤖 AI Agent:**
+> Checking 'London Office' devices... You have 1 MR42 (Online), 1 MS120 (Online), and 1 MX64 Security Appliance (Online). Everything looks healthy.
+
+---
+
+**👤 You:**
+> "How many clients are currently connected to my wireless network?"
+
+**🤖 AI Agent:**
+> Retrieving client count... There are currently 45 clients connected across your active networks. 30 are on the 'Main-Staff' SSID and 15 are on 'Guest-WiFi'.
+
+
 ## Installation & Usage
 
 To install and use the **Cisco Meraki** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Cisco Meraki** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

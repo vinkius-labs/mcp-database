@@ -1,12 +1,14 @@
 # Open WebUI MCP Server
 
-Manage your Open WebUI instance — list models, handle chat completions, and manage RAG collections directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-webui)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-webui)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-webui-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-webui-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 12
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage your Open WebUI instance — list models, handle chat completions, and manage RAG collections directly from any AI agent.
 
 ## Description
 Connect your **Open WebUI** instance to any AI agent and take full control of your local and cloud LLM orchestration through natural conversation.
@@ -51,6 +53,33 @@ Create a new chat (Backend-Controlled Flow)
 Upload a file for RAG
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open WebUI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all models available in my Open WebUI instance."
+
+**🤖 AI Agent:**
+> I've retrieved the models. You have access to 'llama3:latest', 'gpt-4o', and several custom Open WebUI functions. Would you like to use one of them for a chat completion?
+
+---
+
+**👤 You:**
+> "Process the URL 'https://docs.openwebui.com/' into my 'Documentation' collection."
+
+**🤖 AI Agent:**
+> I have started processing the URL. The content is being scraped and indexed into the 'Documentation' collection. You can now ask questions based on this data.
+
+---
+
+**👤 You:**
+> "Generate a response using the 'llama3' model for the prompt 'Explain quantum computing'."
+
+**🤖 AI Agent:**
+> Using the `ollama_generate` tool with 'llama3': Quantum computing is a type of computing that uses quantum-mechanical phenomena... Would you like more details?
+
+
 ## Installation & Usage
 
 To install and use the **Open WebUI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Open WebUI** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

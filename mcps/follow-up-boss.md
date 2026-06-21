@@ -1,12 +1,14 @@
 # Follow Up Boss MCP Server
 
-Manage real estate leads, track deals, and oversee follow-up tasks via AI agents with Follow Up Boss.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/follow-up-boss)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/follow-up-boss)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/follow-up-boss-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/follow-up-boss-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 12
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Manage real estate leads, track deals, and oversee follow-up tasks via AI agents with Follow Up Boss.
 
 ## Description
 Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your real estate lead management and sales pipelines through the Model Context Protocol (MCP). Follow Up Boss is the central hub for high-growth real estate teams to convert more leads into closings. This MCP server enables you to manage your contacts, track deals, and handle follow-up tasks directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your r
 - **list_crm_users**: List team members
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Follow Up Boss** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 people added to my CRM."
+
+**🤖 AI Agent:**
+> Retrieving contacts... I found 5 recent people, including 'John Smith' and 'Jane Doe'. Would you like the full profile for any of them?
+
+---
+
+**👤 You:**
+> "Create a task for John Smith (ID: 123) to 'Follow up on contract' for tomorrow."
+
+**🤖 AI Agent:**
+> Task created! I've added a follow-up reminder for John Smith for tomorrow. You'll see it in your FUB dashboard.
+
+---
+
+**👤 You:**
+> "Add a note to Jane Doe (ID: 456): 'Interested in waterfront properties'."
+
+**🤖 AI Agent:**
+> Note added! I've successfully posted the update to Jane Doe's timeline. Your team will see this interest recorded.
+
+
 ## Installation & Usage
 
 To install and use the **Follow Up Boss** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Follow Up Boss** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

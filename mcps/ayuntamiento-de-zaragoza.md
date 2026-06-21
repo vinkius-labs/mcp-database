@@ -1,12 +1,14 @@
 # Ayuntamiento de Zaragoza MCP Server
 
-Access Zaragoza's open data, city services (Open311), collaborative maps, and appointment booking directly through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ayuntamiento-de-zaragoza)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ayuntamiento-de-zaragoza)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ayuntamiento-de-zaragoza-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ayuntamiento-de-zaragoza-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 17
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access Zaragoza's open data, city services (Open311), collaborative maps, and appointment booking directly through AI.
 
 ## Description
 Connect to the **Ayuntamiento de Zaragoza** (Zaragoza City Council) Open Data platform to interact with city services, public datasets, and administrative workflows through natural language.
@@ -62,6 +64,33 @@ Execute a SPARQL query against Zaragoza Semantic Web endpoint
 Submit an Open311 request (Queja/Sugerencia)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ayuntamiento de Zaragoza** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for monuments in Zaragoza named 'Goya'."
+
+**🤖 AI Agent:**
+> I found several results for 'Goya' in the monuments dataset, including the 'Monumento a Goya' located in Plaza del Pilar. Would you like the full details or coordinates?
+
+---
+
+**👤 You:**
+> "Report a cleaning issue at Calle Mayor 10 using Open311."
+
+**🤖 AI Agent:**
+> I've submitted the request for 'Cleaning and Waste' at Calle Mayor 10. Your service request ID is 12345. You can track its status using the `get_open311_request` tool.
+
+---
+
+**👤 You:**
+> "Check availability for an appointment in the 'Padron' agenda for tomorrow."
+
+**🤖 AI Agent:**
+> Checking the 'Padron' agenda... There are 3 available slots tomorrow: 09:00, 10:30, and 11:15. Would you like me to book one of these for you?
+
+
 ## Installation & Usage
 
 To install and use the **Ayuntamiento de Zaragoza** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Ayuntamiento de Zaragoza** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

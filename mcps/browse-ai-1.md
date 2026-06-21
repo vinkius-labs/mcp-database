@@ -1,12 +1,14 @@
 # Browse AI MCP Server
 
-Automate web scraping with Browse AI — run extraction robots, monitor page changes, and retrieve bulk data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browse-ai-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browse-ai-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browse-ai-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 10
+
+**Category:** [data-management](../categories/data-management.md)
+
+Automate web scraping with Browse AI — run extraction robots, monitor page changes, and retrieve bulk data directly from any AI agent.
 
 ## Description
 Connect your **Browse AI** account to any AI agent and take full control of your no-code web scraping operations through natural conversation.
@@ -61,6 +63,42 @@ List all Browse AI extraction and monitoring robots
 Trigger a Browse AI robot to extract data from a target URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Browse AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my robots. Which ones are built for monitoring?"
+
+**🤖 AI Agent:**
+> You have 3 robots active. 
+1. [a0f2b] 'Competitor Price Tracker' 
+2. [h6j2x] 'HackerNews Scraper'
+3. [k9b1a] 'Amazon Search Result Extractor'. 
+By cross-referencing with your monitors list, the 'Competitor Price Tracker' is your only robot currently running on an automated monitoring schedule.
+
+---
+
+**👤 You:**
+> "Run my HackerNews Scraper robot on the main page."
+
+**🤖 AI Agent:**
+> Task started successfully! The new Task ID is `t-78ab31`. The robot [h6j2x] is currently capturing data. Once it finishes, I can retrieve the articles for you. Would you like me to check its status now?
+
+---
+
+**👤 You:**
+> "Retrieve the JSON data for task t-78ab31."
+
+**🤖 AI Agent:**
+> The task completed successfully. Here is the extracted data (Top 3 items):
+1. "OpenAI Announces New Models" (URL: https://news.ycombinator.com/item?id=...)
+2. "Show HN: A new programming language" (URL: ...)
+3. "React 19 Release Notes" (URL: ...)
+
+I have the full JSON array stored in context if you want to perform deep filtering on the other 27 scraped items.
+
+
 ## Installation & Usage
 
 To install and use the **Browse AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +107,11 @@ To install and use the **Browse AI** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

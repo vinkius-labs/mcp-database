@@ -1,12 +1,14 @@
 # TfL MCP Server
 
-Access London transport data via TfL — track tube and bus arrivals, plan journeys, check line status, and find bike points from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tfl)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tfl)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tfl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tfl-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 12
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access London transport data via TfL — track tube and bus arrivals, plan journeys, check line status, and find bike points from any AI agent.
 
 ## Description
 Connect your **TfL Unified API** London public transport data platform to any AI agent and take full control of real-time Tube and bus tracking, multimodal journey planning, line status monitoring, and Santander Cycles availability through natural conversation.
@@ -79,6 +81,33 @@ Get detailed information about a specific TfL stop point
 Get vehicle details for a registered vehicle in London (ULEZ/congestion charge)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TfL** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "When is the next Northern Line train arriving at Bank station?"
+
+**🤖 AI Agent:**
+> Searching for Bank station (stop ID: 940GZZLUBNK)... Next Northern Line arrivals: High Barnet — 2 minutes, via Charing Cross; Morden — 5 minutes, via Bank; High Barnet — 8 minutes, via Charing Cross; Morden — 12 minutes, via Bank. All services running on time with no disruptions reported. Platform information and carriage details available upon request.
+
+---
+
+**👤 You:**
+> "How many Santander Cycles are available near Hyde Park Corner?"
+
+**🤖 AI Agent:**
+> Checking Santander Cycles docking stations near Hyde Park Corner... Found 5 nearby docks: Hyde Park Corner Station — 12 bikes available, 6 empty docks; Apsley Way — 8 bikes, 4 empty; Wellington Arch — 15 bikes, 3 empty; Hyde Park North — 6 bikes, 12 empty; Knightsbridge — 10 bikes, 8 empty. All stations operational with real-time data. Would you like directions to the dock with the most bikes?
+
+---
+
+**👤 You:**
+> "What is the status of the Victoria Line and Jubilee Line right now?"
+
+**🤖 AI Agent:**
+> Checking TfL line status... Victoria Line: Good Service — trains running frequently with no reported delays. Jubilee Line: Minor Delays — signal failure at Westminster causing 5-10 minute delays eastbound. Expected resolution by 18:30. All other Underground lines running normally. Would you like me to suggest alternative routes if you are traveling on the Jubilee Line?
+
+
 ## Installation & Usage
 
 To install and use the **TfL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **TfL** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

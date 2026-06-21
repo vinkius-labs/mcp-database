@@ -1,12 +1,14 @@
 # RenderForm MCP Server
 
-Generate dynamic images and social media graphics from templates with an API that personalizes visuals at scale for any campaign.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/renderform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/renderform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/renderform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/renderform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate dynamic images and social media graphics from templates with an API that personalizes visuals at scale for any campaign.
 
 ## Description
 Empower your AI agent with the ability to generate high-quality images and PDFs using **RenderForm** templates. RenderForm provides a powerful REST API for visual automation, allowing you to orchestrate marketing assets, OpenGraph images, and dynamic documents through simple natural language commands.
@@ -47,6 +49,33 @@ Empower your AI agent with the ability to generate high-quality images and PDFs 
 - **render_pdf**: Render a PDF document from a template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RenderForm** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my image templates in RenderForm."
+
+**🤖 AI Agent:**
+> I've found your templates. You have 5 active designs including 'IG Post v1' (ID: ig_123) and 'Email Header'. Which one would you like to render?
+
+---
+
+**👤 You:**
+> "Generate a social media banner for our Summer Sale campaign using the product showcase template."
+
+**🤖 AI Agent:**
+> Banner generated successfully. Template: "Product Showcase v3" (ID: tpl_8834). Dimensions: 1200x628px (Facebook/LinkedIn optimized). Dynamic fields populated: headline "Summer Sale - Up to 60% Off", product image (uploaded), brand colors applied, CTA button "Shop Now". Output format: PNG (high quality). Download URL generated. The template also auto-generated versions for Instagram (1080x1080) and Twitter (1600x900). All 3 variants saved to your project folder.
+
+---
+
+**👤 You:**
+> "List all available templates in my account and show which ones have been used the most."
+
+**🤖 AI Agent:**
+> You have 28 templates. Top 5 by usage: "Social Media Post" (1,234 renders), "Email Header" (890 renders), "Product Card" (678 renders), "Certificate" (456 renders), "Invoice" (234 renders). 8 templates were created this month. Average renders per template: 127. Most popular format: PNG (72%), followed by PDF (18%) and JPG (10%). 3 templates have not been used in 60+ days and may be candidates for archival.
+
+
 ## Installation & Usage
 
 To install and use the **RenderForm** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **RenderForm** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

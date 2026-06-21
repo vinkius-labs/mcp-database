@@ -1,12 +1,14 @@
 # Etherscan MCP Server
 
-Query Ethereum and EVM-compatible blockchain data—check balances, transaction history, and token transfers directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/etherscan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/etherscan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/etherscan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/etherscan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 19
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Query Ethereum and EVM-compatible blockchain data—check balances, transaction history, and token transfers directly from your AI agent.
 
 ## Description
 Connect your **Etherscan** API key to any AI agent and gain instant access to on-chain data across Ethereum and other EVM-compatible networks through natural conversation.
@@ -56,6 +58,33 @@ Get normal transactions for an address
 - **verify_source_code**: Verify Contract Source Code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Etherscan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the ETH balance of address 0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe on Ethereum?"
+
+**🤖 AI Agent:**
+> I've checked the balance for that address on Chain ID 1. The current balance is approximately 425.12 ETH (425123456789012345678 wei).
+
+---
+
+**👤 You:**
+> "Show me the last 5 ERC-20 token transfers for 0x742d35Cc6634C0532925a3b844Bc454e4438f44e."
+
+**🤖 AI Agent:**
+> I've retrieved the ERC-20 transfer history. The most recent transfers include 500 USDT from 0xabc... and 100 LINK to 0xdef... Would you like more details on any of these transactions?
+
+---
+
+**👤 You:**
+> "List the normal transactions for address 0x123... on Polygon (Chain ID 137)."
+
+**🤖 AI Agent:**
+> Querying Polygon scan... I found 10 recent transactions for that address. The latest was a contract interaction with Uniswap V3. Would you like me to list the specific transaction hashes?
+
+
 ## Installation & Usage
 
 To install and use the **Etherscan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Etherscan** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

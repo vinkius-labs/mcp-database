@@ -1,12 +1,14 @@
 # eduMe MCP Server
 
-Equip your AI agent to manage mobile training, track trainees, and monitor course completion via the eduMe API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/edume)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edume)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edume-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edume-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage mobile training, track trainees, and monitor course completion via the eduMe API.
 
 ## Description
 Integrate **eduMe**, the leading mobile-first training platform for the deskless workforce, directly into your AI workflow. Manage your training courses and modules, track trainee profiles and completion rates, monitor team performance, and oversee your organizational learning metadata using natural language.
@@ -44,6 +46,33 @@ Integrate **eduMe**, the leading mobile-first training platform for the deskless
 - **search_trainees_by_keyword**: Search for users using a name keyword or external identifier
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **eduMe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all mobile training courses."
+
+**🤖 AI Agent:**
+> I've found several courses, including 'Company Onboarding', 'Safety Essentials', and 'Customer Service Excellence'. 'Safety Essentials' has a 95% completion rate. Would you like to see the details for Onboarding?
+
+---
+
+**👤 You:**
+> "Show me the training profile for user 'john_doe'."
+
+**🤖 AI Agent:**
+> John Doe has completed 4 out of 5 assigned courses. They are a member of the 'Sales - North' team and last logged in today. Should I list the specific courses they have finished?
+
+---
+
+**👤 You:**
+> "Which teams have the lowest course engagement?"
+
+**🤖 AI Agent:**
+> The 'Warehouse Night Shift' and 'Regional Drivers' teams currently have the lowest engagement rates (below 60%). Would you like me to pull the contact information for the team leads?
+
+
 ## Installation & Usage
 
 To install and use the **eduMe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **eduMe** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

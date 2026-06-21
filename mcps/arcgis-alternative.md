@@ -1,12 +1,14 @@
 # ArcGIS MCP Server
 
-Access GIS services via ArcGIS — geocode addresses, search places, get routes, check elevation and discover basemap styles from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arcgis-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcgis-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arcgis-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arcgis-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access GIS services via ArcGIS — geocode addresses, search places, get routes, check elevation and discover basemap styles from any AI agent.
 
 ## Description
 Connect to **ArcGIS** location services through any AI agent and explore geographic data through natural conversation.
@@ -57,6 +59,33 @@ Reverse geocode coordinates to address
 Search for places near a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ArcGIS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Geocode the address '1600 Pennsylvania Ave, Washington DC'."
+
+**🤖 AI Agent:**
+> Found: 1600 Pennsylvania Ave NW, Washington, DC 20500 at coordinates -77.0365, 38.8977. Confidence: 100%. This is the White House.
+
+---
+
+**👤 You:**
+> "Find coffee shops near San Francisco coordinates -122.4194,37.7749."
+
+**🤖 AI Agent:**
+> Found 8 coffee shops within 1km: Blue Bottle Coffee (0.2km), Sightglass Coffee (0.3km), Ritual Coffee Roasters (0.4km), Four Barrel Coffee (0.5km), and 4 more. Each with address and distance info.
+
+---
+
+**👤 You:**
+> "Get driving directions from Washington DC to New York City."
+
+**🤖 AI Agent:**
+> Route from DC to NYC: 225 miles, estimated 3 hours 45 minutes driving time. Route goes through Baltimore, Philadelphia and into Manhattan. Total tolls approximately $45.
+
+
 ## Installation & Usage
 
 To install and use the **ArcGIS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **ArcGIS** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

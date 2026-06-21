@@ -1,12 +1,14 @@
 # NeonCRM MCP Server
 
-Manage non-profit operations via NeonCRM — track donations, memberships, and events directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/neoncrm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/neoncrm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/neoncrm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/neoncrm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage non-profit operations via NeonCRM — track donations, memberships, and events directly from your AI agent.
 
 ## Description
 Connect your **NeonCRM** account to your AI agent and take full control of your non-profit organization's constituent data and fundraising activities through natural conversation.
@@ -48,6 +50,33 @@ List CRM events
 - **list_memberships**: List account memberships
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NeonCRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all donations received this year."
+
+**🤖 AI Agent:**
+> I've retrieved the donation history for this year. You have 45 contributions totaling $12,450.00. The largest single donation was $1,500.00 from 'Global Impact Foundation'. Would you like the details for that specific donation?
+
+---
+
+**👤 You:**
+> "Show me the details for account ID 987."
+
+**🤖 AI Agent:**
+> Inspecting account 987... This belongs to 'Jane Smith'. She is a 'Gold Member', has been a constituent since 2018, and has a total lifetime giving of $5,600.00. Shall I list her recent event registrations?
+
+---
+
+**👤 You:**
+> "List all upcoming CRM events."
+
+**🤖 AI Agent:**
+> Retrieving events... You have 3 upcoming events: 'Annual Spring Gala' (Scheduled: May 15th), 'Community Fun Run' (Scheduled: June 2nd), and 'Quarterly Board Meeting'. Would you like to see the registration list for the Spring Gala?
+
+
 ## Installation & Usage
 
 To install and use the **NeonCRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **NeonCRM** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

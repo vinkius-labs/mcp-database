@@ -1,12 +1,14 @@
 # Expensya MCP Server
 
-Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/expensya)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expensya)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expensya-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expensya-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows.
 
 ## Description
 Connect your **Expensya** account to any AI agent and take full control of your business spending and automated expense reporting through natural conversation.
@@ -58,6 +60,33 @@ List defined payment methods
 - **list_mileage_vehicles**: List vehicles for mileage tracking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Expensya** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my expenses from the last week."
+
+**🤖 AI Agent:**
+> I've retrieved 4 expenses from the last 7 days, including 'Dinner with Client' (€65.00) and 'Taxi to Airport' (€25.00). Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Create a new expense: €12.50 for 'Office Supplies' with comment 'New notebook'."
+
+**🤖 AI Agent:**
+> Done! I've registered the €12.50 expense for 'Office Supplies'. It's now added to your dashboard for reconciliation. Shall I check your current total for this category?
+
+---
+
+**👤 You:**
+> "Show me the status of my pending expense reports."
+
+**🤖 AI Agent:**
+> Checking reports... You have 2 reports currently 'Pending Approval'. One is from the 'Paris Business Trip' and the other is 'Monthly Expenses June'. I can provide the individual line items if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Expensya** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **Expensya** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

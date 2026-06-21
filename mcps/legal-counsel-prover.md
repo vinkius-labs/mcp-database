@@ -1,12 +1,14 @@
 # Legal Counsel Prover MCP Server
 
-AI agents cite fabricated statutes, ignore deadlines, and deliver one-sided legal memos. This tool forces rigorous reasoning: identify jurisdiction, cite verifiable law, map procedure, address the opposing argument, connect to the client's facts.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-counsel-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/legal-counsel-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/legal-counsel-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/legal-counsel-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents cite fabricated statutes, ignore deadlines, and deliver one-sided legal memos. This tool forces rigorous reasoning: identify jurisdiction, cite verifiable law, map procedure, address the opposing argument, connect to the client's facts.
 
 ## Description
 AI agents generating legal analysis produce dangerously confident output that falls apart under professional scrutiny. They cite non-existent statutes, fabricate case law, ignore statutes of limitation, present one-sided assessments, and deliver generic memos that could apply to any client in any jurisdiction.
@@ -48,6 +50,33 @@ The tool validates logical consistency. If the agent says `ANALYSIS_PROVEN` but 
 Structured reflection tool for legal analysis — forces jurisdictional precision, verifiable citations, procedural mapping, adverse engagement, and fact-pattern connection before any counsel is delivered. Catches Jurisdiction Blind (analyzing a contract dispute without identifying whether state or federal court has subject matter jurisdiction, which state's substantive law governs under Erie, or whether a forum selection clause controls — "under applicable law" is not jurisdiction analysis. A California non-compete analysis that ignores Business and Professions Code § 16600 is malpractice. A diversity jurisdiction claim that does not verify complete diversity and amount in controversy exceeding $75,000 under 28 U.S.C. § 1332 fails at the threshold), Basis Unverifiable (citing "the relevant statute provides" without naming it — LLMs hallucinate 30-40% of legal citations. "Smith v. Jones (2019)" with no reporter volume, no page number, no court, no holding is unverifiable. A proper Bluebook citation: "Twombly, 550 U.S. 544, 570 (2007) — held that a complaint must plead facts stating a claim plausible on its face." If another attorney cannot locate and verify the citation, it does not exist), Procedurally Negligent (missing a statute of limitations is malpractice, not an oversight — a personal injury claim in New York has a 3-year SOL under CPLR § 214. A mandatory pre-litigation notice under the Federal Tort Claims Act requires 2 years from accrual. A motion to compel arbitration must be filed before answering the complaint or waiver applies. Every procedural requirement has a deadline — missing one forfeits the client's rights), One-Sided Analysis (presenting only favorable authority without addressing the strongest counterargument — ABA Model Rule 3.3(a)(2) requires disclosure of directly adverse controlling authority in the jurisdiction. "There are no counterarguments" means you have not researched the issue. Every legal position has an adverse authority — the opposing counsel will find it even if you do not), and Fact Disconnected (delivering a generic legal framework without connecting it to the client's specific dates, parties, events, documents, and evidence — "breach of contract requires offer, acceptance, consideration, and breach" is a textbook, not counsel. "On March 15, 2024, the defendant signed the SaaS agreement [Exhibit A] containing a 12-month minimum commitment at $4,200/month" is fact-connected analysis). Call once per legal question or client matter
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Legal Counsel Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "My client wants to sue their landlord for not returning the security deposit. Analyze this legal situation."
+
+**🤖 AI Agent:**
+> Verdict: JURISDICTION_BLIND. 'Sue the landlord' — under which jurisdiction's law? Which state or country? Which court has competence? Landlord-tenant law varies dramatically between jurisdictions. In New York, security deposit disputes go to Small Claims Court with a $10,000 limit. In São Paulo, it's a civil court action under Lei do Inquilinato. Without jurisdiction, there is no applicable law.
+
+---
+
+**👤 You:**
+> "Under Brazilian law (Art. 37 of Lei 8.245/91), the landlord must return the security deposit within 30 days of lease termination. My client's lease ended on March 1, 2026, the deposit was R$5,000, and the landlord has not returned it despite written demand sent April 15. The property is in São Paulo. The landlord may argue deductions for damages, but the move-out inspection report signed by both parties shows no damage. Analyze."
+
+**🤖 AI Agent:**
+> Verdict: ANALYSIS_PROVEN. Jurisdiction identified (Brazilian law, São Paulo, Lei do Inquilinato). Legal basis verifiable (Art. 37, Lei 8.245/91). Procedural path mapped (30-day return period expired, written demand sent, civil court action in São Paulo). Adverse positions addressed (landlord's damage deduction defense neutralized by signed inspection report). Fact pattern connected (specific dates, amounts, documents cited). This analysis is ready for attorney review.
+
+---
+
+**👤 You:**
+> "My client signed an NDA and now wants to report their employer's illegal dumping of toxic waste to the EPA. Under US federal law, they are protected by the Clean Water Act whistleblower provisions. There is no risk. They will certainly win."
+
+**🤖 AI Agent:**
+> Verdict: RISK_WHITEWASHED. Multiple failures. (1) 'No risk' and 'certainly win' are dangerous overstatements — whistleblower retaliation cases are notoriously complex. (2) The NDA may contain arbitration clauses affecting the procedural path. (3) The employer WILL argue the NDA applies and may seek injunctive relief. (4) Clean Water Act Section 507 has specific filing requirements (30 days from retaliation) — mapped those? Overconfidence is the most dangerous failure mode in legal analysis.
+
+
 ## Installation & Usage
 
 To install and use the **Legal Counsel Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Legal Counsel Prover** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

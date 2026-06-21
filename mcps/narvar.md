@@ -1,12 +1,14 @@
 # Narvar MCP Server
 
-Streamline post-purchase experiences — track shipments, manage returns, and provide delivery estimates directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/narvar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/narvar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/narvar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/narvar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 5
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Streamline post-purchase experiences — track shipments, manage returns, and provide delivery estimates directly through your AI agent.
 
 ## Description
 Connect **Narvar** to your AI agent to take full control of the post-purchase customer journey. From real-time tracking to automated returns, manage every logistics touchpoint through natural conversation.
@@ -44,6 +46,33 @@ Calculate estimated delivery dates (EDD)
 - **get_tracking**: Get real-time tracking information for a shipment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Narvar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Track shipment 1Z999AA10123456789 for me."
+
+**🤖 AI Agent:**
+> I've retrieved the tracking for 1Z999AA10123456789. The package is currently 'In Transit' via UPS and is expected to arrive tomorrow by 7:00 PM. The last update was in Louisville, KY.
+
+---
+
+**👤 You:**
+> "Get the details for order #ORD-5521."
+
+**🤖 AI Agent:**
+> Order #ORD-5521 contains 2 items: 'Wireless Headphones' and 'USB-C Cable'. The fulfillment status is 'Shipped' and it is linked to tracking number 9876543210.
+
+---
+
+**👤 You:**
+> "Send a 'DELIVERED_CONFIRMATION' email to customer@example.com for order ORD-123."
+
+**🤖 AI Agent:**
+> I have triggered the 'DELIVERED_CONFIRMATION' notification for order ORD-123. It has been sent to customer@example.com via Email.
+
+
 ## Installation & Usage
 
 To install and use the **Narvar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Narvar** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

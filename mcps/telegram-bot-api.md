@@ -1,12 +1,14 @@
 # Telegram Bot API MCP Server
 
-Connect your AI natively to Telegram. Read user messages, administrate chats, send push notifications, and automate media distribution directly from the prompt.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telegram-bot-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telegram-bot-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telegram-bot-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 14
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Connect your AI natively to Telegram. Read user messages, administrate chats, send push notifications, and automate media distribution directly from the prompt.
 
 ## Description
 Transform your local conversational window into a powerful global messaging director natively integrating the **Telegram Bot** MCP module. By authorizing your LLM to act as a certified Telegram Bot application, you bypass standard messaging clients entirely. Pull pending texts, analyze incoming commands, send formatted automated replies, push file alerts, and survey complex group metrics strictly evaluating server parameters without any external GUI overhead.
@@ -64,6 +66,43 @@ Sends a text message to a specific chat or user
 Sends an image to a chat using a public URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Telegram Bot API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scan the bot updates, check for new interactions, and send a structured text message back to the latest user chat ID resolving their query."
+
+**🤖 AI Agent:**
+> Interrogating 'list_bot_updates' securely natively...
+Found 2 recent updates. Extracting newest payload context. Chat ID: 8472910.
+User asks: 'Server Status'.
+Dispatching resolution dynamically utilizing 'send_text_message'. Payload correctly executed and transmitted to the Telegram Chat.
+
+---
+
+**👤 You:**
+> "Send a markdown formatted message to the #engineering channel."
+
+**🤖 AI Agent:**
+> Formatting payload with `send_message`...
+Message "Deployment to production has started. **Status: Green**" sent successfully to `@engineering_alerts` (ID: -100123456).
+
+---
+
+**👤 You:**
+> "Fetch the last 5 messages from our customer support group."
+
+**🤖 AI Agent:**
+> Calling Telegram API (`get_updates`)...
+Retrieved 5 recent messages from Chat ID -100987654:
+1. User44: 'Is the API down?'
+2. AgentSmith: 'No, looking into it...'
+3. User44: 'My token is failing.'
+4. AgentSmith: 'Can you DM me your client ID?'
+5. User12: 'I have the same issue.'
+
+
 ## Installation & Usage
 
 To install and use the **Telegram Bot API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +111,11 @@ To install and use the **Telegram Bot API** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

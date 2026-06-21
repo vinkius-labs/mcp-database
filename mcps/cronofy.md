@@ -1,12 +1,14 @@
 # Cronofy MCP Server
 
-Automate scheduling via Cronofy — unify Google, iCloud, and Exchange calendars to manage events and track multi-user availability directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cronofy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cronofy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cronofy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cronofy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate scheduling via Cronofy — unify Google, iCloud, and Exchange calendars to manage events and track multi-user availability directly from any AI agent.
 
 ## Description
 Connect your **Cronofy** account to any AI agent and take full control of your unified calendar and scheduling workflows through natural conversation.
@@ -49,6 +51,33 @@ Identify bounded CRM records inside the Headless Cronofy Engine
 - **create_scheduling_request**: Fetch elaborate explicit mapped limits via native forms dispatch
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cronofy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my calendar events from tomorrow to next week"
+
+**🤖 AI Agent:**
+> Retrieving unified events... I found 8 events across your Google and Exchange calendars. Highlights include 'Client Kickoff' on Tuesday at 10 AM and 'Team Sync' on Thursday at 2 PM.
+
+---
+
+**👤 You:**
+> "Find a 30-minute slot for a meeting with john@example.com tomorrow"
+
+**🤖 AI Agent:**
+> Analyzing availability... John has three 30-minute slots available tomorrow: 9:30 AM, 1:00 PM, and 4:30 PM. Which one works best for you?
+
+---
+
+**👤 You:**
+> "Create a scheduling link for a 'Project Review' meeting"
+
+**🤖 AI Agent:**
+> Scheduling request created! Here is the link for the 'Project Review': https://scheduling.cronofy.com/r/abc-123. This link is mapped to your live availability across all connected calendars.
+
+
 ## Installation & Usage
 
 To install and use the **Cronofy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Cronofy** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

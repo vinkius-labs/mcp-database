@@ -1,12 +1,14 @@
 # Zoho Invoice MCP Server
 
-Manage customers, create invoices, and automate billing on Zoho Invoice — the clean and simple invoicing software for small business.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-invoice-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-invoice-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-invoice-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-invoice-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 10
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage customers, create invoices, and automate billing on Zoho Invoice — the clean and simple invoicing software for small business.
 
 ## Description
 Connect your **Zoho Invoice** account to any AI agent and manage your business billing infrastructure through natural conversation.
@@ -50,6 +52,33 @@ No more manual data entry into complex billing dashboards to create a simple inv
 - **update_invoice_items**: Update invoice items
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Invoice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 invoices in Zoho Invoice."
+
+**🤖 AI Agent:**
+> I found your 5 most recent invoices: 1. #INV-0001 ($450.00, Status: Draft), 2. #INV-0002 ($1,200.00, Status: Paid), 3. #INV-0003 ($890.00, Status: Sent), and 2 others. Which one would you like to see the breakdown for?
+
+---
+
+**👤 You:**
+> "Create a new contact named 'Acme Solutions'."
+
+**🤖 AI Agent:**
+> Success! I've created a new contact for 'Acme Solutions' (ID: 550e8400-e29b...). You can now generate invoices for this customer. Would you like to create a draft invoice for them now?
+
+---
+
+**👤 You:**
+> "Find the details for invoice ID 'INV-0003'."
+
+**🤖 AI Agent:**
+> Invoice #INV-0003 Details: Customer: Global Tech, Total: $890.00, Status: Sent. Line items: 1. 'Cloud Hosting' ($700.00), 2. 'Domain Renewal' ($190.00). Would you like to see the public link for this invoice?
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Invoice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Zoho Invoice** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

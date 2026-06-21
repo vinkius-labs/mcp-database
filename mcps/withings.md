@@ -1,12 +1,14 @@
 # Withings MCP Server
 
-Access comprehensive health and fitness data — track weight, blood pressure, sleep cycles, steps, workouts, and heart rate directly from Withings devices.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/withings)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/withings)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/withings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/withings-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 10
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access comprehensive health and fitness data — track weight, blood pressure, sleep cycles, steps, workouts, and heart rate directly from Withings devices.
 
 ## Description
 Connect your **Withings** account to any AI agent to unlock deep insights into your health, wellness, and fitness data collected by Withings smart scales, watches, and medical devices.
@@ -53,6 +55,33 @@ Get recorded workouts and exercises
 Subscribe to Withings webhook notifications
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Withings** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve my weight and body fat measurements for the last 30 days."
+
+**🤖 AI Agent:**
+> I've retrieved your measurements. Your weight started at 82.5kg 30 days ago and is currently 81.2kg. Your body fat mass trended down from 19.4% to 18.8%.
+
+---
+
+**👤 You:**
+> "What was my sleep score and total sleep time last night?"
+
+**🤖 AI Agent:**
+> Last night you slept for a total of 7 hours and 12 minutes, achieving a Sleep Score of 88 (Good). You fell asleep in just 8 minutes but woke up 3 times during the night.
+
+---
+
+**👤 You:**
+> "Analyze my activity levels over the weekend. Did I hit my step goals?"
+
+**🤖 AI Agent:**
+> Looking at your activity data: On Saturday you took 12,450 steps and burned 2,400 calories (Goal met!). On Sunday, you took 6,200 steps and logged a 45-minute Cycling workout burning 450 calories, keeping your activity high despite lower steps.
+
+
 ## Installation & Usage
 
 To install and use the **Withings** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Withings** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

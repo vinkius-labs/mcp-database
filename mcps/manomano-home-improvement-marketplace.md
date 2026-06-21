@@ -1,12 +1,14 @@
 # ManoMano (Home Improvement Marketplace) MCP Server
 
-Manage your ManoMano seller account — update offer prices, track orders, and audit fulfillment stock.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/manomano-home-improvement-marketplace)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/manomano-home-improvement-marketplace)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/manomano-home-improvement-marketplace-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/manomano-home-improvement-marketplace-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** supply-chain
-**Tools Count:** 11
+
+**Category:** [supply-chain](../categories/supply-chain.md)
+
+Manage your ManoMano seller account — update offer prices, track orders, and audit fulfillment stock.
 
 ## Description
 Connect your **ManoMano Seller** account to any AI agent and take full control of your marketplace operations and home improvement catalog through natural conversation.
@@ -51,6 +53,33 @@ Update the available stock count for a specific offer
 - **list_fulfillment_stock**: Check stock maintained through ManoFulfillment (ManoMano warehouse)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ManoMano (Home Improvement Marketplace)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all ManoMano orders received today"
+
+**🤖 AI Agent:**
+> I've retrieved 5 new orders. Highlights include Order #MM-123 (Amount: €45.00, Status: Pending) and Order #MM-456 (Amount: €120.00, Status: Accepted). Would you like to see the delivery address for the pending order?
+
+---
+
+**👤 You:**
+> "Update the stock for offer 'offer-987' to 50 units"
+
+**🤖 AI Agent:**
+> Updating inventory… I've successfully set the stock for offer 'offer-987' to 50 units. Your listing on ManoMano is now synchronized with this new quantity. Would you like me to check the current price as well?
+
+---
+
+**👤 You:**
+> "Show me the stock levels in ManoFulfillment"
+
+**🤖 AI Agent:**
+> Retrieving fulfillment stock… I've identified several items in the ManoMano managed warehouse. You have 150 units of SKU 'DRILL-01' and 45 units of SKU 'SAW-05'. No low-stock alerts detected for today.
+
+
 ## Installation & Usage
 
 To install and use the **ManoMano (Home Improvement Marketplace)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **ManoMano (Home Improvement Marketplace)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

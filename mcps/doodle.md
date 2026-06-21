@@ -1,12 +1,14 @@
 # Doodle MCP Server
 
-Manage group scheduling via Doodle — create meeting polls, track participant votes, handle comments, and close polls directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/doodle)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doodle)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doodle-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doodle-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage group scheduling via Doodle — create meeting polls, track participant votes, handle comments, and close polls directly from any AI agent.
 
 ## Description
 Connect your **Doodle** account to any AI agent and take full control of your group scheduling and meeting polls through natural conversation.
@@ -60,6 +62,33 @@ Remove a participant and their votes from a Doodle poll
 Close a Doodle poll and set the final chosen option
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Doodle** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my Doodle polls"
+
+**🤖 AI Agent:**
+> I found 3 polls in your account: 'Team Offsite Planning' (OPEN), 'Client Project Kickoff' (OPEN), and 'Monthly Sync' (CLOSED). Which one would you like to inspect for participant votes?
+
+---
+
+**👤 You:**
+> "Create a poll 'Launch Sync' with options: 'Monday 10am', 'Tuesday 2pm'"
+
+**🤖 AI Agent:**
+> Poll created! 'Launch Sync' (ID: poll_abc123) is now active with 2 time options. You can now invite participants to vote on their preferred slots.
+
+---
+
+**👤 You:**
+> "Who has voted on the 'Team Offsite' poll?"
+
+**🤖 AI Agent:**
+> Retrieving participants for 'Team Offsite'... 5 people have voted: 'Alice', 'Bob', 'Charlie', 'David', and 'Eve'. I can show you the detailed preference breakdown for each participant if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Doodle** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Doodle** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

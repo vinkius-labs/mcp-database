@@ -1,12 +1,14 @@
 # Ugosign MCP Server
 
-Sign documents electronically with a platform that supports advanced electronic signatures and complies with European regulations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ugosign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ugosign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ugosign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ugosign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 6
+
+**Category:** [document-management](../categories/document-management.md)
+
+Sign documents electronically with a platform that supports advanced electronic signatures and complies with European regulations.
 
 ## Description
 Connect your **Ugosign** account to any AI agent to streamline your electronic signature and document approval workflows. Ugosign provides a powerful REST API for programmatically managing signature requests, tracking document statuses, and maintaining a secure audit trail of all signed agreements.
@@ -43,6 +45,33 @@ Create a new signature request
 - **list_signature_requests**: List all signature requests
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Ugosign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active signature requests in Ugosign."
+
+**🤖 AI Agent:**
+> I've retrieved your signature requests. You have 5 active requests, including 'Employment Agreement - John Doe' (Pending) and 'Sales Contract - Acme Corp' (Viewed).
+
+---
+
+**👤 You:**
+> "What is the status of signature request 'req_123'?"
+
+**🤖 AI Agent:**
+> Signature request 'req_123' ('Service Agreement') is currently 'Signed' by all parties. The execution was completed today at 10:15 AM.
+
+---
+
+**👤 You:**
+> "Show me the details for my Ugosign organization."
+
+**🤖 AI Agent:**
+> I've retrieved your organization details. Your account is 'Vinkius Legal' (ID: 552) and you have unlimited signature requests remaining on your current plan.
+
+
 ## Installation & Usage
 
 To install and use the **Ugosign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Ugosign** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

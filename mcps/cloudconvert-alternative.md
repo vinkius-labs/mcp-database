@@ -1,12 +1,14 @@
 # CloudConvert MCP Server
 
-Convert files between 200+ formats including PDF, images, video, and documents with a fast cloud-based processing engine.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudconvert-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudconvert-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudconvert-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudconvert-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Convert files between 200+ formats including PDF, images, video, and documents with a fast cloud-based processing engine.
 
 ## Description
 Connect your **CloudConvert** account to any AI agent and take full control of your cloud-based file processing and document automation workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual file uploading or searching for specialized converter apps. Your 
 - **list_tasks**: List all tasks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CloudConvert** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert the DOCX file at 'https://example.com/spec.docx' to PDF."
+
+**🤖 AI Agent:**
+> Conversion job triggered! I've started the process to convert your DOCX specification into a high-fidelity PDF. The job ID is 'job_123'. I'll retrieve the secure download link for you once it's ready.
+
+---
+
+**👤 You:**
+> "List my last 5 conversion jobs and their statuses."
+
+**🤖 AI Agent:**
+> I've retrieved your recent jobs. Highlights include a successful MP4 to MKV conversion (ID: job_402) and two completed PDF exports. Would you like the download links for any of these finalized files?
+
+---
+
+**👤 You:**
+> "Check my remaining CloudConvert credits."
+
+**🤖 AI Agent:**
+> Scanning account... You currently have 1,240 conversion credits remaining in your profile. Your connection is active and healthy. Need help starting a new high-fidelity media conversion?
+
+
 ## Installation & Usage
 
 To install and use the **CloudConvert** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **CloudConvert** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

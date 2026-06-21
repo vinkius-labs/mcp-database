@@ -1,12 +1,14 @@
 # FRED Tags & Sources — Data Discovery MCP Server
 
-Discover FRED series through intelligent tagging: search tags like 'gdp', 'inflation', 'monthly', combine multiple tags to find exactly the right series, and explore all 107 official data sources from BLS to the Census Bureau.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-tags-sources-data-discovery)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-tags-sources-data-discovery)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fred-tags-sources-data-discovery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fred-tags-sources-data-discovery-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 3
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Discover FRED series through intelligent tagging: search tags like 'gdp', 'inflation', 'monthly', combine multiple tags to find exactly the right series, and explore all 107 official data sources from BLS to the Census Bureau.
 
 ## Description
 The discovery layer for FRED. Tags & Sources helps your AI agent find exactly the right series by filtering through FRED's comprehensive tagging system.
@@ -30,6 +32,63 @@ Get FRED series matching specific tags
 - **list_sources**: List all FRED data sources
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FRED Tags & Sources — Data Discovery** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all monthly U.S. GDP-related series"
+
+**🤖 AI Agent:**
+> 🏷 **Tags: usa + gdp + monthly**
+
+Found 47 matching series:
+1. MRTSSM44X72USS — Retail Sales
+2. TOTALSA — Vehicle Sales
+3. INDPRO — Industrial Production
+4. TSIFRGHT — Transportation Index
+...
+
+All are monthly U.S. GDP-component indicators.
+
+---
+
+**👤 You:**
+> "List all data sources that contribute to FRED"
+
+**🤖 AI Agent:**
+> 🏛 **FRED Data Sources (107 total)**
+
+1. Bureau of Labor Statistics (BLS)
+2. Bureau of Economic Analysis (BEA)
+3. Board of Governors of the Federal Reserve
+4. U.S. Census Bureau
+5. U.S. Department of the Treasury
+6. International Monetary Fund (IMF)
+7. World Bank
+8. OECD
+...
+
+107 official sources spanning U.S. and international organizations.
+
+---
+
+**👤 You:**
+> "What tags are most popular on FRED?"
+
+**🤖 AI Agent:**
+> 🏷 **Top FRED Tags by Series Count**
+
+1. `usa` — 245K series
+2. `monthly` — 178K series
+3. `annual` — 156K series
+4. `nsa` (not seasonally adjusted) — 142K
+5. `county` — 98K series
+6. `quarterly` — 67K series
+7. `sa` (seasonally adjusted) — 54K
+8. `gdp` — 12K series
+
+
 ## Installation & Usage
 
 To install and use the **FRED Tags & Sources — Data Discovery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -38,4 +97,11 @@ To install and use the **FRED Tags & Sources — Data Discovery** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

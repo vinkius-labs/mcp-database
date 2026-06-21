@@ -1,12 +1,14 @@
 # Open Trivia Database MCP Server
 
-Access 13,000+ community-curated trivia questions from OpenTDB � filter by category, difficulty, and type with session-based deduplication.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-trivia-database)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-trivia-database)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-trivia-database-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-trivia-database-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 6
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access 13,000+ community-curated trivia questions from OpenTDB � filter by category, difficulty, and type with session-based deduplication.
 
 ## Description
 Empower your AI agent to orchestrate your entire entertainment research and trivia auditing workflow with **The Trivia API**, the comprehensive source for high-quality quiz data. By connecting The Trivia API to your agent, you transform complex content searches into a natural conversation. Your agent can instantly retrieve random trivia questions, audit category distributions, and query specific difficulty levels without you ever touching a trivia portal. Whether you are building social applications or conducting research on general knowledge, your agent acts as a real-time creative assistant, ensuring your content is always engaging and well-categorized.
@@ -46,6 +48,33 @@ Request a new session token to avoid duplicate questions
 - **reset_session_token**: Reset a session token to start receiving all questions again
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Trivia Database** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get 5 random trivia questions from the 'Science' category using Trivia API."
+
+**🤖 AI Agent:**
+> I've retrieved 5 science trivia questions for you! They cover topics from biology to physics and are identified as having varied difficulties. Would you like the correct answers or another set of questions?
+
+---
+
+**👤 You:**
+> "Show me easy trivia questions about 'Geography'."
+
+**🤖 AI Agent:**
+> I've identified several easy geography questions! Notable entries include queries about major world capitals and landmarks. I can provide the full list of choices for each question if you'd like.
+
+---
+
+**👤 You:**
+> "List all available trivia categories."
+
+**🤖 AI Agent:**
+> I've scanned the category catalog. There are 10 main groups available, including 'Arts & Literature', 'Film & TV', 'Food & Drink', 'General Knowledge', and 'Geography'. I can help you retrieve questions for any of these specific themes.
+
+
 ## Installation & Usage
 
 To install and use the **Open Trivia Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Open Trivia Database** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

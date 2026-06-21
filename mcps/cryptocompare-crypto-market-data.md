@@ -1,12 +1,14 @@
 # CryptoCompare (Crypto Market Data) MCP Server
 
-Access real-time and historical cryptocurrency market data, news, and top coins directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cryptocompare-crypto-market-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cryptocompare-crypto-market-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cryptocompare-crypto-market-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cryptocompare-crypto-market-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 13
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Access real-time and historical cryptocurrency market data, news, and top coins directly from your AI agent.
 
 ## Description
 Connect your **CryptoCompare** account to any AI agent to access institutional-grade cryptocurrency market data through natural conversation.
@@ -48,6 +50,33 @@ Connect your **CryptoCompare** account to any AI agent to access institutional-g
 - **list_news_feeds**: List available news feeds
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CryptoCompare (Crypto Market Data)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current price of BTC in USD and EUR?"
+
+**🤖 AI Agent:**
+> I've checked the latest market data. Bitcoin (BTC) is currently trading at $64,250.50 USD and €59,120.30 EUR.
+
+---
+
+**👤 You:**
+> "Show me the daily historical data for ETH/USD for the last 7 days."
+
+**🤖 AI Agent:**
+> Retrieving historical OHLCV data for Ethereum... Here are the daily closes for the last week, showing a trend from $3,420 up to $3,550.
+
+---
+
+**👤 You:**
+> "List the top 5 cryptocurrencies by market cap in USD."
+
+**🤖 AI Agent:**
+> The current top 5 coins by market cap are: 1. Bitcoin (BTC), 2. Ethereum (ETH), 3. Tether (USDT), 4. BNB, and 5. Solana (SOL).
+
+
 ## Installation & Usage
 
 To install and use the **CryptoCompare (Crypto Market Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **CryptoCompare (Crypto Market Data)** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

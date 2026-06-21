@@ -1,12 +1,14 @@
 # Audiomack MCP Server
 
-Stream and discover music via Audiomack — search tracks, manage playlists, and follow artists directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/audiomack)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audiomack)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/audiomack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/audiomack-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 28
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Stream and discover music via Audiomack — search tracks, manage playlists, and follow artists directly from your AI agent.
 
 ## Description
 Connect your **Audiomack** account to any AI agent and explore a vast library of music and podcasts through natural conversation.
@@ -63,6 +65,33 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 - **update_playlist**: Edit an existing playlist (Requires Auth)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Audiomack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top trending hip-hop songs on Audiomack right now."
+
+**🤖 AI Agent:**
+> I've fetched the trending hip-hop charts. Currently, 'Song Title A' by Artist X and 'Song Title B' by Artist Y are leading. Would you like to hear one of them?
+
+---
+
+**👤 You:**
+> "Search for the artist '21 Savage' and list their latest uploads."
+
+**🤖 AI Agent:**
+> I found 21 Savage (ID: 54321). Their latest uploads include the album 'American Dream' and the single 'Redrum'. Should I add any of these to your favorites?
+
+---
+
+**👤 You:**
+> "Create a new playlist called 'Focus Beats' and add track ID 987654 to it."
+
+**🤖 AI Agent:**
+> Playlist 'Focus Beats' has been created successfully. I've also added track 987654 to it. You can now manage this playlist using ID 112233.
+
+
 ## Installation & Usage
 
 To install and use the **Audiomack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Audiomack** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

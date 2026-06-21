@@ -1,12 +1,14 @@
 # NavAPI MCP Server
 
-Manage maritime navigation — audit ports, routes, and traffic via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/navapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/navapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/navapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Manage maritime navigation — audit ports, routes, and traffic via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire maritime research and nautical auditing workflow with **NavAPI**, the comprehensive source for global shipping and navigation data. By connecting NavAPI to your agent, you transform complex logistics searches into a natural conversation. Your agent can instantly search for maritime ports, audit nautical distances, and retrieve vessel traffic statistics without you ever touching a technical portal. Whether you are planning shipping routes or conducting regional maritime audits, your agent acts as a real-time nautical consultant, ensuring your data is always precise and localized.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire maritime research and nautical 
 - **search_maritime_routes**: Search for maritime shipping routes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NavAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for ports in 'Singapore' using NavAPI."
+
+**🤖 AI Agent:**
+> I've retrieved the ports for Singapore! The primary entry is the Port of Singapore (ID: SGSIN). Would you like to see the current vessel traffic or the available nautical charts for this region?
+
+---
+
+**👤 You:**
+> "Calculate the nautical distance between 'SGSIN' (Singapore) and 'NLRTM' (Rotterdam)."
+
+**🤖 AI Agent:**
+> The nautical distance between Singapore and Rotterdam is approximately 8,300 NM via the Suez Canal. I can assist you with more route auditing if needed.
+
+---
+
+**👤 You:**
+> "What is the current traffic at the Port of Shanghai (CNSHA)?"
+
+**🤖 AI Agent:**
+> I've retrieved the real-time traffic for Shanghai! There are currently over 200 vessels identified in the port area. Notable categories include container ships and bulk carriers. I can provide the breakdown by vessel type if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **NavAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **NavAPI** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

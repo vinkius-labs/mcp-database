@@ -1,12 +1,14 @@
 # Fidelizador MCP Server
 
-Build customer loyalty programs with points, rewards, and engagement campaigns that keep shoppers coming back.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fidelizador)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fidelizador)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fidelizador-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fidelizador-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Build customer loyalty programs with points, rewards, and engagement campaigns that keep shoppers coming back.
 
 ## Description
 Connect your **Fidelizador** account to any AI agent and take full control of your email marketing and automation workflows through natural conversation.
@@ -45,6 +47,33 @@ No more manual subscriber management or complex campaign navigation in the dashb
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fidelizador** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email campaigns in Fidelizador."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 3 active mailings, including 'Spring Promotion 2026' (ID: 101) and 'Product Newsletter'. Would you like the open rates for any of these?
+
+---
+
+**👤 You:**
+> "Create a new contact 'John Doe' (john@example.com) in Fidelizador."
+
+**🤖 AI Agent:**
+> Contact created! John Doe has been successfully added to your Fidelizador database. Shall I add him to a specific mailing list now?
+
+---
+
+**👤 You:**
+> "Show me the details for campaign ID '101'."
+
+**🤖 AI Agent:**
+> Fetching campaign 101... This 'Spring Promotion' had a 25% open rate and a 5% click-through rate. It was delivered to 1,500 recipients. Would you like a breakdown by list?
+
+
 ## Installation & Usage
 
 To install and use the **Fidelizador** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Fidelizador** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

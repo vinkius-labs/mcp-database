@@ -1,12 +1,14 @@
 # Highnote MCP Server
 
-Automate card issuance and financial management via Highnote — manage account holders, cards, and transactions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/highnote)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/highnote)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/highnote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/highnote-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 11
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate card issuance and financial management via Highnote — manage account holders, cards, and transactions directly from any AI agent.
 
 ## Description
 Connect your **Highnote** card platform to any AI agent and take full control of your card issuance, financial accounts, and ledger through natural conversation.
@@ -57,6 +59,33 @@ List virtual and physical cards issued in your program
 Change the status of a card (e.g., ACTIVE, FROZEN, CLOSED)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Highnote** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all financial accounts and show their current balances."
+
+**🤖 AI Agent:**
+> I've retrieved your financial accounts. You have 3 active ledgers: 'Main Operations' ($145,000.00), 'Fleet Fuel Card Fund' ($12,500.00), and 'Marketing Expenses' ($5,000.00). Would you like to see the recent ledger entries for any of these?
+
+---
+
+**👤 You:**
+> "Show the last 5 transactions for card ending in 4492."
+
+**🤖 AI Agent:**
+> Accessing transaction history... For card **** 4492, the 5 most recent transactions include: $42.50 at 'Shell Station', $12.99 at 'Starbucks', and $150.00 at 'Amazon'. All transactions are currently in 'CLEARED' status. Should I retrieve the full details for the Amazon purchase?
+
+---
+
+**👤 You:**
+> "Freeze card ID 'card_992' immediately."
+
+**🤖 AI Agent:**
+> Card frozen! I've successfully updated the status of card card_992 to 'FROZEN'. This card will no longer accept new transactions until it is unfrozen. Would you like me to notify the account holder via email?
+
+
 ## Installation & Usage
 
 To install and use the **Highnote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Highnote** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

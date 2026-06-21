@@ -1,12 +1,14 @@
 # Cacheflow MCP Server
 
-Close SaaS deals faster with automated quoting, billing, and subscription management that removes procurement friction.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cacheflow)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cacheflow)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cacheflow-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cacheflow-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 6
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Close SaaS deals faster with automated quoting, billing, and subscription management that removes procurement friction.
 
 ## Description
 Connect your **Cacheflow** account to any AI agent and take full control of your automated sales proposals and checkout workflows through natural conversation.
@@ -46,6 +48,33 @@ Create a new sales proposal
 - **sync_to_crm**: Sync proposal to CRM
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cacheflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active sales proposals in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your active proposals. You have 3 documents awaiting signature, including 'Enterprise License - Acme Corp' (ID: prop_123). Would you like to check if they've viewed the document yet?
+
+---
+
+**👤 You:**
+> "Show my pending internal approval requests."
+
+**🤖 AI Agent:**
+> Accessing approval queue... You have 2 pending requests: one for 'Q2 Product Bundle' requiring VP signature and another for 'Partner Discount' (ID: app_456). Shall I provide the high-fidelity metadata for these?
+
+---
+
+**👤 You:**
+> "Sync proposal 'prop_123' to HubSpot."
+
+**🤖 AI Agent:**
+> CRM sync triggered! I've initiated the data push for proposal prop_123 to your connected HubSpot instance. Your deal records will be updated automatically. Need help with any other CRM task?
+
+
 ## Installation & Usage
 
 To install and use the **Cacheflow** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Cacheflow** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Argo Workflows MCP Server
 
-Automate Kubernetes orchestrations via Argo Workflows — monitor, list, and inspect active pods, crons, and workflow templates directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/argo-workflows)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/argo-workflows)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/argo-workflows-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/argo-workflows-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 6
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Automate Kubernetes orchestrations via Argo Workflows — monitor, list, and inspect active pods, crons, and workflow templates directly from any AI agent.
 
 ## Description
 Connect your **Argo Workflows** cluster to any AI agent and take full control of your infrastructure orchestration through natural conversation.
@@ -42,6 +44,33 @@ No more wrestling with `kubectl` CLI tools or constantly refreshing the Argo Web
 - **get_server_info**: Get Argo Workflows server information
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Argo Workflows** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active workflows in the 'data-engineering' namespace."
+
+**🤖 AI Agent:**
+> I found 4 active workflows in 'data-engineering'. Three are executing robustly, but 'etl-nightly-pipeline' has been pending for 22 minutes. Would you like me to get the deep tree view of this pipeline to see which pod is stuck?
+
+---
+
+**👤 You:**
+> "What is the detailed status tree of the workflow named 'daily-backup-55x'?"
+
+**🤖 AI Agent:**
+> I've inspected the tree for 'daily-backup-55x'. The master process reports 'Failed'. Specifically, node 's3-upload-step' crashed exiting with code 1. The previous node 'pg-dump' succeeded. It seems to be an S3 permission issue in the pod parameter payload.
+
+---
+
+**👤 You:**
+> "Are there any parameterized WorkflowTemplates available for me to run?"
+
+**🤖 AI Agent:**
+> Listing your templates... You have 3 reusable components: `model-training-tmpl` (requires hyperparameters as array input), `data-cleanup` (expects an S3 bucket URI), and `slack-notification-hook`. They are all initialized and stored in the default namespace.
+
+
 ## Installation & Usage
 
 To install and use the **Argo Workflows** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Argo Workflows** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

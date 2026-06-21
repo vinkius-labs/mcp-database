@@ -1,12 +1,14 @@
 # OneTrust MCP Server
 
-Manage privacy requests, assessments, vendors, consent, and incidents via OneTrust — automate GDPR, CCPA, and data governance from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/onetrust)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onetrust)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onetrust-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onetrust-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage privacy requests, assessments, vendors, consent, and incidents via OneTrust — automate GDPR, CCPA, and data governance from any AI agent.
 
 ## Description
 Connect your **OneTrust** account to any AI agent and manage privacy compliance, vendor risks, and data governance through natural conversation.
@@ -67,6 +69,49 @@ List privacy and security risks from OneTrust risk register — identified risks
 List third-party vendors in OneTrust vendor risk management — data processors, subprocessors, and partners with security/privacy risk ratings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OneTrust** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many open data subject requests do we have?"
+
+**🤖 AI Agent:**
+> You have **7 open DSARs**:
+
+🔴 **2 overdue** — Both are deletion requests (GDPR Art. 17) past the 30-day deadline
+🟡 **3 in progress** — 1 access request, 2 portability requests (due in 12, 18, 22 days)
+🟢 **2 new** — Submitted today, auto-routed to the Privacy Team
+
+The 2 overdue requests need immediate attention — shall I show the details?
+
+---
+
+**👤 You:**
+> "Which vendors have overdue security assessments?"
+
+**🤖 AI Agent:**
+> There are currently 4 vendors with overdue security assessments:
+1. CloudHost Inc. (High Risk) - Overdue by 15 days
+2. DataFlow Analytics (Medium Risk) - Overdue by 8 days
+3. MailSender Corp (Low Risk) - Overdue by 3 days
+4. CDN Partners (Medium Risk) - Overdue by 1 day
+Would you like me to trigger automated reminders for these vendors?
+
+---
+
+**👤 You:**
+> "Show the data map for our CRM system."
+
+**🤖 AI Agent:**
+> Here is the data map for the CRM System:
+- **Personal Data Processed:** Names, email addresses, phone numbers, purchase history.
+- **Purpose:** Customer relationship management, direct marketing.
+- **Legal Basis:** Legitimate interest (CRM), Consent (Direct Marketing).
+- **Retention Period:** 5 years after last contact.
+The CRM system is fully compliant with current policies.
+
+
 ## Installation & Usage
 
 To install and use the **OneTrust** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +120,11 @@ To install and use the **OneTrust** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

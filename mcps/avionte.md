@@ -1,12 +1,14 @@
 # Avionte MCP Server
 
-Manage staffing and recruiting workflows via Avionte — query talent profiles, work history, company details, and department data directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/avionte)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avionte)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/avionte-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/avionte-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 16
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Manage staffing and recruiting workflows via Avionte — query talent profiles, work history, company details, and department data directly from your AI agent.
 
 ## Description
 Connect your **Avionte** staffing platform to any AI agent and streamline your recruitment and talent management workflows through natural conversation.
@@ -55,6 +57,33 @@ Retrieve details for a specific talent
 - **get_web_applications_for_talent**: List jobs a talent has applied for
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Avionte** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Retrieve the full profile and work history for talent ID 98765."
+
+**🤖 AI Agent:**
+> I've fetched the data for talent 98765. The candidate is Jane Smith. Her work history includes 3 years as a Senior Developer at TechCorp and 2 years at WebSolutions. Would you like to see her education history as well?
+
+---
+
+**👤 You:**
+> "What is the current nomination stage for talent 12345?"
+
+**🤖 AI Agent:**
+> Talent 12345 is currently in the 'Final Interview' stage of the nomination process. The next step scheduled is 'Reference Check'.
+
+---
+
+**👤 You:**
+> "Get the address for department ID 5544 and list any tags for company ID 100."
+
+**🤖 AI Agent:**
+> Department 5544 is located at 123 Innovation Way, Suite 400. For company 100, I found the following tags: 'Strategic Partner', 'High Volume', and 'IT Services'.
+
+
 ## Installation & Usage
 
 To install and use the **Avionte** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Avionte** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

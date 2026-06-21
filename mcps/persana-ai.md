@@ -1,12 +1,14 @@
 # Persana AI MCP Server
 
-Enrich leads with AI that researches prospects, scores intent signals, and builds personalized outreach sequences automatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/persana-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/persana-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/persana-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/persana-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Enrich leads with AI that researches prospects, scores intent signals, and builds personalized outreach sequences automatically.
 
 ## Description
 Connect your **Persana AI** account to any AI agent and take full control of your outbound sales orchestration and lead intelligence through natural conversation. Persana AI provides a powerful platform for finding deep B2B insights, tracking real-time buying signals (like job changes or funding), and maintaining a high-fidelity sales pipeline.
@@ -52,6 +54,33 @@ Enrich person data
 - **verify_email**: Verify if an email address is deliverable
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Persana AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Enrich the prospect with LinkedIn URL 'https://linkedin.com/in/robert-chen'."
+
+**🤖 AI Agent:**
+> I've enriched the profile for Robert Chen. He is the 'VP of Engineering' at 'CloudScale'. I found his verified work email (robert@cloudscale.io) and identified 3 recent buying signals for his organization. Would you like a summary of the organization's growth?
+
+---
+
+**👤 You:**
+> "Enrich the professional profile for sarah.chen@meridian.io with company and social data."
+
+**🤖 AI Agent:**
+> Profile enriched for sarah.chen@meridian.io. Name: Sarah Chen, VP of Engineering at Meridian Corp (Series B, 180 employees). Location: San Francisco, CA. LinkedIn: 2,400+ connections. Previous: Senior Engineer at DataFlow (3 years). Company revenue: $24M ARR. Tech stack detected: React, AWS, PostgreSQL. Buying signal: Recently posted about scaling infrastructure challenges.
+
+---
+
+**👤 You:**
+> "Find all job changes in my target account list from the last 30 days."
+
+**🤖 AI Agent:**
+> 23 job changes detected in your target accounts over the last 30 days. Notable moves: James Park joined Acme Corp as CTO (previously VP Eng at TechFlow). Lisa Wang became Head of Product at ScaleUp. 8 new VP-level hires detected across your enterprise accounts. 5 contacts left their companies entirely. These represent high-value outreach opportunities since new decision-makers often evaluate tooling within the first 90 days.
+
+
 ## Installation & Usage
 
 To install and use the **Persana AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Persana AI** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

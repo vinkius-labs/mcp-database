@@ -1,12 +1,14 @@
 # Gripr MCP Server
 
-Manage safety compliance, inspections, and risk assessments for construction and industrial projects with mobile-first tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gripr)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gripr)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gripr-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gripr-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** construction
-**Tools Count:** 11
+
+**Category:** [construction](../categories/construction.md)
+
+Manage safety compliance, inspections, and risk assessments for construction and industrial projects with mobile-first tools.
 
 ## Description
 Connect your **Gripr (Goliath Systemer)** account to any AI agent and take full control of your construction projects and craft business workflows through natural conversation.
@@ -50,6 +52,33 @@ List tasks
 - **register_hours**: Register work hours
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gripr** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active construction projects."
+
+**🤖 AI Agent:**
+> I've retrieved your active projects. You have 3 ongoing works: 'Oslo Waterfront' (ID: p_123), 'Mountain Cabin' (ID: p_456), and 'City Hub' (ID: p_789). Which one would you like to update?
+
+---
+
+**👤 You:**
+> "Register 120 minutes of work for project 'p_123' today."
+
+**🤖 AI Agent:**
+> Time registered! I've added 120 minutes to the 'Oslo Waterfront' project for today's date. The entry is now logged in your Gripr history for billing.
+
+---
+
+**👤 You:**
+> "Show me a list of all customers in Gripr."
+
+**🤖 AI Agent:**
+> Scanning customers... I found 5 registered clients, including 'Acme Corp' and 'Global Builders'. Would you like the contact details for any specific customer?
+
+
 ## Installation & Usage
 
 To install and use the **Gripr** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Gripr** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

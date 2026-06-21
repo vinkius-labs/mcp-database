@@ -1,12 +1,14 @@
 # Floor Area Ratio Calculator MCP Server
 
-Calculate maximum buildable footprint, total floor area, and green space compliance for any plot size in seconds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/floor-area-ratio-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/floor-area-ratio-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/floor-area-ratio-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/floor-area-ratio-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 3
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Calculate maximum buildable footprint, total floor area, and green space compliance for any plot size in seconds.
 
 ## Description
 ## Building Development Feasibility Analysis
@@ -38,6 +40,33 @@ Calculate the maximum total floor area allowed on a plot based on Floor Area Rat
 Calculate minimum permeable area required and available buildable ground after accounting for green space requirements
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Floor Area Ratio Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We have a plot of 10,000 sq units. The zoning requires a max site coverage of 60% and a minimum permeability of 30%. What is the maximum total floor area we can build?"
+
+**🤖 AI Agent:**
+> First, calculate the max footprint using `max_site_coverage(plotArea=10000, maxSiteCoveragePercentage=0.6)`. Next, use that result and run `calculate_permeability(lotArea=10000, minPermeabilityPercentage=0.3, grossBuildingFootprintArea=<result from previous step>)` to find the actual usable footprint. Finally, input this reduced footprint into `max_total_area(plotArea=10000, maxFARPercentage=2.5, siteCoverageFootprintArea=<usable footprint>)` for the final answer.
+
+---
+
+**👤 You:**
+> "Given a 100 sq unit plot with an FAR of 2.5, what is our maximum total buildable area?"
+
+**🤖 AI Agent:**
+> Run the `max_total_area` tool: `max_total_area(plotArea=100, maxFARPercentage=2.5, siteCoverageFootprintArea=null)`. This will give you a quick estimate of total density compliance.
+
+---
+
+**👤 You:**
+> "Verify that our proposed 40% ground footprint on a 5,000 sq unit lot meets zoning standards for occupancy."
+
+**🤖 AI Agent:**
+> Use the `max_site_coverage` tool: `max_site_coverage(plotArea=5000, maxSiteCoveragePercentage=0.4)`. This will confirm if your proposed footprint is within the legal limit set by the zoning code.
+
+
 ## Installation & Usage
 
 To install and use the **Floor Area Ratio Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Floor Area Ratio Calculator** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

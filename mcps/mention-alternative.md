@@ -1,12 +1,14 @@
 # Mention MCP Server
 
-Monitor brand mentions across the web, social media, and news in real time to protect your reputation and spot trends early.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mention-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mention-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mention-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mention-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Monitor brand mentions across the web, social media, and news in real time to protect your reputation and spot trends early.
 
 ## Description
 Connect your **Mention** account to any AI agent and manage brand monitoring through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Mention** account to any AI agent and manage brand monitoring thr
 - **search_mentions_by_keyword**: Find mentions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mention** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show recent mentions for the 'Vinkius Launch' alert."
+
+**🤖 AI Agent:**
+> Alert 'Vinkius Launch': 145 mentions in 24h. Sources: Twitter (89), News (34), Blogs (22). Sentiment: 78% Positive 🟢, 20% Neutral ⚪, 2% Negative 🔴. Top mention: TechCrunch article ('Vinkius redefines AI agents').
+
+---
+
+**👤 You:**
+> "List all active alerts and their mention volumes."
+
+**🤖 AI Agent:**
+> Active Alerts: 4. 1) 'Brand Name' (1,240 mentions/week). 2) 'Competitor X' (3,400 mentions/week). 3) '#IndustryConf2024' (890 mentions). 4) 'CEO Name' (45 mentions). Total volume: 5,575. Unread mentions: 342.
+
+---
+
+**👤 You:**
+> "Show negative mentions from the last 2 days."
+
+**🤖 AI Agent:**
+> Found 12 negative mentions. 1) @user (Twitter): 'Support is taking too long to reply.' 2) Reddit (/r/saas): 'Pricing update is confusing.' 3) Blog review: 'Great features, but UX needs work.' Would you like to read the full Reddit thread?
+
+
 ## Installation & Usage
 
 To install and use the **Mention** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Mention** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

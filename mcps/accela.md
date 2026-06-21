@@ -1,12 +1,14 @@
 # Accela MCP Server
 
-Manage civic services, permits, and inspections via Accela — search records, schedule inspections, and manage land parcels directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accela)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accela)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accela-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accela-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 13
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage civic services, permits, and inspections via Accela — search records, schedule inspections, and manage land parcels directly from any AI agent.
 
 ## Description
 Connect your **Accela** civic platform to any AI agent to streamline government and public data workflows. Manage the entire lifecycle of permits, inspections, and land records through natural language.
@@ -47,6 +49,33 @@ Connect your **Accela** civic platform to any AI agent to streamline government 
 - **upload_document**: Upload a new document (e.g., blueprints, photos)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Accela** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all building permits with a 'Pending' status."
+
+**🤖 AI Agent:**
+> I found 3 pending building permits. The most recent is REC-2024-001 for a residential renovation. Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Schedule a 'Final Plumbing' inspection for record REC-9982 on 2024-12-15."
+
+**🤖 AI Agent:**
+> The 'Final Plumbing' inspection for record REC-9982 has been successfully scheduled for December 15, 2024. The confirmation ID is INSP-554.
+
+---
+
+**👤 You:**
+> "Get the detailed information for record ID REC-10293."
+
+**🤖 AI Agent:**
+> Retrieving record REC-10293... This is a 'Commercial Electrical' permit issued to 'BuildIt Corp'. Current status is 'Active' and it was last updated on 2024-11-01.
+
+
 ## Installation & Usage
 
 To install and use the **Accela** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Accela** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

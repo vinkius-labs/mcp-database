@@ -1,12 +1,14 @@
 # Stadia Maps MCP Server
 
-Equip your AI with advanced geospatial routing and mapping logic. Calculate distances, geocode coordinates, and plot optimized trips securely.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stadia-maps)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stadia-maps)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stadia-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stadia-maps-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Equip your AI with advanced geospatial routing and mapping logic. Calculate distances, geocode coordinates, and plot optimized trips securely.
 
 ## Description
 Imbue your artificial intelligence environment with the geospatial and routing capabilities of **Stadia Maps**. Seamlessly audit logistical questions and compute optimal transit routes across numerous delivery points without leaving your conversational interface. Empower your assistant to translate standard addresses into precise geographic coordinates, calculate time-and-distance matrices objectively, or parse topographical elevation data efficiently, connecting global mapping infrastructure directly to your local workflows.
@@ -48,6 +50,36 @@ Calculates the most efficient route between multiple stops
 - **reverse_geocode**: Converts geographic coordinates into a physical address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stadia Maps** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Locate and securely return the comprehensive latitude and longitude values associated with this address: '1600 Amphitheatre Parkway, Mountain View, CA'."
+
+**🤖 AI Agent:**
+> Initiating query analysis to index string formats effectively via `forward_geocode` targeting official datasets...
+
+**Coordinates Resolved** 📍
+- **Latitude:** `37.4225`
+- **Longitude:** `-122.084`
+
+The targeted input accurately evaluates to corresponding geographical metrics.
+
+---
+
+**👤 You:**
+> "Analyze these targeted locations formatting parameters into a complete trip route simulation enforcing an algorithmic analysis assuming optimal routing for automobiles."
+
+**🤖 AI Agent:**
+> Evaluating parameters defined specifically for operation execution utilizing mode "auto" via `optimized_trip_route`.
+
+**System Routing Computed and Sequenced**:
+1. 🏁 Node Departure A (Lat: 40.71, Lon: -74.00)
+2. 🚙 Logistical Intermediate Segment Node B (Lat: 40.75, Lon: -73.98)
+3. 🏁 Objective Target Completion Target C (Lat: 40.78, Lon: -73.96)
+
+
 ## Installation & Usage
 
 To install and use the **Stadia Maps** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +88,11 @@ To install and use the **Stadia Maps** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

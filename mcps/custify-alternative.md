@@ -1,12 +1,14 @@
 # Custify MCP Server
 
-Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/custify-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/custify-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/custify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/custify-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team.
 
 ## Description
 Connect your **Custify** customer success account to any AI agent and simplify how you manage your product users, track account health, and monitor churn risk through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Custify** customer success account to any AI agent and simplify h
 - **track_user_event**: Track a custom event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Custify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active companies in my Custify account."
+
+**🤖 AI Agent:**
+> I've retrieved your companies list. You have 25 managed accounts including 'Acme Corp', 'Tech Giant', and 'Global Logistics'. Which one would you like to see the health score for?
+
+---
+
+**👤 You:**
+> "Show me the details and health for person 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Fetching profile... John Doe currently has a Health Score of 92/100 (Healthy). His last recorded event was 'Feature X Usage' 2 hours ago. Would you like to see his full engagement history?
+
+---
+
+**👤 You:**
+> "Track a 'Button Clicked' event for user 'user_88231'."
+
+**🤖 AI Agent:**
+> Event tracked! I've recorded the 'Button Clicked' action for user user_88231 in Custify. This data will be used to update their health score and engagement metrics.
+
+
 ## Installation & Usage
 
 To install and use the **Custify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Custify** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

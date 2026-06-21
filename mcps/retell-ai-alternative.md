@@ -1,12 +1,14 @@
 # Retell AI MCP Server
 
-Build human-like AI voice agents that handle phone calls, answer questions, and complete tasks through natural spoken conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/retell-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/retell-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/retell-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/retell-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build human-like AI voice agents that handle phone calls, answer questions, and complete tasks through natural spoken conversation.
 
 ## Description
 Connect your **Retell AI** account to any AI agent and take full control of your conversational voice orchestration through natural conversation. Retell AI provides a premier platform for building human-like voice agents, and this integration allows you to create agents, initiate phone or web calls, and monitor LLM configurations directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual call logs or complex agent configuration. Your AI acts as a dedic
 - **list_retell_numbers**: List registered phone numbers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Retell AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my voice agents in Retell AI."
+
+**🤖 AI Agent:**
+> I've retrieved your agents. You have 3 active personas: 'Customer Support Cimo', 'Sales Assistant', and 'Outbound Lead'. Which one would you like to update?
+
+---
+
+**👤 You:**
+> "Show me all AI voice agents and their call statistics from the last 7 days."
+
+**🤖 AI Agent:**
+> 4 active voice agents. "Sales Qualifier" handled 234 calls (avg duration: 3.2 min, 67% qualified leads, 89% caller satisfaction). "Support Assistant" took 567 calls (avg 4.1 min, 78% resolved without transfer, 92% satisfaction). "Appointment Scheduler" booked 145 appointments from 189 calls (76.7% booking rate). "Survey Collector" completed 89 surveys from 120 calls (74.2% completion). Total calls: 1,010. Total minutes: 3,434. Average latency: 0.8 seconds.
+
+---
+
+**👤 You:**
+> "Create a new outbound phone call using the Sales Qualifier agent to contact a prospect."
+
+**🤖 AI Agent:**
+> Outbound call initiated. Agent: Sales Qualifier (ID: agent_4521). Phone number: +1-555-0234 (from your verified number pool). Calling: +1-555-0198 (prospect: David Chen, ScaleUp Inc). Call script: Lead qualification with product demo scheduling. Call status: Ringing... Connected at 0:03. Agent is conducting the qualification flow. Live transcript available in dashboard. Expected duration: 3-5 minutes. Recording: enabled. Post-call webhook configured for CRM sync.
+
+
 ## Installation & Usage
 
 To install and use the **Retell AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Retell AI** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

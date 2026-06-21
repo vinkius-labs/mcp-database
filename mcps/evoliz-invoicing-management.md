@@ -1,12 +1,14 @@
 # Evoliz Invoicing & Management MCP Server
 
-Equip your AI agent to manage sales invoices, track CRM clients, and monitor quotes via the Evoliz API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/evoliz-invoicing-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evoliz-invoicing-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evoliz-invoicing-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evoliz-invoicing-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 10
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Equip your AI agent to manage sales invoices, track CRM clients, and monitor quotes via the Evoliz API.
 
 ## Description
 Integrate **Evoliz**, the powerful cloud-based invoicing and business management platform, directly into your AI workflow. Manage your sales invoices and quotes, track client profiles and financial summaries, monitor product catalogs and supplier records, and oversee your entire business operation using natural language.
@@ -44,6 +46,33 @@ Integrate **Evoliz**, the powerful cloud-based invoicing and business management
 - **list_authorized_suppliers**: List all authorized suppliers and vendors
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Evoliz Invoicing & Management** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all overdue invoices."
+
+**🤖 AI Agent:**
+> I've found 5 overdue invoices totaling 12,500 €. The largest is from 'Global Tech' (4,500 €, 15 days late). Would you like the contact details for Global Tech to send a reminder?
+
+---
+
+**👤 You:**
+> "Show me the details for invoice ID 12345."
+
+**🤖 AI Agent:**
+> Invoice #12345 (Client: John Doe) is for 1,250 € and is currently 'Paid'. It includes 3 line items: 'Consulting Services', 'Software License', and 'Implementation'. Should I pull the payment timestamp?
+
+---
+
+**👤 You:**
+> "Search for client 'Sarah Connor'."
+
+**🤖 AI Agent:**
+> Sarah Connor (Client ID: 998877) has 3 active quotes and 2 paid invoices. Their total lifetime value is 8,500 €. Current status is 'Active'. Would you like to see the details for their most recent quote?
+
+
 ## Installation & Usage
 
 To install and use the **Evoliz Invoicing & Management** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Evoliz Invoicing & Management** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Arcadia Utility Cloud MCP Server
 
-Automate utility data collection with Arcadia Utility Cloud — track accounts, bills, and usage via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arcadia-utility-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arcadia-utility-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arcadia-utility-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arcadia-utility-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 6
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Automate utility data collection with Arcadia Utility Cloud — track accounts, bills, and usage via AI.
 
 ## Description
 The **Arcadia Utility Cloud MCP Server** (formerly Urjanet) provides an advanced natural language interface for automated utility data management. Seamlessly retrieve billing data, monitor consumption patterns, and audit your utility account inventory across thousands of global providers.
@@ -36,6 +38,33 @@ The **Arcadia Utility Cloud MCP Server** (formerly Urjanet) provides an advanced
 - **list_statements**: List all collected utility statements
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Arcadia Utility Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active utility accounts in the cloud."
+
+**🤖 AI Agent:**
+> I've retrieved your active inventory. You have 25 accounts across 5 providers, including electricity, water, and gas services.
+
+---
+
+**👤 You:**
+> "Get consumption data for water meter 'met_12345'."
+
+**🤖 AI Agent:**
+> Retrieved usage data for meter 'met_12345'. In the last billing period, it recorded 4,500 gallons of water consumption.
+
+---
+
+**👤 You:**
+> "Show me the latest electricity bill metadata for account ID 'acc_9988'."
+
+**🤖 AI Agent:**
+> The latest statement for account 'acc_9988' was issued on Jan 15, 2024, with total charges of $312.50.
+
+
 ## Installation & Usage
 
 To install and use the **Arcadia Utility Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **Arcadia Utility Cloud** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

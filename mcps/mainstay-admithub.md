@@ -1,12 +1,14 @@
 # Mainstay (AdmitHub) MCP Server
 
-Student engagement and behavioral intelligence — manage contacts, campaigns, and AI nudges via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mainstay-admithub)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mainstay-admithub)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mainstay-admithub-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mainstay-admithub-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-engagement
-**Tools Count:** 5
+
+**Category:** [customer-engagement](../categories/customer-engagement.md)
+
+Student engagement and behavioral intelligence — manage contacts, campaigns, and AI nudges via AI.
 
 ## Description
 Connect your **Mainstay (formerly AdmitHub)** account to your AI agent to unlock research-backed student engagement and behavioral intelligence. From managing large-scale student contact lists to monitoring AI-powered nudges and auditing campaign performance, your agent handles student success workflows through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Mainstay (formerly AdmitHub)** account to your AI agent to unlock
 - **list_custom_fields**: List custom metadata fields
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mainstay (AdmitHub)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for a student contact with the name 'Jane Smith'."
+
+**🤖 AI Agent:**
+> I've found one student matching 'Jane Smith'. She is currently active in the 'First-Year Orientation' campaign and has replied to 3 nudges this week. Would you like to see her full profile details?
+
+---
+
+**👤 You:**
+> "List all active engagement campaigns."
+
+**🤖 AI Agent:**
+> I've retrieved your active campaigns. You have 4 live initiatives, including 'Financial Aid Reminders' and 'Campus Housing Nudges'. Would you like to check the message logs for any of them?
+
+---
+
+**👤 You:**
+> "Show me the last 10 messages from today."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 10 messages. They show active inquiries about registration deadlines and scholarship applications. The AI bot successfully resolved 8 out of 10 requests. Would you like to see the transcripts?
+
+
 ## Installation & Usage
 
 To install and use the **Mainstay (AdmitHub)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Mainstay (AdmitHub)** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

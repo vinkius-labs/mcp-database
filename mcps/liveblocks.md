@@ -1,12 +1,14 @@
 # Liveblocks MCP Server
 
-Manage real-time collaboration infrastructure—create rooms, authorize users, and inspect collaborative storage or threads directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/liveblocks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/liveblocks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/liveblocks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/liveblocks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 18
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage real-time collaboration infrastructure—create rooms, authorize users, and inspect collaborative storage or threads directly from your AI agent.
 
 ## Description
 Connect your **Liveblocks** account to any AI agent to orchestrate multiplayer experiences and real-time collaboration features through natural language.
@@ -57,6 +59,33 @@ List rooms with filtering and pagination
 - **update_ydoc**: Send a binary Yjs update
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Liveblocks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the first 10 rooms in my Liveblocks project."
+
+**🤖 AI Agent:**
+> I've retrieved your rooms. You have active rooms like 'main-editor', 'collaboration-hub', and 'test-room-1'. Would you like to see the metadata for any of these?
+
+---
+
+**👤 You:**
+> "Create a new room with ID 'sprint-planning' and set default access to room:write."
+
+**🤖 AI Agent:**
+> Room 'sprint-planning' has been successfully created with 'room:write' as the default access level. You can now start authorizing users for this space.
+
+---
+
+**👤 You:**
+> "Who is currently active in the room 'main-editor'?"
+
+**🤖 AI Agent:**
+> Checking active users... I found 3 users currently connected to 'main-editor': 'alice_dev', 'bob_designer', and 'charlie_pm'.
+
+
 ## Installation & Usage
 
 To install and use the **Liveblocks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Liveblocks** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

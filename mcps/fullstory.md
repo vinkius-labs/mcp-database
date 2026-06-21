@@ -1,12 +1,14 @@
 # FullStory MCP Server
 
-Manage digital experience intelligence, track users, and retrieve session data via AI agents with FullStory.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fullstory)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fullstory)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fullstory-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fullstory-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 11
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage digital experience intelligence, track users, and retrieve session data via AI agents with FullStory.
 
 ## Description
 Connect your **FullStory** account to any AI agent to automate your digital experience intelligence (DXI) and product analytics workflows through the Model Context Protocol (MCP). FullStory provides a comprehensive view of how users interact with your site or app. This MCP server enables you to manage user profiles, track server-side events, and retrieve session metadata and playback links directly through natural conversation.
@@ -70,6 +72,33 @@ Dispatch a custom backend event into FullStory
 Upsert a user identity into FullStory tracking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FullStory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 sessions for user UID 'user_12345'."
+
+**🤖 AI Agent:**
+> Retrieving sessions... I found 5 recent recording sessions for UID user_12345. Key sessions include a 'Checkout' flow from yesterday and a 'Login' event from this morning. Which playback link would you like?
+
+---
+
+**👤 You:**
+> "Show me the full profile details for FullStory ID '123:456'."
+
+**🤖 AI Agent:**
+> Fetching user data... For ID 123:456, I found email 'customer@example.com'. They are part of the 'Premium' segment and have 15 custom properties, including 'total_spent: 150.00'.
+
+---
+
+**👤 You:**
+> "Track a server event 'Subscription Renewed' for user 'johndoe@email.com'."
+
+**🤖 AI Agent:**
+> Event tracked! I have successfully posted the 'Subscription Renewed' event to FullStory for johndoe@email.com. This data will now appear in their user timeline.
+
+
 ## Installation & Usage
 
 To install and use the **FullStory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **FullStory** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Cosmic MCP Server
 
-Manage headless content via Cosmic — list and create objects, audit schema types, handle media assets, and manage buckets directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cosmic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cosmic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cosmic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage headless content via Cosmic — list and create objects, audit schema types, handle media assets, and manage buckets directly from any AI agent.
 
 ## Description
 Connect your **Cosmic** bucket to any AI agent and take full control of your AI-powered headless CMS and digital content workflows through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Cosmic** bucket to any AI agent and take full control of your AI-
 - **patch_cms_object**: Mutate global Web CRM boundaries substituting Draft values via ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cosmic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all objects of type 'posts' in my Cosmic bucket"
+
+**🤖 AI Agent:**
+> I found 8 objects in the 'posts' category. The latest entries include 'AI Integration Guide' and 'Product Roadmap 2024'. Would you like to see the full metadata for any of these?
+
+---
+
+**👤 You:**
+> "Create a new 'event' object: Title 'Developer Meetup', Date '2024-05-15'"
+
+**🤖 AI Agent:**
+> Object created! 'Developer Meetup' has been added to your bucket under the 'event' type. I've mapped the date metadata successfully. The object ID is 'abc_123'.
+
+---
+
+**👤 You:**
+> "Show me the details for object type 'products'"
+
+**🤖 AI Agent:**
+> Retrieving schema for 'products'... This type requires fields like 'name' (text), 'price' (number), 'description' (html), and 'image' (file). I can list all the specific validation rules for you.
+
+
 ## Installation & Usage
 
 To install and use the **Cosmic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Cosmic** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

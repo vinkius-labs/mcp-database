@@ -1,12 +1,14 @@
 # Bugcrowd MCP Server
 
-Manage crowdsourced security via Bugcrowd — track submissions, programs, and targets directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bugcrowd)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugcrowd)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bugcrowd-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bugcrowd-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage crowdsourced security via Bugcrowd — track submissions, programs, and targets directly from any AI agent.
 
 ## Description
 Connect your **Bugcrowd** account to any AI agent and orchestrate your vulnerability management, bug bounty programs, and security engagements through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Bugcrowd** account to any AI agent and orchestrate your vulnerabi
 - **list_targets**: List all assets in scope (targets)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bugcrowd** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active security programs in Bugcrowd."
+
+**🤖 AI Agent:**
+> I've retrieved your programs. You have 3 active programs: 'Vinkius Bounty' (ID: prog_1), 'Main Web App' (ID: prog_2), and 'Legacy Systems' (ID: prog_3).
+
+---
+
+**👤 You:**
+> "Show the last 5 vulnerability submissions."
+
+**🤖 AI Agent:**
+> Retrieving submissions... Your 5 most recent reports include 'SQL Injection in /api' (Triaged), 'XSS on Login Page' (Unresolved), and 'Broken Auth' (Resolved).
+
+---
+
+**👤 You:**
+> "Create a new submission titled 'Insecure Direct Object Reference' for program prog_123."
+
+**🤖 AI Agent:**
+> Submission 'Insecure Direct Object Reference' has been successfully created for program prog_123 with ID sub_99283.
+
+
 ## Installation & Usage
 
 To install and use the **Bugcrowd** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Bugcrowd** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

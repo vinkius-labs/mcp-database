@@ -1,12 +1,14 @@
 # Plex MCP Server
 
-Manage your Plex Media Server — browse libraries, search media, check active streams and control playback from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/plex)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plex)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plex-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plex-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 15
+
+**Category:** [content-management](../categories/content-management.md)
+
+Manage your Plex Media Server — browse libraries, search media, check active streams and control playback from any AI agent.
 
 ## Description
 Connect to your **Plex Media Server** and manage your entire media library through natural conversation.
@@ -84,6 +86,33 @@ Trigger a library scan/refresh
 Search the Plex media library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Plex** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me what's currently playing on my Plex server."
+
+**🤖 AI Agent:**
+> Active sessions: 1. User 'John' watching 'The Last of Us S01E03' at 34:15/58:22 (Roku, Direct Play). 2. User 'Sarah' watching 'Oppenheimer' at 1:45:30/3:00:15 (iPhone, Transcoding 1080p).
+
+---
+
+**👤 You:**
+> "Show me my movie libraries."
+
+**🤖 AI Agent:**
+> Found 3 libraries: 1. 'Movies' (key: 1, type: movie, 1,245 items) — 2. '4K Movies' (key: 5, type: movie, 342 items) — 3. 'Kids Movies' (key: 8, type: movie, 189 items).
+
+---
+
+**👤 You:**
+> "What's on deck for me to watch?"
+
+**🤖 AI Agent:**
+> On Deck: 1. 'The Mandalorian S03E05' — 2. 'Stranger Things S04E07' — 3. 'Ted Lasso S02E03' — 4. 'The Office S07E19' — 5. 'Severance S01E04'. All are next unwatched episodes of shows you're currently watching.
+
+
 ## Installation & Usage
 
 To install and use the **Plex** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -92,4 +121,11 @@ To install and use the **Plex** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

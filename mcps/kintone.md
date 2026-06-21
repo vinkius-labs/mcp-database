@@ -1,12 +1,14 @@
 # Kintone MCP Server
 
-Manage custom business apps, records, and workflows via Kintone.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kintone)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kintone)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kintone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kintone-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage custom business apps, records, and workflows via Kintone.
 
 ## Description
 Connect your **Kintone** platform to any AI agent to automate your business operations. This MCP server enables your agent to interact with custom apps, manage data records, and query organizational metadata directly.
@@ -53,6 +55,33 @@ List records from an app
 - **update_record**: Update an existing record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kintone** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Kintone apps."
+
+**🤖 AI Agent:**
+> I've retrieved your apps. You have 5 applications, including 'Sales Pipeline' (ID: 10), 'Employee Directory' (ID: 12), and 'Project Tracker' (ID: 15).
+
+---
+
+**👤 You:**
+> "Show records from app ID 10 where status is 'Pending'."
+
+**🤖 AI Agent:**
+> I found 3 records in app 10 with 'Pending' status: 'Opportunity A', 'Opportunity B', and 'Opportunity C'. Would you like to see details for any of them?
+
+---
+
+**👤 You:**
+> "Add a new record to app 12 with name 'Jane Doe' and role 'Designer'."
+
+**🤖 AI Agent:**
+> Successfully added the record for 'Jane Doe' to app 12. The new record ID is '105'.
+
+
 ## Installation & Usage
 
 To install and use the **Kintone** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Kintone** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

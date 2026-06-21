@@ -1,12 +1,14 @@
 # Expansify AI MCP Server
 
-Scale your content marketing with AI that generates, repurposes, and distributes content across channels automatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/expansify-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expansify-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expansify-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expansify-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 6
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Scale your content marketing with AI that generates, repurposes, and distributes content across channels automatically.
 
 ## Description
 Connect your **Expansify AI** account to any AI agent and take full control of your content marketing and SEO workflows through natural conversation.
@@ -45,6 +47,33 @@ Generate new AI content
 - **list_tracked_keywords**: List tracked SEO keywords
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Expansify AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a blog post about 'The future of RAG in 2026' using Expansify AI."
+
+**🤖 AI Agent:**
+> Generating content... I've written a blog post draft focusing on advanced RAG techniques and AI integration. You can find the full text in your content history with ID: gen_123.
+
+---
+
+**👤 You:**
+> "List all my active content campaigns."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 3 active drives: 'Q1 Tech Strategy', 'Social Engagement', and 'Ad Copy Variations'. Which one should we manage?
+
+---
+
+**👤 You:**
+> "Analyze the SEO difficulty for the keyword 'mcp server implementation'."
+
+**🤖 AI Agent:**
+> SEO analysis complete! The keyword 'mcp server implementation' has a moderate difficulty score (45/100). It's a high-intent term with growing search volume. Shall I suggest some related long-tail keywords?
+
+
 ## Installation & Usage
 
 To install and use the **Expansify AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Expansify AI** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

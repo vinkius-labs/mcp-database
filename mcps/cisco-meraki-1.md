@@ -1,12 +1,14 @@
 # Cisco Meraki MCP Server
 
-Cloud-managed IT via Cisco Meraki — track networks, devices, and client connectivity.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cisco-meraki-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cisco-meraki-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cisco-meraki-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cisco-meraki-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Cloud-managed IT via Cisco Meraki — track networks, devices, and client connectivity.
 
 ## Description
 Connect your **Cisco Meraki** dashboard to any AI agent and take full control of your cloud-managed IT infrastructure through natural conversation.
@@ -41,6 +43,33 @@ List clients on a network
 - **search_organizations**: Search organizations by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cisco Meraki** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all organizations I have access to in Meraki."
+
+**🤖 AI Agent:**
+> Retrieving organizations... I found your authorized entities, including 'Global Enterprise' and 'Regional Branch'.
+
+---
+
+**👤 You:**
+> "Show status for all devices in network ID 'N_12345'."
+
+**🤖 AI Agent:**
+> Checking device statuses... Network 'N_12345' has 10 online devices and 1 alerting access point.
+
+---
+
+**👤 You:**
+> "Search for connected clients in the 'San Francisco Office' network."
+
+**🤖 AI Agent:**
+> Querying connected clients... I identified 50 active clients, including 30 mobile devices and 20 laptops.
+
+
 ## Installation & Usage
 
 To install and use the **Cisco Meraki** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Cisco Meraki** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

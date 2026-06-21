@@ -1,12 +1,14 @@
 # EngageBay All-in-One CRM MCP Server
 
-Equip your AI agent to manage contacts, track sales deals, and monitor CRM tasks via the EngageBay API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/engagebay-all-in-one-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engagebay-all-in-one-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/engagebay-all-in-one-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/engagebay-all-in-one-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage contacts, track sales deals, and monitor CRM tasks via the EngageBay API.
 
 ## Description
 Integrate **EngageBay**, the all-in-one marketing, sales, and service CRM, directly into your AI workflow. Manage your customer database and company records, track sales deals and pipelines, monitor CRM tasks and follow-ups, and oversee your entire growth operation using natural language.
@@ -44,6 +46,33 @@ Integrate **EngageBay**, the all-in-one marketing, sales, and service CRM, direc
 - **list_successfully_closed_deals**: Identify deals that have reached the "Won" or "Closed" stage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EngageBay All-in-One CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active sales deals."
+
+**🤖 AI Agent:**
+> I've found 8 active deals, including 'Enterprise Upgrade' ($12,000) and 'SMB Consultation' ($2,500). 3 deals are in the 'Discovery' stage and 2 are in 'Proposal'. Would you like the details for the Enterprise Upgrade?
+
+---
+
+**👤 You:**
+> "Show me the contact profile for 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> John Doe is associated with 'Global Tech Inc' and is currently 'Subscribed'. Their last interaction was a task completed on March 15th. Should I pull their full custom field history?
+
+---
+
+**👤 You:**
+> "What are my upcoming CRM tasks?"
+
+**🤖 AI Agent:**
+> You have 5 upcoming tasks, including 'Follow up with Sarah Connor' (Due Tomorrow) and 'Send Proposal to Wayne Corp' (Due Friday). Should I list the customer contact details for Sarah Connor?
+
+
 ## Installation & Usage
 
 To install and use the **EngageBay All-in-One CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **EngageBay All-in-One CRM** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

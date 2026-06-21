@@ -1,12 +1,14 @@
 # Endear Retail CRM MCP Server
 
-Equip your AI agent to manage retail customers, track orders, and monitor clienteling notes via the Endear API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/endear-retail-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/endear-retail-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/endear-retail-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/endear-retail-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage retail customers, track orders, and monitor clienteling notes via the Endear API.
 
 ## Description
 Integrate **Endear**, the leading retail CRM and clienteling platform, directly into your AI workflow. Manage your customer profiles and purchase history, track clienteling notes and interactions, monitor product catalogs and team tasks, and oversee your retail operations using natural language.
@@ -44,6 +46,33 @@ Integrate **Endear**, the leading retail CRM and clienteling platform, directly 
 - **search_customers_by_name_or_email**: Search for customers using a name or email keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Endear Retail CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all customers with high total spend."
+
+**🤖 AI Agent:**
+> I've identified several high-value customers, including 'Alice Johnson' ($4,500 spent) and 'Robert Smith' ($3,200 spent). Both have recent purchase activity. Would you like to see the notes for Alice Johnson?
+
+---
+
+**👤 You:**
+> "Show me the last 5 orders for customer ID 'CUST-12345'."
+
+**🤖 AI Agent:**
+> Customer ID 'CUST-12345' (John Doe) has 5 recent orders, including '#ORD-9988' ($150, Fulfilled) and '#ORD-9977' ($240, Shipped). Should I pull the items included in the most recent order?
+
+---
+
+**👤 You:**
+> "Search for customers matching 'Sarah'."
+
+**🤖 AI Agent:**
+> I've found 3 customers matching 'Sarah': 'Sarah Miller', 'Sarah Connor', and 'Sarah Williams'. All are in the 'Loyalty Member' segment. Would you like the profile details for Sarah Miller?
+
+
 ## Installation & Usage
 
 To install and use the **Endear Retail CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Endear Retail CRM** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

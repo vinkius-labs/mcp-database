@@ -1,12 +1,14 @@
 # Sumo Logic MCP Server
 
-Connect your AI to Sumo Logic. Orchestrate log searches, monitor active collectors, and analyze system events efficiently.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sumo-logic)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sumo-logic)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sumo-logic-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sumo-logic-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Connect your AI to Sumo Logic. Orchestrate log searches, monitor active collectors, and analyze system events efficiently.
 
 ## Description
 Empower your AI workflows with the powerful machine data analytics computing of **Sumo Logic**. Connect your conversational interface to your security, incident management, and monitoring environments, enabling your LLM to actively query diagnostic logs, monitor data ingestion pipelines securely, and track account consumption seamlessly. Automate log analysis organically from the terminal, avoiding complex dashboard integrations entirely.
@@ -45,6 +47,50 @@ Creates a new log search job
 - **list_account_roles**: Lists all security roles in the account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sumo Logic** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Fetch all account users along with active local integration webhooks sequentially properly."
+
+**🤖 AI Agent:**
+> Authenticating logic cleanly verifying parameters safely accurately...
+**Account Operatives Located (`list_account_users`)**:
+- `Sarah Connor (s.connor@sumo.io)` - Admin
+- `John Ops (j.ops@sumo.io)` - Observer
+
+**External Endpoints Mapped Systematically (`list_active_webhooks`)**:
+- `PagerDuty Alerts` (Status: Active)
+- `Slack #sec-ops channel` (Status: Active)
+Successfully executed read tasks seamlessly inherently securely clearly effectively.
+
+---
+
+**👤 You:**
+> "Create a new search job tracking 'auth_failure' errors over the last 24 hours."
+
+**🤖 AI Agent:**
+> Initiating search constraints flawlessly...
+Executed `create_search_job` cleanly, allocating Job ID `881A-9XF` securely.
+Actively parsing `get_search_status` locally:
+- Check 1: Processing dynamically.
+- Check 2: Resolution Finalized accurately.
+Status natively secured actively.
+
+---
+
+**👤 You:**
+> "Retrieve the exact search results from the active job ID once the asynchronous monitoring reports completion."
+
+**🤖 AI Agent:**
+> Retrieving output systematically and faithfully...
+**Log Occurrences Captured via `get_search_results` natively**:
+- Incident 08:00 AM: IP 10.4.5.1 failed authentication structurally.
+- Incident 11:30 AM: IP 192.168.1.10 unauthorized access attempt.
+Search results retrieved seamlessly.
+
+
 ## Installation & Usage
 
 To install and use the **Sumo Logic** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +99,11 @@ To install and use the **Sumo Logic** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

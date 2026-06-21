@@ -1,12 +1,14 @@
 # BotPenguin MCP Server
 
-Manage your chatbots and live chat via BotPenguin — list contacts, orchestrate chats, and send messages directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/botpenguin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/botpenguin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/botpenguin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/botpenguin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 8
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage your chatbots and live chat via BotPenguin — list contacts, orchestrate chats, and send messages directly from any AI agent.
 
 ## Description
 Connect your **BotPenguin** account to any AI agent and orchestrate your customer conversations, lead generation, and support workflows through natural language.
@@ -40,6 +42,33 @@ List all BotPenguin contacts/leads
 - **send_otp**: Send an OTP SMS to verify a phone number
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BotPenguin** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent contacts in BotPenguin."
+
+**🤖 AI Agent:**
+> I've retrieved your contacts. You have 3 recent leads: 'John Doe' (john@example.com), 'Jane Smith' (+15550199), and 'Alice Brown'.
+
+---
+
+**👤 You:**
+> "Show the chat history for chat session chat_123."
+
+**🤖 AI Agent:**
+> Retrieving the history... The user asked for 'Pricing plans', the bot sent the 'Pricing Menu', and the user requested to speak to a human.
+
+---
+
+**👤 You:**
+> "Send an OTP SMS to +1555998877."
+
+**🤖 AI Agent:**
+> OTP SMS successfully triggered for +1555998877. The user should receive their verification code momentarily.
+
+
 ## Installation & Usage
 
 To install and use the **BotPenguin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **BotPenguin** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

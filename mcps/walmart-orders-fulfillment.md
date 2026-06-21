@@ -1,12 +1,14 @@
 # Walmart Orders & Fulfillment MCP Server
 
-Securely process e-commerce orders, manage fulfillment logistics, and handle customer returns.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-orders-fulfillment)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/walmart-orders-fulfillment)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/walmart-orders-fulfillment-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/walmart-orders-fulfillment-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Securely process e-commerce orders, manage fulfillment logistics, and handle customer returns.
 
 ## Description
 ### What you can do
@@ -39,6 +41,33 @@ Specifically built for **Logistics Operators**, **Fulfillment Centers**, and **E
 - **wm_track_shipment**: Simulate shipping detail mapping actively capturing explicit physical routes perfectly
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Walmart Orders & Fulfillment** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check active unfulfilled sales awaiting shipment."
+
+**🤖 AI Agent:**
+> Successfully queried orders. Found 12 unfulfilled packages.
+
+---
+
+**👤 You:**
+> "Find all unacknowledged orders from the last 24 hours."
+
+**🤖 AI Agent:**
+> Scanned successfully. Found 18 unacknowledged sales orders waiting for immediate acceptance to avoid penalties.
+
+---
+
+**👤 You:**
+> "Submit FedEx tracking number 1Z999999999 for order ID 81239912."
+
+**🤖 AI Agent:**
+> Order 81239912 has been successfully marked as Shipped. FedEx tracking label 1Z999999999 is now synchronized with the buyer's dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Walmart Orders & Fulfillment** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **Walmart Orders & Fulfillment** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

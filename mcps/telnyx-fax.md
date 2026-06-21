@@ -1,12 +1,14 @@
 # Telnyx Fax MCP Server
 
-Send, receive, and manage faxes via Telnyx u2014 transmit documents, track delivery, and manage fax numbers from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx-fax)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/telnyx-fax)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/telnyx-fax-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/telnyx-fax-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Send, receive, and manage faxes via Telnyx u2014 transmit documents, track delivery, and manage fax numbers from your AI agent.
 
 ## Description
 Connect your **Telnyx** account to any AI agent and send, receive, and manage faxes through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Telnyx** account to any AI agent and send, receive, and manage fa
 Send a fax
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Telnyx Fax** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a fax of invoice.pdf to +1-555-0199."
+
+**🤖 AI Agent:**
+> Fax submitted to +15550199. Fax ID: FAX-8291. Transmission in progress — 3 pages detected. Would you like me to check the delivery status in a few minutes?
+
+---
+
+**👤 You:**
+> "List all faxes sent today."
+
+**🤖 AI Agent:**
+> 5 faxes sent today. 4 delivered successfully, 1 still in progress (FAX-8291 to +15550199). Total pages transmitted: 14. Would you like details on any specific fax?
+
+---
+
+**👤 You:**
+> "Show my fax-enabled phone numbers."
+
+**🤖 AI Agent:**
+> You have 3 fax-enabled numbers: +1-555-0100 (US), +44-20-7946-0958 (UK), and +1-555-0200 (US toll-free). All active and ready to send/receive faxes.
+
+
 ## Installation & Usage
 
 To install and use the **Telnyx Fax** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Telnyx Fax** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

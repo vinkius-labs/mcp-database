@@ -1,12 +1,14 @@
 # PractiTest MCP Server
 
-Bring your end-to-end QA management to your AI — list tests, instances, test sets, requirements, and trace logical software defects natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/practitest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practitest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/practitest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/practitest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Bring your end-to-end QA management to your AI — list tests, instances, test sets, requirements, and trace logical software defects natively.
 
 ## Description
 Connect your **PractiTest** workspaces to any AI agent and empower it to orchestrate the entire QA lifecycle from physical requirements tracing to defect mapping natively via chat conversations.
@@ -46,6 +48,33 @@ Forget moving between dashboard views trying to identify where a trace broke dow
 - **list_users**: List all users in the PractiTest account. Returns user names, emails, roles, and statuses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PractiTest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all tests inside our active QA regression instance and find the ones mapped as failed."
+
+**🤖 AI Agent:**
+> I queried `list_runs` pulling executions. Exactly 3 Test Runs crashed the regression suite: Run ID `1202` (Login Flow Bypass), Run ID `1203` (Cart State Mismatch), and Run ID `1209` (Payment Fallback Failed). Should I extract step histories for #1209 using `get_test`?
+
+---
+
+**👤 You:**
+> "Do we have any new custom fields we should be aware of inside the requirements area?"
+
+**🤖 AI Agent:**
+> I analyzed `list_custom_fields` crossing your dictionaries. Let's see... a new custom List field 'GDPR Category' (ID 402) was instantiated targeting Requirement entities with possible values strings: ['P1', 'P2', 'Ignore'].
+
+---
+
+**👤 You:**
+> "Are there any open defects (issues) linked directly to testing scenarios surrounding multi-currency operations?"
+
+**🤖 AI Agent:**
+> Investigating `list_issues`, I see one highly relevant defect: 'EUR vs GBP Cart Rounding Error' (Issue ID #91). It carries a `High` severity and it strictly ties to instances in your 'Multicurrency V2' test cluster. Current status: UNRESOLVED.
+
+
 ## Installation & Usage
 
 To install and use the **PractiTest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **PractiTest** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

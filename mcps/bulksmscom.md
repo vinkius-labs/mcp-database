@@ -1,12 +1,14 @@
 # BulkSMS.com MCP Server
 
-Reach customers worldwide with reliable bulk SMS delivery, contact list management, and real-time message status tracking.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bulksmscom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bulksmscom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bulksmscom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bulksmscom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 12
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Reach customers worldwide with reliable bulk SMS delivery, contact list management, and real-time message status tracking.
 
 ## Description
 Connect your **BulkSMS.com** account to any AI agent and take full control of your global business communication and automated SMS workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual message tracking or digging through complex delivery reports. You
 - **send_sms**: Send an SMS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BulkSMS.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +1234567890: 'Your order is ready for pickup'."
+
+**🤖 AI Agent:**
+> SMS dispatched! I've sent the notification to +1234567890 via BulkSMS.com. The message is queued for delivery. Shall I check your remaining credits?
+
+---
+
+**👤 You:**
+> "List my last 5 sent messages and their status."
+
+**🤖 AI Agent:**
+> Accessing logs... Your last 5 messages include a delivery to @user1 (Status: Delivered) and 4 others. I've retrieved the detailed timestamps for each interaction.
+
+---
+
+**👤 You:**
+> "What is my current BulkSMS credit balance?"
+
+**🤖 AI Agent:**
+> Scanning account... Your current balance is 1,240.50 credits. Based on your recent usage, you are in good standing for your next campaign. Need any help with a new broadcast?
+
+
 ## Installation & Usage
 
 To install and use the **BulkSMS.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **BulkSMS.com** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

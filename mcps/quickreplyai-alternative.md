@@ -1,12 +1,14 @@
 # QuickReply.ai MCP Server
 
-Automate WhatsApp marketing and customer engagement via QuickReply.ai — trigger journeys, send templates, and manage session messages directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/quickreplyai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/quickreplyai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/quickreplyai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/quickreplyai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 5
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Automate WhatsApp marketing and customer engagement via QuickReply.ai — trigger journeys, send templates, and manage session messages directly from your AI agent.
 
 ## Description
 Connect **QuickReply.ai** to your AI agent and orchestrate your WhatsApp marketing and customer communication through natural conversation.
@@ -46,6 +48,33 @@ Trigger a specific drip campaign for a user
 Trigger a journey via Webhook Data Source
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QuickReply.ai** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Trigger the WhatsApp journey 'welcome_flow_01' for phone +1234567890."
+
+**🤖 AI Agent:**
+> I've triggered the journey 'welcome_flow_01' for +1234567890. The event has been successfully sent to the QuickReply.ai engine.
+
+---
+
+**👤 You:**
+> "Send the 'order_confirmation' template to +1234567890 with parameters 'Order #123' and 'Confirmed'."
+
+**🤖 AI Agent:**
+> The order confirmation template has been sent to +1234567890 with the provided variables.
+
+---
+
+**👤 You:**
+> "Fetch campaign statistics for the last 24 hours."
+
+**🤖 AI Agent:**
+> I've retrieved the stats for your campaigns. In the last 24 hours, you had 1,250 messages sent with a 98% delivery rate and 45% read rate.
+
+
 ## Installation & Usage
 
 To install and use the **QuickReply.ai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **QuickReply.ai** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

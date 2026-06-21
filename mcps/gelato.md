@@ -1,12 +1,14 @@
 # Gelato MCP Server
 
-Manage print-on-demand orders, track fulfillment, and get shipping quotes via AI agents with Gelato.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gelato)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gelato)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gelato-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gelato-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 12
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage print-on-demand orders, track fulfillment, and get shipping quotes via AI agents with Gelato.
 
 ## Description
 Connect your **Gelato** account to any AI agent to automate your print-on-demand (POD) lifecycle through the Model Context Protocol (MCP). Gelato enables creators and businesses to produce and ship custom products globally without inventory. This MCP server allows you to manage orders, retrieve product catalogs, and track real-time shipping statuses directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Gelato** account to any AI agent to automate your print-on-demand
 - **list_print_webhooks**: List webhook configs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gelato** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active print orders and their current status."
+
+**🤖 AI Agent:**
+> Retrieving orders... I found 5 active print orders, including 'ORD-99' (Status: In Production) and 'ORD-101' (Status: Shipped). Would you like the tracking details for the shipped one?
+
+---
+
+**👤 You:**
+> "Get the shipping details for order 'gelato_12345'."
+
+**🤖 AI Agent:**
+> Fetching shipments... Order gelato_12345 has been shipped via DHL. The tracking number is '1Z999...' and the estimated delivery is October 15th.
+
+---
+
+**👤 You:**
+> "List all products in the 'Apparel' catalog (ID: cat_987)."
+
+**🤖 AI Agent:**
+> Retrieving products... In the Apparel catalog, I found 12 items including 'Classic T-Shirt' (UID: shirt_001) and 'Premium Hoodie' (UID: hood_05).
+
+
 ## Installation & Usage
 
 To install and use the **Gelato** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gelato** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

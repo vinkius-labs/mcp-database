@@ -1,12 +1,14 @@
 # TOTVS MCP Server
 
-Orchestrate TOTVS ERP services — manage employees, handle financials, and monitor BPM workflows directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/totvs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/totvs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/totvs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/totvs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Orchestrate TOTVS ERP services — manage employees, handle financials, and monitor BPM workflows directly from any AI agent.
 
 ## Description
 Connect your AI agents to **TOTVS**, the largest technology company in Brazil and Latin America. This MCP provides 10 tools to manage organizational data across Protheus, RM, and Fluig ecosystems, enabling seamless orchestration of HR, Financial, and Business Process Management (BPM) workflows.
@@ -48,6 +50,33 @@ Connect your AI agents to **TOTVS**, the largest technology company in Brazil an
 - **move_process_request**: Advance a Fluig process request to the next state
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TOTVS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active employees in my TOTVS RM environment."
+
+**🤖 AI Agent:**
+> Retrieving employee list from RM... I've found 150 active records. Key roles include Software Engineers, Account Managers, and HR Specialists. Would you like the detailed profile for a specific person?
+
+---
+
+**👤 You:**
+> "Show the accounts payable summary for this month from Protheus."
+
+**🤖 AI Agent:**
+> Connecting to Protheus financials... For April 2024, you have 45 pending payments totaling R$ 125,400.00. 12 are overdue. Would you like me to list the overdue invoices?
+
+---
+
+**👤 You:**
+> "List all pending workflow requests in Fluig."
+
+**🤖 AI Agent:**
+> Fetching Fluig task list... I found 8 pending requests: 1. Purchase Requisition #101, 2. Vacation Request #202, 3. Travel Expense #303... Which one would you like to advance?
+
+
 ## Installation & Usage
 
 To install and use the **TOTVS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **TOTVS** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

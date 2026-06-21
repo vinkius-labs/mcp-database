@@ -1,12 +1,14 @@
 # Pointagram MCP Server
 
-Motivate your sales team with gamified leaderboards, competitions, and rewards that turn KPIs into engaging daily challenges.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pointagram)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pointagram)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pointagram-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pointagram-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Motivate your sales team with gamified leaderboards, competitions, and rewards that turn KPIs into engaging daily challenges.
 
 ## Description
 Connect your **Pointagram** account to any AI agent to streamline your team gamification and engagement workflows. Pointagram provides a powerful platform for programmatically managing players, teams, and score series through its robust v2.0 REST API.
@@ -45,6 +47,33 @@ Create a new player
 Post a scoring event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pointagram** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active players in Pointagram."
+
+**🤖 AI Agent:**
+> I've retrieved your player list. You have 50 active participants, including 'John Doe' (Level 12) and 'Maria Garcia' (Level 15). Would you like to see the stats for any of them?
+
+---
+
+**👤 You:**
+> "Post 100 points for player '123' in the 'Sales Bonus' series."
+
+**🤖 AI Agent:**
+> Points posted successfully! I've added 100 points to player '123' in the 'Sales Bonus' series. The leaderboard will be updated shortly.
+
+---
+
+**👤 You:**
+> "Show me the top 5 score series."
+
+**🤖 AI Agent:**
+> I've retrieved your score series. Your top active series include 'Monthly Sales Target', 'Customer Support Excellence', and 'Bug Squashing Challenge'. Which one would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **Pointagram** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Pointagram** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Mention MCP Server
 
-Social media monitoring and alerts via Mention — track mentions and monitor brand sentiment.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mention)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mention)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mention-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mention-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 10
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Social media monitoring and alerts via Mention — track mentions and monitor brand sentiment.
 
 ## Description
 Connect your **Mention** account to any AI agent and take full control of your social monitoring and brand alerts through natural conversation.
@@ -41,6 +43,33 @@ List connected social accounts
 - **search_mentions**: Search mentions by text
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mention** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active alerts in my Mention account."
+
+**🤖 AI Agent:**
+> Retrieving alerts... I found 3 active alerts including 'Brand Monitor', 'Competitor A', and 'Industry Trends'.
+
+---
+
+**👤 You:**
+> "Search mentions for 'artificial intelligence' in alert ID 123."
+
+**🤖 AI Agent:**
+> Searching mentions... I found 5 recent posts mentioning AI in your brand alert stream.
+
+---
+
+**👤 You:**
+> "Show volume statistics for my primary brand alert."
+
+**🤖 AI Agent:**
+> Calculating statistics... You had 150 mentions today, a 10% increase compared to yesterday.
+
+
 ## Installation & Usage
 
 To install and use the **Mention** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Mention** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

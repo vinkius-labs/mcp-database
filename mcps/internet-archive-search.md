@@ -1,12 +1,14 @@
 # Internet Archive Search MCP Server
 
-Search 40M+ books, videos, audio, software across the Internet Archive.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-search)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/internet-archive-search)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/internet-archive-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/internet-archive-search-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 12
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Search 40M+ books, videos, audio, software across the Internet Archive.
 
 ## Description
 Connect **Internet Archive Search** to any AI agent and perform advanced searches across the world's largest digital library — 40M+ items including books, films, music, software, and images.
@@ -64,6 +66,33 @@ Universal search across 40M+ items in the Internet Archive
 Get the most downloaded items from the Internet Archive
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Internet Archive Search** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for public domain films from the 1940s."
+
+**🤖 AI Agent:**
+> Found 12,847 films from the 1940s in Prelinger Archives and community collections, including WWII propaganda, educational shorts, and home movies.
+
+---
+
+**👤 You:**
+> "Show me the most downloaded items."
+
+**🤖 AI Agent:**
+> Top downloads include: Big Buck Bunny (movie), various Project Gutenberg ebooks, NASA Apollo mission photos, and classic software from the softwarelibrary collection.
+
+---
+
+**👤 You:**
+> "Search for NASA images."
+
+**🤖 AI Agent:**
+> Found 185,000+ NASA items including Apollo mission photographs, Hubble Space Telescope images, satellite imagery, and Space Shuttle documentation.
+
+
 ## Installation & Usage
 
 To install and use the **Internet Archive Search** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Internet Archive Search** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

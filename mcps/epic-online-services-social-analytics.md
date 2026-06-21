@@ -1,12 +1,14 @@
 # Epic Online Services & Social Analytics MCP Server
 
-The definitive server for Epic Games social intelligence — track player profiles, friends, and achievements via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-online-services-social-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/epic-online-services-social-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/epic-online-services-social-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/epic-online-services-social-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+The definitive server for Epic Games social intelligence — track player profiles, friends, and achievements via AI.
 
 ## Description
 Equip your AI agent with the power of the **Epic Online Services (EOS)** ecosystem. This advanced MCP server provides deep access to official player metadata, social connections, and cross-platform achievement statistics. Your agent can instantly resolve display names into unique AccountIDs, audit global and personal achievement rarities, and monitor real-time presence to see what your contacts are playing. Whether you are performing technical scouting for professional rosters or analyzing social networks within the Epic ecosystem, your agent acts as a dedicated social data engineer through natural conversation.
@@ -42,6 +44,33 @@ Equip your AI agent with the power of the **Epic Online Services (EOS)** ecosyst
 - **search_account_by_display_name**: Find an Epic account ID by display name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Epic Online Services & Social Analytics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the AccountID for the Epic user 'Ninja'."
+
+**🤖 AI Agent:**
+> Resolving display name... I've found the account for 'Ninja'. His unique AccountID is `0002...`. I also identified his public biographical metadata. Would you like to check his friend list or current presence status?
+
+---
+
+**👤 You:**
+> "Check the live status and game for AccountID 'ID_12345'."
+
+**🤖 AI Agent:**
+> Running presence check... The user is currently 'Online' and playing 'Fortnite'. The session has been active for 45 minutes. Would you like to see their recent performance stats for this season?
+
+---
+
+**👤 You:**
+> "Analyze the rarity of achievements for 'Alan Wake 2' on my account."
+
+**🤖 AI Agent:**
+> Inspecting achievement logs... You have unlocked 15 out of 60 achievements. Your rarest unlock is 'The Final Chapter', which only 4.2% of the community possesses. Shall I list the technical requirements for the remaining locked achievements?
+
+
 ## Installation & Usage
 
 To install and use the **Epic Online Services & Social Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Epic Online Services & Social Analytics** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

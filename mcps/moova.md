@@ -1,12 +1,14 @@
 # Moova MCP Server
 
-Automate smart logistics via Moova — create shipments, track deliveries, get shipping quotes, and orchestrate carriers from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moova)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moova)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moova-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moova-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 14
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate smart logistics via Moova — create shipments, track deliveries, get shipping quotes, and orchestrate carriers from any AI agent.
 
 ## Description
 Connect your **Moova** B2B logistics account to any AI agent and orchestrate your entire delivery operation through natural conversation.
@@ -66,6 +68,33 @@ List all shipments with optional status filter
 Update shipment details before pickup
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Moova** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a delivery from 'Av. Corrientes 1234, Buenos Aires' to 'Av. Santa Fe 5678, Buenos Aires' for Juan Pérez."
+
+**🤖 AI Agent:**
+> Shipment created successfully! ID: MOV-28491-AR. Moova assigned carrier 'Flash Express' with an estimated delivery window of 3-5 hours. The printable label is ready — shall I retrieve it for you?
+
+---
+
+**👤 You:**
+> "How much would it cost to ship from Palermo to Belgrano in Buenos Aires?"
+
+**🤖 AI Agent:**
+> I've calculated the shipping estimates. Same-day delivery via Flash Express: $1,250 ARS. Next-day delivery via Correo Argentino: $780 ARS. Standard 2-day via Moova Economy: $520 ARS. Shall I create a shipment with any of these options?
+
+---
+
+**👤 You:**
+> "Track my shipment MOV-28491-AR and tell me where it is right now."
+
+**🤖 AI Agent:**
+> Tracking shipment MOV-28491-AR... Current status: IN_TRANSIT. The package was picked up at 14:32 from Av. Corrientes 1234 and is currently en route with driver Martín G. (Flash Express). Last GPS ping: Av. Cabildo y Juramento at 15:10. Estimated delivery: 16:00-17:00 today.
+
+
 ## Installation & Usage
 
 To install and use the **Moova** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Moova** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

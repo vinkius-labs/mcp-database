@@ -1,12 +1,14 @@
 # Cleared (ClearedIn) MCP Server
 
-Manage identity verification and background screening via Cleared — track verifications, monitor screenings, and audit security logs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cleared-clearedin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cleared-clearedin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cleared-clearedin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cleared-clearedin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 8
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage identity verification and background screening via Cleared — track verifications, monitor screenings, and audit security logs directly from any AI agent.
 
 ## Description
 Connect your **Cleared (ClearedIn)** account to any AI agent and take full control of your identity verification and screening workflows through natural conversation. Streamline how you verify users and maintain trust natively.
@@ -45,6 +47,33 @@ Connect your **Cleared (ClearedIn)** account to any AI agent and take full contr
 - **list_identity_verifications**: List all identity verification requests
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cleared (ClearedIn)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 identity verifications in Cleared."
+
+**🤖 AI Agent:**
+> Retrieving your recent verifications... I found 5 items: John Doe (Verified), Jane Smith (Pending), Mike Scott (Rejected), and 2 others. Would you like the details for the pending request?
+
+---
+
+**👤 You:**
+> "Show me the results for screening ID 'scr_12345'."
+
+**🤖 AI Agent:**
+> Checking screening scr_12345... This background check for 'Jane Doe' has been completed. Status: Cleared. All requested checks (Criminal, Employment, Education) were successful.
+
+---
+
+**👤 You:**
+> "What is the status of the signature request for 'Employment Contract'?"
+
+**🤖 AI Agent:**
+> Retrieving signature status... The 'Employment Contract' sent to John Doe is currently 'Partially Signed'. The employer has signed, but the candidate is still pending.
+
+
 ## Installation & Usage
 
 To install and use the **Cleared (ClearedIn)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Cleared (ClearedIn)** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

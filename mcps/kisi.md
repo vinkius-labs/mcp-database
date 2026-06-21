@@ -1,12 +1,14 @@
 # Kisi MCP Server
 
-Manage cloud-based access control, locks, and users via the Kisi API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kisi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kisi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kisi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kisi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 9
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Manage cloud-based access control, locks, and users via the Kisi API.
 
 ## Description
 Connect your **Kisi** account to any AI agent to automate your physical access control and security workflows. This MCP server enables your agent to interact with locks (doors), manage users, and trigger remote unlocks directly from natural language interfaces.
@@ -46,6 +48,33 @@ Connect your **Kisi** account to any AI agent to automate your physical access c
 List all users in the Kisi organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kisi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Unlock the 'Main Entrance' door (ID: '12345') in Kisi."
+
+**🤖 AI Agent:**
+> I've sent the unlock command to 'Main Entrance'. The door should now be unlocked.
+
+---
+
+**👤 You:**
+> "List all locks that are currently offline."
+
+**🤖 AI Agent:**
+> I've checked your devices. Currently, 'Side Exit (ID: 6789)' and 'Storage Room (ID: 1011)' are reporting as offline.
+
+---
+
+**👤 You:**
+> "Show me the details for the place 'Headquarters'."
+
+**🤖 AI Agent:**
+> I've retrieved the details for Headquarters (ID: 9876). It currently has 12 active locks and 5 access groups associated with it.
+
+
 ## Installation & Usage
 
 To install and use the **Kisi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Kisi** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

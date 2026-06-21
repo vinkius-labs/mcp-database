@@ -1,12 +1,14 @@
 # EOSDA MCP Server
 
-Access satellite agriculture data via EOSDA — monitor crop health, vegetation indices, weather, soil moisture, and generate zoning maps from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eosda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eosda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eosda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eosda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access satellite agriculture data via EOSDA — monitor crop health, vegetation indices, weather, soil moisture, and generate zoning maps from any AI agent.
 
 ## Description
 Connect your **EOSDA Agriculture API** to any AI agent and take full control of satellite-based crop monitoring, vegetation index analysis, weather tracking, and precision agriculture through natural conversation.
@@ -81,6 +83,33 @@ Get weather forecasts (15 days to 7 months) for agricultural fields
 Generate productivity and vegetation health zoning maps for fields
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EOSDA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the NDVI trend for my corn field over the 2025 growing season."
+
+**🤖 AI Agent:**
+> Fetching NDVI time series for corn field (field ID: 12345)... Found 28 satellite observations from April to October 2025. NDVI progression: April (0.25) — early growth, May (0.42) — vegetative development, June (0.61) — canopy closure, July (0.78) — peak vegetation, August (0.74) — grain fill, September (0.58) — senescence begins, October (0.35) — harvest ready. Peak NDVI of 0.78 was reached on July 15. Would you like a visual NDVI map or comparison with last season?
+
+---
+
+**👤 You:**
+> "What is the 15-day weather forecast and current soil moisture for my soybean field?"
+
+**🤖 AI Agent:**
+> Fetching 15-day forecast and soil moisture for soybean field (field ID: 67890)... Weather forecast: Next 3 days sunny, 28-32°C, no rain. Days 4-7: 60% chance of 15mm rainfall. Days 8-15: variable clouds, 25-30°C, 5-10mm scattered showers. Current soil moisture (root zone): 42% — adequate for current growth stage. With 15mm rain expected in 4-7 days, irrigation can be delayed. Next recommended irrigation check: 10 days from now.
+
+---
+
+**👤 You:**
+> "Generate a productivity zoning map for my wheat field with 4 zones."
+
+**🤖 AI Agent:**
+> Generating zoning map for wheat field (field ID: 11223)... Using NDVI from 2025-06-15 with 4 management zones. Zone 1 (Very High): 22% of field, avg NDVI 0.82 — excellent productivity. Zone 2 (High): 31% of field, avg NDVI 0.71 — good productivity. Zone 3 (Medium): 28% of field, avg NDVI 0.58 — moderate productivity. Zone 4 (Low): 19% of field, avg NDVI 0.41 — below average, may need soil amendment. Zoning map rendered and ready for variable rate application planning. Download: https://api.eos.com/zoning/wheat_field_zoning_map.png
+
+
 ## Installation & Usage
 
 To install and use the **EOSDA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **EOSDA** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

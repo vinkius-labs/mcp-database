@@ -1,12 +1,14 @@
 # Criteo Retail Media API MCP Server
 
-Equip your AI agent to manage Criteo retail campaigns, line items, and product data directly via the Criteo API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/criteo-retail-media-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/criteo-retail-media-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/criteo-retail-media-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/criteo-retail-media-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Equip your AI agent to manage Criteo retail campaigns, line items, and product data directly via the Criteo API.
 
 ## Description
 Integrate the **Criteo Retail Media API** directly into your AI workflow. Manage your retail advertising campaigns, monitor line item performance, and track product data across your retailer and advertiser accounts using natural language.
@@ -44,6 +46,33 @@ Integrate the **Criteo Retail Media API** directly into your AI workflow. Manage
 - **search_retail_campaigns_by_name**: Search for retail campaigns by name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Criteo Retail Media API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all retail media campaigns for advertiser account 'a8s9df7'."
+
+**🤖 AI Agent:**
+> I've found 3 campaigns for account 'a8s9df7', including 'Back to School 2024' and 'Electronics Spotlight'. Would you like to see the line items for any of these?
+
+---
+
+**👤 You:**
+> "Show me the keywords being targeted in line item 'l123abc'."
+
+**🤖 AI Agent:**
+> Line item 'l123abc' is targeting 15 keywords, including 'laptop', 'gaming notebook', and 'ultrabook'. 5 of these keywords are currently generating conversions. Should I list the top performing ones?
+
+---
+
+**👤 You:**
+> "Get a performance report for all retail campaigns from yesterday."
+
+**🤖 AI Agent:**
+> Yesterday, your retail campaigns generated 50,000 impressions and $5,000 in attributed sales across all retailers. The average ROAS was 4.5. Would you like a breakdown by retailer?
+
+
 ## Installation & Usage
 
 To install and use the **Criteo Retail Media API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Criteo Retail Media API** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

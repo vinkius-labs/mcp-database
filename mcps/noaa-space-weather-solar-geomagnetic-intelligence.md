@@ -1,12 +1,14 @@
 # NOAA Space Weather — Solar & Geomagnetic Intelligence MCP Server
 
-Real-time space weather intelligence: planetary Kp geomagnetic index, 3-day Kp forecast, solar wind speed and magnetic field, aurora probability forecast (Ovation model), solar flux (F10.7), and Dst storm index from NOAA SWPC.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-space-weather-solar-geomagnetic-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-space-weather-solar-geomagnetic-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-space-weather-solar-geomagnetic-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-space-weather-solar-geomagnetic-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 6
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Real-time space weather intelligence: planetary Kp geomagnetic index, 3-day Kp forecast, solar wind speed and magnetic field, aurora probability forecast (Ovation model), solar flux (F10.7), and Dst storm index from NOAA SWPC.
 
 ## Description
 Real-time space weather from NOAA's Space Weather Prediction Center.
@@ -44,6 +46,47 @@ Get the 10.7cm solar radio flux — a proxy for solar activity level
 Get the Dst index — real-time geomagnetic storm intensity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NOAA Space Weather — Solar & Geomagnetic Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Can I see the aurora tonight?"
+
+**🤖 AI Agent:**
+> 🌌 **Aurora Probability Tonight**
+
+Current Kp: 4 (Active)
+Forecast: Kp 5 (Minor Storm) expected 9pm-midnight
+Solar Wind: 520 km/s (elevated)
+Bz: -6 nT (southward — favorable!)
+
+✅ Aurora likely visible from:
+- Northern US states (WA, MT, MN, WI, MI, NY, ME)
+- Southern Canada
+- Northern Europe
+
+❌ Not visible from: Southern US, tropics
+
+---
+
+**👤 You:**
+> "What is the current solar wind status?"
+
+**🤖 AI Agent:**
+> ☀️ **Solar Wind (Real-Time)**
+
+Speed: 485 km/s (moderate)
+Bz: -3.2 nT (slightly southward)
+Bt: 7.8 nT
+Density: 4.2 p/cm³
+
+Solar Flux (F10.7): 148 SFU (above average)
+Dst: -28 nT (quiet)
+
+⚡ Conditions: mildly disturbed. HF radio propagation good. No significant storm expected in next 24h.
+
+
 ## Installation & Usage
 
 To install and use the **NOAA Space Weather — Solar & Geomagnetic Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +95,11 @@ To install and use the **NOAA Space Weather — Solar & Geomagnetic Intelligence
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

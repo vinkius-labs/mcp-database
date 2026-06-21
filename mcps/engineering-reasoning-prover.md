@@ -1,12 +1,14 @@
 # Engineering Reasoning Prover MCP Server
 
-An engineering report cited 'industry standards' without naming a single one. Engineering Reasoning Prover forces ISO/ASME/IEC-grounded compliance analysis — real calculations, real codes, real risk quantification.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-reasoning-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-reasoning-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/engineering-reasoning-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/engineering-reasoning-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An engineering report cited 'industry standards' without naming a single one. Engineering Reasoning Prover forces ISO/ASME/IEC-grounded compliance analysis — real calculations, real codes, real risk quantification.
 
 ## Description
 AI agents produce engineering assessments that sound authoritative but collapse under scrutiny. They cite 'industry standards' without naming them. They declare designs 'adequate' without showing calculations. They claim 'compliance' without tracing a single requirement to evidence.
@@ -46,6 +48,33 @@ AI-generated engineering reasoning fails for five specific reasons:
 Structured reflection tool for engineering reasoning and regulatory compliance. Forces the agent to construct rigorous, standards-grounded engineering arguments before any design conclusion. Catches Standard Misapplication (citing "ASME" without specifying BPVC Section VIII Division 1 UG-27 2023 Edition — a 600-page standard is not a reference. The specific clause that governs YOUR design is the reference), Calculation Gap ("the design is adequate" without showing inputs, method, numerical results, acceptance criteria, and safety margin. Engineering is mathematics, not opinion), Code Blindness ("per industry standards" instead of naming the code, edition, jurisdiction, and authority having jurisdiction — codes exist because people died. Cite them), Unquantified Risk ("risks are acceptable" without hazard identification method (HAZOP/FMEA/FTA), severity classification (SIL/ASIL/RPN), likelihood with basis, mitigation measures, and residual risk after mitigation), and Compliance Theater (claiming compliance without a requirement-to-evidence traceability matrix — each requirement mapped to the specific design feature, analysis, or test that satisfies it). Call once per engineering analysis or compliance assessment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Engineering Reasoning Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We need a carbon steel pressure vessel for 450°F service at 600 psig. Verify it meets code requirements."
+
+**🤖 AI Agent:**
+> STANDARD_MISAPPLIED — 'meets code requirements' without naming the code. Which code governs? ASME BPVC Section VIII Div. 1 or Div. 2? Which edition? Who is the AHJ? What material spec (SA-516 Gr. 70)? Calculate required thickness per UG-27 with corrosion allowance before claiming compliance.
+
+---
+
+**👤 You:**
+> "Evaluate the SIL rating for the emergency shutdown valve on the reactor feed line. The HAZOP identified loss of containment as a consequence."
+
+**🤖 AI Agent:**
+> COMPLIANCE_PROVEN — SIL 2 per IEC 61508:2010 with SIF architecture 1oo2, PFDavg = 3.2×10⁻³ within SIL 2 range (10⁻² to 10⁻³), proof test interval 12 months, diagnostic coverage 92%. Risk graph per IEC 61511 confirms SIL 2 target. Compliance traced through SRS to validated test results.
+
+---
+
+**👤 You:**
+> "The building structural design uses steel moment frames. Verify seismic compliance for a site in Los Angeles."
+
+**🤖 AI Agent:**
+> CALCULATION_GAP — Seismic design for LA (Seismic Design Category D/E) requires specific calculations: site class per ASCE 7-22 Ch. 11, spectral accelerations Ss and S1 from USGS, response modification R for SMF (R=8), drift limits per ASCE 7-22 §12.12. Show the base shear calculation V = CsW.
+
+
 ## Installation & Usage
 
 To install and use the **Engineering Reasoning Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Engineering Reasoning Prover** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

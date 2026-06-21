@@ -1,12 +1,14 @@
 # SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents MCP Server
 
-The definitive SEC EDGAR Mega-Server: 13 tools spanning company lookup (8,000+ tickers), all filing types (10-K, 10-Q, 8-K), insider trading (Form 4), XBRL financial data extraction (revenue, income, assets, EPS), industry-wide comparison frames, and full-text search across every document ...
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-full-the-ultimate-free-bloomberg-alternative-for-ai-agents-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 13
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+The definitive SEC EDGAR Mega-Server: 13 tools spanning company lookup (8,000+ tickers), all filing types (10-K, 10-Q, 8-K), insider trading (Form 4), XBRL financial data extraction (revenue, income, assets, EPS), industry-wide comparison frames, and full-text search across every document ...
 
 ## Description
 The **ultimate SEC EDGAR Mega-Server** — 13 tools.
@@ -62,6 +64,55 @@ Get ALL XBRL financial facts for a company — complete financial data dump
 Compare a financial metric across ALL companies — industry-wide XBRL frame data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Full financial analysis of NVIDIA: company info, latest 10-K, key financials, and insider trades"
+
+**🤖 AI Agent:**
+> 📊 **SEC EDGAR Full Analysis: NVDA**
+
+🏢 NVIDIA Corp (CIK: 0001045810)
+SIC: 3674 — Semiconductors
+
+📄 Latest 10-K: Filed 2026-02-26 (FY2025)
+
+💰 Key Financials:
+  Revenue (FY2025): $130.5B
+  Net Income (FY2025): $72.9B
+  EPS: $2.95
+
+👤 Recent Form 4 Trades: Colette Kress (CFO) sold 100,000 shares on 2026-03-05.
+
+---
+
+**👤 You:**
+> "Search the entire EDGAR database for 'robotics' and provide a summary of trends"
+
+**🤖 AI Agent:**
+> 🔍 **EDGAR Full-Text Search Summary: 'robotics'**
+
+Found 45,210 mentions in recent filings, primarily across the Manufacturing and Healthcare sectors. Companies like Intuitive Surgical (ISRG) and Amazon (AMZN) frequently cite 'robotics' in their Risk Factors and Business Strategy sections. There is a noticeable 15% increase in mentions in 2026 compared to 2025, suggesting accelerated adoption in supply chain logistics.
+
+---
+
+**👤 You:**
+> "Compare the historical assets of Microsoft vs Apple, and check if any insiders recently sold stock."
+
+**🤖 AI Agent:**
+> 📊 **Comparative Analysis: MSFT vs AAPL**
+
+💰 **Historical Total Assets:**
+- Microsoft (CY2025): $475.2B
+- Apple (CY2025): $352.5B
+
+👤 **Recent Insider Trades (Form 4):**
+- Microsoft: Satya Nadella sold 50,000 shares on 2026-03-01.
+- Apple: Tim Cook sold 80,000 shares on 2026-02-15.
+
+
 ## Installation & Usage
 
 To install and use the **SEC EDGAR Full — The Ultimate Free Bloomberg Alternative for AI Agents** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +121,11 @@ To install and use the **SEC EDGAR Full — The Ultimate Free Bloomberg Alternat
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Nifty (All-in-One Project Management) MCP Server
 
-Manage projects via Nifty — create tasks, track sprint milestones, and audit project portfolios.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nifty-all-in-one-project-management)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nifty-all-in-one-project-management)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nifty-all-in-one-project-management-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nifty-all-in-one-project-management-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage projects via Nifty — create tasks, track sprint milestones, and audit project portfolios.
 
 ## Description
 Connect your **Nifty** account to any AI agent and take full control of your automated project management, task tracking, and team collaboration through natural conversation.
@@ -49,6 +51,33 @@ List Nifty workspaces and active projects
 - **list_time_logs**: List project time tracking logs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nifty (All-in-One Project Management)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my projects in Nifty"
+
+**🤖 AI Agent:**
+> I've retrieved 3 active projects from your Nifty account: 'Mobile App Redesign' (ID: 12345), 'Q2 Marketing Launch' (ID: 67890), and 'Product Beta' (ID: 13579). Which one would you like to see the tasks or milestones for?
+
+---
+
+**👤 You:**
+> "Create a new task 'Prepare API documentation' in project '12345'"
+
+**🤖 AI Agent:**
+> Task 'Prepare API documentation' created successfully! I've injected the new ticket into your 'Mobile App Redesign' board. You can now use the `list_tasks` tool to see the updated backlog and assign a member.
+
+---
+
+**👤 You:**
+> "Show me the portfolios available in my account"
+
+**🤖 AI Agent:**
+> Retrieving portfolios… I've identified 2 grouped collections: 'Engineering Initiatives' (Spanning 5 projects) and 'Corporate Program Management'. I can provide the project rollup data for either of these portfolios if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Nifty (All-in-One Project Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Nifty (All-in-One Project Management)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

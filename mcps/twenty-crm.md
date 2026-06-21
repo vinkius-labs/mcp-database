@@ -1,12 +1,14 @@
 # Twenty CRM MCP Server
 
-Manage your CRM data directly from AI — list people, companies, and opportunities, and create or update records in Twenty CRM.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/twenty-crm)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twenty-crm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twenty-crm-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twenty-crm-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 25
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage your CRM data directly from AI — list people, companies, and opportunities, and create or update records in Twenty CRM.
 
 ## Description
 Connect your **Twenty CRM** account to any AI agent and take full control of your sales pipeline and contact database through natural conversation.
@@ -60,6 +62,33 @@ Connect your **Twenty CRM** account to any AI agent and take full control of you
 - **update_task**: Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Twenty CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all people in my Twenty CRM."
+
+**🤖 AI Agent:**
+> I've retrieved the list of people. You have 15 contacts, including 'John Doe' (ID: 1) and 'Jane Smith' (ID: 2). Would you like to see details for a specific person?
+
+---
+
+**👤 You:**
+> "Create a new company named 'Global Tech Solutions'."
+
+**🤖 AI Agent:**
+> Success! I've created 'Global Tech Solutions' in your CRM with ID 582. You can now associate people or opportunities with this company.
+
+---
+
+**👤 You:**
+> "Get the details for opportunity ID 101."
+
+**🤖 AI Agent:**
+> I found opportunity 101: 'Enterprise License Expansion'. It is currently in the 'Negotiation' stage with an estimated value of $50,000.
+
+
 ## Installation & Usage
 
 To install and use the **Twenty CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Twenty CRM** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

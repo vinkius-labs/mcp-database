@@ -1,12 +1,14 @@
 # Civo (Cloud-native Kubernetes Cloud Provider API) MCP Server
 
-Manage Civo cloud infrastructure — provision Kubernetes clusters, control compute instances, and monitor usage directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/civo-cloud-native-kubernetes-cloud-provider-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/civo-cloud-native-kubernetes-cloud-provider-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/civo-cloud-native-kubernetes-cloud-provider-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/civo-cloud-native-kubernetes-cloud-provider-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 33
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Civo cloud infrastructure — provision Kubernetes clusters, control compute instances, and monitor usage directly via AI.
 
 ## Description
 Connect your **Civo** account to any AI agent to manage your cloud-native infrastructure through natural language. This server provides full access to Civo's high-performance K3s and compute services.
@@ -68,6 +70,33 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 - **upload_ssh_key**: Upload an SSH key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Civo (Cloud-native Kubernetes Cloud Provider API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Kubernetes clusters in the lon1 region."
+
+**🤖 AI Agent:**
+> I've retrieved your clusters in lon1. You have one active cluster: 'production-k3s' (ID: 8f2d...) with 3 nodes currently running.
+
+---
+
+**👤 You:**
+> "Create a new g3.xsmall instance named 'web-server' in my default network."
+
+**🤖 AI Agent:**
+> Starting the provisioning process for 'web-server' (size: g3.xsmall). I'll use your default network ID. The instance is being created now.
+
+---
+
+**👤 You:**
+> "What is my current account quota and total charges for this month?"
+
+**🤖 AI Agent:**
+> Your current quota shows 8/10 instances used and 24/40 CPU cores. Your estimated charges for this billing cycle are $42.50.
+
+
 ## Installation & Usage
 
 To install and use the **Civo (Cloud-native Kubernetes Cloud Provider API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Civo (Cloud-native Kubernetes Cloud Provider API)** MCP
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

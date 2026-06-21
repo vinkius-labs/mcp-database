@@ -1,12 +1,14 @@
 # Simplicate MCP Server
 
-Manage your Dutch professional services firm with CRM, project management, and invoicing designed for the Benelux market.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/simplicate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplicate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplicate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplicate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Dutch professional services firm with CRM, project management, and invoicing designed for the Benelux market.
 
 ## Description
 Connect your **Simplicate** account to any AI agent and take full control of your business workflow and project orchestration through natural conversation. Simplicate provides a comprehensive platform for CRM, sales tracking, and project management, and this integration allows you to retrieve organization metadata, monitor sales pipelines, and log hours directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual status checking or spreadsheet time logging. Your AI acts as a de
 - **log_time_registration**: Register new hours worked
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Simplicate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in Simplicate."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 5 active environments including 'IT Infrastructure Audit', 'Marketing Campaign Q1', and 'HR System Implementation'. Which one would you like to log hours for?
+
+---
+
+**👤 You:**
+> "Log 2 hours for project ID 'proj-123' with description 'Code review'."
+
+**🤖 AI Agent:**
+> Work log registered! I've successfully added 2 hours to project 'proj-123'. Would you like me to check your total logged hours for this week?
+
+---
+
+**👤 You:**
+> "Show me the pipeline for my active sales opportunities."
+
+**🤖 AI Agent:**
+> Fetching sales pipeline... You have 3 opportunities in 'Quotation' stage and 1 in 'Negotiation'. Would you like the full details for the 'Cloud Migration' deal?
+
+
 ## Installation & Usage
 
 To install and use the **Simplicate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Simplicate** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

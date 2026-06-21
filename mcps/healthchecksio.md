@@ -1,12 +1,14 @@
 # Healthchecks.io MCP Server
 
-Monitor cron jobs and background tasks via Healthchecks.io — list checks, track pings, and manage alerts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/healthchecksio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/healthchecksio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/healthchecksio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/healthchecksio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 13
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Monitor cron jobs and background tasks via Healthchecks.io — list checks, track pings, and manage alerts directly from any AI agent.
 
 ## Description
 Connect your **Healthchecks.io** account to any AI agent to monitor and manage your cron jobs, background tasks, and scheduled services through natural conversation.
@@ -54,6 +56,33 @@ List all checks in the project
 - **update_check**: Update an existing check
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Healthchecks.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active checks and their current status."
+
+**🤖 AI Agent:**
+> I've retrieved your checks. You have 3 active monitors: 'Daily Backup' (Up), 'Hourly Sync' (Up), and 'Cleanup Script' (Down). Would you like to see the pings for the 'Cleanup Script'?
+
+---
+
+**👤 You:**
+> "Show me the last 5 pings for check uuid '550e8400-e29b-41d4-a716-446655440000'."
+
+**🤖 AI Agent:**
+> Here are the last 5 pings for that check. The most recent was 10 minutes ago with a 'success' status. Ping #452 included a payload of 1.2KB. Do you want to inspect the body of any specific ping?
+
+---
+
+**👤 You:**
+> "Create a new check named 'Database Backup' with a 24-hour timeout."
+
+**🤖 AI Agent:**
+> I've created the 'Database Backup' check. The UUID is 'a1b2c3d4...'. You can now send pings to `https://hc-ping.com/a1b2c3d4...`. I've set the timeout to 86400 seconds as requested.
+
+
 ## Installation & Usage
 
 To install and use the **Healthchecks.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Healthchecks.io** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

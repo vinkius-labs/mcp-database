@@ -1,12 +1,14 @@
 # ExerciseDB MCP Server
 
-Access 1300+ exercises with body parts, target muscles, equipment, instructions and animated GIFs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/exercisedb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/exercisedb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/exercisedb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/exercisedb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** learning-training
-**Tools Count:** 9
+
+**Category:** [learning-training](../categories/learning-training.md)
+
+Access 1300+ exercises with body parts, target muscles, equipment, instructions and animated GIFs.
 
 ## Description
 Connect to **ExerciseDB** and explore a comprehensive exercise database through natural conversation.
@@ -63,6 +65,33 @@ Get exercises by target muscle
 Get list of all target muscles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ExerciseDB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me exercises for chest with dumbbells."
+
+**🤖 AI Agent:**
+> Found 15+ chest exercises with dumbbells including: Dumbbell Bench Press, Dumbbell Fly, Incline Dumbbell Press, Decline Dumbbell Fly. Each includes step-by-step instructions and animated GIF.
+
+---
+
+**👤 You:**
+> "What exercises target the abs?"
+
+**🤖 AI Agent:**
+> Found 50+ exercises targeting abs including: Crunches, Plank, Bicycle Crunches, Russian Twist, Leg Raises, Mountain Climbers. Each with instructions, body part, equipment needed and GIF.
+
+---
+
+**👤 You:**
+> "Show me exercises I can do with just body weight."
+
+**🤖 AI Agent:**
+> Found 100+ body weight exercises including: Push-ups, Pull-ups, Squats, Lunges, Plank, Burpees, Dips. No equipment needed — perfect for home workouts.
+
+
 ## Installation & Usage
 
 To install and use the **ExerciseDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **ExerciseDB** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

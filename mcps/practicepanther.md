@@ -1,12 +1,14 @@
 # PracticePanther MCP Server
 
-Manage law practice via PracticePanther — matters, contacts, time tracking, bills, payments, tasks, and calendar.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/practicepanther)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/practicepanther)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/practicepanther-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/practicepanther-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 18
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage law practice via PracticePanther — matters, contacts, time tracking, bills, payments, tasks, and calendar.
 
 ## Description
 Connect to **PracticePanther legal practice management** platform and manage your entire law practice from any AI agent. Access matters, contacts, documents, time entries, calendar events, bills, payments, tasks, and expenses—all through a unified REST API with OData support.
@@ -180,6 +182,33 @@ Search matters/cases using OData filter
 - **update_practicepanther_matter**: Update an existing matter/case in PracticePanther
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PracticePanther** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my open matters in PracticePanther."
+
+**🤖 AI Agent:**
+> I found 5 open matters in your PracticePanther account: 1) Smith Divorce [Open] — John Smith, Family Law, 2) State v. Johnson [Open] — Robert Johnson, Criminal Defense, 3) Estate of Williams [Open] — Mary Williams, Estate Planning, 4) ABC Corp Contract Dispute [Open] — ABC Corporation, Business Litigation, 5) Jones Personal Injury [Open] — Sarah Jones, Personal Injury.
+
+---
+
+**👤 You:**
+> "Create a new time entry for 2 hours of legal research on the Smith Divorce matter."
+
+**🤖 AI Agent:**
+> Time entry created successfully! Logged 120 minutes of 'Legal research' on matter 'Smith Divorce'. Entry is marked as billable. Running total for this matter: 8.5 hours this month.
+
+---
+
+**👤 You:**
+> "Show me all contacts for client John Smith."
+
+**🤖 AI Agent:**
+> Found 3 contacts associated with John Smith: 1) John Smith (Client) — john.smith@email.com, 555-0123, 2) Jane Smith (Spouse) — jane.smith@email.com, 555-0124, 3) Robert Williams (Opposing Counsel) — robert@williamslaw.com, 555-0456.
+
+
 ## Installation & Usage
 
 To install and use the **PracticePanther** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -188,4 +217,11 @@ To install and use the **PracticePanther** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

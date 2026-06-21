@@ -1,12 +1,14 @@
 # Kraken MCP Server
 
-Access real-time crypto market data, account balances, and trade history from Kraken directly within your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kraken-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kraken-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kraken-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kraken-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 28
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Access real-time crypto market data, account balances, and trade history from Kraken directly within your AI agent.
 
 ## Description
 Connect your **Kraken** account to any AI agent to monitor the cryptocurrency markets and manage your portfolio through natural language.
@@ -63,6 +65,33 @@ Connect your **Kraken** account to any AI agent to monitor the cryptocurrency ma
 - **spot_query_trades**: Query Trades Info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kraken** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current market price and 24h volume for Ethereum (ETH/USD)?"
+
+**🤖 AI Agent:**
+> I've checked the Kraken ticker for XETHZUSD. The last trade was at $2,450.20 with a 24-hour volume of 15,420 ETH. The current spread is $0.10.
+
+---
+
+**👤 You:**
+> "Show me my current Kraken account balances."
+
+**🤖 AI Agent:**
+> Fetching your balances... You currently hold 0.5 BTC, 10 ETH, and 5,000 USD in your spot account.
+
+---
+
+**👤 You:**
+> "Check if there are any open orders on my account."
+
+**🤖 AI Agent:**
+> I found one open limit order to sell 0.1 BTC at $70,000. It is currently 'open' and has not been partially filled yet.
+
+
 ## Installation & Usage
 
 To install and use the **Kraken** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Kraken** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

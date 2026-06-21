@@ -1,12 +1,14 @@
 # QStash (Serverless Message Queue) MCP Server
 
-Manage serverless messaging, task scheduling, and webhooks via Upstash QStash — publish messages, manage queues, and handle DLQs directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/qstash-serverless-message-queue)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/qstash-serverless-message-queue)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/qstash-serverless-message-queue-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/qstash-serverless-message-queue-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 38
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage serverless messaging, task scheduling, and webhooks via Upstash QStash — publish messages, manage queues, and handle DLQs directly.
 
 ## Description
 Connect your **Upstash QStash** account to any AI agent to orchestrate serverless messaging and background tasks through natural language.
@@ -73,6 +75,33 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **upsert_url_group**: Create or update a URL Group (Topic)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **QStash (Serverless Message Queue)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Publish a POST request to https://api.example.com/webhook with a 1-hour delay."
+
+**🤖 AI Agent:**
+> I've published the message to your destination. It is scheduled for delivery in 1 hour. Message ID: msg_82391.
+
+---
+
+**👤 You:**
+> "List all my current QStash queues and their status."
+
+**🤖 AI Agent:**
+> I found 3 queues: 'image-processing' (Active), 'email-service' (Paused), and 'webhooks-main' (Active).
+
+---
+
+**👤 You:**
+> "Check the Dead Letter Queue and retry the message with ID msg_123."
+
+**🤖 AI Agent:**
+> I've located the message in the DLQ and successfully triggered a retry for msg_123.
+
+
 ## Installation & Usage
 
 To install and use the **QStash (Serverless Message Queue)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **QStash (Serverless Message Queue)** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

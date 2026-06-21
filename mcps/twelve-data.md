@@ -1,12 +1,14 @@
 # Twelve Data MCP Server
 
-Access real-time stock quotes, crypto prices, forex rates, and technical indicators via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/twelve-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/twelve-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/twelve-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/twelve-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 16
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time stock quotes, crypto prices, forex rates, and technical indicators via AI.
 
 ## Description
 Connect **Twelve Data** financial API to any AI agent and access real-time stock quotes, cryptocurrency prices, forex rates, and professional technical indicators through natural language.
@@ -68,6 +70,33 @@ Get historical OHLCV candle data
 Search for financial instruments
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Twelve Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current price of Apple stock?"
+
+**🤖 AI Agent:**
+> AAPL is currently trading at $192.45, up 1.23% (+$2.34) from yesterday's close. Open: $190.50, High: $193.10, Low: $189.80. Volume: 52.3M shares.
+
+---
+
+**👤 You:**
+> "Show me the RSI for Tesla on the daily chart."
+
+**🤖 AI Agent:**
+> TSLA RSI (14-period) on daily chart: 58.3 — neutral territory. Not overbought (>70) or oversold (<30). The RSI has been trending upward over the past 5 sessions.
+
+---
+
+**👤 You:**
+> "Convert 1000 USD to EUR."
+
+**🤖 AI Agent:**
+> 1,000 USD = 921.50 EUR at the current exchange rate of 0.9215. Rate updated in real-time.
+
+
 ## Installation & Usage
 
 To install and use the **Twelve Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Twelve Data** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

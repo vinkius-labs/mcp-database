@@ -1,12 +1,14 @@
 # Zid MCP Server
 
-Launch your Arabic e-commerce store with a platform built for Saudi and Gulf markets including local payment and shipping options.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 9
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Launch your Arabic e-commerce store with a platform built for Saudi and Gulf markets including local payment and shipping options.
 
 ## Description
 Connect your **Zid** store to any AI agent and take full control of your e-commerce ecosystem and high-fidelity retail orchestration through natural conversation.
@@ -47,6 +49,33 @@ No more manual stock checks or missing order updates. Your AI acts as your dedic
 - **check_zid_status**: Check API Status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products and show their status."
+
+**🤖 AI Agent:**
+> I've retrieved your products. You currently have 12 active high-fidelity profiles, including 'Premium Coffee' (Active) and 'Arabic Dates'. Would you like to see the detailed inventory metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the last 5 orders and their fulfillment status."
+
+**🤖 AI Agent:**
+> Retail orchestrated! I've identified 5 recent high-fidelity order profiles, including order #12345 (Ready for Shipping). I've retrieved the technical fulfillment metadata for your review. Shall I summarize the sales progress?
+
+---
+
+**👤 You:**
+> "Check the available inventories for the 'Main Warehouse'."
+
+**🤖 AI Agent:**
+> Inventory directory orchestrated! Your store currently has 3 high-fidelity inventory locations active. Your API connection is healthy. Shall I retrieve the detailed resource distribution metadata for these sites?
+
+
 ## Installation & Usage
 
 To install and use the **Zid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Zid** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

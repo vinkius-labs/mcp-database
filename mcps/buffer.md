@@ -1,12 +1,14 @@
 # Buffer MCP Server
 
-Automate social media management via Buffer — schedule posts, track sent updates, shuffle queues, and manage multi-platform profiles with any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/buffer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/buffer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/buffer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/buffer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate social media management via Buffer — schedule posts, track sent updates, shuffle queues, and manage multi-platform profiles with any AI agent.
 
 ## Description
 Connect your **Buffer** account to any AI agent and take full control of your social media scheduling operations across Twitter, LinkedIn, Facebook, and Instagram through natural conversation.
@@ -49,6 +51,42 @@ Schedule a new social media post
 - **get_user**: Get Buffer account info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Buffer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my social media profiles currently connected to Buffer."
+
+**🤖 AI Agent:**
+> You have 2 profiles connected to your Buffer account:
+1. Twitter (@TechVinkius) — Profile ID: 62a3f... 
+2. LinkedIn (Vinkius Labs Page) — Profile ID: 61e9b...
+
+Should I check the pending queue for any of these?
+
+---
+
+**👤 You:**
+> "How many pending posts do I have on my Twitter account?"
+
+**🤖 AI Agent:**
+> You currently have 3 pending posts scheduled for Twitter (@TechVinkius). 
+The next one is scheduled to go live today at 14:00 GMT: "Understanding MCP architecture unlocks pure agentic scale..." 
+
+Would you like me to shuffle them or create a new one?
+
+---
+
+**👤 You:**
+> "Write a short engaging tweet about our new launch and schedule it immediately."
+
+**🤖 AI Agent:**
+> Drafted: "🚀 Boom! We just shipped the final feature set for our platform! The future of agentic ecosystems is live. #agents #ai"
+
+I have successfully injected this into the Buffer queue for your Twitter profile (ID: 62a3f). It will automatically take the next available time slot according to your predefined buffer schedule.
+
+
 ## Installation & Usage
 
 To install and use the **Buffer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +95,11 @@ To install and use the **Buffer** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

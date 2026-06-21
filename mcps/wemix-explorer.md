@@ -1,12 +1,14 @@
 # Wemix Explorer MCP Server
 
-Explore Wemix blockchain data — query accounts, track token transfers, and inspect blocks or extrinsics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wemix-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wemix-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wemix-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wemix-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 11
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore Wemix blockchain data — query accounts, track token transfers, and inspect blocks or extrinsics directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **Wemix Network** to gain real-time visibility into blockchain activity. This server provides a comprehensive suite of tools to audit addresses, monitor token movements, and analyze network health.
@@ -48,6 +50,33 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 - **list_tokens**: Get a list of tokens on the network
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wemix Explorer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest blocks on the Wemix network."
+
+**🤖 AI Agent:**
+> I've retrieved the latest blocks. The most recent block is #14502134, produced 6 seconds ago with 12 extrinsics. Would you like to see the details of a specific block?
+
+---
+
+**👤 You:**
+> "What tokens are held by the address 0x742d35Cc6634C0532925a3b844Bc454e4438f44e?"
+
+**🤖 AI Agent:**
+> Checking the wallet... This account holds 500 WEMIX, 1,200 WEMIX$, and 50 stWEMIX. I can also list the recent transfers for this address if you'd like.
+
+---
+
+**👤 You:**
+> "Get details for extrinsic hash 0x123...abc"
+
+**🤖 AI Agent:**
+> Extrinsic 0x123...abc was finalized in block #14502100. It was a 'balances.transfer' call from address A to address B. The status is 'Success'.
+
+
 ## Installation & Usage
 
 To install and use the **Wemix Explorer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Wemix Explorer** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

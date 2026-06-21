@@ -1,12 +1,14 @@
 # Extensiv MCP Server
 
-Manage omnichannel operations via Extensiv — track orders and shipments, monitor inventory and warehouses, and manage vendors directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/extensiv)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/extensiv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/extensiv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/extensiv-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage omnichannel operations via Extensiv — track orders and shipments, monitor inventory and warehouses, and manage vendors directly from any AI agent.
 
 ## Description
 Connect your **Extensiv** (formerly Skubana) account to any AI agent and take full control of your omnichannel e-commerce operations and inventory management through natural conversation.
@@ -69,6 +71,33 @@ List Extensiv brands
 List Extensiv customers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Extensiv** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 orders from my Shopify channel"
+
+**🤖 AI Agent:**
+> Retrieving Shopify orders... I found 5 recent orders including #SH-1001 (Processing) and #SH-1002 (Shipped). Would you like to see the line items for the most recent order?
+
+---
+
+**👤 You:**
+> "What is the available stock for SKU 'TSHIRT-BLU-L' at the Main Warehouse?"
+
+**🤖 AI Agent:**
+> Checking inventory for 'TSHIRT-BLU-L'... In the Main Warehouse, you have 45 units available, 10 committed to pending orders, and 25 currently in transit from the supplier.
+
+---
+
+**👤 You:**
+> "Show me the status of purchase order PO-999"
+
+**🤖 AI Agent:**
+> Retrieving PO details... Purchase Order PO-999 for vendor 'Global-Fabrics' is currently 'Awaiting Receipt'. It includes 500 units of cotton fabric and is expected to arrive on 2024-05-15.
+
+
 ## Installation & Usage
 
 To install and use the **Extensiv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Extensiv** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

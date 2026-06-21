@@ -1,12 +1,14 @@
 # Atlan MCP Server
 
-Search and discover data assets, business glossaries, classifications, policies, and personas directly via your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/atlan)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/atlan)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/atlan-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/atlan-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 6
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Search and discover data assets, business glossaries, classifications, policies, and personas directly via your AI agent.
 
 ## Description
 Connect your **Atlan** workspace to any AI agent and empower it to become a master data steward. By linking the leading Active Metadata Management platform with agents, you gain conversational governance and instant data cataloging capabilities on demand.
@@ -45,6 +47,33 @@ List all classifications defined in Atlan
 - **list_users**: List all users in the Atlan workspace
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Atlan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for any data assets related to 'churn prediction'."
+
+**🤖 AI Agent:**
+> I searched the Atlan catalog and found 5 matching assets for 'churn prediction': 1 Snowflake schema (`prod_churn_logs`), 2 Looker dashboards summarizing retention, and 2 verified glossaries defining the calculation metrics. What should I explore further?
+
+---
+
+**👤 You:**
+> "What business glossaries do we have configured in our metadata?"
+
+**🤖 AI Agent:**
+> Your organization operates 4 primary active glossaries on Atlan: `Core Finance KPIs`, `Marketing Attribution Rules`, `Engineering Data Contracts`, and `Regulatory Policies`. Their respective term counts vary per domain structure.
+
+---
+
+**👤 You:**
+> "List all security classifications defined across our catalogs."
+
+**🤖 AI Agent:**
+> There are 7 active classification tags in Atlan currently utilized across your assets. Notable ones include `GDPR_Sensitive`, `Confidential_Tier_1`, and `Public_Domain`. I can identify the specific tags shielding individual table rows if directed.
+
+
 ## Installation & Usage
 
 To install and use the **Atlan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Atlan** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

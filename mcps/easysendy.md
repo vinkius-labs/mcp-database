@@ -1,12 +1,14 @@
 # EasySendy MCP Server
 
-Send high-volume email campaigns through multiple delivery servers with list hygiene tools that protect your sender score.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/easysendy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/easysendy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/easysendy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/easysendy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Send high-volume email campaigns through multiple delivery servers with list hygiene tools that protect your sender score.
 
 ## Description
 Connect your **EasySendy** account to any AI agent and take full control of your email marketing lists and subscriber engagement workflows through natural conversation.
@@ -52,6 +54,33 @@ Add a single subscriber to a list
 - **update_subscriber**: Update an existing subscriber
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EasySendy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email subscriber lists in EasySendy."
+
+**🤖 AI Agent:**
+> I've retrieved your email lists. You currently have 3 active lists: 'Newsletter 2026' (UID: abc-123), 'Product Leads', and 'Beta Testers'. Which one should we manage?
+
+---
+
+**👤 You:**
+> "Add subscriber 'john.doe@example.com' to list UID 'abc-123'."
+
+**🤖 AI Agent:**
+> Done! John Doe has been successfully added to the 'Newsletter 2026' list. They will now receive your scheduled campaigns for this list.
+
+---
+
+**👤 You:**
+> "Find subscriber details for 'sarah@example.com' in list 'abc-123'."
+
+**🤖 AI Agent:**
+> I've located Sarah's profile in the specified list. She is currently 'Confirmed' and joined on 2024-03-15. Her tags include 'Premium' and 'Loyalty'. Would you like to see her custom field values?
+
+
 ## Installation & Usage
 
 To install and use the **EasySendy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **EasySendy** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

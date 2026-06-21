@@ -1,12 +1,14 @@
 # Frontify MCP Server
 
-Manage digital assets and brand guidelines via Frontify — list workspace projects and assets, handle metadata, audit brand portals, and manage users directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/frontify)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frontify)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frontify-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frontify-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 10
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Manage digital assets and brand guidelines via Frontify — list workspace projects and assets, handle metadata, audit brand portals, and manage users directly from any AI agent.
 
 ## Description
 Connect your **Frontify** account to any AI agent and take full control of your digital asset management (DAM), brand guidelines, and collaborative workspaces through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Frontify** account to any AI agent and take full control of your 
 - **patch_asset_metadata**: Mutate global Web CRM boundaries substituting Attributes safely
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Frontify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all projects in my Frontify workspace"
+
+**🤖 AI Agent:**
+> Retrieving projects... I found 3 active workspaces: 'Logo Guidelines', 'Q2 Marketing Campaign', and 'Social Media Assets'. Which one would you like to explore for assets?
+
+---
+
+**👤 You:**
+> "Show me the brand guidelines for 'Acme Corp'"
+
+**🤖 AI Agent:**
+> Retrieving guidelines... For 'Acme Corp', I found 2 registered portals: 'Global Brand Identity' and 'Technical Design System'. I can retrieve specific UI/UX constraints or rules from either portal for you.
+
+---
+
+**👤 You:**
+> "Invite 'designer@example.com' to project 'abc-123'"
+
+**🤖 AI Agent:**
+> Invitation sent! I've commanded Frontify to add designer@example.com to project abc-123. They will receive an email to join the workspace and access the assets immediately.
+
+
 ## Installation & Usage
 
 To install and use the **Frontify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Frontify** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

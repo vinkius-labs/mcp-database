@@ -1,12 +1,14 @@
 # DevDocs MCP Server
 
-Search and read developer documentation via DevDocs.io — list libraries, find specific API pages, and retrieve Markdown docs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/devdocs)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/devdocs)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/devdocs-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/devdocs-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search and read developer documentation via DevDocs.io — list libraries, find specific API pages, and retrieve Markdown docs directly from any AI agent.
 
 ## Description
 Connect your AI agent to the **DevDocs.io** index and take full control of your technical documentation research and coding assistance through natural conversation.
@@ -39,6 +41,33 @@ Connect your AI agent to the **DevDocs.io** index and take full control of your 
 - **read_page**: Read the content of a specific documentation page. Returns cleanly formatted Markdown text
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DevDocs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all documentation libraries available in DevDocs"
+
+**🤖 AI Agent:**
+> I've retrieved the full list of libraries. You can search documentation for hundreds of tools including 'aws', 'docker', 'git', 'javascript', 'nextjs', 'react', 'rust', and 'tailwindcss'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Search for 'useState' in the react documentation"
+
+**🤖 AI Agent:**
+> Searching react index for 'useState'... I found the exact page path: 'hooks-state.html'. I can pull the full Markdown documentation and code examples for you.
+
+---
+
+**👤 You:**
+> "Read the documentation for 'aws' at path 'cli/s3/cp'"
+
+**🤖 AI Agent:**
+> Retrieving 'aws' documentation for 's3 cp'... [Agent pulls official Markdown segments detailing the cp command, including description, usage syntax, and examples like 'aws s3 cp file.txt s3://my-bucket/'].
+
+
 ## Installation & Usage
 
 To install and use the **DevDocs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **DevDocs** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

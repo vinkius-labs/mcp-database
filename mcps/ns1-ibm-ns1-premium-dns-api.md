@@ -1,12 +1,14 @@
 # NS1 (IBM NS1 Premium DNS API) MCP Server
 
-Manage DNS zones, records, and traffic steering via IBM NS1. Automate infrastructure directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ns1-ibm-ns1-premium-dns-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ns1-ibm-ns1-premium-dns-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ns1-ibm-ns1-premium-dns-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ns1-ibm-ns1-premium-dns-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 15
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage DNS zones, records, and traffic steering via IBM NS1. Automate infrastructure directly from your AI agent.
 
 ## Description
 Connect your **IBM NS1** account to any AI agent and take full control of your global DNS infrastructure and traffic steering through natural conversation.
@@ -50,6 +52,33 @@ Connect your **IBM NS1** account to any AI agent and take full control of your g
 - **update_zone**: Update zone settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NS1 (IBM NS1 Premium DNS API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my DNS zones in NS1."
+
+**🤖 AI Agent:**
+> I've retrieved your zones. You currently manage 3 zones: 'production.com', 'staging.net', and 'api-gateway.io'. Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Create an A record for 'www.production.com' pointing to '1.2.3.4' with a TTL of 3600."
+
+**🤖 AI Agent:**
+> I've successfully created the A record for 'www.production.com' in the 'production.com' zone. It is now pointing to 1.2.3.4 with a TTL of 3600 seconds.
+
+---
+
+**👤 You:**
+> "Show me all active monitoring jobs and their regions."
+
+**🤖 AI Agent:**
+> Fetching monitoring data... I found 2 active jobs: 'Global-Web-Check' (monitoring from US-East, EU-West, and Asia-Pacific) and 'API-Health' (monitoring from US-West).
+
+
 ## Installation & Usage
 
 To install and use the **NS1 (IBM NS1 Premium DNS API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **NS1 (IBM NS1 Premium DNS API)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # IATA Developer Portal MCP Server
 
-Access aviation reference data — audit airports, airlines, and aircraft via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/iata-developer-portal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iata-developer-portal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iata-developer-portal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iata-developer-portal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 6
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access aviation reference data — audit airports, airlines, and aircraft via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire aviation research and logistics auditing workflow with the **IATA Developer Portal**, the official source for global aviation standards. By connecting IATA's reference data to your agent, you transform complex industry searches into a natural conversation. Your agent can instantly search for airport codes, audit airline identifiers, and retrieve aircraft metadata without you ever touching a technical manual. Whether you are conducting logistics research or building travel applications, your agent acts as a real-time aviation consultant, ensuring your data is always grounded in official, IATA-verified standards.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire aviation research and logistics
 - **search_airports**: Search for airports by IATA code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IATA Developer Portal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for airport with IATA code 'LHR' (London Heathrow) using IATA Portal."
+
+**🤖 AI Agent:**
+> I've retrieved the details for London Heathrow Airport. It is located in the United Kingdom and uses timezone Europe/London. Would you like the full geographic coordinates or city metadata?
+
+---
+
+**👤 You:**
+> "Identify the airline with code 'BA' (British Airways)."
+
+**🤖 AI Agent:**
+> I've identified the airline as British Airways. I can retrieve the full name and operational metadata for this carrier if you'd like.
+
+---
+
+**👤 You:**
+> "What aircraft corresponds to IATA code '744'?"
+
+**🤖 AI Agent:**
+> I've retrieved the details. The IATA code '744' corresponds to the Boeing 747-400 (Passenger) aircraft. I can assist you with more aircraft metadata if needed.
+
+
 ## Installation & Usage
 
 To install and use the **IATA Developer Portal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **IATA Developer Portal** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

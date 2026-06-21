@@ -1,12 +1,14 @@
 # Bitly MCP Server
 
-Shorten and manage links via Bitly — track clicks, analyze metrics, and manage groups directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bitly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bitly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bitly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bitly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Shorten and manage links via Bitly — track clicks, analyze metrics, and manage groups directly from any AI agent.
 
 ## Description
 Connect your **Bitly** account to any AI agent and orchestrate your link management and analytics workflows through natural conversation.
@@ -48,6 +50,33 @@ Shorten a URL
 - **get_user**: Get account info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bitly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Shorten this URL: https://vurb.vinkius.com/docs/intro"
+
+**🤖 AI Agent:**
+> I've shortened the link! Your new Bitlink is `bit.ly/3VurbDocs`.
+
+---
+
+**👤 You:**
+> "Show me the click summary for bit.ly/3VurbDocs."
+
+**🤖 AI Agent:**
+> The link bit.ly/3VurbDocs has received a total of 152 clicks since it was created.
+
+---
+
+**👤 You:**
+> "List my Bitly groups."
+
+**🤖 AI Agent:**
+> Retrieving your groups... You have 2 groups: 'Marketing Team' (GUID: g_123) and 'Personal Links' (GUID: g_456).
+
+
 ## Installation & Usage
 
 To install and use the **Bitly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Bitly** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

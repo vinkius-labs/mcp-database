@@ -1,12 +1,14 @@
 # Campaigner MCP Server
 
-Manage email marketing via Campaigner — track campaigns, manage subscribers, and monitor performance directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/campaigner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/campaigner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/campaigner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/campaigner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email marketing via Campaigner — track campaigns, manage subscribers, and monitor performance directly from any AI agent.
 
 ## Description
 Connect your **Campaigner** account to any AI agent and orchestrate your email marketing, subscriber management, and multi-channel campaigns through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Campaigner** account to any AI agent and orchestrate your email m
 - **list_workflows**: List automated workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Campaigner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email campaigns in Campaigner."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have several active and draft campaigns, including 'Spring Promo' (ID: camp_1) and 'User Onboarding' (ID: camp_2).
+
+---
+
+**👤 You:**
+> "Show the stats for campaign ID 12345."
+
+**🤖 AI Agent:**
+> Retrieving stats for campaign 12345... It has a 25% open rate, a 5% click rate, and has been sent to 1,000 subscribers.
+
+---
+
+**👤 You:**
+> "Search for subscriber with email john.doe@example.com."
+
+**🤖 AI Agent:**
+> I've found the subscriber profile for John Doe. He is currently 'Subscribed' and is associated with the 'Customers' and 'Weekly Update' lists.
+
+
 ## Installation & Usage
 
 To install and use the **Campaigner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Campaigner** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

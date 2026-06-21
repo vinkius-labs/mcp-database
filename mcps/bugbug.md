@@ -1,12 +1,14 @@
 # BugBug MCP Server
 
-Test your web application automatically with no-code browser tests that catch regressions before your users do.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bugbug)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugbug)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bugbug-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bugbug-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 12
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Test your web application automatically with no-code browser tests that catch regressions before your users do.
 
 ## Description
 Connect your **BugBug** account to any AI agent and take full control of your automated browser testing and application quality monitoring through natural conversation.
@@ -49,6 +51,33 @@ No more manual triggering of cloud tests or digging through complex run logs. Yo
 - **run_test**: Run a specific test
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BugBug** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my automated tests in BugBug."
+
+**🤖 AI Agent:**
+> I've retrieved your test directory. You currently have 15 automated tests, including 'Login Flow' (ID: test_123) and 'Checkout Process'. Which one would you like to execute or inspect?
+
+---
+
+**👤 You:**
+> "Run the 'Smoke Test' suite (ID: 'suite_456') in the 'Staging' environment."
+
+**🤖 AI Agent:**
+> Suite execution triggered! I've initiated the 'Smoke Test' suite in your staging environment. The run ID is 'run_789'. I'll monitor the progress and notify you as soon as the results are ready.
+
+---
+
+**👤 You:**
+> "Show the status and results for the latest test run ID 'run_789'."
+
+**🤖 AI Agent:**
+> Fetching run results... Execution run_789 has successfully 'Passed'. All 5 steps were verified. You can view the full high-fidelity report here: [report_url]. Shall I check the historical trends for this test?
+
+
 ## Installation & Usage
 
 To install and use the **BugBug** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **BugBug** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

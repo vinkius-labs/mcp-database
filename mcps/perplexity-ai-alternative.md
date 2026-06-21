@@ -1,12 +1,14 @@
 # Perplexity AI MCP Server
 
-Access Perplexity's AI search and chat models — get web-grounded answers with citations, search the web and run AI conversations from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/perplexity-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/perplexity-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/perplexity-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/perplexity-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 8
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Access Perplexity's AI search and chat models — get web-grounded answers with citations, search the web and run AI conversations from any AI agent.
 
 ## Description
 Connect your **Perplexity AI** account to any AI agent and leverage web-grounded AI models through natural conversation.
@@ -60,6 +62,33 @@ Search the web using Perplexity Search API
 Send a message to the Sonar model for web-grounded responses
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Perplexity AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search the web for 'latest advances in quantum computing 2025'."
+
+**🤖 AI Agent:**
+> Found recent articles on quantum error correction breakthroughs, Google's Willow chip achieving below-threshold error rates, and IBM's 1000+ qubit processors. Key sources include Nature, MIT Technology Review and Science Daily.
+
+---
+
+**👤 You:**
+> "Ask Sonar: What is the current price of Bitcoin?"
+
+**🤖 AI Agent:**
+> Bitcoin is currently trading at $87,234 USD according to CoinMarketCap data from today. The price has increased 3.2% in the last 24 hours with a market cap of $1.73 trillion. Sources: CoinMarketCap, CoinGecko.
+
+---
+
+**👤 You:**
+> "Send a chat to sonar-pro asking 'Explain how transformers work in NLP' with return_related_questions enabled."
+
+**🤖 AI Agent:**
+> Sonar-pro responded with a detailed explanation of transformer architecture including self-attention, multi-head attention, positional encoding and the encoder-decoder structure. Related questions returned include: 'What is the difference between BERT and GPT?', 'How does self-attention work?' and 'What are transformer limitations?'
+
+
 ## Installation & Usage
 
 To install and use the **Perplexity AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Perplexity AI** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

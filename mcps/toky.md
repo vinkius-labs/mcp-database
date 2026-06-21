@@ -1,12 +1,14 @@
 # Toky MCP Server
 
-Handle business calls from anywhere with a cloud phone system that includes IVR, call recording, and CRM integration.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/toky)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/toky)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/toky-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/toky-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Handle business calls from anywhere with a cloud phone system that includes IVR, call recording, and CRM integration.
 
 ## Description
 Connect your **Toky** cloud phone system account to any AI agent and simplify how you manage your business communications, call logs, and SMS outreach through natural conversation.
@@ -54,6 +56,33 @@ List Toky voicemails
 - **send_sms**: Send an SMS via Toky
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Toky** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active agents in my Toky account."
+
+**🤖 AI Agent:**
+> I've retrieved your agents. You have 3 active users: 'Alex Rivera' (Available), 'Sarah Smith' (On a call), and 'Mike Ross'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the last 3 calls from today."
+
+**🤖 AI Agent:**
+> I've fetched the call history. Today you had: 1 Incoming from +15550199 (Missed), 1 Outgoing to John Doe (Success, 5m), and 1 Incoming from Unknown (Success, 2m). Shall I retrieve the recording for the John Doe call?
+
+---
+
+**👤 You:**
+> "Send an SMS to 5511999999999 saying 'Your consultation is confirmed for tomorrow'."
+
+**🤖 AI Agent:**
+> SMS message sent! I've transmitted your confirmation text to 5511999999999. The transmission ID is SMS-88231. Your customer should receive it shortly.
+
+
 ## Installation & Usage
 
 To install and use the **Toky** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Toky** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

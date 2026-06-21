@@ -1,12 +1,14 @@
 # Bland AI MCP Server
 
-Deploy AI phone agents that handle inbound and outbound calls with natural conversation for sales and customer support.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bland-ai-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bland-ai-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 12
+
+**Category:** [superpower](../categories/superpower.md)
+
+Deploy AI phone agents that handle inbound and outbound calls with natural conversation for sales and customer support.
 
 ## Description
 Connect your **Bland AI** account to any AI agent and take full control of your hyper-realistic AI-driven phone communication and automated voice workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual dialing or listening through hours of recordings to find insights
 - **update_agent_config**: Modify agent settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bland AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Call '+15551234567' and ask if they are still coming to the meeting today at 3 PM."
+
+**🤖 AI Agent:**
+> Call initiated! I've successfully triggered an outbound call via Bland AI to +15551234567. The agent is instructed to verify the 3 PM meeting. Shall I alert you when the transcript is ready?
+
+---
+
+**👤 You:**
+> "Show the transcript and recording for call ID 'call_123'."
+
+**🤖 AI Agent:**
+> Fetching call data... I've retrieved the transcript for call_123. The recipient confirmed they are coming. You can access the high-fidelity recording here: [url]. Need any help with post-call analysis?
+
+---
+
+**👤 You:**
+> "List all my persistent voice agents in Bland AI."
+
+**🤖 AI Agent:**
+> Accessing voice personas... You currently have 3 configured agents, including 'Support Maya' (Voice: Maya) and 'Sales Mason'. Would you like the detailed prompt configuration for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Bland AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Bland AI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

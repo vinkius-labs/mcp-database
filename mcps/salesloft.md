@@ -1,12 +1,14 @@
 # Salesloft MCP Server
 
-Automate sales engagement via Salesloft — manage cadences, people, and accounts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/salesloft)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesloft)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesloft-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesloft-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate sales engagement via Salesloft — manage cadences, people, and accounts directly from any AI agent.
 
 ## Description
 Connect your **Salesloft** account to any AI agent and take full control of your sales engagement orchestration through natural conversation. Salesloft provides a premier platform for accelerating revenue, and this integration allows you to retrieve lead metadata, manage account records, and monitor active sales cadences directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual status checking or duplicate lead entry. Your AI acts as a dedica
 - **test_salesloft_auth**: Verify credentials
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Salesloft** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active cadences in my Salesloft account."
+
+**🤖 AI Agent:**
+> I've retrieved your cadences. You have 3 active workflows including 'Outbound Proactive' and 'Event Follow-up'. Which one would you like to see people for?
+
+---
+
+**👤 You:**
+> "Show me the cadence performance for all active sales sequences this quarter."
+
+**🤖 AI Agent:**
+> 8 active cadences this quarter. "Enterprise Outbound" leads with 67% open rate, 12% reply rate, 8 meetings booked from 234 prospects. "SMB Quick Touch" has the highest reply rate at 18% from 890 prospects. "Inbound Follow-Up" converted 34% of 456 inbound leads to meetings. "Re-engagement" revived 23 dormant accounts. Total emails sent: 12,340. Total calls logged: 3,456. Total meetings booked: 89. Average steps to reply: 3.2. Best performing day: Tuesday.
+
+---
+
+**👤 You:**
+> "Add 15 new prospects from the TechCrunch Disrupt attendee list to the Enterprise Outbound cadence."
+
+**🤖 AI Agent:**
+> 15 prospects added to "Enterprise Outbound" cadence. Source: TechCrunch Disrupt attendee list. Roles: 6 CTOs, 4 VPs Engineering, 3 Founders, 2 Product Leads. Companies: Series A-C startups, avg size 85 employees. Duplicate check: 2 already in SalesLoft (skipped). Net new: 13 prospects. First touchpoint: personalized email scheduled for tomorrow 9 AM. Cadence steps: Day 1 email → Day 3 call → Day 5 email → Day 8 LinkedIn → Day 12 email → Day 15 call.
+
+
 ## Installation & Usage
 
 To install and use the **Salesloft** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Salesloft** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

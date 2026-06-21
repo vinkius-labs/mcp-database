@@ -1,12 +1,14 @@
 # Kelley Blue Book Valuation MCP Server
 
-Get vehicle valuations and market data via Kelley Blue Book — search cars, get trade-in values, and fair market pricing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kelley-blue-book-valuation)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kelley-blue-book-valuation)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kelley-blue-book-valuation-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kelley-blue-book-valuation-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Get vehicle valuations and market data via Kelley Blue Book — search cars, get trade-in values, and fair market pricing.
 
 ## Description
 Connect your AI agent to **Kelley Blue Book (KBB)**, the most trusted resource for vehicle valuation and automotive research. This integration allows you to retrieve real-time market values, trade-in estimates, and fair purchase ranges through natural conversation.
@@ -48,6 +50,25 @@ List specific body styles for a vehicle trim
 - **search_vehicles**: Search for vehicles by make, model, and year
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kelley Blue Book Valuation** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the trade-in value for a 2020 Honda Civic with 30,000 miles?"
+
+**🤖 AI Agent:**
+> Fetching KBB data... For a 2020 Honda Civic in 'Good' condition with 30k miles in ZIP 90210, the estimated trade-in value is between $18,500 and $20,200.
+
+---
+
+**👤 You:**
+> "Search for vehicles models for Toyota in 2023."
+
+**🤖 AI Agent:**
+> Retrieving 2023 Toyota models... I found several models including Camry (ID: 123), Corolla (ID: 456), RAV4 (ID: 789), and Tacoma (ID: 012). Which one would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **Kelley Blue Book Valuation** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +77,11 @@ To install and use the **Kelley Blue Book Valuation** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

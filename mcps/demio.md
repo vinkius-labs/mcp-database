@@ -1,12 +1,14 @@
 # Demio MCP Server
 
-Equip your AI agent to manage webinar events, track registrants, and monitor sessions via the Demio API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/demio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/demio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/demio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/demio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** video-conferencing
-**Tools Count:** 10
+
+**Category:** [video-conferencing](../categories/video-conferencing.md)
+
+Equip your AI agent to manage webinar events, track registrants, and monitor sessions via the Demio API.
 
 ## Description
 Integrate **Demio**, the modern webinar platform built for marketing, directly into your AI workflow. Manage your upcoming and past webinars, track registration lists, monitor live and scheduled sessions, and register new users using natural language.
@@ -44,6 +46,33 @@ Integrate **Demio**, the modern webinar platform built for marketing, directly i
 - **search_webinars_by_name**: Search for a webinar using a name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Demio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my upcoming webinars."
+
+**🤖 AI Agent:**
+> I've found 3 upcoming webinars: 'Product Demo - New Features', 'Q3 Sales Strategy', and 'Client Onboarding Workshop'. Would you like to see the registration counts for any of these?
+
+---
+
+**👤 You:**
+> "Who is registered for the 'Product Demo' webinar?"
+
+**🤖 AI Agent:**
+> There are currently 45 people registered for 'Product Demo'. Some notable registrants include 'Alice Johnson' (alice@example.com) and 'Bob Miller' (bob@example.com). Should I search for a specific person?
+
+---
+
+**👤 You:**
+> "Show me the report for my last webinar session."
+
+**🤖 AI Agent:**
+> Your last session 'Marketing 101' had 120 attendees out of 150 registrants (80% attendance rate). The average time in the session was 45 minutes. Would you like a list of attendees who stayed until the end?
+
+
 ## Installation & Usage
 
 To install and use the **Demio** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Demio** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

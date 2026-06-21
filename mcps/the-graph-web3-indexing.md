@@ -1,12 +1,14 @@
 # The Graph (Web3 Indexing) MCP Server
 
-Index and query blockchain data across EVM and Solana chains. Access transfers, holders, swaps, and custom subgraphs directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/the-graph-web3-indexing)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/the-graph-web3-indexing)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/the-graph-web3-indexing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/the-graph-web3-indexing-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Index and query blockchain data across EVM and Solana chains. Access transfers, holders, swaps, and custom subgraphs directly.
 
 ## Description
 Connect to **The Graph** to index and retrieve real-time blockchain data across multiple ecosystems. This MCP server allows your AI agent to query decentralized data from Ethereum, Polygon, Solana, and more through standardized tools and custom GraphQL subgraphs.
@@ -49,6 +51,33 @@ Get SVM (Solana) DEX swaps
 - **get_svm_transfers**: Get SVM (Solana) token transfers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **The Graph (Web3 Indexing)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the top 10 holders for the EVM token at 0x7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9."
+
+**🤖 AI Agent:**
+> I've retrieved the top holders for the specified token. The largest holder currently controls 12.4% of the supply, followed by a major exchange wallet with 8.2%. Would you like to see the full list of addresses and balances?
+
+---
+
+**👤 You:**
+> "Show me recent swaps for the Solana token DezXAZ8z7PnrnMcFWRSTQC8PGL9P8be3EFr9SptT5v7."
+
+**🤖 AI Agent:**
+> I found 15 recent swap events for that token on Solana. The most significant was a 500 SOL trade on Raydium. Most activity is currently concentrated on Jupiter. Should I analyze the price impact of these trades?
+
+---
+
+**👤 You:**
+> "Query the Uniswap V3 subgraph with ID 'ELUvFp... ' to get the latest pool prices."
+
+**🤖 AI Agent:**
+> Executing GraphQL query on the Uniswap V3 subgraph... I've successfully fetched the latest price data. The ETH/USDC pool is currently trading at $2,450.32 with $12M in 24h volume. Do you need details on any other specific pool?
+
+
 ## Installation & Usage
 
 To install and use the **The Graph (Web3 Indexing)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **The Graph (Web3 Indexing)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

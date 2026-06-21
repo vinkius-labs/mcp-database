@@ -1,12 +1,14 @@
 # Expedia Vrbo MCP Server
 
-Automate vacation rental research via Vrbo — search entire homes, compare nightly rates, and check availability calendars directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-vrbo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/expedia-vrbo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/expedia-vrbo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/expedia-vrbo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 11
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate vacation rental research via Vrbo — search entire homes, compare nightly rates, and check availability calendars directly from any AI agent.
 
 ## Description
 Connect your **Expedia Rapid API** account to any AI agent and access Vrbo's global inventory of vacation rental properties — entire homes, condos, and unique stays.
@@ -70,6 +72,33 @@ Search vacation rentals across Expedia and Vrbo inventory
 Get guest reviews and ratings for a vacation rental property
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Expedia Vrbo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find a beachfront vacation home in Cancún for 8 guests, March 20-27."
+
+**🤖 AI Agent:**
+> I found 31 beachfront properties in Cancún for your dates. Top match: 'Villa Caribe' (ID: VR-82914) — 4 bedrooms, private pool, ocean view, $285/night ($1,995 total). Also strong: 'Casa del Sol' (ID: VR-19283) — 5 bedrooms, rooftop terrace, steps from the beach, $340/night ($2,380 total). Both have excellent guest ratings above 4.7. Want me to check the availability calendar or pull photos for either?
+
+---
+
+**👤 You:**
+> "Show me the availability calendar for Villa Caribe through all of March."
+
+**🤖 AI Agent:**
+> Here's the March calendar for Villa Caribe (VR-82914): **Mar 1-8** — Available, $265/night. **Mar 9-14** — Booked. **Mar 15-19** — Available, $275/night. **Mar 20-27** — Available, $285/night (your requested dates). **Mar 28-31** — Available, $260/night. Minimum stay is 3 nights. Your Mar 20-27 window is still open. Would you like to proceed with booking?
+
+---
+
+**👤 You:**
+> "Pull the photos for Villa Caribe so I can see what it looks like."
+
+**🤖 AI Agent:**
+> I've retrieved 24 photos for Villa Caribe (VR-82914). The gallery includes: exterior with infinity pool overlooking the Caribbean (main photo), 4 bedroom shots (all with ocean-facing windows), the open-plan kitchen with marble countertops, a rooftop lounge area, and 3 beach access views. The property looks exactly as described — modern construction with direct beach access. Want me to compare this visually against Casa del Sol as well?
+
+
 ## Installation & Usage
 
 To install and use the **Expedia Vrbo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Expedia Vrbo** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

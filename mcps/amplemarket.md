@@ -1,12 +1,14 @@
 # Amplemarket MCP Server
 
-Sales automation and lead generation — manage sequences, leads, and custom signals via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amplemarket)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplemarket)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplemarket-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplemarket-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 8
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Sales automation and lead generation — manage sequences, leads, and custom signals via AI.
 
 ## Description
 Connect your **Amplemarket** account to your AI agent to unlock professional sales automation and lead orchestration. Amplemarket is an all-in-one sales platform that helps B2B teams find and engage their next customers. By integrating Amplemarket with your AI agent, you can automate complex outbound strategies through simple natural language commands. From searching for high-intent B2B contacts to managing outreach sequences and triggering custom Duo Copilot signals, your agent handles your outbound sales strategy seamlessly.
@@ -48,6 +50,33 @@ Furthermore, the Amplemarket integration allows your AI agent to orchestrate out
 - **trigger_custom_signal**: Trigger custom signal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amplemarket** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for people with job title 'VP of Sales'."
+
+**🤖 AI Agent:**
+> I've searched for 'VP of Sales' in Amplemarket. I found 15 matching profiles. The top results include executives from tech companies. Would you like me to add these profiles to a specific lead list?
+
+---
+
+**👤 You:**
+> "List my active outreach sequences."
+
+**🤖 AI Agent:**
+> I've retrieved your Amplemarket sequences. You currently have 3 active sequences: 'Q1 Enterprise Outreach', 'Inbound Demo Follow-up', and 'Webinar Attendees'. Which sequence would you like to inspect?
+
+---
+
+**👤 You:**
+> "Trigger custom signal 'sig_123' with email 'lead@example.com' and variable 'Product A'."
+
+**🤖 AI Agent:**
+> I've successfully pushed the data entry to Amplemarket's custom signal sig_123. Duo Copilot will now evaluate the signal and automatically generate the personalized sequence for lead@example.com based on your playbook rules.
+
+
 ## Installation & Usage
 
 To install and use the **Amplemarket** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Amplemarket** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Dime.Scheduler MCP Server
 
-Plan field service teams visually with drag-and-drop scheduling that connects to your ERP for real-time resource allocation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dimescheduler)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dimescheduler)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dimescheduler-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dimescheduler-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 7
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Plan field service teams visually with drag-and-drop scheduling that connects to your ERP for real-time resource allocation.
 
 ## Description
 Connect your **Dime.Scheduler** account to any AI agent and take full control of your resource orchestration and project scheduling workflows through natural conversation.
@@ -46,6 +48,33 @@ List all planning jobs
 - **list_time_markers**: List available time markers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dime.Scheduler** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active planning jobs in Dime.Scheduler."
+
+**🤖 AI Agent:**
+> I've retrieved your planning jobs. You currently have 5 active parent entities, including 'Project Alpha' (Job #1024) and 'Maintenance Run'. Which one should we check the tasks for?
+
+---
+
+**👤 You:**
+> "Show me all appointments scheduled for tomorrow on the board."
+
+**🤖 AI Agent:**
+> Fetching tomorrow's schedule... There are 8 appointments on the planning board, including 4 on-site installations and 2 diagnostic sessions. Would you like the resource details for these?
+
+---
+
+**👤 You:**
+> "List all planable resources and their current status."
+
+**🤖 AI Agent:**
+> I've retrieved your resource directory. You have 15 available resources, including 10 Technicians (Person), 3 Vans (Tool), and 2 Machines. Shall I check for any overbooked slots today?
+
+
 ## Installation & Usage
 
 To install and use the **Dime.Scheduler** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Dime.Scheduler** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

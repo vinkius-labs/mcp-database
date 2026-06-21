@@ -1,12 +1,14 @@
 # Listmonk MCP Server
 
-Automate your newsletter and mailing list management with Listmonk — manage subscribers, organize lists, and track campaigns directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/listmonk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/listmonk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/listmonk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/listmonk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 28
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Automate your newsletter and mailing list management with Listmonk — manage subscribers, organize lists, and track campaigns directly from any AI agent.
 
 ## Description
 Connect your **Listmonk** instance to any AI agent and take full control of your email marketing workflows through natural conversation.
@@ -65,6 +67,33 @@ Query and retrieve subscribers
 - **update_template**: Update a template
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Listmonk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all subscribers who are currently enabled in list 2."
+
+**🤖 AI Agent:**
+> I've queried your subscribers. In list 2, I found 15 enabled subscribers. Would you like to see the full list or filter them further by name?
+
+---
+
+**👤 You:**
+> "Create a new campaign named 'Monthly Newsletter' with the subject 'Our latest updates'."
+
+**🤖 AI Agent:**
+> Campaign 'Monthly Newsletter' has been created successfully as a draft. You can now assign lists to it or update its content.
+
+---
+
+**👤 You:**
+> "Show me all available email templates."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You have 3 available: 'Default', 'Newsletter-V2', and 'Transactional-Simple'. Which one would you like to use?
+
+
 ## Installation & Usage
 
 To install and use the **Listmonk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Listmonk** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

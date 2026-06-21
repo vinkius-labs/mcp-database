@@ -1,12 +1,14 @@
 # Cat Facts MCP Server
 
-Universal cat intelligence engine — get random cat facts and breed info via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cat-facts)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cat-facts)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cat-facts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cat-facts-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** lifestyle
-**Tools Count:** 3
+
+**Category:** [lifestyle](../categories/lifestyle.md)
+
+Universal cat intelligence engine — get random cat facts and breed info via AI.
 
 ## Description
 Equip your AI agent with a source of feline wisdom through the **Cat Facts** MCP server. This integration provides access to a database of interesting and fun facts about cats, as well as a comprehensive list of cat breeds and their countries of origin. Your agent can retrieve random facts, list multiple facts at once, or explore different cat breeds. Whether you're a cat lover or just looking for some lighthearted content, your agent acts as a digital cat expert through natural conversation.
@@ -38,6 +40,33 @@ Equip your AI agent with a source of feline wisdom through the **Cat Facts** MCP
 - **list_cat_facts**: List multiple cat facts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cat Facts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Tell me a random fact about cats."
+
+**🤖 AI Agent:**
+> Did you know that a cat's jaw cannot move sideways, so a cat cannot chew large chunks of food? Nature is fascinating! Would you like to hear another cat fact?
+
+---
+
+**👤 You:**
+> "Give me 5 interesting cat facts."
+
+**🤖 AI Agent:**
+> Retrieving 5 cat facts... 1. Cats sleep 70% of their lives. 2. A cat was mayor of an Alaskan town for 20 years. 3. Ancient Egyptians shaved their eyebrows when their cats died. 4. Cats have 230 bones. 5. A house cat is faster than Usain Bolt. Pretty cool, right?
+
+---
+
+**👤 You:**
+> "List some cat breeds from the United States."
+
+**🤖 AI Agent:**
+> Searching the breed list... I found several breeds from the US, such as the American Shorthair, American Curl, and the Maine Coon. Would you like to know more about a specific one?
+
+
 ## Installation & Usage
 
 To install and use the **Cat Facts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **Cat Facts** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

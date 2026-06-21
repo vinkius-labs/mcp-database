@@ -1,12 +1,14 @@
 # Mailgun (Transactional Email & Domains) MCP Server
 
-Manage email infrastructure via Mailgun — send transactional emails, monitor domain health, and audit delivery logs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailgun-transactional-email-domains)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailgun-transactional-email-domains)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailgun-transactional-email-domains-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailgun-transactional-email-domains-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ship-it
-**Tools Count:** 10
+
+**Category:** [ship-it](../categories/ship-it.md)
+
+Manage email infrastructure via Mailgun — send transactional emails, monitor domain health, and audit delivery logs.
 
 ## Description
 Connect your **Mailgun** account to any AI agent and take full control of your transactional email delivery, domain health, and suppression management through natural conversation.
@@ -51,6 +53,33 @@ Delete a bounced email from the suppression list
 - **validate_email**: Validate an email address via the Mailgun Email Validation API
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mailgun (Transactional Email & Domains)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a transactional email to 'user@example.com' from 'support@mg.domain.com' with subject 'Order Confirmed'"
+
+**🤖 AI Agent:**
+> Dispatching email… I've successfully sent the message to 'user@example.com' via the 'mg.domain.com' domain. The Message ID is '202603271234.abc@mg.domain.com'. Would you like me to monitor the event logs for delivery status?
+
+---
+
+**👤 You:**
+> "Check the DNS health for domain 'mg.mycompany.com'"
+
+**🤖 AI Agent:**
+> Retrieving domain details… For 'mg.mycompany.com', SPF and DKIM records are verified and active. However, the MX records are currently marked as 'Unverified'. You may need to update your DNS settings to receive replies. Would you like the exact MX values to add?
+
+---
+
+**👤 You:**
+> "List all bounced emails for 'mg.mycompany.com' from the last hour"
+
+**🤖 AI Agent:**
+> Retrieving bounce logs… I've identified 3 bounced addresses: 'old-user@gmail.com' (5.1.1 User unknown), 'invalid-addr@yahoo.com', and 'full-mailbox@outlook.com'. Would you like me to remove 'full-mailbox@outlook.com' from the suppression list so you can try again?
+
+
 ## Installation & Usage
 
 To install and use the **Mailgun (Transactional Email & Domains)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Mailgun (Transactional Email & Domains)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

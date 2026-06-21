@@ -1,12 +1,14 @@
 # Watershed Climate MCP Server
 
-Automate carbon measurement and reporting via Watershed — manage inventories, upload emissions data, and track reduction targets directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/watershed-climate)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/watershed-climate)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/watershed-climate-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/watershed-climate-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 16
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Automate carbon measurement and reporting via Watershed — manage inventories, upload emissions data, and track reduction targets directly from any AI agent.
 
 ## Description
 Connect your **Watershed Climate** organization to any AI agent and take full control of your carbon measurement, reporting, and reduction workflows through natural conversation.
@@ -125,6 +127,45 @@ Always validate before submitting to ensure successful processing.
 Validate data in an upload before submission
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Watershed Climate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our GHG inventories and show me the total emissions for 2024."
+
+**🤖 AI Agent:**
+> I've found your GHG inventories. You have 2 inventories: 'FY2024 Global Operations' (Inventory ID: inv_2024_global) with total emissions of 12,450 tCO2e (Scope 1: 2,100, Scope 2: 3,850, Scope 3: 6,500) and 'FY2023 Global Operations' with 14,200 tCO2e. Your 2024 footprint shows a 12.3% reduction from 2023. Would you like a detailed breakdown by scope or emission source?
+
+---
+
+**👤 You:**
+> "Create a new upload called 'Q1 2024 Electricity Data', add these 3 records: electricity usage for NYC office (50,000 kWh), London office (35,000 kWh), and São Paulo office (28,000 kWh) for January 2024, then validate and submit it."
+
+**🤖 AI Agent:**
+> I've completed the full data upload workflow:
+1. Created upload 'Q1 2024 Electricity Data' (Upload ID: upl_q1_2024_elec)
+2. Added 3 electricity records (NYC: 50,000 kWh, London: 35,000 kWh, São Paulo: 28,000 kWh)
+3. Validated the upload — all records passed validation with no errors
+4. Submitted for processing (Task ID: task_abc123)
+
+The task is currently processing. I can monitor the status for you. Would you like me to check the task status in a moment?
+
+---
+
+**👤 You:**
+> "Show me our reduction targets and current progress toward our net-zero goal."
+
+**🤖 AI Agent:**
+> Here are your organization's reduction targets:
+
+1. **SBTi 2030 Target** — Reduce absolute Scope 1+2 emissions by 50% by 2030 (baseline: 2019). Current progress: 28% reduction achieved.
+2. **Net-Zero 2040 Target** — Achieve net-zero across all scopes by 2040. Current progress: 35% reduction from 2019 baseline.
+3. **Scope 3 Target** — Reduce Scope 3 emissions intensity by 30% per unit of revenue by 2030. Current progress: 18% reduction.
+
+You're on track for the 2030 SBTi target at current reduction rate. Would you like a detailed emissions trend analysis?
+
+
 ## Installation & Usage
 
 To install and use the **Watershed Climate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -133,4 +174,11 @@ To install and use the **Watershed Climate** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

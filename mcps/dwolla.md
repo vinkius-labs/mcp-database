@@ -1,12 +1,14 @@
 # Dwolla MCP Server
 
-Automate payments and bank transfers via Dwolla — manage customers, funding sources, and initiate transfers directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dwolla)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dwolla)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dwolla-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dwolla-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 30
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate payments and bank transfers via Dwolla — manage customers, funding sources, and initiate transfers directly from any AI agent.
 
 ## Description
 Connect your **Dwolla** account to any AI agent and take full control of your payment infrastructure through natural conversation.
@@ -69,6 +71,33 @@ Update or remove a funding source
 - **verify_micro_deposits**: Verify micro-deposits for a funding source
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dwolla** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all customers in my Dwolla account."
+
+**🤖 AI Agent:**
+> I've retrieved your customer list. You have 3 customers: Jane Doe (ID: cust-001), John Smith (ID: cust-002), and Acme Corp (ID: cust-003). Would you like to see details for one of them?
+
+---
+
+**👤 You:**
+> "Get details for customer ID cust-001."
+
+**🤖 AI Agent:**
+> Fetching details for Jane Doe (cust-001)... She is a 'verified' personal customer with email jane@example.com. Her account was created on 2023-10-15.
+
+---
+
+**👤 You:**
+> "Initiate a transfer of $50 between source 'src-123' and destination 'dest-456'."
+
+**🤖 AI Agent:**
+> Transfer initiated successfully. The transaction ID is 'trans-789'. The status is currently 'pending'.
+
+
 ## Installation & Usage
 
 To install and use the **Dwolla** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Dwolla** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

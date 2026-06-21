@@ -1,12 +1,14 @@
 # Rick and Morty MCP Server
 
-Explore the Rick and Morty multiverse — query characters, locations, and episodes directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rick-and-morty-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rick-and-morty-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rick-and-morty-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rick-and-morty-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 9
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Explore the Rick and Morty multiverse — query characters, locations, and episodes directly from any AI agent.
 
 ## Description
 Connect the **Rick and Morty** database to your AI agent and explore the entire multiverse through natural conversation. Access detailed metadata about every character, location, and episode from the hit show.
@@ -49,6 +51,33 @@ List and filter Rick and Morty episodes
 List and filter Rick and Morty locations
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rick and Morty** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all characters named 'Rick' who are alive."
+
+**🤖 AI Agent:**
+> I've found several characters named Rick who are alive, including Rick Sanchez (ID: 1) from Earth (C-137) and Rick Sanchez (ID: 2) from the Replacement Dimension. Would you like details on a specific one?
+
+---
+
+**👤 You:**
+> "Show me the details for the location with ID 1."
+
+**🤖 AI Agent:**
+> Location ID 1 is 'Earth (C-137)'. It is a Planet located in the Dimension 'Dimension C-137'. It currently has 27 residents listed in the database.
+
+---
+
+**👤 You:**
+> "Get the metadata for episodes 1, 2, and 3."
+
+**🤖 AI Agent:**
+> I've retrieved the data for the first three episodes: 'Pilot' (S01E01), 'Lawnmower Dog' (S01E02), and 'Anatomy Park' (S01E03). They aired between December 2013 and December 2013. Which one should we look into?
+
+
 ## Installation & Usage
 
 To install and use the **Rick and Morty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Rick and Morty** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

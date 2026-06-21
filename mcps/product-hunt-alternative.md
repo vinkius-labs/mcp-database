@@ -1,12 +1,14 @@
 # Product Hunt MCP Server
 
-Discover the latest tech products, submit your startup launch, and engage with early adopters on the leading product discovery platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/product-hunt-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/product-hunt-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/product-hunt-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/product-hunt-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Discover the latest tech products, submit your startup launch, and engage with early adopters on the leading product discovery platform.
 
 ## Description
 Connect your **Product Hunt** account to any AI agent and take full control of your tech discovery and market intelligence through natural conversation. Product Hunt is the premier platform for launching new products, and this integration allows you to retrieve post metadata, monitor trending launches, and analyze maker activity directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual scrolling through the feed for daily highlights. Your AI acts as 
 - **search_products**: Find products
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Product Hunt** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me today's top products on Product Hunt."
+
+**🤖 AI Agent:**
+> I've retrieved today's featured posts. The #1 product is 'Vinkius AI' with 450 votes, followed by 'CloudScale'. Would you like me to get more details for either of them?
+
+---
+
+**👤 You:**
+> "Show me the top trending products on Product Hunt today with their upvote counts and maker info."
+
+**🤖 AI Agent:**
+> Top 5 trending products today. #1: "AIBuddy" (847 upvotes) by @sarahchen, an AI-powered productivity assistant with real-time collaboration. #2: "DesignStack" (623 upvotes) a design system generator. #3: "MetricsDash" (512 upvotes) analytics dashboard for SaaS. #4: "CodeReview Pro" (478 upvotes) automated code review. #5: "ZenFocus" (445 upvotes) distraction blocker. Total products launched today: 34. Average upvotes: 127.
+
+---
+
+**👤 You:**
+> "Search for AI developer tools launched this month with more than 200 upvotes."
+
+**🤖 AI Agent:**
+> Found 12 AI developer tools with 200+ upvotes this month. Top picks: "CopilotX Studio" (1,240 upvotes) offers multi-model AI code generation. "APIForge" (890 upvotes) auto-generates REST APIs from natural language. "TestPilot AI" (734 upvotes) AI-driven test suite generator. "DBWhisperer" (567 upvotes) natural language to SQL converter. Average upvotes for the category: 523. The AI developer tools category has grown 34% vs last month.
+
+
 ## Installation & Usage
 
 To install and use the **Product Hunt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Product Hunt** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

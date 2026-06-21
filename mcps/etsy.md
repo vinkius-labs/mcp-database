@@ -1,12 +1,14 @@
 # Etsy MCP Server
 
-Manage your Etsy shop — audit listings, orders, and reviews via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/etsy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/etsy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/etsy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/etsy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Etsy shop — audit listings, orders, and reviews via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire handmade and vintage marketplace ecosystem with **Etsy**, the global destination for unique and creative goods. By connecting Etsy to your agent, you transform complex shop management into a natural conversation. Your agent can instantly list your active inventory, audit recent customer reviews, and retrieve order receipts without you ever touching a dashboard. Whether you are an independent artisan or a high-volume seller, your agent acts as a real-time shop operator, ensuring your listings are always optimized and your customers are well-served.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire handmade and vintage marketplac
 - **update_listing**: Update an Etsy listing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Etsy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my active listings in shop ID xxxx."
+
+**🤖 AI Agent:**
+> I've retrieved your active inventory. You have 12 listings, including 'Handmade Vase' and 'Vintage Watch'. Would you like the pricing for any of them?
+
+---
+
+**👤 You:**
+> "Show me the last 5 reviews for my Etsy shop."
+
+**🤖 AI Agent:**
+> I've found the last 5 reviews. Most customers are giving 5 stars, praising the 'fast shipping'. One customer mentioned 'beautiful packaging'. Would you like to see the full comments?
+
+---
+
+**👤 You:**
+> "Search for active listings with keyword 'linen dress'."
+
+**🤖 AI Agent:**
+> I've found several matching listings for 'linen dress'. Top results include 'Handmade Linen Summer Dress' and 'Boho Linen Tunic'. Would you like the direct links to view them?
+
+
 ## Installation & Usage
 
 To install and use the **Etsy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Etsy** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

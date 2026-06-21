@@ -1,12 +1,14 @@
 # Scispot MCP Server
 
-Automate cannabis laboratory testing via Scispot LIMS — manage samples, track analytical results, issue Certificates of Analysis, and monitor lab workflows from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scispot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scispot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scispot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scispot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 12
+
+**Category:** [data-management](../categories/data-management.md)
+
+Automate cannabis laboratory testing via Scispot LIMS — manage samples, track analytical results, issue Certificates of Analysis, and monitor lab workflows from any AI agent.
 
 ## Description
 Connect your **Scispot** API-first Cannabis Testing Laboratory LIMS to any AI agent and take full control of your laboratory operations, quality assurance workflows, and regulatory compliance through natural conversation.
@@ -81,6 +83,33 @@ List all analytical test panels and methods available in the laboratory
 List all laboratory workflow templates and active processes
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scispot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all cannabis samples currently in testing and their expected completion dates."
+
+**🤖 AI Agent:**
+> Scanning active laboratory queue via Scispot... I found 31 samples currently in testing across your analytical departments. Breakdown: 12 samples in Potency (HPLC) — average completion 2025-04-12, 8 samples in Terpene Profiling (GC-MS) — expected 2025-04-13, 6 samples in Pesticide Screening (LC-MS/MS) — due 2025-04-14, and 5 samples in Heavy Metals (ICP-MS) — targeting 2025-04-15. Four samples are marked as priority rush orders with 24-hour turnaround commitments. Would you like the detailed chain of custody and testing status for any specific client submissions?
+
+---
+
+**👤 You:**
+> "List all pending Certificates of Analysis awaiting quality manager review and authorized signatory approval."
+
+**🤖 AI Agent:**
+> Reviewing CoA approval queue in Scispot... I found 9 Certificates of Analysis pending quality manager review and authorized signatory approval. Notable entries: CoA-2025-1047 (Blue Dream Batch BD-5521 — potency 29.1% THC, full contaminant panel clearance), CoA-2025-1048 (OG Kush Batch OG-4492 — terpene profile verified, pesticides non-detect), and CoA-2025-1051 (Sour Diesel Concentrate SD-C903 — residual solvents within state limits, mycotoxins passed). Average pending review time is 16 hours. Three are rush orders requiring release within 24 hours. Should I prioritize these for immediate signatory review?
+
+---
+
+**👤 You:**
+> "Check the integration status with Metrc seed-to-sale tracking and automatic CoA publishing to state regulatory systems."
+
+**🤖 AI Agent:**
+> Querying Scispot integration health dashboard... All external platform connections are operational and compliant. Metrc seed-to-sale synchronization: last successful transmission 2025-04-09 15:47 UTC (189 CoAs published automatically, 0 submission failures, 3 pending retries for network timeouts). State regulatory API compliance: all mandatory test result submissions current through Q1 2025 reporting period. Automated CoA consumer portal (WeedMaps integration): 17 new certificates pushed in last 24 hours, all QR verification codes confirmed active and scannable. GLUE instrument data ingestion: 5 HPLC systems and 3 GC-MS instruments transmitting raw chromatograms successfully. No integration errors or data sync failures detected in past 14 days. Would you like me to generate a comprehensive integration performance summary for your records?
+
+
 ## Installation & Usage
 
 To install and use the **Scispot** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Scispot** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

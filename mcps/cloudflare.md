@@ -1,12 +1,14 @@
 # Cloudflare MCP Server
 
-AI edge infrastructure: manage Workers, KV, D1, R2, routes, and deployments via agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudflare)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudflare-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudflare-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 25
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+AI edge infrastructure: manage Workers, KV, D1, R2, routes, and deployments via agents.
 
 ## Description
 ### What you can do
@@ -114,6 +116,33 @@ Purge all cached content for a specific zone
 Execute a SQL query against a D1 database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cloudflare** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all serverless Cloudflare Workers deployed natively bound to my account."
+
+**🤖 AI Agent:**
+> Pulling instances via `list_workers`. Extracting exactly 5 active edge-computation scripts securely operating on your endpoints mapping perfectly.
+
+---
+
+**👤 You:**
+> "Query the KV namespace assigned to 'production_keys' and extract the specific text mapping 'gateway_url'."
+
+**🤖 AI Agent:**
+> Connecting KV namespaces natively... Resolved variable payload matching 'gateway_url': `api.vinkius.cloud` loaded efficiently without cache interference.
+
+---
+
+**👤 You:**
+> "Check error statistics on my main D1 SQLite database instance over the last 24 hours."
+
+**🤖 AI Agent:**
+> Parsing telemetry array from metrics. The D1 metrics reveal stable instances with precisely 0% crash loops inside the isolated runtime edges.
+
+
 ## Installation & Usage
 
 To install and use the **Cloudflare** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -122,4 +151,11 @@ To install and use the **Cloudflare** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

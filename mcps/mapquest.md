@@ -1,12 +1,14 @@
 # MapQuest MCP Server
 
-Mapping and location services via MapQuest — geocoding, directions, and POI search.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapquest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapquest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapquest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapquest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Mapping and location services via MapQuest — geocoding, directions, and POI search.
 
 ## Description
 Connect your AI agent to MapQuest, one of the pioneers in online mapping. This integration provides essential geographic tools, from converting addresses to coordinates to calculating detailed travel routes.
@@ -40,6 +42,25 @@ Connect your AI agent to MapQuest, one of the pioneers in online mapping. This i
 - **search_points_of_interest**: Search for specific places (restaurants, gas stations, etc.) around a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MapQuest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the coordinates for the White House?"
+
+**🤖 AI Agent:**
+> The coordinates for 1600 Pennsylvania Ave NW are latitude 38.897675 and longitude -77.036547.
+
+---
+
+**👤 You:**
+> "Get driving directions from New York to Philadelphia."
+
+**🤖 AI Agent:**
+> The estimated travel time is 1 hour and 45 minutes (approx. 94 miles). The route starts via I-95 South...
+
+
 ## Installation & Usage
 
 To install and use the **MapQuest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +69,11 @@ To install and use the **MapQuest** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

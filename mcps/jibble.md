@@ -1,12 +1,14 @@
 # Jibble MCP Server
 
-Track time, attendance, and projects via Jibble API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jibble)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jibble)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jibble-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jibble-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 10
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Track time, attendance, and projects via Jibble API.
 
 ## Description
 Empower your AI agents with Jibble's time tracking and attendance platform. This MCP server allows you to list time entries, retrieve person details, track activities and projects, and view organization information directly through the Jibble API. Ideal for automating workforce management and productivity analysis.
@@ -45,6 +47,33 @@ Lists all configured projects
 Lists all time entries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jibble** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all people in my Jibble organization."
+
+**🤖 AI Agent:**
+> I'll fetch the list of all members in your Jibble organization.
+
+---
+
+**👤 You:**
+> "Show me the recent time entries."
+
+**🤖 AI Agent:**
+> I'll retrieve the latest time tracking entries from Jibble.
+
+---
+
+**👤 You:**
+> "What are the active projects in Jibble?"
+
+**🤖 AI Agent:**
+> I'll look up the list of configured projects in your account.
+
+
 ## Installation & Usage
 
 To install and use the **Jibble** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Jibble** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ANVISA (Portal de APIs) MCP Server
 
-Access official Brazilian health regulatory data — query medicines, prices, food registrations, cosmetics, and sanitizers directly from ANVISA.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/anvisa-portal-de-apis)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anvisa-portal-de-apis)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anvisa-portal-de-apis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anvisa-portal-de-apis-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** government-public-data
-**Tools Count:** 7
+
+**Category:** [government-public-data](../categories/government-public-data.md)
+
+Access official Brazilian health regulatory data — query medicines, prices, food registrations, cosmetics, and sanitizers directly from ANVISA.
 
 ## Description
 Connect to the official **ANVISA (Brazilian Health Regulatory Agency)** API portal and integrate critical health regulatory data into your AI workflows.
@@ -43,6 +45,33 @@ Connect to the official **ANVISA (Brazilian Health Regulatory Agency)** API port
 - **registros_alimentos**: List food products registered with ANVISA
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ANVISA (Portal de APIs)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for medicines containing 'Paracetamol' as the active ingredient."
+
+**🤖 AI Agent:**
+> I've found several registered medicines with Paracetamol. Notable ones include [Brand A] (Reg: 123...) and [Brand B] (Reg: 456...). Would you like to see the pricing for any of these?
+
+---
+
+**👤 You:**
+> "What is the maximum consumer price for the medicine 'Aspirina'?"
+
+**🤖 AI Agent:**
+> Querying ANVISA price database... For 'Aspirina', the Maximum Consumer Price (PMC) is [Value] and the Factory Price (PF) is [Value]. These values may vary based on state taxes (ICMS).
+
+---
+
+**👤 You:**
+> "Check the registration status of the cosmetic product 'Protetor Solar'."
+
+**🤖 AI Agent:**
+> I've retrieved the data for 'Protetor Solar' from the cosmetics database. It is currently registered under number [Reg Number] with an active status. The manufacturer is [Company Name].
+
+
 ## Installation & Usage
 
 To install and use the **ANVISA (Portal de APIs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **ANVISA (Portal de APIs)** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

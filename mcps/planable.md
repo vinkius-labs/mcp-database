@@ -1,12 +1,14 @@
 # Planable MCP Server
 
-Collaborate, approve, and manage your social media content calendar autonomously using AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/planable)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/planable)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/planable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/planable-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 10
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Collaborate, approve, and manage your social media content calendar autonomously using AI.
 
 ## Description
 Connect your **Planable** workspaces directly to your AI agent to radically streamline your social media collaboration loops. You can review scheduled posts, approve mockups, respond to team comments, and oversee the content pipeline directly from your primary interface.
@@ -44,6 +46,33 @@ Connect your **Planable** workspaces directly to your AI agent to radically stre
 - **list_workspace_members**: List members of a Planable workspace. Returns member IDs, names, emails, and roles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Planable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all posts in the 'Acme Marketing' workspace that are currently awaiting approval."
+
+**🤖 AI Agent:**
+> I found 4 posts marked `pending_approval`. The primary post (`ID: 29910`) is scheduled for tomorrow at 10 AM, targeting LinkedIn. The content reads: "We are excited to launch..." Would you like me to either directly approve this or insert a required revision comment?
+
+---
+
+**👤 You:**
+> "Draft a new Twitter post in our workspace announcing our new AI feature."
+
+**🤖 AI Agent:**
+> Post created successfully via `create_post`. The underlying ID is `43109` mapped formally to the Twitter account logic array and deposited safely in draft status. Its exact body text generated: "Supercharge your endpoints with our revolutionary GenAI integration. Learn more today...".
+
+---
+
+**👤 You:**
+> "Reject post `98341x` and tell the team to rewrite the hook, it's too salesy."
+
+**🤖 AI Agent:**
+> Understood. Sent the explicit mutation `reject_post` targeting `98341x`. I reversed the node state back into draft mode and attached the explicit feedback log: "Please rewrite the structural hook — it feels overly promotional and sales-oriented.". The content pipeline has been paused accordingly.
+
+
 ## Installation & Usage
 
 To install and use the **Planable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Planable** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

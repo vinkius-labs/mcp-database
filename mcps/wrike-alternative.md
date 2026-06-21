@@ -1,12 +1,14 @@
 # Wrike MCP Server
 
-Collaborative project management to manage tasks, projects, and team workflows with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wrike-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wrike-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wrike-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wrike-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Collaborative project management to manage tasks, projects, and team workflows with AI.
 
 ## Description
 Connect your **Wrike** account to any AI agent to automate your complex project management workflows through natural conversation. Wrike provides a robust environment for enterprise-scale collaboration, task tracking, and resource management.
@@ -49,6 +51,25 @@ List project tasks
 - **update_task**: Modify task info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Wrike** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active tasks due this week."
+
+**🤖 AI Agent:**
+> I've retrieved your tasks for this week. You have 4 high-priority items, including 'Finalize Budget' and 'Team Sync'. Would you like more details on any of them?
+
+---
+
+**👤 You:**
+> "Create a new high-priority task 'Draft Marketing Proposal' in project 'fld_123456'."
+
+**🤖 AI Agent:**
+> Successfully created the task 'Draft Marketing Proposal' (ID: tsk_882). I've set the priority to High as requested. Would you like to assign it to someone?
+
+
 ## Installation & Usage
 
 To install and use the **Wrike** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +78,11 @@ To install and use the **Wrike** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

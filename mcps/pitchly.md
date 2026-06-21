@@ -1,12 +1,14 @@
 # Pitchly MCP Server
 
-Turn your firm experience data into competitive deal sheets, credentials, and pitch materials with automated content generation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pitchly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pitchly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pitchly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pitchly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Turn your firm experience data into competitive deal sheets, credentials, and pitch materials with automated content generation.
 
 ## Description
 Connect your **Pitchly** account to any AI agent and take full control of your organizational experience and content orchestration through natural conversation. Pitchly is the data management platform of choice for professional services firms, and this integration allows you to retrieve workspace metadata, manage custom data tables, and update critical records (deals, bios, tombstones) directly from your chat interface.
@@ -48,6 +50,33 @@ No more manual spreadsheet updates or searching through disparate databases. You
 - **update_record**: Update an existing record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pitchly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all tables in my 'Corporate' workspace in Pitchly."
+
+**🤖 AI Agent:**
+> I've retrieved your tables. You have 3 active collections: 'Tombstones', 'Professional Bios', and 'Client Projects'. Which one would you like to see records for?
+
+---
+
+**👤 You:**
+> "Show me all records in the Client Engagements table that were updated this week."
+
+**🤖 AI Agent:**
+> 14 records updated this week in "Client Engagements". Notable changes: "Acme Corp Advisory" moved from Active to Completed (partner: James Park). "TechFlow Due Diligence" updated with new financial data (3 fields modified). "Meridian M&A" added 2 new team members. 4 records had status changes, 6 had field updates, and 4 had new attachments. Most active editor: Sarah Chen with 8 modifications.
+
+---
+
+**👤 You:**
+> "Create a new record in the Deal Pipeline table for the ScaleUp Technologies opportunity."
+
+**🤖 AI Agent:**
+> Record created in "Deal Pipeline" (ID: rec_8472). Client: ScaleUp Technologies. Stage: Qualification. Estimated Value: $340,000. Lead Partner: assigned to your team. Industry: Enterprise Software. The record has been linked to 2 existing contact records and the associated workspace "Technology Sector". Next step field set to "Initial Assessment" due in 5 business days.
+
+
 ## Installation & Usage
 
 To install and use the **Pitchly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Pitchly** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

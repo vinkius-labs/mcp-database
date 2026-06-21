@@ -1,12 +1,14 @@
 # Toggl Plan MCP Server
 
-Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/toggl-plan-1)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/toggl-plan-1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/toggl-plan-1-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/toggl-plan-1-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent.
 
 ## Description
 Connect your **Toggl Plan** workspaces to an AI agent entirely bypassing the complex graphical interfaces. Allow your project managers and team leads to directly read, create, and organize workload data, milestones, and daily tasks inside a conversational or command-driven environment.
@@ -53,6 +55,27 @@ Get the visual timeline view from Toggl Plan within a date range
 Updates an existing timeline task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Toggl Plan** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in Workspace 992211."
+
+**🤖 AI Agent:**
+> I've retrieved 2 active projects in workspace 992211:
+- Name: 'Q4 Product Roadmap', Project ID: 19332
+- Name: 'Legacy API Migration', Project ID: 19445
+
+---
+
+**👤 You:**
+> "Create a timeline task named 'Re-authenticate module' in Project 19332, workspace 992211."
+
+**🤖 AI Agent:**
+> The timeline task 'Re-authenticate module' has been successfully created under project 19332. New Task ID: 52003.
+
+
 ## Installation & Usage
 
 To install and use the **Toggl Plan** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +84,11 @@ To install and use the **Toggl Plan** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

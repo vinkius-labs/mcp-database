@@ -1,12 +1,14 @@
 # Smarty MCP Server
 
-Equip your AI with enterprise-grade location intelligence to validate, autocomplete, and extract US or International addresses instantly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smarty)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smarty)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smarty-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smarty-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI with enterprise-grade location intelligence to validate, autocomplete, and extract US or International addresses instantly.
 
 ## Description
 Connect your **Smarty** account to any AI agent and empower your team to sanitize raw address data, query ZIP codes, and format global street locations securely. Interact with powerful geospatial and mailing validation APIs through natural language without writing a single line of custom script.
@@ -49,6 +51,48 @@ Validates and geocodes a US street address
 - **verify_zip_code**: Verifies a ZIP code and returns associated cities and states
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smarty** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Validate this US address: 1 Santa Claus Ln, North Pole, AK 99705."
+
+**🤖 AI Agent:**
+> I've validated the inputted address using the Smarty API.
+**Normalized Result**: 1 Santa Claus Ln, North Pole, AK 99705-9901
+**DPV Match**: Yes (Y) - Valid deliverable address
+**County**: Fairbanks North Star
+**Coordinates**: Latitude 64.75, Longitude -147.34
+
+---
+
+**👤 You:**
+> "Can you extract any known addresses from this raw text string: "I live out near the big oak tree at 1600 Amphitheatre Pkwy, Mountain View, CA 94043, come visit soon!""
+
+**🤖 AI Agent:**
+> I extracted the following geographic location using the text parsing API:
+
+**Address 1**:
+- **Cleaned Line**: 1600 Amphitheatre Pkwy, Mountain View, CA 94043
+- **ZIP**: 94043
+- **Verification**: Confirmed deliverable (Google Headquarters).
+
+---
+
+**👤 You:**
+> "Provide a markdown list of US autocomplete suggestions when a user types "3311 w 300 s s"."
+
+**🤖 AI Agent:**
+> Based on the incomplete input `3311 w 300 s s`, the Smarty API returned these 3 most likely completions:
+
+1. **3311 W 300 S**, Salt Lake City, UT 84104
+2. **3311 W 300 S**, Syracuse, IN 46567
+3. **3311 W 300 S**, Swayzee, IN 46986
+
+Would you like me to run a full DPV validation on the Salt Lake City result?
+
+
 ## Installation & Usage
 
 To install and use the **Smarty** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +101,11 @@ To install and use the **Smarty** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

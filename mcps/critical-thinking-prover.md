@@ -1,12 +1,14 @@
 # Critical Thinking Prover MCP Server
 
-AI agents accept premises without questioning, analyze from one perspective, cherry-pick evidence, ignore consequences, and present uncertainty as certainty. This tool forces rigor: surface assumptions, apply competing frameworks, weigh counterevidence, trace ripple effects, bound confidence.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/critical-thinking-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/critical-thinking-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/critical-thinking-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/critical-thinking-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 2
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents accept premises without questioning, analyze from one perspective, cherry-pick evidence, ignore consequences, and present uncertainty as certainty. This tool forces rigor: surface assumptions, apply competing frameworks, weigh counterevidence, trace ripple effects, bound confidence.
 
 ## Description
 AI agents produce dangerously confident conclusions on complex problems. They accept the problem framing as given, analyze from their default perspective, find evidence that supports their initial hypothesis, solve the immediate question without tracing consequences, and present everything with 100% confidence. This is not reasoning — it's pattern completion.
@@ -52,6 +54,41 @@ Structured reflection tool to verify task completion and delivery integrity. For
 Structured reflection tool for critical thinking on complex problems. Forces the agent to reason deeply BEFORE committing to a conclusion — surfacing hidden assumptions, applying multiple competing frameworks, weighing evidence for AND against, tracing second-order consequences, and bounding confidence with falsification conditions. Catches Assumption Blindness (taking embedded assumptions as facts — "users want speed" when the real bottleneck is trust), Mono-Perspective Reasoning (analyzing from one framework only — "economically optimal" while ignoring behavioral, political, and ethical dimensions), Confirmation Bias (only finding evidence FOR the conclusion — if you have zero counterexamples, you have not searched, you have confirmed), Scope Neglect (ignoring second-order effects — "this optimizes X" without asking who loses, what feedback loops emerge, what incentives change), and False Precision ("100% certain" or "it depends" — both are intellectual abdication. One refuses to think, the other refuses to commit). Call once per complex problem or decision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Critical Thinking Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Should we migrate our monolith to microservices? Our deployment frequency is low and the codebase is getting hard to maintain."
+
+**🤖 AI Agent:**
+> Verdict: ASSUMPTION_BLIND. Hidden assumptions unexamined. (1) You assume the monolith IS the cause of low deploy frequency — what if it's CI/CD, test coverage, or approval processes? (2) You assume 'hard to maintain' means 'needs decomposition' — what if it means 'needs better module boundaries within the monolith'? (3) You assume your team CAN operate a distributed system — microservices trade deployment complexity for operational complexity. Surface these assumptions first.
+
+---
+
+**👤 You:**
+> "Assumptions validated: 70% of PRs touch 3+ modules (coupling confirmed). Team has 2 distributed-systems engineers, no K8s. Migration 6-12mo minimum. Frameworks: Conway's Law (3 teams → 3 services), cost-of-delay (coupling compounds quarterly). FOR: Shopify modular monolith cut deploy time 40%. AGAINST: Segment failed, re-monolithed. Second-order: training cost, velocity drop, on-call expansion. Confidence: 65% modular monolith correct. Would reverse with K8s or coupling <30%."
+
+**🤖 AI Agent:**
+> Verdict: REASONING_PROVEN. Assumptions exposed and validated with data (70% cross-module PRs). Multiple frameworks applied (Conway's Law, cost-of-delay). Evidence weighed impartially (Shopify FOR, Segment AGAINST). Consequences traced (training, velocity drop, on-call). Confidence bounded (65%, with reversal conditions). Conclusion is substantive: modular monolith over full microservices, given team constraints. This reasoning withstands scrutiny.
+
+---
+
+**👤 You:**
+> "AI will replace 80% of software engineering jobs within 5 years. The evidence clearly shows this is inevitable. There are no counterarguments."
+
+**🤖 AI Agent:**
+> Verdict: CONFIRMATION_BIASED. Triple failure. (1) 'The evidence clearly shows' — which evidence? Every tech revolution prediction (paperless office, end of programming) has been wrong on timeline. Where is CONTRADICTING evidence? (2) 'No counterarguments' is a red flag — Jevons Paradox shows automation historically INCREASES total employment by lowering costs and expanding demand. (3) '80% within 5 years' is false precision. What would need to be true? What would falsify it?
+
+---
+
+**👤 You:**
+> "I'm finished with the code migration. The build completes with no errors. No additional changes needed."
+
+**🤖 AI Agent:**
+> Verdict: UNVERIFIED_CHANGES. Contradiction: files modified but changes are not verified, yet the verdict is "DELIVERY_PROVEN". Run testing commands or build tasks to prove correctness. Assuming code works without executing it leads to broken pipelines. Please provide actual execution outputs in the verificationLogs field.
+
+
 ## Installation & Usage
 
 To install and use the **Critical Thinking Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +97,11 @@ To install and use the **Critical Thinking Prover** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

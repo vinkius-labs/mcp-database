@@ -1,12 +1,14 @@
 # HQBeds MCP Server
 
-Manage hostel and accommodation bookings with channel distribution, guest communication, and occupancy tracking in one system.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hqbeds)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hqbeds)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hqbeds-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hqbeds-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage hostel and accommodation bookings with channel distribution, guest communication, and occupancy tracking in one system.
 
 ## Description
 Connect your **HQBeds** account to any AI agent and take full control of your property management system (PMS) and automated hostel/hotel operations through natural conversation.
@@ -49,6 +51,33 @@ Check room availability
 - **list_rooms**: List all rooms
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HQBeds** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all reservations checking in today."
+
+**🤖 AI Agent:**
+> You have 5 arrivals today. The first is John Smith in Room 101 (2 nights, paid). Would you like to see guest details or payment status for any of them?
+
+---
+
+**👤 You:**
+> "Show room availability for this weekend."
+
+**🤖 AI Agent:**
+> This weekend you have 85% occupancy. 3 rooms are still available: Room 205 (double), Room 308 (single), and Room 412 (suite). Would you like to create a reservation?
+
+---
+
+**👤 You:**
+> "Create a reservation for Maria Silva, Room 205, checking in May 10 and out May 12."
+
+**🤖 AI Agent:**
+> Done! Reservation created for Maria Silva in Room 205, May 10-12 (2 nights). Confirmation ID: RSV-4821. Would you like to send a confirmation email to the guest?
+
+
 ## Installation & Usage
 
 To install and use the **HQBeds** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **HQBeds** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Salesforce Sales Cloud MCP Server
 
-Manage leads, opportunities, accounts, contacts, and your entire sales pipeline through natural conversation with your Salesforce CRM.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-sales-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-sales-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesforce-sales-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesforce-sales-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage leads, opportunities, accounts, contacts, and your entire sales pipeline through natural conversation with your Salesforce CRM.
 
 ## Description
 Connect **Salesforce Sales Cloud** to any AI agent — instant access to your CRM data without switching tabs.
@@ -59,6 +61,58 @@ Update an existing Salesforce lead — change status, rating, contact info, or o
 Update a Salesforce opportunity — advance stage, change amount, update close date, or add notes to reflect deal progress
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Salesforce Sales Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all hot leads from this week"
+
+**🤖 AI Agent:**
+> 🔥 **Hot Leads — This Week**
+
+| Name | Company | Email | Status |
+|---|---|---|---|
+| Sarah Chen | TechCorp Inc | s.chen@techcorp.com | Open - Not Contacted |
+| James Wilson | DataFlow | j.wilson@dataflow.io | Working |
+| Maria Santos | CloudBase | m.santos@cloudbase.com | Open - Not Contacted |
+
+💡 3 hot leads found. Want me to update any of them?
+
+---
+
+**👤 You:**
+> "What does my pipeline look like right now?"
+
+**🤖 AI Agent:**
+> 📊 **Pipeline Summary**
+
+| Stage | Deals | Total Value |
+|---|---|---|
+| Prospecting | 12 | $340,000 |
+| Qualification | 8 | $520,000 |
+| Negotiation | 5 | $890,000 |
+| Closed Won (MTD) | 3 | $215,000 |
+
+💰 Total open pipeline: **$1,750,000** across 25 deals
+
+---
+
+**👤 You:**
+> "Create a new lead: John Smith from Acme Corp, john@acme.com"
+
+**🤖 AI Agent:**
+> ✅ **Lead Created!**
+
+- **Name:** John Smith
+- **Company:** Acme Corp
+- **Email:** john@acme.com
+- **Status:** Open - Not Contacted
+- **ID:** 00Q8Z00001ABC
+
+Want me to assign this lead to a specific owner?
+
+
 ## Installation & Usage
 
 To install and use the **Salesforce Sales Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +121,11 @@ To install and use the **Salesforce Sales Cloud** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

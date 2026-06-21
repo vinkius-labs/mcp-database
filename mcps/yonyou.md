@@ -1,12 +1,14 @@
 # Yonyou / 用友 MCP Server
 
-Leading enterprise ERP and cloud services platform in China — manage purchase orders, sales, and inventory via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/yonyou)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yonyou)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yonyou-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yonyou-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Leading enterprise ERP and cloud services platform in China — manage purchase orders, sales, and inventory via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire enterprise operations with **Yonyou** (用友), the dominant ERP and cloud services provider in China. By connecting Yonyou to your agent, you transform complex business management, supply chain tracking, and financial auditing into a natural conversation. Your agent can instantly list purchase and sales orders, retrieve detailed material metadata, monitor inventory levels, and even browse financial vouchers without you ever needing to navigate the comprehensive YonBIP interface. Whether you are conducting a procurement audit or monitoring sales performance across multiple regions, your agent acts as a real-time operations assistant, keeping your ERP data accurate and your business moving.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire enterprise operations with **Yo
 - **list_vouchers**: List financial vouchers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Yonyou / 用友** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 purchase orders in Yonyou."
+
+**🤖 AI Agent:**
+> I've retrieved your recent purchase orders. They include transactions for 'Steel Sheets' and 'Industrial Connectors'. Total value for these orders is ¥450,000. Would you like to check the fulfillment status?
+
+---
+
+**👤 You:**
+> "What is the current inventory for material ID 'MAT-8821'?"
+
+**🤖 AI Agent:**
+> The current inventory for MAT-8821 is 1,200 units. There are 800 units in the 'East Warehouse' and 400 in the 'West Logistics Center'. Would you like me to notify you if stock falls below 500 units?
+
+---
+
+**👤 You:**
+> "Show me the organization structure defined in our ERP."
+
+**🤖 AI Agent:**
+> I've retrieved the organizational metadata. Your ERP environment is structured into 3 main branches: 'Headquarters', 'Manufacturing Division', and 'Global Sales'. Would you like a detailed breakdown of the legal entities under each branch?
+
+
 ## Installation & Usage
 
 To install and use the **Yonyou / 用友** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Yonyou / 用友** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

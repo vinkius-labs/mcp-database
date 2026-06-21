@@ -1,12 +1,14 @@
 # Flightcontrol (AWS PaaS Deployments) MCP Server
 
-Deploy and manage AWS infrastructure via Flightcontrol — list projects, manage environments, and scale services directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flightcontrol-aws-paas-deployments)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flightcontrol-aws-paas-deployments)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/flightcontrol-aws-paas-deployments-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/flightcontrol-aws-paas-deployments-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 24
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Deploy and manage AWS infrastructure via Flightcontrol — list projects, manage environments, and scale services directly from any AI agent.
 
 ## Description
 Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS deployments and infrastructure through natural conversation.
@@ -59,6 +61,33 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 - **update_service_scaling**: Manually scale service instances
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Flightcontrol (AWS PaaS Deployments)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our Flightcontrol projects."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 3 active projects: 'Main-API' (ID: proj_123), 'Frontend-App' (ID: proj_456), and 'Worker-Service' (ID: proj_789). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Show me the details for service ID 'srv-abc12345'."
+
+**🤖 AI Agent:**
+> Fetching service details... Service 'srv-abc12345' is a Web Service running in the 'production' environment. It is currently healthy and deployed on AWS us-east-1.
+
+---
+
+**👤 You:**
+> "Create a new environment named 'staging' for project 'proj_123' in us-west-2."
+
+**🤖 AI Agent:**
+> Starting environment creation... I've initiated the creation of the 'staging' environment for project 'proj_123' in the us-west-2 region. I'll let you know once the configuration is ready.
+
+
 ## Installation & Usage
 
 To install and use the **Flightcontrol (AWS PaaS Deployments)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Flightcontrol (AWS PaaS Deployments)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # NewsAPI MCP Server
 
-Search breaking news and historical articles from 150,000+ sources via NewsAPI.org.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/newsapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/newsapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/newsapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/newsapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Search breaking news and historical articles from 150,000+ sources via NewsAPI.org.
 
 ## Description
 Connect **NewsAPI** to any AI agent and access real-time breaking news, top headlines, and 5 years of historical articles from over 150,000 news sources worldwide.
@@ -51,6 +53,33 @@ Get headlines from specific sources
 - **search_headlines**: Search headlines by query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NewsAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me top business headlines in the US."
+
+**🤖 AI Agent:**
+> Top US Business Headlines: 1. Fed Holds Rates Steady Amid Inflation Concerns (Reuters). 2. Tech Stocks Rally as Earnings Beat Expectations (Bloomberg). 3. Oil Prices Surge on Supply Disruptions (CNBC).
+
+---
+
+**👤 You:**
+> "Search for articles about 'Artificial Intelligence regulation' from the last 30 days."
+
+**🤖 AI Agent:**
+> Found 1,245 articles: 1. EU AI Act Enters Final Review Phase (TechCrunch). 2. US Senate Debates New AI Safety Framework (The Verge). 3. UK Proposes Light-Touch AI Regulation (Financial Times).
+
+---
+
+**👤 You:**
+> "What are the main news sources in Brazil?"
+
+**🤖 AI Agent:**
+> Top Brazil Sources: Globo, Folha de S.Paulo, O Estado de S. Paulo, UOL, CNN Brasil, Metrópoles, and Valor Econômico. Total: 35+ active Brazilian sources indexed.
+
+
 ## Installation & Usage
 
 To install and use the **NewsAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **NewsAPI** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

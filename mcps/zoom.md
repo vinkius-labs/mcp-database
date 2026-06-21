@@ -1,12 +1,14 @@
 # Zoom MCP Server
 
-Manage video meetings, webinars, and users on Zoom — the world's leading collaboration and communication platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 14
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Manage video meetings, webinars, and users on Zoom — the world's leading collaboration and communication platform.
 
 ## Description
 Connect your **Zoom** account to any AI agent and manage your video communication infrastructure through natural conversation.
@@ -54,6 +56,33 @@ No more manual navigation through complex meeting dashboards to find a join link
 - **list_users**: List Zoom users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Zoom meetings for today."
+
+**🤖 AI Agent:**
+> I found 3 meetings scheduled for today: 1. 'Daily Standup' (ID: 12345), 2. 'Client Proposal' (ID: 67890), and 3. 'Engineering Sync' (ID: 11223). Which one would you like the join link for?
+
+---
+
+**👤 You:**
+> "Schedule a meeting called 'Design Review' for 45 minutes."
+
+**🤖 AI Agent:**
+> Success! I've scheduled the 'Design Review' meeting. Duration: 45 minutes. Your Join URL is: https://zoom.us/j/123456789. Would you like me to add this to your meeting history list?
+
+---
+
+**👤 You:**
+> "Show me the details for user 'me'."
+
+**🤖 AI Agent:**
+> Your Zoom Profile Details: Name: Alice Johnson, Email: alice@example.com, Account Type: Licensed (Pro), Personal Meeting ID: 123-456-7890. You currently have 5 active meetings scheduled.
+
+
 ## Installation & Usage
 
 To install and use the **Zoom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Zoom** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

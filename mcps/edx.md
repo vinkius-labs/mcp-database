@@ -1,12 +1,14 @@
 # edX MCP Server
 
-Search and discover online courses from Harvard, MIT, Berkeley and 160+ top institutions on edX.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/edx)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/edx)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/edx-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/edx-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search and discover online courses from Harvard, MIT, Berkeley and 160+ top institutions on edX.
 
 ## Description
 Connect to **edX** and explore the world's largest online learning platform through natural conversation — no API key needed.
@@ -56,6 +58,33 @@ Search for online courses on edX
 Search for edX programs (MicroMasters, Professional Certificates, XSeries)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **edX** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find machine learning courses from Harvard."
+
+**🤖 AI Agent:**
+> Found 12 machine learning courses from HarvardX. Notable: 'CS109B Data Science 2: Advanced Topics' (Harvard), 'Machine Learning Fundamentals' (Harvard). Courses include self-paced and instructor-led options.
+
+---
+
+**👤 You:**
+> "Show me all MicroMasters programs in Data Science."
+
+**🤖 AI Agent:**
+> Found 8 MicroMasters programs in Data Science: MIT's 'Statistics and Data Science' (4 courses, $1,350), Columbia's 'Data Science' (4 courses), Georgia Tech's 'Analytics' (4 courses). Each includes course details and enrollment links.
+
+---
+
+**👤 You:**
+> "What organizations offer courses on edX?"
+
+**🤖 AI Agent:**
+> edX partners with 160+ institutions including: Harvard, MIT, Berkeley, Google, IBM, Microsoft, Columbia, Cornell, Caltech, University of Sydney, Tsinghua University and many more top universities and companies.
+
+
 ## Installation & Usage
 
 To install and use the **edX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **edX** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

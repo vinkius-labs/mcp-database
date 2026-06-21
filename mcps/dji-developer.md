@@ -1,12 +1,14 @@
 # DJI Developer MCP Server
 
-Orchestrate DJI drones and payloads — manage flight logs, monitor device health, and handle firmware updates directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dji-developer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dji-developer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dji-developer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dji-developer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 10
+
+**Category:** [superpower](../categories/superpower.md)
+
+Orchestrate DJI drones and payloads — manage flight logs, monitor device health, and handle firmware updates directly from any AI agent.
 
 ## Description
 Connect your AI agents to the **DJI Developer Platform**, the industry standard for unmanned aerial systems (UAS). This MCP provides 10 tools to manage enterprise drone fleets, monitor real-time telemetry logs, and orchestrate firmware lifecycle management for aircraft and payloads.
@@ -47,6 +49,33 @@ Connect your AI agents to the **DJI Developer Platform**, the industry standard 
 - **list_waylines**: List available flight wayline files
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DJI Developer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all aircraft in my DJI fleet and show their firmware versions."
+
+**🤖 AI Agent:**
+> Retrieving DJI fleet data... I found 3 active aircraft: 1. Matrice 350 RTK (v01.02.03), 2. Mavic 3 Enterprise (v02.01.00), 3. Phantom 4 RTK (v01.05.06). Would you like to check if there are firmware updates for any of these?
+
+---
+
+**👤 You:**
+> "What is the health status of aircraft SN 'DJI_SN_12345'?"
+
+**🤖 AI Agent:**
+> Querying DJI health diagnostics for SN 'DJI_SN_12345'... Status is 'Normal'. Battery cycle count is 45, current charge is 88%, and all internal sensors are operating within nominal parameters.
+
+---
+
+**👤 You:**
+> "Show me the last flight log for the Mavic 3 Enterprise."
+
+**🤖 AI Agent:**
+> Fetching flight records... The last mission occurred on 2024-04-11. Total flight time: 24 minutes. Max altitude: 120m. GPS signal was stable throughout. Would you like the full telemetry export?
+
+
 ## Installation & Usage
 
 To install and use the **DJI Developer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **DJI Developer** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

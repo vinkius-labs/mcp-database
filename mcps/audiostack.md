@@ -1,12 +1,14 @@
 # AudioStack MCP Server
 
-Produce end-to-end AI audio via AudioStack — automate high-quality speech, mixing, and mastering via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/audiostack)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/audiostack)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/audiostack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/audiostack-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 10
+
+**Category:** [image-video](../categories/image-video.md)
+
+Produce end-to-end AI audio via AudioStack — automate high-quality speech, mixing, and mastering via AI.
 
 ## Description
 Connect your **AudioStack** account to any AI agent and build a complete AI-driven audio production studio through natural conversation.
@@ -46,6 +48,33 @@ List and search for available AI voices
 - **get_usage_analytics**: Get account usage metrics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AudioStack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for professional male voices in Portuguese."
+
+**🤖 AI Agent:**
+> I've searched the library. I found several matches, including 'v123' (Deep, Professional) and 'v456' (Friendly, Energetic). Would you like to hear a sample or use one for your script?
+
+---
+
+**👤 You:**
+> "Convert this text to speech using voice 'v123': 'Hello, welcome to our AI audio studio.'"
+
+**🤖 AI Agent:**
+> Generating speech... Done! You can access the audio file at the following URL. Would you like me to apply background music to this recording?
+
+---
+
+**👤 You:**
+> "Show me all sound templates related to 'Electronic Music'."
+
+**🤖 AI Agent:**
+> I found 3 templates: 'Techno Pulse', 'Ambient Synth', and 'House Groove'. Each includes pre-mixed background tracks optimized for professional mastering.
+
+
 ## Installation & Usage
 
 To install and use the **AudioStack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **AudioStack** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

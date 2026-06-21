@@ -1,12 +1,14 @@
 # Local Falcon MCP Server
 
-Track your Google Maps rankings across geographic grids and monitor local SEO performance for every business location.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/local-falcon)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/local-falcon)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/local-falcon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/local-falcon-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 13
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Track your Google Maps rankings across geographic grids and monitor local SEO performance for every business location.
 
 ## Description
 Connect your **Local Falcon** account to any AI agent and take full control of your local search visibility and automated rank tracking workflows through natural conversation.
@@ -50,6 +52,33 @@ No more manual checking of individual rank trackers or missing local visibility 
 - **run_scan**: Run a new scan
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Local Falcon** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 scan reports in my Local Falcon account."
+
+**🤖 AI Agent:**
+> I've retrieved your scans. You currently have 50 completed reports, including 'Plumber SEO Grid' and 'Dental NYC'. Would you like the detailed high-fidelity ranking metadata for any of them?
+
+---
+
+**👤 You:**
+> "Show the rankings and SoLV for scan report 'rep_123'."
+
+**🤖 AI Agent:**
+> Accessing ranking architecture... Report rep_123 shows an ARP of 3.5 and a Share of Local Voice (SoLV) of 65%. I've retrieved the high-fidelity grid data for your review. Need help analyzing your top competitors?
+
+---
+
+**👤 You:**
+> "Run a new grid scan for business 'Acme Plumbers' and keyword 'emergency plumbing'."
+
+**🤖 AI Agent:**
+> Scan orchestrated! I've successfully triggered a new geo-grid scan for 'Acme Plumbers'. The report key is rep_456. Local Falcon is now gathering real-time visibility data. Shall I notify you once the high-fidelity results are ready?
+
+
 ## Installation & Usage
 
 To install and use the **Local Falcon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Local Falcon** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

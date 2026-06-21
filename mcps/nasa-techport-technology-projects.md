@@ -1,12 +1,14 @@
 # NASA TechPort (Technology Projects) MCP Server
 
-Explore NASA's technology project portfolio—search projects, track funding opportunities, and analyze R&D taxonomies directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-techport-technology-projects)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-techport-technology-projects)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nasa-techport-technology-projects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nasa-techport-technology-projects-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 29
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Explore NASA's technology project portfolio—search projects, track funding opportunities, and analyze R&D taxonomies directly.
 
 ## Description
 Connect to **NASA TechPort** to explore the agency's comprehensive resource for technology project data. This MCP server allows AI agents to navigate thousands of active and completed NASA research initiatives, providing deep insights into the future of aerospace and space exploration.
@@ -66,6 +68,33 @@ List available technology project IDs
 - **submit_feedback**: Submit user feedback to the TechPort team
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NASA TechPort (Technology Projects)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all NASA technology projects that have been updated since 2024-01-01."
+
+**🤖 AI Agent:**
+> I've found several projects updated since then. Here are the IDs: 14523, 14688, and 14701. Would you like me to fetch the details for any of these specific projects?
+
+---
+
+**👤 You:**
+> "Show me the full details for NASA project ID 94566."
+
+**🤖 AI Agent:**
+> Project 94566 is titled 'Advanced Propulsion Concepts'. It is currently in the 'Active' stage and is led by the Marshall Space Flight Center. The primary goal is to develop high-efficiency thrusters for deep space missions.
+
+---
+
+**👤 You:**
+> "Search for funding opportunities related to 'autonomous robotics'."
+
+**🤖 AI Agent:**
+> I found 2 opportunities matching 'autonomous robotics'. One is a Small Business Innovation Research (SBIR) call with a max funding of $150,000. Would you like the full criteria?
+
+
 ## Installation & Usage
 
 To install and use the **NASA TechPort (Technology Projects)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **NASA TechPort (Technology Projects)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Scoro MCP Server
 
-Bring your Scoro end-to-end work management platform into your AI workflows — query projects, invoices, and time logs seamlessly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/scoro-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/scoro-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 12
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Bring your Scoro end-to-end work management platform into your AI workflows — query projects, invoices, and time logs seamlessly.
 
 ## Description
 Connect your **Scoro** workspace to any AI agent to interact with your business operations securely. Avoid context-switching between your agency's CRM, PM software, and billing dashboards.
@@ -46,6 +48,33 @@ Connect your **Scoro** workspace to any AI agent to interact with your business 
 - **list_users**: Lists all users in the Scoro organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Scoro** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the most recent activities logged in my Scoro workspace?"
+
+**🤖 AI Agent:**
+> Based on the recent activity logs: 1) John Doe updated the status of Task 'UI Mockups' to completed. 2) Jane Fox generated a new Quote for 'TechCorp'. 3) A new Expense was logged by Paul for $140.
+
+---
+
+**👤 You:**
+> "List all active marketing projects and their statuses."
+
+**🤖 AI Agent:**
+> I've pulled your project portfolio. Currently, there are 3 active marketing projects: 'Q4 Global Launch' (Status: In Progress), 'SEO Overhaul 2024' (Status: Planning phase), and 'Social Media Retainer' (Status: Active). Need me to list tasks for any of these?
+
+---
+
+**👤 You:**
+> "Show me our total revenue from the latest invoices."
+
+**🤖 AI Agent:**
+> I checked the recent sales invoices. There are 5 recent invoices generated totaling $15,400. Three of them ($8,000 total) are marked as 'paid', while two ($7,400) are 'awaiting payment'. I can format these into a markdown table if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Scoro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Scoro** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

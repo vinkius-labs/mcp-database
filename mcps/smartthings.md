@@ -1,12 +1,14 @@
 # SmartThings MCP Server
 
-Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smartthings)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smartthings)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smartthings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smartthings-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 13
+
+**Category:** [productivity](../categories/productivity.md)
+
+Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent.
 
 ## Description
 Connect your **SmartThings** ecosystem to any AI agent and take full control of your smart home or office through natural conversation.
@@ -55,6 +57,33 @@ List all SmartThings locations
 - **list_subscriptions**: Manage event subscriptions for SmartApps
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SmartThings** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my connected SmartThings devices."
+
+**🤖 AI Agent:**
+> I've retrieved your devices. You have 3 active devices: 'Living Room Light' (ID: d23...), 'Smart Thermostat' (ID: a45...), and 'Front Door Lock' (ID: e89...). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Turn on the Living Room Light (ID: d23-abc)."
+
+**🤖 AI Agent:**
+> Executing command... I've successfully sent the 'on' command to the 'Living Room Light' component. The device should now be active.
+
+---
+
+**👤 You:**
+> "What is the current temperature on my Smart Thermostat (ID: a45-xyz)?"
+
+**🤖 AI Agent:**
+> Checking status... The 'Smart Thermostat' is currently reporting a temperature of 22°C (71.6°F) with the operating mode set to 'Auto'.
+
+
 ## Installation & Usage
 
 To install and use the **SmartThings** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **SmartThings** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

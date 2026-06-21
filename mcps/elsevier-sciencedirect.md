@@ -1,12 +1,14 @@
 # Elsevier ScienceDirect MCP Server
 
-Access millions of scientific, technical, and medical research articles and book chapters directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elsevier-sciencedirect)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elsevier-sciencedirect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elsevier-sciencedirect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elsevier-sciencedirect-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 9
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access millions of scientific, technical, and medical research articles and book chapters directly from your AI agent.
 
 ## Description
 Connect to **Elsevier ScienceDirect** to empower your AI agent with the world's leading source of scientific, technical, and medical research. This MCP server allows for deep exploration of peer-reviewed literature, metadata retrieval, and access rights verification.
@@ -46,6 +48,33 @@ No more manual searching through web portals. Your AI acts as a research assista
 - **search_sciencedirect**: Search full-text content on ScienceDirect
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Elsevier ScienceDirect** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search ScienceDirect for recent articles about CRISPR in Title/Abstract/Keywords."
+
+**🤖 AI Agent:**
+> I've found several recent articles on CRISPR. The top results include 'CRISPR-Cas9 Gene Editing in Human Cells' and 'Advances in CRISPR Technology'. Would you like the abstract for any of these?
+
+---
+
+**👤 You:**
+> "Get the full text for the article with DOI 10.1016/j.cell.2023.01.001."
+
+**🤖 AI Agent:**
+> Retrieving full content for DOI 10.1016/j.cell.2023.01.001... I have successfully fetched the article. It covers new insights into cellular signaling pathways. How would you like me to summarize it?
+
+---
+
+**👤 You:**
+> "Check the hosting permissions for PII S0022-2836(21)00123-4."
+
+**🤖 AI Agent:**
+> Checking hosting permissions for PII S0022-2836(21)00123-4... This article has an active embargo period ending on 2024-12-01. After this date, it can be hosted in institutional repositories.
+
+
 ## Installation & Usage
 
 To install and use the **Elsevier ScienceDirect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Elsevier ScienceDirect** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

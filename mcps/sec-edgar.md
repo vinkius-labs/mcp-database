@@ -1,12 +1,14 @@
 # SEC EDGAR MCP Server
 
-Official US corporate filings database — access 10-K, 10-Q, and financial data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-edgar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-edgar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-edgar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 3
+
+**Category:** [data-management](../categories/data-management.md)
+
+Official US corporate filings database — access 10-K, 10-Q, and financial data via AI.
 
 ## Description
 Empower your AI agent with the primary source for US corporate intelligence through the **SEC EDGAR** MCP server. This integration provides real-time access to the Securities and Exchange Commission's database of public company filings. Your agent can retrieve recent submissions (like annual 10-K and quarterly 10-Q reports), extract specific XBRL financial facts, and audit disclosures for any public entity using its Central Index Key (CIK). Whether you are conducting fundamental analysis, auditing regulatory compliance, or researching corporate history, your agent acts as a dedicated financial analyst through natural conversation.
@@ -42,6 +44,33 @@ Get a specific financial concept for a company
 Get recent submissions for a company
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SEC EDGAR** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get recent submissions for Apple Inc (CIK 0000320193)."
+
+**🤖 AI Agent:**
+> Retrieving recent filings for Apple... I found the latest submissions including their most recent 10-Q and several 8-K reports. Would you like to see the details of a specific form?
+
+---
+
+**👤 You:**
+> "Extract the 'NetIncomeLoss' for Microsoft (CIK 0000789019) for the last 3 years."
+
+**🤖 AI Agent:**
+> Fetching financial facts for Microsoft... I've retrieved the Net Income figures from their official XBRL filings for the last 3 fiscal years. Microsoft reported $72.3B in 2023, $61.2B in 2022, and $61.3B in 2021.
+
+---
+
+**👤 You:**
+> "Find all filings for Tesla (CIK 0001318605) related to '8-K' forms this year."
+
+**🤖 AI Agent:**
+> Filtering Tesla submissions... I've identified 5 '8-K' (current report) filings for Tesla so far this year. These usually cover major corporate events. Would you like to see the items disclosed in the most recent one?
+
+
 ## Installation & Usage
 
 To install and use the **SEC EDGAR** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **SEC EDGAR** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

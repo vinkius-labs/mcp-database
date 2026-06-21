@@ -1,12 +1,14 @@
 # Appwrite MCP Server
 
-Open-source backend-as-a-service — manage databases, storage, and users via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/appwrite)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appwrite)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appwrite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appwrite-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 9
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Open-source backend-as-a-service — manage databases, storage, and users via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire backend infrastructure with **Appwrite**. This unified server provides your agent with instant access to database management, user authentication auditing, and cloud storage monitoring. Your agent can instantly list your databases, audit document collections, and retrieve storage metrics without you ever touching the Appwrite console. Whether you are monitoring cloud function executions or managing project health, your agent acts as a dedicated backend developer through natural conversation.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your entire backend infrastructure with **A
 - **list_users**: List project users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Appwrite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all databases in my Appwrite project."
+
+**🤖 AI Agent:**
+> Retrieving your database directory... You currently have 3 active databases: 'production-db', 'staging-db', and 'analytics-store'. Which one would you like to inspect for collections?
+
+---
+
+**👤 You:**
+> "Show the last 10 users registered in the project."
+
+**🤖 AI Agent:**
+> Fetching recent users... I've identified the 10 most recently registered accounts, including 'user_abc@email.com' and 'dev_test@domain.io'. I can provide their registration timestamps if needed.
+
+---
+
+**👤 You:**
+> "Get execution logs for cloud function 'resize-image'."
+
+**🤖 AI Agent:**
+> Retrieving logs for 'resize-image'... The last 5 executions were successful, with an average duration of 150ms. I can display the specific status codes and output for each run.
+
+
 ## Installation & Usage
 
 To install and use the **Appwrite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Appwrite** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

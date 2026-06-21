@@ -1,12 +1,14 @@
 # COO Operations Prover MCP Server
 
-An operations plan said 'we will scale' without modeling arrival rates. It claims 'economies of scale' without a single cost data point. It writes SLAs that say 'best effort.' That is not operations — that is hope. This tool forces five COO-level operational axes: capacity modeling, failure isolation, cost leverage, process discipline, and accountability mechanisms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coo-operations-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coo-operations-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coo-operations-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coo-operations-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** infrastructure
-**Tools Count:** 1
+
+**Category:** [infrastructure](../categories/infrastructure.md)
+
+An operations plan said 'we will scale' without modeling arrival rates. It claims 'economies of scale' without a single cost data point. It writes SLAs that say 'best effort.' That is not operations — that is hope. This tool forces five COO-level operational axes: capacity modeling, failure isolation, cost leverage, process discipline, and accountability mechanisms.
 
 ## Description
 ## The Problem
@@ -56,6 +58,33 @@ Tool calls are obligations. The LLM cannot say 'we will scale' — it must model
 Structured reflection tool for wartime COO-level operational readiness validation. Forces the agent to model capacity with queuing theory, prove failure isolation with bulkheads and blast radius limits, demonstrate cost leverage at 3 scale points, quantify process discipline with exception rates and runbooks, and enforce accountability with automated SLA penalties. Catches Capacity Blindness ("we will scale" without modeling arrival rate vs service rate, utilization thresholds, or queue drain behavior under peak load), Contagion Risk (no bulkheads — one failure cascades everywhere because components share connection pools, databases, or thread pools without isolation), Cost Delusion ("economies of scale" claimed without proving marginal cost decrease at 3 data points with the specific mechanism driving the decrease), Process Chaos (exception rate >5% destroying operational leverage — "case-by-case" handling for situations that should have runbooks), and Accountability Theater (SLAs as marketing promises — no error budget, no automated penalties, no feature-freeze trigger when reliability degrades). Call once per operational plan or system design review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **COO Operations Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We will scale our platform as needed using auto-scaling groups. We have economies of scale. Our processes handle exceptions on a case-by-case basis. Our SLA commits to best effort uptime."
+
+**🤖 AI Agent:**
+> CAPACITY_BLIND — Four fatal gaps. First: 'auto-scaling' is not capacity modeling — define arrival rate, service rate, and utilization threshold. Second: 'economies of scale' is a claim — show cost per unit at 3 data points. Third: 'case-by-case' is process chaos — quantify exception rate and provide runbooks. Fourth: 'best effort' is accountability theater — define error budget and automated penalties.
+
+---
+
+**👤 You:**
+> "Peak arrival: 1,200 req/s. Service capacity: 1,800 req/s across 6 workers (300/s each). Utilization: 67%. Queue drain: 200ms p99. Headroom: 33%. Tenant isolation: database-per-tenant. Regional blast radius: max 8% per region (12 regions). Circuit breaker on payment: 5s timeout, 3 retries. Cost: $0.12/user at 10K, $0.04 at 100K, $0.008 at 1M (committed use + CDN 94% hit). SOP coverage: 94%. Exception rate: 3.2%. Top 3 categorized with runbooks, 15min resolution. SLA: 99.9%. Error budget: 43.8 min/month. If burned: feature deploys freeze. If 50% burned mid-sprint: escalation to VP Eng."
+
+**🤖 AI Agent:**
+> OPERATIONS_PROVEN — Wartime COO operations validated. Capacity: 1,200/1,800 req/s (67% utilization, 33% headroom). Failure isolation: database-per-tenant, 8% max blast radius, circuit breaker on payments. Cost leverage: $0.12 → $0.04 → $0.008/user across 3 scale points. Process discipline: 94% SOP, 3.2% exception rate, runbooks with 15min resolution. Accountability: 99.9% SLA, 43.8 min/month error budget, automatic deploy freeze. Execute.
+
+---
+
+**👤 You:**
+> "Our infrastructure uses auto-scaling on AWS. Costs will decrease as we grow — volume discounts. We handle exceptions flexibly. SLA: 99.9% uptime, we will investigate any incidents and send a post-mortem within 48 hours."
+
+**🤖 AI Agent:**
+> CAPACITY_BLIND — Four fatal gaps in sequence. (1) 'Auto-scaling on AWS' is not capacity modeling — where is the arrival rate, service rate, and utilization threshold? (2) 'Volume discounts' is cost delusion — show the per-unit cost at 10K, 100K, and 1M with the mechanism. (3) 'Flexibly' handling exceptions is process chaos — quantify the exception rate. (4) 'Investigate and post-mortem' is accountability theater — that is a press release, not an error budget with automated consequences.
+
+
 ## Installation & Usage
 
 To install and use the **COO Operations Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **COO Operations Prover** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Metisscan (Metis L2 Network Explorer) MCP Server
 
-Explore the Metis L2 network — inspect blocks, transactions, addresses, and smart contracts directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/metisscan-metis-l2-network-explorer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/metisscan-metis-l2-network-explorer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/metisscan-metis-l2-network-explorer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/metisscan-metis-l2-network-explorer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 26
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Explore the Metis L2 network — inspect blocks, transactions, addresses, and smart contracts directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **Metis L2** ecosystem through Metisscan. Gain real-time visibility into the blockchain, from high-level network stats to granular smart contract data.
@@ -65,6 +67,33 @@ List internal transactions for a transaction
 - **list_transactions**: List recent transactions on Metis L2
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Metisscan (Metis L2 Network Explorer)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the most recent blocks on Metis L2."
+
+**🤖 AI Agent:**
+> I've retrieved the latest blocks. The most recent block is #12450672, containing 14 transactions. Would you like to see the transactions inside this block?
+
+---
+
+**👤 You:**
+> "Get the transaction history for address 0xdead...beef."
+
+**🤖 AI Agent:**
+> I found 25 recent transactions for that address. The latest was a transfer of 5 METIS to a decentralized exchange 2 hours ago. Should I list the full details of the last 5 transactions?
+
+---
+
+**👤 You:**
+> "Show me the source code and details for the smart contract at 0x123...456."
+
+**🤖 AI Agent:**
+> Accessing contract data... This is a verified 'TransparentUpgradeableProxy' contract. I have retrieved the ABI and the Solidity source code. Would you like me to analyze any specific function?
+
+
 ## Installation & Usage
 
 To install and use the **Metisscan (Metis L2 Network Explorer)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Metisscan (Metis L2 Network Explorer)** MCP server in y
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

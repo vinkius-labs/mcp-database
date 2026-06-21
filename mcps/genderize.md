@@ -1,12 +1,14 @@
 # Genderize MCP Server
 
-Predict the gender of a person based on their first name via AI agents with Genderize.io.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/genderize)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/genderize)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/genderize-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/genderize-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Predict the gender of a person based on their first name via AI agents with Genderize.io.
 
 ## Description
 Connect your AI agent to the **Genderize.io** database to automate gender estimation through the Model Context Protocol (MCP). Genderize.io is a specialized API that provides statistical probabilities for the gender associated with any first name, backed by a database of over 114 million records. This MCP server enables you to estimate genders for single or multiple names, localized by country, directly through natural conversation.
@@ -47,6 +49,33 @@ Check connection
 - **estimate_genders_bulk**: Predict multiple names
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Genderize** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Estimate the gender for the name 'Peter'."
+
+**🤖 AI Agent:**
+> Predicting gender... For the name 'Peter', Genderize.io estimates a 'male' identity with 99% probability based on 165,452 records.
+
+---
+
+**👤 You:**
+> "Predict the genders for these names: ['Alice', 'Bob', 'Charlie']."
+
+**🤖 AI Agent:**
+> Processing names... I've retrieved estimations for all 3 names: Alice (female, 98%), Bob (male, 99%), and Charlie (male, 56%).
+
+---
+
+**👤 You:**
+> "What is the predicted gender for 'Sasha' in Russia (RU)?"
+
+**🤖 AI Agent:**
+> Checking local patterns... In Russia (RU), the name 'Sasha' is estimated as 'male' with 64% probability.
+
+
 ## Installation & Usage
 
 To install and use the **Genderize** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Genderize** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

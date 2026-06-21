@@ -1,12 +1,14 @@
 # Pennylane MCP Server
 
-Manage French accounting workflows via Pennylane — track invoices, customers, suppliers, and synchronize estimates dynamically using AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pennylane)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pennylane)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pennylane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pennylane-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 13
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage French accounting workflows via Pennylane — track invoices, customers, suppliers, and synchronize estimates dynamically using AI.
 
 ## Description
 Equip intelligent LLM instances with robust access traversing the **Pennylane Accounting API**. Programmatically instantiate global CRM states (customers/suppliers), evaluate bounded sales configurations mapping formal invoices, cross-check estimates gracefully, and execute catalog updates explicitly within structural French accounting compliance.
@@ -47,6 +49,33 @@ Equip intelligent LLM instances with robust access traversing the **Pennylane Ac
 - **list_categories**: Lister les catégories comptables (plan comptable)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pennylane** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Trace explicitly the active vendor/supplier lists returning limits logically fetched from the target server."
+
+**🤖 AI Agent:**
+> Mapped parameters resolving native arrays. Logged 12 explicit supplier boundaries efficiently checking instances. Top supplier returned natively is 'Azure Subscriptions' mapping ID 55x. Proceed tracking JSON internal limits for ID 55x?
+
+---
+
+**👤 You:**
+> "Execute checking bounds strictly creating a new native CRM product called 'Design Consulting' logically priced at 120.00 EUR (VAT 20)."
+
+**🤖 AI Agent:**
+> Dispatched JSON gracefully processing boundaries globally over Pennylane REST loops natively tracking. Limits established assigning Product ID strictly 'prd_89a' evaluating parameters completely natively successfully matching target specifications.
+
+---
+
+**👤 You:**
+> "Read explicit parameter loops parsing detailed lines bounding Invoice ID 'inv_1092'."
+
+**🤖 AI Agent:**
+> Boundaries evaluated tracking `get_customer_invoice_details`. Total target explicitly checks 240.00 EUR natively mapped gracefully tracking 2 explicit lines strictly identifying bounds. Would you like a JSON tabular output gracefully extracting line limits?
+
+
 ## Installation & Usage
 
 To install and use the **Pennylane** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Pennylane** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Smsmobile MCP Server
 
-Turn your smartphone into an SMS/WhatsApp gateway — send messages, read incoming texts, and track call logs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smsmobile)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smsmobile)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smsmobile-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smsmobile-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 26
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Turn your smartphone into an SMS/WhatsApp gateway — send messages, read incoming texts, and track call logs directly from any AI agent.
 
 ## Description
 Connect your **Smsmobile** account to any AI agent and turn your smartphone into a powerful communication gateway. Automate SMS and WhatsApp messaging directly through natural conversation.
@@ -61,6 +63,33 @@ Connect your **Smsmobile** account to any AI agent and turn your smartphone into
 - **update_sms_alias**: Update the alias of a received SMS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smsmobile** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +1234567890 saying 'Your appointment is confirmed for tomorrow at 10 AM'."
+
+**🤖 AI Agent:**
+> I've sent the SMS via `send_sms`. The message is now queued on your mobile device with GUID: sms_98765.
+
+---
+
+**👤 You:**
+> "Check for any unread SMS messages received in the last hour."
+
+**🤖 AI Agent:**
+> I'm checking `get_received_sms`... I found 2 unread messages. One from 'John' regarding 'Project Update' and another from an unknown number.
+
+---
+
+**👤 You:**
+> "Show me the logs for all SMS messages sent today that resulted in an error."
+
+**🤖 AI Agent:**
+> Querying `get_sms_logs` for today's errors... I found 1 failed delivery to +1987654321 due to a mobile network timeout. Would you like me to try `resend_sms`?
+
+
 ## Installation & Usage
 
 To install and use the **Smsmobile** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Smsmobile** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

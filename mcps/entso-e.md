@@ -1,12 +1,14 @@
 # ENTSO-E MCP Server
 
-Access European electricity market data via ENTSO-E — track generation, load, prices, crossborder flows, and outages across European bidding zones from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/entso-e)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/entso-e)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/entso-e-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/entso-e-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access European electricity market data via ENTSO-E — track generation, load, prices, crossborder flows, and outages across European bidding zones from any AI agent.
 
 ## Description
 Connect your **ENTSO-E Transparency Platform API** to any AI agent and take full control of European electricity market data, generation forecasts, pricing analysis, and grid monitoring through natural conversation.
@@ -79,6 +81,33 @@ Get transmission network outage and maintenance schedules
 Get wind and solar power generation forecasts for a bidding zone
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ENTSO-E** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me day-ahead electricity prices for Germany tomorrow."
+
+**🤖 AI Agent:**
+> Fetching day-ahead prices for Germany (10YDE-RWENET---I)... Average price: 85.42 EUR/MWh. Peak hours (08:00-20:00): 98.15 EUR/MWh average. Off-peak: 62.30 EUR/MWh average. Highest price: 125.50 EUR/MWh at 18:00-19:00. Lowest price: 45.20 EUR/MWh at 03:00-04:00. Price drivers: High wind generation expected midday, low solar in evening driving evening peak. Would you like the hourly price breakdown?
+
+---
+
+**👤 You:**
+> "What is the wind and solar forecast for France today?"
+
+**🤖 AI Agent:**
+> Fetching wind and solar forecast for France (10YFR-RTE------C)... Wind forecast: 8,450 MW average, peak 12,200 MW at 14:00. Solar forecast: 15,300 MW average, peak 32,500 MW at 13:00. Total renewable forecast: 23,750 MW average. Combined wind and solar expected to cover 55% of daytime demand. Strong solar generation expected between 10:00-16:00. Would you like to compare this with actual generation data?
+
+---
+
+**👤 You:**
+> "Show me generation outages in Germany this week."
+
+**🤖 AI Agent:**
+> Checking generation outages for Germany... Found 3 active outages: 1) Nuclear plant Biblis B — 1,300 MW unavailable (planned maintenance, expected return: Friday). 2) Coal plant Neurath — 850 MW unavailable (unplanned outage, return TBD). 3) Gas plant Irsching — 400 MW unavailable (planned maintenance, expected return: Thursday). Total unavailable capacity: 2,550 MW. This represents approximately 3% of Germany's total installed capacity. Would you like impact analysis on expected prices?
+
+
 ## Installation & Usage
 
 To install and use the **ENTSO-E** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **ENTSO-E** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

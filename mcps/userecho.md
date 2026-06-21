@@ -1,12 +1,14 @@
 # UserEcho MCP Server
 
-Build a customer feedback community with idea voting, knowledge base, helpdesk, and live chat in one support ecosystem.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/userecho)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/userecho)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/userecho-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/userecho-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 6
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Build a customer feedback community with idea voting, knowledge base, helpdesk, and live chat in one support ecosystem.
 
 ## Description
 Connect your **UserEcho** account to any AI agent and simplify how you manage your community feedback, helpdesk tickets, and self-service content through natural conversation.
@@ -42,6 +44,33 @@ Connect your **UserEcho** account to any AI agent and simplify how you manage yo
 - **list_account_users**: List account users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UserEcho** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active support tickets in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your support tickets. You have 5 active requests including 'Login issue', 'Billing inquiry', and 'Feature request: dark mode'. Which one would you like to see the history for?
+
+---
+
+**👤 You:**
+> "Show me the details for ticket #88231."
+
+**🤖 AI Agent:**
+> I've fetched the details for ticket 88231. The status is currently 'Open' and it concerns a 'Broken checkout link'. The last comment was from the customer 2 hours ago. Shall I reply to them?
+
+---
+
+**👤 You:**
+> "Create a support ticket: 'API Timeout error' with content 'Receiving 504 errors on the /v1/users endpoint'."
+
+**🤖 AI Agent:**
+> Success! The support ticket 'API Timeout error' has been created in your UserEcho account with ID TKT-10293. I've logged the technical details provided.
+
+
 ## Installation & Usage
 
 To install and use the **UserEcho** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **UserEcho** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

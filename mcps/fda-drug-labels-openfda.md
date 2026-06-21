@@ -1,12 +1,14 @@
 # FDA Drug Labels (openFDA) MCP Server
 
-Access official FDA drug labels and structured product labeling (SPL) data via openFDA.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fda-drug-labels-openfda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fda-drug-labels-openfda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fda-drug-labels-openfda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fda-drug-labels-openfda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 2
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Access official FDA drug labels and structured product labeling (SPL) data via openFDA.
 
 ## Description
 Connect your AI agent to the official **openFDA** database to retrieve comprehensive drug label information and structured product labeling (SPL) data through natural conversation.
@@ -38,6 +40,33 @@ Connect your AI agent to the official **openFDA** database to retrieve comprehen
 Search FDA drug labels (SPL format)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FDA Drug Labels (openFDA)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for FDA drug labels for 'Tylenol' and show the warnings."
+
+**🤖 AI Agent:**
+> I've found the labels for Tylenol. The warnings section includes information about liver warning (acetaminophen), allergy alert, and directions for use. Would you like the full text of the 'warnings' field?
+
+---
+
+**👤 You:**
+> "Count the unique manufacturers for drugs with the brand name 'Advil'."
+
+**🤖 AI Agent:**
+> Based on the openFDA data, there are several unique manufacturer entries associated with 'Advil', including 'GlaxoSmithKline Consumer Healthcare Holdings (US) LLC' and 'Pfizer Consumer Healthcare'.
+
+---
+
+**👤 You:**
+> "Find the 5 most recent drug labels for 'Amoxicillin'."
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent labels for Amoxicillin, sorted by effective time. The latest updates come from manufacturers like 'Aurobindo Pharma Limited' and 'Teva Pharmaceuticals USA, Inc.'.
+
+
 ## Installation & Usage
 
 To install and use the **FDA Drug Labels (openFDA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **FDA Drug Labels (openFDA)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

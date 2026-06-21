@@ -1,12 +1,14 @@
 # Logflare (Log Management Analytics) MCP Server
 
-Streamline log management and analytics via Logflare — ingest events, execute ad-hoc SQL queries, and trigger pre-configured endpoints directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/logflare-log-management-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/logflare-log-management-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/logflare-log-management-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/logflare-log-management-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Streamline log management and analytics via Logflare — ingest events, execute ad-hoc SQL queries, and trigger pre-configured endpoints directly from your AI agent.
 
 ## Description
 Connect your **Logflare** account to any AI agent to monitor, analyze, and manage your log data through natural language. Logflare provides a powerful interface for BigQuery-backed log storage and retrieval.
@@ -49,6 +51,33 @@ Query a Logflare Endpoint by UUID
 Query a Logflare Endpoint by Name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Logflare (Log Management Analytics)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a log to 'api-logs' saying 'Connection timeout' with metadata {'service': 'auth'}."
+
+**🤖 AI Agent:**
+> I've successfully ingested the log event into the 'api-logs' source using `ingest_logs_by_name`. The event is now available for analysis.
+
+---
+
+**👤 You:**
+> "Run a SQL query to find the top 5 IP addresses from the 'web-traffic' source in the last hour."
+
+**🤖 AI Agent:**
+> I've executed the `management_query`. Here are the top 5 IP addresses found: [List of IPs]. I included the required timestamp filter for the last 60 minutes.
+
+---
+
+**👤 You:**
+> "Query the endpoint 'daily-summary' with the parameter 'date' set to '2023-10-27'."
+
+**🤖 AI Agent:**
+> I've retrieved the data from the 'daily-summary' endpoint using `query_endpoint_by_name`. The summary for that date shows 15,420 total events.
+
+
 ## Installation & Usage
 
 To install and use the **Logflare (Log Management Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Logflare (Log Management Analytics)** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

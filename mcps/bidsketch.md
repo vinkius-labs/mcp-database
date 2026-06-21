@@ -1,12 +1,14 @@
 # Bidsketch MCP Server
 
-Automate proposal creation via Bidsketch — list proposals, clients, and templates directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bidsketch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bidsketch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bidsketch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bidsketch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate proposal creation via Bidsketch — list proposals, clients, and templates directly from any AI agent.
 
 ## Description
 Connect your **Bidsketch** account to any AI agent and orchestrate your professional proposal workflows through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Bidsketch** account to any AI agent and orchestrate your professi
 - **update_proposal**: Update an existing proposal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bidsketch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active proposals in Bidsketch."
+
+**🤖 AI Agent:**
+> I've retrieved your proposals. You have 3 documents: 'Web Design Project' (ID: prop_1), 'Content Strategy' (ID: prop_2), and 'Marketing Audit' (ID: prop_3).
+
+---
+
+**👤 You:**
+> "Find the contact ID for 'Acme Corp'."
+
+**🤖 AI Agent:**
+> I found one matching client: 'Acme Corporation' (ID: client_992). You can use this ID to create new proposals for them.
+
+---
+
+**👤 You:**
+> "Show my last 5 proposal templates."
+
+**🤖 AI Agent:**
+> Retrieving templates... I found 5 templates, including 'Basic Design Services', 'Consulting Agreement', and 'SEO Retainer'. Which one would you like to use?
+
+
 ## Installation & Usage
 
 To install and use the **Bidsketch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Bidsketch** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Yelp Fusion MCP Server
 
-Search for local businesses, read reviews, and explore events worldwide directly from your AI agent using Yelp's rich database.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/yelp-fusion)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/yelp-fusion)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/yelp-fusion-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/yelp-fusion-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** travel-hospitality
-**Tools Count:** 17
+
+**Category:** [travel-hospitality](../categories/travel-hospitality.md)
+
+Search for local businesses, read reviews, and explore events worldwide directly from your AI agent using Yelp's rich database.
 
 ## Description
 Connect **Yelp Fusion** to your AI agent to discover the best local businesses, restaurants, and services. Access millions of reviews, photos, and business details through natural conversation.
@@ -56,6 +58,33 @@ Search for businesses by phone number
 - **search_transactions**: Search for businesses supporting food delivery
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Yelp Fusion** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find highly-rated Italian restaurants in Brooklyn that are open now."
+
+**🤖 AI Agent:**
+> I've searched Yelp for Italian restaurants in Brooklyn. Top options currently open include 'L'Industrie Pizzeria' (Rating: 4.8) and 'Al Di La Trattoria' (Rating: 4.5). Would you like the address or reviews for any of these?
+
+---
+
+**👤 You:**
+> "What are the review highlights for the business with ID 'v76-88-99'?"
+
+**🤖 AI Agent:**
+> Fetching highlights for that business... Customers frequently mention 'excellent service', 'authentic flavors', and 'great atmosphere'. There are also specific mentions of their signature pasta dish being a must-try.
+
+---
+
+**👤 You:**
+> "Search for upcoming food events in Austin, Texas."
+
+**🤖 AI Agent:**
+> I found several upcoming events in Austin. Notable ones include the 'Austin Food & Wine Festival' and the 'Taco & Margarita Fest'. Would you like the specific dates and location details for these?
+
+
 ## Installation & Usage
 
 To install and use the **Yelp Fusion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Yelp Fusion** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # sevDesk MCP Server
 
-Empower your AI with direct read and write access to sevDesk to autonomously manage invoices, CRM contacts, sales orders, vouchers, and accounting records.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sevdesk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sevdesk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sevdesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sevdesk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 15
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Empower your AI with direct read and write access to sevDesk to autonomously manage invoices, CRM contacts, sales orders, vouchers, and accounting records.
 
 ## Description
 Grant your conversational AI (like Claude or Cursor) the power of a dedicated German accounting clerk. The **sevDesk MCP** transforms your LLM into a sophisticated financial nexus capable of creating invoices, querying past-due credit notes, recording vouchers, and tracking your CRM endpoints dynamically. Stop wrestling with browser-based accounting dashboards and let your AI manage your bookkeeping automatically.
@@ -52,6 +54,25 @@ Creates a new contact (customer or supplier) in sevDesk
 - **list_bank_accounts**: Lists company bank accounts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **sevDesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the details of invoice #18742 and summarize its line items alongside the associated contact name."
+
+**🤖 AI Agent:**
+> Invoking `get_invoice` using ID 18742 successfully queried the sevDesk API endpoint. The underlying contact reference resolves beautifully to the recognized entity "Stark Industries". Inspecting the associated line-item array reveals two dominant artifacts currently billed: Software Maintenance Support (15 units representing hourly increments at 120.00 each) and Cloud Expansion Licensing Cost (a flat 400.00 fee). The overall net calculation indicates 2200.00 EUR dynamically computed without outstanding adjustments. Do you wish to verify its status in `list_credit_notes` to rule out refunds?
+
+---
+
+**👤 You:**
+> "List all currently existing bank accounts natively integrated using the core config."
+
+**🤖 AI Agent:**
+> Running the targeted diagnostic `list_bank_accounts` extracted exactly 2 live inlets formally structured under this tenant entity. Check account 001 maps to the primary 'Deutsche Bank GmbH' with an active balancing status indicating ready-reckoner liquidity. Setup inlet 002 flags explicitly as the secondary 'Commerzbank Corporate Node' reserve. Both objects exhibit identical local currency encodings (EUR).
+
+
 ## Installation & Usage
 
 To install and use the **sevDesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +81,11 @@ To install and use the **sevDesk** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

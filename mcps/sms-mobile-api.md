@@ -1,12 +1,14 @@
 # SMS Mobile API MCP Server
 
-Send SMS and WhatsApp messages directly from your Android devices with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sms-mobile-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sms-mobile-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sms-mobile-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sms-mobile-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Send SMS and WhatsApp messages directly from your Android devices with AI agents.
 
 ## Description
 Connect your **SMS Mobile API** account to any AI agent to automate your mobile messaging and device orchestration. SMS Mobile API turns your Android phone into a powerful messaging gateway, and this integration allows you to send SMS, manage WhatsApp communications, and track missed calls through natural conversation.
@@ -46,6 +48,33 @@ Connect your **SMS Mobile API** account to any AI agent to automate your mobile 
 - **send_whatsapp**: Send WhatsApp from your phone
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SMS Mobile API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to +1234567890: 'Your order is ready for pickup!'."
+
+**🤖 AI Agent:**
+> SMS triggered successfully! I've sent the pickup notification through your connected Android device via SMS Mobile API.
+
+---
+
+**👤 You:**
+> "Send an SMS notification to all customers about our system maintenance window tonight."
+
+**🤖 AI Agent:**
+> SMS broadcast sent. Recipients: 234 customers. Message: "System maintenance tonight 11 PM - 3 AM EST. Services may be briefly unavailable. We apologize for any inconvenience. Status page: status.yourapp.com". Delivery: 229 delivered (97.9%), 3 undeliverable (invalid numbers), 2 pending. Character count: 148 (1 SMS segment). Cost: $11.70 ($0.05/msg). Device used: Primary Gateway (iPhone, device_001). Delivery receipts will be available within 30 minutes.
+
+---
+
+**👤 You:**
+> "Show me all received SMS messages and missed calls from the last 48 hours."
+
+**🤖 AI Agent:**
+> Received SMS (last 48h): 34 messages. Support requests: 12 (keywords: "help", "issue", "broken"). Order confirmations: 8 (auto-forwarded to CRM). Appointment confirmations: 6 ("YES" replies). Opt-out requests: 3 ("STOP" - auto-processed). General inquiries: 5. Missed calls: 8 total. From known contacts: 5 (3 customers, 2 suppliers). Unknown numbers: 3. Peak incoming: yesterday 10 AM (7 messages in 1 hour). Auto-responses sent: 15 (after-hours acknowledgment).
+
+
 ## Installation & Usage
 
 To install and use the **SMS Mobile API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **SMS Mobile API** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

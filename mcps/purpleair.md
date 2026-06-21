@@ -1,12 +1,14 @@
 # PurpleAir MCP Server
 
-Real-time air quality monitoring — access PM2.5, temperature, and pollution data from 50K+ sensors worldwide via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/purpleair)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/purpleair)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/purpleair-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/purpleair-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 10
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Real-time air quality monitoring — access PM2.5, temperature, and pollution data from 50K+ sensors worldwide via AI.
 
 ## Description
 Access the world's largest hyperlocal air quality dataset through **PurpleAir** — a global network of over 50,000 low-cost air quality sensors measuring PM2.5, PM10.0, temperature, humidity, pressure, and more. Connect PurpleAir to your AI agent to monitor real-time air quality, track wildfire smoke, analyze pollution trends, and access historical data for any location — all through natural conversation.
@@ -69,6 +71,33 @@ Find PurpleAir sensors near a specific location
 List PurpleAir air quality sensors with optional filters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PurpleAir** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the air quality near San Francisco right now?"
+
+**🤖 AI Agent:**
+> I found 23 outdoor sensors in the San Francisco area. Current PM2.5 readings range from 3.2 to 18.7 µg/m³, with an average of 8.4 µg/m³ — Moderate air quality. The highest reading is in the Bayview district. Here are the sensor locations and readings.
+
+---
+
+**👤 You:**
+> "Show me the PM2.5 trend for sensor 12345 over the last 24 hours."
+
+**🤖 AI Agent:**
+> I retrieved hourly PM2.5 data for sensor 12345 over the past 24 hours. PM2.5 started at 5.1 µg/m³, peaked at 42.3 µg/m³ at 2pm (likely wildfire smoke), and has been decreasing to 12.8 µg/m³ currently. Here's the full time series.
+
+---
+
+**👤 You:**
+> "Find all outdoor sensors in Los Angeles and show me their PM2.5 readings."
+
+**🤖 AI Agent:**
+> I found 47 outdoor sensors in the Los Angeles area. PM2.5 readings range from 4.1 to 35.6 µg/m³. Areas near freeways show higher readings (15-35 µg/m³) while coastal areas are cleaner (4-8 µg/m³). Here's the complete map with readings.
+
+
 ## Installation & Usage
 
 To install and use the **PurpleAir** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **PurpleAir** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Evergiving Fundraising MCP Server
 
-Equip your AI agent to manage donations, track fundraising campaigns, and monitor field staff via the Evergiving API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/evergiving-fundraising)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evergiving-fundraising)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evergiving-fundraising-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evergiving-fundraising-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage donations, track fundraising campaigns, and monitor field staff via the Evergiving API.
 
 ## Description
 Integrate **Evergiving**, the powerful platform for fundraising and field marketing, directly into your AI workflow. Manage your donation records and recurring pledges, track active fundraising campaigns and their performance, monitor field staff schedules and locations, and oversee your entire fundraising operation using natural language.
@@ -44,6 +46,33 @@ Integrate **Evergiving**, the powerful platform for fundraising and field market
 - **list_active_recurring_pledges**: Identify donations that are set up as recurring monthly or annual pledges
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Evergiving Fundraising** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active fundraising campaigns."
+
+**🤖 AI Agent:**
+> I've found 3 active campaigns, including 'Spring Clean Water Drive' and 'Winter Shelter Support'. The Clean Water Drive has raised $12,500 so far. Would you like to see the performance stats for this campaign?
+
+---
+
+**👤 You:**
+> "Show me the last 5 donations."
+
+**🤖 AI Agent:**
+> I've retrieved the 5 most recent donations, including $100 from 'Alice Johnson' and a $50 recurring pledge from 'Robert Smith'. All are currently 'Processing'. Should I pull the donor contact details for Alice Johnson?
+
+---
+
+**👤 You:**
+> "What is the schedule for fundraiser 'John Doe' today?"
+
+**🤖 AI Agent:**
+> John Doe is scheduled for the 'Downtown Plaza' location today from 9:00 AM to 5:00 PM. They are currently assigned to the 'Children's Health' campaign. Would you like to see their conversion rate for this week?
+
+
 ## Installation & Usage
 
 To install and use the **Evergiving Fundraising** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Evergiving Fundraising** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

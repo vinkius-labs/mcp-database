@@ -1,12 +1,14 @@
 # Dotdigital MCP Server
 
-Equip your AI agent to manage email campaigns, track contacts, and monitor marketing automation via the Dotdigital API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dotdigital)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dotdigital)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dotdigital-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dotdigital-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage email campaigns, track contacts, and monitor marketing automation via the Dotdigital API.
 
 ## Description
 Integrate **Dotdigital**, the powerful marketing automation and omnichannel platform, directly into your AI workflow. Manage your email campaigns and templates, track contact address books and individual profiles, monitor automation programs (journeys), and oversee your marketing operations using natural language.
@@ -44,6 +46,33 @@ Integrate **Dotdigital**, the powerful marketing automation and omnichannel plat
 - **search_marketing_contacts**: Search for contacts using a specific query string
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dotdigital** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my email campaigns."
+
+**🤖 AI Agent:**
+> I've found several campaigns, including 'Q3 Newsletter', 'Flash Sale - August', and 'Welcome Series'. Would you like to see the subject line for the Q3 Newsletter?
+
+---
+
+**👤 You:**
+> "Show me the contacts in address book '12345'."
+
+**🤖 AI Agent:**
+> Address book '12345' (VIP Customers) contains 150 contacts. Recent additions include 'john.doe@example.com' and 'jane.smith@example.org'. Should I research the profile for John Doe?
+
+---
+
+**👤 You:**
+> "Which marketing automation programs are currently active?"
+
+**🤖 AI Agent:**
+> The currently active programs include 'Abandoned Cart Recovery', 'Post-Purchase Upsell', and 'Annual Anniversary Series'. All are in an 'Active' state. Would you like to see the start date for the Abandoned Cart program?
+
+
 ## Installation & Usage
 
 To install and use the **Dotdigital** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dotdigital** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Pinata Cloud MCP Server
 
-Automate IPFS pinning and decentralized storage via Pinata — manage files, JSON, and groups directly with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pinata-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinata-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinata-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinata-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate IPFS pinning and decentralized storage via Pinata — manage files, JSON, and groups directly with AI.
 
 ## Description
 Connect your **Pinata Cloud** account to any AI agent and take full control of your decentralized storage and IPFS orchestration through natural conversation. Pinata is the premier platform for Web3 content management, and this integration allows you to pin files, manage decentralized metadata, and organize content into groups directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual dashboard uploading or CID tracking. Your AI acts as a dedicated 
 - **update_pin_metadata**: Modify pin name/tags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pinata Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 files pinned to IPFS."
+
+**🤖 AI Agent:**
+> I've retrieved your recent pins. You have 5 files including 'Profile_Avatar.png' (CID: Qm...) and 'Project_Metadata.json'. Would you like me to create a group for these?
+
+---
+
+**👤 You:**
+> "Upload and pin my application metadata JSON to IPFS with a custom name for easy retrieval."
+
+**🤖 AI Agent:**
+> File pinned to IPFS successfully. CID: bafkreihdwdcefgh4dqkjv67uzcmw7ojee6xedzdetojuzjevtenrj. Name: "app-metadata-v2.json". Size: 4.2 KB. Gateway URL: gateway.pinata.cloud/ipfs/bafkrei... The content is now permanently available on the IPFS network and accessible through any IPFS gateway. Pin status: Pinned across 3 nodes for redundancy.
+
+---
+
+**👤 You:**
+> "List all my pinned files on IPFS and check which ones are consuming the most storage."
+
+**🤖 AI Agent:**
+> You have 47 pinned files using 2.3 GB of your 5 GB plan. Top 5 by size: "nft-collection-images.zip" (890 MB), "video-assets-q2.mp4" (456 MB), "product-catalog.json" (234 MB), "user-avatars-batch.tar" (178 MB), "brand-guidelines.pdf" (89 MB). 12 files were pinned in the last 30 days. 8 files have not been accessed in over 90 days and could be candidates for unpinning.
+
+
 ## Installation & Usage
 
 To install and use the **Pinata Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Pinata Cloud** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

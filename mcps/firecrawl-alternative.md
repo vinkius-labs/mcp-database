@@ -1,12 +1,14 @@
 # Firecrawl MCP Server
 
-Scrape and crawl the web — audit website content and maps via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/firecrawl-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/firecrawl-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/firecrawl-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 6
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Scrape and crawl the web — audit website content and maps via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire web extraction workflow with **Firecrawl**, the engine that turns websites into LLM-ready markdown. By connecting Firecrawl to your agent, you transform complex scraping tasks into a natural conversation. Your agent can instantly scrape specific URLs, audit website structure through mapping, and manage long-running crawl jobs without you ever touching a technical dashboard. Whether you are building a knowledge base or monitoring competitor updates, your agent acts as a real-time web curator, ensuring your data is always structured and up-to-date.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire web extraction workflow with **
 - **scrape_url**: Scrape a single URL and return markdown
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Firecrawl** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Scrape https://vinkius.com/about and give me the markdown content."
+
+**🤖 AI Agent:**
+> I've scraped the page! I've retrieved the cleaned markdown which details Vinkius's mission and team. Would you like a summary of the core sections?
+
+---
+
+**👤 You:**
+> "Start a crawl job for https://docs.firecrawl.dev with a limit of 10 pages."
+
+**🤖 AI Agent:**
+> Crawl job started! The Job ID is `job_12345`. I'll monitor the status for you. So far, it has identified the main documentation categories. Would you like me to notify you when it's done?
+
+---
+
+**👤 You:**
+> "Map the website structure of https://github.com."
+
+**🤖 AI Agent:**
+> I've mapped out the hierarchy for GitHub. It includes major sections like /features, /pricing, and /trending. Would you like the full list of identified subdirectories?
+
+
 ## Installation & Usage
 
 To install and use the **Firecrawl** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Firecrawl** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Global Wine Score MCP Server
 
-Access aggregated wine ratings from the world's top critics — normalized scores, vintage analysis, and top-rated wine discovery through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/global-wine-score)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/global-wine-score)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/global-wine-score-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/global-wine-score-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access aggregated wine ratings from the world's top critics — normalized scores, vintage analysis, and top-rated wine discovery through natural conversation.
 
 ## Description
 Connect to **Global Wine Score** and access the most objective wine rating system — scores aggregated and normalized from the world's leading critics.
@@ -53,6 +55,49 @@ Get scores by vintage
 Get top-rated wines
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Global Wine Score** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the highest-rated Italian wines of 2020?"
+
+**🤖 AI Agent:**
+> ⭐ **Top Italian Wines — 2020 Vintage**
+
+1. **Masseto 2020** — Toscana
+   ⭐ **98/100** 🎯 Confidence: Very High
+   🍷 Red | 📍 Bolgheri
+
+2. **Sassicaia 2020** — Tenuta San Guido
+   ⭐ **97/100** 🎯 Confidence: Very High
+   🍷 Red | 📍 Bolgheri
+
+3. **Barolo Monfortino 2016** — Giacomo Conterno
+   ⭐ **97/100** 🎯 Confidence: High
+   🍷 Red | 📍 Barolo
+
+4. **Tignanello 2020** — Antinori
+   ⭐ **96/100** 🎯 Confidence: Very High
+   🍷 Red | 📍 Toscana
+
+---
+
+**👤 You:**
+> "Compare the scores for Château Margaux 2015 and 2016."
+
+**🤖 AI Agent:**
+> Château Margaux 2015 has an outstanding aggregated score of 98.7/100, while the 2016 vintage received an almost perfect consensus of 99.1/100, both with a Very High confidence index.
+
+---
+
+**👤 You:**
+> "Find the top-rated California Cabernet Sauvignon from 2018."
+
+**🤖 AI Agent:**
+> The top-rated California Cabernet Sauvignon from 2018 is Promontory by Harlan Estate, boasting an aggregated Global Wine Score of 98.5/100 with a High confidence rating.
+
+
 ## Installation & Usage
 
 To install and use the **Global Wine Score** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +106,11 @@ To install and use the **Global Wine Score** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

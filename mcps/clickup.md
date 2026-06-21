@@ -1,12 +1,14 @@
 # ClickUp MCP Server
 
-Manage tasks and projects via ClickUp — track work, monitor spaces, and manage team productivity directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clickup)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickup)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickup-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickup-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage tasks and projects via ClickUp — track work, monitor spaces, and manage team productivity directly from any AI agent.
 
 ## Description
 Connect your **ClickUp** account to any AI agent and take full control of your project management and productivity through natural conversation. Streamline how you manage tasks, subtasks, and complex workflows natively.
@@ -45,6 +47,33 @@ Connect your **ClickUp** account to any AI agent and take full control of your p
 - **list_clickup_workspaces**: List all workspaces (teams) the user belongs to
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClickUp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my ClickUp workspaces."
+
+**🤖 AI Agent:**
+> Retrieving your ClickUp workspaces... I found 2: 'Product Team' (ID: 1234) and 'Marketing Dept' (ID: 5678). Which one would you like to see the spaces for?
+
+---
+
+**👤 You:**
+> "Show me the tasks in the 'Q2 Launch' list."
+
+**🤖 AI Agent:**
+> Checking tasks in Q2 Launch... I found 5 items: 'Update Landing Page' (To Do), 'Finalize Copy' (In Progress), 'Security Audit' (Closed), and 2 others. Should I include subtasks?
+
+---
+
+**👤 You:**
+> "Create a new task called 'Prepare presentation' in list 'wf_123'."
+
+**🤖 AI Agent:**
+> Creating task 'Prepare presentation'... The task has been successfully created in ClickUp. You can find it under the ID 'task_abc123'. Would you like to add a description or a due date?
+
+
 ## Installation & Usage
 
 To install and use the **ClickUp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ClickUp** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

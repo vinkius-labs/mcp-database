@@ -1,12 +1,14 @@
 # GitScrum Knowledge MCP Server
 
-Build and query knowledge bases via GitScrum — manage notes as agent memory, maintain wiki pages, communicate through discussions, and search across all resources from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-knowledge)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitscrum-knowledge)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitscrum-knowledge-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitscrum-knowledge-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 28
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Build and query knowledge bases via GitScrum — manage notes as agent memory, maintain wiki pages, communicate through discussions, and search across all resources from any AI agent.
 
 ## Description
 ### What you can do
@@ -85,6 +87,33 @@ List wiki pages in a project
 - **update_wiki_page**: Update a wiki page
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitScrum Knowledge** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Save a note with today's architecture decision about using event sourcing."
+
+**🤖 AI Agent:**
+> Note created: 'ADR-007: Event Sourcing for Order Service' with your decision rationale in markdown. I've placed it in the 'Architecture Decisions' folder. The note is private — say 'share this note' when you're ready to publish it to the team.
+
+---
+
+**👤 You:**
+> "Search everything in our workspace for 'payment gateway integration'."
+
+**🤖 AI Agent:**
+> Found 11 results across your workspace: 📋 3 tasks (WEB-28, WEB-31, WEB-40), 📚 2 wiki pages ('Payment Flow Architecture', 'Gateway Comparison'), 💬 4 discussion messages in #payments channel, 📝 2 notes ('Payment Provider Research', 'Stripe vs Adyen Analysis'). Want me to open any of these?
+
+---
+
+**👤 You:**
+> "Post an update in the #engineering channel about today's deployment."
+
+**🤖 AI Agent:**
+> Message posted to #engineering: '🚀 Deployment complete — v2.4.1 is now live in production. Key changes: payment gateway integration, performance optimizations, and 3 bug fixes. Full changelog in the wiki.' The team will be notified. Want me to create a wiki page with the detailed changelog?
+
+
 ## Installation & Usage
 
 To install and use the **GitScrum Knowledge** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -93,4 +122,11 @@ To install and use the **GitScrum Knowledge** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

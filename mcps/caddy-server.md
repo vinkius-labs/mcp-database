@@ -1,12 +1,14 @@
 # Caddy Server MCP Server
 
-Manage your Caddy web server via API — update configurations, monitor upstreams, and handle PKI certificates directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/caddy-server)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/caddy-server)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/caddy-server-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/caddy-server-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 13
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your Caddy web server via API — update configurations, monitor upstreams, and handle PKI certificates directly from your AI agent.
 
 ## Description
 Connect your **Caddy Server** instance to any AI agent and automate your web infrastructure management through natural conversation.
@@ -55,6 +57,33 @@ Sets or replaces the active Caddy configuration
 - **stop_server**: Gracefully shuts down the Caddy server and exits the process
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Caddy Server** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the full JSON configuration of my Caddy server."
+
+**🤖 AI Agent:**
+> I've retrieved the configuration. It contains 2 HTTP servers and 4 routes. Would you like me to analyze a specific path like 'apps/http'?
+
+---
+
+**👤 You:**
+> "Adapt this Caddyfile to JSON: 'example.com { reverse_proxy localhost:8080 }'"
+
+**🤖 AI Agent:**
+> I've adapted the Caddyfile. The resulting JSON structure defines a server for 'example.com' with a reverse proxy handler pointing to 'localhost:8080'. Shall I apply this configuration using load_config?
+
+---
+
+**👤 You:**
+> "Check the status of my proxy upstreams."
+
+**🤖 AI Agent:**
+> Fetching upstream status... I found 3 configured upstreams. All backends for 'api-cluster' are currently healthy, but one node in 'static-assets' is reporting a timeout. Would you like the full metrics?
+
+
 ## Installation & Usage
 
 To install and use the **Caddy Server** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Caddy Server** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

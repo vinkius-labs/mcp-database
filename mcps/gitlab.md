@@ -1,12 +1,14 @@
 # GitLab MCP Server
 
-Manage projects, track issues, and oversee CI/CD pipelines via AI agents with GitLab.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitlab)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitlab)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitlab-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitlab-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 16
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage projects, track issues, and oversee CI/CD pipelines via AI agents with GitLab.
 
 ## Description
 Connect your **GitLab** instance to any AI agent to automate your DevSecOps lifecycle and project management through the Model Context Protocol (MCP). GitLab is the most comprehensive AI-powered platform for software innovation. This MCP server enables you to retrieve project metadata, manage issues, track merge requests, and monitor CI/CD pipelines directly through natural conversation.
@@ -57,6 +59,33 @@ Get details for a specific merge request
 - **search_gitlab_global**: Search all GitLab
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitLab** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 open merge requests for project 'my-group/my-app'."
+
+**🤖 AI Agent:**
+> Retrieving merge requests... I found 5 recent open MRs, including 'Fix auth bug' and 'Add new dashboard'. Would you like the details for any of them?
+
+---
+
+**👤 You:**
+> "Check the status of the latest pipelines for project ID '12345'."
+
+**🤖 AI Agent:**
+> Fetching pipelines... The latest pipeline for project 12345 'Success' 10 minutes ago. Previous pipeline 'Failed' due to a linting error.
+
+---
+
+**👤 You:**
+> "Search GitLab for issues containing 'security patch'."
+
+**🤖 AI Agent:**
+> Searching issues... I found 3 issues matching 'security patch', including 'Patch for CVE-2024-001' in the 'Infra' project. Would you like to see the description?
+
+
 ## Installation & Usage
 
 To install and use the **GitLab** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **GitLab** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

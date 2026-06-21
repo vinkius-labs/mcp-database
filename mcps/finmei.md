@@ -1,12 +1,14 @@
 # Finmei MCP Server
 
-Manage expenses, tax rates, and payments through conversational AI agents with Finmei.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/finmei)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finmei)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finmei-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finmei-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage expenses, tax rates, and payments through conversational AI agents with Finmei.
 
 ## Description
 Connect your **Finmei** account to any AI agent and automate your financial operations through the Model Context Protocol (MCP). Finmei is the ideal companion for freelancers and small businesses that need to track expenses and manage invoices without the complexity of traditional accounting software.
@@ -48,6 +50,33 @@ Connect your **Finmei** account to any AI agent and automate your financial oper
 - **update_expense**: Update an expense
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Finmei** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 10 most recent business expenses."
+
+**🤖 AI Agent:**
+> Fetching your expenses... I found your 10 most recent entries, including 'Office Supplies' ($45.00) and 'Cloud Hosting' ($120.00). Would you like to see the full details for any of these?
+
+---
+
+**👤 You:**
+> "Add a new expense: 'Monthly Internet Subscription', 50 USD, for today."
+
+**🤖 AI Agent:**
+> Expense recorded! I've added 'Monthly Internet Subscription' for 50 USD to your Finmei account. The entry is now tracked and categorized.
+
+---
+
+**👤 You:**
+> "Show me all available tax rates for my account."
+
+**🤖 AI Agent:**
+> Retrieving tax types... Your account has 3 tax rates configured: 'VAT 20%', 'Sales Tax 5%', and 'Zero Rated'. Which one should I apply to your next entry?
+
+
 ## Installation & Usage
 
 To install and use the **Finmei** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Finmei** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

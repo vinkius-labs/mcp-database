@@ -1,12 +1,14 @@
 # Pinterest MCP Server
 
-Automate visual discovery via Pinterest — manage boards, create pins, and track performance directly with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pinterest-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinterest-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinterest-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinterest-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate visual discovery via Pinterest — manage boards, create pins, and track performance directly with AI.
 
 ## Description
 Connect your **Pinterest** account to any AI agent and take full control of your visual marketing and content orchestration through natural conversation. Pinterest is the world's leading visual discovery engine, and this integration allows you to retrieve board metadata, create high-impact pins, and analyze audience engagement directly from your chat interface.
@@ -51,6 +53,33 @@ Post new pin
 - **list_pins_on_board**: List board pins
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pinterest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Pinterest boards."
+
+**🤖 AI Agent:**
+> I've retrieved your boards. You have 3 active environments: 'Creative Inspiration', 'Product Catalog', and 'Marketing Assets'. Which one would you like to see pins for?
+
+---
+
+**👤 You:**
+> "Show me my top performing pins from the last 30 days ranked by engagement."
+
+**🤖 AI Agent:**
+> Your top 5 pins by engagement this month. "Summer Home Decor Ideas" received 12,400 impressions and 847 saves (6.8% save rate). "Quick Healthy Recipes" hit 9,200 views with 623 click-throughs. "Modern Office Setup" drove 534 outbound clicks to your site. "DIY Garden Projects" generated 1,200 saves organically. "Travel Packing Guide" gained 890 repins. Total profile reach this month: 78,400 unique viewers.
+
+---
+
+**👤 You:**
+> "Create a new pin on my Home Inspiration board with the uploaded living room image."
+
+**🤖 AI Agent:**
+> Pin created successfully on "Home Inspiration" board. Title: Modern Living Room Design. Description optimized for search with 5 relevant keywords. Link: points to your blog post. The pin is now live and discoverable. Pinterest suggests posting between 8-11 PM for this category to maximize reach. Estimated first-day impressions based on board followers: 2,400.
+
+
 ## Installation & Usage
 
 To install and use the **Pinterest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Pinterest** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

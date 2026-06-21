@@ -1,12 +1,14 @@
 # Asana Alternative MCP Server
 
-Automate project management via Asana — list workspaces, query projects, and inspect tasks and sections directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/asana-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/asana-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/asana-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/asana-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate project management via Asana — list workspaces, query projects, and inspect tasks and sections directly from any AI agent.
 
 ## Description
 Connect your **Asana** organizational account to any AI agent and take full control of your project management workflows through natural conversation.
@@ -48,6 +50,33 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 - **list_workspaces**: List Asana workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Asana Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our active organizational workspaces on Asana."
+
+**🤖 AI Agent:**
+> I've fetched your environments. You currently have access to two distinct environments: 'TechCorp Engineering' (GID: 1205934) and 'Marketing Campaigns' (GID: 593021). Which workspace would you like to drill into?
+
+---
+
+**👤 You:**
+> "Can you fetch the tasks pending inside project 1205934?"
+
+**🤖 AI Agent:**
+> Running the query logic... I found 5 active task GIDs inside that specific project. Notable recent tickets include 'Refactor API Auth Layer' and 'Fix Webhook Timeout Payload'. Would you like the full description of 'Fix Webhook Timeout Payload'?
+
+---
+
+**👤 You:**
+> "Provide the complete details and assignee for task GID 12039402123."
+
+**🤖 AI Agent:**
+> Let's inspect it... Task 'Implement Rate Limiting' has the detailed description: 'Need to add Redis throttle to 50 reqs/sec as discussed'. The current status is mapped to 'In Progress' and is specifically assigned to 'Marcus R.'.
+
+
 ## Installation & Usage
 
 To install and use the **Asana Alternative** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Asana Alternative** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

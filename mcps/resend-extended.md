@@ -1,12 +1,14 @@
 # Resend MCP Server
 
-Automate email delivery via Resend — send emails, manage domains, and track audiences directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/resend-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/resend-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/resend-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/resend-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate email delivery via Resend — send emails, manage domains, and track audiences directly from any AI agent.
 
 ## Description
 Connect your **Resend** account to any AI agent and take full control of your transactional email orchestration through natural conversation. Resend provides a world-class email infrastructure for developers, and this integration allows you to send emails, monitor domain verification, and manage contact audiences directly from your chat interface.
@@ -52,6 +54,33 @@ Send a single email
 - **verify_domain**: Verify a domain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Resend** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a welcome email to test@example.com using HTML."
+
+**🤖 AI Agent:**
+> Processing email delivery... Your welcome message has been successfully accepted by Resend for delivery. Should I track the status for you?
+
+---
+
+**👤 You:**
+> "Show me the delivery analytics for all emails sent through Resend this week."
+
+**🤖 AI Agent:**
+> Email analytics this week. Total sent: 4,567. Delivered: 4,489 (98.3%). Opened: 2,890 (64.4% open rate). Clicked: 1,234 (27.5% click rate). Bounced: 56 (1.2%). Complained: 12 (0.26%). Top performing: "Welcome Email" at 78% open rate. Lowest performer: "Newsletter #42" at 34% open. By domain: gmail.com 42%, outlook.com 23%, corporate domains 35%. Peak send time: Tuesday 10 AM. Average delivery time: 1.2 seconds.
+
+---
+
+**👤 You:**
+> "Send a transactional email with the invoice PDF attachment to client@meridian.io."
+
+**🤖 AI Agent:**
+> Email sent successfully via Resend. To: client@meridian.io. From: billing@yourcompany.com. Subject: "Invoice #INV-2025-156 - May 2025". Attachment: invoice_2025_156.pdf (234 KB). Message ID: msg_7f2a9b. Delivery confirmed in 0.9 seconds. The email used your verified domain with DKIM and SPF authentication. Open tracking and click tracking enabled. A webhook will fire when the recipient opens the email.
+
+
 ## Installation & Usage
 
 To install and use the **Resend** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Resend** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

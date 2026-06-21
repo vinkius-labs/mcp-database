@@ -1,12 +1,14 @@
 # IndoorAtlas (Indoor Positioning) MCP Server
 
-Manage indoor positioning via IndoorAtlas — list venues, upload floorplans, and analyze positioning sessions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/indooratlas-indoor-positioning)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/indooratlas-indoor-positioning)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/indooratlas-indoor-positioning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/indooratlas-indoor-positioning-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 10
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Manage indoor positioning via IndoorAtlas — list venues, upload floorplans, and analyze positioning sessions.
 
 ## Description
 Connect your **IndoorAtlas** account to any AI agent and take full control of your smart building infrastructure and indoor positioning services through natural conversation.
@@ -66,6 +68,33 @@ List all indoor venues registered in your IndoorAtlas organization, returning ve
 Determine indoor position from a Wi-Fi access point scan using the IndoorAtlas Positioning API, submitting observed signal strengths to receive a calculated latitude, longitude, floor level, and accuracy estimate
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IndoorAtlas (Indoor Positioning)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all indoor venues in my IndoorAtlas account"
+
+**🤖 AI Agent:**
+> I've found 3 venues: 'Corporate HQ' (ID: v-123), 'Retail Mall' (ID: v-456), and 'Logistic Warehouse' (ID: v-789). All are currently mapped and calibrated. Which one would you like to see floorplans for?
+
+---
+
+**👤 You:**
+> "Check the calibration paths for the 3rd floor of the 'Retail Mall'"
+
+**🤖 AI Agent:**
+> Retrieving calibration paths… I've fetched the walk paths for Floor 3 (ID: fp-987). The GeoJSON data shows extensive coverage in the main aisles, but the storage areas appear to need more fingerprinting. Would you like the coordinate list?
+
+---
+
+**👤 You:**
+> "List the most recent positioning sessions recorded today"
+
+**🤖 AI Agent:**
+> I've found 12 positioning sessions from today. The longest session lasted 45 minutes in the 'Corporate HQ'. Average accuracy across all sessions is 2.4 meters. Would you like to inspect the trace data for the most active session?
+
+
 ## Installation & Usage
 
 To install and use the **IndoorAtlas (Indoor Positioning)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **IndoorAtlas (Indoor Positioning)** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

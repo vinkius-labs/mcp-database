@@ -1,12 +1,14 @@
 # Archimedes First Principles Prover MCP Server
 
-An AI recommended restructuring 'because the industry leader does it that way.' That is analogy — not axiom. The foundational claim was never stated: at what volume does the current structure fail? The problem was never decomposed. The conclusion was asserted with 'obviously' — never derived. The boundaries were never tested: when does this approach cost more than the value it creates? Archimedes derived pi from polygon geometry — not from Egyptian estimates. This tool forces axiom examination, decomposition, proof derivation, boundary testing, and leverage point identification.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/archimedes-first-principles-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/archimedes-first-principles-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/archimedes-first-principles-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/archimedes-first-principles-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** architecture
-**Tools Count:** 1
+
+**Category:** [architecture](../categories/architecture.md)
+
+An AI recommended restructuring 'because the industry leader does it that way.' That is analogy — not axiom. The foundational claim was never stated: at what volume does the current structure fail? The problem was never decomposed. The conclusion was asserted with 'obviously' — never derived. The boundaries were never tested: when does this approach cost more than the value it creates? Archimedes derived pi from polygon geometry — not from Egyptian estimates. This tool forces axiom examination, decomposition, proof derivation, boundary testing, and leverage point identification.
 
 ## Description
 AI agents reason by analogy. 'Organization X did Y, so we should too.' They build on unquestioned axioms. They treat complex problems as monolithic. They assert conclusions without proof. They never test where their logic breaks. They miss the lever point.
@@ -55,6 +57,33 @@ LLMs commit five first-principles failures:
 Structured reflection tool for Archimedean first-principles reasoning. Forces the agent to examine axioms with sources, decompose to irreducible components, derive conclusions logically from foundations, test boundary conditions, and identify the leverage point where minimal input produces disproportionate output. Catches Axiom Blindness (reasoning from unexamined assumptions or analogies-as-axioms), Decomposition Absence (treating complex problems as monoliths), Proof Gaps (assertions disguised as derivations — "obviously" and "clearly"), Boundary Ignorance (unbounded claims that "work in all cases"), and Leverage Blindness ("everything is equally important" — no point of disproportionate returns identified). Call once per strategic, architectural, or analytical reasoning task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Archimedes First Principles Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We should adopt a decentralized structure because the top 3 companies in our industry all use decentralized teams. Obviously this is the right approach."
+
+**🤖 AI Agent:**
+> AXIOM_UNEXAMINED — 'The top companies use decentralized teams' is an analogy, not an axiom. Archimedes derived pi from polygon geometry — he did not copy the Egyptians. At what actual team size does YOUR centralized structure fail? If your organization has 40 people and coordination works, 'we need independent units' is false. 'Obviously' is the word people use when they cannot prove something. State the foundational claim: what constraint makes the current structure impossible at YOUR scale?
+
+---
+
+**👤 You:**
+> "Our conversion rate is 2.1% vs. industry average of 3.5%. We should optimize the checkout flow like the leading stores do."
+
+**🤖 AI Agent:**
+> DECOMPOSITION_ABSENT — Axioms partially pass: 2.1% conversion is measured (good), 3.5% industry average is sourced (good). But 'like leading stores' is analogy contamination. More critically: decomposition is missing. 'Optimize the checkout' treats the funnel as monolithic. WHERE do users drop? Is it the address form (68% of Baymard's data)? Payment step? Shipping cost reveal? Decompose: cart → address → shipping → payment → confirmation. Which step has the highest drop-off? Without decomposition, you optimize the wrong step. Archimedes did not say 'the curve is complex' — he decomposed it into segments.
+
+---
+
+**👤 You:**
+> "Our quality inspection takes 340 minutes per batch. We need to restructure the entire organization to fix this bottleneck."
+
+**🤖 AI Agent:**
+> PROOF_MISSING — 'Restructure the entire organization' is not derived from the axiom. The axiom is measured (340 min — good), but the conclusion jumps to restructuring without proof. WHY does 340 min mean restructuring? Decompose first: which step in the inspection takes the most time? If it is cross-referencing 3 data sources manually, a standardized template addresses the source — no restructuring needed. Archimedes: 'We must suppose that... therefore it follows that...' Your 'therefore' is missing. What logical chain connects '340 minutes' to 'restructure everything'?
+
+
 ## Installation & Usage
 
 To install and use the **Archimedes First Principles Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Archimedes First Principles Prover** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

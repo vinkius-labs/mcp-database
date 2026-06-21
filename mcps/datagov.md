@@ -1,12 +1,14 @@
 # Data.gov MCP Server
 
-Search 300,000+ US government open datasets — agriculture, climate, education, health, finance and more.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datagov)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datagov)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datagov-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datagov-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 13
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Search 300,000+ US government open datasets — agriculture, climate, education, health, finance and more.
 
 ## Description
 Connect to **Data.gov** and explore the US government's open data catalog through natural conversation — no API key needed.
@@ -76,6 +78,33 @@ List all tags used to categorize datasets
 Search US government open data datasets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Data.gov** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for climate change datasets."
+
+**🤖 AI Agent:**
+> Found 5,000+ climate-related datasets including: NOAA Climate Data, NASA GISS Surface Temperature, EPA Greenhouse Gas Emissions, Census Climate Vulnerability and many more.
+
+---
+
+**👤 You:**
+> "What datasets does NASA publish?"
+
+**🤖 AI Agent:**
+> NASA publishes 2,000+ datasets including: Earth Observations, Climate Data, Asteroid/Comet Catalogs, Satellite Imagery, Solar Activity, Exoplanet Data and many more.
+
+---
+
+**👤 You:**
+> "Find education datasets about student performance."
+
+**🤖 AI Agent:**
+> Found 800+ education datasets including: NAEP Student Assessment, College Scorecard, Civil Rights Data Collection, Education Spending and many more from Department of Education.
+
+
 ## Installation & Usage
 
 To install and use the **Data.gov** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -84,4 +113,11 @@ To install and use the **Data.gov** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

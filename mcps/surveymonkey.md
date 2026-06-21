@@ -1,12 +1,14 @@
 # SurveyMonkey MCP Server
 
-Manage surveys, analyze responses, and automate feedback workflows directly through SurveyMonkey's API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/surveymonkey)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/surveymonkey)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/surveymonkey-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/surveymonkey-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 17
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage surveys, analyze responses, and automate feedback workflows directly through SurveyMonkey's API.
 
 ## Description
 Connect your **SurveyMonkey** account to any AI agent to streamline your market research and data collection. This server allows you to interact with your surveys, pages, questions, and responses using natural language.
@@ -58,6 +60,33 @@ Create a new survey
 Update survey details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SurveyMonkey** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my surveys in SurveyMonkey."
+
+**🤖 AI Agent:**
+> I've retrieved your surveys. You have 3 active surveys: 'Customer Satisfaction 2024' (ID: 401234), 'Product Feedback' (ID: 401235), and 'Employee Engagement' (ID: 401236).
+
+---
+
+**👤 You:**
+> "Show me the full structure and questions for survey 401234."
+
+**🤖 AI Agent:**
+> Fetching details for survey 401234... This survey has 2 pages. Page 1 contains 3 questions (Multiple Choice and Text), and Page 2 contains a Rating Scale question. Would you like to see the specific question texts?
+
+---
+
+**👤 You:**
+> "Get the latest bulk responses for survey 401235."
+
+**🤖 AI Agent:**
+> I've pulled the latest bulk responses for survey 401235. I found 50 recent responses. Most respondents rated the product 'Very Satisfied'. Would you like a summary of the open-ended comments?
+
+
 ## Installation & Usage
 
 To install and use the **SurveyMonkey** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **SurveyMonkey** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

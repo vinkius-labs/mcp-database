@@ -1,12 +1,14 @@
 # Permit.io MCP Server
 
-Orchestrate full-stack authorization, manage RBAC/ReBAC policies, and evaluate permissions in real-time via Permit.io.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/permitio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/permitio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/permitio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/permitio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 18
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Orchestrate full-stack authorization, manage RBAC/ReBAC policies, and evaluate permissions in real-time via Permit.io.
 
 ## Description
 Connect your **Permit.io** account to any AI agent to manage your application's authorization layer through natural language. This server allows you to evaluate permissions, manage your authorization schema, and handle user facts without touching code.
@@ -53,6 +55,33 @@ Connect your **Permit.io** account to any AI agent to manage your application's 
 - **create_user**: Create a new user fact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Permit.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if user 'admin@company.com' is permitted to 'delete' the 'server' resource in tenant 'production'."
+
+**🤖 AI Agent:**
+> I've evaluated the permission. The user 'admin@company.com' is **permitted** to perform the 'delete' action on the 'server' resource in the 'production' tenant.
+
+---
+
+**👤 You:**
+> "Create a new resource 'document' with actions 'read', 'write', and 'share' in project 'my-app' environment 'dev'."
+
+**🤖 AI Agent:**
+> I have successfully created the 'document' resource with the specified actions in your 'dev' environment.
+
+---
+
+**👤 You:**
+> "Assign the permissions 'document:read' and 'document:write' to the 'editor' role in project 'my-app' environment 'dev'."
+
+**🤖 AI Agent:**
+> The 'editor' role has been updated. It now has 'read' and 'write' permissions for the 'document' resource.
+
+
 ## Installation & Usage
 
 To install and use the **Permit.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Permit.io** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

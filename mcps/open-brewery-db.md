@@ -1,12 +1,14 @@
 # Open Brewery DB MCP Server
 
-Discover breweries across the United States — search by name, city, state, or type with addresses, phone numbers, and websites for every location.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-brewery-db)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-brewery-db)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-brewery-db-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-brewery-db-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** travel-hospitality
-**Tools Count:** 4
+
+**Category:** [travel-hospitality](../categories/travel-hospitality.md)
+
+Discover breweries across the United States — search by name, city, state, or type with addresses, phone numbers, and websites for every location.
 
 ## Description
 The **Open Brewery DB MCP Server** gives your AI agent access to a comprehensive, open-source database of breweries across the United States.
@@ -35,6 +37,33 @@ Find breweries in a specific state
 Search for breweries by name or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Brewery DB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find me craft breweries in Portland."
+
+**🤖 AI Agent:**
+> Portland is a craft beer paradise! I found 50+ breweries including: Deschutes Brewery (regional), Hair of the Dog Brewing (micro), Widmer Brothers (regional), and Cascade Brewing (micro). Each listing includes full address, phone, and website for planning your brewery tour.
+
+---
+
+**👤 You:**
+> "List some nanobreweries in Colorado."
+
+**🤖 AI Agent:**
+> I found several nanobreweries in Colorado! Some options include: The Old Mine Cidery & Brewpub in Erie, Paradox Beer Company in Divide, and Nano 108 Brewing Company in Colorado Springs.
+
+---
+
+**👤 You:**
+> "I need the address and website for Russian River Brewing in California."
+
+**🤖 AI Agent:**
+> Russian River Brewing Company is located at 725 4th St, Santa Rosa, CA 95404. You can visit their website at http://www.russianriverbrewing.com. They are categorized as a regional brewery.
+
+
 ## Installation & Usage
 
 To install and use the **Open Brewery DB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +72,11 @@ To install and use the **Open Brewery DB** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

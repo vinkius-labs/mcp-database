@@ -1,12 +1,14 @@
 # BugSnag MCP Server
 
-Monitor application errors via BugSnag — track stability, inspect error groups, and retrieve event details directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bugsnag)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bugsnag)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bugsnag-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bugsnag-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Monitor application errors via BugSnag — track stability, inspect error groups, and retrieve event details directly from any AI agent.
 
 ## Description
 Connect your **BugSnag** account to any AI agent and orchestrate your error monitoring, stability tracking, and incident response workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **BugSnag** account to any AI agent and orchestrate your error moni
 - **list_release_stages**: List release stages configured for a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BugSnag** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my projects in BugSnag for organization org_123."
+
+**🤖 AI Agent:**
+> I've retrieved your projects for 'Vinkius Org'. You have 3 projects: 'iOS App' (ID: proj_1), 'Android App' (ID: proj_2), and 'Web Dashboard' (ID: proj_3).
+
+---
+
+**👤 You:**
+> "Show the last 5 errors for the 'Web Dashboard' project."
+
+**🤖 AI Agent:**
+> Retrieving errors... Your 5 most recent error groups include 'TypeError: undefined is not a function' (Severity: Error) and 'NetworkError: Failed to fetch' (Severity: Warning).
+
+---
+
+**👤 You:**
+> "Get details for error group err_99283."
+
+**🤖 AI Agent:**
+> Error err_99283 is a 'ReferenceError' that has occurred 150 times in the last 24 hours. It is currently affecting 45 users in production.
+
+
 ## Installation & Usage
 
 To install and use the **BugSnag** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **BugSnag** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

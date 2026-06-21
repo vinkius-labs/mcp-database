@@ -1,12 +1,14 @@
 # CarAPI MCP Server
 
-Search 66,000+ vehicles — find cars by year, make, model, trim with engine specs, transmission and pricing data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/carapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/carapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/carapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/carapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** automotive
-**Tools Count:** 8
+
+**Category:** [automotive](../categories/automotive.md)
+
+Search 66,000+ vehicles — find cars by year, make, model, trim with engine specs, transmission and pricing data.
 
 ## Description
 Connect to **CarAPI** and explore the comprehensive vehicle database through natural conversation.
@@ -57,6 +59,33 @@ Search vehicles by year, make, model and more
 Get list of all available years in the database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CarAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all electric SUVs from 2024."
+
+**🤖 AI Agent:**
+> Found 25 electric SUVs from 2024 including: Tesla Model Y, Ford Mustang Mach-E, Hyundai Ioniq 5, Kia EV6, Rivian R1S. Each with MSRP, range, battery size and charging specs.
+
+---
+
+**👤 You:**
+> "What models does Toyota make?"
+
+**🤖 AI Agent:**
+> Toyota makes 30+ models including: Corolla, Camry, RAV4, Highlander, Tacoma, Tundra, Prius, 4Runner, Sienna, Crown. Available years range from 1990 to 2024.
+
+---
+
+**👤 You:**
+> "Show me specs for the 2024 Honda Civic."
+
+**🤖 AI Agent:**
+> 2024 Honda Civic: Body: Sedan. Engine: 2.0L 4-cylinder (158 hp) or 1.5L Turbo (180 hp). Transmission: CVT or 6-speed manual. Drive: FWD. Fuel: 31/40 mpg city/highway. MSRP: $24,650 - $30,650.
+
+
 ## Installation & Usage
 
 To install and use the **CarAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **CarAPI** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

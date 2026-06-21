@@ -1,12 +1,14 @@
 # Amazon Ads MCP Server
 
-Advertising management — manage Sponsored Products, brands, and performance reports via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amazon-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amazon-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amazon-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Advertising management — manage Sponsored Products, brands, and performance reports via AI.
 
 ## Description
 Connect your **Amazon Ads** account to your AI agent to unlock professional campaign orchestration and performance tracking. From auditing Sponsored Products and Sponsored Brands to generating asynchronous performance reports and managing keyword bids, your agent handles your e-commerce advertising strategy through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Amazon Ads** account to your AI agent to unlock professional camp
 - **get_report_status**: Check report status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amazon Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my Amazon Ads profiles."
+
+**🤖 AI Agent:**
+> I've retrieved your advertising profiles. You have 2 profiles active: 'US Marketplace' (ID: 123456) and 'Canada Marketplace' (ID: 789012). Which profile's campaigns would you like to review?
+
+---
+
+**👤 You:**
+> "Show me the active Sponsored Products campaigns for profile ID '123456'."
+
+**🤖 AI Agent:**
+> I've listed the active Sponsored Products campaigns for that profile. There are 5 running campaigns, including 'Holiday Promo' with a daily budget of $50.00 and 'Brand Defense' with a budget of $25.00.
+
+---
+
+**👤 You:**
+> "Request a campaign performance report for yesterday (Profile ID '123456')."
+
+**🤖 AI Agent:**
+> I have successfully requested the Sponsored Products campaign report for yesterday. The Report ID is 'rep-abc-123'. Because Amazon generates reports asynchronously, it is currently processing. Would you like me to check its status and download the data now?
+
+
 ## Installation & Usage
 
 To install and use the **Amazon Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Amazon Ads** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

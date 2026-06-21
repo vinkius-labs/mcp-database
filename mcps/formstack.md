@@ -1,12 +1,14 @@
 # Formstack MCP Server
 
-Manage professional forms, track submissions, and automate data collection via AI agents with Formstack.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/formstack)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/formstack)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/formstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/formstack-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage professional forms, track submissions, and automate data collection via AI agents with Formstack.
 
 ## Description
 Connect your **Formstack** account to any AI agent to automate your professional form management and data collection workflows through the Model Context Protocol (MCP). Formstack is the workplace productivity platform used by thousands of organizations to build custom forms, automate manual processes, and securely collect data. This MCP server enables you to manage your form library, retrieve submissions, and oversee fields and webhooks directly through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Formstack** account to any AI agent to automate your professional
 - **update_form**: Update form settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Formstack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all forms in my Formstack account."
+
+**🤖 AI Agent:**
+> Retrieving forms... I found 6 forms, including 'Customer Feedback' and 'Job Application'. Which one would you like to see submissions for?
+
+---
+
+**👤 You:**
+> "Show me the 5 most recent submissions for form '1234567'."
+
+**🤖 AI Agent:**
+> Fetching submissions... For form 1234567, I found 5 recent submissions. Sentiment appears positive with high scores in 'Service Quality'.
+
+---
+
+**👤 You:**
+> "Get the embed HTML code for my 'Survey' form (ID: 9876543)."
+
+**🤖 AI Agent:**
+> Retrieving HTML... I've fetched the raw HTML code for form 9876543. You can now copy and paste it into your website's source code.
+
+
 ## Installation & Usage
 
 To install and use the **Formstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Formstack** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

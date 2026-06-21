@@ -1,12 +1,14 @@
 # GiveForms MCP Server
 
-Retrieve donation records and oversee fundraising data via AI agents with GiveForms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/giveforms)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/giveforms)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/giveforms-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/giveforms-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** payment-processing
-**Tools Count:** 8
+
+**Category:** [payment-processing](../categories/payment-processing.md)
+
+Retrieve donation records and oversee fundraising data via AI agents with GiveForms.
 
 ## Description
 Connect your **GiveForms** account to any AI agent to automate your donation data extraction and fundraising reporting through the Model Context Protocol (MCP). GiveForms is a high-conversion donation platform for nonprofits. This MCP server enables you to retrieve detailed donation records, filter contributions by campaign, and search for donor activity directly through natural conversation.
@@ -44,6 +46,33 @@ Connect your **GiveForms** account to any AI agent to automate your donation dat
 - **list_recent_donations**: List latest records
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GiveForms** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all donations received this month."
+
+**🤖 AI Agent:**
+> Retrieving donations... I found 15 donations for this month, including $100 from 'John Smith' and $25 from 'Jane Doe'. Would you like the full details for the largest contribution?
+
+---
+
+**👤 You:**
+> "Find all donations from donor 'alice@email.com'."
+
+**🤖 AI Agent:**
+> Searching records... Alice Smith has made 3 donations totaling $150. Her most recent was $50 for the 'Winter Fundraiser'.
+
+---
+
+**👤 You:**
+> "Show me the 5 most recent donations for campaign '98765'."
+
+**🤖 AI Agent:**
+> Fetching campaign donations... For campaign 98765, I found 5 recent contributions. All are processed successfully. Would you like to see the donor names?
+
+
 ## Installation & Usage
 
 To install and use the **GiveForms** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **GiveForms** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

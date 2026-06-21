@@ -1,12 +1,14 @@
 # Particle Network MCP Server
 
-Manage Web3 infrastructure via Particle Network — handle Account Abstraction, UserOperations, and identity management directly through AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/particle-network)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/particle-network)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/particle-network-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/particle-network-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 16
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage Web3 infrastructure via Particle Network — handle Account Abstraction, UserOperations, and identity management directly through AI.
 
 ## Description
 Connect your **Particle Network** project to any AI agent to streamline your Web3 development and user management workflows. This server provides comprehensive tools for Account Abstraction (AA), Bundler operations, and identity verification.
@@ -51,6 +53,33 @@ Connect your **Particle Network** project to any AI agent to streamline your Web
 - **pm_sponsor_user_operation**: Returns a Paymaster signature for sponsorship
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Particle Network** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get user info for UUID '550e8400-e29b-41d4-a716-446655440000' with token 'xyz123'."
+
+**🤖 AI Agent:**
+> I've retrieved the user details. The profile is active and associated with the email 'user@example.com'. Would you like to see the connected wallet addresses?
+
+---
+
+**👤 You:**
+> "Check if the EVM address 0x123...abc is a user in my project."
+
+**🤖 AI Agent:**
+> I've checked the project records. The address 0x123...abc is indeed registered as a user in your Particle project on the EVM chain.
+
+---
+
+**👤 You:**
+> "Fetch fee quotes for a UserOperation on the polygon chain."
+
+**🤖 AI Agent:**
+> I've fetched the fee quotes for Polygon. You have options for payment in native MATIC or via Paymaster sponsorship. Which one would you like to proceed with?
+
+
 ## Installation & Usage
 
 To install and use the **Particle Network** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Particle Network** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

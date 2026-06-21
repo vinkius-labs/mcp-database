@@ -1,12 +1,14 @@
 # Browserbear MCP Server
 
-Automate browser tasks via Browserbear — take screenshots, scrape data, and run multi-step automations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/browserbear)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserbear)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserbear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserbear-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate browser tasks via Browserbear — take screenshots, scrape data, and run multi-step automations directly from any AI agent.
 
 ## Description
 Connect your **Browserbear (Roborabbit)** account to any AI agent and orchestrate your browser automation, web scraping, and visual monitoring workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Browserbear (Roborabbit)** account to any AI agent and orchestrat
 - **take_screenshot**: Take a quick screenshot of a URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Browserbear** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my browser automation tasks."
+
+**🤖 AI Agent:**
+> I've retrieved your tasks. You have 3 tasks: 'Daily News Scraper' (ID: task_1), 'Visual Check' (ID: task_2), and 'Login Flow' (ID: task_3).
+
+---
+
+**👤 You:**
+> "Take a screenshot of https://vinkius.com at 1280x800 resolution."
+
+**🤖 AI Agent:**
+> Screenshot run created! I'm capturing https://vinkius.com now. You can check the result using run ID run_99283 in a few moments.
+
+---
+
+**👤 You:**
+> "Run task task_123 and override the starting URL to https://google.com."
+
+**🤖 AI Agent:**
+> Task run tr_8877 has been triggered with the URL override. I will monitor it for completion.
+
+
 ## Installation & Usage
 
 To install and use the **Browserbear** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Browserbear** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

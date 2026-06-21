@@ -1,12 +1,14 @@
 # Upstash Redis MCP Server
 
-Equip your AI to directly query, manage, and manipulate key-value data structures inside your serverless Upstash Redis databases.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash-redis)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upstash-redis)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upstash-redis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upstash-redis-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Equip your AI to directly query, manage, and manipulate key-value data structures inside your serverless Upstash Redis databases.
 
 ## Description
 Connect your **Upstash Redis** serverless database securely to your conversational AI agent via their REST API. Activating this integration grants your AI the technical autonomy to function as a responsive database administrator, enabling it to scan live keys, read raw datastore strings, set temporal expiration values, and even debug in real-time straight from your chat or IDE terminal.
@@ -49,6 +51,33 @@ Scans for keys matching a glob pattern
 Sets a string value at a key with an optional TTL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Upstash Redis** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active Redis keys associated with app sessions."
+
+**🤖 AI Agent:**
+> I invoked the `list_keys` query with the pattern 'session:*'. Found 3 active keys residing in your environment.
+
+---
+
+**👤 You:**
+> "Check the Time-To-Live duration limit configured for the 'cache:product_header' key."
+
+**🤖 AI Agent:**
+> I checked the key info via `get_key_info`. The 'cache:product_header' value is a standard String and currently holds a remaining Time-to-Live format of exactly 3600 seconds.
+
+---
+
+**👤 You:**
+> "Delete all caching strings tagged as 'user_193_avatar' from the database immediately."
+
+**🤖 AI Agent:**
+> Using the `delete` tool, I have entirely removed the 'user_193_avatar' cache key structure from the Upstash datastore instance. Future calls seeking this key limit will return null entries until regenerated.
+
+
 ## Installation & Usage
 
 To install and use the **Upstash Redis** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Upstash Redis** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

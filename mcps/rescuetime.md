@@ -1,12 +1,14 @@
 # RescueTime MCP Server
 
-Track productivity, manage Focus Sessions, and analyze time usage directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rescuetime)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rescuetime)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rescuetime-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rescuetime-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 54
+
+**Category:** [productivity](../categories/productivity.md)
+
+Track productivity, manage Focus Sessions, and analyze time usage directly from your AI agent.
 
 ## Description
 Connect your **RescueTime** account to any AI agent to gain deep insights into your productivity and manage your focus in real-time through natural conversation.
@@ -89,6 +91,33 @@ Connect your **RescueTime** account to any AI agent to gain deep insights into y
 - **upsert_profile_entity**: Upsert an override for an app/site
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **RescueTime** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my productivity summary for the last 7 days."
+
+**🤖 AI Agent:**
+> I've retrieved your daily summary feed. Over the last week, your average productivity pulse was 72. Your most productive day was Tuesday, with 6 hours of focused work logged.
+
+---
+
+**👤 You:**
+> "Start a 45-minute Focus Session for me."
+
+**🤖 AI Agent:**
+> Focus Session started! I've triggered a 45-minute session via RescueTime. Distractions are now blocked so you can stay in the zone. Good luck!
+
+---
+
+**👤 You:**
+> "What were my top 5 most distracting activities yesterday?"
+
+**🤖 AI Agent:**
+> Analyzing your activity data... Yesterday, your top distractions were: 1. YouTube (45m), 2. Twitter (30m), 3. News sites (20m), 4. Personal Email (15m), and 5. Reddit (10m).
+
+
 ## Installation & Usage
 
 To install and use the **RescueTime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -97,4 +126,11 @@ To install and use the **RescueTime** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

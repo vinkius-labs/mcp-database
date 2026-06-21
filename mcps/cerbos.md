@@ -1,12 +1,14 @@
 # Cerbos MCP Server
 
-Decouple authorization logic from your application. Evaluate permissions, generate query plans, and manage access control via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cerbos)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cerbos)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cerbos-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cerbos-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 6
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Decouple authorization logic from your application. Evaluate permissions, generate query plans, and manage access control via AI.
 
 ## Description
 Connect your **Cerbos** instance to any AI agent to manage complex authorization policies through natural language conversation.
@@ -44,6 +46,33 @@ Evaluates permissions for a principal on a set of resources
 - **get_server_info**: Returns the version and build details of the Cerbos instance
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cerbos** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if principal 'user_123' with role 'editor' can 'edit' resource 'document:abc'."
+
+**🤖 AI Agent:**
+> I've evaluated the request using `check_resources`. For principal 'user_123', the action 'edit' on resource 'document:abc' is ALLOWED based on the current policy.
+
+---
+
+**👤 You:**
+> "Generate a query plan for 'view' action on 'expense' resources for principal 'manager'."
+
+**🤖 AI Agent:**
+> Using `plan_resources`, I've generated the AST. The condition requires the 'department' attribute of the resource to match the principal's department. You can apply this filter to your database query.
+
+---
+
+**👤 You:**
+> "Show me the Cerbos server build details."
+
+**🤖 AI Agent:**
+> I've retrieved the server info using `get_server_info`. Your instance is running version 0.34.0, built on 2024-01-15.
+
+
 ## Installation & Usage
 
 To install and use the **Cerbos** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Cerbos** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # fal.ai 3D MCP Server
 
-Generate 3D models via fal.ai — convert images and text to 3D assets using Rodin, TripoSR, Trellis, and 9+ AI models from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/falai-3d)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/falai-3d)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/falai-3d-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/falai-3d-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 12
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Generate 3D models via fal.ai — convert images and text to 3D assets using Rodin, TripoSR, Trellis, and 9+ AI models from any AI agent.
 
 ## Description
 Connect your **fal.ai 3D Models API** to any AI agent and take full control of AI-powered 3D asset generation from images and text through natural conversation.
@@ -81,6 +83,33 @@ Generate 3D models from images using TripoSR, optimized for speed
 Generate unique 3D models with diverse geometry from images
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **fal.ai 3D** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a 3D model of a chair from this product image: https://example.com/chair.jpg"
+
+**🤖 AI Agent:**
+> Generating 3D model using Hyper3D Rodin... Processing image: https://example.com/chair.jpg. Generation complete! Model generated in GLB format (4.2 MB) with PBR textures. Download URL: https://cdn.fal.ai/models/rodin/chair_3d_model.glb. The model includes detailed geometry with 50K triangles and 2K texture maps. Compatible with Unity, Unreal Engine, Blender, and web 3D viewers. Would you like me to generate in a different format like OBJ or USDZ?
+
+---
+
+**👤 You:**
+> "Create a 3D model of a fantasy dragon from text description."
+
+**🤖 AI Agent:**
+> Generating 3D model from text using Text-to-3D... Prompt: fantasy dragon with spread wings, detailed scales, fierce expression. Using guidance scale 7.5 with 50 steps. Generation complete! Model available in GLB format (8.7 MB). Download URL: https://cdn.fal.ai/models/text-to-3d/fantasy_dragon.glb. The dragon model features detailed wing geometry, scale textures, and dynamic pose. Ready for game engines and 3D printing. Would you like a higher quality version with more generation steps?
+
+---
+
+**👤 You:**
+> "Quickly convert this sneaker photo to 3D for our e-commerce store."
+
+**🤖 AI Agent:**
+> Using TripoSR for fast generation... Processing sneaker image. Generation complete in 3 seconds! Model in GLB format (2.1 MB). Download: https://cdn.fal.ai/models/triposr/sneaker_3d.glb. Quick preview quality is suitable for e-commerce 3D viewers with basic textures. For production quality, I can regenerate using Rodin (higher quality, ~30 seconds) or Make3D (production-ready, ~45 seconds). Which would you prefer?
+
+
 ## Installation & Usage
 
 To install and use the **fal.ai 3D** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **fal.ai 3D** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

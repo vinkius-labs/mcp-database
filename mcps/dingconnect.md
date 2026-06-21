@@ -1,12 +1,14 @@
 # DingConnect MCP Server
 
-Equip your AI agent to manage mobile top-ups, track operators, and monitor account balance via the DingConnect API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dingconnect)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dingconnect)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dingconnect-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dingconnect-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 10
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Equip your AI agent to manage mobile top-ups, track operators, and monitor account balance via the DingConnect API.
 
 ## Description
 Integrate **DingConnect**, the world's leading mobile top-up platform, directly into your AI workflow. Access thousands of mobile operators globally, manage your top-up and data products, monitor real-time account balances, and track transaction history using natural language.
@@ -44,6 +46,33 @@ Integrate **DingConnect**, the world's leading mobile top-up platform, directly 
 - **search_topup_products**: Search for specific top-up or data products by name keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DingConnect** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all mobile operators available in Brazil."
+
+**🤖 AI Agent:**
+> I've found 4 operators available in Brazil via DingConnect: 'Vivo', 'Claro', 'TIM', and 'Oi'. Would you like to see the available top-up products for Vivo?
+
+---
+
+**👤 You:**
+> "What is my current account credit balance?"
+
+**🤖 AI Agent:**
+> Your current account balance is $250.45 USD. You have successfully processed 15 transactions today. Should I show you the recent transaction history?
+
+---
+
+**👤 You:**
+> "Show me the top-up plans for operator 'Safaricom' in Kenya."
+
+**🤖 AI Agent:**
+> For Safaricom Kenya (KE), I've found several plans including '100 KES Top-up', '500MB Data Bundle', and 'International Voice Package'. Would you like the technical product keys for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **DingConnect** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **DingConnect** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

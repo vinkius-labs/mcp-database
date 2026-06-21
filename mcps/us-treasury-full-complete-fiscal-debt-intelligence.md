@@ -1,12 +1,14 @@
 # U.S. Treasury Full — Complete Fiscal & Debt Intelligence MCP Server
 
-The definitive U.S. Treasury Mega-Server: 13 tools covering national debt ($34T+), interest rates, auction results, federal budget accounting (revenue, spending, deficit), daily cash balances, and official exchange rates. Total access to the financial pulse of the U.S. government without API keys.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/us-treasury-full-complete-fiscal-debt-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/us-treasury-full-complete-fiscal-debt-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/us-treasury-full-complete-fiscal-debt-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/us-treasury-full-complete-fiscal-debt-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 13
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The definitive U.S. Treasury Mega-Server: 13 tools covering national debt ($34T+), interest rates, auction results, federal budget accounting (revenue, spending, deficit), daily cash balances, and official exchange rates. Total access to the financial pulse of the U.S. government without API keys.
 
 ## Description
 The **ultimate U.S. Treasury Mega-Server** — 13 tools.
@@ -62,6 +64,45 @@ Get Treasury exchange rate history for a specific currency
 Query any Treasury Fiscal Data dataset by endpoint path
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **U.S. Treasury Full — Complete Fiscal & Debt Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Give me a complete summary of the U.S. fiscal state: current debt, latest deficit, and cash balance."
+
+**🤖 AI Agent:**
+> 📊 **U.S. Treasury: Fiscal State Overview**
+
+- National Debt: $34,812,456,789.12
+- Fiscal Year Deficit to Date: $845,000,000,000
+- Current Treasury Cash Balance: $825,443,000,000
+
+---
+
+**👤 You:**
+> "Extract federal spending vs federal revenue for the last 6 months"
+
+**🤖 AI Agent:**
+> 📊 **U.S. Federal Revenues vs. Outlays (6 Months)**
+
+- Mar 2026: Revenue $354B | Outlays $492B | Deficit $138B
+- Feb 2026: Revenue $271B | Outlays $567B | Deficit $296B
+- Jan 2026: Revenue $477B | Outlays $455B | Surplus $22B
+
+---
+
+**👤 You:**
+> "Show historic exchange rates for USD -> GBP to analyze currency fluctuations"
+
+**🤖 AI Agent:**
+> 📊 **Historical Rates: UK (Pound Sterling)**
+
+- Mar 2026: 0.79 GBP per 1 USD
+- Dec 2025: 0.78 GBP per 1 USD
+- Sep 2025: 0.82 GBP per 1 USD
+
+
 ## Installation & Usage
 
 To install and use the **U.S. Treasury Full — Complete Fiscal & Debt Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +111,11 @@ To install and use the **U.S. Treasury Full — Complete Fiscal & Debt Intellige
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

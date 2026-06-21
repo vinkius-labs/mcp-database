@@ -1,12 +1,14 @@
 # Open Food Facts MCP Server
 
-Access the world's largest open food database — retrieve nutrition facts, ingredients, and environmental scores for millions of products.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-food-facts-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-food-facts-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-food-facts-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 2
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the world's largest open food database — retrieve nutrition facts, ingredients, and environmental scores for millions of products.
 
 ## Description
 Connect to **Open Food Facts**, the collaborative, free, and open database of food products from around the world. This MCP server allows your AI agent to analyze millions of products to help with nutrition tracking, dietary research, and conscious shopping.
@@ -36,6 +38,33 @@ Connect to **Open Food Facts**, the collaborative, free, and open database of fo
 - **search_products**: Search for products using keywords and filters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open Food Facts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get product details for barcode 3017620422003."
+
+**🤖 AI Agent:**
+> I've retrieved the data for Nutella (400g). It has a Nutri-Score of 'E', contains ingredients like sugar and palm oil, and belongs to the 'Chocolate spreads' category. Would you like to see the full nutritional breakdown?
+
+---
+
+**👤 You:**
+> "Search for 'Organic' dark chocolate brands."
+
+**🤖 AI Agent:**
+> I found several organic dark chocolate products. Notable brands include 'Alter Eco' and 'Green & Black's'. Would you like me to list the specific products and their cocoa percentages?
+
+---
+
+**👤 You:**
+> "Find products in the 'Beverages' category that are 'without' additives."
+
+**🤖 AI Agent:**
+> Searching the database... I've found several additive-free beverages, including various mineral waters and pure fruit juices like 'Innocent Orange Juice'. Would you like the details for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Open Food Facts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **Open Food Facts** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

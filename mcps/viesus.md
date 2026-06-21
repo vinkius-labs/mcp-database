@@ -1,12 +1,14 @@
 # Viesus MCP Server
 
-Enhance photos automatically with AI that adjusts exposure, color balance, and sharpness to make every image look professional.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/viesus)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/viesus)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/viesus-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/viesus-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enhance photos automatically with AI that adjusts exposure, color balance, and sharpness to make every image look professional.
 
 ## Description
 Connect your **Viesus** account to any AI agent and simplify your professional image processing and enhancement workflows through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Viesus** account to any AI agent and simplify your professional i
 - **upload_image_to_viesus**: Upload an image for processing
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Viesus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my Viesus credit balance."
+
+**🤖 AI Agent:**
+> I've retrieved your balance. You currently have 450 credits available for image processing. Would you like to check the status of your last enhancement job?
+
+---
+
+**👤 You:**
+> "Enhance image 'img_12903' using the 'standard-high' preset."
+
+**🤖 AI Agent:**
+> AI enhancement initiated! The job has been queued with ID job_8823. I'll monitor the status and let you know as soon as the enhanced version is ready for download.
+
+---
+
+**👤 You:**
+> "Show me the technical metadata for the image I just uploaded."
+
+**🤖 AI Agent:**
+> Fetching metadata... The image (ID: img_10293) has a resolution of 4000x3000px, uses the sRGB color space, and is in JPEG format. Shall we apply an enhancement preset to it?
+
+
 ## Installation & Usage
 
 To install and use the **Viesus** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Viesus** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Crowdin MCP Server
 
-Equip your AI agent to manage localization projects, files, and translations directly via the Crowdin API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/crowdin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/crowdin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/crowdin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Equip your AI agent to manage localization projects, files, and translations directly via the Crowdin API.
 
 ## Description
 Integrate **Crowdin**, the leading localization management platform, directly into your AI workflow. Manage your translation projects, monitor file statuses, and track localization tasks using natural language.
@@ -64,6 +66,33 @@ List all files within a specific project
 List all glossaries available in the account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Crowdin** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all localization projects in my account."
+
+**🤖 AI Agent:**
+> I've found 5 localization projects, including 'Mobile App', 'Marketing Website', and 'Documentation Portal'. Would you like to see the file status for any of these?
+
+---
+
+**👤 You:**
+> "What is the status of files in project 'Mobile App'?"
+
+**🤖 AI Agent:**
+> Project 'Mobile App' (ID: 123) contains 15 files. 'en.json' is 100% translated, while 'notifications.xml' is at 85%. Should I list the pending tasks for this project?
+
+---
+
+**👤 You:**
+> "List all active translation tasks for my projects."
+
+**🤖 AI Agent:**
+> I've retrieved 3 active tasks: 'Translate UI Strings' (due June 15), 'Review Help Docs' (due June 20), and 'Proofread Marketing Copy'. Would you like the details for a specific task?
+
+
 ## Installation & Usage
 
 To install and use the **Crowdin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Crowdin** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

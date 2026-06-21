@@ -1,12 +1,14 @@
 # api.video MCP Server
 
-Automate video workflows via api.video — upload, stream, and analyze video content directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apivideo-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apivideo-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apivideo-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apivideo-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 49
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate video workflows via api.video — upload, stream, and analyze video content directly from any AI agent.
 
 ## Description
 Connect your **api.video** account to any AI agent and take full control of your video infrastructure through natural conversation.
@@ -89,6 +91,33 @@ List all video objects
 - **upload_video_source**: Ingest a video source from a URL
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **api.video** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the videos in my api.video account."
+
+**🤖 AI Agent:**
+> I've retrieved your video list. You have 12 videos. The most recent ones are 'Product Demo' (ID: vi4k0j...) and 'Customer Interview' (ID: vi2l9m...). Would you like details on any of these?
+
+---
+
+**👤 You:**
+> "Check the encoding status for video vi4k0jv6psL."
+
+**🤖 AI Agent:**
+> The video 'Product Demo' (vi4k0jv6psL) is currently 100% encoded for HLS and 720p, 1080p qualities are ready. It is playable and ready for distribution.
+
+---
+
+**👤 You:**
+> "Create a new live stream titled 'Q4 All Hands'."
+
+**🤖 AI Agent:**
+> Live stream 'Q4 All Hands' has been created successfully. Your Stream Key is '7f8e9a...' and the RTMP server is 'rtmp://broadcast.api.video/s'. You can start broadcasting whenever you're ready.
+
+
 ## Installation & Usage
 
 To install and use the **api.video** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -97,4 +126,11 @@ To install and use the **api.video** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

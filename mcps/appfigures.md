@@ -1,12 +1,14 @@
 # Appfigures MCP Server
 
-Analyze app store performance with Appfigures — track downloads, revenue, reviews, and rankings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/appfigures)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/appfigures)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/appfigures-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/appfigures-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 11
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Analyze app store performance with Appfigures — track downloads, revenue, reviews, and rankings via AI.
 
 ## Description
 The **Appfigures MCP Server** provides your AI agent with direct access to your mobile app intelligence and store data. Gain instant insights into your app's performance across iOS, Google Play, and other major stores using simple natural language.
@@ -41,6 +43,33 @@ The **Appfigures MCP Server** provides your AI agent with direct access to your 
 - **search_products**: Search for any mobile app across all supported stores
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Appfigures** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the sales report for the last 30 days."
+
+**🤖 AI Agent:**
+> I've retrieved your sales report. You had 5,420 total downloads and 12,800 updates over the last 30 days.
+
+---
+
+**👤 You:**
+> "What are the latest reviews for my iOS app?"
+
+**🤖 AI Agent:**
+> I found 10 new reviews for your iOS app. Most are positive, highlighting the new UI, but 2 users mentioned a crash on the login screen.
+
+---
+
+**👤 You:**
+> "Search for the 'Instagram' app on the App Store."
+
+**🤖 AI Agent:**
+> I've searched for 'Instagram'. It's currently ranked #1 in Photo & Video with over 4 billion downloads estimated globally.
+
+
 ## Installation & Usage
 
 To install and use the **Appfigures** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Appfigures** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

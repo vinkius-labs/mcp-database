@@ -1,12 +1,14 @@
 # Mapbox MCP Server
 
-Geocode addresses, get directions, calculate distances and generate maps with Mapbox's location platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapbox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapbox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 8
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Geocode addresses, get directions, calculate distances and generate maps with Mapbox's location platform.
 
 ## Description
 Connect to **Mapbox** and access world-class location services through natural conversation.
@@ -62,6 +64,33 @@ Convert coordinates to an address
 Search for places near coordinates
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mapbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Geocode '1600 Pennsylvania Ave, Washington DC'."
+
+**🤖 AI Agent:**
+> Found: The White House at 38.8977°N, 77.0365°W. Full address: 1600 Pennsylvania Avenue NW, Washington, DC 20500, United States. Place type: address. Bounding box provided.
+
+---
+
+**👤 You:**
+> "Get driving directions from San Francisco to Los Angeles."
+
+**🤖 AI Agent:**
+> Route from San Francisco to Los Angeles: 616 km (383 miles), estimated 5 hours 50 minutes via I-5 S. Step-by-step instructions include: Head south on Market St, merge onto US-101 S, continue on I-5 S to Los Angeles.
+
+---
+
+**👤 You:**
+> "Show me the area reachable within 15 minutes driving from Times Square, NYC."
+
+**🤖 AI Agent:**
+> Within 15 minutes driving from Times Square you can reach: most of Manhattan below 96th St, parts of Brooklyn (Williamsburg, DUMBO), Long Island City in Queens, and parts of the Bronx via the bridges. The isochrone polygon covers approximately 85 square km.
+
+
 ## Installation & Usage
 
 To install and use the **Mapbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Mapbox** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

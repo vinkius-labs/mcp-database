@@ -1,12 +1,14 @@
 # SkuVault MCP Server
 
-Manage your SkuVault inventory, products, lots, and purchase orders directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/skuvault)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skuvault)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skuvault-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skuvault-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** order-management
-**Tools Count:** 20
+
+**Category:** [order-management](../categories/order-management.md)
+
+Manage your SkuVault inventory, products, lots, and purchase orders directly from any AI agent.
 
 ## Description
 Connect your **SkuVault** account to any AI agent to streamline your warehouse and inventory management workflows through natural conversation.
@@ -49,6 +51,33 @@ Connect your **SkuVault** account to any AI agent to streamline your warehouse a
 - **get_lots**: Retrieve product lots
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SkuVault** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Add 15 units of SKU 'WIDGET-A' to warehouse 2, location 'LOC-99' with reason 'Restock'."
+
+**🤖 AI Agent:**
+> I will call the `add_item` tool with Sku: 'WIDGET-A', WarehouseId: 2, LocationCode: 'LOC-99', Quantity: 15, and Reason: 'Restock' to update the inventory.
+
+---
+
+**👤 You:**
+> "Retrieve lot inventory details for location 'ZONE-B'."
+
+**🤖 AI Agent:**
+> I will query the SkuVault API using the `get_lot_inventory_by_location` tool with the location filter set to 'ZONE-B' to fetch the lot details.
+
+---
+
+**👤 You:**
+> "Create a new product with SKU 'SHIRT-XL-RED' named 'Red XL Shirt'."
+
+**🤖 AI Agent:**
+> I will use the `create_product` tool to create a new product with SKU 'SHIRT-XL-RED' and name 'Red XL Shirt' in your SkuVault catalog.
+
+
 ## Installation & Usage
 
 To install and use the **SkuVault** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **SkuVault** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

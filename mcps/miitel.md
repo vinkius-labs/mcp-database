@@ -1,12 +1,14 @@
 # MiiTel MCP Server
 
-Analyze phone conversations with AI that scores call quality, identifies sentiment, and provides coaching insights for sales teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/miitel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/miitel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/miitel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/miitel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 6
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Analyze phone conversations with AI that scores call quality, identifies sentiment, and provides coaching insights for sales teams.
 
 ## Description
 Connect your **MiiTel** account to any AI agent and manage AI-powered speech analysis and call data through natural conversation.
@@ -41,6 +43,33 @@ Connect your **MiiTel** account to any AI agent and manage AI-powered speech ana
 - **list_miitel_users**: List MiiTel account users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MiiTel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show speech analytics for Mike's latest sales call."
+
+**🤖 AI Agent:**
+> Call ID: call_890 (Mike vs Acme Corp). Duration: 14m 20s. Talk Ratio: 45% Mike / 55% Customer (Excellent ✅). Speech Rate: 160 WPM. Interruptions: 2. Longest silence: 4.5s. Emotion: Positive trend at the end.
+
+---
+
+**👤 You:**
+> "Get the transcript summary for call call_890."
+
+**🤖 AI Agent:**
+> Transcript (call_890): Mike asked discovery questions about Acme's current CRM setup. Customer mentioned 'Salesforce is too expensive'. Mike pitched the Pro Plan at $45/mo. Customer agreed to a follow-up demo next Tuesday. Competitor mentioned: Salesforce.
+
+---
+
+**👤 You:**
+> "Show today's call volume and team performance."
+
+**🤖 AI Agent:**
+> Team Performance (Today): Total calls: 145. Total connected: 42 (28%). Avg duration: 4m 12s. Top performer: Sarah (18 connected, avg talk ratio 48%). Lowest talk ratio: John (85% talking - needs coaching ⚠️).
+
+
 ## Installation & Usage
 
 To install and use the **MiiTel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **MiiTel** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

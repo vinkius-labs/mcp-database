@@ -1,12 +1,14 @@
 # FDA (openFDA) MCP Server
 
-Access public health data via openFDA — search drug labeling, monitor adverse events, and track food recalls directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fda-openfda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fda-openfda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fda-openfda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fda-openfda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 12
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access public health data via openFDA — search drug labeling, monitor adverse events, and track food recalls directly through your AI agent.
 
 ## Description
 Connect to the **openFDA** public database through any AI agent and gain instant access to thousands of datasets regarding drugs, food, and medical devices.
@@ -48,6 +50,33 @@ Connect to the **openFDA** public database through any AI agent and gain instant
 - **search_ndc**: Search the National Drug Code directory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FDA (openFDA)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for adverse events reported for Ibuprofen."
+
+**🤖 AI Agent:**
+> Searching drug adverse events... I've retrieved the latest reports. Common reported reactions include nausea and headache. Would you like to see the demographic breakdown of these reports?
+
+---
+
+**👤 You:**
+> "Are there any recent food recalls in New York?"
+
+**🤖 AI Agent:**
+> Inspecting food enforcement reports... I found 3 recent recalls affecting New York, including a voluntary recall of organic spinach due to potential contamination. Shall I list the specific product details?
+
+---
+
+**👤 You:**
+> "Show me the label information for Advil."
+
+**🤖 AI Agent:**
+> Retrieving Advil product label... I've found the official FDA labeling. It contains detailed indications, dosage instructions, and warnings. Would you like me to summarize the usage guidelines?
+
+
 ## Installation & Usage
 
 To install and use the **FDA (openFDA)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **FDA (openFDA)** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

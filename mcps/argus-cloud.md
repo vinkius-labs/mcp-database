@@ -1,12 +1,14 @@
 # ARGUS Cloud MCP Server
 
-Manage commercial real estate assets and portfolios with ARGUS — track valuations and alerts via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/argus-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/argus-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/argus-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/argus-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 6
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Manage commercial real estate assets and portfolios with ARGUS — track valuations and alerts via AI.
 
 ## Description
 The **ARGUS Cloud MCP Server** provides a high-level natural language interface to your Altus Group commercial real estate (CRE) management platform. Empower your AI agent to monitor your asset performance, audit portfolio health, and track real-time notifications directly from your workflow.
@@ -36,6 +38,33 @@ The **ARGUS Cloud MCP Server** provides a high-level natural language interface 
 - **list_portfolios**: List all asset portfolios
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ARGUS Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all commercial assets in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your assets. You have 25 commercial properties, including 'Sunrise Office Plaza' and 'Eastside Industrial Park'.
+
+---
+
+**👤 You:**
+> "Show me the latest valuation for 'Sunrise Office Plaza'."
+
+**🤖 AI Agent:**
+> The latest valuation for 'Sunrise Office Plaza' is $15,250,000, as of the Q4 2023 appraisal.
+
+---
+
+**👤 You:**
+> "Are there any recent alerts from ARGUS?"
+
+**🤖 AI Agent:**
+> I've found 2 recent notifications: one regarding an expiring lease in Portfolio A, and another about a pending valuation review for Asset B.
+
+
 ## Installation & Usage
 
 To install and use the **ARGUS Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **ARGUS Cloud** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

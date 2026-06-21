@@ -1,12 +1,14 @@
 # Strapi MCP Server
 
-Connect your AI to Strapi. Fully orchestrate your headless CMS — create entries, manage content types, and upload media assets naturally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/strapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 9
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect your AI to Strapi. Fully orchestrate your headless CMS — create entries, manage content types, and upload media assets naturally.
 
 ## Description
 Integrate the robust headless architecture of **Strapi** seamlessly into your conversational LLM workflows. By linking your AI securely to the Strapi REST ecosystem, engineering and content teams can effortlessly design schema types, interact with entries, and orchestrate media libraries directly from the terminal.
@@ -53,6 +55,45 @@ Updates fields of an existing content entry
 Uploads a new file to the Media Library
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Strapi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Review my Strapi content types and show the schema for 'product'."
+
+**🤖 AI Agent:**
+> Connected to Strapi.
+**Content Types (`list_content_types`)**:
+- `api::user.user`
+- `api::product.product`
+
+Schema for `api::product.product`:
+- `title` (string), `price_tag` (decimal), `sku_code` (string), `available_inventory` (integer).
+
+---
+
+**👤 You:**
+> "Construct a newly formatted post about system updates in the 'articles' content type."
+
+**🤖 AI Agent:**
+> Building JSON parameters...
+
+**Executing Task (`create_entry`)**:
+Successfully created entry ID: `402` in the `api::article.article` collection. Title set to 'System Updates V2', formatted correctly.
+
+---
+
+**👤 You:**
+> "Upload a new promotional image dependency securely into the Media Library."
+
+**🤖 AI Agent:**
+> Accessing the Strapi Media Library securely...
+
+**Asset Deployed (`upload_media_asset`)**:
+The image `promo_banner_spring.jpg` has been successfully uploaded and is assigned the dynamic referential ID: `1005`. It's ready to be bound to your entries.
+
+
 ## Installation & Usage
 
 To install and use the **Strapi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +102,11 @@ To install and use the **Strapi** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

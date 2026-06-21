@@ -1,12 +1,14 @@
 # Dashdoc MCP Server
 
-Equip your AI agent to manage transport orders, fleet, and delivery addresses via the Dashdoc API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dashdoc)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dashdoc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dashdoc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dashdoc-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Equip your AI agent to manage transport orders, fleet, and delivery addresses via the Dashdoc API.
 
 ## Description
 Integrate **Dashdoc**, the leading transport management system (TMS), directly into your AI workflow. Manage your transport orders, monitor your fleet of trucks and trailers, and track delivery addresses using natural language.
@@ -64,6 +66,33 @@ List all trucks in your fleet
 Search for transport orders by reference keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dashdoc** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all transport orders that are 'Ongoing'."
+
+**🤖 AI Agent:**
+> I've found 5 ongoing transports, including 'Order #TR123' from Paris to Lyon and 'Order #TR124' from Berlin to Munich. Would you like to see the assigned drivers for these?
+
+---
+
+**👤 You:**
+> "Show me the details for transport order 'TR123'."
+
+**🤖 AI Agent:**
+> Transport order 'TR123' is currently 'Loading'. It contains 20 pallets of 'Electronics'. The estimated arrival at destination is tomorrow at 14:00. Should I check the contact info for the pickup point?
+
+---
+
+**👤 You:**
+> "List all trucks in our fleet."
+
+**🤖 AI Agent:**
+> I've retrieved 12 trucks from your fleet, including 'Truck #01 (AB-123-CD)' and 'Truck #02 (EF-456-GH)'. 8 are currently 'Active' and 4 are 'In Maintenance'. Would you like a list of available trailers?
+
+
 ## Installation & Usage
 
 To install and use the **Dashdoc** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Dashdoc** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Supabase MCP Server
 
-Manage Supabase projects, databases and secrets via API — create projects, configure Postgres, manage branches and secrets from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supabase-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supabase-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supabase-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 14
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Supabase projects, databases and secrets via API — create projects, configure Postgres, manage branches and secrets from any AI agent.
 
 ## Description
 Connect your **Supabase** account to any AI agent and take full control of your backend infrastructure through natural conversation.
@@ -77,6 +79,33 @@ Restore a paused Supabase project
 Update PostgreSQL configuration for a Supabase project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Supabase** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all my Supabase projects and their regions."
+
+**🤖 AI Agent:**
+> I found 4 projects: 'prod-api' (us-east-1, active), 'staging-api' (us-east-1, active), 'dev-sandbox' (eu-west-2, active) and 'analytics-db' (ap-southeast-1, paused). Would you like details on any specific project?
+
+---
+
+**👤 You:**
+> "Create a new dev branch called 'feature-auth' for my staging-api project."
+
+**🤖 AI Agent:**
+> Done! I've created the branch 'feature-auth' for your staging-api project. It has an isolated copy of the database that you can modify independently. The branch status is 'CREATING' and should be ready in a few minutes.
+
+---
+
+**👤 You:**
+> "Pause my dev-sandbox project to save costs."
+
+**🤖 AI Agent:**
+> Done! I've paused the 'dev-sandbox' project. All compute resources have been stopped and costs will no longer accrue. Your database and data are fully preserved. You can restore it anytime with `restore_project`.
+
+
 ## Installation & Usage
 
 To install and use the **Supabase** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **Supabase** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

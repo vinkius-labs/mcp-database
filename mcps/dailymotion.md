@@ -1,12 +1,14 @@
 # Dailymotion MCP Server
 
-Manage video hosting via Dailymotion — upload and publish videos, track view counts, manage playlists, and search public content directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dailymotion)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dailymotion)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dailymotion-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dailymotion-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 10
+
+**Category:** [image-video](../categories/image-video.md)
+
+Manage video hosting via Dailymotion — upload and publish videos, track view counts, manage playlists, and search public content directly from any AI agent.
 
 ## Description
 Connect your **Dailymotion** account to any AI agent and take full control of your enterprise video hosting and content delivery workflows through natural conversation.
@@ -51,6 +53,33 @@ Publish a video to Dailymotion. Creates a new video entry from a previously uplo
 - **list_channels**: List Dailymotion content channels. Returns channel IDs, names, and descriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dailymotion** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my last 5 uploaded videos"
+
+**🤖 AI Agent:**
+> I found 5 recent videos on your channel. The latest is 'Product Launch 2024' (Views: 1,200). Others include 'API Tutorial' and 'Office Tour'. Would you like to see the full metadata for any of these?
+
+---
+
+**👤 You:**
+> "Search for public videos about 'SpaceX Starship'"
+
+**🤖 AI Agent:**
+> Searching Dailymotion... I found several videos about 'SpaceX Starship'. The top results include 'Starship Flight 3 Highlights' and 'SpaceX Mars Mission Update'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Change the title of video 'x8abc12' to 'Updated Tutorial'"
+
+**🤖 AI Agent:**
+> Title updated! Video 'x8abc12' is now named 'Updated Tutorial' on your Dailymotion channel. The changes are live and visible to your viewers.
+
+
 ## Installation & Usage
 
 To install and use the **Dailymotion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Dailymotion** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

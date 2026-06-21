@@ -1,12 +1,14 @@
 # Umami (Privacy Analytics) MCP Server
 
-Manage your Umami analytics — track events, manage websites, and oversee users directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/umami-privacy-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/umami-privacy-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/umami-privacy-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/umami-privacy-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 53
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage your Umami analytics — track events, manage websites, and oversee users directly through your AI agent.
 
 ## Description
 Connect your **Umami** instance to any AI agent to monitor your privacy-focused analytics and manage your infrastructure through natural language. Umami is the open-source, privacy-friendly alternative to Google Analytics, and this MCP server gives you full control over your data.
@@ -88,6 +90,33 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **verify_token**: Verify if the current token is still valid
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Umami (Privacy Analytics)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all websites I have access to in Umami."
+
+**🤖 AI Agent:**
+> I've retrieved your websites. You have access to: 'Personal Blog' (ID: 8f2...1a), 'E-commerce Store' (ID: 3d4...9b), and 'Documentation Portal' (ID: 1a2...5c).
+
+---
+
+**👤 You:**
+> "Send a 'newsletter_signup' event for website 8f2...1a on page /thanks."
+
+**🤖 AI Agent:**
+> The event 'newsletter_signup' has been successfully sent to Umami for the specified website and URL.
+
+---
+
+**👤 You:**
+> "Show me all users on this Umami instance."
+
+**🤖 AI Agent:**
+> Fetching user list... I found 3 users: 'admin' (Role: admin), 'editor_jane' (Role: user), and 'viewer_bob' (Role: user).
+
+
 ## Installation & Usage
 
 To install and use the **Umami (Privacy Analytics)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -96,4 +125,11 @@ To install and use the **Umami (Privacy Analytics)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Actionstep MCP Server
 
-Run your law practice smarter with case management, document tracking, and client billing all connected to your AI workflow.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/actionstep)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/actionstep)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/actionstep-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/actionstep-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 8
+
+**Category:** [document-management](../categories/document-management.md)
+
+Run your law practice smarter with case management, document tracking, and client billing all connected to your AI workflow.
 
 ## Description
 Connect your **Actionstep** account to any AI agent and simplify your legal operations and workflow management through natural conversation.
@@ -37,6 +39,33 @@ Connect your **Actionstep** account to any AI agent and simplify your legal oper
 - **list_action_types**: List available matter types
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Actionstep** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active matters in Actionstep."
+
+**🤖 AI Agent:**
+> I've fetched your matters. You have 15 active cases, including 'Purchase of 123 Main St' and 'Estate Planning - Miller'.
+
+---
+
+**👤 You:**
+> "Find contact details for 'John Smith'."
+
+**🤖 AI Agent:**
+> Found John Smith. Email: john@smith.com, Phone: 555-0192. He is associated with 2 active matters.
+
+---
+
+**👤 You:**
+> "Show my tasks for today."
+
+**🤖 AI Agent:**
+> You have 3 tasks due today: 'Review draft contract', 'Client call at 2 PM', and 'File court documents'.
+
+
 ## Installation & Usage
 
 To install and use the **Actionstep** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **Actionstep** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

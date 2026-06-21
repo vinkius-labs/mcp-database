@@ -1,12 +1,14 @@
 # Jira Software Cloud MCP Server
 
-Manage Jira Software Agile workflows — list boards, track sprints, manage backlogs, and inspect epics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-software-cloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jira-software-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jira-software-cloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jira-software-cloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 31
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage Jira Software Agile workflows — list boards, track sprints, manage backlogs, and inspect epics directly from your AI agent.
 
 ## Description
 Connect your **Jira Software Cloud** instance to any AI agent to streamline your Agile project management. This server provides deep integration with Jira's Software-specific features like Boards, Sprints, and Epics.
@@ -70,6 +72,33 @@ Create a new board
 Update a sprint
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jira Software Cloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available Jira boards."
+
+**🤖 AI Agent:**
+> I've found 3 boards: 'Mobile App' (ID: 1), 'Web Backend' (ID: 2), and 'Marketing' (ID: 3). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the issues in the backlog for board 1."
+
+**🤖 AI Agent:**
+> Retrieving backlog for 'Mobile App'... I found 12 issues. The top items are 'Fix login bug' and 'Update splash screen'. Would you like more details on any of these?
+
+---
+
+**👤 You:**
+> "What is the estimation for issue 10123?"
+
+**🤖 AI Agent:**
+> The estimation for issue 10123 is currently set to 5 story points.
+
+
 ## Installation & Usage
 
 To install and use the **Jira Software Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -78,4 +107,11 @@ To install and use the **Jira Software Cloud** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

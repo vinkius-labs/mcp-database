@@ -1,12 +1,14 @@
 # Navisphere MCP Server
 
-Automate freight logistics via Navisphere — search available loads, submit bids, track shipments, and manage documentation directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/navisphere)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/navisphere)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/navisphere-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/navisphere-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** shipping-logistics
-**Tools Count:** 11
+
+**Category:** [shipping-logistics](../categories/shipping-logistics.md)
+
+Automate freight logistics via Navisphere — search available loads, submit bids, track shipments, and manage documentation directly from your AI agent.
 
 ## Description
 Connect your **Navisphere** (C.H. Robinson) account to any AI agent to streamline your supply chain and freight operations through natural conversation.
@@ -51,6 +53,33 @@ Update the status of an assigned shipment
 - **upload_shipment_documents**: Upload documents for a shipment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Navisphere** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for available loads from Chicago, IL to Dallas, TX for a Van (V)."
+
+**🤖 AI Agent:**
+> I found 3 available loads matching your criteria. The most relevant is Load #882910, picking up tomorrow with a weight of 42,000 lbs. Would you like the full details or to submit a bid?
+
+---
+
+**👤 You:**
+> "Submit a bid of 1500 USD for load 882910. Contact is John Doe."
+
+**🤖 AI Agent:**
+> Bid successfully submitted! Your offer of $1,500 USD for Load #882910 has been recorded under John Doe. I will notify you if the status changes.
+
+---
+
+**👤 You:**
+> "Track shipment ID 992288 and show me the latest ETA."
+
+**🤖 AI Agent:**
+> Shipment 992288 is currently 'In Transit'. The latest milestone was 'Departed Chicago Terminal' at 08:00 AM. The estimated arrival in Dallas is tomorrow at 04:30 PM.
+
+
 ## Installation & Usage
 
 To install and use the **Navisphere** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Navisphere** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

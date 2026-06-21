@@ -1,12 +1,14 @@
 # Digify MCP Server
 
-Share documents securely with dynamic watermarks, access controls, and analytics that show exactly who viewed each page.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/digify-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/digify-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/digify-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/digify-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 12
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Share documents securely with dynamic watermarks, access controls, and analytics that show exactly who viewed each page.
 
 ## Description
 Connect your **Digify** account to any AI agent and take full control of your secure document distribution and Virtual Data Room (VDR) workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual watermarking or complex invitation tracking in the web portal. Yo
 - **protect_file**: Securely share a file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Digify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active Virtual Data Rooms in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your secure environments. You currently have 3 active Data Rooms: 'Project Phoenix' (M&A), 'Board Materials 2026', and 'Investor Due Diligence'. Which one should I list the guests for?
+
+---
+
+**👤 You:**
+> "Securely share 'Q1_Financials.pdf' with 'john.doe@example.com' (no download allowed)."
+
+**🤖 AI Agent:**
+> File protected! I've generated a secure sharing link for 'Q1_Financials.pdf' with view-only permissions for John Doe. The link is: [secure_url]. I'll notify you as soon as they access the file.
+
+---
+
+**👤 You:**
+> "Show the last 5 activities for the 'Project Phoenix' Data Room."
+
+**🤖 AI Agent:**
+> Fetching audit logs... The last 5 events include: @user1 viewed 'Asset_List.xlsx', @user2 downloaded the 'NDA', and 3 new guest invitations. Would you like the detailed timestamps for these activities?
+
+
 ## Installation & Usage
 
 To install and use the **Digify** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Digify** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

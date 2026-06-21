@@ -1,12 +1,14 @@
 # LTV:CAC Calculator MCP Server
 
-Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ltvcac-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ltvcac-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/ltvcac-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/ltvcac-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio.
 
 ## Description
 # Assess Unit Economics with Precision
@@ -32,6 +34,33 @@ Calculate Customer Lifetime Value (LTV) based on ARPU, gross margin, and churn r
 - **evaluate_profitability**: Evaluate LTV:CAC ratio, payback period, and profitability verdict
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **LTV:CAC Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "My ARPU is $1200, gross margin is 0.65 (65%), and my annual churn rate is 0.08 (8%). Please calculate the LTV."
+
+**🤖 AI Agent:**
+> I will first run `calculate_ltv` with ARPU=1200, grossMarginPercentage=0.65, and churnRateAnnualPct=0.08. The projected LTV is $10,533.33.
+
+---
+
+**👤 You:**
+> "Calculate CAC for these two channels: Paid Search ($20k spend, 40 customers) and Organic Content ($5k spend, 100 customers)."
+
+**🤖 AI Agent:**
+> Using `calculate_cac`, the resulting CAC is $0.50 for Paid Search ($20k/40) and $0.05 for Organic Content ($5k/100). Total CAC is $10,500.
+
+---
+
+**👤 You:**
+> "Given an LTV of $10,533.33 and a total CAC of $10,500, with a gross margin of 0.65 over 12 months, what is the profitability verdict?"
+
+**🤖 AI Agent:**
+> I will run `evaluate_profitability` using LTV=$10533.33, totalCacAmount=$10500, grossMarginPercentage=0.65, and timePeriodMonths=12. The result shows an Optimal verdict (ratio > 5:1).
+
+
 ## Installation & Usage
 
 To install and use the **LTV:CAC Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -40,4 +69,11 @@ To install and use the **LTV:CAC Calculator** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

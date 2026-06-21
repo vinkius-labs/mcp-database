@@ -1,12 +1,14 @@
 # Reverb MCP Server
 
-Manage your Reverb shop — create listings, track orders, handle payouts, and communicate with buyers directly via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reverb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reverb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reverb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reverb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 30
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your Reverb shop — create listings, track orders, handle payouts, and communicate with buyers directly via AI.
 
 ## Description
 Connect your **Reverb** seller account to any AI agent to manage your musical gear marketplace operations through natural conversation.
@@ -69,6 +71,33 @@ Find seller listings
 - **view_seller_sales**: View seller sales
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reverb** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all my active listings with the SKU 'GUITAR-001'."
+
+**🤖 AI Agent:**
+> I'm searching your listings... I found one active listing for 'GUITAR-001': a 1965 Vintage Stratocaster priced at $4,500. Would you like to see the full details or images?
+
+---
+
+**👤 You:**
+> "Check if my shop is currently in vacation mode."
+
+**🤖 AI Agent:**
+> Checking your shop status... Your shop is currently active and NOT in vacation mode. You can use `enable_vacation_mode` if you need to take a break.
+
+---
+
+**👤 You:**
+> "List my recent payouts and their amounts."
+
+**🤖 AI Agent:**
+> Retrieving your payout history... I found 3 recent payouts: $120.50 on May 10th, $450.00 on May 12th, and $89.00 on May 15th. Do you want to see the line items for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Reverb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Reverb** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

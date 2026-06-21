@@ -1,12 +1,14 @@
 # Mapbox MCP Server
 
-Integrate Mapbox mapping and location services into your AI agent—access vector/raster tiles, static images, directions, and manage datasets.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapbox-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapbox-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapbox-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 27
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Integrate Mapbox mapping and location services into your AI agent—access vector/raster tiles, static images, directions, and manage datasets.
 
 ## Description
 Connect your **Mapbox** account to any AI agent to leverage powerful geospatial capabilities through natural language.
@@ -66,6 +68,33 @@ Get a vector tile from Mapbox
 - **update_dataset_feature**: Update a specific feature in a dataset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mapbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate a driving route between -74.006,40.7128 and -71.0589,42.3601."
+
+**🤖 AI Agent:**
+> I've calculated the route from New York to Boston. The optimal path covers approximately 215 miles with an estimated travel time of 3 hours and 45 minutes via I-95 N.
+
+---
+
+**👤 You:**
+> "Generate a static map image for San Francisco at zoom level 12."
+
+**🤖 AI Agent:**
+> I've generated the static map for San Francisco (Lon: -122.4194, Lat: 37.7749) at zoom 12. You can view the image here: [Map Image URL].
+
+---
+
+**👤 You:**
+> "List all my Mapbox datasets for username 'dev_user'."
+
+**🤖 AI Agent:**
+> I found 3 datasets for 'dev_user': 'city-parks-v1' (ID: cl123...), 'office-locations' (ID: cl456...), and 'transit-routes' (ID: cl789...). Which one would you like to inspect?
+
+
 ## Installation & Usage
 
 To install and use the **Mapbox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Mapbox** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

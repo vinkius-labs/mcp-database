@@ -1,12 +1,14 @@
 # Trimble MCP Server
 
-Equip your AI agent with enterprise-grade truck routing, commercial geocoding, and advanced toll cost logistics algorithms.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/trimble)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/trimble)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/trimble-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/trimble-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Equip your AI agent with enterprise-grade truck routing, commercial geocoding, and advanced toll cost logistics algorithms.
 
 ## Description
 Connect your AI agent exclusively to your **Trimble PC*MILER** logistics infrastructure. Elevate your transportation operations replacing disjointed navigation screens. Communicate organically to your agent to dictate exact vehicle dimensions to avoid tight bridges, compile meticulous state-by-state fuel mileage reports, or estimate holistic transit budgets using precise industrial coordinates.
@@ -57,6 +59,25 @@ Calculates a truck route using specific vehicle dimensions
 - **reverse_geocode**: Converts geographic coordinates into the nearest commercial address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Trimble** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate a truck route starting from -74.0,40.7 to -75.0,41.0."
+
+**🤖 AI Agent:**
+> Route computed successfully. The total truck-safe distance spans 85.3 miles. Expected travel time is approximately 1 hour and 32 minutes along main highways based on these parameters.
+
+---
+
+**👤 You:**
+> "What are the estimated toll costs passing that exact same route?"
+
+**🤖 AI Agent:**
+> Checking toll estimators. The total calculated fees are 12.50 USD utilizing verified electronic transponders, scaling higher unpredicted if operating on cash lanes continuously.
+
+
 ## Installation & Usage
 
 To install and use the **Trimble** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +86,11 @@ To install and use the **Trimble** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Pando MCP Server
 
-Share large files and folders securely with clients using branded transfer portals and download analytics for creative teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pando)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pando)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pando-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pando-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Share large files and folders securely with clients using branded transfer portals and download analytics for creative teams.
 
 ## Description
 Connect your **Pando** account to any AI agent and take full control of your transport management system (TMS) and fulfillment orchestration through natural conversation. Pando provides a world-class platform for logistics visibility, and this integration allows you to retrieve shipment metadata, manage vehicle indents, and monitor warehouse locations directly from your chat interface.
@@ -50,6 +52,33 @@ Create a new vehicle indent
 - **list_vehicles**: List all registered vehicles
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pando** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active shipments in my Pando account."
+
+**🤖 AI Agent:**
+> I've retrieved your shipments. You have 5 active deliveries, including 'Shipment #202' with Global Logistics (Status: In Transit). Which one would you like to see more details for?
+
+---
+
+**👤 You:**
+> "Show me all available carriers and their fleet capacity for the Mumbai to Delhi route."
+
+**🤖 AI Agent:**
+> 4 carriers operate the Mumbai-Delhi corridor. "TransLogix" has 12 vehicles available (8 trucks, 4 trailers) with 96% on-time delivery. "FastFreight" offers 8 vehicles with competitive pricing at Rs 45,000 per trip. "NationalHaulers" has 15 vehicles and the best capacity. "ExpressWay" specializes in temperature-controlled shipments with 5 reefer trucks.
+
+---
+
+**👤 You:**
+> "Create a new vehicle indent request for 3 trucks from Delhi warehouse to Jaipur hub for tomorrow."
+
+**🤖 AI Agent:**
+> Indent request created successfully (ID: IND-8923). 3 trucks requested for Delhi Warehouse to Jaipur Hub, scheduled for May 14th at 6:00 AM. Vehicle type: 20-ft closed body. Estimated transit time: 6 hours. The system has notified 4 registered carriers on this route for bid responses within the next 2 hours.
+
+
 ## Installation & Usage
 
 To install and use the **Pando** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Pando** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

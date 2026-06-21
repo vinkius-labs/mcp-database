@@ -1,12 +1,14 @@
 # Einstein Thought Experiment Prover MCP Server
 
-A team had 14 departments. Three handled 94% of workload. The other 11 existed because 'that is how we always structured it.' Nobody asked 'what is the simplest structure that preserves all functions?' Einstein imagined riding a beam of light and derived special relativity — no lab first. He reduced mass-energy to E=mc². He challenged 200 years of absolute time. This tool forces that discipline: conduct thought experiments before building, simplify to the essential, challenge inherited assumptions, verify invariance across contexts, and unify separate solutions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/einstein-thought-experiment-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/einstein-thought-experiment-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/einstein-thought-experiment-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/einstein-thought-experiment-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** architecture
-**Tools Count:** 1
+
+**Category:** [architecture](../categories/architecture.md)
+
+A team had 14 departments. Three handled 94% of workload. The other 11 existed because 'that is how we always structured it.' Nobody asked 'what is the simplest structure that preserves all functions?' Einstein imagined riding a beam of light and derived special relativity — no lab first. He reduced mass-energy to E=mc². He challenged 200 years of absolute time. This tool forces that discipline: conduct thought experiments before building, simplify to the essential, challenge inherited assumptions, verify invariance across contexts, and unify separate solutions.
 
 ## Description
 AI agents produce complex structures without mentally modeling how they behave. They accept inherited constraints without questioning. They build 14 divisions when 3 would do. They create separate solutions for problems that share a common structure.
@@ -49,6 +51,33 @@ LLMs commit five reasoning failures:
 Structured reflection tool for Einstein-level thought experimentation — mentally modeling system behavior before building, simplifying to the essential formulation, challenging inherited assumptions, verifying invariance across contexts, and unifying separate solutions into common abstractions. Catches Thought Experiment Absent (proposing solutions without mentally modeling how they behave under stress, at boundaries, from different perspectives — jumping to implementation without first imagining yourself inside the system. Einstein imagined riding a beam of light before writing a single equation), Complexity Unresolved ("it is inherently complex" — the excuse for not finding the E=mc². Every complex system has a simpler formulation that preserves all required behavior. If it takes 45 minutes to explain, the explainer has not found the simplification yet), Assumptions Unchallenged ("we have always done it this way" — inherited constraints accepted without questioning their origin. Einstein challenged 200 years of Newtonian absolute time because he questioned what "simultaneous" actually means), Invariance Violated (behavior that changes unpredictably across contexts — different locations, scales, user types, or time periods produce different results for no justified reason. Same laws for all observers), and Unification Missing (separate solutions for similar problems without identifying the common structure — different workflows for different departments when the underlying pattern is identical. Einstein's equivalence principle: gravity and acceleration are the same thing). Call once per complex problem, strategy, or design
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Einstein Thought Experiment Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We need to build a communication system. Let us just build it — we will use separate channels for each department, a central coordination hub, a dedicated archive, and a formal approval chain. The standard approach."
+
+**🤖 AI Agent:**
+> THOUGHT_EXPERIMENT_ABSENT — 'Let us just build it' with 5 components selected before modeling the system. Einstein did not build a laboratory — he imagined riding a beam of light. Place yourself INSIDE a message: it is created → routed → reviewed → delivered → acknowledged. What does it observe? At 10x volume, does the coordination hub become the bottleneck or does the approval chain? When the archive is unavailable for 30 minutes, what happens to 50,000 queued messages? When a department has 10,000 unread items, what does the retrieval look like? Model the system before selecting the structure. The structure should follow from the model, not precede it.
+
+---
+
+**👤 You:**
+> "Thought experiment: message enters → intake logs (2s) → routes to channel (0.1s) → delivers to staff (5s) or queues for batch (3s). At 10x: records handles 83/hour easily. At 100x: batch delivery bottlenecks at 14/min, not records. Simplification: 14 components → 3 (Intake, Records, Routing). Removed coordination hub (unnecessary at 833/hour), dedicated archive (records is dual-purpose), formal approval chain, departmental divisions. Assumptions challenged: 'departments must be separate' — inherited from old org chart, invalid at our scale. 'Formal review required' — designed for high-risk regulatory decisions, ours aren't. Invariance: same pipeline at pilot and full rollout. Same logic domestic and international. Verified via test runs. Unification: memos, notifications, updates share one structure — [event] → [template] → [deliver] → [acknowledge]. One CommunicationChannel interface, 3 implementations, shared retry and templating."
+
+**🤖 AI Agent:**
+> THOUGHT_PROVEN — Einstein Method complete. Thought experiment: communication path modeled with exact timings (intake 2s → routing 0.1s → direct delivery 5s → batch 3s). Stress tested mentally: 10x trivial, 100x bottleneck at batch delivery limit (14/minute default) — not records, not coordination. Boundary: 50,000 unread items handled via priority sorting with index, retrieval under 15 seconds. Simplification: 14 components reduced to 3 (Intake + Records + Routing) — coordination hub, dedicated archive, formal review chain, and departmental divisions identified as inherited convention at 833 entries/hour. Tradeoff: adding staging layer later is a 2-day transition at 12x growth. Assumptions: 'departments must operate separately' challenged (origin: previous org chart, invalid at current scale), 'must have formal review' challenged (designed for high-risk regulatory decisions, ours are neither). Invariance: same pipeline at pilot/rollout, same logic domestic/international, verified via test runs and format verification. Unification: CommunicationChannel interface unifying memos/notifications/updates into 1 interface + 3 adaptations with shared retry and templating. This is elegant design.
+
+---
+
+**👤 You:**
+> "Thought experiment: modeled the communication path. Simplification: reduced to 3 functions. Assumptions: we have always used this departmental structure and that is just how it is done — it is the standard approach and the previous leadership decided on it. Invariance: it works differently at the pilot site because we use a simplified delivery method there."
+
+**🤖 AI Agent:**
+> ASSUMPTIONS_UNCHALLENGED — Thought experiment and simplification pass. But assumptions fail: 'we have always used this structure,' 'that is just how it is done,' 'the standard approach,' 'the previous leadership decided' — four references to convention, zero justification. Einstein challenged 200 years of Newtonian absolute time. Is the departmental structure the right choice for YOUR workload? What are the processing characteristics — is it sequential or parallel? If parallel, did you evaluate a unified team model? WHERE did the departmental decision come from? Is it still valid at your scale? Additionally: 'works differently at the pilot site' — invariance is broken. Einstein's core principle: same laws for all observers. A simplified delivery method at the pilot is acceptable, but the core processing behavior must be identical. Does your retry logic work the same way with the simplified method?
+
+
 ## Installation & Usage
 
 To install and use the **Einstein Thought Experiment Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Einstein Thought Experiment Prover** MCP server in your
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

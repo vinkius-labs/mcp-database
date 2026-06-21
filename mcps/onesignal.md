@@ -1,12 +1,14 @@
 # OneSignal MCP Server
 
-Automate push notifications via OneSignal — send messages, manage segments, and track delivery stats directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/onesignal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/onesignal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/onesignal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/onesignal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Automate push notifications via OneSignal — send messages, manage segments, and track delivery stats directly from any AI agent.
 
 ## Description
 Connect your **OneSignal** account to any AI agent and take full control of your customer engagement workflows through natural conversation.
@@ -50,6 +52,33 @@ List all OneSignal apps
 - **list_players**: List registered devices (players)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OneSignal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a push notification to all subscribed users saying 'Flash Sale: 50% off today only!'"
+
+**🤖 AI Agent:**
+> Notification sent successfully! It is being delivered to the 'Subscribed Users' segment. Notification ID: 493021-abcd-1234.
+
+---
+
+**👤 You:**
+> "Check the delivery status of notification 550e8400-e29b-41d4-a716-446655440000."
+
+**🤖 AI Agent:**
+> I've retrieved the metrics. The notification reached 1,250 devices with a 98% success rate. 25 deliveries failed due to unsubscribed users.
+
+---
+
+**👤 You:**
+> "List the last 5 registered devices for our app."
+
+**🤖 AI Agent:**
+> I've fetched the latest device registrations. Here are the 5 most recent players, including their device types (iOS/Android) and last active timestamps.
+
+
 ## Installation & Usage
 
 To install and use the **OneSignal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **OneSignal** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

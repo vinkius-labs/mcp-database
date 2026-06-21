@@ -1,12 +1,14 @@
 # Watchmode Streaming Availability MCP Server
 
-Find where to watch any movie or TV show — search streaming availability across Netflix, Disney+, HBO Max, and 200+ platforms directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/streaming-availability)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/streaming-availability)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/streaming-availability-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/streaming-availability-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 8
+
+**Category:** [content-management](../categories/content-management.md)
+
+Find where to watch any movie or TV show — search streaming availability across Netflix, Disney+, HBO Max, and 200+ platforms directly from your AI agent.
 
 ## Description
 Connect your AI agent to **Watchmode**, the most accurate streaming availability metadata API. This MCP provides 8 tools to search, discover, and analyze where movies and TV shows are available to stream, rent, or buy across 200+ platforms in multiple regions.
@@ -54,6 +56,33 @@ Browse a catalog of titles with filters
 Search for a movie or TV show by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Watchmode Streaming Availability** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Where can I watch 'The Last of Us'?"
+
+**🤖 AI Agent:**
+> I searched Watchmode and found 'The Last of Us' (TV Series). It's currently available for streaming on Max (HBO), and available for purchase on Apple TV and Amazon Prime Video. Want me to get the direct links?
+
+---
+
+**👤 You:**
+> "List all streaming platforms available in Brazil."
+
+**🤖 AI Agent:**
+> I found 45+ streaming services available in Brazil, including Netflix, Disney+, Max, Amazon Prime Video, Globoplay, Apple TV+, and Paramount+. Would you like to search for a specific title on any of these?
+
+---
+
+**👤 You:**
+> "Get the full cast of 'Oppenheimer'."
+
+**🤖 AI Agent:**
+> Here's the cast of 'Oppenheimer': Cillian Murphy as J. Robert Oppenheimer, Emily Blunt as Kitty Oppenheimer, Robert Downey Jr. as Lewis Strauss, Matt Damon as Leslie Groves. Directed by Christopher Nolan. Want to see where it's streaming?
+
+
 ## Installation & Usage
 
 To install and use the **Watchmode Streaming Availability** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Watchmode Streaming Availability** MCP server in your A
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

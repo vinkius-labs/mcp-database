@@ -1,12 +1,14 @@
 # Radar MCP Server
 
-Equip your AI with geolocation tools — convert coordinates to addresses, map intellectual territories, calculate routes, and perform IP-based lookups.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/radar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/radar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/radar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/radar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 10
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Equip your AI with geolocation tools — convert coordinates to addresses, map intellectual territories, calculate routes, and perform IP-based lookups.
 
 ## Description
 Integrate **Radar** with an AI agent to bring enterprise-level location intelligence directly to your workflow. This server allows the AI to perform complex spatial lookups and geographical computations on your behalf.
@@ -44,6 +46,33 @@ Integrate **Radar** with an AI agent to bring enterprise-level location intellig
 - **validate_address**: Validates and cleans up a structured address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Radar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Geocode '1600 Amphitheatre Parkway, Mountain View, CA'."
+
+**🤖 AI Agent:**
+> Calling Radar `geocode`, the coordinates are Latitude: 37.422, Longitude: -122.084.
+
+---
+
+**👤 You:**
+> "Find the driving distance between my office in San Francisco (lat, lng) and the San Jose airport."
+
+**🤖 AI Agent:**
+> Using `get_routing`, the driving distance is approximately 45.2 miles, with an estimated travel time of 55 minutes, avoiding current traffic bottlenecks indicated by Radar.
+
+---
+
+**👤 You:**
+> "Locate the country based on the IP address 8.8.8.8."
+
+**🤖 AI Agent:**
+> Using Radar's IP tool, `ip_geocode` resolves `8.8.8.8` to the United States.
+
+
 ## Installation & Usage
 
 To install and use the **Radar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Radar** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Bright Data MCP Server
 
-Access the world's #1 web data platform — bypass anti-bot protections, extract structured search engine data, and manage scraping browsers directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bright-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bright-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bright-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bright-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Access the world's #1 web data platform — bypass anti-bot protections, extract structured search engine data, and manage scraping browsers directly from your AI agent.
 
 ## Description
 Connect your **Bright Data** account to any AI agent to automate complex web data extraction, bypass sophisticated anti-bot systems, and manage your proxy infrastructure through natural language.
@@ -47,6 +49,33 @@ Your AI now acts as a data engineer, capable of retrieving real-time web informa
 - **trigger_dataset**: Trigger a dataset collection (Crawl API)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bright Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active proxy zones in Bright Data."
+
+**🤖 AI Agent:**
+> I've retrieved your zones. You have 3 active zones: 'web_unlocker1' (Web Unlocker), 'serp_api_main' (SERP API), and 'residential_zone' (Residential Proxies).
+
+---
+
+**👤 You:**
+> "Scrape the search results for 'best laptops 2024' using the SERP API zone."
+
+**🤖 AI Agent:**
+> Sending request to SERP API... I've extracted the structured data. The top results include reviews from TechRadar, CNET, and RTINGS. Would you like the full JSON output?
+
+---
+
+**👤 You:**
+> "Check the progress of dataset snapshot 's_l1m2n3b4'."
+
+**🤖 AI Agent:**
+> The snapshot 's_l1m2n3b4' is currently at 75% completion. It has processed 15,000 records so far with 0 errors.
+
+
 ## Installation & Usage
 
 To install and use the **Bright Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Bright Data** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

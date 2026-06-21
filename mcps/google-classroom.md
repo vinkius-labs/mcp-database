@@ -1,12 +1,14 @@
 # Google Classroom MCP Server
 
-Manage classes, assignments, students, and submissions — automate your Google Classroom workflows via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-classroom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-classroom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-classroom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-classroom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 14
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage classes, assignments, students, and submissions — automate your Google Classroom workflows via AI.
 
 ## Description
 Connect your **Google Classroom** to any AI agent and streamline your teaching workflows through natural conversation. Manage courses, create assignments, track student submissions, and grade work — all via AI commands.
@@ -71,6 +73,33 @@ Turn in a student's assignment submission
 Update an existing Google Classroom course
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Classroom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my courses and show students in Math 101."
+
+**🤖 AI Agent:**
+> 📚 You have 3 courses: Math 101 (ID: 12345), Physics 201 (ID: 12346), Chemistry 301 (ID: 12347). Students in Math 101: Alice, Bob, Charlie, Diana (4 enrolled).
+
+---
+
+**👤 You:**
+> "Create an assignment called 'Chapter 5 Problems' due 2024-05-15 for course 12345, max 100 points."
+
+**🤖 AI Agent:**
+> ✅ Assignment created! 'Chapter 5 Problems' (CourseWork ID: cw_789) for Math 101, due May 15, 2024, max 100 points. All students can now see the assignment.
+
+---
+
+**👤 You:**
+> "Show me who turned in the Chapter 5 assignment."
+
+**🤖 AI Agent:**
+> 📊 Submissions for 'Chapter 5 Problems': ✅ Turned In: Alice, Bob (2) | ⏳ Late: Charlie (1) | ❌ Not Submitted: Diana (1).
+
+
 ## Installation & Usage
 
 To install and use the **Google Classroom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Google Classroom** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

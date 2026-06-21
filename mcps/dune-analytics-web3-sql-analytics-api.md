@@ -1,12 +1,14 @@
 # Dune Analytics (Web3 SQL Analytics API) MCP Server
 
-Execute SQL queries on blockchain data via Dune Analytics — track executions, fetch results, and analyze Web3 metrics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dune-analytics-web3-sql-analytics-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dune-analytics-web3-sql-analytics-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dune-analytics-web3-sql-analytics-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dune-analytics-web3-sql-analytics-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Execute SQL queries on blockchain data via Dune Analytics — track executions, fetch results, and analyze Web3 metrics directly from your AI agent.
 
 ## Description
 Connect your **Dune Analytics** account to any AI agent to query and analyze real-time blockchain data using SQL. Access comprehensive datasets across Ethereum, Solana, Polygon, and more through natural conversation.
@@ -44,6 +46,33 @@ Retrieve the data rows from a completed execution
 Check the current status of a query execution
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dune Analytics (Web3 SQL Analytics API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Execute Dune query ID 1234567 with parameters for the last 7 days."
+
+**🤖 AI Agent:**
+> I've started the execution for query 1234567. The execution ID is '01J8X...'. I will monitor the status for you.
+
+---
+
+**👤 You:**
+> "Check the status of my Dune execution 01J8X9Z..."
+
+**🤖 AI Agent:**
+> The execution 01J8X9Z... is currently 'QUERY_STATE_COMPLETED'. Would you like me to fetch the results now?
+
+---
+
+**👤 You:**
+> "Fetch the results for execution ID 01J8X9Z... and summarize the top 5 holders."
+
+**🤖 AI Agent:**
+> I've retrieved the data. Based on the results, the top 5 holders are: 1) 0xabc... with 500 ETH, 2) 0xdef... with 450 ETH...
+
+
 ## Installation & Usage
 
 To install and use the **Dune Analytics (Web3 SQL Analytics API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dune Analytics (Web3 SQL Analytics API)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

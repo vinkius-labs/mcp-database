@@ -1,12 +1,14 @@
 # Strava Planning MCP Server
 
-Plan routes, export GPX/TCX, create activities, manage gear, and star segments on Strava.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-planning)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-planning)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-planning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-planning-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 14
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan routes, export GPX/TCX, create activities, manage gear, and star segments on Strava.
 
 ## Description
 Connect **Strava Planning** to any AI agent and manage your training logistics — route creation, GPX/TCX export, manual activity logging, gear tracking, segment favoriting, and profile management.
@@ -80,6 +82,33 @@ Upload an activity file (FIT, TCX, GPX) to Strava for processing
 Check the status of a Strava activity upload
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Strava Planning** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my saved routes."
+
+**🤖 AI Agent:**
+> Found 8 routes: 1) Morning Loop — 32.5 km, 450m elev, cycling. 2) Hill Repeats — 5.2 km, 280m elev, running. 3) Weekend Century — 160 km, 1,850m elev, cycling. 4) Recovery Run — 8 km, 50m elev, running. 5) Coastal Ride — 45 km, 320m elev, cycling.
+
+---
+
+**👤 You:**
+> "Export route 12345 to GPX format."
+
+**🤖 AI Agent:**
+> Route 12345 (Morning Loop) exported to GPX. Download at: https://www.strava.com/api/v3/routes/12345/export_gpx. The file contains 32.5 km of GPS track with 450m elevation gain. Compatible with Garmin Edge, Wahoo ELEMNT, and other GPS cycling computers.
+
+---
+
+**👤 You:**
+> "Create a manual activity for today's gym session."
+
+**🤖 AI Agent:**
+> Activity created: "Gym Session" — Type: Workout, Date: 2024-03-15 07:00, Duration: 45 min. Description: "Strength training - upper body focus". Activity ID: 9876543210. Now visible in your Strava feed.
+
+
 ## Installation & Usage
 
 To install and use the **Strava Planning** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -88,4 +117,11 @@ To install and use the **Strava Planning** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

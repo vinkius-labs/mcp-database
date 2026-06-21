@@ -1,12 +1,14 @@
 # GitBook MCP Server
 
-Manage technical documentation via GitBook — list organizations and spaces, handle document pages, search content, and audit collections directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitbook)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitbook)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitbook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitbook-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage technical documentation via GitBook — list organizations and spaces, handle document pages, search content, and audit collections directly from any AI agent.
 
 ## Description
 Connect your **GitBook** account to any AI agent and take full control of your technical documentation, knowledge sharing, and docs-as-code workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your **GitBook** account to any AI agent and take full control of your t
 - **get_me**: Get authenticated user info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitBook** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all spaces in organization 'org_123'"
+
+**🤖 AI Agent:**
+> Retrieving spaces... I found 3 documentation environments in 'org_123': 'API Reference', 'User Guide', and 'Release Notes'. Which one would you like to explore for pages?
+
+---
+
+**👤 You:**
+> "Search my GitBook for 'authentication flow'"
+
+**🤖 AI Agent:**
+> Searching content... I found several matches in the 'API Reference' space. The most relevant is a page titled 'Auth Overview' (ID: page_abc). Would you like me to retrieve the full content of that page?
+
+---
+
+**👤 You:**
+> "Show me the page hierarchy for space 'User-Guide'"
+
+**🤖 AI Agent:**
+> Retrieving hierarchy... The 'User Guide' space has a main 'Getting Started' section, followed by 'Dashboard Basics' and 'Advanced Settings'. Each section has multiple nested pages. Would you like the ID for any specific page?
+
+
 ## Installation & Usage
 
 To install and use the **GitBook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **GitBook** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

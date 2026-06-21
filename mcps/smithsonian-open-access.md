@@ -1,12 +1,14 @@
 # Smithsonian Open Access MCP Server
 
-Explore millions of museum records, images, and digital assets from the Smithsonian Institution's vast collections.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smithsonian-open-access)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smithsonian-open-access)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smithsonian-open-access-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smithsonian-open-access-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 3
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Explore millions of museum records, images, and digital assets from the Smithsonian Institution's vast collections.
 
 ## Description
 Connect to the **Smithsonian Open Access** repository and bring millions of museum records, scientific data, and historical artifacts directly into your AI workspace. This server provides programmatic access to the Smithsonian's Enterprise Digital Asset Network (EDAN).
@@ -37,6 +39,33 @@ Connect to the **Smithsonian Open Access** repository and bring millions of muse
 - **search_records**: Search for museum records across all Smithsonian units
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smithsonian Open Access** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for records related to the Apollo 11 mission."
+
+**🤖 AI Agent:**
+> I've found several records for the Apollo 11 mission, including the Command Module 'Columbia', lunar samples, and commemorative medals. Would you like the details for any of these items?
+
+---
+
+**👤 You:**
+> "Get the full details for the record with ID edanmdm:nmah_1313964."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for ID edanmdm:nmah_1313964. This record corresponds to the 'Star-Spangled Banner', the flag that inspired the U.S. national anthem, currently held at the National Museum of American History.
+
+---
+
+**👤 You:**
+> "Search for 'impressionism' within the art category."
+
+**🤖 AI Agent:**
+> Searching for 'impressionism' in the art category... I found works by Mary Cassatt, John Singer Sargent, and various French impressionist prints. Which artist or specific work should we explore?
+
+
 ## Installation & Usage
 
 To install and use the **Smithsonian Open Access** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **Smithsonian Open Access** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

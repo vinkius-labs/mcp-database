@@ -1,12 +1,14 @@
 # Dokku MCP Server
 
-Manage self-hosted apps via Dokku — monitor containers, scale processes, handle environment variables, and stream logs directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dokku)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dokku)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dokku-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dokku-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 10
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage self-hosted apps via Dokku — monitor containers, scale processes, handle environment variables, and stream logs directly from any AI agent.
 
 ## Description
 Connect your **Dokku** instance to any AI agent and take full control of your self-hosted PaaS and container orchestration through natural conversation.
@@ -68,6 +70,33 @@ Inject Environment Variables into a running Dokku Application
 Remove sensitive Environment Variables disrupting App config
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dokku** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all apps on my Dokku host"
+
+**🤖 AI Agent:**
+> I found 3 apps: 'api-server', 'frontend-web', and 'worker-queue'. All containers are active and managed by the local Docker engine. Would you like to see the config for any of these?
+
+---
+
+**👤 You:**
+> "Scale the 'web' process of app 'api-server' to 3 replicas"
+
+**🤖 AI Agent:**
+> Scaling request sent! Dokku is now spooling up 3 replicas for the 'web' process of 'api-server'. I will notify you once the internal load balancer has updated the routing.
+
+---
+
+**👤 You:**
+> "Get the last 50 lines of logs for 'frontend-web'"
+
+**🤖 AI Agent:**
+> Retrieving logs for 'frontend-web'... [Agent pulls precise system execution tails showing request logs, node backtraces, or slow queries happening inside the containers].
+
+
 ## Installation & Usage
 
 To install and use the **Dokku** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Dokku** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

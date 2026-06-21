@@ -1,12 +1,14 @@
 # Osu! MCP Server
 
-Access Osu! player profiles, beatmap data, scores, and community discussions directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/osu)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/osu)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/osu-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/osu-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 13
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Access Osu! player profiles, beatmap data, scores, and community discussions directly through your AI agent.
 
 ## Description
 Connect your **Osu!** account to any AI agent to explore the rhythm game's vast ecosystem through natural conversation. This server provides deep integration with the Osu! API v2, allowing for comprehensive data retrieval and analysis.
@@ -50,6 +52,33 @@ Get own user data
 - **get_user_beatmap_score**: Get a user's score on a beatmap
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Osu!** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my Osu! profile and current rankings."
+
+**🤖 AI Agent:**
+> I've retrieved your profile. You are currently Rank #12,450 globally with 5,200 PP and 98.5% accuracy. Would you like to see your top performances?
+
+---
+
+**👤 You:**
+> "What are the top scores for beatmap ID 1234567?"
+
+**🤖 AI Agent:**
+> Fetching the leaderboard for beatmap 1234567... The #1 score is held by 'PlayerOne' with 1,200,340 points and a 99.8% Hidden+HardRock run.
+
+---
+
+**👤 You:**
+> "Calculate the difficulty of beatmap 987654 with DoubleTime."
+
+**🤖 AI Agent:**
+> With DoubleTime applied, beatmap 987654 increases from 5.2 stars to 7.4 stars. The Approach Rate (AR) is now 10.3 and the BPM has increased to 270.
+
+
 ## Installation & Usage
 
 To install and use the **Osu!** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Osu!** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

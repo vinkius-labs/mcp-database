@@ -1,12 +1,14 @@
 # Focus NFe MCP Server
 
-Emit, consult, cancel and download XML for NFS-e and NF-e via Focus NFe API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-nfe)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/focus-nfe)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/focus-nfe-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/focus-nfe-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 5
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Emit, consult, cancel and download XML for NFS-e and NF-e via Focus NFe API.
 
 ## Description
 Connect **Focus NFe** to any AI agent and automate your Brazilian fiscal documentation — issue service invoices (NFS-e) and product invoices (NF-e), check status, cancel documents, and download XMLs via natural conversation.
@@ -37,6 +39,33 @@ Connect **Focus NFe** to any AI agent and automate your Brazilian fiscal documen
 - **emit_nfse**: Emit a Service Invoice (NFS-e)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Focus NFe** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Emit a service invoice for R$500 for 'Consulting Services'."
+
+**🤖 AI Agent:**
+> Service Invoice emitted! Reference: SERV-001. Status: Authorized.
+
+---
+
+**👤 You:**
+> "Cancel invoice REF-123 with reason 'Client requested cancellation'."
+
+**🤖 AI Agent:**
+> Invoice REF-123 cancelled successfully.
+
+---
+
+**👤 You:**
+> "Get the XML for invoice REF-123."
+
+**🤖 AI Agent:**
+> XML downloaded successfully. Ready for accounting integration.
+
+
 ## Installation & Usage
 
 To install and use the **Focus NFe** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -45,4 +74,11 @@ To install and use the **Focus NFe** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

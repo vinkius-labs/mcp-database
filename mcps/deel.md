@@ -1,12 +1,14 @@
 # Deel MCP Server
 
-Manage global contracts, team members, invoices, payments, time-off, and expenses — global HR for AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage global contracts, team members, invoices, payments, time-off, and expenses — global HR for AI agents.
 
 ## Description
 Integrate **Deel**, the all-in-one global people platform, directly into your AI workflow. Manage your international team, track contracts and compliance, monitor invoices and payments, and handle time-off requests using natural language.
@@ -64,6 +66,33 @@ List tasks for a contract
 List contract milestones
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active contractors in my team."
+
+**🤖 AI Agent:**
+> I've found 24 active contractors, including 'Maria Santos' (Brazil) and 'Kenji Tanaka' (Japan). Would you like to see the monthly compensation for any of them?
+
+---
+
+**👤 You:**
+> "What invoices are currently pending payment?"
+
+**🤖 AI Agent:**
+> There are 5 pending invoices totaling $18,400. The largest is for 'Kenji Tanaka' ($8,000) due on April 10th. Should I pull the full payment report?
+
+---
+
+**👤 You:**
+> "Show me any time-off requests pending approval."
+
+**🤖 AI Agent:**
+> I found 3 pending time-off requests: 'Alex Kim' (3 days in May), 'Sarah Lee' (1 week in June), and 'David Chen' (today). Would you like to see the reasons provided for these requests?
+
+
 ## Installation & Usage
 
 To install and use the **Deel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Deel** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

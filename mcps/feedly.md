@@ -1,12 +1,14 @@
 # Feedly MCP Server
 
-Manage your news aggregation via Feedly — list collections, read streams, and search for feeds directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/feedly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feedly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/feedly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/feedly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 12
+
+**Category:** [content-management](../categories/content-management.md)
+
+Manage your news aggregation via Feedly — list collections, read streams, and search for feeds directly through your AI agent.
 
 ## Description
 Connect your **Feedly** account to any AI agent and take full control of your news consumption and RSS aggregation through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Feedly** account to any AI agent and take full control of your ne
 - **search_topics**: Search for trending topics or specific interests
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Feedly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my Feedly collections."
+
+**🤖 AI Agent:**
+> I've retrieved your collections. You have 'Tech News', 'Design Inspiration', and 'Marketing' categories. Which collection's latest articles would you like to see?
+
+---
+
+**👤 You:**
+> "Show me the latest 5 articles from the 'Tech News' category."
+
+**🤖 AI Agent:**
+> Fetching stream contents... Here are the latest updates including 'AI Breakthroughs in 2024' and 'New Smartphone Launch'. Would you like me to summarize any of these for you?
+
+---
+
+**👤 You:**
+> "Search for feeds about 'Edge Computing'."
+
+**🤖 AI Agent:**
+> Searching the Feedly index... I found several relevant feeds including 'The Edge Blog' and 'Computing Weekly'. Would you like the stream IDs to add them to your collections?
+
+
 ## Installation & Usage
 
 To install and use the **Feedly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Feedly** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

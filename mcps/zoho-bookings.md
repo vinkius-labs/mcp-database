@@ -1,12 +1,14 @@
 # Zoho Bookings MCP Server
 
-Automate appointment scheduling via Zoho Bookings — manage appointments, services, and staff with AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-bookings)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-bookings)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-bookings-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-bookings-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate appointment scheduling via Zoho Bookings — manage appointments, services, and staff with AI.
 
 ## Description
 Connect your **Zoho Bookings** account to any AI agent to streamline your appointment management through natural conversation. Zoho Bookings provides a comprehensive platform for scheduling and managing services, staff availability, and workspaces.
@@ -44,6 +46,33 @@ Book a new appointment
 - **list_workspaces**: List all workspaces
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Bookings** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my upcoming appointments and check the available slots for Dr. Smith on May 15th."
+
+**🤖 AI Agent:**
+> You have 3 upcoming appointments this week. For Dr. Smith (Staff ID: 8901), there are 4 available slots on May 15th: 09:00 AM, 11:30 AM, 02:00 PM, and 04:30 PM. Would you like to book one of these slots?
+
+---
+
+**👤 You:**
+> "Cancel my existing appointment with ID 'AP-2045' and book a new 'Technical Audit' session for tomorrow at 10 AM."
+
+**🤖 AI Agent:**
+> I have successfully canceled appointment AP-2045. A new 'Technical Audit' session has been booked for tomorrow at 10:00 AM. Your confirmation number is AP-2099.
+
+---
+
+**👤 You:**
+> "Retrieve the full list of services we offer in the 'Downtown Clinic' workspace."
+
+**🤖 AI Agent:**
+> In the 'Downtown Clinic' workspace, you currently offer 5 services: 'General Consultation' (30 mins), 'Specialist Review' (60 mins), 'Follow-up' (15 mins), 'Annual Checkup' (45 mins), and 'Vaccination' (10 mins).
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Bookings** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Zoho Bookings** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

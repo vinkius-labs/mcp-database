@@ -1,12 +1,14 @@
 # Lattice MCP Server
 
-Retrieve HR employees, goals, feedback, and reviews directly from Lattice.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lattice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lattice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lattice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lattice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Retrieve HR employees, goals, feedback, and reviews directly from Lattice.
 
 ## Description
 Connect your AI agent directly to **Lattice HR**. With this server, your LLM can fetch detailed employee profiles, active OKRs, tasks, and search continuous feedback loops directly tied to the Lattice platform.
@@ -43,6 +45,33 @@ Connect your AI agent directly to **Lattice HR**. With this server, your LLM can
 - **list_users**: Retrieve a list of employees/users from Lattice
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lattice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all the current engineering OKRs mapped within Lattice."
+
+**🤖 AI Agent:**
+> Scanning Lattice OKRs... Found 3 goals tracked to the engineering unit focusing on Backend uptime.
+
+---
+
+**👤 You:**
+> "Retrieve the full team employee directory for the Marketing division."
+
+**🤖 AI Agent:**
+> Sure. I fetched 12 employees logged within the Marketing division currently active.
+
+---
+
+**👤 You:**
+> "Who received recent public praise and continuous feedback this week?"
+
+**🤖 AI Agent:**
+> Auditing recent praise... 4 instances of continuous feedback logged. The top mention highlights Sarah for her release deployment.
+
+
 ## Installation & Usage
 
 To install and use the **Lattice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Lattice** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

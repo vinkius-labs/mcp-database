@@ -1,12 +1,14 @@
 # Steam Performance & Scouting Intelligence MCP Server
 
-The definitive server for professional Steam scouting — analyze player performance, achievements, and technical game stats via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-performance-scouting-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steam-performance-scouting-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steam-performance-scouting-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steam-performance-scouting-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+The definitive server for professional Steam scouting — analyze player performance, achievements, and technical game stats via AI.
 
 ## Description
 Transform your AI agent into a professional e-sports scout and performance analyst via **Steam Performance & Scouting Intelligence**. This server provides high-precision access to official game statistics and user achievements, allowing your agent to audit player skill levels, track technical milestones, and identify high-performance benchmarks across thousands of Steam titles. Whether you are a coach analyzing a pro-player's history or an analytical gamer monitoring your own progress, your agent acts as a dedicated technical scout through natural conversation.
@@ -49,6 +51,33 @@ Get the friend list of a Steam user
 Get raw gameplay stats for a user in a specific game
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Steam Performance & Scouting Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Audit the technical performance of player '7656119803...' in Deadlock."
+
+**🤖 AI Agent:**
+> Retrieving technical scouts... I've fetched the stats for Deadlock. This player has an average soul-per-minute of 450 and a 65% winrate with 'Hero X'. I also have the breakdown of their damage contribution. Would you like to see their last 5 match outcomes?
+
+---
+
+**👤 You:**
+> "Check for active VAC bans on SteamID '7656119803...'."
+
+**🤖 AI Agent:**
+> Running integrity check... The account '7656119803...' is currently in good standing. No active VAC, community, or trade bans were detected. I have the full ban history report. Shall I also check their account level and badges?
+
+---
+
+**👤 You:**
+> "Compare the achievement rarity for 'Elden Ring' between my account and global stats."
+
+**🤖 AI Agent:**
+> Inspecting achievements... You have unlocked 'Achievement A', which only 2.5% of players globally possess. However, you are missing 'Achievement B', which 15% have already completed. Would you like the full technical list of missing achievements?
+
+
 ## Installation & Usage
 
 To install and use the **Steam Performance & Scouting Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Steam Performance & Scouting Intelligence** MCP server 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

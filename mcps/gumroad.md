@@ -1,12 +1,14 @@
 # Gumroad MCP Server
 
-Automate e-commerce via Gumroad — manage products, sales, and license verification directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gumroad)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gumroad)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gumroad-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gumroad-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate e-commerce via Gumroad — manage products, sales, and license verification directly from any AI agent.
 
 ## Description
 Connect your **Gumroad** creator account to any AI agent and take full control of your digital store and sales data through natural conversation.
@@ -48,6 +50,33 @@ No more manual exporting of CSVs or jumping between store tabs. Your AI assistan
 - **verify_license**: Verify a license key for a specific product
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gumroad** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products in my Gumroad store."
+
+**🤖 AI Agent:**
+> I've retrieved your products. You have 5 active items: 'Mastering AI' ($49.00), 'DevOps Toolkit' ($29.00), 'Python Course' ($99.00), and 2 more. Which one would you like to see more details for?
+
+---
+
+**👤 You:**
+> "Show me the sales history for the last 24 hours."
+
+**🤖 AI Agent:**
+> Fetching recent transactions... You've had 12 sales in the last 24 hours, totaling $588.00 in gross revenue. The most recent purchase was 'Mastering AI' by customer@example.com. Should I list all individual transactions?
+
+---
+
+**👤 You:**
+> "Verify license key ABC-123 for the DevOps Toolkit."
+
+**🤖 AI Agent:**
+> Checking license key... The key ABC-123 for 'DevOps Toolkit' is VALID. It has been used 1 time out of a maximum of 3 allowed activations. The customer email is buyer@example.com.
+
+
 ## Installation & Usage
 
 To install and use the **Gumroad** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Gumroad** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Cornerstone OnDemand MCP Server
 
-Equip your AI agent to manage training, performance, and employee transcripts via the Cornerstone LMS API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cornerstone-ondemand)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cornerstone-ondemand)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cornerstone-ondemand-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cornerstone-ondemand-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Equip your AI agent to manage training, performance, and employee transcripts via the Cornerstone LMS API.
 
 ## Description
 Integrate **Cornerstone OnDemand**, the leading human capital management and learning platform, directly into your AI workflow. Monitor employee development, audit training transcripts, and manage your talent catalog using natural language.
@@ -64,6 +66,33 @@ List learning history and courses for a user
 List users in the Cornerstone portal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cornerstone OnDemand** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active training courses available in our learning catalog."
+
+**🤖 AI Agent:**
+> I've retrieved your corporate catalog. You have 120 active courses, including 'Cybersecurity Basics', 'Leadership 101', and 'Advanced Excel'. Would you like to filter them by category?
+
+---
+
+**👤 You:**
+> "Show me the learning transcript for employee 'Jane Doe'."
+
+**🤖 AI Agent:**
+> I found Jane Doe's transcript. She has completed 15 courses and has 2 certifications active. Her most recent completion was 'Diversity & Inclusion' on March 15th. Should I list her pending requirements?
+
+---
+
+**👤 You:**
+> "List all open job postings in the Engineering department."
+
+**🤖 AI Agent:**
+> There are 4 open positions in Engineering: 'Senior Backend Engineer', 'DevOps Lead', and two 'Frontend Developer' roles. Would you like to see the full descriptions for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Cornerstone OnDemand** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Cornerstone OnDemand** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

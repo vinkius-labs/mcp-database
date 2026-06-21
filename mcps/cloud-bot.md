@@ -1,12 +1,14 @@
 # Cloud BOT MCP Server
 
-Run automated browser tasks in the cloud with scriptless bots that extract data, fill forms, and navigate websites on autopilot.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloud-bot)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloud-bot)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloud-bot-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloud-bot-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 7
+
+**Category:** [productivity](../categories/productivity.md)
+
+Run automated browser tasks in the cloud with scriptless bots that extract data, fill forms, and navigate websites on autopilot.
 
 ## Description
 Connect your **Cloud BOT** account to any AI agent and take full control of your cloud-based Robotic Process Automation (RPA) and browser-based workflows through natural conversation.
@@ -46,6 +48,33 @@ Trigger a bot execution
 - **list_jobs**: List recent execution jobs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cloud BOT** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available browser robots in my Cloud BOT account."
+
+**🤖 AI Agent:**
+> I've retrieved your robots. You currently have 3 active bots, including 'Price Scraper' (ID: bot_123) and 'Form Submitter'. Which one should we execute or inspect for details?
+
+---
+
+**👤 You:**
+> "Execute the 'Price Scraper' bot (ID: 'bot_123') with URL 'vinkius.com'."
+
+**🤖 AI Agent:**
+> Automation triggered! I've started the 'Price Scraper' robot with your custom URL. The job ID is 'job_456'. I'll monitor the status and notify you as soon as the results are available.
+
+---
+
+**👤 You:**
+> "Show the status and logs for automation job 'job_456'."
+
+**🤖 AI Agent:**
+> Fetching status... Job job_456 is currently 'Success'. The bot successfully extracted 15 data points. I've also found an output file 'results.csv' in your storage. Would you like the download link?
+
+
 ## Installation & Usage
 
 To install and use the **Cloud BOT** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Cloud BOT** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

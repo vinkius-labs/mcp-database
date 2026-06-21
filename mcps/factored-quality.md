@@ -1,12 +1,14 @@
 # Factored Quality MCP Server
 
-Manage quality control via Factored Quality — track inspections, audits, and lab tests directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/factored-quality)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/factored-quality)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/factored-quality-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/factored-quality-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage quality control via Factored Quality — track inspections, audits, and lab tests directly through your AI agent.
 
 ## Description
 Connect your **Factored Quality** account to any AI agent and take full control of your quality control (QC), audit, and compliance data through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Factored Quality** account to any AI agent and take full control 
 - **list_suppliers**: List all suppliers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Factored Quality** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all recent quality control inspections."
+
+**🤖 AI Agent:**
+> I've retrieved your recent inspections. You have 5 inspections in progress and 12 completed this month. The latest one for 'Summer SKU-101' at Factory X passed with a score of 98%.
+
+---
+
+**👤 You:**
+> "Show me the status of the latest lab test for product Y."
+
+**🤖 AI Agent:**
+> Fetching lab test results... The latest test for 'Product Y' (ID: 789) is COMPLETED. The results show all materials comply with REACH and RoHS standards.
+
+---
+
+**👤 You:**
+> "Book a new inspection for Supplier Z next week."
+
+**🤖 AI Agent:**
+> Booking started... I've initiated a new inspection request for 'Supplier Z'. Please provide the specific PO number and SKU details to finalize the booking.
+
+
 ## Installation & Usage
 
 To install and use the **Factored Quality** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Factored Quality** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

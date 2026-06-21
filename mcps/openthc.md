@@ -1,12 +1,14 @@
 # OpenTHC MCP Server
 
-Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openthc)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openthc)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openthc-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openthc-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** supply-chain
-**Tools Count:** 12
+
+**Category:** [supply-chain](../categories/supply-chain.md)
+
+Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent.
 
 ## Description
 Connect your **OpenTHC** Cannabis Regulatory Compliance Engine to any AI agent and take full control of your seed-to-sale workflows through natural conversation.
@@ -77,6 +79,33 @@ List all facility sections and cultivation areas
 List all cannabis varieties (strains) in the system
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenTHC** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all our active cannabis licenses and verify which ones are expiring soon."
+
+**🤖 AI Agent:**
+> I've fetched your regulatory licenses. You currently hold 3 active licenses: Cultivation License #CU-2024-0891 (expires 2026-12-31), Processing License #PR-2024-0345 (expires 2025-06-30 — expiring in 89 days), and Retail License #RT-2024-1122 (expires 2027-03-15). Would you like me to prepare a renewal checklist for the Processing license?
+
+---
+
+**👤 You:**
+> "Show me all plants currently in flowering stage in Room 3 and estimate harvest readiness."
+
+**🤖 AI Agent:**
+> Running cultivation query... I found 127 active plants in Room 3 (Flowering Chamber). Breakdown: 85 Blue Dream plants (Week 6 of 8 flowering — harvest estimated 2025-04-21), 42 OG Kush plants (Week 4 of 9 — harvest estimated 2025-05-05). All plants are within compliance plant count limits. Environmental logs show optimal conditions. Would you like nutrient schedules or trimming crew assignments for the upcoming Blue Dream harvest?
+
+---
+
+**👤 You:**
+> "Check inventory levels for all THC-dominant flower products and show me pending lab results."
+
+**🤖 AI Agent:**
+> Cross-referencing inventory and lab testing... Current THC flower stock: 14.2 kg of Blue Dream (Lot BD-2025-0412), 8.7 kg OG Kush (Lot OG-2025-0398), and 3.1 kg Sour Diesel (Lot SD-2025-0445). Pending lab results: 2 batches awaiting clearance — Lot BD-2025-0419 (potency panel, results expected 2025-04-10) and Lot OG-2025-0421 (full pesticide panel, results expected 2025-04-12). All currently available stock has valid CoAs. Should I flag any inventory nearing expiration?
+
+
 ## Installation & Usage
 
 To install and use the **OpenTHC** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **OpenTHC** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

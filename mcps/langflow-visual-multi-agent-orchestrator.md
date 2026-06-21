@@ -1,12 +1,14 @@
 # Langflow (Visual Multi-agent Orchestrator) MCP Server
 
-Orchestrate multi-agent AI workflows visually — execute flows, manage projects, and trigger webhooks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/langflow-visual-multi-agent-orchestrator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/langflow-visual-multi-agent-orchestrator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/langflow-visual-multi-agent-orchestrator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/langflow-visual-multi-agent-orchestrator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 24
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Orchestrate multi-agent AI workflows visually — execute flows, manage projects, and trigger webhooks directly from any AI agent.
 
 ## Description
 Connect your **Langflow** instance to any AI agent and take full control of your multi-agent orchestration through natural conversation.
@@ -63,6 +65,33 @@ Execute a Langflow flow
 - **whoami**: Get current authenticated user info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Langflow (Visual Multi-agent Orchestrator)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available flows in Langflow."
+
+**🤖 AI Agent:**
+> I've retrieved your flows. You have 3 active flows: 'Customer Support Agent' (ID: flow-123), 'Data Extraction Pipeline' (ID: flow-456), and 'Market Analyzer' (ID: flow-789).
+
+---
+
+**👤 You:**
+> "Run the 'Market Analyzer' flow with the input 'Analyze NVIDIA stock performance'."
+
+**🤖 AI Agent:**
+> Executing 'Market Analyzer'... The flow has completed. The analysis suggests a bullish trend for NVIDIA based on recent quarterly results and AI demand.
+
+---
+
+**👤 You:**
+> "Show me all my project folders."
+
+**🤖 AI Agent:**
+> I found 2 projects: 'Production Agents' (ID: proj-001) and 'Experimental Lab' (ID: proj-002).
+
+
 ## Installation & Usage
 
 To install and use the **Langflow (Visual Multi-agent Orchestrator)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Langflow (Visual Multi-agent Orchestrator)** MCP server
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

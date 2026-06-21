@@ -1,12 +1,14 @@
 # UpCloud MCP Server
 
-Manage UpCloud infrastructure via AI — control servers, monitor billing, and manage storage across global zones directly from your agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/upcloud)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upcloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upcloud-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upcloud-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 46
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage UpCloud infrastructure via AI — control servers, monitor billing, and manage storage across global zones directly from your agent.
 
 ## Description
 Connect your **UpCloud** account to any AI agent to manage your high-performance cloud infrastructure through natural language. From deploying servers to monitoring resource costs, take full control of your cloud environment.
@@ -83,6 +85,33 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 - **list_zones**: List available zones
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **UpCloud** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my UpCloud account information and credits."
+
+**🤖 AI Agent:**
+> I've retrieved your account details. You currently have $150.00 in credits remaining, and your resource limits allow for up to 20 concurrent servers. Would you like to see your billing summary for this month?
+
+---
+
+**👤 You:**
+> "List all my active servers on UpCloud."
+
+**🤖 AI Agent:**
+> Fetching your server list... I found 3 servers: 'web-prod-01' (Running), 'db-master' (Running), and 'test-bench' (Stopped). Which one would you like to manage?
+
+---
+
+**👤 You:**
+> "Restart the server with UUID 00264663-890e-473c-9189-9e87483660c2."
+
+**🤖 AI Agent:**
+> Initiating restart for server 00264663-890e-473c-9189-9e87483660c2... The command has been sent successfully. The server should be back online in a few moments.
+
+
 ## Installation & Usage
 
 To install and use the **UpCloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -91,4 +120,11 @@ To install and use the **UpCloud** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

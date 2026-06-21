@@ -1,12 +1,14 @@
 # Linear MCP Server
 
-Streamline issue tracking and project management via Linear — list teams, query issues, create comments and inspect cycles directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/linear)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/linear)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/linear-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/linear-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 12
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Streamline issue tracking and project management via Linear — list teams, query issues, create comments and inspect cycles directly from any AI agent.
 
 ## Description
 Connect your **Linear** workspace to any AI agent and take full control of your issue tracking and sprint workflows through natural conversation.
@@ -72,6 +74,33 @@ Update an existing Linear issue
 Get current authenticated Linear user details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Linear** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all unresolved issues assigned to the Engineering team."
+
+**🤖 AI Agent:**
+> I've queried your Engineering team and found 7 open issues. The highest priority items are 'Fix auth token refresh bug' (ENG-142) and 'Implement pagination for API responses' (ENG-138). Would you like full details on either?
+
+---
+
+**👤 You:**
+> "Create a new issue in the Backend team titled 'Add rate limiting to /api/search endpoint' with high priority."
+
+**🤖 AI Agent:**
+> Done! I've created issue **BE-217** titled 'Add rate limiting to /api/search endpoint' with priority High in the Backend team. You can view it at linear.app/yourco/issue/BE-217.
+
+---
+
+**👤 You:**
+> "What's the current sprint cycle progress for the Mobile team?"
+
+**🤖 AI Agent:**
+> The Mobile team's active cycle is #47 (Mar 31 — Apr 13) with 62% completion. There are 14 issues in this cycle, 5 of which are already done. Would you like the list of remaining open issues?
+
+
 ## Installation & Usage
 
 To install and use the **Linear** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **Linear** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Open UV Index API MCP Server
 
-Monitor UV levels — audit ozone and sun safety via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-uv-index-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/open-uv-index-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/open-uv-index-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/open-uv-index-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** scientific-research
-**Tools Count:** 4
+
+**Category:** [scientific-research](../categories/scientific-research.md)
+
+Monitor UV levels — audit ozone and sun safety via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire environmental safety and UV auditing workflow with the **Open UV Index API**, the comprehensive source for real-time ultraviolet radiation data. By connecting OpenUV.io to your agent, you transform complex atmospheric searches into a natural conversation. Your agent can instantly retrieve real-time UV indices, audit daily forecasts, and query sun protection metadata without you ever touching a weather portal. Whether you are planning outdoor activities or conducting regional environmental research, your agent acts as a real-time health consultant, ensuring your data is always precise and localized.
@@ -40,6 +42,33 @@ Empower your AI agent to orchestrate your entire environmental safety and UV aud
 - **get_uv_index**: Get real-time UV Index data for a specific location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Open UV Index API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the real-time UV Index for latitude 37.7749 and longitude -122.4194 using Open UV?"
+
+**🤖 AI Agent:**
+> I've retrieved the real-time UV Index! It is currently identified as 8.5, which corresponds to a 'Very High' risk level. The ozone level is 300 du. Would you like the sun protection recommendations or the daily forecast for this site?
+
+---
+
+**👤 You:**
+> "Show the UV forecast for today in 'Sydney, Australia'."
+
+**🤖 AI Agent:**
+> I've identified the coordinates for Sydney and retrieved the daily UV forecast! Solar intensity is expected to peak at 12:30 PM. I can provide the hourly UV metadata breakdown to help you plan your activities.
+
+---
+
+**👤 You:**
+> "What sun protection is recommended for a UV Index of 10?"
+
+**🤖 AI Agent:**
+> I've retrieved the protection guide metadata! For a UV Index of 10 (identified as 'Very High'), recommendations include using SPF 30+ sunscreen, wearing a wide-brimmed hat, and staying in the shade during peak hours. I can assist you with more safety markers if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Open UV Index API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Open UV Index API** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

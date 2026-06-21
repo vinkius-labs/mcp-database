@@ -1,12 +1,14 @@
 # ComplyAdvantage MCP Server
 
-Automate AML and KYC compliance — screen entities, manage search history, and monitor risks directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/complyadvantage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/complyadvantage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/complyadvantage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/complyadvantage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 14
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Automate AML and KYC compliance — screen entities, manage search history, and monitor risks directly from your AI agent.
 
 ## Description
 Connect your **ComplyAdvantage** account to any AI agent to streamline your Anti-Money Laundering (AML) and Know Your Customer (KYC) workflows through natural conversation.
@@ -53,6 +55,33 @@ Start/stop monitoring
 - **list_users**: Get a list of users in your account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ComplyAdvantage** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for a person named 'John Smith' with a fuzziness of 0.7."
+
+**🤖 AI Agent:**
+> I've initiated the search for 'John Smith'. The search ID is 'SR-99283'. I found 3 potential matches. Would you like to see the full details for these results?
+
+---
+
+**👤 You:**
+> "List the most recent searches performed in my account."
+
+**🤖 AI Agent:**
+> Retrieving your search history... Here are the last 5 searches: 'Acme Corp' (ID: 101), 'Jane Doe' (ID: 102), 'Global Tech' (ID: 103), etc. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Add a comment to search ID 12345 saying 'Verified identity via passport'."
+
+**🤖 AI Agent:**
+> Comment successfully added to search 12345. The note 'Verified identity via passport' is now recorded in the case history.
+
+
 ## Installation & Usage
 
 To install and use the **ComplyAdvantage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **ComplyAdvantage** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

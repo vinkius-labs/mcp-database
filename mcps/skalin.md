@@ -1,12 +1,14 @@
 # Skalin MCP Server
 
-Manage accounts, contacts, and customer health on Skalin with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/skalin)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/skalin)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/skalin-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/skalin-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage accounts, contacts, and customer health on Skalin with AI agents.
 
 ## Description
 Connect your **Skalin** account to any AI agent to automate your customer success and account management operations. Skalin provides a premier platform for monitoring customer health, tracking interactions, and managing tasks, and this integration allows you to retrieve account metadata, monitor health scores, and track alerts through natural conversation.
@@ -49,6 +51,33 @@ Get active alerts
 - **update_cs_task**: Modify success task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Skalin** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all accounts with a health score below 50 in Skalin."
+
+**🤖 AI Agent:**
+> I've retrieved the at-risk accounts. You have 3 accounts with health scores below 50: 'Acme Corp' (35), 'Globex Inc' (42), and 'Initech' (48). Would you like to see recent alerts for any of them?
+
+---
+
+**👤 You:**
+> "Show me the customer health scores for all enterprise accounts with churn risk indicators."
+
+**🤖 AI Agent:**
+> 34 enterprise accounts analyzed. Healthy (22, 65%): Avg health score 87, strong product adoption, regular engagement. At-risk (8, 24%): Avg score 52. Top concerns: Meridian Corp (score 38, login drop 67%), TechVentures (score 45, support tickets +200%), DataFlow (score 51, feature adoption 12%). Churning (4, 12%): 2 confirmed non-renewal, 2 in negotiation. Net Revenue Retention: 108%. Key risk signals: declining logins (5 accounts), reduced feature usage (3), negative NPS (2). CSM action items: 12 tasks overdue.
+
+---
+
+**👤 You:**
+> "Generate a quarterly business review report for the Meridian Corp account."
+
+**🤖 AI Agent:**
+> QBR Report: Meridian Corp (Q1 2025). Health score: 38/100 (Critical). Contract value: $180,000/year (renewal: August 15). Usage: 45 active users of 100 licenses (45% adoption, down from 67%). Feature adoption: 4 of 12 modules active. Support: 23 tickets (vs 8 last quarter, +188%). NPS: 6 (Passive, was 8). Key wins: API integration completed, custom dashboard deployed. Concerns: Champions left the company (2), executive sponsor unresponsive. Recommended actions: Executive alignment meeting, adoption workshop, contract review.
+
+
 ## Installation & Usage
 
 To install and use the **Skalin** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Skalin** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

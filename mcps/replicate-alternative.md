@@ -1,12 +1,14 @@
 # Replicate MCP Server
 
-Run ML models via Replicate — generate images, text, audio and video from community models, track predictions and explore collections from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/replicate-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/replicate-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/replicate-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 12
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Run ML models via Replicate — generate images, text, audio and video from community models, track predictions and explore collections from any AI agent.
 
 ## Description
 Connect your **Replicate** account to any AI agent and run thousands of open-source ML models through natural conversation.
@@ -73,6 +75,33 @@ List recent predictions on Replicate
 Search for models on Replicate by query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Replicate** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all text-to-image collections on Replicate."
+
+**🤖 AI Agent:**
+> Found the 'text-to-image' collection with featured models including stability-ai/sdxl, black-forest-labs/flux-schnell, and ideogram-ai/ideogram-v2. The collection has 50+ models total.
+
+---
+
+**👤 You:**
+> "Search for LLM models on Replicate."
+
+**🤖 AI Agent:**
+> Found popular LLM models: meta/meta-llama-3-70b-instruct (2M+ runs), mistralai/mistral-7b-instruct-v0.3 (1.5M+ runs), google/gemma-2-27b-it (800K+ runs). Each model shows hardware requirements and example inputs.
+
+---
+
+**👤 You:**
+> "Create a prediction using stability-ai/sdxl with prompt 'a sunset over mountains, photorealistic'."
+
+**🤖 AI Agent:**
+> Created prediction pred_abc123. Status: starting. Check back with `get_prediction` to retrieve the generated image URL once it completes (usually 10-30 seconds).
+
+
 ## Installation & Usage
 
 To install and use the **Replicate** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -81,4 +110,11 @@ To install and use the **Replicate** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

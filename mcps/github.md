@@ -1,12 +1,14 @@
 # GitHub MCP Server
 
-Manage repositories, track issues, and search code via AI agents with GitHub.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/github)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/github)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/github-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/github-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 18
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage repositories, track issues, and search code via AI agents with GitHub.
 
 ## Description
 Connect your **GitHub** account to any AI agent to automate your software development lifecycle and code management through the Model Context Protocol (MCP). GitHub is the world's leading AI-powered developer platform. This MCP server enables you to retrieve repository metadata, manage issues, track pull requests, and search for code directly through natural conversation.
@@ -63,6 +65,33 @@ List repository stargazers
 - **search_github_repositories**: Search all repos
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GitHub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 5 open issues in the 'facebook/react' repository."
+
+**🤖 AI Agent:**
+> Retrieving issues... I found 5 recent open issues in react, including 'Bug: Hydration error' and 'Feature request: New hook'. Would you like the details for any of them?
+
+---
+
+**👤 You:**
+> "Find all repositories for the organization 'vinkius'."
+
+**🤖 AI Agent:**
+> Searching organization... I found 12 repositories for Vinkius, including 'vurb-core' and 'mcp-originals'. Would you like to see the stars count for these?
+
+---
+
+**👤 You:**
+> "Read the content of the 'README.md' file in 'vinkius/vurb-docs'."
+
+**🤖 AI Agent:**
+> Fetching file... The README.md for vurb-docs contains: '# Vurb Documentation - Welcome to the official guide...'. Would you like me to summarize the installation steps?
+
+
 ## Installation & Usage
 
 To install and use the **GitHub** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **GitHub** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

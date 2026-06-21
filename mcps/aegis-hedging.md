@@ -1,12 +1,14 @@
 # AEGIS Hedging MCP Server
 
-Energy risk management — manage trades, valuations, and market data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aegis-hedging)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aegis-hedging)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aegis-hedging-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aegis-hedging-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 4
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Energy risk management — manage trades, valuations, and market data via AI.
 
 ## Description
 Connect your **AEGIS Hedging** (Revenue Intelligence) account to your AI agent to orchestrate your energy risk management and trade lifecycle. From monitoring real-time Mark-to-Market (MTM) valuations to auditing trade entries and retrieving forward market curves, your agent handles complex energy data through natural conversation.
@@ -40,6 +42,33 @@ Connect your **AEGIS Hedging** (Revenue Intelligence) account to your AI agent t
 - **check_api_version**: Check AEGIS API version
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AEGIS Hedging** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all energy trades executed in the last 30 days."
+
+**🤖 AI Agent:**
+> I've retrieved your trade logs. You have 12 new trades executed on the AEGIS SEF in the last 30 days, including natural gas swaps and crude oil options. Would you like to see the valuation for these positions?
+
+---
+
+**👤 You:**
+> "Show me the current Mark-to-Market valuation for my natural gas portfolio."
+
+**🤖 AI Agent:**
+> I've analyzed your natural gas positions. Based on current forward curves, your MTM valuation is +$1.2M. The settlement estimate for the next month is currently trending higher due to market volatility. Would you like to see the underlying data?
+
+---
+
+**👤 You:**
+> "Retrieve the energy forward curves for the next 12 months."
+
+**🤖 AI Agent:**
+> I've retrieved the forward market data. The curves show a steady increase in pricing for Q4 2026. I've prepared a summary of the monthly benchmarks for you. Would you like to audit your current hedge coverage against these curves?
+
+
 ## Installation & Usage
 
 To install and use the **AEGIS Hedging** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **AEGIS Hedging** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

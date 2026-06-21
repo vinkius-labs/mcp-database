@@ -1,12 +1,14 @@
 # TarotAPI MCP Server
 
-Draw tarot cards, get readings, and explore card meanings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tarotapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tarotapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tarotapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tarotapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 6
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Draw tarot cards, get readings, and explore card meanings via AI.
 
 ## Description
 Connect **TarotAPI** to any AI agent and access the complete 78-card tarot deck with detailed meanings, keywords, fortune telling interpretations, and card imagery through natural language.
@@ -46,6 +48,39 @@ List all 78 tarot cards
 Search tarot cards by meaning or keywords
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TarotAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Pull a card for my daily reading."
+
+**🤖 AI Agent:**
+> Your card for today is **The Empress** (III) — Major Arcana. Keywords: fertility, femininity, beauty, nature, abundance. This card suggests nurturing energy and creative growth. Embrace beauty and abundance in your life today.
+
+---
+
+**👤 You:**
+> "Give me a three-card past/present/future reading."
+
+**🤖 AI Agent:**
+> Your three-card spread:
+
+**Past**: The Tower — Sudden change and upheaval. A structure in your life crumbled, making way for new growth.
+
+**Present**: Four of Pentacles — Holding on tight to resources. You may be feeling protective of what you have.
+
+**Future**: The Star — Hope, renewal, and inspiration. After the storm, peace and healing are coming.
+
+---
+
+**👤 You:**
+> "What does The Fool card mean in tarot?"
+
+**🤖 AI Agent:**
+> **The Fool (0)** — Major Arcana. Keywords: innocence, beginnings, freedom, innocence, a free spirit. Upright meaning: new beginnings, optimism, trust, and the start of a journey. Reversed meaning: recklessness, risk-taking, naivety. Fortune telling: a new adventure is beginning; embrace the unknown with an open heart.
+
+
 ## Installation & Usage
 
 To install and use the **TarotAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +89,11 @@ To install and use the **TarotAPI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

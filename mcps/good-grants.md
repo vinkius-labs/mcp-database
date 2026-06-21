@@ -1,12 +1,14 @@
 # Good Grants MCP Server
 
-Discover and manage grant applications with a platform that matches your organization to the right funding opportunities.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/good-grants)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/good-grants)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/good-grants-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/good-grants-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 7
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Discover and manage grant applications with a platform that matches your organization to the right funding opportunities.
 
 ## Description
 Connect your **Good Grants** account to any AI agent and simplify how you coordinate your grant programs, track applicant data, and monitor the review process through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Good Grants** account to any AI agent and simplify how you coordi
 - **list_account_users**: List account users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Good Grants** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active grant applications in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your applications. You have 25 active submissions including 'Community Garden Project', 'Tech for Good Grant', and 'Startup Seed Fund'. Which one would you like to see the details or status for?
+
+---
+
+**👤 You:**
+> "Show me the reviews and scores for application 'app_10293'."
+
+**🤖 AI Agent:**
+> Fetching reviews... For application app_10293, I found 3 reviews with an average score of 8.5/10. Reviewers highlighted the 'Social Impact' as a strong point. Shall I retrieve the full comments?
+
+---
+
+**👤 You:**
+> "Create a new application titled 'Youth Tech Workshop' in the 'Education' category."
+
+**🤖 AI Agent:**
+> Success! The application 'Youth Tech Workshop' has been created in your Good Grants account (ID: app_88231). It is currently in draft status in the 'Education' category.
+
+
 ## Installation & Usage
 
 To install and use the **Good Grants** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Good Grants** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

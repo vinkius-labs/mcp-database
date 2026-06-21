@@ -1,12 +1,14 @@
 # HappyFox MCP Server
 
-Automate support ticketing via HappyFox — manage tickets, contacts, and help desk categories directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/happyfox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/happyfox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/happyfox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/happyfox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate support ticketing via HappyFox — manage tickets, contacts, and help desk categories directly from any AI agent.
 
 ## Description
 Connect your **HappyFox** help desk to any AI agent and take full control of your customer support workflows through natural conversation.
@@ -52,6 +54,33 @@ List all support tickets in HappyFox
 - **search_tickets**: Search for tickets using a text query
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HappyFox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all pending tickets in the 'General' category."
+
+**🤖 AI Agent:**
+> I've retrieved your tickets. You have 4 pending items in 'General', including 'Login issue' (ID: 102), 'Billing question' (ID: 105), and 'API feedback' (ID: 110). Which one would you like to update?
+
+---
+
+**👤 You:**
+> "Add a staff update to ticket ID 102: 'Looking into this now'."
+
+**🤖 AI Agent:**
+> Update added! I've successfully logged your response to ticket 102. The customer will be able to see this in their support portal. Would you like to change the ticket status to 'In Progress'?
+
+---
+
+**👤 You:**
+> "Create a new ticket for 'App crash on startup' in the Technical category."
+
+**🤖 AI Agent:**
+> Process started! I found the 'Technical' category (ID: 5). To create the ticket, I'll need the customer's name and email address. Could you provide those?
+
+
 ## Installation & Usage
 
 To install and use the **HappyFox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **HappyFox** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Glama MCP Server
 
-Connect your AI agent to the Glama directory. Discover MCP servers dynamically, analyze attributes, and proxy external intelligence networks through a unified gateway natively.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/glama)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/glama)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/glama-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/glama-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 8
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Connect your AI agent to the Glama directory. Discover MCP servers dynamically, analyze attributes, and proxy external intelligence networks through a unified gateway natively.
 
 ## Description
 Empower your local Vinkius terminal intelligence with the **Glama.ai** infrastructure bridge. Rather than navigating generic web interfaces to find compatible model contexts, let your core logic intuitively search, index, and introspect external MCP servers on the fly. In addition, harness the power to query multiple standard LLM networks via the Glama API Gateway, consolidating all programmatic text completion requirements cleanly.
@@ -52,6 +54,33 @@ Extract detailed parameters and installation instructions for a specific Glama M
 Report semantic usage execution metrics back to the Glama Telemetry backend
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Glama** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all MCP servers relating to CRM logic inside the registry, then let me know their basic descriptions."
+
+**🤖 AI Agent:**
+> Querying global scopes (`glama_list_mcp_servers`)... I found Salesforce-MCP and HubSpot-MCP. Their parameters indicate robust handling for dynamic B2B data contexts via local interfaces locally.
+
+---
+
+**👤 You:**
+> "Are there smaller LLMs available on the Glama API gateway we can proxy text to quickly?"
+
+**🤖 AI Agent:**
+> Retrieving standard OpenAI-compatible definitions (`glama_get_gateway_models`)... Several smaller proxies are available. Meta Llama 3 8B and Claude 3 Haiku both demonstrate operational speeds with low logical barriers ready for semantic requests.
+
+---
+
+**👤 You:**
+> "Report a successful telemetry execution map event back to Glama for the GitHub repo tool."
+
+**🤖 AI Agent:**
+> Initiating logging sequences via `glama_send_telemetry`. Tool usage event for 'github_repo' logged with success status. Your action matrix is appropriately registered within the global metrics securely.
+
+
 ## Installation & Usage
 
 To install and use the **Glama** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Glama** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

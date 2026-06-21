@@ -1,12 +1,14 @@
 # MasterGo MCP Server
 
-Collaborative design platform and UI/UX tool — manage design files, nodes, and comments via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mastergo)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mastergo)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mastergo-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mastergo-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Collaborative design platform and UI/UX tool — manage design files, nodes, and comments via AI.
 
 ## Description
 Empower your AI agent to orchestrate your design workflow with **MasterGo**, the leading professional design tool for high-performance team collaboration. By connecting MasterGo to your agent, you transform complex design file navigation and project coordination into a natural conversation. Your agent can instantly list your files, retrieve design nodes (frames and layers), audit style libraries, and even browse version history without you ever needing to navigate the complex design workspace. Whether you are managing a large-scale design system or a specific UI project, your agent acts as a real-time design assistant, keeping your assets organized and your team aligned.
@@ -46,6 +48,33 @@ Empower your AI agent to orchestrate your design workflow with **MasterGo**, the
 - **list_teams**: List available teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MasterGo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all design files in my MasterGo workspace."
+
+**🤖 AI Agent:**
+> I've retrieved your MasterGo design files. You have 4 active files, including 'Landing Page V2' and 'Mobile Design System'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the comments for file 'design-8821'."
+
+**🤖 AI Agent:**
+> I've listed the comments for 'design-8821'. There are 5 recent threads, including feedback on the header color and mobile navigation. Would you like a detailed summary?
+
+---
+
+**👤 You:**
+> "Retrieve the style library for file 'core-ui-library'."
+
+**🤖 AI Agent:**
+> I've retrieved the styles for 'core-ui-library'. It includes 12 color variables and 8 typography styles. Would you like me to list them all for you?
+
+
 ## Installation & Usage
 
 To install and use the **MasterGo** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **MasterGo** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

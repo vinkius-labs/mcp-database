@@ -1,12 +1,14 @@
 # Magic Number Calculator MCP Server
 
-Calculate and analyze Go-To-Market efficiency using the Magic Number ratio.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/magic-number-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/magic-number-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/magic-number-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/magic-number-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Calculate and analyze Go-To-Market efficiency using the Magic Number ratio.
 
 ## Description
 The Magic Number Calculator is a specialized tool for evaluating Go-To-Market (GTM) efficiency. By comparing your Net New ARR from the current quarter against your Sales and Marketing (S&M) spend from the previous quarter, it calculates the Magic Number ratio to determine if your growth engine is inefficient, healthy, or excellent. Use `calculate_magic_number` to get the raw ratio, `get_efficiency_rating` to categorize performance tiers, and `evaluate_gtm_health_summary` for a comprehensive diagnostic of your business scaling efficiency.
@@ -20,6 +22,33 @@ The Magic Number Calculator is a specialized tool for evaluating Go-To-Market (G
 Categorize a Magic Number into its performance tier
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Magic Number Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate my Magic Number with $500,000 Net New ARR and $400,000 S&M spend."
+
+**🤖 AI Agent:**
+> Your Magic Number is 1.25, which indicates an excellent level of efficiency.
+
+---
+
+**👤 You:**
+> "What is the efficiency rating for a magic number of 0.4?"
+
+**🤖 AI Agent:**
+> A Magic Number of 0.4 falls into the Inefficient tier, suggesting that your cost to acquire revenue is currently too high.
+
+---
+
+**👤 You:**
+> "Evaluate my GTM health: $200,000 Net New ARR and $300,000 S&M spend."
+
+**🤖 AI Agent:**
+> Your GTM health status is Inefficient. The current ratio of 0.67 suggests your growth engine needs optimization to improve capital efficiency.
+
+
 ## Installation & Usage
 
 To install and use the **Magic Number Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -28,4 +57,11 @@ To install and use the **Magic Number Calculator** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

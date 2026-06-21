@@ -1,12 +1,14 @@
 # Archbee MCP Server
 
-Manage documentation spaces, sync OpenAPI specs, and organize technical knowledge directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/archbee)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/archbee)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/archbee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/archbee-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 19
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage documentation spaces, sync OpenAPI specs, and organize technical knowledge directly from your AI agent.
 
 ## Description
 Connect **Archbee** to your AI agent to streamline your technical documentation and knowledge management workflows. This server allows you to interact with your Archbee organization using natural language.
@@ -54,6 +56,33 @@ Connect **Archbee** to your AI agent to streamline your technical documentation 
 - **upload_file**: Upload a file to Archbee storage
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Archbee** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search my Archbee docs for 'authentication flow'."
+
+**🤖 AI Agent:**
+> I found 3 documents related to 'authentication flow'. The most relevant is 'OAuth2 Implementation Guide' (ID: abc123...). Would you like me to retrieve its content?
+
+---
+
+**👤 You:**
+> "Sync this OpenAPI YAML content to document tree 21charIDhere."
+
+**🤖 AI Agent:**
+> Starting OpenAPI synchronization... The API definition has been successfully synced to the document tree. The 'Try It' feature is enabled as requested.
+
+---
+
+**👤 You:**
+> "Create a new document in Archbee with the title 'Onboarding' and content '# Welcome...'"
+
+**🤖 AI Agent:**
+> I've created the 'Onboarding' document. You can access it or update it further using the ID: doc_xyz789.
+
+
 ## Installation & Usage
 
 To install and use the **Archbee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Archbee** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

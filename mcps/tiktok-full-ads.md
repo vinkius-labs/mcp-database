@@ -1,12 +1,14 @@
 # TikTok Full Ads MCP Server
 
-Complete TikTok Ads management � create campaigns, control budgets, analyze performance, track conversions, and manage creative assets via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/tiktok-full-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tiktok-full-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/tiktok-full-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/tiktok-full-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 17
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Complete TikTok Ads management � create campaigns, control budgets, analyze performance, track conversions, and manage creative assets via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire advertising ecosystem on TikTok with the **TikTok Business API**, the platform for reaching the most engaged audience in short-form video. By connecting TikTok Ads to your agent, you transform complex campaign management into a natural conversation. Your agent can instantly list your advertiser accounts, audit ad group performance, and retrieve detailed analytics without you ever touching a dashboard. Whether you are scaling e-commerce sales or building brand presence, your agent acts as a real-time ad strategist, ensuring your marketing is always creative and data-driven.
@@ -61,6 +63,33 @@ Send a server-side pixel event to TikTok
 - **update_campaign_status**: Enable, disable, or delete campaigns
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TikTok Full Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my TikTok advertiser accounts."
+
+**🤖 AI Agent:**
+> I've retrieved your advertiser accounts associated with App ID '12345'. You have 2 accounts: 'Vinkius Global' and 'Vinkius BR'. Which one would you like to audit?
+
+---
+
+**👤 You:**
+> "Show me my active campaigns for advertiser ID 67890."
+
+**🤖 AI Agent:**
+> I've found 3 active campaigns in that account: 'Summer Promo', 'App Install Drive', and 'Brand Reveal'. I can provide budget and performance info for each.
+
+---
+
+**👤 You:**
+> "Get a performance report for advertiser 67890 for last month."
+
+**🤖 AI Agent:**
+> I've generated the integrated report. Your total spend was $1,500 with 250,000 impressions and a CTR of 1.2%. Would you like a breakdown by ad group?
+
+
 ## Installation & Usage
 
 To install and use the **TikTok Full Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **TikTok Full Ads** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

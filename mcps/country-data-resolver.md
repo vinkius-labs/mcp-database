@@ -1,12 +1,14 @@
 # Country Data Resolver MCP Server
 
-Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/country-data-resolver)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/country-data-resolver)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/country-data-resolver-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/country-data-resolver-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** utilities
-**Tools Count:** 1
+
+**Category:** [utilities](../categories/utilities.md)
+
+Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data.
 
 ## Description
 When a CRM agent processes international contacts, it cannot guess that 'MK' is North Macedonia or that 'TL' is Timor-Leste. This MCP resolves any ISO 3166-1 alpha-2 code to its full name in English, Portuguese, Spanish, or French.
@@ -23,6 +25,33 @@ When a CRM agent processes international contacts, it cannot guess that 'MK' is 
 Resolves ISO country codes to full country names in 4 languages, plus alpha-3 and numeric codes. Essential for CRM and Martech agents handling international data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Country Data Resolver** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the full name for country code BR in Portuguese?"
+
+**🤖 AI Agent:**
+> Country: Brasil (alpha-3: BRA, numeric: 076)
+
+---
+
+**👤 You:**
+> "Resolve the country code MK to its full name."
+
+**🤖 AI Agent:**
+> Country: North Macedonia (alpha-3: MKD, numeric: 807)
+
+---
+
+**👤 You:**
+> "Get all ISO codes for Japan."
+
+**🤖 AI Agent:**
+> Country: Japan (alpha-2: JP, alpha-3: JPN, numeric: 392)
+
+
 ## Installation & Usage
 
 To install and use the **Country Data Resolver** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -31,4 +60,11 @@ To install and use the **Country Data Resolver** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

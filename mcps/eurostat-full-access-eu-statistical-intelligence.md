@@ -1,12 +1,14 @@
 # Eurostat Full Access — EU Statistical Intelligence MCP Server
 
-The ultimate EU statistics Mega-Server: 26 tools spanning economy (GDP, inflation, debt), demographics (population, unemployment, migration), trade, environment (emissions, energy, renewables), and 7,000+ dataset discovery — all 27 EU member states.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-full-access-eu-statistical-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eurostat-full-access-eu-statistical-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eurostat-full-access-eu-statistical-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eurostat-full-access-eu-statistical-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 26
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The ultimate EU statistics Mega-Server: 26 tools spanning economy (GDP, inflation, debt), demographics (population, unemployment, migration), trade, environment (emissions, energy, renewables), and 7,000+ dataset discovery — all 27 EU member states.
 
 ## Description
 The **definitive Mega-Server** for EU statistical intelligence.
@@ -102,6 +104,65 @@ Get EU retail trade volume index
 Query any Eurostat trade/industry dataset by code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eurostat Full Access — EU Statistical Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Full EU snapshot: GDP, unemployment, inflation, and emissions"
+
+**🤖 AI Agent:**
+> 🇪🇺 **EU Dashboard**
+
+| Indicator | EU27 | Trend |
+|-----------|------|-------|
+| GDP Growth | +0.8% | → |
+| Unemployment | 5.9% | ↓ |
+| HICP Inflation | 2.4% | ↓ |
+| GHG Emissions | -31% vs 1990 | ↓ |
+| Renewable Share | 23.0% | ↑ |
+| Youth Unemployment | 14.5% | → |
+
+Cross-domain query using economy + population + environment tools.
+
+---
+
+**👤 You:**
+> "Compare Portugal across economy, demographics, and energy"
+
+**🤖 AI Agent:**
+> 🇵🇹 **Portugal — Multi-Domain Profile**
+
+💰 GDP: €245B (2.3% growth)
+📊 Debt/GDP: 99.1%
+👥 Population: 10.3M (aging rapidly)
+📉 Unemployment: 6.6%
+💶 Minimum wage: €820
+⚡ Electricity: 0.218 €/kWh
+🌱 Renewable share: 34%
+🌍 Emissions: -38% vs 1990
+
+7 different datasets queried in one session.
+
+---
+
+**👤 You:**
+> "Find and query a dataset about tourism in the EU"
+
+**🤖 AI Agent:**
+> 🔍 Found: `tour_occ_ninat` — Nights spent in tourist accommodation
+
+🏨 **EU Tourism (Nights Spent)**
+
+🇪🇸 Spain: 468M nights (#1)
+🇮🇹 Italy: 436M
+🇫🇷 France: 394M
+🇩🇪 Germany: 389M
+🇬🇷 Greece: 142M
+
+Discovery + query in a single session.
+
+
 ## Installation & Usage
 
 To install and use the **Eurostat Full Access — EU Statistical Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -110,4 +171,11 @@ To install and use the **Eurostat Full Access — EU Statistical Intelligence** 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

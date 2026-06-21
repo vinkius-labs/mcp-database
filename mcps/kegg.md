@@ -1,12 +1,14 @@
 # KEGG MCP Server
 
-Access the Kyoto Encyclopedia of Genes and Genomes (KEGG) to query genomic, chemical, and systemic functional information directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kegg)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kegg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kegg-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kegg-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 7
+
+**Category:** [databases](../categories/databases.md)
+
+Access the Kyoto Encyclopedia of Genes and Genomes (KEGG) to query genomic, chemical, and systemic functional information directly from your AI agent.
 
 ## Description
 Connect your AI agent to the **KEGG** (Kyoto Encyclopedia of Genes and Genomes) database, the gold standard for bioinformatics and systems biology. This server enables deep exploration of biological pathways, genomes, and chemical substances through natural language.
@@ -50,6 +52,33 @@ Finds related entries using database cross-references
 Obtains a list of entry identifiers and associated names
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **KEGG** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available organisms in the KEGG database."
+
+**🤖 AI Agent:**
+> I'll use `kegg_list` with the 'organism' parameter. I've found thousands of entries, including 'hsa' (Homo sapiens), 'mmu' (Mus musculus), and 'eco' (Escherichia coli). Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Search for compounds with the keyword 'glucose' in the KEGG database."
+
+**🤖 AI Agent:**
+> Running `kegg_find` for 'glucose' in the compound database... I found several entries, including C00031 (D-Glucose) and C00221 (beta-D-Glucose). Would you like the full details for C00031?
+
+---
+
+**👤 You:**
+> "Get the full entry details for the human gene hsa:10458."
+
+**🤖 AI Agent:**
+> Fetching data using `kegg_get` for 'hsa:10458'... This gene corresponds to ACSL4 (acyl-CoA synthetase long chain family member 4). It is involved in metabolic pathways like Fatty acid metabolism (hsa00071).
+
+
 ## Installation & Usage
 
 To install and use the **KEGG** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **KEGG** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

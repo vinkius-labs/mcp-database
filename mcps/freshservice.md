@@ -1,12 +1,14 @@
 # Freshservice MCP Server
 
-Manage your IT service desk, track tickets, and oversee assets via AI agents with Freshservice.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshservice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshservice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshservice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshservice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 12
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Manage your IT service desk, track tickets, and oversee assets via AI agents with Freshservice.
 
 ## Description
 Connect your **Freshservice** instance to any AI agent to automate your IT Service Management (ITSM) operations through the Model Context Protocol (MCP). Freshservice is an intelligent, right-sized ITSM solution that empowers enterprises to modernize IT and other business functions. This MCP server enables you to track IT tickets, manage your CMDB asset inventory, and retrieve detailed requester profiles directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Freshservice** instance to any AI agent to automate your IT Servi
 - **list_itsm_tickets**: List IT tickets
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshservice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active IT tickets in my service desk."
+
+**🤖 AI Agent:**
+> Retrieving tickets... I found 5 active incidents, including 'VPN Access Failure' (Priority: High) and 'Software Request' (Priority: Low). Would you like the full details for the VPN issue?
+
+---
+
+**👤 You:**
+> "Show me the details for requester 'Jane Smith'."
+
+**🤖 AI Agent:**
+> Searching requesters... I found Jane Smith (jane@example.com). She is in the 'Engineering' department and has 2 open IT tickets associated with her profile.
+
+---
+
+**👤 You:**
+> "Create a new IT ticket: 'Printer Not Working' from 'johndoe@email.com'."
+
+**🤖 AI Agent:**
+> Ticket created! I have successfully opened incident ID 98765 regarding 'Printer Not Working' for johndoe@email.com. It is currently in the 'Open' status.
+
+
 ## Installation & Usage
 
 To install and use the **Freshservice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Freshservice** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

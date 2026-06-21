@@ -1,12 +1,14 @@
 # Adzuna MCP Server
 
-Search job listings and salary data — find vacancies and employment trends via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adzuna)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adzuna)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adzuna-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adzuna-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 4
+
+**Category:** [productivity](../categories/productivity.md)
+
+Search job listings and salary data — find vacancies and employment trends via AI.
 
 ## Description
 Connect your **Adzuna** developer account to your AI agent to unlock a powerful job search and labor market intelligence engine. From finding the latest vacancies based on keywords and location to retrieving historical salary data and identifying top employers, your agent handles employment data through natural conversation.
@@ -42,6 +44,33 @@ Search for thousands of job vacancies across multiple countries using keywords, 
 - **list_top_companies**: List the top hiring companies and employers based on a specific job category or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Adzuna** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for 'Python Developer' jobs in London."
+
+**🤖 AI Agent:**
+> I've found 150 Python Developer vacancies in London. Most roles offer between £60k and £90k. Would you like to see the latest 5 listings or check the salary distribution?
+
+---
+
+**👤 You:**
+> "Show me the average salary history for 'Data Scientist' in the US."
+
+**🤖 AI Agent:**
+> I've retrieved the salary history for Data Scientists in the US. Over the last 12 months, the average salary has increased by 5%, reaching approximately $135,000. Would you like to see which companies are paying the most?
+
+---
+
+**👤 You:**
+> "What are the top hiring companies for 'Sales' roles in Brazil?"
+
+**🤖 AI Agent:**
+> Based on current Adzuna data for Brazil, the top companies hiring for Sales roles include major retail chains and tech startups. I've listed the top 5 employers along with their active vacancy counts for you.
+
+
 ## Installation & Usage
 
 To install and use the **Adzuna** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Adzuna** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Clash of Clans Strategy & War Analytics MCP Server
 
-The definitive server for Clash of Clans — track clan wars, player progress, and global rankings via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clash-of-clans-strategy-war-analytics)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clash-of-clans-strategy-war-analytics)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clash-of-clans-strategy-war-analytics-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clash-of-clans-strategy-war-analytics-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 14
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+The definitive server for Clash of Clans — track clan wars, player progress, and global rankings via AI.
 
 ## Description
 Equip your AI agent with professional-grade strategic intelligence for **Clash of Clans**. This high-performance server provides deep access to the official Supercell database, allowing your agent to instantly audit clan war logs, monitor real-time war status (stars, destruction), and analyze detailed player profiles including hero levels and troop progress. Whether you are a clan leader orchestrating a War League (CWL) strategy or a competitive player tracking global leaderboards, your agent acts as a dedicated tactical advisor through natural conversation.
@@ -54,6 +56,33 @@ List official clan or player labels/tags
 - **search_clans**: Search for clans by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clash of Clans Strategy & War Analytics** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze the current war status for clan tag '#2PP' and show the current score."
+
+**🤖 AI Agent:**
+> Retrieving live war data... Clan '#2PP' is currently in war against 'Opponent Clan'. The score is 45-42 in your favor, with 15 attacks remaining. Your destruction percentage is at 92.5%. Would you like to see which members still have attacks left?
+
+---
+
+**👤 You:**
+> "Get the hero levels and war stars for player tag '#PUUID123'."
+
+**🤖 AI Agent:**
+> Inspecting player profile... Player '#PUUID123' has a Barbarian King at Level 85, Archer Queen at Level 90, and Grand Warden at Level 65. They have earned a total of 1,540 War Stars. Would you like to see their troop levels for specific war compositions?
+
+---
+
+**👤 You:**
+> "Show the top 5 clans in Brazil based on current trophy rankings."
+
+**🤖 AI Agent:**
+> Running the location audit for Brazil... The top 5 clans are currently 'Clan A', 'Clan B', 'Clan C', 'Clan D', and 'Clan E'. 'Clan A' leads with over 65,000 trophies. Shall I provide the requirements to join the number one ranked clan?
+
+
 ## Installation & Usage
 
 To install and use the **Clash of Clans Strategy & War Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Clash of Clans Strategy & War Analytics** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

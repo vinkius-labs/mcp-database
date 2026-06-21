@@ -1,12 +1,14 @@
 # Grid MCP Server
 
-Turn spreadsheet data into interactive dashboards and visual stories that make numbers accessible to every stakeholder.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grid)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grid)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grid-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grid-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Turn spreadsheet data into interactive dashboards and visual stories that make numbers accessible to every stakeholder.
 
 ## Description
 Connect your **WorkOnGrid** account to any AI agent and take full control of your field operations and operational data management through natural conversation.
@@ -51,6 +53,33 @@ Add a new record to a worksheet
 - **update_worksheet_record**: Modify an existing operational record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Grid** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active worksheets in my Grid account."
+
+**🤖 AI Agent:**
+> I've retrieved your worksheets. You have 3 active structures: 'Site Safety Checks' (ID: ws_123), 'Equipment Maintenance' (ID: ws_456), and 'Asset Inventory' (ID: ws_789). Which one should I inspect or update?
+
+---
+
+**👤 You:**
+> "Add a maintenance record to 'ws_456' for 'Excavator EX01'."
+
+**🤖 AI Agent:**
+> Record created! I've logged the maintenance entry for Excavator EX01 in the 'Equipment Maintenance' worksheet. The entry is now visible in your Grid dashboard for team review.
+
+---
+
+**👤 You:**
+> "Show me the latest dashboard status for field operations."
+
+**🤖 AI Agent:**
+> Fetching dashboard metadata... I found your 'Field Operations Overview' dashboard. It indicates 85% completion across active sites with 12 records updated in the last hour. Would you like a detailed breakdown by site?
+
+
 ## Installation & Usage
 
 To install and use the **Grid** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Grid** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

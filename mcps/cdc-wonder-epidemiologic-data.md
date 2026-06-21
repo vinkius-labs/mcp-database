@@ -1,12 +1,14 @@
 # CDC WONDER (Epidemiologic Data) MCP Server
 
-Access public health data from the CDC WONDER system, including mortality, births, and vaccine adverse events directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cdc-wonder-epidemiologic-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cdc-wonder-epidemiologic-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cdc-wonder-epidemiologic-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cdc-wonder-epidemiologic-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 1
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access public health data from the CDC WONDER system, including mortality, births, and vaccine adverse events directly through your AI agent.
 
 ## Description
 Connect to the **CDC WONDER** (Wide-ranging Online Data for Epidemiologic Research) system to query massive public health databases through natural language.
@@ -38,6 +40,33 @@ Connect to the **CDC WONDER** (Wide-ranging Online Data for Epidemiologic Resear
 Query CDC WONDER epidemiologic databases
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CDC WONDER (Epidemiologic Data)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Query the CDC WONDER D76 database for mortality rates in 2021 with parameters for age groups."
+
+**🤖 AI Agent:**
+> I've initiated a request to the D76 Detailed Mortality database. The query is processing with your specified age group filters and 2021 timeframe. I will present the resulting epidemiologic table once the CDC system responds.
+
+---
+
+**👤 You:**
+> "Fetch VAERS reports related to vaccine code 'COVID19' from the CDC WONDER database."
+
+**🤖 AI Agent:**
+> Accessing the VAERS database... I am executing `query_wonder_database` with the 'VAERS' ID and filtering for the 'COVID19' vaccine code. I'll summarize the reported adverse events and counts for you.
+
+---
+
+**👤 You:**
+> "Analyze birth statistics for the state of California using database D10."
+
+**🤖 AI Agent:**
+> Querying the D10 Natality database for California. I'm applying the necessary location filters (F_ prefixes) to extract birth rates and maternal demographics. One moment while I retrieve the data.
+
+
 ## Installation & Usage
 
 To install and use the **CDC WONDER (Epidemiologic Data)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -46,4 +75,11 @@ To install and use the **CDC WONDER (Epidemiologic Data)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

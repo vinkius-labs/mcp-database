@@ -1,12 +1,14 @@
 # DoubleTick MCP Server
 
-Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/doubletick-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/doubletick-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/doubletick-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/doubletick-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses.
 
 ## Description
 Connect your **DoubleTick** account to any AI agent and take full control of your official WhatsApp Business marketing and sales workflows through natural conversation.
@@ -45,6 +47,33 @@ No more manual template copy-pasting or slow message tracking in the dashboard. 
 Send a WhatsApp template message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DoubleTick** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my approved WhatsApp templates in DoubleTick."
+
+**🤖 AI Agent:**
+> I've retrieved your approved templates. You currently have 5 active designs, including 'order_confirmation' (en) and 'welcome_message' (pt). Which one would you like to use for a message?
+
+---
+
+**👤 You:**
+> "Send the 'order_update' template to +123456789 with value 'Shipped'."
+
+**🤖 AI Agent:**
+> Message dispatched! I've sent the 'order_update' template to +123456789 with the placeholder 'Shipped'. The message ID is 'msg_123'. I'll monitor the delivery status for you.
+
+---
+
+**👤 You:**
+> "Check the delivery status for message ID 'msg_123'."
+
+**🤖 AI Agent:**
+> Fetching status... Message msg_123 has been successfully 'Delivered' and was 'Read' by the recipient at 2:30 PM today. Would you like to view your full sent history?
+
+
 ## Installation & Usage
 
 To install and use the **DoubleTick** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **DoubleTick** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

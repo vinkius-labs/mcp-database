@@ -1,12 +1,14 @@
 # Vivo Game Open Platform MCP Server
 
-Manage Vivo Game Open Platform distribution — validate logins, query orders, and report game data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vivo-game-open-platform)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vivo-game-open-platform)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vivo-game-open-platform-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vivo-game-open-platform-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage Vivo Game Open Platform distribution — validate logins, query orders, and report game data directly from any AI agent.
 
 ## Description
 Connect your AI agents to the **Vivo Game Open Platform** (vivo 开放平台), the primary ecosystem for game distribution on Vivo mobile devices. This MCP provides 9 tools to automate server-to-server validation, payment tracking, and player data reporting for high-performance mobile and mini-games.
@@ -46,6 +48,33 @@ Connect your AI agents to the **Vivo Game Open Platform** (vivo 开放平台), t
 - **validate_login**: Verify a user login token from Vivo SDK
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vivo Game Open Platform** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the status of Vivo order ID 'cp_order_555666'."
+
+**🤖 AI Agent:**
+> Connecting to Vivo payment servers... I've retrieved the details for order 'cp_order_555666'. The current status is 'success' for an amount of 10.00 CNY. The transaction is ready for virtual item delivery.
+
+---
+
+**👤 You:**
+> "Validate the login token 'tok_vivo_abc' from the client."
+
+**🤖 AI Agent:**
+> Requesting validation from Vivo Auth... Success! The token is valid and corresponds to OpenID: `user_888999`. You can now proceed with the user's game session.
+
+---
+
+**👤 You:**
+> "List all active game servers configured in the Vivo console."
+
+**🤖 AI Agent:**
+> Retrieving server list... I found 3 active servers: 1. Asia-East (ID: srv_1), 2. Global-South (ID: srv_2), 3. Test-Net (ID: srv_3). All are currently 'online'.
+
+
 ## Installation & Usage
 
 To install and use the **Vivo Game Open Platform** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Vivo Game Open Platform** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

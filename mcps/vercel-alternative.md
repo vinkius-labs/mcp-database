@@ -1,12 +1,14 @@
 # Vercel MCP Server
 
-Manage Vercel deployments, projects and domains via API — inspect builds, track deployments, manage env vars and domains from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/vercel-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/vercel-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/vercel-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 14
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage Vercel deployments, projects and domains via API — inspect builds, track deployments, manage env vars and domains from any AI agent.
 
 ## Description
 Connect your **Vercel** account to any AI agent and take full control of your deployment pipeline through natural conversation.
@@ -81,6 +83,33 @@ List Vercel projects
 List Vercel teams
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Vercel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest deployments for my portfolio project."
+
+**🤖 AI Agent:**
+> I found 5 recent deployments for your portfolio project: the latest one (READY, deployed 2h ago from main branch), followed by a BUILDING deployment from 30m ago (PR #42), and an ERROR deployment from 3h ago that failed due to a build timeout.
+
+---
+
+**👤 You:**
+> "Add the STRIPE_SECRET_KEY env var to my production environment."
+
+**🤖 AI Agent:**
+> Done! I've created the `STRIPE_SECRET_KEY` environment variable scoped to the production environment for your project. The value has been securely stored and will be available on the next deployment.
+
+---
+
+**👤 You:**
+> "Check if my custom domain example.com is properly configured."
+
+**🤖 AI Agent:**
+> The domain example.com is VERIFIED with valid A records pointing to Vercel's IPs (76.76.21.21). SSL certificate is active and issued by Let's Encrypt. The apex domain and www subdomain are both configured correctly. No DNS misconfigurations detected.
+
+
 ## Installation & Usage
 
 To install and use the **Vercel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **Vercel** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

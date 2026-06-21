@@ -1,12 +1,14 @@
 # ShipEngine MCP Server
 
-Automate shipping and logistics via ShipEngine — validate addresses, compare rates, and track packages directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shipengine-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shipengine-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shipengine-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shipengine-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 13
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Automate shipping and logistics via ShipEngine — validate addresses, compare rates, and track packages directly from any AI agent.
 
 ## Description
 Connect your **ShipEngine** account to any AI agent to streamline your entire shipping workflow through natural conversation.
@@ -53,6 +55,33 @@ Validate shipping addresses
 - **void_label**: Void a shipping label
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ShipEngine** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Validate this shipping address: 4009 Marathon Blvd, Austin, TX 78756."
+
+**🤖 AI Agent:**
+> I've validated the address. It is a valid residential address in Austin, Texas. ShipEngine has confirmed the formatting is correct for delivery.
+
+---
+
+**👤 You:**
+> "Get shipping rates for a 2lb package from Zip 90210 to 10001."
+
+**🤖 AI Agent:**
+> I found several rates for your shipment. The cheapest option is USPS Ground Advantage at $8.45, while the fastest is FedEx Overnight at $42.10. Would you like to create a label for one of these?
+
+---
+
+**👤 You:**
+> "Track my UPS package with tracking number 1Z9999999999999999."
+
+**🤖 AI Agent:**
+> The UPS package is currently 'In Transit'. It was last scanned at the Louisville, KY hub and is estimated to be delivered by tomorrow at 7:00 PM.
+
+
 ## Installation & Usage
 
 To install and use the **ShipEngine** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **ShipEngine** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

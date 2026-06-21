@@ -1,12 +1,14 @@
 # Arize AI MCP Server
 
-Automate LLM and ML observability via Arize — monitor models, track telemetry, run evaluations, and analyze data drift directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arize-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arize-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arize-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arize-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Automate LLM and ML observability via Arize — monitor models, track telemetry, run evaluations, and analyze data drift directly from any AI agent.
 
 ## Description
 Connect your **Arize AI** observability platform to any AI agent and take full control of your Machine Learning and LLM telemetry workflows through natural conversation.
@@ -56,6 +58,33 @@ Ingest raw telemetry logs into Arize
 List accessible workspaces within the Arize platform
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Arize AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active Machine Learning models monitored in my workspace."
+
+**🤖 AI Agent:**
+> I've fetched your models from the Arize Space. You currently have 3 connected models: 'Fraud-Detection-v2' (Classification), 'Customer-Churn-XGB' (Score), and 'OpenAI-Customer-Service-Bot' (LLM). Would you like to see the recent drift metrics for any of them?
+
+---
+
+**👤 You:**
+> "Get the evaluation baseline datasets available for our LLM checks."
+
+**🤖 AI Agent:**
+> You have two static evaluation datasets loaded in Arize: 'Support-Tickets-Q2-GroundTruth' (1400 rows) and 'Toxicity-Benchmark' (250 rows). I can trigger an automated `run_eval` check targeting these datasets against your active LLM logs if needed.
+
+---
+
+**👤 You:**
+> "Push these 3 mocked prompt responses as telemetry logs to the 'OpenAI-Customer-Service-Bot' model."
+
+**🤖 AI Agent:**
+> I successfully structured your 3 prompts into valid ingestion payloads and pushed them via the `ingest_log` tool. They should now be available for analysis and drift observation in the Arize telemetry dashboard.
+
+
 ## Installation & Usage
 
 To install and use the **Arize AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Arize AI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

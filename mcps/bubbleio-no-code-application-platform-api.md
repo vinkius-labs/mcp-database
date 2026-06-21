@@ -1,12 +1,14 @@
 # Bubble.io (No-code Application Platform API) MCP Server
 
-Manage your Bubble.io application data and trigger backend workflows directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bubbleio-no-code-application-platform-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bubbleio-no-code-application-platform-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bubbleio-no-code-application-platform-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bubbleio-no-code-application-platform-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage your Bubble.io application data and trigger backend workflows directly from any AI agent.
 
 ## Description
 Connect your **Bubble.io** no-code application to your AI agent to perform deep data operations and automate backend logic through natural language.
@@ -51,6 +53,33 @@ Search, paginate, and sort Things in the Bubble database
 - **update_thing**: Update (Patch) an existing Thing in the Bubble database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bubble.io (No-code Application Platform API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all 'rentalunit' records where the price is less than 500."
+
+**🤖 AI Agent:**
+> I've searched the 'rentalunit' table. I found 3 matches: 'Cozy Studio' (UID: 123), 'Urban Loft' (UID: 456), and 'Garden Room' (UID: 789). Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Create a new 'customer' record with the name 'John Doe' and email 'john@example.com'."
+
+**🤖 AI Agent:**
+> Successfully created a new 'customer' record. The Unique ID (UID) for John Doe is 1715829304123x456. Is there anything else you'd like to add to this profile?
+
+---
+
+**👤 You:**
+> "Trigger the 'process_refund' workflow for transaction UID 987654321."
+
+**🤖 AI Agent:**
+> The 'process_refund' backend workflow has been triggered for UID 987654321. The Bubble server has acknowledged the request and is processing the logic now.
+
+
 ## Installation & Usage
 
 To install and use the **Bubble.io (No-code Application Platform API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Bubble.io (No-code Application Platform API)** MCP serv
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Airbnb MCP Server
 
-Search and manage Airbnb listings, experiences, reservations, and pricing directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/airbnb)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/airbnb)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/airbnb-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/airbnb-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Search and manage Airbnb listings, experiences, reservations, and pricing directly from any AI agent.
 
 ## Description
 Connect your **Airbnb** account to any AI agent and take full control of travel planning, accommodation search, and reservation management through natural conversation.
@@ -97,6 +99,47 @@ Results include listing name, location, price, rating, amenities, and booking li
 Search Airbnb listings by location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Airbnb** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for Airbnb listings in Paris for 2 guests, checking in March 15th and checking out March 20th, 2026."
+
+**🤖 AI Agent:**
+> I found 15 available listings in Paris for March 15-20, 2026. Top options: 1. **Charming Marais Apartment** — €120/night, ⭐4.92 (324 reviews), sleeps 4, entire home
+2. **Eiffel Tower View Studio** — €185/night, ⭐4.95 (512 reviews), sleeps 2, Superhost
+3. **Montmartre Artist Loft** — €95/night, ⭐4.87 (198 reviews), sleeps 3, entire home
+
+Would you like detailed information, pricing breakdown, or availability calendar for any of these?
+
+---
+
+**👤 You:**
+> "What Airbnb experiences are available in Tokyo on April 5th, 2026?"
+
+**🤖 AI Agent:**
+> I found 8 experiences in Tokyo for April 5th, 2026:
+1. **Traditional Tea Ceremony in Asakusa** — ¥4,500/person, ⭐4.96 (287 reviews), 2 hours
+2. **Shibuya Night Food Tour** — ¥8,900/person, ⭐4.93 (456 reviews), 3.5 hours
+3. **Tsukiji Market & Sushi Making Class** — ¥12,000/person, ⭐4.98 (612 reviews), 4 hours
+4. **Akihabara Anime & Manga Walking Tour** — ¥3,800/person, ⭐4.85 (198 reviews), 2.5 hours
+
+Would you like full details about any of these experiences?
+
+---
+
+**👤 You:**
+> "Show me my upcoming reservations and check the availability calendar for my next trip."
+
+**🤖 AI Agent:**
+> You have 2 upcoming reservations:
+1. **Lisbon Riverside Apartment** — March 22-27, 2026 (5 nights) — €450 total — Host: Maria (98% response rate)
+2. **Barcelona Gothic Quarter Flat** — April 10-14, 2026 (4 nights) — €380 total — Host: Carlos (Superhost)
+
+I've checked the availability calendar for your Lisbon trip: the dates March 22-27 are confirmed and reserved. Would you like the check-in instructions or details about the neighborhood?
+
+
 ## Installation & Usage
 
 To install and use the **Airbnb** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -105,4 +148,11 @@ To install and use the **Airbnb** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

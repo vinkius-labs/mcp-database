@@ -1,12 +1,14 @@
 # Nearmap (High-Res Aerial Imagery & AI) MCP Server
 
-Manage geospatial data via Nearmap — retrieve high-res aerial imagery, extract AI features, and audit survey coverage.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nearmap-high-res-aerial-imagery-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nearmap-high-res-aerial-imagery-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nearmap-high-res-aerial-imagery-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nearmap-high-res-aerial-imagery-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 10
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Manage geospatial data via Nearmap — retrieve high-res aerial imagery, extract AI features, and audit survey coverage.
 
 ## Description
 Connect your **Nearmap** account to any AI agent and take full control of world-class high-resolution aerial imagery, geospatial AI insights, and topographic surface models through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Nearmap** account to any AI agent and take full control of world-
 - **get_vertical_tile**: Retrieve high-resolution vertical static nadir aerial imagery tiles tracking captured boundaries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nearmap (High-Res Aerial Imagery & AI)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the latest high-res vertical imagery for coordinates '34.0522,-118.2437'"
+
+**🤖 AI Agent:**
+> Retrieving imagery… I've identified the tile coordinates for downtown Los Angeles at zoom level 20. The most recent survey was captured on Feb 12, 2026. Here is the vertical imagery URL for your inspection. Would you like me to check for AI-detected features at this location?
+
+---
+
+**👤 You:**
+> "Detect all solar panels within a 100m radius of this point: [lat,lon]"
+
+**🤖 AI Agent:**
+> Running AI feature extraction… I've identified 3 solar arrays within the specified radius. The detected features include high-confidence vector geometries. Array 1 covers approximately 45 sq meters. I can provide the full GeoJSON for these detections if you'd like.
+
+---
+
+**👤 You:**
+> "Show me the oblique view from the North for this building coordinate"
+
+**🤖 AI Agent:**
+> Retrieving oblique perspective… I've fetched the perspective tile looking North for your target. This view clearly shows the structural facade and roof orientation. Would you like me to retrieve the South or East perspectives for a complete comparison?
+
+
 ## Installation & Usage
 
 To install and use the **Nearmap (High-Res Aerial Imagery & AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Nearmap (High-Res Aerial Imagery & AI)** MCP server in 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

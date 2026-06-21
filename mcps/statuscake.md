@@ -1,12 +1,14 @@
 # StatusCake MCP Server
 
-Monitor website uptime, page speed, and SSL certificates directly from your AI agent using StatusCake.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/statuscake)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/statuscake)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/statuscake-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/statuscake-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 27
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Monitor website uptime, page speed, and SSL certificates directly from your AI agent using StatusCake.
 
 ## Description
 Connect your **StatusCake** account to any AI agent to monitor your infrastructure's health and performance through natural conversation.
@@ -64,6 +66,33 @@ No more manually checking dashboards to see if your site is down. Your AI acts a
 - **update_uptime**: Update an uptime check
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **StatusCake** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active uptime monitors."
+
+**🤖 AI Agent:**
+> I've retrieved your uptime monitors. You have 3 active tests: 'Main API' (ID: 101), 'Customer Portal' (ID: 102), and 'Legacy DB' (ID: 103). All are currently reporting 'Up'.
+
+---
+
+**👤 You:**
+> "Create a new heartbeat check named 'Daily Backup' with a period of 86400 seconds."
+
+**🤖 AI Agent:**
+> Successfully created the heartbeat check 'Daily Backup'. The system will now expect a signal every 24 hours. The Test ID is 55012.
+
+---
+
+**👤 You:**
+> "Show me the details for SSL monitor ID 998877."
+
+**🤖 AI Agent:**
+> Inspecting SSL monitor 998877... The certificate for 'secure.example.com' is valid. It expires in 45 days (2024-12-15) and is issued by Let's Encrypt.
+
+
 ## Installation & Usage
 
 To install and use the **StatusCake** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **StatusCake** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

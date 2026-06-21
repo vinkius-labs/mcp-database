@@ -1,12 +1,14 @@
 # Fitbit MCP Server
 
-Analyze your health and fitness data — track Active Zone Minutes, activity logs, blood glucose, and body goals directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fitbit-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fitbit-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fitbit-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fitbit-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 51
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Analyze your health and fitness data — track Active Zone Minutes, activity logs, blood glucose, and body goals directly from your AI agent.
 
 ## Description
 Connect your **Fitbit** account to any AI agent and gain deep insights into your physical health and wellness through natural conversation.
@@ -86,6 +88,33 @@ Connect your **Fitbit** account to any AI agent and gain deep insights into your
 - **update_profile**: Update Profile
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fitbit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my activity summary for today."
+
+**🤖 AI Agent:**
+> I've retrieved your daily summary. Today you've taken 8,432 steps, covered 6.2km, and burned 2,150 calories. You also have 25 Active Zone Minutes recorded.
+
+---
+
+**👤 You:**
+> "What are my current weight goals on Fitbit?"
+
+**🤖 AI Agent:**
+> Your current weight goal is set to 75kg. You started at 80kg, meaning you are 5kg away from your target. Would you like to see your recent weight logs?
+
+---
+
+**👤 You:**
+> "Get my Active Zone Minutes for the last 7 days."
+
+**🤖 AI Agent:**
+> Fetching your AZM data for the past week... You averaged 35 minutes per day, with a peak of 60 minutes last Tuesday. You've met your weekly intensity goal!
+
+
 ## Installation & Usage
 
 To install and use the **Fitbit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -94,4 +123,11 @@ To install and use the **Fitbit** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

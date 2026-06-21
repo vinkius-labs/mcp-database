@@ -1,12 +1,14 @@
 # Evernote MCP Server
 
-Manage personal notes via Evernote — create and search notes, handle notebooks and tags, and monitor account quotas directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/evernote)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evernote)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evernote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evernote-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage personal notes via Evernote — create and search notes, handle notebooks and tags, and monitor account quotas directly from any AI agent.
 
 ## Description
 Connect your **Evernote** account to any AI agent and take full control of your personal knowledge management and note-taking workflows through natural conversation.
@@ -64,6 +66,33 @@ Retrieve all tags defined in the Evernote account
 - **get_user**: Get profile information for the currently authenticated Evernote user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Evernote** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a note in 'Work' notebook with title 'Meeting Actions' and content 'Follow up with team.'"
+
+**🤖 AI Agent:**
+> Note created! 'Meeting Actions' has been added to your 'Work' notebook (GUID: abc-123). It is now synced and available in Evernote.
+
+---
+
+**👤 You:**
+> "Search for notes containing 'recipe' and tagged 'favorite'"
+
+**🤖 AI Agent:**
+> Searching notes... I found 3 matches: 'Lasagna Recipe', 'Apple Pie', and 'Classic Pancakes'. Would you like the full content for any of these recipes?
+
+---
+
+**👤 You:**
+> "List all my notebooks and their note counts"
+
+**🤖 AI Agent:**
+> Retrieving notebooks... You have 5 notebooks: 'Inbox' (12 notes), 'Work' (45 notes), 'Projects' (8 notes), 'Ideas' (22 notes), and 'Archive' (100+ notes). Which one would you like to explore?
+
+
 ## Installation & Usage
 
 To install and use the **Evernote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Evernote** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

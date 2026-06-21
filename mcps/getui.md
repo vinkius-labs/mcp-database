@@ -1,12 +1,14 @@
 # GeTui / 个推 MCP Server
 
-Massive notification push and LBS platform in China — manage campaigns, devices, and reports via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/getui)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/getui)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/getui-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/getui-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Massive notification push and LBS platform in China — manage campaigns, devices, and reports via AI.
 
 ## Description
 Empower your AI agent to orchestrate your push notification infrastructure with **GeTui** (个推), the dominant CPaaS and developer services provider in China. By connecting GeTui to your agent, you transform complex device targeting, message broadcasting, and delivery auditing into a natural conversation. Your agent can instantly send targeted notifications to specific users, broadcast messages to your entire user base, retrieve real-time delivery and click statistics, and monitor user online status without you ever needing to navigate the comprehensive GeTui Developer Center. Whether you are automating verification flows or coordinating large-scale promotional alerts, your agent acts as a real-time messaging assistant, keeping your communication flow accurate and your user insights up-to-date.
@@ -48,6 +50,33 @@ Bind alias to user
 - **query_user_alias**: Query user alias
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GeTui / 个推** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a push notification to CID '1a0918c...' with title 'Urgent Update'."
+
+**🤖 AI Agent:**
+> I've initiated the targeted push notification for the specified user. The task ID is '8821'. Would you like me to check the delivery status in a few minutes?
+
+---
+
+**👤 You:**
+> "Check the online status for user CID '9920a1b...'."
+
+**🤖 AI Agent:**
+> I've checked the status for the specified CID. The user is currently 'Online' and connected to the GeTui push server. Should I check their associated tags as well?
+
+---
+
+**👤 You:**
+> "Show me the push report for yesterday."
+
+**🤖 AI Agent:**
+> I've retrieved the push statistics for yesterday. You had 15 total push tasks reaching 120,000 users with an average display rate of 85%. Would you like a detailed breakdown of the task with the highest click-through rate?
+
+
 ## Installation & Usage
 
 To install and use the **GeTui / 个推** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **GeTui / 个推** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

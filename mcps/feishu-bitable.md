@@ -1,12 +1,14 @@
 # Feishu Bitable MCP Server
 
-Collaborative multi-dimensional table platform by Lark — manage bases, tables, and records via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/feishu-bitable)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/feishu-bitable)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/feishu-bitable-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/feishu-bitable-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Collaborative multi-dimensional table platform by Lark — manage bases, tables, and records via AI.
 
 ## Description
 Empower your AI agent to orchestrate your data with **Feishu Bitable** (Lark), the leading multi-dimensional table platform for modern collaboration. By connecting Feishu Bitable to your agent, you transform complex database management and record tracking into a natural conversation. Your agent can instantly list your tables, retrieve field schemas, manage records (create, update, delete), and even search through your data without you needing to navigate the web interface. Whether you are managing a project tracker, a customized CRM, or an asset database, your agent acts as a real-time data assistant, keeping your bases organized and your team aligned.
@@ -48,6 +50,33 @@ List views in a table
 - **update_record**: Update an existing record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Feishu Bitable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all tables in Bitable base 'AppbcbWCzen6D8dezhoCH2RpMAh'."
+
+**🤖 AI Agent:**
+> I've retrieved the tables for the specified Bitable base. There are 3 tables: 'Inventory', 'Suppliers', and 'Orders'. Which one would you like to view records for?
+
+---
+
+**👤 You:**
+> "Add a new record to the 'Inventory' table with fields: Name='MacBook Pro', Quantity=5."
+
+**🤖 AI Agent:**
+> Done! I've added the new record to the 'Inventory' table. The entry for 'MacBook Pro' with a quantity of 5 has been successfully created.
+
+---
+
+**👤 You:**
+> "Search for records in table 'tblsRc9GRRXKqhvW' where 'Status' equals 'Shipped'."
+
+**🤖 AI Agent:**
+> I've performed the search and found 8 records matching your criteria. Would you like me to list their details or summarize the results?
+
+
 ## Installation & Usage
 
 To install and use the **Feishu Bitable** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Feishu Bitable** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

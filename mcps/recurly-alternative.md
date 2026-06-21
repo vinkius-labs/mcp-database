@@ -1,12 +1,14 @@
 # Recurly MCP Server
 
-Automate subscription billing and management via Recurly — manage subscriptions, accounts, and invoices directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/recurly-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/recurly-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/recurly-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/recurly-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 11
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Automate subscription billing and management via Recurly — manage subscriptions, accounts, and invoices directly from any AI agent.
 
 ## Description
 Connect your **Recurly** account to any AI agent and simplify your subscription billing, revenue management, and customer orchestration through natural conversation.
@@ -40,6 +42,33 @@ Connect your **Recurly** account to any AI agent and simplify your subscription 
 - **list_subscriptions**: List Recurly subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Recurly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active subscriptions in Recurly."
+
+**🤖 AI Agent:**
+> I've retrieved your subscriptions. You have 10 active subscriptions, including 'Premium Plan' and 'Standard Tier'.
+
+---
+
+**👤 You:**
+> "Show me the subscription revenue breakdown by plan for the current billing period."
+
+**🤖 AI Agent:**
+> Revenue by plan this billing period. "Enterprise Annual" leads with $234,000 (42% of total, 78 subscribers). "Professional Monthly" at $156,000 (28%, 520 subscribers). "Starter Monthly" at $89,000 (16%, 1,780 subscribers). "Team Annual" at $67,000 (12%, 134 subscribers). "Free Trial" has 234 active trials, 34% conversion rate. Total MRR: $546,000. Growth vs last period: +8.2%. 12 enterprise accounts renewed this month with an average 15% uplift.
+
+---
+
+**👤 You:**
+> "List all failed invoice payments from the last 14 days that need follow-up."
+
+**🤖 AI Agent:**
+> 34 failed payments in the last 14 days totaling $18,200. By reason: Card declined (18), Insufficient funds (9), Expired card (5), Network error (2). Retry status: 12 recovered after automatic retry (35% recovery). 22 still outstanding. High-value failures: Acme Corp $2,400 (card expired), TechVentures $1,800 (declined). 8 accounts are past the 3rd retry attempt and need manual outreach. Dunning emails sent: 67 total, 23% updated their payment method.
+
+
 ## Installation & Usage
 
 To install and use the **Recurly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Recurly** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

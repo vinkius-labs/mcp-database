@@ -1,12 +1,14 @@
 # TheRundown MCP Server
 
-Access real-time sports data, betting odds, and schedules for NFL, NBA, MLB, and more directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/therundown)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/therundown)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/therundown-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/therundown-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time sports data, betting odds, and schedules for NFL, NBA, MLB, and more directly from your AI agent.
 
 ## Description
 Connect **TheRundown** to any AI agent to retrieve the most accurate real-time sports information. Whether you are tracking live scores, analyzing betting markets, or checking upcoming schedules, this server provides professional-grade sports data through natural conversation.
@@ -44,6 +46,33 @@ Retrieve events for a specific sport on a given date
 Retrieve a list of supported sports and their corresponding IDs
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TheRundown** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available sports and their IDs from TheRundown."
+
+**🤖 AI Agent:**
+> I've retrieved the supported sports. Some key IDs include: NFL (2), NBA (4), MLB (3), and NHL (6). Which league would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the NFL games scheduled for 2024-11-10."
+
+**🤖 AI Agent:**
+> Searching for NFL events on that date... I found several matchups, including 'Philadelphia Eagles vs. Dallas Cowboys' and 'Detroit Lions vs. Houston Texans'. Would you like the betting odds for any of these?
+
+---
+
+**👤 You:**
+> "Get the latest odds for event ID 492031."
+
+**🤖 AI Agent:**
+> Fetching odds for event 492031... For this matchup, the Spread is currently -3.5 for the home team at Pinnacle and -3.0 at DraftKings. The Total is set at 48.5 points.
+
+
 ## Installation & Usage
 
 To install and use the **TheRundown** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **TheRundown** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Spellbook Legal AI MCP Server
 
-AI-powered contract drafting and review — analyze contracts, draft clauses, detect risks, and compare against 2,000+ market precedents via Spellbook.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/spellbook-legal-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spellbook-legal-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spellbook-legal-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spellbook-legal-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 13
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+AI-powered contract drafting and review — analyze contracts, draft clauses, detect risks, and compare against 2,000+ market precedents via Spellbook.
 
 ## Description
 Connect to **Spellbook Legal AI** and bring AI-powered contract drafting, review, and analysis to any AI agent. Trusted by 4,000+ in-house teams and law firms worldwide, Spellbook helps transactional lawyers draft and review contracts faster and more accurately.
@@ -138,6 +140,33 @@ EXAMPLES:
 Upload a contract document to Spellbook for analysis
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Spellbook Legal AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze this NDA for risks and issues."
+
+**🤖 AI Agent:**
+> Contract analysis complete for 'NDA - Acme Corp.pdf'. Found 3 risks: 1) [High] Unlimited liability exposure — recommend adding mutual liability cap at $X, 2) [Medium] Missing return of confidential materials provision — add clause requiring return/destruction of materials upon termination, 3) [Low] Term is longer than market standard (5 years vs typical 2-3 years). Overall risk level: Medium-High.
+
+---
+
+**👤 You:**
+> "Draft a pro-buyer limitation of liability clause for Delaware."
+
+**🤖 AI Agent:**
+> Clause drafted: 'Limitation of Liability. EXCEPT FOR BREACHES OF CONFIDENTIALITY OBLIGATIONS, INFRINGEMENT OF INTELLECTUAL PROPERTY RIGHTS, OR INDEMNIFICATION OBLIGATIONS, IN NO EVENT SHALL EITHER PARTY'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE TOTAL AMOUNTS PAID BY BUYER TO SELLER IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO LIABILITY.' Jurisdiction: Delaware, Position: Pro-Buyer.
+
+---
+
+**👤 You:**
+> "Compare the market standard for indemnification clauses."
+
+**🤖 AI Agent:**
+> Market Comparison for Indemnification: 1) Market Standard (65% of contracts): Mutual indemnification for IP infringement, confidentiality breaches, and third-party claims, 2) Pro-Buyer Position (20%): Seller indemnifies buyer for all claims arising from seller's performance, with no cap, 3) Pro-Seller Position (15%): Limited indemnification capped at fees paid in prior 12 months, excluding consequential damages. Your current clause aligns with Market Standard.
+
+
 ## Installation & Usage
 
 To install and use the **Spellbook Legal AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -146,4 +175,11 @@ To install and use the **Spellbook Legal AI** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

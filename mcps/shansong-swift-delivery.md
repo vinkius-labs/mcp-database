@@ -1,12 +1,14 @@
 # Shansong Swift Delivery MCP Server
 
-Bring Shansong's fast P2P Delivery Network into your LLM. Estimate logistics routing, dispatch riders, and track locations.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shansong-swift-delivery)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shansong-swift-delivery)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shansong-swift-delivery-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shansong-swift-delivery-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Bring Shansong's fast P2P Delivery Network into your LLM. Estimate logistics routing, dispatch riders, and track locations.
 
 ## Description
 Equip your AI Agents with the **Shansong (闪送)** infrastructure logic, bringing one of the fastest Point-to-Point delivery APIs locally into your environment. Through 10 dedicated management extensions, your LLMs can govern entire delivery routes, request estimates, and interact dynamically with local couriers.
@@ -42,6 +44,25 @@ Equip your AI Agents with the **Shansong (闪送)** infrastructure logic, bringi
 - **submit_complaint**: Submit complaint against assigned rider
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shansong Swift Delivery** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Where is the rider for order SS991024?"
+
+**🤖 AI Agent:**
+> According to the `query_rider_position` API, the assigned rider is actively streaming GPS data at Latitude 34.221, Longitude 116.480.
+
+---
+
+**👤 You:**
+> "Tip the Shansong driver on order SS111 around 50 cents."
+
+**🤖 AI Agent:**
+> Done! I pushed a 50 cents tip payload directly against order SS111 successfully augmenting the delivery priority index.
+
+
 ## Installation & Usage
 
 To install and use the **Shansong Swift Delivery** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +71,11 @@ To install and use the **Shansong Swift Delivery** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

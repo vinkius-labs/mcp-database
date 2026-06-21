@@ -1,12 +1,14 @@
 # FunnelCockpit MCP Server
 
-Build high-converting sales funnels, landing pages, and email sequences with an all-in-one German marketing platform.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/funnelcockpit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/funnelcockpit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/funnelcockpit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/funnelcockpit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Build high-converting sales funnels, landing pages, and email sequences with an all-in-one German marketing platform.
 
 ## Description
 Connect your **FunnelCockpit** account to any AI agent and take full control of your sales funnels and automated marketing workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual exporting of lead lists or missing webinar sign-ups. Your AI acts
 Update a CRM contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FunnelCockpit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active funnels in my FunnelCockpit account."
+
+**🤖 AI Agent:**
+> I've retrieved your funnels. You currently have 5 active profiles, including 'Main Sales Funnel' and 'Lead Magnet'. Would you like the detailed page metadata for any of them?
+
+---
+
+**👤 You:**
+> "Check for new CRM contacts added today."
+
+**🤖 AI Agent:**
+> Contact directory orchestrated! I've identified 10 new profiles added today, including 'John Lead' and 'Acme Corp'. I've retrieved the technical tag metadata for your review. Shall I check their last funnel activity?
+
+---
+
+**👤 You:**
+> "Show the registration count for the 'Upcoming Webinar'."
+
+**🤖 AI Agent:**
+> Webinar intelligence orchestrated! For 'Upcoming Webinar', I've identified 50 registered viewers. I've retrieved the registration source metadata for your review. Need help preparing the automated follow-up emails?
+
+
 ## Installation & Usage
 
 To install and use the **FunnelCockpit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **FunnelCockpit** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

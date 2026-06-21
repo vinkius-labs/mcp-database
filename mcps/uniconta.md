@@ -1,12 +1,14 @@
 # Uniconta MCP Server
 
-Automate ERP workflows via Uniconta — retrieve debtors, query invoices, manage GL accounts, and list inventory directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/uniconta)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/uniconta)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/uniconta-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/uniconta-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 8
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Automate ERP workflows via Uniconta — retrieve debtors, query invoices, manage GL accounts, and list inventory directly from any AI agent.
 
 ## Description
 Connect your **Uniconta ERP** to any AI agent and take full enterprise control over global accounting ledgers, debtor/creditor relationships, and billing tracking securely natively via chat.
@@ -44,6 +46,33 @@ No digging into complicated Uniconta visual reports to pull a customer's address
 - **list_daily_journals**: Lists all General Ledger daily journals
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Uniconta** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Please provide the exact unformatted list of debtors actively open on this company's Uniconta profile."
+
+**🤖 AI Agent:**
+> I've fetched 22 root debtors successfully. The top three are "Global Tech Solutions" (RowId: 100), "Beta Widgets" (RowId: 104), and "Alpha Retail" (RowId: 121). Shall I grab more specific properties of any?
+
+---
+
+**👤 You:**
+> "Look up our daily general ledger journals using the API."
+
+**🤖 AI Agent:**
+> Daily journals have been gathered. You have 3 pending batches currently registered under the accounting period mapping 'Q3'. Do you want the AI to analyze specific sub-transactions?
+
+---
+
+**👤 You:**
+> "Fetch the metadata and details of Debtor ID 993 running in Uniconta."
+
+**🤖 AI Agent:**
+> Details isolated for ID 993: Legal Name represents "Acme Wholesale UK". Address logged sits at 1st London Ave. Their credit limit stands currently at max $250,000 threshold.
+
+
 ## Installation & Usage
 
 To install and use the **Uniconta** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Uniconta** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

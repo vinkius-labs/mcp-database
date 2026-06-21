@@ -1,12 +1,14 @@
 # GatherContent MCP Server
 
-Manage structured content projects, track items, and oversee workflows via AI agents with GatherContent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gathercontent)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gathercontent)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gathercontent-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gathercontent-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 12
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage structured content projects, track items, and oversee workflows via AI agents with GatherContent.
 
 ## Description
 Connect your **GatherContent** (by Bynder) account to any AI agent to automate your structured content operations and editorial workflows through the Model Context Protocol (MCP). GatherContent is a content operations platform that helps teams organize and produce structured content at scale. This MCP server enables you to manage your content projects, retrieve item data, and track workflow statuses directly through natural conversation.
@@ -52,6 +54,33 @@ List workflow states
 - **update_content_item**: Modify item metadata
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GatherContent** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active content projects in my account."
+
+**🤖 AI Agent:**
+> Retrieving projects... I found 3 active projects: 'Website Redesign', 'Blog Production', and '2024 Product Guide'. Which project would you like to explore?
+
+---
+
+**👤 You:**
+> "Show me the content items in the 'Blog Production' project (ID: 12345)."
+
+**🤖 AI Agent:**
+> Fetching items... I found 12 items in 'Blog Production'. Key items include '10 Tips for Content Strategy' (Status: Review) and 'What is MCP?' (Status: Draft).
+
+---
+
+**👤 You:**
+> "Get the field values for item 'item_98765'."
+
+**🤖 AI Agent:**
+> Retrieving item content... For item 98765, I found fields for 'Headline', 'Body Copy', and 'Meta Description'. The body copy currently contains 450 words and is marked as 'Ready for Review'.
+
+
 ## Installation & Usage
 
 To install and use the **GatherContent** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **GatherContent** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

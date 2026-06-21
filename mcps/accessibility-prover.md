@@ -1,12 +1,14 @@
 # Accessibility Prover MCP Server
 
-Accessibility Prover is a pre-build validation system that forces WCAG 2.2 AA compliance before code is written. It audits semantic HTML, keyboard navigation, contrast ratios (4.5:1 minimum), screen reader compatibility, and motion safety across 5 structured Decision Pivots. Unlike runtime scanners, it catches div soup, missing focus traps, and inaccessible animations during the design phase — before they reach production and before they violate the European Accessibility Act (EAA 2025).
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accessibility-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accessibility-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accessibility-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Accessibility Prover is a pre-build validation system that forces WCAG 2.2 AA compliance before code is written. It audits semantic HTML, keyboard navigation, contrast ratios (4.5:1 minimum), screen reader compatibility, and motion safety across 5 structured Decision Pivots. Unlike runtime scanners, it catches div soup, missing focus traps, and inaccessible animations during the design phase — before they reach production and before they violate the European Accessibility Act (EAA 2025).
 
 ## Description
 Accessibility Prover validates user interface specifications against WCAG 2.2 AA standards using structured reasoning — not DOM scanning. It acts as a pre-build gate that forces AI agents and front-end developers to satisfy accessibility rules before writing component code.
@@ -44,6 +46,76 @@ Accessibility Prover validates UI specifications using 5 Decision Pivots. Each p
 Structured reflection tool for accessibility compliance (WCAG 2.2 AA / EAA 2025 / Section 508). Forces the agent to validate semantic HTML landmarks, keyboard navigation specs, text/background contrast ratios, screen reader ARIA annotations, and motion media queries BEFORE building a component. Catches Div Soup (no semantic landmarks), Keyboard Traps (unreachable interactive elements), Contrast Failures (ratios below 4.5:1), Screen Reader Blindness (missing alt/aria-label/form associations), and Motion Hostility (no prefers-reduced-motion). Call once per UI view or complex component
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Accessibility Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Let's build a close button. It's a div with a click event and an X icon inside."
+
+**🤖 AI Agent:**
+> Verdict: DIV_SOUP.
+
+A `<div>` lacks native keyboard focus, Enter/Space activation, and the implicit 'button' ARIA role. Screen readers announce it as generic text — the user does not know it is interactive.
+
+Fix: Replace `<div onclick>` with `<button aria-label="Close dialog">`. Add `focus-visible` styles for keyboard users. Hide the decorative SVG icon with `aria-hidden="true"` so the screen reader uses the aria-label instead.
+
+---
+
+**👤 You:**
+> "Component: CloseButton.
+Layout: <button class='p-2' aria-label='Close dialog'><svg aria-hidden='true'>...</svg></button>.
+Keyboard: native button, focusable. focus-visible: 2px solid outline.
+Contrast: icon is #4A5568 on #FFFFFF background. Ratio: 4.62:1.
+Screen Reader: aria-label='Close dialog' on button. SVG hidden.
+Motion: no animations."
+
+**🤖 AI Agent:**
+> Verdict: A11Y_PROVEN.
+
+✓ semanticHTML — Native `<button>` with correct implicit role.
+✓ keyboardNavigable — Focusable by default, visible focus indicator present.
+✓ contrastCompliant — 4.62:1 exceeds the 4.5:1 AA minimum for standard text.
+✓ screenReaderReady — aria-label provides clear context. Decorative SVG hidden.
+✓ motionRespected — No animations present, no motion risk.
+
+---
+
+**👤 You:**
+> "Component: CloseButton.
+Layout: <button aria-label='Close dialog'><svg>...</svg></button>.
+Keyboard: native button.
+Contrast: icon color #E2E8F0 on #FFFFFF background. Ratio: 1.28:1.
+Screen Reader: aria-label set.
+Motion: none."
+
+**🤖 AI Agent:**
+> Verdict: CONTRAST_FAILING.
+
+✗ contrastCompliant — Ratio 1.28:1 fails the WCAG 2.2 AA minimum of 4.5:1 by a factor of 3.5×. The icon is effectively invisible to users with low vision or color deficiency.
+
+Fix: Change icon color to #4A5568 (4.62:1) or #374151 (6.33:1) to exceed the 4.5:1 threshold. Verify the ratio in hover and focus states as well — not just default.
+
+---
+
+**👤 You:**
+> "Component: NotificationBanner.
+Layout: <div role='alert'> with a dismiss button (<span onclick='close()'>×</span>).
+Keyboard: dismiss element is not focusable.
+Contrast: text #1F2937 on #FEF3C7 background. Ratio: 8.19:1.
+Screen Reader: role='alert' is set on the container. Dismiss has no label.
+Motion: banner slides in from the top with 300ms ease-in."
+
+**🤖 AI Agent:**
+> Verdict: KEYBOARD_TRAPPED + DIV_SOUP.
+
+✓ contrastCompliant — 8.19:1 exceeds the 4.5:1 minimum.
+✓ screenReaderReady (partial) — role='alert' is correct for live announcements.
+✗ semanticHTML — Dismiss uses `<span onclick>`, which has no keyboard access or ARIA role. Replace with `<button aria-label="Dismiss notification">`.
+✗ keyboardNavigable — Dismiss is unreachable by Tab. Keyboard users cannot close the notification.
+✗ motionRespected — 300ms slide animation lacks `prefers-reduced-motion` check. Wrap in `@media (prefers-reduced-motion: no-preference)` or provide `transition: none` fallback.
+
+
 ## Installation & Usage
 
 To install and use the **Accessibility Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +124,11 @@ To install and use the **Accessibility Prover** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

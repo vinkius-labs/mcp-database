@@ -1,12 +1,14 @@
 # PropertyData MCP Server
 
-Access comprehensive UK property market data, valuations, and building analytics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/propertydata)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/propertydata)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/propertydata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/propertydata-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 68
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Access comprehensive UK property market data, valuations, and building analytics directly from your AI agent.
 
 ## Description
 Connect **PropertyData** to your AI agent to unlock professional-grade UK real estate insights. This server allows you to query live market prices, historical growth, and detailed building information using postcodes, UPRNs, or coordinates.
@@ -103,6 +105,33 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **yields**: Determine local rental yields
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PropertyData** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the average asking prices in the postcode area OX1?"
+
+**🤖 AI Agent:**
+> I've analyzed the OX1 area. The current average asking price is £545,000, with detached houses averaging £820,000 and flats around £350,000. Would you like to see the price per square foot for this area as well?
+
+---
+
+**👤 You:**
+> "Find the UPRN for '10 Downing Street, London' and tell me its energy efficiency rating."
+
+**🤖 AI Agent:**
+> The UPRN for 10 Downing Street is 100023336951. According to the latest EPC data, the property has an energy efficiency rating of D. I can also fetch the floor area or title number if needed.
+
+---
+
+**👤 You:**
+> "Analyze the capital growth in Manchester over the last 5 years."
+
+**🤖 AI Agent:**
+> In Manchester, capital growth has been strong, showing a cumulative increase of approximately 28.5% over the last 5 years. The highest growth was seen in the M1 and M4 postcodes. Would you like a breakdown of the current sales demand in those specific areas?
+
+
 ## Installation & Usage
 
 To install and use the **PropertyData** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -111,4 +140,11 @@ To install and use the **PropertyData** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

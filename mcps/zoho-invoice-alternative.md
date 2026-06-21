@@ -1,12 +1,14 @@
 # Zoho Invoice MCP Server
 
-Create and send professional invoices, track payments, and manage expenses with free invoicing software that scales with your business.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-invoice-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-invoice-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-invoice-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-invoice-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 12
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Create and send professional invoices, track payments, and manage expenses with free invoicing software that scales with your business.
 
 ## Description
 Connect your **Zoho Invoice** account to any AI agent and simplify how you manage your professional billing, customer directory, and payment tracking through natural conversation.
@@ -64,6 +66,33 @@ List all invoices in Zoho Invoice
 List all customer payments received
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Invoice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my unpaid invoices and verify the contact details for 'Acme Corp'."
+
+**🤖 AI Agent:**
+> I found 3 unpaid invoices, totaling $4,500. For 'Acme Corp', the contact ID is 84029. Their primary email is 'billing@acme.com' and they currently have an outstanding balance of $1,200. Would you like me to send them a payment reminder?
+
+---
+
+**👤 You:**
+> "Create a new invoice for client 'cust_8823' for 'Consulting Services' at $150.00, and include a note thanking them for their business."
+
+**🤖 AI Agent:**
+> Success! Invoice #INV-99023 has been created for $150.00 and assigned to client cust_8823. The note 'Thank you for your business' was added. It is currently in 'DRAFT' status. Shall I send it now?
+
+---
+
+**👤 You:**
+> "List all business expenses recorded this month and fetch the full details for the highest one."
+
+**🤖 AI Agent:**
+> I retrieved 12 business expenses for this month. The highest expense is $850.00 for 'Software Subscriptions' (Expense ID: 40392). It was billed by 'TechCloud' and is assigned to the 'Internal IT' project.
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Invoice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Zoho Invoice** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

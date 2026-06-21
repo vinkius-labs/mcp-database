@@ -1,12 +1,14 @@
 # Inoreader MCP Server
 
-Follow hundreds of news sources and blogs with a powerful RSS reader that filters, organizes, and prioritizes content for you.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/inoreader)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inoreader)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inoreader-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inoreader-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Follow hundreds of news sources and blogs with a powerful RSS reader that filters, organizes, and prioritizes content for you.
 
 ## Description
 Connect your **Inoreader** account to any AI agent and transform how you monitor news, blogs, and social feeds through natural language control.
@@ -51,6 +53,33 @@ Get articles for a specific feed, folder, or tag
 - **rename_tag**: Rename an existing tag or folder
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Inoreader** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the latest news from my Tech folder?"
+
+**🤖 AI Agent:**
+> I've fetched the contents of your 'Tech' folder. Here are the top 3 stories: 'New AI Breakthrough' from TechCrunch, 'React 19 Released' from Dev.to, and 'The Future of Web3' from Wired. Would you like me to summarize any of these?
+
+---
+
+**👤 You:**
+> "Find articles about 'SpaceX' that I haven't read yet."
+
+**🤖 AI Agent:**
+> Searching your unread reading list... I found 2 articles related to SpaceX: 'Starship Test Flight Update' and 'Falcon 9 Launch Schedule'. Both are marked as unread. Shall I open the description for the Starship flight?
+
+---
+
+**👤 You:**
+> "Mark all articles in my 'Social Media' tag as read."
+
+**🤖 AI Agent:**
+> Processing batch update... Done! All articles within the 'Social Media' tag have been marked as read. Your unread count for this tag is now zero.
+
+
 ## Installation & Usage
 
 To install and use the **Inoreader** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Inoreader** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

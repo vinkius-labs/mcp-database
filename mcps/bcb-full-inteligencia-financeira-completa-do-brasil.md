@@ -1,12 +1,14 @@
 # BCB Full — Inteligência Financeira Completa do Brasil MCP Server
 
-The definitive Brazil Central Bank Mega-Server: 22 tools spanning PTAX dollar quotes, 150+ currencies, Selic rates, CDI, IPCA/IGP-M inflation, Focus Survey expectations, GDP, debt, PIX, and universal access to 20,000+ SGS statistical time series.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-full-inteligencia-financeira-completa-do-brasil)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-full-inteligencia-financeira-completa-do-brasil)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bcb-full-inteligencia-financeira-completa-do-brasil-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bcb-full-inteligencia-financeira-completa-do-brasil-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 21
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+The definitive Brazil Central Bank Mega-Server: 22 tools spanning PTAX dollar quotes, 150+ currencies, Selic rates, CDI, IPCA/IGP-M inflation, Focus Survey expectations, GDP, debt, PIX, and universal access to 20,000+ SGS statistical time series.
 
 ## Description
 The **ultimate Brazil Central Bank Mega-Server** — 22 tools across 4 domains.
@@ -87,6 +89,43 @@ Obter a taxa CDI (Certificado de Depósito Interbancário)
 Obter as expectativas do mercado para a taxa Selic (Relatório Focus)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BCB Full — Inteligência Financeira Completa do Brasil** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Complete Brazil financial briefing: dollar, Selic, inflation, and GDP"
+
+**🤖 AI Agent:**
+> 🇧🇷 **BCB Full Briefing**
+
+💱 USD/BRL: R$ 5.7327 (PTAX)
+🏦 Selic: 14.25% | CDI: 14.15%
+📈 IPCA: 5.12% (12m) | IGP-M: 4.83%
+📊 GDP (IBC-Br): +0.3% monthly
+💳 Debt/GDP: 62.4%
+🏦 Reserves: $356.2B
+💳 PIX: 4.2B txns/month
+
+7 BCB series queried simultaneously.
+
+---
+
+**👤 You:**
+> "Compare the expected IPCA inflation against the Selic target for next year."
+
+**🤖 AI Agent:**
+> According to the latest Focus Survey, top institutions predict Selic to fall gracefully to 9.5% by end of next year, while IPCA points to a 3.8% inflationary threshold.
+
+---
+
+**👤 You:**
+> "Extract the complete trade balance deficit metrics."
+
+**🤖 AI Agent:**
+> Querying structural OData files... Brazil reports a current surplus Trade Balance closing around +$6.8 billion strongly pushed by agribusiness exports.
+
+
 ## Installation & Usage
 
 To install and use the **BCB Full — Inteligência Financeira Completa do Brasil** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -95,4 +134,11 @@ To install and use the **BCB Full — Inteligência Financeira Completa do Brasi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

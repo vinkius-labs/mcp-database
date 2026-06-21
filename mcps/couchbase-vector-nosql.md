@@ -1,12 +1,14 @@
 # Couchbase (Vector & NoSQL) MCP Server
 
-Manage vector search and NoSQL via Couchbase — execute N1QL queries, perform KNN vector searches, and audit documents directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/couchbase-vector-nosql)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/couchbase-vector-nosql)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/couchbase-vector-nosql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/couchbase-vector-nosql-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** databases
-**Tools Count:** 7
+
+**Category:** [databases](../categories/databases.md)
+
+Manage vector search and NoSQL via Couchbase — execute N1QL queries, perform KNN vector searches, and audit documents directly from any AI agent.
 
 ## Description
 Connect your **Couchbase** (Capella or self-hosted) cluster to any AI agent and take full control of your NoSQL and vector data through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Couchbase** (Capella or self-hosted) cluster to any AI agent and 
 - **fts_search**: Perform structural text-based extraction matching asynchronous Content Trees
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Couchbase (Vector & NoSQL)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all search indexes in my cluster"
+
+**🤖 AI Agent:**
+> I found 3 search indexes: 'vector-index-v1', 'fts-content-search', and 'customer-lookup'. Which one would you like to use for a search?
+
+---
+
+**👤 You:**
+> "Find the top 3 similar products using this vector: [0.12, -0.5, 0.88]"
+
+**🤖 AI Agent:**
+> Vector search complete! I found 3 matches in 'vector-index-v1'. The top result is 'Wireless Pro Headphones' with a similarity score of 0.98. Would you like to see the full document metadata?
+
+---
+
+**👤 You:**
+> "Run N1QL query: 'SELECT name, price FROM `travel-sample` WHERE price < 100 LIMIT 5'"
+
+**🤖 AI Agent:**
+> Query executed successfully! I've retrieved 5 items from 'travel-sample'. Results include 'Economy Flight' ($85) and 'Local Tour' ($45). I have the full JSON response if you need more details.
+
+
 ## Installation & Usage
 
 To install and use the **Couchbase (Vector & NoSQL)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Couchbase (Vector & NoSQL)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

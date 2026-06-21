@@ -1,12 +1,14 @@
 # Reqres MCP Server
 
-Test your front-end against a real API — manage users, resources, and project records for prototyping and testing.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/reqres)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/reqres)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/reqres-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/reqres-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 25
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Test your front-end against a real API — manage users, resources, and project records for prototyping and testing.
 
 ## Description
 Connect to **Reqres**, the industry-standard hosted REST-API, to simulate real-world data interactions without setting up a dedicated backend. Perfect for frontend developers, QA engineers, and AI agent builders.
@@ -60,6 +62,33 @@ Connect to **Reqres**, the industry-standard hosted REST-API, to simulate real-w
 - **verify_magic_link**: Verify a magic link token to get a session token
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Reqres** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the users on the second page of the demo API."
+
+**🤖 AI Agent:**
+> I've retrieved the users from page 2. You have users like Michael Lawson (ID: 7) and Lindsay Ferguson (ID: 8). Would you like the details for a specific user ID?
+
+---
+
+**👤 You:**
+> "Create a new user named 'Alice' with the job 'Senior Developer'."
+
+**🤖 AI Agent:**
+> User 'Alice' has been successfully created (simulated). The API returned ID 452 with a creation timestamp of today. The job is set to 'Senior Developer'.
+
+---
+
+**👤 You:**
+> "Fetch all records from the 'inventory' collection slug."
+
+**🤖 AI Agent:**
+> Querying the 'inventory' collection... I found 3 records. They include 'Item A', 'Item B', and 'Item C'. Would you like to see the full JSON data for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **Reqres** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Reqres** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

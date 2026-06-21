@@ -1,12 +1,14 @@
 # Arlo Smart MCP Server
 
-Control Arlo security cameras — view recordings, arm/disarm devices, and manage security modes via Arlo Smart API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arlo-smart)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arlo-smart)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arlo-smart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arlo-smart-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 11
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Control Arlo security cameras — view recordings, arm/disarm devices, and manage security modes via Arlo Smart API.
 
 ## Description
 Connect to **Arlo Smart API** and control your Arlo security cameras, review recordings, and manage security modes from any AI agent. Arm and disarm cameras, browse recorded videos, and monitor your home security through natural language commands.
@@ -152,6 +154,33 @@ EXAMPLES:
 Set the automation mode for an Arlo device
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Arlo Smart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Arlo devices and show me which cameras I have."
+
+**🤖 AI Agent:**
+> I found 4 Arlo devices in your account: 1) Front Door (Basestation VMB5000) — connected, 2) Backyard Camera (Arlo Pro 4) — connected, 3) Garage Camera (Arlo Essential) — connected, 4) Side Door Camera (Arlo Pro 3) — connected. All devices are online and ready for security monitoring.
+
+---
+
+**👤 You:**
+> "Show me today's recordings from all my Arlo cameras."
+
+**🤖 AI Agent:**
+> Found 5 recordings from today: 1) Backyard Camera — 2:34pm, 30s motion detected, 2) Garage Camera — 4:12pm, 15s motion detected, 3) Front Door — 5:45pm, 45s person detected, 4) Backyard Camera — 7:20pm, 20s animal detected, 5) Side Door — 8:05pm, 25s motion detected. All recordings are available for download via presigned URLs.
+
+---
+
+**👤 You:**
+> "Arm all my Arlo cameras for when I leave the house."
+
+**🤖 AI Agent:**
+> Arming devices... Front Door basestation set to armed mode (mode1). Backyard Camera armed. Garage Camera armed. Side Door Camera armed. All cameras are now actively monitoring for motion and will record and send alerts when movement is detected.
+
+
 ## Installation & Usage
 
 To install and use the **Arlo Smart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -160,4 +189,11 @@ To install and use the **Arlo Smart** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

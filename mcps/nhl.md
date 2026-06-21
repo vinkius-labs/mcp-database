@@ -1,12 +1,14 @@
 # NHL MCP Server
 
-Access real-time NHL scores, schedules, standings, and player statistics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nhl)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nhl)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nhl-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nhl-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 47
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time NHL scores, schedules, standings, and player statistics directly from your AI agent.
 
 ## Description
 Connect your AI agent to the pulse of the **National Hockey League**. This server provides comprehensive access to NHL data, from live game scores and play-by-play updates to historical player stats and team rosters.
@@ -82,6 +84,33 @@ Connect your AI agent to the pulse of the **National Hockey League**. This serve
 - **suggest_players**: Suggest players by name fragment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NHL** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the NHL schedule for today?"
+
+**🤖 AI Agent:**
+> I'll check the current schedule for you. Today there are 5 games scheduled, including the Rangers vs. Bruins at 7:00 PM ET and the Oilers vs. Flames at 9:30 PM ET.
+
+---
+
+**👤 You:**
+> "Show me the roster for the Montreal Canadiens for the 20232024 season."
+
+**🤖 AI Agent:**
+> Fetching the 2023-2024 roster for MTL... The roster includes key players like Nick Suzuki (C), Cole Caufield (LW), and Mike Matheson (D). Would you like stats for a specific player?
+
+---
+
+**👤 You:**
+> "Search for player Connor McDavid and show his current stats."
+
+**🤖 AI Agent:**
+> Searching for Connor McDavid... Found Player ID 8478402. He currently has 132 points this season (32 goals, 100 assists) in 76 games played.
+
+
 ## Installation & Usage
 
 To install and use the **NHL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -90,4 +119,11 @@ To install and use the **NHL** MCP server in your AI agents (Claude, Cursor, Win
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

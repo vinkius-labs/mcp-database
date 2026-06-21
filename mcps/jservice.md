@@ -1,12 +1,14 @@
 # Jservice MCP Server
 
-Access the Jeopardy! clue database — fetch clues by category, value, or date, and get random trivia for your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/jservice)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jservice)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/jservice-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/jservice-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 4
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the Jeopardy! clue database — fetch clues by category, value, or date, and get random trivia for your AI agent.
 
 ## Description
 Connect to the **Jservice** API and bring the world of Jeopardy! trivia to your AI agent. This server allows you to query thousands of historical clues, explore categories, and generate random trivia challenges directly through natural conversation.
@@ -44,6 +46,33 @@ Get a list of clues based on filter criteria
 Get a random set of clues
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Jservice** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Give me 3 random Jeopardy clues."
+
+**🤖 AI Agent:**
+> I've retrieved 3 random clues for you. One is from the 'Science' category: 'This element has the symbol Au'. Would you like the answers as well?
+
+---
+
+**👤 You:**
+> "List 10 trivia categories and their IDs."
+
+**🤖 AI Agent:**
+> Here are 10 categories from the database: 1. Publications (ID: 12), 2. Sports (ID: 42), 3. Potent Potables (ID: 67)... Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Find clues worth $1000 in category 42."
+
+**🤖 AI Agent:**
+> Searching for high-value clues in category 42 (Sports)... I found 2 clues worth $1000. One is about a famous 1920s baseball player. Should I reveal the clue text?
+
+
 ## Installation & Usage
 
 To install and use the **Jservice** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Jservice** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

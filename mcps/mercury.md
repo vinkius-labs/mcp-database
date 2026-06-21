@@ -1,12 +1,14 @@
 # Mercury MCP Server
 
-Equip your AI agent with direct access to Mercury — check account balances, review transactions, and manage recipients without opening the banking dashboard.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mercury)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercury)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercury-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercury-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Equip your AI agent with direct access to Mercury — check account balances, review transactions, and manage recipients without opening the banking dashboard.
 
 ## Description
 Connect your **Mercury** business banking account to your AI agent and manage your startup finances conversationally.
@@ -46,6 +48,33 @@ Create a new payment recipient
 - **get_treasury_balance**: Get treasury balance overview
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mercury** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current balance on all my Mercury accounts?"
+
+**🤖 AI Agent:**
+> I queried your Mercury accounts. You have two active accounts: 'Operating Account' with $142,350.00 and 'Savings Reserve' with $500,000.00. Total cash position: $642,350.00.
+
+---
+
+**👤 You:**
+> "Show me all transactions above $5,000 from this month."
+
+**🤖 AI Agent:**
+> I found 4 transactions above $5,000 this month: AWS Infrastructure ($12,400), Payroll Run ($87,500), Office Lease ($8,200), and Legal Retainer ($15,000). Total: $123,100.
+
+---
+
+**👤 You:**
+> "List all my payment recipients."
+
+**🤖 AI Agent:**
+> You have 12 saved recipients. Here are the top 5 by frequency: AWS (ACH), Gusto Payroll (ACH), WeWork (Wire), Stripe Atlas (ACH), and Latham & Watkins (Wire).
+
+
 ## Installation & Usage
 
 To install and use the **Mercury** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Mercury** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

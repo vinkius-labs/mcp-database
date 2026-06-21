@@ -1,12 +1,14 @@
 # Frill MCP Server
 
-Manage product feedback, roadmaps, and announcements via Frill — create ideas, list updates, and organize categories directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/frill)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/frill)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/frill-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/frill-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 35
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Manage product feedback, roadmaps, and announcements via Frill — create ideas, list updates, and organize categories directly from your AI agent.
 
 ## Description
 Connect **Frill** to your AI agent to streamline your product feedback loop and roadmap management through natural conversation.
@@ -69,6 +71,33 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 - **update_topic**: Update a topic
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Frill** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List the last 10 announcements from Frill."
+
+**🤖 AI Agent:**
+> I've retrieved the latest 10 announcements. Recent updates include 'New Dashboard UI' (IDX: ann_1) and 'API v2 Release' (IDX: ann_2). Would you like to see the full content of any of these?
+
+---
+
+**👤 You:**
+> "Create a new idea called 'Mobile App' with the description 'We need a native iOS and Android app'."
+
+**🤖 AI Agent:**
+> The idea 'Mobile App' has been successfully created with IDX 'idea_987'. It is now visible in your Frill feedback board.
+
+---
+
+**👤 You:**
+> "Update the announcement 'ann_123' to set is_published to true."
+
+**🤖 AI Agent:**
+> Announcement 'ann_123' has been updated and is now published.
+
+
 ## Installation & Usage
 
 To install and use the **Frill** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Frill** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

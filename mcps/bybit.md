@@ -1,12 +1,14 @@
 # Bybit MCP Server
 
-Access real-time crypto market data — tickers, klines, orderbook, trades, funding rates and open interest.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bybit)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bybit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bybit-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bybit-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time crypto market data — tickers, klines, orderbook, trades, funding rates and open interest.
 
 ## Description
 Connect to **Bybit** and access real-time cryptocurrency market data through natural conversation — no API key needed for public market data.
@@ -68,6 +70,33 @@ Get the current Bybit server time
 Get real-time market tickers (prices) for any category
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bybit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current Bitcoin price on Bybit?"
+
+**🤖 AI Agent:**
+> BTCUSDT: $104,250 (+2.34%). 24h High: $105,800 | Low: $101,200. Volume: 15,432 BTC.
+
+---
+
+**👤 You:**
+> "Show me the last 5 daily candles for ETHUSDT."
+
+**🤖 AI Agent:**
+> ETHUSDT Daily candles: Apr 5: O:3245 H:3310 L:3200 C:3280 | Apr 6: O:3280 H:3350 L:3250 C:3320 | Apr 7: O:3320 H:3380 L:3290 C:3350 | Apr 8: O:3350 H:3400 L:3310 C:3370 | Apr 9: O:3370 H:3420 L:3340 C:3400.
+
+---
+
+**👤 You:**
+> "What's the funding rate for BTCUSDT perpetual?"
+
+**🤖 AI Agent:**
+> BTCUSDT funding rate: 0.0100% (annualized: 10.95%). Positive rate means longs pay shorts. Next funding: 4h 30min.
+
+
 ## Installation & Usage
 
 To install and use the **Bybit** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **Bybit** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Databox MCP Server
 
-Visualize KPIs from hundreds of data sources in custom dashboards that keep your entire team focused on what matters.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/databox)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/databox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/databox-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/databox-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Visualize KPIs from hundreds of data sources in custom dashboards that keep your entire team focused on what matters.
 
 ## Description
 Connect your **Databox** account to any AI agent and take full control of your business intelligence and data ingestion workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual metric logging or digging through complex SQL transformations in 
 - **push_metrics_data**: Ingest data into a dataset
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Databox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all datasets in my Databox account."
+
+**🤖 AI Agent:**
+> I've retrieved your datasets. You currently have 3 collections: 'Daily Sales' (ID: ds_123), 'User Engagement', and 'API Logs'. Which one would you like to push data to?
+
+---
+
+**👤 You:**
+> "Push record to 'ds_123': value 1500, date '2026-04-16'."
+
+**🤖 AI Agent:**
+> Data pushed successfully! I've ingested the value 1500 for 2026-04-16 into the 'Daily Sales' dataset. The metric is now being processed for your dashboards.
+
+---
+
+**👤 You:**
+> "Show my storage usage and API activity logs."
+
+**🤖 AI Agent:**
+> Retrieving metrics... You're using 45% of your data storage quota. Recent logs show 10 successful pushes to 'Daily Sales' in the last hour. Everything is running smoothly.
+
+
 ## Installation & Usage
 
 To install and use the **Databox** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Databox** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

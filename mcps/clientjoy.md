@@ -1,12 +1,14 @@
 # Clientjoy MCP Server
 
-Manage agency CRM and invoicing via Clientjoy — track leads, monitor invoices, and manage client projects directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clientjoy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clientjoy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clientjoy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clientjoy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 8
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Manage agency CRM and invoicing via Clientjoy — track leads, monitor invoices, and manage client projects directly from any AI agent.
 
 ## Description
 Connect your **Clientjoy** account to any AI agent and take full control of your agency operations through natural conversation. Streamline how you manage the entire lifecycle from lead capture to final invoicing natively.
@@ -45,6 +47,33 @@ Connect your **Clientjoy** account to any AI agent and take full control of your
 - **list_sales_quotes**: List sales quotes and proposals sent to clients
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Clientjoy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my new leads in Clientjoy."
+
+**🤖 AI Agent:**
+> Retrieving your leads... I found 5 items: John Doe (Qualified), Jane Smith (New), Mike Scott (Interested), and 2 others. Would you like the details for the new lead?
+
+---
+
+**👤 You:**
+> "Show me my unpaid invoices."
+
+**🤖 AI Agent:**
+> Checking invoices... You have 3 unpaid invoices: #INV-101 ($1,200), #INV-105 ($450), and #INV-108 ($2,100). The first two are currently overdue.
+
+---
+
+**👤 You:**
+> "What is the status of the 'Website Redesign' project?"
+
+**🤖 AI Agent:**
+> Checking projects... The 'Website Redesign' project for Acme Corp is 'In Progress'. It has 12 completed tasks and 5 pending items.
+
+
 ## Installation & Usage
 
 To install and use the **Clientjoy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Clientjoy** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

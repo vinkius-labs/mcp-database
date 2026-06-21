@@ -1,12 +1,14 @@
 # Affinda MCP Server
 
-Intelligent document processing — parse resumes, invoices, and IDs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/affinda)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/affinda)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/affinda-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/affinda-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 5
+
+**Category:** [productivity](../categories/productivity.md)
+
+Intelligent document processing — parse resumes, invoices, and IDs via AI.
 
 ## Description
 Connect your **Affinda** account to your AI agent to unlock powerful intelligent document processing (IDP). From automatically extracting details from resumes and invoices to auditing document statuses across your workspaces, your agent handles structured data extraction through natural conversation.
@@ -43,6 +45,33 @@ Upload and parse a PDF or image into Affinda via its public URL for high-accurac
 - **list_document_types**: Retrieve exactly which parsing models the Affinda account supports (e.g. Resume, Invoice, Passport)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Affinda** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all documents in my 'HR Recruitment' workspace."
+
+**🤖 AI Agent:**
+> I've retrieved the documents from the 'HR Recruitment' workspace. You have 15 resumes currently processed. Would you like to see the extracted contact details for the latest candidates?
+
+---
+
+**👤 You:**
+> "Parse this resume URL: https://example.com/cv.pdf using the 'resume' model."
+
+**🤖 AI Agent:**
+> I've started the parsing process for the resume. The document identifier is 'abc-123'. I'll wait for the synchronous extraction to complete... Done! I have the structured data for John Doe, including his 5 years of experience in Python development.
+
+---
+
+**👤 You:**
+> "List the available document types in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your supported document models. You can currently parse Resumes, Invoices, Receipts, and Passports. Would you like to see the specific fields extracted by the Invoice model?
+
+
 ## Installation & Usage
 
 To install and use the **Affinda** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Affinda** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CTO Architect Prover MCP Server
 
-An AI proposed Kubernetes for 50 users, says 'use HTTPS' as a security strategy, and plans database migrations during maintenance windows. That is not architecture — that is Resume-Driven Development. This tool forces five CTO-level architectural axes: stack fitness, failure tolerance, security hardening, migration safety, and observability.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cto-architect-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cto-architect-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cto-architect-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cto-architect-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** architecture
-**Tools Count:** 1
+
+**Category:** [architecture](../categories/architecture.md)
+
+An AI proposed Kubernetes for 50 users, says 'use HTTPS' as a security strategy, and plans database migrations during maintenance windows. That is not architecture — that is Resume-Driven Development. This tool forces five CTO-level architectural axes: stack fitness, failure tolerance, security hardening, migration safety, and observability.
 
 ## Description
 ## The Problem
@@ -56,6 +58,33 @@ Tool calls are obligations. The LLM cannot skip security controls or ignore migr
 Structured reflection tool for senior CTO-level production architecture validation. Forces the agent to justify stack fitness against constraints, prove failure tolerance with specific redundancy mechanisms, harden security with named controls and thresholds, define zero-downtime migration strategies, and prove observability with health probes and RTO/RPO targets. Catches Resume-Driven Development (Kubernetes for 50 users, microservices for a 3-person team — technology chosen for the resume, not the problem), Single Points of Failure ("should work fine" without naming redundancy for database, cache, load balancer, and external dependencies), Security Theater ("we use HTTPS and encryption" without rate limiting thresholds, token rotation, parameterized queries, CORS whitelist, and encryption algorithm specifics), Migration Amnesia ("we will migrate carefully" without expand/contract pattern, parallel writes, API versioning, or deterministic rollback — table locks in production are blocked), and Observability Voids ("we monitor the system" without health probes, metric dashboards, alert thresholds, log aggregation, or RTO/RPO targets — SSH to check logs is not monitoring). Call once per architecture decision or system design review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CTO Architect Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "We will build our SaaS with Kubernetes, Kafka for event streaming, and 8 microservices. We have a team of 3 developers and launch in 6 weeks. Security: we use HTTPS."
+
+**🤖 AI Agent:**
+> OVER_ENGINEERED + SECURITY_VULNERABLE — Two fatal gaps. First: Kubernetes, Kafka, and 8 microservices for a 3-person team launching in 6 weeks is Resume-Driven Development. A Node.js monolith with PostgreSQL ships in 6 weeks. Kubernetes adds 3 months of operational overhead. Second: 'use HTTPS' is not a security strategy — name rate limiting thresholds, auth token type, parameterized queries, and encryption algorithm.
+
+---
+
+**👤 You:**
+> "Node.js monolith, 4-person team, $800/mo infra. PostgreSQL streaming replica (async, <1s lag). Redis Sentinel for cache. ALB with 10s health checks. Circuit breaker on Stripe (5s timeout, 3 retries). Rate limiting: 100/min per IP. JWT RS256, 15min access, 7-day refresh. Parameterized via Prisma. CORS whitelist. AES-256 on PII. Expand/contract migrations: dual-write, backfill, switch, drop. API v2 alongside v1. Rollback tested in staging. Health: /health/live, /health/ready. Prometheus + Grafana, p99 < 200ms alert. RTO < 4h, RPO < 1h, daily S3 backups, tested quarterly."
+
+**🤖 AI Agent:**
+> ARCHITECTURE_PROVEN — CTO-level architecture validated. Stack: Node.js monolith right-sized for 4-person team at $800/mo. Failure tolerance: PostgreSQL replica, Redis Sentinel, ALB, circuit breaker on Stripe. Security: rate limiting 100/min, JWT RS256 with rotation, parameterized Prisma, CORS whitelist, AES-256. Migration: expand/contract with tested rollback. Observability: health probes, Prometheus with p99 alerting, RTO < 4h, RPO < 1h. Production-ready.
+
+---
+
+**👤 You:**
+> "We need to migrate our user table to add a new column for subscription tier. We will take the system offline for 2 hours on Saturday night, run ALTER TABLE, and deploy the new code. We will check the logs manually after to make sure everything works."
+
+**🤖 AI Agent:**
+> MIGRATION_BLOCKED + OBSERVABILITY_VOID — Two fatal gaps. First: 'take the system offline for 2 hours' is a maintenance window — blocked. Use expand/contract: add the column with a default value (no lock), dual-write from the application, backfill existing rows in batches, switch reads, drop the old logic. Each step handles live traffic. Second: 'check the logs manually' is not monitoring — define automated health probes and alerting thresholds.
+
+
 ## Installation & Usage
 
 To install and use the **CTO Architect Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **CTO Architect Prover** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

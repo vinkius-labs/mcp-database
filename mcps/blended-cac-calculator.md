@@ -1,12 +1,14 @@
 # Blended CAC Calculator MCP Server
 
-Calculate precise Customer Acquisition Cost (CAC) across multiple channels and optimize future marketing spend allocation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blended-cac-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blended-cac-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blended-cac-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blended-cac-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance
-**Tools Count:** 3
+
+**Category:** [finance](../categories/finance.md)
+
+Calculate precise Customer Acquisition Cost (CAC) across multiple channels and optimize future marketing spend allocation.
 
 ## Description
 # Assess Marketing Efficiency with Blended CAC
@@ -35,6 +37,33 @@ Calculate blended CAC and per-channel CAC for a given period
 Analyze Month-over-Month trend for CAC or TotalSpend
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Blended CAC Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Calculate the blended CAC for Q2 2024. We spent $15k on Paid Search, $8k on Paid Social, and $2k on SEO. Total new customers were 300."
+
+**🤖 AI Agent:**
+> Using `calculate_cac_metrics` with the provided spending data and customer count of 300, the blended CAC is calculated at $65. The breakdown shows Paid Search contributing $48/customer.
+
+---
+
+**👤 You:**
+> "Compare my current CAC to last month's. Last month's CAC was $70, and this month's is $62."
+
+**🤖 AI Agent:**
+> Running `analyze_mom_trend` shows a -11.4% change. This negative trend indicates improved efficiency in customer acquisition compared to the previous period.
+
+---
+
+**👤 You:**
+> "We are a Technology SaaS company. Given our last quarter's performance (data array) and the industry benchmark, what should my budget split be?"
+
+**🤖 AI Agent:**
+> Based on the input data and running `assess_budget_efficiency` for the Technology SaaS sector, we recommend increasing funding for SEO (35% allocation) due to its superior efficiency relative to industry benchmarks.
+
+
 ## Installation & Usage
 
 To install and use the **Blended CAC Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +72,11 @@ To install and use the **Blended CAC Calculator** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

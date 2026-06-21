@@ -1,12 +1,14 @@
 # HiBob MCP Server
 
-Automate HR workflows via HiBob — manage employees, time off, and tasks directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hibob)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hibob)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hibob-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hibob-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate HR workflows via HiBob — manage employees, time off, and tasks directly from any AI agent.
 
 ## Description
 Connect your **HiBob** HR platform to any AI agent and take full control of your people management and organizational data through natural conversation.
@@ -53,6 +55,33 @@ Search for employees using filters and retrieve profiles
 Submit a new time off request for an employee
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HiBob** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for employees in the 'Engineering' department."
+
+**🤖 AI Agent:**
+> I've searched your team. I found 12 employees in the Engineering department, including 'Mark Thompson' (Lead Engineer), 'Sarah Chen', and 'David Miller'. Would you like to see the contact details for any of them?
+
+---
+
+**👤 You:**
+> "Check who is out of the office this week."
+
+**🤖 AI Agent:**
+> Retrieving leave data... There are 3 employees out this week: 'Maria Garcia' (Vacation until Friday), 'John Doe' (Sick leave), and 'Elena Rossi'. Should I check the pending approval tasks for their replacements?
+
+---
+
+**👤 You:**
+> "Show my open HR tasks and complete ID 'task_992'."
+
+**🤖 AI Agent:**
+> Task list retrieved! You had 5 open items. I have successfully marked 'task_992' (Onboarding Check) as completed. You now have 4 tasks remaining. Would you like me to list them?
+
+
 ## Installation & Usage
 
 To install and use the **HiBob** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **HiBob** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

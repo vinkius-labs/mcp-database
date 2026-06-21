@@ -1,12 +1,14 @@
 # CORE (Open Access Research) MCP Server
 
-Access millions of open access research papers, journals, and repositories directly from your AI agent using the CORE API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/core-open-access-research)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/core-open-access-research)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/core-open-access-research-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/core-open-access-research-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 10
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access millions of open access research papers, journals, and repositories directly from your AI agent using the CORE API.
 
 ## Description
 Connect to **CORE**, the world's largest aggregator of open access research papers. This MCP server allows your AI agent to search, retrieve, and analyze millions of scholarly articles, journals, and institutional repositories through natural conversation.
@@ -45,6 +47,33 @@ Connect to **CORE**, the world's largest aggregator of open access research pape
 - **search_repositories**: Search for repositories
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CORE (Open Access Research)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search CORE for the latest research on transformer architectures in NLP."
+
+**🤖 AI Agent:**
+> I've performed a global search on CORE. I found several high-impact papers, including 'Attention is All You Need' and recent variants. Would you like the CORE IDs or PDF links for the top 3 results?
+
+---
+
+**👤 You:**
+> "Get the PDF download link for the article with CORE ID 123456."
+
+**🤖 AI Agent:**
+> I have retrieved the PDF link for CORE ID 123456. You can download the full open access version here: [URL]. Would you also like to see the article's version history?
+
+---
+
+**👤 You:**
+> "Find information about the journal with ISSN 2041-1723."
+
+**🤖 AI Agent:**
+> The ISSN 2041-1723 corresponds to 'Nature Communications'. It is a high-profile open access journal. I can list recent articles from this journal or provide more metadata if needed.
+
+
 ## Installation & Usage
 
 To install and use the **CORE (Open Access Research)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **CORE (Open Access Research)** MCP server in your AI age
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

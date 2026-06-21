@@ -1,12 +1,14 @@
 # ChatFly MCP Server
 
-Launch conversational AI chatbots that qualify leads, answer product questions, and book meetings without human intervention.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chatfly-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chatfly-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chatfly-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chatfly-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 7
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Launch conversational AI chatbots that qualify leads, answer product questions, and book meetings without human intervention.
 
 ## Description
 Connect your **ChatFly** account to any AI agent and take full control of your custom chatbot orchestration and automated knowledge ingestion workflows through natural conversation.
@@ -46,6 +48,33 @@ Create a new chatbot
 - **upload_data_source**: Add a knowledge source to a bot
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ChatFly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my available chatbots in ChatFly."
+
+**🤖 AI Agent:**
+> I've retrieved your chatbots. You currently have 3 active instances: 'Support Hero' (ID: bot_1), 'Lead Qualifier', and 'Internal FAQ'. Which one would you like to update or train?
+
+---
+
+**👤 You:**
+> "Train 'bot_1' by ingesting 'https://vinkius.com/faq'."
+
+**🤖 AI Agent:**
+> Training triggered! I've added the FAQ URL as a data source for 'Support Hero'. ChatFly is now crawling the content to update the knowledge base. I'll monitor the progress for you.
+
+---
+
+**👤 You:**
+> "Ask 'bot_1': 'What are your support hours?'."
+
+**🤖 AI Agent:**
+> ChatFly response received: 'Our support team is available Monday to Friday from 9 AM to 6 PM EST.' Shall I check the session history for this query?
+
+
 ## Installation & Usage
 
 To install and use the **ChatFly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **ChatFly** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

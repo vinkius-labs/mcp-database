@@ -1,12 +1,14 @@
 # EODHD Financial MCP Server
 
-Access real-time and historical stock market data — prices, fundamentals, dividends, splits and more for global exchanges.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eodhd-financial)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eodhd-financial)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eodhd-financial-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eodhd-financial-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 10
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time and historical stock market data — prices, fundamentals, dividends, splits and more for global exchanges.
 
 ## Description
 Connect to **EODHD Financial Data** and access professional-grade stock market data through natural conversation.
@@ -67,6 +69,33 @@ Get stock split history for a stock
 Search for stock tickers by name or symbol
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EODHD Financial** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current price of Apple stock?"
+
+**🤖 AI Agent:**
+> AAPL.US: $198.45 (Open: $197.20, High: $199.10, Low: $196.80). Previous close: $197.50. Change: +$0.95 (+0.48%). Volume: 45.2M.
+
+---
+
+**👤 You:**
+> "Show me Microsoft's fundamentals."
+
+**🤖 AI Agent:**
+> MSFT.US fundamentals: Market Cap: $3.1T, P/E: 36.5, EPS: $13.50, Dividend Yield: 0.72%, Beta: 0.89. 52-week high: $468.35, 52-week low: $309.45. Sector: Technology, Industry: Software.
+
+---
+
+**👤 You:**
+> "Get prices for AAPL, MSFT and GOOGL."
+
+**🤖 AI Agent:**
+> AAPL.US: $198.45 (+0.48%), MSFT.US: $432.10 (+1.2%), GOOGL.US: $175.80 (-0.3%). All prices are real-time with volume data.
+
+
 ## Installation & Usage
 
 To install and use the **EODHD Financial** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **EODHD Financial** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CatAAS MCP Server
 
-Access the Cat as a Service (CATAAS) API to fetch random cat images, GIFs, and create custom cat memes with filters and text.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cataas)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cataas)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cataas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cataas-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** design-creative
-**Tools Count:** 7
+
+**Category:** [design-creative](../categories/design-creative.md)
+
+Access the Cat as a Service (CATAAS) API to fetch random cat images, GIFs, and create custom cat memes with filters and text.
 
 ## Description
 Bring the joy of cats to your AI interactions with the **CatAAS** MCP server. This integration allows any AI agent to fetch, filter, and customize cat images and GIFs directly from the CATAAS library.
@@ -42,6 +44,33 @@ Bring the joy of cats to your AI interactions with the **CatAAS** MCP server. Th
 - **list_tags**: List all available tags
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CatAAS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get a random cat image with a 'blur' filter."
+
+**🤖 AI Agent:**
+> I've fetched a blurred cat image for you. [Image ID: 596e421d844c04001011cc98]
+
+---
+
+**👤 You:**
+> "Show me a cat with the tag 'orange' saying 'I am hungry'."
+
+**🤖 AI Agent:**
+> Here is an orange cat with your custom text overlay. [Image ID: 596e421f844c04001011cc9a]
+
+---
+
+**👤 You:**
+> "List all available cat tags."
+
+**🤖 AI Agent:**
+> I've retrieved the tags. Popular ones include 'cute', 'orange', 'sleeping', 'black', and 'funny'. There are hundreds more available!
+
+
 ## Installation & Usage
 
 To install and use the **CatAAS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **CatAAS** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

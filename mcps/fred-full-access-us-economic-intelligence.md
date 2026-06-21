@@ -1,12 +1,14 @@
 # FRED Full Access — U.S. Economic Intelligence MCP Server
 
-The ultimate U.S. economic data Mega-Server: 19 tools covering time series, releases, categories, regional GeoFRED data, tags, and 107 data sources — 816,000+ series from the Federal Reserve in one integration.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-full-access-us-economic-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-full-access-us-economic-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fred-full-access-us-economic-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fred-full-access-us-economic-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 19
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The ultimate U.S. economic data Mega-Server: 19 tools covering time series, releases, categories, regional GeoFRED data, tags, and 107 data sources — 816,000+ series from the Federal Reserve in one integration.
 
 ## Description
 The **definitive Mega-Server** for U.S. economic intelligence. Why install 5 servers when one does it all?
@@ -77,6 +79,65 @@ Get release dates for economic data
 Get all series within a release
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FRED Full Access — U.S. Economic Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Complete macro briefing: GDP, unemployment, inflation, and Fed rate"
+
+**🤖 AI Agent:**
+> 🇺🇸 **U.S. Macro Dashboard**
+
+| Indicator | Value | Trend |
+|-----------|-------|-------|
+| GDP Growth | +2.3% | → |
+| Unemployment | 3.7% | → |
+| CPI Inflation | 3.1% | ↓ |
+| Fed Funds Rate | 5.33% | → |
+| 10Y Treasury | 4.15% | ↓ |
+| S&P 500 | 5,950 | ↑ |
+
+6 series queried simultaneously from FRED Full.
+
+---
+
+**👤 You:**
+> "Which state has the lowest unemployment and what are the upcoming economic releases?"
+
+**🤖 AI Agent:**
+> 📊 **Cross-Domain Query — GeoFRED + Releases**
+
+🥇 Lowest unemployment: North Dakota (1.8%)
+🥈 Vermont (1.9%)
+🥉 South Dakota (2.0%)
+
+📅 Next releases:
+- Jan 31: GDP Advance (BEA)
+- Feb 3: ISM Manufacturing
+- Feb 7: Employment Situation (BLS)
+
+2 tools used: get_regional_data + get_release_dates
+
+---
+
+**👤 You:**
+> "Find all quarterly seasonally-adjusted series related to housing"
+
+**🤖 AI Agent:**
+> 🏠 **Housing Series (quarterly + SA)**
+
+Found via tags: housing + quarterly + sa
+
+1. USSTHPI — House Price Index
+2. HOUST — Housing Starts
+3. MORTGAGE30US — 30-Year Mortgage Rate
+4. MSPUS — Median Sales Price
+5. RHORUSQ156N — Homeownership Rate
+
++45 more matching series
+
+
 ## Installation & Usage
 
 To install and use the **FRED Full Access — U.S. Economic Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +146,11 @@ To install and use the **FRED Full Access — U.S. Economic Intelligence** MCP s
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

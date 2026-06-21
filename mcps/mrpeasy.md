@@ -1,12 +1,14 @@
 # MRPeasy MCP Server
 
-Manage manufacturing and inventory via MRPeasy — track customer orders, MOs, and stock items directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mrpeasy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mrpeasy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mrpeasy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mrpeasy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 10
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage manufacturing and inventory via MRPeasy — track customer orders, MOs, and stock items directly from your AI agent.
 
 ## Description
 Connect your **MRPeasy** manufacturing and ERP account to your AI agent and streamline your production and inventory management through natural conversation.
@@ -47,6 +49,33 @@ Connect your **MRPeasy** manufacturing and ERP account to your AI agent and stre
 - **get_customer_order**: Get specific customer order details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MRPeasy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active manufacturing orders."
+
+**🤖 AI Agent:**
+> I've fetched the active manufacturing orders. You have 8 MOs currently in progress, including 'MO-501' (Status: In Production) and 'MO-502' (Status: Scheduled). Shall I give you the item details for MO-501?
+
+---
+
+**👤 You:**
+> "Check current stock levels for raw materials."
+
+**🤖 AI Agent:**
+> Retrieving inventory list... You have 45 items in stock. Notable materials include 'Aluminum Plate' (150 units), 'Steel Bolt' (2,000 units), and 'Plastic Housing' (15 units - Low Stock Alert). Would you like the vendor info for the plastic housing?
+
+---
+
+**👤 You:**
+> "List our registered vendors."
+
+**🤖 AI Agent:**
+> I've retrieved your vendor list. You have 12 registered suppliers, including 'Global Metals Co.', 'Swift Fasteners', and 'Reliable Plastics'. Would you like the contact info for Swift Fasteners?
+
+
 ## Installation & Usage
 
 To install and use the **MRPeasy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **MRPeasy** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

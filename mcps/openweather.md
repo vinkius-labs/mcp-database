@@ -1,12 +1,14 @@
 # OpenWeather MCP Server
 
-Get weather data worldwide — current conditions, forecasts, air quality, alerts and historical data from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openweather)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openweather-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 11
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Get weather data worldwide — current conditions, forecasts, air quality, alerts and historical data from any AI agent.
 
 ## Description
 Connect to **OpenWeather** APIs and access global weather data through natural conversation.
@@ -74,6 +76,33 @@ Get active weather alerts for a location
 Convert coordinates to a city name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenWeather** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the current weather in São Paulo?"
+
+**🤖 AI Agent:**
+> São Paulo is currently 24°C (75°F), partly cloudy. Humidity: 65%, Wind: 12 km/h SE, Pressure: 1013 hPa, Visibility: 10 km. Feels like 25°C. Sunrise at 6:12 AM, sunset at 6:45 PM.
+
+---
+
+**👤 You:**
+> "What's the 7-day forecast for Tokyo?"
+
+**🤖 AI Agent:**
+> 7-day forecast for Tokyo: Mon 22°C/15°C (rain), Tue 19°C/14°C (cloudy), Wed 21°C/16°C (partly cloudy), Thu 23°C/17°C (sunny), Fri 24°C/18°C (sunny), Sat 22°C/17°C (light rain), Sun 20°C/15°C (overcast).
+
+---
+
+**👤 You:**
+> "Is the air quality good in Beijing right now?"
+
+**🤖 AI Agent:**
+> Beijing's current AQI is 4 (Poor). PM2.5 is 75 μg/m³ (3x WHO guideline), PM10 is 120 μg/m³. Ozone and NO2 levels are moderate. Sensitive groups should reduce outdoor exposure.
+
+
 ## Installation & Usage
 
 To install and use the **OpenWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **OpenWeather** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

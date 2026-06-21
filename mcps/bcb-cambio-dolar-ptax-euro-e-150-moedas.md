@@ -1,12 +1,14 @@
 # BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas MCP Server
 
-Official exchange rates from Brazil's Central Bank: daily PTAX dollar quotes (the official BRL/USD reference rate), historical series, any of 150+ currencies against BRL, complete currency catalog, and SGS time series for long-term FX data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-cambio-dolar-ptax-euro-e-150-moedas)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bcb-cambio-dolar-ptax-euro-e-150-moedas)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bcb-cambio-dolar-ptax-euro-e-150-moedas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bcb-cambio-dolar-ptax-euro-e-150-moedas-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 5
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Official exchange rates from Brazil's Central Bank: daily PTAX dollar quotes (the official BRL/USD reference rate), historical series, any of 150+ currencies against BRL, complete currency catalog, and SGS time series for long-term FX data.
 
 ## Description
 Official FX rates from Brazil.
@@ -39,6 +41,48 @@ Listar todas as moedas disponíveis no sistema PTAX do Banco Central
 Obter a série histórica do dólar comercial (compra/venda) via SGS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current dollar rate in Brazil?"
+
+**🤖 AI Agent:**
+> 💱 **Dólar PTAX — 04/04/2026**
+
+Buy: R$ 5.7321
+Sell: R$ 5.7327
+
+The PTAX is the official BRL/USD reference rate, calculated by the Central Bank of Brazil from daily dealer consultations.
+
+Source: BCB, PTAX
+
+---
+
+**👤 You:**
+> "Show me the dollar/real exchange rate for the last 30 days"
+
+**🤖 AI Agent:**
+> 📊 **BRL/USD — Last 30 Days**
+
+High: R$ 5.8912 (March 12)
+Low: R$ 5.6543 (March 28)
+Current: R$ 5.7327
+
+Trend: -1.2% (strengthening BRL)
+
+22 trading days shown
+
+---
+
+**👤 You:**
+> "Convert 500 Euros to Brazilian Reais based on the latest Central Bank rate."
+
+**🤖 AI Agent:**
+> Using the latest EUR/BRL exchange rate of 6.1820... 500 EUR equals to 3091.00 BRL natively.
+
+
 ## Installation & Usage
 
 To install and use the **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +91,11 @@ To install and use the **BCB Câmbio — Dólar PTAX, Euro e 150+ Moedas** MCP s
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

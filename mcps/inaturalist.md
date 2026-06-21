@@ -1,12 +1,14 @@
 # iNaturalist MCP Server
 
-Explore biodiversity data — search wildlife observations, identify species, find taxa and discover nature projects.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/inaturalist)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/inaturalist)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/inaturalist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/inaturalist-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 10
+
+**Category:** [data-management](../categories/data-management.md)
+
+Explore biodiversity data — search wildlife observations, identify species, find taxa and discover nature projects.
 
 ## Description
 Connect to **iNaturalist** and explore the world's largest biodiversity database through natural conversation — no API key needed for public data.
@@ -64,6 +66,33 @@ Search iNaturalist observations
 Search for taxa (species, genera, families, etc.)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **iNaturalist** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for monarch butterfly observations in California."
+
+**🤖 AI Agent:**
+> Found 12,500+ monarch butterfly (Danaus plexippus) observations in California. Recent observations from San Francisco, Monterey and Los Angeles areas. Most are research-grade with photos.
+
+---
+
+**👤 You:**
+> "What are the most commonly observed species this month?"
+
+**🤖 AI Agent:**
+> Top observed species: 1. Rock Pigeon (45K observations), 2. European Honey Bee (38K), 3. Mourning Cloak butterfly (32K), 4. White-tailed Deer (28K), 5. Mallard Duck (25K).
+
+---
+
+**👤 You:**
+> "Tell me about the Red Fox (Vulpes vulpes)."
+
+**🤖 AI Agent:**
+> Red Fox (Vulpes vulpes) — Species, Kingdom: Animalia, Phylum: Chordata, Class: Mammalia, Order: Carnivora, Family: Canidae. 200K+ observations worldwide. Introduced and native populations across North America, Europe, Asia and Australia.
+
+
 ## Installation & Usage
 
 To install and use the **iNaturalist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **iNaturalist** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

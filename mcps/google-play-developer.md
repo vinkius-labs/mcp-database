@@ -1,12 +1,14 @@
 # Google Play Developer MCP Server
 
-Manage your Android apps - respond to reviews and check subscriptions via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-play-developer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-play-developer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-play-developer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-play-developer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Android apps - respond to reviews and check subscriptions via AI.
 
 ## Description
 Connect your **Google Play Developer** account to your AI agent and streamline your Android app management. Use natural language to monitor user reviews, manage subscriptions, and verify in-app purchases directly from your workflow.
@@ -47,6 +49,34 @@ Connect your **Google Play Developer** account to your AI agent and streamline y
 - **reply_to_review**: Reply to a user review
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Play Developer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the 5 most recent reviews for our app."
+
+**🤖 AI Agent:**
+> Fetching reviews... You have 5 recent reviews. 3 are 5-star reviews praising the new UI. 1 is a 2-star review mentioning a login bug. Would you like me to draft a reply to the 2-star review?
+
+---
+
+**👤 You:**
+> "Check the status of subscription token 'abc123xyz' for SKU 'pro_monthly'."
+
+**🤖 AI Agent:**
+> Checking subscription... The subscription 'pro_monthly' for this token is currently ACTIVE. The next billing date is scheduled for October 15th.
+
+---
+
+**👤 You:**
+> "Refund the subscription linked to token 'refund789' immediately."
+
+**🤖 AI Agent:**
+> Processing refund dynamically...
+Success. The subscription connected to the provided token has been formally refunded via Google Play services directly.
+
+
 ## Installation & Usage
 
 To install and use the **Google Play Developer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +85,11 @@ To install and use the **Google Play Developer** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

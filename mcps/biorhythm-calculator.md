@@ -1,12 +1,14 @@
 # Biorhythm Calculator MCP Server
 
-Calculate and analyze the three primary biological cycles--physical, emotional, and intellectual.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/biorhythm-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/biorhythm-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/biorhythm-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/biorhythm-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+Calculate and analyze the three primary biological cycles--physical, emotional, and intellectual.
 
 ## Description
 This MCP server provides tools to quantify your biological rhythms. Use `get_rhythm_status` to determine the current energy percentages for physical, emotional, and intellectual cycles on any given date. You can also use `check_critical_windows` to identify upcoming dates of biological instability where cycles cross zero, or `locate_rhythm_peaks` to find when each cycle will reach its maximum positive amplitude.
@@ -18,6 +20,33 @@ This MCP server provides tools to quantify your biological rhythms. Use `get_rhy
 - **get_rhythm_status**: Determine the current biological standing and energy percentages for all three cycles on a specific date
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Biorhythm Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is my current biorhythm status for today?"
+
+**🤖 AI Agent:**
+> The `get_rhythm_status` tool would return the current percentages and amplitudes for your physical, emotional, and intellectual cycles based on today's date.
+
+---
+
+**👤 You:**
+> "Are there any critical days coming up next week?"
+
+**🤖 AI Agent:**
+> By using `check_critical_windows` with a start and end date for next week, the tool will list any dates where your biological cycles are crossing zero.
+
+---
+
+**👤 You:**
+> "When is my next intellectual peak?"
+
+**🤖 AI Agent:**
+> The `locate_rhythm_peaks` tool can be used to find the exact date when your intellectual cycle reaches its maximum positive amplitude.
+
+
 ## Installation & Usage
 
 To install and use the **Biorhythm Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -26,4 +55,11 @@ To install and use the **Biorhythm Calculator** MCP server in your AI agents (Cl
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

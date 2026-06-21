@@ -1,12 +1,14 @@
 # Stripe Legacy MCP Server
 
-Manage payments, customers, and account balances on Stripe via the legacy API with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-legacy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stripe-legacy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stripe-legacy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stripe-legacy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage payments, customers, and account balances on Stripe via the legacy API with AI agents.
 
 ## Description
 Connect your **Stripe** account to any AI agent to automate your basic payment processing and customer management. This integration provides a streamlined interface for the core Stripe v1 API, allowing you to monitor charges, create payment tokens, and track account balances through natural conversation.
@@ -50,6 +52,33 @@ Create a single-use token
 - **list_subscriptions**: List all active subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stripe Legacy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my current Stripe account balance."
+
+**🤖 AI Agent:**
+> I've retrieved your balance. You currently have $5,240.50 available and $1,120.00 pending in your Stripe account.
+
+---
+
+**👤 You:**
+> "Show me all charges from the past 24 hours with their status and customer details."
+
+**🤖 AI Agent:**
+> 89 charges in 24 hours totaling $23,456. Succeeded (84): $22,100. Failed (3): $890 (2 card declined, 1 insufficient funds). Pending (2): $466. By currency: USD (67, $18,900), EUR (15, €3,200), GBP (7, £1,356). Top customers: Meridian Corp ($4,500, 2 charges), TechVentures ($2,300). Average charge: $263.55. Recurring vs one-time: 56 recurring ($15,200), 33 one-time ($8,256). Disputes: 0. Refunds issued: 2 ($189). Processing fees: $682 (2.9% + $0.30).
+
+---
+
+**👤 You:**
+> "Get the current account balance and recent payout schedule."
+
+**🤖 AI Agent:**
+> Account balance: Available $34,560. Pending: $12,340 (clears in 2 days). Connect reserved: $0. Total: $46,900. Recent payouts: May 15 - $28,900 (completed, bank ending 4521). May 12 - $24,500 (completed). May 9 - $31,200 (completed). Payout schedule: daily (automatic). Next payout: tomorrow, estimated $18,400. Monthly summary: $156,000 gross volume, $4,524 in fees (2.9%). Net deposits: $151,476. Currency breakdown: 78% USD, 14% EUR, 8% GBP.
+
+
 ## Installation & Usage
 
 To install and use the **Stripe Legacy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Stripe Legacy** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Datadog Cloud SIEM MCP Server
 
-Manage cloud security via Datadog — search security signals, triage alerts, and audit detection rules directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-cloud-siem)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/datadog-cloud-siem)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/datadog-cloud-siem-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/datadog-cloud-siem-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage cloud security via Datadog — search security signals, triage alerts, and audit detection rules directly from any AI agent.
 
 ## Description
 Connect your **Datadog** security module to any AI agent and take full control of your Cloud SIEM and threat hunting workflows through natural conversation.
@@ -65,6 +67,33 @@ Search Cloud SIEM Security Signals (Alerts) over the last 24h
 Modify the state of a Datadog SIEM Security Signal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Datadog Cloud SIEM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all critical security signals from the last 24h"
+
+**🤖 AI Agent:**
+> I found 3 critical signals. Highlights include 'Brute Force Attempt' on 'api-server' and 'Unauthorized S3 Bucket Access' in 'production-env'. Would you like to triage any of these?
+
+---
+
+**👤 You:**
+> "Search logs for IP '1.2.3.4' to hunt for threats"
+
+**🤖 AI Agent:**
+> Searching Datadog logs for '1.2.3.4'... I found 15 related events in the last 15 minutes. The IP is attempting to access '/admin/login' with multiple incorrect passwords. I can provide the full contextual logs.
+
+---
+
+**👤 You:**
+> "Archive security signal 'sig_123' as a false positive"
+
+**🤖 AI Agent:**
+> Signal 'sig_123' has been archived! State updated to 'archived' with reason: 'false_positive'. This action is logged in your Datadog security timeline.
+
+
 ## Installation & Usage
 
 To install and use the **Datadog Cloud SIEM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -73,4 +102,11 @@ To install and use the **Datadog Cloud SIEM** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

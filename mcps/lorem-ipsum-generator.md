@@ -1,12 +1,14 @@
 # Lorem Ipsum Generator MCP Server
 
-Generate deterministic placeholder text by words, sentences, or paragraphs. When an AI writes filler text, it varies wildly every time — this engine delivers consistent, predictable lorem ipsum.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-ipsum-generator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-ipsum-generator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lorem-ipsum-generator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lorem-ipsum-generator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate deterministic placeholder text by words, sentences, or paragraphs. When an AI writes filler text, it varies wildly every time — this engine delivers consistent, predictable lorem ipsum.
 
 ## Description
 You ask the AI for 3 paragraphs of placeholder text. The first time you get 200 words. The second time, 450. The third time, it invents 'creative' placeholder text that breaks your layout. UI prototyping needs predictable, consistent content — not AI improvisation.
@@ -27,6 +29,33 @@ This MCP generates standard lorem ipsum with controlled output: exact word count
 Generates lorem ipsum placeholder text by words, sentences, or paragraphs. Zero dependencies. For UI prototyping, database seeding, and content mockups
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lorem Ipsum Generator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I need 3 paragraphs of filler text for a blog page mockup in Figma."
+
+**🤖 AI Agent:**
+> 3 paragraphs generated with 4-8 sentences each. Consistent length for layout testing.
+
+---
+
+**👤 You:**
+> "Generate exactly 10 words for testing an input field character limit."
+
+**🤖 AI Agent:**
+> 10 latin words generated. Use for input validation and character count testing.
+
+---
+
+**👤 You:**
+> "Seed 20 product descriptions for our staging e-commerce database."
+
+**🤖 AI Agent:**
+> 20 sentences generated — each 4-16 words, perfect for product description fields.
+
+
 ## Installation & Usage
 
 To install and use the **Lorem Ipsum Generator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +64,11 @@ To install and use the **Lorem Ipsum Generator** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

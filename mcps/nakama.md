@@ -1,12 +1,14 @@
 # Nakama MCP Server
 
-Automate your game backend via Nakama — manage authentication, user profiles, social features, and storage directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nakama)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nakama)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nakama-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nakama-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 31
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Automate your game backend via Nakama — manage authentication, user profiles, social features, and storage directly from any AI agent.
 
 ## Description
 Connect your **Nakama** server to any AI agent to manage your game's backend infrastructure through natural conversation. Nakama is the leading open-source distributed server for social and realtime games and apps.
@@ -67,6 +69,33 @@ Connect your **Nakama** server to any AI agent to manage your game's backend inf
 - **write_tournament_record**: Write a tournament record
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nakama** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Authenticate a user with email 'player@example.com' and password 'securePass123'."
+
+**🤖 AI Agent:**
+> I've initiated the authentication for 'player@example.com'. The session is now active and the user is logged in.
+
+---
+
+**👤 You:**
+> "Show me the top records for the 'global_high_scores' leaderboard."
+
+**🤖 AI Agent:**
+> Fetching leaderboard data... I've retrieved the top records for 'global_high_scores'. The current leader is 'PlayerOne' with 15,000 points.
+
+---
+
+**👤 You:**
+> "List all the groups I am currently a member of."
+
+**🤖 AI Agent:**
+> Querying your group memberships... You are currently a member of 3 groups: 'Alpha Squad', 'Beta Testers', and 'The Guild'.
+
+
 ## Installation & Usage
 
 To install and use the **Nakama** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -75,4 +104,11 @@ To install and use the **Nakama** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

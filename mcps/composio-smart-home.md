@@ -1,12 +1,14 @@
 # Composio Smart Home MCP Server
 
-Access 1000+ smart home tool integrations via Composio API — control devices through structured arguments or natural language commands.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/composio-smart-home)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/composio-smart-home)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/composio-smart-home-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/composio-smart-home-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** friends-mcp
-**Tools Count:** 8
+
+**Category:** [friends-mcp](../categories/friends-mcp.md)
+
+Access 1000+ smart home tool integrations via Composio API — control devices through structured arguments or natural language commands.
 
 ## Description
 Connect to **Composio API** and control smart home devices across 1000+ integrations through structured JSON arguments or natural language commands. Composio abstracts away authentication and API complexity, giving AI agents a unified interface to control Sensibo, Philips Hue, SmartThings, and hundreds of other smart home ecosystems.
@@ -51,6 +53,33 @@ Execute multiple Composio smart home tools in a single sequential request
 - **list_composio_tools**: List all available smart home tools and integrations in Composio
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Composio Smart Home** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available smart home tools I can execute."
+
+**🤖 AI Agent:**
+> I found 150+ smart home tools available through Composio. Key categories include: Sensibo (climate control — turn on/off AC, set temperature), Philips Hue (lighting — turn on/off, dim, change color), SmartThings (hub — control devices, scenes), and many more. Use `search_composio_tools` to find tools for specific apps.
+
+---
+
+**👤 You:**
+> "Turn on my living room AC and set it to 22°C."
+
+**🤖 AI Agent:**
+> Executing tool SENSIBO_TURN_ON with text instruction "turn on living room AC and set to 22°C"... Done! Your living room AC is now on and set to 22°C. The Sensibo device has been configured successfully.
+
+---
+
+**👤 You:**
+> "Show me all tools available for Sensibo."
+
+**🤖 AI Agent:**
+> Found 8 Sensibo tools: SENSIBO_TURN_ON, SENSIBO_TURN_OFF, SENSIBO_SET_AC (set temperature/mode), SENSIBO_GET_AC_STATE, SENSIBO_SET_TIMER, SENSIBO_SET_SCHEDULE, SENSIBO_GET_ROOMS, SENSIBO_GET_MEASUREMENTS. You can execute any of these using `execute_composio_tool` or `execute_composio_tool_with_text`.
+
+
 ## Installation & Usage
 
 To install and use the **Composio Smart Home** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Composio Smart Home** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

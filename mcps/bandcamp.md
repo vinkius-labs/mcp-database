@@ -1,12 +1,14 @@
 # Bandcamp MCP Server
 
-Discover independent music — search artists, albums and tracks, browse new releases and best sellers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bandcamp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bandcamp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bandcamp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bandcamp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 8
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Discover independent music — search artists, albums and tracks, browse new releases and best sellers.
 
 ## Description
 Connect to **Bandcamp** and discover independent music through natural conversation.
@@ -62,6 +64,33 @@ Get available genre tags on Bandcamp
 Search Bandcamp for artists, albums, tracks, labels and fans
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bandcamp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for ambient electronic artists."
+
+**🤖 AI Agent:**
+> Found 25 ambient electronic artists including: Stars of the Lid, Biosphere, Carbon Based Lifeforms, Loscil, 36. Each with bio, discography, location and social links.
+
+---
+
+**👤 You:**
+> "What are the new releases in rock music?"
+
+**🤖 AI Agent:**
+> Found 20 new rock releases including albums from emerging and established artists. Each with artwork, track lists, genres, release dates and Bandcamp purchase links.
+
+---
+
+**👤 You:**
+> "Show me Bandcamp's featured albums right now."
+
+**🤖 AI Agent:**
+> Current Bandcamp featured albums: 8 editorial picks across genres including post-rock, hip-hop, jazz, electronic and folk. Each with full details and purchase links.
+
+
 ## Installation & Usage
 
 To install and use the **Bandcamp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Bandcamp** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

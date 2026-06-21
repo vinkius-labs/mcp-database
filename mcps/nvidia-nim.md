@@ -1,12 +1,14 @@
 # NVIDIA NIM MCP Server
 
-MLOps proxy unifying explicitly local hardware limits extracting telemetry across active NVIDIA AI containers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-nim)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nvidia-nim)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nvidia-nim-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nvidia-nim-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+MLOps proxy unifying explicitly local hardware limits extracting telemetry across active NVIDIA AI containers.
 
 ## Description
 ### What you can do
@@ -41,6 +43,33 @@ Explicitly targeted for **MLOps Engineers**, **Hardware Proxies Admins**, and **
 - **nim_scale_replicas**: Dynamically orchestrate bounds adjusting native hardware replication proxy assignments scaling execution layers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NVIDIA NIM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Analyze container limits executing active native probes mapped on the physical server to check explicit liveness natively securely."
+
+**🤖 AI Agent:**
+> Parsed logically evaluating native NIM bound (`check_health_live`). Inference container executed successfully actively returning 200 HTTP cleanly bounding constraints accurately.
+
+---
+
+**👤 You:**
+> "Dump active LLM targets explicitly listing matrices isolating natively loaded models natively secure."
+
+**🤖 AI Agent:**
+> Tunnel explicitly active limit targets mapped isolating model targets safely (`list_models`). Extracted cleanly formatting 'meta/llama3-8b-instruct' dynamically actively routing safely natively.
+
+---
+
+**👤 You:**
+> "Extract explicit proxy hardware telemetry strictly extracting native GPU metrics logically evaluating bounds attached to the docker bounds natively."
+
+**🤖 AI Agent:**
+> Execution telemetry directly extracted natively utilizing metric parameters securely matching `get_metrics`. Parsed arrays successfully formatting structural mappings mapping explicitly memory bounds efficiently.
+
+
 ## Installation & Usage
 
 To install and use the **NVIDIA NIM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **NVIDIA NIM** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

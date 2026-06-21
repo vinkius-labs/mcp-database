@@ -1,12 +1,14 @@
 # GrabFood Partner MCP Server
 
-Automate GrabFood restaurant operations — manage orders, update menus, control store status, and run marketing campaigns directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/grabfood-partner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/grabfood-partner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/grabfood-partner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/grabfood-partner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate GrabFood restaurant operations — manage orders, update menus, control store status, and run marketing campaigns directly from any AI agent.
 
 ## Description
 Connect your **GrabFood Partner** account to any AI agent and take full control of your restaurant delivery operations through natural conversation.
@@ -216,6 +218,41 @@ Update the menu for a GrabFood merchant
 Update the estimated ready time for a GrabFood order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GrabFood Partner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all my GrabFood orders for today."
+
+**🤖 AI Agent:**
+> I've fetched your GrabFood orders for today. You currently have 8 active orders, with 3 pending acceptance and 5 being prepared. The most recent order (#GF-48921) includes 2x Nasi Goreng and 1x Es Teh Manis. Would you like to accept all pending orders?
+
+---
+
+**👤 You:**
+> "Accept order GF-48921 and mark order GF-48915 as ready."
+
+**🤖 AI Agent:**
+> Done! Order GF-48921 has been accepted and the kitchen can now start preparing it. Order GF-48915 has been marked as ready for pickup — the Grab driver will be notified to arrive shortly.
+
+---
+
+**👤 You:**
+> "Check my store status and pause it if it's currently open."
+
+**🤖 AI Agent:**
+> Your GrabFood store is currently **open** and accepting orders. I've paused it for you — the store is now hidden from customers and no new orders will come through. Existing active orders are unaffected.
+
+---
+
+**👤 You:**
+> "Update the price of my Nasi Goreng to 25000 IDR and mark Fried Rice as unavailable."
+
+**🤖 AI Agent:**
+> I've batch-updated your menu: Nasi Goreng price is now 25,000 IDR and Fried Rice has been marked as unavailable. Customers will see these changes reflected on the GrabFood app within a few minutes.
+
+
 ## Installation & Usage
 
 To install and use the **GrabFood Partner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -224,4 +261,11 @@ To install and use the **GrabFood Partner** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

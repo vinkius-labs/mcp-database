@@ -1,12 +1,14 @@
 # 7shifts MCP Server
 
-Restaurant workforce management — manage employee schedules, time-off, and staff profiles via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/7shifts)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/7shifts)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/7shifts-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/7shifts-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Restaurant workforce management — manage employee schedules, time-off, and staff profiles via AI.
 
 ## Description
 Connect your **7shifts** account to your AI agent to streamline restaurant workforce management. From creating weekly schedules to auditing employee time-off requests, your agent handles staffing operations through natural conversation.
@@ -46,6 +48,33 @@ Assign a new work shift to a 7shifts employee for a specific date and time
 - **list_locations**: Retrieve all locations, departments, and roles configured in the 7shifts account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **7shifts** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all employees for my restaurant."
+
+**🤖 AI Agent:**
+> I've retrieved the employee list. You have 25 active staff members including servers, chefs, and hosts. Would you like to see their contact info or roles?
+
+---
+
+**👤 You:**
+> "Create a shift for employee 456 on Dec 20th from 9 AM to 5 PM at location 123."
+
+**🤖 AI Agent:**
+> Success! I've scheduled the shift for Dec 20th (9:00 - 17:00) at location 123. The employee has been notified through the 7shifts app.
+
+---
+
+**👤 You:**
+> "Are there any pending time-off requests?"
+
+**🤖 AI Agent:**
+> Checking time-off requests... Yes, you have 3 pending requests: Sarah (Dec 22-24), Mike (Dec 25), and Elena (Jan 2). Would you like to approve any of them?
+
+
 ## Installation & Usage
 
 To install and use the **7shifts** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **7shifts** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

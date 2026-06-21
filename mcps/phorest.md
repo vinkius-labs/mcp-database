@@ -1,12 +1,14 @@
 # Phorest MCP Server
 
-Manage salon and spa operations—clients, appointments, and staff schedules—directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/phorest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/phorest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/phorest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/phorest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 17
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Manage salon and spa operations—clients, appointments, and staff schedules—directly through your AI agent.
 
 ## Description
 Connect your **Phorest** account to any AI agent to streamline your salon or spa management. Take full control of your business operations through natural conversation.
@@ -54,6 +56,33 @@ Connect your **Phorest** account to any AI agent to streamline your salon or spa
 Update an existing client
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Phorest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all clients for business ID 12345."
+
+**🤖 AI Agent:**
+> I've retrieved the client list for business 12345. I found 50 clients on the first page, including 'Jane Doe' and 'John Smith'. Would you like to see more details for a specific client?
+
+---
+
+**👤 You:**
+> "Show me the appointments for branch 678 today."
+
+**🤖 AI Agent:**
+> Fetching appointments for branch 678... There are 12 appointments scheduled for today. The next one is a 'Full Hair Color' at 2:00 PM for client ID 9988.
+
+---
+
+**👤 You:**
+> "Get the timetable for staff member 5544 in branch 678."
+
+**🤖 AI Agent:**
+> Accessing staff timetable... Staff member 5544 is working from 9:00 AM to 6:00 PM today with a break scheduled at 1:00 PM. They have 3 available slots remaining.
+
+
 ## Installation & Usage
 
 To install and use the **Phorest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Phorest** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Dexatel MCP Server
 
-Equip your AI agent to send SMS messages, track communications, and manage contacts via the Dexatel API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dexatel)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dexatel)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dexatel-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dexatel-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** communication-messaging
-**Tools Count:** 10
+
+**Category:** [communication-messaging](../categories/communication-messaging.md)
+
+Equip your AI agent to send SMS messages, track communications, and manage contacts via the Dexatel API.
 
 ## Description
 Integrate **Dexatel**, the comprehensive cloud communications platform, directly into your AI workflow. Send SMS messages globally, monitor your messaging logs and delivery statuses, and manage your contact database using natural language.
@@ -44,6 +46,33 @@ Integrate **Dexatel**, the comprehensive cloud communications platform, directly
 - **send_sms_message**: Send a new SMS message to a specific number
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Dexatel** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send an SMS to '+1234567890' saying 'Your order is ready!'."
+
+**🤖 AI Agent:**
+> I've successfully sent the SMS to +1234567890. The message ID is 12345. Would you like me to track its delivery status for you?
+
+---
+
+**👤 You:**
+> "Show me the last 5 sent messages."
+
+**🤖 AI Agent:**
+> The last 5 sent messages include notifications to '+123...' and '+198...'. All are marked as 'Delivered'. Should I pull the full content for any of them?
+
+---
+
+**👤 You:**
+> "What is my current account balance?"
+
+**🤖 AI Agent:**
+> Your current balance is $45.20. You have approximately 3,000 SMS credits remaining based on your current rates. Would you like to see your usage for this month?
+
+
 ## Installation & Usage
 
 To install and use the **Dexatel** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Dexatel** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

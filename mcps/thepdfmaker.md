@@ -1,12 +1,14 @@
 # ThePDFMaker MCP Server
 
-Transform HTML templates into pixel-perfect PDF documents with an API designed for invoices, reports, and branded output.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/thepdfmaker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thepdfmaker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thepdfmaker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thepdfmaker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Transform HTML templates into pixel-perfect PDF documents with an API designed for invoices, reports, and branded output.
 
 ## Description
 Connect your **PDFMaker** account to any AI agent and take full control of your document automation and PDF orchestration through natural conversation. PDFMaker provides a powerful and flexible platform for transforming structured JSON data into professional-grade PDF files using templates from Google Docs, MS Word, or its native editor.
@@ -49,6 +51,33 @@ No more manual editing in document processors for repetitive tasks. Your AI acts
 - **list_webhooks**: List active webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ThePDFMaker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my PDF templates in PDFMaker."
+
+**🤖 AI Agent:**
+> I've retrieved your templates. You have 3 active designs including 'Invoice Template v2' and 'Monthly Report'. Which one would you like to use for generation?
+
+---
+
+**👤 You:**
+> "Generate a professional invoice PDF using my corporate template for client Meridian Corp."
+
+**🤖 AI Agent:**
+> Invoice PDF generated successfully using template "Corporate Invoice v3". Client: Meridian Corp. Invoice #2025-0523. 3 line items totaling $8,750. Payment terms: NET15. The PDF includes your company logo, footer with bank details, and a QR code for direct payment. File size: 124 KB. Ready for download or email delivery.
+
+---
+
+**👤 You:**
+> "List all available PDF templates in my account and when they were last modified."
+
+**🤖 AI Agent:**
+> You have 8 templates. "Corporate Invoice v3" was last modified on May 1st and is your most used template (234 generations). "Sales Quote" modified April 28th (89 uses). "NDA Template" updated April 15th (45 uses). "Certificate of Completion" from March 20th (67 uses). 4 additional templates available with combined 123 generations.
+
+
 ## Installation & Usage
 
 To install and use the **ThePDFMaker** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **ThePDFMaker** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

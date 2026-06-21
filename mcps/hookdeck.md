@@ -1,12 +1,14 @@
 # Hookdeck MCP Server
 
-Manage and monitor webhooks with Hookdeck — list connections, create sources, and control event routing directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hookdeck)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hookdeck)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hookdeck-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hookdeck-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 52
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage and monitor webhooks with Hookdeck — list connections, create sources, and control event routing directly from your AI agent.
 
 ## Description
 Connect your **Hookdeck** account to any AI agent to orchestrate your webhook infrastructure through natural conversation. Hookdeck provides the reliability layer for your event-driven architecture, and this server puts that power in your chat interface.
@@ -87,6 +89,33 @@ Connect your **Hookdeck** account to any AI agent to orchestrate your webhook in
 - **upsert_connection**: Create or update a connection by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hookdeck** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current Hookdeck connections."
+
+**🤖 AI Agent:**
+> I've retrieved your connections. You have 3 active routes: 'Shopify-to-Lambda' (ID: conn_123), 'Stripe-to-Analytics' (ID: conn_456), and 'GitHub-Webhooks' (ID: conn_789).
+
+---
+
+**👤 You:**
+> "Pause the connection with ID conn_456 immediately."
+
+**🤖 AI Agent:**
+> The connection 'Stripe-to-Analytics' (conn_456) has been successfully paused. Event routing is now suspended.
+
+---
+
+**👤 You:**
+> "How many webhook sources do I have?"
+
+**🤖 AI Agent:**
+> You currently have a total of 5 sources configured in your Hookdeck project.
+
+
 ## Installation & Usage
 
 To install and use the **Hookdeck** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -95,4 +124,11 @@ To install and use the **Hookdeck** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

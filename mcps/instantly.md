@@ -1,12 +1,14 @@
 # Instantly MCP Server
 
-Equip your AI agent with direct access to Instantly — manage cold email campaigns, track deliverability, and scale outreach across unlimited sending accounts.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/instantly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/instantly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/instantly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/instantly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 10
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Equip your AI agent with direct access to Instantly — manage cold email campaigns, track deliverability, and scale outreach across unlimited sending accounts.
 
 ## Description
 Connect **Instantly** to your AI agent and manage your high-volume cold email platform conversationally.
@@ -44,6 +46,33 @@ Connect **Instantly** to your AI agent and manage your high-volume cold email pl
 - **resume_campaign**: Resume a campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Instantly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the open rate on my 'SaaS Founders Q2' campaign?"
+
+**🤖 AI Agent:**
+> Campaign 'SaaS Founders Q2': 1,200 leads enrolled. Open rate: 62%, Reply rate: 9%, Bounce rate: 1.8%. Sent from 8 accounts. Top performing variant: Subject line B (71% open rate).
+
+---
+
+**👤 You:**
+> "Check warm-up status on all my sending accounts."
+
+**🤖 AI Agent:**
+> You have 12 sending accounts. 8 are fully warmed (score 90+), 3 in progress (scores 45-70, ETA 2 weeks), and 1 just started (score 15, ETA 4 weeks). All accounts showing healthy inbox placement rates above 85%.
+
+---
+
+**👤 You:**
+> "Add 50 leads to the 'Enterprise Outreach' campaign."
+
+**🤖 AI Agent:**
+> 50 leads added to 'Enterprise Outreach'. 48 accepted, 2 skipped (duplicates already in campaign). They'll start receiving emails based on your campaign schedule and sending account rotation.
+
+
 ## Installation & Usage
 
 To install and use the **Instantly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Instantly** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

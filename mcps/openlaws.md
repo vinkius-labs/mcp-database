@@ -1,12 +1,14 @@
 # OpenLaws MCP Server
 
-Access validated legal data via OpenLaws — search statutes, regulations, case law, validate citations, and track legislative changes directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openlaws)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openlaws)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openlaws-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openlaws-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** brain-trust
-**Tools Count:** 14
+
+**Category:** [brain-trust](../categories/brain-trust.md)
+
+Access validated legal data via OpenLaws — search statutes, regulations, case law, validate citations, and track legislative changes directly from any AI agent.
 
 ## Description
 Connect your **OpenLaws** API account to any AI agent and take full control of legal research, citation validation, and legislative monitoring workflows through natural conversation.
@@ -112,6 +114,47 @@ Use this to validate citations in legal documents, spreadsheets, or databases be
 Validate a legal citation and find its original source
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **OpenLaws** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for data privacy statutes across all US states and summarize the key findings."
+
+**🤖 AI Agent:**
+> I've searched statutes for 'data privacy' across all 53 jurisdictions. Found relevant statutes in 12 states including California Consumer Privacy Act (CCPA), Virginia Consumer Data Protection Act, Colorado Privacy Act, and Connecticut Data Privacy Act. Federal: no comprehensive federal data privacy statute currently exists. Top results include: CA Civ. Code § 1798.100, Va. Code § 59.1-575, Colo. Rev. Stat. § 6-1-1303. Would you like the full text of any specific statute?
+
+---
+
+**👤 You:**
+> "Validate these citations: '42 U.S.C. § 1983' and 'Roe v. Wade, 410 U.S. 113' and tell me if they're correct."
+
+**🤖 AI Agent:**
+> I've validated both citations:
+
+1. **42 U.S.C. § 1983** — ✅ VALID. Civil Rights Act, Section 1983 (Deprivation of rights under color of law). Federal statute. Source: USC Title 42, Chapter 21, Subchapter 1.
+
+2. **Roe v. Wade, 410 U.S. 113 (1973)** — ✅ VALID. Supreme Court opinion. Citation confirmed: 410 United States Reports 113. Note: Overturned by Dobbs v. Jackson Women's Health Organization (2022). Original source: Supreme Court of the United States.
+
+Both citations are correctly formatted and verified against government sources.
+
+---
+
+**👤 You:**
+> "Show me recent legislative updates in California employment law and any changes this month."
+
+**🤖 AI Agent:**
+> I've retrieved recent updates for California jurisdiction. Found 8 recent updates in the past 30 days:
+
+1. **CA Labor Code § 2810.5** — Updated notice requirements for new hires (effective 2024-01-01)
+2. **CA Labor Code § 432.7** — Amendments to salary history ban provisions
+3. **CA Gov. Code § 12950.1** — Expanded SB-551 training requirements for employers with 50+ employees
+4. **CA Code of Regs. tit. 8, § 11040** — Updated wage order exemptions for professional workers
+5. **AB 1234 (2024)** — New remote work expense reimbursement requirements
+
+Would you like the full text of any of these updates, or shall I search for specific topics like 'remote work' or 'overtime'?
+
+
 ## Installation & Usage
 
 To install and use the **OpenLaws** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -120,4 +163,11 @@ To install and use the **OpenLaws** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ScreenshotOne MCP Server
 
-Capture website screenshots — audit visual content and generate PDFs via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/screenshotone)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/screenshotone)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/screenshotone-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/screenshotone-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Capture website screenshots — audit visual content and generate PDFs via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire visual auditing and website capturing workflow with **ScreenshotOne**, the reliable API for high-quality screenshots. By connecting ScreenshotOne to your agent, you transform complex capturing tasks into a natural conversation. Your agent can instantly take full-page screenshots, generate PDFs from URLs, and audit page metadata without you ever touching a browser. Whether you are monitoring site changes or archiving visual content, your agent acts as a real-time visual archiver, ensuring your records are always clear and comprehensive.
@@ -44,6 +46,33 @@ Get metadata for a website (title, size, etc.) without capturing
 - **take_viewport_screenshot**: Take a screenshot with a specific viewport size
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ScreenshotOne** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Take a screenshot of https://vinkius.com."
+
+**🤖 AI Agent:**
+> I've captured the screenshot for you! You can access the high-quality image via the provided URL. Would you like a full-page capture or a PDF version as well?
+
+---
+
+**👤 You:**
+> "Capture the full page of https://github.com/vinkius."
+
+**🤖 AI Agent:**
+> Full-page capture initiated! I've retrieved the image showing the entire GitHub profile. It includes all repositories and contributions. Would you like the direct link?
+
+---
+
+**👤 You:**
+> "Show metadata for https://www.google.com."
+
+**🤖 AI Agent:**
+> I've retrieved the metadata for Google. The site title is 'Google' and the page size is approximately 50KB. Would you like me to take a screenshot now?
+
+
 ## Installation & Usage
 
 To install and use the **ScreenshotOne** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **ScreenshotOne** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

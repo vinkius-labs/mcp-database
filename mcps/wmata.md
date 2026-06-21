@@ -1,12 +1,14 @@
 # WMATA MCP Server
 
-Access Washington DC Metro data via WMATA — track Metrorail and Metrobus in real-time, check incidents, and plan station visits from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/wmata)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/wmata)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/wmata-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/wmata-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** iot-hardware
-**Tools Count:** 12
+
+**Category:** [iot-hardware](../categories/iot-hardware.md)
+
+Access Washington DC Metro data via WMATA — track Metrorail and Metrobus in real-time, check incidents, and plan station visits from any AI agent.
 
 ## Description
 Connect your **WMATA API** Washington DC public transit data platform to any AI agent and take full control of real-time Metrorail and Metrobus tracking, incident monitoring, and station information through natural conversation.
@@ -81,6 +83,33 @@ Get entrance information for a specific Metrorail station
 Get next train predictions at a specific Metrorail station
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **WMATA** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the next trains arriving at Gallery Place station."
+
+**🤖 AI Agent:**
+> Fetching predictions for Gallery Place (B36)... Next trains: Red Line to Glenmont — 2 minutes, 8 cars; Red Line to Shady Grove — 4 minutes, 6 cars; Yellow Line to Greenbelt — 6 minutes, 6 cars; Green Line to Branch Ave — 8 minutes, 6 cars; Yellow Line to Huntington — 10 minutes, 4 cars. All services operating on schedule with no delays reported.
+
+---
+
+**👤 You:**
+> "Are there any incidents affecting the Red Line right now?"
+
+**🤖 AI Agent:**
+> Checking Metrorail incidents... Currently 1 active incident: Single-tracking between Twinbrook and Rockville due to track maintenance. Expect 10-15 minute delays in both directions. Estimated resolution: 2:30 PM. No other incidents reported on the Red Line. All other lines are operating normally. Would you like me to check elevator status at any Red Line stations?
+
+---
+
+**👤 You:**
+> "Where is the closest entrance to Metro Center station from 12th Street?"
+
+**🤖 AI Agent:**
+> Fetching Metro Center (A01) entrances... Found 7 entrances. Closest to 12th Street: Entrance at 12th & G Streets NW — coordinates 38.8983, -77.0283, has escalator access. Also nearby: Entrance at 1155 Connecticut Ave NW — coordinates 38.9056, -77.0421, has elevator and escalator (accessible). Full list includes entrances on F Street, G Street, and Connecticut Avenue. Would you like walking directions from your current location to the closest entrance?
+
+
 ## Installation & Usage
 
 To install and use the **WMATA** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -89,4 +118,11 @@ To install and use the **WMATA** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Fantastical MCP Server
 
-Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fantastical)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fantastical)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fantastical-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fantastical-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent.
 
 ## Description
 Connect your **Fantastical** account to any AI agent and take full control of your unified calendar management and advanced scheduling through natural conversation.
@@ -60,6 +62,33 @@ List all Proposals in Fantastical
 Create a new reminder in Fantastical
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fantastical** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create event: 'Deep Work session tomorrow from 9am to 11am'"
+
+**🤖 AI Agent:**
+> Event created! I've added 'Deep Work session' to your calendar for tomorrow (March 31, 2026) from 9:00 AM to 11:00 AM. I used Fantastical's natural language engine to parse your request flawlessly.
+
+---
+
+**👤 You:**
+> "List my events for this week"
+
+**🤖 AI Agent:**
+> Retrieving your schedule... You have 8 events this week across your connected calendars. Highlights include 'Product Review' on Wednesday and a 'Team Lunch' on Friday. Would you like the full list?
+
+---
+
+**👤 You:**
+> "What are my active scheduling Openings?"
+
+**🤖 AI Agent:**
+> I found 2 active Openings: '15 Minute Coffee Chat' and '60 Minute Strategy Session'. I can provide the booking links for you to share.
+
+
 ## Installation & Usage
 
 To install and use the **Fantastical** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Fantastical** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

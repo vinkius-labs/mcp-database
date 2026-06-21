@@ -1,12 +1,14 @@
 # Gitee MCP Server
 
-Collaborative code hosting and development platform — manage repositories, issues, and pull requests via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gitee)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gitee)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gitee-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gitee-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Collaborative code hosting and development platform — manage repositories, issues, and pull requests via AI.
 
 ## Description
 Empower your AI agent to manage your development workflow on **Gitee**, the leading platform for collaborative software development in China. By connecting Gitee to your agent, you transform repository management and issue tracking into a natural conversation. Your agent can instantly list your repositories, create new issues, manage pull requests, and even read file contents without you needing to navigate the web interface. Whether you are a solo developer or part of a large team, your agent acts as a real-time development assistant, keeping your projects organized and moving forward.
@@ -46,6 +48,33 @@ Empower your AI agent to manage your development workflow on **Gitee**, the lead
 - **get_repo**: Get repository details
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gitee** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my repositories on Gitee."
+
+**🤖 AI Agent:**
+> I've retrieved your Gitee repositories. You have 5 active projects, including 'awesome-project' and 'demo-app'. Would you like more details on any of them?
+
+---
+
+**👤 You:**
+> "Create a new issue in 'my-org/my-repo' titled 'Bug: login failure'."
+
+**🤖 AI Agent:**
+> Done! I've created issue #42 in the 'my-org/my-repo' repository with the title 'Bug: login failure'. You can track it here: [link].
+
+---
+
+**👤 You:**
+> "Read the contents of README.md from the main branch of 'user/project'."
+
+**🤖 AI Agent:**
+> I've retrieved the README.md content for you. It contains project documentation, installation steps, and usage examples. Would you like me to summarize it?
+
+
 ## Installation & Usage
 
 To install and use the **Gitee** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Gitee** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

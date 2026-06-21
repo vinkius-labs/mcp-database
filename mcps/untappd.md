@@ -1,12 +1,14 @@
 # Untappd MCP Server
 
-Track beers, breweries, and venues. Access check-in feeds, beer metadata, and manage your social drinking profile directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/untappd)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/untappd)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/untappd-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/untappd-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** gaming-entertainment
-**Tools Count:** 30
+
+**Category:** [gaming-entertainment](../categories/gaming-entertainment.md)
+
+Track beers, breweries, and venues. Access check-in feeds, beer metadata, and manage your social drinking profile directly from your AI agent.
 
 ## Description
 Connect your **Untappd** account to any AI agent to explore the world of craft beer through natural conversation. This MCP server provides comprehensive access to the Untappd social network for beer enthusiasts.
@@ -69,6 +71,33 @@ Obtain the check-in feed of a selected user
 - **get_venue_info**: Get detailed information about a venue
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Untappd** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the latest beer check-ins from my friends."
+
+**🤖 AI Agent:**
+> I've retrieved your friend feed. Your friend 'JohnD' just checked into a 'Punk IPA' by BrewDog at 'The Craft Bar' with a 4.25 rating. 'SarahB' is having a 'Guinness Draught' at home.
+
+---
+
+**👤 You:**
+> "What are the details for beer ID 4481?"
+
+**🤖 AI Agent:**
+> Beer ID 4481 is 'Anchor Steam Beer' by Anchor Brewing Company. It's a California Common style with 4.9% ABV and 33 IBU. It has a global rating of 3.51 based on over 300,000 check-ins.
+
+---
+
+**👤 You:**
+> "Search for a brewery named 'Stone Brewing'."
+
+**🤖 AI Agent:**
+> I found 'Stone Brewing' (ID: 1204) located in Escondido, CA. They have over 500 beers listed and a brewery rating of 4.02. Would you like to see their most popular beers?
+
+
 ## Installation & Usage
 
 To install and use the **Untappd** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -77,4 +106,11 @@ To install and use the **Untappd** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # BigOven MCP Server
 
-Access over a million recipes via BigOven — search dishes, read reviews, and explore collections directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bigoven)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bigoven)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bigoven-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bigoven-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Access over a million recipes via BigOven — search dishes, read reviews, and explore collections directly from any AI agent.
 
 ## Description
 Connect your **BigOven** account to any AI agent and bring the power of over a million recipes into your workspace through natural conversation.
@@ -43,6 +45,33 @@ Connect your **BigOven** account to any AI agent and bring the power of over a m
 - **search_recipes**: Search recipes by title or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BigOven** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find a good recipe for Lasagna."
+
+**🤖 AI Agent:**
+> I found a few highly-rated options. The top result is 'Classic Homemade Lasagna' (ID: 14523) with a 4.8/5 star rating. Would you like the full ingredients list?
+
+---
+
+**👤 You:**
+> "Search for recipes using salmon and sweet potato."
+
+**🤖 AI Agent:**
+> Searching by ingredients... I found 'Roasted Salmon with Sweet Potato' (ID: 8821) and 'Sweet Potato Salmon Cakes' (ID: 9912). Which one sounds better?
+
+---
+
+**👤 You:**
+> "Get the reviews for recipe 14523."
+
+**🤖 AI Agent:**
+> Retrieving reviews... Users love this recipe! Common comments mention that adding extra garlic makes the sauce much better, and baking it covered for the first 30 minutes prevents drying.
+
+
 ## Installation & Usage
 
 To install and use the **BigOven** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **BigOven** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Commission Factory MCP Server
 
-Commission Factory is a leading affiliate marketing network in Asia-Pacific. This MCP server allows affiliates and merchants to retrieve transactions, manage programs, and track performance programmatically.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/commission-factory)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commission-factory)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/commission-factory-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/commission-factory-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Commission Factory is a leading affiliate marketing network in Asia-Pacific. This MCP server allows affiliates and merchants to retrieve transactions, manage programs, and track performance programmatically.
 
 ## Description
 Connect your **Commission Factory** account to any AI agent and manage your affiliate marketing programs through natural conversation.
@@ -44,6 +46,33 @@ Your AI agent becomes your growth partner, giving you instant access to affiliat
 - **list_promotions**: Retrieve active coupon codes and promotions from joined merchants
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Commission Factory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the last 20 affiliate transactions in Commission Factory."
+
+**🤖 AI Agent:**
+> I've fetched your last 20 transactions. You have 5 approved transactions and 15 pending ones. The total commission value is $240.20. Would you like a breakdown by merchant?
+
+---
+
+**👤 You:**
+> "List all active promotions and coupon codes from my joined merchants in Commission Factory."
+
+**🤖 AI Agent:**
+> Here are the active coupons from your merchants: 1. '10% Off Shoes' at TrendyFootwear (Code: TF10), 2. 'Free Shipping' at GadgetStore (Code: FREESHIP). Do you need the affiliate links for any of these?
+
+---
+
+**👤 You:**
+> "Calculate my total commission and sales value for the current month in Commission Factory."
+
+**🤖 AI Agent:**
+> For the current month, your total generated sales value is $4,250.00, resulting in a total commission of $450.75 across 32 conversions.
+
+
 ## Installation & Usage
 
 To install and use the **Commission Factory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Commission Factory** MCP server in your AI agents (Clau
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

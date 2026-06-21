@@ -1,12 +1,14 @@
 # ClearSale MCP Server
 
-Manage e-commerce fraud prevention via ClearSale — submit orders for analysis, monitor fraud scores, and track status updates directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clearsale)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clearsale)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clearsale-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clearsale-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 5
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage e-commerce fraud prevention via ClearSale — submit orders for analysis, monitor fraud scores, and track status updates directly from any AI agent.
 
 ## Description
 Connect your **ClearSale** account to any AI agent and take full control of your fraud prevention operations through natural conversation. Streamline how you monitor and analyze e-commerce transactions natively.
@@ -42,6 +44,33 @@ Connect your **ClearSale** account to any AI agent and take full control of your
 - **update_clearsale_order_status**: Update the status of an order in ClearSale (e.g. Cancelled, Approved)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClearSale** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the fraud status for order #ped_12345."
+
+**🤖 AI Agent:**
+> Retrieving status for order ped_12345... ClearSale has 'Approved' this order with a fraud score of 15. No further manual analysis is required.
+
+---
+
+**👤 You:**
+> "List my last 5 fraud analyses."
+
+**🤖 AI Agent:**
+> Checking recent analyses... I found 5 orders: 3 Approved, 1 Denied (Score: 95), and 1 in Manual Analysis. Would you like to see the reasons for the denied order?
+
+---
+
+**👤 You:**
+> "Mark order #ped_98765 as 'Cancelled' in ClearSale."
+
+**🤖 AI Agent:**
+> Updating order ped_98765... The status has been successfully set to 'Cancelled' (CAN) in the ClearSale system.
+
+
 ## Installation & Usage
 
 To install and use the **ClearSale** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **ClearSale** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

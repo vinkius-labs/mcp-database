@@ -1,12 +1,14 @@
 # Coralogix MCP Server
 
-Manage observability, logs, and parsing rules via Coralogix — ingest logs, monitor SLOs, and control Grafana dashboards directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coralogix)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coralogix)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coralogix-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coralogix-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** devops-cicd
-**Tools Count:** 17
+
+**Category:** [devops-cicd](../categories/devops-cicd.md)
+
+Manage observability, logs, and parsing rules via Coralogix — ingest logs, monitor SLOs, and control Grafana dashboards directly.
 
 ## Description
 Connect your **Coralogix** account to any AI agent to take full control of your observability and log management workflows through natural conversation.
@@ -55,6 +57,33 @@ Send logs to Coralogix
 - **create_grafana_dashboard**: Create or update a hosted Grafana dashboard
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coralogix** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all log parsing rules currently active in Coralogix."
+
+**🤖 AI Agent:**
+> I've retrieved your parsing rules. You have 3 active rule groups: 'JSON-Parser', 'Nginx-Logs', and 'Security-Events'. Would you like to see the details of a specific group?
+
+---
+
+**👤 You:**
+> "Search for Grafana dashboards related to 'Kubernetes'."
+
+**🤖 AI Agent:**
+> Searching... I found 2 dashboards: 'K8s Cluster Health' and 'Pod Resource Usage'. Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Create a version tag named 'v2.4.0' for the 'Payment-Service' application."
+
+**🤖 AI Agent:**
+> The version tag 'v2.4.0' has been successfully created for 'Payment-Service'. This deployment is now marked in your Coralogix timeline.
+
+
 ## Installation & Usage
 
 To install and use the **Coralogix** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Coralogix** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

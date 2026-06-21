@@ -1,12 +1,14 @@
 # Luma MCP Server
 
-Host and manage events beautifully with registration pages, attendee communication, and analytics for in-person and virtual gatherings.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/luma)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/luma)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/luma-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/luma-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 6
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Host and manage events beautifully with registration pages, attendee communication, and analytics for in-person and virtual gatherings.
 
 ## Description
 Connect your **Luma** (lu.ma) account to any AI agent and take full control of your event orchestration and community engagement through natural conversation. Luma provides a robust platform for managing calendars and events, and this integration allows you to retrieve event metadata, manage guest lists, and create new activities directly from your chat interface.
@@ -43,6 +45,33 @@ No more manual logging into the dashboard for quick guest checks. Your AI acts a
 - **list_calendar_subscribers**: List subscribers to your calendar
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Luma** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my upcoming events in Luma."
+
+**🤖 AI Agent:**
+> I've retrieved your events. You have 3 upcoming activities including 'AI Workshop' and 'Community Meetup'. Which one would you like to see guest counts for?
+
+---
+
+**👤 You:**
+> "Show me the guest list for the 'Product Launch' event."
+
+**🤖 AI Agent:**
+> I've retrieved the guest list. There are 45 confirmed attendees, including 10 VIPs. Would you like me to highlight any specific group?
+
+---
+
+**👤 You:**
+> "Add 'sarah@example.com' to the workshop guest list."
+
+**🤖 AI Agent:**
+> Sarah has been successfully added to the 'AI Workshop' guest list. Would you like me to send her the calendar invitation now?
+
+
 ## Installation & Usage
 
 To install and use the **Luma** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Luma** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

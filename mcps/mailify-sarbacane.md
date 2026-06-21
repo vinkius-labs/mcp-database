@@ -1,12 +1,14 @@
 # Mailify (Sarbacane) MCP Server
 
-Manage email and SMS marketing campaigns, address books, and contacts via the Mailify API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mailify-sarbacane)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mailify-sarbacane)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mailify-sarbacane-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mailify-sarbacane-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 9
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email and SMS marketing campaigns, address books, and contacts via the Mailify API.
 
 ## Description
 Connect your **Mailify** (Sarbacane) account to any AI agent to automate your professional marketing communications. This MCP server enables your agent to manage contact lists (address books), retrieve campaign performance statistics, and update subscriber data directly from natural language interfaces.
@@ -46,6 +48,33 @@ Add a new contact to an address book
 - **update_book_contact**: Update an existing contact in an address book
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mailify (Sarbacane)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current campaigns in Mailify."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 5 active campaigns, including 'Product Launch Q3 (ID: cp123)', 'Monthly SMS Alert', and 'Newsletter Weekly'. Would you like to see performance stats for any of them?
+
+---
+
+**👤 You:**
+> "Show performance stats for campaign ID 'cp123'."
+
+**🤖 AI Agent:**
+> I've fetched the stats for campaign cp123. It currently has 1,250 opens (22.5%) and 145 clicks (2.6%). There were 5 bounce events recorded.
+
+---
+
+**👤 You:**
+> "Add 'new-lead@example.com' to address book ID 'bk987'."
+
+**🤖 AI Agent:**
+> Successfully added new-lead@example.com to address book bk987. The contact ID is 'ct-abc-123' and they are now ready to receive your campaigns.
+
+
 ## Installation & Usage
 
 To install and use the **Mailify (Sarbacane)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Mailify (Sarbacane)** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

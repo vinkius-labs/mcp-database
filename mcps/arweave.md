@@ -1,12 +1,14 @@
 # Arweave MCP Server
 
-Interact with the Arweave permaweb — query network info, check wallet balances, inspect transactions, and calculate storage costs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/arweave)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/arweave)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/arweave-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/arweave-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 13
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Interact with the Arweave permaweb — query network info, check wallet balances, inspect transactions, and calculate storage costs directly from your AI agent.
 
 ## Description
 Connect to the **Arweave** network and manage permanent data storage through natural conversation. This MCP server allows your AI agent to query the blockweave, check transaction statuses, and interact with the permaweb ecosystem.
@@ -50,6 +52,33 @@ Get the status of a transaction
 - **submit_transaction**: Submit a new transaction to the network
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Arweave** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current status and height of the Arweave network?"
+
+**🤖 AI Agent:**
+> I've retrieved the network info. The Arweave network is currently at height 1,542,890 with the current block hash starting with 'zX9...'. The node version is 2.7.2.
+
+---
+
+**👤 You:**
+> "Check the balance for Arweave wallet address 3pD7...x9A."
+
+**🤖 AI Agent:**
+> The balance for wallet 3pD7...x9A is 1,250,000,000 Winstons, which is equivalent to 0.00125 AR.
+
+---
+
+**👤 You:**
+> "How much does it cost to store 500MB on Arweave right now?"
+
+**🤖 AI Agent:**
+> Calculating storage price for 524,288,000 bytes... The current cost is approximately 45,200,000 Winstons (0.0000452 AR).
+
+
 ## Installation & Usage
 
 To install and use the **Arweave** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Arweave** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

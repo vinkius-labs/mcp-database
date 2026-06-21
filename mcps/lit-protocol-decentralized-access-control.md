@@ -1,12 +1,14 @@
 # Lit Protocol (Decentralized Access Control) MCP Server
 
-Manage decentralized access control, Programmable Key Pairs (PKPs), and execute immutable Lit Actions within TEEs directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lit-protocol-decentralized-access-control)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lit-protocol-decentralized-access-control)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lit-protocol-decentralized-access-control-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lit-protocol-decentralized-access-control-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** security-compliance
-**Tools Count:** 20
+
+**Category:** [security-compliance](../categories/security-compliance.md)
+
+Manage decentralized access control, Programmable Key Pairs (PKPs), and execute immutable Lit Actions within TEEs directly from your AI agent.
 
 ## Description
 Connect to **Lit Protocol** to orchestrate decentralized identity and access control. This server allows your AI to manage Programmable Key Pairs (PKPs), organize them into groups, and execute secure Lit Actions.
@@ -57,6 +59,33 @@ Execute a Lit Action
 - **update_usage_api_key**: Update permissions for a usage key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lit Protocol (Decentralized Access Control)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my PKP wallets and their addresses."
+
+**🤖 AI Agent:**
+> I've retrieved your PKPs. You have 2 active wallets: PKP #1 (Address: 0x123...) and PKP #2 (Address: 0x456...). Would you like to manage permissions for any of them?
+
+---
+
+**👤 You:**
+> "Execute this Lit Action code to sign a message: 'console.log("signing...");'"
+
+**🤖 AI Agent:**
+> Executing the Lit Action in a TEE... The execution was successful. The output logs show 'signing...' and the operation completed securely. Do you need the execution receipt?
+
+---
+
+**👤 You:**
+> "Create a new access group named 'Beta Testers'."
+
+**🤖 AI Agent:**
+> Group 'Beta Testers' has been created successfully with ID 'group_987'. You can now add PKPs to this group using the `add_pkp_to_group` tool.
+
+
 ## Installation & Usage
 
 To install and use the **Lit Protocol (Decentralized Access Control)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -65,4 +94,11 @@ To install and use the **Lit Protocol (Decentralized Access Control)** MCP serve
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

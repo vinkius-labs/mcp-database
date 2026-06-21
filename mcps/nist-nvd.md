@@ -1,12 +1,14 @@
 # NIST NVD MCP Server
 
-Access authoritative vulnerability and product data via NIST NVD — track CVEs, CPEs, and security history directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nist-nvd)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nist-nvd)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nist-nvd-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nist-nvd-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 10
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access authoritative vulnerability and product data via NIST NVD — track CVEs, CPEs, and security history directly from your AI agent.
 
 ## Description
 Connect to the **National Vulnerability Database (NVD)** API through your AI agent and explore the world's most comprehensive archive of cybersecurity vulnerabilities and product data using natural conversation.
@@ -50,6 +52,33 @@ Find CVEs by weakness (CWE)
 - **search_cve_by_severity**: Filter CVEs by severity
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NIST NVD** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the details for CVE-2023-23397."
+
+**🤖 AI Agent:**
+> Retrieving CVE-2023-23397... This is a Critical elevation of privilege vulnerability in Microsoft Outlook with a CVSS score of 9.8. It allows an attacker to steal NTLM hashes. Would you like to see the list of affected software versions (CPEs)?
+
+---
+
+**👤 You:**
+> "Search for vulnerabilities in 'WordPress' with CRITICAL severity."
+
+**🤖 AI Agent:**
+> Searching NVD... I've found several critical vulnerabilities affecting WordPress core and popular plugins. The most recent include CVE-2023-XXXX (Remote Code Execution). Shall I provide the full description for the most recent one?
+
+---
+
+**👤 You:**
+> "What is the official CPE name for 'Windows 11'?"
+
+**🤖 AI Agent:**
+> Querying CPE dictionary... The primary CPE 2.3 name for Windows 11 is 'cpe:2.3:o:microsoft:windows_11:-:*:*:*:*:*:*:*'. I also found specific versions for various builds. Would you like to search for CVEs affecting this specific CPE?
+
+
 ## Installation & Usage
 
 To install and use the **NIST NVD** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **NIST NVD** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # FinLegal MCP Server
 
-Manage litigation funding cases, track claim progress, and coordinate legal finance workflows for law firms and funders.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/finlegal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/finlegal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/finlegal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/finlegal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Manage litigation funding cases, track claim progress, and coordinate legal finance workflows for law firms and funders.
 
 ## Description
 Connect your **FinLegal** account to any AI agent and take full control of your legal claims management and case orchestration through natural conversation.
@@ -54,6 +56,33 @@ Create a new contact (Claimant or Admin)
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FinLegal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active legal claims."
+
+**🤖 AI Agent:**
+> I've retrieved your claims. You currently have 5 active processes, including 'Doe vs Acme' (ID: clm_123) and 'Smith Claim' (ID: clm_456). Would you like the detailed status for any of these?
+
+---
+
+**👤 You:**
+> "Create a new contact 'John Doe' with email 'john.doe@example.com'."
+
+**🤖 AI Agent:**
+> Contact created! John Doe has been successfully added to your FinLegal database with ID 'con_789'. Shall I initiate a new claim for this contact?
+
+---
+
+**👤 You:**
+> "Show me the workflow activities for claim 'clm_123'."
+
+**🤖 AI Agent:**
+> Scanning activities for clm_123... I've found 3 workflow steps: 'Initial Application' (Completed), 'Medical Evidence' (Open), and 'Final Submission' (Pending). Would you like the details for the open step?
+
+
 ## Installation & Usage
 
 To install and use the **FinLegal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **FinLegal** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

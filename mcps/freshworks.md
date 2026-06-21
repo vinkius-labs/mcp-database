@@ -1,12 +1,14 @@
 # Freshworks MCP Server
 
-Manage unified CRM and support via Freshworks — track sales deals and accounts, handle helpdesk tickets, and manage contacts directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshworks)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshworks)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshworks-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshworks-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 9
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage unified CRM and support via Freshworks — track sales deals and accounts, handle helpdesk tickets, and manage contacts directly from any AI agent.
 
 ## Description
 Connect your **Freshworks** account to any AI agent and take full control of your unified sales CRM and customer support workflows through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Freshworks** account to any AI agent and take full control of you
 - **list_accounts**: List all sales accounts
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshworks** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me my active sales deals in Freshworks"
+
+**🤖 AI Agent:**
+> Retrieving deals... I found 5 active opportunities including 'Enterprise Expansion' ($50k, Stage: Negotiation) and 'Mid-Market License' ($12k, Stage: Discovery). Would you like the contact info for the enterprise deal?
+
+---
+
+**👤 You:**
+> "List the last 3 support tickets"
+
+**🤖 AI Agent:**
+> Retrieving tickets... Here are the 3 most recent: 'Cannot reset password' (ID: 101, Status: Open), 'Question about API' (ID: 102, Status: Pending), and 'Feature Request' (ID: 103, Status: Resolved). Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Find CRM contact 'John Smith'"
+
+**🤖 AI Agent:**
+> Found contact! John Smith is a 'Decision Maker' at 'Acme Corp'. He has 2 active deals and 1 closed support ticket. I can retrieve his full profile or communication history for you.
+
+
 ## Installation & Usage
 
 To install and use the **Freshworks** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Freshworks** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

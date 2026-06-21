@@ -1,12 +1,14 @@
 # Spaceflight News MCP Server
 
-Access real-time spaceflight news, blogs, and technical reports from major space agencies and news outlets worldwide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/spaceflight-news)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/spaceflight-news)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/spaceflight-news-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/spaceflight-news-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** scientific-research
-**Tools Count:** 7
+
+**Category:** [scientific-research](../categories/scientific-research.md)
+
+Access real-time spaceflight news, blogs, and technical reports from major space agencies and news outlets worldwide.
 
 ## Description
 Connect your AI agent to the **Spaceflight News API (SNAPI)** to stay updated with the latest developments in space exploration, satellite launches, and astronomical discoveries.
@@ -44,6 +46,33 @@ Connect your AI agent to the **Spaceflight News API (SNAPI)** to stay updated wi
 List spaceflight reports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Spaceflight News** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the 5 most recent spaceflight articles about the James Webb telescope."
+
+**🤖 AI Agent:**
+> I've found 5 recent articles using `list_articles`. They cover the latest deep-space images and calibration updates from the James Webb Space Telescope. Would you like the full details for any of them?
+
+---
+
+**👤 You:**
+> "Get the latest technical reports from the ISS."
+
+**🤖 AI Agent:**
+> Fetching reports via `list_reports`... I've retrieved the latest International Space Station daily status reports. They include details on crew activities and station maintenance.
+
+---
+
+**👤 You:**
+> "Search for blog posts from 'SpaceX' about Starship."
+
+**🤖 AI Agent:**
+> Searching blogs... Using `list_blogs` with the term 'Starship' and filtering for 'SpaceX', I found several updates regarding recent flight tests and orbital attempts.
+
+
 ## Installation & Usage
 
 To install and use the **Spaceflight News** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Spaceflight News** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

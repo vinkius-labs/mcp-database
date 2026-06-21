@@ -1,12 +1,14 @@
 # Predibase (LLM Serving & Finetuning) MCP Server
 
-Deploy and query fine-tuned LLMs via Predibase — run inference, classify text, and monitor deployment metrics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/predibase-llm-serving-finetuning)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/predibase-llm-serving-finetuning)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/predibase-llm-serving-finetuning-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/predibase-llm-serving-finetuning-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 7
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Deploy and query fine-tuned LLMs via Predibase — run inference, classify text, and monitor deployment metrics directly from your AI agent.
 
 ## Description
 Connect your **Predibase** account to any AI agent to manage high-performance LLM serving and fine-tuning workflows. Predibase provides a unified interface for serverless LLM deployment and LoRA adapter management.
@@ -42,6 +44,33 @@ Connect your **Predibase** account to any AI agent to manage high-performance LL
 - **get_metrics**: Get Prometheus metrics for the deployment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Predibase (LLM Serving & Finetuning)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a summary of this text using the 'llama-3-70b' deployment."
+
+**🤖 AI Agent:**
+> I'll use the `generate_text` tool on your 'llama-3-70b' deployment. Processing the input prompt now...
+
+---
+
+**👤 You:**
+> "Check the health and metrics for my 'customer-support-llm' deployment."
+
+**🤖 AI Agent:**
+> I am calling `get_health` and `get_metrics` for 'customer-support-llm'. The endpoint is currently healthy and processing 12 requests per minute.
+
+---
+
+**👤 You:**
+> "Classify these three reviews using our sentiment model deployment."
+
+**🤖 AI Agent:**
+> Running the `classify` tool for your inputs. Results: Review 1 (Positive), Review 2 (Negative), Review 3 (Neutral).
+
+
 ## Installation & Usage
 
 To install and use the **Predibase (LLM Serving & Finetuning)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Predibase (LLM Serving & Finetuning)** MCP server in yo
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

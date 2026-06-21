@@ -1,12 +1,14 @@
 # Weights & Biases MCP Server
 
-Track experiments, monitor ML runs, and manage artifacts on WandB — the developer platform for AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/weights-biases)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/weights-biases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/weights-biases-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/weights-biases-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 6
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Track experiments, monitor ML runs, and manage artifacts on WandB — the developer platform for AI.
 
 ## Description
 Connect your **Weights & Biases (WandB)** account to any AI agent and manage your machine learning experiments through natural conversation.
@@ -45,6 +47,33 @@ No more manual browsing through complex experiment dashboards to check model per
 - **list_project_sweeps**: Lists hyperparameter search sweeps within a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Weights & Biases** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all runs in my 'transformer-nmt' project for entity 'ai-team'."
+
+**🤖 AI Agent:**
+> I found 5 runs in 'transformer-nmt': 'vibrant-sweep-1' (Running), 'crispy-forest-12' (Finished), 'solar-wind-15' (Crashed), and 2 others. Would you like the detailed summary for any of these?
+
+---
+
+**👤 You:**
+> "Get the final accuracy and config for run ID 'vibrant-sweep-1'."
+
+**🤖 AI Agent:**
+> Run 'vibrant-sweep-1' summary: accuracy = 0.942, loss = 0.156. Config: learning_rate = 0.001, batch_size = 32, optimizer = 'adam'. It finished 2 hours ago after 50 epochs.
+
+---
+
+**👤 You:**
+> "What artifacts are available in the 'resnet-training' project?"
+
+**🤖 AI Agent:**
+> In project 'resnet-training', I found: 1. 'imagenet-subset' (Dataset, v3), 2. 'resnet50-weights' (Model, v5), and 3. 'training-logs' (Artifact, v1). Would you like to see the versions or metadata for these?
+
+
 ## Installation & Usage
 
 To install and use the **Weights & Biases** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Weights & Biases** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

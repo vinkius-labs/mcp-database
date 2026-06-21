@@ -1,12 +1,14 @@
 # cloudlayer.io MCP Server
 
-Generate PDFs and screenshots via cloudlayer.io — convert HTML or URLs to high-quality documents and images directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlayerio)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cloudlayerio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cloudlayerio-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cloudlayerio-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 8
+
+**Category:** [productivity](../categories/productivity.md)
+
+Generate PDFs and screenshots via cloudlayer.io — convert HTML or URLs to high-quality documents and images directly from any AI agent.
 
 ## Description
 Connect your **cloudlayer.io** account to any AI agent and take full control of your document and image generation through natural conversation. Streamline how you create pixel-perfect PDFs and website screenshots natively.
@@ -45,6 +47,33 @@ Connect your **cloudlayer.io** account to any AI agent and take full control of 
 - **list_cloudlayer_webhooks**: List all configured webhooks for async notifications
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **cloudlayer.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert https://example.com to a PDF."
+
+**🤖 AI Agent:**
+> Generating PDF for example.com... The document has been successfully created. You can download it here: [Generated PDF URL].
+
+---
+
+**👤 You:**
+> "Take a screenshot of https://news.google.com."
+
+**🤖 AI Agent:**
+> Capturing screenshot of Google News... I've generated a high-quality image of the page. You can view it here: [Screenshot URL].
+
+---
+
+**👤 You:**
+> "Show me my generation history."
+
+**🤖 AI Agent:**
+> Retrieving your history... I found 5 recent tasks including 3 PDFs from URLs, 1 HTML conversion, and 1 screenshot. Would you like the links for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **cloudlayer.io** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **cloudlayer.io** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Hyprace F1 Data MCP Server
 
-Query Formula 1 race results, driver standings, constructor rankings, and historical data since 1950 from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hyprace-f1-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyprace-f1-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyprace-f1-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyprace-f1-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Query Formula 1 race results, driver standings, constructor rankings, and historical data since 1950 from any AI agent.
 
 ## Description
 Connect your AI agent to the most trusted Formula 1 data source available. **Hyprace** delivers deep insights into every F1 season since 1950, with results published within minutes of the chequered flag during active race weekends.
@@ -50,6 +52,33 @@ Whether you are settling a debate about Senna vs. Schumacher or tracking the lat
 - **list_teams**: List Formula 1 teams (constructors)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hyprace F1 Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the race results for the 2024 Monaco Grand Prix."
+
+**🤖 AI Agent:**
+> Fetching the Monaco GP results... The winner was Charles Leclerc (Ferrari) with a dominant lights-to-flag victory, followed by Oscar Piastri (McLaren) in P2 and Carlos Sainz (Ferrari) in P3. Max Verstappen finished P6 after struggling with tyre degradation. Would you like to see the full classification or the qualifying grid?
+
+---
+
+**👤 You:**
+> "What are the current driver standings for the 2025 season?"
+
+**🤖 AI Agent:**
+> Here are the 2025 Driver Standings after Round 5: 1. Max Verstappen (Red Bull) — 110 pts, 2. Lando Norris (McLaren) — 98 pts, 3. Charles Leclerc (Ferrari) — 87 pts, 4. Oscar Piastri (McLaren) — 76 pts. The gap at the top is 12 points. Would you like to see the Constructor standings as well?
+
+---
+
+**👤 You:**
+> "Tell me about Ayrton Senna's career stats."
+
+**🤖 AI Agent:**
+> Retrieving driver profile... Ayrton Senna (Brazil, 1960–1994): 3× World Champion (1988, 1990, 1991), 161 race starts, 41 victories, 80 podiums, 65 pole positions, and 19 fastest laps. He raced for Toleman, Lotus, McLaren, and Williams across 11 seasons. Would you like to see his season-by-season results or compare him with another legendary driver?
+
+
 ## Installation & Usage
 
 To install and use the **Hyprace F1 Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Hyprace F1 Data** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Oracle NetSuite MCP Server
 
-Manage financials, sales orders, inventory, and customer records on Oracle NetSuite — the leading cloud ERP.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-netsuite)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/oracle-netsuite)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/oracle-netsuite-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/oracle-netsuite-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage financials, sales orders, inventory, and customer records on Oracle NetSuite — the leading cloud ERP.
 
 ## Description
 Connect your **Oracle NetSuite** account to any AI agent and manage your unified ERP operations through natural conversation.
@@ -63,6 +65,33 @@ List NetSuite records by type
 Get metadata for a NetSuite record type
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Oracle NetSuite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the revenue breakdown by subsidiary for March 2026."
+
+**🤖 AI Agent:**
+> Revenue by Subsidiary (March 2026): 1. US Operations — $2,340,000 (+12% MoM), 2. EU Operations — €1,150,000 (+8% MoM), 3. APAC — ¥89,500,000 (+15% MoM). Total consolidated revenue: $4,120,000. Want me to drill down into any subsidiary?
+
+---
+
+**👤 You:**
+> "Find all customers with overdue invoices above $10,000."
+
+**🤖 AI Agent:**
+> Found 12 customers with overdue invoices > $10K: 1. GlobalTech Inc — $45,200 (32 days overdue), 2. Pinnacle Corp — $28,750 (18 days overdue), 3. Summit Holdings — $22,100 (45 days overdue)... Total overdue amount: $312,400. Want me to generate a collections follow-up list?
+
+---
+
+**👤 You:**
+> "Create a sales order for customer 'CUST-1045' with 100 units of item 'SKU-2024-A' at $45 each."
+
+**🤖 AI Agent:**
+> Sales Order SO-2026-04567 created successfully! Customer: CUST-1045, Item: SKU-2024-A, Qty: 100, Unit Price: $45.00, Total: $4,500.00. Status: Pending Fulfillment. Would you like me to check stock availability or generate the pick ticket?
+
+
 ## Installation & Usage
 
 To install and use the **Oracle NetSuite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Oracle NetSuite** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Odoo ERP (Full) MCP Server
 
-Manage CRM leads, contacts, companies, sales orders, and notes — complete Odoo ERP access through natural conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/odoo-erp-full)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/odoo-erp-full)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/odoo-erp-full-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/odoo-erp-full-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage CRM leads, contacts, companies, sales orders, and notes — complete Odoo ERP access through natural conversation.
 
 ## Description
 Connect **Odoo ERP** to any AI agent — manage your entire business without switching tabs.
@@ -48,6 +50,33 @@ Search individual contacts (people) in Odoo by name, email, or phone
 Search CRM leads and opportunities in Odoo by name, company, or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Odoo ERP (Full)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for leads from the website"
+
+**🤖 AI Agent:**
+> 👥 **CRM Leads — Website**
+| Name | Email | Stage | Revenue |
+|---|---|---|---|
+| Acme Corp | info@acme.com | Qualification | $15,000 |
+| Beta Inc | hello@beta.io | Proposition | $8,500 |
+
+---
+
+**👤 You:**
+> "Show recent sales orders"
+
+**🤖 AI Agent:**
+> 📋 **Sales Orders**
+| SO# | Customer | Amount | Status |
+|---|---|---|---|
+| S00042 | Acme Corp | $12,500 | Confirmed |
+| S00041 | Beta Inc | $3,200 | Draft |
+
+
 ## Installation & Usage
 
 To install and use the **Odoo ERP (Full)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Odoo ERP (Full)** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

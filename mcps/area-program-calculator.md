@@ -1,12 +1,14 @@
 # Area Program Calculator MCP Server
 
-Calculates minimum required total area for any project based on room functions and structural complexity.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/area-program-calculator)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/area-program-calculator)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/area-program-calculator-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/area-program-calculator-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** construction
-**Tools Count:** 3
+
+**Category:** [construction](../categories/construction.md)
+
+Calculates minimum required total area for any project based on room functions and structural complexity.
 
 ## Description
 Building a new structure requires more than just listing rooms. The biggest challenge is calculating the true minimum total programmatic area (TPA). Architects and developers often underestimate overhead, leading to costly redesigns or zoning violations.
@@ -20,6 +22,33 @@ The Area Program Calculator solves this by providing a precise estimate of requi
 - **calculate_programmatic_needs**: Calculate total programmatic area for all environments in a building program
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Area Program Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I need a plan for a small family home. It has 1 bedroom, 2 bathrooms, and a kitchenette. Use medium complexity."
+
+**🤖 AI Agent:**
+> The total estimated area is X sq meters. This was calculated by first finding the base areas using `get_base_area_by_function` for all components, then applying the 1.25 multiplier via `adjust_area_for_structure`, and finally summing it up with `calculate_programmatic_needs`.
+
+---
+
+**👤 You:**
+> "Calculate the base area needed for a high-tech study room (StudyArea) that supports working functions. Use simple complexity first."
+
+**🤖 AI Agent:**
+> The minimum usable area is Y sq meters, as determined by `get_base_area_by_function`. If we apply the structural adjustment now using `adjust_area_for_structure` with 'simple', the total becomes Z sq meters.
+
+---
+
+**👤 You:**
+> "Final check: Give me the total programmatic needs for 3 bedrooms, 2 bathrooms, and 1 livingroom, assuming high complexity."
+
+**🤖 AI Agent:**
+> The final required area is A sq meters. This result was derived by running all components through `calculate_programmatic_needs` with the 'high' structural standard applied consistently across the entire program.
+
+
 ## Installation & Usage
 
 To install and use the **Area Program Calculator** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -28,4 +57,11 @@ To install and use the **Area Program Calculator** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # KnowBe4 (KMSAT Reporting) MCP Server
 
-Audit security awareness — list users, track phishing tests, and monitor risk scores.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/knowbe4-kmsat-reporting)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/knowbe4-kmsat-reporting)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/knowbe4-kmsat-reporting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/knowbe4-kmsat-reporting-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** human-resources
-**Tools Count:** 10
+
+**Category:** [human-resources](../categories/human-resources.md)
+
+Audit security awareness — list users, track phishing tests, and monitor risk scores.
 
 ## Description
 Connect your AI agent to **KnowBe4 KMSAT** to get real-time visibility into your organization's security posture.
@@ -50,6 +52,33 @@ Get the overall account risk score
 - **list_user_groups**: List groups for a specific user
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **KnowBe4 (KMSAT Reporting)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the overall risk score for my KnowBe4 account"
+
+**🤖 AI Agent:**
+> The aggregated risk score for your account is currently 42.5 (Medium). This is based on phishing performance, training completion, and overall user behavior.
+
+---
+
+**👤 You:**
+> "List the results of our last phishing simulation"
+
+**🤖 AI Agent:**
+> Retrieving results for the latest simulation: 'Q1 Compliance Check'. Results: 5% Click Rate, 85% Report Rate, and 0 Data Entry incidents. This is a significant improvement from last month.
+
+---
+
+**👤 You:**
+> "Which users have the highest risk scores?"
+
+**🤖 AI Agent:**
+> I've identified 5 users with a High Risk Score (>80). These users have failed multiple phishing tests recently. Would you like to see the list and their departments?
+
+
 ## Installation & Usage
 
 To install and use the **KnowBe4 (KMSAT Reporting)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **KnowBe4 (KMSAT Reporting)** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

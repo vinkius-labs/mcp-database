@@ -1,12 +1,14 @@
 # Kisi MCP Server
 
-Control building access with cloud-managed smart locks, mobile credentials, and audit trails that replace traditional key cards.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/kisi-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/kisi-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/kisi-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/kisi-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 10
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Control building access with cloud-managed smart locks, mobile credentials, and audit trails that replace traditional key cards.
 
 ## Description
 Connect your **Kisi** account to any AI agent and take full control of your facility's physical security and high-fidelity access orchestration through natural conversation.
@@ -48,6 +50,33 @@ No more manual checking of individual door logs or physical keycards. Your AI ac
 - **list_kisi_users**: List organization users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Kisi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all cloud locks and show their current status."
+
+**🤖 AI Agent:**
+> I've retrieved your locks. You currently have 12 active high-fidelity doors, including 'Front Entrance' (Online) and 'Server Room' (Locked). Would you like to see the detailed health metadata for any of them?
+
+---
+
+**👤 You:**
+> "Unlock the 'Front Entrance' door for 10 seconds."
+
+**🤖 AI Agent:**
+> Access orchestrated! I've triggered a high-fidelity remote unlock for 'Front Entrance' (ID: lock_123) for a duration of 10 seconds. Your security connection is healthy. Shall I monitor the activity log for this door?
+
+---
+
+**👤 You:**
+> "Check the team members in the 'HQ Office' place."
+
+**🤖 AI Agent:**
+> Facility directory orchestrated! The 'HQ Office' place currently has 45 high-fidelity profiles assigned. Your API connection is healthy. Shall I retrieve the detailed resource access metadata for this site?
+
+
 ## Installation & Usage
 
 To install and use the **Kisi** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Kisi** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

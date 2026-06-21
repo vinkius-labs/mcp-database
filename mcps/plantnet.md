@@ -1,12 +1,14 @@
 # PlantNET MCP Server
 
-Identify plant species, diseases, and cultivated varieties using the Pl@ntNet AI engine — analyze images and access global taxonomic data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/plantnet)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/plantnet)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/plantnet-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/plantnet-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 17
+
+**Category:** [image-video](../categories/image-video.md)
+
+Identify plant species, diseases, and cultivated varieties using the Pl@ntNet AI engine — analyze images and access global taxonomic data.
 
 ## Description
 Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful botanical assistant. This server allows you to identify thousands of plant species, detect diseases, and explore taxonomic referentials directly through natural conversation.
@@ -58,6 +60,33 @@ List species, optionally filtered by project
 Identify multiple species in a single high-resolution image (Beta)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PlantNET** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Identify this plant species from the image: https://example.com/flower.jpg. It's a flower."
+
+**🤖 AI Agent:**
+> I've analyzed the image. With a confidence of 98%, this is identified as *Rosa canina* (Dog Rose). It belongs to the Rosaceae family.
+
+---
+
+**👤 You:**
+> "Check if there are any diseases on this leaf: https://example.com/sick-leaf.jpg"
+
+**🤖 AI Agent:**
+> The analysis suggests a high probability of *Puccinia graminis* (Wheat stem rust). I recommend checking for reddish-brown spores on the leaf surface.
+
+---
+
+**👤 You:**
+> "List the first 10 species available in the 'k-world-flora' project."
+
+**🤖 AI Agent:**
+> Fetching species from 'k-world-flora'... Here are the first 10: 1. *Abies alba*, 2. *Abies balsamea*, 3. *Abies concolor*... Would you like to see more details for any of these?
+
+
 ## Installation & Usage
 
 To install and use the **PlantNET** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -66,4 +95,11 @@ To install and use the **PlantNET** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

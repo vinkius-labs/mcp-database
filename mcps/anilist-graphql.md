@@ -1,12 +1,14 @@
 # AniList GraphQL MCP Server
 
-Access the world's largest anime and manga database — search titles, characters, staff, and manage your personal lists via GraphQL.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/anilist-graphql)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anilist-graphql)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/anilist-graphql-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/anilist-graphql-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** knowledge-management
-**Tools Count:** 15
+
+**Category:** [knowledge-management](../categories/knowledge-management.md)
+
+Access the world's largest anime and manga database — search titles, characters, staff, and manage your personal lists via GraphQL.
 
 ## Description
 Connect your **AniList** account to any AI agent to explore the vast world of anime and manga. This MCP server leverages the AniList GraphQL API to provide deep insights into media, characters, and industry professionals.
@@ -51,6 +53,33 @@ Query a specific staff member
 - **update_user**: Update authenticated user settings
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AniList GraphQL** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the anime 'Cowboy Bebop' and show its details."
+
+**🤖 AI Agent:**
+> I found 'Cowboy Bebop' (ID: 1). It's a classic Sci-Fi/Action series by Sunrise. Would you like to see the full character list or the airing history?
+
+---
+
+**👤 You:**
+> "Who is the character 'L' from Death Note?"
+
+**🤖 AI Agent:**
+> Using `get_character`, I found L Lawliet. He is a world-renowned detective who takes on the challenge of catching the serial killer known as Kira. Would you like to see his voice actors?
+
+---
+
+**👤 You:**
+> "Show me information about the animation studio MAPPA."
+
+**🤖 AI Agent:**
+> I've retrieved the data for Studio MAPPA (ID: 569) using `get_studio`. They are known for works like 'Jujutsu Kaisen' and 'Attack on Titan: The Final Season'.
+
+
 ## Installation & Usage
 
 To install and use the **AniList GraphQL** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **AniList GraphQL** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

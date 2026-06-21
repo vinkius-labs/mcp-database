@@ -1,12 +1,14 @@
 # Openli MCP Server
 
-Generate privacy policies, cookie consent banners, and legal compliance documents for your website with automated updates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/openli)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/openli)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/openli-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/openli-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Generate privacy policies, cookie consent banners, and legal compliance documents for your website with automated updates.
 
 ## Description
 Connect your **Openli** account to any AI agent and take full control of your privacy orchestration and legal compliance through natural conversation. Openli provides a comprehensive platform for managing cookie consent, processing Data Subject Access Requests (DSARs), and maintaining an automated audit trail for your legal agreements.
@@ -50,6 +52,33 @@ No more manual spreadsheet tracking for user consent. Your AI acts as a dedicate
 - **save_consent**: Save consent
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Openli** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current legal agreements in Openli."
+
+**🤖 AI Agent:**
+> I've retrieved your agreements. You have 3 active documents: 'Privacy Policy', 'Terms of Service', and 'Cookie Policy'. Which one would you like to see the public key for?
+
+---
+
+**👤 You:**
+> "Show me all active legal documents that need review before their renewal date."
+
+**🤖 AI Agent:**
+> You have 7 legal documents approaching renewal. Your Privacy Policy expires June 30th and requires GDPR Article 13 updates. The Terms of Service for your mobile app need revision by July 15th. 3 cookie consent banners are flagged for reconfiguration due to recent regulatory changes in France and Germany.
+
+---
+
+**👤 You:**
+> "Generate a compliance report for my website covering GDPR and cookie consent status."
+
+**🤖 AI Agent:**
+> Compliance scan complete for example.com. GDPR status: 89% compliant. Missing items: data processing agreement update and explicit consent for analytics tracking. Cookie consent: 23 cookies detected, 19 properly categorized, 4 require reclassification (2 marketing cookies miscategorized as functional). Overall risk level: Medium.
+
+
 ## Installation & Usage
 
 To install and use the **Openli** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Openli** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

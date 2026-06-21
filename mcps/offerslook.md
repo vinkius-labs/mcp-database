@@ -1,12 +1,14 @@
 # Offerslook MCP Server
 
-Manage performance marketing via Offerslook — track offers, advertisers, and affiliates directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/offerslook)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/offerslook)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/offerslook-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/offerslook-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage performance marketing via Offerslook — track offers, advertisers, and affiliates directly from your AI agent.
 
 ## Description
 Connect your **Offerslook** network account to your AI agent and streamline your performance marketing operations and partner management through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Offerslook** network account to your AI agent and streamline your
 - **list_offers**: List all marketing offers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Offerslook** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active offers in my network."
+
+**🤖 AI Agent:**
+> Retrieving offers... I found 15 active offers including 'E-commerce Summer Sale', 'VPN Pro Trial', and 'Flash Deal'. Would you like the payout details for the Summer Sale?
+
+---
+
+**👤 You:**
+> "What is the status of advertiser ID 'adv_98765'?"
+
+**🤖 AI Agent:**
+> Inspecting advertiser adv_98765... The profile belongs to 'Global Brands Inc.'. It is currently 'Active' and has 3 running campaigns. Shall I list their recent conversion metrics?
+
+---
+
+**👤 You:**
+> "Show me the performance report for the first week of March."
+
+**🤖 AI Agent:**
+> Generating performance report... For the week of March 1st to March 7th, your network generated 45,000 clicks and 1,250 conversions, resulting in $8,400 in revenue. Would you like to see which affiliate performed best during this period?
+
+
 ## Installation & Usage
 
 To install and use the **Offerslook** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Offerslook** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

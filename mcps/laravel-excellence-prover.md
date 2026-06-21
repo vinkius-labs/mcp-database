@@ -1,12 +1,14 @@
 # Laravel Excellence Prover MCP Server
 
-AI agents generate Laravel code with N+1 queries, fat controllers, workarounds, and mass assignment holes. This tool forces excellence: optimize queries, use the framework idiomatically, separate responsibilities, guard mass assignment, and respect architecture. Zero tolerance for workarounds.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/laravel-excellence-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/laravel-excellence-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/laravel-excellence-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/laravel-excellence-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents generate Laravel code with N+1 queries, fat controllers, workarounds, and mass assignment holes. This tool forces excellence: optimize queries, use the framework idiomatically, separate responsibilities, guard mass assignment, and respect architecture. Zero tolerance for workarounds.
 
 ## Description
 AI agents producing Laravel code consistently fail at framework mastery. They write code that works but violates every principle a senior Laravel developer upholds. The result: N+1 performance disasters, workarounds that bypass the framework's built-in solutions, controllers bloated with business logic, mass assignment vulnerabilities waiting to be exploited, and architectural patterns that crumble under scale.
@@ -45,6 +47,33 @@ Laravel Excellence Prover uses 5 Decision Pivots — boolean checkpoints that fo
 Structured reflection tool for Laravel development excellence — enforces three pillars: best practices (framework idioms), maximum performance (query and cache optimization), and zero tolerance (no workarounds, no code smells). Catches N+1 Detected (lazy-loading relationships in loops or Blade views — "$users = User::all(); foreach ($users as $user) { $user->posts; }" fires N+1 queries. With 1,000 users: 1 query for users + 1,000 queries for posts = 1,001 database hits. Model::preventLazyLoading() in AppServiceProvider catches this in development. "User::with('posts')->get()" fires exactly 2 queries regardless of user count), Workaround Detected (manual implementations bypassing framework features — "if ($request->input('email') && filter_var(...))" is a manual validation workaround. Laravel provides FormRequest with $rules = ['email' => 'required|email:rfc,dns']. Manual file_get_contents() instead of Http::get(). Manual SQL instead of Eloquent. If Laravel provides it, use it — your manual version will be worse), Fat Controller (business logic inside the controller instead of services — "public function store(Request $request) { // 80 lines of validation, calculation, email sending, cache invalidation }" is a fat controller. Controller: HTTP in/out. FormRequest: validation. Service/Action: logic. Model: data. Event/Listener: side effects. Each responsibility in its place), Mass Assignment Unsafe (using $request->all() or $guarded = [] — "User::create($request->all())" allows an attacker to POST is_admin=1 and become admin. $fillable must be explicit. Input must come from $request->validated() via FormRequest. Sensitive fields (is_admin, role, email_verified_at) excluded from mass assignment. Model::unguard() only in database seeders, never in production code), and Architecture Violated (env() in application code, no DB::transaction(), raw responses — "env('STRIPE_KEY')" works locally but returns null in production with config cache. Use config('services.stripe.key'). Multi-model writes without DB::transaction() = partial failures. JSON responses without API Resources = coupled, unversioned output). Call once per feature, endpoint, or refactoring decision
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Laravel Excellence Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I need to list all orders with their products for an admin dashboard. I'll use Order::all() and then loop through to get products in the Blade view."
+
+**🤖 AI Agent:**
+> Verdict: N_PLUS_ONE_DETECTED. Order::all() loads orders without products. Each $order->products in Blade fires a separate query. 100 orders = 101 queries. Fix: Order::with('products')->paginate(25). Enable Model::preventLazyLoading() in AppServiceProvider to catch this at dev time. Use withCount('products') if you only need the count.
+
+---
+
+**👤 You:**
+> "POST /api/orders: StoreOrderRequest validates input. CreateOrderAction receives DTO, wraps Order + OrderItems in DB::transaction(), returns Order. Order model has $fillable = ['user_id', 'total', 'status']. Queries: Order::with('items.product') for response. Event: OrderCreated dispatched after commit via $afterCommit. Response via OrderResource."
+
+**🤖 AI Agent:**
+> Verdict: CODE_PROVEN. Queries optimized (with('items.product')). No workarounds — FormRequest, Action, DB::transaction(), API Resource, Event. Responsibilities separated (Controller→FormRequest→Action→Model→Event). Mass assignment guarded ($fillable explicit). Architecture solid ($afterCommit, typed DTO, Resource). Ship it.
+
+---
+
+**👤 You:**
+> "I'll validate in the controller with $request->validate(), use $request->all() to create the user, check authorization with an if-statement, and send the welcome email inline after User::create()."
+
+**🤖 AI Agent:**
+> Verdict: FAT_CONTROLLER. Four violations in one method. (1) Validation belongs in a StoreUserRequest FormRequest, not inline. (2) $request->all() is a mass assignment vulnerability — use $request->validated(). (3) Authorization belongs in a Policy, not an if-statement. (4) Email is a side effect — dispatch UserCreated event, handle email in a Listener. Extract ALL of this from the controller.
+
+
 ## Installation & Usage
 
 To install and use the **Laravel Excellence Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Laravel Excellence Prover** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

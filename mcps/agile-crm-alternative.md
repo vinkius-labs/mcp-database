@@ -1,12 +1,14 @@
 # Agile CRM MCP Server
 
-Manage contacts, deals, and marketing campaigns in one place with a CRM built for growing sales teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/agile-crm-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/agile-crm-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/agile-crm-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/agile-crm-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage contacts, deals, and marketing campaigns in one place with a CRM built for growing sales teams.
 
 ## Description
 Connect your **Agile CRM** account to any AI agent and take full control of your sales, marketing, and service automation workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual status checking across different CRM modules or digging through c
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Agile CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active sales deals in my Agile CRM pipeline."
+
+**🤖 AI Agent:**
+> I've retrieved your active deals. You currently have 10 opportunities in the pipeline, including 'Web Redesign' (Value: $5,000) and 'Enterprise License'. Would you like the detailed probability metadata for any of these?
+
+---
+
+**👤 You:**
+> "Create a new contact 'John Doe' (john@example.com) and add a note about our last meeting."
+
+**🤖 AI Agent:**
+> Contact orchestrated! I've successfully created the profile for John Doe (ID: cont_123) and registered your high-fidelity meeting note in his profile. He is now active in your CRM. Need help creating a follow-up task?
+
+---
+
+**👤 You:**
+> "What are my pending tasks and events for today?"
+
+**🤖 AI Agent:**
+> Accessing schedule... Today you have 3 pending tasks, including 'Call Acme Corp', and a 'Project Sync' event at 2 PM. I've retrieved the high-fidelity due times for your organizational alignment. Need more historical context?
+
+
 ## Installation & Usage
 
 To install and use the **Agile CRM** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Agile CRM** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

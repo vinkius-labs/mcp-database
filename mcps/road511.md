@@ -1,12 +1,14 @@
 # Road511 MCP Server
 
-Access real-time US and Canada traffic data via Road511 — track incidents, monitor cameras, check road conditions, and analyze trends from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/road511)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/road511-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/road511-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time US and Canada traffic data via Road511 — track incidents, monitor cameras, check road conditions, and analyze trends from any AI agent.
 
 ## Description
 Connect your **Road511** real-time traffic data API to any AI agent and take full control of North American traffic monitoring, incident tracking, infrastructure awareness, and operational analytics through natural conversation.
@@ -66,6 +68,33 @@ Get summary statistics and data source health across all jurisdictions
 Get traffic incident trends and time-series analytics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Road511** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all active traffic incidents on I-5 in California."
+
+**🤖 AI Agent:**
+> Querying Road511 for incidents on I-5 in California... I found 7 active events: Major accident at mile marker 342 near Grapevine — 2 lanes blocked, CHP on scene, estimated clearance 45 minutes. Construction zone between Bakersfield and Lost Hills — right lane closed until 6 PM, expect 15-minute delays. Disabled vehicle at mile marker 198 near Coalinga — shoulder blocked, tow truck dispatched. Weather advisory for mountain sections — chains required, reduce speed. Plus 3 additional minor incidents with minimal impact. Would you like me to plot these on a map or suggest alternate routes?
+
+---
+
+**👤 You:**
+> "Find traffic cameras near downtown Seattle."
+
+**🤖 AI Agent:**
+> Searching for traffic cameras near downtown Seattle (lat: 47.6062, lon: -122.3321)... Found 14 active cameras within 10km radius: I-5 at Mercer Street — live feed available, currently showing moderate congestion. SR-99 at Aurora Bridge — live feed available, free-flowing traffic. I-90 at Mount Baker Tunnel — live feed available, heavy eastbound traffic. SR-520 floating bridge — 3 cameras, moderate westbound flow. Plus 10 additional cameras covering major intersections and highway interchanges. All cameras operational with live video feeds. Would you like direct links to any specific camera feed?
+
+---
+
+**👤 You:**
+> "What is the overall traffic health across all states right now?"
+
+**🤖 AI Agent:**
+> Fetching Road511 system summary... Currently tracking across 65 jurisdictions (50 US states + 13 Canadian provinces). Active incidents: 1,247 (312 major, 523 moderate, 412 minor). Construction zones: 892 active. Closures: 67 active. Data source health: 61 of 65 jurisdictions reporting healthy, 3 degraded, 1 temporarily down. Average data freshness: 2.3 minutes. Camera network: 8,456 active feeds operational. API response time: 142ms average. Would you like a breakdown by specific state or incident type?
+
+
 ## Installation & Usage
 
 To install and use the **Road511** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Road511** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

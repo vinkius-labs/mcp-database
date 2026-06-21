@@ -1,12 +1,14 @@
 # Google Sheets (OAuth) MCP Server
 
-Power up spreadsheets via Google Sheets — create, read, write, and append data, handle batch operations, and audit sheet info directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets-oauth)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets-oauth)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-sheets-oauth-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-sheets-oauth-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 7
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Power up spreadsheets via Google Sheets — create, read, write, and append data, handle batch operations, and audit sheet info directly from any AI agent.
 
 ## Description
 Connect your **Google Sheets** via OAuth2 to any AI agent and take full control of your spreadsheet creation, data manipulation, and batch processing through natural conversation.
@@ -59,6 +61,33 @@ Clear all values in a Google Sheets range — removes cell content but preserves
 Create a new blank Google Sheets spreadsheet with a given title
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Sheets (OAuth)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new spreadsheet titled 'Sales Forecast Q2'"
+
+**🤖 AI Agent:**
+> Spreadsheet created! I've successfully initialized 'Sales Forecast Q2' in your Google Drive. The spreadsheet ID is 'spreadsheet_abc123'. Would you like me to add headers to the first sheet?
+
+---
+
+**👤 You:**
+> "Write these values to 'Sheet1!A1': [['Date', 'Amount'], ['2026-03-30', 500]]"
+
+**🤖 AI Agent:**
+> Data written! I've successfully populated Sheet1!A1:B2 with your provided values. The spreadsheet is now updated with the correct date and amount information.
+
+---
+
+**👤 You:**
+> "Get info for spreadsheet 'abc-123'"
+
+**🤖 AI Agent:**
+> Retrieving spreadsheet info... Title: 'Budget 2026'. Sheets: 'Jan-March', 'April-June'. Locale: en_US. Timezone: UTC. I can also retrieve the grid properties or specific range data for you.
+
+
 ## Installation & Usage
 
 To install and use the **Google Sheets (OAuth)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **Google Sheets (OAuth)** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

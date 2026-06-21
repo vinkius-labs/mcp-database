@@ -1,12 +1,14 @@
 # NOAA Climate — Historical Weather Records MCP Server
 
-Historical climate data from the planet's largest weather archive: GHCN-Daily temperature and precipitation records, monthly and yearly summaries, 30-year climate normals, and station search from NOAA's National Centers for Environmental Information.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-climate-historical-weather-records)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-climate-historical-weather-records)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-climate-historical-weather-records-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-climate-historical-weather-records-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 5
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Historical climate data from the planet's largest weather archive: GHCN-Daily temperature and precipitation records, monthly and yearly summaries, 30-year climate normals, and station search from NOAA's National Centers for Environmental Information.
 
 ## Description
 The planet's largest archive of daily weather records, freely accessible.
@@ -40,6 +42,43 @@ Get 30-year climate normals — the baseline for what is "normal" weather
 Search NCEI weather stations by location bounding box or keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NOAA Climate — Historical Weather Records** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get daily temperatures for Central Park, NYC in January 2024"
+
+**🤖 AI Agent:**
+> 📊 **Central Park (USW00094728) — January 2024**
+
+| Date | Max°C | Min°C | Precip mm |
+|------|-------|-------|----------|
+| Jan 1 | 4.4 | -1.1 | 0.0 |
+| Jan 2 | 6.7 | 1.1 | 2.5 |
+| Jan 3 | 2.2 | -3.3 | 0.0 |
+| ... | ... | ... | ... |
+| Jan 31 | 7.8 | 0.0 | 8.1 |
+
+Monthly avg high: 4.8°C. Monthly precip: 89mm.
+
+---
+
+**👤 You:**
+> "Show me the total monthly precipitation for Seattle in 2023."
+
+**🤖 AI Agent:**
+> Here is the GSOM data for Seattle (USW00024233) for 2023: Total annual precipitation was 31.5 inches. The wettest month was November with 6.2 inches, and the driest was August with 0.1 inches.
+
+---
+
+**👤 You:**
+> "What are the 30-year climate normals for Miami?"
+
+**🤖 AI Agent:**
+> Based on the 1991-2020 normals for Miami International Airport: The average annual high is 84.4°F, the average low is 71.2°F, and the average annual precipitation is 61.9 inches.
+
+
 ## Installation & Usage
 
 To install and use the **NOAA Climate — Historical Weather Records** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +87,11 @@ To install and use the **NOAA Climate — Historical Weather Records** MCP serve
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Conflux MCP Server
 
-Query Conflux Network (Core & eSpace) data — check balances, inspect blocks, and track transactions directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/conflux)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/conflux)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/conflux-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/conflux-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 25
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Query Conflux Network (Core & eSpace) data — check balances, inspect blocks, and track transactions directly from your AI agent.
 
 ## Description
 Connect to the **Conflux Network** and interact with both Core Space and eSpace through natural language. This server provides a comprehensive suite of tools to audit accounts, monitor network status, and analyze blockchain data.
@@ -63,6 +65,33 @@ Send an unsigned transaction to the Core Space network
 - **eth_get_transaction_receipt**: Get eSpace transaction receipt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Conflux** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current status and client version of the Conflux node?"
+
+**🤖 AI Agent:**
+> I've checked the node. The current epoch is 124,502,312 and the client version is 'conflux-rust/v2.3.0'. The network is currently stable and synchronized.
+
+---
+
+**👤 You:**
+> "Check the balance and account state for address cfx:aak2rra2njvd77ezwjvx74749399393939393939."
+
+**🤖 AI Agent:**
+> The account has a balance of 1,250.45 CFX. The next available nonce is 42, and the account is currently active in the staking system.
+
+---
+
+**👤 You:**
+> "Get the details of the block with hash 0x8e5f... and include full transactions."
+
+**🤖 AI Agent:**
+> I've retrieved block 0x8e5f... It contains 12 transactions. Notable transactions include a contract call to the 'Sponsor' system and several CFX transfers. Would you like to inspect a specific transaction receipt?
+
+
 ## Installation & Usage
 
 To install and use the **Conflux** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Conflux** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

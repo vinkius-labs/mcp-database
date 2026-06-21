@@ -1,12 +1,14 @@
 # Shotstack MCP Server
 
-Render and edit videos programmatically with a cloud API that generates personalized video content at scale from templates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/shotstack)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shotstack)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/shotstack-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/shotstack-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Render and edit videos programmatically with a cloud API that generates personalized video content at scale from templates.
 
 ## Description
 Connect your **Shotstack** account to any AI agent and take full control of your high-volume video editing and media orchestration through natural conversation. Shotstack provides a powerful API-first platform for rendering videos, managing cloud templates, and ingesting assets directly from your chat interface.
@@ -51,6 +53,33 @@ Find all files created by a specific render
 Start a new video render job
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Shotstack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the status of my latest video render in Shotstack."
+
+**🤖 AI Agent:**
+> I've retrieved the render status. Your video 'PROMO_V1' (ID: abc-123) is currently 75% complete. I'll let you know once the final asset URL is available.
+
+---
+
+**👤 You:**
+> "List all video templates in my Shotstack account."
+
+**🤖 AI Agent:**
+> Retrieving templates... I found 5 cloud templates including 'Social_Post_Template', 'Intro_Video', and 'Outro_Video'. Would you like to use any of them for a new render?
+
+---
+
+**👤 You:**
+> "List all hosted assets in my Shotstack Serve account."
+
+**🤖 AI Agent:**
+> Fetching assets... You have 12 hosted assets including 'Logo_Animation.mp4' and 'Background_Music.mp3'. Would you like to get the public URL for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Shotstack** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Shotstack** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

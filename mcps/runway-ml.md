@@ -1,12 +1,14 @@
 # Runway ML MCP Server
 
-Empower your AI with Runway ML's advanced video generation capabilities to seamlessly create, animate, and interpolate high-quality clips using Gen-3 and Gen-4 Turbo models directly from chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/runway-ml)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runway-ml)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runway-ml-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runway-ml-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 10
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Empower your AI with Runway ML's advanced video generation capabilities to seamlessly create, animate, and interpolate high-quality clips using Gen-3 and Gen-4 Turbo models directly from chat.
 
 ## Description
 Connect your AI to **Runway ML**, the pioneer in applied AI research shaping the next era of art, entertainment and human creativity. This powerful integration empowers you to tap directly into Runway's cutting-edge Gen-3 Alpha and Gen-4 video generation models right from your conversational workspace. Produce stunning, realistic, or highly stylized video clips simply by typing out your vision or providing a reference image.
@@ -52,6 +54,33 @@ Animates a still image into a video
 Generates a video from a text prompt
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Runway ML** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a 5 second cinematic video showing a sunset over an alien planet using Runway Gen-3 Turbo."
+
+**🤖 AI Agent:**
+> Your Runway generation task was successfully submitted to the Gen-3 Turbo model. The task ID is rw_task_1234. You can ask me to poll this task in a moment to review the final video output.
+
+---
+
+**👤 You:**
+> "Take this reference image URL and animate it with Gen-3 Turbo to make the camera slowly pan backwards."
+
+**🤖 AI Agent:**
+> Image to video request initiated using the `image_text_to_video` tool. Your task is now processing and I got the ID 'rw_task_9876'. The animation will be ready shortly.
+
+---
+
+**👤 You:**
+> "List all my ongoing tasks on Runway to see if the video has finished rendering."
+
+**🤖 AI Agent:**
+> I've scanned your recent 10 tasks. I see that task 'rw_task_1234' just SUCCEEDED! Here is the MP4 link to your generated video.
+
+
 ## Installation & Usage
 
 To install and use the **Runway ML** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Runway ML** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

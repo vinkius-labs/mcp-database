@@ -1,12 +1,14 @@
 # Microsoft Clarity MCP Server
 
-See exactly how users interact with your website through heatmaps, session recordings, and behavioral analytics that reveal UX insights.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-clarity)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/microsoft-clarity)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/microsoft-clarity-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/microsoft-clarity-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 13
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+See exactly how users interact with your website through heatmaps, session recordings, and behavioral analytics that reveal UX insights.
 
 ## Description
 Connect your **Microsoft Clarity** account to any AI agent and unlock behavioral analytics insights through natural conversation.
@@ -51,6 +53,33 @@ Connect your **Microsoft Clarity** account to any AI agent and unlock behavioral
 - **list_top_pages**: List top pages
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Microsoft Clarity** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all rage clicks and dead clicks on our checkout page this week."
+
+**🤖 AI Agent:**
+> Analyzing project 'E-commerce Site' (proj_501)... Found 34 rage click events on the checkout page. The hotspot is the 'Apply Coupon' button (89% of rage clicks) — users are clicking repeatedly because the button takes 4+ seconds to respond. Dead clicks: 12 events on the 'Shipping Options' section — the estimated delivery dates look clickable but aren't interactive. Would you like to see the heatmap or session recordings for this page?
+
+---
+
+**👤 You:**
+> "What are the top 5 most visited pages and how far do users scroll on the homepage?"
+
+**🤖 AI Agent:**
+> Top 5 pages by sessions: 1) Homepage — 28,400 sessions, 3.2 engagement score. 2) /pricing — 12,100 sessions, 4.1 engagement. 3) /features — 8,900 sessions. 4) /checkout — 6,200 sessions. 5) /blog — 5,800 sessions. Scroll depth for Homepage: 100% reach the hero section, 78% reach the features grid, 52% reach testimonials, 31% reach the footer CTA. Content below the fold has a 48% drop-off. Would you like to see the heatmap?
+
+---
+
+**👤 You:**
+> "How many active users are on the site right now and what pages are they viewing?"
+
+**🤖 AI Agent:**
+> Live insights for 'E-commerce Site' (proj_501): 142 active users right now. Top pages being viewed: /pricing (34 users), Homepage (28 users), /features (19 users), /checkout (15 users), /blog/ai-tools-2025 (12 users). Average session duration: 4m 12s. Engagement score (live): 3.8/5. Traffic is 23% higher than the same time yesterday. Would you like to see the dashboard metrics for the full day?
+
+
 ## Installation & Usage
 
 To install and use the **Microsoft Clarity** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **Microsoft Clarity** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

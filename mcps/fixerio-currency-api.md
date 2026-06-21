@@ -1,12 +1,14 @@
 # Fixer.io Currency API MCP Server
 
-Manage exchange rates — audit currencies, history, and conversion via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fixerio-currency-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fixerio-currency-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fixerio-currency-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fixerio-currency-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Manage exchange rates — audit currencies, history, and conversion via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire financial research and currency auditing workflow with **Fixer.io**, the authoritative source for real-time exchange rate data. By connecting the Fixer.io API to your agent, you transform complex fiscal searches into a natural conversation. Your agent can instantly retrieve latest rates, audit historical currency trends, and perform precise conversions without you ever touching a financial terminal. Whether you are conducting international business research or managing regional budget constraints, your agent acts as a real-time financial consultant, ensuring your data is always verified and precise.
@@ -45,6 +47,33 @@ Check if the Fixer.io service is operational
 List all currency symbols supported by Fixer.io
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fixer.io Currency API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the latest exchange rates for base currency 'USD' using Fixer.io."
+
+**🤖 AI Agent:**
+> I've retrieved the latest rates for USD! Notable conversions include 1 USD to 0.92 EUR and 1 USD to 0.79 GBP. Would you like the full list of supported currencies or a specific historical audit?
+
+---
+
+**👤 You:**
+> "Convert 100 EUR to JPY."
+
+**🤖 AI Agent:**
+> I've performed the conversion! 100 EUR is currently identified as 16,500 JPY. I can assist you with more real-time conversion metadata for your budget planning if you'd like.
+
+---
+
+**👤 You:**
+> "What was the exchange rate between EUR and USD on '2010-01-01'?"
+
+**🤖 AI Agent:**
+> I've retrieved the historical data! On January 1st, 2010, the rate was 1 EUR to 1.43 USD. I can assist you with more longitudinal auditing of these currency markers if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Fixer.io Currency API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Fixer.io Currency API** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

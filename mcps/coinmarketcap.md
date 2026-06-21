@@ -1,12 +1,14 @@
 # CoinMarketCap MCP Server
 
-Enable your AI agent to query crypto prices, market rankings, and currency conversions via the CoinMarketCap API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coinmarketcap)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinmarketcap)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinmarketcap-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinmarketcap-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 8
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Enable your AI agent to query crypto prices, market rankings, and currency conversions via the CoinMarketCap API.
 
 ## Description
 Connect your AI to **CoinMarketCap**, the world's most-referenced crypto price-tracking platform.
@@ -41,6 +43,38 @@ Connect your AI to **CoinMarketCap**, the world's most-referenced crypto price-t
 - **price_conversion**: Convert an amount of one currency to another using latest market prices
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinMarketCap** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the top 10 cryptocurrencies by market cap."
+
+**🤖 AI Agent:**
+> Top 10 by market cap:
+1. Bitcoin (BTC) — $1.2T, $67,420
+2. Ethereum (ETH) — $410B, $3,415
+3. Tether (USDT) — $110B, $1.00
+...
+Would you like price details or 24h change for any?
+
+---
+
+**👤 You:**
+> "Convert 1.5 BTC to EUR."
+
+**🤖 AI Agent:**
+> 1.5 BTC = €94,230.45 EUR (rate: €62,820.30/BTC). Last updated: 2 minutes ago.
+
+---
+
+**👤 You:**
+> "Get the historical listing data for Dogecoin launched on CoinMarketCap."
+
+**🤖 AI Agent:**
+> Dogecoin (DOGE) was listed on CoinMarketCap on Dec 15, 2013, with an initial tracked market cap around $3.5M. Present market cap is $16.9B.
+
+
 ## Installation & Usage
 
 To install and use the **CoinMarketCap** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +83,11 @@ To install and use the **CoinMarketCap** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # SEC XBRL (Financial Reporting) MCP Server
 
-Access real-time SEC EDGAR financial data — query filing histories, company facts, and XBRL disclosures directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-xbrl-financial-reporting)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sec-xbrl-financial-reporting)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sec-xbrl-financial-reporting-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sec-xbrl-financial-reporting-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-management
-**Tools Count:** 4
+
+**Category:** [data-management](../categories/data-management.md)
+
+Access real-time SEC EDGAR financial data — query filing histories, company facts, and XBRL disclosures directly from any AI agent.
 
 ## Description
 Connect your AI agent to the **SEC EDGAR** database and perform deep financial analysis using standardized XBRL data. This server provides programmatic access to the U.S. Securities and Exchange Commission's public filing infrastructure.
@@ -40,6 +42,33 @@ Get filing history for a specific entity
 - **get_xbrl_frames**: Get aggregated facts for a specific concept and period
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SEC XBRL (Financial Reporting)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the filing history for Microsoft using CIK 789019."
+
+**🤖 AI Agent:**
+> I've retrieved the submissions for Microsoft Corp. Recent filings include their latest 10-K and several 8-K reports. Would you like to see the details of the most recent annual report?
+
+---
+
+**👤 You:**
+> "Show me all XBRL facts reported by Apple (CIK 320193)."
+
+**🤖 AI Agent:**
+> Fetching company facts for Apple Inc... I have access to all reported concepts across US-GAAP and DEI taxonomies. This includes assets, liabilities, and revenue data points. Which specific metric should we analyze?
+
+---
+
+**👤 You:**
+> "Compare the 'AccountsPayableCurrent' for all companies in USD for the period CY2023Q3."
+
+**🤖 AI Agent:**
+> Aggregating XBRL frames for Accounts Payable (Current) in Q3 2023... I've compiled the data for all reporting entities. For example, Entity A reported $5.2B while Entity B reported $1.1B. Would you like a summary of the top 10 entities by this metric?
+
+
 ## Installation & Usage
 
 To install and use the **SEC XBRL (Financial Reporting)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **SEC XBRL (Financial Reporting)** MCP server in your AI 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

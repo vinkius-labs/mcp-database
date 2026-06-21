@@ -1,12 +1,14 @@
 # DealHub CPQ MCP Server
 
-Manage CPQ and sales via DealHub — create quotes, track opportunity stages, manage users, and sync CRM data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/dealhub-cpq)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/dealhub-cpq)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/dealhub-cpq-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/dealhub-cpq-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 10
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage CPQ and sales via DealHub — create quotes, track opportunity stages, manage users, and sync CRM data directly from any AI agent.
 
 ## Description
 Connect your **DealHub** account to any AI agent and take full control of your CPQ (Configure, Price, Quote) and sales workflows through natural conversation.
@@ -49,6 +51,33 @@ Identify bounded CRM records inside the Headless DealHub Platform
 - **update_opportunity**: Inspect deep internal arrays mitigating specific Plan Math
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DealHub CPQ** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new quote for opportunity 'opp_abc123' and customer 'Acme Corp'"
+
+**🤖 AI Agent:**
+> Quote sequence created! I've linked the new CPQ block to opportunity 'opp_abc123'. You can now use the Playbook URL to define the specific line items and pricing.
+
+---
+
+**👤 You:**
+> "What is the status of quote 'dh_quote_789'?"
+
+**🤖 AI Agent:**
+> Checking status for 'dh_quote_789'... The PDF has been 'Signed' by the customer. The opportunity stage has been automatically updated to 'Closed Won'.
+
+---
+
+**👤 You:**
+> "Sync opportunity 'opp_123' with Salesforce"
+
+**🤖 AI Agent:**
+> CRM synchronization triggered! I've forced a data ingestion loop for 'opp_123' against your Salesforce instance. All custom fields and CPQ boundaries are now up to date.
+
+
 ## Installation & Usage
 
 To install and use the **DealHub CPQ** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **DealHub CPQ** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

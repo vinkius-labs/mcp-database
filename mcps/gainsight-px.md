@@ -1,12 +1,14 @@
 # Gainsight PX MCP Server
 
-Manage product experience, track user behavior, and oversee engagements via AI agents with Gainsight PX.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gainsight-px)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gainsight-px)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gainsight-px-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gainsight-px-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 12
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage product experience, track user behavior, and oversee engagements via AI agents with Gainsight PX.
 
 ## Description
 Connect your **Gainsight PX** (Aptrinsic) account to any AI agent to automate your product analytics and in-app engagement workflows through the Model Context Protocol (MCP). Gainsight PX helps you drive product adoption by understanding user behavior and delivering personalized in-app experiences. This MCP server enables you to manage user and account profiles, track server-side custom events, and retrieve engagement metadata directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **Gainsight PX** (Aptrinsic) account to any AI agent to automate yo
 - **track_server_event**: Log custom event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Gainsight PX** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all PX users who were last seen in the past 24 hours."
+
+**🤖 AI Agent:**
+> Querying users... I found 15 users active in the last 24 hours, including 'john.doe@example.com' and 'alice.smith@provider.com'. Would you like the full profile for any of them?
+
+---
+
+**👤 You:**
+> "Identify a new account 'Globex Corp' with ID 'acc_98765'."
+
+**🤖 AI Agent:**
+> Account identified! I have successfully synchronized 'Globex Corp' (ID: acc_98765) to your Gainsight PX environment. Any future events for this ID will be attributed to this account.
+
+---
+
+**👤 You:**
+> "Track a custom event 'Clicked Upgrade Button' for user 'user_123'."
+
+**🤖 AI Agent:**
+> Event tracked! The 'Clicked Upgrade Button' event has been successfully logged for user_123. This data will now appear in your product usage analytics.
+
+
 ## Installation & Usage
 
 To install and use the **Gainsight PX** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Gainsight PX** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

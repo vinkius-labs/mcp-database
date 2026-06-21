@@ -1,12 +1,14 @@
 # Avaza MCP Server
 
-Unified project management, time tracking, and invoicing via Avaza — orchestrate professional services natively via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/avaza)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/avaza)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/avaza-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/avaza-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-relationship-management
-**Tools Count:** 11
+
+**Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
+
+Unified project management, time tracking, and invoicing via Avaza — orchestrate professional services natively via AI.
 
 ## Description
 Connect your **Avaza** account to any AI agent and manage your entire professional services lifecycle through natural conversation.
@@ -45,6 +47,33 @@ Connect your **Avaza** account to any AI agent and manage your entire profession
 - **update_task**: Update an existing task
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Avaza** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects in Avaza."
+
+**🤖 AI Agent:**
+> I've retrieved your projects. You have 3 active environments: 'Website Redesign', 'Q4 Marketing Strategy', and 'Client Onboarding'. Which one would you like to drill into for task details?
+
+---
+
+**👤 You:**
+> "Create a new task 'Prepare Financial Audit' in project ID 12345."
+
+**🤖 AI Agent:**
+> The task 'Prepare Financial Audit' has been successfully created in project 12345. I've assigned a high priority to it based on your request. Would you like me to set a deadline?
+
+---
+
+**👤 You:**
+> "Log 2 hours of work for today on project 'Website Redesign'."
+
+**🤖 AI Agent:**
+> Timesheet entry created! I've logged 2 hours for today on 'Website Redesign' (Project ID: 54321). Your total logged hours for this project are now updated.
+
+
 ## Installation & Usage
 
 To install and use the **Avaza** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Avaza** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

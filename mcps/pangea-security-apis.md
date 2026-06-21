@@ -1,12 +1,14 @@
 # Pangea (Security APIs) MCP Server
 
-Secure your AI applications with Pangea's comprehensive security APIs — scan for PII, redact sensitive data, audit logs, and check for embargoed IPs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pangea-security-apis)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pangea-security-apis)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pangea-security-apis-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pangea-security-apis-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 40
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Secure your AI applications with Pangea's comprehensive security APIs — scan for PII, redact sensitive data, audit logs, and check for embargoed IPs.
 
 ## Description
 Integrate **Pangea** into your AI workflows to provide a robust security layer for LLM interactions and organizational data. This server provides a unified interface to Pangea's cloud-native security services.
@@ -75,6 +77,33 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 - **vault_secret_store**: Store a secret or token in Vault
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pangea (Security APIs)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Redact any PII from this text: 'My email is john.doe@example.com and I live in New York'."
+
+**🤖 AI Agent:**
+> I've processed the text using `redact_text`. The redacted version is: 'My email is <EMAIL> and I live in <LOCATION>'.
+
+---
+
+**👤 You:**
+> "Search the audit logs for any 'login' events from the last 24 hours."
+
+**🤖 AI Agent:**
+> I've queried the audit logs using `audit_search`. I found 3 login events. Would you like to see the details for each entry?
+
+---
+
+**👤 You:**
+> "Check if the IP address 1.1.1.1 is from an embargoed country."
+
+**🤖 AI Agent:**
+> Running `embargo_ip_check` for 1.1.1.1... The check returned that this IP is not associated with any embargoed countries.
+
+
 ## Installation & Usage
 
 To install and use the **Pangea (Security APIs)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -83,4 +112,11 @@ To install and use the **Pangea (Security APIs)** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

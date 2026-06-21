@@ -1,12 +1,14 @@
 # Evisort Contract Intelligence MCP Server
 
-Equip your AI agent to manage contract documents, track AI-extracted provisions, and monitor workflows via the Evisort API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/evisort-contract-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/evisort-contract-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/evisort-contract-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/evisort-contract-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+Equip your AI agent to manage contract documents, track AI-extracted provisions, and monitor workflows via the Evisort API.
 
 ## Description
 Integrate **Evisort**, the AI-powered contract management and intelligence platform, directly into your AI workflow. Manage your legal document library and folders, track AI-extracted provisions and key contract data, monitor approval workflows and expiration alerts, and oversee your entire contract lifecycle using natural language.
@@ -44,6 +46,33 @@ Integrate **Evisort**, the AI-powered contract management and intelligence platf
 - **list_contract_workflows**: List all contract approval and review workflows
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Evisort Contract Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all contracts expiring in the next 30 days."
+
+**🤖 AI Agent:**
+> I've found 5 contracts approaching expiration, including the 'SaaS Agreement with CloudStack' and 'Vendor Terms - Global Logistics'. Would you like to see the renewal provisions for CloudStack?
+
+---
+
+**👤 You:**
+> "Show me the provisions for contract ID 'DOC-12345'."
+
+**🤖 AI Agent:**
+> For contract 'DOC-12345' (NDA with Wayne Corp), I've retrieved several provisions: 'Non-Disclosure' (Section 2.1), 'Term' (3 years), and 'Governing Law' (New York). Should I pull the extracted text for the Non-Disclosure clause?
+
+---
+
+**👤 You:**
+> "What is the status of the 'Master Services Agreement' workflow?"
+
+**🤖 AI Agent:**
+> The 'Master Services Agreement' workflow is currently at the 'Legal Review' step (Step 3/5). It is assigned to 'Sarah Miller'. It has been pending for 2 days. Would you like to see the previous comments from the Finance team?
+
+
 ## Installation & Usage
 
 To install and use the **Evisort Contract Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Evisort Contract Intelligence** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # USPS Developer Portal MCP Server
 
-Manage US mail — audit addresses, tracking, and ZIP codes via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/usps-developer-portal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/usps-developer-portal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/usps-developer-portal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/usps-developer-portal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage US mail — audit addresses, tracking, and ZIP codes via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire postal logistics and address auditing workflow with the **USPS Developer Portal**, the official source for United States Postal Service data. By connecting USPS Web Tools to your agent, you transform complex shipping tasks into a natural conversation. Your agent can instantly verify addresses, audit package tracking statuses, and retrieve ZIP code metadata without you ever touching a shipping portal. Whether you are managing e-commerce deliveries or conducting regional address audits, your agent acts as a real-time logistics consultant, ensuring your data is always verified and precise.
@@ -44,6 +46,33 @@ Empower your AI agent to orchestrate your entire postal logistics and address au
 - **verify_usps_address**: Verify and standardize a US address using USPS Web Tools
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **USPS Developer Portal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify address '1600 Pennsylvania Avenue NW, Washington, DC 20500' using USPS."
+
+**🤖 AI Agent:**
+> I've retrieved the verification metadata from USPS! The address is identified as valid and standardized. Would you like the full XML response or the ZIP+4 metadata for this location?
+
+---
+
+**👤 You:**
+> "Track my package with tracking number '9400100000000000000000'."
+
+**🤖 AI Agent:**
+> I've checked the status for that tracking number. It is currently identified as 'Delivered' at [Time]. I can assist you with the full event history metadata for this shipment if you'd like.
+
+---
+
+**👤 You:**
+> "Lookup ZIP code for 'Seattle, WA'."
+
+**🤖 AI Agent:**
+> I've retrieved the ZIP code metadata for Seattle! Notable codes include 98101 and 98104. I can provide the specific address-level ZIP details to assist in your regional logistics audit.
+
+
 ## Installation & Usage
 
 To install and use the **USPS Developer Portal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **USPS Developer Portal** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

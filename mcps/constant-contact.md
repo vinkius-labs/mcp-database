@@ -1,12 +1,14 @@
 # Constant Contact MCP Server
 
-Equip your AI agent to construct, analyze, and dispatch robust email marketing campaigns seamlessly through Constant Contact.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/constant-contact)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/constant-contact)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/constant-contact-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/constant-contact-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** growth-engine
-**Tools Count:** 10
+
+**Category:** [growth-engine](../categories/growth-engine.md)
+
+Equip your AI agent to construct, analyze, and dispatch robust email marketing campaigns seamlessly through Constant Contact.
 
 ## Description
 Integrate the expansive architecture of **Constant Contact** seamlessly within your conversational AI environment. Elevate your email marketing operations entirely via standard text prompts from querying audience groups to managing subscriber lists, effectively replacing conventional dashboard navigation.
@@ -63,6 +65,33 @@ Quickly list the 5 most recent campaigns
 Search for a contact by their email address
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Constant Contact** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Provide a list of all active mailing segments established in Constant Contact."
+
+**🤖 AI Agent:**
+> Request completed. The system identifies 3 overarching lists natively saved: 'Newsletter Standard', 'Premium Accounts', and 'Churn Risks'. Which audience should we direct our subsequent communications towards?
+
+---
+
+**👤 You:**
+> "Extract the campaign metrics for the 'Holiday Outreach' email from last week."
+
+**🤖 AI Agent:**
+> Data retrieved efficiently. Your 'Holiday Outreach' email recorded a 32% positive open rate traversing alongside a strong 5% click-to-open ratio natively processed. No critical unsubscriptions noted.
+
+---
+
+**👤 You:**
+> "How many contacts do I currently have in my Constant Contact account?"
+
+**🤖 AI Agent:**
+> You have a total of 12,450 contacts. Your account limit is 15,000. You've grown by 2% this month. Would you like to see a list of your most recent mailing lists?
+
+
 ## Installation & Usage
 
 To install and use the **Constant Contact** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -71,4 +100,11 @@ To install and use the **Constant Contact** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

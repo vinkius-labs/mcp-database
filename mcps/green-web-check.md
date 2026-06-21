@@ -1,12 +1,14 @@
 # Green Web Check MCP Server
 
-Universal sustainability intelligence — check if websites are hosted on green energy via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/green-web-check)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/green-web-check)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/green-web-check-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/green-web-check-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** cloud-infrastructure
-**Tools Count:** 1
+
+**Category:** [cloud-infrastructure](../categories/cloud-infrastructure.md)
+
+Universal sustainability intelligence — check if websites are hosted on green energy via AI.
 
 ## Description
 Equip your AI agent with environmental intelligence through the **Green Web Foundation** MCP server. This integration provides instant verification of a website's hosting infrastructure. Your agent can check if a specific domain is powered by renewable energy sources based on the world's largest open database of green hosting. Whether you are auditing corporate sustainability, choosing eco-friendly vendors, or researching the environmental impact of the internet, your agent acts as a dedicated sustainability consultant through natural conversation.
@@ -35,6 +37,33 @@ Equip your AI agent with environmental intelligence through the **Green Web Foun
 - **check_green_hosting**: Check if a website is hosted on green energy
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Green Web Check** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check if 'vinkius.com' is hosted on green energy."
+
+**🤖 AI Agent:**
+> Checking the Green Web Foundation database... I've verified that vinkius.com is indeed hosted on green energy. The provider is registered as using renewable sources for its infrastructure.
+
+---
+
+**👤 You:**
+> "Is the hosting for 'amazon.com' environmentally friendly?"
+
+**🤖 AI Agent:**
+> Running a green check... amazon.com is hosted on AWS, which is registered as a green provider in many regions. I've confirmed that the specific infrastructure powering amazon.com is listed as green.
+
+---
+
+**👤 You:**
+> "Which company hosts 'wikipedia.org' and is it green?"
+
+**🤖 AI Agent:**
+> Checking Wikipedia... wikipedia.org is hosted by the Wikimedia Foundation. According to the database, their hosting is currently powered by 100% renewable energy.
+
+
 ## Installation & Usage
 
 To install and use the **Green Web Check** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -43,4 +72,11 @@ To install and use the **Green Web Check** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

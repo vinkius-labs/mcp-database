@@ -1,12 +1,14 @@
 # Commodities MCP Server
 
-Access real-time futures prices for 30+ commodities — gold, silver, oil, gas, wheat, coffee, copper, and more via Commodities-API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/commodities)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/commodities)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/commodities-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/commodities-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access real-time futures prices for 30+ commodities — gold, silver, oil, gas, wheat, coffee, copper, and more via Commodities-API.
 
 ## Description
 Connect to **Commodities-API** and bring real-time futures market intelligence to any AI agent. Access 30+ commodities across precious metals, energy, agriculture, livestock, and industrial metals.
@@ -216,6 +218,33 @@ EXAMPLES:
 Get current wheat futures price
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Commodities** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current price of gold?"
+
+**🤖 AI Agent:**
+> Fetching gold futures price... Current gold is trading at $2,685.40 USD per troy ounce on CME. The price was last updated 3 minutes ago. Gold has been holding steady near all-time highs as investors seek safe-haven assets.
+
+---
+
+**👤 You:**
+> "Show me energy commodity prices — oil and natural gas."
+
+**🤖 AI Agent:**
+> Retrieving energy futures prices... WTI Crude Oil: $78.45/bbl (NYMEX), Brent Crude: $82.30/bbl (CME), Natural Gas: $2.85/MMBtu (NYMEX). The WTI-Brent spread is $3.85. Energy markets are balanced with moderate demand and steady supply.
+
+---
+
+**👤 You:**
+> "What are the current agriculture commodity prices for wheat, coffee, and cocoa?"
+
+**🤖 AI Agent:**
+> Fetching agriculture futures... Wheat: $6.15/bushel (CBOT), Coffee: $1.85/lb (CME), Cocoa: $3,250/ton (CME). Cocoa prices have been elevated due to supply constraints from West Africa. Wheat and coffee are trading in normal ranges.
+
+
 ## Installation & Usage
 
 To install and use the **Commodities** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -224,4 +253,11 @@ To install and use the **Commodities** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

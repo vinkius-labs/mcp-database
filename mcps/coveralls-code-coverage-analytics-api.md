@@ -1,12 +1,14 @@
 # Coveralls (Code Coverage Analytics API) MCP Server
 
-Track code coverage metrics via Coveralls — manage repositories, submit coverage reports, and monitor build statuses directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coveralls-code-coverage-analytics-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coveralls-code-coverage-analytics-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coveralls-code-coverage-analytics-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coveralls-code-coverage-analytics-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Track code coverage metrics via Coveralls — manage repositories, submit coverage reports, and monitor build statuses directly from your AI agent.
 
 ## Description
 Connect your **Coveralls** account to any AI agent to streamline your CI/CD workflows and maintain high code quality standards through natural conversation.
@@ -61,6 +63,33 @@ Submit a coverage report (job) to Coveralls
 Update an existing repository on Coveralls
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Coveralls (Code Coverage Analytics API)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the repository details and token for github/vurb-ai/mcp-server."
+
+**🤖 AI Agent:**
+> I've retrieved the details for 'vurb-ai/mcp-server'. The repository is active, and your repo_token is `abc123xyz...`. Coverage is currently tracking at 92.5%.
+
+---
+
+**👤 You:**
+> "Update the coverage threshold for github/my-org/app to fail if it drops below 80%."
+
+**🤖 AI Agent:**
+> I've updated the repository settings for 'my-org/app'. The `commit_status_fail_threshold` is now set to 80. Any builds with coverage below this will be marked as failed.
+
+---
+
+**👤 You:**
+> "Rerun the processing for build number 45678 on Coveralls."
+
+**🤖 AI Agent:**
+> Triggering a rerun for build #45678... The request was successful, and Coveralls is now re-calculating the coverage data for that build.
+
+
 ## Installation & Usage
 
 To install and use the **Coveralls (Code Coverage Analytics API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **Coveralls (Code Coverage Analytics API)** MCP server in
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

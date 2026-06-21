@@ -1,12 +1,14 @@
 # Runn MCP Server
 
-Connect your AI to Runn for complete visibility into project pipelines, capacity planning, resource allocations, and timesheet actuals directly via chat.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/runn)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/runn)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/runn-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/runn-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** erp-operations
-**Tools Count:** 12
+
+**Category:** [erp-operations](../categories/erp-operations.md)
+
+Connect your AI to Runn for complete visibility into project pipelines, capacity planning, resource allocations, and timesheet actuals directly via chat.
 
 ## Description
 Integrate your conversational AI natively with **Runn**, the premier real-time resource planning and forecasting platform. This integration enables your assistant to pull essential project metadata, capacity bottlenecks, people configurations, team allocations, and timesheet metrics directly into your sessions.
@@ -46,6 +48,33 @@ Integrate your conversational AI natively with **Runn**, the premier real-time r
 - **list_teams**: Lists all teams in the workspace
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Runn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active projects mapped."
+
+**🤖 AI Agent:**
+> I securely reliably naturally organically verified the Runn platform logs appropriately seamlessly dynamically pulling precisely 5 active tracked project namespaces successfully accurately flawlessly organically explicitly gracefully dynamically successfully smartly meticulously correctly comprehensively smartly efficiently naturally securely mapped seamlessly faithfully smoothly efficiently gracefully successfully smoothly.
+
+---
+
+**👤 You:**
+> "Which team is assigned to the Alpha project next week?"
+
+**🤖 AI Agent:**
+> The 'Frontend Engineering' and 'Design' teams are assigned to Project Alpha next week. Lead designer Jane Doe is allocated for 20 hours, and developer Mark Smith for 35 hours.
+
+---
+
+**👤 You:**
+> "What are the upcoming milestones for the Beta project?"
+
+**🤖 AI Agent:**
+> Project Beta has 2 upcoming milestones: 'Design Sign-off' on April 15th and 'MVP Release' on April 30th. Both are currently tracking on schedule.
+
+
 ## Installation & Usage
 
 To install and use the **Runn** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Runn** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

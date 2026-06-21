@@ -1,12 +1,14 @@
 # MobyGames MCP Server
 
-Search 100,000+ video games — find games by title, platform, genre, developer and get credits, reviews and scores.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mobygames)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mobygames)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mobygames-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mobygames-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** content-management
-**Tools Count:** 11
+
+**Category:** [content-management](../categories/content-management.md)
+
+Search 100,000+ video games — find games by title, platform, genre, developer and get credits, reviews and scores.
 
 ## Description
 Connect to **MobyGames** and explore the world's largest video game database through natural conversation.
@@ -72,6 +74,33 @@ Get game reviews from the MobyGames database
 Search for video games in the MobyGames database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **MobyGames** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for The Legend of Zelda games."
+
+**🤖 AI Agent:**
+> Found 30+ Legend of Zelda games including: Breath of the Wild (2017, Switch, MobyScore 4.6), Ocarina of Time (1998, N64, MobyScore 4.7), Tears of the Kingdom (2023, Switch, MobyScore 4.5), and many classic entries.
+
+---
+
+**👤 You:**
+> "Show me games developed by FromSoftware."
+
+**🤖 AI Agent:**
+> Found 40+ FromSoftware games including: Elden Ring (2022, MobyScore 4.6), Dark Souls series, Sekiro (2019), Bloodborne (2015), Armored Core series. Each with platforms, release dates and scores.
+
+---
+
+**👤 You:**
+> "What RPGs are available for Nintendo Switch?"
+
+**🤖 AI Agent:**
+> Found 200+ RPGs for Nintendo Switch including: Xenoblade Chronicles 3 (2022, MobyScore 4.4), Fire Emblem: Three Houses (2019, 4.3), Octopath Traveler (2018, 4.2), Pokémon Scarlet/Violet (2022), and many more.
+
+
 ## Installation & Usage
 
 To install and use the **MobyGames** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **MobyGames** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

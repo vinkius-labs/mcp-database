@@ -1,12 +1,14 @@
 # SteamSpy MCP Server
 
-Access Steam market data and game statistics — track owners, playtime, and trending titles directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/steamspy)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/steamspy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/steamspy-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/steamspy-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 7
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access Steam market data and game statistics — track owners, playtime, and trending titles directly from your AI agent.
 
 ## Description
 Connect to **SteamSpy** to empower your AI agent with deep insights into the Steam gaming ecosystem. Analyze market trends, player behavior, and game performance metrics through natural conversation.
@@ -43,6 +45,33 @@ Get all games with owner data
 - **get_top_100_owned**: Get Top 100 games by number of owners
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SteamSpy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the statistics for Counter-Strike: Global Offensive (AppID 730)."
+
+**🤖 AI Agent:**
+> I've retrieved the data for CS:GO (AppID 730). It has an estimated 100,000,000+ owners, with an average playtime of over 30,000 minutes per user. The current price is listed as 0 (Free to Play).
+
+---
+
+**👤 You:**
+> "What are the top 100 games by player count in the last two weeks?"
+
+**🤖 AI Agent:**
+> Fetching the trending titles... The top games by recent activity include 'Counter-Strike 2', 'Dota 2', and 'PUBG: BATTLEGROUNDS'. Would you like to see the full list or details for a specific one?
+
+---
+
+**👤 You:**
+> "List the most popular games with the 'RPG' tag."
+
+**🤖 AI Agent:**
+> Searching for top-rated RPGs... I found several highly-owned titles with the 'RPG' tag, including 'Baldur's Gate 3', 'The Witcher 3: Wild Hunt', and 'Elden Ring'.
+
+
 ## Installation & Usage
 
 To install and use the **SteamSpy** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **SteamSpy** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

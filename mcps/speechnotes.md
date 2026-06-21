@@ -1,12 +1,14 @@
 # Speechnotes MCP Server
 
-Transcribe audio files, manage transcription jobs, and export text on Speechnotes with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/speechnotes)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/speechnotes)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/speechnotes-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/speechnotes-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Transcribe audio files, manage transcription jobs, and export text on Speechnotes with AI agents.
 
 ## Description
 Connect your **Speechnotes** account to any AI agent to automate your professional audio transcription and speech-to-text orchestration. Speechnotes provides a high-accuracy AI engine for converting audio files into text, and this integration allows you to initiate transcription jobs from URLs, monitor progress, and export results through natural conversation.
@@ -47,6 +49,33 @@ Connect your **Speechnotes** account to any AI agent to automate your profession
 - **transcribe_audio_url**: Transcribe remote file
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Speechnotes** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Transcribe the audio file at this URL: 'https://example.com/interview.mp3'."
+
+**🤖 AI Agent:**
+> Transcription job started! I've triggered the process for your audio file. You can check the status using the provided Job ID: SN-789.
+
+---
+
+**👤 You:**
+> "Transcribe the latest team meeting recording and generate a summary with action items."
+
+**🤖 AI Agent:**
+> Transcription complete. Meeting: "Engineering Weekly" (47 minutes, 6 participants). Accuracy: 96.2%. Summary: Sprint 13 review (8 stories completed, 2 carried over), API performance discussion (latency reduced 30%), new hire onboarding plan, Q3 roadmap preview. Action items: 1) Sarah: fix authentication bug by Friday. 2) James: prepare load testing plan by Monday. 3) Alex: schedule architecture review for database migration. 4) Lisa: update API documentation for v3 endpoints. 5) David: onboard new engineer (start date May 19). Word count: 5,670. Speakers identified: 6.
+
+---
+
+**👤 You:**
+> "Show me all transcriptions from the past week with their word counts and language detection."
+
+**🤖 AI Agent:**
+> 12 transcriptions last week. Total audio processed: 8.4 hours. Languages: English (9), Spanish (2), Portuguese (1). Longest: "Board Meeting" (2h 15m, 14,500 words). Shortest: "Quick Standup" (8 min, 890 words). Average accuracy: 95.8%. "Sales Call - Meridian" (45 min, 4,200 words, EN). "Customer Interview" (30 min, 3,100 words, EN). "Marketing Brainstorm" (1h, 6,800 words, EN). "Team Retrospective" (35 min, 3,600 words, EN). 5 additional transcriptions. Storage used: 234 MB. Export formats available: TXT, SRT, VTT, DOCX.
+
+
 ## Installation & Usage
 
 To install and use the **Speechnotes** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Speechnotes** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

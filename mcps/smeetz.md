@@ -1,12 +1,14 @@
 # Smeetz MCP Server
 
-Manage your Smeetz commerce operations — list products, handle bookings, and manage customer data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/smeetz)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/smeetz)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/smeetz-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/smeetz-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 6
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Manage your Smeetz commerce operations — list products, handle bookings, and manage customer data directly from any AI agent.
 
 ## Description
 Connect your **Smeetz** account to any AI agent to streamline your booking and commerce workflows through natural conversation.
@@ -42,6 +44,33 @@ Create a new booking for a specific product and date
 - **list_products**: List all products available in your account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Smeetz** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all products available in my Smeetz account."
+
+**🤖 AI Agent:**
+> I've retrieved your products. You have 'Grand Canyon Helicopter Tour' (ID: 789) and 'Las Vegas Show Tickets' (ID: 456) available. Would you like more details on one of these?
+
+---
+
+**👤 You:**
+> "Get the details for booking ID 'BK-55221'."
+
+**🤖 AI Agent:**
+> Fetching booking BK-55221... It is a confirmed booking for 'City Tour' scheduled for 2024-12-10, assigned to customer 'Robert Smith'.
+
+---
+
+**👤 You:**
+> "Create a booking for product 789 on 2025-01-15 for Alice Brown (alice@email.com)."
+
+**🤖 AI Agent:**
+> I've successfully created the booking for Alice Brown. The booking ID is BK-99887. The tickets have been reserved for the requested date.
+
+
 ## Installation & Usage
 
 To install and use the **Smeetz** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Smeetz** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

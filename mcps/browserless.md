@@ -1,12 +1,14 @@
 # Browserless MCP Server
 
-Manage headless Chrome via Browserless — take screenshots, generate PDFs, and scrape web content directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/browserless)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/browserless-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/browserless-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 8
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage headless Chrome via Browserless — take screenshots, generate PDFs, and scrape web content directly from any AI agent.
 
 ## Description
 Connect your **Browserless.io** account to any AI agent and orchestrate your headless Chrome operations, web automation, and document generation through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Browserless.io** account to any AI agent and orchestrate your hea
 - **take_screenshot**: Take a screenshot of a URL using headless Chrome
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Browserless** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Take a full-page screenshot of https://news.ycombinator.com."
+
+**🤖 AI Agent:**
+> I've triggered a full-page screenshot for Hacker News. You can view the result here: [Link].
+
+---
+
+**👤 You:**
+> "Generate a PDF of the article at https://example.com/blog/post-1."
+
+**🤖 AI Agent:**
+> Generating PDF for the article... Your document is ready for download: [Link].
+
+---
+
+**👤 You:**
+> "Scrape the titles of all products on https://example.com/shop."
+
+**🤖 AI Agent:**
+> Retrieving product titles... I found 12 items, including 'Leather Jacket', 'Denim Jeans', and 'Cotton T-shirt'. Would you like the full list?
+
+
 ## Installation & Usage
 
 To install and use the **Browserless** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Browserless** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

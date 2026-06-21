@@ -1,12 +1,14 @@
 # Eventbrite MCP Server
 
-Create events, sell tickets, and manage attendees with the world largest self-service ticketing platform for any occasion.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eventbrite-extended)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventbrite-extended)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventbrite-extended-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventbrite-extended-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Create events, sell tickets, and manage attendees with the world largest self-service ticketing platform for any occasion.
 
 ## Description
 Connect your **Eventbrite** organizational account to any AI agent and take full control of your event planning and ticketing workflows through natural conversation.
@@ -55,6 +57,33 @@ List Eventbrite organizations
 - **list_organization_venues**: List venues for an organization
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eventbrite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active organizations on Eventbrite."
+
+**🤖 AI Agent:**
+> I've retrieved your organizations. You currently have access to: 'Tech Events Global' (ID: 123) and 'Internal Workshops' (ID: 456). Which one should we explore for events?
+
+---
+
+**👤 You:**
+> "Show me the last 5 events for organization ID '123'."
+
+**🤖 AI Agent:**
+> Scanning events for organization 123... I found 5 recent entries, including 'AI Summit 2026' and 'Product Launch Party'. Would you like the registration counts for any of these?
+
+---
+
+**👤 You:**
+> "Get attendee details for event ID '67890'."
+
+**🤖 AI Agent:**
+> Fetching attendee list... There are 150 participants registered for event 67890. Notable attendees include 'John Doe' and 'Sarah Smith'. I can provide individual registration metadata if needed.
+
+
 ## Installation & Usage
 
 To install and use the **Eventbrite** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Eventbrite** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Lacework (Cloud Security & CNAPP) MCP Server
 
-Secure your cloud via Lacework — search security alerts, monitor vulnerabilities, and audit cloud asset inventory.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lacework-cloud-security-cnapp)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lacework-cloud-security-cnapp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lacework-cloud-security-cnapp-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lacework-cloud-security-cnapp-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Secure your cloud via Lacework — search security alerts, monitor vulnerabilities, and audit cloud asset inventory.
 
 ## Description
 Connect your **Lacework (FortiCNAPP)** account to any AI agent and take full control of your cloud security posture and threat hunting through natural conversation.
@@ -66,6 +68,33 @@ List logical Resource Groups managing Lacework architectures
 Execute an LQL Threat Hunting Query on-demand
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lacework (Cloud Security & CNAPP)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for all Critical alerts from the last 24 hours"
+
+**🤖 AI Agent:**
+> Searching alerts… I've identified 3 Critical alerts in your Lacework account: 1) Anomalous Kubernetes Process, 2) AWS Root Account Access from new IP, 3) Massive Data Exfiltration detected. Which one would you like to investigate first?
+
+---
+
+**👤 You:**
+> "List all host vulnerabilities for our Production resource group"
+
+**🤖 AI Agent:**
+> Retrieving host vulnerabilities… Found 12 active CVEs across 4 instances in the Production group. Highlights: 2 Critical (Log4j related) and 5 High impact. I can provide the Machine IDs and remediation steps for the critical ones.
+
+---
+
+**👤 You:**
+> "Are there any unrestricted S3 buckets currently visible in our inventory?"
+
+**🤖 AI Agent:**
+> Auditing cloud inventory… I've discovered 2 unrestricted S3 buckets (AWS:S3:Bucket): 'public-assets-prod' and 'temp-data-dump'. Both allow world-readable access. Would you like to see the associated security policies for these assets?
+
+
 ## Installation & Usage
 
 To install and use the **Lacework (Cloud Security & CNAPP)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Lacework (Cloud Security & CNAPP)** MCP server in your 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

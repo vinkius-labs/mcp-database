@@ -1,12 +1,14 @@
 # Blockchain.com Data MCP Server
 
-Access real-time Bitcoin blockchain data via Blockchain.com — query blocks, transactions, and addresses directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchaincom-data)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/blockchaincom-data)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/blockchaincom-data-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/blockchaincom-data-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 10
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access real-time Bitcoin blockchain data via Blockchain.com — query blocks, transactions, and addresses directly from any AI agent.
 
 ## Description
 Connect your AI agent to the **Blockchain.com Data API** and orchestrate your cryptocurrency and blockchain analysis workflows through natural conversation.
@@ -46,6 +48,33 @@ Connect your AI agent to the **Blockchain.com Data API** and orchestrate your cr
 - **list_unconfirmed_transactions**: List current unconfirmed transactions in the mempool
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Blockchain.com Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check the balance for Bitcoin address 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa."
+
+**🤖 AI Agent:**
+> I've checked the address. It currently has a balance of 72.73 BTC. It has received a total of 105.44 BTC and sent 32.71 BTC across 3,500 transactions.
+
+---
+
+**👤 You:**
+> "Show me the latest block hash and height."
+
+**🤖 AI Agent:**
+> The latest block is at height 835,421. Its hash is `00000000000000000003...`. It was mined about 8 minutes ago and contains 2,450 transactions.
+
+---
+
+**👤 You:**
+> "What's the current market price of Bitcoin?"
+
+**🤖 AI Agent:**
+> Bitcoin is currently trading at $65,420.50 USD. In other currencies, it's €60,123.40 EUR and £51,234.80 GBP.
+
+
 ## Installation & Usage
 
 To install and use the **Blockchain.com Data** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Blockchain.com Data** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

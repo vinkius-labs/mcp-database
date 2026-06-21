@@ -1,12 +1,14 @@
 # Cometly MCP Server
 
-Enable your AI agent to track conversions, retrieve attribution data, and monitor campaigns via the Cometly API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cometly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cometly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cometly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cometly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Enable your AI agent to track conversions, retrieve attribution data, and monitor campaigns via the Cometly API.
 
 ## Description
 Connect your AI to **Cometly**, the ad attribution platform for Meta, Google, TikTok and more.
@@ -41,6 +43,36 @@ Connect your AI to **Cometly**, the ad attribution platform for Meta, Google, Ti
 - **track_purchase**: Quickly track a purchase event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Cometly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Track a purchase of $99.90 for 'customer@example.com' with order 'ORD-123'."
+
+**🤖 AI Agent:**
+> Purchase tracked! Order: ORD-123, $99.90. Attributed to Facebook Ad 'Summer Sale' (camp-4x2k). Syncing to Meta and Google in ~15 min.
+
+---
+
+**👤 You:**
+> "Get performance stats for campaign 'camp-xxxx' over the last 30 days."
+
+**🤖 AI Agent:**
+> Campaign 'camp-xxxx' (30 days): Spend $4,200 | 186 conversions | Revenue $18,540 | ROAS 4.41x | CPA $22.58. Top ad set: 'Lookalike US' (62%).
+
+---
+
+**👤 You:**
+> "List the top 3 best performing active campaigns by ROAS."
+
+**🤖 AI Agent:**
+> Top 3 Active Campaigns by ROAS:
+1. 'Retargeting Q3' (Google) - ROAS: 6.2x
+2. 'Lookalike 1%' (Meta) - ROAS: 4.8x
+3. 'Brand Search' (Google) - ROAS: 4.5x
+
+
 ## Installation & Usage
 
 To install and use the **Cometly** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +81,11 @@ To install and use the **Cometly** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

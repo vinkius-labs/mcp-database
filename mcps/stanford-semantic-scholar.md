@@ -1,12 +1,14 @@
 # Stanford Semantic Scholar MCP Server
 
-Discover academic papers with AI-powered search that understands research context, finds citations, and recommends related work.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-semantic-scholar)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stanford-semantic-scholar)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stanford-semantic-scholar-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stanford-semantic-scholar-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** education
-**Tools Count:** 16
+
+**Category:** [education](../categories/education.md)
+
+Discover academic papers with AI-powered search that understands research context, finds citations, and recommends related work.
 
 ## Description
 Connect to the **Semantic Scholar Academic Graph API** and unlock the world's largest free academic knowledge graph.
@@ -86,6 +88,33 @@ Search papers filtered by conference or journal
 Search across 200M+ academic papers by keyword
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stanford Semantic Scholar** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find the most cited papers on transformer architectures published since 2020"
+
+**🤖 AI Agent:**
+> I've searched Semantic Scholar for "transformer architecture" papers from 2020-2026. The top results include "Attention Is All You Need" (the foundational paper), Vision Transformer (ViT), BERT, GPT-3, and their derivatives, sorted by citation count.
+
+---
+
+**👤 You:**
+> "What is Geoffrey Hinton's h-index and how many papers has he published?"
+
+**🤖 AI Agent:**
+> I've found Geoffrey Hinton's profile on Semantic Scholar. He has published over 400 papers with a combined citation count exceeding 500,000, giving him one of the highest h-indices in computer science.
+
+---
+
+**👤 You:**
+> "Recommend papers similar to "Attention Is All You Need""
+
+**🤖 AI Agent:**
+> Using the AI recommendation engine with "Attention Is All You Need" as the seed paper, I've found highly relevant papers including BERT, GPT-2, the Universal Transformer, Transformer-XL, and other key works that built upon the attention mechanism paradigm.
+
+
 ## Installation & Usage
 
 To install and use the **Stanford Semantic Scholar** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -94,4 +123,11 @@ To install and use the **Stanford Semantic Scholar** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

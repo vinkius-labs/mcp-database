@@ -1,12 +1,14 @@
 # Google Drive MCP Server
 
-Manage your files — search, create, share, and organize your Google Drive via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-drive)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-drive)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-drive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-drive-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 15
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your files — search, create, share, and organize your Google Drive via AI.
 
 ## Description
 Connect your **Google Drive** to your AI agent and transform how you interact with your cloud storage. Use natural language to find documents, manage sharing permissions, organize folders, and audit your file history across your entire drive.
@@ -55,6 +57,33 @@ Stop digging through nested folders. Your AI agent acts as your personal file li
 Search for files using Google Drive query syntax
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Drive** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find all spreadsheets I created in the last 30 days."
+
+**🤖 AI Agent:**
+> Searching files... I found 4 spreadsheets created last month: 'Budget_Q2.xlsx', 'User_Feedback_Raw', 'Inventory_April', and 'Campaign_Results'. Would you like the metadata for any of these?
+
+---
+
+**👤 You:**
+> "Who has access to the file 'Confidential_Roadmap'?"
+
+**🤖 AI Agent:**
+> Checking permissions... The file 'Confidential_Roadmap' is shared with 3 people: Marcus R. (Owner), Sarah P. (Editor), and Mike T. (Viewer). It is NOT shared publicly.
+
+---
+
+**👤 You:**
+> "Create a new folder named 'Project Apollo Assets'."
+
+**🤖 AI Agent:**
+> Creating folder... Success! I've created the folder 'Project Apollo Assets' in your root directory. The folder ID is FOLDER-93021.
+
+
 ## Installation & Usage
 
 To install and use the **Google Drive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Google Drive** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

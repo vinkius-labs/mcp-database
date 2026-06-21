@@ -1,12 +1,14 @@
 # Zendesk Sell MCP Server
 
-Manage sales leads, contacts, and deals via the Zendesk Sell (Base CRM) API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk-sell)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk-sell)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zendesk-sell-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zendesk-sell-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** sales-automation
-**Tools Count:** 11
+
+**Category:** [sales-automation](../categories/sales-automation.md)
+
+Manage sales leads, contacts, and deals via the Zendesk Sell (Base CRM) API.
 
 ## Description
 Connect your **Zendesk Sell** (formerly Base CRM) account to any AI agent to automate your sales pipeline and customer management. This MCP server enables your agent to interact with leads, qualified contacts, and sales deals directly from natural language interfaces.
@@ -52,6 +54,33 @@ Create a new sales lead
 - **update_existing_deal**: Update details for an existing deal
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zendesk Sell** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active sales leads in my Zendesk Sell account."
+
+**🤖 AI Agent:**
+> I've retrieved your leads. You have 15 active leads, including 'John Smith' from 'Acme Corp' and 'Jane Doe' from 'Global Tech'. Would you like to see more details for any of them?
+
+---
+
+**👤 You:**
+> "Create a new deal named 'Enterprise License' for contact ID '98765'."
+
+**🤖 AI Agent:**
+> Successfully created the deal 'Enterprise License' for contact 98765. The new deal ID is '54321' and its initial status is 'Incoming'.
+
+---
+
+**👤 You:**
+> "Update the status of deal '54321' to 'Won'."
+
+**🤖 AI Agent:**
+> Successfully updated deal 54321. The status is now marked as 'Won' in your Zendesk Sell pipeline. Congratulations!
+
+
 ## Installation & Usage
 
 To install and use the **Zendesk Sell** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Zendesk Sell** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

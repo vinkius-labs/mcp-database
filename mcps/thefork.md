@@ -1,12 +1,14 @@
 # TheFork MCP Server
 
-Discover, book, and manage restaurant reservations across Europe — search by location, cuisine, and availability through natural AI conversation.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/thefork)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thefork)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thefork-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thefork-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** travel-hospitality
-**Tools Count:** 10
+
+**Category:** [travel-hospitality](../categories/travel-hospitality.md)
+
+Discover, book, and manage restaurant reservations across Europe — search by location, cuisine, and availability through natural AI conversation.
 
 ## Description
 Transform your AI agent into a personal concierge for dining with **TheFork** — Europe's leading restaurant reservation platform.
@@ -52,6 +54,25 @@ Cancel a reservation
 Search for restaurants
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TheFork** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find Italian restaurants near the Eiffel Tower with availability for 4 people tonight."
+
+**🤖 AI Agent:**
+> I found 3 Italian restaurants near the Eiffel Tower with tables available tonight! 'Ristorante Tosca' (9.2 rating) has a 20:00 slot, 'Il Carpaccio' (8.8 rating) has 19:30 and 21:00 available. Want me to book one?
+
+---
+
+**👤 You:**
+> "Show me the reviews for restaurant ID 45892."
+
+**🤖 AI Agent:**
+> Here are the latest reviews for this restaurant. Average rating: 8.7/10. Most guests praise the 'exceptional pasta dishes and attentive service'. Recent concern: 'wait times on weekends can exceed 20 minutes'. Would you like to check availability?
+
+
 ## Installation & Usage
 
 To install and use the **TheFork** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +81,11 @@ To install and use the **TheFork** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # SimplyBook.me MCP Server
 
-Manage services, providers, and bookings on SimplyBook.me with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/simplybookme-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/simplybookme-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/simplybookme-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/simplybookme-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage services, providers, and bookings on SimplyBook.me with AI agents.
 
 ## Description
 Connect your **SimplyBook.me** account to any AI agent to automate your online booking system and resource orchestration. SimplyBook.me provides a powerful platform for managing appointment schedules, and this integration allows you to browse service lists, check provider availability, and handle full booking lifecycles through natural conversation.
@@ -48,6 +50,33 @@ List registered clients
 - **list_services**: List all bookable services
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SimplyBook.me** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all available services in my SimplyBook.me account."
+
+**🤖 AI Agent:**
+> I've retrieved your services. You have 5 active offerings including 'Consultation', 'Training Session', and 'Support Call'. Which one would you like to check availability for?
+
+---
+
+**👤 You:**
+> "Show me all bookings for this week with available time slots and staff schedules."
+
+**🤖 AI Agent:**
+> 78 bookings this week across 5 services. Monday: 18 bookings (92% capacity). Tuesday: 16 (85% capacity). Wednesday: 14 (74%). Thursday: 15 (79%). Friday: 12 (63%). Saturday: 3 (25%). "Consultation" leads with 28 bookings (avg duration: 45 min). "Haircut" has 22. "Massage" has 15. "Facial" has 8. "Manicure" has 5. Available slots today: 6 (2 PM, 2:30, 3 PM, 3:30, 4 PM, 4:30). Staff: Sarah booked 89%, James 76%, Lisa 92% (highest utilization). No-show rate: 4.2%.
+
+---
+
+**👤 You:**
+> "Book a 60-minute consultation appointment for a new client next Thursday at 2 PM."
+
+**🤖 AI Agent:**
+> Booking confirmed. Service: Consultation (60 min). Date: Thursday, May 22, 2025 at 2:00 PM. Provider: Lisa (specialist, highest rated). Client: New client profile created. Confirmation email sent to client with booking details, location map, and cancellation policy. Reminder SMS scheduled: 24 hours before and 2 hours before. Google Calendar sync: event created. Buffer time: 15 min after appointment. Payment: deposit of $25 charged, remaining $75 due at appointment.
+
+
 ## Installation & Usage
 
 To install and use the **SimplyBook.me** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **SimplyBook.me** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

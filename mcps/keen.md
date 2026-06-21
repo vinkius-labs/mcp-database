@@ -1,12 +1,14 @@
 # Keen MCP Server
 
-Stream events and perform powerful analytics queries via Keen.io.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/keen)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/keen)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/keen-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/keen-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Stream events and perform powerful analytics queries via Keen.io.
 
 ## Description
 Connect your **Keen.io** project to any AI agent to automate data collection and analysis. This MCP server allows your agent to record events and run complex analytical queries (count, sum, average, etc.) directly from natural language.
@@ -45,6 +47,33 @@ Connect your **Keen.io** project to any AI agent to automate data collection and
 - **sum_property**: Sum numeric values of a property
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Keen** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Record a 'purchase' event with price 99.99 and user 'user_123' in Keen."
+
+**🤖 AI Agent:**
+> I've recorded the 'purchase' event to your Keen project. The data has been successfully sent to the 'purchase' collection.
+
+---
+
+**👤 You:**
+> "What is the total count of 'page_view' events?"
+
+**🤖 AI Agent:**
+> I've run the query. There are a total of 15,432 events in your 'page_view' collection.
+
+---
+
+**👤 You:**
+> "Show me all saved queries in my project."
+
+**🤖 AI Agent:**
+> I found 8 saved queries, including 'Daily-Revenue-Summary', 'User-Retention-Analysis', and 'Checkout-Conversion-Funnel'.
+
+
 ## Installation & Usage
 
 To install and use the **Keen** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **Keen** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

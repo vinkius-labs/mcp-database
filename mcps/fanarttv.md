@@ -1,12 +1,14 @@
 # Fanart.tv MCP Server
 
-Get high-quality artwork for movies, TV shows and music — posters, fanart, logos, banners and more.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fanarttv)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fanarttv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fanarttv-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fanarttv-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 8
+
+**Category:** [image-video](../categories/image-video.md)
+
+Get high-quality artwork for movies, TV shows and music — posters, fanart, logos, banners and more.
 
 ## Description
 Connect to **Fanart.tv** and access the world's largest fan-created artwork database through natural conversation.
@@ -60,6 +62,33 @@ Get artwork for a music artist by MusicBrainz ID
 Get artwork for a TV show by TVDb ID
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Fanart.tv** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get artwork for The Matrix (TMDb ID: 603)."
+
+**🤖 AI Agent:**
+> Found artwork for The Matrix: 15 movie posters, 12 fanart backgrounds, 8 movie logos, 4 clear art images, 3 disc art images and 5 movie thumbs. All images include direct URLs and language information.
+
+---
+
+**👤 You:**
+> "Get artwork for Game of Thrones (TVDb ID: 121361)."
+
+**🤖 AI Agent:**
+> Found artwork for Game of Thrones: 8 show banners, 20 fanart backgrounds, 7 season posters (all 8 seasons), 4 clear logos, 28 season thumbs. All images include direct URLs.
+
+---
+
+**👤 You:**
+> "Get artwork for The Beatles (MBID: b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d)."
+
+**🤖 AI Agent:**
+> Found artwork for The Beatles: 12 artist thumbs, 8 artist backgrounds (fanart), 5 music logos, 3 music banners, 4 artist logos and 2 concert thumbs. All images include direct URLs and like counts.
+
+
 ## Installation & Usage
 
 To install and use the **Fanart.tv** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -68,4 +97,11 @@ To install and use the **Fanart.tv** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

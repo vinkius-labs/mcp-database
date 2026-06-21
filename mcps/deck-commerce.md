@@ -1,12 +1,14 @@
 # Deck Commerce MCP Server
 
-Equip your AI agent to manage order fulfillment, track shipments, and monitor inventory via the Deck Commerce API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/deck-commerce)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deck-commerce)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/deck-commerce-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/deck-commerce-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 10
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Equip your AI agent to manage order fulfillment, track shipments, and monitor inventory via the Deck Commerce API.
 
 ## Description
 Integrate **Deck Commerce**, the leading order management system (OMS) for direct-to-consumer retailers, directly into your AI workflow. Manage your customer orders, track real-time inventory levels across facilities, and monitor shipments and returns using natural language.
@@ -64,6 +66,33 @@ List all shipments processed by Deck Commerce
 Search for orders using an order number or customer info
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Deck Commerce** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all customer orders from today that are 'Pending'."
+
+**🤖 AI Agent:**
+> I've found 8 pending orders from today, including 'Order #DC123' and 'Order #DC124'. All are awaiting inventory verification. Would you like to see the items in the largest pending order?
+
+---
+
+**👤 You:**
+> "What is the stock level for 'Blue Runner Shoes' (SKU: RUN-99)?"
+
+**🤖 AI Agent:**
+> The SKU 'RUN-99' (Blue Runner Shoes) currently has 45 units available across all facilities. 30 units are in the 'Main Node' and 15 are in 'Regional Node 2'. Should I check if there are any backorders for this SKU?
+
+---
+
+**👤 You:**
+> "Show me the tracking info for Order #DC123."
+
+**🤖 AI Agent:**
+> Order #DC123 was shipped via FedEx on June 12th. The tracking number is 1234567890. The current status is 'Delivered' in New York, NY. Would you like the full shipment history?
+
+
 ## Installation & Usage
 
 To install and use the **Deck Commerce** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -72,4 +101,11 @@ To install and use the **Deck Commerce** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

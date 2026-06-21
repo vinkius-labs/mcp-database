@@ -1,12 +1,14 @@
 # GoSquared MCP Server
 
-Monitor real-time web traffic and analyze historical trends via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gosquared)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gosquared)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gosquared-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gosquared-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 11
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Monitor real-time web traffic and analyze historical trends via AI.
 
 ## Description
 Connect your **GoSquared** account to your AI agent and get instant, conversational access to your web analytics. Query real-time active visitors, track marketing campaign performance, and analyze historical traffic trends directly from your workflow.
@@ -46,6 +48,37 @@ Your AI agent acts as a dedicated web analyst, transforming complex dashboards i
 - **get_trends_sources**: Get historical traffic sources data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GoSquared** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "How many visitors are on the site right now?"
+
+**🤖 AI Agent:**
+> Checking real-time analytics... You currently have 142 active visitors on your site. 85 of them are actively engaging with the content.
+
+---
+
+**👤 You:**
+> "What were our top traffic sources yesterday?"
+
+**🤖 AI Agent:**
+> Retrieving trends... Yesterday, your top traffic sources were:
+1. Google (Organic): 1,200 visits
+2. Direct: 850 visits
+3. Twitter / X: 420 visits
+4. LinkedIn: 150 visits
+
+---
+
+**👤 You:**
+> "Tell me what percentage of visitors today are using mobile phones."
+
+**🤖 AI Agent:**
+> Checking technology insights... So far today, 62% of your site traffic is originating from mobile devices, predominantly iOS.
+
+
 ## Installation & Usage
 
 To install and use the **GoSquared** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +87,11 @@ To install and use the **GoSquared** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

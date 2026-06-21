@@ -1,12 +1,14 @@
 # Nord Pool MCP Server
 
-Access European electricity market data via Nord Pool — query day-ahead prices, auction volumes, cross-border flows, and consumption forecasts from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nord-pool)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nord-pool)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/nord-pool-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/nord-pool-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 10
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Access European electricity market data via Nord Pool — query day-ahead prices, auction volumes, cross-border flows, and consumption forecasts from any AI agent.
 
 ## Description
 Tap into the heartbeat of the European power market with **Nord Pool** — the continent's leading electricity exchange operating across 16 countries.
@@ -71,6 +73,33 @@ Retrieve yearly aggregated auction prices for a delivery area
 Retrieve yearly aggregated auction volumes for a delivery area
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Nord Pool** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What are the day-ahead electricity prices for Norway zone NO1 and Sweden zone SE3 for tomorrow?"
+
+**🤖 AI Agent:**
+> I have retrieved the day-ahead clearing prices for NO1 and SE3. Norway NO1 shows an average of 42.15 EUR/MWh with a peak at 67.80 EUR/MWh between 17:00-18:00. Sweden SE3 averages 39.20 EUR/MWh, with converging prices in off-peak hours. The spread between zones is approximately 2.95 EUR/MWh. Would you like me to also pull the transmission capacity between NO1 and SE3?
+
+---
+
+**👤 You:**
+> "Show me the cross-border transmission capacity from Denmark DK1 to Germany DE-LU for today."
+
+**🤖 AI Agent:**
+> Here is the Available Transmission Capacity (ATC) from DK1 to DE-LU. The interconnector shows 1,700 MW of available capacity during off-peak hours and drops to 1,200 MW during peak demand between 08:00-20:00. The capacity utilization rate is running at approximately 78%. Shall I overlay the actual auction flows for the same corridor so you can compare scheduled transfers against available capacity?
+
+---
+
+**👤 You:**
+> "Compare the yearly electricity prices for Finland and the Baltic states for the last two years."
+
+**🤖 AI Agent:**
+> I have pulled the yearly aggregate data for four zones. Finland (FI): 2024 averaged 51.30 EUR/MWh, 2025 dropped to 43.80 EUR/MWh (-14.6%). Estonia (EE): dropped from 62.10 to 48.90 EUR/MWh (-21.3%). Latvia (LV): from 59.40 to 47.20 EUR/MWh. Lithuania (LT): from 58.80 to 46.50 EUR/MWh. All Baltic zones converged closer to Finnish levels over the period. Shall I also get the corresponding volume data to see if consumption patterns shifted?
+
+
 ## Installation & Usage
 
 To install and use the **Nord Pool** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -79,4 +108,11 @@ To install and use the **Nord Pool** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Pipedrive MCP Server
 
-Automate sales CRM via Pipedrive — manage deals, persons, and activities directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pipedrive)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pipedrive)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pipedrive-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pipedrive-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Automate sales CRM via Pipedrive — manage deals, persons, and activities directly from any AI agent.
 
 ## Description
 Connect your **Pipedrive** account to any AI agent and take full control of your sales orchestration and pipeline management through natural conversation. Pipedrive is the leading CRM for sales teams, and this integration allows you to retrieve deal metadata, update customer records, and monitor activity logs directly from your chat interface.
@@ -49,6 +51,33 @@ No more manual logging into the CRM to check deal status. Your AI acts as a dedi
 - **search_deals_by_name**: Find deals
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pipedrive** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my open deals in Pipedrive."
+
+**🤖 AI Agent:**
+> I've retrieved your open deals. You have 4 active opportunities including 'Acme Corp Upgrade' and 'Globex Renewal'. Would you like to see the next activity for any of them?
+
+---
+
+**👤 You:**
+> "Show me all deals in the negotiation stage with a value above $50,000 and their expected close dates."
+
+**🤖 AI Agent:**
+> 8 deals in Negotiation stage above $50K. "Acme Corp Platform License" at $185,000 expected to close May 28th (85% probability). "TechVentures Annual Contract" at $92,000 closing June 5th. "ScaleUp Enterprise Deal" at $78,000 has been in negotiation for 23 days. "DataFlow Migration" at $67,000 needs a follow-up call. Total pipeline value in negotiation: $724,000.
+
+---
+
+**👤 You:**
+> "Add a new activity to schedule a demo call with contact Maria Chen at Meridian Corp for next Tuesday."
+
+**🤖 AI Agent:**
+> Activity created successfully. Type: Demo Call. Contact: Maria Chen (VP Engineering, Meridian Corp). Scheduled: Tuesday, May 20th at 2:00 PM EST. Duration: 45 minutes. Linked to deal "Meridian Corp Enterprise" ($125,000). Calendar invitation sent to maria.chen@meridian.io. A reminder has been set for 1 hour before the call.
+
+
 ## Installation & Usage
 
 To install and use the **Pipedrive** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **Pipedrive** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # CoinMarketCal MCP Server
 
-Enable your AI agent to browse upcoming crypto events, listings, and forks via the CoinMarketCal API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coinmarketcal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coinmarketcal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coinmarketcal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coinmarketcal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** event-management
-**Tools Count:** 9
+
+**Category:** [event-management](../categories/event-management.md)
+
+Enable your AI agent to browse upcoming crypto events, listings, and forks via the CoinMarketCal API.
 
 ## Description
 Connect your AI to **CoinMarketCal**, the leading economic calendar for the crypto market.
@@ -42,6 +44,41 @@ Connect your AI to **CoinMarketCal**, the leading economic calendar for the cryp
 - **search_events_by_date**: Find events within a specific date range
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinMarketCal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me upcoming events for Bitcoin."
+
+**🤖 AI Agent:**
+> 3 upcoming Bitcoin events:
+1. 'Lightning Network v2.0' — Apr 15 (Release, 92% confidence)
+2. 'BTC Mining Conference' — Apr 22 (Conference, 87% confidence)
+3. 'Taproot Upgrade Activation' — May 1 (Fork, 95% confidence)
+Want details on any of these?
+
+---
+
+**👤 You:**
+> "Show me upcoming exchange listings."
+
+**🤖 AI Agent:**
+> 5 upcoming exchange listings:
+1. TOKEN-X on Binance — Apr 10 (98% confidence)
+2. DEFI-Y on Coinbase — Apr 12 (85% confidence)
+3. NFT-Z on Kraken — Apr 18 (72% confidence)
+Want me to filter by a specific exchange?
+
+---
+
+**👤 You:**
+> "List trending events happening this week."
+
+**🤖 AI Agent:**
+> The most trending events this week are: Ethereum's Network Upgrade (Thursday), Cardano's Africa Keynote (Friday), and the Binance Token Burn (Weekend). Check details for full coverage.
+
+
 ## Installation & Usage
 
 To install and use the **CoinMarketCal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +87,11 @@ To install and use the **CoinMarketCal** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

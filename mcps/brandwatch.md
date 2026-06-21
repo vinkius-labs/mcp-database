@@ -1,12 +1,14 @@
 # Brandwatch MCP Server
 
-Access consumer research via Brandwatch — list projects, track queries, and retrieve social mentions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/brandwatch)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/brandwatch)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/brandwatch-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/brandwatch-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 8
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Access consumer research via Brandwatch — list projects, track queries, and retrieve social mentions directly from any AI agent.
 
 ## Description
 Connect your **Brandwatch Consumer Research** account to any AI agent and orchestrate your social listening and data analysis workflows through natural conversation.
@@ -43,6 +45,33 @@ Connect your **Brandwatch Consumer Research** account to any AI agent and orches
 - **list_tags**: List tags available in a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Brandwatch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all queries configured in project proj_1."
+
+**🤖 AI Agent:**
+> I've retrieved the queries for project proj_1. You have 3 queries running: 'Brand Name Mentions' (ID: q_1), 'Competitor X' (ID: q_2), and 'Industry Trends' (ID: q_3).
+
+---
+
+**👤 You:**
+> "Get volume aggregates for query q_1 from Jan 1st to Jan 31st."
+
+**🤖 AI Agent:**
+> Retrieving data... There were 15,200 mentions in total during January. The highest spike occurred on Jan 15th with 4,500 mentions.
+
+---
+
+**👤 You:**
+> "Create a new tag called 'Urgent Review' in project proj_1."
+
+**🤖 AI Agent:**
+> The tag 'Urgent Review' has been successfully created in your project. You can now use it to categorize mentions.
+
+
 ## Installation & Usage
 
 To install and use the **Brandwatch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **Brandwatch** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

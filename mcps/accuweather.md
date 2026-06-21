@@ -1,12 +1,14 @@
 # AccuWeather MCP Server
 
-Enterprise-grade weather intelligence — current conditions, forecasts, alarms, and activity indices via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/accuweather)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/accuweather)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/accuweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/accuweather-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 10
+
+**Category:** [productivity](../categories/productivity.md)
+
+Enterprise-grade weather intelligence — current conditions, forecasts, alarms, and activity indices via AI.
 
 ## Description
 Access **AccuWeather's** superior weather forecasting — the industry standard used by enterprises worldwide for accurate, localized weather data. Connect AccuWeather to your AI agent to get current conditions, daily and hourly forecasts, severe weather alarms, and activity planning indices for any location on Earth — all through natural conversation.
@@ -68,6 +70,33 @@ Get detailed information about a location by its AccuWeather key
 Search for a location by name to get its AccuWeather location key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AccuWeather** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the weather like in Tokyo right now?"
+
+**🤖 AI Agent:**
+> Current conditions in Tokyo: 22°C with partly cloudy skies. RealFeel is 24°C, humidity at 65%, and wind from the southeast at 8 km/h. UV index is moderate at 5. No precipitation expected.
+
+---
+
+**👤 You:**
+> "Give me the 5-day forecast for Paris, France."
+
+**🤖 AI Agent:**
+> Here's the 5-day forecast for Paris: Today 24°C/14°C with sunshine, Friday 21°C/13°C with possible afternoon showers, Saturday 18°C/11°C cloudy, Sunday 17°C/10°C with rain, Monday 20°C/12°C clearing up. Sunrise at 6:42 AM, sunset at 8:58 PM.
+
+---
+
+**👤 You:**
+> "Are there any severe weather alerts for Miami right now?"
+
+**🤖 AI Agent:**
+> There is currently a Heat Advisory in effect for Miami-Dade County until 7 PM EDT. Heat index values up to 41°C are expected. Take precautions for heat-related illness. No other active alerts for this area.
+
+
 ## Installation & Usage
 
 To install and use the **AccuWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +105,11 @@ To install and use the **AccuWeather** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

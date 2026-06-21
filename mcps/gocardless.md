@@ -1,12 +1,14 @@
 # GoCardless MCP Server
 
-Manage direct debit payments, track mandates, and oversee customers via AI agents with GoCardless.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/gocardless)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/gocardless)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/gocardless-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/gocardless-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 12
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage direct debit payments, track mandates, and oversee customers via AI agents with GoCardless.
 
 ## Description
 Connect your **GoCardless** merchant account to any AI agent to automate your direct debit payments and customer mandates through the Model Context Protocol (MCP). GoCardless is the global leader in bank-to-bank payments, simplifying the collection of recurring and one-off payments. This MCP server enables you to retrieve customer records, track mandate authorizations, manage payment collections, and monitor bank payouts directly through natural conversation.
@@ -49,6 +51,33 @@ Connect your **GoCardless** merchant account to any AI agent to automate your di
 - **list_recurring_subscriptions**: List recurring plans
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **GoCardless** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my payments that are currently 'pending_submission'."
+
+**🤖 AI Agent:**
+> Retrieving payments... I found 5 payments pending submission, including a $50.00 collection for customer 'Acme Corp'. Would you like the full list?
+
+---
+
+**👤 You:**
+> "Check the status of mandate 'MD12345'."
+
+**🤖 AI Agent:**
+> Fetching mandate... Mandate MD12345 is 'Active'. It was authorized by John Doe on October 1st and is valid for both one-off and recurring payments.
+
+---
+
+**👤 You:**
+> "Show me the last 3 payouts sent to my bank account."
+
+**🤖 AI Agent:**
+> Retrieving payouts... I found 3 recent payouts: $1,250.00 (Oct 5th), $850.00 (Oct 2nd), and $2,100.00 (Sept 28th). All have been 'Paid' successfully.
+
+
 ## Installation & Usage
 
 To install and use the **GoCardless** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **GoCardless** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

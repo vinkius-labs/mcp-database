@@ -1,12 +1,14 @@
 # SEON MCP Server
 
-Prevent online fraud with device fingerprinting, email and phone analysis, and real-time risk scoring for digital transactions.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/seon)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/seon)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/seon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/seon-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Prevent online fraud with device fingerprinting, email and phone analysis, and real-time risk scoring for digital transactions.
 
 ## Description
 Connect your **SEON** account to any AI agent and take full control of your fraud prevention and risk management orchestration through natural conversation. SEON provides a modular and powerful platform for transaction scoring, digital footprinting, and AML compliance, and this integration allows you to retrieve risk metadata, perform real-time checks, and manage blacklists directly from your chat interface.
@@ -51,6 +53,33 @@ Add an item to a list
 - **list_rules**: List fraud rules
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SEON** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check this email for fraud risk: suspicious.user@example.com."
+
+**🤖 AI Agent:**
+> I've retrieved the digital footprint. The email has no linked social media accounts and the domain was registered 2 days ago, resulting in a high risk score of 85. Would you like to check the associated IP address?
+
+---
+
+**👤 You:**
+> "Run a fraud risk assessment on a new user registration with email and IP analysis."
+
+**🤖 AI Agent:**
+> Fraud assessment completed. Overall risk score: 23/100 (Low Risk). Email analysis: user@gmail.com - Registered 4 years ago, active social profiles (LinkedIn, GitHub), data breach count: 1 (minor). Email score: 15/100 (safe). IP analysis: 203.0.113.45 - ISP: Comcast, Location: San Francisco, CA. VPN: No. Tor: No. Proxy: No. IP score: 18/100 (safe). Device fingerprint: Chrome 125, macOS, unique device. Phone: +1-555-0198 - Carrier: AT&T, type: mobile, valid format. Recommendation: APPROVE.
+
+---
+
+**👤 You:**
+> "Show me all flagged transactions from the last 24 hours with their risk scores and reasons."
+
+**🤖 AI Agent:**
+> 12 flagged transactions in 24 hours. High risk (3): TX-8923 ($2,400, score 89, disposable email + VPN), TX-8934 ($1,800, score 82, velocity abuse - 5 orders in 10 min), TX-8941 ($3,200, score 91, card-country mismatch + new account). Medium risk (5): velocity patterns, mismatched billing/shipping (scores 55-72). Low risk (4): minor flags, first-time buyers (scores 35-48). Auto-blocked: 2 transactions. Manual review queue: 6. False positive rate (last 30 days): 3.2%.
+
+
 ## Installation & Usage
 
 To install and use the **SEON** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **SEON** MCP server in your AI agents (Claude, Cursor, Wi
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

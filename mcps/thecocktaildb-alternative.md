@@ -1,12 +1,14 @@
 # TheCocktailDB MCP Server
 
-Global cocktail database — search recipes, ingredients, and mixology guides via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/thecocktaildb-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/thecocktaildb-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/thecocktaildb-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/thecocktaildb-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Global cocktail database — search recipes, ingredients, and mixology guides via AI.
 
 ## Description
 Equip your AI agent with the most comprehensive cocktail intelligence available via **TheCocktailDB**. This unified server merges thousands of drink recipes and ingredient details into a single, high-performance interface. Your agent can instantly find detailed instructions for classic and modern cocktails, retrieve ingredient metadata, and filter drinks by categories or glass types. Whether you are looking for a random inspiration or a specific recipe by ingredient, your agent acts as a dedicated global bartender and mixology expert through natural conversation.
@@ -52,6 +54,33 @@ List alcoholic filters
 Search for a cocktail by name
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TheCocktailDB** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for the recipe of a 'Margarita'."
+
+**🤖 AI Agent:**
+> I've found the Margarita recipe. It requires Tequila, Triple Sec, and Lime Juice. I have the full step-by-step instructions and a high-quality image of the final drink. Ready to start mixing?
+
+---
+
+**👤 You:**
+> "What drinks can I make with 'Vodka'?"
+
+**🤖 AI Agent:**
+> Searching for Vodka-based drinks... I've found several popular options including the 'Moscow Mule', 'White Russian', and 'Cosmopolitan'. Would you like the recipe for any of these?
+
+---
+
+**👤 You:**
+> "Suggest a random cocktail for tonight."
+
+**🤖 AI Agent:**
+> How about a 'Negroni'? It's a classic bitter-sweet drink made with Gin, Campari, and Sweet Vermouth. I can give you the exact proportions if you're interested.
+
+
 ## Installation & Usage
 
 To install and use the **TheCocktailDB** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **TheCocktailDB** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Mercado Pago MCP Server
 
-Process payments, generate Pix QR codes, manage customers and refunds via Mercado Pago API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-pago)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mercado-pago)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mercado-pago-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mercado-pago-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 12
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Process payments, generate Pix QR codes, manage customers and refunds via Mercado Pago API.
 
 ## Description
 Connect **Mercado Pago** to any AI agent and unlock Brazil's leading payment gateway — create Pix payments, manage credit card transactions, issue refunds, and handle customer data through natural conversation.
@@ -54,6 +56,33 @@ Refund a payment partially or fully
 Search for payments with filters
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mercado Pago** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a Pix payment for R$150 for a customer."
+
+**🤖 AI Agent:**
+> Pix payment created! Status: pending. QR Code generated for customer to scan and pay instantly.
+
+---
+
+**👤 You:**
+> "Refund payment 12345678 fully."
+
+**🤖 AI Agent:**
+> Full refund processed successfully! Status: refunded.
+
+---
+
+**👤 You:**
+> "Show me all approved payments for user@email.com."
+
+**🤖 AI Agent:**
+> Found 3 approved payments: 1. R$ 50.00 (Visa). 2. R$ 120.00 (Pix). 3. R$ 85.50 (Mastercard).
+
+
 ## Installation & Usage
 
 To install and use the **Mercado Pago** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Mercado Pago** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

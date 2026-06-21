@@ -1,12 +1,14 @@
 # Mapillary MCP Server
 
-Access street-level imagery — search images, sequences, traffic signs and map features worldwide.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mapillary)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mapillary)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mapillary-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mapillary-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** image-video
-**Tools Count:** 7
+
+**Category:** [image-video](../categories/image-video.md)
+
+Access street-level imagery — search images, sequences, traffic signs and map features worldwide.
 
 ## Description
 Connect to **Mapillary** and access the world's largest street-level imagery platform through natural conversation.
@@ -56,6 +58,33 @@ Search street-level images by geographic area
 Search image sequences by geographic area
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mapillary** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find street-level images in central London."
+
+**🤖 AI Agent:**
+> Found 500+ images in central London bounding box. Images span major streets including Oxford Street, Regent Street and the Thames embankment. Each with GPS coordinates, capture dates and compass angles.
+
+---
+
+**👤 You:**
+> "Search for traffic signs in São Paulo."
+
+**🤖 AI Agent:**
+> Found 200+ traffic signs including: speed limits (40km/h, 60km/h), stop signs, yield signs and no-parking zones. Each with GPS coordinates and detection confidence.
+
+---
+
+**👤 You:**
+> "Get object detections for image abc123."
+
+**🤖 AI Agent:**
+> Found 8 detections: regulatory--maximum-speed-limit-50--g1, information--parking--g1, warning--curve-left--g1, object--street-light--g1, and 4 more. Each with value, geometry and confidence score.
+
+
 ## Installation & Usage
 
 To install and use the **Mapillary** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **Mapillary** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

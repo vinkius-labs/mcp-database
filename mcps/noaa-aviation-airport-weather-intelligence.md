@@ -1,12 +1,14 @@
 # NOAA Aviation — Airport Weather Intelligence MCP Server
 
-Aviation weather data worldwide: METARs (current airport conditions), TAFs (24-hour airport forecasts), PIREPs (pilot reports of turbulence and icing), and SIGMETs/AIRMETs (significant aviation hazards) from the Aviation Weather Center.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-aviation-airport-weather-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/noaa-aviation-airport-weather-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/noaa-aviation-airport-weather-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/noaa-aviation-airport-weather-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 5
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+Aviation weather data worldwide: METARs (current airport conditions), TAFs (24-hour airport forecasts), PIREPs (pilot reports of turbulence and icing), and SIGMETs/AIRMETs (significant aviation hazards) from the Aviation Weather Center.
 
 ## Description
 The definitive aviation weather intelligence from the NOAA Aviation Weather Center.
@@ -40,6 +42,43 @@ Get SIGMETs and AIRMETs — significant aviation weather hazards
 Get aviation weather station information by ICAO code
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **NOAA Aviation — Airport Weather Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get current weather at London Heathrow and Paris CDG"
+
+**🤖 AI Agent:**
+> ✈️ **METAR Report**
+
+🇬🇧 **EGLL (Heathrow)**
+Temp: 14°C, Wind: 270° at 12kt
+Visibility: 9999m, Clouds: SCT030
+Pressure: 1018 hPa
+Condition: Fair
+
+🇫🇷 **LFPG (Paris CDG)**
+Temp: 16°C, Wind: 230° at 8kt
+Visibility: 9999m, Clouds: FEW040
+Pressure: 1020 hPa
+Condition: Clear
+
+---
+
+**👤 You:**
+> "Any active SIGMETs for convection?"
+
+**🤖 AI Agent:**
+> ⛈️ **Active Convective SIGMETs**
+
+1. WST 0145 — Central Plains: embedded thunderstorms with tops FL450, hail >1 inch
+2. WST 0146 — Gulf Coast: developing line of storms, movement NE at 30kt
+3. WST 0147 — SE United States: widespread thunderstorms
+
+3 convective SIGMETs active. Avoid flight paths through these areas.
+
+
 ## Installation & Usage
 
 To install and use the **NOAA Aviation — Airport Weather Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +87,11 @@ To install and use the **NOAA Aviation — Airport Weather Intelligence** MCP se
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

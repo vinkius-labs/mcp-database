@@ -1,12 +1,14 @@
 # Lichess.org Open Chess Intelligence MCP Server
 
-The definitive server for Lichess.org — monitor live broadcasts, analyze player stats, and solve puzzles via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/lichessorg-open-chess-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lichessorg-open-chess-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/lichessorg-open-chess-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/lichessorg-open-chess-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** artificial-intelligence
-**Tools Count:** 10
+
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
+
+The definitive server for Lichess.org — monitor live broadcasts, analyze player stats, and solve puzzles via AI.
 
 ## Description
 Equip your AI agent with the most transparent and real-time chess intelligence via **Lichess.org Open Chess Intelligence**. This high-performance server provides deep access to the world's leading open-source chess platform, allowing your agent to instantly retrieve real-time player metadata, monitor official tournament broadcasts with technical move lists, and identify elite players currently live on Lichess TV. Whether you are performing technical scouting, auditing recent player activity, or following a major global championship broadcast, your agent acts as a dedicated chess data engineer and analyst through natural conversation.
@@ -46,6 +48,33 @@ See who is playing live on Lichess TV
 - **list_live_streamers**: List chess streamers currently live
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Lichess.org Open Chess Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check which Grandmasters are currently playing live on Lichess TV."
+
+**🤖 AI Agent:**
+> Retrieving Lichess TV channels... I've identified that GM Magnus Carlsen is currently live in the Blitz channel, and GM Hikaru Nakamura is playing in the Bullet channel. Would you like to see the real-time board status for either match?
+
+---
+
+**👤 You:**
+> "Retrieve the last 5 games for player 'UserX' and provide the PGN links."
+
+**🤖 AI Agent:**
+> Inspecting match history for UserX... I've retrieved 5 recent matches, including a victory against an IM. I have the technical results and the direct PGN download links for each. Shall I perform a move-by-move analysis for any of them?
+
+---
+
+**👤 You:**
+> "Analyze the ongoing official broadcast for the 'Candidates Tournament 2024'."
+
+**🤖 AI Agent:**
+> Accessing official broadcast feed... The Candidates Tournament is currently live. I've identified 4 active boards. On Board 1, Nepomniachtchi has a slight technical advantage (+0.8) according to Stockfish analysis. Would you like the full move sequence for this game?
+
+
 ## Installation & Usage
 
 To install and use the **Lichess.org Open Chess Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Lichess.org Open Chess Intelligence** MCP server in you
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

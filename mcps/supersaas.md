@@ -1,12 +1,14 @@
 # SuperSaaS MCP Server
 
-Automate online scheduling and bookings via SuperSaaS — manage schedules, appointments, and users directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/supersaas)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/supersaas)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/supersaas-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/supersaas-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 11
+
+**Category:** [productivity](../categories/productivity.md)
+
+Automate online scheduling and bookings via SuperSaaS — manage schedules, appointments, and users directly from any AI agent.
 
 ## Description
 Connect your **SuperSaaS** account to any AI agent and simplify your online appointment scheduling, booking management, and user database through natural conversation.
@@ -40,6 +42,33 @@ Connect your **SuperSaaS** account to any AI agent and simplify your online appo
 - **update_appointment**: Update an existing appointment
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SuperSaaS** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active schedules in my SuperSaaS account."
+
+**🤖 AI Agent:**
+> I've retrieved your schedules. You have 3 active calendars, including 'Consultations' and 'Workshop Rooms'.
+
+---
+
+**👤 You:**
+> "Show me all appointments for this week across all schedules with availability gaps."
+
+**🤖 AI Agent:**
+> 89 appointments this week across 4 schedules. "Consultation Room A" (34 bookings): Monday 92% booked, Tuesday 85%, Wednesday 78%, Thursday 90%, Friday 67%. Gaps: Wednesday 2-4 PM, Friday after 3 PM. "Training Room" (23 bookings): 3 full-day bookings, 4 half-day. "Equipment Rental" (18 reservations): excavator fully booked, crane available Thursday-Friday. "Virtual Meetings" (14 slots): 6 available slots remaining. Total revenue from bookings: $4,560. No-show rate: 3.4% (3 no-shows). Cancellations: 5 (4 rescheduled).
+
+---
+
+**👤 You:**
+> "Create a recurring weekly appointment for team standup meetings every Monday at 9 AM."
+
+**🤖 AI Agent:**
+> Recurring appointment created. Name: "Team Standup". Schedule: Virtual Meetings. Day: every Monday at 9:00 AM. Duration: 30 minutes. Recurrence: weekly, no end date. Room: Virtual Meeting Room 1. Attendees: 8 team members notified. Calendar invites: sent via email and iCal. Reminders: 15 minutes before (push notification). Buffer: 10 minutes after. Conflict check: no conflicts detected for next 12 weeks. First occurrence: Monday, May 19 at 9:00 AM. Cancellation policy: 24-hour notice required.
+
+
 ## Installation & Usage
 
 To install and use the **SuperSaaS** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **SuperSaaS** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

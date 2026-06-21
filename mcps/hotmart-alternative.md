@@ -1,12 +1,14 @@
 # Hotmart MCP Server
 
-Sell online courses, digital products, and memberships on the leading platform for digital creators in Latin America and beyond.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hotmart-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hotmart-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hotmart-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hotmart-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ecommerce
-**Tools Count:** 6
+
+**Category:** [ecommerce](../categories/ecommerce.md)
+
+Sell online courses, digital products, and memberships on the leading platform for digital creators in Latin America and beyond.
 
 ## Description
 Connect your **Hotmart** account to any AI agent and manage your digital product business through natural conversation.
@@ -41,6 +43,33 @@ Connect your **Hotmart** account to any AI agent and manage your digital product
 - **list_subscriptions**: List active subscriptions
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hotmart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show all my products with sales data and the revenue summary for this month."
+
+**🤖 AI Agent:**
+> Your products: 1) 'AI Mastery Course' — R$ 297, Active, 1,240 total sales. 2) 'Python Bootcamp' — R$ 197, Active, 890 total sales. 3) 'Data Science eBook' — R$ 47, Active, 2,100 total sales. Revenue summary (April 2025): Total revenue: R$ 48,230. Number of sales: 312. Average ticket: R$ 154.58. Top performer: 'AI Mastery Course' (R$ 28,710, 58.5% of revenue). Active subscriptions: 89. Would you like to see the sales history or student progress?
+
+---
+
+**👤 You:**
+> "Show student progress for the AI Mastery Course — who is falling behind?"
+
+**🤖 AI Agent:**
+> AI Mastery Course: 1,240 enrolled students. Completion breakdown: Completed (100%): 312 students (25.2%). Active (50-99%): 456 students (36.8%). At risk (10-49%): 289 students (23.3%). Inactive (<10%): 183 students (14.8%). Students falling behind (inactive >30 days): 1) Maria Silva (student_891) — 12% complete, last activity 45 days ago. 2) João Santos (student_902) — 8% complete, 38 days. 3) Ana Costa (student_915) — 22% complete, 35 days. Module with highest drop-off: Module 4 'Neural Networks' (42% abandon rate). Would you like to check subscriptions or get the full sales history?
+
+---
+
+**👤 You:**
+> "Show the last 5 sales transactions and list all active subscriptions."
+
+**🤖 AI Agent:**
+> Last 5 sales: 1) 'AI Mastery Course' — R$ 297, buyer: pedro@email.com, status: approved, commission: R$ 89.10 (30%). 2) 'Data Science eBook' — R$ 47, buyer: lucas@email.com, approved. 3) 'Python Bootcamp' — R$ 197, buyer: carla@email.com, approved. 4) 'AI Mastery Course' — R$ 297, buyer: fernanda@email.com, approved. 5) 'Data Science eBook' — R$ 47, buyer: rafael@email.com, refunded. Active subscriptions: 89 total. Monthly: 52 (avg R$ 49/mo). Annual: 37 (avg R$ 397/yr). Next renewals this week: 8 subscriptions. Churn rate: 4.2% monthly. Would you like a detailed revenue breakdown?
+
+
 ## Installation & Usage
 
 To install and use the **Hotmart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -49,4 +78,11 @@ To install and use the **Hotmart** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

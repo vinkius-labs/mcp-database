@@ -1,12 +1,14 @@
 # Amplenote MCP Server
 
-Connect your Amplenote workspace to your AI agent — search notes, manage tasks, and organize ideas via natural language.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/amplenote)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/amplenote)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/amplenote-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/amplenote-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 12
+
+**Category:** [productivity](../categories/productivity.md)
+
+Connect your Amplenote workspace to your AI agent — search notes, manage tasks, and organize ideas via natural language.
 
 ## Description
 Connect your **Amplenote** account to any AI agent to fuse your personal knowledge base and task manager directly into your daily computational workflows.
@@ -68,6 +70,46 @@ List all tags used across notes and tasks
 Retrieve available actions for a specific note
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Amplenote** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new note titled 'Project Alpha Planning' and assign it the tag '#work/projects'."
+
+**🤖 AI Agent:**
+> Note successfully created! The note ID is `62h28d-9b19` and you can access it inside the `#work/projects` framework. Would you like me to start populating it with an initial brainstorm structure?
+
+---
+
+**👤 You:**
+> "Search my Amplenote vault for all active tasks containing the word 'Budget'."
+
+**🤖 AI Agent:**
+> I found 3 tasks matching 'Budget' across your notes:
+1. Revise Q3 Marketing Budget (Inside Note: 'Q3 Objectives')
+2. Consolidate AWS cloud budget anomalies (Inside Note: 'Daily Ops')
+3. Send budget approval to Sarah (Inside Note: 'To-do Master')
+Shall I mark the last one as complete?
+
+---
+
+**👤 You:**
+> "Get the content of my 'Weekly Sync' note."
+
+**🤖 AI Agent:**
+> Here is the content of 'Weekly Sync' (UUID: 8a93-11bb):
+
+# Updates
+- Engineering launched v2.1
+- Support tickets down 5%
+
+### Blockers
+There are minor bottlenecks with the primary database query speeds. Mark is investigating.
+
+Would you like me to inject a new task for Mark to summarize his database findings by Friday?
+
+
 ## Installation & Usage
 
 To install and use the **Amplenote** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -76,4 +118,11 @@ To install and use the **Amplenote** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Apple Search Ads MCP Server
 
-Manage and optimize your Apple Search Ads campaigns — track performance, keywords, and search terms via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/apple-search-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/apple-search-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/apple-search-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/apple-search-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage and optimize your Apple Search Ads campaigns — track performance, keywords, and search terms via AI.
 
 ## Description
 The **Apple Search Ads MCP Server** empowers your AI agent to directly manage your advertising campaigns on the App Store. Gain deep insights into your marketing performance, optimize keyword targeting, and monitor search term trends using natural language.
@@ -40,6 +42,33 @@ The **Apple Search Ads MCP Server** empowers your AI agent to directly manage yo
 - **list_keywords**: List all keywords in a campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Apple Search Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Apple Search Ads campaigns."
+
+**🤖 AI Agent:**
+> I've retrieved your campaigns. You have 4 active campaigns, including 'USA - Brand', 'UK - Generic', and 'Canada - Competitors'.
+
+---
+
+**👤 You:**
+> "Show me the performance report for campaign ID '987654321' for last week."
+
+**🤖 AI Agent:**
+> For campaign '987654321', you had 12,500 impressions, 1,200 clicks, and 450 conversions last week, with a CPT of $0.85.
+
+---
+
+**👤 You:**
+> "What were the top 5 search terms for campaign ID '123456789' yesterday?"
+
+**🤖 AI Agent:**
+> The top 5 search terms yesterday were: 'fitness app', 'workout tracker', 'home workout', 'gym guide', and 'health monitor'.
+
+
 ## Installation & Usage
 
 To install and use the **Apple Search Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Apple Search Ads** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # ElevenLabs MCP Server
 
-Generate lifelike speech from text with neural voice synthesis that clones voices and supports dozens of languages naturally.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/elevenlabs-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/elevenlabs-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/elevenlabs-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 12
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Generate lifelike speech from text with neural voice synthesis that clones voices and supports dozens of languages naturally.
 
 ## Description
 Connect your **ElevenLabs** account to any AI agent and take full control of your neural audio synthesis and voice management workflows through natural conversation.
@@ -49,6 +51,33 @@ No more manual copy-pasting into the web editor or complex history searching. Yo
 - **text_to_speech**: Convert text to audio
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ElevenLabs** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Convert this text to speech using 'Bella' voice: 'Welcome to the world of neural audio'."
+
+**🤖 AI Agent:**
+> Audio generation triggered! I've converted your text using the 'Bella' voice (ID: EXAV...vXU). You can find the record in your history or I can retrieve the download link for you.
+
+---
+
+**👤 You:**
+> "List all my available voices in ElevenLabs."
+
+**🤖 AI Agent:**
+> I've retrieved your voice library. You have access to 10 standard voices and 2 custom cloned voices ('CEO Voice' and 'Narrator'). Which one would you like to use?
+
+---
+
+**👤 You:**
+> "Check my remaining character limits for this month."
+
+**🤖 AI Agent:**
+> Scanning subscription... You have 15,420 characters remaining out of your 30,000 monthly limit. Your next reset is in 12 days. Would you like to view your generation history?
+
+
 ## Installation & Usage
 
 To install and use the **ElevenLabs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -57,4 +86,11 @@ To install and use the **ElevenLabs** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

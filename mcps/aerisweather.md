@@ -1,12 +1,14 @@
 # AerisWeather MCP Server
 
-Access hyper-local weather data, forecasts, and alerts via AerisWeather — query observations, conditions, and geographical data directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aerisweather)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aerisweather)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/aerisweather-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/aerisweather-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access hyper-local weather data, forecasts, and alerts via AerisWeather — query observations, conditions, and geographical data directly from any AI agent.
 
 ## Description
 Connect your **AerisWeather** account to any AI agent and access professional-grade weather intelligence through natural conversation.
@@ -47,6 +49,33 @@ Get current weather observations
 - **get_places**: Get geographical data for cities, stations, and airports
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **AerisWeather** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current weather in London?"
+
+**🤖 AI Agent:**
+> I've retrieved the current conditions for London. It's currently 15°C with light rain and a humidity of 78%. Would you like the forecast for the rest of the day?
+
+---
+
+**👤 You:**
+> "Show me the 7-day forecast for New York."
+
+**🤖 AI Agent:**
+> Fetching the 7-day forecast for New York... I see a mix of sun and clouds for the next few days, with temperatures peaking at 22°C on Wednesday. Should I check for any precipitation alerts?
+
+---
+
+**👤 You:**
+> "Are there any active weather alerts for Miami?"
+
+**🤖 AI Agent:**
+> Checking for active alerts in Miami... There is currently a 'Flood Watch' in effect until 8:00 PM. Would you like to see the full details of the advisory?
+
+
 ## Installation & Usage
 
 To install and use the **AerisWeather** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **AerisWeather** MCP server in your AI agents (Claude, Cu
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

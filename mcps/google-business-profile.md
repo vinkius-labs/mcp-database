@@ -1,12 +1,14 @@
 # Google Business Profile MCP Server
 
-Manage your local business presence — track reviews, posts, and customer Q&A via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-business-profile)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-business-profile)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-business-profile-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-business-profile-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your local business presence — track reviews, posts, and customer Q&A via AI.
 
 ## Description
 Connect your **Google Business Profile** (formerly Google My Business) account to your AI agent and take control of your local SEO and customer engagement. Use natural language to monitor reviews, reply to feedback, and update your business information across Google Search and Maps.
@@ -50,6 +52,33 @@ Keep your business information up-to-date and your customers heard without manua
 - **update_business_hours**: Change business operating hours
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Business Profile** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the 5 most recent reviews for my downtown location."
+
+**🤖 AI Agent:**
+> Fetching reviews... You received 5 new reviews this week. 4 are 5-star ratings praising the service, and one is a 3-star review mentioning a wait time. Would you like me to draft a reply to the 3-star review?
+
+---
+
+**👤 You:**
+> "Create a post about our 20% discount this weekend."
+
+**🤖 AI Agent:**
+> Drafting local post... I've prepared an 'OFFER' post with the title 'Weekend Flash Sale!' and the 20% discount details. Should I publish this to all your verified locations now?
+
+---
+
+**👤 You:**
+> "What were the most common search terms used to find us last month?"
+
+**🤖 AI Agent:**
+> Analyzing insights... The top search terms were 'coffee near me' (1,200 searches), 'best latte in town' (850 searches), and 'breakfast cafe' (600 searches). This is a 15% increase in discovery compared to the previous month.
+
+
 ## Installation & Usage
 
 To install and use the **Google Business Profile** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Google Business Profile** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

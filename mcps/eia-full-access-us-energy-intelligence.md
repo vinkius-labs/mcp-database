@@ -1,12 +1,14 @@
 # EIA Full Access — U.S. Energy Intelligence MCP Server
 
-The ultimate U.S. energy data Mega-Server: 34 tools covering petroleum, electricity, natural gas, coal, energy forecasts, state data, and international comparisons — every watt, barrel, and BTU from the federal government's energy agency.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-full-access-us-energy-intelligence)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eia-full-access-us-energy-intelligence)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eia-full-access-us-energy-intelligence-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eia-full-access-us-energy-intelligence-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** the-unthinkable
-**Tools Count:** 34
+
+**Category:** [the-unthinkable](../categories/the-unthinkable.md)
+
+The ultimate U.S. energy data Mega-Server: 34 tools covering petroleum, electricity, natural gas, coal, energy forecasts, state data, and international comparisons — every watt, barrel, and BTU from the federal government's energy agency.
 
 ## Description
 The **definitive Mega-Server** for U.S. energy intelligence. Why install 6 servers when one does it all?
@@ -100,6 +102,63 @@ Get comprehensive U.S. total energy overview (Monthly Energy Review)
 Get nuclear power plant outage data
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **EIA Full Access — U.S. Energy Intelligence** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Complete U.S. energy dashboard: oil, gas, electricity, and coal prices"
+
+**🤖 AI Agent:**
+> 🇺🇸 **U.S. Energy Dashboard**
+
+| Commodity | Price | Trend |
+|-----------|-------|-------|
+| WTI Crude | $78.26/bbl | → |
+| Brent | $82.10/bbl | → |
+| Gasoline | $3.28/gal | ↓ |
+| Henry Hub Gas | $2.84/MMBtu | ↑ |
+| Electricity | 16.6¢/kWh | → |
+| Coal (bit.) | $68.40/ton | ↓ |
+
+6 commodity queries executed across petroleum, gas, electricity, and coal tools.
+
+---
+
+**👤 You:**
+> "Which state produces the most renewable energy and what are storage levels?"
+
+**🤖 AI Agent:**
+> 🌱 **Cross-Domain Query**
+
+Top renewable states (generation):
+1. Texas — 149 TWh (wind leader)
+2. California — 103 TWh (solar leader)
+3. Washington — 82 TWh (hydro leader)
+
+📦 Gas Storage: 2,584 Bcf (+11% vs 5yr avg)
+🛢️ Crude Stocks: 432M bbl (commercial)
+
+3 tools used: electricity + natgas storage + petroleum stocks
+
+---
+
+**👤 You:**
+> "What does the STEO forecast for natural gas prices and how does it compare to coal?"
+
+**🤖 AI Agent:**
+> 🔮 **STEO Gas Forecast + Coal Comparison**
+
+Henry Hub forecast:
+- 2025 avg: $3.10/MMBtu (+9% YoY)
+- Winter peak: $3.80/MMBtu
+
+Coal delivered to power plants: $2.15/MMBtu
+Gas premium over coal: 44%
+
+Coal remains cheaper on BTU basis but gas dominates generation due to lower emissions and flexibility.
+
+
 ## Installation & Usage
 
 To install and use the **EIA Full Access — U.S. Energy Intelligence** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -108,4 +167,11 @@ To install and use the **EIA Full Access — U.S. Energy Intelligence** MCP serv
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

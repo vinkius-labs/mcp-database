@@ -1,12 +1,14 @@
 # DeBank (DeFi Wallet Tracker) MCP Server
 
-Track DeFi portfolios, analyze protocols, and monitor wallet history across multiple chains using DeBank's comprehensive data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/debank-defi-wallet-tracker)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/debank-defi-wallet-tracker)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/debank-defi-wallet-tracker-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/debank-defi-wallet-tracker-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 24
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Track DeFi portfolios, analyze protocols, and monitor wallet history across multiple chains using DeBank's comprehensive data.
 
 ## Description
 Connect your **DeBank** account to any AI agent and gain deep insights into the DeFi ecosystem. Monitor wallet balances, analyze protocol positions, and track token movements across all supported chains through natural conversation.
@@ -61,6 +63,33 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 - **pre_exec_tx**: Enhanced transaction pre-execution
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **DeBank (DeFi Wallet Tracker)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the total balance and the list of chains used by wallet 0x123..."
+
+**🤖 AI Agent:**
+> I've analyzed the wallet. The total balance is $45,230.50. This user is active on 4 chains: Ethereum, BSC, Polygon, and Arbitrum. Would you like to see the specific token breakdown for any of these?
+
+---
+
+**👤 You:**
+> "Who are the top holders for the token 0x... on Ethereum?"
+
+**🤖 AI Agent:**
+> Fetching top holders... The largest holder (excluding contracts) owns 12.5% of the supply. There are currently 3 wallets holding more than 5% of the total circulating supply. Should I list the top 10 addresses?
+
+---
+
+**👤 You:**
+> "List all DeFi protocols supported on the Polygon chain."
+
+**🤖 AI Agent:**
+> I've retrieved the list for Polygon. There are over 50 supported protocols, including Aave V3, QuickSwap, and Curve. Are you looking for a specific type of protocol, like DEXs or Lending platforms?
+
+
 ## Installation & Usage
 
 To install and use the **DeBank (DeFi Wallet Tracker)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -69,4 +98,11 @@ To install and use the **DeBank (DeFi Wallet Tracker)** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Surveypal MCP Server
 
-Design employee experience surveys and customer feedback programs with analytics that turn responses into actionable improvements.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/surveypal)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/surveypal)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/surveypal-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/surveypal-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 12
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Design employee experience surveys and customer feedback programs with analytics that turn responses into actionable improvements.
 
 ## Description
 Connect your **Surveypal** account to any AI agent and simplify how you collect user data, manage customer feedback loops, and analyze survey results through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Surveypal** account to any AI agent and simplify how you collect 
 - **send_sms_invitation**: Send SMS invitation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Surveypal** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active surveys in my Surveypal account."
+
+**🤖 AI Agent:**
+> I've retrieved your surveys. You have 3 active surveys: 'Customer Satisfaction Q4', 'Product Beta Feedback', and 'Event Registration'. Which one would you like to see responses for?
+
+---
+
+**👤 You:**
+> "Show me the last 5 answers for the 'Customer Satisfaction' survey."
+
+**🤖 AI Agent:**
+> I've fetched the latest answers. Most users provided positive feedback, highlighting the new checkout flow. However, two respondents mentioned slow load times. Shall I retrieve the full text for those specific answers?
+
+---
+
+**👤 You:**
+> "Send an email invitation for survey '10293' to 'user@example.com'."
+
+**🤖 AI Agent:**
+> Invitation sent! I've triggered the email for survey 10293 to user@example.com. The recipient will receive the link to participate shortly.
+
+
 ## Installation & Usage
 
 To install and use the **Surveypal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Surveypal** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Road511 Trucking MCP Server
 
-Access trucking data via Road511 — track truck routes, bridge clearances, weigh stations, truck stops, parking, and weight restrictions across US and Canada from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/road511-trucking)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511-trucking)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/road511-trucking-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/road511-trucking-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** shipping-logistics
-**Tools Count:** 10
+
+**Category:** [shipping-logistics](../categories/shipping-logistics.md)
+
+Access trucking data via Road511 — track truck routes, bridge clearances, weigh stations, truck stops, parking, and weight restrictions across US and Canada from any AI agent.
 
 ## Description
 Connect your **Road511 Trucking API** to any AI agent and take full control of North American truck route planning, bridge clearance verification, weigh station awareness, truck stop discovery, and weight restriction monitoring through natural conversation.
@@ -72,6 +74,33 @@ Get weigh station locations and status across US and Canada
 Get truck weight restrictions including seasonal restrictions across US and Canada
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Road511 Trucking** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all weigh stations on I-5 in Oregon and their current status."
+
+**🤖 AI Agent:**
+> Querying weigh stations on I-5 in Oregon... Found 5 weigh stations: Northbound I-5 Milepost 438 (Ashland) — Open 24/7, PrePass and Drivewyze enabled. Southbound I-5 Milepost 437 (Ashland) — Open 6AM-10PM, Drivewyze enabled. Northbound I-5 Milepost 285 (Eugene) — Open 24/7, all bypass programs. Southbound I-5 Milepost 284 (Eugene) — Currently closed for maintenance, reopening at 6AM. Northbound I-5 near Salem — Open 24/7, all bypass programs. Would you like bypass program details for any station?
+
+---
+
+**👤 You:**
+> "Find truck stops with parking within 30 miles of Des Moines, Iowa."
+
+**🤖 AI Agent:**
+> Searching truck stops near Des Moines, IA (lat: 41.5868, lon: -93.6250) within 30 miles... Found 8 truck stops: TA Travel Center — I-80 Exit 135, 85 parking spaces, fuel, showers, restaurant, open 24/7. Pilot Flying J — I-35 Exit 83, 62 spaces, fuel, showers, laundry, open 24/7. Love's Travel Stop — I-80 Exit 129, 48 spaces, fuel, dog wash, open 24/7. Petro Stopping Center — I-235 Exit 3B, 55 spaces, full service, open 24/7. Plus 4 additional stops with 20-40 spaces each. All locations have real-time parking availability. Would you like current availability counts for any location?
+
+---
+
+**👤 You:**
+> "Show me STAA truck routes and any active incidents affecting trucking in Illinois."
+
+**🤖 AI Agent:**
+> Fetching STAA truck routes for Illinois... Found 12,450 route segments covering I-80, I-55, I-57, I-70, I-74, I-90, I-94, and major US highways. Active incidents affecting trucking: I-80 westbound at Mile 142 — Lane closure due to construction, expect 20-minute delays, detour via IL-47. I-55 southbound at Bloomington — Accident cleared, residual delays 10-15 minutes. I-294 northbound — Weight restriction in effect for trucks over 80,000 lbs due to bridge maintenance, ends at 5PM today. All other major truck routes operating normally.
+
+
 ## Installation & Usage
 
 To install and use the **Road511 Trucking** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -80,4 +109,11 @@ To install and use the **Road511 Trucking** MCP server in your AI agents (Claude
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

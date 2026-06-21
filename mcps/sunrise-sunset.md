@@ -1,12 +1,14 @@
 # Sunrise-Sunset MCP Server
 
-Get precise sunrise, sunset, and twilight times for any location on Earth using latitude and longitude coordinates.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/sunrise-sunset)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sunrise-sunset)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/sunrise-sunset-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/sunrise-sunset-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** scientific-research
-**Tools Count:** 1
+
+**Category:** [scientific-research](../categories/scientific-research.md)
+
+Get precise sunrise, sunset, and twilight times for any location on Earth using latitude and longitude coordinates.
 
 ## Description
 Connect your AI agent to the **Sunrise-Sunset** API to retrieve accurate solar data for any location on Earth. Whether you are planning photography shoots, calculating energy potential, or managing outdoor events, this server provides the precise astronomical data you need.
@@ -36,6 +38,33 @@ Connect your AI agent to the **Sunrise-Sunset** API to retrieve accurate solar d
 - **get_sunrise_sunset**: Get sunrise and sunset times for a location
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Sunrise-Sunset** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What time is the sunrise in London (51.5074, -0.1278) today?"
+
+**🤖 AI Agent:**
+> I've checked the solar data for London. Today, the sunrise is at 06:42 AM and the sunset will be at 05:58 PM. Would you like the twilight timings as well?
+
+---
+
+**👤 You:**
+> "Get the sunset and civil twilight times for Paris on December 25th, 2025."
+
+**🤖 AI Agent:**
+> For Paris on Christmas Day 2025, the sunset is scheduled for 04:56 PM, with civil twilight ending at 05:34 PM. It will be a short day with a total length of 8 hours and 14 minutes.
+
+---
+
+**👤 You:**
+> "Show me the day length for Los Angeles (34.0522, -118.2437) using the 'America/Los_Angeles' timezone."
+
+**🤖 AI Agent:**
+> In Los Angeles today, the total day length is 12 hours and 48 minutes. The sun rises at 06:12 AM and sets at 07:00 PM local time.
+
+
 ## Installation & Usage
 
 To install and use the **Sunrise-Sunset** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -44,4 +73,11 @@ To install and use the **Sunrise-Sunset** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

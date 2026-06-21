@@ -1,12 +1,14 @@
 # Adobe Sign MCP Server
 
-Automate e-signatures and document workflows via Adobe Acrobat Sign — manage agreements, track audit trails, and handle library templates directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-sign)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/adobe-sign)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/adobe-sign-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/adobe-sign-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 13
+
+**Category:** [document-management](../categories/document-management.md)
+
+Automate e-signatures and document workflows via Adobe Acrobat Sign — manage agreements, track audit trails, and handle library templates directly from your AI agent.
 
 ## Description
 Connect **Adobe Acrobat Sign** to your AI agent to streamline your digital signature workflows and document management through natural language.
@@ -50,6 +52,33 @@ Upload a transient document
 - **list_webhooks**: List webhooks
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Adobe Sign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my current agreements in Adobe Sign."
+
+**🤖 AI Agent:**
+> I've retrieved your agreements. You have 3 active agreements: 'Service Contract - Q4', 'NDA - New Hire', and 'Vendor Agreement'. Would you like to see the details for any of these?
+
+---
+
+**👤 You:**
+> "Get the metadata for agreement ID 3AAABLblqZhD123."
+
+**🤖 AI Agent:**
+> The agreement 'Service Contract - Q4' (ID: 3AAABLblqZhD123) is currently in 'OUT_FOR_SIGNATURE' status. It was created on Oct 12th and is waiting for a signature from client@example.com.
+
+---
+
+**👤 You:**
+> "Show me all users registered in our Adobe Sign account."
+
+**🤖 AI Agent:**
+> I found 5 users in your account, including 'Admin User', 'Legal Lead', and 3 staff members. Would you like to see the specific group assignments for these users?
+
+
 ## Installation & Usage
 
 To install and use the **Adobe Sign** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Adobe Sign** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

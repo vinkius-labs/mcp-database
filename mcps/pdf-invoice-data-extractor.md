@@ -1,12 +1,14 @@
 # PDF Invoice Data Extractor MCP Server
 
-Extract raw text directly from digital PDF invoices entirely local. Keeps your sensitive accounting data air-gapped while letting the AI classify NIFs, suppliers, and totals.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pdf-invoice-data-extractor)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pdf-invoice-data-extractor)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pdf-invoice-data-extractor-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pdf-invoice-data-extractor-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** document-management
-**Tools Count:** 1
+
+**Category:** [document-management](../categories/document-management.md)
+
+Extract raw text directly from digital PDF invoices entirely local. Keeps your sensitive accounting data air-gapped while letting the AI classify NIFs, suppliers, and totals.
 
 ## Description
 Sending your company's AWS, Uber, or telecom invoices to a public cloud AI poses massive privacy and compliance risks. Furthermore, if you drag a PDF into Claude, it often complains it can't read the file natively without an OCR tool.
@@ -27,6 +29,35 @@ This MCP acts as a secure, local document processor. Because 90% of modern invoi
 Extract pure text from a digital PDF invoice entirely offline. Use this so the AI can extract NIF, totals, and suppliers without uploading sensitive tax documents to the cloud
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PDF Invoice Data Extractor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Parse this PDF invoice and tell me the total amount due and the VAT/NIF number."
+
+**🤖 AI Agent:**
+> Based on the extracted text, the total due is $1,250.00 and the VAT number is PT501234567.
+
+---
+
+**👤 You:**
+> "Extract the line items from this PDF and format them as a CSV for my accounting software."
+
+**🤖 AI Agent:**
+> Product,Quantity,Price
+Server Hosting,1,$450
+Domain Renewal,2,$30
+
+---
+
+**👤 You:**
+> "Verify if this invoice mentions any late fees or penalties in the fine print."
+
+**🤖 AI Agent:**
+> Yes, I found a clause stating: 'A late fee of 1.5% per month will be applied to balances past 30 days.'
+
+
 ## Installation & Usage
 
 To install and use the **PDF Invoice Data Extractor** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -35,4 +66,11 @@ To install and use the **PDF Invoice Data Extractor** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

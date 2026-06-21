@@ -1,12 +1,14 @@
 # Meta Ads MCP Server
 
-Equip your AI agent with direct access to Meta Ads — manage Facebook and Instagram campaigns, track ad performance, and optimize spend without opening Meta Ads Manager.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meta-ads)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/meta-ads)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/meta-ads-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/meta-ads-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Equip your AI agent with direct access to Meta Ads — manage Facebook and Instagram campaigns, track ad performance, and optimize spend without opening Meta Ads Manager.
 
 ## Description
 Connect **Meta Ads** to your AI agent and manage Facebook and Instagram advertising conversationally.
@@ -46,6 +48,33 @@ Pause a campaign
 - **activate_campaign**: Activate a paused campaign
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Meta Ads** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's my Meta ad spend and ROAS this month?"
+
+**🤖 AI Agent:**
+> This month: Total spend: $15,400. Reach: 2.1M. Impressions: 5.8M. Clicks: 42,000. CTR: 0.72%. CPC: $0.37. Purchases: 620. ROAS: 4.8x. Best campaign: 'Product Catalog Retargeting' (8.2x ROAS).
+
+---
+
+**👤 You:**
+> "Which ad creatives are performing best?"
+
+**🤖 AI Agent:**
+> Top 3 creatives by ROAS: 1) Video 'Product Unboxing' (6.5x ROAS, $2.1K spend), 2) Carousel 'Summer Collection' (5.8x, $3.4K), 3) Static 'Testimonial - Sarah' (5.2x, $1.8K). Worst: 'Brand Story v3' (0.9x ROAS — consider pausing).
+
+---
+
+**👤 You:**
+> "Create a lookalike audience from my top 1000 customers."
+
+**🤖 AI Agent:**
+> Lookalike audience created: 'Top 1K Customers - 1% Lookalike' in US. Estimated reach: 2.5M people. Similarity: 1% (highest match). Ready to use in campaigns.
+
+
 ## Installation & Usage
 
 To install and use the **Meta Ads** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Meta Ads** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

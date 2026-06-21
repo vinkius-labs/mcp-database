@@ -1,12 +1,14 @@
 # TextP2P MCP Server
 
-Send peer-to-peer text messages at scale for political campaigns, nonprofits, and organizations that need personal outreach.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/textp2p)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/textp2p)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/textp2p-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/textp2p-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Send peer-to-peer text messages at scale for political campaigns, nonprofits, and organizations that need personal outreach.
 
 ## Description
 Connect your **TextP2P** marketing account to any AI agent and simplify how you manage your bulk SMS campaigns, ringless voicemails (RVM), and contact lists through natural conversation.
@@ -42,6 +44,33 @@ Connect your **TextP2P** marketing account to any AI agent and simplify how you 
 - **send_textp2p_sms**: Send an SMS message
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TextP2P** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Send a bulk SMS to '555-0199, 555-0188' saying: 'Flash sale ends in 2 hours!'."
+
+**🤖 AI Agent:**
+> SMS campaign initiated! I've sent the message to both recipients. I'll let you know if you need to check your remaining credit balance after this broadcast.
+
+---
+
+**👤 You:**
+> "Drop a ringless voicemail to +15550177 using audio URL 'https://vinkius.com/vmail.mp3'."
+
+**🤖 AI Agent:**
+> RVM request sent! I've triggered the ringless voicemail drop to +15550177 with your audio file. It will be delivered directly to the recipient's inbox without ringing.
+
+---
+
+**👤 You:**
+> "Check my current credit balance for SMS and RVM."
+
+**🤖 AI Agent:**
+> Fetching balance... You currently have 1,200 SMS credits and 450 RVM credits available. You have plenty of budget for your upcoming marketing campaigns.
+
+
 ## Installation & Usage
 
 To install and use the **TextP2P** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **TextP2P** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

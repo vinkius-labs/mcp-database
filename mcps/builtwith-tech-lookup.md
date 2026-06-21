@@ -1,12 +1,14 @@
 # BuiltWith Tech Lookup MCP Server
 
-Universal website technology intelligence — detect CMS, analytics, and frameworks via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/builtwith-tech-lookup)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/builtwith-tech-lookup)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/builtwith-tech-lookup-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/builtwith-tech-lookup-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing
-**Tools Count:** 8
+
+**Category:** [marketing](../categories/marketing.md)
+
+Universal website technology intelligence — detect CMS, analytics, and frameworks via AI.
 
 ## Description
 Equip your AI agent with the industry standard for website technology profiling through the **BuiltWith** MCP server. This integration provides instant access to the technology stack of millions of domains. Your agent can identify the Content Management System (CMS), analytics tools, advertising networks, hosting providers, and JavaScript frameworks used by any website. Whether you are conducting lead qualification, competitive research, or auditing digital infrastructure, your agent acts as a dedicated technical architect through natural conversation.
@@ -59,6 +61,33 @@ Get trust indicators for a domain
 Lookup complete technology stack for a domain
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **BuiltWith Tech Lookup** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Lookup the tech stack for 'airbnb.com'."
+
+**🤖 AI Agent:**
+> Retrieving technology profile for Airbnb... I've found that they use several key technologies including React, various Google Analytics trackers, and Akamai for CDN. Would you like to see the full list of advertising networks?
+
+---
+
+**👤 You:**
+> "Identify the CMS used by 'techcrunch.com'."
+
+**🤖 AI Agent:**
+> Checking TechCrunch... This site is powered by WordPress VIP. It also utilizes various VIP-specific plugins and high-performance hosting infrastructure.
+
+---
+
+**👤 You:**
+> "Does 'tesla.com' use any marketing automation tools?"
+
+**🤖 AI Agent:**
+> I've analyzed the Tesla domain. They are using several marketing and data tools, including Google Tag Manager and custom internal systems. I don't see any standard third-party marketing automation platforms like Marketo or Pardot currently active.
+
+
 ## Installation & Usage
 
 To install and use the **BuiltWith Tech Lookup** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -67,4 +96,11 @@ To install and use the **BuiltWith Tech Lookup** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

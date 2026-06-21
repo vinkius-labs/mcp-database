@@ -1,12 +1,14 @@
 # Bland AI MCP Server
 
-Automate phone calls via Bland AI — dispatch voice agents, analyze call transcripts, and manage inbound phone numbers directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/bland-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/bland-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/bland-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 10
+
+**Category:** [superpower](../categories/superpower.md)
+
+Automate phone calls via Bland AI — dispatch voice agents, analyze call transcripts, and manage inbound phone numbers directly from your AI agent.
 
 ## Description
 Connect your **Bland AI** API key to your AI agent and take full programmatic control over enterprise-grade telephony and conversational voice workflows.
@@ -44,6 +46,33 @@ Connect your **Bland AI** API key to your AI agent and take full programmatic co
 - **create_web_call**: Spawn a decoupled internet-based WebRTC signaling socket logic stream
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Bland AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Please analyze call ID `c-12345` with the goal query 'Was the customer interested in a demo?'"
+
+**🤖 AI Agent:**
+> I ran the targeted analysis over the raw transcript for call `c-12345`. The extracted goal status is TRUE. The customer stated 'they would love to see how the dashboard works next Thursday'.
+
+---
+
+**👤 You:**
+> "End the currently active phone call ID `c-99999` immediately."
+
+**🤖 AI Agent:**
+> The command has been processed. A synchronous interrupt flag was sent to Bland AI, and the telecom session has been successfully shut down.
+
+---
+
+**👤 You:**
+> "List all my purchased inbound phone numbers on Bland AI."
+
+**🤖 AI Agent:**
+> Here are the PSTN numbers currently bridged to your AI routing logic: 1. +1 (555) 012-3456 (Status: Active), 2. +1 (555) 987-6543 (Status: Inactive).
+
+
 ## Installation & Usage
 
 To install and use the **Bland AI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Bland AI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

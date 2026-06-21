@@ -1,12 +1,14 @@
 # CHATFLY MCP Server
 
-Manage AI chatbots and knowledge bases via CHATFLY — train bots on custom data and track conversations directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/chatfly)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chatfly)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/chatfly-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/chatfly-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** customer-support
-**Tools Count:** 8
+
+**Category:** [customer-support](../categories/customer-support.md)
+
+Manage AI chatbots and knowledge bases via CHATFLY — train bots on custom data and track conversations directly from any AI agent.
 
 ## Description
 Connect your **CHATFLY** account to any AI agent and take full control of your custom chatbot workflows through natural conversation. Train and monitor your own AI agents using your business data.
@@ -45,6 +47,33 @@ Connect your **CHATFLY** account to any AI agent and take full control of your c
 - **trigger_bot_training**: Trigger the training process for a chatbot
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CHATFLY** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active chatbots in CHATFLY."
+
+**🤖 AI Agent:**
+> Retrieving your chatbots... I found 3 active bots: 'Support Assistant', 'Sales Closer', and 'Internal FAQ Bot'. All are currently 'Ready' and trained.
+
+---
+
+**👤 You:**
+> "Show me the last 5 conversations for bot 'Support Assistant'."
+
+**🤖 AI Agent:**
+> Retrieving conversations for 'Support Assistant'... I found 5 recent sessions. 3 users were asking about pricing, and 2 were asking about installation.
+
+---
+
+**👤 You:**
+> "Send a test message to bot ID 123: 'How do I reset my password?'"
+
+**🤖 AI Agent:**
+> Sending message to bot 123... The AI responded: 'To reset your password, go to settings and click on Security. You will find the reset link there.'
+
+
 ## Installation & Usage
 
 To install and use the **CHATFLY** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **CHATFLY** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

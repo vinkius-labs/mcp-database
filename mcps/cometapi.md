@@ -1,12 +1,14 @@
 # CometAPI MCP Server
 
-Connect to real-time financial market data with APIs for stocks, forex, and crypto that power trading applications.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/cometapi)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/cometapi)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/cometapi-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/cometapi-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Connect to real-time financial market data with APIs for stocks, forex, and crypto that power trading applications.
 
 ## Description
 Connect your **CometAPI** account to any AI agent and take full control of your multimodal AI workflows through a single, perfectly coordinated intelligence layer.
@@ -51,6 +53,33 @@ Generate AI text response
 List integrated AI providers
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CometAPI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Generate a summary of the latest AI trends using GPT-4."
+
+**🤖 AI Agent:**
+> AI summary generated! I've used GPT-4 to analyze recent breakthroughs. Highlights include advancements in multimodal reasoning and agentic workflows. Would you like a detailed breakdown for any specific trend?
+
+---
+
+**👤 You:**
+> "Create a high-res image of a sustainable city using Midjourney."
+
+**🤖 AI Agent:**
+> Visual generation triggered! I've started creating your sustainable city image on Midjourney. You can access the result here: [image_url]. Shall I generate a matching logo design as well?
+
+---
+
+**👤 You:**
+> "What is my current credit balance and average daily cost?"
+
+**🤖 AI Agent:**
+> Scanning account... You have $25.50 in credits remaining. Your average daily cost is $1.20, giving you approximately 21 days of uptime at current levels. Need a list of supported providers?
+
+
 ## Installation & Usage
 
 To install and use the **CometAPI** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **CometAPI** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

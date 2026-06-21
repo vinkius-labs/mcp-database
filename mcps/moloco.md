@@ -1,12 +1,14 @@
 # Moloco MCP Server
 
-Manage machine learning-powered advertising via Moloco — track campaigns and get analytics directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moloco)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/moloco)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/moloco-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/moloco-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage machine learning-powered advertising via Moloco — track campaigns and get analytics directly from your AI agent.
 
 ## Description
 Connect your **Moloco Ads** account to your AI agent and manage your programmatic advertising campaigns through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Moloco Ads** account to your AI agent and manage your programmati
 Update campaign status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Moloco** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active campaigns in my primary AdAccount."
+
+**🤖 AI Agent:**
+> I've fetched the campaigns for AdAccount 'AC-12345'. You have 4 active campaigns: 'Summer Sale 2024', 'Brand Awareness - Global', and 2 others. Shall I retrieve the performance report for 'Summer Sale 2024'?
+
+---
+
+**👤 You:**
+> "Pause the campaign with ID cp_98765."
+
+**🤖 AI Agent:**
+> Status update initiated... The campaign 'cp_98765' has been successfully PAUSED. I'll continue to monitor your account balance and other active campaigns.
+
+---
+
+**👤 You:**
+> "Check the balance for AdAccount AC-12345."
+
+**🤖 AI Agent:**
+> Retrieving balance... Your AdAccount AC-12345 has a remaining balance of $2,450.00 with a daily budget threshold of $500.00. Based on your current spend, this should last for approximately 5 days.
+
+
 ## Installation & Usage
 
 To install and use the **Moloco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Moloco** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

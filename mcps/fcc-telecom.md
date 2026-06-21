@@ -1,12 +1,14 @@
 # FCC Telecom MCP Server
 
-Search the official USA telecommunications database to audit corporate Internet Providers and Interconnected VoIP carriers.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/fcc-telecom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fcc-telecom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/fcc-telecom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/fcc-telecom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 2
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Search the official USA telecommunications database to audit corporate Internet Providers and Interconnected VoIP carriers.
 
 ## Description
 The **FCC Telecom MCP Server** lets your AI agent search the Universal Service Administrative Company (USAC) and federal Form 499 databases. Easily audit whether a telecom company is legally registered to operate within the United States.
@@ -23,6 +25,34 @@ The **FCC Telecom MCP Server** lets your AI agent search the Universal Service A
 - **search_telecom_filers**: Perform a fuzzy string search across the national telecom database by company brand
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **FCC Telecom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Find details for the telecom provider with Filer ID 829223."
+
+**🤖 AI Agent:**
+> I checked the Form 499 database. Filer 829223 corresponds to an active VoIP carrier and their corporate structure operates normally.
+
+---
+
+**👤 You:**
+> "Can you check if ExampleCorp provides certified internet services?"
+
+**🤖 AI Agent:**
+> Let me search the registry... I found ExampleCorp. They are officially registered as a major Interconnected Telecom Carrier with a validated FRN.
+
+---
+
+**👤 You:**
+> "List all active operational filings tied to FRN ending in 456 last year."
+
+**🤖 AI Agent:**
+> Extracting administrative filings reliably...
+Scanning matching records isolated 2 major reports (Form 499-A) legally cleared systematically without discrepancies.
+
+
 ## Installation & Usage
 
 To install and use the **FCC Telecom** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -31,4 +61,11 @@ To install and use the **FCC Telecom** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

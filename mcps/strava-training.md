@@ -1,12 +1,14 @@
 # Strava Training MCP Server
 
-Analyze Strava activities, segments, streams (HR, power, GPS), zones, laps, and athlete stats.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-training)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/strava-training)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/strava-training-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/strava-training-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 12
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Analyze Strava activities, segments, streams (HR, power, GPS), zones, laps, and athlete stats.
 
 ## Description
 Connect **Strava Training** to any AI agent and unlock deep performance analysis from your Strava data — activity details, time-series streams, heart rate/power zones, segment efforts, lap splits, and lifetime athlete statistics.
@@ -74,6 +76,33 @@ Get time-series data streams for a specific segment effort
 Get time-series data streams for a Strava segment (elevation profile, grade, etc)
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Strava Training** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show my athlete statistics."
+
+**🤖 AI Agent:**
+> Recent stats: 12 runs totaling 85.2 km (avg 7:05/km), 8 rides totaling 320 km with 4,200m elevation. All-time: 542 runs (5,890 km), 234 rides (12,450 km, 125,000m elevation). Biggest climb: 1,850m in a single ride.
+
+---
+
+**👤 You:**
+> "Get activity streams for activity 12345678 with heart rate, power, and speed."
+
+**🤖 AI Agent:**
+> Found 2,340 data points. Heart rate: avg 152 bpm (range 98-185). Power: avg 245W (range 0-480W). Speed: avg 28.5 km/h (max 62 km/h). Activity duration: ~39 minutes. Peaks in power correspond to hill climbs.
+
+---
+
+**👤 You:**
+> "Show my segment efforts on segment 22978."
+
+**🤖 AI Agent:**
+> Found 8 efforts on segment 22978 (Old La Honda Road). Best effort: 14:32 (PR) on 2024-02-15. Recent efforts trending: 15:02, 14:48, 14:32 — showing 2-minute improvement over 3 months. Average HR: 168 bpm on best effort.
+
+
 ## Installation & Usage
 
 To install and use the **Strava Training** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -82,4 +111,11 @@ To install and use the **Strava Training** MCP server in your AI agents (Claude,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

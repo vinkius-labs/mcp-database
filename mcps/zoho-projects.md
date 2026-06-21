@@ -1,12 +1,14 @@
 # Zoho Projects MCP Server
 
-Manage projects, tasks, and milestones via the Zoho Projects V3 API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-projects)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-projects)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-projects-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-projects-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 9
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage projects, tasks, and milestones via the Zoho Projects V3 API.
 
 ## Description
 Connect your **Zoho Projects** account to any AI agent to streamline your project management and team collaboration. This MCP server enables your agent to interact with portals, projects, and tasks directly through natural language interfaces using the latest V3 API.
@@ -50,6 +52,33 @@ List all Zoho Projects portals
 - **list_project_users**: List all users associated with a project
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Projects** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all portals in my Zoho Projects account."
+
+**🤖 AI Agent:**
+> I've retrieved your portals. You have 2 portals: 'Main Business Portal' (ID: 123456) and 'Client Collaborations' (ID: 789012). Which one would you like to access?
+
+---
+
+**👤 You:**
+> "Show me the tasks for project ID '987654' in portal '123456'."
+
+**🤖 AI Agent:**
+> I found 10 tasks for project 987654. Notable ones include 'Design Final Approval', 'Frontend Implementation', and 'API Integration'. Would you like more details on any of them?
+
+---
+
+**👤 You:**
+> "Update task ID '101' in project '987654' to 'Completed' status."
+
+**🤖 AI Agent:**
+> Successfully updated task 101. Its status has been set to 'Completed' in your Zoho project.
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Projects** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Zoho Projects** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

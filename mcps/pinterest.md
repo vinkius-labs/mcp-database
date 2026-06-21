@@ -1,12 +1,14 @@
 # Pinterest MCP Server
 
-Manage your Pinterest profile — audit boards and pins via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pinterest)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/pinterest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/pinterest-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/pinterest-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage your Pinterest profile — audit boards and pins via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire visual discovery ecosystem on **Pinterest**, the platform for inspiration and creative ideas. By connecting Pinterest to your agent, you transform board management and pinning into a natural conversation. Your agent can instantly list your boards, audit your pin library, and create new content without you ever touching a dashboard. Whether you are a content curator or a brand marketer, your agent acts as a real-time creative assistant, ensuring your visual catalog is always organized and inspiration is captured.
@@ -47,6 +49,33 @@ List pins. Optional: filter by board ID
 - **get_pin**: Get details for a specific pin
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Pinterest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my Pinterest boards."
+
+**🤖 AI Agent:**
+> I've retrieved your boards. You have 5 active boards, including 'Home Decor' and 'Travel Goals'. Which one would you like to audit for pins?
+
+---
+
+**👤 You:**
+> "Create a new pin in 'Travel Goals' titled 'Summer in Italy'."
+
+**🤖 AI Agent:**
+> Pin created! 'Summer in Italy' is now live on your 'Travel Goals' board. I've recorded the pin ID for your audit.
+
+---
+
+**👤 You:**
+> "Show me the pins in my 'Home Decor' board."
+
+**🤖 AI Agent:**
+> I've found 12 pins in that board. Notable entries include 'Modern Kitchen' and 'Minimalist Living Room'. Would you like the links for any of them?
+
+
 ## Installation & Usage
 
 To install and use the **Pinterest** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Pinterest** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

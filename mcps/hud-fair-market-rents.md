@@ -1,12 +1,14 @@
 # HUD Fair Market Rents MCP Server
 
-Access official US Department of Housing and Urban Development (HUD) data for Fair Market Rents and Income Limits.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hud-fair-market-rents)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hud-fair-market-rents)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hud-fair-market-rents-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hud-fair-market-rents-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** real-estate
-**Tools Count:** 8
+
+**Category:** [real-estate](../categories/real-estate.md)
+
+Access official US Department of Housing and Urban Development (HUD) data for Fair Market Rents and Income Limits.
 
 ## Description
 Connect directly to the **U.S. Department of Housing and Urban Development (HUD)** API to retrieve critical housing and economic data through natural conversation. This server provides comprehensive access to Fair Market Rents (FMR) and Income Limits (IL) across the United States.
@@ -43,6 +45,33 @@ Connect directly to the **U.S. Department of Housing and Urban Development (HUD)
 - **list_states**: List all states and territories
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HUD Fair Market Rents** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all US states and their codes."
+
+**🤖 AI Agent:**
+> I've retrieved the list of states. You can find codes like Alabama (AL, FIPS: 01), California (CA, FIPS: 06), and New York (NY, FIPS: 36). Which state would you like to explore further?
+
+---
+
+**👤 You:**
+> "Show me the Fair Market Rent data for the state of Florida."
+
+**🤖 AI Agent:**
+> Fetching statewide FMR data for Florida (FL)... I have the data for all metro areas and counties. For example, in the Miami-Miami Beach-Kendall area, the FMR for a 2-bedroom apartment is $2,100. Would you like the full breakdown?
+
+---
+
+**👤 You:**
+> "What are the income limits for entity ID 0603799999?"
+
+**🤖 AI Agent:**
+> Querying Income Limits for entity 0603799999 (Los Angeles County)... The median family income is $98,200. The 'Very Low Income' (50%) limit for a family of four is $59,500. Do you need the limits for other family sizes?
+
+
 ## Installation & Usage
 
 To install and use the **HUD Fair Market Rents** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **HUD Fair Market Rents** MCP server in your AI agents (C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

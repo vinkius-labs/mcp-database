@@ -1,12 +1,14 @@
 # IPRoyal (Proxy Services) MCP Server
 
-Manage proxies via IPRoyal — monitor traffic, rotate credentials, and manage whitelisted IPs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/iproyal-proxy-services)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/iproyal-proxy-services)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/iproyal-proxy-services-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/iproyal-proxy-services-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** developer-tools
-**Tools Count:** 10
+
+**Category:** [developer-tools](../categories/developer-tools.md)
+
+Manage proxies via IPRoyal — monitor traffic, rotate credentials, and manage whitelisted IPs.
 
 ## Description
 Connect your **IPRoyal** account to any AI agent and take full control of your global proxy infrastructure and web scraping operations through natural conversation.
@@ -66,6 +68,33 @@ Revoke an IP from IPRoyal proxy access
 Get precise proxy traffic consumption statistics for an order
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **IPRoyal (Proxy Services)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Check my IPRoyal account balance"
+
+**🤖 AI Agent:**
+> I've retrieved your profile details. Your current account balance is $45.20 USD. Your account status is 'Active' and your email is alex@example.com. Would you like to see your active proxy orders?
+
+---
+
+**👤 You:**
+> "How much traffic have I used for order ID '123456'?"
+
+**🤖 AI Agent:**
+> For order 123456 (Residential Proxies), you have consumed 12.45 GB of traffic. You have 37.55 GB remaining in your current allocation. Would you like to rotate the credentials for this order?
+
+---
+
+**👤 You:**
+> "Generate a proxy connection string for Germany with sticky session"
+
+**🤖 AI Agent:**
+> Generating proxy string… For Germany (DE) with a sticky session, your connection string is: `geo.iproyal.com:10000:username_country-de_session-abc123:password`. You can use this directly in your scraping script.
+
+
 ## Installation & Usage
 
 To install and use the **IPRoyal (Proxy Services)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **IPRoyal (Proxy Services)** MCP server in your AI agents
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

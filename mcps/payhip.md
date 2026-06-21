@@ -1,12 +1,14 @@
 # Payhip MCP Server
 
-Sell ebooks, courses, memberships, and digital downloads directly to your audience with zero upfront costs and simple setup.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/payhip)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/payhip)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/payhip-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/payhip-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 11
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Sell ebooks, courses, memberships, and digital downloads directly to your audience with zero upfront costs and simple setup.
 
 ## Description
 Connect your **Payhip** account to any AI agent and take full control of your digital product orchestration through natural conversation. Payhip is a powerful platform for selling downloads and software, and this integration allows you to manage discount coupons, verify customer license keys, and track software usage directly from your chat interface.
@@ -52,6 +54,33 @@ Disable a license key
 - **verify_license**: Verify a software license key
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Payhip** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Verify license key 'ABCD-1234' for product link 'https://payhip.com/b/xyz'."
+
+**🤖 AI Agent:**
+> I've verified the license. It is currently 'Active' for customer 'John Doe' (ID: 991). Would you like me to increase the usage count for this key?
+
+---
+
+**👤 You:**
+> "Show me all active coupons and their usage statistics for my Payhip store."
+
+**🤖 AI Agent:**
+> You have 6 active coupons. "SUMMER30" (30% off) has been used 47 times generating $2,340 in discounted sales. "LAUNCH50" (50% off) was used 23 times. "WELCOME15" is your most popular at 89 redemptions. 2 coupons expire within 7 days. Total discount value given this month: $1,847.
+
+---
+
+**👤 You:**
+> "Verify the license key LK-8847-ABCD for my premium plugin product and check its usage count."
+
+**🤖 AI Agent:**
+> License LK-8847-ABCD is valid and active. Product: Premium Plugin Suite. Purchased by: tech@meridian.io on March 15, 2025. Current usage: 3 of 5 allowed activations. Last activation: May 2nd from IP 192.168.1.45. The license is set to renew annually on March 15, 2026.
+
+
 ## Installation & Usage
 
 To install and use the **Payhip** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Payhip** MCP server in your AI agents (Claude, Cursor, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

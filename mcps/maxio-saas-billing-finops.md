@@ -1,12 +1,14 @@
 # Maxio (SaaS Billing & FinOps) MCP Server
 
-Manage SaaS billing via Maxio — audit customer contracts, track ARR/MRR metrics, and create invoices.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/maxio-saas-billing-finops)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maxio-saas-billing-finops)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maxio-saas-billing-finops-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maxio-saas-billing-finops-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** money-moves
-**Tools Count:** 10
+
+**Category:** [money-moves](../categories/money-moves.md)
+
+Manage SaaS billing via Maxio — audit customer contracts, track ARR/MRR metrics, and create invoices.
 
 ## Description
 Connect your **Maxio (SaaSOptics)** account to any AI agent and take full control of your enterprise B2B SaaS financial operations, revenue recognition, and contract lifecycle through natural conversation.
@@ -46,6 +48,33 @@ Connect your **Maxio (SaaSOptics)** account to any AI agent and take full contro
 - **update_customer**: Retrieve explicit Cloud logging tracing explicit Vault limits
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Maxio (SaaS Billing & FinOps)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active contracts for customer 'Acme Corp' (ID: 12345)"
+
+**🤖 AI Agent:**
+> I've identified 2 active contracts for Acme Corp: 1) 'Enterprise Platform' (ID: cont-987, ARR: $50,000), and 2) 'Professional Services' (ID: cont-654, ARR: $12,000). Both are in good standing with renewals set for 2027. Would you like to see the billing schedule for the enterprise platform?
+
+---
+
+**👤 You:**
+> "What was our total ARR for the last 5 contracts registered?"
+
+**🤖 AI Agent:**
+> Retrieving recent contract ledgers… The last 5 contracts represent a combined total ARR of $245,500. The largest single contract was 'Globex Global' at $120,000 ARR. I can provide the individual breakdown for each contract if you'd like.
+
+---
+
+**👤 You:**
+> "Create a new customer record for 'Innovative SaaS' in Maxio"
+
+**🤖 AI Agent:**
+> Customer 'Innovative SaaS' has been successfully created. The new Account ID is 'cust-13579'. You can now use the `create_contract` tool to assign subscription terms and revenue mappings to this account.
+
+
 ## Installation & Usage
 
 To install and use the **Maxio (SaaS Billing & FinOps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Maxio (SaaS Billing & FinOps)** MCP server in your AI a
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

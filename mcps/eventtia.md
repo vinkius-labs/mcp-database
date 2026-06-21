@@ -1,12 +1,14 @@
 # Eventtia MCP Server
 
-Equip your AI agent to manage events, track B2B meetings, and monitor attendee data via the Eventtia API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/eventtia)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/eventtia)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/eventtia-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/eventtia-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** collaboration
-**Tools Count:** 10
+
+**Category:** [collaboration](../categories/collaboration.md)
+
+Equip your AI agent to manage events, track B2B meetings, and monitor attendee data via the Eventtia API.
 
 ## Description
 Integrate **Eventtia**, the all-in-one event management platform, directly into your AI workflow. Manage your corporate events and conferences, track registered attendees and speaker profiles, monitor session schedules and B2B business meetings, and oversee your event engagement using natural language.
@@ -44,6 +46,33 @@ Integrate **Eventtia**, the all-in-one event management platform, directly into 
 - **list_event_speakers**: List all speakers registered for a specific event
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Eventtia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active conferences."
+
+**🤖 AI Agent:**
+> I've found 3 active conferences, including 'Global Tech Expo' and 'B2B Sales Summit'. The Tech Expo currently has 850 registered attendees. Would you like to see the meeting schedule for this event?
+
+---
+
+**👤 You:**
+> "Show me the business meetings for event ID '12345'."
+
+**🤖 AI Agent:**
+> For event ID '12345', I've retrieved 45 scheduled business meetings, including pairings between 'TechCorp' and 'Innovation Lab'. 15 meetings are currently in progress. Should I pull the participant roles for these meetings?
+
+---
+
+**👤 You:**
+> "Search for attendees matching 'Sarah' in the Sales Summit."
+
+**🤖 AI Agent:**
+> I've found 3 attendees matching 'Sarah': 'Sarah Miller' (VP Sales), 'Sarah Connor' (Business Analyst), and 'Sarah Williams'. All are registered for the main conference. Would you like the profile details for Sarah Miller?
+
+
 ## Installation & Usage
 
 To install and use the **Eventtia** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Eventtia** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

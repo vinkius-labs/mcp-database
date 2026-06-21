@@ -1,12 +1,14 @@
 # Auth0 MCP Server
 
-Manage IAM operations—users, clients, connections, and logs in your Auth0 tenant directly via your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/auth0)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/auth0-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/auth0-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** fort-knox
-**Tools Count:** 10
+
+**Category:** [fort-knox](../categories/fort-knox.md)
+
+Manage IAM operations—users, clients, connections, and logs in your Auth0 tenant directly via your AI agent.
 
 ## Description
 Connect your **Auth0** tenant to any AI agent and empower it to become a master Identity and Access Management (IAM) operator. Handle sophisticated user operations and global security queries directly through natural conversation.
@@ -66,6 +68,33 @@ List RBAC roles defined intrinsically within the Auth0 Core Engine
 List all users registered in the Auth0 tenant
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Auth0** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all configured Connections registered in our Auth0 tenant."
+
+**🤖 AI Agent:**
+> Found 4 active connections logically bound to your tenant: A core Username-Password-Authentication DB, a broad Google-Oauth2 pipeline, an Enterprise AD/LDAP proxy shielding internal employees, and strangely, a test `apple-id` portal connector.
+
+---
+
+**👤 You:**
+> "Get the detailed JSON block surrounding user ID 'auth0|5ecc9f1...'"
+
+**🤖 AI Agent:**
+> Extracting payload... Here is the raw unified mapping for user `auth0|5ecc9f1...`. Notice the `app_metadata` defines a premium subscriber tier, and their last verified login was 26 hours ago tracking from an unresolved IP in Toronto.
+
+---
+
+**👤 You:**
+> "Fetch the tenant logs and tell me why IPs are getting blocked."
+
+**🤖 AI Agent:**
+> Reviewing system logs from the past 4 hours. A surge of event `Type: fapi` (failed API calls) triggered the Anomaly Detection Shields. Approximately 300 identical sequential requests lacked a valid audience header originating uniformly from an AWS region subnet, tripping the brute-force threshold dynamically.
+
+
 ## Installation & Usage
 
 To install and use the **Auth0** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -74,4 +103,11 @@ To install and use the **Auth0** MCP server in your AI agents (Claude, Cursor, W
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

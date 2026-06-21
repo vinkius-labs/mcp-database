@@ -1,12 +1,14 @@
 # Freshsales MCP Server
 
-Manage your CRM pipelines, track leads, and oversee sales deals via AI agents with Freshsales.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsales)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/freshsales)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/freshsales-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/freshsales-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** business-operations
-**Tools Count:** 12
+
+**Category:** [business-operations](../categories/business-operations.md)
+
+Manage your CRM pipelines, track leads, and oversee sales deals via AI agents with Freshsales.
 
 ## Description
 Connect your **Freshsales** account to any AI agent to automate your sales CRM operations through the Model Context Protocol (MCP). Freshsales is a powerful sales CRM that provides a 360-degree view of your customers. This MCP server enables you to track active deals, manage lead data, and retrieve detailed contact profiles directly through natural conversation.
@@ -48,6 +50,33 @@ Connect your **Freshsales** account to any AI agent to automate your sales CRM o
 - **list_crm_users**: List CRM users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Freshsales** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List my 5 most recent active sales deals."
+
+**🤖 AI Agent:**
+> Retrieving deals... I found 5 active opportunities, including 'Acme Corp Software Expansion' ($50,000) and 'Globex Renewal' ($15,000). Would you like to see their current stages?
+
+---
+
+**👤 You:**
+> "Show me the contact details for 'Jane Smith'."
+
+**🤖 AI Agent:**
+> Searching contacts... I found Jane Smith (jane@example.com). She is the VP of Sales at Example Inc. and has 2 active deals associated with her profile.
+
+---
+
+**👤 You:**
+> "Create a new lead for 'John Doe' (johndoe@email.com)."
+
+**🤖 AI Agent:**
+> Lead created! I have successfully added 'John Doe' (johndoe@email.com) to your CRM. The new Lead ID is 98765.
+
+
 ## Installation & Usage
 
 To install and use the **Freshsales** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Freshsales** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

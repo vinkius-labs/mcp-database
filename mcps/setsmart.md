@@ -1,12 +1,14 @@
 # SetSmart MCP Server
 
-Analyze hotel market performance with benchmarking data that compares your property against competitors and market trends.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/setsmart)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/setsmart)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/setsmart-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/setsmart-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Analyze hotel market performance with benchmarking data that compares your property against competitors and market trends.
 
 ## Description
 Connect your **SetSmart** account to any AI agent and take full control of your multi-channel customer engagement and contact orchestration through natural conversation. SetSmart provides a robust platform for managing business communications via WhatsApp and SMS, and this integration allows you to retrieve contact metadata, send automated messages, and manage tags directly from your chat interface.
@@ -47,6 +49,33 @@ No more wrestling with multiple messaging tabs to reach your customers. Your AI 
 - **update_contact**: Update an existing contact
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **SetSmart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all contacts tagged as 'High Priority' in SetSmart."
+
+**🤖 AI Agent:**
+> I've retrieved your contacts. You have 12 active leads tagged as 'High Priority', including 'Alice Brown' and 'Acme Global'. Would you like to send them a WhatsApp message?
+
+---
+
+**👤 You:**
+> "Send a WhatsApp message to +1234567890 saying 'Hello, your appointment is confirmed'."
+
+**🤖 AI Agent:**
+> Processing message... The WhatsApp message has been successfully sent to +1234567890. Should I log this activity in the contact's history?
+
+---
+
+**👤 You:**
+> "Get the complete details for contact ID 98765."
+
+**🤖 AI Agent:**
+> Fetching contact profile... Contact 98765 ('Robert Smith') has email 'robert@example.com' and is tagged with 'Enterprise' and 'New Lead'. Would you like to see their recent message history?
+
+
 ## Installation & Usage
 
 To install and use the **SetSmart** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **SetSmart** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

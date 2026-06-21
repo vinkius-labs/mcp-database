@@ -1,12 +1,14 @@
 # TrueLayer MCP Server
 
-Manage open banking payments, payouts, and account data via TrueLayer — initiate transfers, check balances, and list transactions directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/truelayer)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/truelayer)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/truelayer-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/truelayer-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 13
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Manage open banking payments, payouts, and account data via TrueLayer — initiate transfers, check balances, and list transactions directly from any AI agent.
 
 ## Description
 Connect your **TrueLayer** account to any AI agent to automate financial operations and open banking workflows through natural conversation.
@@ -56,6 +58,33 @@ List user bank accounts (Data API)
 - **verify_account**: Verify account ownership
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **TrueLayer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my merchant accounts and their current status."
+
+**🤖 AI Agent:**
+> I've retrieved your merchant accounts. You have 3 active accounts: 'Main GBP' (ID: acc_01), 'Euro Operations' (ID: acc_02), and 'Savings' (ID: acc_03). Would you like to see the balance for any of these?
+
+---
+
+**👤 You:**
+> "Create a payment of £25.50 for user 'John Doe'."
+
+**🤖 AI Agent:**
+> I'm initiating a payment of 2550 minor units (GBP). I'll need the beneficiary details and payment method to complete the `create_payment` request. Should I use your default merchant account as the beneficiary?
+
+---
+
+**👤 You:**
+> "Show me the last 5 transactions for account acc_01."
+
+**🤖 AI Agent:**
+> Fetching transaction history for acc_01... I found 5 recent transactions, including a payment of £100.00 from 'User A' and a payout of £50.00 to 'User B'. Would you like the full details of the most recent one?
+
+
 ## Installation & Usage
 
 To install and use the **TrueLayer** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -64,4 +93,11 @@ To install and use the **TrueLayer** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

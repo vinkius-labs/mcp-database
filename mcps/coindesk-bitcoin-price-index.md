@@ -1,12 +1,14 @@
 # CoinDesk Bitcoin Price Index MCP Server
 
-Universal Bitcoin intelligence — get real-time BPI prices and supported currencies via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/coindesk-bitcoin-price-index)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/coindesk-bitcoin-price-index)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/coindesk-bitcoin-price-index-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/coindesk-bitcoin-price-index-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** finance-accounting
-**Tools Count:** 8
+
+**Category:** [finance-accounting](../categories/finance-accounting.md)
+
+Universal Bitcoin intelligence — get real-time BPI prices and supported currencies via AI.
 
 ## Description
 Equip your AI agent with real-time cryptocurrency intelligence through the **CoinDesk** MCP server. This integration provides instant access to the Bitcoin Price Index (BPI), the industry standard for Bitcoin valuation. Your agent can retrieve current prices in USD, GBP, and EUR, and explore the list of all supported global currencies. Whether you are tracking market moves, auditing portfolio values, or researching crypto trends, your agent acts as a dedicated financial analyst through natural conversation.
@@ -43,6 +45,33 @@ Get current Bitcoin price in a specific local currency
 - **list_supported_currencies**: List supported fiat currencies for Bitcoin tracking
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **CoinDesk Bitcoin Price Index** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the current Bitcoin price?"
+
+**🤖 AI Agent:**
+> Retrieving the latest Bitcoin Price Index... According to CoinDesk, Bitcoin is currently trading at $65,432.10 USD. I also have the rates in GBP and EUR if you're interested.
+
+---
+
+**👤 You:**
+> "Show me the Bitcoin price in British Pounds (GBP)."
+
+**🤖 AI Agent:**
+> Checking the BPI... Bitcoin is currently worth £51,200.45 GBP. Would you like to see the price in other currencies?
+
+---
+
+**👤 You:**
+> "List all currencies supported by the Bitcoin index."
+
+**🤖 AI Agent:**
+> Retrieving the supported currency list... CoinDesk supports a wide range of currencies including AED, ARS, AUD, BRL, CAD, and many more. I can provide the full details if you'd like to see specific codes.
+
+
 ## Installation & Usage
 
 To install and use the **CoinDesk Bitcoin Price Index** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -51,4 +80,11 @@ To install and use the **CoinDesk Bitcoin Price Index** MCP server in your AI ag
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

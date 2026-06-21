@@ -1,12 +1,14 @@
 # Growth Strategist MCP Server
 
-AI agents asked for strategy always recommend the same five things: social media, engaging content, brand awareness. None of it is strategy — it's autocomplete. Growth Strategist demands specifics: name the person, prove channel fit, take a unique position, cite evidence, tie the outcome to revenue.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-strategist)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/growth-strategist)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/growth-strategist-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/growth-strategist-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+AI agents asked for strategy always recommend the same five things: social media, engaging content, brand awareness. None of it is strategy — it's autocomplete. Growth Strategist demands specifics: name the person, prove channel fit, take a unique position, cite evidence, tie the outcome to revenue.
 
 ## Description
 AI agents generating marketing strategy produce the same 5 things every time: "leverage social media", "create engaging content", "build brand awareness", "use SEO and paid ads", "partner with influencers". This is audience-blind, channel-mismatched, undifferentiated, unvalidated, vanity-driven noise. It's not strategy — it's autocomplete.
@@ -48,6 +50,33 @@ The tool validates logical consistency. If the agent says `STRATEGY_PROVEN` but 
 Structured reflection tool for growth strategy — forces ICP identification, channel-fit validation with evidence, differentiated positioning, data-backed evidence, and measurable business outcomes. Catches Audience Blindness (targeting "marketers" or "developers" instead of a named person — "Head of Growth at Series A SaaS with <$1M ARR, spending 60% of time in HN/Twitter/ProductHunt, frustrated with $400 CAC from Google Ads, needs to prove channel efficiency to board by Q3" is an ICP. "Marketers" is everyone and nobody. The sharper the ICP, the sharper the tactic), Channel Mismatch (assuming a channel reaches your ICP without evidence — "LinkedIn works for B2B" is a platitude. "Our ICP searches 'SaaS metrics dashboard' 8,100 times/month per Ahrefs, and the top 3 results are 2019 blog posts with no product mention" is channel evidence. Channel fit requires proof the ICP is there AND receptive), Generic Strategy (positioning that any competitor can also claim — "we are faster and easier" is what everyone says. Differentiation EXCLUDES — "we only serve single-operator restaurants, not chains" is a position. If your competitor can truthfully copy your positioning, it is not positioning), Unvalidated Recommendation (citing no evidence — "content marketing works for SaaS" is folklore. "Lemlist grew from 0→$10M ARR via cold email teardowns on YouTube — 47 videos, 3.2M views, 12% of signups from YT attribution" is evidence. Based on ICP validation frameworks and Growth Hacking research: Ziakis 2023, Khosrawi-Rad 2022), and Vanity-Driven Outcome (measuring impressions and followers instead of revenue — "10K impressions" is a number, not a business outcome. "12% of attributed signups from this channel convert to paid within 30 days at $35 CAC vs $400 Google Ads baseline" IS a business outcome). Call once per growth tactic recommendation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Growth Strategist** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "I want to grow my developer tool by posting on LinkedIn. Validate this growth tactic."
+
+**🤖 AI Agent:**
+> Verdict: AUDIENCE_BLIND. 'Developer tool' is not an ICP. Who exactly? Solo developers? CTOs at Series A startups? DevOps engineers at Fortune 500? Each has different pain points, spends time in different places, and responds to different messaging. Name the exact person first.
+
+---
+
+**👤 You:**
+> "My ICP is 'Head of AI at mid-market SaaS companies with 50-200 engineers struggling with agent reliability.' I want to publish a benchmark on Hacker News showing our tools catch 40% more reasoning errors. Validate."
+
+**🤖 AI Agent:**
+> Verdict: STRATEGY_PROVEN. ICP is specific (role + company stage + pain point). Channel fits (HN is where technical decision-makers evaluate tools). Differentiator is measurable ('40% more errors caught' — verifiable, not a claim). Evidence is the benchmark itself. Outcome is measurable (benchmark engagement → trial signups → activation). Execute.
+
+---
+
+**👤 You:**
+> "I want to 'increase brand awareness through thought leadership content on social media.' Validate this tactic."
+
+**🤖 AI Agent:**
+> Verdict: VANITY_DRIVEN. Multiple failures detected. (1) 'Brand awareness' is a vanity metric — tie the outcome to revenue, CAC reduction, or conversion rate. (2) 'Social media' is not a channel — which platform, and why does your ICP spend time there? (3) 'Thought leadership' is not a differentiator — every competitor claims thought leadership. Take a position that excludes.
+
+
 ## Installation & Usage
 
 To install and use the **Growth Strategist** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -56,4 +85,11 @@ To install and use the **Growth Strategist** MCP server in your AI agents (Claud
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # Upper Route Planner MCP Server
 
-Plan delivery routes for multiple drivers with optimization algorithms that minimize drive time and maximize daily stops.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/upper-route-planner)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/upper-route-planner)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/upper-route-planner-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/upper-route-planner-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 6
+
+**Category:** [productivity](../categories/productivity.md)
+
+Plan delivery routes for multiple drivers with optimization algorithms that minimize drive time and maximize daily stops.
 
 ## Description
 Connect your **Upper Route Planner** account to any AI agent and take full control of your delivery logistics and high-fidelity route orchestration through natural conversation.
@@ -44,6 +46,33 @@ No more manual route checking or missing stop updates. Your AI acts as your dedi
 - **check_upper_status**: Check API Status
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Upper Route Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all delivery routes scheduled for today."
+
+**🤖 AI Agent:**
+> I've retrieved your routes. You currently have 8 active high-fidelity routes, including 'North Sector Loop' (Driver: Alex) and 'Downtown Express'. Would you like to see the detailed stop metadata for any of them?
+
+---
+
+**👤 You:**
+> "Create a new delivery task for '123 Tech St' with contact 'John Doe'."
+
+**🤖 AI Agent:**
+> Logistics provisioned! I've successfully generated a new high-fidelity delivery task for 'John Doe' at '123 Tech St'. This record is now live in Upper. Shall I verify the available route technical windows for assignment?
+
+---
+
+**👤 You:**
+> "Check the status of route stop 'stop_456'."
+
+**🤖 AI Agent:**
+> Stop directory orchestrated! Stop 'stop_456' is currently 'COMPLETED' with a recorded high-fidelity proof of delivery. Your API connection is healthy. Shall I retrieve the detailed timing metadata for this stop?
+
+
 ## Installation & Usage
 
 To install and use the **Upper Route Planner** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Upper Route Planner** MCP server in your AI agents (Cla
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

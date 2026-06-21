@@ -1,12 +1,14 @@
 # Mealie (Recipe Manager) MCP Server
 
-Manage your Mealie recipes, meal plans, and shopping lists directly through your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mealie-recipe-manager)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mealie-recipe-manager)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mealie-recipe-manager-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mealie-recipe-manager-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 13
+
+**Category:** [productivity](../categories/productivity.md)
+
+Manage your Mealie recipes, meal plans, and shopping lists directly through your AI agent.
 
 ## Description
 Connect your **Mealie** instance to any AI agent and take full control of your kitchen workflow. From organizing recipes to automating your weekly meal planning, your AI acts as a digital sous-chef.
@@ -47,6 +49,33 @@ Connect your **Mealie** instance to any AI agent and take full control of your k
 - **update_recipe**: Update an existing recipe
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mealie (Recipe Manager)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my recipes in Mealie."
+
+**🤖 AI Agent:**
+> I've found 12 recipes in your Mealie instance. Some highlights include 'Spicy Taco Night', 'Homemade Sourdough', and 'Garden Salad'. Would you like the details for any of these?
+
+---
+
+**👤 You:**
+> "Get the full recipe for the slug 'classic-lasagna'."
+
+**🤖 AI Agent:**
+> Retrieved 'Classic Lasagna'. It yields 8 servings and requires: lasagna noodles, ground beef, ricotta, and marinara sauce. The instructions involve layering and baking for 45 minutes. Should I add these ingredients to your shopping list?
+
+---
+
+**👤 You:**
+> "Mark item ID 'milk-123' as checked in shopping list 'grocery-list-456'."
+
+**🤖 AI Agent:**
+> Done! I've updated the status of 'Milk' in your grocery list to completed.
+
+
 ## Installation & Usage
 
 To install and use the **Mealie (Recipe Manager)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +84,11 @@ To install and use the **Mealie (Recipe Manager)** MCP server in your AI agents 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

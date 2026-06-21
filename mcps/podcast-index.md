@@ -1,12 +1,14 @@
 # Podcast Index MCP Server
 
-Access the open podcast ecosystem — search for shows, retrieve episode metadata, and discover trending content directly from your AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/podcast-index)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/podcast-index)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/podcast-index-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/podcast-index-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** audio-music
-**Tools Count:** 16
+
+**Category:** [audio-music](../categories/audio-music.md)
+
+Access the open podcast ecosystem — search for shows, retrieve episode metadata, and discover trending content directly from your AI agent.
 
 ## Description
 Connect to the **Podcast Index** to tap into a massive, independent database of podcasts and episodes. This MCP server allows your AI agent to browse the open podcasting directory without the restrictions of proprietary platforms.
@@ -50,6 +52,33 @@ Connect to the **Podcast Index** to tap into a massive, independent database of 
 - **search_by_title**: Search for podcasts by title
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Podcast Index** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Search for podcasts about artificial intelligence using a general term."
+
+**🤖 AI Agent:**
+> I've searched the index for 'artificial intelligence'. I found several popular shows including 'The AI Podcast', 'Practical AI', and 'AI in Business'. Would you like the episode list for any of these?
+
+---
+
+**👤 You:**
+> "Find all podcasts featuring Lex Fridman."
+
+**🤖 AI Agent:**
+> Searching for podcasts associated with Lex Fridman... I found his primary show 'Lex Fridman Podcast' (Feed ID: 750746) and several others where he has appeared as a guest. Should I list the most recent episodes from his main show?
+
+---
+
+**👤 You:**
+> "Get the latest episodes for the podcast with feed ID 750746."
+
+**🤖 AI Agent:**
+> Fetching episodes for Feed ID 750746... The latest episodes include '#450 – Kevin Hart', '#449 – Donald Trump', and '#448 – Mark Zuckerberg'. Would you like the specific details or GUID for any of these episodes?
+
+
 ## Installation & Usage
 
 To install and use the **Podcast Index** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -58,4 +87,11 @@ To install and use the **Podcast Index** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

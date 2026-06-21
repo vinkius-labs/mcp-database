@@ -1,12 +1,14 @@
 # Mastercard MCP Server
 
-Identify cards, validate accounts, find merchants, and detect fraud via Mastercard payment APIs.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/mastercard)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/mastercard)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/mastercard-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/mastercard-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 12
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Identify cards, validate accounts, find merchants, and detect fraud via Mastercard payment APIs.
 
 ## Description
 Connect **Mastercard** payment infrastructure to any AI agent and unlock powerful payment intelligence, fraud detection, merchant discovery, and card validation capabilities through natural conversation.
@@ -78,6 +80,33 @@ Report a confirmed fraudulent transaction to Mastercard Fraud and Loss Database
 Validate a payment card account number to check if it is active and valid
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Mastercard** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What type of card is 542418 and which bank issued it?"
+
+**🤖 AI Agent:**
+> Running BIN lookup for 542418... This is a Mastercard World Elite credit card issued by Banco Exemplo S.A. in Brazil. It's a premium tier card (not prepaid, not commercial) with BRL as the primary currency. The BIN range covers 54241800 to 54241899.
+
+---
+
+**👤 You:**
+> "Find restaurants near São Paulo city center that accept Mastercard within 3km."
+
+**🤖 AI Agent:**
+> Found 27 restaurants within 3km of São Paulo center. Top results include: Restaurante Paulista (MCC: 5812) at Av. Paulista, 500; Sabor Brasileiro on Rua Augusta, 1200; and Pizzaria Bella on Rua Oscar Freire, 800. All accept Mastercard. Would you like details on any specific restaurant?
+
+---
+
+**👤 You:**
+> "Validate card number 5123456789012346 before I process this payment."
+
+**🤖 AI Agent:**
+> Card validation complete: ****2346 is VALID. Account type: Credit card. Issuer: First National Bank. The card is active and ready for transactions. You can proceed with processing this payment safely.
+
+
 ## Installation & Usage
 
 To install and use the **Mastercard** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -86,4 +115,11 @@ To install and use the **Mastercard** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

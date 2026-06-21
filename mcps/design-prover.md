@@ -1,12 +1,14 @@
 # Design Prover MCP Server
 
-Every AI frontend looks identical: hero, 3 cards, 3 cards, CTA, rounded-xl, shadow-lg, blue/gray/white. Design Prover forces the agent to prove its design has dramatic hierarchy, unpredictable layout, intentional whitespace, commanding typography, and color with actual personality.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/design-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/design-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/design-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/design-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+Every AI frontend looks identical: hero, 3 cards, 3 cards, CTA, rounded-xl, shadow-lg, blue/gray/white. Design Prover forces the agent to prove its design has dramatic hierarchy, unpredictable layout, intentional whitespace, commanding typography, and color with actual personality.
 
 ## Description
 Tell an AI agent to build a landing page and you know exactly what you'll get: centered hero with gradient background, three feature cards in a row, three testimonial cards, pricing table with the middle plan highlighted, four-column footer. rounded-xl on everything, shadow-lg on the cards, gap-6 between them, bg-white/bg-gray-50, blue-600 buttons. Every. Single. Time.
@@ -42,6 +44,33 @@ Professional design is made of DECISIONS. AI assembles defaults. Every rounded-x
 Structured reflection tool that forces the agent to PROVE its frontend design breaks AI-generated patterns before writing HTML/CSS. AI frontends follow the same skeleton: hero → 3 cards → 3 cards → CTA, rounded-xl, shadow-lg, gap-6, blue/gray/white. This tool catches that skeleton and forces intentional design. Catches Flat Hierarchy (no element dominates — everything is the same size, weight, and color. The eye wanders without a focal point. If nothing commands attention, the design is flat), Card Grid (hero → 3 cards → 3 cards → CTA. If you can describe the layout as "N cards in a row," it is the AI default skeleton — every AI-generated page looks identical), Uniform Spacing (same padding and gap everywhere — gap-6, p-8, rounded-xl on repeat. The VARIATION between generous whitespace and tight clusters IS the design), Muted Typography (text-sm to text-5xl with one font family. No drama. 72px display + 14px body = 5:1 ratio = hierarchy. Default scale = default boredom), and Safe Palette (blue/gray/white — the AI startup kit. If you can swap the logo and the page looks like any other SaaS landing page, the palette has no identity). Call once per frontend design before writing any HTML/CSS
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Design Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Build a landing page for a project management SaaS. Make it modern and clean with feature cards."
+
+**🤖 AI Agent:**
+> Multiple rejections. (1) FLAT_HIERARCHY — what dominates? (2) CARD_GRID — 'feature cards' is the AI skeleton. (3) 'Modern and clean' describes every AI design ever made. What does this FEEL like? A cockpit? A magazine? Name the emotion, the density, the unexpected element. Redesign before writing code.
+
+---
+
+**👤 You:**
+> "Focal: metric '99.97%' at 96px mono bold on #0a0a0f. Layout: full-bleed dark hero, asymmetric 65/35 below, single-column manifesto section. Type: 96px/Jetbrains Mono + 15px/Inter. Color: #0a0a0f + #00d4ff cyan accent + #1a1a2e surfaces."
+
+**🤖 AI Agent:**
+> Verdict: DESIGN_READY. Hierarchy: 96px metric vs 15px body = 6.4:1 ratio. Layout breaks grid: full-bleed hero, asymmetric columns, manifesto section. Whitespace contrast present. Type: two families (JetBrains Mono + Inter), dramatic scale. Color: dark + cyan = technical/premium. This design has decisions, not defaults. Build it.
+
+---
+
+**👤 You:**
+> "Focal: hero headline. Layout: hero + 3 feature cards + pricing. Type: text-xl to text-4xl. Color: blue-600 primary, gray-100 background."
+
+**🤖 AI Agent:**
+> 5 rejections. (1) FLAT_HIERARCHY — 'hero headline' is vague. Size? Font? Ratio? (2) CARD_GRID — 'hero + 3 cards + pricing' is the AI skeleton verbatim. (3) UNIFORM_SPACING — no whitespace contrast specified. (4) MUTED_TYPE — text-xl to text-4xl is Tailwind defaults, not design. (5) SAFE_PALETTE — blue-600 + gray-100 is the universal AI color kit. Fix all five.
+
+
 ## Installation & Usage
 
 To install and use the **Design Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Design Prover** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

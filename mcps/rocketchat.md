@@ -1,12 +1,14 @@
 # Rocket.Chat MCP Server
 
-Connect your AI assistant to Rocket.Chat to seamlessly send messages, explore channels, manage directories, and orchestrate chat operations directly.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketchat)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/rocketchat)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/rocketchat-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/rocketchat-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** talk-to-me
-**Tools Count:** 10
+
+**Category:** [talk-to-me](../categories/talk-to-me.md)
+
+Connect your AI assistant to Rocket.Chat to seamlessly send messages, explore channels, manage directories, and orchestrate chat operations directly.
 
 ## Description
 Connect your conversational assistant directly to **Rocket.Chat**, the open-source team communication platform. This integration transforms your AI into an active participant capable of chatting, sending notifications to channels, identifying active users, and auditing chat room data organically within your workspace.
@@ -46,6 +48,33 @@ Deletes a message from a room
 - **list_users**: Lists all users in the workspace directory
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Rocket.Chat** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all of my active direct messages."
+
+**🤖 AI Agent:**
+> I checked your direct communications using `list_direct_messages` and retrieved 4 active room IDs. These IDs represent ongoing 1-on-1 private channels. Let me know if you would like me to list public channels or drop a message into one of these direct rooms.
+
+---
+
+**👤 You:**
+> "Send a welcome message to #general thanking the new members."
+
+**🤖 AI Agent:**
+> Done. I invoked the `chat_post_message` tool assigning `#general` as the destination. The room successfully received the message: 'Welcome to all the new members! Glad to have you here.' Let me know if you would like me to modify or erase it.
+
+---
+
+**👤 You:**
+> "Find and get the user info for the ID abCD123."
+
+**🤖 AI Agent:**
+> I utilized the `get_user_info` tool passing the specific ID. The resulting payload revealed this belongs to user 'Richard', logged as active, carrying an 'Admin' organizational role within your servers. I can list their joined groups next if you want.
+
+
 ## Installation & Usage
 
 To install and use the **Rocket.Chat** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -54,4 +83,11 @@ To install and use the **Rocket.Chat** MCP server in your AI agents (Claude, Cur
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

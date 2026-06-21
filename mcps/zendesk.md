@@ -1,12 +1,14 @@
 # Zendesk MCP Server
 
-Manage support tickets, users, and organizations on Zendesk — the complete customer service platform for high-scale teams.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zendesk)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zendesk-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zendesk-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 9
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage support tickets, users, and organizations on Zendesk — the complete customer service platform for high-scale teams.
 
 ## Description
 Connect your **Zendesk** account to any AI agent and manage your customer service infrastructure through natural conversation.
@@ -53,6 +55,33 @@ Searches for tickets using the Zendesk search syntax
 Lists shared and personal ticket views
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zendesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all open tickets in Zendesk."
+
+**🤖 AI Agent:**
+> I found 8 open tickets. The most recent are: 1. 'Login issue' (ID: 501, Priority: High), 2. 'Billing question' (ID: 502, Priority: Normal), and 3. 'Feature request' (ID: 503, Priority: Low). Which one would you like to inspect?
+
+---
+
+**👤 You:**
+> "Search for tickets with the tag 'escalation' that are still pending."
+
+**🤖 AI Agent:**
+> Searching Zendesk... I found 3 pending tickets with the 'escalation' tag: 1. #550 (Escalated to Engineering), 2. #555 (Critical bug report), and 3. #560 (Data recovery request). Would you like the full details for any of these?
+
+---
+
+**👤 You:**
+> "Show me the contact info for user ID '123456789'."
+
+**🤖 AI Agent:**
+> User ID 123456789 found: Name: John Doe, Email: john@example.com, Role: End-user, Organization: Acme Corp. He has 3 active tickets. Would you like me to list them for you?
+
+
 ## Installation & Usage
 
 To install and use the **Zendesk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -61,4 +90,11 @@ To install and use the **Zendesk** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

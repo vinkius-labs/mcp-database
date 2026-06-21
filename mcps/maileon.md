@@ -1,12 +1,14 @@
 # Maileon MCP Server
 
-Manage email marketing contacts, mailings, and reporting via the Maileon REST API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/maileon)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/maileon)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/maileon-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/maileon-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 9
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Manage email marketing contacts, mailings, and reporting via the Maileon REST API.
 
 ## Description
 Connect your **Maileon** account to any AI agent to automate your professional email marketing and audience management. This MCP server enables your agent to manage subscribers, control mailing lifecycles, and retrieve detailed performance statistics directly from natural language interfaces.
@@ -52,6 +54,33 @@ List all mailings (campaigns)
 - **list_unsubscription_events**: List recent unsubscription events
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Maileon** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active mailings in my Maileon account."
+
+**🤖 AI Agent:**
+> I've retrieved your mailings. You have 5 campaigns, including 'Summer Newsletter (ID: 12345)', 'Product Launch', and 'Welcome Sequence'. Which one would you like to see statistics for?
+
+---
+
+**👤 You:**
+> "Get the latest statistics for mailing ID '12345'."
+
+**🤖 AI Agent:**
+> I've fetched the statistics for mailing 12345. Currently, it has a 25.4% open rate and a 3.2% click-through rate across 10,000 recipients.
+
+---
+
+**👤 You:**
+> "Add 'new-user@example.com' to my Maileon contacts."
+
+**🤖 AI Agent:**
+> Successfully created the contact record for new-user@example.com. The new subscriber is now registered in your database.
+
+
 ## Installation & Usage
 
 To install and use the **Maileon** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -60,4 +89,11 @@ To install and use the **Maileon** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

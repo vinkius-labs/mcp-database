@@ -1,12 +1,14 @@
 # PostHog MCP Server
 
-Manage product analytics and feature flags via PostHog — query events, inspect cohorts, toggle flags and create annotations from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/posthog-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/posthog-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/posthog-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/posthog-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** loved-by-devs
-**Tools Count:** 13
+
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+
+Manage product analytics and feature flags via PostHog — query events, inspect cohorts, toggle flags and create annotations from any AI agent.
 
 ## Description
 Connect your **PostHog** account to any AI agent and gain full control over your product analytics, feature flags and user cohorts through natural conversation.
@@ -77,6 +79,33 @@ List PostHog projects
 Update an existing PostHog feature flag
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **PostHog** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me all feature flags and which ones are enabled."
+
+**🤖 AI Agent:**
+> I found 8 feature flags. 5 are currently enabled: 'new-checkout' (80% rollout), 'dark-mode' (100%), 'ai-suggestions' (25%), 'beta-dashboard' (50%) and 'export-v2' (100%). 3 are disabled: 'legacy-search', 'old-onboarding' and 'deprecated-api'.
+
+---
+
+**👤 You:**
+> "Create an annotation for today's deployment of version 3.2.0."
+
+**🤖 AI Agent:**
+> Done! I've created an annotation 'Deployed v3.2.0' pinned to today's date. It will appear on all relevant insights graphs so you can correlate any metric changes with this deployment.
+
+---
+
+**👤 You:**
+> "Show me the profile of user 'user_12345'."
+
+**🤖 AI Agent:**
+> Here's the profile for user_12345: email is jane@example.com, signed up 3 months ago, last active 2 hours ago. Properties include plan:premium, company:Acme Inc, and role:admin. They've triggered 847 events including 120 pageviews and 45 purchases.
+
+
 ## Installation & Usage
 
 To install and use the **PostHog** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -85,4 +114,11 @@ To install and use the **PostHog** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

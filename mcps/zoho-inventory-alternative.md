@@ -1,12 +1,14 @@
 # Zoho Inventory MCP Server
 
-Manage inventory, orders, and contacts on Zoho Inventory with AI agents.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-inventory-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-inventory-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/zoho-inventory-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/zoho-inventory-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Manage inventory, orders, and contacts on Zoho Inventory with AI agents.
 
 ## Description
 Connect your **Zoho Inventory** account to any AI agent to automate your supply chain and order management workflows through natural conversation.
@@ -54,6 +56,33 @@ List associated Zoho organizations
 - **list_sales_orders**: List all sales orders
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Zoho Inventory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Create a new inventory item called 'Mechanical Keyboard Pro' with a sales rate of 129.99 and fetch the complete item list to verify."
+
+**🤖 AI Agent:**
+> I successfully created the 'Mechanical Keyboard Pro' with a rate of $129.99. Your total inventory now contains 156 items. Let me know if you need to update its stock levels.
+
+---
+
+**👤 You:**
+> "List the most recent purchase orders and show me the details of any that are marked as 'Pending Approval'."
+
+**🤖 AI Agent:**
+> I retrieved 5 recent purchase orders. There are 2 marked as 'Pending Approval': PO-1024 to 'TechSuppliers Inc' for $4,500 and PO-1025 to 'Global Logistics' for $850. Would you like me to approve them?
+
+---
+
+**👤 You:**
+> "Search the contacts directory for the vendor 'Acme Corp' and fetch their outstanding invoice balance."
+
+**🤖 AI Agent:**
+> I found the contact 'Acme Corp' (Contact ID: 839201). They currently have 3 outstanding invoices with a total unpaid balance of $12,450.00.
+
+
 ## Installation & Usage
 
 To install and use the **Zoho Inventory** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -62,4 +91,11 @@ To install and use the **Zoho Inventory** MCP server in your AI agents (Claude, 
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

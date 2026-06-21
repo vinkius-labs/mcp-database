@@ -1,12 +1,14 @@
 # Stormglass MCP Server
 
-Access high-resolution global weather and marine data — fetch forecasts, tide levels, astronomy data, and biological marine metrics directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stormglass)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/stormglass)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/stormglass-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/stormglass-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 5
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access high-resolution global weather and marine data — fetch forecasts, tide levels, astronomy data, and biological marine metrics directly from any AI agent.
 
 ## Description
 Connect the **Stormglass** API to your AI agent to access professional-grade environmental data for any coordinate on Earth. Perfect for maritime logistics, scientific research, and outdoor planning.
@@ -40,6 +42,33 @@ Connect the **Stormglass** API to your AI agent to access professional-grade env
 - **get_weather_point**: Fetch weather data for a specific coordinate
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Stormglass** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Get the current wind speed and wave height for San Francisco (lat 37.7749, lng -122.4194)."
+
+**🤖 AI Agent:**
+> I've retrieved the weather data for San Francisco. Currently, the wind speed is 12 knots and the wave height is 1.5 meters according to NOAA data.
+
+---
+
+**👤 You:**
+> "What are the high and low tides in Lisbon for the next 24 hours?"
+
+**🤖 AI Agent:**
+> Checking tide extremes for Lisbon... The next high tide is expected at 2:45 PM (1.2m) and the next low tide at 9:15 PM (0.3m).
+
+---
+
+**👤 You:**
+> "Show me the sunrise and sunset times for Tokyo today."
+
+**🤖 AI Agent:**
+> For Tokyo today, the sun rose at 6:12 AM and is expected to set at 5:45 PM. The moon is currently in its Waxing Gibbous phase.
+
+
 ## Installation & Usage
 
 To install and use the **Stormglass** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -48,4 +77,11 @@ To install and use the **Stormglass** MCP server in your AI agents (Claude, Curs
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

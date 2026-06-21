@@ -1,12 +1,14 @@
 # Emarsys MCP Server
 
-Equip your AI agent to manage email campaigns, track contact lists, and monitor automation programs via the Emarsys API.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/emarsys)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emarsys)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emarsys-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emarsys-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** marketing-automation
-**Tools Count:** 10
+
+**Category:** [marketing-automation](../categories/marketing-automation.md)
+
+Equip your AI agent to manage email campaigns, track contact lists, and monitor automation programs via the Emarsys API.
 
 ## Description
 Integrate **Emarsys**, the comprehensive customer engagement platform, directly into your AI workflow. Manage your email marketing campaigns and contact lists, track audience segments and automation programs, monitor trigger events and registration forms, and oversee your omnichannel engagement using natural language.
@@ -44,6 +46,33 @@ Integrate **Emarsys**, the comprehensive customer engagement platform, directly 
 - **list_audience_segments**: List all audience segments (filters) in your account
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Emarsys** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all active email campaigns."
+
+**🤖 AI Agent:**
+> I've found several campaigns, including 'Summer Flash Sale' and 'Weekly Round-up'. The Summer Flash Sale is currently 'Launched' and was sent to 50,000 contacts. Would you like to see the details?
+
+---
+
+**👤 You:**
+> "Show me the audience segments in my account."
+
+**🤖 AI Agent:**
+> I've retrieved your segments, including 'High-Value Customers' (1,200 contacts) and 'Recent Sign-ups' (5,500 contacts). Should I check the filter criteria for the High-Value segment?
+
+---
+
+**👤 You:**
+> "What automation programs are currently running?"
+
+**🤖 AI Agent:**
+> You have 3 active automation programs: 'Welcome Journey', 'Abandoned Cart Recovery', and 'Post-Purchase Follow-up'. Should I pull the latest activity for the Abandoned Cart program?
+
+
 ## Installation & Usage
 
 To install and use the **Emarsys** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Emarsys** MCP server in your AI agents (Claude, Cursor,
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

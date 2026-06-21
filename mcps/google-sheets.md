@@ -1,12 +1,14 @@
 # Google Sheets MCP Server
 
-Interact with Google Sheets to read, write, and manipulate data via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/google-sheets)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/google-sheets-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/google-sheets-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Interact with Google Sheets to read, write, and manipulate data via AI.
 
 ## Description
 Connect **Google Sheets** to your AI agent and turn conversational commands into complex spreadsheet operations. Read data from specific ranges, append new rows, and update existing values across all your Google Sheets without writing a single formula.
@@ -47,6 +49,36 @@ Your AI agent acts as a virtual data entry clerk and spreadsheet analyst, capabl
 - **create_spreadsheet**: Create a new Google Spreadsheet
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Google Sheets** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Read the data in range A1:C10 from spreadsheet ID '1abcxyz'."
+
+**🤖 AI Agent:**
+> Fetching data... Here are the values from A1:C10:
+- [ Name | Department | Q1 Sales ]
+- [ John Doe | Marketing | $45,000 ]
+- [ Jane Smith | Sales | $82,000 ]...
+
+---
+
+**👤 You:**
+> "Append a new row to the 'Q1 Sales' sheet with the values: 'Mike T', 'Engineering', '$12,000'."
+
+**🤖 AI Agent:**
+> Appending data... Success! I've appended the row ['Mike T', 'Engineering', '$12,000'] to the next available line.
+
+---
+
+**👤 You:**
+> "Create a new sheet called 'Finances 2026' and populate the headers."
+
+**🤖 AI Agent:**
+> Tab successfully instantiated in spreadsheet ID '1abcxyz'. The empty array logic has been set.
+
+
 ## Installation & Usage
 
 To install and use the **Google Sheets** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -55,4 +87,11 @@ To install and use the **Google Sheets** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

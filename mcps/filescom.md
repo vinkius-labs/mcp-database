@@ -1,12 +1,14 @@
 # Files.com MCP Server
 
-Sync, share, and automate file workflows across teams with secure cloud storage that integrates with your existing tools.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/filescom)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/filescom)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/filescom-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/filescom-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 8
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Sync, share, and automate file workflows across teams with secure cloud storage that integrates with your existing tools.
 
 ## Description
 Connect your **Files.com** secure storage account to any AI agent and simplify how you manage your enterprise files, coordinate folder structures, and monitor audit logs through natural conversation.
@@ -44,6 +46,33 @@ Connect your **Files.com** secure storage account to any AI agent and simplify h
 - **list_users**: List Files.com users
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Files.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all files in the '/Client-Projects' folder."
+
+**🤖 AI Agent:**
+> I've retrieved the folder contents. Inside '/Client-Projects' you have: 'Contract_v1.pdf', 'Design_Mockup.png', and 'Project_Brief.docx'. Which one would you like more details on?
+
+---
+
+**👤 You:**
+> "Show me the activity history for the last 24 hours."
+
+**🤖 AI Agent:**
+> Fetching audit logs... In the last 24 hours, there were 15 activities: 10 uploads, 3 downloads by Mike Ross, and 2 folder deletions. Would you like a detailed report on the deletions?
+
+---
+
+**👤 You:**
+> "Create a new folder called '/Archive-2023'."
+
+**🤖 AI Agent:**
+> Success! The folder '/Archive-2023' has been created in your Files.com account. You can now start moving your legacy assets into this directory.
+
+
 ## Installation & Usage
 
 To install and use the **Files.com** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -52,4 +81,11 @@ To install and use the **Files.com** MCP server in your AI agents (Claude, Curso
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

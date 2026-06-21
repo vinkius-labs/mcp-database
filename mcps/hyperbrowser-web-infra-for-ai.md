@@ -1,12 +1,14 @@
 # Hyperbrowser (Web Infra for AI) MCP Server
 
-Cloud browsers for AI agents via Hyperbrowser — manage sessions, scrape pages, and extract structured data.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperbrowser-web-infra-for-ai)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/hyperbrowser-web-infra-for-ai)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/hyperbrowser-web-infra-for-ai-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/hyperbrowser-web-infra-for-ai-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** superpower
-**Tools Count:** 10
+
+**Category:** [superpower](../categories/superpower.md)
+
+Cloud browsers for AI agents via Hyperbrowser — manage sessions, scrape pages, and extract structured data.
 
 ## Description
 Connect your **Hyperbrowser** account to any AI agent and take full control of your web automation and cloud browser infrastructure through natural conversation.
@@ -62,6 +64,33 @@ Take a managed screenshot via Hyperbrowser
 - **stop_session**: Terminate an active Hyperbrowser session
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Hyperbrowser (Web Infra for AI)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Extract the latest pricing and features from 'https://example.com/pricing'"
+
+**🤖 AI Agent:**
+> Processing extraction… I've successfully extracted the following tiers: 1) Free ($0/mo) - Basic features, 2) Pro ($29/mo) - Advanced analytics, 3) Enterprise (Contact sales) - Custom limits. Would you like the full JSON data?
+
+---
+
+**👤 You:**
+> "Take a full-page screenshot of 'https://news.ycombinator.com'"
+
+**🤖 AI Agent:**
+> Rendering page and capturing screenshot… Done. You can access the full-page capture of Hacker News at the following temporary cloud URL: [screenshot-url]. The image metadata shows a resolution of 1920x4500.
+
+---
+
+**👤 You:**
+> "List all my active Hyperbrowser sessions"
+
+**🤖 AI Agent:**
+> I've found 2 active browser sessions: 1) Session ID 'sb-123' (Running for 12 mins, US-East Proxy), 2) Session ID 'sb-456' (Running for 2 mins, Stealth Mode). Would you like to terminate either of these?
+
+
 ## Installation & Usage
 
 To install and use the **Hyperbrowser (Web Infra for AI)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -70,4 +99,11 @@ To install and use the **Hyperbrowser (Web Infra for AI)** MCP server in your AI
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

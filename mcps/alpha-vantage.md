@@ -1,12 +1,14 @@
 # Alpha Vantage MCP Server
 
-Access stock market data via Alpha Vantage — get real-time quotes, time series, technical indicators and crypto/forex data from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/alpha-vantage)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/alpha-vantage)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/alpha-vantage-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/alpha-vantage-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 13
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Access stock market data via Alpha Vantage — get real-time quotes, time series, technical indicators and crypto/forex data from any AI agent.
 
 ## Description
 Connect to **Alpha Vantage** APIs through any AI agent and explore global financial markets through natural conversation.
@@ -79,6 +81,33 @@ Get weekly stock time series
 Search for stock symbols by keywords
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Alpha Vantage** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Show me the current quote for Apple stock."
+
+**🤖 AI Agent:**
+> AAPL is currently trading at $189.45, up 1.23 (0.65%) from yesterday's close. Today's range: $187.80 - $190.12. Volume: 52.3M shares.
+
+---
+
+**👤 You:**
+> "Show me the RSI for Tesla over the last 14 days."
+
+**🤖 AI Agent:**
+> TSLA's current RSI (14-day) is 68.5, approaching the overbought threshold of 70. The RSI has been trending up from 52 three weeks ago, indicating strengthening momentum.
+
+---
+
+**👤 You:**
+> "What are the top performing sectors today?"
+
+**🤖 AI Agent:**
+> Today's sector performance: Technology (+2.1%), Healthcare (+1.5%), Financials (+1.2%), Energy (-0.3%), Utilities (-0.8%). Technology is leading with strong gains across semiconductor and software stocks.
+
+
 ## Installation & Usage
 
 To install and use the **Alpha Vantage** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -87,4 +116,11 @@ To install and use the **Alpha Vantage** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

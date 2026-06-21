@@ -1,12 +1,14 @@
 # HERE (Location & Maps) MCP Server
 
-Build with location data via HERE — geocode addresses, calculate routes, track traffic, and get weather.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/here-location-maps)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/here-location-maps)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/here-location-maps-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/here-location-maps-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** industry-titans
-**Tools Count:** 10
+
+**Category:** [industry-titans](../categories/industry-titans.md)
+
+Build with location data via HERE — geocode addresses, calculate routes, track traffic, and get weather.
 
 ## Description
 Connect your **HERE Technologies** account to any AI agent and take full control of cloud-native spatial analytics and location services through natural conversation.
@@ -51,6 +53,33 @@ Retrieve the exact structural matching verifying Delivery Flow speeds
 - **reverse_geocode**: Perform structural extraction of properties driving active Pin boundaries
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **HERE (Location & Maps)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What's the best route from San Francisco to San Jose by car?"
+
+**🤖 AI Agent:**
+> Calculating route… The optimal path via US-101 S is approximately 48 miles and will take about 55 minutes with current traffic. Would you like to see the turn-by-turn summary?
+
+---
+
+**👤 You:**
+> "How far can I drive in 15 minutes from Times Square, NY?"
+
+**🤖 AI Agent:**
+> Generating isoline… Based on current road conditions, you can reach most of Midtown Manhattan, parts of Hell's Kitchen, and cross into Weehawken via the Lincoln Tunnel within 15 minutes. Would you like the coordinate boundaries?
+
+---
+
+**👤 You:**
+> "What is the current weather observation for Tokyo?"
+
+**🤖 AI Agent:**
+> Current weather in Tokyo: 18°C, Partly Cloudy, Humidity 62%, Wind 12km/h from the SE. The forecast for the next 6 hours shows a slight chance of rain. Would you like a detailed 24-hour forecast?
+
+
 ## Installation & Usage
 
 To install and use the **HERE (Location & Maps)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -59,4 +88,11 @@ To install and use the **HERE (Location & Maps)** MCP server in your AI agents (
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,12 +1,14 @@
 # 8x8 Work MCP Server
 
-Business communication analytics — audit call records, extension performance, and ring groups via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/8x8-work)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/8x8-work)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/8x8-work-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/8x8-work-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 3
+
+**Category:** [productivity](../categories/productivity.md)
+
+Business communication analytics — audit call records, extension performance, and ring groups via AI.
 
 ## Description
 Transform your **8x8 Work** communications data into a strategic asset for your AI agent. This integration bridges the gap between raw telephony logs and actionable business insights, allowing your agent to audit call records (CDR), monitor extension performance, and analyze ring group activity through natural language. Whether you need to track call volumes across your organization or deep-dive into a specific extension's performance, your agent provides a direct, conversational window into your 8x8 telephony environment, ensuring your communication workflows are always optimized.
@@ -39,6 +41,33 @@ Transform your **8x8 Work** communications data into a strategic asset for your 
 - **list_ring_groups**: List ring group analytics
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **8x8 Work** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all call records from 9 AM to 12 PM today."
+
+**🤖 AI Agent:**
+> I've retrieved the call detail records for today between 9 AM and 12 PM. There were 28 calls in total. I can provide the source, destination, and duration for each.
+
+---
+
+**👤 You:**
+> "Give me a summary for extension 105."
+
+**🤖 AI Agent:**
+> Extension 105 summary: 15 inbound calls, 12 outbound, and an average talk time of 3 minutes. The line is currently active.
+
+---
+
+**👤 You:**
+> "Show performance metrics for all ring groups."
+
+**🤖 AI Agent:**
+> I've retrieved analytics for your ring groups. The 'Support' group has a 98% answer rate, while 'Sales' is at 85%. Would you like more details on specific group distribution?
+
+
 ## Installation & Usage
 
 To install and use the **8x8 Work** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -47,4 +76,11 @@ To install and use the **8x8 Work** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

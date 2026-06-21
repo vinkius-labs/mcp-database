@@ -1,12 +1,14 @@
 # Basecamp MCP Server
 
-Keep your team aligned with project discussions, to-do lists, file sharing, and schedules all in one calm workspace.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/basecamp-alternative)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/basecamp-alternative)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/basecamp-alternative-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/basecamp-alternative-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 17
+
+**Category:** [productivity](../categories/productivity.md)
+
+Keep your team aligned with project discussions, to-do lists, file sharing, and schedules all in one calm workspace.
 
 ## Description
 Connect your **Basecamp** account to any AI agent and take full control of your project management, team collaboration, and task tracking through natural conversation.
@@ -83,6 +85,33 @@ Update an existing project in Basecamp
 Update an existing to-do item in Basecamp
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Basecamp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all my active projects in Basecamp."
+
+**🤖 AI Agent:**
+> I've found 4 active projects in your account: 'Product Launch Q3' (ID: 48291034), 'Marketing Website Redesign' (ID: 48291078), 'Engineering Sprint 22' (ID: 48291102), and 'Client Onboarding' (ID: 48291156). Would you like to see the details or to-dos for any of these?
+
+---
+
+**👤 You:**
+> "Create a new to-do 'Review design mockups' in list 592001 and assign it to person 10293 with a due date of 2026-05-15."
+
+**🤖 AI Agent:**
+> Done! I've created the to-do 'Review design mockups' in your to-do list. It has been assigned to Sarah M. (ID: 10293) with a due date of May 15, 2026. The new to-do ID is 8830122. Would you like to add a detailed description?
+
+---
+
+**👤 You:**
+> "Show me the latest messages on the message board of project 48291034."
+
+**🤖 AI Agent:**
+> I've retrieved 3 recent messages from the project board: 'Sprint 22 Kickoff Notes' by James T. (posted 2 hours ago), 'Q3 OKR Alignment Update' by Lisa K. (posted yesterday), and 'Design System Migration Plan' by Marcus R. (posted 3 days ago). Would you like to read the full content of any of these messages?
+
+
 ## Installation & Usage
 
 To install and use the **Basecamp** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -91,4 +120,11 @@ To install and use the **Basecamp** MCP server in your AI agents (Claude, Cursor
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

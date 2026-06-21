@@ -1,12 +1,14 @@
 # ClickHouse (Vector Search) MCP Server
 
-Manage vector embeddings and SQL via ClickHouse — list databases, execute SQL, and perform high-speed vector searches directly from any AI agent.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/clickhouse-vector-search)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/clickhouse-vector-search)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/clickhouse-vector-search-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/clickhouse-vector-search-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** ai-frontier
-**Tools Count:** 7
+
+**Category:** [ai-frontier](../categories/ai-frontier.md)
+
+Manage vector embeddings and SQL via ClickHouse — list databases, execute SQL, and perform high-speed vector searches directly from any AI agent.
 
 ## Description
 Connect your **ClickHouse** cluster to any AI agent and take full control of your analytical and vector data through natural conversation.
@@ -45,6 +47,33 @@ Connect your **ClickHouse** cluster to any AI agent and take full control of you
 Identify precise active cluster limits spanning the execution runtime
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **ClickHouse (Vector Search)** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "List all databases in my ClickHouse cluster"
+
+**🤖 AI Agent:**
+> I found 4 databases: 'default', 'analytics_prod', 'vector_store', and 'system'. Which one would you like to explore?
+
+---
+
+**👤 You:**
+> "Find the top 5 most similar records in table 'embeddings' using this vector: [0.1, 0.5, -0.2]"
+
+**🤖 AI Agent:**
+> Vector search complete! I found 5 matches in 'analytics_prod.embeddings'. The top match has a cosineDistance of 0.045. Would you like to see the associated metadata for these records?
+
+---
+
+**👤 You:**
+> "Get table stats for 'analytics_prod.sales_data'"
+
+**🤖 AI Agent:**
+> Stats for 'sales_data': 1.2M rows, 450MB total size, 4.2x compression ratio. The table is currently healthy and responsive.
+
+
 ## Installation & Usage
 
 To install and use the **ClickHouse (Vector Search)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -53,4 +82,11 @@ To install and use the **ClickHouse (Vector Search)** MCP server in your AI agen
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

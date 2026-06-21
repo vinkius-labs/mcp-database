@@ -1,12 +1,14 @@
 # Customer Discovery Prover MCP Server
 
-An AI defined the ICP as 'busy professionals aged 25-45 who value productivity.' It described the problem as 'everyone struggles with time management.' Interview questions: 'Would you pay $29/month for this?' The startup built for 14 months, launched to silence, and shut down. 42% of startups fail because of no market need — and the discovery process guaranteed it. This tool forces persona grounding in real interviews, problem evidence from specific conversations, Mom Test methodology, segment separation, and willingness-to-pay commitment signals.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/customer-discovery-prover)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/customer-discovery-prover)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/customer-discovery-prover-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/customer-discovery-prover-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** productivity
-**Tools Count:** 1
+
+**Category:** [productivity](../categories/productivity.md)
+
+An AI defined the ICP as 'busy professionals aged 25-45 who value productivity.' It described the problem as 'everyone struggles with time management.' Interview questions: 'Would you pay $29/month for this?' The startup built for 14 months, launched to silence, and shut down. 42% of startups fail because of no market need — and the discovery process guaranteed it. This tool forces persona grounding in real interviews, problem evidence from specific conversations, Mom Test methodology, segment separation, and willingness-to-pay commitment signals.
 
 ## Description
 AI agents define customer personas from demographics and assumptions — then the startup builds for 14 months and launches to silence. They invent ICPs from stereotypes. They assert problems without citing a single conversation. They write leading interview questions. They treat all small businesses as one segment. They confuse verbal interest with willingness-to-pay.
@@ -55,6 +57,33 @@ Customer Discovery Prover validates discovery rigor through 5 Decision Pivots:
 Structured reflection tool for customer discovery grounded in real interviews, not invented personas. Forces the agent to evidence every claim with named interviews, apply The Mom Test methodology, separate buyer segments with distinct pains, and test willingness-to-pay with commitment signals. Catches Invented Personas ("busy professionals aged 25-45" — demographics are not personas. A persona needs a name, a role, a company context, observed behaviors, and interview quotes), Assumed Problems ("the market needs X" without citing specific conversations where someone described the pain, its frequency, and what they currently spend solving it), Biased Validation ("would you pay for this?" — leading questions produce false positives. The Mom Test: ask about past behavior, never about future intentions), Conflated Segments (treating "SMBs" as one group when a 5-person agency and a 200-person SaaS company have different pains, budgets, and buying processes), and Untested WTP ("they said they would pay" — verbal interest is not willingness-to-pay. Commitment signals: deposits, LOIs, pilot dates, referrals). Call once per customer persona, segment analysis, or product-market fit evaluation
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Customer Discovery Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Our target customer is tech-savvy millennials who value productivity. The market clearly needs better project management tools. We asked 20 people if they would pay for this and 85% said yes."
+
+**🤖 AI Agent:**
+> PERSONA_INVENTED — 'Tech-savvy millennials who value productivity' is a demographic, not a persona. Who specifically? What role? What company? What is their specific pain — not 'productivity,' a behavior you observed? Also: 'Would you pay for this?' is a leading question (Mom Test violation) and '85% said yes' is biased validation, not WTP. This discovery fails on 4 of 5 axes.
+
+---
+
+**👤 You:**
+> "Persona: 23 interviews with engineering managers at B2B SaaS companies (50-200 employees). Named: Sarah K. (VP Eng, fintech, 180 people), Mike R. (Eng Manager, healthtech, 85 people), Lisa T. (CTO, edtech, 60 people). Problem: 19/23 spend 6+ hours/week reconciling sprint data across Jira, Slack, and spreadsheets. Sarah: 'I lose every Monday morning to copying numbers between tools. It's 2026 and I'm doing manual data entry.' Current workaround: $2,400/year on Zapier + custom scripts, still takes 4 hours/week. Methodology: past behavior only — 'Walk me through your last sprint planning. What took the longest? What did you try to fix it?' Falsification: 'What would make this tool NOT worth switching for?' 8/23 said switching cost is the barrier. Segments: Segment A — VP Eng at 100-200 person companies, buying trigger is board reporting pressure, budget $500-1000/month, 6-week sales cycle. Segment B — Eng Managers at 50-100 person companies, buying trigger is team growth pain, budget $200-400/month, 2-week self-serve. WTP: 3 signed LOIs (Sarah K., Mike R., one unnamed), 2 paid pilots at $400/month starting June 15, Sarah agreed to be a launch case study."
+
+**🤖 AI Agent:**
+> DISCOVERY_PROVEN — Rigorous customer discovery validated. Persona: 23 named interviews, 3 specific people cited with roles and company context. Problem: 19/23 confirmation with quoted pain and $2,400/year workaround cost. Methodology: past behavior questions, falsification attempted (8/23 cited switching cost). Segments: VP Eng (100-200, board pressure, $500-1000) vs. Eng Manager (50-100, growth pain, $200-400). WTP: 3 LOIs, 2 paid pilots at $400/month with start dates, case study commitment. This discovery survives investor scrutiny.
+
+---
+
+**👤 You:**
+> "Persona: 15 interviews with operations managers at manufacturing companies. Problem: 12/15 report spending 10+ hours/week on inventory reconciliation. Methodology: past behavior — 'Describe your last inventory audit. What went wrong?' Segments: We target SMBs in manufacturing. WTP: Strong interest from 8 companies, 3 requested demos."
+
+**🤖 AI Agent:**
+> SEGMENTS_CONFLATED — Persona, problem, and methodology pass. But segments fail: 'SMBs in manufacturing' is one label, not segmented. A 20-person machine shop and a 180-person food processor have different inventory systems, compliance requirements, budgets, and decision makers. Separate by: company size, sub-industry, regulatory requirements, and buying process. Also: WTP fails — 'strong interest' and 'requested demos' are not commitment. Show deposits, LOIs, or pilot agreements with dates.
+
+
 ## Installation & Usage
 
 To install and use the **Customer Discovery Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -63,4 +92,11 @@ To install and use the **Customer Discovery Prover** MCP server in your AI agent
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

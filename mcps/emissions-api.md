@@ -1,12 +1,14 @@
 # Emissions API MCP Server
 
-Manage your environmental research — audit air quality and gas emissions via AI.
-
-[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/emissions-api)
+[![Available on Vinkius Edge](https://img.shields.io/badge/Run%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/emissions-api)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/emissions-api-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/emissions-api-mcp)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
-**Category:** data-analytics
-**Tools Count:** 6
+
+**Category:** [data-analytics](../categories/data-analytics.md)
+
+Manage your environmental research — audit air quality and gas emissions via AI.
 
 ## Description
 Empower your AI agent to orchestrate your entire environmental research workflow with **Emissions API**, the open source platform for satellite-based emission data. By connecting Emissions API to your agent, you transform complex gas monitoring into a natural conversation. Your agent can instantly query carbon monoxide, methane, and ozone levels for any country without you ever touching a technical portal. Whether you are conducting climate research or monitoring industrial impact, your agent acts as a real-time environmental analyst, ensuring your data is always grounded in precise, satellite-derived measurements.
@@ -42,6 +44,33 @@ Empower your AI agent to orchestrate your entire environmental research workflow
 - **get_available_products**: List all available gas products in the database
 
 
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Emissions API** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "What is the latest carbon monoxide level in Germany (DE)?"
+
+**🤖 AI Agent:**
+> I've retrieved the measurement for Germany. The latest value is approximately 0.03 mol/m². The timestamp associated with this satellite reading is from yesterday. Would you like the data for other regions?
+
+---
+
+**👤 You:**
+> "List all available gas products in the Emissions API."
+
+**🤖 AI Agent:**
+> I've scanned the catalog. Available products include carbonmonoxide, methane, ozone, and nitrogendioxide. I can retrieve emission data for any of these markers.
+
+---
+
+**👤 You:**
+> "Show methane emission trends for the last 30 days in the US."
+
+**🤖 AI Agent:**
+> I've retrieved the methane levels for the US over the requested period. The values range from 1800 to 1900 ppb. I can provide a summary of the peak days if you'd like.
+
+
 ## Installation & Usage
 
 To install and use the **Emissions API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
@@ -50,4 +79,11 @@ To install and use the **Emissions API** MCP server in your AI agents (Claude, C
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
 *This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
