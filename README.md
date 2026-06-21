@@ -1,10 +1,10 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This open-source dataset provides unprecedented transparency and access to the Vinkius Model Context Protocol (MCP) catalog. This repository contains highly structured, automatically updated documentation for **5,033 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. We are opening access to the Vinkius Model Context Protocol (MCP) catalog. This repository provides automatically updated documentation for **5,033 unique Vinkius MCP servers**.
 
-Sourced directly from the enterprise-grade Vinkius MCP Catalog, these servers bridge the gap between AI agents, critical software platforms, and enterprise systems. By open-sourcing this dataset, Vinkius empowers external AI platforms and developer ecosystems to seamlessly syndicate and integrate our catalog into their own infrastructure.
+These servers connect AI agents to real-world software platforms and enterprise systems. By publishing this dataset, we allow external AI platforms and developer tools to syndicate our catalog and integrate it directly into their own products.
 
-Programmatically synchronized from the Vinkius platform, this dataset accurately reflects real-time metadata to foster open ecosystem collaboration.
+The data syncs straight from the Vinkius platform, ensuring you always have the exact metadata needed to build your own integrations.
 
 > **Explore the catalog at [vinkius.com](https://vinkius.com) and connect to the Vinkius Cloud at [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect) to run any of these tools instantly in Claude, Cursor, or your custom agents.**
 
