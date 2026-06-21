@@ -1,0 +1,70 @@
+# Nodereal MCP Server
+
+High-performance blockchain infrastructure for Aptos and EVM networks — query accounts, blocks, and simulate transactions.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/nodereal)
+
+## Overview
+**Category:** developer-tools
+**Tools Count:** 24
+
+## Description
+Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure provider. This MCP server allows any AI agent to interact directly with Aptos and EVM-compatible networks through reliable RPC endpoints.
+
+### What you can do
+
+- **Aptos Ecosystem** — Retrieve account details, resources, and Move modules. Inspect ledger info, blocks, and transaction history using specialized Aptos tools.
+- **EVM Compatibility** — Access standard JSON-RPC methods for Ethereum-compatible chains, including block numbers, chain IDs, and account balances.
+- **Transaction Simulation** — Use `aptos_simulate_transaction` to estimate gas and validate execution logic before committing to the network.
+- **Deep Data Inspection** — Fetch detailed transaction receipts and filter logs via `eth_get_logs` for complex on-chain analysis.
+- **Real-time Queries** — Get the most recent block data and network state instantly.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your NodeReal API Endpoint URL
+3. Start querying blockchain data from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Web3 Developers** — debug smart contracts and check account states directly from your IDE.
+- **Data Analysts** — extract on-chain logs and transaction metadata for research and reporting.
+- **DevOps Engineers** — monitor network height and chain connectivity through simple natural language commands.
+
+
+## Available Tools
+- **aptos_get_account_modules**: Get all Move modules for a specific Aptos account
+- **aptos_get_account_resources**: Get all resources for a specific Aptos account
+- **aptos_get_account**: Get high-level information about an Aptos account
+- **aptos_get_blocks_by_height**: Get Aptos blocks by height
+- **aptos_get_ledger_info**: Get the current Aptos ledger information
+- **aptos_get_transaction_by_hash**: Get an Aptos transaction by its hash
+- **aptos_get_transactions**: Get a list of Aptos transactions
+- **aptos_simulate_transaction**: Simulate an Aptos transaction submission
+- **debug_trace_transaction**: Trace a transaction (EVM)
+- **eth_block_number**: Get the current block number (EVM)
+- **eth_call**: Execute a new message call immediately without creating a transaction (EVM)
+- **eth_chain_id**: Get the chain ID (EVM)
+- **eth_estimate_gas**: Generates and returns an estimate of how much gas is necessary to allow the transaction to complete (EVM)
+- **eth_get_balance**: Get the balance of an address (EVM)
+- **eth_get_block_by_number**: Get a block by its number (EVM)
+- **eth_get_logs**: Get logs matching a given filter object (EVM)
+- **eth_get_transaction_receipt**: Get the receipt of a transaction (EVM)
+- **eth_send_raw_transaction**: Creates new message call transaction or a contract creation for signed transactions (EVM)
+- **nr_get_asset_transfers**: Get asset transfers for an address (NodeReal Enhanced)
+- **nr_get_nft_holders**: Get holders of an NFT collection (NodeReal Enhanced)
+- **nr_get_nft_inventory**: Get NFT inventory for an address (NodeReal Enhanced)
+- **nr_get_token_balance_20**: Get ERC20 token balance (NodeReal Enhanced)
+- **nr_get_token_holders**: Get list of token holders (NodeReal Enhanced)
+- **nr_get_transaction_receipts_by_block_number**: Get all receipts in a block (NodeReal Enhanced)
+
+
+## Installation & Usage
+
+To install and use the **Nodereal** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/nodereal](https://vinkius.com/mcp/nodereal)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

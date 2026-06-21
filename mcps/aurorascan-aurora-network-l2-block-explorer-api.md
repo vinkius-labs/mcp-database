@@ -1,0 +1,76 @@
+# Aurorascan (Aurora Network L2 Block Explorer API) MCP Server
+
+Access Aurora Network L2 blockchain data—query balances, transaction history, and token transfers directly from your AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/aurorascan-aurora-network-l2-block-explorer-api)
+
+## Overview
+**Category:** developer-tools
+**Tools Count:** 30
+
+## Description
+Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora Network L2 blockchain. This server enables real-time querying of account balances, transaction histories, and token movements through simple natural language.
+
+### What you can do
+
+- **Balance Inquiries** — Fetch Ether balances for single or multiple addresses simultaneously to monitor wallet health.
+- **Transaction History** — Retrieve comprehensive lists of normal and internal transactions for any address, including block ranges and sorting.
+- **Token Tracking** — Monitor ERC20, ERC721 (NFT), and ERC1155 transfer events to track asset movements and contract interactions.
+- **Network Auditing** — List blocks mined by specific addresses to analyze network participation and validator activity.
+- **Deep Data Inspection** — Access transaction hashes, contract addresses, and specific block parameters for granular blockchain analysis.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Aurorascan API Key
+3. Start querying the Aurora L2 network from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Web3 Developers** — Debug smart contract interactions and verify transaction statuses directly from your IDE.
+- **Data Analysts** — Aggregate wallet balances and token transfer data without writing custom scripts.
+- **Crypto Power Users** — Monitor personal portfolios and track specific on-chain events through a conversational interface.
+
+
+## Available Tools
+- **get_abi**: Get Contract ABI for Verified Source Codes
+- **get_balance_multi**: Get Ether Balance for Multiple Addresses
+- **get_balance**: Get Ether Balance for a Single Address
+- **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
+- **get_block_no_by_time**: Get Block Number by Timestamp
+- **get_block_reward**: Get Block Rewards by BlockNo
+- **get_eth_price**: Get Last Price of Ether in BTC and USD
+- **get_eth_supply**: Get Total Supply of Ether on Aurora
+- **get_logs**: Get Logs
+- **get_mined_blocks**: Get list of Blocks Mined by Address
+- **get_source_code**: Get Contract Source Code for Verified Source Codes
+- **get_status**: Check Contract Execution Status
+- **get_token_1155_tx**: Get a List of ERC1155 Token Transfer Events
+- **get_token_balance**: Get ERC20-Token Balance for Address by ContractAddress
+- **get_token_nft_tx**: Get a List of ERC721 Token Transfer Events
+- **get_token_supply**: Get ERC20-Token Total Supply by ContractAddress
+- **get_token_tx**: Get a List of ERC20 Token Transfer Events
+- **get_tx_list_internal**: Get a List of Internal Transactions
+- **get_tx_list**: Get a List of Normal Transactions By Address
+- **get_tx_receipt_status**: Check Transaction Receipt Status
+- **proxy_block_number**: eth_blockNumber
+- **proxy_call**: eth_call
+- **proxy_estimate_gas**: eth_estimateGas
+- **proxy_gas_price**: eth_gasPrice
+- **proxy_get_block_by_number**: eth_getBlockByNumber
+- **proxy_get_code**: eth_getCode
+- **proxy_get_storage_at**: eth_getStorageAt
+- **proxy_get_transaction_by_hash**: eth_getTransactionByHash
+- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
+- **verify_source_code**: Verify Source Code
+
+
+## Installation & Usage
+
+To install and use the **Aurorascan (Aurora Network L2 Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/aurorascan-aurora-network-l2-block-explorer-api](https://vinkius.com/mcp/aurorascan-aurora-network-l2-block-explorer-api)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

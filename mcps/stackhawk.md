@@ -1,0 +1,67 @@
+# StackHawk MCP Server
+
+Connect your AI to the StackHawk DAST platform. Run automated security scans, triage alerts seamlessly, and find vulnerabilities effortlessly.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/stackhawk)
+
+## Overview
+**Category:** security-compliance
+**Tools Count:** 10
+
+## Description
+Integrate the robust dynamic application security testing (DAST) capabilities of **StackHawk** directly into your conversational AI. Empower your engineering team to monitor system vulnerabilities, initiate complex scans, and orchestrate proactive security protocols without relying heavily on static dashboards. Connect securely to your workspaces, instruct your AI to assess ongoing security threats, and automatically classify alerts through a natural language interface designed to accelerate risk remediation across modern CI/CD pipelines.
+
+### What you can do
+
+- **Automated Scanning** — Programmatically initiate comprehensive security evaluations across your environments utilizing `run_scan`, and halt operations securely targeting specific execution UUIDs via `stop_scan`.
+- **Risk Assessment** — Effectively audit environments by listing operational scans with `list_scans`, or retrieve deep vulnerability reports invoking `get_alerts` targeting specific scan iterations.
+- **Application Management** — Catalog active software deployments monitored by StackHawk utilizing `list_applications`, and manage organizational parameters inspecting environments directly via `list_environments`.
+- **Triage & Operations** — Authenticate securely establishing a valid operational bearer token with `login`, and instruct the AI to accurately qualify, dismiss, or assign statuses prioritizing critical mitigation efforts using `triage_alert`.
+
+### How it works
+
+1. Install the StackHawk MCP module configuring it directly with your active AI assistant.
+2. Supply your proprietary StackHawk API Token to authenticate requests safely within the MCP setting.
+3. Instruct the AI: "Retrieve the most critical security alerts from the last scan of our 'Production-Core' application, and triage any false positives."
+
+### Who is this for?
+
+- **DevSecOps Engineers** — Streamline and enforce secure software integration effortlessly instructing the system to perform real-time verification analysis dynamically.
+- **Engineering Leaders** — Monitor organizational compliance metrics easily interacting through language commands retrieving holistic cross-application threat landscapes.
+- **Backend Developers** — Quickly identify security regression issues caused by newly deployed microservices parsing scans directly in the development terminal.
+
+
+## Available Tools
+- **get_application_details**: Get detailed configuration for a specific StackHawk application
+- **get_organization_details**: Get StackHawk organization details and subscription tier
+- **get_scan_alerts**: Download individual security alerts discovered by a DAST scan
+- **get_scan_results**: Get detailed results and metadata for a specific DAST scan
+- **list_applications**: Requires a Bearer token and organization ID.
+
+List all registered DAST applications in a StackHawk organization
+- **list_environments**: g., Development, Staging, Production) configured on the application.
+
+List configured scan environments for a StackHawk application
+- **list_api_keys**: Useful for auditing and hygiene.
+
+List API keys configured for a StackHawk organization
+- **list_scans**: Includes scan IDs and high-level alert counts.
+
+List all DAST scan executions for a StackHawk application
+- **login**: This token is required for all subsequent StackHawk tool calls.
+
+Authenticate and obtain a Bearer access token from StackHawk
+- **triage_alert**: Valid statuses: RISK_ACCEPTED, FALSE_POSITIVE, IN_PROGRESS.
+
+Triage a DAST security alert (accept risk, false positive, etc.)
+
+
+## Installation & Usage
+
+To install and use the **StackHawk** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/stackhawk](https://vinkius.com/mcp/stackhawk)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

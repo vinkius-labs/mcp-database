@@ -1,0 +1,45 @@
+# Techstars Mentor Prover MCP Server
+
+A founder pitched for 45 minutes without mentioning a single customer conversation, a single mentor challenge, or a single dollar of revenue. Zero feedback sought. Zero market validation. Zero network. That is not acceleration — that is solo building in a vacuum. This tool forces five Techstars-level axes: mentor leverage, feedback discipline, customer discovery, revenue readiness, and network strategy.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/techstars-mentor-prover)
+
+## Overview
+**Category:** business
+**Tools Count:** 1
+
+## Description
+## The Problem
+
+1. **Solo Building** — no mentors, every blind spot stays blind.
+2. **Feedback Avoidance** — confirmation bias instead of brutal honesty.
+3. **Market Ignorance** — assumptions instead of customer discovery.
+4. **Revenue Delay** — 'monetize later' kills startups.
+5. **Network Neglect** — 'product sells itself' is a myth.
+
+### The 5 Techstars Axes
+
+| Axis | Pivot | Rule |
+|---|---|---|
+| **Mentors** | Engaged | 3+ active mentors challenging assumptions. |
+| **Feedback** | Sought | 3+ painful insights that changed direction. |
+| **Market** | Validated | Strangers paid, not friends nodded. |
+| **Revenue** | Active | MRR, paying customers, path to $1M ARR. |
+| **Network** | Built | 5 connectors, 3 partnerships, unfair distribution. |
+
+
+## Available Tools
+- **validate_techstars_acceleration**: (1) GIVE FIRST — engage mentors who have done what you are attempting. Not advisors on paper — active mentors who challenge your assumptions and change your approach. (2) SEEK BRUTAL FEEDBACK — from strangers, not friends. Feedback that hurts is feedback that helps. If no feedback changed your approach: you are not listening. (3) CUSTOMER DISCOVERY — interviews with strangers who have no incentive to be polite. 30+ interviews minimum. Key metric: willingness to pay (not "nice idea"). (4) REVENUE NOW — charge from day one. Free users are not customers. MRR > 0 is the only proof of demand. If you plan to monetize "later": you are avoiding the hardest question. (5) BUILD THE NETWORK — strategic connectors who already have your customer's attention. Partnerships that give you distribution you cannot build alone. Solo distribution = linear growth. Network distribution = exponential reach.
+
+Structured reflection tool that forces the LLM to think like a Techstars-style mentor — Brad Feld's "Give First" philosophy, mentor-driven acceleration, customer discovery, revenue discipline, and network leverage. Techstars has accelerated 4,400+ companies with $119B+ in aggregate market cap, proving that mentorship, brutal feedback, and revenue discipline outperform isolated building. Catches Solo Building (working alone without mentor engagement — a ceramics artisan spends 18 months perfecting a kiln design. Beautiful engineering. Novel temperature control. Shows it to a master potter: "Your kiln fires at 1,300°C. No one in this region uses stoneware clays that need 1,300°C. Every potter here works with earthenware at 1,000°C." The kiln is technically excellent and commercially useless. 18 months of isolated building. A 30-minute conversation with a mentor on day 1 would have revealed: build for earthenware, add a reduction atmosphere option, and you serve 90% of the market instead of 3%. Rule: name 3 specific mentors, what they challenged, what you changed because of them. If no mentor has changed your approach: you are building in a bubble), Feedback Avoidance (only showing work to friends and family — a restaurant owner tests a new menu with staff and family. Everyone loves it. Opens to the public: 40% of dishes returned. "The lamb is too salty." "Portion too small for the price." "No vegetarian options." Staff and family do not pay. They do not complain. They do not represent your market. Brad Feld: "Feedback from people who love you is not feedback — it is encouragement." Fix: seek BRUTAL feedback from STRANGERS who have no reason to be kind. The restaurant needed: 50 paid meals to strangers, comment cards, 3 harsh reviews to address BEFORE the grand opening. Name 3 brutal feedback points that HURT and what you changed because of them), Market Ignorance (building without validating demand — a furniture maker crafts exquisite hand-carved mahogany dining tables. Price: $8,000. Production time: 6 weeks per table. After 12 months: 3 tables sold. Revenue: $24,000. Costs: $45,000. Discovery interviews with 20 STRANGERS (not friends) would have revealed: "I would pay $2,000-$3,000 for a dining table." "I need it in 2 weeks, not 6." "I love the craftsmanship but I need a 6-seater, not 4." The maker built what THEY wanted to make, not what the MARKET wanted to buy. Fix: 30+ discovery interviews with strangers. Key questions: Would you pay for this? How much? When do you need it? What would make you say no?), Revenue Delay (planning to monetize "later" instead of charging from day one — a bakery opens with a strategy: "Give away free samples for 3 months to build a following, then start charging." Month 1: 200 free croissants/day. Great reviews. "Everyone loves our croissants!" Month 3: start charging $3.50/croissant. 80% of "customers" disappear. Free and paid are different markets. People who love free croissants ≠ people who will pay $3.50. Brad Feld: "If they will not pay on day one, they will not pay on day 100." Fix: charge from day 1. Even $1 is a commitment that $0 is not. The bakery should have sold croissants at $2 from day 1 and validated willingness to pay immediately. MRR > 0 is the only proof of market demand), and Network Neglect (failing to build strategic distribution relationships — a honey producer has excellent artisanal honey. Sells at 2 farmers' markets per week. Revenue: $800/week. Ceiling: limited by personal selling hours. A Techstars mentor would ask: "Who already has access to your ideal customer?" Cheese shops. Wine bars. Specialty grocery stores. Gift basket companies. Hotel amenity buyers. One partnership with a regional cheese shop chain (14 locations): $2,800/week — 3.5x farmers' market revenue with zero additional selling hours. The honey producer's constraint was not product quality — it was distribution. Fix: name 5 strategic connectors who already have your customer's attention, and 3 partnerships that create distribution advantages you cannot build alone). Call once per acceleration plan, business strategy, or market validation
+
+
+## Installation & Usage
+
+To install and use the **Techstars Mentor Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/techstars-mentor-prover](https://vinkius.com/mcp/techstars-mentor-prover)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

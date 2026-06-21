@@ -1,0 +1,78 @@
+# PubNub (Real-time Messaging) MCP Server
+
+Enable real-time messaging, presence tracking, and message history for your AI agent using PubNub's global data stream network.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pubnub-real-time-messaging)
+
+## Overview
+**Category:** communication-messaging
+**Tools Count:** 31
+
+## Description
+Connect your **PubNub** account to any AI agent to orchestrate real-time communication, monitor user presence, and manage data streams through natural language.
+
+### What you can do
+
+- **Real-time Messaging** — Publish JSON payloads to any channel and retrieve historical message logs with precise timetokens.
+- **Presence Monitoring** — Track who is online (`here_now`), see which channels a user is in (`where_now`), and manage custom presence states.
+- **User & Channel Metadata** — Manage App Context by creating and retrieving user profiles, channel metadata, and memberships.
+- **Message Management** — Count messages sent after specific timestamps or purge history for compliance and storage management.
+- **File Sharing** — Generate upload URLs and manage files stored within the PubNub network.
+- **Admin & Push** — Monitor keyset metrics, manage applications, and configure mobile push notifications (APNS/FCM).
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your PubNub Subscribe Key, Publish Key, and UUID
+3. Start streaming data and managing real-time interactions from your MCP-compatible client
+
+### Who is this for?
+
+- **IoT Developers** — Monitor device heartbeats and send control commands via real-time channels.
+- **Support Teams** — Inspect chat history and user presence to provide better live assistance.
+- **System Architects** — Audit channel metadata and monitor keyset metrics directly from the AI interface.
+
+
+## Available Tools
+- **admin_create_app**: Create a new PubNub app (Admin API)
+- **admin_get_metrics**: Get usage metrics (Admin API)
+- **admin_list_apps**: List all PubNub apps (Admin API)
+- **admin_list_keysets**: List all keysets (Admin API)
+- **delete_file**: Delete a file from a channel
+- **delete_message_history**: Delete message history for channels
+- **generate_file_upload_url**: Generate a file upload URL
+- **get_all_channels**: Get all channels (App Context)
+- **get_all_users**: Get all users (App Context)
+- **get_channel**: Get a specific channel (App Context)
+- **get_file_url**: Get a file URL
+- **get_memberships**: Get memberships for a user (App Context)
+- **get_user**: Get a specific user (App Context)
+- **get_message_history**: Get message history for channels
+- **list_files**: List files in a channel
+- **get_message_count**: Get message count for channels
+- **pam_grant_token**: Grant a PAM v3 token
+- **pam_revoke_token**: Revoke a PAM v3 token
+- **presence_get_state**: Get presence state for a user in a channel
+- **presence_heartbeat**: Send presence heartbeat
+- **presence_here_now**: Get current channel occupancy (Here Now)
+- **presence_leave**: Leave a channel (Presence)
+- **presence_set_state**: Set presence state for a user in a channel
+- **presence_where_now**: Get channels a user is in (Where Now)
+- **publish_message**: Publish a message to a channel
+- **push_manage**: Manage or list push notification channels for a device (APNS v2)
+- **push_remove_all**: Remove all push notification channels for a device (APNS v2)
+- **remove_user**: Remove a user (App Context)
+- **set_channel**: Set or update a channel (App Context)
+- **set_memberships**: Set or update memberships for a user (App Context)
+- **set_user**: Set or update a user (App Context)
+
+
+## Installation & Usage
+
+To install and use the **PubNub (Real-time Messaging)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/pubnub-real-time-messaging](https://vinkius.com/mcp/pubnub-real-time-messaging)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

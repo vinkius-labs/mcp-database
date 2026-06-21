@@ -1,0 +1,70 @@
+# Salesforce Sales Cloud MCP Server
+
+Manage leads, opportunities, accounts, contacts, and your entire sales pipeline through natural conversation with your Salesforce CRM.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-sales-cloud)
+
+## Overview
+**Category:** industry-titans
+**Tools Count:** 10
+
+## Description
+Connect **Salesforce Sales Cloud** to any AI agent — instant access to your CRM data without switching tabs.
+
+### What you can do
+- **Leads** — Search, create, update, and qualify leads by name, email, or company
+- **Opportunities** — Track deals, update stages, amounts, and close dates
+- **Accounts** — Look up company details including revenue, industry, and employees
+- **Contacts** — Find contacts by name or email with account associations
+- **Activities** — Log calls, meetings, and emails as Tasks linked to records
+- **Pipeline** — Get an instant summary of your open pipeline by stage
+
+### Who is this for?
+- **Sales Reps** — Save 1-2 hours/day by managing your CRM through conversation
+- **SDRs** — Create and qualify leads without leaving your workflow
+- **RevOps** — Get pipeline snapshots and deal data instantly
+- **Account Executives** — Update opportunities and log activities on-the-go
+
+
+## Available Tools
+- **sf_create_lead**: lastName and company are required fields in Salesforce. Status defaults to "Open - Not Contacted". Once qualified, leads can be converted to Contact + Account + Opportunity in the Salesforce UI. Returns the created lead with its 18-character Salesforce ID.
+
+Create a new lead in Salesforce Sales Cloud with name, company, email, phone, title, and initial status
+- **sf_opportunities_by_stage**: Returns deals sorted by amount descending. Standard stages: Prospecting, Qualification, Needs Analysis, Value Proposition, Id. Decision Makers, Perception Analysis, Proposal/Price Quote, Negotiation/Review, Closed Won, Closed Lost. Use for questions like "what deals are in Negotiation?" or "total value of Closed Won this quarter."
+
+Get all Salesforce opportunities at a specific pipeline stage for bottleneck analysis, forecasting, or stage review
+- **sf_pipeline_summary**: Returns the number of deals and total monetary value at each stage. Perfect for pipeline health checks, forecasting conversations, and identifying bottleneck stages. Use when the user asks "how is the pipeline?", "what is our total pipeline value?", or "which stage has the most deals?"
+
+Get an aggregate snapshot of the open sales pipeline — deal count and total value per stage for a quick health check
+- **sf_log_activity**: Link to a person via whoId (Contact or Lead ID) and/or to a record via whatId (Account or Opportunity ID). Status defaults to "Completed". Priority: High, Normal, Low. Use to log completed calls, meetings, or emails for activity tracking and reporting.
+
+Log a call, meeting, or email as a completed Task in Salesforce linked to a contact, lead, account, or opportunity
+- **sf_search_accounts**: Returns account name, industry, annual revenue, number of employees, phone, website, billing city/state/country, and owner. Accounts are the company-level records that contacts and opportunities are linked to. Use when the user asks about a company or needs account-level data.
+
+Search Salesforce accounts (companies) by name to find organizations with industry, revenue, employee count, and location
+- **sf_search_contacts**: Returns contact name, email, phone, account name, title, department, and mailing address. Contacts are qualified individuals linked to accounts — different from leads (unqualified prospects). Use when the user asks about a specific customer contact.
+
+Search Salesforce contacts by name or email to find people at customer accounts with title, department, and phone
+- **sf_search_leads**: Returns lead name, company, email, phone, title, status (e.g., Open - Not Contacted, Working, Closed - Converted), rating (Hot/Warm/Cold), lead source, and assigned owner. Use when the user wants to find a specific prospect, check lead status, or review unqualified pipeline.
+
+Search Salesforce leads by name, email, or company to find prospective customers in the sales pipeline
+- **sf_search_opportunities**: Returns opportunity name, stage (Prospecting/Qualification/Needs Analysis/Value Proposition/Id. Decision Makers/Perception Analysis/Proposal/Negotiation/Closed Won/Closed Lost), amount, close date, probability percentage, and assigned owner. Use for pipeline review, deal lookup, or forecasting queries.
+
+Search Salesforce opportunities by name to find deals with stage, amount, probability, close date, and owner
+- **sf_update_lead**: Only specified fields are updated. Common operations: change Status to "Working" or "Closed - Converted", set Rating to Hot/Warm/Cold for prioritization, or update contact details. Requires the 18-character Salesforce ID.
+
+Update an existing Salesforce lead — change status, rating, contact info, or other fields to reflect qualification progress
+- **sf_update_opportunity**: Common operations: advance StageName when deal progresses, update Amount after negotiation, push CloseDate when timeline shifts, set StageName to "Closed Won"/"Closed Lost" to close. Only specified fields change.
+
+Update a Salesforce opportunity — advance stage, change amount, update close date, or add notes to reflect deal progress
+
+
+## Installation & Usage
+
+To install and use the **Salesforce Sales Cloud** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/salesforce-sales-cloud](https://vinkius.com/mcp/salesforce-sales-cloud)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

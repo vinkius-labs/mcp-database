@@ -1,0 +1,80 @@
+# iFood MCP Server
+
+AI food delivery: manage orders, menus, and restaurant operations via agents.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/ifood)
+
+## Overview
+**Category:** industry-titans
+**Tools Count:** 11
+
+## Description
+### What you can do
+
+Transform your iFood merchant operations with AI-powered automation. Your agents can:
+
+- **Monitor incoming orders** in real-time with status tracking
+- **Accept and progress orders** through preparation workflow
+- **Manage restaurant catalogs** — update prices, availability, descriptions
+- **Review order details** including customer info, items, and totals
+- **Configure operating hours** for each day of the week
+- **Track delivery logistics** and assign drivers to orders
+- **View store information** and configuration across all locations
+
+### How it works
+
+1. **Connect your iFood merchant account** via JWT token from iFood Developer Portal
+2. **Ask your AI agent** to check orders, update menus, or manage schedules
+3. **Natural language commands** replace manual app navigation
+4. **Automate repetitive tasks** like accepting orders and updating availability
+
+### Who is this for?
+
+Essential for **restaurant owners**, **food delivery managers**, **ghost kitchen operators**, and **multi-location food businesses** using iFood. Let AI agents handle order monitoring, catalog maintenance, and schedule management. Perfect for businesses processing 20+ daily orders who want faster response times, reduced manual oversight, and streamlined operations across multiple store locations.
+
+
+## Available Tools
+- **assign_driver**: Requires order ID and driver ID. Use this to manage your own delivery fleet and coordinate order fulfillment.
+
+Assign a delivery driver to an iFood order
+- **get_business_hours**: Use this to review or verify the current schedule before making changes.
+
+Get operating hours for an iFood store
+- **get_catalog**: Use this to review menu structure, check item availability, or prepare updates to pricing or descriptions.
+
+Get the menu catalog for an iFood store
+- **get_logistics**: Use this to track order fulfillment and coordinate with delivery personnel.
+
+Get logistics/delivery information for an iFood order
+- **get_order_details**: Use this to review order contents before accepting or preparing.
+
+Get complete details of a specific iFood order
+- **get_orders**: Can filter by status: PENDING, ACCEPTED, PREPARING, READY, DISPATCHED, DELIVERED, CANCELLED. Returns order number, customer info, items, totals, and timestamps. Use this to monitor order flow and track pending orders.
+
+List orders for an iFood store
+- **get_store_details**: Use this to review store configuration before making updates.
+
+Get detailed information about a specific iFood store
+- **get_stores**: Returns store IDs, names, addresses, and operational status. Use this first to get store IDs needed for other operations like fetching orders or managing catalogs.
+
+List all stores associated with the iFood merchant account
+- **update_business_hours**: Requires a schedule object with open/close times for each day. Use this to change store hours, add weekend schedules, or set holiday closures. The schedule should be a JSON object with day keys (monday, tuesday, etc.) and arrays of {start: "HH:MM", end: "HH:MM"} objects.
+
+Update operating hours for an iFood store
+- **update_catalog_item**: Only pass the fields you want to change. Common use: update prices, toggle availability, or change descriptions. Requires store ID and item ID.
+
+Update a menu item in the iFood store catalog
+- **update_order_status**: Common workflow: PENDING -> ACCEPTED -> PREPARING -> READY -> DISPATCHED -> DELIVERED. Can also set to CANCELLED if needed. Use this to progress orders through the fulfillment pipeline.
+
+Update the status of an iFood order
+
+
+## Installation & Usage
+
+To install and use the **iFood** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/ifood](https://vinkius.com/mcp/ifood)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

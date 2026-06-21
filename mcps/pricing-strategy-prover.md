@@ -1,0 +1,66 @@
+# Pricing Strategy Prover MCP Server
+
+An AI recommended '$29/month per seat' because that is what three competitors charge. No value metric analysis — seat count has nothing to do with value delivered. No WTP research — the price was copied, not discovered. No segmentation — enterprise pays the same as a 3-person startup. No unit economics — CAC was $380 and LTV at $29/month with 14-month retention was $406. LTV/CAC of 1.07x. The company grew revenue 12% while burning 40% of cash on acquisition. This tool forces value metric definition, WTP research, segment pricing, unit economics, and packaging design.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pricing-strategy-prover)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 1
+
+## Description
+AI agents pick prices from competitor pages and call it strategy. They default to per-seat because SaaS uses per-seat. They skip WTP research. They charge enterprise the same as startups. They ignore unit economics until the board asks why CAC exceeds LTV.
+
+### The Problem
+
+LLMs commit five pricing failures that destroy margin:
+
+- **Value Metric Undefined** — Per-seat pricing for a product where seat count does not correlate with value. An analytics platform charges per seat — but a 5-person team generating $2M in insights pays the same as a 5-person team checking dashboards once a week.
+- **WTP Unresearched** — '$29/month because competitors charge $25-35.' That is copying, not pricing. No Van Westendorp PSM. No customer interviews about current spend. No data on acceptable range or too-cheap threshold.
+- **Segmentation Absent** — One price for all. A 3-person startup and a 500-person enterprise get identical pricing. The startup over-pays relative to value. The enterprise under-pays by 10x relative to ROI.
+- **Unit Economics Broken** — Price set without calculating CAC, LTV, LTV/CAC ratio, payback period, or gross margin. Revenue grows while the company burns cash — a price that does not cover acquisition cost is a subsidy.
+- **Packaging Misaligned** — Free tier includes everything. Premium adds 'priority support.' No natural upgrade trigger. The free-to-paid conversion rate is 1.2% because there is no reason to upgrade.
+
+### How It Works
+
+5 Decision Pivots:
+
+1. **valueMetricDefined** — Pricing tied to a metric that scales with customer success. API calls, events, active contacts, revenue processed — not arbitrary per-seat.
+2. **wtpResearched** — Customer WTP studied with data. Van Westendorp, Gabor-Granger, conjoint, or interviews. Acceptable range, optimal price, and anchor spend documented.
+3. **segmentationApplied** — Different segments priced differently. Profiles, value perception, price sensitivity, and fencing defined.
+4. **unitEconomicsValid** — CAC, LTV, LTV/CAC ≥3x, payback ≤12 months, gross margin ≥70%.
+5. **packagingAligned** — Tiers with natural upgrade triggers. Free/trial demonstrates value. No anti-patterns.
+
+### The Verdict Matrix
+
+| First Failing Pivot | Verdict | Meaning |
+|---|---|---|
+| valueMetricDefined = false | VALUE_METRIC_UNDEFINED | Pricing not tied to value delivered. |
+| wtpResearched = false | WTP_UNRESEARCHED | Price copied, not discovered. |
+| segmentationApplied = false | SEGMENTATION_ABSENT | One price for all. Money left on table. |
+| unitEconomicsValid = false | UNIT_ECONOMICS_BROKEN | Revenue without margin is a subsidy. |
+| packagingAligned = false | PACKAGING_MISALIGNED | No upgrade trigger. Free tier kills conversion. |
+| All pivots pass | PRICING_PROVEN | Value-aligned, researched, segmented, profitable, packaged. |
+
+### Why It Works
+
+- **Tool calls are obligations.** The agent cannot recommend a price without stating the value metric, citing WTP research data, defining segment-specific prices, and calculating unit economics.
+- **Consistency engine catches contradictions.** If the agent claims `wtpResearched=true` but says 'based on competitor pricing,' the engine rejects.
+- **Semantic traps detect lazy pricing.** 'Per seat,' 'competitive pricing,' 'we keep it simple,' and 'we will figure out margins later' trigger automatic rejection.
+
+
+## Available Tools
+- **validate_pricing_strategy**: You must: (1) VALUE METRIC — identify the unit that scales with customer success. Not per-seat unless seats = value. API calls, events, storage, revenue processed, active contacts, (2) WTP RESEARCH — Van Westendorp, Gabor-Granger, or customer interviews with N= sample size. Not "competitor charges $X." Your customers are not their customers, (3) SEGMENTATION — different prices for segments with different value perception. Feature fencing to prevent cross-segment arbitrage. Freelancer ≠ Enterprise, (4) UNIT ECONOMICS — CAC by channel, LTV ADJUSTED FOR GROSS MARGIN, LTV/CAC ≥ 3x, payback ≤ 12 months, gross margin ≥ 70%. Raw LTV without gross margin adjustment is fiction, (5) PACKAGING — tiers with natural upgrade triggers. Zero anti-patterns: no generous free, no minor premium, no "call us" enterprise. If rejected, the pricing has a revenue-killing structural flaw. Fix before launching.
+
+Structured reflection tool for pricing strategy validation — forces value metric identification, willingness-to-pay research with named methodology, segment-specific pricing with fencing, unit economics verification at each tier, and packaging design with natural upgrade triggers before any pricing decision ships. Grounded in Van Westendorp PSM, Gabor-Granger, Simon-Kucher methodology, and SaaS benchmarks. Catches Value Metric Misalignment (pricing on a unit that does not scale with customer value — "We charge per seat." The product is a monitoring dashboard. One engineer monitors 500 servers — same value whether 1 seat or 50. Per-seat pricing: the customer adds 1 seat ($29/month) to monitor $2M in infrastructure. Value delivered: $2M in uptime protection. Price captured: $29. Value capture ratio: 0.0015%. Correct value metric: per server monitored, or per alert resolved, or per incident prevented. At $5/server/month × 500 servers = $2,500/month. Value capture: 1.5% — still low but 100x better. The value metric must grow AS the customer gets more value — not as they hire more people), WTP Guesswork (setting prices based on competitor pricing or founder intuition instead of research — "Our competitor charges $29, so we will charge $25." This assumes: (1) the competitor researched their price (they probably did not), (2) your segments have the same WTP (they probably do not), (3) lower price wins (it often does not — it signals lower quality). Van Westendorp Price Sensitivity Meter with N=200 from target segment: Too Cheap: $15 (below this, quality is suspect). Bargain: $35. Expensive: $65. Too Expensive: $95. Optimal Price Point: $49 (intersection of too-cheap and too-expensive curves). Acceptable Range: $35-$65. The competitor at $25 is BELOW the too-cheap threshold — they are losing revenue AND credibility), Segment Blindness (one price for all customers regardless of value perception — a project management tool charges $10/user/month for everyone. Freelancer: manages 3 projects, value delivered ≈ $50/month in time saved. $10 is appropriate. Enterprise team of 200: manages 500 projects, value delivered ≈ $50,000/month in coordination savings. $10/user × 200 = $2,000/month. Value capture: 4%. The enterprise is a 50x better customer being charged 1x. Correct: Freelancer tier $10/user. Team tier $25/user (includes integrations, reporting). Enterprise tier: custom pricing based on value delivered + SLA. Fencing: feature gates (SSO, audit logs, API access) that enterprises need but freelancers do not), Phantom Unit Economics (showing LTV/CAC ratio without adjusting for gross margin — "LTV/CAC = 5x! We are very efficient." CAC: $500. LTV: $2,500 (average lifetime × ARPU). But gross margin is 40% (heavy compute costs). Adjusted LTV: $2,500 × 0.40 = $1,000. Adjusted LTV/CAC: 2.0x. Below the 3x threshold. The business appears healthy but is actually unprofitable at unit level. LTV must ALWAYS be adjusted for gross margin. SaaS benchmark: gross margin ≥ 70%. Below 60% = structural problem. Payback period at 40% margin: $500 / (ARPU × 0.40) = much longer than expected), and Packaging Anti-Patterns (tier design that blocks upgrades or leaves money on the table — Anti-Pattern 1: "Generous Free" — free tier includes 95% of features. Result: 98% of users stay free. Conversion rate: 2%. Fix: free tier demonstrates value but creates friction at the natural expansion point (e.g., 3 projects free, paid at project 4 — when the user has invested enough to feel switching cost). Anti-Pattern 2: "Minor Premium" — premium adds only 1-2 features over free. Result: upgrade feels like a donation, not a value exchange. Fix: premium must unlock a workflow the user NEEDS as they grow (collaboration, integrations, reporting). Anti-Pattern 3: "Call Us Enterprise" — no price listed, forces a sales call. Modern buyers (especially developers) abandon at "Contact Sales." Fix: list enterprise starting price or price calculator + self-serve option). Call once per pricing decision, model change, or tier restructuring
+
+
+## Installation & Usage
+
+To install and use the **Pricing Strategy Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/pricing-strategy-prover](https://vinkius.com/mcp/pricing-strategy-prover)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

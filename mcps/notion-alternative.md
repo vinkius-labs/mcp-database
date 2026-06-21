@@ -1,0 +1,88 @@
+# Notion MCP Server
+
+Manage Notion pages, databases and blocks via API — search content, query databases, create rows and append blocks from any AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/notion-alternative)
+
+## Overview
+**Category:** loved-by-devs
+**Tools Count:** 13
+
+## Description
+Connect your **Notion** workspace to any AI agent and take full control of your pages, databases and content through natural conversation.
+
+### What you can do
+
+- **Global Search** — Search all pages and databases the integration has access to by title
+- **Database Operations** — Get database schemas, query rows with filters and sorts, and create new entries
+- **Page Management** — Retrieve page metadata, update properties and read page content
+- **Block Operations** — Read block children (paragraphs, headings, lists, code, images) and append new blocks
+- **User Discovery** — List workspace users, get user details and verify the bot identity
+- **Comments** — Read comment threads on pages and add new comments
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Notion Internal Integration Token
+3. Start managing your workspace from Claude, Cursor, or any MCP-compatible client
+
+No more navigating through the Notion app to find a database or update page properties. Your AI acts as a dedicated knowledge ops assistant.
+
+### Who is this for?
+
+- **Knowledge Managers** — quickly search pages, query databases and review content without opening the Notion app
+- **Developers** — create database rows programmatically, append blocks and update page properties from chat
+- **Team Leads** — audit workspace users, review comments and track page changes via conversation
+
+
+## Available Tools
+- **append_block**: Requires the parent block/page ID and a JSON array of block objects. Each block must follow Notion's block schema: {"object":"block","type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello"}}]}}. Common types: paragraph, heading_1, heading_2, heading_3, bulleted_list_item, numbered_list_item, to_do, toggle, code.
+
+Append blocks to a Notion page
+- **create_comment**: Requires the page ID and rich text content. Rich text follows Notion's format: [{"type":"text","text":{"content":"This looks great!"}}]. The comment will appear in the page's comment thread.
+
+Add a comment to a Notion page
+- **create_database_row**: Requires the database ID and a properties JSON object matching the database schema. Use get_database to see the property types and keys. Properties must follow Notion's format: {"Name":{"title":[{"text":{"content":"My Page"}}]},"Status":{"select":{"name":"Done"}}}.
+
+Create a new row (page) in a Notion database
+- **get_database**: ), parent page and creation date. Provide the database ID (32-character hex or UUID format).
+
+Get details for a specific Notion database
+- **get_me**: Returns the bot name, ID and type. Use this to verify your integration token is working correctly and to see which bot identity the API calls will appear as.
+
+Get the authenticated Notion bot user
+- **get_page**: Does NOT return block content — use get_page_blocks for that. Provide the page ID.
+
+Get details for a specific Notion page
+- **get_page_blocks**: Each block has a type (paragraph, heading_1, heading_2, heading_3, bulleted_list_item, numbered_list_item, to_do, toggle, code, image, etc.) and content. Use this to read the actual text and media content of a page. Provide the page or block ID.
+
+Get blocks (content) of a Notion page
+- **get_user**: Provide the user ID from list_users.
+
+Get details for a specific Notion user
+- **list_comments**: Each comment includes the rich text content, author, creation date and parent reference. Useful for reviewing discussion threads and feedback on pages.
+
+List comments on a Notion page or block
+- **list_database_rows**: Returns pages matching the database schema with their property values. Optionally provide a filter object to narrow results (e.g. {"property":"Status","select":{"equals":"Done"}}) and sorts to order results. Use get_database first to understand the property schema.
+
+Query rows in a Notion database
+- **list_users**: Each user has an ID, name, avatar URL, email (if available) and type (person or bot). Useful for identifying who has access and who created content.
+
+List users in your Notion workspace
+- **search**: Optionally filter by text query (matches page titles and database names). Returns pages and databases with their properties, titles and parent info. Use this to discover content before querying or editing specific pages.
+
+Search pages and databases in Notion
+- **update_page**: Requires the page ID and a properties JSON object with the fields to change. Only provided properties will be updated. Follow Notion's property format: {"Status":{"select":{"name":"Done"}},"Priority":{"select":{"name":"High"}}}.
+
+Update properties of a Notion page
+
+
+## Installation & Usage
+
+To install and use the **Notion** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/notion-alternative](https://vinkius.com/mcp/notion-alternative)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

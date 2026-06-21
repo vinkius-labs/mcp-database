@@ -1,0 +1,59 @@
+# TrackingTime MCP Server
+
+Track how your team spends time across projects and clients with timesheets, reports, and budgeting tools that keep work profitable.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/trackingtime)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 12
+
+## Description
+Connect your **TrackingTime** account to any AI agent and simplify how you manage your productivity, project tasks, and billable hours through natural conversation.
+
+### What you can do
+
+- **Live Tracking** — Start and stop timers for specific tasks instantly via AI commands to track your real-time activity.
+- **Task Management** — Create, list, and update tasks, and organize them into specific projects for better workflow.
+- **Time Logging** — Retrieve detailed logs of your time entries for any date range and manually add missing blocks of time.
+- **Project & Client Oversight** — List all projects and customers to manage your business directory and assignments.
+- **Team Coordination** — Query workspace users to understand team structure and member availability.
+- **Account Visibility** — Fetch your user profile and verify account configurations directly from the agent.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your TrackingTime Email and Password
+3. Start managing your time and productivity from Claude, Cursor, or any MCP client
+
+### Who is this for?
+
+- **Freelancers & Consultants** — quickly start timers and log billable hours via simple AI commands.
+- **Project Managers** — monitor task progress and project logs across the team directly from the workspace.
+- **Productivity Junkies** — keep an organized record of daily activities and time spent on specific projects via the AI assistant.
+
+
+## Available Tools
+- **add_time_entry**: Manual time entry
+- **create_project**: Add new project
+- **create_task**: Add new task
+- **get_user_profile**: Get current user
+- **list_customers**: List project clients
+- **list_time_entries**: Get time logs
+- **list_projects**: List your projects
+- **list_tasks**: List your tasks
+- **list_workspace_users**: List team members
+- **start_timer**: Start tracking time
+- **stop_timer**: Stop tracking time
+- **update_task**: Modify task
+
+
+## Installation & Usage
+
+To install and use the **TrackingTime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/trackingtime](https://vinkius.com/mcp/trackingtime)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

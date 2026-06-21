@@ -1,0 +1,57 @@
+# AlgoDocs MCP Server
+
+AI document extraction orchestration — parse PDFs, images, and Word docs via AI.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/algodocs)
+
+## Overview
+**Category:** artificial-intelligence
+**Tools Count:** 10
+
+## Description
+Connect your **AlgoDocs** account to your AI agent to unlock professional automated document extraction. From automatically parsing invoices, receipts, and complex tables to auditing extraction models (extractors) and managing folder hierarchies, your agent handles your data ingestion pipeline through natural conversation.
+
+### What you can do
+
+- **Document Ingestion** — Upload and parse documents from public URLs or Base64 strings for high-accuracy JSON extraction
+- **Extractor Oversight** — List and retrieve details for your AI extractors to ensure the correct rulesets are applied to your docs
+- **Data Auditing** — Retrieve structured JSON results for individual documents or list extracted data in bulk for entire extractors
+- **Folder Management** — List and audit your folder hierarchy to organize your document processing projects
+- **Usage Monitoring** — Quickly retrieve account details and API usage statistics directly from your chat interface
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your AlgoDocs Email and API Key
+3. Start parsing documents and managing your extraction workflows through Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Finance Teams** — automate data extraction from thousands of invoices and receipts effortlessly
+- **Data Entry Specialists** — convert scanned PDFs and images into structured JSON without manual typing
+- **Operations Managers** — monitor document processing status and audit extractor accuracy on the fly
+- **Developers** — integrate intelligent OCR and data parsing into custom applications using simple commands
+
+
+## Available Tools
+- **get_my_account**: Check account status
+- **list_extractors**: List AI extractors
+- **list_folders**: List storage folders
+- **upload_document_from_url**: Parse document from URL
+- **get_document_data**: Get parsed data
+- **list_extractor_data**: Bulk extraction results
+- **get_document_status**: Check processing status
+- **get_folder_details**: Get folder metadata
+- **get_api_usage**: Get usage stats
+- **list_recent_documents**: List latest parsed docs
+
+
+## Installation & Usage
+
+To install and use the **AlgoDocs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/algodocs](https://vinkius.com/mcp/algodocs)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

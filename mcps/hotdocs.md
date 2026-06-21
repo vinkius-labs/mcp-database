@@ -1,0 +1,127 @@
+# HotDocs MCP Server
+
+Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/hotdocs)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 14
+
+## Description
+Connect your **HotDocs Advance** tenancy to any AI agent and take full control of your document automation workflows through natural conversation.
+
+### What you can do
+
+- **Template Discovery** — List all template packages and their versions available in your HotDocs tenancy
+- **Work Item Management** — Create, inspect, and manage work items that hold interview data and assembled documents
+- **Interview Sessions** — Initialize interview sessions programmatically for interactive data collection
+- **Automated Document Assembly** — Inject answers via XML and trigger document generation without manual UI interaction
+- **Document Retrieval** — List and download assembled documents (PDFs, Word docs) directly from the agent
+- **Validation & Auditing** — Check unanswered variables, list work items by date range or user, and audit assembly history
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your HotDocs Advance tenancy, API client name, service principal name, and password
+3. Start automating your document workflows from Claude, Cursor, or any MCP-compatible client
+
+No more repetitive clicking through the HotDocs web interface. Your AI acts as a dedicated document automation specialist.
+
+### Who is this for?
+
+- **Legal Teams** — instantly generate contracts, agreements, and legal forms by providing case details in natural language
+- **HR Departments** — automate offer letters, employment contracts, and policy documents at scale
+- **Financial Services** — assemble loan applications, compliance forms, and client onboarding documents rapidly
+- **Operations & Compliance** — batch-generate standardized documents and audit interview completeness across teams
+
+
+## Available Tools
+- **complete_assembly**: This processes all collected answers and assembles the final documents based on the template configuration.
+After calling this, the assembled documents become available for download via list_documents and get_document_content.
+You must have already created a work item, created a version/session, and provided answers (via interview or update_answers).
+The workItemId and versionId must match an existing work item and its version.
+
+Complete document assembly for a work item version
+- **create_interview_session**: This endpoint prepares the system to collect answers for the template variables.
+The response contains interview data needed to render the HotDocs interview UI.
+Use this before displaying the interview to the user or before assembling documents.
+The versionId should be unique for each interview session (e.g., v1, v2, or a UUID).
+
+Create a new interview session for a work item
+- **create_work_item**: A work item is associated with a specific template package and holds answers provided during interviews.
+You must provide a unique workItemId (alphanumeric identifier you choose) and optionally a templatePackageId.
+The workItemId becomes the reference for all subsequent operations (interview, assembly, download).
+IMPORTANT: workItemId must be unique and URL-safe (letters, numbers, hyphens only).
+
+Create a new work item in HotDocs Advance
+- **get_auth_token**: This is primarily a utility function for debugging authentication issues.
+The token is used internally by all other tools automatically.
+If other tools fail with auth errors, verify your credentials are correct.
+
+Get a fresh HotDocs API access token
+- **get_document_content**: Use this to download the final generated document (PDF, Word, etc.) after assembly is complete.
+You need the workItemId and the documentId (obtained from list_documents).
+The response includes the document content and a download URL for direct access.
+
+Download/get content of an assembled document
+- **get_template_package**: Use the template package ID obtained from list_template_packages.
+This helps understand the template structure before creating work items.
+
+Get details of a specific template package
+- **get_unanswered_variables**: This shows which template variables were not provided answers during the interview process.
+Useful for validating interview completeness before or after document assembly.
+Requires the workItemId and documentId (from list_documents).
+The response includes the list of unanswered variables and assembly results.
+
+Get unanswered variables from an assembled document
+- **get_work_item**: Use this to inspect a work item before or after 
+conducting interviews or assembling documents. The workItemId is the unique identifier you 
+assigned when creating the work item.
+
+Get details of a specific work item
+- **list_documents**: After completing assembly, this shows all generated documents with their IDs, names, and metadata.
+Use the document IDs returned here to download individual documents via get_document_content.
+Each document entry includes filename, creation date, and assembly results information.
+
+List all assembled documents for a work item
+- **list_template_versions**: Each template can have multiple versions over time. This shows version history 
+and helps identify which version is currently live/active.
+Use the package_id from list_template_packages to query versions.
+
+List all versions of a template package
+- **list_template_packages**: Template packages define the structure of documents that can be assembled. 
+Each package contains interview questions and document output configurations.
+Use this to discover what templates are available for document assembly.
+The response includes package IDs which are required for creating work items.
+
+List all available template packages in HotDocs Advance
+- **list_work_items_by_date**: This is optimized for 
+date-based filtering and auditing. Both fromDate and toDate are required for this tool.
+Use ISO 8601 date format (e.g., 2024-01-01 or 2024-01-01T00:00:00 for datetime).
+This is useful for generating reports on document assembly activity over time periods.
+
+List work items filtered by a specific date range
+- **list_work_items**: You can filter by user ID 
+and/or date range to find specific work items. Leave all parameters empty to list all work items.
+This is useful for auditing, tracking progress, or finding existing work items to continue working on.
+Date format should be ISO 8601 (e.g., 2024-01-15 or 2024-01-15T10:30:00).
+
+List work items with optional filters
+- **update_answers**: The answer_xml parameter must contain valid HotDocs answer XML format that matches the template variables.
+This is useful for automated/batch document assembly where you already have the data.
+You can call this multiple times to incrementally add answers.
+Answer XML format example: <AnswerSet><A v="VariableName"><V>Answer Value</V></A></AnswerSet>
+
+Update answers for a work item using XML answer format
+
+
+## Installation & Usage
+
+To install and use the **HotDocs** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/hotdocs](https://vinkius.com/mcp/hotdocs)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

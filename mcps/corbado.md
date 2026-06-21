@@ -1,0 +1,90 @@
+# Corbado MCP Server
+
+Manage users, identifiers, and passkey authentication via Corbado — handle user lifecycles and auth processes directly from your AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/corbado)
+
+## Overview
+**Category:** developer-tools
+**Tools Count:** 43
+
+## Description
+Connect your **Corbado** project to any AI agent to streamline your identity and access management. This server allows you to manage the entire user lifecycle, from creation to session revocation, using natural language.
+
+### What you can do
+
+- **User Management** — Create, retrieve, update, and delete users. List all project users to audit your database.
+- **Login Identifiers** — Manage email, phone, and username identifiers for any user account.
+- **Passkey Orchestration** — Initiate and finalize passkey append or login flows directly through the API.
+- **Session Control** — List active sessions and revoke them instantly to maintain security.
+- **Auth Processes** — Initialize and monitor complex authentication processes, including SSO and identifier verification.
+- **Developer Utilities** — Access JWKS, asset links, and Apple App Site Association data for your integration.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Corbado Project ID, API Secret, and Backend URL
+3. Start managing your identity infrastructure from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Backend Developers** — quickly debug user states or reset auth processes without leaving the IDE
+- **Security Engineers** — audit active sessions and manage identifiers to respond to support tickets faster
+- **Product Managers** — list users and check registration statuses to monitor growth and onboarding health
+
+
+## Available Tools
+- **complete_auth_process**: Complete authentication process
+- **create_connect_token**: Create a ConnectToken
+- **create_identifier**: Create a login identifier for a user
+- **create_user**: Create a new Corbado user
+- **delete_connect_token**: Delete a ConnectToken
+- **delete_identifier**: Delete a login identifier
+- **delete_me**: Delete current user
+- **delete_user**: Delete a Corbado user
+- **finish_connect_login**: Finish Connect login
+- **finish_identifier_verify**: Finish identifier verification
+- **finish_passkey_append**: Finish passkey append
+- **finish_passkey_login**: Finish passkey login
+- **finish_sso**: Finish SSO (SAML2)
+- **get_apple_app_site_association**: Get Apple App Site Association
+- **get_assetlinks**: Get Asset Links
+- **get_auth_process**: Retrieve authentication process
+- **get_jwks**: Get JWKS
+- **get_me**: Retrieve current user
+- **get_user**: Retrieve user details
+- **init_auth_process**: Initialize authentication process
+- **init_connect_login**: Initialize Connect login
+- **init_login**: Initialize login
+- **init_signup**: Initialize signup
+- **list_connect_passkeys**: List Connect passkeys
+- **list_connect_tokens**: List ConnectTokens
+- **list_identifiers**: List all login identifiers
+- **list_sessions**: List active sessions
+- **list_users**: List Corbado users
+- **logout_me**: Logout current user
+- **refresh_me**: Refresh session
+- **reset_auth_process**: Reset authentication process
+- **revoke_session**: Revoke a session
+- **skip_auth_block**: Skip authentication block
+- **start_connect_login**: Start Connect login
+- **start_identifier_verify**: Start identifier verification
+- **start_passkey_append**: Start passkey append
+- **start_passkey_login**: Start passkey login
+- **start_sso**: Start SSO (SAML2)
+- **update_auth_identifier**: Update authentication identifier
+- **update_identifier**: Update a login identifier
+- **update_me**: Update current user
+- **update_user**: Update a Corbado user
+- **verify_signed_data**: Verify signed passkey data
+
+
+## Installation & Usage
+
+To install and use the **Corbado** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/corbado](https://vinkius.com/mcp/corbado)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,0 +1,62 @@
+# Harmonyscan (Harmony One Block Explorer API) MCP Server
+
+Access Harmony One blockchain data — query balances, transactions, smart contracts, and network status directly from your AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
+
+## Overview
+**Category:** developer-tools
+**Tools Count:** 14
+
+## Description
+Connect your AI agent to the **Harmony One** network via Harmonyscan. This MCP server allows for deep inspection of the Harmony blockchain, from simple balance checks to complex smart contract analysis.
+
+### What you can do
+
+- **Account Data** — Fetch ONE balances for single or multiple addresses instantly using `get_balance` and `get_balance_multi`.
+- **Transaction History** — List normal, internal, and HRC20 token transactions with full metadata via `get_tx_list` and `get_token_tx`.
+- **Smart Contract Auditing** — Retrieve verified source code and ABIs for on-chain contracts with `get_source_code` and `get_abi`.
+- **Network Insights** — Monitor block rewards, ONE supply, and current market prices using `get_one_supply` and `get_one_price`.
+- **Transaction Status** — Verify execution and receipt status for any transaction hash with `get_status`.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Harmonyscan API Key
+3. Start querying the Harmony blockchain from Claude, Cursor, or any MCP-compatible client
+
+No more manual searching through block explorers. Your AI acts as a blockchain analyst, providing real-time data on addresses, contracts, and network health.
+
+### Who is this for?
+
+- **Web3 Developers** — quickly fetch contract ABIs and source code directly in your IDE to speed up integration.
+- **Crypto Analysts** — automate the tracking of whale movements and token transfers across the Harmony ecosystem.
+- **DeFi Users** — check transaction statuses and wallet balances through simple natural language commands.
+
+
+## Available Tools
+- **get_abi**: Get Contract ABI
+- **get_balance_multi**: Get ONE Balance for Multiple Addresses
+- **get_balance**: Get ONE Balance for a Single Address
+- **get_block_reward**: Get Block Rewards
+- **get_logs**: Get Event Logs
+- **get_one_price**: ONE Last Price
+- **get_one_supply**: Total Supply of ONE
+- **get_source_code**: Get Contract Source Code
+- **get_status**: Check Transaction Execution Status
+- **get_token_tx**: Get List of HRC20 Token Transfer Events
+- **get_tx_list_internal**: Get List of Internal Transactions
+- **get_tx_list**: Get List of Normal Transactions
+- **get_tx_receipt_status**: Check Transaction Receipt Status
+- **proxy_request**: Execute standard JSON-RPC methods via proxy
+
+
+## Installation & Usage
+
+To install and use the **Harmonyscan (Harmony One Block Explorer API)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api](https://vinkius.com/mcp/harmonyscan-harmony-one-block-explorer-api)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

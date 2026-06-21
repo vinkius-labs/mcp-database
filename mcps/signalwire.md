@@ -1,0 +1,55 @@
+# SignalWire MCP Server
+
+Manage your cloud communications — send messages and audit calls via AI.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/signalwire)
+
+## Overview
+**Category:** communication-messaging
+**Tools Count:** 8
+
+## Description
+Empower your AI agent to orchestrate your entire cloud communication infrastructure with **SignalWire**, the advanced platform for messaging, voice, and video. By connecting SignalWire to your agent, you transform complex telecom management into a natural conversation. Your agent can instantly list your phone numbers, audit message delivery, and retrieve call logs without you ever touching a technical console. Whether you are providing customer alerts or managing corporate voice lines, your agent acts as a real-time telecom operator, ensuring your communication is always reliable and your usage data is organized.
+
+### What you can do
+
+- **Messaging Intelligence** — Send SMS messages instantly and retrieve detailed message status and history.
+- **Call Auditing** — List all recent voice calls and retrieve metadata for each, including direction and duration.
+- **Number Oversight** — List and monitor all incoming phone numbers associated with your project.
+- **Usage Intelligence** — Retrieve detailed usage records to maintain strict organizational control over your communication costs.
+- **Account Governance** — Monitor account-wide metadata to understand your project status in real-time.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your SignalWire Project ID, API Token, and Space URL
+3. Start managing your cloud communications through Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Operations Managers** — monitor communication usage and send quick SMS alerts straight from your workflow.
+- **Customer Success Teams** — verify message delivery statuses and audit call logs without manual dashboard logins.
+- **Developers** — perform rapid audits of project configurations and test messaging pipelines through natural language.
+- **Business Owners** — automate telecom querying to orchestrate your data-driven communication strategy smoothly.
+
+
+## Available Tools
+- **get_account_info**: Get SignalWire account details
+- **get_call**: Get details for a specific call
+- **get_message**: Get details for a specific message
+- **list_calls**: List recent voice calls
+- **list_messages**: List recent SMS/MMS messages
+- **list_phone_numbers**: List SignalWire phone numbers
+- **list_usage**: Get account usage records
+- **send_sms**: Send an SMS message
+
+
+## Installation & Usage
+
+To install and use the **SignalWire** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/signalwire](https://vinkius.com/mcp/signalwire)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

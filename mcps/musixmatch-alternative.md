@@ -1,0 +1,67 @@
+# Musixmatch MCP Server
+
+Access the world's largest lyrics database — search tracks, retrieve synchronized subtitles, and explore global music charts directly from your AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/musixmatch-alternative)
+
+## Overview
+**Category:** audio-music
+**Tools Count:** 21
+
+## Description
+Connect your **Musixmatch** developer account to any AI agent and unlock deep access to millions of lyrics, track metadata, and music charts through natural conversation.
+
+### What you can do
+
+- **Track Search** — Find any song in the Musixmatch catalogue using title, artist name, or even a specific phrase from the lyrics via `search_tracks`.
+- **Lyrics & Subtitles** — Fetch full song lyrics with `get_track_lyrics` or get synchronized time-coded subtitles (LRC format) using `get_track_subtitle`.
+- **Global Charts** — Retrieve the top trending artists and tracks for any specific country or worldwide using `get_chart_artists` and `get_chart_tracks`.
+- **Artist & Album Insights** — Explore discographies, fetch artist metadata, and list all tracks within a specific album using `get_artist_albums` and `get_album_tracks`.
+- **Music Genres** — Query the official list of music genres to categorize your search results effectively.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Musixmatch API Key
+3. Start exploring the world of music data from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Music Enthusiasts** — instantly find lyrics or identify songs from a few remembered words.
+- **Developers & Creators** — integrate music metadata and synchronized lyrics into your apps or creative workflows.
+- **Data Analysts** — track music trends and popular artists across different regions globally.
+
+
+## Available Tools
+- **get_chart_artists**: Get the list of top artists of a given country
+- **get_chart_tracks**: Get the list of top tracks of a given country
+- **get_album**: Get album metadata
+- **get_album_tracks**: Get the list of tracks for an album
+- **get_artist_albums**: Get the list of albums for an artist
+- **get_artist**: Get artist metadata
+- **get_lyrics_translation**: Get the translation of a track lyrics
+- **get_music_genres**: Get the list of music genres
+- **get_subtitle_translation**: Get the translation of a track synchronized lyrics
+- **get_track_lyrics**: Get the lyrics for a track
+- **get_track_richsync**: Get the rich synchronized lyrics (word-by-word)
+- **get_track_snippet**: Get a snippet (short excerpt) of the lyrics
+- **get_track_subtitle**: Get the synchronized lyrics (subtitles) for a track
+- **get_track**: Get a track metadata by ID
+- **match_lyrics**: Match a track and get its lyrics in one call
+- **match_subtitle**: Match a track and get its subtitles
+- **match_track**: Match a track and get its metadata
+- **post_work**: Submit or update publishing data for a musical work
+- **post_work_validity**: Submit the validity end date for a work
+- **search_artists**: Search for an artist
+- **search_tracks**: Search for a track in the Musixmatch catalogue
+
+
+## Installation & Usage
+
+To install and use the **Musixmatch** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/musixmatch-alternative](https://vinkius.com/mcp/musixmatch-alternative)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

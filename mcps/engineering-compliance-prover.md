@@ -1,0 +1,49 @@
+# Engineering Compliance Prover MCP Server
+
+Forces AI to validate structural designs against US codes (ASCE, ACI, NEC). Demands real capacity-demand ratios, traced load paths, specific material tolerances, and FMEA instead of vague appeals to 'industry standards'.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/engineering-compliance-prover)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 1
+
+## Description
+AI agents propose engineering designs that look plausible but fail fundamentally on safety factors, load paths, and code compliance. They rely on vague appeals to 'industry standards' rather than calculating specific capacity-demand ratios or tracing loads through a system. In engineering, 'looks sturdy' is not a metric.
+
+### The Problem It Solves
+
+AI-generated engineering reasoning fails for five specific reasons:
+
+- **Code blindness** — Vague references to "best practices" without citing specific normative codes (e.g., ASCE 7-22).
+- **Ignored failure modes** — Prescribing a solution without analyzing HOW it could fail (yielding, buckling, fatigue) and identifying the controlling condition.
+- **Ungrounded safety factors** — Failing to calculate explicit capacity-demand ratios or factors of safety.
+- **Broken load paths** — Missing load assumptions (dead, live, seismic) or failure to trace forces through the structure.
+- **Omitted tolerances** — Ignoring material grades, specifications, and environmental constraints. 'Steel' is not a spec.
+
+### How It Works
+
+Engineering Compliance Prover uses 5 Decision Pivots grounded in US engineering practice:
+
+1. **codeComplianceValidated** — Is the design explicitly validated against a stated, specific normative code?
+2. **failureModesAnalyzed** — Are the critical failure modes explicitly analyzed, identifying which one controls?
+3. **safetyFactorsChecked** — Are capacity-demand ratios or factors of safety explicitly calculated and confirmed?
+4. **loadPathsTraced** — Are all load assumptions explicitly stated and their path traced?
+5. **tolerancesSpecified** — Are specific material grades, tolerances, and environmental conditions addressed?
+
+
+## Available Tools
+- **validate_engineering_compliance**: Engineering is not opinion — it is code compliance, failure analysis, and proven safety margins. Lives depend on this rigor. You must: (1) define PROJECT SCOPE — system boundaries, design intent, applicable loading conditions, (2) cite the APPLICABLE CODE — exact standard with version, year, and section. "AISC 360-16, Section F2 — Flexural Members" is a code reference. "Industry standards" is rejected. Name the code or do not design, (3) detail LOAD ASSUMPTIONS — dead, live, wind, seismic, thermal, special loads. Quantified values (50 psf, 115 mph, Category C exposure). Load combinations per ASCE 7-22 Section 2.3 (LRFD or ASD), (4) analyze FAILURE MODES — FMEA methodology. Which modes are possible? Flexural yielding, lateral-torsional buckling, web crippling, connection shear, voltage drop, thermal runaway, fatigue. Which mode CONTROLS the design? How is the controlling mode mitigated?, (5) verify SAFETY FACTORS — calculate capacity-demand ratios, φRn ≥ Ru (LRFD) or Rn/Ω ≥ Ra (ASD). Show actual numbers compared to code minimums, (6) specify MATERIALS — exact grades (ASTM A992, f'c = 4000 psi), exposure classes, environmental constraints, corrosion protection, fire ratings, (7) propose DESIGN CONCLUSION — specific dimensions, sizes, ratings, parameters. Not "adequate" — the exact specification. If rejected, your engineering analysis has a structural deficiency that must be resolved.
+
+Structured reflection tool for US engineering compliance — forces rigorous code-based analysis grounded in ASCE, ACI, AISC, NEC, and ASME standards before any design conclusion. Catches Code Compliance Blindness (referencing "industry standards" or "best practices" instead of citing a specific code section — "AISC 360-16 Section F2" is a code reference. "Industry standards for steel design" is hand-waving. Codes exist because people died), Failure Mode Ignorance (designing without analyzing how the system fails — which failure mode CONTROLS the design? Flexural yielding, lateral-torsional buckling, connection shear, voltage drop, thermal runaway? If you have not identified the controlling failure mode, you have not designed — you have guessed), Safety Factor Ungrounded ("adequate safety factor" without showing the calculation — LRFD φ factors, ASD Ω factors, capacity-demand ratios with actual numbers. The code specifies minimums. Show the math proving you exceed them), Load Path Broken (loads assumed without tracing their path through the structure — gravity, live, wind, seismic, thermal. Load combinations per ASCE 7-22 Section 2.3. A load that reaches the foundation without a traceable path is a load that finds its own path — usually through a failure), and Tolerance Omitted ("steel" without specifying ASTM A992 Fy=50 ksi, "concrete" without specifying 4000 psi f'c with exposure class — the material grade IS the design). Call once per engineering design or compliance assessment
+
+
+## Installation & Usage
+
+To install and use the **Engineering Compliance Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/engineering-compliance-prover](https://vinkius.com/mcp/engineering-compliance-prover)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

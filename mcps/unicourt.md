@@ -1,0 +1,75 @@
+# UniCourt MCP Server
+
+Access real-time legal data and court records — search cases, track updates, and analyze normalized attorney and judge data directly from your AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/unicourt)
+
+## Overview
+**Category:** data-management
+**Tools Count:** 27
+
+## Description
+Connect your **UniCourt** account to any AI agent to streamline legal research and litigation tracking through natural language.
+
+### What you can do
+
+- **Case Search** — Search across millions of court cases using keyword expressions and filters
+- **Automated Tracking** — Use `track_case` to monitor specific litigation and receive updates on a schedule
+- **Normalized Data** — Access structured profiles for attorneys, law firms, judges, and parties to perform deep background checks
+- **Document Management** — Order court documents and export case data directly into your workflow
+- **Legal Analytics** — Retrieve case counts and analytics to understand litigation trends
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your UniCourt Access Token
+3. Start querying legal records from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Legal Professionals** — automate case monitoring and perform quick conflict checks
+- **Researchers** — gather large-scale litigation data for market analysis
+- **Insurance & Finance** — assess legal risks by inspecting party histories and active court cases
+
+
+## Available Tools
+- **delete_pacer_credential**: Delete PACER account credentials
+- **generate_token**: Generate a new UniCourt access token
+- **get_case_count_analytics**: Get case count analytics by case type
+- **get_case_export_callback**: Get the file URL for a completed case export
+- **get_case**: Get details for a specific case
+- **get_case_update_status**: Check the status of a requested case update
+- **get_document_order_callback**: Get the file URL for a completed document order
+- **get_norm_attorney**: Get analytics and details for a normalized attorney
+- **get_norm_judge**: Get analytics and details for a normalized judge
+- **get_norm_law_firm**: Get analytics and details for a normalized law firm
+- **get_norm_party**: Get analytics and details for a normalized party
+- **get_pacer_credential**: Retrieve current PACER account credentials status
+- **import_case**: High-priority case import
+- **import_pacer_case**: Import a case not in UniCourt via PACER
+- **order_case_document**: Order a court document
+- **request_case_export**: Request an export of case data as a ZIP file
+- **request_case_update**: Request an asynchronous update for a case
+- **search_cases**: g., caseName:pfizer).
+
+Search for court cases
+- **search_norm_attorney**: Search for normalized attorneys
+- **search_norm_judge**: Search for normalized judges
+- **search_norm_law_firm**: Search for normalized law firms
+- **search_norm_party**: Search for normalized parties
+- **search_pacer_case_locator**: Search PACER directly via Case Locator
+- **track_case**: Automatically update cases on a schedule
+- **track_norm_attorney**: Schedule recurring bar source refreshes for an attorney
+- **track_norm_law_firm**: Schedule recurring source refreshes for a law firm
+- **update_pacer_credential**: Manage PACER account credentials
+
+
+## Installation & Usage
+
+To install and use the **UniCourt** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/unicourt](https://vinkius.com/mcp/unicourt)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

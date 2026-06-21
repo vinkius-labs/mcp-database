@@ -1,0 +1,58 @@
+# Zoho CRM Marketing MCP Server
+
+Manage marketing campaigns, track campaign leads and contacts — full marketing automation in Zoho CRM.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/zoho-crm-marketing)
+
+## Overview
+**Category:** marketing-automation
+**Tools Count:** 6
+
+## Description
+Connect **Zoho CRM** to any AI agent — manage your entire CRM without switching tabs.
+
+### What you can do
+- **Leads** — Search and create leads with source and status tracking
+- **Contacts** — Find and create contacts linked to accounts
+- **Accounts** — Search companies and organizations
+- **Deals** — Search, create, and track deals through pipeline stages
+- **Notes** — Create notes attached to any CRM record
+- **Generic List** — Query any Zoho CRM module directly
+
+### Who is this for?
+- **Sales Reps** — CRM at your fingertips through AI
+- **BDRs** — Quickly qualify and create leads
+- **Sales Managers** — Pipeline visibility and deal insights
+- **Support Teams** — Access contact and account data seamlessly
+
+
+## Available Tools
+- **zoho_campaign_contacts**: Returns contacts with name, email, account, and status. Use to see which qualified contacts (converted leads or existing customers) are part of a campaign, for engagement analysis, or re-targeting decisions.
+
+Get all contacts associated with a specific campaign to measure conversion and engagement at the customer level
+- **zoho_campaign_leads**: Returns leads with name, email, company, and source. Use to measure campaign effectiveness: "how many leads did this campaign generate?", "which leads came from the webinar?", or for campaign ROI analysis.
+
+Get all leads associated with a specific campaign to measure lead generation performance and attribution
+- **zoho_create_campaign**: Campaign_Name is required. Type: Conference, Webinar, Trade Show, Public Relations, Advertisement, Email, Social Media, Banner Ads. Status: Planning, Active, Inactive, Complete, None. Start_Date/End_Date use YYYY-MM-DD. Budgeted_Cost is the planned spend.
+
+Create a new marketing campaign in Zoho CRM with name, type, budget, dates, and status for initiative tracking
+- **zoho_get_campaign**: Returns full data: name, type, status, budgeted/actual cost, expected revenue, expected response, start/end dates, and description. Use after searching to drill into campaign details.
+
+Get complete details of a specific Zoho CRM campaign by ID, including budget, ROI metrics, and all custom fields
+- **zoho_list_campaigns**: Returns campaign name, type, status (Planning/Active/Inactive/Complete), budgeted and actual costs, start/end dates, and expected response rates. Use when the user asks about marketing initiatives, campaign budgets, or active promotions.
+
+List marketing campaigns in Zoho CRM with name, type (Conference/Webinar/Email/Advertisement), status, budget, and dates
+- **zoho_search_campaigns**: Returns matching campaigns with type, status, budget, and dates. Use when the user wants to find a specific campaign, check its budget/ROI, or review campaign status.
+
+Search Zoho CRM campaigns by name or keyword to find specific marketing initiatives and their performance data
+
+
+## Installation & Usage
+
+To install and use the **Zoho CRM Marketing** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/zoho-crm-marketing](https://vinkius.com/mcp/zoho-crm-marketing)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

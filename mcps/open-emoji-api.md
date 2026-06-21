@@ -1,0 +1,52 @@
+# Open Emoji API MCP Server
+
+Access emoji data — audit characters, names, and categories via AI.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/open-emoji-api)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 5
+
+## Description
+Empower your AI agent to orchestrate your entire visual research and emoji auditing workflow with the **Open Emoji API**, the comprehensive source for Unicode-compliant emoji data. By connecting Open Emoji to your agent, you transform complex metadata searches into a natural conversation. Your agent can instantly retrieve emoji characters, audit category distributions, and query specific symbols without you ever touching a reference table. Whether you are building social media content or designing UI components, your agent acts as a real-time visual consultant, ensuring your data is always expressive and well-categorized.
+
+### What you can do
+
+- **Emoji Auditing** — Search for thousands of emojis by keyword or name and retrieve detailed metadata, including Unicode names and groups.
+- **Category Oversight** — Browse emoji categories to understand the thematic distribution of symbols across the entire database.
+- **Discovery by Theme** — Query emojis belonging to specific categories like 'smileys-emotion' or 'food-drink' to identify relevant assets instantly.
+- **Metadata Intelligence** — Retrieve group and subgroup markers for any emoji to assist in deep-dive visual classification.
+- **Visual Monitoring** — Check API status to ensure your visual research workflow is always operational.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Open Emoji API Key
+3. Start managing your emoji intelligence through Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Content Creators** — monitor emoji trends and retrieve relevant symbols straight from your workflow.
+- **UI/UX Designers** — verify emoji availability and audit category distributions without manual searching.
+- **Developers** — perform rapid audits of emoji metadata and identify character markers through natural language.
+- **Operations Leads** — automate visual data querying to orchestrate cross-functional creative teams smoothly.
+
+
+## Available Tools
+- **check_api_status**: Check if the Open Emoji API is operational
+- **get_emojis_by_category**: Get all emojis belonging to a specific category
+- **list_all_emojis**: List all available emojis in the database
+- **list_emoji_categories**: List all available emoji categories
+- **search_emojis**: Search for emojis by keyword or name
+
+
+## Installation & Usage
+
+To install and use the **Open Emoji API** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/open-emoji-api](https://vinkius.com/mcp/open-emoji-api)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,0 +1,60 @@
+# Pdfcrowd MCP Server
+
+Convert HTML, web pages, and documents to PDF or images. Generate invoices and extract text from PDFs directly via AI.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/pdfcrowd-alternative)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 5
+
+## Description
+Transform web content and documents with the **Pdfcrowd** MCP server. This powerful integration allows your AI agent to convert HTML to high-quality PDFs or images, extract text from existing PDFs, and generate professional business documents like invoices from raw data.
+
+### What you can do
+
+- **Web to PDF/Image** — Convert any URL or raw HTML string into a polished PDF or image (PNG, JPG, WebP, GIF) using `convert_html_to_pdf` and `convert_html_to_image`.
+- **Document Conversion** — Transform PDF documents back into HTML or plain text for easy analysis and data extraction using `convert_pdf_to_html` and `convert_pdf_to_text`.
+- **Business Automation** — Generate professional invoices and receipts directly from JSON data using pre-built templates with `generate_business_document`.
+- **Fine-grained Control** — Customize page sizes, orientation, margins, and viewports for pixel-perfect results.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Pdfcrowd Username and API Key
+3. Start converting documents from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Developers** — Automate report generation and web archiving directly from the IDE.
+- **Finance Teams** — Instantly generate invoices and receipts from structured data.
+- **Content Managers** — Convert web pages to static documents for documentation and sharing.
+
+
+## Available Tools
+- **convert_html_to_image**: Returns base64 encoded image data.
+
+Capture a screenshot of a web page or HTML content
+- **convert_html_to_pdf**: Returns base64 encoded PDF data.
+
+Convert a web page or HTML string to PDF
+- **convert_pdf_to_html**: Returns base64 encoded HTML data.
+
+Transform a PDF document into HTML
+- **convert_pdf_to_text**: Returns base64 encoded text data.
+
+Transform a PDF document into plain text
+- **generate_business_document**: Returns base64 encoded PDF data.
+
+Generate professional documents (invoices, receipts) from JSON data
+
+
+## Installation & Usage
+
+To install and use the **Pdfcrowd** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/pdfcrowd-alternative](https://vinkius.com/mcp/pdfcrowd-alternative)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

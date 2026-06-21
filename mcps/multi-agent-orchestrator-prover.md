@@ -1,0 +1,67 @@
+# Multi-Agent Orchestrator Prover MCP Server
+
+An AI designed a multi-agent system where agents 'work together seamlessly,' data 'flows naturally between them,' and failures 'self-heal.' Three days later, Agent B crashed and the pipeline froze for 14 hours — no one knew because there was no tracing. That is not orchestration — that is hope with a tech stack. This tool forces five orchestration axes: role boundaries, handoff protocols, failure containment, consensus mechanisms, and distributed tracing.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 1
+
+## Description
+## The Problem
+
+Ask an LLM to design a multi-agent system. It will create agents with overlapping roles because 'they're flexible.' It will skip handoff protocols because agents 'communicate naturally.' It will ignore failure isolation because the system is 'fault tolerant by design.' And it will deploy without tracing because 'we can check the logs.'
+
+Every LLM commits five orchestration failures:
+1. **Undefined Roles** — agents with overlapping responsibilities duplicate work or drop tasks. 'General purpose agent' means undefined boundary.
+2. **Missing Handoffs** — data lost between transitions. No trigger conditions, no typed contracts, no failure behavior.
+3. **Cascading Failures** — one agent crashes, the entire pipeline freezes. No timeouts, no retries, no circuit breakers.
+4. **Absent Consensus** — two agents produce conflicting outputs. No detection, no resolution protocol, no tie-breaking.
+5. **Blind Observability** — debugging is impossible. No correlation IDs, no per-agent metrics, no distributed tracing.
+
+## How It Works
+
+The Multi-Agent Orchestrator Prover forces the LLM to fill 5 reflection fields and commit to 5 Decision Pivots before concluding any agent architecture is production-ready.
+
+### The 5 Orchestration Axes
+
+| Axis | Pivot | Rule |
+|---|---|---|
+| **Roles** | Defined | Explicit boundary with input/output contracts and exclusions. |
+| **Handoffs** | Specified | Trigger condition, typed data contract, failure behavior. |
+| **Failures** | Contained | Timeout, retry with backoff, fallback, circuit breaker. |
+| **Consensus** | Deterministic | Conflict detection, resolution protocol, tie-breaking rule. |
+| **Observability** | Enforced | Correlation IDs, per-agent spans, metrics, alerting. |
+
+### The Verdict Matrix
+
+```
+Axis 1 fails → ROLES_UNDEFINED
+Axis 2 fails → HANDOFFS_MISSING
+Axis 3 fails → FAILURES_CASCADING
+Axis 4 fails → CONSENSUS_ABSENT
+Axis 5 fails → OBSERVABILITY_BLIND
+All pass     → ORCHESTRATION_PROVEN
+```
+
+## Why It Works
+
+Tool calls are obligations. The LLM cannot skip role boundaries or ignore failure containment. It must define each agent's responsibility with contracts, specify handoff triggers with typed data, implement circuit breakers with thresholds, define consensus with tie-breaking rules, and enforce tracing with correlation IDs. Every rejection names the exact orchestration axis that failed.
+
+
+## Available Tools
+- **validate_multi_agent_orchestration**: You must: (1) define ROLES — each agent has a name, typed input/output contracts, responsibility boundary, and explicit exclusions. "General purpose" is not a role, (2) specify HANDOFFS — each agent-to-agent transition has trigger conditions, typed data contracts, and explicit failure behavior. "Passes data" is not a protocol, (3) contain FAILURES — each agent has timeout, retry policy (count + backoff), fallback, and circuit breaker. Pipeline has cascade protection. "Retry and it works" is not containment, (4) define CONSENSUS — when agents conflict, specify detection method, resolution protocol (voting, scoring, supervisor), and deterministic tie-breaking. "They agree" is hope, not architecture, (5) enforce OBSERVABILITY — correlation IDs per request, spans per agent action, per-agent metrics (latency, tokens, errors), dashboards, and alerting. "Check the logs" is not observability. If rejected, fix the specific orchestration flaw before deploying.
+
+Structured reflection tool for multi-agent system design — forces explicit role boundaries, typed handoff protocols, per-agent failure containment, deterministic consensus mechanisms, and distributed observability before deploying any agent pipeline or agentic workflow. Catches Roles Undefined (agents with overlapping or vague responsibilities — a 4-agent pipeline where both the ResearchAgent and AnalysisAgent "summarize relevant information." Result: both agents produce summaries, the WriterAgent receives two partially overlapping inputs, the final response contains contradictions (ResearchAgent found 12 sources, AnalysisAgent found 8, 5 overlapped, 3 conflicted). 23% of pipeline outputs contained factual inconsistencies traceable to role overlap. Each agent must have: a name, explicit input/output contracts with typed fields, responsibility boundaries, and exclusion clauses — "does NOT evaluate quality" is as important as "DOES generate responses"), Handoffs Missing (agent-to-agent transitions that lose data or have no failure behavior — ResearchAgent returns confidence: 0.3 on a query. No handoff rule exists for low confidence. WriterAgent receives the low-confidence research and generates an authoritative-sounding response based on unreliable data. The user sees a fluent answer with no indication that the underlying evidence was weak. A handoff protocol must specify: trigger conditions (confidence > 0.7 AND sources >= 2), typed data contracts (what fields transfer), and failure behavior (retry with expanded query, escalate to human, return partial results with confidence warning)), Failures Cascading (one agent failure kills the entire pipeline — a 5-agent pipeline with no circuit breakers. The ExternalAPIAgent calls a rate-limited API. At 3 AM, the API returns 429 Too Many Requests. The agent retries infinitely. The pipeline hangs. 847 requests queue behind it. By 6 AM, the orchestrator OOM-kills. Every agent needs: timeout (hard limit), retry policy (count + backoff), fallback (cached results, degraded response), and circuit breaker (open after N consecutive failures). The pipeline needs: cascade protection — if >1 agent circuit is open, return graceful degradation), Consensus Absent (multiple agents produce conflicting outputs with no resolution mechanism — a fact-checking pipeline: VerifierAgent says "claim is true (confidence: 0.72)." CounterResearchAgent says "claim is false (confidence: 0.68)." No resolution protocol exists. The system returns... both? Neither? The first one? Random? Consensus requires: conflict detection (semantic similarity threshold), resolution protocol (voting, weighted scoring, supervisor arbitration), and deterministic tie-breaking (prefer higher confidence, more citations, or escalate to human)), and Observability Blind (agents operating as black boxes — "check the logs" is not observability. A 6-agent pipeline processes a request in 12 seconds. Which agent took 10 of those seconds? Which agent used 90% of the token budget? Which agent produced the error that was masked by a downstream retry? Without correlation IDs propagated across all agents, per-agent spans with latency/token metrics, per-agent error rates, and alerting thresholds — every production issue is a forensic investigation). Call once per agent architecture or pipeline before deployment
+
+
+## Installation & Usage
+
+To install and use the **Multi-Agent Orchestrator Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/multi-agent-orchestrator-prover](https://vinkius.com/mcp/multi-agent-orchestrator-prover)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

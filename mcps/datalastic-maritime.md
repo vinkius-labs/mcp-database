@@ -1,0 +1,54 @@
+# Datalastic Maritime MCP Server
+
+Universal maritime intelligence — search vessels, track positions, and find ports via AI.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/datalastic-maritime)
+
+## Overview
+**Category:** data-analytics
+**Tools Count:** 8
+
+## Description
+Equip your AI agent with real-time global maritime intelligence through the **Datalastic** MCP server. This integration provides instant access to detailed information on thousands of vessels and ports worldwide. Your agent can search for ships by name, retrieve exhaustive metadata (including MMSI, status, and flag), and track real-time positions and ETAs for specific vessels. It also allows searching for maritime ports by country to find official UN/LOCODEs. Whether you are managing global logistics, auditing supply chains, or researching maritime traffic, your agent acts as a dedicated port captain and logistics analyst through natural conversation.
+
+### What you can do
+
+- **Vessel Search & Specs** — Find commercial ships by name and retrieve robust technical dimensions and tonnages.
+- **Navigation Intelligence** — Retrieve real-time positions, ETAs, and historical AIS tracking paths for specific vessels.
+- **Geofence Discovery** — Find all active vessels and cargo tankers located within a specific circular radius instantly.
+- **Port Insights** — Discover maritime ports by country or name and retrieve exact geolocations and UN/LOCODEs.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Datalastic API Key (get it at datalastic.com)
+3. Start querying global maritime data from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Logistics & Supply Chain Managers** — track cargo vessels and monitor delivery schedules in real-time.
+- **Maritime Researchers** — analyze global shipping patterns and vessel distributions.
+- **Trade Compliance Officers** — verify vessel details and flag information for international shipments.
+- **Port Operations Teams** — quickly find port codes and technical data for global terminals.
+
+
+## Available Tools
+- **get_port_details**: Get specific details and coordinates for a maritime port
+- **get_vessel_history**: Get historical AIS track and location data for a vessel
+- **get_vessel_pro_specs**: Get advanced technical specifications for a vessel
+- **get_vessel_status**: Get real-time location and status for a specific vessel
+- **find_vessels_in_radius**: Find all vessels currently located within a specific circular radius
+- **search_ports_by_name**: Search for maritime ports by text name
+- **search_ports_by_country**: Search for maritime ports in a specific country
+- **search_maritime_vessels**: Search for vessels by name
+
+
+## Installation & Usage
+
+To install and use the **Datalastic Maritime** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/datalastic-maritime](https://vinkius.com/mcp/datalastic-maritime)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

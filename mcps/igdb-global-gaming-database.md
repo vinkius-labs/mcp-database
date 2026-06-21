@@ -1,0 +1,61 @@
+# IGDB Global Gaming Database MCP Server
+
+The world's most comprehensive gaming database — audit titles, platforms, age ratings, and more via AI.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/igdb-global-gaming-database)
+
+## Overview
+**Category:** artificial-intelligence
+**Tools Count:** 12
+
+## Description
+Empower your AI agent with the ultimate gaming intelligence via **IGDB**. This unified server provides access to the complete IGDB ecosystem, allowing your agent to search for thousands of titles, audit franchises, and retrieve detailed metadata for platforms, release dates, and artworks. Additionally, it includes deep support for industry taxonomy, including official genres, themes, keywords, and global age rating systems (ESRB, PEGI). Whether you are conducting market research, organizing a catalog, or managing a personal collection, your agent acts as a real-time gaming historian and analyst, providing precise data through natural conversation.
+
+### What you can do
+
+- **Comprehensive Discovery** — Search for video games and retrieve detailed metadata, including summaries, ratings, and first release dates
+- **Taxonomy & Metadata** — Query official genres, platforms, and thematic tags to understand industry categorization
+- **Content Safety Auditing** — Retrieve age ratings and content descriptions to verify maturity levels across different regions
+- **Visual & Franchise Assets** — Fetch high-quality artworks, covers, and complete franchise or collection histories
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your IGDB Client ID and Access Token
+3. Start managing your gaming intelligence from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Game Developers & Studios** — monitor industry trends, franchise history, and competitive benchmarks without manual browsing
+- **Market Researchers** — audit platform distributions, age ratings, and genre trends across thousands of titles
+- **Curators & Collectors** — automate the retrieval of metadata and high-quality artwork for gaming catalogs
+
+
+## Available Tools
+- **get_artworks**: Get official artworks for a game
+- **list_collections**: Get details for a game collection or series
+- **search_covers**: Get cover art for a game
+- **list_release_dates**: Get release dates for a game
+- **get_franchise**: Get details for a game franchise
+- **get_game**: Get full details for a specific game ID
+- **search_games**: Search for video games on IGDB
+- **list_age_ratings**: List common age ratings
+- **list_genres**: g., RPG, Shooter) available in the IGDB database.
+
+List common game genres
+- **list_keywords**: List descriptive keywords
+- **list_platforms**: g., PS5, Xbox, PC) and their abbreviations.
+
+List gaming platforms
+- **list_themes**: List game themes
+
+
+## Installation & Usage
+
+To install and use the **IGDB Global Gaming Database** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/igdb-global-gaming-database](https://vinkius.com/mcp/igdb-global-gaming-database)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

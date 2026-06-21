@@ -1,0 +1,68 @@
+# Moloni (Cloud Invoicing & Fiscal Management) MCP Server
+
+Manage certified invoicing via Moloni — track customers by VAT/NIF, audit invoices, and monitor stock levels.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/moloni-cloud-invoicing-fiscal-management)
+
+## Overview
+**Category:** erp-operations
+**Tools Count:** 20
+
+## Description
+Connect your **Moloni** account to any AI agent and take full control of your certified cloud invoicing, commercial management, and fiscal compliance through natural conversation.
+
+### What you can do
+
+- **Customer CRM (VAT/NIF)** — Search for registered customers by name or exact fiscal NIF and retrieve detailed profiles including billing addresses and legal dependencies directly from your agent
+- **Invoice & Document Audit** — List and retrieve detailed representations of certified invoices (FT), invoice-receipts (FR), and credit notes (NC) to monitor your sales and tax distributions securely
+- **Product & Stock Tracking** — List your complete catalog of articles and services, including base pricing and VAT configurations, and monitor real-time stock movements and warehousing logs natively
+- **Commercial Estimations** — Access and audit active quotes and proforma estimates to track pending client approvals and sales pipeline boundaries securely
+- **Fiscal Configuration** — Retrieve legal reference IDs for taxes, measurement units, and payment methods required for generating compliant mutations across Portuguese and Spanish jurisdictions
+- **Customer Registration** — Instantly create new client records with full fiscal metadata, including zip-coded addresses and country mappings, to prepare your environment for rapid invoicing
+- **Metadata Inspection** — Deep-dive into specific Document or Product IDs to retrieve precise JSON payloads and unit mapping constants instantly
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Moloni Access Token and Company ID
+3. Start managing your business operations from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Business Owners** — monitor sales flows and audit fiscal documents through natural conversation without manual dashboard navigation
+- **Accountants** — retrieve detailed invoice data and tax breakdowns directly from your workspace to streamline financial reporting
+- **E-commerce Managers** — verify stock levels and manage customer fiscal profiles efficiently to maintain high-performance digital commerce
+
+
+## Available Tools
+- **list_customers**: Listar todos os clientes registados na empresa Moloni
+- **get_customer_by_vat**: Pesquisar exato cliente pelo seu NIF fiscal
+- **create_customer**: Registar formalmente novo cliente no Moloni
+- **update_customer**: Atualizar registo de dados fiscais num cliente existente
+- **list_products**: Listar todos os artigos e stock de serviços Moloni
+- **get_product**: Obter pormenores unitários e ID de taxas de um serviço
+- **create_product**: Criar registo de novo artigo faturável base
+- **list_product_categories**: Listar hierarquia de categorias guardando os produtos
+- **list_product_stocks**: Consultar movimentos brutos auditáveis do stock
+- **list_invoices**: Listar faturas simples já finalizadas ou abertas AT
+- **get_invoice**: Obter detalhe intrínseco (items e IVAs) duma exata Fatura
+- **list_invoice_receipts**: Listar FRV (Fatura-Recibo equivalentes portugueses)
+- **list_receipts**: Listar RCs (Recibos líquidos de regularização liquidados)
+- **list_credit_notes**: Listar NCs legais (Notas de Crédito estornos)
+- **list_delivery_notes**: Listar GTs puras (Guias de Transporte físicas)
+- **list_estimates**: Listar orçamentos simulados (Proformas/Orçamentos)
+- **list_taxes**: Listar impostos e isenções IVA ativos
+- **list_payment_methods**: Listar IDs de pagamento associados à AT
+- **list_measurement_units**: Listar unidades métricas configuradas formalmente
+- **list_countries**: Listar referências ISO IDs e jurisdições fiscais
+
+
+## Installation & Usage
+
+To install and use the **Moloni (Cloud Invoicing & Fiscal Management)** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/moloni-cloud-invoicing-fiscal-management](https://vinkius.com/mcp/moloni-cloud-invoicing-fiscal-management)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

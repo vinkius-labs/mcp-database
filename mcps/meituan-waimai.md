@@ -1,0 +1,81 @@
+# Meituan Waimai MCP Server
+
+Essential food delivery gig API — manage orders, track delivery, handle refunds, and control restaurant menus via Meituan Waimai.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/meituan-waimai)
+
+## Overview
+**Category:** industry-titans
+**Tools Count:** 10
+
+## Description
+Connect your **Meituan Waimai (美团外卖)** restaurant operations to any AI agent and transform your delivery management through natural conversation. Meituan Waimai is China's largest food delivery platform, handling millions of daily orders across hundreds of thousands of restaurants.
+
+### What you can do
+
+- **Order Management** — Retrieve detailed order information, list orders by status (pending, confirmed, delivering, completed, cancelled)
+- **Order Lifecycle Control** — Confirm new orders, mark orders as delivering, complete deliveries, or cancel with explanations
+- **Refund Processing** — Approve or reject customer refund requests with detailed reasoning and order verification
+- **Restaurant Information** — Query restaurant details including ratings, addresses, business hours, and delivery coverage
+- **Menu Management** — List full restaurant catalogs, filter by category, view prices, descriptions, and stock levels
+- **Stock Control** — Update item availability in real-time, mark items as sold out, or replenish inventory
+- **Delivery Tracking** — Mark orders as out for delivery with rider information for customer transparency
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Meituan Waimai App ID and App Secret
+3. Start managing your restaurant operations from Claude, Cursor, or any MCP-compatible client
+
+Your AI agent becomes your restaurant operations manager, handling order confirmations, monitoring stock levels, processing refunds, and optimizing your menu — all through conversational commands.
+
+### Who is this for?
+
+- **Restaurant Owners** — Monitor incoming orders, manage menus, and handle refunds without logging into the merchant dashboard
+- **Multi-Location Operators** — Query order volumes and restaurant info across multiple POIs from a single AI interface
+- **Kitchen Staff** — Check order details, confirm new orders, and mark items as sold out when ingredients run low
+- **Customer Service** — Track order status, investigate refund claims, and resolve delivery issues quickly
+
+
+## Available Tools
+- **cancel_order**: Requires a cancellation reason explaining why the order is being cancelled (e.g., "restaurant closed", "item out of stock", "unable to prepare"). The order must be in a cancellable state (not already completed or delivered). Use carefully as cancellations impact merchant ratings and customer experience.
+
+Cancel a Meituan delivery order with a reason
+- **complete_order**: This is the final state in the order lifecycle and indicates the customer has received their food. Should only be called after the delivery rider has confirmed drop-off or the customer has picked up the order. Triggers payment settlement to the merchant.
+
+Mark a Meituan delivery order as completed
+- **confirm_order**: This transitions the order to confirmed status and begins the preparation workflow. Required step before marking the order as delivering. Use the order ID from the order list and the restaurant POI ID. Essential for acknowledging new orders and starting the fulfillment process.
+
+Confirm a pending Meituan delivery order
+- **get_order_detail**: Use the order ID obtained from the order list to track specific orders, verify order contents, check delivery addresses, or investigate customer complaints. Essential for order management and customer service operations.
+
+Get detailed information about a specific Meituan delivery order
+- **get_order_list**: Filter by order status: 1=待确认 (pending confirmation), 3=已确认 (confirmed), 5=配送中 (delivering), 7=已完成 (completed), 8=已取消 (cancelled). Pagination uses page number and limit parameters. Critical for monitoring incoming orders, tracking order volume, and managing the order pipeline.
+
+List orders for a Meituan restaurant with optional status filter
+- **get_restaurant_info**: Use the POI ID (Point of Interest identifier) to get restaurant details before managing orders, verifying delivery coverage, or checking business hours. Essential for multi-restaurant operators managing multiple POIs.
+
+Get detailed information about a Meituan restaurant/POI
+- **handle_refund**: When rejecting, provide a reason explaining the refusal. Refund requests typically come with customer explanations and evidence. Use order details to verify the claim before making a decision. Approved refunds are processed back to the customer's original payment method.
+
+Approve or reject a refund request for a Meituan order
+- **list_menus**: Optionally filter by category ID to get items from a specific menu section (e.g., appetizers, mains, drinks). Critical for inventory management, price updates, and menu optimization. Returns stock quantities to help identify low-stock items.
+
+List menu items for a Meituan restaurant
+- **mark_delivering**: Optionally includes delivery rider name and phone number for customer tracking. Use this for self-delivery orders where the restaurant manages their own riders. For Meituan-managed delivery, the platform handles this automatically.
+
+Mark a Meituan order as being delivered (out for delivery)
+- **update_stock**: Use this to mark items as sold out (stock=0) when ingredients run out, or replenish stock when new inventory arrives. Stock changes immediately reflect on the customer-facing menu. Essential for preventing orders for unavailable items and maintaining accurate inventory. Food ID is obtained from the list_menus tool.
+
+Update stock quantity for a menu item in Meituan
+
+
+## Installation & Usage
+
+To install and use the **Meituan Waimai** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/meituan-waimai](https://vinkius.com/mcp/meituan-waimai)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,0 +1,57 @@
+# Scoro MCP Server
+
+Bring your Scoro end-to-end work management platform into your AI workflows — query projects, invoices, and time logs seamlessly.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/scoro)
+
+## Overview
+**Category:** customer-relationship-management
+**Tools Count:** 12
+
+## Description
+Connect your **Scoro** workspace to any AI agent to interact with your business operations securely. Avoid context-switching between your agency's CRM, PM software, and billing dashboards.
+
+### What you can do
+
+- **Project & Task Tracking** — Query your entire project portfolio, check on ongoing task statuses, and extract time entries logged by the team
+- **CRM & Contacts** — Retrieve details, metadata, and history for any client or vendor in your database
+- **Financial Health** — List sales invoices, pending quotes, and registered business expenses to track profitability without running manual reports
+- **Team Management** — Consult your user roster, pull recent activity audit logs, and browse team calendar events directly within your chat environment
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Scoro company subdomain and your Scoro API Key
+3. Start managing your agency operations natively from Claude, Cursor, or any MCP-compatible environment
+
+### Who is this for?
+
+- **Project Managers** — instantly ask the AI to summarize all overdue tasks or compile a list of logged hours for a specific project
+- **Sales & Account Executives** — pull up pending quotes and contact details before a client meeting using natural language
+- **Agency Founders** — get a bird's-eye view of recent unbilled invoices or total registered expenses without navigating the full software suite
+
+
+## Available Tools
+- **get_contact**: Retrieves details for a specific contact
+- **list_activities**: Lists recent activities and audit logs
+- **list_calendar_events**: Lists all events on the Scoro calendar
+- **list_contacts**: Lists all contacts (companies and people) in Scoro
+- **list_expenses**: Lists all business expenses
+- **list_invoices**: Lists all sales invoices
+- **list_products**: Lists all products and services in the catalog
+- **list_projects**: Lists all projects in Scoro
+- **list_quotes**: Lists all sales quotes
+- **list_tasks**: Lists all tasks
+- **list_time_entries**: Lists time entries logged by the team
+- **list_users**: Lists all users in the Scoro organization
+
+
+## Installation & Usage
+
+To install and use the **Scoro** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/scoro](https://vinkius.com/mcp/scoro)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

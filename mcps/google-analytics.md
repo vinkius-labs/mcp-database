@@ -1,0 +1,110 @@
+# Google Analytics MCP Server
+
+Query GA4 analytics data via Google Analytics API — run reports, check realtime data, analyze funnels, and export audiences directly from any AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/google-analytics)
+
+## Overview
+**Category:** industry-titans
+**Tools Count:** 12
+
+## Description
+Connect your **Google Analytics 4 (GA4)** account to any AI agent and take full control of web and app analytics through natural conversation.
+
+### What you can do
+
+- **Custom Reports** — Run reports with any combination of metrics (activeUsers, screenPageViews, sessions, eventCount) and dimensions (city, country, deviceCategory, channel grouping)
+- **Realtime Data** — Monitor what's happening on your site right now with live user counts, events, and traffic sources from the last 30-60 minutes
+- **Batch Reports** — Execute multiple report configurations in a single API call for efficient dashboard loading
+- **Metadata Discovery** — List all available metrics and dimensions for your property, including custom definitions
+- **Compatibility Checks** — Validate metric/dimension combinations before running reports to avoid errors
+- **Audience Exports** — List and monitor audience export jobs for user segmentation and activation
+- **User Activity** — Retrieve event history for specific users for journey analysis and support investigations
+- **Funnel Analysis** — Visualize user progression through conversion steps and identify drop-off points
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Google Analytics API key from Google Cloud Console
+3. Start querying analytics data, monitoring realtime metrics, and running funnel analysis from Claude, Cursor, or any MCP-compatible client
+
+No more navigating the GA4 dashboard for every report. Your AI acts as a dedicated analytics analyst.
+
+### Who is this for?
+
+- **Marketing Teams** — instantly pull custom reports by channel, geography, or device without opening the GA4 interface
+- **Product Managers** — monitor funnel conversion rates and identify where users drop off in signup or checkout flows
+- **Data Analysts** — batch export data for further analysis in BI tools, or validate metric compatibility before complex queries
+- **Support Teams** — lookup user activity by userId to investigate specific customer journeys and troubleshoot issues
+
+
+## Available Tools
+- **batch_run_reports**: Provide property_id and an array of report configurations. Each report can have different metrics, 
+dimensions, and date ranges. This is efficient for dashboard loading or comparative analysis.
+The reports parameter should be a JSON array of report objects with metrics, dimensions, and dateRanges.
+
+Run multiple reports in a single API call
+- **check_compatibility**: Before running complex reports, use this to ensure compatibility between your chosen metrics and dimensions.
+This prevents errors and wasted API calls. Provide property_id and the metrics/dimensions you plan to use.
+Returns compatibility status and any conflicts that would prevent the report from running successfully.
+
+Check if metrics and dimensions can be combined in a report
+- **get_audience_export**: Audience exports allow you to extract user lists matching specific audience criteria.
+Use this to monitor the progress of audience extraction jobs.
+Provide property_id and the audience_export_id from list_audience_exports.
+
+Get status of a specific audience export
+- **get_metadata**: This includes both standard and custom metrics/dimensions with their descriptions, types, and compatibility information.
+Use this to discover what data is available before building reports. The propertyId is required and can be found in your GA4 admin settings.
+
+Get available metrics and dimensions for a GA4 property
+- **get_property**: Use the property_id obtained from list_properties to inspect property configuration.
+
+Get detailed information about a specific GA4 property
+- **get_user_activity**: This shows all interactions a user has had with your property, including pageviews, events, and conversions.
+Use this for user-level analysis, journey mapping, or support investigations.
+The userId must match the one sent with your tracking events.
+
+Get activity history for a specific user
+- **list_accounts**: This is the top-level container for properties. Each account can contain multiple properties.
+Use this to discover what accounts are available before drilling down into properties.
+
+List all Google Analytics accounts accessible to the user
+- **list_audience_exports**: Audience exports are used to extract user lists matching specific audience criteria for activation in other platforms.
+Shows status (CREATING, ACTIVE, FAILED) and configuration of each export job.
+
+List all audience export jobs for a property
+- **list_properties**: Properties represent individual websites, apps, or measurement streams. 
+Each property has a unique ID needed for running reports. 
+Use this to find the correct property_id for report queries.
+
+List all GA4 properties in an account
+- **run_funnel_report**: This helps identify where users drop off in conversion paths like checkout flows or signup processes.
+Provide property_id and a funnelSpec object defining the steps and breakdown settings.
+The funnelSpec should be a JSON object with steps array containing stepName, filterExpression, and optional breakdown settings.
+
+Run a funnel analysis report
+- **run_realtime_report**: Unlike standard reports, this shows what's happening on your site/app right now.
+Provide property_id and the metrics/dimensions you want to monitor in realtime.
+Common realtime metrics: activeUsers, eventCount, screenPageViews.
+Common realtime dimensions: city, country, deviceCategory, streamId.
+
+Get realtime analytics data (last 30-60 minutes)
+- **run_report**: You must provide the property_id, metrics (e.g., 'activeUsers', 'screenPageViews', 'eventCount'), 
+and dimensions (e.g., 'city', 'pageTitle', 'sessionDefaultChannelGrouping').
+Date ranges use YYYY-MM-DD format. Optional filter expression can narrow results.
+Common metrics: activeUsers, screenPageViews, sessions, eventCount, engagementRate, averageSessionDuration.
+Common dimensions: city, country, deviceCategory, sessionDefaultChannelGrouping, pageTitle, pagePath.
+
+Run a custom Google Analytics report
+
+
+## Installation & Usage
+
+To install and use the **Google Analytics** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/google-analytics](https://vinkius.com/mcp/google-analytics)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

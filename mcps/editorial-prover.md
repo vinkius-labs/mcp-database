@@ -1,0 +1,61 @@
+# Editorial Prover MCP Server
+
+Every AI agent writes the same way — uniform sentences, identical rhythm, filler words. Editorial Prover breaks the pattern with a structured self-audit: name the reader, justify the hook, map the rhythm, find the weakest sentence, and prove the paragraph structure varies.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/editorial-prover)
+
+## Overview
+**Category:** productivity
+**Tools Count:** 1
+
+## Description
+Every AI agent writes the same way. Uniform sentences, identical paragraph structures, filler words like "delve" and "leverage", hedging instead of committing, bullet lists instead of prose. Readers spot it instantly. Detectors flag it in seconds. Editorial Prover eliminates this problem at the source.
+
+### The Problem It Solves
+
+AI-generated text fails on five measurable axes — all documented in detection research (GPTZero 2024, Northeastern 2025, arXiv 2024):
+
+- **Low burstiness** — every sentence is 15-20 words, same rhythm, like a metronome
+- **Structural repetition** — paragraph 1 has the same shape as paragraph 2, 3, 4
+- **Filler vocabulary** — "furthermore", "it's important to note", "in today's world"
+- **Hedging** — "some believe", "it could be argued" — never commits to a position
+- **Audience blindness** — writes for "everyone" which means no one
+
+These aren't grammar problems. They're **thinking problems.** The agent never asks: who reads this? Does my opening grab? Which sentence should I cut?
+
+### How It Works
+
+Editorial Prover uses 5 Decision Pivots that force the writing agent to think through an editorial process. The tool computes nothing about the content — like Sequential Thinking, the act of answering structured questions IS the quality improvement.
+
+For each section, the agent must:
+
+1. **Name the reader** and what they desire (`readerDesire`)
+2. **Justify the hook** — why does the opening grab? What position does it take? (`hookCommits`)
+3. **Describe the rhythm** with specific word counts — "6-word opener, 28-word explanation, 4-word punch" (`rhythmConscious`)
+4. **Identify the weakest sentence** and decide: keep, rewrite, or cut (`weakestIdentified`)
+5. **Map paragraph structures** to prove variety — "P1: question→answer, P2: claim→evidence" (`structureVaries`)
+
+The tool validates pivot consistency. If the agent claims varied rhythm but sentences are uniform (burstiness CV < 0.25), the tool rejects with measured proof.
+
+### Why It Works
+
+- **Thinking amplification, not detection.** The tool doesn't scan for bad words — it forces the agent to reason about its writing. The reasoning process IS the improvement.
+- **Language-agnostic.** Works for any language — English, Portuguese, Japanese, Arabic. The pivots are universal editorial questions. The burstiness check is pure math on sentence lengths.
+- **The commit pattern.** The agent must propose its own verdict (PUBLISH_READY, WEAK_HOOK, etc.) and the server validates consistency with the pivots. This forced commitment deepens the thinking.
+
+
+## Available Tools
+- **audit_copy**: This is a self-audit — the act of answering these questions forces higher quality writing. Works for ANY language. You must: (1) name the SPECIFIC AUDIENCE — not "developers" but "backend engineers building CI/CD pipelines who are evaluating whether to build or buy their deployment tooling," (2) explain WHY your HOOK grabs — what position does the headline take? What promise does it make? What urgency does it create? A headline that merely describes the content is not a hook, (3) describe SENTENCE RHYTHM with word counts — vary consciously. Short punches (4-6 words) mixed with longer explanations (25-35 words). If all sentences are 15-20 words, the rhythm flatlines. Human writing has burstiness, (4) identify the WEAKEST SENTENCE — copy it, explain why it is weak, decide: keep, rewrite, or cut. Every section has a weakest sentence. Finding it makes the section stronger, (5) map PARAGRAPH STRUCTURES — each paragraph should have a different architecture. P1: question→answer. P2: claim→evidence. P3: story→lesson. P4: single-sentence impact. No two paragraphs should mirror each other, (6) purge AI FILLERS — check for and remove: "It is important to note," "In order to effectively," "It should be mentioned," hedging phrases, repetitive transitions ("Furthermore," "Additionally," "Moreover" in sequence). These are AI fingerprints. If rejected, rewrite the flagged issue and re-call.
+
+Editorial thinking amplifier for any AI agent that writes content, in any language. Forces structured editorial self-audit through 5 Decision Pivots about the reader, the hook, the rhythm, the weakest sentence, and paragraph structure. The act of answering these questions IS the quality improvement. Includes language-agnostic burstiness validation as consistency backup. Based on burstiness analysis (GPTZero 2024) and syntactic template detection (Northeastern 2025). Catches Unfocused Writing (no specific audience — "for developers" when the real audience is "backend engineers debugging production memory leaks at 2 AM"), Weak Hooks (headline that describes instead of committing — "An Introduction to Caching" vs "Your Database is Doing Work It Already Did — Stop That"), Monotone Rhythm (every sentence is 15-20 words, same structure — subject-verb-object on repeat. Human writing bursts: 4-word punch. Then a 35-word explanation that winds through a subordinate clause. Then another punch. AI writing flatlines), Bloated Prose (filler sentences that say nothing — "It is important to note that..." "In order to effectively..." "It should be mentioned that..." — cut all of them), and Repetitive Structure (every paragraph follows claim→explanation→example. Humans vary: question→answer, story→lesson, evidence→conclusion, single-sentence paragraph for impact). Call BEFORE publishing any written content
+
+
+## Installation & Usage
+
+To install and use the **Editorial Prover** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/editorial-prover](https://vinkius.com/mcp/editorial-prover)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

@@ -1,0 +1,59 @@
+# Flexport MCP Server
+
+Manage global freight shipments, purchase orders, and logistics documents via AI agents with Flexport.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/flexport)
+
+## Overview
+**Category:** erp-operations
+**Tools Count:** 12
+
+## Description
+Connect your **Flexport** account to any AI agent and automate your global trade and freight operations through the Model Context Protocol (MCP). Flexport is the modern freight forwarder that provides full visibility and control over your supply chain. Now, you can track shipments, manage purchase orders, and retrieve essential logistics documentation directly through natural conversation.
+
+### What you can do
+
+- **Shipment Tracking** — List all your ocean and air shipments, fetch detailed tracking metadata, and monitor transit statuses in real-time.
+- **PO Management** — Automate your purchase order lifecycle by listing, retrieving, and creating POs directly from the agent.
+- **Document Retrieval** — List and fetch essential logistics documents such as Bills of Lading, Commercial Invoices, and Packing Lists.
+- **Billing & Invoices** — Access freight and commercial invoices associated with your account or specific shipments for better financial oversight.
+- **Customs Documentation** — Retrieve commercial invoice data required for customs clearance and compliance reporting.
+- **Global Visibility** — Get a high-level overview of your entire global supply chain operations without switching tabs.
+
+### How it works
+
+1. Subscribe to this server through the Vinkius Marketplace
+2. Enter your Flexport API Key (found in your Flexport Developer Portal)
+3. Start managing your global freight operations from Claude, Cursor, or any MCP client
+
+### Who is this for?
+
+- **Logistics Managers** — quickly check shipment statuses and cargo ready dates while coordinating with carriers.
+- **Supply Chain Analysts** — get a real-time overview of purchase orders and invoices through simple AI commands.
+- **Finance Operations** — automate the retrieval of freight billing data and documents for audit and reconciliation.
+
+
+## Available Tools
+- **create_purchase_order**: Create a new purchase order
+- **download_document**: Get document download link
+- **get_document**: Get document metadata
+- **get_invoice**: Get invoice details
+- **get_purchase_order**: Get purchase order details
+- **get_shipment**: Get shipment details
+- **list_commercial_invoices**: List commercial invoices
+- **list_documents**: List logistics documents
+- **list_invoices**: List freight invoices
+- **list_purchase_orders**: List purchase orders
+- **list_shipment_invoices**: List invoices for shipment
+- **list_shipments**: List freight shipments
+
+
+## Installation & Usage
+
+To install and use the **Flexport** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/flexport](https://vinkius.com/mcp/flexport)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*

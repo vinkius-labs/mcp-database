@@ -1,0 +1,56 @@
+# Videco MCP Server
+
+Create and manage personalized videos via Videco u2014 launch campaigns, capture leads, and track analytics from your AI agent.
+
+[![View on Vinkius](https://img.shields.io/badge/View_on-Vinkius-blue?style=for-the-badge)](https://vinkius.com/mcp/videco)
+
+## Overview
+**Category:** marketing-automation
+**Tools Count:** 10
+
+## Description
+Connect your **Videco** account to any AI agent and manage personalized videos, campaigns, leads, and analytics through natural conversation.
+
+### What you can do
+
+- **Video Management** u2014 Create, list, and review personalized videos from your template library
+- **Campaign Management** u2014 Create and monitor video campaigns with audience targeting and delivery metrics
+- **Lead Tracking** u2014 Access all leads captured from video interactions with engagement scores
+- **Video Analytics** u2014 View detailed metrics including views, watch time, drop-off points, and CTA click rates
+- **Template-Based Creation** u2014 Generate new personalized videos instantly from existing templates
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Videco account settings
+3. Start managing video campaigns from Claude, Cursor, or any MCP client
+
+### Who is this for?
+
+- **Sales Teams** u2014 create personalized prospecting videos and track engagement per lead
+- **Marketing Teams** u2014 launch video campaigns and monitor conversion metrics
+- **Customer Success** u2014 send personalized onboarding videos and track completion rates
+
+
+## Available Tools
+- **check_videco_status**: Verify Videco API connectivity
+- **create_campaign**: Create a campaign
+- **create_video**: Create a personalized video
+- **get_video_analytics**: Get video analytics
+- **get_campaign**: Get campaign details
+- **get_lead**: Get lead details
+- **get_video**: Get video details
+- **list_campaigns**: List all campaigns
+- **list_leads**: List all leads
+- **list_videos**: List all videos
+
+
+## Installation & Usage
+
+To install and use the **Videco** MCP server in your AI agents (Claude, Cursor, Windsurf, etc.), follow these steps:
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/videco](https://vinkius.com/mcp/videco)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+---
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
